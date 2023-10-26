@@ -1,0 +1,43 @@
+			BODY { FONT-SIZE: 8pt; FONT-FAMILY: verdana }
+			.TopTable { FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: verdana; TEXT-ALIGN: center }
+			.TopTextBoxes { BORDER-RIGHT: #7b9ebd 1px solid; BORDER-TOP: #7b9ebd 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #7b9ebd 1px solid; WIDTH: 100%; BORDER-BOTTOM: #7b9ebd 1px solid; FONT-FAMILY: verdana; HEIGHT: 19px; BACKGROUND-COLOR: #d3ffd3 }
+			.btnSearch { FONT-WEIGHT: bold; FONT-SIZE: 8pt; WIDTH: 100%; FONT-FAMILY: verdana; HEIGHT: 19px }
+			.lblMessage { FONT-WEIGHT: normal; FONT-SIZE: 8pt; FONT-FAMILY: verdana }
+			.DataGrid { FONT-SIZE: 7pt }
+			.txtbox { FONT-WEIGHT: normal; FONT-SIZE: 8pt; WIDTH: 400px; FONT-FAMILY: verdana; HEIGHT: 20px }
+			.noteBody { PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; BACKGROUND-COLOR: buttonface }
+			.previewBody { PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; BACKGROUND-COLOR: buttonface }
+			.tbDivider { BORDER-RIGHT: 2px groove }
+			
+			.tbButton {text-align:center; BORDER-RIGHT: buttonface 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: buttonface 1px solid; MARGIN-TOP: 1px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: buttonface 1px solid; CURSOR: hand; COLOR: buttontext; PADDING-TOP: 2px; BORDER-BOTTOM: buttonface 1px solid; HEIGHT: 40px;width:100; TEXT-DECORATION: none;background:red }
+
+			.tbButtonDown { BORDER-RIGHT: buttonface 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: buttonface 1px solid; MARGIN-TOP: 1px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: buttonface 1px solid; CURSOR: hand; COLOR: buttontext; PADDING-TOP: 2px; BORDER-BOTTOM: buttonface 1px solid; HEIGHT: 24px;width:100; TEXT-DECORATION: none }
+			.tbButtonRaise { BORDER-RIGHT: buttonface 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: buttonface 1px solid; MARGIN-TOP: 1px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: buttonface 1px solid; CURSOR: hand; COLOR: buttontext; PADDING-TOP: 2px; BORDER-BOTTOM: buttonface 1px solid; HEIGHT: 24px; TEXT-DECORATION: none }
+			.cbToolbar TD { VERTICAL-ALIGN: middle }
+			.cbToolbar IMG { BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; WIDTH: 20px; MARGIN-RIGHT: 3px; BORDER-BOTTOM: medium none; HEIGHT: 20px }
+			.cbSubmenu IMG { BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; WIDTH: 20px; MARGIN-RIGHT: 3px; BORDER-BOTTOM: medium none; HEIGHT: 20px }
+			.cbToolbar TD { VERTICAL-ALIGN: middle }
+			.FORMATBAR { BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid }
+			.cbToolbar { BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid }
+			.tbButtonRaise { BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid }
+			.tbButton A:hover { BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid }
+			.tbButton:hover { BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid }
+A:link
+{
+	color: black;
+}
+A:visited
+{
+	color: black;
+}
+/* Active and Visited should be the same.
+	Active is when they click on it
+*/
+A:active
+{
+	color:black;  
+}
+A:hover
+{
+	COLOR: blue;
+}

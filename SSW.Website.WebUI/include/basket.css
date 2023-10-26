@@ -1,0 +1,1172 @@
+/* 
+-------------------------------------------------
+            TABLE OF CONTENTS
+-------------------------------------------------
+        1. HTML and Hacks 
+            a. Sticky Footer
+            b. Clearfix
+        2. Font styles
+            a. Non-specific
+            b. Breadcrumb
+            c. Helpbox (right panel)
+            d. ClientDetails.aspx
+            e. Login.aspx
+        3. Layout styles 
+            a. Basic
+            b. Breadcrumb
+            c. Congratulations.aspx
+            d. ClientDetails.aspx
+            e. Login.aspx
+        4. JScript and special styles
+            a. Square Red Buttons
+            b. Rounded Order Now Button
+            c. Password Strength
+            d. Watermarked Input Boxes
+        5. Obsolete Styles (marked for deletion)
+        6. Table
+            a. Basket.aspx
+            b. Checkout.aspx
+-------------------------------------------------
+Note: 
+
+Anything that looks strange in here is likely to be IE7 fixes. These are commonly "zoom: 1" properties
+Please keep this css neat!
+
+TTD: Test on Mac
+
+*/
+
+/* 1. HTML AND HACKS */
+
+/* Sticky Footer - This is extremely sensitive so do not touch EVER */
+
+html, body, form, #wrapper {
+    height: 100%;
+    }
+
+form > #wrapper {
+    height: auto; min-height: 100%;
+    }
+
+#container {
+    padding-bottom: 140px;
+    background-color: transparent;
+    width:100%;
+    border-bottom: none;
+    }  
+
+#footer {
+    position: relative;
+    margin-top: -115px;
+	height: 100px;
+	clear:both;
+	width: 960px;
+	} 
+  
+#wrapper  {
+    /* background-image: url(/ssw/Shop/Images/background.png); Decided to remove the white background as there was too many boxes */
+    background-color: #eee;
+    background-image: none;
+    width:970px;
+    margin: 0 auto;
+    } 
+          
+#msgoldpartner {   
+    right: 10px;
+    left: auto;
+    }
+
+/* Clearfix */
+
+.hide {
+    display:none; /* :D */
+    }
+
+.right {
+    float:right;
+    }
+    
+.left {
+    float:left;
+    }
+    
+.clearfix:after {
+    content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+	
+.clearfix {
+    display: inline-block;
+    }
+    
+/* Hides from IE-mac */
+
+* html .clearfix  {
+    height: 1%;
+    }
+    
+.clearfix, .block {
+    display: block;
+    }
+
+/* 2. FONT STYLES */
+
+/* Non-specific styles */
+    
+#contentPane h2 {
+    font-size: 18px;
+    padding: 0px 0px 30px 0px;
+    color: #555;
+    }
+
+#contentPane span.email, #contentPane span.invoicenumber {
+    font-weight: bold;
+    }
+
+#contentPane .note {
+    font-size: 8pt;
+    }
+    
+.formerror {
+    color:Red;
+    font-size: 8pt;
+    font-weight: bold;
+    } 
+
+input[type=checkbox] {
+    margin-top:5px;
+    }
+
+input[type=checkbox] + label {
+    font-size: 11px;
+    color:black;
+    padding-left: 5px;
+    }
+
+input[type=text], input[type=password] {
+    font-family:arial;
+    padding:2px;
+    margin: 0 0 4px;
+    }
+
+input.long {
+    width:270px
+    }
+
+input.short {
+    width:130px;
+    }
+    
+input.medium {
+    width:200px;
+    }
+
+.offset { /* Cheap work-around to resolve Password title spacing*/
+    margin-bottom: -6px;
+    *margin-bottom: -2px; /* IE fix */
+    }
+
+/* Breadcrumb */
+
+span#checkout-breadcrumb {
+    font-size:12px;
+    color:#ababab;
+    }
+
+span#checkout-breadcrumb img 
+{
+    padding: 0 10px;}
+
+span#checkout-breadcrumb span{
+    color:#444;
+    }
+
+span.title {
+    font-weight: normal;
+    font-size: 24px;
+    color: #444;
+    display:inline-block;
+    *display:inline;
+    *float:left;
+    line-height: 24px;
+    }
+    
+.title .name {
+    font-weight: bold;
+}
+     
+/* #checkout-breadcrumb a,  #checkout-breadcrumb a:link, #checkout-breadcrumb a:visited {
+    color: #ababab;
+    }
+     
+#checkout-breadcrumb a:hover {
+    color: #666;
+    } */
+
+/* Helpbox - Right panel */
+
+#contentPane div.helpbox h2 {
+     padding-bottom:10px;
+     }
+
+.helpbox p {
+     line-height: 20px;
+     }
+
+.helpbox ul li, .registerbenefit li {
+    margin-left:2em;
+    padding-left:0px;
+    list-style-type:disc;
+    list-style-position: outside;
+    }
+
+/* ClientDetails.aspx */
+
+#contentPane .sectiontext h3 {
+    color: #b50f07;
+    font-size: 15px;
+    font-weight:bold;
+    line-height: 18px;
+    }
+#contentPane .sectiontext h3:first-child {
+    padding-top: 0;
+}
+/* Login.aspx */
+        
+a.retrievepassword {
+    font-size:10px;
+    }
+
+/* 3. LAYOUT STYLES */
+    
+/* Basic structure */
+
+.greybg {
+     padding: 0 250px 0 20px;
+     margin: 15px auto 0px;
+/*     background: url('/ssw/Shop/Images/greybg.png') no-repeat top left #efefef; */
+     font-family: Arial, Tahoma, Sans-Serif;
+     font-size: 12px;
+     color: #666;
+     min-height: 100%;
+     position:relative;
+        }
+        
+.greybg-end {
+/*    background: url('/ssw/Shop/Images/greybg-end.png') no-repeat top left #efefef; */
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 970px;
+    height: 0; /* IE fix */
+    overflow: hidden; /* IE fix */
+    }  
+#ProductBasket {
+    position:relative;
+    }
+#contentPane {
+    padding:0px;
+    min-height: 0px;
+    }
+
+.sectiontop  {
+    background:url('/ssw/Shop/Images/sectionbg-top.png') no-repeat top left transparent;
+    width: 686px;
+    padding-top: 8px;
+    float:left;
+    margin-top: 7px;
+    }
+
+div.section  {
+    background:url('/ssw/Shop/Images/sectionbg.png') repeat-y top left #fff;
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    }
+
+.sectiontext  {
+    background:transparent url(/ssw/Shop/Images/sectiontext.png) no-repeat scroll 0px 48px;
+    padding:7px 20px 5px 20px;
+    }
+
+div.sectiontext > div {
+    background-color:Transparent;
+    } 
+
+.sectionend  {
+    background:url('/ssw/Shop/Images/sectionbg-end.png') no-repeat top left #fff;
+    width: 686px;
+    padding-top: 8px;
+    height: 0; /* IE fix */
+    overflow: hidden; /* IE fix */
+    }
+
+.helpbox {
+    float:right;
+    width: 230px;
+    }
+
+/* Breadcrumb */
+
+#title {
+    padding-top:10px;
+    padding-left:20px;
+    width:646px;
+    }
+   
+/* Congratulations.aspx */
+   
+#success {
+    background:url('/ssw/Shop/Images/checkout-tick.png') no-repeat 20px 52px transparent;
+    padding-left: 100px;
+    padding-bottom: 10px;     
+    }
+
+#success h2:first-child {
+    margin-left: -100px;
+    padding-bottom: 32px;
+    }
+   
+#success h2 {
+    padding-bottom: 0px;
+    }
+   
+   #fail {
+    background:url('/ssw/Shop/Images/checkout-cross.png') no-repeat 20px 52px transparent;
+    padding-left: 100px;
+    padding-bottom: 10px;     
+    }
+
+#fail h2:first-child {
+    margin-left: -100px;
+    padding-bottom: 32px;
+    }
+   
+#fail h2 {
+    padding-bottom: 0px;
+    }
+/* ClientDetails.aspx - Temp */
+
+#details > div {
+    width:48%;
+    vertical-align:top; 
+    padding-bottom:20px;
+    }
+
+img[src$="star_red.png"] {
+    vertical-align:text-top;
+    width:8px;
+    }
+
+/*div#details label, div#details-pr label*/
+div.section label
+ {
+    float:left;
+    min-width: 140px;
+    color: #777;
+    text-align:left;
+    }
+
+div.section label.long {
+    min-width: 100%;
+    }
+
+div.section label.clear, div.section .clear label, div#client-interests label {
+    float:none;
+    }
+
+#postaladdresshide, #clientinterestshide {
+    display:none;
+    }
+
+span.postaladdress {
+    display:block;
+    font-weight:bold;
+    padding: 10px 0;
+}
+
+/* Login.aspx */
+
+#LoggedIn.helpbox img { /* Get outta my face sophie! */
+    margin: 0 auto;
+    display:none;
+    }
+
+#GuestCheckout { 
+    background: url('/ssw/Shop/Images/login-seperator.jpg') no-repeat right 52px transparent;
+    width: 45%;
+    padding-right: 30px;
+    display:inline-block;
+    vertical-align:top;
+    *zoom:1;
+    *display:inline;
+    }
+
+#RegisteredCheckout { 
+    width: 45%;
+    padding-left: 18px;
+    display:inline-block;
+    *zoom:1;
+    *display:inline;
+    }
+
+/* 4. JAVASCRIPT AND SPECIAL STYLES */
+
+a.button {
+    margin: 10px 10px 10px 5px;
+    border: 0;
+    padding: 0 2px 0 0;
+    display:inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+    color: white;
+    font-family:Arial;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none !important;
+    background: transparent url('/ssw/shop/images/button.png') no-repeat right top;
+}
+
+a.button span {
+    background: transparent url('/ssw/shop/images/button.png') no-repeat left top;
+    height: 30px;
+    line-height: 29px;
+    margin: 0 0 0 -5px;
+    padding: 0 15px 0 16px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+a.button:active {
+    background-position: right bottom;
+    }
+
+a.button:active span {
+    background-position: left bottom;
+}
+/*
+button.long {
+    background:transparent url('/ssw/shop/images/button.png') no-repeat left top;
+    width: 186px;
+    }
+
+button.long:active {
+    background-position: left bottom;
+    }
+    */
+input.delete {
+/*  background:transparent url('/ssw/shop/images/button-delete.png') no-repeat left top;  This looked horrible
+    width: 58px;*/
+    outline:none;
+    background:transparent url('/ssw/shop/images/delete_mini.png') no-repeat left top;
+    border: 0;
+    padding: 0;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    }
+
+input.delete:hover {
+    outline:none;
+    background-position: left center;
+    }
+
+input.delete:active {
+    outline:none;
+    background-position: left bottom;
+    }
+
+/* Flexible red box buttons - removed as it was plagued with bugs and more complicated than necessary
+
+span.button, #contentPane a.button, button.button {
+    background: url('/ssw/Shop/Images/buttonend.png') transparent no-repeat bottom right;
+    border: none;
+    height: 30px;
+    float:left;
+    display:block;
+    padding-right: 14px;
+    color: white;
+    margin-top:10px;
+    text-decoration:none;
+    line-height: 30px;
+    cursor: hand;
+    }
+    
+span.button > input, #contentPane a.button > span, button.button > span {
+    background: url('/ssw/Shop/Images/button.png') transparent no-repeat bottom left;
+    border: none;
+    height: 30px;
+    padding: 5px 10px 10px 24px; 
+    color: white;
+    font-family:Arial;
+    font-weight: bold;
+    display:block;
+    }
+
+span.button:active, #contentPane a.button:active, button.button:active {
+    background-position: right top;
+    outline: none;
+    }
+
+#contentPane a.button:hover {
+    *line-height:31px;
+    }
+    
+#contentPane a.button:hover span {
+    *padding-left: 25px;
+    *padding-right: 9px; 
+    }
+
+span.button > input:active, #contentPane a.button > span:active, #contentPane span.button > input.input_active, button.button > span:active  {
+    *padding-top: 1px;
+    background: url(/ssw/Shop/Images/button.png) left top;
+    outline: none; 
+    }
+
+*span.button > input { 
+    width:auto;
+    overflow:visible;
+    }
+ 
+span.rightbutton {
+    float:right;
+    margin-right:20px;
+    *display:inline;
+    }
+
+*/
+   
+/* Rounded 'Order Now' Button */   
+     
+.ordernow {
+    background: url('/ssw/Shop/Images/ordernow.png') transparent no-repeat bottom left;
+    width: 150px;
+    height: 29px;
+    display:inline-block; 
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+    }
+
+.ordernow:active {
+    background-position:left top; 
+    }
+    
+#contentPane a.continue {
+    background: url('/ssw/Shop/Images/button.png') transparent no-repeat right top;
+    width:96px;
+    line-height: 30px;
+    display:block;
+    text-align: center;
+    color: white;
+    margin: 10px 25px 0 0;
+    text-decoration: none;
+    font-size: 13px;
+    }    
+    
+#contentPane a.continue:active {
+    background-position: right bottom;
+    }
+    
+/* Password strength */
+
+#passwordstrength {
+    height:25px;
+    background: url('/ssw/Shop/Images/passwordbg.jpg') white no-repeat bottom left;
+    display:inline-block;
+    vertical-align:text-bottom;
+    zoom:1;
+    *display:inline;
+    }
+
+span.passwordoverlay {
+    background: url('/ssw/Shop/Images/passwordoverlay.png') no-repeat bottom left transparent;
+    font-size: 8px;
+    height: 25px;
+    display: block;
+    float: left;
+    width: 70px;
+    }
+
+#passwordstrength.strength0 {
+    background-image: none;
+    }
+    
+#passwordstrength.strength1 {
+    width: 17px;
+    }
+    
+#passwordstrength.strength2 {
+    width: 34px;
+    }
+    
+#passwordstrength.strength3 {
+    width: 54px;
+    }
+    
+#passwordstrength.strength4 {
+    width: 70px;
+    }
+
+/* Watermarked input boxes */    
+.watermark {color:#999; }
+.template { display: none; }	
+.hidden{display: none;}
+ 
+/* 5. OBSOLETE STYLES - marked for deletion */
+/*    
+.basket-checkout-table {
+    width:150px;
+    }
+    
+.basket-important { 
+    color: Red;
+    padding: 10px;
+    margin: 0px auto 10px;
+    width: 480px;
+    text-align: center;
+    }
+    
+img.checkout-image {
+    float: right;
+    padding: 10px;
+    }
+        
+.basket-second-table {
+    width: 100%;
+    }
+    
+.basket-first-table {
+    clear: both;
+    }
+    
+span.basket-australia input {
+    margin-right: 3px;
+    margin-left: 15px;
+    }
+
+.basket-exchange {
+    text-align: right;
+    color: #666;
+    line-height: 12px;
+    }
+   */
+/* .basket-checkout-total {
+    font-weight: bold;
+    } */
+   /*
+.basket-checkout-number {
+    font-weight: bold;
+    }
+    
+table.clsSSWTable td {
+    padding: 4px 5px;
+    }
+    
+.basket-first-table {
+    width: 100%;
+    margin-top: 10px;
+    }
+
+.basket-second-table {
+    padding: 10px 0;
+    }
+
+table.clsSSWTable  {
+    font-size: x-small; 
+    margin:10px 0; 
+    width: 100%;
+    }
+    
+table.clsSSWTable tr:first-child td  {
+    background-color: #e5e5e5; 
+    border-bottom: solid 1px #FD1912;
+    }
+
+.basket-converter span  {
+    font-size: 10px;
+    }*/
+
+/* Errorbox - may be removed eventually */
+
+div.errorbox *  {
+    margin: 0 auto;
+    }
+    
+div.errorbox {
+    width:650px;
+    }    
+    
+/* I have no idea what the bottom two styles are for */    
+ 
+.checked {
+    border:red 5px solid;
+    }
+        
+.unchecked {
+    border:green 5px solid; 
+    }
+        
+/* 6. TABLE  - Product list in Basket.aspx*/
+
+#ProductBasket h2 {
+    }
+
+#ProductBasket .sectiontext {
+    padding-bottom: 10px; 
+    }
+
+span.product-currency {
+    float:right; 
+    text-align:right; 
+    }
+
+.checkout-modify {
+    font-size: 12px;
+    font-weight: normal;
+    }
+
+table#ProductList {
+    font-size: 11px;
+    border-collapse: collapse;
+    border-bottom: solid 1px #e9e9e9;
+    width: 100%;
+    clear: both;
+    margin-top:43px;
+    }
+
+tr.product-row td {
+    border-top: 1px solid #e9e9e9; 
+    padding: 12px 0 ;
+    }
+table#ProductList table td, table#ProductList .attendees td {
+    border-top: none;
+    padding: 0;
+}
+/* 
+Hides the border on the first row - I dislike this method but it can't be helped. 
+The border is lined on the top, rather than the bottom because of the way the 
+training-attendee list is structured. 
+*/
+
+tr.product-row:first-child td { 
+    border-top: none; 
+    }
+
+td.product-text {
+    vertical-align:top;
+    color: #888;
+    line-height: 16px;
+    }
+   
+td.product-text span{
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    }
+
+td.product-image {
+    width: 60px; 
+    }       
+
+td.product-image img {
+    width: 50px; 
+    padding: 2px;
+    }
+
+tr.product-row td.product-price {
+    width: 60px; 
+    text-align: right;
+    vertical-align:top;
+    color: #adadad; 
+    font-size: 13px;
+    padding: 27px 10px 0 20px;
+    }
+    
+tr.product-row td.product-quantity {
+    width: 70px;
+    text-align: center; 
+    vertical-align: top;
+    padding-top: 25px;
+    }
+
+td.product-quantity input {
+    width: 20px;
+    margin: 0;
+    text-align: center;
+    *margin-left: 3px; /* IE */
+    }    
+    
+td.product-quantity a {
+    width: 14px;
+    height: 14px;
+    display:inline-block;
+    *vertical-align: 25%; /* IE */ 
+    }
+    
+a.minus {
+    background: url('/ssw/shop/images/quantity.png') left top no-repeat;
+    cursor:pointer; 
+    border: none;
+    }
+
+a.plus {
+    background: url('/ssw/shop/images/quantity.png') right top no-repeat; 
+    cursor:pointer;
+    }
+        
+tr.product-row td.product-subtotal {
+    width: 60px; 
+    font-weight:bold;
+    color: #666;
+    text-align: right; 
+    font-size: 13px;
+    padding-right: 5px;
+    vertical-align: top;
+    padding-top: 27px;
+    }
+    
+span.discount { /* Not currently in use */
+    color:Red; 
+    }
+
+table.training-information {
+    width: 100%; 
+    }
+
+table.training-information td {
+    vertical-align:top;
+    }
+
+table.training-information input {
+    width: 89%; 
+    font-size: 12px;
+    padding: 4px 5px;
+    }
+
+.training-information-note {
+    padding: 0 53px 20px 30px;
+    line-height: 13px; 
+}
+
+div.basket-checkout {
+    padding-top: 12px;
+    width: 100%;
+    }
+    
+table.basket-checkout-table {
+    float: right;
+    font-size: 14px;
+    color: #666;
+    text-align:right; 
+    }
+
+.basket-exchange {
+    text-align: right;
+    color: #666;
+    line-height: 12px;
+    float:right;
+    vertical-align: text-top; 
+    }
+
+table.basket-second-table {
+    padding: 0 0 0 0; 
+    }
+    
+.creditcard {
+    padding-right: 125px;
+    line-height: 23px;
+    display:inline-block;
+    text-align: right;
+    background: url(/ssw/shop/images/creditcards.png) right center no-repeat; 
+    margin-top: 10px;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    }
+    
+.basket-checkout-table .subtotal {
+    font-weight:bold; 
+    color: #333;
+    font-size: 16px;
+    }
+    
+/* Checkout.aspx */
+    
+/* ugh yuck  - Hides bottom border on the checkout*/
+
+.checkout-payment-address
+{
+    width: 686px;
+    padding-left: 25px;
+    margin-top: 7px;
+    }
+
+.checkout-address {
+    margin-top: 20px;
+    display:block;
+    }
+    
+table#ProductList.checkout-basket { 
+    border-bottom: none; 
+    }
+    
+table#ProductList.checkout-basket td.product-image {
+    padding-left: 5px; 
+    }
+    
+table#ProductList.checkout-basket td.product-price {
+    padding-left: 20px; 
+    white-space: nowrap;
+    }
+
+td.checkout-training-email span {
+    font-weight:bold;
+    padding: 0 4px;
+    }
+    
+div.checkout-training-information {
+   color: #999;
+   position: relative;
+   top: -20px;
+   padding-left: 81px; 
+   font-size: 11px;
+   }
+ 
+#checkout-payment div h2 + *  {
+    margin-left: 18px;
+
+    }
+
+#checkout-payment > div h2 {
+    padding: 0 0 10px 0;
+    margin: 0;
+    }
+    
+#checkout-payment div p  {
+    line-height: 20px;
+    }
+    
+#checkout-payment div table  {
+    margin-top: -4px;
+    }
+#checkout-payment h2 label {
+    float: none;
+    color: inherit;
+    margin-left: 5px;
+}  
+.checkout-payment-invoice {
+    display: inline-block;
+    width: 215px;
+    float:left; 
+    }
+    
+.checkout-payment-type {
+/*    background: white url(/ssw/shop/images/checkout-creditcard-bg.png) left top no-repeat; */
+    display: inline-block;
+    width: 373px;
+    min-height: 170px;
+    float:right; 
+    padding: 0px 20px 10px 20px;
+    font-weight: bold;
+    }
+    
+#checkout-payment input.creditcard-length {
+    width: 210px;
+    }
+    
+#checkout-payment .creditcard {
+    line-height: normal;
+    height: 23px;
+    width: 125px;
+    padding-right: 0;
+    margin: 0;
+}   
+    
+.checkout-payment-type .note {
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 9px;
+}
+.comment {
+    float: left;
+    font-weight: bold;
+    padding: 10px 0 0 20px;
+}    
+.comment textarea {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #333;
+    width: 340px;
+    height: 66px;
+}
+.checkout-total {
+    float: right;
+    color: #606060;
+    padding: 12px 38px 0 0;
+    line-height: 24px;
+    width: 240px;
+}
+.checkout-total .label {
+    width: 120px;
+    float: left;
+    clear: left;
+    text-align: right;
+}    
+.checkout-total .price {
+    text-align: right;
+    width: 120px;
+    font-weight: bold;
+    float: left;
+}
+#grandtotal {
+    font-weight: bold;
+    color: #444;
+    border-top: 1px solid #d5d5d5;
+    float: left;
+    clear:left;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.checkout-total #grandtotal label {
+}
+.checkout-total #ordertotal {
+    font-size: 16px;
+}
+
+
+/* currency */    
+#currencies {
+	font-size: 11px;
+}
+#currencies .menu {
+	background: transparent url(images/sprite_cart.png) no-repeat;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	padding: 1px 0 0 0;
+	display: inline-block;
+	margin-left: 3px;
+}
+#currencies a {
+	color: #444;
+	text-decoration:none;
+	display: inline-block;
+	width: 55px;
+	height: 26px;
+	padding-bottom: 3px;
+	outline: 0;
+    border:none;
+}
+#currencies .loading a { /* reduce opacity when loader appears */
+	opacity: 0.4;
+	filter: alpha(opacity = 50);
+}
+#currencies .active {
+	background-position: -181px 0;
+	padding-bottom: 3px;
+}
+#currencies .loader {
+	position: absolute;
+	display: none;
+	top: 4px;
+	right: 40px;
+}
+#currencies .loading .loader {
+	display: block;
+}
+#currencies .panel {
+	position:absolute;
+	right: 0;
+	top: 24px;
+	display: block;
+	background: transparent url(images/sprite_cart.png) no-repeat -150px bottom;
+	width: 122px;
+	padding-bottom:10px;
+}
+#currencies .active .panel {
+	display: block;
+}
+#currencies .panelwrap {
+	padding: 5px 2px 0 2px;
+	background:transparent url(images/sprite_cart.png) no-repeat -150px -23px;
+}
+#currencies label {
+	color: #777;
+	display: block;
+	width: auto;
+    min-width: 0;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 24px;
+	padding: 0 5px;
+    float: none;
+}
+#currencies label:hover {
+	cursor: pointer;
+	background-color: #ddd;
+}
+#currencies label.current {
+	display: none;
+}
+#currencies input {
+	display: none;
+}
+#currencies label strong {
+	color: #444;
+	font-size: 14px;
+}
+#currencies .flag {
+	background-repeat: no-repeat;
+	background-position: 8px 0;
+	padding-left: 36px;
+}
+#currencies .AUD {
+	background-image: url(images/flag_au.png);
+}
+#currencies .USD {
+	background-image: url(images/flag_us.png);
+}
+#currencies .EUR {
+	background-image: url(images/flag_eu.png);
+}
+#currencies .CAD {
+	background-image: url(images/flag_ca.png);
+}
+#currencies .GBP {
+	background-image: url(images/flag_uk.png);
+}
+
+div.continue 
+{
+    padding: 0 15px 0 0;
+    clear:both;
+    float:right;
+}
+.checkout-total .continue { /*no padding required for grand total */
+    padding-right: 0;
+}
+.checkout-total .continue .button {
+    margin: 5px 0 0 0;
+}
+#contentPane .checkout-total + p {
+    clear: right;
+    color: #999;
+    font-size: 9.5px;
+    line-height: 11px;
+    text-align: right;
+    padding: 5px 40px 0 0;
+}
+
+.registerbenefit {
+    float: left;
+    padding: 5px 20px 5px 0;
+    margin-right: 20px;
+    border-right: 1px solid #eee;
+    width: 280px;
+    min-height: 150px;
+}

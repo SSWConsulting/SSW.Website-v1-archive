@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 14.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:AUS Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010401T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16011007T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20121109T003258Z
+DESCRIPTION:Mastering Scrum: The common pitfalls and how to overcome them\n
+	Scrum is easy to learn but hard to master. The Scrum Guide teaches you the
+	 rules of engagement to start using Scrum\, but doesn’t give you the str
+	ategy to overcome the challenges that may arise.\n\nIn this webinar Gerard
+	 and Marlon will visit some common pitfalls and look at practical solution
+	s to overcome each.\n\nSSW has been using and training other development t
+	eams in agile processes for over 10 years. \n\nIn this webinar they will  
+	discuss :\n\n*	The Daily scrum\n*	Sprint Planning\n*	The Sprint Retrospect
+	ive\n*	The Sprint Review\n*	Product owners\, scrum masters and development
+	 teams\n\nThere will be lots of time for Q&A.\n\n\n
+DTEND;TZID="AUS Eastern Standard Time":20121129T120000
+DTSTAMP:20121109T003258Z
+DTSTART;TZID="AUS Eastern Standard Time":20121129T110000
+LAST-MODIFIED:20121109T003258Z
+LOCATION:Online
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-au:SSW Webinar - Mastering Scrum: The common pitfalls a
+	nd how to overcome them
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000B064BFFEC7BDCD01000000000000000
+	010000000685650786E17BA409BB44E512B508907
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 14.02.5004.000">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted f
+	rom text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG
+	="en-au"><FONT COLOR="#000000" SIZE=4>Mastering Scrum: The common pitfalls
+	 and how to overcome them</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-a
+	u"></SPAN><SPAN LANG="en-au"><FONT FACE="Calibri">Scrum is easy to learn b
+	ut hard to master. The Scrum Guide teaches you the rules of engagement to 
+	start using Scrum\, but doesn’t give you the strategy to overcome the ch
+	allenges that may arise.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au
+	"><FONT FACE="Calibri">In this webinar Gerard and Marlon will visit some c
+	ommon pitfalls and look at practical solutions to overcome each.</FONT></S
+	PAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><FONT FACE="Calibri">SSW has bee
+	n using and training other development teams in agile processes for over 1
+	0 years. </FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><FONT FACE="C
+	alibri">In this webinar they will  discuss :</FONT></SPAN></P>\n\n<P DIR=
+	LTR><SPAN LANG="en-au"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New"
+	>&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG
+	="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN 
+	LANG="en-au"> <FONT FACE="Calibri">The Daily scrum</FONT></SPAN></P>\n\n<P
+	 DIR=LTR><SPAN LANG="en-au"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier
+	 New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN
+	 LANG="en-au"> <FONT FACE="Calibri">Sprint Planning</FONT></SPAN></P>\n\n<
+	P DIR=LTR><SPAN LANG="en-au"><FONT FACE="Symbol">&#183\;<FONT FACE="Courie
+	r New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPA
+	N LANG="en-au"> <FONT FACE="Calibri">The Sprint Retrospective</FONT></SPAN
+	></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><FONT FACE="Symbol">&#183\;<FONT FA
+	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
+	/SPAN><SPAN LANG="en-au"> <FONT FACE="Calibri">The Sprint Review</FONT></S
+	PAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><FONT FACE="Symbol">&#183\;<FONT
+	 FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FON
+	T></SPAN><SPAN LANG="en-au"> <FONT FACE="Calibri">Product owners\, scrum m
+	asters and development teams</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="e
+	n-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-a
+	u"><FONT FACE="Calibri">There will be lots of time for Q&amp\;A.</FONT></S
+	PAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN
+	></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

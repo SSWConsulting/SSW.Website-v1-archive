@@ -1,0 +1,33 @@
+<%@ Master Language="C#" AutoEventWireup="false" 
+    Codebehind="Diagnostics.master.cs"
+    Inherits="WebUI.Admin.Diagnostics" 
+    MasterPageFile="~/Masters/RavenSubpage.master" %>
+  
+  
+   
+  
+    
+<asp:Content ContentPlaceHolderID="mainContent" runat="server">
+    <p>
+        <asp:SiteMapPath ID="breadcrumbs" runat="server" SiteMapProvider="SSWDiagnosticsSiteMapProvider"></asp:SiteMapPath>
+        <asp:Label ID="Message" runat="server" ForeColor="red" Visible="true"></asp:Label>
+    </p>
+    <table>
+        <tr>
+            <td valign="top" runat="server" id="tdMenu">
+                <asp:Menu runat="server" ID="links"  CssClass=" DataSourceID="dsSiteMap" StaticDisplayLevels="1" StaticMenuItemStyle-Font-Underline="true" DynamicMenuItemStyle-Font-Underline="true"></asp:Menu>
+                <asp:SiteMapDataSource runat="server" ID="dsSiteMap" ShowStartingNode="false" SiteMapProvider="SSWDiagnosticsSiteMapProvider" />
+                <br /><br />
+                <a href="VersionsXML/XMLGeneration.aspx">Generate XML</a>
+                <br /><br />
+                <%--<a href="VersionsXML/zsValidate.aspx">zsValidation</a>--%>
+            </td>
+            <td valign="top">
+                
+                <asp:ContentPlaceHolder ID="pagePlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    <p>&nbsp;</p>
+</asp:Content>

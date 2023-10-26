@@ -1,0 +1,178 @@
+<?xml version='1.0' standalone='yes'?>
+<?xml-stylesheet type='text/xsl' href='Xsl\Report_ByFile.xsl'?>
+<NewDataSet>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\CS_001_ButtonWithoutMnemonic.cs</FileName>
+    <LineNumber>4</LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>C# 001 - Buttons need mnemonic</RuleName>
+    <SearchString>System.Windows.Forms.Button\s(\S+);.*(\1).Text = "[^&amp;"]*";</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\Rule09_PageWithoutOptionExplicit.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\Rule09_PageWithoutOptionExplicit.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 002 - Option Strict [.NET]</RuleName>
+    <SearchString>option[ \t]+strict(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_001_PageWithOptionExplicitOff.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_001_PageWithOutOptionExplicit.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_002_PageWithOptionStrictOff.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 002 - Option Strict [.NET]</RuleName>
+    <SearchString>option[ \t]+strict(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_002_PageWithOutOptionStrict.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 002 - Option Strict [.NET]</RuleName>
+    <SearchString>option[ \t]+strict(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_003_PageWithoutStringPrefix.vb</FileName>
+    <LineNumber>5</LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 003 - String Variable Prefix [SSW Standard]</RuleName>
+    <SearchString>(dim|private|public)\s+\b(?!str)\w+\b\s+as\s+string</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_004_ButtonWithMnemonic.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_004_ButtonWithMnemonic.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 002 - Option Strict [.NET]</RuleName>
+    <SearchString>option[ \t]+strict(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_004_ButtonWithoutMnemonic.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_004_ButtonWithoutMnemonic.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 002 - Option Strict [.NET]</RuleName>
+    <SearchString>option[ \t]+strict(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBNET_004_ButtonWithoutMnemonic.vb</FileName>
+    <LineNumber>2</LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 004 - Buttons need mnemonic</RuleName>
+    <SearchString>(\S+)\s+as\s+System.Windows.Forms.Button.*(\1).Text = "[^&amp;"]*"</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBS_001_PageWithOptionExplicitOff.vbs</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\VBS_001_PageWithOutOptionExplicit.vbs</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\WinForm_001_OKButton.cs</FileName>
+    <LineNumber>14</LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>C# 001 - Buttons need mnemonic</RuleName>
+    <SearchString>System.Windows.Forms.Button\s(\S+);.*(\1).Text = "[^&amp;"]*";</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\WinForm_001_OKButton.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 001 - Option Explicit</RuleName>
+    <SearchString>option[ \t]+explicit(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\WinForm_001_OKButton.vb</FileName>
+    <LineNumber> </LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 002 - Option Strict [.NET]</RuleName>
+    <SearchString>option[ \t]+strict(?![ \t]+off)</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Report>
+    <FileName>F:\SSW Development\Code Auditor\SSWCodeAuditorLib\Samples\WinForm_001_OKButton.vb</FileName>
+    <LineNumber>32</LineNumber>
+    <ReplacedLines> </ReplacedLines>
+    <Notes> </Notes>
+    <RuleName>VB 004 - Buttons need mnemonic</RuleName>
+    <SearchString>(\S+)\s+as\s+System.Windows.Forms.Button.*(\1).Text = "[^&amp;"]*"</SearchString>
+    <CheckWhat>0</CheckWhat>
+  </Report>
+  <Job>
+    <JobName>Microsoft VS.NET WinForm</JobName>
+  </Job>
+</NewDataSet>

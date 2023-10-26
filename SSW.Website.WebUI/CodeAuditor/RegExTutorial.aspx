@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://codeauditor.com/howitworks") %>

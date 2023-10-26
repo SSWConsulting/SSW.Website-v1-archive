@@ -1,0 +1,101 @@
+<%@ Master Language="C#" Inherits="SSW.Website.WebUI.Masters.DefaultMaster" CodeBehind="Default.master.cs" %>
+<%@ Register Namespace="SSW.TFSSmashingBarrier.UserControls" Assembly="SSW.TFSSmashingBarrier.UserControls.TFSQuery" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/Header.ascx" TagName="Header" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/Footer.ascx" TagName="Footer" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/GoogleTrackingCode.ascx" TagName="GoogleTrackingCode"
+    TagPrefix="ssw" %>
+<%@ Register Src="~/Components/TFSSB/TfsQuery.ascx" TagName="TfsQueryTask" TagPrefix="ssw" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>SSW - Sydney's Leading Custom Software Consultants - .NET, SQL Server, Web, Windows
+        and SharePoint and Database Development</title>
+    <meta http-equiv="Content-Language" content="en-au" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta id="keywords" name="keywords" content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" />
+    <meta name="description" content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." />
+    <meta name="author" content="SSW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link runat="server" href="/ssw/Include/Content.css" rel="stylesheet" type="text/css" media="screen" id="Link1" />
+    <link rel="stylesheet" runat="server" href="~/include/Adapters/CSS/Import.css" type="text/css" id="AdaptersInvariantImportCSS" />
+    <link runat="server" href="/ssw/Include/Screen.css" rel="stylesheet" type="text/css" media="screen" id="screenCSS" />
+    <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <script src="/ssw/include/decodeMail.js" type="text/javascript"></script>
+    <script src="/ssw/include/jquery-1.2.6.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ssw/include/jQueryLatest.js"></script>
+    <script src="/ssw/include/jquery.js" type="text/javascript"></script>
+    <script src="/ssw/include/raven/megamenu-redirect.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ssw/include/link.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shCore.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushCss.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushJScript.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushPlain.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushSql.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushVb.js"></script>
+    <script type="text/javascript" src="/ssw/include/googleSyntax/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="/ssw/include/googleSyntax/shCore.css" />
+    <link type="text/css" rel="stylesheet" href="/ssw/include/googleSyntax/shThemeDefault.css" />
+    <script type="text/javascript">
+        SyntaxHighlighter.config.clipboardSwf = '/ssw/include/googleSyntax/clipboard.swf';
+        SyntaxHighlighter.all();
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeaderScripts" runat="server">
+    </asp:ContentPlaceHolder>
+        <link runat="server" href="/ssw/Include/Print.css" rel="stylesheet" type="text/css"
+        media="print" id="printCSS" />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4589cd27-2d80-457c-a420-621182f9c776"> </script>
+    <!-- End of pdi-ssw Zendesk Widget script -->
+</head>
+<body id="MasterBody" runat="server">
+
+    <form id="form" runat="server">
+    <ssw:Header ID="hC" runat="server" />
+
+    <div id="mainContainer">
+
+        <div>
+            <asp:SiteMapPath ID="SiteMapPathMaster" runat="server" SiteMapProvider="SSWXmlSiteMapProvider">
+            </asp:SiteMapPath>
+            <asp:SiteMapPath ID="SiteMapPathStandards" runat="server" SiteMapProvider="SSWStandardsXmlSiteMapProvider">
+            </asp:SiteMapPath>
+            <asp:SiteMapPath ID="SiteMapPathStandardsInternal" runat="server" SiteMapProvider="SSWStandardsInternalXmlSiteMapProvider">
+            </asp:SiteMapPath>
+        </div>
+       <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+                    <div id="Newsletter">
+                <div class="rounded">
+                    <h3>
+                        Newsletter</h3>
+                </div>
+                <div class="section">
+                    Join our newsletter and receive updates, tips, and special deals on SSW events.<br />
+                    <asp:TextBox ID="newsletterEmailTextBox" runat="Server" CssClass="emailinput" value="Your Email"
+                        onblur="if (value == '') {value = 'Your Email'}" onfocus="if (value == 'Your Email') {value =''}"></asp:TextBox>
+                    <asp:Button ID="newsletterSignUpButton" runat="Server" Text="Go" CssClass="button">
+                    </asp:Button><br />
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="newsletterEmailTextBox"
+                        ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" ErrorMessage="Invalid email address"
+                        Font-Size="X-Small"></asp:RegularExpressionValidator><br />
+                    <a href="/ssw/netug/sswupdateprevious.aspx">View Newsletter Archive</a>
+                </div>
+            </div>
+
+        </asp:ContentPlaceHolder>
+        <br />
+    </div>
+      
+    <ssw:Footer ID="fC" runat="server" />
+    </form>
+   
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+   
+      
+    <ssw:GoogleTrackingCode ID="GoogleTrackingCode1" runat="server" />
+
+     <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><script>var om58059cd335566,om58059cd335566_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){om58059cd335566_poll(function(){if(window['om_loaded']){if(!om58059cd335566){om58059cd335566=new OptinMonsterApp();return om58059cd335566.init({"s":"24214.58059cd335566","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;om58059cd335566=new OptinMonsterApp();om58059cd335566.init({"s":"24214.58059cd335566","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->
+</body>
+</html>

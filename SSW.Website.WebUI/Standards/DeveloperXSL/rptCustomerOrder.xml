@@ -1,0 +1,4983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="rptCustomerOrder.xsd">
+<qryCustomerOrder>
+<CustomerID>VINET</CustomerID>
+<CompanyName>Vins et alcools Chevalier</CompanyName>
+<OrderID>10248</OrderID>
+<Subtotal>440</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TOMSP</CustomerID>
+<CompanyName>Toms Spezialitäten</CompanyName>
+<OrderID>10249</OrderID>
+<Subtotal>1863.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10250</OrderID>
+<Subtotal>1552.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10251</OrderID>
+<Subtotal>654.06</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10252</OrderID>
+<Subtotal>3597.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10253</OrderID>
+<Subtotal>1444.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>10254</OrderID>
+<Subtotal>556.62</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10255</OrderID>
+<Subtotal>2490.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10256</OrderID>
+<Subtotal>517.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10257</OrderID>
+<Subtotal>1119.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10258</OrderID>
+<Subtotal>1614.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CENTC</CustomerID>
+<CompanyName>Centro comercial Moctezuma</CompanyName>
+<OrderID>10259</OrderID>
+<Subtotal>100.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10260</OrderID>
+<Subtotal>1504.65</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10261</OrderID>
+<Subtotal>448</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10262</OrderID>
+<Subtotal>584</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10263</OrderID>
+<Subtotal>1873.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10264</OrderID>
+<Subtotal>695.62</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10265</OrderID>
+<Subtotal>1176</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10266</OrderID>
+<Subtotal>346.56</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10267</OrderID>
+<Subtotal>3536.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GROSR</CustomerID>
+<CompanyName>GROSELLA-Restaurante</CompanyName>
+<OrderID>10268</OrderID>
+<Subtotal>1101.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10269</OrderID>
+<Subtotal>642.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10270</OrderID>
+<Subtotal>1376</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10271</OrderID>
+<Subtotal>48</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10272</OrderID>
+<Subtotal>1456</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10273</OrderID>
+<Subtotal>2037.28</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VINET</CustomerID>
+<CompanyName>Vins et alcools Chevalier</CompanyName>
+<OrderID>10274</OrderID>
+<Subtotal>538.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10275</OrderID>
+<Subtotal>291.84</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10276</OrderID>
+<Subtotal>420</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MORGK</CustomerID>
+<CompanyName>Morgenstern Gesundkost</CompanyName>
+<OrderID>10277</OrderID>
+<Subtotal>1200.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10278</OrderID>
+<Subtotal>1488.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10279</OrderID>
+<Subtotal>351</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10280</OrderID>
+<Subtotal>613.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ROMEY</CustomerID>
+<CompanyName>Romero y tomillo</CompanyName>
+<OrderID>10281</OrderID>
+<Subtotal>86.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ROMEY</CustomerID>
+<CompanyName>Romero y tomillo</CompanyName>
+<OrderID>10282</OrderID>
+<Subtotal>155.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10283</OrderID>
+<Subtotal>1414.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10284</OrderID>
+<Subtotal>1170.37</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10285</OrderID>
+<Subtotal>1743.36</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10286</OrderID>
+<Subtotal>3016</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10287</OrderID>
+<Subtotal>819</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10288</OrderID>
+<Subtotal>80.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10289</OrderID>
+<Subtotal>479.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>COMMI</CustomerID>
+<CompanyName>Comércio Mineiro</CompanyName>
+<OrderID>10290</OrderID>
+<Subtotal>2169</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10291</OrderID>
+<Subtotal>497.52</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRADH</CustomerID>
+<CompanyName>Tradição Hipermercados</CompanyName>
+<OrderID>10292</OrderID>
+<Subtotal>1296</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10293</OrderID>
+<Subtotal>848.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10294</OrderID>
+<Subtotal>1887.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VINET</CustomerID>
+<CompanyName>Vins et alcools Chevalier</CompanyName>
+<OrderID>10295</OrderID>
+<Subtotal>121.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10296</OrderID>
+<Subtotal>1050.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10297</OrderID>
+<Subtotal>1420</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10298</OrderID>
+<Subtotal>2645</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10299</OrderID>
+<Subtotal>349.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10300</OrderID>
+<Subtotal>608</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10301</OrderID>
+<Subtotal>755</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10302</OrderID>
+<Subtotal>2708.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10303</OrderID>
+<Subtotal>1117.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10304</OrderID>
+<Subtotal>954.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10305</OrderID>
+<Subtotal>3741.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ROMEY</CustomerID>
+<CompanyName>Romero y tomillo</CompanyName>
+<OrderID>10306</OrderID>
+<Subtotal>498.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10307</OrderID>
+<Subtotal>424</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANATR</CustomerID>
+<CompanyName>Ana Trujillo Emparedados y helados</CompanyName>
+<OrderID>10308</OrderID>
+<Subtotal>88.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10309</OrderID>
+<Subtotal>1762</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THEBI</CustomerID>
+<CompanyName>The Big Cheese</CompanyName>
+<OrderID>10310</OrderID>
+<Subtotal>336</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DUMON</CustomerID>
+<CompanyName>Du monde entier</CompanyName>
+<OrderID>10311</OrderID>
+<Subtotal>268.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10312</OrderID>
+<Subtotal>1614.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10313</OrderID>
+<Subtotal>182.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10314</OrderID>
+<Subtotal>2094.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10315</OrderID>
+<Subtotal>516.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10316</OrderID>
+<Subtotal>2835</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10317</OrderID>
+<Subtotal>288</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10318</OrderID>
+<Subtotal>240.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10319</OrderID>
+<Subtotal>1191.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10320</OrderID>
+<Subtotal>516</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10321</OrderID>
+<Subtotal>144</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PERIC</CustomerID>
+<CompanyName>Pericles Comidas clásicas</CompanyName>
+<OrderID>10322</OrderID>
+<Subtotal>112</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10323</OrderID>
+<Subtotal>164.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10324</OrderID>
+<Subtotal>5275.71</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10325</OrderID>
+<Subtotal>1497</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOLID</CustomerID>
+<CompanyName>Bólido Comidas preparadas</CompanyName>
+<OrderID>10326</OrderID>
+<Subtotal>982</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10327</OrderID>
+<Subtotal>1810</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10328</OrderID>
+<Subtotal>1168</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10329</OrderID>
+<Subtotal>4578.43</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10330</OrderID>
+<Subtotal>1649</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10331</OrderID>
+<Subtotal>88.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10332</OrderID>
+<Subtotal>1786.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10333</OrderID>
+<Subtotal>877.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10334</OrderID>
+<Subtotal>144.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10335</OrderID>
+<Subtotal>2036.16</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PRINI</CustomerID>
+<CompanyName>Princesa Isabel Vinhos</CompanyName>
+<OrderID>10336</OrderID>
+<Subtotal>285.12</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10337</OrderID>
+<Subtotal>2467</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10338</OrderID>
+<Subtotal>934.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10339</OrderID>
+<Subtotal>3354</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10340</OrderID>
+<Subtotal>2436.18</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>10341</OrderID>
+<Subtotal>352.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10342</OrderID>
+<Subtotal>1840.64</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10343</OrderID>
+<Subtotal>1584</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10344</OrderID>
+<Subtotal>2296</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10345</OrderID>
+<Subtotal>2924.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10346</OrderID>
+<Subtotal>1618.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10347</OrderID>
+<Subtotal>814.42</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10348</OrderID>
+<Subtotal>363.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10349</OrderID>
+<Subtotal>141.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10350</OrderID>
+<Subtotal>642.06</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10351</OrderID>
+<Subtotal>5398.72</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10352</OrderID>
+<Subtotal>136.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10353</OrderID>
+<Subtotal>8593.28</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PERIC</CustomerID>
+<CompanyName>Pericles Comidas clásicas</CompanyName>
+<OrderID>10354</OrderID>
+<Subtotal>568.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10355</OrderID>
+<Subtotal>480</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10356</OrderID>
+<Subtotal>1106.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10357</OrderID>
+<Subtotal>1167.68</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10358</OrderID>
+<Subtotal>429.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10359</OrderID>
+<Subtotal>3471.68</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10360</OrderID>
+<Subtotal>7390.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10361</OrderID>
+<Subtotal>2046.24</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10362</OrderID>
+<Subtotal>1549.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DRACD</CustomerID>
+<CompanyName>Drachenblut Delikatessen</CompanyName>
+<OrderID>10363</OrderID>
+<Subtotal>447.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>10364</OrderID>
+<Subtotal>950</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10365</OrderID>
+<Subtotal>403.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GALED</CustomerID>
+<CompanyName>Galería del gastrónomo</CompanyName>
+<OrderID>10366</OrderID>
+<Subtotal>136</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10367</OrderID>
+<Subtotal>834.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10368</OrderID>
+<Subtotal>1689.78</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10369</OrderID>
+<Subtotal>2390.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>10370</OrderID>
+<Subtotal>1117.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10371</OrderID>
+<Subtotal>72.96</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10372</OrderID>
+<Subtotal>9210.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10373</OrderID>
+<Subtotal>1366.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>10374</OrderID>
+<Subtotal>459</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGC</CustomerID>
+<CompanyName>Hungry Coyote Import Store</CompanyName>
+<OrderID>10375</OrderID>
+<Subtotal>338</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10376</OrderID>
+<Subtotal>399</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10377</OrderID>
+<Subtotal>863.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10378</OrderID>
+<Subtotal>103.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10379</OrderID>
+<Subtotal>863.28</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10380</OrderID>
+<Subtotal>1313.82</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10381</OrderID>
+<Subtotal>112</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10382</OrderID>
+<Subtotal>2900</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10383</OrderID>
+<Subtotal>899</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10384</OrderID>
+<Subtotal>2222.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10385</OrderID>
+<Subtotal>691.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10386</OrderID>
+<Subtotal>166</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SANTG</CustomerID>
+<CompanyName>Santé Gourmet</CompanyName>
+<OrderID>10387</OrderID>
+<Subtotal>1058.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10388</OrderID>
+<Subtotal>1228.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10389</OrderID>
+<Subtotal>1832.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10390</OrderID>
+<Subtotal>2090.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DRACD</CustomerID>
+<CompanyName>Drachenblut Delikatessen</CompanyName>
+<OrderID>10391</OrderID>
+<Subtotal>86.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10392</OrderID>
+<Subtotal>1440</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10393</OrderID>
+<Subtotal>2556.95</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGC</CustomerID>
+<CompanyName>Hungry Coyote Import Store</CompanyName>
+<OrderID>10394</OrderID>
+<Subtotal>442</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10395</OrderID>
+<Subtotal>2122.92</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10396</OrderID>
+<Subtotal>1903.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PRINI</CustomerID>
+<CompanyName>Princesa Isabel Vinhos</CompanyName>
+<OrderID>10397</OrderID>
+<Subtotal>716.72</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10398</OrderID>
+<Subtotal>2505.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10399</OrderID>
+<Subtotal>1765.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>10400</OrderID>
+<Subtotal>3063</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10401</OrderID>
+<Subtotal>3868.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10402</OrderID>
+<Subtotal>2713.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10403</OrderID>
+<Subtotal>855.01</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10404</OrderID>
+<Subtotal>1591.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10405</OrderID>
+<Subtotal>400</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10406</OrderID>
+<Subtotal>1830.78</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10407</OrderID>
+<Subtotal>1194</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLIG</CustomerID>
+<CompanyName>Folies gourmandes</CompanyName>
+<OrderID>10408</OrderID>
+<Subtotal>1622.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OCEAN</CustomerID>
+<CompanyName>Océano Atlántico Ltda.</CompanyName>
+<OrderID>10409</OrderID>
+<Subtotal>319.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10410</OrderID>
+<Subtotal>802</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10411</OrderID>
+<Subtotal>966.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10412</OrderID>
+<Subtotal>334.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10413</OrderID>
+<Subtotal>2123.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10414</OrderID>
+<Subtotal>224.83</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGC</CustomerID>
+<CompanyName>Hungry Coyote Import Store</CompanyName>
+<OrderID>10415</OrderID>
+<Subtotal>102.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10416</OrderID>
+<Subtotal>720</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>10417</OrderID>
+<Subtotal>11188.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10418</OrderID>
+<Subtotal>1814.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10419</OrderID>
+<Subtotal>2097.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10420</OrderID>
+<Subtotal>1707.84</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10421</OrderID>
+<Subtotal>1194.27</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANS</CustomerID>
+<CompanyName>Franchi S.p.A.</CompanyName>
+<OrderID>10422</OrderID>
+<Subtotal>49.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10423</OrderID>
+<Subtotal>1020</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10424</OrderID>
+<Subtotal>9194.56</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10425</OrderID>
+<Subtotal>360</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GALED</CustomerID>
+<CompanyName>Galería del gastrónomo</CompanyName>
+<OrderID>10426</OrderID>
+<Subtotal>338.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10427</OrderID>
+<Subtotal>651</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10428</OrderID>
+<Subtotal>192</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10429</OrderID>
+<Subtotal>1441.37</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10430</OrderID>
+<Subtotal>4899.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10431</OrderID>
+<Subtotal>1892.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10432</OrderID>
+<Subtotal>485</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PRINI</CustomerID>
+<CompanyName>Princesa Isabel Vinhos</CompanyName>
+<OrderID>10433</OrderID>
+<Subtotal>851.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10434</OrderID>
+<Subtotal>321.12</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CONSH</CustomerID>
+<CompanyName>Consolidated Holdings</CompanyName>
+<OrderID>10435</OrderID>
+<Subtotal>631.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10436</OrderID>
+<Subtotal>1994.52</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10437</OrderID>
+<Subtotal>393</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TOMSP</CustomerID>
+<CompanyName>Toms Spezialitäten</CompanyName>
+<OrderID>10438</OrderID>
+<Subtotal>454</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10439</OrderID>
+<Subtotal>1078</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10440</OrderID>
+<Subtotal>4924.13</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10441</OrderID>
+<Subtotal>1755</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10442</OrderID>
+<Subtotal>1792</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10443</OrderID>
+<Subtotal>517.44</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10444</OrderID>
+<Subtotal>1031.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10445</OrderID>
+<Subtotal>174.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TOMSP</CustomerID>
+<CompanyName>Toms Spezialitäten</CompanyName>
+<OrderID>10446</OrderID>
+<Subtotal>246.24</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10447</OrderID>
+<Subtotal>914.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RANCH</CustomerID>
+<CompanyName>Rancho grande</CompanyName>
+<OrderID>10448</OrderID>
+<Subtotal>443.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10449</OrderID>
+<Subtotal>1838.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10450</OrderID>
+<Subtotal>425.12</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10451</OrderID>
+<Subtotal>3849.66</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10452</OrderID>
+<Subtotal>2018.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10453</OrderID>
+<Subtotal>407.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10454</OrderID>
+<Subtotal>331.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10455</OrderID>
+<Subtotal>2684</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10456</OrderID>
+<Subtotal>557.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10457</OrderID>
+<Subtotal>1584</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10458</OrderID>
+<Subtotal>3891</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10459</OrderID>
+<Subtotal>1659.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10460</OrderID>
+<Subtotal>176.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10461</OrderID>
+<Subtotal>1538.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CONSH</CustomerID>
+<CompanyName>Consolidated Holdings</CompanyName>
+<OrderID>10462</OrderID>
+<Subtotal>156</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10463</OrderID>
+<Subtotal>713.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10464</OrderID>
+<Subtotal>1609.28</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10465</OrderID>
+<Subtotal>2518</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>COMMI</CustomerID>
+<CompanyName>Comércio Mineiro</CompanyName>
+<OrderID>10466</OrderID>
+<Subtotal>216</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10467</OrderID>
+<Subtotal>235.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10468</OrderID>
+<Subtotal>717.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10469</OrderID>
+<Subtotal>956.67</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10470</OrderID>
+<Subtotal>1820.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10471</OrderID>
+<Subtotal>1328</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10472</OrderID>
+<Subtotal>1036.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10473</OrderID>
+<Subtotal>230.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PERIC</CustomerID>
+<CompanyName>Pericles Comidas clásicas</CompanyName>
+<OrderID>10474</OrderID>
+<Subtotal>1249.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10475</OrderID>
+<Subtotal>1505.18</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10476</OrderID>
+<Subtotal>180.48</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PRINI</CustomerID>
+<CompanyName>Princesa Isabel Vinhos</CompanyName>
+<OrderID>10477</OrderID>
+<Subtotal>558</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10478</OrderID>
+<Subtotal>471.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10479</OrderID>
+<Subtotal>10495.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLIG</CustomerID>
+<CompanyName>Folies gourmandes</CompanyName>
+<OrderID>10480</OrderID>
+<Subtotal>756</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10481</OrderID>
+<Subtotal>1472</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAZYK</CustomerID>
+<CompanyName>Lazy K Kountry Store</CompanyName>
+<OrderID>10482</OrderID>
+<Subtotal>147</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10483</OrderID>
+<Subtotal>668.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10484</OrderID>
+<Subtotal>386.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10485</OrderID>
+<Subtotal>1584</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10486</OrderID>
+<Subtotal>1272</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10487</OrderID>
+<Subtotal>889.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10488</OrderID>
+<Subtotal>1512</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10489</OrderID>
+<Subtotal>439.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10490</OrderID>
+<Subtotal>3163.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10491</OrderID>
+<Subtotal>259.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10492</OrderID>
+<Subtotal>851.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10493</OrderID>
+<Subtotal>608.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>COMMI</CustomerID>
+<CompanyName>Comércio Mineiro</CompanyName>
+<OrderID>10494</OrderID>
+<Subtotal>912</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAUGB</CustomerID>
+<CompanyName>Laughing Bacchus Wine Cellars</CompanyName>
+<OrderID>10495</OrderID>
+<Subtotal>278</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRADH</CustomerID>
+<CompanyName>Tradição Hipermercados</CompanyName>
+<OrderID>10496</OrderID>
+<Subtotal>190</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10497</OrderID>
+<Subtotal>1380.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10498</OrderID>
+<Subtotal>575</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10499</OrderID>
+<Subtotal>1412</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10500</OrderID>
+<Subtotal>523.26</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>10501</OrderID>
+<Subtotal>149</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PERIC</CustomerID>
+<CompanyName>Pericles Comidas clásicas</CompanyName>
+<OrderID>10502</OrderID>
+<Subtotal>816.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10503</OrderID>
+<Subtotal>2048.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10504</OrderID>
+<Subtotal>1388.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10505</OrderID>
+<Subtotal>147.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10506</OrderID>
+<Subtotal>415.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10507</OrderID>
+<Subtotal>749.06</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10508</OrderID>
+<Subtotal>240</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>10509</OrderID>
+<Subtotal>136.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10510</OrderID>
+<Subtotal>4707.54</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10511</OrderID>
+<Subtotal>2550</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10512</OrderID>
+<Subtotal>525.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10513</OrderID>
+<Subtotal>1942</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10514</OrderID>
+<Subtotal>8623.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10515</OrderID>
+<Subtotal>9921.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10516</OrderID>
+<Subtotal>2381.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>NORTS</CustomerID>
+<CompanyName>North/South</CompanyName>
+<OrderID>10517</OrderID>
+<Subtotal>352</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10518</OrderID>
+<Subtotal>4150.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>10519</OrderID>
+<Subtotal>2314.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SANTG</CustomerID>
+<CompanyName>Santé Gourmet</CompanyName>
+<OrderID>10520</OrderID>
+<Subtotal>200</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CACTU</CustomerID>
+<CompanyName>Cactus Comidas para llevar</CompanyName>
+<OrderID>10521</OrderID>
+<Subtotal>225.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10522</OrderID>
+<Subtotal>2318.24</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10523</OrderID>
+<Subtotal>2444.31</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10524</OrderID>
+<Subtotal>3192.65</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10525</OrderID>
+<Subtotal>818.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10526</OrderID>
+<Subtotal>1151.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10527</OrderID>
+<Subtotal>1503</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10528</OrderID>
+<Subtotal>392.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>10529</OrderID>
+<Subtotal>946</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10530</OrderID>
+<Subtotal>4180</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OCEAN</CustomerID>
+<CompanyName>Océano Atlántico Ltda.</CompanyName>
+<OrderID>10531</OrderID>
+<Subtotal>110</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>10532</OrderID>
+<Subtotal>796.35</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10533</OrderID>
+<Subtotal>2222.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10534</OrderID>
+<Subtotal>465.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10535</OrderID>
+<Subtotal>1940.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10536</OrderID>
+<Subtotal>1645</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10537</OrderID>
+<Subtotal>1823.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10538</OrderID>
+<Subtotal>139.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10539</OrderID>
+<Subtotal>355.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10540</OrderID>
+<Subtotal>10191.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10541</OrderID>
+<Subtotal>1946.52</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10542</OrderID>
+<Subtotal>469.11</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10543</OrderID>
+<Subtotal>1504.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10544</OrderID>
+<Subtotal>417.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAZYK</CustomerID>
+<CompanyName>Lazy K Kountry Store</CompanyName>
+<OrderID>10545</OrderID>
+<Subtotal>210</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10546</OrderID>
+<Subtotal>2812</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10547</OrderID>
+<Subtotal>1792.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TOMSP</CustomerID>
+<CompanyName>Toms Spezialitäten</CompanyName>
+<OrderID>10548</OrderID>
+<Subtotal>240.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10549</OrderID>
+<Subtotal>3554.27</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10550</OrderID>
+<Subtotal>683.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10551</OrderID>
+<Subtotal>1677.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10552</OrderID>
+<Subtotal>880.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10553</OrderID>
+<Subtotal>1546.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10554</OrderID>
+<Subtotal>1728.52</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10555</OrderID>
+<Subtotal>2944.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>10556</OrderID>
+<Subtotal>835.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10557</OrderID>
+<Subtotal>1152.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10558</OrderID>
+<Subtotal>2142.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10559</OrderID>
+<Subtotal>520.41</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10560</OrderID>
+<Subtotal>1072.42</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10561</OrderID>
+<Subtotal>2844.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10562</OrderID>
+<Subtotal>488.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10563</OrderID>
+<Subtotal>965</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10564</OrderID>
+<Subtotal>1234.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10565</OrderID>
+<Subtotal>639.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10566</OrderID>
+<Subtotal>1761</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10567</OrderID>
+<Subtotal>2519</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GALED</CustomerID>
+<CompanyName>Galería del gastrónomo</CompanyName>
+<OrderID>10568</OrderID>
+<Subtotal>155</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10569</OrderID>
+<Subtotal>890</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10570</OrderID>
+<Subtotal>2465.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10571</OrderID>
+<Subtotal>550.59</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10572</OrderID>
+<Subtotal>1501.08</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10573</OrderID>
+<Subtotal>2082</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRAIH</CustomerID>
+<CompanyName><![CDATA[Trail's Head Gourmet Provisioners]]></CompanyName>
+<OrderID>10574</OrderID>
+<Subtotal>764.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MORGK</CustomerID>
+<CompanyName>Morgenstern Gesundkost</CompanyName>
+<OrderID>10575</OrderID>
+<Subtotal>2147.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10576</OrderID>
+<Subtotal>838.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRAIH</CustomerID>
+<CompanyName><![CDATA[Trail's Head Gourmet Provisioners]]></CompanyName>
+<OrderID>10577</OrderID>
+<Subtotal>569</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10578</OrderID>
+<Subtotal>477</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LETSS</CustomerID>
+<CompanyName><![CDATA[Let's Stop N Shop]]></CompanyName>
+<OrderID>10579</OrderID>
+<Subtotal>317.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10580</OrderID>
+<Subtotal>1013.74</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10581</OrderID>
+<Subtotal>310</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>10582</OrderID>
+<Subtotal>330</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10583</OrderID>
+<Subtotal>2237.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10584</OrderID>
+<Subtotal>593.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10585</OrderID>
+<Subtotal>142.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10586</OrderID>
+<Subtotal>23.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10587</OrderID>
+<Subtotal>807.38</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10588</OrderID>
+<Subtotal>3120</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10589</OrderID>
+<Subtotal>72</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10590</OrderID>
+<Subtotal>1101</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10591</OrderID>
+<Subtotal>812.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10592</OrderID>
+<Subtotal>516.46</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10593</OrderID>
+<Subtotal>1994.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10594</OrderID>
+<Subtotal>565.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10595</OrderID>
+<Subtotal>4725</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10596</OrderID>
+<Subtotal>1180.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10597</OrderID>
+<Subtotal>718.08</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10598</OrderID>
+<Subtotal>2388.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10599</OrderID>
+<Subtotal>493</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGC</CustomerID>
+<CompanyName>Hungry Coyote Import Store</CompanyName>
+<OrderID>10600</OrderID>
+<Subtotal>479.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10601</OrderID>
+<Subtotal>2285</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10602</OrderID>
+<Subtotal>48.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10603</OrderID>
+<Subtotal>1483</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10604</OrderID>
+<Subtotal>230.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10605</OrderID>
+<Subtotal>4109.69</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRADH</CustomerID>
+<CompanyName>Tradição Hipermercados</CompanyName>
+<OrderID>10606</OrderID>
+<Subtotal>1130.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10607</OrderID>
+<Subtotal>6475.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TOMSP</CustomerID>
+<CompanyName>Toms Spezialitäten</CompanyName>
+<OrderID>10608</OrderID>
+<Subtotal>1064</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DUMON</CustomerID>
+<CompanyName>Du monde entier</CompanyName>
+<OrderID>10609</OrderID>
+<Subtotal>424</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10610</OrderID>
+<Subtotal>299.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>10611</OrderID>
+<Subtotal>808</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10612</OrderID>
+<Subtotal>6375</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10613</OrderID>
+<Subtotal>353.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>10614</OrderID>
+<Subtotal>464</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>10615</OrderID>
+<Subtotal>120</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10616</OrderID>
+<Subtotal>4806.99</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10617</OrderID>
+<Subtotal>1402.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10618</OrderID>
+<Subtotal>2697.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10619</OrderID>
+<Subtotal>1260</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAUGB</CustomerID>
+<CompanyName>Laughing Bacchus Wine Cellars</CompanyName>
+<OrderID>10620</OrderID>
+<Subtotal>57.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10621</OrderID>
+<Subtotal>758.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10622</OrderID>
+<Subtotal>560</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10623</OrderID>
+<Subtotal>1336.95</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THECR</CustomerID>
+<CompanyName>The Cracker Box</CompanyName>
+<OrderID>10624</OrderID>
+<Subtotal>1393.24</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANATR</CustomerID>
+<CompanyName>Ana Trujillo Emparedados y helados</CompanyName>
+<OrderID>10625</OrderID>
+<Subtotal>479.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10626</OrderID>
+<Subtotal>1503.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10627</OrderID>
+<Subtotal>1185.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10628</OrderID>
+<Subtotal>450</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10629</OrderID>
+<Subtotal>2775.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10630</OrderID>
+<Subtotal>903.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10631</OrderID>
+<Subtotal>55.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10632</OrderID>
+<Subtotal>589</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10633</OrderID>
+<Subtotal>5510.59</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLIG</CustomerID>
+<CompanyName>Folies gourmandes</CompanyName>
+<OrderID>10634</OrderID>
+<Subtotal>4985.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10635</OrderID>
+<Subtotal>1326.22</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10636</OrderID>
+<Subtotal>629.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10637</OrderID>
+<Subtotal>2761.94</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10638</OrderID>
+<Subtotal>2720.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SANTG</CustomerID>
+<CompanyName>Santé Gourmet</CompanyName>
+<OrderID>10639</OrderID>
+<Subtotal>500</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10640</OrderID>
+<Subtotal>708.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10641</OrderID>
+<Subtotal>2054</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>10642</OrderID>
+<Subtotal>696</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ALFKI</CustomerID>
+<CompanyName>Alfreds Futterkiste</CompanyName>
+<OrderID>10643</OrderID>
+<Subtotal>814.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10644</OrderID>
+<Subtotal>1371.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10645</OrderID>
+<Subtotal>1535</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10646</OrderID>
+<Subtotal>1446</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10647</OrderID>
+<Subtotal>636</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10648</OrderID>
+<Subtotal>372.37</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>10649</OrderID>
+<Subtotal>1434</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10650</OrderID>
+<Subtotal>1779.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10651</OrderID>
+<Subtotal>397.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10652</OrderID>
+<Subtotal>318.84</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10653</OrderID>
+<Subtotal>1083.15</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10654</OrderID>
+<Subtotal>601.83</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10655</OrderID>
+<Subtotal>154.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10656</OrderID>
+<Subtotal>604.21</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10657</OrderID>
+<Subtotal>4371.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10658</OrderID>
+<Subtotal>4464.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10659</OrderID>
+<Subtotal>1227.02</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGC</CustomerID>
+<CompanyName>Hungry Coyote Import Store</CompanyName>
+<OrderID>10660</OrderID>
+<Subtotal>1701</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10661</OrderID>
+<Subtotal>562.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10662</OrderID>
+<Subtotal>125</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10663</OrderID>
+<Subtotal>1930.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10664</OrderID>
+<Subtotal>1288.39</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10665</OrderID>
+<Subtotal>1295</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10666</OrderID>
+<Subtotal>4666.94</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10667</OrderID>
+<Subtotal>1536.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>10668</OrderID>
+<Subtotal>625.27</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>10669</OrderID>
+<Subtotal>570</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10670</OrderID>
+<Subtotal>2301.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANR</CustomerID>
+<CompanyName>France restauration</CompanyName>
+<OrderID>10671</OrderID>
+<Subtotal>920.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10672</OrderID>
+<Subtotal>3815.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>10673</OrderID>
+<Subtotal>412.35</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10674</OrderID>
+<Subtotal>45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10675</OrderID>
+<Subtotal>1423</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10676</OrderID>
+<Subtotal>534.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10677</OrderID>
+<Subtotal>813.36</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10678</OrderID>
+<Subtotal>5256.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10679</OrderID>
+<Subtotal>660</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10680</OrderID>
+<Subtotal>1261.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10681</OrderID>
+<Subtotal>1287.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10682</OrderID>
+<Subtotal>375.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DUMON</CustomerID>
+<CompanyName>Du monde entier</CompanyName>
+<OrderID>10683</OrderID>
+<Subtotal>63</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10684</OrderID>
+<Subtotal>1768</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10685</OrderID>
+<Subtotal>801.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10686</OrderID>
+<Subtotal>1404.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10687</OrderID>
+<Subtotal>4960.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10688</OrderID>
+<Subtotal>3160.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10689</OrderID>
+<Subtotal>472.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10690</OrderID>
+<Subtotal>862.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10691</OrderID>
+<Subtotal>10164.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ALFKI</CustomerID>
+<CompanyName>Alfreds Futterkiste</CompanyName>
+<OrderID>10692</OrderID>
+<Subtotal>878</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10693</OrderID>
+<Subtotal>2071.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10694</OrderID>
+<Subtotal>4825</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>10695</OrderID>
+<Subtotal>642</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10696</OrderID>
+<Subtotal>996</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10697</OrderID>
+<Subtotal>805.43</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10698</OrderID>
+<Subtotal>3436.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MORGK</CustomerID>
+<CompanyName>Morgenstern Gesundkost</CompanyName>
+<OrderID>10699</OrderID>
+<Subtotal>114</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10700</OrderID>
+<Subtotal>1638.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10701</OrderID>
+<Subtotal>2864.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ALFKI</CustomerID>
+<CompanyName>Alfreds Futterkiste</CompanyName>
+<OrderID>10702</OrderID>
+<Subtotal>330</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10703</OrderID>
+<Subtotal>2545</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10704</OrderID>
+<Subtotal>595.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10705</OrderID>
+<Subtotal>378</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10706</OrderID>
+<Subtotal>1893</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10707</OrderID>
+<Subtotal>1641</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THEBI</CustomerID>
+<CompanyName>The Big Cheese</CompanyName>
+<OrderID>10708</OrderID>
+<Subtotal>180.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10709</OrderID>
+<Subtotal>3424</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANS</CustomerID>
+<CompanyName>Franchi S.p.A.</CompanyName>
+<OrderID>10710</OrderID>
+<Subtotal>93.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10711</OrderID>
+<Subtotal>4451.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10712</OrderID>
+<Subtotal>1233.48</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10713</OrderID>
+<Subtotal>2827.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10714</OrderID>
+<Subtotal>2205.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10715</OrderID>
+<Subtotal>1296</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RANCH</CustomerID>
+<CompanyName>Rancho grande</CompanyName>
+<OrderID>10716</OrderID>
+<Subtotal>706</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10717</OrderID>
+<Subtotal>1270.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10718</OrderID>
+<Subtotal>3463</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LETSS</CustomerID>
+<CompanyName><![CDATA[Let's Stop N Shop]]></CompanyName>
+<OrderID>10719</OrderID>
+<Subtotal>844.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10720</OrderID>
+<Subtotal>550</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10721</OrderID>
+<Subtotal>923.87</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10722</OrderID>
+<Subtotal>1570</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10723</OrderID>
+<Subtotal>468.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MEREP</CustomerID>
+<CompanyName>Mère Paillarde</CompanyName>
+<OrderID>10724</OrderID>
+<Subtotal>638.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FAMIA</CustomerID>
+<CompanyName>Familia Arquibaldo</CompanyName>
+<OrderID>10725</OrderID>
+<Subtotal>287.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>10726</OrderID>
+<Subtotal>655</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10727</OrderID>
+<Subtotal>1624.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10728</OrderID>
+<Subtotal>1296.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10729</OrderID>
+<Subtotal>1850</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10730</OrderID>
+<Subtotal>484.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>10731</OrderID>
+<Subtotal>1890.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10732</OrderID>
+<Subtotal>360</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10733</OrderID>
+<Subtotal>1459</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10734</OrderID>
+<Subtotal>1498.35</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LETSS</CustomerID>
+<CompanyName><![CDATA[Let's Stop N Shop]]></CompanyName>
+<OrderID>10735</OrderID>
+<Subtotal>536.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10736</OrderID>
+<Subtotal>997</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VINET</CustomerID>
+<CompanyName>Vins et alcools Chevalier</CompanyName>
+<OrderID>10737</OrderID>
+<Subtotal>139.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPECD</CustomerID>
+<CompanyName>Spécialités du monde</CompanyName>
+<OrderID>10738</OrderID>
+<Subtotal>52.35</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VINET</CustomerID>
+<CompanyName>Vins et alcools Chevalier</CompanyName>
+<OrderID>10739</OrderID>
+<Subtotal>240</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10740</OrderID>
+<Subtotal>1416</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10741</OrderID>
+<Subtotal>228</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10742</OrderID>
+<Subtotal>3118</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10743</OrderID>
+<Subtotal>319.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10744</OrderID>
+<Subtotal>736</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10745</OrderID>
+<Subtotal>4529.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>10746</OrderID>
+<Subtotal>2311.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10747</OrderID>
+<Subtotal>1912.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10748</OrderID>
+<Subtotal>2196</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10749</OrderID>
+<Subtotal>1080</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10750</OrderID>
+<Subtotal>1590.56</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10751</OrderID>
+<Subtotal>1631.48</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>NORTS</CustomerID>
+<CompanyName>North/South</CompanyName>
+<OrderID>10752</OrderID>
+<Subtotal>252</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANS</CustomerID>
+<CompanyName>Franchi S.p.A.</CompanyName>
+<OrderID>10753</OrderID>
+<Subtotal>88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10754</OrderID>
+<Subtotal>55.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10755</OrderID>
+<Subtotal>1948.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10756</OrderID>
+<Subtotal>1990</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10757</OrderID>
+<Subtotal>3082</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10758</OrderID>
+<Subtotal>1644.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANATR</CustomerID>
+<CompanyName>Ana Trujillo Emparedados y helados</CompanyName>
+<OrderID>10759</OrderID>
+<Subtotal>320</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>10760</OrderID>
+<Subtotal>2917</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10761</OrderID>
+<Subtotal>507</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10762</OrderID>
+<Subtotal>4337</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLIG</CustomerID>
+<CompanyName>Folies gourmandes</CompanyName>
+<OrderID>10763</OrderID>
+<Subtotal>616</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10764</OrderID>
+<Subtotal>2286</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10765</OrderID>
+<Subtotal>1515.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10766</OrderID>
+<Subtotal>2310</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10767</OrderID>
+<Subtotal>28</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10768</OrderID>
+<Subtotal>1477</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10769</OrderID>
+<Subtotal>1684.27</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10770</OrderID>
+<Subtotal>236.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10771</OrderID>
+<Subtotal>344</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10772</OrderID>
+<Subtotal>3603.22</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10773</OrderID>
+<Subtotal>2030.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10774</OrderID>
+<Subtotal>868.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THECR</CustomerID>
+<CompanyName>The Cracker Box</CompanyName>
+<OrderID>10775</OrderID>
+<Subtotal>228</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10776</OrderID>
+<Subtotal>6635.27</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10777</OrderID>
+<Subtotal>224</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10778</OrderID>
+<Subtotal>96.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MORGK</CustomerID>
+<CompanyName>Morgenstern Gesundkost</CompanyName>
+<OrderID>10779</OrderID>
+<Subtotal>1335</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10780</OrderID>
+<Subtotal>720</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>10781</OrderID>
+<Subtotal>975.88</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CACTU</CustomerID>
+<CompanyName>Cactus Comidas para llevar</CompanyName>
+<OrderID>10782</OrderID>
+<Subtotal>12.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10783</OrderID>
+<Subtotal>1442.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10784</OrderID>
+<Subtotal>1488</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GROSR</CustomerID>
+<CompanyName>GROSELLA-Restaurante</CompanyName>
+<OrderID>10785</OrderID>
+<Subtotal>387.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10786</OrderID>
+<Subtotal>1531.08</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10787</OrderID>
+<Subtotal>2622.76</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10788</OrderID>
+<Subtotal>731.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLIG</CustomerID>
+<CompanyName>Folies gourmandes</CompanyName>
+<OrderID>10789</OrderID>
+<Subtotal>3687</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10790</OrderID>
+<Subtotal>722.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10791</OrderID>
+<Subtotal>1829.76</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>10792</OrderID>
+<Subtotal>399.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10793</OrderID>
+<Subtotal>191.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10794</OrderID>
+<Subtotal>314.76</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10795</OrderID>
+<Subtotal>2158</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10796</OrderID>
+<Subtotal>2341.36</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DRACD</CustomerID>
+<CompanyName>Drachenblut Delikatessen</CompanyName>
+<OrderID>10797</OrderID>
+<Subtotal>420</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10798</OrderID>
+<Subtotal>446.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10799</OrderID>
+<Subtotal>1553.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10800</OrderID>
+<Subtotal>1468.93</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOLID</CustomerID>
+<CompanyName>Bólido Comidas preparadas</CompanyName>
+<OrderID>10801</OrderID>
+<Subtotal>3026.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>10802</OrderID>
+<Subtotal>2942.81</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10803</OrderID>
+<Subtotal>1193.01</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10804</OrderID>
+<Subtotal>2278.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THEBI</CustomerID>
+<CompanyName>The Big Cheese</CompanyName>
+<OrderID>10805</OrderID>
+<Subtotal>2775</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10806</OrderID>
+<Subtotal>439.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANS</CustomerID>
+<CompanyName>Franchi S.p.A.</CompanyName>
+<OrderID>10807</OrderID>
+<Subtotal>18.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10808</OrderID>
+<Subtotal>1411</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10809</OrderID>
+<Subtotal>140</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAUGB</CustomerID>
+<CompanyName>Laughing Bacchus Wine Cellars</CompanyName>
+<OrderID>10810</OrderID>
+<Subtotal>187</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10811</OrderID>
+<Subtotal>852</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10812</OrderID>
+<Subtotal>1692.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10813</OrderID>
+<Subtotal>602.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10814</OrderID>
+<Subtotal>1788.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10815</OrderID>
+<Subtotal>40</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10816</OrderID>
+<Subtotal>8446.45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10817</OrderID>
+<Subtotal>10952.84</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10818</OrderID>
+<Subtotal>833</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CACTU</CustomerID>
+<CompanyName>Cactus Comidas para llevar</CompanyName>
+<OrderID>10819</OrderID>
+<Subtotal>477</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10820</OrderID>
+<Subtotal>1140</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10821</OrderID>
+<Subtotal>678</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRAIH</CustomerID>
+<CompanyName><![CDATA[Trail's Head Gourmet Provisioners]]></CompanyName>
+<OrderID>10822</OrderID>
+<Subtotal>237.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10823</OrderID>
+<Subtotal>2826</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10824</OrderID>
+<Subtotal>250.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DRACD</CustomerID>
+<CompanyName>Drachenblut Delikatessen</CompanyName>
+<OrderID>10825</OrderID>
+<Subtotal>1030.76</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLONP</CustomerID>
+<CompanyName>Blondel père et fils</CompanyName>
+<OrderID>10826</OrderID>
+<Subtotal>730</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10827</OrderID>
+<Subtotal>843</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RANCH</CustomerID>
+<CompanyName>Rancho grande</CompanyName>
+<OrderID>10828</OrderID>
+<Subtotal>932</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10829</OrderID>
+<Subtotal>1764</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRADH</CustomerID>
+<CompanyName>Tradição Hipermercados</CompanyName>
+<OrderID>10830</OrderID>
+<Subtotal>1974</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SANTG</CustomerID>
+<CompanyName>Santé Gourmet</CompanyName>
+<OrderID>10831</OrderID>
+<Subtotal>2684.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10832</OrderID>
+<Subtotal>475.11</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10833</OrderID>
+<Subtotal>906.93</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRADH</CustomerID>
+<CompanyName>Tradição Hipermercados</CompanyName>
+<OrderID>10834</OrderID>
+<Subtotal>1432.71</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ALFKI</CustomerID>
+<CompanyName>Alfreds Futterkiste</CompanyName>
+<OrderID>10835</OrderID>
+<Subtotal>845.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10836</OrderID>
+<Subtotal>4705.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10837</OrderID>
+<Subtotal>1064.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10838</OrderID>
+<Subtotal>1938.38</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TRADH</CustomerID>
+<CompanyName>Tradição Hipermercados</CompanyName>
+<OrderID>10839</OrderID>
+<Subtotal>827.55</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10840</OrderID>
+<Subtotal>211.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10841</OrderID>
+<Subtotal>4581</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10842</OrderID>
+<Subtotal>975</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10843</OrderID>
+<Subtotal>159</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>10844</OrderID>
+<Subtotal>735</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10845</OrderID>
+<Subtotal>3812.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10846</OrderID>
+<Subtotal>1112</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10847</OrderID>
+<Subtotal>4931.92</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CONSH</CustomerID>
+<CompanyName>Consolidated Holdings</CompanyName>
+<OrderID>10848</OrderID>
+<Subtotal>931.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10849</OrderID>
+<Subtotal>967.82</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VICTE</CustomerID>
+<CompanyName>Victuailles en stock</CompanyName>
+<OrderID>10850</OrderID>
+<Subtotal>629</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10851</OrderID>
+<Subtotal>2603</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10852</OrderID>
+<Subtotal>2984</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>10853</OrderID>
+<Subtotal>625</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10854</OrderID>
+<Subtotal>2966.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10855</OrderID>
+<Subtotal>2227.89</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANTON</CustomerID>
+<CompanyName>Antonio Moreno Taquería</CompanyName>
+<OrderID>10856</OrderID>
+<Subtotal>660</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10857</OrderID>
+<Subtotal>2048.22</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LACOR</CustomerID>
+<CompanyName><![CDATA[La corne d'abondance]]></CompanyName>
+<OrderID>10858</OrderID>
+<Subtotal>649</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10859</OrderID>
+<Subtotal>1078.69</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANR</CustomerID>
+<CompanyName>France restauration</CompanyName>
+<OrderID>10860</OrderID>
+<Subtotal>519</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10861</OrderID>
+<Subtotal>3523.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10862</OrderID>
+<Subtotal>581</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10863</OrderID>
+<Subtotal>441.15</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10864</OrderID>
+<Subtotal>282</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10865</OrderID>
+<Subtotal>16387.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10866</OrderID>
+<Subtotal>1096.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10867</OrderID>
+<Subtotal>98.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10868</OrderID>
+<Subtotal>1920.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SEVES</CustomerID>
+<CompanyName>Seven Seas Imports</CompanyName>
+<OrderID>10869</OrderID>
+<Subtotal>1630</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>10870</OrderID>
+<Subtotal>160</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10871</OrderID>
+<Subtotal>1979.23</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10872</OrderID>
+<Subtotal>2058.46</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>10873</OrderID>
+<Subtotal>336.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10874</OrderID>
+<Subtotal>310</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10875</OrderID>
+<Subtotal>709.55</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10876</OrderID>
+<Subtotal>917</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>10877</OrderID>
+<Subtotal>1955.13</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10878</OrderID>
+<Subtotal>1539</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>10879</OrderID>
+<Subtotal>611.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10880</OrderID>
+<Subtotal>1500</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CACTU</CustomerID>
+<CompanyName>Cactus Comidas para llevar</CompanyName>
+<OrderID>10881</OrderID>
+<Subtotal>150</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10882</OrderID>
+<Subtotal>892.64</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>10883</OrderID>
+<Subtotal>36</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LETSS</CustomerID>
+<CompanyName><![CDATA[Let's Stop N Shop]]></CompanyName>
+<OrderID>10884</OrderID>
+<Subtotal>1378.07</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10885</OrderID>
+<Subtotal>1209</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10886</OrderID>
+<Subtotal>3127.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GALED</CustomerID>
+<CompanyName>Galería del gastrónomo</CompanyName>
+<OrderID>10887</OrderID>
+<Subtotal>70</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10888</OrderID>
+<Subtotal>605</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10889</OrderID>
+<Subtotal>11380</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DUMON</CustomerID>
+<CompanyName>Du monde entier</CompanyName>
+<OrderID>10890</OrderID>
+<Subtotal>860.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10891</OrderID>
+<Subtotal>368.93</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>10892</OrderID>
+<Subtotal>2090</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>10893</OrderID>
+<Subtotal>5502.11</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10894</OrderID>
+<Subtotal>2753.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10895</OrderID>
+<Subtotal>6379.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>10896</OrderID>
+<Subtotal>750.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10897</OrderID>
+<Subtotal>10835.24</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OCEAN</CustomerID>
+<CompanyName>Océano Atlántico Ltda.</CompanyName>
+<OrderID>10898</OrderID>
+<Subtotal>30</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10899</OrderID>
+<Subtotal>122.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10900</OrderID>
+<Subtotal>33.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10901</OrderID>
+<Subtotal>934.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10902</OrderID>
+<Subtotal>863.43</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10903</OrderID>
+<Subtotal>932.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>10904</OrderID>
+<Subtotal>1924.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10905</OrderID>
+<Subtotal>342</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>10906</OrderID>
+<Subtotal>427.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPECD</CustomerID>
+<CompanyName>Spécialités du monde</CompanyName>
+<OrderID>10907</OrderID>
+<Subtotal>108.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10908</OrderID>
+<Subtotal>663.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SANTG</CustomerID>
+<CompanyName>Santé Gourmet</CompanyName>
+<OrderID>10909</OrderID>
+<Subtotal>670</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>10910</OrderID>
+<Subtotal>452.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10911</OrderID>
+<Subtotal>858</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10912</OrderID>
+<Subtotal>6200.55</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10913</OrderID>
+<Subtotal>768.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10914</OrderID>
+<Subtotal>537.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>10915</OrderID>
+<Subtotal>539.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RANCH</CustomerID>
+<CompanyName>Rancho grande</CompanyName>
+<OrderID>10916</OrderID>
+<Subtotal>686.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ROMEY</CustomerID>
+<CompanyName>Romero y tomillo</CompanyName>
+<OrderID>10917</OrderID>
+<Subtotal>365.89</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10918</OrderID>
+<Subtotal>1447.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10919</OrderID>
+<Subtotal>1122.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10920</OrderID>
+<Subtotal>390</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10921</OrderID>
+<Subtotal>1936</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10922</OrderID>
+<Subtotal>742.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>10923</OrderID>
+<Subtotal>748.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BERGS</CustomerID>
+<CompanyName>Berglunds snabbköp</CompanyName>
+<OrderID>10924</OrderID>
+<Subtotal>1835.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10925</OrderID>
+<Subtotal>475.15</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ANATR</CustomerID>
+<CompanyName>Ana Trujillo Emparedados y helados</CompanyName>
+<OrderID>10926</OrderID>
+<Subtotal>514.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LACOR</CustomerID>
+<CompanyName><![CDATA[La corne d'abondance]]></CompanyName>
+<OrderID>10927</OrderID>
+<Subtotal>800</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GALED</CustomerID>
+<CompanyName>Galería del gastrónomo</CompanyName>
+<OrderID>10928</OrderID>
+<Subtotal>137.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>10929</OrderID>
+<Subtotal>1174.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>10930</OrderID>
+<Subtotal>2255.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10931</OrderID>
+<Subtotal>799.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10932</OrderID>
+<Subtotal>1788.63</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ISLAT</CustomerID>
+<CompanyName>Island Trading</CompanyName>
+<OrderID>10933</OrderID>
+<Subtotal>920.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>10934</OrderID>
+<Subtotal>500</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WELLI</CustomerID>
+<CompanyName>Wellington Importadora</CompanyName>
+<OrderID>10935</OrderID>
+<Subtotal>619.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>10936</OrderID>
+<Subtotal>456</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CACTU</CustomerID>
+<CompanyName>Cactus Comidas para llevar</CompanyName>
+<OrderID>10937</OrderID>
+<Subtotal>644.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10938</OrderID>
+<Subtotal>2731.87</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10939</OrderID>
+<Subtotal>637.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>10940</OrderID>
+<Subtotal>360</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10941</OrderID>
+<Subtotal>4011.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>10942</OrderID>
+<Subtotal>560</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10943</OrderID>
+<Subtotal>711</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10944</OrderID>
+<Subtotal>1025.33</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MORGK</CustomerID>
+<CompanyName>Morgenstern Gesundkost</CompanyName>
+<OrderID>10945</OrderID>
+<Subtotal>245</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10946</OrderID>
+<Subtotal>1407.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>10947</OrderID>
+<Subtotal>220</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>10948</OrderID>
+<Subtotal>2362.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10949</OrderID>
+<Subtotal>4422</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAGAA</CustomerID>
+<CompanyName>Magazzini Alimentari Riuniti</CompanyName>
+<OrderID>10950</OrderID>
+<Subtotal>110</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>10951</OrderID>
+<Subtotal>458.74</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ALFKI</CustomerID>
+<CompanyName>Alfreds Futterkiste</CompanyName>
+<OrderID>10952</OrderID>
+<Subtotal>471.2</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>10953</OrderID>
+<Subtotal>4441.25</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>10954</OrderID>
+<Subtotal>1659.53</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10955</OrderID>
+<Subtotal>74.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>10956</OrderID>
+<Subtotal>677</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10957</OrderID>
+<Subtotal>1762.7</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OCEAN</CustomerID>
+<CompanyName>Océano Atlántico Ltda.</CompanyName>
+<OrderID>10958</OrderID>
+<Subtotal>781</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>10959</OrderID>
+<Subtotal>131.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10960</OrderID>
+<Subtotal>265.35</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>10961</OrderID>
+<Subtotal>1119.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10962</OrderID>
+<Subtotal>3584</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FURIB</CustomerID>
+<CompanyName>Furia Bacalhau e Frutos do Mar</CompanyName>
+<OrderID>10963</OrderID>
+<Subtotal>57.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPECD</CustomerID>
+<CompanyName>Spécialités du monde</CompanyName>
+<OrderID>10964</OrderID>
+<Subtotal>2052.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>10965</OrderID>
+<Subtotal>848</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>10966</OrderID>
+<Subtotal>1098.46</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TOMSP</CustomerID>
+<CompanyName>Toms Spezialitäten</CompanyName>
+<OrderID>10967</OrderID>
+<Subtotal>910.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10968</OrderID>
+<Subtotal>1408</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>COMMI</CustomerID>
+<CompanyName>Comércio Mineiro</CompanyName>
+<OrderID>10969</OrderID>
+<Subtotal>108</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOLID</CustomerID>
+<CompanyName>Bólido Comidas preparadas</CompanyName>
+<OrderID>10970</OrderID>
+<Subtotal>224</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANR</CustomerID>
+<CompanyName>France restauration</CompanyName>
+<OrderID>10971</OrderID>
+<Subtotal>1733.06</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LACOR</CustomerID>
+<CompanyName><![CDATA[La corne d'abondance]]></CompanyName>
+<OrderID>10972</OrderID>
+<Subtotal>251.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LACOR</CustomerID>
+<CompanyName><![CDATA[La corne d'abondance]]></CompanyName>
+<OrderID>10973</OrderID>
+<Subtotal>291.55</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPLIR</CustomerID>
+<CompanyName><![CDATA[Split Rail Beer & Ale]]></CompanyName>
+<OrderID>10974</OrderID>
+<Subtotal>439</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10975</OrderID>
+<Subtotal>717.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>10976</OrderID>
+<Subtotal>912</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10977</OrderID>
+<Subtotal>2233</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>10978</OrderID>
+<Subtotal>1303.19</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10979</OrderID>
+<Subtotal>4813.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10980</OrderID>
+<Subtotal>248</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>10981</OrderID>
+<Subtotal>15810</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>10982</OrderID>
+<Subtotal>1014</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10983</OrderID>
+<Subtotal>720.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>10984</OrderID>
+<Subtotal>1809.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>10985</OrderID>
+<Subtotal>2023.38</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OCEAN</CustomerID>
+<CompanyName>Océano Atlántico Ltda.</CompanyName>
+<OrderID>10986</OrderID>
+<Subtotal>2220</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>10987</OrderID>
+<Subtotal>2772</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>10988</OrderID>
+<Subtotal>3574.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEDE</CustomerID>
+<CompanyName>Que Delícia</CompanyName>
+<OrderID>10989</OrderID>
+<Subtotal>1353.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>10990</OrderID>
+<Subtotal>4288.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10991</OrderID>
+<Subtotal>2296</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THEBI</CustomerID>
+<CompanyName>The Big Cheese</CompanyName>
+<OrderID>10992</OrderID>
+<Subtotal>69.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>10993</OrderID>
+<Subtotal>4895.44</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>VAFFE</CustomerID>
+<CompanyName>Vaffeljernet</CompanyName>
+<OrderID>10994</OrderID>
+<Subtotal>940.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PERIC</CustomerID>
+<CompanyName>Pericles Comidas clásicas</CompanyName>
+<OrderID>10995</OrderID>
+<Subtotal>1196</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>10996</OrderID>
+<Subtotal>560</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>10997</OrderID>
+<Subtotal>1885</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>10998</OrderID>
+<Subtotal>686</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>10999</OrderID>
+<Subtotal>1197.95</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>11000</OrderID>
+<Subtotal>903.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>11001</OrderID>
+<Subtotal>2769</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>11002</OrderID>
+<Subtotal>1811.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>THECR</CustomerID>
+<CompanyName>The Cracker Box</CompanyName>
+<OrderID>11003</OrderID>
+<Subtotal>326</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>MAISD</CustomerID>
+<CompanyName>Maison Dewey</CompanyName>
+<OrderID>11004</OrderID>
+<Subtotal>295.38</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WILMK</CustomerID>
+<CompanyName>Wilman Kala</CompanyName>
+<OrderID>11005</OrderID>
+<Subtotal>586</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>11006</OrderID>
+<Subtotal>329.69</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PRINI</CustomerID>
+<CompanyName>Princesa Isabel Vinhos</CompanyName>
+<OrderID>11007</OrderID>
+<Subtotal>2633.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>11008</OrderID>
+<Subtotal>4680.9</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>11009</OrderID>
+<Subtotal>616.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>11010</OrderID>
+<Subtotal>645</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ALFKI</CustomerID>
+<CompanyName>Alfreds Futterkiste</CompanyName>
+<OrderID>11011</OrderID>
+<Subtotal>933.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANK</CustomerID>
+<CompanyName>Frankenversand</CompanyName>
+<OrderID>11012</OrderID>
+<Subtotal>2825.3</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ROMEY</CustomerID>
+<CompanyName>Romero y tomillo</CompanyName>
+<OrderID>11013</OrderID>
+<Subtotal>361</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>11014</OrderID>
+<Subtotal>243.18</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SANTG</CustomerID>
+<CompanyName>Santé Gourmet</CompanyName>
+<OrderID>11015</OrderID>
+<Subtotal>622.35</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>AROUT</CustomerID>
+<CompanyName>Around the Horn</CompanyName>
+<OrderID>11016</OrderID>
+<Subtotal>491.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>11017</OrderID>
+<Subtotal>6750</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LONEP</CustomerID>
+<CompanyName>Lonesome Pine Restaurant</CompanyName>
+<OrderID>11018</OrderID>
+<Subtotal>1575</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RANCH</CustomerID>
+<CompanyName>Rancho grande</CompanyName>
+<OrderID>11019</OrderID>
+<Subtotal>76</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OTTIK</CustomerID>
+<CompanyName>Ottilies Käseladen</CompanyName>
+<OrderID>11020</OrderID>
+<Subtotal>632.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUICK</CustomerID>
+<CompanyName>QUICK-Stop</CompanyName>
+<OrderID>11021</OrderID>
+<Subtotal>6306.24</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>11022</OrderID>
+<Subtotal>1402</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BSBEV</CustomerID>
+<CompanyName><![CDATA[B's Beverages]]></CompanyName>
+<OrderID>11023</OrderID>
+<Subtotal>1500</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>11024</OrderID>
+<Subtotal>1966.81</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WARTH</CustomerID>
+<CompanyName>Wartian Herkku</CompanyName>
+<OrderID>11025</OrderID>
+<Subtotal>270</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANS</CustomerID>
+<CompanyName>Franchi S.p.A.</CompanyName>
+<OrderID>11026</OrderID>
+<Subtotal>1030</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>11027</OrderID>
+<Subtotal>877.72</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>KOENE</CustomerID>
+<CompanyName>Königlich Essen</CompanyName>
+<OrderID>11028</OrderID>
+<Subtotal>2160</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>11029</OrderID>
+<Subtotal>1286.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>11030</OrderID>
+<Subtotal>12615.05</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>11031</OrderID>
+<Subtotal>2393.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>11032</OrderID>
+<Subtotal>8902.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>11033</OrderID>
+<Subtotal>3232.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>OLDWO</CustomerID>
+<CompanyName>Old World Delicatessen</CompanyName>
+<OrderID>11034</OrderID>
+<Subtotal>539.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>11035</OrderID>
+<Subtotal>1754.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DRACD</CustomerID>
+<CompanyName>Drachenblut Delikatessen</CompanyName>
+<OrderID>11036</OrderID>
+<Subtotal>1692</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GODOS</CustomerID>
+<CompanyName>Godos Cocina Típica</CompanyName>
+<OrderID>11037</OrderID>
+<Subtotal>60</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SUPRD</CustomerID>
+<CompanyName>Suprêmes délices</CompanyName>
+<OrderID>11038</OrderID>
+<Subtotal>732.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LINOD</CustomerID>
+<CompanyName>LINO-Delicateses</CompanyName>
+<OrderID>11039</OrderID>
+<Subtotal>3090</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>11040</OrderID>
+<Subtotal>200</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CHOPS</CustomerID>
+<CompanyName>Chop-suey Chinese</CompanyName>
+<OrderID>11041</OrderID>
+<Subtotal>1773</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>COMMI</CustomerID>
+<CompanyName>Comércio Mineiro</CompanyName>
+<OrderID>11042</OrderID>
+<Subtotal>405.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SPECD</CustomerID>
+<CompanyName>Spécialités du monde</CompanyName>
+<OrderID>11043</OrderID>
+<Subtotal>210</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WOLZA</CustomerID>
+<CompanyName>Wolski  Zajazd</CompanyName>
+<OrderID>11044</OrderID>
+<Subtotal>591.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>11045</OrderID>
+<Subtotal>1309.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WANDK</CustomerID>
+<CompanyName>Die Wandernde Kuh</CompanyName>
+<OrderID>11046</OrderID>
+<Subtotal>1485.8</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>11047</OrderID>
+<Subtotal>817.87</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BOTTM</CustomerID>
+<CompanyName>Bottom-Dollar Markets</CompanyName>
+<OrderID>11048</OrderID>
+<Subtotal>525</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GOURL</CustomerID>
+<CompanyName>Gourmet Lanchonetes</CompanyName>
+<OrderID>11049</OrderID>
+<Subtotal>273.6</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FOLKO</CustomerID>
+<CompanyName>Folk och fä HB</CompanyName>
+<OrderID>11050</OrderID>
+<Subtotal>810</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LAMAI</CustomerID>
+<CompanyName><![CDATA[La maison d'Asie]]></CompanyName>
+<OrderID>11051</OrderID>
+<Subtotal>36</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HANAR</CustomerID>
+<CompanyName>Hanari Carnes</CompanyName>
+<OrderID>11052</OrderID>
+<Subtotal>1332</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PICCO</CustomerID>
+<CompanyName>Piccolo und mehr</CompanyName>
+<OrderID>11053</OrderID>
+<Subtotal>3055</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>CACTU</CustomerID>
+<CompanyName>Cactus Comidas para llevar</CompanyName>
+<OrderID>11054</OrderID>
+<Subtotal>305</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HILAA</CustomerID>
+<CompanyName>HILARIÓN-Abastos</CompanyName>
+<OrderID>11055</OrderID>
+<Subtotal>1727.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>EASTC</CustomerID>
+<CompanyName>Eastern Connection</CompanyName>
+<OrderID>11056</OrderID>
+<Subtotal>3740</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>NORTS</CustomerID>
+<CompanyName>North/South</CompanyName>
+<OrderID>11057</OrderID>
+<Subtotal>45</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BLAUS</CustomerID>
+<CompanyName>Blauer See Delikatessen</CompanyName>
+<OrderID>11058</OrderID>
+<Subtotal>858</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICAR</CustomerID>
+<CompanyName>Ricardo Adocicados</CompanyName>
+<OrderID>11059</OrderID>
+<Subtotal>1838</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>FRANS</CustomerID>
+<CompanyName>Franchi S.p.A.</CompanyName>
+<OrderID>11060</OrderID>
+<Subtotal>266</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>GREAL</CustomerID>
+<CompanyName>Great Lakes Food Market</CompanyName>
+<OrderID>11061</OrderID>
+<Subtotal>510</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>REGGC</CustomerID>
+<CompanyName>Reggiani Caseifici</CompanyName>
+<OrderID>11062</OrderID>
+<Subtotal>406.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>HUNGO</CustomerID>
+<CompanyName>Hungry Owl All-Night Grocers</CompanyName>
+<OrderID>11063</OrderID>
+<Subtotal>1342.95</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SAVEA</CustomerID>
+<CompanyName>Save-a-lot Markets</CompanyName>
+<OrderID>11064</OrderID>
+<Subtotal>4330.4</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>11065</OrderID>
+<Subtotal>189.42</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>WHITC</CustomerID>
+<CompanyName>White Clover Markets</CompanyName>
+<OrderID>11066</OrderID>
+<Subtotal>928.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>DRACD</CustomerID>
+<CompanyName>Drachenblut Delikatessen</CompanyName>
+<OrderID>11067</OrderID>
+<Subtotal>86.85</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>QUEEN</CustomerID>
+<CompanyName>Queen Cozinha</CompanyName>
+<OrderID>11068</OrderID>
+<Subtotal>2027.08</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>TORTU</CustomerID>
+<CompanyName>Tortuga Restaurante</CompanyName>
+<OrderID>11069</OrderID>
+<Subtotal>360</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LEHMS</CustomerID>
+<CompanyName>Lehmanns Marktstand</CompanyName>
+<OrderID>11070</OrderID>
+<Subtotal>1629.97</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>LILAS</CustomerID>
+<CompanyName>LILA-Supermercado</CompanyName>
+<OrderID>11071</OrderID>
+<Subtotal>484.5</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>ERNSH</CustomerID>
+<CompanyName>Ernst Handel</CompanyName>
+<OrderID>11072</OrderID>
+<Subtotal>5218</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>PERIC</CustomerID>
+<CompanyName>Pericles Comidas clásicas</CompanyName>
+<OrderID>11073</OrderID>
+<Subtotal>300</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>SIMOB</CustomerID>
+<CompanyName>Simons bistro</CompanyName>
+<OrderID>11074</OrderID>
+<Subtotal>232.08</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RICSU</CustomerID>
+<CompanyName>Richter Supermarkt</CompanyName>
+<OrderID>11075</OrderID>
+<Subtotal>498.1</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>BONAP</CustomerID>
+<CompanyName><![CDATA[Bon app']]></CompanyName>
+<OrderID>11076</OrderID>
+<Subtotal>792.75</Subtotal>
+</qryCustomerOrder>
+<qryCustomerOrder>
+<CustomerID>RATTC</CustomerID>
+<CompanyName>Rattlesnake Canyon Grocery</CompanyName>
+<OrderID>11077</OrderID>
+<Subtotal>1255.72</Subtotal>
+</qryCustomerOrder>
+</dataroot>

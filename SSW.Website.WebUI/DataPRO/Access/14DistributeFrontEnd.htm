@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>SSW-Data PRO!</title>
+		<LINK href="/ssw/Include/ssw.css" type="text/css" rel="stylesheet">
+<link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon">
+
+	</head>
+	<body BACKGROUND="../Images/GreenBackground.gif" TEXT="black" LINK="#000000" VLINK="#000000" ALINK="#000000">
+		<basefont face="Arial" size="10">
+			<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+				<tr>
+					<td WIDTH="100" VALIGN="top">
+						<p align="left">
+							<b><a href="../Default.aspx">HOME PAGE</a></b>
+								<p><b><a href="01Introduction.htm">Introduction</a></b>
+									<br>
+									&nbsp;&nbsp;<a href="02HowItWorks.htm">How It Works</a>
+									<br>
+									&nbsp;&nbsp;<a href="03Assumptions.htm">Assumptions</a></p>
+								<p><b><a href="04GettingStarted.htm">Getting started</a></b></p>
+								<p><b><a href="05FirstTimeUse.htm">First Time Use</a></b>
+									<br>
+									&nbsp;&nbsp;<a href="06Setup.htm">Setup</a></p>
+								<p><b><a href="07Tutorial.htm">Tutorial</a></b></p>
+								<p><b><a href="08ChangingData.htm">Changing Data</a></b>
+									<br>
+									&nbsp;&nbsp;<a href="09DataStructure.htm">Data Structure</a>
+									<br>
+									&nbsp;&nbsp;<a href="10Data.htm">Data</a>
+									<br>
+									&nbsp;&nbsp;<a href="11Relationship.htm">Relationship</a>
+									<br>
+									&nbsp;&nbsp;<a href="12Dataindex.htm">Index</a>
+									<br>
+									&nbsp;&nbsp;<a href="13comments.htm">Comments</a></p>
+								<p><b>Distributing Your New Front End</b></p>
+								<p><strong><a href="../frmLinks.htm">Data 
+													PRO Links</a></strong>
+								</p>
+							
+					</td>
+					<td WIDTH="35"></td>
+					<td width="500" valign="top">
+						<IMG border="0" alt="SSW Data PRO!" height="92" src="../Images/banDataStart.gif" width="143"><IMG border="0" alt="SSW Data PRO!" height="92" src="../Images/BanDataPRO.gif" width="324">
+						
+						<p align="left"><b> 
+											Distributing your new Front End</b> 
+						<p>When 'SSW Data PRO!' is used to 
+								make changes in the backend database, all the changes are logged. Every time 
+								you make a structural change to the database, 'SSW Data PRO!' records this in 
+								the table 'zsDPDataChange'. Once you process the change, 'SSW Data PRO!' will 
+								then make the change to the back end. At the same time a log record is created 
+								in the backend table '_zsDataVersion' 
+						<p>When the front end is 
+								distributed, it checks whether the backend is old and needs upgrading. If old, 
+								the front end will automatically make all the necessary changes in the back 
+								end.
+						<p>Note: You do not need to install 
+								'SSW Data PRO!' on clients machine. Just include 'DataPRO97.mde' or 
+								'DataPRO2000.mde' in the same directory as the application.
+						<p>&nbsp;
+							<table width="100%" border="0">
+								<tr align="left" valign="top" bgcolor="#CCCCCC">
+									<td height="177">
+										<p align="left"><b>Upgrading 
+														the Backend</b>
+										<p align="left">To upgrade the 
+												backend please follow the following steps: 
+										<p align="left"><b>Note:</b> These 
+												steps will only apply if your 'SSW Data PRO!' version is 13.4 or greater. For 
+												'SSW Data PRO!' version less then 13.4 go to <i>'How to upgrade to 'SSW Data PRO!' 
+													version 13.4 or greater?' </i>at bottom of this page. 
+											<ol>
+												<p>
+													Run your front end application 
+														and run macro 'SSWSampleAutoExec_v1'. You will see the following screen:<br>
+														<br>
+														<img src="../Images/imgUpgrade1.gif" alt="Upgrading the Backend" width="335" height="150" border="2">
+														<br>
+														<br>
+													
+												</li>
+												<p>
+													Click 'Yes'. Then you will be 
+														prompted for the location of 'SSW Data PRO!'. You will see the following 
+														screen:<br>
+														<br>
+														<img src="../Images/imgUpgrade2.gif" alt="Upgrading the backend" width="495" height="302" border="2"><br>
+														<br>
+													
+												</li>
+												<p>
+													Select 'SSW Data PRO!' (for 
+														example 'DataPRO97.mde') file and click open. A message box will appear 
+														informing you about starting of upgrade. Once you click 'Ok' you will see the 
+														following screen.<br>
+														<br>
+														<img src="../Images/imgMain1.gif" alt="Upgrading the Backend" width="488" height="425" border="2"><br>
+														<br>
+													
+												</li>
+												<p>
+													Click 'Next&gt;' to proceed with 
+														the upgrading.</li>
+											</ol>
+										
+									</td>
+								</tr>
+							</table>
+						<p align="left"><b><br>
+									</b><b>
+										How to upgrade to 'SSW Data PRO!' version 13.4 or greater?</b>
+						<p><b>For users using 'SSW Data PRO!' 
+									reference in the front end application</b></p>
+						<ol>
+							<p>
+								Remove the 'SSW Data PRO!' 
+									reference from your from end application.</li>
+							<p>
+								Delete the function 
+									'bolSSWDataPROUpgrade()' from macro 'Autoexec'.</li>
+							<p>
+								Import the following from the 
+									'SSW Data PRO!' version 13.4 or greater installation: 
+								<ul>
+									<p>
+										Modules 
+											'basSSW1_OpenDialog_aGetFileName_v6' and 'basSSWDataPROUpgradeNoReference_v1' 
+											and macro 'SSWSampleAutoExec_v1' from file 'SSWDataPROUtilities(97/2000).mdb'<br>
+											<b>
+												<br>
+												Note: </b>For Microsoft Access 2000 choose 'SSWDataPROUtilities2000.mdb' 
+											and for Microsoft Access 97 choose 'SSWDataPROUtilities97.mdb'.</li>
+								</ul>
+							</li>
+							<p>
+								Now you can simply follow the 
+									steps described above in <i>'Upgrading the backend'</i>.<br>
+								
+							</li>
+						</ol>
+						<p><b>For users using 'SSW Data PRO!' 
+									without reference in the front end application</b></p>
+						<ol>
+							<p>
+								Delete the following form your 
+									front end application 
+							</li>
+							<ul>
+								<p>
+									basSSW1_OpenDialog_aGetFileName_v6 
+										(Module)</li>
+								<p>
+									basSSWDataPROUpgradeNoReference_v1 
+										(Module)</li>
+								<p>
+									SSWSampleAutoExec_v1 (Macro)</li>
+							</ul>
+							<p>
+								Import the following from the 
+									'SSW Data PRO!' version 13.4 or greater installation: 
+							</li>
+							<ul>
+								<p>
+									Modules 
+										'basSSW1_OpenDialog_aGetFileName_v6' and 'basSSWDataPROUpgradeNoReference_v1' 
+										and macro 'SSWSampleAutoExec_v1' from file 'SSWDataPROUtilities(97/2000).mdb'<br>
+										<b>
+											<br>
+											Note: </b>For Microsoft Access 2000 choose 'SSWDataPROUtilities2000.mdb' 
+										and for Microsoft Access 97 choose 'SSWDataPROUtilities97.mdb'.</li>
+							</ul>
+							<p>
+								Now you can simply follow the 
+									steps described above in <i>'Upgrading the backend'</i>.</li>
+						</ol>
+						<table width="100%" border="0">
+							<tr align="left" valign="top" bgcolor="#CCCCCC">
+								<td>
+									<p><b>To see it in action</b>
+										
+										<ol>
+											<p>
+												Rename your current backend to 
+													'zzNorthwindDATA.mdb' 
+											</li>
+											<p>
+												Rename the backup (you created 
+													at start of this tutorial) 'NorthwindDATABackup.mdb' to 'NorthwindDATA.mdb'. 
+											</li>
+											<p>
+												Open your front end application 
+													that will start the upgrading process. 
+											</li>
+										</ol>
+								</td>
+							</tr>
+						</table>
+						<p>Now you can issue the new front 
+								end database version that you have just completed to your clients. The above 
+								upgrading process will give you peace of mind because you know that your 
+								database will check the clients current data version (in '_zsVersion Data') and 
+								compare it with the current version required (in 'zsDPDataVersion') before 
+								performing any necessary upgrades.
+						<p> However, before distributing 
+								your database make certain it has been put through the <b><a href="05FirstTimeUse.htm">
+											First Time Use</a> </b>process<b>.</b> This is because the 
+								data.mdb you release must have the system table '_zsDataVersion' in it, as the 
+								next time you send your application (that will include 'SSW Data PRO!') it will 
+								look for this table so it can determine what version it is. 
+						<p><b>Enhancement for version less then 
+									14.9.</b>
+						<p>You have to delete the old 
+								version of basSSWDataPROUpgradeNoReference_v1 in client front end application, 
+								for example in NortwindApplication and add a new version of the module 
+								basSSWDataPROUpgradeNoReference_v2 there. You copy the module 
+								basSSWDataPROUpgradeNoReference_v2 from SSWUtilities97/SSWUtilities2000.mdb. 
+								Compile and save all modules.
+						<p>We hope you enjoy using 'SSW Data 
+								PRO!'.
+						<p>The 'SSW Data PRO!' Team. 
+							
+								<p align="center"><a href="13comments.htm"><img src="../Images/btnPrevious.gif" alt="Goto previous page" width="30" height="30" border="0"></a>
+										<br>
+									
+							
+							<center>
+								<img src="/ssw/Images/ft_ssw.gif" alt="SSW" width="339" height="73">
+							</center>
+					</td>
+				</tr>
+				<tr>
+					<td WIDTH="100" VALIGN="top">&nbsp;
+					</td>
+					<td WIDTH="35"></td>
+					<td width="500" valign="top">&nbsp;</td>
+				</tr>
+			</TABLE>
+	</body>
+</html>

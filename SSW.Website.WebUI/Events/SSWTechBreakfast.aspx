@@ -1,0 +1,1 @@
+ <% Response.RedirectPermanent("/ssw/Events/Workshops/Tech-Breakfast.aspx") %>

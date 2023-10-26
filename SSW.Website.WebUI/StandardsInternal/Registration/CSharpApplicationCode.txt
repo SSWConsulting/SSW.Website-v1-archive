@@ -1,0 +1,51 @@
+' ----------  Main Checking Code ---------------------
+	//Registration
+	string strProductName = "SSW SQL Auditor";
+	double dblVersion = Convert.ToDouble(System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString());
+	string strDescription = "- Stuff" + "\n" + "- some other stuff" + "\n" + "- and some more?";
+	string strDocoLink  = "http://www.ssw.com.au/";
+	string strSSWProductsLink  = "http://www.ssw.com.au/";
+	
+	
+	SSW.Registration.Registration RegDriver;
+	SSW.Registration.RegistrationStatus registrationStatus;
+	//try
+	//{
+		RegDriver = new SSW.Registration.Registration(SSW.Registration.enumRegisterType.Days, 2, strProductName, dblVersion, strDescription, strDocoLink, strSSWProductsLink);
+		byte[] Password = new byte[] {154, 229, 218, 61, 175, 228, 168, 80, 129, 29, 97, 36, 201, 39, 176, 97, 113, 146, 189, 26, 208, 130, 62, 114, 175, 241, 91, 101, 119, 97, 208, 52};   // Hex Representation of “P@55w0rd_R@t1ng”
+		registrationStatus = RegDriver.Decrypt(RegDriver.IsRegistered(false), Password);
+	//}
+	//catch (Exception exp)
+	//{
+	//	SSW.Framework.WindowsUI.MessageBoxHelper.ShowError(this, "The SSW Registration DLL could not be located. This application cannot continue" + " : " + exp.Message );
+	//	return;
+	//}
+	
+	if (registrationStatus == SSW.Registration.RegistrationStatus.Registered)
+	{
+		SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(this, "The Product is registered");
+	}
+	if (registrationStatus == SSW.Registration.RegistrationStatus.Trialling)
+	{
+		SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(this, "The Product is unregistered and still on trial");
+	}
+	if (registrationStatus == SSW.Registration.RegistrationStatus.Unregistered)
+	{
+		SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(this, "This software has expired.");
+		return;
+	}
+	if (registrationStatus == SSW.Registration.RegistrationStatus.DeniedUserAgreement)
+	{
+		SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(this, "This user denied the user agreement.");
+	} 
+
+' ------------ Show About Dialogue Code ---------------------
+	int intNoOfTrialUses = 60;
+	string strProductName = "SSW SQL Auditor";
+	double dblVersion = Convert.ToDouble(System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString());
+	string strDescription = "- Stuff" + "\n" + "- some other stuff" + "\n" + "- and some more?";
+	string strDocoLink  = "http://www.ssw.com.au/";
+	string strSSWProductsLink  = "http://www.ssw.com.au/";
+
+	SSW.Registration.Registration RegDriver2 = new SSW.Registration.Registration(SSW.Registration.enumRegisterType.Uses, intNoOfTrialUses, strProductName, dblVersion, strDescription, strDocoLink, strSSWProductsLink);
+	RegDriver2.ShowAbout();

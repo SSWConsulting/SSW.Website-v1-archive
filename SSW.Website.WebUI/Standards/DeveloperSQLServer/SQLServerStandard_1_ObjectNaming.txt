@@ -1,0 +1,13 @@
+<p>
+<b>SQL Server Conventions</b><br>
+<a href="/ssw/Standards/DeveloperSQLServer/SQLServerStandard_1_ObjectNaming.aspx">Object Naming</a><br>
+<a href="/ssw/Standards/DeveloperSQLServer/SQLServerStandard_2_StoredProcedureNaming.aspx">Stored Procedure Naming</a><br>
+<a href="/ssw/Standards/DeveloperSQLServer/SQLServerStandard_3_StoredProcedureFormatting.aspx">Stored Procedure Formatting</a><br>
+<a href="/ssw/Standards/DeveloperSQLServer/SQLServerStandard_4_IndexesNaming.aspx">Indexes Naming</a><br>
+<a href="/ssw/Standards/DeveloperSQLServer/SQLServerStandard_5_RelationshipNaming.aspx">Relationship Naming</a><br>
+<a href="/ssw/Standards/Rules/RulestoBetterSQLServerdatabases.aspx">Design</a><br>
+</p>
+<p>
+<b>.NET Conventions</b><br>
+<a href="/ssw/Standards/DeveloperdotNET/DotNetStandard_ObjectNaming.aspx">Object Naming</a><br>
+</p>

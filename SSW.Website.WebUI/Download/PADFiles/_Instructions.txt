@@ -1,0 +1,40 @@
+Note from Adam
+--------------
+
+Dont give the direct link to a download 
+	eg. http://download.us.ssw.com.au/SSWCodeAuditor_v8-44.exe
+
+
+Instead give:
+* a link to the basket (recommended)
+	eg. http://www.ssw.com.au/ssw/redirect/SSWCodeAuditorBasket.asp
+
+* a link to download page
+	eg. www.ssw.com.au/ssw/download 
+
+* a link to the redirect 
+	eg. http://www.ssw.com.au/ssw/redirect/SSWCodeAuditor.asp, or
+
+
+---------------------------------------------------------------------------------
+
+About exe installation files under download folder 
+
+(FW, 31/01/2007)
+
+---------------------------------------------------------------------------------
+
+* There will be 2 exe files for each product at most:
+	one is public release version, which for syncing to US server if the exe was interrupted on it;
+	the other is beta (or temporary) version; 
+	e.g. SSWSQLAuditor_ver10-32.exe and SSWSQLAuditor_ver10-35_beta.exe	    
+ 
+
+* and please don't forget to zzed the exe file of previous public release version after there is a new build past a test please;
+ 
+
+Note from Adam
+
+--------------
+
+I don't agree with this - I vote only one exe file for each product - just leave the beta version if there is also a public release version.

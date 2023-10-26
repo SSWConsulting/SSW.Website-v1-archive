@@ -1,0 +1,35 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CrmConnectionStringTesting" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;ServiceUri=https://sswstaging.crmdev2015.ssw.com.au/SSWStaging; Domain=SSW2000; AuthType=IFD; UserName=SSW2000\AdminLuZhang; Password=7Welcome; LoginPrompt=Never;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">ServiceUri=https://sswstaging.crmdev2015.ssw.com.au/SSWStaging; Domain=SSW2000; AuthType=IFD; UserName=SSW2000\AdminLuZhang; Password=7Welcome; LoginPrompt=Never;</Value>
+    </Setting>
+    <Setting Name="CrmConnectionStringProduction" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;ServiceUri=https://live.crm.ssw.com.au/Live; Domain=SSW2000; AuthType=IFD; UserName=SSW2000\CrmTimeProSync; Password=eeGKSD7F4HrCCscZDmMw!; LoginPrompt=Never;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">ServiceUri=https://live.crm.ssw.com.au/Live; Domain=SSW2000; AuthType=IFD; UserName=SSW2000\CrmTimeProSync; Password=eeGKSD7F4HrCCscZDmMw!; LoginPrompt=Never;</Value>
+    </Setting>
+    <Setting Name="UnsubscribeNotificationRecipient" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info@ssw.com.au</Value>
+    </Setting>
+    <Setting Name="UnsubscribeNotificationSender" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info@ssw.com.au</Value>
+    </Setting>
+    <Setting Name="TagIdProduction" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">6B04BB29-BEED-E611-80D4-00155D01225D</Value>
+    </Setting>
+    <Setting Name="TagIdTesting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4DAA0AE3-BEED-E611-80DF-00155D01CD29</Value>
+    </Setting>
+    <Setting Name="DebugEnabled" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

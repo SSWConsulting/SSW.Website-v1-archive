@@ -1,0 +1,85 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SSWeXtremeEmails", "SSWeXtremeEmails.vbproj", "{E8ADB551-B37F-4CFC-BB81-ACF2D00271FD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "COMAddInShim", "COMAddInShim\COMAddInShim.vcproj", "{D0A4579B-5D2C-45D7-A0AF-4AD2F8CEB87D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPThemesForCOMAddins", "XPThemesForCOMAddins\XPThemesForCOMAddins.csproj", "{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {B1F78387-243A-4AA3-B3D3-AFBDCB89B831}
+		SccProjectUniqueName1 = SSWeXtremeEmails.vbproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = COMAddInShim\\COMAddInShim.vcproj
+		SccProjectName2 = \u0022$/ssw/SSWeXtremeEmails_Old_NET1-0/COMAddInShim\u0022,\u0020CWECAAAA
+		SccLocalPath2 = COMAddInShim
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = XPThemesForCOMAddins\\XPThemesForCOMAddins.csproj
+		SccProjectName3 = \u0022$/ssw/SSWeXtremeEmails_Old_NET1-0/XPThemesForCOMAddins\u0022,\u0020YJXCAAAA
+		SccLocalPath3 = XPThemesForCOMAddins
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = UnitTest\\UnitTest.csproj
+		SccProjectName4 = \u0022$/ssw/SSWeXtremeEmails_Old_NET1-0/UnitTest\u0022,\u0020XDVDAAAA
+		SccLocalPath4 = UnitTest
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Release - Trial Version = Release - Trial Version
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E8ADB551-B37F-4CFC-BB81-ACF2D00271FD}.Debug.ActiveCfg = Debug|.NET
+		{E8ADB551-B37F-4CFC-BB81-ACF2D00271FD}.Debug.Build.0 = Debug|.NET
+		{E8ADB551-B37F-4CFC-BB81-ACF2D00271FD}.Release.ActiveCfg = Release|.NET
+		{E8ADB551-B37F-4CFC-BB81-ACF2D00271FD}.Release.Build.0 = Release|.NET
+		{E8ADB551-B37F-4CFC-BB81-ACF2D00271FD}.Release - Trial Version.ActiveCfg = Release|.NET
+		{D0A4579B-5D2C-45D7-A0AF-4AD2F8CEB87D}.Debug.ActiveCfg = Debug|Win32
+		{D0A4579B-5D2C-45D7-A0AF-4AD2F8CEB87D}.Release.ActiveCfg = Release|Win32
+		{D0A4579B-5D2C-45D7-A0AF-4AD2F8CEB87D}.Release.Build.0 = Release|Win32
+		{D0A4579B-5D2C-45D7-A0AF-4AD2F8CEB87D}.Release - Trial Version.ActiveCfg = Release|Win32
+		{D0A4579B-5D2C-45D7-A0AF-4AD2F8CEB87D}.Release - Trial Version.Build.0 = Release|Win32
+		{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}.Debug.ActiveCfg = Debug|.NET
+		{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}.Debug.Build.0 = Debug|.NET
+		{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}.Release.ActiveCfg = Release|.NET
+		{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}.Release.Build.0 = Release|.NET
+		{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}.Release - Trial Version.ActiveCfg = Release|.NET
+		{6AD8B953-7E51-4E4D-A29B-38D479AA0B85}.Release - Trial Version.Build.0 = Release|.NET
+		{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}.Debug.ActiveCfg = Debug|.NET
+		{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}.Debug.Build.0 = Debug|.NET
+		{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}.Release.ActiveCfg = Release|.NET
+		{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}.Release.Build.0 = Release|.NET
+		{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}.Release - Trial Version.ActiveCfg = Release|.NET
+		{A283FBA2-A8F2-4D28-97D5-35E177CAC5FD}.Release - Trial Version.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		setup\CheckOutlookRunning.EXE = setup\CheckOutlookRunning.EXE
+		setup\checkoutlookrunning.wse = setup\checkoutlookrunning.wse
+		setup\SSWeXtremeEmails.wsi = setup\SSWeXtremeEmails.wsi
+		bin\UnitTest.nunit = bin\UnitTest.nunit
+		setup\VBPAutoBuild.bld = setup\VBPAutoBuild.bld
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {4DAE7A35-AA1E-4E9F-9E71-0019D695A809}
+	EndGlobalSection
+	GlobalSection(DevPartner Solution Properties) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://ssw.com.au/ssw/Consulting/Terms-and-Conditions") %>

@@ -1,0 +1,2 @@
+Use this image when ever going outside SSW
+<img alt="You are going to a site outside of SSW" src="/SSWAdvWorks/multimedia/images/leavesite.GIF">

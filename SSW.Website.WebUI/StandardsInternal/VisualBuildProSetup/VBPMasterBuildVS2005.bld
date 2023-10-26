@@ -1,0 +1,1364 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project version='6'>
+	<comment><![CDATA[This sample demonstrates an entire build process that uses Microsoft Visual Studio 6.0 and .NET. It uses a sample SourceSafe project, which is created by calling SourceSafe.bld and can be browsed by starting SourceSafe Explorer, choosing File|Open, navigating to <TEMP Path>\VStudio\Database, clicking OK, and entering a user of Guest (blank password).  If one of the build steps failis because VS6 or VS.NET is not installed, uncheck that step and continue the build (F7).
+
+The build recursively gets the latest files to %TEMP%\VisBuildPro\VStudio\work, checks out the executable files, registers the components, builds the Visual Studio projects, generates a build manifest, checks in the updated executables, labels the SourceSafe project with a build number (after incrementing the build number via script), and writes a line to a success log.
+
+Custom actions are used to build the Visual Studio projects, which provides incremental builds (only building when source files or references have changed), increments projects versions for projects that need to be built, sets project base addresses to improve performance, processes all dependencies to determine the correct build order, etc.
+
+If any step fails, the failure steps are executed, which undos any checkouts, logs the failed step to a failure file, and sends an e-mail with the error output from the failed step.  Update the TO_EMAIL, FROM_EMAIL, SMTP_SERVER project macro, and check and update the username and password of the Send Mail steps before building so that those steps will succeed.
+
+The first time the project is built, all the projects are built; if built again (close and reopen project or type Alt+F7 to reset build status, then F7), VisBuildPro detects that they are up-to-date and none of the projects get built (with the exception of C# and VB.NET, since Visual Studio .NET always compiles the executable for these projects even if they are up-to-date).  If the project is rebuilt (Shift+F7), all projects will be cleaned and rebuilt (achieved by using the Builder.LaunchType property in a field override for the force field on the Build steps).
+
+Note: On systems where the TEMP path is a long filename, building the web application project in the VS.NET solution may fail; this occurs only because the sample builds in the TEMP folder, whose value is provided as a short filename, and VS.NET thinks the virtual directory path is different than the file's path (because it does an [invalid] comparison of a long filename to a short filename) and treats it as an error condition. As long as you avoid performing your builds in the TEMP path (or change your TEMP path to something like c:\Temp) this won't be a problem for real builds.
+
+The build also includes unchecked steps that demonstrate building a Visual J++ project and creating a Microsoft Installer file for the built files and copying it to a network path.  They are excluded from the build, because they would require Visual J++ and Visual Studio Installer to be installed and knowledge of a network path.  If you have these tools installed, update the network path and check these steps before building to include them in the build.  The .MSI that is created requires Microsoft Installer in order to run.
+
+Several standard macros are used, such as PROJDIR, to generically determine the file locations, FAILSTEP_OUTPUT to show the error message from a previous step, DOSCMD to execute operating system commands, DATETIME to log the current date/time.  The Visual Build Pro help provides more details on these macros and creating builds that use Visual Studio tools--click Help and lookup 'global macros', 'system macros', and 'Microsoft Visual Studio' in the help index for more information.  A LOGFILE project macro is also defined to log all build output to VStudio.log in the project directory.]]></comment>
+	<steps type='0'>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Set objMacro = Application.Macros(vbldMacroTemporary).Item("buildMode")
+
+if LCase(objMacro.Value) <> "report" then
+	'Yes returns 6, No returns 7
+	mode = msgbox("Is this a Release Build? (Click No to run a 'Test Please' Build)",4,"Mode of Build")
+	objMacro.Value = mode
+else
+	objMacro.Value = "Report"
+end if
+]]></Script>
+			<name>Mode of build</name>
+		</step>
+		<step action='Run Program'>
+			<checked type='11'>0</checked>
+			<command>"%VS80COMNTOOLS%..\IDE\tf.exe" get "%PROJDIR%\.." "%VSSPath%" /all /recursive /noprompt</command>
+			<name>Get Latest Version from TFS</name>
+			<outputfrom type='3'>1</outputfrom>
+		</step>
+		<step action='Group'>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%VBPAutoBld%</condexpr>
+			<name>VBP Build Process</name>
+		</step>
+		<step action='Subroutine Call'>
+			<Expand type='11'>-1</Expand>
+			<SubName>Remove VSS Binding</SubName>
+			<checked type='11'>0</checked>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%RemoveBinding%</condexpr>
+			<indent type='3'>1</indent>
+			<name>Remove VSS Solution Binding</name>
+		</step>
+		<step action='Group'>
+			<checked type='11'>0</checked>
+			<condcompareto>Report</condcompareto>
+			<condcomparison type='3'>4</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<description>Build all projects that have changed and increment project versions, set base address, etc.</description>
+			<indent type='3'>1</indent>
+			<name>Build Projects</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[' Get version number out of file
+dim fso, versionInfoFile, textStream
+set fso=CreateObject("Scripting.FileSystemObject")
+set versionInfoFile = fso.OpenTextFile("%PROJDIR%\%AssemblyInfoPath%", 1, false)
+do while versionInfoFile.AtEndOfStream <> true
+  textStream = versionInfoFile.Readline()
+  
+  ' Line im looking for is [assembly: AssemblyVersion("2.0.*")]
+  if instr(textStream, "AssemblyVersion") Then
+  
+  	' Now we have the line we need to grab the version number where VerEnd2 = Minor Version, and VerEnd3 = BuildVersion
+  	Dim VerStart, VerEnd
+  	VerStart = instr(textStream, """") + 1
+  	VerEnd = instr(textStream,"*") - 1
+  	if VerEnd < 0 then
+  		VerEnd = instr(mid(textStream,VerStart),"""") + VerStart - 1
+  	end if
+
+  	Dim MacroVersion
+  	MacroVersion = mid(textStream, VerStart, VerEnd - VerStart)
+	' Set the macro
+	Set objMacro = Application.Macros(vbldProject).Item("PROD_VERSION")
+	objMacro.Value = MacroVersion
+  	Set objMacro = Application.Macros(vbldProject).Item("PROD_VERSION_MSI")
+	objMacro.Value = replace(MacroVersion,".","-")
+
+  end if
+loop
+versionInfoFile.close 
+
+]]></Script>
+			<checked type='11'>0</checked>
+			<indent type='3'>2</indent>
+			<name>Get Version Number</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[set fso = CreateObject("Scripting.FileSystemObject")
+
+if fso.FileExists("%PROJDIR%\..\..\SSWFramework\Exception\bin\Release\SSW.Framework.ExceptionManagement.xml") then
+	vbld_MakeFileWriteable "%PROJDIR%\..\..\SSWFramework\Exception\bin\Release\SSW.Framework.ExceptionManagement.xml"
+end if
+
+if fso.FileExists("%PROJDIR%\..\..\SSWFramework\Data\bin\Release\SSW.Framework.Data.xml") then
+	vbld_MakeFileWriteable "%PROJDIR%\..\..\SSWFramework\Data\bin\Release\SSW.Framework.Data.xml"
+end if
+]]></Script>
+			<checked type='11'>0</checked>
+			<condcompareto>Release</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%slnConfig%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Make Release dlls writable</name>
+		</step>
+		<step action='Make VS 2005'>
+			<Attr type='11'>-1</Attr>
+			<Config>%slnConfig%</Config>
+			<FileVer type='11'>-1</FileVer>
+			<Filename>%PROJDIR%\..\%VSSProject%.sln</Filename>
+			<Property1>%COMPANY_NAME%</Property1>
+			<Property3>Copyright © 2004 %COMPANY_NAME%</Property3>
+			<Property5>My Product</Property5>
+			<PropertyOn1 type='11'>-1</PropertyOn1>
+			<PropertyOn3 type='11'>-1</PropertyOn3>
+			<PropertyOn5 type='11'>-1</PropertyOn5>
+			<checked type='11'>0</checked>
+			<condcompareto>2005</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%SolutionType%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Build VS2005 Solution</name>
+		</step>
+		<step action='Make VS 2008'>
+			<Attr type='11'>-1</Attr>
+			<Config>%slnConfig%</Config>
+			<FileVer type='11'>-1</FileVer>
+			<Filename>%PROJDIR%\..\%VSSProject%.sln</Filename>
+			<checked type='11'>0</checked>
+			<condcompareto>2008</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%SolutionType%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Build VS2008 Solution</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA['delete the obj\Debug and obj\Bin folders
+'to prevent designer error: "Unspecified Error" in Visual Studios
+
+Dim FileManagment, TheFolder, FileList, fileStart, fileNoExt
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set projFolder = FileManagment.GetFolder("%PROJDIR%\..\")
+
+findSubFolders projFolder
+
+Sub findSubFolders(projectFolder)
+
+	Set FolderList = projectFolder.SubFolders
+	
+	For Each Folder in FolderList 
+		Set projectSubFolder = FileManagment.GetFolder(Folder)
+			folderName = projectSubFolder.Name
+			if folderName = "obj" then
+				MakeFilesWriteable projectSubFolder
+				FileManagment.DeleteFolder(projectSubFolder)
+			else
+				findSubFolders(projectSubFolder)
+			end if
+	Next
+
+End Sub
+
+'This sub checks the obj folder recursively to make every file not read-only. This will allow for deletion.
+
+Sub MakeFilesWriteable(objFolder)
+
+	Set FileList = objFolder.Files
+	Set subFolderList = objFolder.subFolders
+
+	For Each File in FileList
+		'Allow each file to be deleted by unchecking the "read-only" flag.
+		vbld_MakeFileWriteable File
+		File.Delete
+	Next
+		
+	For Each Folder in subFolderList
+		'Recurse whenever a folder is found within the obj folder.
+		MakeFilesWriteable(Folder)
+	Next
+
+End Sub
+]]></Script>
+			<checked type='11'>0</checked>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%WinProject%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Delete Obj Folder</name>
+		</step>
+		<step action='Group'>
+			<checked type='11'>0</checked>
+			<condcompareto>Report</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<indent type='3'>1</indent>
+			<name>Tests</name>
+		</step>
+		<step action='Run Program'>
+			<checked type='11'>0</checked>
+			<command>%REG_READ("HKLM\SOFTWARE\Microsoft\.NETFramework\AssemblyFolders\NUnit.Framework\")%\nunit-console.exe %PROJDIR%\%NunitFilePath% /nologo /labels</command>
+			<condcompareto>Report</condcompareto>
+			<condexpr>%buildMode%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Run NUnit</name>
+			<outputfrom type='3'>1</outputfrom>
+		</step>
+		<step action='Subroutine Call'>
+			<Expand type='11'>-1</Expand>
+			<SubName>Code Auditor</SubName>
+			<checked type='11'>0</checked>
+			<indent type='3'>2</indent>
+			<name>Code Auditor</name>
+		</step>
+		<step action='Group'>
+			<condcompareto>Report</condcompareto>
+			<condcomparison type='3'>4</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<description>Create an installation executable containing the latest executables</description>
+			<indent type='3'>1</indent>
+			<name>Create Installs</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%PROJDIR%\..\</DestDir>
+			<Ext>%WSI_File%.wsi</Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%\</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>2</indent>
+			<name>Create Temp Wise Build</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment, TheFolder, FileList, fileStart, fileNoExt
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set TheFolder = FileManagment.GetFolder("%PROJDIR%\..\")
+Set FileList = TheFolder.Files
+
+For Each File in FileList 
+  
+	ThisFile = File.Name
+	If instr(ThisFile,"%WSI_File%.wsi") Then
+		fileStart = instr(ThisFile, ".wsi") - 1
+		fileNoExt = mid(ThisFile, 1, fileStart)
+		Dim TempFile
+		For Each TempFile in FileList
+			Dim tempFileName
+			tempFileName = TempFile.Name
+			If instr(tempFileName, fileNoExt & "Temp.wsi") Then
+				FileManagment.DeleteFile TheFolder & "\" & fileNoExt & "Temp.wsi", true
+			End IF			
+		Next		
+		File.Name = Replace(ThisFile, ThisFile, fileNoExt & "Temp.wsi")
+	End if
+
+Next]]></Script>
+			<indent type='3'>2</indent>
+			<name>Rename Temp Wise Build</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%PROJDIR%\</DestDir>
+			<Ext>%WSI_File%Temp.wsi</Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Move type='11'>-1</Move>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%\..\</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>2</indent>
+			<name>Move Temp Wise Build</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[vbld_MakeFileWriteable "%PROJDIR%\%WSI_File%Temp.wsi"
+
+Dim WFWI, tbls, tbl, col, row
+
+' Connect to Wise for Windows Installer object
+Set WFWI = Nothing
+Set WFWI = CreateObject("WfWi.Document")
+WfWI.Open "%PROJDIR%\%WSI_File%Temp.wsi"
+
+Set tbls = WFWI.Wtables 
+
+For Each tbl In tbls
+	if not tbl.Name = "Icon" then
+	if not tbl.Name = "Binary" then
+
+	For each row in tbl.WRows 
+		For i = 0 to row.WColumns.Count - 1
+
+			if instr(row(i), "[ProductVersion]") then
+			
+				if tbl.Name = "WiseMediaOptions" or tbl.Name = "WiseRelease" then
+					row(i) = replace(row(i),"[ProductVersion]","%PROD_VERSION_MSI%")	
+				else	
+					row(i) = replace(row(i),"[ProductVersion]","%PROD_VERSION%")
+				end if
+			End if
+
+			if instr(row(i), "[ProductName]") then
+					row(i) = replace(row(i),"[ProductName]","%VSSProjectName% %PROD_VERSION%")
+			End if
+						
+		Next
+	Next
+	
+	end if
+	end if
+Next
+
+WfWI.Save "%PROJDIR%\%WSI_File%Temp.wsi"
+'WfWI.Compile "%PROJDIR%\%VSSProject%Temp.wsi"
+]]></Script>
+			<indent type='3'>2</indent>
+			<name>Hardcode Version Number</name>
+		</step>
+		<step action='Wise Setup'>
+			<Filename>%PROJDIR%\%WSI_File%Temp.wsi</Filename>
+			<Output>%PROJDIR%\%WSI_File%_ver%PROD_VERSION_MSI%.msi</Output>
+			<Prop array='0'>ProductVersion</Prop>
+			<Prop>ProductName</Prop>
+			<PropVal array='0'>%PROD_VERSION%</PropVal>
+			<PropVal>%VSSProjectName% %PROD_VERSION%</PropVal>
+			<indent type='3'>2</indent>
+			<name>Build From Wise</name>
+		</step>
+		<step action='Wise Setup'>
+			<Exe>%ProgramFiles%\Wise for Windows Installer\WfWI6.exe</Exe>
+			<Filename>%PROJDIR%\%WSI_File%Temp.wsi</Filename>
+			<Output>%PROJDIR%\%WSI_File%_ver%PROD_VERSION_MSI%.msi</Output>
+			<Prop array='0'>ProductVersion</Prop>
+			<Prop>ProductName</Prop>
+			<PropVal array='0'>%PROD_VERSION%</PropVal>
+			<PropVal>%VSSProjectName% %PROD_VERSION%</PropVal>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%NewWise%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Build From Wise 6.0</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment, TheFolder, FileList
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set TheFolder = FileManagment.GetFolder("%PROJDIR%\")
+Set FileList = TheFolder.Files
+
+For Each File in FileList 
+  
+	ThisFile = File.Name
+	If instr(ThisFile,"%WSI_File%Temp.wsi") Then
+			File.Delete
+	End if
+
+Next
+]]></Script>
+			<indent type='3'>2</indent>
+			<name>Delete Temp File</name>
+		</step>
+		<step action='Group'>
+			<condcompareto>Report</condcompareto>
+			<condcomparison type='3'>4</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<indent type='3'>1</indent>
+			<name>Prep File</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment, TheFolder, FileList, fileStart, fileNoExt
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set TheFolder = FileManagment.GetFolder("%BeeFolder%")
+Set FileList = TheFolder.Files
+
+For Each File in FileList 
+  
+	ThisFile = File.Name
+	If instr(ThisFile,"%WSI_File%") Then
+		If instr(ThisFile,"zz") Then
+		Else
+			If instr(ThisFile,".msi") > 0 Then
+			  	fileStart = instr(ThisFile, ".msi") - 1
+			  	fileNoExt = mid(ThisFile, 1, fileStart)
+				if FileManagment.FileExists(TheFolder.Path & "\" & "zz" & fileNoExt & "_(zzed _by_VBP).msi") then
+					Set PrevExistFile = FileManagment.GetFile(TheFolder.Path & "\" & "zz" & fileNoExt & "_(zzed _by_VBP).msi")
+					PrevExistFile.Delete
+				end if
+				File.Name = Replace(ThisFile, ThisFile, "zz" & fileNoExt & "_(zzed _by_VBP).msi")
+			else
+				If instr(ThisFile,".exe") > 0 Then
+			  		fileStart = instr(ThisFile, ".exe") - 1
+			  		fileNoExt = mid(ThisFile, 1, fileStart)
+					if FileManagment.FileExists(TheFolder.Path & "\" & "zz" & fileNoExt & "_(zzed _by_VBP).exe") then
+						Set PrevExistFile = FileManagment.GetFile(TheFolder.Path & "\" & "zz" & fileNoExt & "_(zzed _by_VBP).exe")
+						PrevExistFile.Delete
+					end if
+					File.Name = Replace(ThisFile, ThisFile, "zz" & fileNoExt & "_(zzed _by_VBP).exe")
+				End if
+
+			End If
+		End if
+	End if
+
+Next
+
+
+
+]]></Script>
+			<indent type='3'>2</indent>
+			<name>zz Previous Versions</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%BeeFolder%\zzed</DestDir>
+			<Ext><![CDATA[zz%WSI_File%*.*
+]]></Ext>
+			<Incremental type='11'>0</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Move type='11'>-1</Move>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%BeeFolder%\</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>2</indent>
+			<name>Move zzed to zzed folder</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment, TheFolder, FileList, fileStart, fileNoExt
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set TheFolder = FileManagment.GetFolder("%PROJDIR%\")
+Set FileList = TheFolder.Files
+
+If %buildMode% = 7 Then
+
+	For Each File in FileList  
+		ThisFile = File.Name
+		If instr(ThisFile,"%WSI_File%_ver%PROD_VERSION_MSI%.msi") Then
+			fileStart = instr(ThisFile, ".msi") - 1
+			fileNoExt = mid(ThisFile, 1, fileStart)
+				File.Name = Replace(ThisFile, ThisFile, fileNoExt & "_beta.msi")
+		End if
+		If instr(ThisFile,"%WSI_File%_ver%PROD_VERSION_MSI%.exe") Then
+			fileStart = instr(ThisFile, ".msi") - 1
+			fileNoExt = mid(ThisFile, 1, fileStart)
+				File.Name = Replace(ThisFile, ThisFile, fileNoExt & "_beta.exe")
+		End if
+	Next
+
+End If
+
+
+]]></Script>
+			<checked type='11'>0</checked>
+			<description>Renames the file to Application_verX-XX_beta.exe if this is a test build</description>
+			<indent type='3'>2</indent>
+			<name>Rename to BETA</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%BeeFolder%\</DestDir>
+			<Ext><![CDATA[%WSI_File%_ver%PROD_VERSION_MSI%.exe
+%WSI_File%.ini
+]]></Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Move type='11'>-1</Move>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%\</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%FTPexe%</condexpr>
+			<description>Copy the install executable out to the network (must be changed to a valid network path)</description>
+			<indent type='3'>2</indent>
+			<name>Move exe</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+Set msiFile = FileManagment.GetFile("%PROJDIR%\%WSI_File%_ver%PROD_VERSION_MSI%.msi")
+msiFile.Delete
+]]></Script>
+			<condcompareto>false</condcompareto>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%FTPexe%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Delete local msi</name>
+		</step>
+		<step action='Subroutine Call'>
+			<Expand type='11'>-1</Expand>
+			<SubName>Publish Web Service</SubName>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%WebService%</condexpr>
+			<indent type='3'>2</indent>
+			<name>Publish Web Service</name>
+		</step>
+		<step action='Group'>
+			<condcompareto>6</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<indent type='3'>1</indent>
+			<name>Release Build</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment, TheFolder, FileList, fileStart, fileNoExt, FileSize
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set TheFolder = FileManagment.GetFolder("%BeeFolder%")
+Set FileList = TheFolder.Files
+
+For Each File in FileList 
+  
+	ThisFile = File.Name
+
+	If "%FTPexe%" = "true" then
+
+		If instr(ThisFile,"%WSI_File%_ver%PROD_VERSION_MSI%.exe") Then
+			FileSize = File.Size
+			FileSize = Round(FileSize / 1000000, 2)
+			Set objMacro = Application.Macros(vbldProject).Item("PROD_SIZE")
+			objMacro.Value = FileSize	
+		End if
+
+	Else
+
+		If instr(ThisFile,"%WSI_File%_ver%PROD_VERSION_MSI%.msi") Then
+			FileSize = File.Size
+			FileSize = Round(FileSize / 1000000, 2)
+			Set objMacro = Application.Macros(vbldProject).Item("PROD_SIZE")
+			objMacro.Value = FileSize	
+		End if
+
+	End If
+
+Next
+]]></Script>
+			<indent type='3'>2</indent>
+			<name>Get File Size</name>
+		</step>
+		<step action='Group'>
+			<indent type='3'>2</indent>
+			<name>Delete Previous from U.S. Server</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+scriptText = "open us.ssw.com.au" & vbCrLf & "ssw" & vbCrLf & "r@t1ng27" & vbCrLf & "cd %USFolder%" & vbCrLf & "prompt" & vbCrLf & "mdelete %WSI_File%*.*" & vbCrLf & "bye" & vbCrLf
+
+FileManagment.CreateTextFile("ftpScript.txt")
+Set fileText = FileManagment.GetFile("ftpScript.txt")
+Set textStreamWrite = fileText.OpenAsTextStream(2)
+textStreamWrite.Write scriptText
+textStreamWrite.Close
+
+'run command line ftp using the ftpScript file commands.
+'Set WshShell = CreateObject("WScript.Shell")
+'WshShell.run ("ftp -s:ftpScript.txt")
+]]></Script>
+			<indent type='3'>3</indent>
+			<name>Create FTP Script File</name>
+		</step>
+		<step action='Run Program'>
+			<command>ftp -s:ftpScript.txt</command>
+			<indent type='3'>3</indent>
+			<name>Run FTP from command line</name>
+			<outputfrom type='3'>1</outputfrom>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+FileManagment.DeleteFile "ftpScript.txt"
+]]></Script>
+			<indent type='3'>3</indent>
+			<name>Remove FTP Script File</name>
+		</step>
+		<step action='FTP'>
+			<Filename>%BeeFolder%\%WSI_File%_ver%PROD_VERSION_MSI%.exe</Filename>
+			<Incremental type='11'>0</Incremental>
+			<Logging type='3'>0</Logging>
+			<Passive type='11'>-1</Passive>
+			<Password>Perfect</Password>
+			<Percent></Percent>
+			<Port>21</Port>
+			<Retries></Retries>
+			<Server>us.ssw.com.au</Server>
+			<ServerPath>%USFolder%</ServerPath>
+			<Timeout>30</Timeout>
+			<TransferType type='3'>0</TransferType>
+			<UserName>ssw</UserName>
+			<condcompareto>false</condcompareto>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%FTPexe%</condexpr>
+			<indent type='3'>2</indent>
+			<name>FTP exe file to Remote U.S. Server</name>
+		</step>
+		<step action='FTP'>
+			<Filename>%BeeFolder%\%WSI_File%.ini</Filename>
+			<Incremental type='11'>0</Incremental>
+			<Logging type='3'>0</Logging>
+			<Passive type='11'>-1</Passive>
+			<Password>Perfect</Password>
+			<Percent></Percent>
+			<Port>21</Port>
+			<Retries></Retries>
+			<Server>us.ssw.com.au</Server>
+			<ServerPath>%USFolder%</ServerPath>
+			<Timeout>30</Timeout>
+			<TransferType type='3'>0</TransferType>
+			<UserName>ssw</UserName>
+			<indent type='3'>2</indent>
+			<name>FTP ini file to Remote U.S. Server</name>
+		</step>
+		<step action='Group'>
+			<indent type='3'>2</indent>
+			<name>Sync Remote File Timestamp</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+Set logFile = FileManagment.GetFile ("%LOGFILE%")
+logFile.Delete
+]]></Script>
+			<indent type='3'>3</indent>
+			<name>Delete Log File</name>
+		</step>
+		<step action='Telnet'>
+			<Delay>1000</Delay>
+			<Logging type='3'>4</Logging>
+			<Port>21</Port>
+			<Script><![CDATA[220
+USER ssw
+331
+PASS r@t1ng27
+230
+CWD httpdocs
+250
+CWD ssw
+250
+CWD Download
+250
+MDTM %WSI_File%_ver%PROD_VERSION_MSI%.exe
+213
+MDTM %WSI_File%.ini
+213
+]]></Script>
+			<Server>au.ssw.com.au</Server>
+			<Timeout>10</Timeout>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%FTPexe%</condexpr>
+			<indent type='3'>3</indent>
+			<name>Get exe File Description from Telnet</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+Set logFile = FileManagment.GetFile ("%LOGFILE%")
+
+Set textStreamRead = logFile.OpenAsTextStream(1)
+
+lineCounter = 0
+foundMDTM = false
+noOfModTimes = 0
+dim ModTimes(2)
+
+do while textStreamRead.AtEndOfStream <> true
+	findModTime = textStreamRead.ReadLine
+	
+	'find the line in the log file that contains the modification datetime
+	if instr(findModTime, "MDTM") then
+		foundMDTM = true
+	end if
+	
+	if foundMDTM = true then
+		if instr(findModTime, "VISBUILDPRO ") then
+			lineCounter = lineCounter + 1
+		else
+			'2 hex commands down from the MDTM command in the log file
+			if lineCounter = 2 then
+			
+			  	modTimeStart = instr(findModTime, " 213 ") + 5
+				modTime = mid(findModTime, modTimeStart)
+				
+				ModTimes(noOfModTimes) = modTime
+				noOfModTimes = noOfModTimes + 1
+
+				lineCounter = 0
+				foundMDTM = false
+				
+			end if
+		end if
+		
+	end if
+
+loop
+
+textStreamRead.close
+
+'dateCount = 0
+'for each modDate in ModTimes
+'	if modDate <> "" then
+'		dateCount = dateCount + 1
+'	end if
+'next
+
+set oShell = CreateObject("WScript.Shell")
+Set objMacro = Application.Macros(vbldMacroTemporary).Item("FTPexe")
+
+if LCase(objMacro.Value) = "true" then
+	oShell.run "%ThisPath%\FileTouch /d " & dateFormat(ModTimes(0)) & " /t " & timeFormat(ModTimes(0)) & " %BeeFolder%\%WSI_File%_ver%PROD_VERSION_MSI%.exe"
+else
+	oShell.run "%ThisPath%\FileTouch /d " & dateFormat(ModTimes(0)) & " /t " & timeFormat(ModTimes(0)) & " %BeeFolder%\%WSI_File%_ver%PROD_VERSION_MSI%.msi"
+end if
+	oShell.run "%ThisPath%\FileTouch /d " & dateFormat(ModTimes(1)) & " /t " & timeFormat(ModTimes(1)) & " %BeeFolder%\%WSI_File%.ini"
+
+private function dateFormat (ByVal modifyDate)
+	dateFormatVal = mid(modifyDate,5,2) & "-" & mid(modifyDate,7,2) & "-" & mid(modifyDate,1,4)
+	dateFormat = dateFormatVal
+end function
+
+private function timeFormat (ByVal modifyDate)
+	timeFormatVal = mid(modifyDate,9,2) & ":" & mid(modifyDate,11,2) & ":00"
+	timeFormat = timeFormatVal
+end function
+]]></Script>
+			<indent type='3'>3</indent>
+			<name>Set DateTime from Log File</name>
+		</step>
+		<step action='Group'>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%SSWProduct%</condexpr>
+			<description><![CDATA[The following steps are used to update the Download Table in SSWData2000
+]]></description>
+			<indent type='3'>2</indent>
+			<name>SSW Products</name>
+		</step>
+		<step action='Run SQL'>
+			<Abort type='11'>-1</Abort>
+			<Database>SSWData2005</Database>
+			<Input type='3'>1</Input>
+			<InputStr><![CDATA[UPDATE Download
+SET FileNameURL = "%WSI_File%_ver%PROD_VERSION_MSI%.exe",
+FileNameTxt = "%WSI_File%_ver%PROD_VERSION_MSI%.exe",
+FileSize = "%PROD_SIZE% MB",
+DateUpdated = convert(datetime,"%DATE%",103),
+EmpUpdated = "%USERNAME%",
+ProdVersion = "%PROD_VERSION%"
+WHERE DownloadID = "%PROD_ID%"
+
+]]></InputStr>
+			<Password>r@t1ng27</Password>
+			<SecType type='3'>1</SecType>
+			<Server>SQUIRREL</Server>
+			<UserName>VisualBuild</UserName>
+			<Width>10000</Width>
+			<condcomparison type='3'>6</condcomparison>
+			<condexpr>%FTPexe%</condexpr>
+			<indent type='3'>3</indent>
+			<name>Update Download Table information</name>
+		</step>
+		<step action='Group'>
+			<condcompareto>Report</condcompareto>
+			<condcomparison type='3'>4</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<indent type='3'>1</indent>
+			<name>Done</name>
+		</step>
+		<step action='Send Mail'>
+			<From>%FROM_EMAIL%</From>
+			<HTML type='11'>-1</HTML>
+			<Message><![CDATA[The build  '%PROJFILE%'  was completed successfully at %DATETIME%, and is found at <a href="%BeeFolder%\%WSI_File%_ver%PROD_VERSION_MSI%.exe">%BeeFolder%\%WSI_File%_ver%PROD_VERSION_MSI%.exe</a>
+<p>
+<i>Have you updated the assembly.info file today?</i>
+<br />
+No build version should be the same. You must update the version number every day as per <a href="http://www.ssw.com.au/ssw/Standards/Rules/RulestoSuccessfulProjects.aspx#version">http://www.ssw.com.au/ssw/Standards/Rules/RulestoSuccessfulProjects.aspx#version</a>
+</p>]]></Message>
+			<Port>25</Port>
+			<Server>%SMTP_SERVER%</Server>
+			<Subject>The Build for %VSSProjectName% Succeeded</Subject>
+			<Timeout>10</Timeout>
+			<To>%TO_EMAIL%</To>
+			<condcompareto>7</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<description>Notify the build master that the build completed -- change the SMTP_SERVER, FROM_EMAIL and TO_EMAIL project macros to your e-mail addresses</description>
+			<indent type='3'>2</indent>
+			<name>Notify of Completion</name>
+		</step>
+		<step action='Send Mail'>
+			<From>%FROM_EMAIL%</From>
+			<HTML type='11'>-1</HTML>
+			<Message><![CDATA[<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-au">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<LINK href="http://www.ssw.com.au/ssw/Include/ssw.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<table class="clsBody" cellpadding="0" width="100%%" cellspacing="0" summary="Formatting Table" border="0">
+	<tr>
+		<td width="67" valign="top" style="background-color: #000000">
+			<img src="http://www.ssw.com.au/ssw/Images/SSWsmall.gif" alt="SSW Logo" width="67" height="45">
+		</td>
+		<td background="http://www.ssw.com.au/ssw/images/BackGradient.png" >
+<h1><font color="#dddddd" >&nbsp;&nbsp;%VSSProjectName% - New Release</font></h1>
+		</td>
+
+	</tr>
+	</table>
+
+<p>Version <b>%PROD_VERSION_MSI%</b> is available for download.</p>
+<p>Please check that the latest version is found at <a href="%WebDownloadFolder%/%WSI_File%_ver%PROD_VERSION_MSI%.exe">
+%WebDownloadFolder%/%WSI_File%_ver%PROD_VERSION_MSI%.exe</a></p>
+<p>
+If you just released a version, make sure the version in the database is consistent with the file on our servers. You may find there is some delay to sync the database from frog to seal; if so then you can use <a href="http://frog/ssw/timeproonline/zsMaintenance/FTPSync.aspx" >http://frog/ssw/timeproonline/zsMaintenance/FTPSync.aspx</a> to force the sync.
+</p>
+<p>
+<i>Have you updated the assembly.info file today?</i>
+<br />
+No build version should be the same. You must update the version number every day as per <a href="http://www.ssw.com.au/ssw/Standards/Rules/RulestoSuccessfulProjects.aspx#version">http://www.ssw.com.au/ssw/Standards/Rules/RulestoSuccessfulProjects.aspx#version</a>
+</p>
+<p>Please validate that the file exists as per the Downloads by going to the following links:
+<ul>
+<li>Web Server: <a href="http://www.ssw.com.au/ssw/zsValidate/Reports/Downloads.aspx?FileExists=False">http://www.ssw.com.au/ssw/zsValidate/Reports/Downloads.aspx?FileExists=False</a></li>
+<li>U.S. Server <a href="http://us.ssw.com.au/ssw/zsValidate/Reports/Downloads.aspx?FileExists=False">http://us.ssw.com.au/ssw/zsValidate/Reports/Downloads.aspx?FileExists=False</a></li>
+</ul>
+</p>
+<div class="Section1">
+	<p class="MsoNormal"><span style="font-family: Verdana">Note: This is just 
+	an announcement that the Visual build script has finished.</span></p>
+	<p class="MsoNormal"><span style="font-family: Verdana">Developers should 
+	send a Test please or New release email from eXtreme Email now.</span></p>
+	<p class="MsoNormal"><span style="font-family: Verdana">Regards,</span><br>
+	SSW
+	Software Developer Team<br>
+	Phone: +612 9953 3000</span></p>
+	<table class="MsoNormalTable" cellSpacing="0" width="100%%" cellPadding="0" border="0" id="table1">
+		<tr style="height: 0.75pt">
+			<td style="height: 0.75pt; padding: 0cm; background: #ff0033">
+			<p class="MsoNormal"><span style="font-size: 1pt">&nbsp;</span></td>
+		</tr>
+		<tr>
+			<td style="padding: 0cm; background: #cccccc">
+			<p class="MsoNormal"><strong>
+			<span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">Superior 
+			Software for Windows</span></strong><span style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana"> 
+			Building better Microsoft solutions in ASP.NET, VB.NET, C#, SQL 
+			Server, Exchange and MS Access</span> </td>
+		</tr>
+	</table>
+</div>
+
+</body>
+
+</html>]]></Message>
+			<Port>25</Port>
+			<Server>%SMTP_SERVER%</Server>
+			<Subject>New build of %VSSProjectName% - %PROD_VERSION_MSI%</Subject>
+			<Timeout>10</Timeout>
+			<To>%TO_EMAIL%</To>
+			<condcompareto>6</condcompareto>
+			<condcomparison type='3'>3</condcomparison>
+			<condexpr>%buildMode%</condexpr>
+			<description>Notify the build master that the build completed -- change the SMTP_SERVER, FROM_EMAIL and TO_EMAIL project macros to your e-mail addresses</description>
+			<indent type='3'>2</indent>
+			<name>Notify of Release</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script>msgbox "Build completed successfully",0,"VBPAutoBuild"</Script>
+			<indent type='3'>2</indent>
+			<name>Confirmation</name>
+		</step></steps>
+	<steps type='1'>
+		<step action='Group'>
+			<name>Code Auditor</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%PROJDIR%\SSW Code Auditor\</DestDir>
+			<Empty type='11'>-1</Empty>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%CodeAuditorPath%</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>1</indent>
+			<name>Copy Code Auditor Folder to Local Machine</name>
+		</step>
+		<step action='Run Program'>
+			<command><![CDATA[%PROJDIR%\SSW Code Auditor\SSWCodeAuditor.exe "/Job:%CodeAuditorJob%" "/Email" "/ReportPath:%CodeAuditorReportPath%"
+]]></command>
+			<description><![CDATA[REM pushd "%CodeAuditorPath%"
+REM SSWCodeAuditor.exe "/Job:%CodeAuditorJob%" "/Email" "/ReportPath:%CodeAuditorReportPath%"
+REM popd
+]]></description>
+			<indent type='3'>1</indent>
+			<name>Code Auditor</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[Dim FileManagment, TheFolder
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+
+Set TheFolder = FileManagment.GetFolder("%PROJDIR%\SSW Code Auditor\")
+	
+findSubFolders TheFolder
+TheFolder.Delete
+
+Sub findSubFolders(projectFolder)
+
+	Set FileList = projectFolder.Files
+	Set FolderList = projectFolder.subFolders
+
+	For Each File in FileList
+		vbld_MakeFileWriteable File
+		File.Delete
+	Next
+		
+	For Each Folder in FolderList 
+		findSubFolders(Folder)
+	Next
+
+End Sub
+]]></Script>
+			<indent type='3'>1</indent>
+			<name>Delete Code Auditor Temp Folder</name>
+		</step>
+		<step action='Group'>
+			<name>Remove VSS Binding</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[vbld_MakeFileWriteable "%PROJDIR%\..\%VSSProject%.sln"
+
+vbld_MakeFileWriteable "%PROJDIR%\..\BusinessService\BusinessService.csproj" 
+vbld_MakeFileWriteable "%PROJDIR%\..\Common\Common.csproj" 
+vbld_MakeFileWriteable "%PROJDIR%\..\Data\Data.csproj" 
+vbld_MakeFileWriteable "%PROJDIR%\..\DataAccess\DataAccess.csproj" 
+vbld_MakeFileWriteable "%PROJDIR%\..\WindowsUI\WindowsUI.vbproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\Database\Database.dbp"
+
+'Referenced Projects
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Business\SSW.SQLDeploy.Business.vbproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Configuration\SSW.Framework.Configuration.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Data\SSW.Framework.Data.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\EdwardForgacs.Components.WindowsUI\EdwardForgacs.Components.WindowsUI.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Exception\SSW.Framework.ExceptionManagement.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\SSWSQLDeployCheck\SSW.SQLDeploy.Check.vbproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Utilities\SSW.Framework.Utilities.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\WindowsUI\SSW.Framework.WindowsUI.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\WindowsUI.Options\SSW.Framework.WindowsUI.Options.csproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\WindowsUI.Search\SSW.Framework.WindowsUI.Search.vbproj"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\WindowsUI.Search.RAD\SSW.Framework.WindowsUI.Search.RAD.csproj"
+
+'assemblies
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Data\bin\Release\SSW.Framework.Data.xml"
+vbld_MakeFileWriteable "%PROJDIR%\..\References\Exception\bin\Release\SSW.Framework.ExceptionManagement.xml"
+]]></Script>
+			<indent type='3'>1</indent>
+			<name>Make Project Files Writable</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\%VSSProject%.sln</FileIn>
+			<FileOut>%PROJDIR%\..\%VSSProject%.sln</FileOut>
+			<Find>^\s*GlobalSection\(SourceCodeControl\).*?EndGlobalSection</Find>
+			<indent type='3'>1</indent>
+			<name>Remove Solution Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\BusinessService\BusinessService.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\BusinessService\BusinessService.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ../BusinessService/BusinessService Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\Common\Common.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\Common\Common.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ../Common/Common.csproj Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\Data\Data.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\Data\Data.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ../Data/Data.csproj Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\DataAccess\DataAccess.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\DataAccess\DataAccess.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ../DataAccess/DataAccess.csproj Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\WindowsUI\WindowsUI.vbproj</FileIn>
+			<FileOut>%PROJDIR%\..\WindowsUI\WindowsUI.vbproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ../WindowsUI/WindowsUI.vbproj Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\Database\Database.dbp</FileIn>
+			<FileOut>%PROJDIR%\..\Database\Database.dbp</FileOut>
+			<Find>^\s*SccProjectName[[^B]]*</Find>
+			<indent type='3'>1</indent>
+			<name>Remove ../Database/Database.dbp Binding</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\Business\SSW.SQLDeploy.Business.vbproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\Business\SSW.SQLDeploy.Business.vbproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\Business\SSW.SQLDeploy.Business.vbproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\Configuration\SSW.Framework.Configuration.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\Configuration\SSW.Framework.Configuration.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\Configuration\SSW.Framework.Configuration.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\Data\SSW.Framework.Data.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\Data\SSW.Framework.Data.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\Data\SSW.Framework.Data.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\EdwardForgacs.Components.WindowsUI\EdwardForgacs.Components.WindowsUI.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\EdwardForgacs.Components.WindowsUI\EdwardForgacs.Components.WindowsUI.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\EdwardForgacs.Components.WindowsUI\EdwardForgacs.Components.WindowsUI.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\Exception\SSW.Framework.ExceptionManagement.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\Exception\SSW.Framework.ExceptionManagement.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\Exception\SSW.Framework.ExceptionManagement.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\SSWSQLDeployCheck\SSW.SQLDeploy.Check.vbproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\SSWSQLDeployCheck\SSW.SQLDeploy.Check.vbproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\SSWSQLDeployCheck\SSW.SQLDeploy.Check.vbproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\Utilities\SSW.Framework.Utilities.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\Utilities\SSW.Framework.Utilities.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\Utilities\SSW.Framework.Utilities.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\WindowsUI\SSW.Framework.WindowsUI.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\WindowsUI\SSW.Framework.WindowsUI.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\WindowsUI\SSW.Framework.WindowsUI.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\WindowsUI.Options\SSW.Framework.WindowsUI.Options.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\WindowsUI.Options\SSW.Framework.WindowsUI.Options.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\WindowsUI.Options\SSW.Framework.WindowsUI.Options.csproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\WindowsUI.Search\SSW.Framework.WindowsUI.Search.vbproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\WindowsUI.Search\SSW.Framework.WindowsUI.Search.vbproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\WindowsUI.Search\SSW.Framework.WindowsUI.Search.vbproj</name>
+		</step>
+		<step action='Replace in File'>
+			<FileIn>%PROJDIR%\..\References\WindowsUI.Search.RAD\SSW.Framework.WindowsUI.Search.RAD.csproj</FileIn>
+			<FileOut>%PROJDIR%\..\References\WindowsUI.Search.RAD\SSW.Framework.WindowsUI.Search.RAD.csproj</FileOut>
+			<Find><![CDATA[^\s*SccProjectName[[^>]]*]]></Find>
+			<indent type='3'>1</indent>
+			<name>Remove ..\References\WindowsUI.Search.RAD\SSW.Framework.WindowsUI.Search.RAD.csproj</name>
+		</step>
+		<step action='Group'>
+			<description><![CDATA[Move the necessary Web Service files to the Web Server
+]]></description>
+			<name>Publish Web Service</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%WebServerPath%\v%PROD_VERSION_MSI%</DestDir>
+			<Ext><![CDATA[*.asmx
+*.svc
+*.config
+AssemblyInfo.cs
+AssemblyInfo.vb
+*.dll
+*.xml
+*.pdb
+]]></Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%\%WebServiceDir%</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>1</indent>
+			<name>Copy to Web Server</name>
+		</step></steps>
+	<steps type='2'>
+		<step action='Group'>
+			<description>If the failed step was the checkout step, undo checkouts made by the build process</description>
+			<name>Failed</name>
+		</step>
+		<step action='Send Mail'>
+			<Attachments><![CDATA[%LOGFILE%
+]]></Attachments>
+			<From>%FROM_EMAIL%</From>
+			<Message><![CDATA[At %DATETIME%, the build '%PROJFILE%' on %COMPUTERNAME% failed with the following error:
+
+FAILURE INFORMATION:
+Step Name: %FAILSTEP_NAME%
+Step Status: %FAILSTEP_STATUS%
+Step Output:
+%FAILSTEP_OUTPUT%]]></Message>
+			<Port>25</Port>
+			<Server>%SMTP_SERVER%</Server>
+			<Subject>Build Failure</Subject>
+			<Timeout>10</Timeout>
+			<To>%TO_EMAIL%</To>
+			<description>Notify the build master that failure occurred</description>
+			<indent type='3'>1</indent>
+			<name>Notify of Failure</name>
+		</step></steps>
+	<macros>
+		<macro name='AssemblyInfoPath'>
+			<description><![CDATA[Enter the relative path & filename of your AssemblyInfo file including extention.]]></description>
+			<value>..\WindowsUI\AssemblyInfo.vb</value>
+		</macro>
+		<macro name='BeeFolder'>
+			<description>The folder on \\bee where the msi will be moved.</description>
+			<value>\\ant\ssw\download</value>
+		</macro>
+		<macro name='buildMode'>
+			<description>IGNORE: This will be set from the dialogue box in run time.</description>
+			<value>7</value>
+		</macro>
+		<macro name='CodeAuditorJob'>
+			<description>The Job Name that has been added to the master Code Auditor on remote server</description>
+			<value>SSW VS.NET WinForm Projects</value>
+		</macro>
+		<macro name='CodeAuditorPath'>
+			<description>The Code Auditor Path name on remote server</description>
+			<value>\\ant\c$\Program Files\SSW Code Auditor</value>
+		</macro>
+		<macro name='CodeAuditorReportPath'>
+			<description>The path name for the xml that will be generated for Code Auditor Reports.</description>
+			<value>\\ant\ssw\zsValidate\CodeAuditorReportsSswOnly</value>
+		</macro>
+		<macro name='COMPANY_NAME'>
+			<description>company name macro used in Make VB, VC, and .NET steps</description>
+			<value>ssw.com.au</value>
+		</macro>
+		<macro name='COMPLETED_LOG'>
+			<description>File that will contain a log line for each successful build</description>
+			<value>%PROJDIR%\_Success.log</value>
+		</macro>
+		<macro name='COUNTER'>
+			<description>IGNORE: This macro is used for the looping</description>
+			<value>1</value>
+		</macro>
+		<macro name='FAILED_LOG'>
+			<description>File that will be written to for each failed build</description>
+			<value>%PROJDIR%\_Fail.log</value>
+		</macro>
+		<macro name='FROM_EMAIL'>
+			<description>From address for emails</description>
+			<value>info@ssw.com.au</value>
+		</macro>
+		<macro name='FTPexe'>
+			<description>This macro should be set to 'true' if there is an exe file that needs to be FTPed. The 'FTP exe file' step will be skipped if this is set to 'false'.</description>
+			<value>false</value>
+		</macro>
+		<macro name='LOGFILE'>
+			<value>%PROJDIR%\_Log.log</value>
+		</macro>
+		<macro name='LOOP_COUNT'>
+			<value>0</value>
+		</macro>
+		<macro name='NewWise'>
+			<description>"true" if Wise 6.0 is installed on your machine. The wise compiler executer needs to be run from a different location.</description>
+			<value>false</value>
+		</macro>
+		<macro name='Not_eXtreme'>
+			<description><![CDATA[If this is not eXtreme Emails Project set to "true"
+]]></description>
+			<value>true</value>
+		</macro>
+		<macro name='NunitFilePath'>
+			<description>Relative path to the .nunit file in your project. This is relative to the current VPBAutoBuild file.</description>
+			<value>..\WindowsUI\bin\debug\UnitTests.nunit</value>
+		</macro>
+		<macro name='PROD_ID'>
+			<description>The DownloadID in the Download Table found in SSWData2005 on DRAGON</description>
+			<value>CA</value>
+		</macro>
+		<macro name='PROD_SIZE'>
+			<description>IGNORE: This is the size of the exe file, and it will be found in run time.</description>
+			<value>9.57</value>
+		</macro>
+		<macro name='PROD_VERSION'>
+			<description>IGNORE: The current Product Version which will be generated during runtime.</description>
+			<value>7.18</value>
+		</macro>
+		<macro name='PROD_VERSION_MSI'>
+			<description>IGNORE: The currect Product Version used for the msi file name which will be generated.</description>
+			<value>7-18</value>
+		</macro>
+		<macro name='RemoveBinding'>
+			<description>Set to "true" to remove the Source Safe Binding from the Solution</description>
+			<value>false</value>
+		</macro>
+		<macro name='SealFolder'>
+			<description>The remote file to which the msi and ini files will be synched</description>
+			<value>/httpdocs/SSW/download</value>
+		</macro>
+		<macro name='slnConfig'>
+			<description>The configuration of the Solution to build (i.e. Debug, Release etc.)</description>
+			<value>Release</value>
+		</macro>
+		<macro name='SMTP_SERVER'>
+			<description>Identity of the SMTP server to use when sending mail</description>
+			<value>mail.ssw.com.au</value>
+		</macro>
+		<macro name='SolutionType'>
+			<description>The version of visual studio you use to compile the projects</description>
+			<value>2005</value>
+		</macro>
+		<macro name='SSWProduct'>
+			<description>Set this macro to "false" if it is a client project.</description>
+			<value>true</value>
+		</macro>
+		<macro name='ThisPath'>
+			<description>IGNORE: the actual path because PROJDIR gets overridden.</description>
+			<value>\\ant\ssw\StandardsInternal\VisualBuildProSetup</value>
+		</macro>
+		<macro name='TO_EMAIL'>
+			<description>E-mail address to send notification of success and failure to</description>
+			<value>BriteCheng@ssw.com.au</value>
+		</macro>
+		<macro name='USFolder'>
+			<description>The remote U.S. fie to which the exe and the ini files will be synched</description>
+			<value>/httpdocs/SSW/download</value>
+		</macro>
+		<macro name='VBPAutoBld'>
+			<description>IGNORE: This will run a check for any files you have checked out for your project. (if steps are skipped then you must Check in all files from the root of the project.</description>
+			<value>True</value>
+		</macro>
+		<macro name='VSS'>
+			<description>The SourceSafe Database</description>
+			<value>\\bee\vssdb\srcsafe.ini</value>
+		</macro>
+		<macro name='VSSPath'>
+			<description>Path name in Source Safe Database</description>
+			<value>$/SSW.CodeAuditor</value>
+		</macro>
+		<macro name='VSSProject'>
+			<description>The filename of your solution (without extention)</description>
+			<value>SSWCodeAuditor</value>
+		</macro>
+		<macro name='VSSProjectName'>
+			<description>The Project Name that will be displayed during the installation wizard and the start menu.</description>
+			<value>SSW Code Auditor</value>
+		</macro>
+		<macro name='WebDownloadFolder'>
+			<description>The URL that the project's msi/exe will be found for release.</description>
+			<value>http://www.ssw.com.au/ssw/download</value>
+		</macro>
+		<macro name='WebServerPath'>
+			<description>Folder name for the Web Server</description>
+			<value>\\tuna\c\Inetpub\wwwroot\SSWTimePRONET</value>
+		</macro>
+		<macro name='WebService'>
+			<description>set to "true" if there is a WebService Project in your solution.</description>
+			<value>false</value>
+		</macro>
+		<macro name='WebServiceDir'>
+			<description>The Directory of the Business Web Service Layer in your Solution (relative to this .bld file)</description>
+			<value>..\BusinessWebService</value>
+		</macro>
+		<macro name='WinProject'>
+			<value>true</value>
+		</macro>
+		<macro name='WSI_File'>
+			<description>The wise file name (which will also be the msi and ini file name)</description>
+			<value>SSWCodeAuditor</value>
+		</macro></macros>
+	<script language='VBScript'><![CDATA[Sub CreateShortcut(target, sname)
+
+	Set objWshShell = CreateObject("Wscript.Shell")
+	
+	' Read desktop path using WshSpecialFolders object
+	strDesktopPath = objWshShell.SpecialFolders("Desktop")
+	
+	' Create a shortcut object on the desktop
+	Set objShortcut = objWshShell.CreateShortcut(strDesktopPath & "\" & sname & ".lnk")
+	
+	' Set shortcut object properties and save it
+	objShortcut.TargetPath = target
+	objShortcut.Save
+End Sub
+
+' returns .71 if VS.NET 2003 is installed, otherwise returns empty string
+Function VerSlnExt()
+	VerSlnExt = ""
+	If Len(Application.ExpandMacros("%REG_READ(" & _
+		"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.1\InstallDir, )%")) > 1 Then
+		VerSlnExt = ".71"
+	End If
+	
+End Function]]></script>
+</project>

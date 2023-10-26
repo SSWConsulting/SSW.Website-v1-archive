@@ -1,0 +1,95 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.alert-info {
+    /*text-transform: uppercase;*/
+    /*color: #FFFFFF;*/
+    /*background-color: #448CCB;*/
+    /*border-color: #448CCB;*/
+}
+
+.alert-danger {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #CC4141;
+    /*border-color: #CC4141;*/
+}
+
+.textBoxAlert {
+    width: 50%;
+    position: relative;
+}
+
+.alert-success {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #8DC63F;
+    /*border-color: #8DC63F;*/
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 3px;
+}
+
+.checkboxListContainer label {
+    padding-left: 2px;
+}
+
+label {
+    text-indent: 2px;
+    padding: 2px;
+}
+
+textarea {
+    position: relative;
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.textarea[placeholder] {
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.textAndAlert {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.textAndAlert .textBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textAndAlert .textBoxAlert {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+button[id=load] {
+    text-transform: uppercase;
+    background-color: #CC4141;
+}
+
+button[id=feedbackBtnWant] {
+    text-transform: uppercase;
+    background-color: #CC4141;
+}
+
+/*a[disabled] {
+    pointer-events: none;
+}*/

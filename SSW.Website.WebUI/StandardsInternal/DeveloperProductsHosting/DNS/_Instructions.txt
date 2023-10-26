@@ -1,0 +1,5 @@
+These are the backups
+
+The master dns files are on seal F:\WinNT\System32\DNS
+
+When you host the DNS records for a customer, please copy here as a backup

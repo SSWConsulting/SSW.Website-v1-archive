@@ -1,0 +1,138 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 14.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:AUS Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010401T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16011007T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20121212T015753Z
+DESCRIPTION:ASP.NET MVC: Migrating to MVC without losing your Web Forms inv
+	estment\nMVC is a giant leap forward for ASP.NET developers and represents
+	 the best way to build new web applications. Unfortunately\, not every pro
+	ject is a green fields project\, and most organisations have at least a fe
+	w applications running on Web Forms that need to be maintained.\n\nStartin
+	g a brand new project in MVC is easy\, but moving to MVC from an existing 
+	Web Forms application isn’t a trivial decision. It would be madness to i
+	gnore the years of investment you’ve already made in your Web Forms appl
+	ication. Even if you’re happy to throw all that old code away and start 
+	anew\, is your manager similarly enthusiastic?\n\nNobody wants to be stuck
+	 on old technology\, but you also don’t want to feel like you’ve waste
+	d the last few years!\n\nAre you looking to build websites that can run on
+	 desktop and mobile devices with little extra effort?\n\nIn this webinar\,
+	 I’ll show you how you can move forward with ASP.NET MVC without losing 
+	the investment you’ve already made with Web Forms. You’ll be able to s
+	tart working with the “new shiny” without incurring the wrath of your 
+	users and managers by rebuilding everything from scratch.\n\nWebinar Objec
+	tives\n*	- Why you should move to MVC and how to sell it to your manager\n
+	*	- Options for moving from Web Forms to MVC\n*	- A migration strategy tha
+	t’ll make everyone happy\n*	- Ample time for Q&A\n\n\n
+DTEND;TZID="AUS Eastern Standard Time":20121220T120000
+DTSTAMP:20121212T015754Z
+DTSTART;TZID="AUS Eastern Standard Time":20121220T110000
+LAST-MODIFIED:20121212T015753Z
+LOCATION:Online
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-au:SSW Webinar - ASP.NET MVC: Migrating to MVC without 
+	losing your Web Forms investment
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000A0AE53A867D8CD01000000000000000
+	010000000685650786E17BA409BB44E512B508907
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 14.02.5004.000">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted f
+	rom text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG
+	="en-au"><FONT COLOR="#000000" SIZE=4 FACE="Verdana">ASP.NET MVC: Migratin
+	g to MVC without losing your Web Forms investment</FONT></SPAN><SPAN LANG=
+	"en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
+	-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"><FONT COLOR="#333
+	333" SIZE=2 FACE="Arial">MVC is a giant leap forward for ASP.NET developer
+	s and represents the best way to build new web applications. Unfortunately
+	\, not every project is a green fields project\, and most organisations ha
+	ve at least a few applications running on Web Forms that need to be mainta
+	ined.</FONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P
+	>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n
+	\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"><FONT COLOR="#33
+	3333" SIZE=2 FACE="Arial">Starting a brand new project in MVC is easy\, bu
+	t moving to MVC from an existing Web Forms application isn’t a trivial d
+	ecision. It would be madness to ignore the years of investment you’ve al
+	ready made in your Web Forms application. Even if you’re happy to throw 
+	all that old code away and start anew\, is your manager similarly enthusia
+	stic?</FONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P
+	>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n
+	\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"><FONT COLOR="#33
+	3333" SIZE=2 FACE="Arial">Nobody wants to be stuck on old technology\, but
+	 you also don’t want to feel like you’ve wasted the last few years!</F
+	ONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P 
+	DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR
+	=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"><FONT COLOR="#333333" SI
+	ZE=2 FACE="Arial">Are you looking to build websites that can run on deskto
+	p and mobile devices with little extra effort?</FONT></SPAN><SPAN LANG="en
+	-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au
+	"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><
+	/SPAN><SPAN LANG="en-au"><FONT COLOR="#333333" SIZE=2 FACE="Arial">In this
+	 webinar\, I’ll show you how you can move forward with ASP.NET MVC witho
+	ut losing the investment you’ve already made with Web Forms. You’ll be
+	 able to start working with the “new shiny” without incurring the wrat
+	h of your users and managers by rebuilding everything from scratch.</FONT>
+	</SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></S
+	PAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"><B></B
+	></SPAN><SPAN LANG="en-au"><B></B></SPAN><SPAN LANG="en-au"><B></B></SPAN>
+	<SPAN LANG="en-au"><B><FONT COLOR="#CC4141" SIZE=6 FACE="Helvetica">Webina
+	r Objectives</FONT></B></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"
+	></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR
+	=LTR><SPAN LANG="en-au"><FONT COLOR="#333333" SIZE=2 FACE="Symbol">&#183\;
+	<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT>
+	</FONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LA
+	NG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPA
+	N LANG="en-au"> <FONT COLOR="#333333" SIZE=2 FACE="Arial">-</FONT></SPAN><
+	SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"> <FO
+	NT COLOR="#333333" SIZE=2 FACE="Arial">Why you should move to MVC and how 
+	to sell it to your manager</FONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LA
+	NG="en-au"></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG=
+	"en-au"><FONT COLOR="#333333" SIZE=2 FACE="Symbol">&#183\;<FONT FACE="Cour
+	ier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><S
+	PAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPA
+	N><SPAN LANG="en-au"> <FONT COLOR="#333333" SIZE=2 FACE="Arial">-</FONT></
+	SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au
+	"> <FONT COLOR="#333333" SIZE=2 FACE="Arial">Options for moving from Web F
+	orms to MVC</FONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SP
+	AN><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><FONT C
+	OLOR="#333333" SIZE=2 FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\
+	;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-au
+	"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="e
+	n-au"> <FONT COLOR="#333333" SIZE=2 FACE="Arial">-</FONT></SPAN><SPAN LANG
+	="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"> <FONT COLOR=
+	"#333333" SIZE=2 FACE="Arial">A migration strategy that’ll make everyone
+	 happy</FONT></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><S
+	PAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"><FONT COLOR=
+	"#333333" SIZE=2 FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbs
+	p\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-au"></S
+	PAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"
+	> <FONT COLOR="#333333" SIZE=2 FACE="Arial">-</FONT></SPAN><SPAN LANG="en-
+	au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"> <FONT COLOR="#333
+	333" SIZE=2 FACE="Arial">Ample time for Q&amp\;A</FONT></SPAN></P>\n\n<P D
+	IR=LTR><SPAN LANG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"></S
+	PAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+END:VEVENT
+END:VCALENDAR

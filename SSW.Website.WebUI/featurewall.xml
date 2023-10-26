@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File">
+  <Ad>
+    <ImageUrl>/ssw/images/banner-scrum-in-us.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Events/Scrum-Training-Course.aspx</NavigateUrl>
+    <AlternateText>SCRUM Developer Course in USA and Canada</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_codeauditor.jpg</ImageUrl>
+    <NavigateUrl>/ssw/CodeAuditor/</NavigateUrl>
+    <AlternateText>Keep your code healthy with SSW Code Auditor</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_rapid.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</NavigateUrl>
+    <AlternateText>Rapid SharePoint Development For Teams using Visual Studio 2010</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_juval-clinic.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Events/Juval-Lowy-Architects-Clinic.aspx</NavigateUrl>
+    <AlternateText>Juval Löwy - The Architect's Clinic</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_readyforvista.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Standards/Rules/RulesToBetterWindowsVista.aspx</NavigateUrl>
+    <AlternateText>Are You ready for Vista? We have tested and deployed Windows Vista successfully. Tips and practical suggestions can be found in Rules to Better Windows Vista</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>Are You Ready For Vista</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_sswmakelookgood.jpg</ImageUrl>
+    <NavigateUrl>/ssw/company/WebsiteDesignAndUserExperience.aspx</NavigateUrl>
+    <AlternateText>We'll make you look (and feel) good. Find out how SSW can help improve your website design.</AlternateText>
+    <Impressions>25</Impressions>
+    <Keyword>SSW Website Design Service</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_techbreakfast.jpg</ImageUrl>
+    <NavigateUrl>/ssw/events/SSWTechBreakfast.aspx</NavigateUrl>
+    <AlternateText>Looking for some serious hands-on advanced training? Get a mouthful of the SSW Tech Breakfast</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>Tech Breakfast</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_linkauditor.jpg</ImageUrl>
+    <NavigateUrl>/ssw/LinkAuditor/Default.aspx</NavigateUrl>
+    <AlternateText>The best tool to check and validate your website's links. </AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>SSW products</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_hosting.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Hosting/Default.aspx</NavigateUrl>
+    <AlternateText>Your web site is important and you need experts on hand </AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>SSW Web Hosting</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_sharepoint_casestudy.jpg</ImageUrl>
+    <NavigateUrl>/ssw/company/SharePointCaseStudy.aspx</NavigateUrl>
+    <AlternateText>MicrosoftSharePoint.com proudly developed by SSW</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>SharePoint Case Study</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_worleyparsons_casestudy.jpg</ImageUrl>
+    <NavigateUrl>/ssw/company/worleyparsonscasestudy.aspx</NavigateUrl>
+    <AlternateText>WorleyParsons.com proudly developed by SSW</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>WorleyParsons Case Study</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_marlon.png</ImageUrl>
+    <NavigateUrl>javascript:showSswVideo('video/Why-Choose-Ssw.wmv');</NavigateUrl>
+    <AlternateText>3 reasons to choose SSW</AlternateText>
+    <Impressions>25</Impressions>
+    <Keyword>SSW Video</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_sql-deploy.jpg</ImageUrl>
+    <NavigateUrl>http://www.sqldeploy.com</NavigateUrl>
+    <AlternateText>Deploy SQL Server Schema Changes</AlternateText>
+    <Impressions>25</Impressions>
+    <Keyword>SQL Deploy</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_brainquest.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Events/Brain-Quest-VisualStudio2010-TFS2010-SharePoint2010.aspx</NavigateUrl>
+    <AlternateText>SSW Brain Quest: Team Foundation Server and SharePoint 2010</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>SSW Brain Quest</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_alm.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Consulting/alm-building-quality-applications.aspx</NavigateUrl>
+    <AlternateText>Application Lifecycle Management (ALM) - Building Quality Applications</AlternateText>
+    <Impressions>0</Impressions>
+    <Keyword>Application Lifecycle Management (ALM)</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>/ssw/images/banner_scrum-general.jpg</ImageUrl>
+    <NavigateUrl>/ssw/Events/Scrum-Training-Course-3-days.aspx</NavigateUrl>
+    <AlternateText>TFS Professional Scrum Developer Course </AlternateText>
+    <Impressions>25</Impressions>
+    <Keyword>TFS Professional Scrum Developer Course </Keyword>
+  </Ad>
+</Advertisements>

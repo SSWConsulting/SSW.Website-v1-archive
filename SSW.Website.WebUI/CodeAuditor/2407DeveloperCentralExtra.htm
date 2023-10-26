@@ -1,0 +1,953 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<title>SSW Developer Central Extra</title>
+		<meta name="GENERATOR" Content="Microsoft FrontPage 6.0">
+		<LINK href="/ssw/Include/ssw.css" type="text/css" rel="stylesheet">
+	    <link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon">
+	</head>
+	<body>
+		<p>Developer Central</P>
+		<p>http://MCPmag.com/mcsdcentral/</P>
+		<p>July 10, 2002 -&nbsp; Vol. 1
+#10</P>
+		<p>=================================================================</P>
+		<p>THIS ISSUE SPONSORED
+BY:</P>
+		<p>- XML Web Services One
+Conference &amp; Expo - Boston http://www.xmlconference.com/boston/index3.asp</P>
+		<p>=================================================================</P>
+		<p>In this issue
+:</P>
+		<p>1) Editorial Chatter<BR>2)
+Weblinks<BR>3) Improving Software
+Development:&nbsp;&nbsp; The Code Handyman<BR>4) .NET
+Explorer: HTML Help 2.0<BR>5) Briefing: Rational XDE Modeler<BR>6)
+Briefing: Identify AppSight<BR>7) Briefing: Codagen Architect<BR>8)
+Briefing: Logidex<BR>
+				<SPAN style="" FONT-SIZE: 12pt; BACKGROUND: #cccccc;>
+					<a href="#SSWArticle">9) Review:SSW Code Auditor</a>
+				</SPAN>
+					
+					
+					<BR>
+				
+			
+				10)
+Briefing: Precise/Indepth for SQL Server<BR>11)
+Review: CodeWarrior<BR>12) Review: C# for Developers<BR>13)
+Review: Boxer<BR>14) New and Notable<BR>15) Book
+Notices<BR>16) Reader Mail<BR>17) Web Resources for
+Developers</P>
+		<p>***********************************************************************</P>
+		<p>Sponsor: Conference Tracks
+and Package Prices That Work For You!</P>
+		<p>Affordable Value - You can
+benefit from the full XML Web Services One experience for less than $350 per day
+(based on purchase of the VIP Platinum or Gold package with early bird
+discounts). There are nine conference tracks</P>
+		<p>covering: XML, Web Services,
+Java, .NET, Standards and more. Register Today! http://www.xmlconference.com/boston/index3.asp</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Editorial
+Chatter</P>
+		<p>Whoops! Last month's issue
+of DEVELOPER CENTRAL was properly labeled as</P>
+		<p>#9 at the top, but the
+subject line of the email claimed that it was #10. Blame it on my writing the
+subject line at oh-dark-thirty one morning. I really can count to ten (and I
+usually take the same route to getting there, too).</P>
+		<p>Later in this issue you'll
+see that I've divided my product coverage between "briefings" and "reviews".
+This is an area in which you deserve to understand how the industry works. Most
+writers who cover a computer beat spend an inordinate amount of time getting
+briefings. Usually this means that two or three people from the vendor call you
+on the phone to explain why their new product is the greatest thing since the
+invention of contour plowing. You'll hear all about their latest and greatest
+features and why every man, woman, child, and dog in the industry will want to
+buy their product. On good days, they'll actually answer questions and discuss
+things; on bad days, it's like having the press release read to you over the
+phone.</P>
+		<p>The best briefings are given
+by members of the development team, or by a closely-involved executive. Often
+there is someone from the company's PR agency on the phone as well, making sure
+that they express their opinion of the proper "spin" for your story. They'll do
+their best to make the journalist feel like they're getting inside information;
+briefings may come with embargo dates (before which we're asked not to print the
+news) or NDA information (little tidbits that they'd rather they hadn't said).
+As a practical matter, most writers (myself</P>
+		<p>included) respect embargoes
+and NDAs, because if you don't, it's tough to keep getting
+briefings.</P>
+		<p>Briefings may feature
+screenshots of the product or, increasingly, over-the-web demonstrations. But
+what they DON'T feature is any opportunity for the journalist to use the product
+on their own computer at their own pace, and off the beaten track of the
+carefully-scripted demo. And _that_, my friends, is the essential difference
+between a briefing and a review. From a briefing, all I can do is pass along
+what the company said along with my opinion of their ideas. In a review, I can
+actually use the software and report back on how well it worked for me. And you
+deserve to know which is which. Briefings are certainly still valuable, and I
+can get the news to you more quickly than I can from a review. But you should
+always remember that in briefings the company can generally gloss over any
+problems with their product, and the writer has no way of knowing
+this.</P>
+		<p>Sometimes it's hard to tell
+whether a particular piece in the computer press is based on a briefing or a
+review. Here's one rule of thumb: if every writer about a particular product
+says the same thing, then the stories were written from a press release or a
+briefing. An excellent example is the recent coverage of Microsoft's first hints
+about what's coming in Office 11. Every single story that I saw mentioned the
+new vertical orientation of the Outlook preview pane and the improved XML
+support (but wait - wasn't XML already supposed to be a "first-class file
+format" in Office 10?), and not much else. That means, almost certainly, that
+none of those writers actually got any hands-on time with the
+product.</P>
+		<p>And if the most significant
+thing to write about is the screen layout of the product, what does that say
+about how worthwhile this upgrade will be? But that's a topic for another
+column.</P>
+		<p>(And the perennial note:
+watch out for URLs that wrap later in this newsletter, especially ones that
+point to MSDN. Perhaps someone should introduce Microsoft to
+MakeAShorterLink.com)</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Weblinks: Fresh Developer
+Content on 101's websites</P>
+		<p>- Business Rules are Back:
+http://www.adtmag.com/article.asp?id=6492</P>
+		<p>- Generation Gap: MS Exam
+70-306, Visual Studio.NET: http://www.certcities.com/editorial/exams/story.asp?EditorialsID=59</P>
+		<p>- Office Web Components
+Under Security Investigation: http://www.entmag.com/news/article.asp?EditorialsID=5421</P>
+		<p>- Balancing Act: Component
+Load Balancing: http://www.mcpmag.com/Features/article.asp?EditorialsID=288</P>
+		<p>&nbsp;</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Improving Software
+Development</P>
+		<p>The Code
+Handyman</P>
+		<p>&nbsp;As soon as we started
+programming, we found to our surprise that it&nbsp; wasn't as easy to get
+programs right as we had thought. Debugging had&nbsp; to be discovered. I can
+remember the exact instant when I realized&nbsp; that a large part of my life
+from then on was going to be spent in&nbsp; finding mistakes in my own
+programs.</P>
+		<p>&nbsp;- Maurice Wilkes,
+developer of EDSAC, 1949</P>
+		<p>One of the great joys of
+software development is that you get to build things out of thin air and
+imagination (with a little help from a compiler). You start with a white board,
+design some elaborate data structures, and then code away, watching your
+masterwork form.</P>
+		<p>But much as we'd all like to
+spend our days writing exciting new code, the reality is a bit different. Most
+coding is maintenance programming. One brilliant programmer puts together the
+core of the system, and then 500 of us spend the rest of our careers maintaining
+it. But don't worry, there's still room for a lot of craft in the maintenance
+programming world. One interesting development in recent years is the rise of
+refactoring as an accepted part of that craft.</P>
+		<p>It Doesn't Rust,
+But</P>
+		<p>Joel Spolsky (http://www.joelonsoftware.com/) has
+pointed out the general insanity involved in throwing away working code and
+starting from scratch when you need to change something. He argues that this is
+the main reason why Microsoft managed to eat Netscape's lunch in the browser
+wars -- that Netscape wasted years on replacing their Navigator code with a
+whole new version. Yeah, Mozilla is shaping up to be a nice product in some
+ways. But there aren't a whole lot of people left who care any more. Joel points
+out that source code doesn't rust.</P>
+		<p>But although source code
+doesn't rust (in the sense that code which works today is still going to work
+tomorrow), requirements do. We could debate for a while whether most requirement
+changes are the result of business changes or just the equivalent of bigger tail
+fins on this year's cars (is the Windows XP look &amp; feel technology or
+marketing?), but the fact is that developers are constantly called upon to fix,
+tweak, and otherwise change working code.</P>
+		<p>It's precisely because code
+doesn't rust that these changes take up so much of our development energies.
+Having paid us tons of money to develop software in the first place, the people
+who own it understandably would like to maximize their investments. So they ask,
+not for a rewrite, but for more characters in the country name field (who knew
+they were going to start doing business in Bashkortostan?) or a different color
+on the web page (because the new CEO doesn't like pastels).</P>
+		<p>Surely there must be a way
+to respond to these demands and still keep from going mad with
+boredom.</P>
+		<p>Enter
+Refactoring</P>
+		<p>That's where refactoring
+comes in. Martin Fowler, who wrote the standard reference on the subject (titled
+simply Refactoring) defines the term this</P>
+		<p>way:</P>
+		<p>&nbsp;&nbsp;&nbsp;
+Refactoring is the process of changing a software system in such
+a</P>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+way that it does not alter the external behavior of the code
+yet</P>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+improves its internal structure. It is a disciplined way to
+clean</P>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+up code that minimizes the changes of introducing bugs. In
+essence</P>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+when you refactor you are improving the design of the code after
+it</P>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+has been written.</P>
+		<p>If that sounds intriguing,
+you really ought to read Fowler's book (or check out his web site http://www.refactoring.com for an
+introduction and some links). The book explains and justifies refactoring in
+some depth, and then presents a catalog of refactorings. Historically,
+refactoring originated with Smalltalk. These days the concepts are most advanced
+in Java, and Fowler uses Java for his examples. That can make the book a bit
+hard-going in spots if you don't know the language, but the principles apply to
+any object-oriented language.</P>
+		<p>To give you some flavor for
+the book, here's one of the simplest of</P>
+		<p>refactorings: if you find a
+public field, make it private and provide accessors. In Java, that's a change
+from</P>
+		<p>&nbsp;&nbsp;&nbsp; public
+String _name</P>
+		<p>to</P>
+		<p>private String
+_name;</P>
+		<p>public String getName()
+{return _name;}</P>
+		<p>public void setName(String
+arg) {_name = arg;}</P>
+		<p>The real benefit to the
+catalog of refactorings is not in identifying them but in recording knowledge
+about them. Fowler justifies each one as it's introduced (in this case,
+discussing the benefits of private data to</P>
+		<p>modularity) and then
+provides a "mechanics" section that discusses how to safely make the change. In
+the case of taking a field private, this includes finding and replacing all uses
+of the public field, then making the field private -- and doing a full
+compile-and-test cycle after each change (which points out, by the way, one of
+the ways in which refactoring fits naturally into an Extreme Programming
+environment). For all but the simplest refactorings he also provides
+fully-worked examples.</P>
+		<p>Explorers Need Not
+Apply</P>
+		<p>One of the key points to
+refactoring is that the changes you make when refactoring should be provably
+correct. That's where the part about not changing the external behavior of the
+code comes in. Remember, you're starting with code that works. You want to end
+up with code that works, regardless of the changes that you're making. This
+means that it's OK to make very structured changes, one at a time. Things like
+extracting a superclass from the common features of two similar classes don't
+change the interface of the existing classes at all. They just rearrange the
+internal implementation.</P>
+		<p>Refactoring isn't
+exploration. Though there is a place in software development for experiments
+along the lines of "what would happen if we ripped out this section here and
+replaced it with new objects written in C#, and then changed the interfaces to
+match," that place is not in the refactoring process. (In fact, the place for
+such radical changes is in a new branch of our source code control system, one
+that you can throw away if you realize that you've reached the point where the
+map says Here There By</P>
+		<p>Tygers.) Refactoring is more
+like maintaining a</P>
+		<p>garden: you take what's
+already there and make it neater, while still preserving the original
+design.</P>
+		<p>Key to this process is
+testing. You absolutely need a good set of unit tests that exercises any code
+that you intend to refactor. Even if you can prove to your own satisfaction that
+the refactoring changes don't change the behavior of the code, run the tests!
+Otherwise, the time will come when you're woken up at three in the morning
+because you neglected to think about some special case or other that you
+refactored out of existence.</P>
+		<p>Bait and
+Switch?</P>
+		<p>But wait a minute! I started
+out by talking about maintenance programming in response to changing
+requirements, and now I'm talking about refactoring that doesn't change
+anything. Why do all this work if it's not going to change anything? The answer
+is that refactoring doesn't change anything externally, but it certainly changes
+things internally. Take the example of deriving a superclass from two existing
+classes. Perhaps you have Customers and Suppliers who share many pieces of
+information, such as address, phone number, and fax number. So in refactoring
+you might create an Entity class containing the common fields, and derive the
+two existing classes from Entity. That's an internal change that makes the code
+significantly cleaner.</P>
+		<p>Of course, clean code
+doesn't excite the business folks the way it does the development folks. But
+think about the effect of this refactoring on future requirements changes: the
+next time the business folks come to you with a new piece of common information
+("oh, can we add a web site address to Customers? And to Suppliers, while we're
+at it?"), your job is much easier as a result of the refactoring. Now what looks
+like two changes to your customers is one to your code, thanks to the clever
+refactoring.</P>
+		<p>And that's where the
+benefits of this approach to come in. If you're maintaining code, think about
+refactoring it at the same time. As you find ways to improve the internal
+structure so that it's more maintainable, take the time to make the
+improvements. If the code is in bad shape (perhaps your predecessor was not as
+brilliant as you are), you might need to keep a list of refactorings that you'd
+like to make. Then you can pull things off the list as you find time to work on
+them. Each refactoring is a tiny investment in future maintainability for your
+code. And, just like making tiny investments in a money market fund, these can
+really add up over time.</P>
+		<p>State of the
+Art</P>
+		<p>You might have already made
+this leap, but just in case: refactoring is an obvious candidate for tool
+support. After all, if there's a provably-correct transformation (like turning
+public fields into private ones with accessors) and a recipe for executing the
+transformation, why can't the whole process be automated? The answer is that it
+can, and that there are many tools (almost all in the Java or Smalltalk arena)
+that can perform specified refactorings on your code.</P>
+		<p>But why should the Java
+developers have all the fun? Visual Studio .NET has all of the elements that it
+could possibly need to support a good refactoring tool: complete code
+introspection and creation via System.Reflection, an add-in model that lets
+third parties integrate their work, and object-oriented languages to edit. So
+where are the NET refactoring tools? Are you going to write the first one? If
+so, write and tell me about it!</P>
+		<p>Comments may be used in a
+future issue of Developer Central, unless you ask me to keep them
+confidential.</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>NET Explorer: HTML Help
+2.0</P>
+		<p>I recently took the time to
+play with HTML Help 2.0 in the .NET Framework. Actually, I had to take the time
+- I was working on a book chapter about user assistance in .NET, and my
+technical editor convinced me that I should include the new version, even if
+it's still in beta. But if you're writing Windows applications with help files,
+this stuff is in your future, beta or not - so here are a few
+notes.</P>
+		<p>If you've worked with Visual
+Studio .NET at all you've already got an idea of what HTML Help 2.0 features;
+the help for .NET itself is all HTML Help 2.0. This doesn't mean you'll see the
+exact same eye candy when you ship a 2.0 file with your applications, as
+Microsoft apparently hasn't decided yet whether to ship the viewer you see in VS
+.NET or another program for displaying help. But help itself supports such
+things as flexible filters, links to Internet sites, embedded code samples, and
+merging multiple help files in a single viewer. So whatever the shell looks
+like, the functionality will be there.</P>
+		<p>The development environment
+for Help 2.0 is light-years ahead of the HTML Help Workshop that ships with the
+Help 1.3 SDK. That's because you now conduct the entire design and build process
+directly within Visual Studio .NET, with all the benefits you'd expect from an
+integrated tool. That's a big win. Of course, you can still compose your
+individual HTML topic files in any HTML tool you like.</P>
+		<p>For this release, Microsoft
+has documented how you can integrate your own help files directly with Visual
+Studio .NET as well. You can merge your own help files with the main .NET help
+files, or add to the help shown in the Dynamic Help pane inside of the VS .NET
+shell.</P>
+		<p>So what's the downside? Two
+things. First, the help for help itself is not all that comprehensible yet. If
+you're trying to work with this stuff, you should immediately bookmark the
+Helpware web site page at http://www.helpware.net/mshelp2/h20.htm
+, where there are a whole raft of useful tools and write-ups.</P>
+		<p>Second, you can't yet use
+HTML Help 2.0 from your own VB .NET or C# applications! The plumbing just isn't
+there. Presumably Microsoft will release a new version of the HelpProvider
+control, or some alternative means of calling Help 2.0, when the thing
+officially ships some time in 2003. But until then, there isn't any documented
+way to get F1 help in this format. So for most developers, this is a technology
+to keep an eye on, but not one to leap into yet.</P>
+		<p>If you do want to get some
+sandbox time with HTML Help 2.0, you can download everything you need from the
+Visual Studio Help Integration Kit web site at http://msdn.microsoft.com/library/default.asp?</P>
+		<p>url=/library/en-us/htmlhelp/html/hwmscExtendingNETHelp.asp
+.</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Briefing: Rational XDE
+Modeler</P>
+		<p>Rational is out with a new
+member of their XDE (Extended Development</P>
+		<p>Experience) family of
+products, Rational XDE Modeler. Like XDE Professional, which I discussed a few
+issues back, Modeler runs inside the Visual Studio .NET or IBM WebSphere IDEs.
+The new product is directed specifically at architects and designers: people who
+need to lay out the shape of a solution without actually writing the code to
+implement it.</P>
+		<p>As you can guess from the
+name, the point of Modeler is modeling. This includes everything from completely
+free-form diagrams to a complete set of UML diagrams. Of course the diagrams can
+then be seamlessly shared with XDE Pro users who do the actual implementation.
+Modeler can also publish its diagrams and reports in HTML, so you can
+communicate with other project participants (like your manager) who don't have a
+full-blown development environment installed.</P>
+		<p>Modeler includes a lot of
+features designed to make architects more productive; it's not just a simple
+drawing program. For example, there is explicit support for patterns, both
+industry-standard and harvested from your own previous work. This means you can
+get started on new projects quickly by using a pattern-driven approach. It also
+includes UML compliance tools to keep you from straying too far from the
+accepted way of representing things (unless, of course, you want to - remember,
+there's that whole free-form diagramming layer as well). Models can also be put
+under source code control for easier tracking of changes and to allow multiple
+designers to work on the same project.</P>
+		<p>Rational XDE Modeler lists
+for $2314 (quantity 1, direct from Rational). More information at http://www.rational.com/Products/xde/modeler/index.jsp
+.</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Briefing: Identify
+AppSight</P>
+		<p>I had a chance to chat with
+some of the folks from Identify (formerly</P>
+		<p>Mutek) about their new
+AppSight 4.0 product. AppSight is the home of their "Black Box Flight Recorder"
+technology. The basic idea is that you can deploy Black Boxes to all the
+machines running components of a distributed application, and they will keep an
+eye on the running application. When a bug crops up, they provide a tremendous
+amount of information about just what was happening, correlated across all tiers
+of the application. A centralized management console lets you deploy Black Boxes
+and see the data that they collect.</P>
+		<p>And it's a tremendous amount
+of information: web sessions and users, DLL loads, database transactions, COM
+object creation, registry operations, and right down into running code. Identify
+claims all this happens with minimal performance impact on applications.
+Everything is logged and can be played back later, so developers can see
+precisely what was going on when an application failed. Identify has some pretty
+impressive customer success stories of elusive bugs being captured on production
+systems that couldn't be recreated in a lab setting.</P>
+		<p>You'll find more information
+about AppSight at http://www.identify.com/Products/appsightsuite.html,
+where there are also links to download more information or a demo version. If
+you're chasing bugs on distributed applications on Windows systems, and have a
+serious budget (pricing starts at $10,000), then this looks like a premiere tool
+to have.</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Briefing: Codagen
+Architect</P>
+		<p>Codagen Architect is another
+tool for the serious application architect that's recently been ported to the
+.NET environment. Codagen itself is not a modeling tool; it starts with a UML
+diagram from a tool such as Rational Rose or Visio Enterprise Architect (the
+latter, of course, ships with the high-end Visual Studio .NET package). Codagen
+then lets you define code templates that tell it how to translate the UML into
+actual code. Unlike other code-generation techniques, which give you classes and
+methods with a bunch of "fill in here" placeholders, Codagen can get you all or
+most of the final code directly from the UML.</P>
+		<p>Codagen is extremely
+flexible. You define templates through the Codagen UI (which stores everything
+in XML) and define a sequence for them to be applied. You also define the
+mapping between templates and architecture. Want to have a persistence layer
+that takes every property and stores it in a database via ADO.NET? No problem.
+Want to apply certain code only to classes that derive from a certain
+superclass? Easy. Want to derive HTML documentation along with the actual
+classes? You can do that too.</P>
+		<p>I got to see an online demo
+of Codagen, and it lived up to its billing as a very flexible system. Tweaking
+things based on my suggestions was simple, and the template approach lets you
+easily enforce your own coding style. Aimed at medium to large organizations,
+pricing starts at $80,000 per year on an annual basis for 11 seats, or $220,000
+for a perpetual license for the same number. With developers still making
+reasonable salaries, the ROI on this should be pretty good for any application
+large enough to actually need a complex UML model. <SPAN lang="SV">http://www.codagen.com/Products/architect/index_e.shtml</SPAN></P>
+		<p><SPAN lang="SV" style=FONT-SIZE: 10pt;>---------------------------------------------------------------------</SPAN></P>
+		<p><SPAN lang="SV" style=FONT-SIZE: 10pt;>Briefing:
+Logidex</SPAN></P>
+		<p>I had a chance to talk to
+the folks from LogicLibrary about the latest changes in the Logidex software
+asset management product, which now integrates with Visual Studio .NET. The idea
+behind Logidex is that those responsible for defining the overall architecture
+of your enterprise's applications can configure a library of assets for developers
+(everything from WSDL definitions to actual classes to help files to
+standards</P>
+		<p>specifications) which
+everyone can then use. There's a modeling capability built right into Logidex
+that gives you a graphical view of how things fit together, as well as searching
+via query and ad-hoc searching by drilling into models. The tools that Logidex
+delivers for finding useful content are quite flexible; if you need a component
+that implements a set of interfaces, for example, you can assign weights to the
+various interfaces and get a list of matches ranked by how well they fit your
+needs. The goal, of course, is to encourage re-use across the enterprise by
+making it easier to find useful components.</P>
+		<p>One very interesting model
+they have is a view of the .NET Framework base class library that makes it
+easier to find the classes you need by drilling into ever more specific groups
+of code. They're working to ship additional content, including working with
+Microsoft to identify useful content for .NET developers.</P>
+		<p>The integration of the new
+version with Visual Studio is so far pretty</P>
+		<p>loose: their add-in lets you
+launch the existing browser-based client in a separate window when you need a
+new aset for your project. But they have plans for much tighter integration and
+rehosting into the VS NET shell in the future. Pricing for this enterprise-ready
+tool starts around $200 per user. http://www.logiclibrary.com/</P>
+		<p>---------------------------------------------------------------------</P>
+		<p>Briefing: Precise/Indepth
+for SQL Server</P>
+		<p>Precise Software solutions
+have announced the availability of Precise/Indept for SQL Server, a new
+performance monitoring and optimization solution. I chatted with them before the
+launch, and it sounds like a very useful product indeed for DBAs running complex
+and heavily-loaded servers.</P>
+		<p>Precise worked with
+Microsoft to hook up a new high-speed, low-impact sampling technology to the SQL
+Server engine. This allows the new product to collect and analyze very detailed
+performance information in the short term and over time, to identify both
+immediate problems and long-term issues. The Precise screen can show you which
+statements are being executed, which ones take the longest to execute, and how
+tables and other objects are bring used. You can summarize resource fonsumption
+by program, user, or type of application for a business-centric rollup
+view.</P>
+		<p>Precise is also developing
+plug-ins that go one step past the database into actualy business applications.
+For example, if you're using SQL Server as a backend to SAP, you can see views
+based on SAP's activities rather than the raw SQL Server data. Other planned
+plug-ins will address areas such as J2EE, .NET, and other major business
+applications.</P>
+		<p>With an entry level around
+$3000, the target for this product is the Fortune 2000. The ability to track a
+baseline performance over time looks very strong, along with the
+business-centric reporting. I expect to be able to bring you a review based on
+an actual test-drive of the product in a future issue of Developer Central.
+Meanwhile, you can get some details at http://www.precise.com/Products/indepthSQL.asp.</P>
+		<a name="SSWArticle">
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>---------------------------------------------------------------------</SPAN></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;><STRONG>Review: 
+							SSW Code Auditor</span></STRONG></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>SSW Code Auditor 1.22, $199</SPAN><BR><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>SSW</SPAN><BR><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>Sydney, Australia</SPAN><BR><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>+ 61 2 9953 3000</SPAN><BR><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;><A href="/ssw/Default.aspx">http://www.ssw.com.au/ssw/Default.aspx</A></SPAN></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>We all
+like to write perfect code. But being overworked developers, we don't always
+manage to do so. That's where SSW Code Auditor comes in. Designed to inspect web
+sites, it can review ASP, ASPX, and HTML pages for consistency with standards.
+Whose standards? Well, SSW includes a few suggested rules (&lt;TITLE&gt; tags
+required, &lt;FONT&gt; tags disallowed, and so on), but it's up to you to define
+what your own standards for web pages are. This is done through specifying
+regular expressions that are either required or forbidden on the pages in your
+site. SSW Code Auditor makes this much easier for novices by including a wizard
+to build and test regular expressions for you</P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>-- that
+alone is worth the price of the tool if you're struggling with
+regex's.</span></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>You can
+also define exceptions to the rules (pages that you know should
+be</span></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>ignored)
+and even (be careful!) replacement expressions, making this a fix-up tool as
+well as an auditing one. It'll also run HTML Tidy on your pages, turning up even
+more nitpicky errors, if you want.</span></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>I gave
+the tool a spin on a couple of web sites, including one with nearly 10,000
+files. The latter took it a few minutes, but it didn't choke, and at the end I
+had more errors on my pages than I could shake a stick at (I'm a pretty sloppy
+web coder).</span></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>SSW Code
+Auditor stores jobs in a database, so you can re-run them at any time; that's
+useful for a web site under development. Reports are HTML. You can get more
+information and a trial version at <A href="/ssw/CodeAuditor/">http://www.ssw.com.au/ssw/CodeAuditor/</A>
+, or purchase the full version for $199.</span></P>
+			<p><SPAN style=FONT-SIZE: 10pt; BACKGROUND: #cccccc;>---------------------------------------------------------------------</span></P>
+			<p>Review:&nbsp;
+CodeWarrior</P>
+			<p>CodeWarrior Development
+Tools for Windows Version 8, $599 Metrowerks Austin, Texas 512-873-4700 http://www.metrowerks.com</P>
+			<p>Sometimes Microsoft-centric
+developers think the world ends at Visual Studio, but that's still not quite
+true. Metrowerks has been shipping development tools for years, and CodeWarrior
+is a full-featured IDE, compiler, linker, and debugger for C, C++, or Java code.
+The company also has versions for other platforms ranging from Mac to Linux to
+Solaris to Palm (among others), making this an interesting tool for people doing
+cross-platform development.</P>
+			<p>What you'll find in the
+CodeWarrior box is a couple of CDs: one includes the development environment and
+tools, the other is packed with documentation. Indeed, the documentation can be
+overwhelming; you get a pile of stuff about how the IDE works, and then tons of
+platform-specific information and tutorials. It's all in there somewhere, but I
+found myself missing some of the advanced features of the more recent Visual
+Studio help.</P>
+			<p>There wasn't anything
+missing in the development environment, though. It manages projects consisting
+of multiple files well, and jumps back and forth between files, headers, and
+symbols easily. There's supportr for MFC 6 and ATL 3.0 on the C++ side, and JDK
+1.3 and 1.4 on the Java side. The graphical diff and merge tool is fast and
+well-designed. You get Metrowerk's own thread-safe standard libraries, an open
+API for tool integration, and of course CVS/VSS support.</P>
+			<p>I don't push the C++
+envelope myself; everything I tried to do with CodeWarrior worked fine.
+Metrowerks claims a "best in class" optimizing ANSI/ISO compiler; I can't
+evaluate that, but I can say that everything worked. It seems to me that if
+you're planning a project that needs strong cross-platform support with a
+consistent IDE, this would be a great way to write it.</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Review: C# for
+Developers</P>
+			<p>C# For Developers,
+$725</P>
+			<p>LearnKey,
+Inc.</P>
+			<p>St. George,
+Utah</P>
+			<p>(800)
+865-0165</P>
+			<p>http://www.learnkey.com</P>
+			<p>Jesse Liberty knows his
+stuff when it comes to C#. He's the author of O'Reilly's PROGRAMMING C#, which
+is consistently the first C# book I grab off the shelf (and it's a pretty
+extensive shelf these days) when I have a C# programming question. This 24-hour
+CD-ROM lecture set lets him share that knowledge with you.</P>
+			<p>The course starts out with
+an introduction to the .NET platfor, but then quickly gets into C# language
+issues. As befits a strong object-oriented language, there's a lot of material
+here about building classes in C#, and Liberty gets into all of the fine
+details. He also covers a lot of the important interfaces that help your classes
+work better with the rest of the .NET Framework.</P>
+			<p>You'll also learn the basics
+of ADO.NET and ASP.NET programming, XML and other I/O methods, event-driven
+programming, and other core C# skill. 24 hours isn't enough to make anyone an
+expert in C#, but at the end of this course you should be prepared to write
+useful programs in the language and be ready to do your own digging into more
+expert material.</P>
+			<p>&nbsp;</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Review:
+Boxer</P>
+			<p>Boxer 9.0,
+$59</P>
+			<p>Boxer
+Software</P>
+			<p>Scottsdale,
+Arizona</P>
+			<p>(602)
+485-1635</P>
+			<p>http://www.boxersoftware.com/</P>
+			<p>This text editor has been
+around for quite a long time - I can remember using it way back in its DOS
+incarnation (and they even had -- and still have! -- an extended DOS version).
+Now it's a Windows text editor and a darned good one.</P>
+			<p>I am especially taken with
+Boxer's nice little touches when it comes to HTML editing. For example, you can
+open a file from an FTP site and then forget about the FTP part; saves just do
+the right thing. The spell-checker can ignore HTML tags, but the parser
+color-codes them nicely. If you hover your mouse over a color hex value, you'll
+get a tiny popup hint window showing the specified color. There's a template set
+(a set of canned text strings) just for inserting HTML tags.</P>
+			<p>Boxer also excels at basic
+text editing operations. Nice functions include columnar support, swapping
+lines, case manipulation, swapping words, duplicate line, and multiple clipboard
+support. And that's just a random selection. Also notable is the
+configurability; there are many options you can tweak to make Boxer work the way
+you want (although the out of the box defaults are pretty good
+themselves).</P>
+			<p>If you're looking for
+something midway between a freeware editor with few functions and a full-blown
+IDE, Boxer might be just the tool you were after.</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>New and
+Notable</P>
+			<p>Plenty of new software gets
+released every month, some to great fanfare (can you say "Windows XP"?) and some
+that only gets noticed by adoring fans. You don't need me to tell you about the
+big PR-fests, but here are a few of the other interesting new (or updated)
+products I've run across in the past</P>
+			<p>month:</P>
+			<p>- Curl is shipping their
+Surge runtime environment and IDE, which they tout as the first "client/web"
+programming environment, enabling fat clients with web connectivity. Though they
+make much noise about being revolutionary, using XML over HTTP to pass messages
+from a server to a fat client sounds a lot like Web services to me. Anyhow, you
+can read more on their site, or download their IDE and runtime (free for
+non-commercial use). Start at http://www.curl.com/html/index.jsp
+.</P>
+			<p>- dbPal is a multifaceted
+database administration and development tool. It features schema change and
+version management, the ability to move schemas and data between multiple
+database types, DDL script generation, data synchronization, integrated data
+modeling and reporting tools -- among other things. I'll be bringing you a
+review in a future issue of Developer Central, but you can check it out
+(including 15-day free trial downloads) at http://www.it-map.com/Pages_Products/1_dbPAL/P1_database_tools.htm
+.</P>
+			<p>- eDatCat has released
+version 3.0 of their Shopping Cart System for web sites. It includes a batch of
+features, a new administrative interface, and integration with DreamWeaver.
+10-day trial download, $449 to purchase. http://www.edatcat.com/cgi-bin/cgiwrap/edatcat/EDCstore.pl</P>
+			<p>- Active+ Software has
+upgraded their eMill mailing list management application to verion 2.0.11. New
+features include import from Outlook contacts and ACT! 2000 lists, blacklist
+addresses to prevent unwanted mailings, XML interoperability, and performance
+improvements. http://www.emill.net/</P>
+			<p>- Microsoft has released
+version 1.1 of Producer, their free add-on for creating rich-media presentations
+with PowerPoint. Producer synchronizes audio, video, slides, and images for
+turnkey presentations. 1.1 appears to be mainly a bug-fix release with improved
+support for complex PowerPoint slides. http://www.microsoft.com/office/powerpoint/producer/</P>
+			<p>- Austin Sierra Technologies
+is the home of Query Studio, an alternative set of data access components for
+Visual Studio .NET. They're designed to let you access data just by dragging
+things and setting properties, even if you don't know SQL. A desktop edition
+runs as a standalone data retrieval tool. More info and trial download at http://www.querystudio.com/austinsierratechnologies/
+.</P>
+			<p>- SQL Scribe 2.1 is a
+documentation utility for SQL Server. Point it at a database and it goes through
+the schema and documents everything, storing the results in an Access database.
+The results can be viewed as an IIS web or as an HTML Help file. It's all nicely
+formatted and cross-referenced, including properties and build scripts. Because
+it also includes custom properties you can add your own notes to objects as
+well. Pricing starts at $150. http://www.ag-software.com/ags_scribe_index.asp</P>
+			<p>- Incepto is shipping
+SQL-UP!, a distributed clustering layer for Microsoft SQL Server. Their software
+layers on top of SQL Server's transactional replication to provide clustering
+over LAN or WAN with full preservation of ACID properties, and a console
+application to manage the cluster. More information and a trial download at http://www.incepto.com/index.htm
+.</P>
+			<p>- AutomatedQA has released
+TestComplete 2.0, the successor to their AQTest 1.5 testing product. Changes
+include support for testing HTML pages via the DOM, Java and .NET support, a new
+"test suite" concept that lets you flexibly organize multiple tests, a
+command-line utility that can launch tests on remote computers that do not have
+TestComplete installed, and many scripting improvements. This remains one of the
+most flexible and programmable testing environments that I've had the chance to
+test-drive, and it will fit the testing needs of many developers. http://www.automatedqa.com/Products/tc.asp</P>
+			<p>- Web Matrix is a free IDE
+for ASP.NET applications from Microsoft's own ASP.NET web site. In addition to a
+WYSIWYG page designer, there are a bunch of other features here: hooks to MSDE
+and SQL Server, templates and tools for building data-bound pages, XML Web
+Service support, and more. There's even a whole "Community" window that can get
+you into the ASP.NET forums or chat to help you get answers from other community
+members. It even comes with its own web server, which runs on the local machine
+only to avoid any security issues. And it's able to handle FTP deployments
+easily. All in all, a nice tool for free. There are some nuisances (why oh why
+aren't they generating DOCTYPE tags for HTML pages? Is it so very hard to be
+standards compliant?), but overall it does a good job of what it tries to do,
+and provides an intermediate level between writing ASP.NET pages in a text
+editor and buying the full Visual Studio .NET application. http://www.asp.net/webmatrix/Default.aspx?tabindex=4&amp;tabid=46</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Book
+Notices</P>
+			<p>Lots of software books cross
+my desk these days. In this section, I'm going to pick out a few to mention that
+look interesting. Think of these not as full reviews, but as pointers to books
+that you might like to investigate further, depending on your own development
+needs.</P>
+			<p>ASP.NET TIPS &amp;
+TECHNIQUES, by Greg Buczek (Osborne, 2002): Somewhat over 300 individual ASP.NET
+tips. These range from very simple stuff (like how to code an HTMLButton
+control) to rather complex (retrieving database values or adding a function to a
+Web service). Not the sort of structured introduction that's good for learning
+ASP.NET, but handy to have around when you're in the intermediate stages and
+can't quite remember how to do things.</P>
+			<p>BEGINNING ASP.NET DATABASES
+USING VB.NET, by John Kauffman et al (Wrox,</P>
+			<p>2002): A relatively slim
+(450 page) introduction to the subject that does a pretty good job. It
+concentrates on the plumbing necessary to move Access or SQL Server data to web
+pages using the latest Microsoft bits and pieces. Starting with an introduction
+to data-driven web sites and an introduction to SQL, it works up to a
+full-featured example.</P>
+			<p>DISTRIBUTED .NET PROGRAMMING
+IN C#, by Tom Barnaby (Apress, 2002): Although this book concentrates on no-fat
+coverage of its subject, Tom Barnaby has an excellent eye for what distributed
+application developers need to know. So he covers everything from remoting to
+garbage collection to SOAP in enough detail to show where it fits in, without
+duplicating the documentation. This book also has the best material on using
+COM+ and MSMQ with .NET that I've seen anywhere. Definitely worthwhile for the
+enterprise .NET developer.</P>
+			<p>ESSENTIAL ADO.NET, by Bob
+Beauchemin (Addison-Wesley, 2002): Bob Beauchemin knows data inside and out.
+This gives him a unique perspective on using and optimizing ADO.NET, as well as
+in relating it to other data access technologies. If you want to go beyond the
+mechanics to understanding how to choose between alternatives (DataSet or
+DataReader? Relational model or XML?), this book will get you there. Bob even
+tackles the notion of writing your own data provider for those situations where
+the built-in .NET stuff doesn't quite do the job. An excellent addition to the
+data access literature.</P>
+			<p>FRAMEWORK PROCESS PATTERNS:
+LESSONS LEARNED DEVELOPING APPLICATION FRAMEWORKS, by James Carey and Brent
+Carlson (Addison-Wesley, 2002): There's always another level of software
+development to aspire to. After you've mastered object-oriented development and
+written a few class libraries, perhaps an application framework is the next
+step. This pair of seasoned developers has put together this guide to design
+patterns that will help you take this step, leavened with a good deal of humor
+and much practical experience. If you're about to embark on a framework and not
+sure what you're getting into, this is one to check out soon.</P>
+			<p>A PROGRAMMER'S GUIDE TO
+ADO.NET IN C#, by Mahesh Chand (Apress, 2002): An intermediate-level all-in-on
+ADO.NET book. It's got a couple of introductory chapters on C# applications and
+then walks through the ADO.NET objects and their uses. There's a good section on
+XML and a nice variety of examples using different database
+types.</P>
+			<p>PROGRAMMING MICROSOFT SQL
+SERVER WITH MICROSOFT VISUAL BASIC .NET, by Rick Dobson (Microsoft Press, 2002):
+The title of this one is a bit misleading. While there are core chapters that
+directly address using SQL Server and VB.NET together, well over half of the
+book is introductory material on ASP.NET, T-SQL, SQL Server XML, SQL Server
+Security, and so on. A developer in this area does need all these topics, so
+this can serve as a reasonable all-in-one reference, but the end result is a
+book that lacks focus.</P>
+			<p>REQUIREMENTS BY
+COLLABORATION, by Ellen Gottesdiener (Addison-Wesley,</P>
+			<p>2002): This one may strike
+many developers as too soft a subject to bother with. That would be a mistake,
+because without good requirements a project is just a morass. Written by an
+experienced facilitator, this book digs into a methodology for holding
+"requirements workshops" to help groups quickly come to agreement on what a
+project is meant to accomplish. Next time you're ready to wrestle with the
+opening stages of a new project, check this one out, especially if you're
+working in the business software arena.</P>
+			<p>UNDERSTANDING WEB SERVICES:
+XML, WSDL, SOAP, AND UDDI, by Eric Newcomer (Addison-Wesley, 2002): Unlike most
+of the other Web services books I've looked at, this one is largely
+vendor-independent. Newcomer does bring in products from his employer, Iona,
+where they're pertinent, but much of this book is focused on investigating a
+whole batch of standards and how they fit together, from the perspective of
+someone active in the standardization process. As such, it's an excellent
+roadmap to where the potholes are as well as the success stories that vendors
+prefer to emphasize. Closes with a survey of who's shipping software in the
+field; there's a lot more out there than .NET and SunONE.</P>
+			<p>VB.NET LANGUAGE IN A
+NUTSHELL, by Steve Roman, Ron Petrusha &amp; Paul Lomax (O'Reilly, 2002): As
+I've commented before, O'Reilly is cracking some mighty large nuts these days.
+This one weighs in at 662 pages, and covers just the VB.NET language itself
+(well, with a few of the most pertinent framework classes thrown in). The
+authors do a good job of explaining the syntax and semantics of all the VB.NET
+language constructs, but the real gem here is the included CD-ROM. The setup
+program on the CD integrates the book's contents directly with the Visual Studio
+.NET Help, including the dynamic help and the main documentation. This instantly
+gives you access to all the authors' hard work while writing VB.NET code, and
+nicely supplements Microsoft's own help files. It would be nice to see this
+trend continue.</P>
+			<p>VISUAL BASIC .NET AND SQL
+SERVER 2000: BUILDING AN EFFECTIVE DATA LAYER, by Tony Bain, Denise Gosnell, and
+Janathon A. Walsh (Wrox,</P>
+			<p>2002): SQL Server and
+VB-centric introduction to using ADO.NET. The focus helps this book out a good
+deal, because the authors can focus on one namspace and its use. Includes good
+sections on SQL Server XML and SQL Server administration for developers. Another
+nice touch is the concluding case study that fleshes out a lot of the book's
+concepts.</P>
+			<p>VISUAL BASIC .NET XML WEB
+SERVICES DEVELOPER'S GUIDE, by Roger Jennings (Osborne, 2002): I don't know how
+the heck Roger Jennings does it. While the rest of us are writing tiny "Hello
+Web Services" examples, he's delivering production-quality code to browse the
+entire Code of Federal Regulations via his Web services site. There's an
+incredible amount of cutting-edge detail here, along with diagrams that make
+some of the plumbing clear, trenchant commentary on standards, and solid code
+for using databases with Web services. This is one of the best technical books
+I've read in years, and essential for anyone looking at writing Web services.
+Buy it.</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Reader
+Mail</P>
+			<p>Ranganath
+writes:</P>
+			<p>&nbsp;&nbsp;&nbsp; "Thanks
+for the nice info. on MCSD.NET. I'm wondering, why there is</P>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+no room for VC++.NET ?</P>
+			<p>&nbsp;&nbsp;&nbsp; "Nobody,
+nowhere is mentioning abt VC++.NET, but, everywhere, the</P>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+talk is abt C# and VB.NET. I think, it is because, both these
+are</P>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MS Products (C++ is not from Microsoft, okay.)"</P>
+			<p>Indeed, Microsoft has not
+yet announced its plans. The MCAD FAQ page says "Microsoft will announce the
+objectives of the Microsoft Visual</P>
+			<p>C++(r) .NET exams and how
+they fit into the MCAD for Microsoft .NET</P>
+			<p>certification later in
+2002." I suspect there are (at least) two things going on here. First, the
+resources of the certification team are not infinite; they can only do so many
+exams at one time. Clearly targeting the masses of VB developers to get them to
+upgrade to VB .NET was one priority, and promoting the new C# language was
+another. Moving C++ developers forward to the new platform must not have been
+quite as important. Second, VB .NET and C# are first-class .NET citizens in a
+way that C++ is not. When you develop in the latest VB or in C#, you're
+automatically working within the .NET world. When you develop with the latest
+VC++, you're not working in .NET unless you go with the Managed Extensions. This
+means that the C++ exams need to cover a lot more ground than the VB .NET and C#
+exams, and will take correspondingly longer to develop.</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Web Resources for
+Developers</P>
+			<p>Finally, a few web sites
+that I think you might enjoy:</P>
+			<p>- ConTEXT is a nifty little
+programmer's editor that's freeware. I like the integrated Explorer-like browser
+pane, favorites, and history in the file panel. Other features you don't often
+find in free editors include macro recording and playback, parsing of compiler
+output, and the ability to hook up your own custom user commands. Comes with a
+batch of different language highlighting options and a way to write your own. http://fixedsys.com/context/</P>
+			<p>- Yes, Virginia, there's
+still a dBase, and you can find them at http://www.dbase.com/mainpage.htm
+these days. Apparently this is a small company that bought the rights to the
+name from Borland a few years back. They're promising dBase Plus this summer,
+with an impressive list of features; at the moment it's vaporware (they'll still
+be happy to take your money in advance, though).</P>
+			<p>- dbPAL looks like an
+interesting cross-product (Access, Oracle, SQL Server, MySQL, and more) tool for
+database design and development.It offers data modeling, schema design, the
+ability to quickly port schemas from one database product to another, and more.
+http://www.it-map.com/Pages_Products/1_dbPAL/P1_database_tools.htm</P>
+			<p>- Nogoop Software is working
+on some tools to help you learn about new components more easily: the .NET
+Component Inspector and the ActiveX/COM Inspector. The idea is to give you a
+sort of universal debugging container that can host components and give you
+transparent access to their methods and properties. Trial versions available for
+download. http://www.nogoop.com/index.html</P>
+			<p>- SmartBoard XP is a
+clipboard extender that captures everything you cut or copy and stores it for
+future use. You can categorize things, store things across Windows sessions,
+edit them before pasting...the list of features is pretty extensive. Free trial
+version available, $22 to register. http://www.smartboardxp.com/index.htm</P>
+			<p>- The TechNet Script Center
+is home to several hundred WMI scripts for Win2K, WinXP, and Win .NET.
+Apparently this is early content for the Windows .NET Server Resource Kit, but
+that doesn't stop it from being useful now. All neatly categorized, these
+scripts can give you ideas of WMI's use or just do useful work without worrying
+about the internals. http://www.microsoft.com/technet/treeview/default.asp?</P>
+			<p>url=/technet/scriptcenter/default.asp</P>
+			<p>- And on the "this is just
+silly" end of the spectrum: someone has recompiled the Apache web server to run
+on the version of Linux that Sony has made available for the PS2 game console.
+Get it at http://www.phi-web.co.uk/ps2-apache/
+, if you can come up with the slightest good reason to install such a
+thing.</P>
+			<p>=================================================================</P>
+			<p>News in this newsletter is
+written and compiled by Mike Gunderloy, <a href="mailto:Mike.Gunderloy@mcpmag.com?subject=Enquiry">Mike.Gunderloy@mcpmag.com</a>.
+I'd love to hear from you. Or for between-issue rants and reviews, visit me at
+http://www.larkware.com
+.</P>
+			<p>To find out how you can
+sponsor this newsletter, contact</P>
+			<p>Henry Allain at mailto:hallain@101com.com.</P>
+			<p>Microsoft Certified
+Professional Magazine</P>
+			<p>101communications
+LLC</P>
+			<p>16261 Laguna Canyon Road,
+Suite 130</P>
+			<p>Irvine, CA
+92618</P>
+			<p>Phone
+949-265-1520</P>
+			<p>Fax&nbsp;&nbsp;
+949-265-1528</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>WEB
+INTERFACE:</P>
+			<p>You can change your
+newsletter subscription email address, unsubscribe, or change your settings at
+any time at http://lists.101com.com/NLS/pages/main.asp?NL=mcpmag&amp;o=developer</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>If you prefer not to receive
+this type of message in the future, go to: http://lists.101com.com/us/a.asp?NL=mcpmag&amp;ID=8312943</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Copyright 2002
+101communications LLC. Developer Central may only be redistributed in its
+unedited form. Written permission from the editor must be obtained to reprint or
+cite the information contained within this newsletter. Contact mailto:
+Mike.Gunderloy@mcpmag.com.</P>
+			<p>---------------------------------------------------------------------</P>
+			<p>Who do you know who could
+benefit from this valuable announcement? Please forward this email to your
+interested associates. Thank you!</P>
+	</body>
+</html>

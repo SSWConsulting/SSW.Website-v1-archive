@@ -1,0 +1,38 @@
+;
+;  Database file ssw.com.au.dns for ssw.com.au zone.
+;      Zone version:  2001011760
+;
+
+@                       IN  SOA seal.ssw.com.au.  daniel.ssw.com.au. (
+                        	2001011760   ; serial number
+                        	900          ; refresh
+                        	600          ; retry
+                        	86400        ; expire
+                        	3600       ) ; minimum TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	seal.ssw.com.au.
+@                       NS	pridns.pacific.net.au.
+@                       NS	seal.sydney.ssw.com.au.
+@                       NS	seal.
+
+;
+;  Zone records
+;
+
+@                       MX	10	mail.ssw.com.au.
+@                       MX	30	mail2.ssw.com.au.
+@                       MX	20	mail.magna.com.au.
+chook                   A	144.136.74.156
+chook2                  CNAME	chook.cable.nu.
+deadeye2                CNAME	deadeye.dynup.net.
+ftp                     A	61.8.3.146
+mail                    A	144.136.64.65
+mail2                   A	61.8.3.146
+seal                    A	61.8.3.146
+sydneytheatre           A	61.8.3.147
+www                     A	61.8.3.146
+www2                    CNAME	mail.ssw.com.au.

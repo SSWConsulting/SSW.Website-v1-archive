@@ -1,0 +1,38 @@
+Thanks,<br>
+The SSW Team
+<br>
+<br>
+<table cellpadding="2" cellspacing="2" width="100%">
+  <tr bgcolor="#ff0033"> 
+    <td height="17">&nbsp;</td>
+  </tr>
+</table>
+<table cellpadding="2" cellspacing="2" width="100%">
+  <tr bgcolor="#cccccc"> 
+    <td height="19"> <font face="Verdana" size="2"> <strong>Superior Software 
+      for Windows</strong> Custom Software Solutions in ASP.NET, VB.NET, SQL Server, 
+      Exchange and MS Access </font> </td>
+  </tr>
+</table>
+<ul>
+  <li><font face="Verdana" size="2"> Check out our HOT utilities for VB and .NET 
+    Developers <a href="http://www.ssw.com.au">www.ssw.com.au</a> </font> 
+  <li><font face="Verdana" size="2"> Keep up-to-date at the .NET User Group, Sydney 
+    <a href="http://www.ssw.com.au/NETUG">www.ssw.com.au/NETUG</a> </font></li>
+</ul>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Registering your SSW Software</b>
+</font></p>To get your SSW Software registered you will need to send <a href="mailto:info@ssw.com.au">info@ssw.com.au</a>
+ an unlock ID. For instructions go to our <a href="http://www.ssw.com.au/ssw/kb/KB.asp?KBID=Q906392">Knowledge Base article</a>.</p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Support for 
+  your SSW Software</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If you can't find 
+  it in the documentation, registered users get full support for SSW Software, 
+  otherwise, check out our extensive <a href="http://www.ssw.com.au/ssw/kb">Knowledge 
+  Base</a>.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Software got 
+  you Stuck?</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If you&#146;re 
+  experiencing extensive Microsoft software challenges and would like some consulting, 
+  <a href="http://www.ssw.com.au/ssw/company/companyinformation.asp#wherewe">contact 
+  SSW</a>.</font></p>

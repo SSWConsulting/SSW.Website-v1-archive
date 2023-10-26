@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="China.master.cs" Inherits="SSW.Website.WebUI.Masters.China" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+<%@ Register Src="~/Components/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+<%@ Register Src="~/Components/Footer_New.ascx" TagName="Footer" TagPrefix="ssw" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <link rel="icon" type="image/x-icon" href="/ssw/include/pigeon/img/favicon.ico">
+    <title></title>
+    <asp:ContentPlaceHolder ID="HeaderScripts" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

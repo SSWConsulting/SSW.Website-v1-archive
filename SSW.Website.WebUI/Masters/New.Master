@@ -1,0 +1,127 @@
+<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="New.Master.cs" Inherits="SSW.Website.WebUI.Masters.SSWNew" %>
+
+<%@ Register Src="~/Components/Header.ascx" TagName="Header" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+<%@ Register Src="~/Components/Footer.ascx" TagName="Footer" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/GoogleTrackingCode.ascx" TagName="GoogleTrackingCode"
+    TagPrefix="ssw" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>SSW - Sydney's Leading Custom Software Consultants - .NET, SQL Server, Web, Windows
+        and SharePoint and Database Development</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="keywords" content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, Sydney, Australia, Sydney Australia, Beijing China" />
+    <meta name="description" content="SSW Consulting team has delivered best of breed Microsoft solutions for more than 1000 clients in 15 countries. SSW Consulting has over 30 years of experience developing awesome Microsoft solutions that today build on top of Angular, React, Azure, TFS, SharePoint, Office 365, .NET, WebAPI, Dynamics 365 and SQL Server.">
+    <meta name="author" content="SSW" />
+    <meta name="msvalidate.01" content="2952AD0AA6C1ACD30DFC944F48E1AF7E" />
+    <link rel="stylesheet" runat="server" href="~/include/Adapters/CSS/Import.css" type="text/css"
+        id="AdaptersInvariantImportCSS" />
+    <link rel="stylesheet" runat="server" type="text/css" href="~/Include/undohtml.css" id="htmlcss" />
+    <link rel="stylesheet" runat="server" type="text/css" href="~/Include/footer.css" id="footercss" />
+    <link rel="stylesheet" runat="server" type="text/css" href="~/Include/ssw.css" id="pagecss" />
+    <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link id="lightboxcss" rel="stylesheet" runat="server" type="text/css" href="/ssw/Include/colorbox.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+    <script src="/ssw/Include/ToggleEventCalendar.js" type="text/javascript"></script>
+    <script src="/ssw/Include/link.js" type="text/javascript"></script>
+    <!-- Next section is for the lightbox -->
+    <script type="text/javascript" src="/ssw/Include/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="/ssw/Include/lightboxhover.js"></script>
+    <script type="text/javascript" src="/ssw/Include/tooltip.js"></script>
+    <script src="/ssw/include/decodeMail.js" type="text/javascript"></script>
+    <script src="/ssw/include/decodeMailNew.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.lightbox").colorbox();
+        });
+    
+        $(document).ready(function() {
+            $("#ctl00_ctl00_NewContentPlaceHolder_fackbookFrame").attr("src", "http://www.facebook.com/plugins/like.php?href=" + window.location + "&layout=button_count&show_faces=true&width=200&action=recommend&colorscheme=light;");
+        });
+
+        function EncodeURL(url) {
+            var inputString = url;
+            var encodedInputString = escape(inputString);
+            //encodedInputString = encodedInputString.replace(new RegExp("+", "g"), "%2B");
+            encodedInputString = encodedInputString.replace(new RegExp("/", "g"), "%2F");
+            return encodedInputString;
+        }
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src="/ssw/Include/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/ssw/Include/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="/ssw/Include/main.js"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '395200137918365');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=395200137918365&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body id="MasterBody" runat="server">
+    
+    <div id="wrapper">
+    <form id="form" runat="server">
+
+        <div id="container">
+            <div id="nav">
+                <a href="/ssw/">
+                    <img alt="SSW Logo" src="/ssw/images/SSWLogo.png" width="130" height="100" id="sswlogo" /></a>    
+                    <a href="/ssw/Company/AboutUs.aspx">
+                    <img alt="Microsoft Gold Partner Logo" src="/ssw/company/images/small_partnerlogo.png" width="110"
+        height="41" id="msgoldpartner" /></a>
+                <% if (GetUserName() != String.Empty) { %>
+                <div style="text-align: right; right: 8px; top: 66px; position: absolute; font-size: 8pt;">
+                    Logged in as <a href="/ssw/Shop/ClientDetail.aspx">
+                        <%=GetUserName()%></a> <b>(<a href="/ssw/Shop/Login.aspx?Action=Logout">Logout</a>)</b>
+                </div>
+                <% } %>
+                <asp:ContentPlaceHolder ID="HeadingPlaceHolder" runat="server">
+                    <h1>
+                        <asp:Label ID="lblHeading" runat="server">Australia&#39;s Leading .NET and Azure Consultants</asp:Label></h1>
+                </asp:ContentPlaceHolder>
+                <!--Insert menu control here-->
+                <uc1:Menu ID="Menu1" runat="server" />
+            </div>
+            <asp:ContentPlaceHolder ID="NewContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr style="display: none;" />
+            <ssw:Footer ID="fC" runat="server" />
+        </div>
+    </form>
+    </div>
+    
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <ssw:GoogleTrackingCode ID="GoogleTrackingCode1" runat="server" />
+
+    <script type="text/javascript" charset="utf-8">
+        var is_ssl = ("https:" == document.location.protocol);
+        var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+        document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        var feedback_widget_options = {};
+
+        feedback_widget_options.display = "overlay";
+        feedback_widget_options.company = "ssw";
+        feedback_widget_options.placement = "left";
+        feedback_widget_options.style = "idea";
+
+        var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+    </script>
+</body>
+</html>

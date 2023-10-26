@@ -1,0 +1,33 @@
+<%@ Master Language="C#" Inherits="SSW.Website.WebUI.Masters.DefaultMaster" Codebehind="DefaultNewZealand.master.cs" %>
+<%@ Register Src="~/Components/Header.ascx" TagName="Header" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/FooterNewZealand.ascx" TagName="Footer" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/GoogleTrackingCode.ascx" TagName="GoogleTrackingCode" TagPrefix="ssw" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+	<title>SSW - Sydney's Leading Custom Software Consultants - .NET, SQL Server, Web, Windows and SharePoint and Database Development</title>
+        <meta http-equiv="Content-Language" content="en-au" />	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<meta name="keywords" content="SSW, Superior Software for Windows, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, development, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"/>
+		<meta name="description" content="SSW, Superior Software for Windows, Consultants for software, database and website development using VB.net, C#.net, ASP.Net, SQL Server, Microsoft Access, Exchange Server and SharePoint Portal Server, Custom database software solutions and downloads in Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"/>
+	    <meta name="author" content="SSW"/>
+        <link rel="stylesheet" runat="server" href="~/include/Adapters/CSS/Import.css" type="text/css" id="AdaptersInvariantImportCSS" />
+	    <link runat="server"  href="~/Include/Screen.css" rel="stylesheet" type="text/css" media="screen" id="screenCSS" />
+	    <link runat="server"  href="~/Include/Print.css" rel="stylesheet" type="text/css" media="print" id="printCSS" />
+	    <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon" />
+	    <script src="/ssw/include/decodeMail.js" type="text/javascript"></script>
+</head>
+<body id="MasterBody" runat="server" >
+    
+	<form id="form" runat="server">
+		<ssw:Header ID="hC" runat="server" />
+		<div id="mainContainer">
+			<asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<ssw:Footer ID="fC" runat="server" />
+	</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+<ssw:GoogleTrackingCode ID="GoogleTrackingCode1" runat="server" />
+</body>
+</html>

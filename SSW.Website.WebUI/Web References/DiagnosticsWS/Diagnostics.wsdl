@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://tempuri.org/SSWHistoryReportListDataSet.xsd" />
+      <s:import schemaLocation="http://webservices.internal.ssw.com.au/sswDignostics/Diagnostics.asmx?schema=SSWHistoryReportListDataSet" namespace="http://tempuri.org/SSWHistoryReportListDataSet.xsd" />
+      <s:element name="GetHistoryReportList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contactID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHistoryReportListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHistoryReportListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/SSWHistoryReportListDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsNewReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contactID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="empUpdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="good" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="unrecognised" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsNewReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SSWDiagnosticsNewReportResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contactID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="empUpdate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SSWDiagnosticsGetReportResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsVote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="opinionID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="empUpdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="voteIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsVoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SSWDiagnosticsVoteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetVersionVote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetVersionVoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSWDiagnosticsGetVersionVoteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetVoteList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetVoteListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSWDiagnosticsGetVoteListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetVoteAgreePercent">
+        <s:complexType />
+      </s:element>
+      <s:element name="SSWDiagnosticsGetVoteAgreePercentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSWDiagnosticsGetVoteAgreePercentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsUploadUsageReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hardwareInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportDetails" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enable" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsUploadUsageReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SSWDiagnosticsUploadUsageReportResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetUsageReport">
+        <s:complexType />
+      </s:element>
+      <s:element name="SSWDiagnosticsGetUsageReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSWDiagnosticsGetUsageReportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetHealthUsers">
+        <s:complexType />
+      </s:element>
+      <s:element name="SSWDiagnosticsGetHealthUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSWDiagnosticsGetHealthUsersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetProductName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SSWDiagnosticsGetProductNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SSWDiagnosticsGetProductNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUnrecognizedVersionLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filePath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comments" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileDefinitionName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="internalName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="versionXmlAdd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendComputerName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sendDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUnrecognizedVersionLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUnrecognizedVersionLogResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewProductVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pVersion" type="tns:ProductVersion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductVersion">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="VersionID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionLatest" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionFor" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ProductID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FileDefinitionID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionXmlAdd" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionUpdateUrl" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionImage" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="VersionCounter" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="VersionInternalNumber" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="VersionRequiredOS" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="VersionRating" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="SSWTimestamp" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FileDefinitionReference" type="tns:EntityReferenceOfFileDefinition" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductReference" type="tns:EntityReferenceOfProduct" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntityObject" abstract="true">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StructuralObject">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="StructuralObject" abstract="true" />
+      <s:complexType name="EntityKey">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntitySetName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntityContainerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EntityKeyValues" type="tns:ArrayOfEntityKeyMember" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEntityKeyMember">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EntityKeyMember" nillable="true" type="tns:EntityKeyMember" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EntityKeyMember">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EntityReferenceOfFileDefinition">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityReference" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntityReference" abstract="true">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RelatedEnd">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="EntityKey" type="tns:EntityKey" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="RelatedEnd" abstract="true" />
+      <s:complexType name="EntityReferenceOfProduct">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityReference" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="AddNewProductVersionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GenerateNewVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateNewVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateNewVersionResult" type="tns:ProductVersion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductCategory">
+        <s:complexType />
+      </s:element>
+      <s:complexType name="ArrayOfCategory">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Category">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="CategoryID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CategoryName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SSWTimestamp" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetProductCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductCategoryResult" type="tns:ArrayOfCategory" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductGroupByCateogryID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductGroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductGroup" nillable="true" type="tns:ProductGroup" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductGroup">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="GroupID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="GroupName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GroupDescription" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ManufacturerID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CategoryID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="SSWTimestamp" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CategoryReference" type="tns:EntityReferenceOfCategory" />
+              <s:element minOccurs="0" maxOccurs="1" name="ManufacturerReference" type="tns:EntityReferenceOfManufacturer" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntityReferenceOfCategory">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityReference" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntityReferenceOfManufacturer">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityReference" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetProductGroupByCateogryIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductGroupByCateogryIDResult" type="tns:ArrayOfProductGroup" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductByGroupID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Product">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="ProductID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductDescription" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductLatest" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="GroupID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="SSWTimestamp" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="AllowUpdateByUI" nillable="true" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdateByUIImage" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CountOptionClickOnUpdatePageReference" type="tns:EntityReferenceOfCountOptionClickOnUpdatePage" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductGroupReference" type="tns:EntityReferenceOfProductGroup" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntityReferenceOfCountOptionClickOnUpdatePage">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityReference" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="EntityReferenceOfProductGroup">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityReference" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetProductByGroupIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductByGroupIDResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductVersionHistory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductVersion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductVersion" nillable="true" type="tns:ProductVersion" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductVersionHistoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductVersionHistoryResult" type="tns:ArrayOfProductVersion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileDeifinitions">
+        <s:complexType />
+      </s:element>
+      <s:complexType name="ArrayOfFileDefinition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FileDefinition" nillable="true" type="tns:FileDefinition" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FileDefinition">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:EntityObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="FileDefinitionID" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="FileDefinitionName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FileDefinitionVersion" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="FileDefinitionSize" nillable="true" type="s:double" />
+              <s:element minOccurs="1" maxOccurs="1" name="FileDefinitionDate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="SSWTimestamp" type="s:base64Binary" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdatedBy" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetFileDeifinitionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileDeifinitionsResult" type="tns:ArrayOfFileDefinition" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetHistoryReportListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHistoryReportList" />
+  </wsdl:message>
+  <wsdl:message name="GetHistoryReportListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHistoryReportListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsNewReportSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsNewReport" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsNewReportSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsNewReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetReportSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetReport" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetReportSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsVoteSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsVote" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsVoteSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetVersionVoteSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetVersionVote" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetVersionVoteSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetVersionVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetVoteListSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetVoteList" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetVoteListSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetVoteListResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetVoteAgreePercentSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetVoteAgreePercent" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetVoteAgreePercentSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetVoteAgreePercentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsUploadUsageReportSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsUploadUsageReport" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsUploadUsageReportSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsUploadUsageReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetUsageReportSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetUsageReport" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetUsageReportSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetUsageReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetHealthUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetHealthUsers" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetHealthUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetHealthUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetProductNameSoapIn">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetProductName" />
+  </wsdl:message>
+  <wsdl:message name="SSWDiagnosticsGetProductNameSoapOut">
+    <wsdl:part name="parameters" element="tns:SSWDiagnosticsGetProductNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUnrecognizedVersionLogSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUnrecognizedVersionLog" />
+  </wsdl:message>
+  <wsdl:message name="AddUnrecognizedVersionLogSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUnrecognizedVersionLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewProductVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewProductVersion" />
+  </wsdl:message>
+  <wsdl:message name="AddNewProductVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewProductVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateNewVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateNewVersion" />
+  </wsdl:message>
+  <wsdl:message name="GenerateNewVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateNewVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductCategory" />
+  </wsdl:message>
+  <wsdl:message name="GetProductCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductGroupByCateogryIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductGroupByCateogryID" />
+  </wsdl:message>
+  <wsdl:message name="GetProductGroupByCateogryIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductGroupByCateogryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductByGroupIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductByGroupID" />
+  </wsdl:message>
+  <wsdl:message name="GetProductByGroupIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductByGroupIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductVersionHistorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductVersionHistory" />
+  </wsdl:message>
+  <wsdl:message name="GetProductVersionHistorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductVersionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileDeifinitionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileDeifinitions" />
+  </wsdl:message>
+  <wsdl:message name="GetFileDeifinitionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileDeifinitionsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DiagnosticsWebServiceSoap">
+    <wsdl:operation name="GetHistoryReportList">
+      <wsdl:input message="tns:GetHistoryReportListSoapIn" />
+      <wsdl:output message="tns:GetHistoryReportListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsNewReport">
+      <wsdl:input message="tns:SSWDiagnosticsNewReportSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsNewReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetReport">
+      <wsdl:input message="tns:SSWDiagnosticsGetReportSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsVote">
+      <wsdl:input message="tns:SSWDiagnosticsVoteSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsVoteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVersionVote">
+      <wsdl:input message="tns:SSWDiagnosticsGetVersionVoteSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetVersionVoteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVoteList">
+      <wsdl:input message="tns:SSWDiagnosticsGetVoteListSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetVoteListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVoteAgreePercent">
+      <wsdl:input message="tns:SSWDiagnosticsGetVoteAgreePercentSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetVoteAgreePercentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsUploadUsageReport">
+      <wsdl:input message="tns:SSWDiagnosticsUploadUsageReportSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsUploadUsageReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetUsageReport">
+      <wsdl:input message="tns:SSWDiagnosticsGetUsageReportSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetUsageReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetHealthUsers">
+      <wsdl:input message="tns:SSWDiagnosticsGetHealthUsersSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetHealthUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetProductName">
+      <wsdl:input message="tns:SSWDiagnosticsGetProductNameSoapIn" />
+      <wsdl:output message="tns:SSWDiagnosticsGetProductNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUnrecognizedVersionLog">
+      <wsdl:input message="tns:AddUnrecognizedVersionLogSoapIn" />
+      <wsdl:output message="tns:AddUnrecognizedVersionLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewProductVersion">
+      <wsdl:input message="tns:AddNewProductVersionSoapIn" />
+      <wsdl:output message="tns:AddNewProductVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateNewVersion">
+      <wsdl:input message="tns:GenerateNewVersionSoapIn" />
+      <wsdl:output message="tns:GenerateNewVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategory">
+      <wsdl:input message="tns:GetProductCategorySoapIn" />
+      <wsdl:output message="tns:GetProductCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductGroupByCateogryID">
+      <wsdl:input message="tns:GetProductGroupByCateogryIDSoapIn" />
+      <wsdl:output message="tns:GetProductGroupByCateogryIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductByGroupID">
+      <wsdl:input message="tns:GetProductByGroupIDSoapIn" />
+      <wsdl:output message="tns:GetProductByGroupIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductVersionHistory">
+      <wsdl:input message="tns:GetProductVersionHistorySoapIn" />
+      <wsdl:output message="tns:GetProductVersionHistorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileDeifinitions">
+      <wsdl:input message="tns:GetFileDeifinitionsSoapIn" />
+      <wsdl:output message="tns:GetFileDeifinitionsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DiagnosticsWebServiceSoap" type="tns:DiagnosticsWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHistoryReportList">
+      <soap:operation soapAction="http://tempuri.org/GetHistoryReportList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsNewReport">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsNewReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetReport">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsVote">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVersionVote">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetVersionVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVoteList">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetVoteList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVoteAgreePercent">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetVoteAgreePercent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsUploadUsageReport">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsUploadUsageReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetUsageReport">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetUsageReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetHealthUsers">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetHealthUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetProductName">
+      <soap:operation soapAction="http://tempuri.org/SSWDiagnosticsGetProductName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUnrecognizedVersionLog">
+      <soap:operation soapAction="http://tempuri.org/AddUnrecognizedVersionLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewProductVersion">
+      <soap:operation soapAction="http://tempuri.org/AddNewProductVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateNewVersion">
+      <soap:operation soapAction="http://tempuri.org/GenerateNewVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategory">
+      <soap:operation soapAction="http://tempuri.org/GetProductCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductGroupByCateogryID">
+      <soap:operation soapAction="http://tempuri.org/GetProductGroupByCateogryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductByGroupID">
+      <soap:operation soapAction="http://tempuri.org/GetProductByGroupID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductVersionHistory">
+      <soap:operation soapAction="http://tempuri.org/GetProductVersionHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileDeifinitions">
+      <soap:operation soapAction="http://tempuri.org/GetFileDeifinitions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DiagnosticsWebServiceSoap12" type="tns:DiagnosticsWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHistoryReportList">
+      <soap12:operation soapAction="http://tempuri.org/GetHistoryReportList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsNewReport">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsNewReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetReport">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsVote">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsVote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVersionVote">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetVersionVote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVoteList">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetVoteList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetVoteAgreePercent">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetVoteAgreePercent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsUploadUsageReport">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsUploadUsageReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetUsageReport">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetUsageReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetHealthUsers">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetHealthUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SSWDiagnosticsGetProductName">
+      <soap12:operation soapAction="http://tempuri.org/SSWDiagnosticsGetProductName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUnrecognizedVersionLog">
+      <soap12:operation soapAction="http://tempuri.org/AddUnrecognizedVersionLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewProductVersion">
+      <soap12:operation soapAction="http://tempuri.org/AddNewProductVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateNewVersion">
+      <soap12:operation soapAction="http://tempuri.org/GenerateNewVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductCategory">
+      <soap12:operation soapAction="http://tempuri.org/GetProductCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductGroupByCateogryID">
+      <soap12:operation soapAction="http://tempuri.org/GetProductGroupByCateogryID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductByGroupID">
+      <soap12:operation soapAction="http://tempuri.org/GetProductByGroupID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductVersionHistory">
+      <soap12:operation soapAction="http://tempuri.org/GetProductVersionHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileDeifinitions">
+      <soap12:operation soapAction="http://tempuri.org/GetFileDeifinitions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiagnosticsWebService">
+    <wsdl:port name="DiagnosticsWebServiceSoap" binding="tns:DiagnosticsWebServiceSoap">
+      <soap:address location="http://webservices.internal.ssw.com.au/sswDignostics/Diagnostics.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DiagnosticsWebServiceSoap12" binding="tns:DiagnosticsWebServiceSoap12">
+      <soap12:address location="http://webservices.internal.ssw.com.au/sswDignostics/Diagnostics.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

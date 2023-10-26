@@ -1,0 +1,60 @@
+' ----------  Main Checking Code ---------------------
+Sub Main()
+
+        'Show the form
+        Dim Form1B As New Form1()
+
+    	'Registration Select a method u would like to use and comment the other out
+        Dim intNoOfTrialUses As Integer = 60
+        Dim strProductName As String = "SSW Code Auditor"
+        Dim dblVersion As Double = Convert.ToDouble(System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString())
+        Dim strDescription As String = "- Stuff" & vbCrLf & "- some other stuff" & vbCrLf & "- and some more?"
+        Dim strDocoLink As String = "http://www.ssw.com.au/"
+        Dim strSSWProductsLink As String = "http://www.ssw.com.au/"
+
+        'Dim RegDriver As SSWRegistration2002.Registration
+        Dim registrationStatus As SSW.Registration.RegistrationStatus
+        Dim RegDriver As SSW.Registration.Registration
+
+        'Try
+            RegDriver = New SSW.Registration.Registration(SSW.Registration.enumRegisterType.Uses, intNoOfTrialUses, strProductName, dblVersion, strDescription, strDocoLink, strSSWProductsLink)
+            Dim Password() As Byte = New Byte() {154, 229, 218, 61, 175, 228, 168, 80, 129, 29, 97, 36, 201, 39, 176, 97, 113, 146, 189, 26, 208, 130, 62, 114, 175, 241, 91, 101, 119, 97, 208, 52}   ' Hex Representation of “P@55w0rd_R@t1ng”
+            registrationStatus = RegDriver.Decrypt(RegDriver.IsRegistered(), Password)
+
+        'Catch exp As Exception
+        '   SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(Me, "The SSW Registration DLL could not be located. This  application cannot continue")
+        '    End
+        'End Try
+
+        ' Check to see if the user just registered the product then
+        If registrationStatus = SSW.Registration.RegistrationStatus.Registered Then
+            Form1B.lblMessage.Text = " The Product is registered"
+        ElseIf registrationStatus = SSW.Registration.RegistrationStatus.Trialling Then
+            Form1B.lblMessage.Text = " The Product is unregistered and still on trial"
+        ElseIf registrationStatus = SSW.Registration.RegistrationStatus.DeniedUserAgreement Then
+            SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(Nothing, "The user denied the license agreement.")
+            End
+        ElseIf registrationStatus = SSW.Registration.RegistrationStatus.Unregistered Then
+            SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(Nothing, "This software has expired.")
+            End
+        End If
+
+
+        ' show your application
+        Form1B.ShowDialog()
+
+        End
+End Sub
+
+
+' ------------ Show About Dialogue Code ---------------------
+        Dim intNoOfTrialUses As Integer = 60
+        Dim strProductName As String = "SSW Code Auditor"
+        Dim dblVersion As Double = Convert.ToDouble(System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString())
+        Dim strDescription As String = "- Stuff" & vbCrLf & "- some other stuff" & vbCrLf & "- and some more?"
+        Dim strDocoLink As String = "http://www.ssw.com.au/"
+        Dim strSSWProductsLink As String = "http://www.ssw.com.au/"
+        Dim TypeofUses As SSW.Registration.enumRegisterType = SSW.Registration.enumRegisterType.Uses
+
+        Dim RegDriver2 As New SSW.Registration.Registration(TypeofUses, intNoOfTrialUses, strProductName, dblVersion, strDescription, strDocoLink, strSSWProductsLink)
+        RegDriver2.ShowAbout()

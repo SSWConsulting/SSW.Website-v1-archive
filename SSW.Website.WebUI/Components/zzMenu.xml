@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Services" GroupImageUrl="https://www.ssw.com.au/ssw/images/Menu-Banner-Services.png" ImagePosition="1" Columns="3">
+      <Group>
+        <Item Text="All Services" NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Default.aspx" />
+        <Item Text="Development Teams" NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Consulting-Options.aspx" >
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/WebsiteDevelopment.aspx" Text="Web and MVC" description="Web Development" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Desktop-Development.aspx" Text="Windows Desktop Applications" description="Windows Desktop Applications" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Mobile-Application-Development.aspx" Text="Mobile Apps" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/DatabaseDevelopment.aspx" Text="SQL Server Database Development" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/EnterpriseReporting.aspx" Text="Enterprise Reporting &amp; BI" description="Enterprise Reporting + BI" />
+          </Group>
+        </Item>
+        <Item Text="Creative Teams" description="Creative Teams" NavigateUrl="https://www.ssw.com.au/ssw/Consulting/WebsiteDesignAndUserExperience.aspx">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/WebsiteDesignAndUserExperience.aspx" Text="Web Design &amp; UX Showcase" description="Web Design &amp; UX Showcase" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Video-Production" Text="Video Production" description="Video Production" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Green-Screen.aspx" Text="Green Screen Rental" description="Green Screen Rental" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/ContentManagement.aspx" Text="Platform Development">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/SharePoint.aspx" Text="SharePoint" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/MicrosoftCRM.aspx" Text="Microsoft CRM" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/AngularJS.aspx" Text="AngularJS" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/DNN-DotNetNuke.aspx" Text="DotNetNuke" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Sitefinity.aspx" Text="Sitefinity" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Orchard.aspx" Text="Orchard" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Umbraco.aspx" Text="Umbraco" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/WordPress.aspx" Text="WordPress" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Consulting-Options.aspx" Text="Consulting">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/SoftwareAudit.aspx" Text="Software Auditing" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/ALM.aspx" Text="ALM and TFS" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Scrum.aspx" Text="Agile Development with Scrum and TFS" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Office365.aspx" Text="Microsoft Office 365" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Lync.aspx" Text="Skype for Business" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Hosting/Default.aspx" Text="Hosting and Infrastructure" description="Data Management"/>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Hosting/Default.aspx" Text="Infrastructure Consulting" description="Infrastructure">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/HyperV.aspx" Text="Virtualization with Hyper-V" description="Virtualization with Hyper-V" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Data-Protection-Manager.aspx" Text="Data Protection Manager" description="Data Protection Manager" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Crash-Plan-Pro.aspx" Text="Crash Plan Pro" />
+          </Group>
+        </Item>
+        <Item Text="Book Now">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Consulting-Options.aspx" Text="Team of Developers and Scrum Masters" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/Training/Courses.aspx" Text="A Trainer" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Consulting/Mentoring.aspx" Text="A Mentor" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Advertising/Default.aspx" Text="Advertising" />
+      </Group>
+    </Item>
+    <Item Text="Products" GroupImageUrl="https://www.ssw.com.au/ssw/images/Menu-Banner-Products.png" Columns="3">
+      <Group>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Products/ProdSummaryList.aspx" Text="All Products" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=1SQL" Text="SQL Server" description="Products for SQL Server">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/SQLDeploy/" Text="SQL Deploy" description="SQL Deploy" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/SQLAuditor/" Text="SQL Auditor" description="SQL Auditor" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/UpsizingPRO/" Text="UpsizingPRO" description="UpsizingPRO" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/SQLTotalCompare/" Text="SQL Total Compare" description="SQL Total Compare" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/SQLReportingServicesAuditor/" Text="SQL Reporting Services Auditor" description="SQL Reporting Services Auditor" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Products/Default.aspx?filter=access-prod" Text="Access" description="Products for Access">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Accessreporter/" Text="Access Reporter" description="Access Reporter" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Products/Default.aspx?filter=visualstudionet-prod" Text="Visual Studio.Net" description="Products for Visual Studio.Net">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/CodeAuditor/" Text="Code Auditor" description="Code Auditor" CssClass="Popular" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=3WEB" Text="Web" description="Products for Web">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/LinkAuditor/" Text="Link Auditor" description="Link Auditor" CssClass="ignore Popular" />
+            <Item NavigateUrl="https://sswtimepro.com/" Target="_blank" Text="TimePro" description="TimePro" CssClass="ignore Popular" />
+            <Item NavigateUrl="https://sugarlearning.com/" Target="_blank" Text="SugarLearning" description="SugarLearning" CssClass="ignore Popular" />
+            <Item NavigateUrl="https://www.sswdataonion.com/" Target="_blank" Text="DataOnion" description="DataOnion" CssClass="ignore Popular" />
+            <Item NavigateUrl="http://sswhealthcheck.com/" Target="_blank" Text="HealthCheck" description="HealthCheck" CssClass="ignore Popular" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Products/ProdCategory.aspx?CategoryID=8SUPP" Text="Support" description="Support" />
+        <Item NavigateUrl="https://help.ssw.com.au" Text="Knowledge Base" description="Knowledge Base" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Support/BugReportOrEnhancement.aspx" Text="Report a Bug" description="Bugs and Enhancements" />
+      </Group>
+    </Item>
+    <Item Text="Training" GroupImageUrl="https://www.ssw.com.au/ssw/images/Menu-Banner-Training.png" Columns="4">
+      <Group>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/" Text="All Events">
+          <Group>
+            <Item NavigateUrl="http://www.firebootcamp.com" Text="FireBootCamp" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/Training/Brain-Quest-VS2015-ASP-NET-vNext-DevOps.aspx" Text="SSW Brain Quest VS2015 + ASP.NET vNext and DevOps" />
+            <Item NavigateUrl="http://tv.ssw.com/devsuperpowers" Text="Dev SuperPowers" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/DevSuperpowers-In-Person.aspx" Text="Dev SuperPowers In Person" />
+            <Item NavigateUrl="http://xamarinhackday.com" Text="Xamarin Hack Days" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/Training/Training-Options.aspx" Text="Customized Training" CssClass="Popular" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/Training/Scrum-Training-Course-3-days.aspx" Text="Professional Scrum Developer Training" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/" Text="Events by Technology">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=sharepoint" Text="SharePoint" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=crm" Text="CRM" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=visual_studio_and_tfs" Text="Visual Studio TFS" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=scrum" Text="Scrum" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=asp_net_mvc" Text="ASP.NET MVC" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=mobile_development" Text="Mobile Development" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=sql_server" Text="SQL Server" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?tech=other" Text="Other" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/" Text="Events by Type">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?types=ssw_courses" Text="SSW Training" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?types=webinar" Text="Webinars" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?types=solidq_courses" Text="Solid Q" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/events/?types=uts_courses" Text="UTS (University)" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Events/Venues/Hire-Conference-Room.aspx" Text="Conference Room for Hire" />
+      </Group>
+    </Item>
+    <Item Text="User Group" GroupImageUrl="https://www.ssw.com.au/ssw/images/Menu-Banner-UserGroup.png" Columns="3">
+      <Group>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/Sydney.aspx" Text="Sydney .NET User Group">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/Directions/NeutralBay/" Text="Map to SSW Offices" description="Map to SSW Offices" />
+            <Item NavigateUrl="http://www.facebook.com/groups/NetUG/" Text="Sydney .NETUG Facebook" CssClass="ignore"/>
+            <Item NavigateUrl="http://www.meetup.com/Sydney-NET-User-Group/" Text="Sydney .NETUG MeetUp" CssClass="ignore"/>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/Live.aspx" Text="Sydney .NET User Group Live" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/Canberra.aspx" Text="Canberra .NET User Group">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/UserGroupMapDirectionsCanberra.aspx" Text="Map to Microsoft" description="Map to Microsoft" />
+            <Item NavigateUrl="http://www.facebook.com/groups/31380367562/" Text="Canberra .NETUG Facebook" CssClass="ignore"/>
+            <Item NavigateUrl="http://www.meetup.com/Canberra-NET-User-Group/" Text="Canberra .NETUG MeetUp" CssClass="ignore"/>
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/Default.aspx" Text="All User Group Resources">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/SSWUpdatePrevious.aspx" Text="Newsletters" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/NETUG/PastSessions.aspx" Text="Past Sessions" />
+          </Group>
+        </Item>
+      </Group>
+    </Item>
+    <Item Text="Rules" GroupImageUrl="https://www.ssw.com.au/ssw/images/Menu-Banner-Standards.png" Columns="3">
+      <Group>
+        <Item NavigateUrl="http://rules.ssw.com.au/Pages/default.aspx" Text="New SSW Rules" description="All Rules" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Default.aspx" Text="SSW Rules" description="All Rules" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/" Text="Suggestions for Better Software" description="Better Software Wish List by SSW" />
+        <Item Text="Popular" NavigateUrl="https://www.ssw.com.au/ssw/Standards/Default.aspx">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Rules/RulestoSuccessfulProjects.aspx" Text="Rules to Successful Projects" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterEmail.aspx" Text="Rules to Better Email" />
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterGoogleRankings.aspx" Text="Rules to Better Google Rankings" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx" Text="Rules to Better Interfaces" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Standards/Rules/RulestoBetterCode.aspx" Text="Rules to Better Code" />
+        <Item NavigateUrl="http://rules.ssw.com.au/Management/RulesToBetterScrumUsingTFS/Pages/default.aspx" Text="Rules to Better Scrum Using TFS" />
+      </Group>
+    </Item>
+    <Item Text="About Us" GroupImageUrl="https://www.ssw.com.au/ssw/images/Menu-Banner-AboutUs.png" Columns="3">
+      <Group>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/AboutUs.aspx" Text="About Us" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/Awards.aspx" Text="Awards" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/News/News.aspx" Text="News &amp; Press" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Redirect/SSWSharePointEmployee.htm" Text="Our People" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/Clients.aspx" Text="Our Clients">
+          <Group>
+            <Item NavigateUrl="https://www.ssw.com.au/ssw/Testimonials/default.aspx" Text="Testimonials" />
+          </Group>
+        </Item>
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/History.aspx" Text="Our History" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/ContactUs.aspx" Text="Contact Us" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Company/Offices.aspx" Text="Our Offices" />
+        <Item NavigateUrl="https://www.ssw.com.au/ssw/Employment/Employment.aspx" Text="Employment" />
+      </Group>
+    </Item>
+    <Item Text="SSW TV" CssClass="ignore no-dropdown menu-ssw-tv" NavigateUrl="http://tv.ssw.com" Target="_blank" />
+  </Group>
+</Menu>

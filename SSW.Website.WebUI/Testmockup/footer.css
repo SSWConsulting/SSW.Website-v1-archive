@@ -1,0 +1,81 @@
+﻿#footer ul {
+	list-style-type: none;
+	margin: 10px 0px 0px;
+	padding: 0px;
+}
+#footer {
+	background-image: url('http://www.ssw.com.au/ssw/images/bg_footer.gif');
+	background-repeat: repeat-x;
+	background-position: 50% top;
+	background-color: #EEEEEE;
+	position: relative;
+	width: 790px;
+	display:block;
+	clear:both;
+	height: 75px;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	padding: 15px 0px 0px 10px;
+	z-index: 50;
+	clear:both;
+}
+span.proudly {
+	width: 350px;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	color: #999999;
+	text-align: right;
+}
+span.proudly img
+{
+	vertical-align: middle;
+}
+#footer a {
+	color: #333333;
+}
+#footer a:hover {
+	color: #fd1912;
+}
+#footer li.first {
+	padding-left: 0px;
+}
+#footer li.last {
+	border: none;
+}
+#footer span.copyright {
+	font-weight: bold;
+	color: #999999;
+}
+#footer li {
+	display: block;
+	margin: 0px;
+	padding: 0px 5px;
+	width: auto;
+	border-right: 1px solid #000000;
+	float: left;
+}
+p.serverName 
+{
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	font-size: 10px;
+	color: #999999;
+}
+#footer a.email
+{
+	background-image: url('http://www.ssw.com.au/ssw/images/icon_email.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+	padding-left: 13px;
+}
+#footer .proudly a, #footer .proudly a:link
+{
+	color: #999999;
+}
+#footer .proudly a:hover
+{
+	color: #fd1912;
+}

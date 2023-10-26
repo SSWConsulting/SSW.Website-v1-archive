@@ -1,0 +1,61 @@
+﻿.knowledge{
+	background:transparent url('/ssw/standards/rules/images/knowledge_bg.gif') no-repeat 0 0;
+	padding:22px 100px 0 28px;
+	min-height:138px;
+	font-family:"Arial";
+}
+.knowledge h3, .knowledge p{
+	margin:0;
+	padding:0;
+	font-family:"Arial";	
+}
+.knowledge h3{
+	font-size:18px;
+	color:#333;
+	margin-bottom:5px;
+}
+.knowledge p{
+	font-size:12px;
+	color:#555;
+	line-height:21px;	
+}
+.knowledge p>a{
+	color:#007cc3;
+	font-family:"Arial";	
+}
+.knowledge span{
+	font-weight:bold;
+	font-family:"Arial";	
+}
+.knowledge a.button{
+	background-image:url(/ssw/standards/rules/images/button-right.gif);
+}
+.knowledge a.button, .knowledge a.button:hover{
+	padding:0 9px 0 0;
+	background-position:100% 0;
+	background-repeat:no-repeat;
+	height:20px;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#555;
+	float:left;
+	text-decoration:none;
+	margin:10px 15px 0 0;
+
+}
+.knowledge a.button span{
+	background-image:url(/ssw/standards/rules/images/button-left.gif);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	height:20px;
+	float:left;
+	line-height:20px;
+	padding:0 0 0 9px;
+	cursor:pointer;
+	font-weight:normal;
+}
+.knowledge a.button:hover{
+	background-image:url('/ssw/standards/rules/images/button-right-h.gif');
+}
+.knowledge a.button span:hover{
+	background-image:url('/ssw/standards/rules/images/button-left-h.gif');
+}

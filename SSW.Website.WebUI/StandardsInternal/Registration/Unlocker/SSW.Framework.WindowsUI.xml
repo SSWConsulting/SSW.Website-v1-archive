@@ -1,0 +1,1407 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SSW.Framework.WindowsUI</name>
+    </assembly>
+    <members>
+        <member name="T:SSW.Framework.WindowsUI.BaseDataEntryForm">
+            <summary>
+            Standard SSW Form, inheriting baseform. Inculdes the following Features:
+            <list>
+            	<item>
+            		Main Menu, with File -&gt; Close, Help-&gt; About, Help-&gt; Run Unit Tests, 
+            		Help-&gt;Check for Update, Help-&gt;SSW Knowledge Base
+            	</item>
+            	<item>Toolbar</item>
+            	<item>OK, Cancel &amp; Apply Buttons</item>
+            </list>
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.BaseForm">
+            <summary>
+            Summary description for BaseForm.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SSW.Framework.WindowsUI.BaseForm"/> class.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseForm.OnLoad(System.EventArgs)">
+            <summary>
+            Method to trigger child load events
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseForm.OnLogLoadTime(SSW.Framework.WindowsUI.LogLoadTimeEventArgs)">
+            <summary>
+            Fires Load Time Event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseForm.FormIDEquals(System.Object)">
+            <summary>
+            Override this method to support Form ID matching
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.BaseForm.LogLoadTimeEvent">
+            <summary>
+            Load Time Event
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.CheckForUpdate">
+            <summary>
+            Calls WISE Update to check for a new version
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnCancel">
+            <summary>
+            Must override for cancel functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnApply">
+            <summary>
+            Must override for Apply functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnOK">
+            <summary>
+            Must override for OK functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnNew">
+            <summary>
+            Must override for New functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnDelete">
+            <summary>
+            Must be override for Delete functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnSearch">
+            <summary>
+            Must be override for Search functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnAbout">
+            <summary>
+            Must be override for About functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.OnToolBarMainButtonClick(System.Object,System.Windows.Forms.ToolBarButtonClickEventArgs)">
+            <summary>
+            Must be override for OnToolBarMainButtonClick functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.BaseDataEntryForm.EnableApply(System.Boolean)">
+            <summary>
+            Enables the Apply button.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.BaseDataEntryForm.ToolBar">
+            <summary>
+            Toolbar
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.BaseDataEntryForm.MainMenu">
+            <summary>
+            mainMenu
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.BaseDataEntryForm.ImageList">
+            <summary>
+            imageList
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.BaseDataEntryForm.ShowButtonSeparator">
+            <summary>
+            Gets or sets a value indicating whether to show the separator line between the OK, Cancel and Apply buttons and the other controls on the form..
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.LogLoadTimeEventHandler">
+            <summary>
+            Event Handler for LogLoadTimeEvent
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.DataEntryControl">
+            <summary>
+            Summary description for DataEntryControl.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.OnOKClicked(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.OnCancelClicked(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.OnApplyClicked(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.DataEntryControl.TestEventHooked">
+            <summary>
+            Returns true if OKClicked, CancelClicked and ApplyClicked are all handled
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.ButtonSeperator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.AcceptButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.CancelButtonEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.CancelButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.ApplyButtonEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.ApplyButtonVisible">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.OKButtonText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.DataEntryControl.OKButtonEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.DataEntryControl.OKClicked">
+            <summary>
+            Occurs when the OK button is clicked.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.DataEntryControl.CancelClicked">
+            <summary>
+            Occurs when the Cancel button is clicked.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.DataEntryControl.ApplyClicked">
+            <summary>
+            Occurs when the Apply button is clicked.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ComboWithHistory.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ComboWithHistory.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.DataEntryButtons">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.DataEntryButtons.None">
+            <summary>
+            No button is set
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.DataEntryButtons.OKButton">
+            <summary>
+            OK button is set
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.DataEntryButtons.CancelButton">
+            <summary>
+            Cancel button is set
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.DataEntryButtons.ApplyButton">
+            <summary>
+            Apply button is set
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.DataEntryButtons.Other">
+            <summary>
+            Other button (that we are not concerned with) is set
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.EnvironmentController">
+            <summary>
+            Summary description for EnvironmentController.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.EnvironmentController.Bind(System.Windows.Forms.Form)">
+            <summary>
+            Bind the form to this environment controller.
+            </summary>
+            <param name="f">Form to be bound.</param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.EnvironmentController.CheckConnectionString(System.String)">
+            <summary>
+            Check ConnectionString for environment settings and apply it to all forms.
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.EnvironmentController.Instance">
+            <summary>
+            Default instance of environment controller.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.EnvironmentController.DefaultBackColor">
+            <summary>
+            Default background color to use if the environment color cannot be found in Configuration.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.EnvironmentController.BackColor">
+            <summary>
+            Background color for form bound to this environment controller.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.EnvironmentController.BackColorChanged">
+            <summary>
+            Notify when the BackColor is changed.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.FormCollection">
+            <summary>
+            Represents a collection of <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> objects.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.#ctor">
+            <summary>
+            Initializes a new instance of the 
+            <see cref="T:SSW.Framework.WindowsUI.FormCollection">FormCollection</see> class.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.#ctor(SSW.Framework.WindowsUI.BaseForm[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:SSW.Framework.WindowsUI.FormCollection">FormCollection</see> class 
+            containing the specified array of <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> objects.
+            </summary>
+            <param name="value">An array of <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> objects with which to initialize the collection. </param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.Add(SSW.Framework.WindowsUI.BaseForm)">
+            <summary>
+            Add an element of the specified <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> to the end of the collection.
+            </summary>
+            <param name="value">An object of type <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> to add to the collection.</param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.Remove(SSW.Framework.WindowsUI.BaseForm)">
+            <summary>
+            Remove the specified object of type <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> from the collection.
+            </summary>
+            <param name="value">An object of type <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> to remove to the collection.</param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.Contains(SSW.Framework.WindowsUI.BaseForm)">
+            <summary>
+            Gets a value indicating whether the collection contains the specified <see cref="T:SSW.Framework.WindowsUI.FormCollection">FormCollection</see>.
+            </summary>
+            <param name="value">The <see cref="T:SSW.Framework.WindowsUI.FormCollection">FormCollection</see> to search for in the collection.</param>
+            <returns><b>true</b> if the collection contains the specified object; otherwise, <b>false</b>.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.AddRange(SSW.Framework.WindowsUI.BaseForm[])">
+            <summary>
+            Copies the elements of the specified <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> array to the end of the collection.
+            </summary>
+            <param name="value">An array of type <see cref="T:SSW.Framework.WindowsUI.BaseForm">BaseForm</see> containing the objects to add to the collection.</param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.GetForm(System.Type,System.Object)">
+            <summary>
+            Get Instance of a form type + ID
+            </summary>
+            <param name="formType"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.FormCollection.GetForm(System.Type)">
+            <summary>
+            Get Instance(s) of a form type
+            </summary>
+            <param name="formType"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.FormCollection.DefaultFormCollection">
+            <summary>
+            A singleton forms collection
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.FormCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:SSW.Framework.WindowsUI.FormCollection">FormCollection</see> 
+            at the specified index in the collection.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.GroupPanel">
+            <summary>
+            Draws a generic group area with title, icon and 3D divider. This style is common through options forms. For an example, see Outlook's options form.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.GroupPanel.#ctor">
+            <summary>
+            Creates a new <see cref="T:SSW.Framework.WindowsUI.GroupPanel"/> instance.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.GroupPanel.InitializeControls">
+            <summary>
+            Initializes the controls.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.GroupPanel.ResizeControls">
+            <summary>
+            Resizes the controls.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.GroupPanel.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <summary>
+            Handles resizing of the control.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.m_title">
+            <summary>
+            Stores the title text
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.m_icon">
+            <summary>
+            Stores the display icon
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.mIconSize">
+            <summary>
+            Stores the Icon display size
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.iconAlignment">
+            <summary>
+            Stores the Icon alignement
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.GroupPanel.Title">
+            <summary>
+            Gets/sets the title text
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.GroupPanel.Icon">
+            <summary>
+            Gets/sets the display icon
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.GroupPanel.IconSize">
+            <summary>
+            Gets/Sets the icon display size
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.GroupPanel.IconAlignment">
+            <summary>
+            Property IconAlignment (IconAlignments)
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.GroupPanel.IconSizes">
+            <summary>
+            Defines an enumeration of possible icon sizes.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.IconSizes.Icon16">
+            <summary>
+            Represents icons with the dimensions 16px by 16px.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.IconSizes.Icon24">
+            <summary>
+            Represents icons with the dimensions 24px by 24px.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.IconSizes.Icon32">
+            <summary>
+            Represents icons with the dimensions 32px by 32px.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.IconSizes.Icon48">
+            <summary>
+            Represents icons with the dimensions 48px by 48px.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.GroupPanel.IconAlignments">
+            <summary>
+            Defines an enumeration of possible icon alignments.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.IconAlignments.Left">
+            <summary>
+            Represents an icon aligned to the left.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.GroupPanel.IconAlignments.Right">
+            <summary>
+            Represents an icon aligned to the right.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.HeaderBar">
+            <summary>
+            Summary description for HeaderBar.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.HeaderBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.HeaderBar.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.HeaderBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.HeaderBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.HeaderBar.OnLinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            Handles the event when the Link Area in the Header Bar has been clicked.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.HeaderBar.OnDescriptionLinkAreaClicked">
+            <summary>
+            Occurs when the OK button is clicked.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.Text">
+            <summary>
+            The main text - usually application name
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.Description">
+            <summary>
+            Description field
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.DescriptionLinkArea">
+            <summary>
+            The Link Area to be used for description (i.e. SSW Standard would include "More..."
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.HeaderPicture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.HeaderPictureWidth">
+            <summary>
+            The Header panel width
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.HeaderPictureHeight">
+            <summary>
+            The Header picture height
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.HeaderPictureMargin">
+            <summary>
+            The margin away from the top-right edge of the control
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.HeaderPictureVisible">
+            <summary>
+            Visibility of the header picture
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.Font">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.BoldTitle">
+            <summary>
+            Automatically make the title bold
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBar.SizeMode">
+            <summary>
+            Provides access to the SizeMode property of the PictureBox
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.HeaderBarLabelStyle">
+            <summary>
+            Summary description for HeaderBarLabelStyle.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.HeaderBarLabelStyle.FontStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.IconBox">
+            <summary>
+            A redefinition of the <see cref="T:System.Windows.Forms.PictureBox"/> control
+            to be based on icon images only.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.IconBox.AutoScaleIcon">
+            <summary>
+            Often the size of the image from an Icon file isn't scaled properly
+            If true, this will cause it to be scaled to a square (multiple of 8)
+            up to a max size of 48x48 px.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.IconBox.Icon">
+            <summary>
+            Gets or sets the Image to display. The icon will automatically
+            be alpha-blended.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.IconBox.Image">
+            <summary>
+            Gets or sets the Image to display. It will cause the <see cref="P:SSW.Framework.WindowsUI.IconBox.Icon"/> value
+            to be reset.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.IconHelpers">
+            <summary>
+            From http://dotnetrix.co.uk/misc.html
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.IconHelpers.IconToAlphaBitmap(System.Drawing.Icon)">
+            <summary>
+            Returns a bitmap with an alpha channel from the specified <see cref="T:System.Drawing.Icon"/>.
+            </summary>
+            <param name="icn">The <see cref="T:System.Drawing.Icon"/> to convert.</param>
+            <returns>A bitmap with an alpha channel from the specified <see cref="T:System.Drawing.Icon"/>.</returns>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.IconLabel">
+            <summary>
+            A redefinition of the <see cref="T:System.Windows.Forms.Label"/> control
+            to be based on icon images only.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.IconLabel.AutoScaleIcon">
+            <summary>
+            Often the size of the image from an Icon file isn't scaled properly
+            If true, this will cause it to be scaled to a square (multiple of 8)
+            up to a max size of 48x48 px.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.IconLabel.Icon">
+            <summary>
+            Gets or sets the Image to display. The icon will automatically
+            be alpha-blended.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.IconLabel.Image">
+            <summary>
+            Gets or sets the Image to display. It will cause the <see cref="P:SSW.Framework.WindowsUI.IconLabel.Icon"/> value
+            to be reset.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.InfoForm">
+            <summary>
+            Summary description for InfoForm.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.InfoForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.InfoForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.InfoForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.LogLoadTimeEventArgs">
+            <summary>
+            Summary description for EventClass.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.LogLoadTimeEventArgs.LoadTimeSpan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.MenuFunctions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.None">
+            <summary>
+            Default - no function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.Close">
+            <summary>
+            Represent the close menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.Exit">
+            <summary>
+            Represent the exit menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.Options">
+            <summary>
+            Represent the options menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.UserGuide">
+            <summary>
+            Represent the user guide menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.Suggestion">
+            <summary>
+            Represent the suggestion menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.Bug">
+            <summary>
+            Represent the bug menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.KnowledgeBase">
+            <summary>
+            Represent the knowledge base menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.CheckForUpdate">
+            <summary>
+            Represent the check for update menu function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.RunUnitTests">
+            <summary>
+            Represent the run unit tests function
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MenuFunctions.About">
+            <summary>
+            Represent the about menu function
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.MenuFunctionProvider">
+            <summary>
+            Summary description for MenuProvider.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.CanExtend(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="extendee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.GetMenuFunction(System.Windows.Forms.MenuItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.SetMenuFunction(System.Windows.Forms.MenuItem,SSW.Framework.WindowsUI.MenuFunctions)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.OnCheckForUpdate(System.Object)">
+            <summary>
+            This was a private method - I made it public so that other code can make use of the
+            existing functionality and call this method to for a check for update.
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.CreateIfNotExist(System.Windows.Forms.MenuItem@,System.Windows.Forms.Menu,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <param name="parent"></param>
+            <param name="text"></param>
+            <param name="index">Use -1 for last, 0 for first</param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MenuFunctionProvider.CreateSeparator(System.Windows.Forms.MenuItem@,System.Windows.Forms.Menu,System.Int32)">
+            <summary>
+            Create a line in the menu to separate menu items.
+            </summary>
+            <param name="item"></param>
+            <param name="parent"></param>
+            <param name="index"></param>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.AboutRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.CloseRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.ExitRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.OptionsRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.UserGuideRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.SuggestionRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.BugRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.KnowledgeBaseRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.CheckForUpdateRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.MenuFunctionProvider.RunUnitTestRequest">
+            <summary>
+            Handle this event to override the default functionality
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.MenuFunctionProvider.ParentForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.MessageBoxHelper">
+            <summary>
+            Summary description for MessageBoxHelper.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.FormatCaption(System.String)">
+            <summary>
+            Format the message box caption with application name and version.
+            </summary>
+            <param name="caption"></param>
+            <returns>Formatted caption for message box.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(System.Windows.Forms.IWin32Window,System.String)">
+            <summary>
+            Displays a message box contains a symbol consisting of a lowercase letter i in a circle. 
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowInformation(System.Windows.Forms.IWin32Window,System.String,System.String)">
+            <summary>
+            Displays a message box contains a symbol consisting of a lowercase letter i in a circle. 
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowWarning(System.Windows.Forms.IWin32Window,System.String)">
+            <summary>
+            Displays a message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values. </returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowWarning(System.Windows.Forms.IWin32Window,System.String,System.String)">
+            <summary>
+            Displays a message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.
+            Has OK button Only
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowWarning(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+             Displays a message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.
+             Has 2 buttons "Yes" and "No"
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttonType">Generic button value that allows use many buttons</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowError(System.Windows.Forms.IWin32Window,System.String)">
+            <summary>
+            Displays a message box contains a symbol consisting of white X in a circle with a red background. 
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowError(System.Windows.Forms.IWin32Window,System.String,System.String)">
+            <summary>
+            Displays a message box contains a symbol of white x in a circle with a red background.
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowError(System.Windows.Forms.IWin32Window,System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            Displays a message box contains a symbol of white x in a circle with a red background.
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="buttons">The buttons to display in the message box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowQuestion(System.Windows.Forms.IWin32Window,System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            Displays a message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="buttons">The buttons to display in the message box.</param>
+            <returns>A DialogResult representing the button pressed to close the Message box.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowQuestion(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            Displays a message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">The buttons to display in the message box.</param>
+            <returns>A DialogResult representing the button pressed to close the Message box.</returns>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MessageBoxHelper.ShowQuestion(System.Windows.Forms.IWin32Window,System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>
+            Displays a message box contains a symbol consisting of an exclamation point in a triangle with a yellow background. 
+            </summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the message box will display in front of.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">The buttons to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <returns>A DialogResult representing the button pressed to close the Message box</returns>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.Mnemonics">
+            <summary>
+            Generates mnemonics from existing label captions. Assignment guarantees uniqueness of mnemonics
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.Mnemonics.Apply(System.Windows.Forms.Control)">
+            <summary>
+            Choose a character in a label's Text property to become its mnemonic
+            </summary>
+            <param name="ctrl"></param>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.MultilineLabel">
+            <summary>
+            Summary description for MultilineLable.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.MultilineLabel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MultilineLabel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.MultilineLabel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.MultilineLabel.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.PasswordTextBox">
+            <summary>
+            Represents a Windows text box control providing password masking.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.PasswordTextBox.extendedStylePassword">
+            <summary>
+            Represents the bit extended style parameter required to enable the password style
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.PasswordTextBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SSW.Framework.WindowsUI.PasswordTextBox"/> class.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.PasswordTextBox.CreateParams">
+            <summary>
+            Apply the password style parameter
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.ProgressForm">
+            <summary>
+            Progress Form, used to show progress  - RD &amp; MA
+            </summary>
+            <remarks>
+            	1.	Implement the Interface IProgressWorker
+            		a.	Write code to Start the process, working with an array of arguments. This method should check a flag constantly to check if stop was pressed.
+            		b.	Write code to Stop the process. Set a flag for the start method to check.
+            		c.	Raise ProgressChanged event when progress changes in the process.
+            	2.	Create a ProgressForm
+            		a.	Create a Progress form and setup the options (CancelEnabled ,ShowExceptionsAndPause, ThrowExceptions, AutoClose, Title, etc)
+            		b.	Create an array of arguments for your process to use
+            </remarks>
+            <example>
+            <code>
+            	DatabaseDeployer databaseDeployer = new DatabaseDeployer(); // Implements IProgressWorker
+            	ProgressForm progressForm = new ProgressForm("SSW SQL Deploy Status");
+            	progressForm.CancelEnabled = true;               
+            	progressForm.ShowExceptionsAndPause = true;
+            	progressForm.ThrowExceptions = false;
+            	progressForm.AutoClose = false;
+            	object[] args = new object[6];
+            	args[0]=  txtusername.Text;
+            	args[1] = txtpassword.Text;
+            	args[2] = cbxServer.Text;
+            	args[3] = logonInfoRadioGroup.Checked;
+            	args[4] = txtDBName.Text;
+            	args[5] = chkSampleData.Checked;
+                               
+            	System.Threading.ThreadState result = progressForm.ShowDialog(databaseDeployer,args); // Place a Try..Catch block around this if you set ThrowExceptions to true.
+            </code>
+            </example>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ProgressForm.#ctor(System.String)">
+            <summary>
+            Create a progress form - set the title
+            </summary>
+            <param name="title"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ProgressForm.ShowDialog(SSW.Framework.WindowsUI.IProgressWorker,System.Object[])">
+            <summary>
+            Displays the dialog, and starts off the process
+            </summary>
+            <param name="worker">The process which needs to run</param>
+            <param name="args">The arguments needed by the process</param>
+            <returns>The state which the process completed in. (Stopped means success)</returns>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.ProgressForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ProgressForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ProgressForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.IsConfirmOnCancelRequired">
+            <summary>
+            Whether to show a messagebox to ask the user to confirm cancel
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.ConfirmMessageOnCancel">
+            <summary>
+            A message to show when confirm cancel messagebox is shown
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.Title">
+            <summary>
+            Gets or sets the title of the progress form.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.ShowExceptionsAndPause">
+            <summary>
+            Gets or sets the value indication whether the progress form should show exceptions and wait for user to click cancel.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.ThrowExceptions">
+            <summary>
+            Gets or sets the value indication whether to throw exceptions that are thrown by the running process.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.AutoClose">
+            <summary>
+            Gets or sets the value indication whether the progress form should auto close when process is complete.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.Message">
+            <summary>
+            Gets or sets the message of the progress form.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.ProgressValue">
+            <summary>
+            Gets or sets the progress value on the progress bar.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressForm.CancelEnabled">
+            <summary>
+            Gets or sets the value indication whether the cancel button should be enabled.
+            Note: If AutoClose is false, then CancelEnabled should be true
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.ProgressChangedEventHandler">
+            <summary>
+            Handler for the progress changed event
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.IProgressWorker">
+             <summary>
+            	 Progress worker interface to be implemented and passed into the progress form.
+             </summary>
+             <remarks>
+             See code example
+             </remarks>
+             <example>
+             <code>
+            		Public class DatabaseDeployer : IProgressWorker{
+            		
+            			public void Start(params object[] args)
+            			{
+            				// TODO:  Add test.Start implementation
+            			}
+            
+            			public event SSW.Framework.WindowsUI.ProgressChangedEventHandler ProgressChanged;
+            
+            			public void Stop()
+            			{
+            						// TODO:  Add test.Stop implementation
+            			}
+            
+            		}
+            </code>
+            </example>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.ProgressChangedEventArgs">
+            <summary>
+            Arguments for the ProgressChangedEvent
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ProgressChangedEventArgs.#ctor">
+            <summary>
+            Constructor for creating ProgressChangedEventArgs, taking no arguments.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ProgressChangedEventArgs.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor for creating ProgressChangedEventArgs, taking 2 arguments
+            </summary>
+            <param name="message">Progress Message</param>
+            <param name="percentage">Progress Percentage</param>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressChangedEventArgs.Message">
+            <summary>
+            Progress Message
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.ProgressChangedEventArgs.Percentage">
+            <summary>
+            Progress Percentage
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.Separator">
+            <summary>
+            Provides a 3D line control.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.StatusControl">
+            <summary>
+            Summary description for StatusControl.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.StatusControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.StatusControl.#ctor">
+            <summary>
+            Creates a new <see cref="T:SSW.Framework.WindowsUI.StatusControl"/> instance.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.StatusControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.StatusControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.StatusControl.StatusMessage">
+            <summary>
+            Gets or sets the status message.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.StatusControl.StatusMessageAlign">
+            <summary>
+            Gets or sets the status message alignment.
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.StatusControl.StatusIsPass">
+            <summary>
+            Gets or sets whether the status is a pass.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.Support">
+            <summary>
+            Summary description for ThemeSupport.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.Support.ChangeToFlatStyle(System.Windows.Forms.Control)">
+            <summary>
+            Recursively set all the controls within to use FlatStyle.
+            
+            Exceptions:
+            	1. The control has a different background colour
+            	2. The control has a image set
+            </summary>
+            <example>
+            Typically, use this in the form's load event handler.
+            
+            ThemeSupport.ChangeToFlatStyle(this);
+            </example>
+            <param name="container"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.Support.FixComboBoxDropDownWidthWidth(System.Windows.Forms.ComboBox)">
+            <summary>
+            
+            </summary>
+            <param name="combo"></param>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.Support.FixControlDoubleClick(System.Windows.Forms.Control,System.EventHandler)">
+            <summary>
+            Hook up double click events
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.Support.FixDataGridColumnWidth(System.Windows.Forms.DataGrid)">
+            <summary>
+            Set the length of the last column in datagrid to the end of the datagrid.
+            </summary>
+            <param name="grid"></param>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.TipLabel">
+            <summary>
+            Summary description for TipLabel.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.TipLabel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.TipLabel.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.TipLabel.Tip">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.TipLabel.TipLines">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SSW.Framework.WindowsUI.TipLabel.AutomaticDelay">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.ToolBarControl">
+            <summary>
+            Summary description for ToolBarControl.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.OnNew">
+            <summary>
+            Must override for New functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.OnDelete">
+            <summary>
+            Must be override for Delete functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.OnSearch">
+            <summary>
+            Must be override for Search functionality
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.ToolBarControl.OnToolBarMainButtonClick(System.Object,System.Windows.Forms.ToolBarButtonClickEventArgs)">
+            <summary>
+            Must be override for OnToolBarMainButtonClick functionality
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.ToolBarControl.NewClicked">
+            <summary>
+            Occurs when the New toolbar button is clicked.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.ToolBarControl.DeleteClicked">
+            <summary>
+            Occurs when the Delete toolbar button is clicked.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.ToolBarControl.SearchClicked">
+            <summary>
+            Occurs when the Search toolbar button is clicked.
+            </summary>
+        </member>
+        <member name="E:SSW.Framework.WindowsUI.ToolBarControl.ToolBarButtonClicked">
+            <summary>
+            Occurs when the Search toolbar button is clicked.
+            </summary>
+        </member>
+        <member name="T:SSW.Framework.WindowsUI.UpdateByControl">
+            <summary>
+            Summary description for UpdateByControl.
+            </summary>
+        </member>
+        <member name="F:SSW.Framework.WindowsUI.UpdateByControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.UpdateByControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:SSW.Framework.WindowsUI.UpdateByControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,75 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : SSW!
+ URL : http://ssw.com.au
+
+ Last Updated : 1st May, 2015
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - Default - - - */
+
+/* Logo */
+#logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
+}
+
+/* Backgrounds */
+html{background-image:none;background-color: none;}
+#logo{background-image:none;background-color:none;}
+#container{background:#FFFFFF}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select{background:#FFFFFF; 
+                                            padding: 8px 4px 8px 5px;
+                                            border: 1px solid #666;
+
+}
+.wufoo .focused{background:#fff; border-color: #4C9EE5;}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .instruct{border:1px solid #e6e6e6}
+
+/* Typography */
+.wufoo label.desc, .wufoo legend.desc{font-size:14px;font-family:inherit;color:#444444; font-weight:normal;}
+.wufoo label.choice{color:#444444}
+
+.wufoo form li.focused {
+background-color: #F5F5F5;
+}
+
+.wufoo .recaptchatable #recaptcha_response_field {
+    font-size: 14px; padding: 8px 4px 8px 5px;
+    border: 1px solid #666;
+}
+
+.wufoo input.btTxt {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAABGklEQVQ4y7XUsUoDURAF0CCIVWJhYWdhaVKolf6ERVIknQlWpvIXREg+QdsUCgmkFxs7BUEbv8AqCNZ24Vg4wrIk5mXFgYE3l3vnLvvmTamUC5RxgiEeIoeBlUt/CRxjghu0cBjZCmyC46LNe3hF7RdOLTi9ZZt3QlhJ4FaC20ltvo537CzgVbEZ553QrKcYdDFYwNnAG+4z2ACnKQZjNDL1ClZz9R0+sZvBGxinGDxjP1Nf4vbHBBe+o53T7eGliEEbU4xwFOerGbpkgzHqOewsvnqKJ6zN0NVTf9HMS8Y5PrA1RzdA909jiu05mvQx/feHlhH2E1ZFNTj9ovuoHQvtGk0cRDYDm+THtYhJJVbzCI+Ro8Aqy/b7Ai65u7TwIdSpAAAAAElFTkSuQmCC");
+text-decoration: none;
+padding: 9px 30px 8px 15px;
+background-color: #8DC63F;
+border: medium none;
+color: #FFF;
+cursor: pointer;
+font-size: 13px;
+line-height: 18px;
+text-transform: uppercase;
+font-weight: normal;
+background-repeat: no-repeat;
+background-position: right center;
+display: inline-block;
+}
+    .wufoo input.btTxt:hover, .wufoo input.btTxt:active, .wufoo input.btTxt:focus {
+    background-color: #92CF3F;
+    }

@@ -1,0 +1,47 @@
+-------------------------
+All MS Wish
+	General - mswish@microsoft.com
+	DataAnalyzer - Eileen, no luck
+	Outlook - outwish@microsoft.com  Eileen, no luck
+	FrontPage - Eileen, no luck
+	SQL Server - SQLWISH@microsoft.com
+
+Other	http://register.microsoft.com/mswish/suggestion.asp
+
+Live	http://feedback.live.com/
+
+---------------------------------
+Log: Suggestions that have been submitted to Microsoft
+http://register.microsoft.com/mswish/suggestion.asp?from=cu&fu=%2Fisapi%2Fgomscom%2Easp%3Ftarget%3D%2Fmswish%2Fthanks%2Ehtm
+
+
+Submissions:
+
+1/8/2003 TF Submitted these
+
+Office: 				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/Office.aspx
+Internet Explorer:			http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/InternetExplorer.aspx
+SQL Server: 				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/SQLServer.aspx
+Terminal Services:			http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/TerminalServices.aspx
+Source Safe:				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/SourceSafe.aspx
+Visual Studio:				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/VisualStudio.aspx
+Windows:				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/Windows.aspx
+MSN Messenger:				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/MSNMessenger.aspx
+SharePoint team services:		http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/SharePointTeamServices.aspx
+Data Analyzer:				http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/DataAnalyzer.aspx
+Exchange Server:			http://www.ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/Exchange.aspx
+
+---------------------------------
+7/11/2006 FW Submitted these:
+
+Microsoft SQL Reporting Services Suggestions:	http://ant/ssw/standards/bettersoftwaresuggestions/ReportingServices.aspx
+Microsoft ISA Server Suggestions:				http://ant/ssw/standards/bettersoftwaresuggestions/ISAServer.aspx
+Microsoft IIS Suggestions:						http://ant/ssw/standards/bettersoftwaresuggestions/IIS.aspx
+Microsoft Outlook Express Suggestions:			http://ant/ssw/standards/bettersoftwaresuggestions/OutlookExpress.aspx
+Microsoft ActiveSync:							http://ant/ssw/standards/bettersoftwaresuggestions/ActiveSync.aspx
+Microsoft Access:								http://ant/ssw/standards/bettersoftwaresuggestions/MSaccess.aspx
+Microsoft Media Center:							http://ant/ssw/standards/bettersoftwaresuggestions/MediaCenter.aspx
+Microsoft Outlook Suggestions:					http://ant/ssw/standards/bettersoftwaresuggestions/Outlook.aspx		
+Microsoft LINQ Suggestions:						http://ant/ssw/standards/bettersoftwaresuggestions/blinq.aspx
+---------------------------------
+

@@ -1,0 +1,84 @@
+﻿.DetailView
+{
+	width: 100%;
+	/*border-collapse:collapse;*/
+}
+
+.Footer
+{
+	background-color:#507CD1;
+	font-weight: bold;
+	color: White;
+}
+
+.CommandRow
+{
+    background-color: #CCCCCC;
+    font-weight: bold;
+}
+
+.EditRow
+{
+	height: 24px;
+	background-color: #EFF3FB;
+}
+
+.Row
+{
+	font-family:Verdana;
+  Font-Size:x-small;
+  font-weight:bold;
+  background-color: #DDDDDD;
+	height: 24px;
+	/*text-transform: uppercase;*/
+}
+.AltRow
+{
+	background-color: White;
+	height: 24px;
+	/* text-transform: uppercase;*/
+}
+.Pager
+{
+	 background-color:#CCCCCC;
+	 color:Black;
+	 text-align:justify;
+}
+.FieldHeader
+{
+	padding-left: 4px;
+	background-color:#DDDDDD;
+	width: 150px;
+	text-transform: none;
+	font-family:Verdana;
+  Font-Size:x-small;
+  font-weight:bold;
+}
+.Header
+{
+	padding-left: 4px;
+	background-color:#CCCCCC;
+	font-weight: bold;
+	color:Black;
+	text-transform: none;
+	
+}
+
+.Header td
+{
+	border:0px solid Black;
+	border-bottom-width:1px;
+	border-bottom-color:Red;
+}
+
+.EditRow 
+{
+	border-top: solid 1px white;
+	background-color:#DDDDDD
+}
+
+INPUT.TextBox
+{
+	width: 97%;
+	/* border: dotted 2px pink;*/
+}

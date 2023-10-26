@@ -1,0 +1,138 @@
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+BODY  {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+LI {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+DIV {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+SPAN {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+INPUT {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+SELECT {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+OPTION {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Helvetica, sans-serif
+}
+.admin {
+	BACKGROUND: #ccccff; COLOR: black
+}
+.warning {
+	BACKGROUND: #ffaaaa; COLOR: black
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	TEXT-ALIGN: left
+}
+.link {
+	MARGIN-LEFT: 23px
+}
+.nomarginlink {
+	MARGIN-LEFT: 0px
+}
+.red {
+	COLOR: red
+}
+.red FONT {
+	COLOR: red
+}
+.red P {
+	COLOR: red
+}
+.red  {
+	COLOR: red
+}
+.heading {
+	FONT-WEIGHT: bold
+}
+.heading  {
+	FONT-WEIGHT: bold
+}
+DIV.leftNav {
+	MARGIN-BOTTOM: 500px
+}
+TABLE.leftBackground {
+	BACKGROUND-IMAGE: url(/images/left_background.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #000099
+}
+TD.leftBackground {
+	BACKGROUND-IMAGE: url(/images/left_background.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #000099
+}
+DIV.MainMenuSubMenu {
+	FONT-SIZE: 11px; MARGIN: 3px 0px 0px; WIDTH: 219px
+}
+DIV.MainMenuSubMenu A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 74px; COLOR: white; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+DIV.MainMenuSubMenu A.selected {
+	COLOR: #ff3333; BACKGROUND-COLOR: white
+}
+DIV.MainMenuSubMenu A:hover {
+	COLOR: white; BACKGROUND-COLOR: #ff3333
+}
+DIV.MainMenuSubMenu A.selected:hover {
+	COLOR: white; BACKGROUND-COLOR: #ff3333
+}
+DIV.styleTable TABLE {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: black 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: black 1px solid
+}
+DIV.styleTable TH.first {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 0px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 18pt; PADDING-BOTTOM: 2px; MARGIN: 0px; VERTICAL-ALIGN: bottom; BORDER-LEFT: black 0px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 2px solid; TEXT-ALIGN: left
+}
+DIV.styleTable TH.second {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 2px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 0px; VERTICAL-ALIGN: bottom; BORDER-LEFT: black 2px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 2px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TH {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 2px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 0px; VERTICAL-ALIGN: bottom; BORDER-LEFT: black 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 2px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TH.last {
+	BORDER-RIGHT: black 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 2px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 0px; VERTICAL-ALIGN: bottom; BORDER-LEFT: black 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 2px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TH.onlytwo {
+	BORDER-RIGHT: black 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 2px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 0px; VERTICAL-ALIGN: bottom; BORDER-LEFT: black 2px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 2px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TD.first {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 0px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: black 2px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: left
+}
+DIV.styleTable TD.second {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 0px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: black 2px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TD {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 0px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: black 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TD.last {
+	BORDER-RIGHT: black 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 0px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: black 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+DIV.styleTable TD.onlytwo {
+	BORDER-RIGHT: black 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 0px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: black 2px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+DIV.styleTable SPAN.tickcross {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+DIV.CaseStudySummary {
+	MARGIN: 0px 0px 0px 50px
+}

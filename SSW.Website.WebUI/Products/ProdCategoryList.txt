@@ -1,0 +1,4 @@
+<a href='/ssw/humanclick.aspx' align="centre" border="0"><img src='/ssw/employees/images/SophieBelle/youngsmall.gif' border="0" alt="."></a><br>
+<font size="1" face='Verdana, Arial, Helvetica, sans-serif'>Want to speak to 
+		someone online NOW ?<br><br>For up to date product and pricing information, SSW has developed an 
+<a href="../ExcelProductList/default.aspx">innovative web service based solution</a>.</font>

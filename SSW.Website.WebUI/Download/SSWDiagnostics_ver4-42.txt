@@ -1,0 +1,3 @@
+SSWDiagnostics 4.42 can be installed from the following link:
+
+http://us.ssw.com.au/ssw/diagnostics/

@@ -1,0 +1,98 @@
+/* Header and Title properties */
+div#headerTitle
+{
+	height: 76px;
+	width: 100%;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	background-image: url(../Images/HeaderLogo.jpg);
+	background-repeat: no-repeat;
+}
+
+div#headerTitle H1
+{
+	
+	
+	position:relative ;
+	overflow:hidden ;
+	left: 155px;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	display: inline;
+	white-space: nowrap;
+	padding-right:160px;
+}
+
+/* Left Filler to allow bottom of SSW image */
+div#headerMenuLeft
+{
+	position: absolute;
+	left: 0px;
+	top: 76px;
+	
+	height: 30px;
+	width: 155px;
+	
+	background-repeat: no-repeat;
+}
+
+div#headerMenuLeft
+{
+	background-image: url(../Images/HeaderMenuBarBackLogo.jpg);
+	
+}
+
+div#headerMenuRight
+{
+	padding: 5px 0 0 155px;
+	background-repeat: repeat-x;
+	background-image: url(../Images/HeaderMenuBarBack.gif);
+	height: 30px;
+	font-size: 80%;
+}
+
+/* Menu classes */
+.staticMenu
+{
+}
+
+.dynamicMenu
+{
+	border: solid 1px #CCCCCC;
+	background-color: #F0F0F0 !Important;
+}
+
+.staticMenuItem
+{
+	height: 23px;
+	padding: 0 1px 1px 1px;
+}
+
+.dynamicMenuItem
+{
+	border-top: solid 1px #CCCCCC;
+	line-height: 150%;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.staticMenuItem,
+.staticMenuItem a,
+.dynamicMenuItem a
+{
+	font-family: Verdana, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: Black;
+	text-decoration: none;
+}
+
+TD .dynamicMenuItem { line-height : 225%; }
+
+.staticMenuItem a:hover,
+.dynamicMenuItem a:hover
+{
+	color: Red;
+}

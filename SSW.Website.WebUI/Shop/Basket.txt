@@ -1,0 +1,10 @@
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function OpenCertDetails()
+	{
+	thewindow = window.open('https://www.thawte.com/cgi/server/certdetails.exe?code=AUSUPE8-1', 'anew', config='height=400,width=450,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=yes');
+	}
+// -->
+	</SCRIPT>
+	<a href="javascript:OpenCertDetails()">
+<img src="/ssw/images/ThawteSeal.gif" border="0" width="134" height="85"></a>

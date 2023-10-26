@@ -1,0 +1,18 @@
+Use the standard naming convention when creating new redirects.
+
+eg 
+If it is a Technical Link use the suffix "HotTip" 
+If it is a MS Link use "MS" (a HotTip Ms link should be HotTipMS)
+If it is an Event or conference link use "Event"
+If it is a Newsletter link use the current suffix (YearMonth)
+If it's to the home page of another company use "HomePage"
+If it's from KB article to another source use "KBQ0000000UP"
+
+
+NOTE: If you are redirecting to the Microsoft Knowledgebase default.aspx, or any page with semi colons in the URL, make sure you have single quotes around the URL path. 
+This is beacause semicolons in the url interfere with the redirect meta tag.
+
+
+
+Please do a text search in this directory for your new URL in case we
+already have an existing redirect to it.

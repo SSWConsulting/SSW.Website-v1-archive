@@ -1,0 +1,32 @@
+
+________________________________________
+From: John Prince www.ssw.com.au 
+Sent: Wednesday, 18 December 2002 11:49 AM
+To: Ross Donald www.ssw.com.au
+Cc: Cameron Shaw www.ssw.com.au; Adam Cogan www.ssw.com.au
+Subject: RE: team calendar
+
+Ross,
+ 
+Seems to be a trimmed down version.
+ 
+It is personalised to a single users mailbox and is placed in the physical store for the user's mailbox calendar section.
+ 
+Also it is linked to the registry which means it is machine limited.
+ 
+It doesn't seem to have the same function that ours does.
+ 
+JP
+-----Original Message-----
+From: Ross Donald www.ssw.com.au 
+Sent: Wednesday, 18 December 2002 11:04 AM
+To: Adam Cogan www.ssw.com.au
+Cc: John Prince www.ssw.com.au; Cameron Shaw www.ssw.com.au
+Subject: team calendar
+Is this any relation to our product?
+ 
+Microsoft Outlook Team Calendar 2.2
+http://msdn.microsoft.com/downloads/default.asp?url=/downloads/topic.asp?URL=/msdn-files/028/001/178/topic.xml 
+ 
+Ross
+ 

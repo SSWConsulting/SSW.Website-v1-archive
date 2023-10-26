@@ -1,0 +1,27 @@
+;
+;  Database file thexone.com.au.dns for thexone.com.au zone.
+;      Zone version:  6
+;
+
+@                       IN  SOA seal.sydney.ssw.com.au.  admin.sydney.ssw.com.au. (
+                        	6            ; serial number
+                        	900          ; refresh
+                        	600          ; retry
+                        	86400        ; expire
+                        	3600       ) ; minimum TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	seal.sydney.ssw.com.au.
+seal.sydney.ssw.com.au. A	61.8.3.146
+@                       NS	pridns.pacific.net.au.
+pridns.pacific.net.au.  A	210.23.129.35
+
+;
+;  Zone records
+;
+
+@                       MX	10	203.32.162.100.
+www                     A	61.8.3.146

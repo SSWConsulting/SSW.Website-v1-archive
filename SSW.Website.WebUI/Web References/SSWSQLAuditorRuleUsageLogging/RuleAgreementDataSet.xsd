@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/RuleAgreementDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/RuleAgreementDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/RuleAgreementDataSet.xsd" id="RuleAgreementDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="RuleAgreementDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewRuleAgreementStat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" default="0" name="RuleID" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="SQLAuditorRuleID" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="WebsiteRuleID" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="TotalCount" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="AgreeCount" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="DisagreeCount" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="HardToImplementCount" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="IgnoredCount" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="DontUnderstandCount" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

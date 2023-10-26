@@ -1,0 +1,66 @@
+div#headerTitle
+{
+	height: auto;
+	background-image: none;
+	position:relative ;
+	padding: 0 0 20px 0; 
+	
+}
+
+div#headerTitle h1
+{
+	position: relative;
+	
+	left: 0;
+	top: auto;
+	
+	padding: 0;
+}
+
+
+div#headerMenu
+{
+	display: none;
+	visibility: hidden;
+	background: none;
+}
+
+TD#ctl00_sidebarTD
+{
+width:0;
+left:0;
+}
+
+div#leftSidebar
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 0;
+    height: 0;
+    
+    display: none;
+    visibility: hidden;
+ }
+
+div#footer
+{
+	margin-top: 30px;
+	padding-top: 20px;
+}
+.noPrint {
+	display: none;
+}
+.noScreen {
+	visibility: visible;
+	display:inherit;
+}
+#productInfo #productDescription {
+	padding-left: 0px;
+	margin-top: 15px;	
+}
+#productInfo {
+	clear: both;
+	display: block;
+	margin-right: 0px;
+}

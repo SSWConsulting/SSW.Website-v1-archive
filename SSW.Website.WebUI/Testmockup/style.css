@@ -1,0 +1,334 @@
+﻿/* ---------------------------------------------------------------------------------------
+	Screen - New Homepage Stylesheet
+	
+	web			:	http://www.ssw.com.au
+	filename	:	style.css
+	version		:	31.10.2006
+	
+	copyright	: 	(c) 2006 Superior Software for Windows Pty Ltd
+	license		: 	Creative Commons (cc)
+	
+	author		: 	Trisnadi Kurniawan
+	url			:	http://www.ssw.com.au/SSW/Employees/employeesprofile.aspx?EmpID=TKK
+   ---------------------------------------------------------------------------------------
+*/
+
+img, div { behavior: url(iepngfix.htc) }
+body
+{
+	background: url(images/bg_dna.gif);
+	background-repeat:repeat-x;
+	background-position: top;
+	background-color:#ebebeb;
+	margin: 0px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:0.8em;
+	line-height: 150%;
+}
+a:link {
+	color: #1A12C3;
+	border-bottom: 1px dotted #1A12C3;
+}
+a {
+	color: #1A12C3;
+	border-bottom: 1px dotted #1A12C3;
+}
+
+/******* For debugging purpose ********/
+
+.debug {
+	border: 1px dashed red;
+}
+
+/***********************
+	Layout
+************************/
+
+#wrapper {
+	background-image: url(images/background.png);
+	background-repeat: repeat-y;
+	background-position: top center;
+	min-width:800px;
+}
+/******* Hack for wrapper - Fix 1px offset and change bg to .gif *******/
+* html div#wrapper {
+	background-image: url(images/backgroundIE6.gif);
+	padding-left:1px;
+}
+#container {
+	width: 800px;
+	margin: 0 auto;
+	color:#333333;
+}
+#mainpane {
+	width: 525px;
+	float: left;
+	background-color:#fff;
+}
+#subpane {
+	display:block;
+	width: 252px;
+	float: left;
+	margin-left: 15px;
+}
+
+/******* Further Styling *******/
+#featurewall img {
+	border-style: solid;
+	border-width: 0 0 3px 0;
+	border-color: #c0c0c0;
+	text-align:center;
+}
+#mainpane p{
+	font-size: 1.1em;
+	line-height:1.5em;
+}
+#mainpane h1{
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #fd1912;
+	font-size: 1.7em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+#subpane .section{
+	margin-bottom: 25px;
+	position:relative;
+}
+#subpane .section h1 {
+	background: url(images/box_header.gif);
+	background-repeat:no-repeat;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height:23px;
+	width:auto;
+	padding: 1px 0 0 20px;
+}
+#subpane .section_content {
+	background: url(images/bg_section.gif);
+	background-repeat:repeat-x;
+	background-color:#ffffff;
+	background-position:0px -1px;
+	border: 1px solid #cecece;
+	padding: 10px;
+	margin-top: 2px;
+	position: relative;
+}
+.pattern {
+	background:url(images/bg_dna.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+	position:absolute;
+}
+.popular {
+	padding-bottom: 20px;
+}
+.popular li{
+	background: url(images/bullet_diamond.gif);
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	background-position: 0px 7px;
+}
+#mainpane .links {
+}
+#mainpane .download {
+	padding-left: 15px;
+}
+#mainpane .download{
+	width: 48%;
+	display:block;
+	float:left;
+}
+#mainpane .links{
+	width: 48%;
+	display:block;
+	float:left;
+}
+#mainpane {
+	padding-bottom:20px;
+}
+#mainpane p{
+}
+.mainsection {
+	margin-left: 15px;
+	margin-bottom: 40px;
+}
+
+.event span.thumbnail, .event span.thumbnail img {
+	border: 1px #d2d2d2 solid;
+}
+.event span.thumbnail {
+	float:left;
+	margin: 0 5px 5px 0;
+}
+.event span.thumbnail img{
+	margin:1px;
+}
+a.eventtitle {
+}
+div.event {
+	padding-bottom: 20px;
+	position:relative;
+}
+p.daystogo {
+	color:#a2a2a2;
+	right: 0px;
+	top: 0px;
+	font-weight:bold;
+}
+p.daystogo span{
+	font-size: 1.8em;
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color:#EA8D1E;
+}
+p.datetime {
+	line-height: 1.2em;
+	margin-bottom: 15px;
+}
+.datetime span.date {
+	font-weight:bold;
+}
+#search {
+	margin: 10px auto;
+}
+#search .go{
+	vertical-align:middle;
+	border: 1px solid #a2a2a2;
+}
+#search input.q{
+	border: solid #a2a2a2;
+	border-width: 1px 0 1px 1px;
+	padding: 2px 2px 0 2px;
+	width: 220px;
+	height: 18px;
+	vertical-align: middle;
+	font-size: 90%;
+	color: #808080;
+	font-style: italic;
+}
+#search input.q:focus, #search input.q:active {
+	background-image: url(images/searchglow.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	font-style:normal;
+	color: #333333;
+}
+#subpane .testimonial blockquote {
+	font-family: Georgia,"Times New Roman",Times,serif;;
+	font-style:italic;
+	font-size: 1.2em;
+	background-image: url(images/quote_open.gif);
+	background-repeat: no-repeat;
+	padding-top: 10px;
+}
+#subpane .testimonial blockquote:after {
+	content:'"';
+}
+#subpane .testimonial p{
+	font-weight: bold;
+	font-style:normal;
+	font-size:0.8em;
+	line-height:normal;
+}
+
+/* set millions of background images */
+.testimonial { background: url(images/nt.gif) repeat; }
+.rbtop div { background: url(images/tl.gif) no-repeat top left; }
+.rbtop { background: url(images/tr.gif) no-repeat top right; }
+.rbbot div { background: url(images/bl.gif) no-repeat bottom left; }
+.rbbot { background: url(images/br.gif) no-repeat bottom right; }
+
+/* height and width stuff, width not really nessisary. */
+.rbtop div, .rbtop, .rbbot div, .rbbot {
+	width: 100%;
+	height: 7px;
+	font-size: 1px;
+}
+.rbcontent { padding: 0 15px 7px 15px; }
+.testimonial { width: auto; text-align: right; margin-bottom: 25px;}
+
+/*Style for Tabbed Box */
+#tabbedBox {
+	border-bottom:1px dashed #333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	position:relative;
+	line-height: normal;
+	margin-bottom: 25px;
+}
+#tabs {
+	padding: 0px;
+	margin: 0px;
+}
+
+#switches a, #switches a:link {
+	padding: 5px 10px 8px 0px;
+	display:block;
+	background: #DBDCE2;
+	text-align:right;
+	width: 150px;
+	color:#666666;
+	font-weight:normal;
+	margin: 0 0 1px 0;
+	border: none;
+}
+* html #switches a {
+	margin: 0px;
+}
+#switches a:hover {
+	background: none;
+	color:#000000;
+	border-left: 5px solid #fd1912;
+	font-weight:bold;
+}
+ul#switches {
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+#switches li{
+	margin:0px;
+}
+#tabContent {
+	display: block;
+	position: absolute;
+	width: 350px;
+	top: 0px;
+	left: 175px;
+	padding-top: 5px;
+}
+#tabContent H2{
+	 font-size: 16px;
+	 margin-top: 0px;
+}
+#mainpane .ad {
+	text-align:center;
+	clear:left;
+}
+#mainpane .popular h1 {
+	font-family:Verdana;
+	color:#333333;
+	font-size: 1em;
+	font-weight:bold;
+}
+.showmore {
+	background-image: url(images/bg_eventBottom.gif);
+	background-repeat:repeat-x;
+	background-position: bottom;
+	display:block;
+	width: 100%;
+	position:absolute;
+	text-align: right;
+	bottom: 0px;
+	left: 0px;
+	font-size: 80%;
+}
+.showmore a {
+	margin-right: 10px;
+}
+
+/****************************
+	Commented Items
+
+
+*****************************/

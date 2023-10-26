@@ -1,0 +1,5 @@
+SSWRegistrationReset is to be used only when a user complains that they are getting a 'tinkering with the registry' error on the first attempt to use the software.
+ 
+To use this you will need to get the SSWRegistrationReset code from SourceSafe and replace the product name with the name of your product.
+ 
+This will indicate the Registry value so for Performance PRO it would be 'SOFTWARE\SSW\SSWPerformancePRO'.

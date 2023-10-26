@@ -1,0 +1,25 @@
+Database Tools Access
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWDataPRO97.xml +
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWDataPRO2000.xml +
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWDataRenovator97.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWDataRenovator2000.xml +
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWPerformancePRO97.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWPerformancePRO2000.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWPropertyAndEventPRO97.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWPropertyAndEventPRO2000.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWUpsizingPRO.xml
+
+Database Tools SQL Server
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWSQLAuditor.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWSQLDeploy.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWSQLTotalCompare.xml
+
+Web/Reporting
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWAccessReporter.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWCodeAuditor.xml
+
+Business Tools
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWIncidentPRO.xml +
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWLookOut.xml
+http://www.ssw.com.au/ssw/download/padfiles/pad_SSWTeamCalendar.xml
+

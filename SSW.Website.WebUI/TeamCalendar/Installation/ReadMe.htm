@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>SSW Team Calendar - User Guide</title>
+    <meta name="author" content="John Elliot - Database Developer - Superior Software for Windows">
+    <link rel="stylesheet" type="text/css" href="/ssw/Include/sswmenu.css">
+    <link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon">
+</head>
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" text="#000000"
+    alink="#003399" link="#003399" vlink="#003399">
+    <table width="100%" bgcolor="white" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left">
+                <img src="./Images/imgSSWSmall.gif" alt="SSW" name="Image1" width="58" height="45"><img
+                    height="45" alt="SSW" src="Images/hd_SSWTeamCalendar.gif" width="450"><img height="45"
+                        alt="SSW" src="./Images/hd_2.gif" width="200">
+            </td>
+        </tr>
+    </table>
+    <table bgcolor="white" cellpadding="0" cellspacing="0" width="101%" border="0">
+        <tr>
+            <!-- spacer row - specify all others with colspan or rowspan-->
+            <!--1-->
+            <td width="11">
+            </td>
+            <!--2-->
+            <td width="213">
+            </td>
+            <!--3-->
+            <td width="1">
+            </td>
+            <!--4-->
+            <td width="24">
+            </td>
+            <!--5-->
+            <td width="362">
+            </td>
+            <!--6-->
+            <td width="32">
+            </td>
+            <!--7-->
+            <td width="97">
+            </td>
+            <!--8-->
+            <td width="32">
+            </td>
+            <!--9-->
+            <td width="208">
+            </td>
+            <!--10-->
+            <td width="30">
+            </td>
+        </tr>
+        <tr>
+            <!-- spacer column -->
+            <td rowspan="2" valign="top" colspan="2">
+            </td>
+            <!-- spacer column -->
+            <td rowspan="2" bgcolor="#7d7d7d" width="1">
+            </td>
+            <!-- spacer column -->
+            <td rowspan="2" width="24">
+            </td>
+            <!--main content cell-->
+            <td colspan="5" valign="top">
+                <p>
+                    <span class="updatetext">
+                        <img src="Images/TeamCalendarLogo.gif" alt="SSW Team Calender" width="415" height="82">
+                    </font></p>
+                <table width="100%" cellpadding="0">
+                    <tr bgcolor="#ff0033">
+                        <td align="right">
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" cellpadding="0">
+                    <tr bgcolor="#cccccc">
+                        <td>
+                            <span class="updatetext"><b><span style="color: #000000">Installation</font></b></font></td>
+                    </tr>
+                </table>
+                <span class="updatetext">
+                <p>
+                    <span class="updatetext">To install the SSW Team Calendar, download and run the installation
+                        package from <a href="/ssw/TeamCalendar/">the SSW Team Calendar Home Page</a></font></p>
+                <p>
+                    <span class="updatetext">The package will install into your default IIS "wwwroot"
+                    directory. You will need to read the following sections regarding how to configure
+                    the web page.</font></p>
+                <p>
+                    <span class="updatetext">The installation will create a program group called "SSW
+                    Team Calendar" containing a link to the Team Calendar website and the Registration
+                    program.</font></p>
+                </FONT>
+                <p>
+                    <span class="updatetext">You will have to complete a six part installation procedure.<br>
+                        <b>Step 1:</b> <a href="CreateUser.htm">Creating a Team Calendar User on your Domain</a><br>
+                        <b>Step 2:</b> <a href="ExchangePermissions.htm">Giving Team Calendar permissions to
+                            users calendars</a><br>
+                        <b>Step 3:</b> <a href="IISPermissions.htm">Changing IIS permissions for TeamCalendar</a><br>
+                        <span class="updatetext"><b>Step 4:</b></font> <span class="updatetext"><a href="/ssw/Redirect/CalendarCheck.htm">
+                            Verify you have the requirements for Team Calendar</a>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Note: This page
+                            runs using <a href="/ssw/Redirect/localhost.htm">http://localhost</a> therefore
+                            you need to be running this
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from the Exchange
+                            Server)<br>
+                            <b>Step 5:</b> <a href="/ssw/Redirect/TeamCalendarLocal.htm">Run Team Calendar for the
+                                first time</a><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Note: This page
+                            runs using <a href="/ssw/Redirect/localhost.htm">http://localhost</a> therefore
+                            you need to be running this
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from
+                    the Exchange Server)</font></p>
+                <p>
+                    <span class="updatetext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You
+                    <!--SSW Code Auditor - Ignore next line(HTML)-->
+                        can then open up and use the login credentials:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>User:</b> Admin<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Password:</b>
+                        Admin<br></font></p>
+                <table width="100%" cellpadding="0">
+                    <tr bgcolor="#ff0033">
+                        <td align="right">
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" cellpadding="0">
+                    <tr bgcolor="#cccccc">
+                        <td>
+                            <span class="updatetext"><b><span style="color: #000000">Connection Methods </font></b></font></td>
+                    </tr>
+                </table>
+                <p>
+                    <span class="updatetext">There are two different methods for connecting to the Exchange
+                    Server: HTTP and WebDAV.</font></p>
+                <p>
+                    <span class="updatetext">The HTTP method needs to have access to all selected user's
+                    mailboxes. If it does not then the page will not load properly.</font></p>
+                <p>
+                    <span class="updatetext">NOTE: the HTTP method is unsupported and will not work
+                    with all machines.</font></p>
+                <p>
+                    <span class="updatetext">The WebDAV method needs to have Team Calendar installed
+                    on the same machine as Exchange Server 2000. You will need to specify the full Exchange
+                    Domain name in order for it to work properly.</font></p>
+                <span class="updatetext">
+                    <table width="100%" cellpadding="0">
+                        <tr bgcolor="#ff0033">
+                            <td align="right">
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" cellpadding="0">
+                        <tr bgcolor="#cccccc">
+                            <td>
+                                <span class="updatetext"><b><span style="color: #000000">Known Issues</font></b></font></td>
+                        </tr>
+                    </table>
+                <p>
+                    <span class="updatetext">Check <a href="/ssw/KB/">the SSW Knowledge Base</a> for
+                    updates, and a recent list of known bugs and work arounds.</font></p>
+                </FONT><span class="updatetext">
+                    <hr style="left: 0px; top: 637px">
+                    <center>
+                        <span class="updatetext">
+                            <img height="45" src="./Images/ft_ssw.gif" alt="SSW" width="300" usemap="#MapMap"
+                                border="0">
+                            <map name="MapMap">
+                                <area shape="RECT" coords="206,16,296,29" href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info, e4='?Subject=Employment';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;">
+                                <area shape="RECT" coords="60,17,151,28" href="http://www.ssw.com.au">
+                            </map></font>
+                    </center>
+                </FONT>
+            <td rowspan="2" width="30">
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+</body>
+</html>

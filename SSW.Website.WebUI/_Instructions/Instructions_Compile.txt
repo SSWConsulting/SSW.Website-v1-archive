@@ -1,0 +1,2 @@
+﻿It should be possible to get the latest version of this solution from source control and then build the project with no errors.
+If you have any problems building the solution contact gerardbeckerleg@ssw.com.au

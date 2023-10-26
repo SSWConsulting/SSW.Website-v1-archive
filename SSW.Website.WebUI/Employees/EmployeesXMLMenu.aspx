@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx") %>

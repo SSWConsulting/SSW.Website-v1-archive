@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Job xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IsDirty>true</IsDirty>
+  <BackupEnabled>true</BackupEnabled>
+  <Scans>
+    <Scan xsi:type="PathScan">
+      <Enabled>true</Enabled>
+      <Location>C:\DataTiagoAraujo\ProjectTFS\SSW.SQLDeploy.Website\www</Location>
+      <IncludeExpression />
+      <ExcludeExpression>.*\.scc$|.*\.resx$|Settings\.Designer\.(cs|vb)|^bin$|^obj$
+</ExcludeExpression>
+      <IsRecursive>true</IsRecursive>
+    </Scan>
+  </Scans>
+  <JobRules>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-340000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-380000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-340000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-340000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3700-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-380000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-380000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3700-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-350000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-340000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-340000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-340000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-0000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3700-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-350000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-380000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-380000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-350000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-350000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3200-300000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-0000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3700-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0038-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-360000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0034-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-350000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0033-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-350000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3500-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3400-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0039-0000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-0000-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-380000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3100-310000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0037-3200-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0036-3800-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0032-3900-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3500-320000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3600-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0035-3300-000000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3300-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3700-330000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3400-390000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>00730073-0077-0031-3600-370000000000</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+  </JobRules>
+  <ProjectType>All</ProjectType>
+  <ProjectLanguage>All</ProjectLanguage>
+  <ProjectVersion>All</ProjectVersion>
+  <JobName>sqldeploy</JobName>
+  <MaximumErrors>500</MaximumErrors>
+  <DatabasePath>C:\Users\tiagoaraujo\Documents\My Code Auditor Data\SSWCodeAuditor2000.mdb</DatabasePath>
+  <Email>
+    <Enabled>false</Enabled>
+    <To />
+    <Cc />
+    <Bcc />
+    <IsAuthentication>false</IsAuthentication>
+    <SmtpServer />
+    <SmtpPort>25</SmtpPort>
+    <SmtpUsername />
+    <SmtpPassword />
+    <Subject>SSW Code Auditor Report - sqldeploy</Subject>
+    <IsDetailEmail>false</IsDetailEmail>
+  </Email>
+  <IsScheduleEnabled>false</IsScheduleEnabled>
+</Job>

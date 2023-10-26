@@ -1,0 +1,4 @@
+SSW Lookup was originally called SSW Contactor and lots of product submissions are still using 
+the SSWContactor.asp file. 
+
+So we need to keep both the SSWContactor.asp and the SSWLookup.asp files.

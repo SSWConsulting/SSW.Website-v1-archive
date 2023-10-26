@@ -1,0 +1,2046 @@
+﻿td#content
+{
+	font-size: 1.2em;
+}
+
+div#content
+{
+	font-size: 1.2em;
+	width:60%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* margin: 0 auto -75px; the bottom margin is the negative value of the footer's height */
+}
+div#content ul
+{
+	list-style:disc;
+	padding-left:10px;
+}
+
+.Right 
+{
+    float: right;}
+
+/*Emphasis Text*/
+.emphasistext
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: #ef0000;
+	font-family: Verdana;
+}
+
+.right {float: right;}
+.left {float:left;}
+.clear {clear:both;}
+
+.clearfix:after {
+    content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+	
+.clearfix {
+    display: inline-block;
+    }
+
+h2, .h2
+{
+	font-weight: bold;
+	font-size: 1em;
+	/*border-bottom: 2px solid #cc4141;
+	background-color: #eeeeee;
+	font-size: 12px;
+	padding: 3px;
+	margin: 20px 0 10px 0;*/
+	background:url(/ssw/images/h2.gif) #f0f0f0;
+    background-repeat:no-repeat;
+    margin:10px 0;
+    padding:8px 30px;
+    max-height:15px;
+}
+
+h2.thinner
+{
+	/*width: 70%;*/
+}
+
+table.clsSSWTableOfContents
+{
+	border: #999999 1px solid;
+	float: none;
+	margin: 4px;
+}
+
+table.clsSSWTableOfContents tr td
+{
+	background-color: #efefef;
+}
+
+table.clsSSWTableOfContents a
+{
+	margin-left: 5px;
+}
+table.clsSSWTableOfContents ol
+{
+	margin-left:30px;
+}
+
+table.clsSSWTable
+{
+	border: 2px solid #999999;
+	padding: 0px;
+	margin: 4px;
+	background-color: #f5f5f5;
+}
+
+table.clsSSWTable th
+{
+	font-weight: bold;
+	color: Black; /*border-bottom: #ef0000; 	/*color: white;*/
+	background-color: #DDDDDD;
+	border-bottom: 1px solid #cc4141;
+	text-align: left;
+}
+
+table.clsSSWTable tr
+{
+	background-color: #f5f5f5;
+}
+
+table.clsSSWTable td
+{
+	padding:2px 4px;
+}
+
+table.data
+{
+	font-size: x-small;
+	border-color: #999;
+	border-collapse:collapse; /* Cellspacing in IE */
+}
+table.data tr:nth-child(2n) 
+{
+    background-color: white;
+    }
+
+/* Content Table */
+
+
+div.TableOfContents, div.Quote
+{
+	border: #999 1px solid;
+	background-color: #eee;
+	padding: 10px 10px 20px 15px;
+	margin: 2em 1em;
+}
+/* small white table inside the table of contents */
+div.TableOfContents div.Quote
+{
+	background-color: #fff;
+	padding: 10px;
+	float: right;
+	width: 300px;
+	clear: both;
+}
+/* Content Table heading*/
+div.TableOfContents h3
+{
+	padding: 10px;
+	margin: 20px 0 0;
+	font-size: 110%;
+}
+
+div.QuoteRight {
+    border: #999 1px solid;
+    background-color: #eee;
+    padding: 10px 10px 10px 10px;
+    text-align: right;
+    width: 40%;
+}
+div.TableOfContents ol {
+    margin-left: 20px;
+}
+/* use for one line */
+SPAN.Quote
+{
+	border: #999 1px solid;
+	background-color: #eee;
+	padding: 10px;
+}
+
+SPAN.#cc4141Text
+{
+	color: #cc4141;
+}
+
+table.clsSSWTable
+{
+	border: 1px solid #999999;
+	padding: 10px;
+	margin: 4px;
+	background-color: #f5f5f5;
+	line-height:18px;
+}
+
+table.clsSSWTableForDiagnostics
+{
+	border: 2px solid #999999;
+	padding: 3px;
+	margin: 4px;
+	background-color: #f5f5f5;
+	text-align: left;
+}
+
+.clsSSWTableForDiagnosticsHeader
+{
+	font-family: "Tahoma";
+	font-size: 9pt;
+	color: #003399;
+	border: 1px #003399 solid;
+	color: #006699;
+	border-bottom: #93bee2 1px solid;
+	border-left: #93bee2 1px solid;
+	border-right: #93bee2 1px solid;
+	border-top: #93bee2 1px solid;
+	background-color: #e8f4ff;
+	cursor: hand;
+	font-style: normal;
+	width: 60px;
+	height: 22px;
+	text-align: center;
+	/*border-bottom: 2px solid #cc4141;*/
+}
+/*  Do you know how to write CCS? I do not ever want to see this shit in the css. 
+    Do you realise this garbage down there fucked up this entire file? 
+    I am so damned pissed off right now; if I see this crap again I'm kicking your arse to next thursday. 
+    And yes, I KNOW who did it.
+
+        .clsSSWTableForDiagnosticsRow
+        {
+            event: expression(
+        onmouseover=function (){
+            this.style.color='#FFFFFF';
+            this.style.backgroundColor ='#3399FF';
+            this.style.cursor="hand";
+        },
+        onmouseout=function (){
+            this.style.color='';
+            this.style.backgroundColor ='';
+            this.style.cursor="";
+        }
+); 
+            background-color: #ffffff;
+            cursor:default;
+        } */
+        
+        
+        tr.clsSSWTableForDiagnosticsRow:hover
+        {
+            background-color: #3399FF;
+            cursor:hand;
+        }
+
+TABLE.clsSSWTableWidth
+{
+	width: 660px;
+	font-size: 7pt;
+}
+/*** disable as it repeated
+TABLE.clsSSWTable tr
+{
+	background-color: white;
+}***/
+
+TABLE.clsSSWTable tr.alternatingRow
+{
+	background-color: rgb(239, 235, 222);
+}
+
+TABLE.SSWTableShop
+{
+	border: 1px solid #efefef;
+	padding: 0px;
+	margin: 0px;
+	background-color: #f5f5f5;
+	width: 100%;
+}
+TABLE.SSWTableShop td
+{
+	padding-bottom: 5px;
+}
+TABLE.SSWTableShop td.col0
+{
+	width: 165px;
+}
+table.SSWTableShop input
+{
+	border: 1px solid #808080;
+	color: #4D4D4D;
+	font-size: 14px;
+	padding: 4px 2px;
+}
+table.SSWTableShop
+{
+	border-spacing: 3px;
+}
+/*Style for Matrix tables (e.g. product comparisons)*/
+.clsSSWMatrix
+{
+	border: 1px solid #999999;
+	padding: 0px;
+	float: none;
+	margin: 20px;
+}
+.clsSSWMatrix th
+{
+	font-weight: bold;
+	color: black;
+	background-color: #DDDDDD;
+	border-bottom: 1px solid #cc4141;
+	text-align: center;
+	line-height: 120%;
+}
+.clsSSWMatrix .section
+{
+	background: #CCCCCC;
+	text-align: left;
+	font-weight: bold;
+}
+
+.clsSSWMatrix .row0
+{
+	background: #ffffff;
+}
+
+.clsSSWMatrix .row1
+{
+	background: #eeeeee;
+}
+.clsSSWMatrix td
+{
+	padding: 5px;
+	text-align: center;
+}
+.clsSSWMatrix .side
+{
+	text-align: left;
+}
+TABLE.clsSSWTable th
+{
+	font-weight: bold;
+	color: Black; /*border-bottom: #ef0000; 	/*color: white;*/
+	background-color: #DDDDDD;
+	border-bottom: 1px solid #cc4141;
+	text-align: left;
+}
+
+TABLE.clsSSWTable tr
+{
+	background-color: #f5f5f5;
+}
+
+TABLE.clsSSWTableProduct
+{
+	width:800px;
+}
+
+TABLE.clsSSWTableProduct tr td img
+{
+	width: 192px;
+	height:192px;
+}
+
+TABLE.clsSSWTable tr.row1
+{
+	background-color: #eeeeee;
+}
+
+
+TABLE.clsSSWProductTable
+{
+	/*border-right: #ffcc00 2px solid; 	border-top: #ffcc00 2px solid; 	border-left: #ffcc00 2px solid; 	border-bottom: #ffcc00 2px solid; 	*/
+	border: 2px solid #FFCC00;
+	padding: 1px 1px 1px 1px;
+	background-color: #F5F5F5;
+	float: none;
+	margin: 4px;
+}
+
+TABLE.clsBeijingTable
+{
+	/*border-right: #ffcc00 2px solid; 	border-top: #cc4141 2px solid; 	border-left: #cc4141 2px solid; 	border-bottom: #cc4141 2px solid; 	*/
+	border: 2px solid #cc4141;
+	padding: 1px 1px 1px 1px;
+	background-color: #F5F5F5;
+	float: none;
+	margin: 4px;
+	border-right: #cc4141 2px solid;
+}
+
+TABLE.clsSSWTableCode
+{
+	border: solid 1px black;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	background-color: #E7E6F4;
+}
+
+/*
+TABLE.clsSSWTableCode
+{
+	font-family : "Courier New";
+	font-size : 9pt;
+}
+*/
+/*
+	This is our dark #cc4141 table header (first row)
+*/
+
+
+
+/*
+NetUG
+*/
+
+DIV.HangingBox
+{
+	float: right;
+	border: #aaa solid 2px;
+	margin-top: 20px;
+	width: 190px;
+	padding: 3px;
+	background-color: white;
+	margin-left: 10px;
+}
+
+DIV.HangingBox P
+{
+	font-size: 8pt;
+	font-family: Verdana, sans-serif;
+	line-height: 11pt;
+	margin-top: 6px;
+	margin-bottom: 3px;
+}
+
+/*For download banana*/
+.download
+{
+	width: 250px;
+	margin: 0 auto;
+	padding: 8px 0 15px 0;
+	text-align: center;
+	color:#555;
+	/*border: 1px solid #FFC68F;
+	background-color: #F4F3D5;*/
+}
+div.download a img
+{
+	border:none;
+}
+.caseStudy
+{
+	width: 200px;
+	border: 1px solid #FFC68F;
+	padding: 15px;
+	background: #F4F3D5;
+	float: right;
+	background-position: left center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+A IMG
+{
+	border: none;
+}
+
+a.Maintenance
+{
+	border: #aaa dotted 1px;
+	background: #E5E5E5;
+	padding: 3px 6px;
+	font-size: 11px;
+	color: #600;
+	font-weight: normal;
+	display:inline-block;
+	height:16px;
+}
+
+A:link, A:visited {
+    color: #333;
+}
+
+{
+	color: purple;
+}
+
+A:hover, A:active 
+{
+    color: #cc4141;
+    }
+
+
+/*
+	ASPX.DataGrid - Links within the DataTable#cc4141 to be white
+*/
+A:link.clsDataTable#cc4141, A:visited.clsDataTable#cc4141, A:hover.clsDataTable#cc4141
+{
+	color: White;
+}
+
+
+/*
+	ASPX.DataGrid - Header Style
+*/
+TD.clsDataTable#cc4141Header, TD.clsDataTable#cc4141Footer, TR.clsDataTable#cc4141Header, TR.clsDataTable#cc4141Footer
+{
+	font-weight: bold;
+	color: white;
+	background-color: #cc4141;
+}
+
+
+/*
+	ASPX.DataGrid - Normal Item Style
+*/
+TD.clsDataTable#cc4141, TR.clsDataTable#cc4141
+{
+	background-color: White;
+}
+
+
+/*
+	ASPX.DataGrid - Alternate-item Style
+*/
+TD.clsDataTable#cc4141AltItem, TR.clsDataTable#cc4141AltItem
+{
+	background-color: #efebde;
+}
+
+TABLE.tblScreenshots
+{
+	background: #eaeaea;
+	width: 95%;
+	border: #ddd solid 1px;
+}
+
+TABLE.tblScreenshots TR TD
+{
+	background: #f5f5f5;
+	background-image: url(/ssw/CodeAuditor/images/ScreenPartialBg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
+TABLE.tblScreenshots TD
+{
+	padding: 6px;
+	font-size: 8pt;
+	line-height: 16px;
+}
+
+TABLE.tblScreenshots TD B
+{
+	font-size: 13px;
+	margin-top: 4px;
+	padding-bottom: 6px;
+	display: block;
+	color: #444;
+}
+
+TABLE.tblScreenshots TD IMG
+{
+	border: #555 solid 1px;
+}
+
+blockquote
+{
+	margin: 10px 15px;
+	padding: 5px;
+	line-height: 18px;
+}
+/* *************************** */
+/* *  Blockquote wrap right  * */
+/* *************************** */
+Div.quoteRightWrap, Div.quote, Div.quoteRightWrapImg
+{
+	display: block;
+	background: #EEE;
+	border-top: 2px solid #CCCCCC;
+	border-bottom: 2px solid #CCC;
+	background-image: url(/ssw/images/quote_open.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	padding: 10px;
+	margin: 10px 15px;
+}
+Div.quoteRightWrap blockquote, Div.quote blockquote, Div.quoteRightWrapImg blockquote
+{
+	text-align: left;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+	font-size: 120%;
+	margin: 0px 0px 0px 15px;
+	font-style: italic;
+}
+Div.quoteRightWrap blockquote p, Div.quoteRightWrapImg blockquote p, Div.quote blockquote p
+{
+	text-align: left;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+	font-size: 120%;
+	margin: 0px 0px 0px 15px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+Div.quoteRightWrap p, Div.quote p, Div.quoteRightWrapImg p
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: bold;
+	text-align: right;
+	clear: both;
+}
+Div.quoteRightWrapImg p
+{
+	clear:none;
+}
+Div.quoteRightWrap, Div.quoteRightWrapImg
+{
+	float: right;
+	width: 350px;
+}
+Div.quoteRightWrapImg
+{
+	min-height:150px;
+	margin: 4px;
+}
+Div.quoteRightWrapImg img
+{
+	float:right;
+	padding-left:15px;
+	clear:both;
+	display:block;
+}
+.TableOfContents .quoteRightWrap, .TableOfContents .quoteRightWrapImg
+{
+	width: auto;
+	float: none;
+}
+#intro
+{
+	margin: 10px;
+}
+
+/* Styling for text main content  */
+#mainContainer
+{
+	padding: 10px 20px 10px 30px;
+	position: relative;
+	min-height: 56.5%;
+}
+div#mainContent ol li h2
+{
+	margin-top: 25px;
+	clear: both;
+	padding: 7px 30px;
+}
+#mainContent p
+{
+	line-height: 1.4em;
+}
+
+#mainContainer ul
+{
+	list-style:none;
+	margin-left:10px;
+}
+#mainContainer ul li
+{
+	background-image:url(/ssw/images/bullet_square.gif);
+	background-position:0 8px;
+	background-repeat:no-repeat;
+	padding-left:15px;	
+	line-height:21px;
+	margin-left:0;
+}
+#mainContainer ol li
+{
+	padding-left:5px;	
+	line-height:normal;
+}
+#mainContainer ul li ul li
+{
+	background-image:url(/ssw/images/bullet_square_grey.gif);
+}
+#mainContainer ol li ul ul li
+{
+	background-image:url(/ssw/images/bullet_square_grey.gif);
+}
+#mainContainer ul li ol li
+{
+	background-image:none;
+	padding-left:0;
+}
+#maincontent p + ul li, #maincontentFull p + ul li, #maincontentCase p + ul li{
+background-image:url(/ssw/images/bullet_square.gif);
+background-position:0 9px;
+background-repeat:no-repeat;
+margin-left:1.5em;
+padding-left:15px;
+}
+
+/* End of style for main content */
+/* Styling for the 2 col product page which has softRegion on the right hand side*/
+.main-left
+{
+	padding-right:240px;
+}
+.main-left p
+{
+	line-height:18px;
+}
+.main-left ul li{
+	background-image:url(/ssw/images/bullet_square.gif);
+	background-position:0 9px;
+	background-repeat:no-repeat;
+	margin-left:10px;
+	padding-left:15px;
+	list-style:none;
+}
+.main-left ol
+{
+	margin-left:25px;
+}
+.main-left ol li{
+	margin-left:0;
+	padding-left:0;
+	list-style-type:decimal;
+	background:none;
+}
+.main-left ul li,.main-left ol li
+{
+	line-height:21px;
+}
+/* ************************************************** */
+/* *  Grey Box: Standard Grey Box with thin border  * */
+/* ************************************************** */
+.greyBox
+{
+	border: 1px solid #999999;
+	background: #F5F5F5;
+	padding: 5px 10px;
+	margin: 5px 10px;
+}
+/* ****************************************************************************** */
+/* *  Float Right: Applying this class will make the html object to float right * */
+/* ****************************************************************************** */
+.floatRight, DIV.floatRight, TABLE.floatRight
+{
+	float: right;
+	clear: right;
+}
+/* ****************************************************************************** */
+/* *  Float Left: Applying this class will make the html object to float Left * */
+/* ****************************************************************************** */
+.floatLeft
+{
+	float: left;
+}
+/* ***************************************************************** */
+/* *  Flyout Box: Hanging box with thick left border on left side. * */
+/* ***************************************************************** */
+.flyoutBox
+{
+	border-width: 1px 0px 1px 10px;
+	border-style: solid;
+	border-color: #999999;
+	padding: 5px 10px;
+	margin: 5px 10px;
+}
+/* ***************************************************************** */
+/* *  Multimedia Box: Box with multimedia icon for Podcast/Videocast. * */
+/* ***************************************************************** */
+.multimediaBox
+{
+	border: 1px dashed #999999;
+	background: #ffffcc;
+	margin: 5px 10px;
+	background-image: url(/ssw/Standards/Rules/Images/icon-multimedia.jpg);
+	padding: 10px 5px 15px 100px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	height: 80px;
+}
+/* ******************************************************************************* */
+/* *  Information Box: Grey box with Information baloon icon on top left corner  * */
+/* ******************************************************************************* */
+.infoBox p
+{
+	font-size: 11px;
+	line-height: 120%;
+}
+.infoBox
+{
+	width: 500px;
+	background-color: #EEEEEE;
+	padding: 10px;
+	background-image: url(/ssw/Images/icon_info.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	border: 1px dashed #999999;
+	float: none;
+	margin: 8px;
+}
+.infoBox h4
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: 0px;
+	height: 50px;
+}
+
+.infoBoxWider
+{
+    width:60%;
+}
+/* ******************************************************************************* */
+/* *  Information Box (BeijingOffice): Grey box with Information baloon icon on top left corner  * */
+/* ******************************************************************************* */
+.infoBoxBeijing p
+{
+	font-size: 11px;
+	line-height: 120%;
+}
+.infoBoxBeijing
+{
+	width: 500px;
+	background-color: #EEEEEE;
+	padding: 10px;
+	background-image: url(/ssw/company/Images/Flags/China.jpg);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 1px dashed #999999;
+	float: none;
+	margin: 8px;
+}
+
+.infoBoxBeijing h4
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: 0px;
+}
+
+/****internal information box: grey box with little person icon on top left corner***/
+
+.interInfoBox p
+{
+	margin-left: 60px;
+	font-weight: normal;
+}
+.interInfoBox
+{
+	width: 550px;
+	background-color: #EEEEEE;
+	background-image: url(/ssw/Images/Icon_attention.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 1px dashed #999999;
+	padding-bottom: 10px;
+	float: none;
+	margin: 8px;
+	font-size: 11px;
+	line-height: 120%;
+}
+.interInfoBox a
+{
+	margin-left: 60px;
+	font-weight: normal;
+}
+
+.interInfoBox h1
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 60px;
+	margin-top: 15px;
+}
+.interInfoBox a
+{
+	font-size: 10px;
+	color: Blue;
+}
+
+
+
+.interInfoBoxSide
+{
+	width: auto;
+	background-color: #EEEEEE;
+	background-image: url(/ssw/Images/Icon_attention.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	border: 1px dashed #999999;
+	padding: 10px;
+	float: none;
+	margin: 8px;
+	font-size: 11px;
+	line-height: 120%;
+}
+
+.interInfoBoxSide h1
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: 15px;
+	height: 50px;
+	line-height: normal;
+}
+
+/* *************************************************************** */
+/* *  Tips Box: Grey box with lightbulb icon on top left corner  * */
+/* *************************************************************** */
+.tipsBox p
+{
+}
+.tipsBox
+{
+	width: 200px;
+	background-color: #EEEEEE;
+	padding: 10px;
+	background-image: url(/ssw/Images/icon_lightbulb.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	border: 1px dashed #999999;
+	float: none;
+	margin: 8px;
+	font-size: 11px;
+	line-height: 120%;
+}
+.tipsBox h4
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 35px;
+	margin-top: 0px;
+	height: 40px;
+	line-height: normal;
+}
+
+/* ******************* */
+/* *  Container Box  * */
+/* ******************* */
+.containerBox h2
+{
+	background-color: #EEEEEE;
+	color: #000000;
+	margin: 2px;
+	padding: 3px 0px 3px 5px;
+	border-bottom: 2px solid #cc4141;
+}
+.containerBox
+{
+	border: 1px solid #aaaaaa;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 20px 0px;
+}
+.containerBox p
+{
+	padding: 5px 15px 0px 15px;
+}
+/* -- End of style for Container Box -- */
+
+.clear
+{
+	clear: both;
+}
+.nomargin
+{
+	margin: 0px;
+}
+/********** Main Events Calendar ***********/
+table.mainEvents td p
+{
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+}
+/* ******************* */
+/* * 2 Column Layout * */
+/* ******************* */
+#left
+{
+	float: left;
+	width: 58%;
+}
+#right
+{
+	float: right;
+	width: 40%;
+}
+/* ******************* */
+/* *  Event Layout   * */
+/* ******************* */
+.eventImage
+{
+	float: left;
+	width: 10%;
+}
+.eventDate
+{
+	float: right;
+	width: 25%;
+	font-size: 13px;
+	color: #999999;
+	text-align: right;
+}
+.eventDate:first-line
+{
+	font-size: 16px;
+}
+.eventInfo
+{
+	float: right;
+	width: 50%;
+	padding-left: 20px;
+}
+
+/* All "Figure: ..... " must be in bold */
+dd
+{
+	font-weight: bold;
+	font-size: 90%;
+}
+
+/* ******************* */
+/* *   1px border    * */
+/* ******************* */
+.thinBorderBlack
+{
+	border: 1px solid #000000;
+}
+/* ******************* */
+/* *   Link Styles   * */
+/* ******************* */
+
+img[src$="LeaveSite.gif"], img[src$="leavesite.gif"], img[src$="NewWindow.gif"], img[src$="IconPdf.gif"], img[src$="NewWindow.gif"], img[src$="IconDoc.gif"], img[src$="iconwmv.gif"], img[src$="iconAudio.gif"], img[src$="IconPPT.gif"] {
+    display:none;
+    }
+
+/* ***************************************************** */
+/* *   Code Formatting when placed inside mainContent  * */
+/* ***************************************************** */
+
+/*#mainContent code , #mainContent pre{*/
+pre
+{
+	border: solid #999999;
+	border-width: 1px 1px 1px 10px;
+	padding: 10px;
+	margin: 5px 15px 5px 15px;
+	background-color: #E7E6F4;
+	font-family: "Courier New" , Courier, monospace;
+	display: block;
+	font-size: 90%;
+	width: 85%;
+}
+code
+{
+	border: solid #999999;
+	border-width: 1px 1px 1px 10px;
+	padding: 10px;
+	margin: 5px 15px 5px 15px;
+	background-color: #E7E6F4;
+	font-family: "Courier New" , Courier, monospace;
+	display: block;
+	font-size: 90%;
+}
+.productBox
+{
+	border: 2px solid #FFCC00;
+    padding: 5px;
+    background-color: #F5F5F5;
+    margin: 8px 2px;
+    display: inline-block;
+}
+/* ******************** */
+/* *  Image  Caption  * */
+/* ******************** */
+dl.Image, dl.goodImage, dl.badImage,dl.image
+{
+	border: none;
+	text-align: left;
+	margin: 1.2em 0 1.2em 1.2em;
+	padding: 0 1.2em 0 1.2em;
+}
+dl.Image dt, dl.goodImage dt, dl.badImage dt,dl.image dt
+{
+	margin: 0;
+	border: none;
+	padding: 0;
+}
+dl.Image dt img, dl.badImage dt img, dl.goodImage dt img, dl.image dt img
+{
+	margin: 0 auto;
+	border: 1px solid #cccccc;
+	padding: 15px;
+	color: #cccccc;
+	background: #eee;
+}
+dl.image dd, dl.goodImage dd, dl.badImage dd, dl.image dd
+{
+	margin: 0;
+	border: none;
+	padding: 0px;
+	font-weight: bold;
+	color: #000000;
+}
+dl.goodImage dd
+{
+	background-image: url(/ssw/Standards/Rules/images/Good.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 0 0 0 20px;
+}
+/*dl.goodImage dd:before
+{
+	content: "<img src=" /ssw/Standards/Rules/images/Good.gif ">";
+}*/
+dl.badImage dd
+{
+	background-image: url(/ssw/Standards/Rules/images/Bad.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 0 0 0 20px;
+}
+/*dl.badImage dd:before
+{
+	content: "<img src=" /ssw/Standards/Rules/images/Bad.gif ">";
+}*/
+
+/* ******************** */
+/* *  Code  Caption   * */
+/* ******************** */
+dl.code, dl.goodCode, dl.badCode
+{
+	margin: 1.2em auto;
+	border: none;
+	padding: 0;
+	text-align: left;
+}
+dl.code dt, dl.goodCode dt, dl.badCode dt
+{
+	/*border: solid #999999;
+	border-width: 1px 1px 1px 10px;
+	background: #E7E6F4;
+	width: 80%;*/
+	padding: 5px 0px;
+	margin: 0px 10px;
+	
+}
+/*fix the double box for goodCode*/
+dl.code pre, dl.goodCode pre, dl.badCode pre
+{
+	padding: 10px;
+	font-family: "Courier New" , Courier, monospace;
+	display: table;
+	border: none;
+	/*background-color: #E7E6F4;*/
+}
+dl.code code, dl.goodCode code, dl.badCode code
+{
+	padding: 10px;
+	font-family: "Courier New" , Courier, monospace;
+	display: table;
+	border: none;
+	background-color: #E7E6F4;
+}
+dl.code img, dl.goodCode dt img, dl.badCode dt img
+{
+	display: block;
+	margin: 0 auto;
+}
+dl.code dd, dl.goodCode dd, dl.badCode dd
+{
+	border: none;
+	padding: 0px;
+	font-weight: bold;
+	color: #000000;
+	padding: 0 0 0 20px;
+	margin-top:-5px;
+}
+dl.goodCode dd
+{
+	background-image: url(/ssw/Standards/Rules/images/Good.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	
+}
+/*dl.goodCode dd:before
+{
+	content: "<img src=" /ssw/Standards/Rules/images/Good.gif ">";
+}*/
+
+dl.badCode dd
+{
+	background-image: url(/ssw/Standards/Rules/images/Bad.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+/*dl.badCode dd:before
+{
+	content: "<img src=" /ssw/Standards/Rules/images/Bad.gif ">";
+}*/
+#mainContainer p.badCode, #mainContainer p.goodCode
+{
+	font-weight: bold;
+	color: #000000;
+	padding: 0 0 0 20px;
+	margin-top:-5px;
+}
+#mainContainer p.badCode
+{
+	background:url(/ssw/Standards/Rules/images/Bad.gif) no-repeat;
+}
+#mainContainer p.goodCode
+{
+	background:url(/ssw/Standards/Rules/images/Good.gif) no-repeat;
+}
+/* *********************** */
+/* *  Generic  Caption   * */
+/* *********************** */
+dl.good, dl. bad
+{
+	margin: 1.2em auto;
+	border: none;
+	padding: 0;
+	text-align: left;
+}
+dl.good dt, dl.bad dt
+{
+	border: 1px solid #999999;
+	background: #F5F5F5;
+	padding: 5px 10px;
+	margin: 5px 10px;
+	width: 80%;
+}
+dl.good dd
+{
+	background-image: url(/ssw/Standards/Rules/images/Good.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 0 0 0 20px;
+}
+/*dl.good dd:before
+{
+	content: "<img src=" /ssw/Standards/Rules/images/Good.gif ">";
+}*/
+
+dl.bad dd
+{
+	background-image: url(/ssw/Standards/Rules/images/Bad.gif);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	padding: 0 0 0 20px;
+}
+/*dl.bad dd:before
+{
+	content: "<img src=" /ssw/Standards/Rules/images/Bad.gif ">";
+}*/
+.strike, a.strike
+{
+	text-decoration: line-through;
+}
+.highlight
+{
+	background-color: #FFFF00;
+}
+.centerblock
+{
+	text-align: center;
+}
+.noScreen
+{
+	visibility: hidden;
+	display: none;
+}
+
+/******** Thumbnail ********/
+.thumbnail
+{
+	background: #EEEEEE;
+	border: 1px dashed #ccc;
+	width: 50%;
+	padding: 10px;
+	display: block;
+	height: 100px;
+}
+.thumbnail img
+{
+	float: left;
+	border: 1px solid #ccc;
+	padding: 2px;
+	background: #fff;
+}
+.thumbnail p
+{
+	margin: 0px 10px;
+	float: left;
+}
+/******** Gist Text ********/
+.gist
+{
+	width: auto;
+	padding: 10px 0px;
+	margin: 0px;
+	color: #666666;
+}
+.gist ul
+{
+	margin: 0px 30px;
+	padding: 0px;
+}
+.gist li
+{
+	list-style: none;
+	line-height: 2em;
+	font-size: 1.5em;
+	margin-left: 10px;
+	padding-left: 32px;
+	list-style-image: url(/ssw/Images/tick.gif);
+}
+
+/*********** Product Category GridView **********/
+.prodCategoryList h4
+{
+	font-size: 1.2em;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.prodCategoryList h3
+{
+	margin-bottom: 5px;
+	font-size: 1.2em;
+}
+.prodCategoryList p
+{
+	color: #333;
+}
+/*********** Online Course Info Box **********/
+.privateCourse
+{
+	width: 25%;
+	min-width: 200px;
+	border: 1px dashed #999999;
+	display: block;
+	background: url(/ssw/images/icon_online_tutorials.gif);
+	background-color: #eeeeee;
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin: 0px 15px;
+	padding: 10px 10px 5px 100px;
+	float: right;
+}
+.privateCourse h4
+{
+	font-size: 12px;
+}
+.privateCourse p
+{
+	font-size: 11px;
+}
+
+/*********** Product Links Style for Side bar *************/
+#mainContainer ul.productLinks
+{
+	background: #FFFFCC;
+	padding: 15px;
+	border: 1px solid #FFCC00;
+	margin-bottom: 15px;
+}
+#mainContainer ul.productLinks li.downloadLink
+{
+	background-image: url(/ssw/images/icon_freedownload.gif);
+}
+#mainContainer ul.productLinks li.purchaseLink
+{
+	background-image: url(/ssw/images/buyNow.gif);
+}
+#mainContainer ul.productLinks li.tourLink
+{
+	background-image: url(/ssw/images/quickTour.gif);
+}
+#mainContainer ul.productLinks li
+{
+	list-style: none;
+	text-align: left;
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 5px 0px 0px 50px;
+	height: 40px;
+	margin: 0 0 15px 0; /*position: relative;*/
+	left: 10px;
+	line-height: 1.1em;
+	font-weight: bold;
+	font-size: 80%;
+}
+/********* Styles for Product Page ************/
+/*#productHighlights a:link, #productHighlights a, #additionalInfo a, #additionalInfo a:link, #productSidebar a, #productSidebar a:link, #productDescription a, #productDescription a:link
+{
+	color:#000000;
+	text-decoration:none;
+	border-bottom: 1px dotted #000000;
+}*/
+#productSidebar .downloadTrial a:link
+{
+	background-image: url(/ssw/images/icon_download.gif);
+	display: block;
+	text-decoration: none;
+}
+#additionalInfo ul
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#additionalInfo
+{
+    width: 15%;
+	float: left;
+}
+#additionalInfo li
+{
+	background-image: url(/ssw/images/arrow_Dotted.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+#productSidebar .productBanana
+{
+	display: block;
+}
+#productSidebar .region
+{
+	border-right: 1px solid #BDC2C6;
+	border-left: 1px solid #BDC2C6;
+	border-top: 0px solid #BDC2C6;
+	border-bottom: 0px solid #BDC2C6;
+	display: block;
+	margin: 0px;
+	background-color: #f0f0f0;
+	padding: 10px 0px 15px 0px;
+}
+#googleAd
+{
+	display: block;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#productSidebar #productBanana li
+{
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+	height: 60px;
+	padding: 0px;
+}
+#productSidebar #productBanana ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+	text-align:center;
+}
+#productSidebar #productBanana .downloadLink
+{
+	background-image: url(/ssw/images/icon_download.gif);
+	background-repeat: no-repeat;
+}
+#productSidebar #productBanana .purchaseLink
+{
+	background-image: url(/ssw/images/icon_purchase.gif);
+	background-repeat: no-repeat;
+}
+
+#productSidebar .sponsorBox
+{
+padding-left:15px;
+}
+
+#productInfo #productDescription
+{
+	margin-top: 15px;
+	width:98%;
+}
+#productDescription p
+{
+	line-height: 1.8em;
+	color: #222222;
+}
+#productDescription ul li
+{
+	background-image:url(/ssw/images/bullet_square.gif);
+	background-position:0 9px;
+	background-repeat:no-repeat;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin-left:10px;
+	padding-left:15px;	
+	line-height:21px;
+}
+#productDescription ol
+{
+	list-style-position:inside;
+	margin-left:5px;
+}
+#productDescription ol li
+{
+	margin-left:0;
+}
+
+#productInfo
+{
+    width:60%;
+    margin: 50px auto;
+}
+/*highlight part of product pages*/
+#productHighlights .left
+{
+	width: 200px;
+	float: left;
+	padding-top: 30px;
+}
+#productHighlights .right
+{
+	float: left;
+	margin-left: 40px;
+	padding-bottom: 10px;
+}
+#productHighlights .noneFloat
+{
+	margin-left: 0px;
+	padding-bottom: 10px;
+}
+
+#productHighlights ul, #mainContainer ul.greenTicks
+{
+	margin-left:18px;
+	
+}
+html>body #productHighlights ul
+{
+	padding-left:15px;
+}
+#productHighlights ul li , #mainContainer ul.greenTicks li
+{
+	list-style-image: url(/ssw/images/tick.gif);
+	list-style-position:outside;
+	font-size: 18px;
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: 150%;
+	margin:0 0 10px 0;
+	background-image:none;
+	padding-left:0;	
+}
+#productHighlights h1, #mainContainer h1.
+{
+	font-size: 2.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2f2f2f;
+	font-weight:normal;
+	margin: 0px 0px 15px 0px;
+}
+
+#productHighlights h1.tag
+{
+    font-family:Helvetica, Helvetica Neue, Arial, sans-serif; 
+    font-size:24px; 
+    margin-bottom:15px;
+}
+
+#productHighlights > img
+{
+	float: left;
+	display: block;
+}
+#additionalInfo
+{
+	float: left;
+	width: 200px;
+	margin-top:50px;
+}
+/***end***/
+
+#productSidebar
+{
+	float: right;
+	width: 205px;
+	margin-top:50px;
+	/*position: absolute;
+	top: 148px;
+	right: 10px;*/
+	border-bottom: 1px solid #BDC2C6;
+}
+#productSidebar .moreTestimonials
+{
+	background-color: #e2e2e2;
+	text-align:left;
+	font-size: 80%;
+	border-color: #bdc2c6;
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px 2px;
+}
+#productSidebar h4, #productSidebar p
+{
+	color: #333333;
+	margin: 0px;
+	padding: 2px 10px 0px 10px;
+	font-size: 11px;
+}
+#productSidebar ul li 
+{
+	color: #333333;
+	margin: 0px;
+	padding: 10px 10px 0px 15px;
+	list-style-position:inside;
+	font-size: 11px;
+	background-image:none;
+}
+div.region > h4, div.region > p
+{
+	display: block;
+	margin: 10px 0px;
+}
+#productSidebar .testimonial
+{
+	font-style: italic;
+	font-family: Verdana, Arial;
+	font-size: 10px;
+	line-height: 14px;
+	color: #666666;
+	display: block;
+	padding: 5px 0px 20px 10px;
+	width: 180px;
+}
+#productSidebar .testimonial a:link, .testimonial a
+{
+	font-style: normal;
+	font-weight: bold;
+}
+.rounded
+{
+	background-image: url(/ssw/images/bg_rounded.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 23px;
+	padding-top: 5px;
+}
+img.award
+{
+	display: block;
+	margin: 20px auto 0px auto;
+	padding: 5px;
+}
+
+/***** Download Banana with Click Once ***/
+.DownloadClickOnce
+{
+	font-size: 9px;
+	color: #666666;
+	border: 1px solid #FFC68F;
+	background-color: #f4f3d5;
+	margin:0 auto;
+}
+.DownloadClickOnce p
+{
+	line-height: 11px;
+	text-align: left;
+}
+.DownloadClickOnce .diag, .DownloadClickOnce .button
+{
+	padding: 10px;
+	vertical-align: top;
+}
+.DownloadClickOnce .button
+{
+	width: 150px;
+	border-right: 1px dotted #666666;
+}
+.DownloadClickOnce .diag
+{
+	width: 200px;
+}
+td.diag table
+{
+	background: #eeeeee;
+	border: 1px dashed #aaaaaa;
+}
+
+/***** Step By Step Section*****/
+.stepbystep h3
+{
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #cc4141;
+	font-size: 1.7em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+.stepbystep .step
+{
+	background-image: url( '/ssw/Images/left-top-corner-box.jpg' );
+	background-repeat: no-repeat;
+	padding: 20px 25px;
+}
+
+#mainPane .section h1, #mainPane .section h1 a:link, #mainPane .section h1 a:visited
+{
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #cc4141;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	text-decoration: none;
+	border: none;
+}
+#mainPane .section h1 a:hover
+{
+	text-decoration: underline;
+}
+#mainPane .section h1.first
+{
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+#mainPane .section h2
+{
+	font-weight: normal;
+	color: #888888;
+	margin-top: -5px;
+	border-bottom: 1px dashed #ddd;
+	padding:8px 0;
+	margin-bottom: 10px;
+	background: none;
+}
+#design
+{
+	background-image: url( '/ssw/company/images/designtop_01.jpg' );
+	background-repeat: no-repeat;
+	padding-top: 310px;
+	display: block;
+}
+#casestudy
+{
+	background-image: url( '/ssw/company/images/bgGray.jpg' );
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	display: block;
+	margin: -25px -20px 0 -20px;
+}
+
+#design, #casestudy
+{
+	margin: -25px -20px 0 -20px;
+	font-size: 0.8em;
+	position: relative;
+}
+#casestudy #content
+{
+	background-image: url( '/ssw/company/images/caseStudyImg.jpg' );
+	background-repeat: no-repeat;
+	padding: 377px 200px 0 50px;
+	width: 90%;
+}
+#design p, #casestudy #p
+{
+	line-height: 150%;
+}
+#design #content h1, #design #sidebar h1, #casestudy #content h1
+{
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #cc4141;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	text-decoration: none;
+	border: none;
+}
+#design #content h2
+{
+	font-weight: normal;
+	color: #888888;
+	margin-top: -10px;
+	border: none;
+	background: none;
+	padding-bottom: 2px;
+	margin-bottom: 20px;
+}
+#design #content
+{
+	width: 550px;
+	padding-left: 320px;
+}
+#design #sidebar
+{
+	position: absolute;
+	left: 50px;
+	top: 310px;
+	display: block;
+	width: 205px;
+}
+#design #sidebar h1
+{
+	font-size: 16px;
+}
+#design ul
+{
+	margin: 15px 0;
+}
+#design #sidebar img
+{
+	margin-top: 2px;
+}
+
+/************* SQLAUditor *****************/
+div.SAWhoVoteBar
+{
+	background-image: url(../images/SABarBG.gif);
+	background-repeat: repeat-x;
+	border: solid 1px black;
+	height: 26px;
+}
+
+div.SAVoteBar_s
+{
+	background-image: url(../images/SABarBG_s.gif);
+	background-repeat: repeat-x;
+	border: solid 1px black;
+	height: 16px;
+}
+
+table.smallFont, td.smallFont
+{
+	font-size: 7.5pt;
+}
+
+img.email
+{
+	vertical-align:middle;
+	font-weight: normal;
+}
+
+/*for employee page*/
+div.center
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+}
+
+/*for standardinternal page*/
+div.wheretogo
+{
+	display: block;
+	width: 48%;
+	float: left;
+	padding-left: 10px;
+	margin: 5px auto auto 0px;
+}
+
+div.wheretogo .item
+{
+	position: relative;
+	padding-left: 70px;
+	padding-right: 20px;
+	padding-bottom: 45px;
+}
+.item img
+{
+	position: absolute;
+	margin: 2px auto auto 5px;
+	left: 0px;
+}
+.item ul
+{
+	padding-left: 10px;
+	margin-left: 0px;
+}
+
+/*****for induction day*****/
+p.rightAligned
+{
+	float: right;
+	vertical-align: top;
+	width: 10%;
+	clear: right;
+	margin-top: 0px;
+	text-align: right;
+}
+#induction
+{
+	margin: 2em 1em;
+	padding: 10px 10px 20px;
+}
+#induction p
+{
+	width: 85%;
+}
+.orderlist
+{
+	margin-right: 15%;
+}
+
+/******h3 for events page******/
+h3
+{
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #cc4141;
+	font-size: 1.7em;
+	font-weight: normal;
+	margin: 20px 0 5px;
+}
+
+h4
+{
+    margin-top:15px;
+}
+
+h5
+{
+	color: #cc4141;
+}
+
+#ServicePage #Status
+{
+	width: 521px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 60px;
+}
+#ServicePage #Status #Top
+{
+	background-image: url('../zsValidate/images/TopFrame.gif');
+	height: 48px;
+}
+#ServicePage #Status #Services
+{
+	background-image: url('../zsValidate/images/ServiceBg.gif');
+	background-repeat: repeat-y;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#ServicePage #Status #Bottom
+{
+	height: 16px;
+	background-image: url('../zsValidate/images/BottomFrame.gif');
+	background-repeat: no-repeat;
+}
+
+#ServicePage #Status #serviceHeader
+{
+	font-size: 1.7em;
+	font-weight: normal;
+	padding-left: 55px;
+}
+/****add css for the edit and new button for the testimonial on product page***/
+
+#productSidebar div.testimonialBtn
+{
+	margin-top:10px;
+}
+#productSidebar div.testimonialBtn a
+{
+	padding:3px 5px;
+}
+
+/****lists inside list - old template***/
+
+ol.alphaList
+{
+    list-style:lower-alpha;
+    margin-bottom:5px;
+}
+ol.alphaList li
+{
+    margin-top:4px;
+}
+
+/* ************************************************** */
+/* *    Scrum Box: Standard Scrum Box with icon     * */
+/* ************************************************** */
+.scrumBox
+{
+	border: 1px solid #999999;
+	background: url(image/scrumIcon.png) no-repeat #F5F5F5;
+	padding: 5px 10px;
+	margin: 5px 10px;
+}
+#mainContainer ul.features
+{
+	padding-left:15px;
+	margin:20px;
+}
+#mainContainer ul.features li
+{
+	list-style-image: url(/ssw/images/tick_small.png);
+	list-style-position:outside;
+	font-size: 14px;
+	color: #333;
+	line-height: 18px;
+	margin:0 0 10px 0;
+	background-image:none;
+	padding-left:0;	
+}
+
+#maincontent table.beautyTable
+{
+	border:1px solid #ddd;
+	margin-top:5px;	
+	width:100%;
+}
+#maincontent table.beautyTable tr td
+{
+	padding:5px 10px;
+}
+#maincontent table.beautyTable tr.odd
+{
+	background-color:#f0f0f0;
+}
+
+.topcommonTestimonialBox 
+{
+    padding:4px; 
+    margin:0 15px 8px; 
+    border-left: #ccc 5px solid; 
+    border-bottom: #ccc 1px solid;
+}
+.filled-position 
+{
+    color:#cc4141;
+    font-size:24px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin:5px 0;
+}
+.productquote {
+    background: url("/ssw/Testimonials/images/testimonial_quote.png") no-repeat scroll 10px center #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 20px 20px 20px 60px;
+    }
+    

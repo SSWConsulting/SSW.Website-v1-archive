@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SubmitPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="creditCardDetails" type="tns:CreditCardDetails" />
+            <s:element minOccurs="1" maxOccurs="1" name="paymentDetails" type="tns:PaymentDetails" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderInfo" type="tns:OrderInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditCardDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpiryYear" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpiryMonth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VerificationNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditCardType" type="tns:CreditCardType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CreditCardType">
+        <s:restriction base="s:string">
+          <s:enumeration value="VISA" />
+          <s:enumeration value="MasterCard" />
+          <s:enumeration value="AmericanExpress" />
+          <s:enumeration value="Diners" />
+          <s:enumeration value="BankCard" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PaymentDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Currency" type="tns:CurrencyType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CurrencyType">
+        <s:restriction base="s:string">
+          <s:enumeration value="AUD" />
+          <s:enumeration value="USD" />
+          <s:enumeration value="CAD" />
+          <s:enumeration value="EUR" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OrderInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SenderIPAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceID" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SubmitPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubmitPaymentResult" type="tns:PaymentResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseCodeDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionIdentifier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionRecordNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SettlementDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReceiptNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNumberSignature" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PaymentStatus" type="tns:PaymentStatusEnum" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PaymentStatusEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Approved" />
+          <s:enumeration value="Rejected" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="IsCreditCardValid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="creditCardDetails" type="tns:CreditCardDetails" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderInfo" type="tns:OrderInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="paymentDetails" type="tns:PaymentDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsCreditCardValidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsCreditCardValidResult" type="tns:CCValidationResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CCValidationResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EncryptedOrderNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestSubmitPayment">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestSubmitPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestSubmitPaymentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SubmitPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitPayment" />
+  </wsdl:message>
+  <wsdl:message name="SubmitPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsCreditCardValidSoapIn">
+    <wsdl:part name="parameters" element="tns:IsCreditCardValid" />
+  </wsdl:message>
+  <wsdl:message name="IsCreditCardValidSoapOut">
+    <wsdl:part name="parameters" element="tns:IsCreditCardValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSubmitPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:TestSubmitPayment" />
+  </wsdl:message>
+  <wsdl:message name="TestSubmitPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:TestSubmitPaymentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PaymentSystemSoap">
+    <wsdl:operation name="SubmitPayment">
+      <wsdl:input message="tns:SubmitPaymentSoapIn" />
+      <wsdl:output message="tns:SubmitPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsCreditCardValid">
+      <wsdl:input message="tns:IsCreditCardValidSoapIn" />
+      <wsdl:output message="tns:IsCreditCardValidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSubmitPayment">
+      <wsdl:input message="tns:TestSubmitPaymentSoapIn" />
+      <wsdl:output message="tns:TestSubmitPaymentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PaymentSystemSoap" type="tns:PaymentSystemSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubmitPayment">
+      <soap:operation soapAction="http://tempuri.org/SubmitPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsCreditCardValid">
+      <soap:operation soapAction="http://tempuri.org/IsCreditCardValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSubmitPayment">
+      <soap:operation soapAction="http://tempuri.org/TestSubmitPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PaymentSystemSoap12" type="tns:PaymentSystemSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubmitPayment">
+      <soap12:operation soapAction="http://tempuri.org/SubmitPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsCreditCardValid">
+      <soap12:operation soapAction="http://tempuri.org/IsCreditCardValid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSubmitPayment">
+      <soap12:operation soapAction="http://tempuri.org/TestSubmitPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaymentSystem">
+    <wsdl:port name="PaymentSystemSoap" binding="tns:PaymentSystemSoap">
+      <soap:address location="http://webservices.internal.ssw.com.au/SSW.PaymentSystem.WebService/PaymentSystem.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PaymentSystemSoap12" binding="tns:PaymentSystemSoap12">
+      <soap12:address location="http://webservices.internal.ssw.com.au/SSW.PaymentSystem.WebService/PaymentSystem.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

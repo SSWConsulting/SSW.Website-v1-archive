@@ -1,0 +1,336 @@
+﻿
+/* CHANGE BACKGROUND COLOURS AND BORDERS */
+#tfssb_area
+{
+        z-index:10;
+        display:block;
+        position:fixed;
+        bottom:0;
+        width:300px;
+        right:3px;
+        border:2px solid #CCCCCC;
+        background-color:#F9F9F9;
+    }
+#tfssb_Bar
+{
+    border-bottom:1px solid #EEEEEE;
+        
+        background:url("/ssw/components/TFSSB/Images/Tasks.png") no-repeat scroll 0 0 transparent;
+        margin:5px;
+        min-height:31px;
+        font-size:13px;
+        font-weight:bold;
+       padding: 3px 3px 3px 36px;
+        font-weight:bold;
+    }
+    
+#tfssb_btnControl
+{
+    position:absolute;
+    float:right;
+    width:20px;
+    top:10px;
+    right:10px;
+    }
+    
+.tfssb_btn_min
+{
+    background:url("/ssw/components/TFSSB/Images/min.gif") no-repeat scroll 0 0 transparent;
+    cursor:pointer;
+    height:20px;
+    }
+    
+    .tfssb_btn_restore
+{
+    background:url("/ssw/components/TFSSB/Images/restore.gif") no-repeat scroll 0 0 transparent;
+    cursor:pointer;
+    height:20px;
+    }
+    
+    
+#tfssb_box 
+{
+        background-repeat: no-repeat;        
+        background-position: 15px 10px;
+        right:5px;
+        
+        padding:2px 8px 5px 8px;
+	    font-family:Arial, Sans-Serif;
+	    font-size:12px;
+
+	}
+	
+/* END OF CHANGE BACKGROUND COLOURS AND BORDERS */
+	
+#tfssb_linkbar
+	{   
+	    height:20px;
+      	border-bottom:1px solid #EEEEEE;
+	}
+#tfssb_add
+{
+    padding-left: 20px;
+    background: transparent url('/ssw/components/TFSSB/Images/add.png') no-repeat scroll left center; 
+    height:16px;
+    float:right;
+    position:relative;
+    }
+    
+
+
+	
+    #tfssb_box tfssb_tasklist
+    {
+        padding-top:55px;
+    }
+
+/*********************************** tasklist ************************************/    
+.tfssb_tasklist {
+	margin:0;
+	font-size: 11px;
+	width:280px;
+	line-height:18px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+    .tfssb_tasklist dl
+    {
+	    margin:0;
+    }
+
+    .tfssb_tasklist dt.icon_plus
+    {
+	    padding-left: 20px;
+	    background: transparent url('/ssw/components/TFSSB/Images/icon_plus.gif') no-repeat scroll left;
+	    clear: both;
+	    cursor: pointer;
+    }
+    .tfssb_tasklist dt.icon_minus
+    {
+	    padding-left: 20px;
+	    background: transparent url('/ssw/components/TFSSB/Images/icon_minus.gif') no-repeat scroll left;
+	    clear: both;
+	    cursor: pointer;
+    }    
+    
+    .tfssb_tasklist dt
+    {
+	    clear: both;
+    }    
+    
+    .tfssb_tasklist dt span
+    {
+	    font-size:11px;
+    }
+
+    .tfssb_tasklist dt.empty
+    {
+	    background-image:none;
+	    cursor:default;
+	    font-size:11px;
+    }
+    .tfssb_tasklist dt.service-error{
+	    background:transparent url('/_controlTemplate/SSWUserControls/TFSSB/Images/error.png') no-repeat 0 5px;
+	    display:block;
+    }
+          
+          .tfssb_tasklist dd.noBg
+        {
+	        background:none;
+        }
+        
+        .tfssb_tasklist dt.noBg
+        {
+	        background:none;
+	        padding-left:40px;
+        }
+            
+            .tfssb_tasklist dt.noBg a
+            {
+	            padding-top:4px;
+            }
+    
+        .tfssb_tasklist span.activeTasksIcon, .tfssb_tasklist span.completedTasksIcon
+        {
+            padding-left:20px;
+            padding-top:2px;
+            font-weight:bold;
+        }
+        
+        .tfssb_tasklist span.completedTasksIcon
+        {
+            background: transparent url('/ssw/components/TFSSB/Images/completedTasks.png') no-repeat scroll left; 
+        }
+        
+                .tfssb_tasklist span.completedTasksIcon a
+        {
+            float:right;
+        }
+        
+        .tfssb_tasklist span.activeTasksIcon 
+        {
+            background: transparent url('/ssw/components/TFSSB/Images/activeTasks.png') no-repeat scroll left;
+        }
+    
+            .tfssb_tasklist span.activeTasksIcon a
+        {
+            float:right;
+        }
+    
+    .tfssb_tasklist .expanded
+    {
+	    padding-left: 20px;
+	    background: transparent url('/ssw/components/TFSSB/Images/icon_minus.gif') no-repeat scroll left;
+	    clear: both;
+	    cursor: pointer;
+    }
+    
+    
+    .tfssb_tasklist span.timetakenTimeout
+    {
+	    color:#FF0000;
+    }
+
+    .tfssb_tasklist .workItemID 
+    {
+        
+    }
+
+    .tfssb_tasklist .workItemTitle 
+    {
+	    width: 420px;
+	    left: 100px;
+	    float: left;
+    }
+
+    .tfssb_tasklist .workItemAssignedTo 
+    {
+
+    }
+
+    .tfssb_tasklist li
+    {
+        list-style-type:square;
+        list-style-position:inside;
+    }
+
+/****************** End of tasklist *****************************/
+.resultActive
+{
+    float:left;
+    margin-top:1px;
+    margin-bottom:1px;
+ }
+.resultClosed
+{
+    float:left;
+    margin-top:1px;
+    margin-bottom:1px;
+}
+
+.StyleHidden
+{
+    display:none;
+}
+
+.ActiveTaskSummary
+{
+   background:none;
+}
+
+.resultClosed li span
+{
+	text-decoration : line-through;	
+}
+div.section
+{
+    margin:5px 0 15px;
+}
+
+div.section dd
+{
+    margin:0;
+}
+
+div.section ul
+{
+    list-style:square;
+}
+
+.view
+    {
+      /* padding-left:20px; background: transparent url('/_controlTemplate/SSWUserControls/TFSSB/Images/view.png') no-repeat scroll left bottom;*/
+    }
+
+a:hover {
+	text-decoration:underline;
+}
+a:link {
+	text-decoration: underline;
+	color:#3a66cc;
+}
+a:visited {
+	text-decoration: underline;
+}
+
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #CCCCCC;
+	background-color: #F0F0F0;
+	padding: 5px;
+	opacity: 0.9;
+}
+
+#tooltip h3, #tooltip div { 
+margin: 0; 
+}
+
+#tooltip.TfsTooltip {
+	font-family: Arial;
+	width: 410px;
+	padding:20px;
+	opacity: 0.9;
+}
+
+#tooltip.TfsTooltip h3{
+	font-weight:bold;
+	color:red;
+	margin-bottom: 0.75em;
+	font-size: 12pt;
+	width: 420px;
+	text-align: center;
+}
+
+#tooltip.TfsTooltip div { 
+width: 420px; 
+text-align: left;
+word-wrap:break-word;
+line-height:22px;
+}
+
+
+
+#TfsQuery1_ConfigurationMessage
+{
+   padding-top:5px;
+}
+
+.PostBackButton
+{
+   display:none;
+}
+.TimeTakenDiv
+{
+    border:1px solid #DDDDDD;
+    background-color:#F0F0F0;
+    width:100%;
+    margin-top:5px;
+    height:16px;
+}
+.TimeTaken
+{
+    color:#666666;
+    float:left;
+}

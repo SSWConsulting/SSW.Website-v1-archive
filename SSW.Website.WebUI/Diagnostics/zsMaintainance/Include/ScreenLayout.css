@@ -1,0 +1,94 @@
+div#header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 106px;
+	
+	overflow: hidden;
+}
+
+div#leftSidebar
+{
+	
+	top: 106px;
+	left: 0;
+    width: 200px;
+    
+	padding: 10px;
+}
+
+div#contentOuter
+{
+	position: absolute;
+	top: 110px;
+	left: 230px;
+	right: 10px;
+	bottom: 10px;
+}
+
+div#footer
+{
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+
+/* ? */
+DIV.softRegion
+{
+	width : 165px;
+	float: right;
+	clear : both;
+	padding: 8px;
+	margin: 15px 0px 15px 15px;
+	border-left: solid 5px #ccc;
+	border-bottom: solid 1px #ccc;
+	background : white;
+}
+
+
+/* */
+DIV.softRegion H1
+{
+	margin : 0px;
+	margin-bottom : 6px;
+	margin-top : -8px;
+	font-size : 14px;
+	font-family : Verdana;
+	color : #555;
+}
+
+DIV.softRegion UL
+{
+	padding-left : 0px;
+	list-style : none;
+	margin : 0px;
+}
+
+DIV.softRegion DIV.sponsorBox
+{
+	font-weight : bold;
+	font-size : 11px;
+	text-align : center;
+}
+
+
+/* Content Table */
+DIV.softRegion DIV.sponsorBox+DIV.sponsorBox
+{
+	padding-top : 10px;
+	margin-top : 10px;
+	border-top : #999 solid 1px;
+}
+
+DIV.softRegion DIV.sponsorBox IMG
+{
+	padding : 3px;
+}
+
+DIV.softRegion DIV.sponsorBox+H2
+{
+	width : 80%;
+}

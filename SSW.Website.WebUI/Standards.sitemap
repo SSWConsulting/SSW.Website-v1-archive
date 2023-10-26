@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/ssw/Default.aspx" title="Home"  description="Home">
+    <siteMapNode url="/ssw/Standards/Default.aspx" title="SSW Standards"  description="SSW Standards">
+      <siteMapNode url="/ssw/Standards/BetterSoftwareSuggestions/Default.aspx" title="Better Software Suggestions"  description="Better Software Suggestions" />
+      <siteMapNode url="/ssw/Standards/DeveloperAccess/Default.aspx" title="Developer Access"  description="Developer Access" />
+      <siteMapNode url="/ssw/Standards/DeveloperDotNet/Default.aspx" title="Developer .Net"  description="Developer .Net" />
+      <siteMapNode url="/ssw/Standards/DeveloperGeneral/Default.aspx" title="Developer General"  description="Developer General" />
+      <siteMapNode url="/ssw/Standards/DeveloperInstallationNetworkSetup/Default.aspx" title="Developer Installation Network Setup"  description="Developer Installation Network Setup" />
+      <siteMapNode url="/ssw/Standards/DeveloperInternet/Default.aspx" title="Developer Internet"  description="Developer Internet" />
+      <siteMapNode url="/ssw/Standards/DeveloperSQLReportingServices/Default.aspx" title="Developer SQL Reporting Services"  description="Developer SQL Reporting Services" />
+      <siteMapNode url="/ssw/Standards/DeveloperSQLServer" title="Developer SQL Server"  description="Developer SQL Server" />
+      <siteMapNode url="/ssw/Standards/Forms/Default.aspx" title="Forms"  description="Forms" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces.aspx" title="Rules To Better Interfaces"  description="Rules To Better Interfaces" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces-WinApp.aspx" title="Rules To Better Interfaces - Windows Applications" description="Rules To Better Interfaces - Windows Applications" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces-Reports.aspx" title="Rules To Better Interfaces - Reports, Charts and Dates" description="Rules To Better Interfaces - Reports, Charts and Dates" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces-Wizard.aspx" title="Rules to Better Interfaces - Wizards" description="Rules to Better Interfaces - Wizards" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces-Controls.aspx" title="Rules To Better Interfaces - Data Controls" description="Rules To Better Interfaces - Data Controls" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces-Forms.aspx" title="Rules To Better Interfaces - Data Entry Forms" description="Rules To Better Interfaces - Data Entry Forms" />
+      <siteMapNode url="/ssw/Standards/Rules/RulesToBetterInterfaces-Mobile.aspx" title="Rules To Better Interfaces - Mobiles" description="Rules To Better Interfaces - Mobiles" />
+      <siteMapNode url="/ssw/Standards/Support/Default.aspx" title="Support"  description="Support" />
+      <siteMapNode url="/ssw/Standards/Templates/Default.aspx" title="Templates"  description="Templates" />
+      <siteMapNode url="/ssw/Standards/CRM/Default.aspx" title="CRM"  description="CRM" />
+      <siteMapNode url="/ssw/Standards/WiseSetup/Default.aspx" title="Wise Setup"  description="Wise Setup" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
+

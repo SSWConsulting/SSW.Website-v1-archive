@@ -1,0 +1,171 @@
+﻿.tasklist {
+	margin:0;
+	font-size:12px;
+	/*width:300px;*/
+}
+.tasklist dl
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.tasklist dt 
+{
+	padding-left: 25px;
+	background: transparent url('images/icon_plus.gif') no-repeat scroll left;
+	clear: both;
+	cursor: pointer;
+}
+.tasklist span.timetaken
+{
+	background:transparent url('images/timeout.png') no-repeat 11px 5px;
+	display:block;
+	padding: 5px 3px 3px 40px;
+	font-size: 12px;
+}
+.tasklist dt span
+{
+	/* cursor: pointer; */
+}
+.tasklist dt.expanded
+{
+	background: transparent url('images/icon_minus.gif') no-repeat scroll left;
+	cursor:default;
+}
+
+.tasklist dt.empty
+{
+	background-image:none;
+	cursor:default;
+}
+.tasklist dt.service-error{
+	background:transparent url('images/error.png') no-repeat 0 5px;
+	display:block;
+}
+.resultClosed{
+	margin-left:30px;
+    list-style: disc outside none;
+}
+.resultClosed li{
+    float:none;
+    display:block;
+}
+.tasklist .workItemTitle 
+{
+	width: 420px;
+	left: 100px;
+/*	position: absolute; */
+	float: left;
+}
+.TfsQuerySection 
+{
+    /*width:95%;*/
+    background-color:#f0f0f0;
+    display:block;
+    margin:20px 10px 20px 15px;
+    padding:5px 10px 20px 15px;
+}
+.TfsQuerySection h3 {
+    font-size: 16px;
+	font-weight:bold;
+    color: #333;
+    line-height:25px;
+    margin:0;
+    padding:0;
+}
+.TfsQuerySection ul.tasks li.unfold ul
+{
+    padding:0;
+    margin:0;
+    list-style:none;
+    line-height:1.6em;
+}
+.TfsQuerySection ul.tasks
+{
+    padding:0;
+    margin:0;
+    list-style:none;
+    line-height:1.6em;
+}
+.TfsQuerySection ul.tasks{
+    font-size:1.2em;
+}
+.TfsQuerySection ul.tasks li.fold
+{
+    padding-left:20px;
+}    
+.TfsQuerySection ul.tasks li.unfold
+{
+    padding-left:20px;
+}    
+.TfsQuerySection ul.tasks li.unfold
+{
+    background:url('images/icon_minus.gif') no-repeat 0 5px;
+}
+.TfsQuerySection ul.tasks li.fold
+{
+    background:url('images/icon_plus.gif') no-repeat 0 5px;
+}
+.TfsQuerySection ul.tasks li.unfold ul
+{
+    font-size:0.95em; 
+    line-height:1.4em;
+    padding-bottom:2px;   
+}
+.TfsQuerySection ul.tasks li.unfold ul li
+{
+    background:url('images/bullet_square_g.gif') no-repeat 0 7px;
+    padding-left:15px;
+    padding-bottom:3px;
+}
+.TfsQuerySection ul.tasks a
+{
+    color:#3A66CC;
+    text-decoration:none;
+}
+.TfsQuerySection ul.tasks a:hover
+{
+    text-decoration:underline;
+}
+
+/* ******************** */
+/* *  WY  25/02/2009  * */
+/* *  TfsQueryTooltip * */
+/* ******************** */
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #CCCCCC;
+	background-color: #F0F0F0;
+	padding: 5px;
+	opacity: 0.9;
+}
+#tooltip h3, #tooltip div { 
+margin: 0; 
+}
+#tooltip.TfsTooltip {
+	font-family: Arial;
+/*	border: none; */
+	width: 410px;
+	padding:20px;
+/*	height: 135px;  */
+	opacity: 0.9;
+/*	background:transparent url('Rules/shadow.png') no-repeat; */
+}
+#tooltip.TfsTooltip h3 {
+	font-weight:bold;
+	color:red;
+	margin-bottom: 0.75em;
+	font-size: 12pt;
+	width: 420px;
+	text-align: center;
+}
+#tooltip.TfsTooltip div { 
+width: 420px; 
+text-align: left;
+word-wrap:break-word;
+line-height:22px;
+}
+
+
+
+

@@ -1,0 +1,54 @@
+body {background:white;}
+
+#MegaMenu, .aside-left, .aside-right, .CategoryColor, .sidebar, #Newsletter, .NoPrint, .noprint, login-shop, #facebook-menu, #twitter-menu {display: none !important;}
+
+#Main {padding: 0;}
+
+#Footer {height: 0; margin: 0;}
+#Footer div {padding: 0; height: 0; margin: 0}
+#Footer span {display:none;}
+
+.content a:link:after, .content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+   
+input[type="text"], textarea {border: solid 1px black;}
+
+#maincontent {width: 100%;}
+
+/* Edit or Add anything below this line g*/
+
+ul.benefits, ul.good, ul.bad { list-style-type: square;}
+
+#eventsummary ul.schedule li li a span, span.bookNow {background: #666;}
+
+.eventpast {display: none;}
+
+#livestream {display:none;}
+
+iframe {display:none;}
+iframe:after {
+   content: " (" attr(src) ") ";
+   font-size: 90%;
+   }
+   
+table.Terms 
+{
+    width:100%;
+    overflow:hidden;
+}
+table.Terms div.section
+{
+    width:460px;
+    word-wrap: break-word;
+    padding-bottom:0;
+}
+
+div.item {
+margin-right:50px;
+}
+
+#Header .breadcrumb a[href]:after, a#MenuLogo[href]:after {
+    content:none;
+  }

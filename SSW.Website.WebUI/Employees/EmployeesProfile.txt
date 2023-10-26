@@ -1,0 +1,15 @@
+<p>
+<b>Avoiding Spam</b>
+</p>
+<p>
+Please note SSW email addresses are in the form <A href="mailto:FirstnameSurname@s*w.com.au">FirstnameSurname@s*w.com.au</A> Please change "*" in "s*w" to a "s". The reason why we use * in the email addresses is that normal email addresses are used by email collection tools, created and used by evil to swamp us with junk email. We want to discourage SPAM as much as possible.
+</p>
+<p>
+This is one of our <a href='/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AvoidMailTo'>Rules to Better Web Sites - Development</a>
+</P>
+<p>
+<b>Caricatures</b>
+</p>
+<p>
+Getting our caricatures done every now and then is a real fun experience. They are done by our mate <a href="/ssw/redirect/noz.htm" target="_blank">Noz</a> <img alt="You are going to a site outside of SSW" src="/ssw/images/LeaveSite.gif"></FONT>
+</p>

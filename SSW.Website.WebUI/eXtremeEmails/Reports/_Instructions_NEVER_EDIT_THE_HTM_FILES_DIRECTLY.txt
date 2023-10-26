@@ -1,0 +1,18 @@
+Don't edit these files directly.  
+
+Instead:
+
+0. You must have Visual Build Pro installed (find it on Bee).
+
+1. get the latest version of UNICORN/SSW/extremeEmails/Trunk/Resources/Reports/*.xsl
+ from TFS and make your changes there.
+
+2. use the xsl files to generate reports in ExtremeEmails, save to .htm format.
+
+3. Rename and update the .htm files to TFS.  Also edit default.aspx to reflect any changes.
+
+4. right-click on your local copy of _deploytowebsite.bld.  Click Build.  This will synchronize with Ant.
+
+5. any zz'd files and subfolders on TFS will not be copied over.
+
+6. to revert to an older version, revert it on TFS and then run _deploytowebsite.bld again.

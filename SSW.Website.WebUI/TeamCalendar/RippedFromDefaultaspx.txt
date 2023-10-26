@@ -1,0 +1,39 @@
+<table class="clsSSWTable" cellspacing="2" cellpadding="2" summary="Tips On How to Show a Table" style="{width:80%;}">
+	<tr> 
+		<td> 
+			John the manager of a middle sized business, has found it annoying 
+                trying to organize what tasks he should set his employees. There 
+                always seems to be some employees with mountains of work and some 
+                with next to none, wasting time and money. Because of this there 
+                seems to be a slow turn around of work coming from employees.</p>
+              <p>John 
+                has discovered SSW Team Calendar and has set it up in the business. 
+                John is now able to assign work to his employees and keep the 
+                workload balanced because he can see what each employee is doing 
+                and planning to do though SSW Team Calendar.</p>
+              <p>Because 
+                all employees are now working at the same pace, work turnaround 
+                has increased dramatically.<br>
+                <br>
+                At any time John's employees can view, add, update, reallocate 
+                tasks and calendar events all within Outlook OR though the web. 
+		</td
+	</tr>
+</table>
+<p>
+<table class="clsSSWTable" cellspacing="2" cellpadding="2" summary="Tips On How to Show a Table" style="{width:80%;}">
+	<tr> 
+		<td> 
+               Nicole 
+                is a secretary of a busy business. When a client phones for a 
+                person, she has to find out whether that person is in the office 
+                or on-site quickly and easily. Previously this task would involve 
+                walking around the office, asking employees whether they have 
+                seen that person and where they are. Not only is this task time 
+                consuming, but it also distracts the other staff in the office.</p>
+              <p>With 
+                SSW Team Calendar Nicole can pull up a employee within Team Calendar 
+                and see whether they are in the office, currently busy, or available. 
+               </td>
+	</tr>
+</table>

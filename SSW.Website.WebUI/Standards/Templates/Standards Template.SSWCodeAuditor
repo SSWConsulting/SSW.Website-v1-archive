@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Job xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IsDirty>true</IsDirty>
+  <BackupEnabled>true</BackupEnabled>
+  <Scans>
+    <Scan xsi:type="PathScan">
+      <Enabled>true</Enabled>
+      <Location>C:\DataTiagoAraujo\ProjectTFS\SSW.Website\trunk\SSW.Website.WebUI\Standards\Templates</Location>
+      <IncludeExpression />
+      <ExcludeExpression />
+      <Recursive>true</Recursive>
+    </Scan>
+  </Scans>
+  <JobRules>
+    <JobRule>
+      <RuleId>196</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>78</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>86</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>190</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>157</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>53</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>74</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>169</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>161</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>101</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>123</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>202</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>138</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>170</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>183</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>166</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>195</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>192</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>140</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>289</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>85</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>221</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>275</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>296</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>303</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>269</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>260</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>273</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>281</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>135</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>145</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>146</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>117</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>162</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>278</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>279</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>178</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>277</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>163</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>271</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>105</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>108</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>106</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>122</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>61</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>232</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>171</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>89</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>191</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>173</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>297</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>120</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>264</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>121</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>259</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>231</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>103</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>112</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>130</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>114</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>142</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>118</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>254</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>299</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>93</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>268</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>104</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>288</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>5</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>156</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>49</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>155</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>45</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>167</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>22</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>204</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>250</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>294</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>261</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>304</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>266</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>295</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>293</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>267</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>291</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>224</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>302</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>263</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>301</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>284</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>285</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>220</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>255</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>262</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>26</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>72</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>179</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>276</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>298</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>77</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>87</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>158</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>201</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>219</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>175</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>111</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>84</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>9</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>124</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>194</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>148</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>187</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>24</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>126</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>129</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>127</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>131</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>151</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>143</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>141</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>60</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>92</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>150</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>189</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>272</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>110</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>144</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>107</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>42</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>172</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>132</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>149</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>160</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>99</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>154</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>82</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>287</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>102</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>134</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>286</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>46</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>83</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>282</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>136</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>81</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>184</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>40</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>17</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>214</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>67</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>68</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>15</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>16</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>7</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>205</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>274</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>193</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>137</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>133</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>80</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>283</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>119</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>116</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>270</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>280</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+    <JobRule>
+      <RuleId>300</RuleId>
+      <Enabled>true</Enabled>
+      <Comment />
+    </JobRule>
+  </JobRules>
+  <ProjectType>All</ProjectType>
+  <ProjectLanguage>All</ProjectLanguage>
+  <ProjectVersion>All</ProjectVersion>
+  <JobName>Standards Template</JobName>
+  <MaximumErrors>500</MaximumErrors>
+  <DatabasePath>C:\Users\TiagoAraujo\Documents\My Code Auditor Data\SSWCodeAuditor2000.mdb</DatabasePath>
+  <Email>
+    <Enabled>true</Enabled>
+    <To>tiagoaraujo@ssw.com.au</To>
+    <Cc />
+    <Bcc />
+    <IsAuthentication>false</IsAuthentication>
+    <SmtpServer>mooncalf</SmtpServer>
+    <SmtpUsername />
+    <SmtpPassword />
+    <Subject>SSW Code Auditor Report - Standards Template</Subject>
+    <IsDetailEmail>true</IsDetailEmail>
+  </Email>
+  <IsScheduleEnabled>false</IsScheduleEnabled>
+</Job>

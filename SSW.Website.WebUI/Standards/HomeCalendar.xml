@@ -1,0 +1,1386 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HomeCalendar xmlns="http://tempuri.org/HomeCalendar.xsd">
+  <CalendarEntry>
+    <Title>CodeCampNZ SQL in Wellington, NZ 2006 (aka SQL Really Downunder)</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>Two days of deep technical sessions delivered by some of the best presenters from Australia and overseas.</Description>
+    <StartDateTime>2006-11-25T18:30:00.0000000</StartDateTime>
+    <EndDateTime>2006-11-26T17:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SQL Code Camp Down Under - Wagga Wagga</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/SQLDownUnderCodeCampLogo_65x65.jpg</Image>
+    <Description>Two days of great SQL Server speakers including our Adam Cogan and Kevin Kline as a special guest.</Description>
+    <StartDateTime>2007-10-13T18:30:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-14T17:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Code Camp Boot Camp 07</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>
+      Enlist now to learn the skills you need to attack .Net 3.5, C# 3, Visual Studio 2008,
+      MS SQL 2008 and more. Our Adam Cogan will be presenting 3 topics.
+    </Description>
+    <StartDateTime>2007-11-03T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-04T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Code Camp Oz - Wagga Wagga</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/SQLDownUnderCodeCampLogo_65x65.jpg</Image>
+    <Description>Two days of great speakers and lots of code.</Description>
+    <StartDateTime>2008-04-26T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-27T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Office DevCon 2007</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/devcon07_65x65.GIF</Image>
+    <Description>
+      A world-class, annual community conference squarely aimed at Office developers and power users
+      with our own Adam Cogan presenting 2 topics.
+    </Description>
+    <StartDateTime>2007-11-03T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-04T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>NZ SQL PASS Community Connect Event</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>
+      With excellent and unique sessions presented by some of New Zealand’s and Australia’s most talented and influential experts
+    </Description>
+    <StartDateTime>2008-12-06T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-12-07T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1: SQL Server 2005 Management Studio</Description>
+    <StartDateTime>2008-02-12T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-12T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2: T-SQL Enhancements</Description>
+    <StartDateTime>2008-02-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3: High Availability</Description>
+    <StartDateTime>2008-02-26T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-26T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4: CLR Integration</Description>
+    <StartDateTime>2008-03-04T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-04T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5: Full-Text Search</Description>
+    <StartDateTime>2008-03-11T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-11T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1: SQL Server Integration Services (SSIS) and creating a Data Warehouse</Description>
+    <StartDateTime>2007-05-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2: Analysis Services (OLAP)Creating a Cube + Cube Issues</Description>
+    <StartDateTime>2007-05-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-08T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3: Reporting Services</Description>
+    <StartDateTime>2007-05-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4: The Best 3rd Party Cube Browsers</Description>
+    <StartDateTime>2007-05-22T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-22T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5: Data Mining</Description>
+    <StartDateTime>2007-05-29T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-29T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1</Description>
+    <StartDateTime>2007-08-07T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-07T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2</Description>
+    <StartDateTime>2007-08-14T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-14T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3</Description>
+    <StartDateTime>2007-08-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4</Description>
+    <StartDateTime>2007-08-28T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-28T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5</Description>
+    <StartDateTime>2007-09-04T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-09-04T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1</Description>
+    <StartDateTime>2007-10-02T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-02T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2</Description>
+    <StartDateTime>2007-10-09T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-09T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3</Description>
+    <StartDateTime>2007-10-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4</Description>
+    <StartDateTime>2007-10-23T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-23T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL BI Course</Title>
+    <URL>events/2007SQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5</Description>
+    <StartDateTime>2007-10-30T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-30T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 1: Overview of .Net Winforms</Description>
+    <StartDateTime>2008-02-14T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-14T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 2: Data in Forms (in C# 2005)</Description>
+    <StartDateTime>2008-02-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 3: Usability - Rules to Better Windows Forms (in VB.NET 2005)</Description>
+    <StartDateTime>2008-02-28T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-28T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 4: Deployment and Security of Windows Forms (in C# 2005)</Description>
+    <StartDateTime>2008-03-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-06T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 5: Web Services and Threading (in C# 2005)</Description>
+    <StartDateTime>2008-03-13T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-13T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 1: Overview of .Net Webforms</Description>
+    <StartDateTime>2008-04-03T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-03T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 2: Data in Webforms (in VB.NET 2005)</Description>
+    <StartDateTime>2008-04-10T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-10T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 3: Usability - Rich Web Forms and other ASP.NET Features</Description>
+    <StartDateTime>2008-04-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 4: Web Security</Description>
+    <StartDateTime>2008-05-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2008UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .Net Session 5: Advanced Topics &amp; Future Technology</Description>
+    <StartDateTime>2008-05-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-08T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 1</Description>
+    <StartDateTime>2007-08-09T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-09T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 2</Description>
+    <StartDateTime>2007-08-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 3</Description>
+    <StartDateTime>2007-08-23T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-23T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 4</Description>
+    <StartDateTime>2007-08-30T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-30T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 5</Description>
+    <StartDateTime>2007-09-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-09-06T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 1</Description>
+    <StartDateTime>2007-10-04T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-04T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 2</Description>
+    <StartDateTime>2007-10-11T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-11T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 3</Description>
+    <StartDateTime>2007-10-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 4</Description>
+    <StartDateTime>2007-10-25T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-25T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 5</Description>
+    <StartDateTime>2007-11-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Earning More Per Hour As a Developer 1 Day Workshop</Title>
+    <URL>events/2006EarnMorePerHourWorkshop/</URL>
+    <Image>EventsCalendar/Images/icon_melbourne.jpg</Image>
+    <Description>MELBOURNE: Adam Cogan and Steve Herzberg show you how to get the money you deserve</Description>
+    <StartDateTime>2006-08-29T11:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-08-29T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Earning More Per Hour As a Developer 1 Day Workshop</Title>
+    <URL>events/2006EarnMorePerHourWorkshop/</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>SYDNEY: Adam Cogan and Steve Herzberg show you how to get the money you deserve</Description>
+    <StartDateTime>2006-09-29T11:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-09-29T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Earning More Per Hour As a Developer 1 Day Workshop</Title>
+    <URL>events/2006EarnMorePerHourWorkshop/</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Description>BRISBANE: Adam Cogan and Steve Herzberg show you how to get the money you deserve</Description>
+    <StartDateTime>2006-10-23T11:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-10-23T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Earning More Per Hour As a Developer 1 Day Workshop</Title>
+    <URL>events/2006EarnMorePerHourWorkshop/</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg.jpg</Image>
+    <Description>CANBERRA: Adam Cogan and Steve Herzberg show you how to get the money you deserve</Description>
+    <StartDateTime>2006-11-28T11:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-11-28T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Earning More Per Hour As a Developer</Title>
+    <URL>events/2006EarnMorePerHourWorkshop/</URL>
+    <Image>EventsCalendar/Images/icon_melbourne.jpg</Image>
+    <Description>MELBOURNE: Adam Cogan and Steve Herzberg show you how to get the money you deserve</Description>
+    <StartDateTime>2006-07-25T18:30:00.0000000</StartDateTime>
+    <EndDateTime>2006-07-25T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Earning More Per Hour As a Developer</Title>
+    <URL>events/2006EarnMorePerHour/</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>SYDNEY: Adam Cogan and Steve Herzberg show you how to get the money you deserve</Description>
+    <StartDateTime>2006-08-31T18:30:00.0000000</StartDateTime>
+    <EndDateTime>2006-08-31T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Auckland Microsoft Tech.Ed</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>Chief Architect of SSW, Adam Cogan, will be presenting at this event.</Description>
+    <StartDateTime>2006-08-21T07:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-08-23T18:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney Microsoft Tech.Ed</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd.GIF</Image>
+    <Description>Chief Architect of SSW, Adam Cogan, will be presenting at this event.</Description>
+    <StartDateTime>2006-08-22T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-08-25T16:15:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Melbourne SharePoint User Group</Title>
+    <URL>http://www.sharepointusers.org.au/MOSSIG/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_melbourne.jpg</Image>
+    <Description>MELBOURNE: Sharepoint - Follow the Yellow Brick Road to Public Web Sites</Description>
+    <StartDateTime>2008-11-26T17:30:00+10:00</StartDateTime>
+    <EndDateTime>2008-11-26T21:00:00+10:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brisbane SharePoint User Group</Title>
+    <URL>http://www.sharepointusers.org.au/Brisbane/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Description>BRISBANE: Sharepoint - Follow the Yellow Brick Road to Public Web Sites</Description>
+    <StartDateTime>2008-11-12T12:00:00+11:00</StartDateTime>
+    <EndDateTime>2008-11-12T13:30:00+11:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Adelaide SharePoint User Group</Title>
+    <URL>http://www.sharepointusers.org.au/Adelaide/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_adelaide.jpg</Image>
+    <Description>ADELAIDE: Sharepoint - Follow the Yellow Brick Road to Public Web Sites</Description>
+    <StartDateTime>2008-11-18T17:30:00+11:00</StartDateTime>
+    <EndDateTime>2008-11-18T20:30:00+11:00</EndDateTime>
+  </CalendarEntry>
+
+
+  <CalendarEntry>
+    <Title>Sydney .Net User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/SydneyCBDsmall_65X65.jpg</Image>
+    <Description>SYDNEY: SQL - SQLServer 2008 Real World with Spatial Data</Description>
+    <StartDateTime>2008-11-19T18:00:00+11:00</StartDateTime>
+    <EndDateTime>2008-11-19T21:00:00+11:00</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Canberra.Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/Canberra_65x65.gif</Image>
+    <Description>CANBERRA: SQL - SQLServer 2008 Real World with Spatial Data</Description>
+    <StartDateTime>2008-11-17T12:30:00+11:00</StartDateTime>
+    <EndDateTime>2008-11-17T13:30:00+11:00</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Canberra.Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/Canberra_65x65.gif</Image>
+    <Description>CANBERRA: SQL - SQLServer 2008 Real World with Spatial Data</Description>
+    <StartDateTime>2008-11-17T16:30:00+11:00</StartDateTime>
+    <EndDateTime>2008-11-17T18:00:00+11:00</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Adam Cogan presenting Reporting Services to Canberra</Description>
+    <StartDateTime>2006-09-12T17:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-09-12T19:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Adam Cogan presenting Access to SharePoint 2007 in Canberra</Description>
+    <StartDateTime>2007-07-19T17:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-07-19T19:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>ASP.NET MVC Preview 2 and Internet Explorer 8 for Developers Presented by Tatham Oddie</Description>
+    <StartDateTime>2008-03-20T17:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-20T19:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>"Social Engineering with Facebook API using Visual Studio 2008" Presented by Tom Gao - Lunch Session</Description>
+    <StartDateTime>2008-04-17T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-17T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>"Social Engineering with Facebook API using Visual Studio 2008" Presented by Tom Gao - Evening Session</Description>
+    <StartDateTime>2008-04-17T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-17T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Silverlight Presented by Greg Harris - Lunch Session</Description>
+    <StartDateTime>2008-05-15T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-15T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Silverlight Presented by Greg Harris - Evening Session</Description>
+    <StartDateTime>2008-05-15T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>LINQ to SQL and LINQ to Entities by Adam Cogan - Lunch Session</Description>
+    <StartDateTime>2008-06-16T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-06-16T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>LINQ to SQL and LINQ to Entities by Adam Cogan - Evening Session</Description>
+    <StartDateTime>2008-06-16T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-06-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Hardcore LINQ to Entities by Adam Cogan</Description>
+    <StartDateTime>2008-07-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-07-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Eric Phan - .NET 3.5 Lambda Expressions, LINQ, Add-Ins and more</Description>
+    <StartDateTime>2008-08-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-08-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Microsoft SQL Server 2008 Reporting Services: Architecture Overview - Lunch Session</Description>
+    <StartDateTime>2008-10-20T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-10-20T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra UserGroup</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Canberra.jpg</Image>
+    <Description>Microsoft SQL Server 2008 Reporting Services: Architecture Overview - Evening Session</Description>
+    <StartDateTime>2008-10-20T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2008-10-20T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>With Special Guest Speakers Darren Neimke from Readify and Peter Ward from WARDY IT</Description>
+    <StartDateTime>2006-06-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-06-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>*Special* Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_wcf.jpg</Image>
+    <Description>FREE - Software Legend Juval Lowy presents an introduction on Windows Communication Foundation</Description>
+    <StartDateTime>2007-02-14T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-02-14T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2006-07-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-07-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Brisbane .NET User Group</Title>
+    <URL>http://www.qmsdnug.org/</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Description>Adam Cogan will be introducing us to SQL Indexing.</Description>
+    <StartDateTime>2006-08-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-08-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney. </Description>
+    <StartDateTime>2006-08-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-08-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2006-09-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-09-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2006-10-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-10-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2006-11-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-11-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>*SPECIAL* Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>With special guest speaker from USA Robert Green</Description>
+    <StartDateTime>2006-12-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-12-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Wollongong .NET User Group</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_wollongong.jpg</Image>
+    <Description>Adam Cogan is going to present 15 Tips for Better Reporting Services</Description>
+    <StartDateTime>2006-12-13T18:30:00.0000000</StartDateTime>
+    <EndDateTime>2006-12-13T21:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2006-12-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-12-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group: Access 2007</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_access2007.gif</Image>
+    <Description>Learn how Microsoft Office Access 2007 can help you track and report information with ease, provide the ability to get you started quickly with prebuilt applications that can be modified or adapted to changing business needs and collect information through forms in email or import data from external applications.</Description>
+    <StartDateTime>2007-01-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-01-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2007-02-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-02-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2007-03-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-03-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>A deeper look at one of the new technologies in Microsoft Office SharePoint Server 2007: Excel Calculation Server.</Description>
+    <StartDateTime>2007-04-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-04-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group and SharePoint User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Special session in conjunction with the Sydney SharePoint User Group</Description>
+    <StartDateTime>2007-05-16T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-16T19:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>Events/2007AprilCanberraNETUG</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>APRIL meetings of the Canberra .NET Developers User Group</Description>
+    <StartDateTime>2007-04-19T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2007-04-19T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Newcastle .NET User Group</Title>
+    <URL>http://www.ncg.asn.au</URL>
+    <Image>EventsCalendar/Images/icon_newcastle.jpg</Image>
+    <Description>In this free event, Adam Cogan will present Microsoft CRM</Description>
+    <StartDateTime>2007-06-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-06-06T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>An introduction to MSBuild and Team Build.</Description>
+    <StartDateTime>2007-06-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-06-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2007-07-8T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-07-8T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Johann Kruse from Microsoft Australia presents Office Communicator 2007</Description>
+    <StartDateTime>2007-08-22T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-22T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>The best place to learn .NET for free in Sydney</Description>
+    <StartDateTime>2007-09-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-09-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Peter Myers will present an overview of SQL Server 2005 Data Mining</Description>
+    <StartDateTime>2007-10-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Newcastle .NET User Group</Title>
+    <URL>http://www.ncg.asn.au</URL>
+    <Image>EventsCalendar/Images/icon_newcastle.jpg</Image>
+    <Description>In this free event, Adam Cogan will present Microsoft Office PerformancePoint 2007</Description>
+    <StartDateTime>2007-12-05T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-12-06T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Hear Adam Cogan and Eric Phan present Visual Studio 2008 and LINQ</Description>
+    <StartDateTime>2007-11-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Adam Cogan and Mark Liu will be introducing Windows Workflow Foundation.</Description>
+    <StartDateTime>2007-12-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-12-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Best Practices for Team-Based Software Development by Anthony Borton</Description>
+    <StartDateTime>2008-01-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-01-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Adam Cogan and Mark Liu will be introducing Windows Workflow Foundation (Part B)</Description>
+    <StartDateTime>2008-02-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Mike Culver (Amazon) presenting Web-Scale Computing</Description>
+    <StartDateTime>2008-02-27T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-27T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Mark Hetherington presents 'We work efficiently on the right things in a visible way…. Looking at processes and tracking and time systems'</Description>
+    <StartDateTime>2008-03-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Tom Gao presenting 'Social Engineering with Facebook API using Visual Studio 2008'</Description>
+    <StartDateTime>2008-04-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Comparing Silverlight and Flex application development by Greg Harris</Description>
+    <StartDateTime>2008-05-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Nick Randolph - Do you want a connection with that?</Description>
+    <StartDateTime>2008-06-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-06-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Hardcore LINQ to Entities by Adam Cogan and SQL Server 101 by Cameron Townshend</Description>
+    <StartDateTime>2008-07-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-07-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Eric Phan - .NET 3.5 Lambda Expressions, LINQ, Add-Ins and more</Description>
+    <StartDateTime>2008-08-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-08-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Newcastle .NET User Group</Title>
+    <URL>http://www.ncg.asn.au</URL>
+    <Image>EventsCalendar/Images/icon_newcastle.jpg</Image>
+    <Description>Adam will be presenting "Sharepoint - Follow the Yellow Brick Road to Public Web Sites"</Description>
+    <StartDateTime>2008-12-03T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-12-03T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Real World ClickOnce</Description>
+    <StartDateTime>2006-09-01T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-09-01T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title> SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>WELLINGTON, New Zealand: Rules to Successful Projects (Part A and B)</Description>
+    <StartDateTime>2006-11-27T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-11-27T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: SQL Server 2005: Advanced Indexing Strategies</Description>
+    <StartDateTime>2006-12-15T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-12-15T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>What's new and different in Office 2007?</Description>
+    <StartDateTime>2007-02-02T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-02-02T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Visual Studio for Database Professionals (Data Dude)</Description>
+    <StartDateTime>2007-03-02T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-03-02T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Extreme Programming</Description>
+    <StartDateTime>2007-03-30T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-03-30T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Top 15 SQL Server DBA Tasks for SQL Server 2005</Description>
+    <StartDateTime>2007-05-18T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-18T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: SharePoint Services</Description>
+    <StartDateTime>2007-06-01T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-06-01T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Access to SharePoint 2007</Description>
+    <StartDateTime>2007-07-27T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-07-27T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: CRM 4 (with workflow)</Description>
+    <StartDateTime>2008-01-25T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-01-25T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: SharePoint 2007 (MOSS)</Description>
+    <StartDateTime>2007-11-30T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-30T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Microsoft Office PerformancePoint 2007</Description>
+    <StartDateTime>2007-10-05T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-10-05T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: LINQ</Description>
+    <StartDateTime>2007-11-02T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-02T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: ORM Smackdown – LINQ to Entities vs nHibernate</Description>
+    <StartDateTime>2008-02-29T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-02-29T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Windows Server 2008 and Vista Service Pack 1</Description>
+    <StartDateTime>2008-03-28T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-03-28T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: SQL 2005 T-SQL Enhancements and CLR Integration</Description>
+    <StartDateTime>2008-04-18T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-18T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: eXtreme Programming for .NET Developers</Description>
+    <StartDateTime>2007-06-20T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-06-20T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Build a Silverlight Web Application by Greg Harris</Description>
+    <StartDateTime>2008-09-26T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-09-26T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Project Server 2007 integration with Team Foundation Server</Description>
+    <StartDateTime>2008-09-26T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-09-26T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: SQL Server Reporting Services 2008 In Depth</Description>
+    <StartDateTime>2008-10-31T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-10-31T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: ‘LINQ to SQL’ vs ‘LINQ to Entities’</Description>
+    <StartDateTime>2008-09-28T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-09-28T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Hardcore LINQ to Entities</Description>
+    <StartDateTime>2008-07-25T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-07-25T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Dynamic Data - Data entry made easy</Description>
+    <StartDateTime>2008-11-28T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-11-28T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Microsoft SQL Server 2005 Reporting Services - Day 1</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>
+      SYDNEY: 2 day complete course provides the knowledge and skills to deploy
+      and manage reports using Microsoft Reporting Services &lt;br /&gt;
+      &lt;b&gt; Registration for this event is now closed &lt;b&gt;
+    </Description>
+    <StartDateTime>2006-10-16T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-10-16T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft SQL Server 2005 Reporting Services - Day 2</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>
+      SYDNEY: 2 day complete course provides the knowledge and skills to deploy
+      and manage reports using Microsoft Reporting Services &lt;br /&gt;
+      &lt;b&gt; Registration for this event is now closed &lt;b&gt;
+    </Description>
+    <StartDateTime>2006-10-17T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-10-17T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SQL Server 2005: Advanced Indexing Strategies</Title>
+    <URL>http://www.ncg.asn.au</URL>
+    <Image>EventsCalendar/Images/icon_newcastle.jpg</Image>
+    <Description>In this free event, Adam Cogan will present the best means of using SQL Server effectively.</Description>
+    <StartDateTime>2006-11-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2006-11-01T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Mix07, Las Vegas USA</Title>
+    <URL>http://www.visitmix.com</URL>
+    <Image>EventsCalendar/Images/MixLogoImg.jpg</Image>
+    <Description>
+      Microsoft and its partners will be unveiling innovative new technologies and services at MIX and showing off
+      the latest opportunities with Windows Vista™, Xbox 360™, Windows Mobile® and Windows Live™ services.
+    </Description>
+    <StartDateTime>2007-04-30T08:30:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-02T15:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech-Ed 2007, Orlando USA</Title>
+    <URL>http://www.microsoft.com/events/teched2007/default.mspx</URL>
+    <Image>EventsCalendar/Images\icon_techEd.jpg</Image>
+    <Description>
+      For five days in June, you can get technical training,
+      information, and resources to help you build, deploy, secure, mobilize,
+      and manage solutions based on the full range of existing and upcoming Microsoft products.
+    </Description>
+    <StartDateTime>2007-06-04T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-06-08T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech-Ed Australia 2008, Sydney</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd08AU_65x65.jpg</Image>
+    <Description>
+      The essential experience for anyone serious about making their mark in IT.
+    </Description>
+    <StartDateTime>2008-09-02T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-09-05T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech-Ed New Zealand 2008, Auckland</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd08NZ_65x65.jpg</Image>
+    <Description>
+      Are you ready to get your tech on?
+    </Description>
+    <StartDateTime>2008-09-01T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-09-03T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>APAC SharePoint Conference 2007 Day 1</Title>
+    <URL>/Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Technical know how on one of the hottest releases of the year</Description>
+    <StartDateTime>2007-05-15T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>APAC SharePoint Conference 2007 Day 2</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Technical know how on one of the hottest releases of the year</Description>
+    <StartDateTime>2007-05-16T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>MIND User Group Meeting</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_kl.jpg</Image>
+    <Description>Kuala Lumpur, Malaysia</Description>
+    <StartDateTime>2007-07-07T14:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-07-07T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Wollongong User Group</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_wollongong.jpg</Image>
+    <Description>
+      Justin King presents Visual Studio Team Edition for Database Professionals a.k.a DataDude
+    </Description>
+    <StartDateTime>2007-08-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-08T22:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech ED, Gold Coast</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd2007_65X65.jpg</Image>
+    <Description>Gold Coast, Queensland</Description>
+    <StartDateTime>2007-08-07T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-10T22:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech ED, New Zealand</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd2007_65X65.jpg</Image>
+    <Description>Auckland, New Zealand</Description>
+    <StartDateTime>2007-08-13T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-08-15T22:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>KL TechNite + MIND: Developers Rock</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_kl.jpg</Image>
+    <Description>Kuala Lumpur, Malaysia</Description>
+    <StartDateTime>2007-09-09T18:20:00.0000000</StartDateTime>
+    <EndDateTime>2007-09-09T22:45:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech ED 2007 SEA</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd2007_65X65.jpg</Image>
+    <Description>Kuala Lumpur, Malaysia</Description>
+    <StartDateTime>2007-09-10T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-09-13T22:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Wellington SQL Server User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>Adam Cogan to be guest presenting Best Practices to Reporting Services</Description>
+    <StartDateTime>2007-11-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-06T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Auckland .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>Adam Cogan to be guest presenting PerformancePoint</Description>
+    <StartDateTime>2007-11-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-11-08T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>NZ .NET User Group</Title>
+    <URL>http://www.dot.net.nz/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>
+      NZ .NET User Group - Dunedin, Microsoft SQL Server 2008 Reporting
+      Services - Architecture Overview AND SharePoint - follow the Yellow Brick Road to Public Web Sites
+    </Description>
+    <StartDateTime>2008-10-13T17:30:00+11:00</StartDateTime>
+    <EndDateTime>2008-10-13T20:30:00+11:00</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1: SQL Server Integration Services (SSIS) and creating a Data Warehouse</Description>
+    <StartDateTime>2008-04-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2: Analysis Services (OLAP)Creating a Cube + Cube Issues</Description>
+    <StartDateTime>2008-04-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-08T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3: Reporting Services</Description>
+    <StartDateTime>2008-04-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4: The Best 3rd Party Cube Browsers</Description>
+    <StartDateTime>2008-04-22T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-22T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2008UTSSQL/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5: Data Mining</Description>
+    <StartDateTime>2008-04-29T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-04-29T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>SQL Server 2005 End-to-End Business Intelligence Workshop</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>SQL Server 2005 End-to-End Business Intelligence Workshop</Description>
+    <StartDateTime>2008-05-12T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SQL Server 2005 End-to-End Business Intelligence Workshop</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>SQL Server 2005 End-to-End Business Intelligence Workshop</Description>
+    <StartDateTime>2007-05-05T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2007-05-09T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>JAOO Conference 2008 - Brisbane</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/JAOO.jpg</Image>
+    <Description>JAOO Conference - for Developers by Developers</Description>
+    <StartDateTime>2008-05-28T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-05-30T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>JAOO Conference 2008 - Sydney</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/JAOO.jpg</Image>
+    <Description>JAOO Conference - for Developers by Developers</Description>
+    <StartDateTime>2008-06-01T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2008-06-03T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Topic - TBA</Description>
+    <StartDateTime>2008-12-17T18:00:00+11:00</StartDateTime>
+    <EndDateTime>2008-12-17T21:00:00+11:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Topic - TBA</Description>
+    <StartDateTime>2009-01-21T18:00:00+11:00</StartDateTime>
+    <EndDateTime>2009-01-21T21:00:00+11:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Topic - TBA</Description>
+    <StartDateTime>2009-02-17T18:00:00+11:00</StartDateTime>
+    <EndDateTime>2009-02-18T21:00:00+11:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>Topic - TBA</Description>
+    <StartDateTime>2008-12-15T12:30:00+10:00</StartDateTime>
+    <EndDateTime>2008-12-15T18:00:00+10:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>Topic- TBA</Description>
+    <StartDateTime>2009-01-19T12:30:00+10:00</StartDateTime>
+    <EndDateTime>2009-01-19T18:00:00+10:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>Topic - TBA</Description>
+    <StartDateTime>2009-02-16T12:30:00+10:00</StartDateTime>
+    <EndDateTime>20079-02-16T18:00:00+10:00</EndDateTime>
+  </CalendarEntry>
+</HomeCalendar>

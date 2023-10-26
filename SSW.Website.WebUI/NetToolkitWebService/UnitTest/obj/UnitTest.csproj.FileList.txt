@@ -1,0 +1,6 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\SSW.NETToolkit.WebService.UnitTest.dll.config
+bin\Debug\SSW.NETToolkit.WebService.UnitTest.dll
+bin\Debug\SSW.NETToolkit.WebService.UnitTest.pdb
+obj\Debug\SSW.NETToolkit.WebService.UnitTest.dll
+obj\Debug\SSW.NETToolkit.WebService.UnitTest.pdb

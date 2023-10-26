@@ -1,0 +1,82 @@
+
+Version 10.4
+
+Feature: Don't reply all on BCC
+Bug fix: raise Outlook when Word is editor
+Changes: GUI Changes
+
+Available at www.ssw.com.au
+
+Please download and install the new version.
+
+---------------------
+Previous Changes Log:
+---------------------
+
+Version 10.1
+Bug fix in reply all.
+Debug mode for helping us finding errors.
+
+Version 10.0
+Feature: Internal signature checks
+Feature: Timing information
+Bug fixes
+Renamed to SSW LookOut!
+
+Version 9.73
+Bug fix with reply to all
+Warn no signature and signature in internal email.
+
+Version 9.72
+Further testing with Outlook 2000. 
+Minor bug fixes.
+
+Version 9.70
+Thoroughly checked and compiled with Outlook 2000.
+Features that doesn't work in Outlook 2000 are wrapped up and disabled to
+prevent it doing wierd things.
+
+Version 9.69
+Changes: Fixes to various non-email Outlook Items
+Feature: Non-Strict bad words mode (default), which only checks full matches (too many people complains it is too bothersome).
+
+Version 9.67
+Feature: No database option
+Feature: Organize your email
+Feature: Warn auto archive
+Changes: Lots of icons
+Warning: "Not everyone replied warning" has been making mistakes, if it
+annoys you too much, turn it off (default is off).
+
+Version 9.66
+Changes: Not everyone replied warning
+Fix:     A few bug fixes!  Thank you all for your feedbacks.
+
+Version 9.64
+Changes: More GUI updates
+Changes: Warnings for sending immediately
+Changes: Warnings for not using word
+
+Version 9.59
+Numerous bug fixes after switching to new safe email library.  
+Changes: More GUI updates
+Changes: Clear Outlook Temporary cache
+
+Version 9.55
+One bug fix in using the newer safe email library.
+
+Version 9.54
+Changes: Minor GUi changes
+
+Version 9.52
+Changes: New GUI Changes as we have too many options to fit on the previous setting screens!
+Changes: New Bad Words List
+Changes: Run Button
+Changes: Send email warning
+Changes: Outgoing email tagging
+News: Apparantly Contactor works for Outlook 11 as well!
+
+Version 9.40
+Changes: New GUI changes for varifying Item Sending.
+Changes: Some changes leading in preparation for the next major version.
+

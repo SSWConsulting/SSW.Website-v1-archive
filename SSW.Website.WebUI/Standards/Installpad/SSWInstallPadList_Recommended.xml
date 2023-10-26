@@ -1,0 +1,290 @@
+<!-- AGT 25Nov09 V4.0 -->
+<ApplicationList>
+  <InstallationOptions>
+    <SimultaneousDownloads>3</SimultaneousDownloads>
+  </InstallationOptions>
+  <Application>
+    <Name>AVG Anti Virus</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\AVG Anti-Virus\avg_free_stb_all_8_32_cnet.exe</FileUrl>
+    <Comment>Monthly you should check for any viruses that got onto your PC</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>X-Lite</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\X-Lite\X-Lite_Win32_1103k_53621.exe</FileUrl>
+    <Comment>You can call by your laptop, no physical phone needed around you to make a call</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>HUD</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\Hud\hud-lite-2.1.1.1290.exe</FileUrl>
+    <Comment>It connects you with your peers through VOIP. Their name will be listed which gives easiness to access them</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Lavasoft AdAware</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\AdAware\aaw2007 7.0.2.6.exe</FileUrl>
+    <Comment>Monthly you should check for any tracking/Trojans that got onto your PC</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft VSTS Power Tool</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupMS_DotNet\MSTeamSystemPowerTools2008\tfpt_200810_Release.msi</FileUrl>
+    <Comment>A set of enhancements, tools and command-line utilities that improve the TFS user experience</Comment>
+    <Options>
+      <Checked>false</Checked>
+      <InstallerArguments>/qn AddLocal="CLI,VSIP,CHECKINPOLICIES,TSX"</InstallerArguments>
+    </Options>
+  </Application>
+  <!-- InstallPad doesnot support installation of the software via iso file 
+  <Application>
+    <Name>Microsoft Visual Studio 2008 TFS</Name><FileUrl>\\fileserver\SetupFiles\SetupMS_DotNet\MSVisualStudio2008TFS\en_visual_studio_team_system_2008_team_foundation_server_trial_x86_x64wow_dvd_X14-29244.iso</FileUrl>
+    <Comment>Visual Studio Team System 2008 Team Suite provides multi-disciplined team members with an integrated set of tools for architecture, design, development, database development and testing of applications.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+  <!-- InstallPad doesnot support installation of the software via iso file 
+<Application>
+    <Name>Team Companion for Outlook</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupNotMS_DotNet\TFS Related\TCO_OUTLOOK2007_TFS2008_EN_2_1.iso</FileUrl>
+    <Comment>With the TeamCompanion you can access project related information using Outlook without having to switch between applications.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+  <Application>
+    <Name>VMWare</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupNotMS\SetupProgram\VMWare\VMware-workstation-6.0.1-55017.Incl.Serial\VMware-workstation-6.0.1-55017.exe</FileUrl>
+    <Comment>VMware, is a developer of virtualization software.</Comment>
+    <Options>
+      <SilentInstall />
+      <InstallerArguments>/quite</InstallerArguments>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Notepad+</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\NotePad++.Installer.exe</FileUrl>
+    <Comment>This is very helpful for simple code editting, since it recognizes the code by giving it colours. This is similar to EditPlus</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+
+  <Application>
+    <Name>Xobni for Outlook</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupNotMS\SetupProgram\XobniForOutlook\XobniSetup.exe</FileUrl>
+    <Comment>Xobni's Outlook add-in saves you time finding email, conversations, contact info and attachments.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SSW eXtreme Emails</Name>
+    <FileUrl>http://us.ssw.com.au/ssw/download/SSWeXtremeEmails_ver16-73.exe</FileUrl>
+    <Comment>IMPORTANT!!! Every developer needs this for replying DONE to any task and project management</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <!-- InstallPad doesnot support installation of the software via iso file
+    <Application>
+    <Name>Expression Studio 3</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSExpression\en_expression_studio_3_x86_dvd_401336.iso</FileUrl>
+    <Comment></Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <!-- InstallPad doesnot support installation of the software via iso file
+  <Application>
+    <Name>VSTS Database Edition</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS_DotNet\MSVisualStudio2008DatabaseEdition\en_visual_studio_team_system_2008_database_x86_dvd_X14-26465.iso</FileUrl>
+    <Comment></Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <!-- InstallPad doesnot support installation of the software via iso file
+  <Application>
+    <Name>VSTS Database Edition R2 patch</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS_DotNet\MSVisualStudio2008DatabaseEdition\vs DB edition R2 setup.exe</FileUrl>
+    <Comment>Database Edition no longer requires a Design Database. Therefore, it is no longer necessary to install an instance of SQL Express or SQL Server prior to using Database Edition.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <!-- InstallPad doesnot support installation of the software via iso file
+  <Application>
+    <Name>MSDN for VS.Net 2008 SP1</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS_DotNet\MSVisualStudio2008SP1\VS2008SP1MSDNENUX1506188.iso</FileUrl>
+    <Comment></Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <Application>
+    <Name>MS Project Professional 2007</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSProjectPro2007\setup.exe</FileUrl>
+    <Comment></Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>StyleCop 4.3.2.1</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSStyleCop\Microsoft.StyleCop.msi</FileUrl>
+    <Comment>StyleCop analyzes C# source code to enforce a set of style and consistency rules.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <!-- InstallPad doesnot support installation of the software via iso/zip file
+  <Application>
+    <Name>StyleCop for Resharper</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupNotMS\SetupProgram\ReSharper\StyleCop.For.ReSharper.Setup.v4.5.9.0.zip</FileUrl>
+    <Comment></Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <Application>
+    <Name>Expresso (the Regex editor)</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\ExpressoRegexTool\ExpressoSetup3.msi</FileUrl>
+    <Comment>Expresso Regex editor greatly simplifies registry editing.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>IronPython 2.6</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSIronPython\IronPython-2.6B2.msi</FileUrl>
+    <Comment>IronPython is an implementation of the Python programming language running under .NET and Silverlight.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>F#</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\F#\InstallFSharp.msi</FileUrl>
+    <Comment>The F# May 2009 CTP provides all the tools and resources needed to develop applications with the F# programming language.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft Solver Foundation</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSSolverFoundation\MicrosoftSolverFoundationExpress64.msi</FileUrl>
+    <Comment>Solver Foundation is a Microsoft framework designed to deliver critical business insight tools to CxOs, quantitative analysts and developers of mission-critical systems.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Live Mesh</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupMS\SetupProgram\MSLiveMesh\LiveMesh.exe</FileUrl>
+    <Comment>Live Mesh puts you at the center of your digital world, seamlessly connecting you to the people, devices, information and applications you care about—available wherever you happen to be.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>ASP.Net MVC 1.0</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSASPNetMVC\AspNetMVC1.msi</FileUrl>
+    <Comment>ASP.NET MVC 1.0 provides a new Model-View-Controller (MVC) framework on top of the existing ASP.NET 3.5 runtime.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Composite Application Library (CAL) for WPF</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSCompositeProjectLibraryForWPFAndSilverlight\CompositeApplicationGuidance-Feb2009.exe</FileUrl>
+    <Comment>The Composite Application Guidance for WPF and Silverlight is designed to help you more easily build enterprise-level Windows Presentation Foundation (WPF) and Silverlight client applications.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <!-- InstallPad doesnot support installation of the software via iso/zip file
+  <Application>
+    <Name>Reflector</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\MS .Net Reflector\reflector.zip</FileUrl>
+    <Comment>With.Net Reflector we can profile the memory usage of your .NET application, Locate memory leaks within minutes and Optimize high memory usage applications</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <Application>
+    <Name>Unity Application Block 1.2</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSUnityApplicationBlock\Unity Application Block 1.2.msi</FileUrl>
+    <Comment>The Unity Application Block (Unity) is a lightweight, extensible dependency injection container.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Unity Application Block 1.2 for Silverlight</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSUnityApplicationBlock\Unity Application Block 1.2 for Silverlight.msi</FileUrl>
+    <Comment>The Unity Application Block (Unity) is a lightweight, extensible dependency injection container.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft Web Plaform Installer 2.0 RC</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupMS\SetupProgram\MSWebPlatformInstaller\wpilauncher.exe</FileUrl>
+    <Comment>The Microsoft Web Platform Installer 2.0 (Web PI) is a free tool that makes it simple to download, install and keep up-to-date with the latest components of the Microsoft Web Platform, including Internet Information Services (IIS), SQL Server Express, .NET Framework and Visual Web Developer.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>MSBuild Extension Pack v3.5.3.0</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupMS\SetupProgram\MSBuildExtensionPack\MSBuild_Extension_Pack.zip</FileUrl>
+    <Comment>The MSBuild Extension Pack 3.5.3.0 release provides a collection of over 280 MSBuild tasks.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Sandcastle</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSSandcastle\Sandcastle.msi</FileUrl>
+    <Comment>Documentation compilers for managed class libraries</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <!-- InstallPad doesnot support installation of the software via iso/zip file
+  <Application>
+    <Name>WIX Installer 3.0</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupNotMS\SetupProgram\WIX_Installer\wix3.0.5419.0-x86-setup.zip</FileUrl>
+    <Comment>The Windows Installer XML (WiX) is a toolset that builds Windows installation packages from XML source code.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application-->
+  <Application>
+    <Name>WPF Toolkit</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\WPFToolKit\WPFToolkit.msi</FileUrl>
+    <Comment>The WPF Toolkit not only allows users to get new functionality more quickly, but allows an efficient means for giving feedback to the product team.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>DocProject Addin</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupMS\SetupProgram\MSSandcastle\DocProject-1110RC.exe</FileUrl>
+    <Comment>DocProject drives the Sandcastle help generation tools using the power of Visual Studio 2005/2008 and MSBuild.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+</ApplicationList>

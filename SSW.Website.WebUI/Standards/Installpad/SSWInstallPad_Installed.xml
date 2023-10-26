@@ -1,0 +1,225 @@
+﻿<ApplicationList>
+  <InstallationOptions>
+    <SimultaneousDownloads>3</SimultaneousDownloads>
+  </InstallationOptions>
+  <Application>
+    <Name>Adobe Reader</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\Adobe\Adobe Reader\AdbeRdr80_en_US.exe</FileUrl>
+    <Comment>Allows a more secured view of your PDF documents</Comment>
+    <Options>
+      <InstallerArguments>/HIDE /DONT_START_APPS /NO_WELCOME /NO_AVGW_STARTUP /QUIT_IF_INSTALLED</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Beyond Compare</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\BeyondCompare\BeyondCompare_2-4-3.exe</FileUrl>
+    <Comment>The ideal tool for comparing files and folders in Windows System</Comment>
+    <Options>
+      <SilentInstall />
+    </Options>
+  </Application>
+  
+<Application>
+    <Name>Camtasia</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\Camtasia\setup.exe</FileUrl>
+    <Comment>With Camtasia Studio, you can record your PC screen and create professional-looking videos that clearly demonstrate a process, a product, or an idea.</Comment>
+    <Options>
+      <InstallerArguments>/S</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Edit Plus 3</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\editplus\EditPlus v3\epp301_en.exe</FileUrl>
+    <Comment>It connects you with your peers through VOIP. Their name will be listed which gives easiness to access them</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>FullShot</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\Fullshot\Fullshot 9\fshot9513.exe</FileUrl>
+    <Comment>FullShot is a professional screen capture (print screen) application designed for any Windows user who needs an effortless, effective way to take screenshots of Windows screens.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Jetbrains Resharper</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\ReSharper\ReSharper1.5.exe</FileUrl>
+    <Comment>ReSharper fully integrates with Visual Studio to intelligently and powerfully extend the functionality that is native to Visual Studio.</Comment>
+    <Options>
+      <SilentInstall />
+      <InstallerArguments>/quiet</InstallerArguments>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+
+<!-- InstallPad doesnot support installation of the software via iso file
+  <Application>
+    <Name>Microsoft Dynamics CRM 4.0</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupProgram\MSCRM4\DynamicsCRMServer_1033_i386.exe</FileUrl>
+    <Comment>Microsoft Dynamics CRM 4.0 business software is a complete customer relationship management (CRM) solution.</Comment>
+    <Options>
+      <InstallerArguments>DynamicsCRMServer_1033_i386.exe /q /l</InstallerArguments>
+    </Options>
+  </Application -->
+
+  <Application>
+    <Name>Microsoft .Net Framework 3.5 SP1</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSNET_Framework_V3-5\dotNetFx35setup.exe</FileUrl>
+    <Comment>Microsoft .NET Framework 3.5 Service Pack 1 is a full cumulative update that contains many new features that includes cumulative servicing updates to the .NET Framework 2.0 and .NET Framework 3.0 subcomponents.
+</Comment>
+    <Options>
+      <InstallerArguments>dotNetFx35setup.exe /quiet /norestart</InstallerArguments>
+    </Options>
+  </Application>
+<!-- InstallPad doesnot support installation of the software via iso file 
+  <Application>
+    <Name>Microsoft Expression Web</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupProgram\MSExpressionWeb2007\Microsoft Expression Web 2007.iso</FileUrl>
+    <Comment>Expression Web allows authoring of web pages integrating XML, CSS 2.1, ASP.NET 2.0, XHTML, XSLT and JavaScript into sites.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+
+<!-- InstallPad doesnot support installation of the software via iso file 
+  <Application>
+    <Name>Microsoft Office</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupProgram\MSOffice2007RTM\en_office_enterprise_2007_DVD_VL_X12-19574.iso</FileUrl>
+    <Comment>Microsoft Office is a set of interrelated desktop applications, servers and services, collectively referred to as an office suite, for the Microsoft Windows and Mac OS X operating systems.</Comment>
+    <Options>
+      <InstallerArguments>/quiet</InstallerArguments>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+  <Application>
+    <Name>Microsoft fxcop</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSFxCop\FxCopInstall1.35.exe</FileUrl>
+    <Comment>FxCop is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. </Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft Silverlight</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSSilverLight\Silverlight.2.0_Developer.exe</FileUrl>
+    <Comment>Microsoft Silverlight is a programmable web browser plugin that enables features such as animation, vector graphics and audio-video playback that characterize rich Internet applications.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft SQL Server 2005</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupServer\MSSQLServer2005Express\SQLEXPR.exe</FileUrl>
+    <Comment>It provides an enterprise-ready data platform for organizations to manage any data, any place, any time.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+
+<!-- InstallPad doesnot support installation of the software via iso file 
+  <Application>
+    <Name>Microsoft SQL Server 2008</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupServer\MSSQLServer2008RTM\en_sql_server_2008_enterprise_x86_x64_ia64_dvd_x14-89207.iso</FileUrl>
+    <Comment>It provides an enterprise-ready data platform for organizations to manage any data, any place, any time.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+
+  <Application>
+    <Name>Microsoft SQL Server Compact</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupServer\MSSQLServerCompact3.5\SSCERuntime-ENU.msi</FileUrl>
+    <Comment>SQL Server Compact 3.5 is a free, easy-to-use embedded database engine that lets developers build robust Windows Desktop and mobile applications that run on all Windows platforms including Windows XP, Vista, Pocket PC, and Smartphone.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft Virtual PC SP1</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS\SetupProgram\MSVirtualPC\MSVirtualPC2007\setup-sp1.exe</FileUrl>
+    <Comment>It can be used to run multiple OSs simultaneously within the same personal computer.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+
+<!-- InstallPad doesnot support installation of the software via iso file
+  <Application>
+    <Name>Microsoft Visual Studio 2008 RTMTeamSuite</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSVisualStudio2008RTMTeamSuite\Setup\setup.exe</FileUrl>
+    <Comment>It can be used to run multiple OSs simultaneously within the same personal computer.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+  <Application>
+    <Name>Microsoft Visual Studio 2008 SP1</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSVisualStudio2008\VS90 ServicePack 1.exe</FileUrl>
+    <Comment>Visual Studio 2008 Service Pack 1 (SP1) addresses issues that were found through a combination of customer and partner feedback, as well as internal testing. These service packs offer customers improvements in responsiveness, stability and performance.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+
+<!-- InstallPad doesnot support installation of the software via iso file 
+  <Application>
+    <Name>Microsoft Visual Studio 2008 TFS</Name><FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSVisualStudio2008TFS\en_visual_studio_team_system_2008_team_foundation_server_trial_x86_x64wow_dvd_X14-29244.iso</FileUrl>
+    <Comment>Visual Studio Team System 2008 Team Suite provides multi-disciplined team members with an integrated set of tools for architecture, design, development, database development and testing of applications.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application -->
+
+  <Application>
+    <Name>Microsoft TFS Power Tool 2008</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\MSTFSPowerTool2008\tfpt.msi</FileUrl>
+    <Comment>Visual Studio Team System 2008 Team Foundation Server Power Tools is a set of enhancements, tools and command-line utilities that improve the Team Foundation Server user experience.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Microsoft PowerCommands for Visual Studio 2008</Name>
+    <FileUrl>\\bee\SetupFiles\SetupMS_DotNet\PowerCommands For Visual Studio 2008\PowerCommands.msi</FileUrl>
+    <Comment>PowerCommands 1.1 is a set of useful extensions for the Visual Studio 2008 adding additional functionality to various areas of the IDE.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Mozilla Firefox</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\Mozilla Firefox\Firefox Setup 2.0.0.6.exe</FileUrl>
+    <Comment>The Firefox Web Browser is the faster, more secure, and fully customizable way to surf the web.</Comment>
+    <Options>
+      <InstallerArguments>Firefox Setup 2.0.0.6.exe -ms</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Skype</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\Skype\SkypeSetup3.8.exe</FileUrl>
+    <Comment>Skype (IPA: [skaɪp]) is software that allows users to make telephone calls over the Internet.</Comment>
+    <Options>
+      <InstallerArguments>/quiet</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>VMWare</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\VMWare\VMware-workstation-6.0.1-55017.Incl.Serial\VMware-workstation-6.0.1-55017.exe</FileUrl>
+    <Comment>VMware, is a developer of virtualization software.</Comment>
+    <Options>
+      <SilentInstall />
+      <InstallerArguments>/quite</InstallerArguments>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>Winrar</Name>
+    <FileUrl>\\bee\SetupFiles\SetupNotMS\SetupProgram\WinRAR\wrar380.exe</FileUrl>
+    <Comment>WinRAR is a shareware file archiver and data compression utility.</Comment>
+    <Options>
+      <InstallerArguments>wrar380.exe /S</InstallerArguments>
+    </Options>
+  </Application>
+</ApplicationList>

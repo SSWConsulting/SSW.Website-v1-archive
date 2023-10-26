@@ -1,0 +1,180 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=us-ascii"><meta name=Generator content="Microsoft Word 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+h1
+	{mso-style-priority:9;
+	mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-fareast-language:EN-US;
+	font-weight:normal;}
+h2
+	{mso-style-priority:9;
+	mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-fareast-language:EN-US;
+	font-weight:normal;}
+h3
+	{mso-style-priority:9;
+	mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#C83C3C;
+	mso-fareast-language:EN-US;
+	font-weight:normal;}
+h4
+	{mso-style-priority:9;
+	mso-style-link:"Heading 4 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#C83C3C;
+	mso-fareast-language:EN-US;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-link:"Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-priority:30;
+	mso-style-link:"Intense Quote Char";
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	color:#C73C3C;
+	font-style:italic;}
+span.MsoIntenseReference
+	{mso-style-priority:32;
+	font-variant:small-caps;
+	color:#C73C3C;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-priority:30;
+	mso-style-link:"Intense Quote";
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#C83C3C;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-priority:9;
+	mso-style-link:"Heading 4";
+	font-family:"Calibri Light",sans-serif;
+	color:#C83C3C;
+	font-style:italic;}
+span.EmailStyle28
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]--></head><body lang=EN-AU link="#0563C1" vlink="#954F72"><div class=WordSection1><h3><span lang=EN-US>Hi %%FullName%%,<o:p></o:p></span></h3><p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span lang=EN-US>%%ReferredFullName%% asked us to share a solution with you which can put an end to the team's frustration with outdated software and manual processes. <o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>&nbsp;<o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>Click below if you would like to multiply your team&#8217;s output with a customised software solution. We will help you build it right - the first time.<o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>&nbsp;<o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US><a href="https://www.ssw.com.au/ssw/Consulting/Are-You-Stuck.aspx#Business">Find out more.</a><o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>&nbsp;<o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>We hope to hear from you soon.<o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>&nbsp;<o:p></o:p></span></p><p class=MsoNormal><span lang=EN-US>Kind regards,<o:p></o:p></span></p><p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span lang=EN-US style='font-size:16.0pt;color:#CC4141;mso-fareast-language:EN-AU'><a href="https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Uly.aspx"><span style='color:#CC4141;text-decoration:none'>Ulysses Maclaren</span></a></span><span style='mso-fareast-language:EN-AU'> <br></span><span lang=EN-US style='font-size:10.0pt;color:#666666;mso-fareast-language:EN-AU'><a href="https://www.ssw.com.au/"><b><span style='color:#CC4141'>SSW</span></b></a> General Manager </span><span lang=EN-US style='font-size:10.0pt;color:#CCCCCC;mso-fareast-language:EN-AU'>|</span><span lang=EN-US style='font-size:10.0pt;color:#666666;mso-fareast-language:EN-AU'> Sydney, Australia </span><span lang=EN-US style='font-size:10.0pt;color:#CCCCCC;mso-fareast-language:EN-AU'>|</span><span lang=EN-US style='font-size:10.0pt;color:#666666;mso-fareast-language:EN-AU'> Phone: +61 2 9953 3000 </span><span lang=EN-US style='font-size:10.0pt;color:#CCCCCC;mso-fareast-language:EN-AU'>|</span><span lang=EN-US style='font-size:10.0pt;color:#666666;mso-fareast-language:EN-AU'> Mobile: +61 419 418 232 <o:p></o:p></span></p><table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;border-collapse:collapse'><tr><td style='border:none;border-top:solid #555555 1.0pt;background:#666666;padding:3.0pt 5.0pt 7.0pt 5.0pt'><p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span lang=EN-US style='font-size:10.0pt;font-family:"Calibri Light",sans-serif;color:white;mso-fareast-language:EN-AU'><a href="https://www.ssw.com.au"><span style='font-size:12.0pt;color:#EA5F5F;text-decoration:none'>&raquo;</span><span style='color:white;text-decoration:none'> </span><span style='font-family:"Calibri",sans-serif;color:white'>www.ssw.com.au</span><span style='font-family:"Calibri",sans-serif;color:white;text-decoration:none'> | Enterprise Software Development</span><span style='color:white;text-decoration:none'> </span></a><br><a href="https://www.ssw.com.au/ssw/Consulting/Bots.aspx"><span style='font-size:12.0pt;color:#EA5F5F;text-decoration:none'>&raquo;</span><span style='color:white;text-decoration:none'> </span><span style='font-family:"Calibri",sans-serif;color:white'>SSW Bots</span><span style='font-family:"Calibri",sans-serif;color:white;text-decoration:none'> | We build Siri for businesses</span><span style='color:white;text-decoration:none'> </span></a><o:p></o:p></span></p></td></tr></table><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p></div></body></html>

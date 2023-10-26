@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<HTML><BASE HREF="http://kb.swsoft.com/">
+<head>
+<title>SWsoft Knowledgebase</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Keywords" content ="server automation, VPS, virtualization, virtual machines, resource management, control panel, Windows control panel, Linux control panel, hosting software, server consolidation, server migration, Web servers, hosting service providers, HSP, hosting plan, datacenter, enterprise, Virtuozzo, Plesk, Plesk Expand, PEM, HSPcomplete, Confix, Web hosting, Windows hosting, Linux hosting, shared hosting, dedicated hosting, hosting automation, application services, ASP, managed hosting, os virtualization, reseller billing, , business life-cycle hosting automation solution, account provisioning, hosting billing system, hosting management solution" />
+<meta name="Description" content="SWsoft is an advanced server technology company focused on the development of a complete line of control panels, Virtual Private Server and hosting automation software including its patent-pending Virtuozzo technology. The company combines the solid performing Plesk and Confixx Professional control panels software with the HSPcomplete and Plesk Enterprise Manager (PEM) end-to-end solutions and services for hosting service providers such as internet data centers, application service providers, managed hosting providers and web hosters." />
+
+<meta name="resource-type" content="document" />
+<meta name="revisit-after" content="3 Days" />
+<meta name="classificaton" content="Provider Software" />
+<meta name="robots" content="INDEX, FOLLOW" />
+<meta name="distribution" content="Global" />
+<meta name="rating" content="Safe For Kids" />
+<meta name="author" content="SWsoft Inc" />
+<meta http-equiv="reply-to" content="web@swsoft.com" />
+
+<script language=javascript>
+var dmReady = false;
+function trim(string){
+  if (typeof(string) != 'string') return '';
+  while (string.charAt(0) == ' ') string  = string.substring(1);
+  while (string.charAt(string.length - 1) == ' ') string  = string.substring(-1);
+  return string;
+}
+function clearSearch(input){
+  if (input.value == "Search") input.value="";
+}
+var cls = '';
+function bg_over (sec) {
+  var el = getLayer ('pic'+sec);
+  if (el) {
+    if (el.className != 'topMenuHighlighted') {
+      cls = el.className;
+    }
+    el.className = 'topMenuHighlighted';
+  }
+}
+function bg_out (sec) {
+  var el = getLayer ('pic'+sec);
+  if (el) {
+    el.className = cls;
+  }
+}
+</script>
+
+<!--<script language=javascript src="http://www.swsoft.com/r/jscripts/browser.js"></script>
+<script language=javascript src="http://www.swsoft.com/r/jscripts/dmenu.js"></script>
+<script language=javascript src="http://www.swsoft.com/r/jscripts/util.js"></script>
+-->
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/css/TreeMenu.css" rel="stylesheet" type="text/css" />
+<link href="/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/css/unas.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 6]>
+<link href="http://www.swsoft.com/r/styles/ie5.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="shortcut icon" href="http://www.swsoft.com/favicon.ico" />
+<!--<script src="/TreeMenu.js" language="JavaScript" type="text/javascript"></script>
+--><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+//-->
+</script>
+</head>
+
+<body class="body">
+
+<table width="100%" height="500" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td id="leftLayout">
+        &nbsp;</td>
+    <td id="pageContainer" align="left">
+      <!--============SEARCHBOX========================================================-->
+<!--============//SEARCHBOX=====================================================-->
+
+      <div class="sectionHeading">Plesk&nbsp;<b>/</b>&nbsp;Plesk for Windows&nbsp;<b>/</b>&nbsp;Plesk Control 
+          Panel<br />
+</div>
+
+<div class="articleQuestion">When I click on `Web Directories` icon at domain 
+    management page I get this error:
+<table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #69c;" width=100%>
+  <tr>
+    <td style="background-color:#e5eaed;padding:5px 5px 5px 5px;">
+	    WebServerManager::getWebDirs() failed: websrvmng failed: Site domain.com doesn't 
+        exist<br>
+        ---------------------- Debug Info -------------------------------<br>
+        0: C:\Program Files\SWsoft\Plesk\admin\htdocs\domains\webdirs\webdirs.php:48 
+        psaerror(string &quot;WebServerManager::getWebDirs() failed: websrvmng failed: Site 
+        domain.com doesn't exist&quot;)</td>
+</tr>
+</table>
+    Is there any way to fix it.</div>
+
+
+
+<div class="articleApplies">Product versions this article applies to:
+<ul><li>Plesk 7.5 for Windows</li>
+</ul>
+
+<table border="0" cellpadding="0" cellspacing="0" width=100%>
+<tr>
+<td style="color: #666666; border:1px solid #e0ece6;padding:5px 5px 5px 5px;">
+
+<span class="lastUpdated">
+    The latest update: Feb,15 2006<br>Access:&nbsp;public</span>
+
+</td>
+
+<td width=50>
+    &nbsp;
+</td>
+
+<td width=100  valign=center align=center style="color: #666666; border:1px solid #e0ece6;padding:5px 5px 5px 5px;font-size:10px;">
+    Article ID #1072<div></div>
+</td>
+
+
+</tr>
+</table>
+</div>
+
+<div class="articleAnswer"><p>Such error means that domain.com is absent or not 
+    configured in IIS. It's necessary to repair domain configuration within IIS.</p><p><table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #69c;" width=100%>
+  <tr>
+    <td style="background-color:#e5eaed;padding:5px 5px 5px 5px;">
+	    &quot;%plesk_bin%\websrvmng.exe&quot; --remove-vhost --vhost-name=domain.com<br />
+        &quot;%plesk_bin%\websrvmng.exe&quot; --reconfigure-vhost --vhost-name=domain.com</td>
+</tr>
+</table></p></div>
+
+    </td>
+  </tr>
+</table>
+        
+</body>
+</html>

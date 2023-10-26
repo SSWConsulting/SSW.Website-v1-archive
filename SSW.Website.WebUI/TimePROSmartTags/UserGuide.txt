@@ -1,0 +1,5 @@
+	<a href="/SSW/Download"><img src="/ssw/images/Download.gif" border="0" align="absmiddle">Download</a> Trial Version  
+
+	<p>
+		<a href="/SSW/Products/ProdCategory.aspx?CategoryID=SQLSW"><img src="/ssw/images/Buy.gif" border="0" align="absmiddle">Purchase</a> Full Version
+	</p>

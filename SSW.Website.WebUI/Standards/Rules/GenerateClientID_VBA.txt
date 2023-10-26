@@ -1,0 +1,49 @@
+Option Compare Database   
+Option Explicit           
+
+' ------------------------------------------------------------------------------
+Private Sub Form_BeforeUpdate(Cancel As Integer)
+' ------------------------------------------------------------------------------
+
+Dim strTemp As String
+If IsNull(me.ctlClientID.Value) Then
+    Do
+        strTemp = GenerateClientID(6)
+    Loop Until IsExistingClientID(gstrBackEndCnn, strTemp) = False
+    Me.ctlClientID.Value = strTemp
+End If
+
+End Sub
+
+'--------------------------------------------------------------------------
+Public Function GenerateClientID(ByVal pintIDLength As Integer) As String
+'--------------------------------------------------------------------------
+'Example: strTemp = GenerateClientID(6)
+
+Dim intRandomValue As Integer
+Dim strCode As String
+Dim intCount As Integer
+
+Do
+    Randomize
+    
+    ' get a random value between 49 and 90
+    intRandomValue = Int(Rnd() * 43) + 49
+    
+    Select Case intRandomValue
+        'If between 1 and 9 (decimals)
+        Case 49 To 57, 65 To 90:
+            '49-57 = 1 to 9 (we dont want zeros)
+            '65 to 90 = A-Z (no lower case)
+            
+            strCode = strCode & Chr(intRandomValue)
+            intCount = intCount + 1
+            
+    End Select
+    
+Loop Until intCount >= pintIDLength
+
+
+GenerateClientID(6) = strCode
+ 
+End Function

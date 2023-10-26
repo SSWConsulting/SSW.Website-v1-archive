@@ -1,0 +1,1 @@
+These pages are not suing the SSW template as they are included in the Team Calendar setup package

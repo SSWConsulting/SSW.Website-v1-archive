@@ -1,0 +1,1 @@
+<%  Response.Redirect("~/StandardsInternal/WhereToGoToday.aspx")%>

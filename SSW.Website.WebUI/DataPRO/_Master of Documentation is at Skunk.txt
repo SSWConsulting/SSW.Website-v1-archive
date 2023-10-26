@@ -1,0 +1,4 @@
+The master of the application is on \\emu\Sergei D.
+The master of the documentation is on \\skunk\I\InetPub\wwwroot\SSW\.
+
+Before creating a new version, copy the documentation master to the \\emu\Sergei D and create wise installation.

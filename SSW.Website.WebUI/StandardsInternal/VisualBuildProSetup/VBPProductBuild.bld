@@ -1,0 +1,130 @@
+<?xml version='1.0'?>
+<project version='5'>
+	<step action='Group' type='0'>
+		<name>Project steps</name>
+	</step>
+	<step action='VisBuildPro Project' type='0'>
+		<OpenFailGUI type='11'>-1</OpenFailGUI>
+		<Options>"NunitFilePath=%NunitFilePath%" "CodeAuditorJob=%CodeAuditorJob%" "CodeAuditorPath=%CodeAuditorPath%" "CodeAuditorReportPath=%CodeAuditorReportPath%" "buildMode=%buildMode%" "slnConfig=%slnConfig%" "PROJDIR=%PROJDIR%" "PROJFILE=%PROJFILE%" "FTPexe=%FTPexe%" "WinProject=%WinProject%" "SSWProduct=%SSWProduct%" "NewWise=%NewWise%" "WebService=%WebService%" "WebServiceDir=%WebServiceDir%" "WebServerPath=%WebServerPath%"</Options>
+		<ParamValues array='0'>%VSSPath%</ParamValues>
+		<ParamValues>%AssemblyInfoPath%</ParamValues>
+		<ParamValues>%WSI_File%</ParamValues>
+		<ParamValues>%VSSProject%</ParamValues>
+		<ParamValues>%VSSProjectName%</ParamValues>
+		<ParamValues>%PROD_ID%</ParamValues>
+		<ParamValues>%TO_EMAIL%</ParamValues>
+		<Parameters array='0'>VSSPath</Parameters>
+		<Parameters>AssemblyInfoPath</Parameters>
+		<Parameters>WSI_File</Parameters>
+		<Parameters>VSSProject</Parameters>
+		<Parameters>VSSProjectName</Parameters>
+		<Parameters>PROD_ID</Parameters>
+		<Parameters>TO_EMAIL</Parameters>
+		<ProjectName>\\frog\ssw\StandardsInternal\VisualBuildProSetup\VBPMasterBuild.bld</ProjectName>
+		<SilentGUI type='11'>-1</SilentGUI>
+		<Wait type='11'>0</Wait>
+		<indent type='3'>1</indent>
+		<name>Call VBPMasterBuild.bld</name>
+	</step>
+	<macro>
+		<name>AssemblyInfoPath</name>
+		<description><![CDATA[Enter the relative path & filename of your AssemblyInfo file including extention.]]></description>
+		<value>..\AssemblyInfo.vb</value>
+	</macro>
+	<macro>
+		<name>buildMode</name>
+		<description>If buildMode Macro = "Report" the build script will run only the necessary steps to run any Auditors, Otherwise leave this macro as any other value.</description>
+		<value>Not_Report</value>
+	</macro>
+	<macro>
+		<name>CodeAuditorJob</name>
+		<description>The Job Name that has been added to the master Code Auditor on \\Bee</description>
+		<value>SSW VS.NET WinForm Projects</value>
+	</macro>
+	<macro>
+		<name>CodeAuditorPath</name>
+		<description>The Code Auditor Path name on remote server</description>
+		<value>\\frog\c$\Program Files\SSW Code Auditor - General Rules</value>
+	</macro>
+	<macro>
+		<name>CodeAuditorReportPath</name>
+		<description>The path name for the xml that will be generated for Code Auditor Reports</description>
+		<value>\\frog\ssw\zsValidate\CodeAuditorReportsGeneral</value>
+	</macro>
+	<macro>
+		<name>FTPexe</name>
+		<description>This macro should be set to 'true' if there is an exe file that needs to be FTPed. The 'FTP exe file' step will be skipped if this is set to 'false'.</description>
+		<value>false</value>
+	</macro>
+	<macro>
+		<name>NewWise</name>
+		<description>"true" if Wise 6.0 is installed on your machine. The wise compiler executer needs to be run from a different location.</description>
+		<value>false</value>
+	</macro>
+	<macro>
+		<name>NunitFilePath</name>
+		<description>Relative path to the .nunit file in your project. This is relative to the current VPBAutoBuild file.</description>
+		<value>..\bin\SSWCodeAuditor.dll.nunit</value>
+	</macro>
+	<macro>
+		<name>PROD_ID</name>
+		<description>The DownloadID in the Download Table found in SSWData2005 on DRAGON</description>
+		<value>CA</value>
+	</macro>
+	<macro>
+		<name>slnConfig</name>
+		<description>The configuration of the Solution to build (i.e. Debug, Release etc.)</description>
+		<value>Release</value>
+	</macro>
+	<macro>
+		<name>SSWProduct</name>
+		<description>Set this macro to "false" if it is a client project,</description>
+		<value>true</value>
+	</macro>
+	<macro>
+		<name>TO_EMAIL</name>
+		<description>E-mail address to send notification of success and failure to</description>
+		<value>AdelHelal@ssw.com.au</value>
+	</macro>
+	<macro>
+		<name>VSSPath</name>
+		<description>Path name in Source Safe Database</description>
+		<value>$/ssw/SSWCodeAuditor</value>
+	</macro>
+	<macro>
+		<name>VSSProject</name>
+		<description>The filename of your solution (without extention)</description>
+		<value>SSWCodeAuditor</value>
+	</macro>
+	<macro>
+		<name>VSSProjectName</name>
+		<description>The Project Name that will be displayed during the installation wizard and the start menu.</description>
+		<value>SSW Code Auditor</value>
+	</macro>
+	<macro>
+		<name>WebServerPath</name>
+		<description><![CDATA[Path for the Web Server (a versioned subfolder will be created in this folder)
+]]></description>
+		<value>\\tuna\c\Inetpub\wwwroot\SSWTimePRONET</value>
+	</macro>
+	<macro>
+		<name>WebService</name>
+		<description>set to "true" if there is a WebService Project in your solution.</description>
+		<value>false</value>
+	</macro>
+	<macro>
+		<name>WebServiceDir</name>
+		<description>The Directory of the Business Web Service Layer in your Solution (relative to this .bld file)</description>
+		<value>..\BusinessWebService</value>
+	</macro>
+	<macro>
+		<name>WinProject</name>
+		<description>Set this macro to "false" if it is a web project.</description>
+		<value>true</value>
+	</macro>
+	<macro>
+		<name>WSI_File</name>
+		<description>The wise file name (which will also be the msi and ini file name)</description>
+		<value>SSWCodeAuditor</value>
+	</macro>
+</project>

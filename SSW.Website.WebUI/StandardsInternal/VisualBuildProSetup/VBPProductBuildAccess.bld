@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<project version='5'>
+	<step action='Group' type='0'>
+		<name>Project steps</name>
+	</step>
+	<step action='VisBuildPro Project' type='0'>
+		<OpenFailGUI type='11'>-1</OpenFailGUI>
+		<Options>"WebDownloadFolder=%WebDownloadFolder%" "buildMode=%buildMode%" "PROJDIR=%PROJDIR%" "PROJFILE=%PROJFILE%" "FTPexe=%FTPexe%" "PROD_VERSION=%PROD_VERSION%"</Options>
+		<ParamValues array='0'>%WSI_File%</ParamValues>
+		<ParamValues>%DBNAME%</ParamValues>
+		<ParamValues>%VSSProjectName%</ParamValues>
+		<ParamValues>%BeeFolder%</ParamValues>
+		<ParamValues>%SealFolder%</ParamValues>
+		<ParamValues>%PROD_ID%</ParamValues>
+		<ParamValues>%TO_EMAIL%</ParamValues>
+		<Parameters array='0'>WSI_File</Parameters>
+		<Parameters>DBNAME</Parameters>
+		<Parameters>VSSProjectName</Parameters>
+		<Parameters>BeeFolder</Parameters>
+		<Parameters>SealFolder</Parameters>
+		<Parameters>PROD_ID</Parameters>
+		<Parameters>TO_EMAIL</Parameters>
+		<ProjectName>\\frog\ssw\StandardsInternal\VisualBuildProSetup\VBPMasterBuildAccess.bld</ProjectName>
+		<SilentGUI type='11'>-1</SilentGUI>
+		<Wait type='11'>0</Wait>
+		<indent type='3'>1</indent>
+		<name>Call VBPMasterBuildAccess.bld</name>
+	</step>
+	<macro>
+		<name>BeeFolder</name>
+		<description>The folder on \\bee where the msi will be moved.</description>
+		<value>\\frog\ssw\download</value>
+	</macro>
+	<macro>
+		<name>buildMode</name>
+		<description>If buildMode Macro = "Report" the build script will run only the necessary steps to run any Auditors, Otherwise leave this macro as any other value.</description>
+		<value>Not_Report</value>
+	</macro>
+	<macro>
+		<name>DBNAME</name>
+		<description>The database that the version number is stored into</description>
+		<value>SSWUpsizingPRO2000.mdb</value>
+	</macro>
+	<macro>
+		<name>FTPexe</name>
+		<description>This macro should be set to 'true' if there is an exe file that needs to be FTPed. The 'FTP exe file' step will be skipped if this is set to 'false'.</description>
+		<value>false</value>
+	</macro>
+	<macro>
+		<name>PROD_ID</name>
+		<description>The DownloadID in the Download Table found in SSWData2000 on TUNA</description>
+		<value>UP</value>
+	</macro>
+	<macro>
+		<name>PROD_VERSION</name>
+		<description>The current Product Version.</description>
+		<value>9.26</value>
+	</macro>
+	<macro>
+		<name>SealFolder</name>
+		<description>The remote file to which the msi and ini files will be synced</description>
+		<value>/Inetpub/wwwroot/SSW/download</value>
+	</macro>
+	<macro>
+		<name>TO_EMAIL</name>
+		<description>E-mail address to send notification of success and failure to</description>
+		<value>AdelHelal@ssw.com.au</value>
+	</macro>
+	<macro>
+		<name>VSSProjectName</name>
+		<description>The Project Name that will be displayed during the installation wizard and the start menu.</description>
+		<value>SSW Upsizing PRO!</value>
+	</macro>
+	<macro>
+		<name>WebDownloadFolder</name>
+		<description>The URL that the project's msi/exe will be found for release.</description>
+		<value>http://www.ssw.com.au/ssw/download</value>
+	</macro>
+	<macro>
+		<name>WSI_File</name>
+		<description>The wise file name (which will also be the msi and ini file name)</description>
+		<value>SSWUpsizingPRO2000</value>
+	</macro>
+</project>

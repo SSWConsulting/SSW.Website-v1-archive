@@ -1,0 +1,278 @@
+﻿<%@ Master Language="c#" CodeBehind="PigeonTest.Master.cs" Inherits="SSW.Website.WebUI.Masters.PigeonTest" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+<%@ Register Src="~/Components/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+<%@ Register Src="~/Components/Footer_New.ascx" TagName="Footer" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/LoginStatus.ascx" TagName="LoginStatus" TagPrefix="ssw" %>
+<%@ Register TagPrefix="ssw" TagName="ContactForm" Src="/ssw/components/contactform.ascx" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="MasterHeader" runat="server">
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="SSW Consulting team has delivered best of breed Microsoft solutions for more than 1000 clients in 15 countries. SSW Consulting has over 30 years of experience developing awesome Microsoft solutions that today build on top of Angular, React, Azure, TFS, SharePoint, Office 365, .NET, WebAPI, Dynamics 365 and SQL Server.">
+    <meta name="author" content="SSW">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    
+    <link rel="icon" type="image/x-icon" href="/ssw/include/pigeon/img/favicon.ico">
+
+    <meta name="msapplication-TileColor" content="#cc4141">
+    <meta name="msapplication-TileImage" content="/ssw/include/pigeon/img/mstile-144x144.png">    
+    <%: Styles.Render(BundlePaths_Stylesheets.CONSULTING_TEST) %>
+    <%: Styles.RenderFormat(BundleFormat.PRINT, BundlePaths_Stylesheets.RAVEN_PRINT) %>
+
+    <% if (String.IsNullOrEmpty(Request.QueryString["hidejquery"]))
+        { %>
+    <%: Scripts.Render(BundlePaths_Javascript.JQUERY_TEST) %>
+    <% } %>
+
+    <% if (String.IsNullOrEmpty(Request.QueryString["hideservicedetectorjs"]))
+        { %>
+    <%: Scripts.Render(BundlePaths_Javascript.SERVICEDETECTOR_TEST)%>  
+    <% } %>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <asp:ContentPlaceHolder ID="HeaderScripts" runat="server">
+        <meta name="description" content="SSW - Australia's Leading Web, Scrum, .NET, SharePoint, TFS and Azure Consultants & Trainers. Specialising in Web, Intranet and BI development across Sydney, Melbourne and Brisbane." />
+    </asp:ContentPlaceHolder>
+</head>
+<body class="Frame">
+    <!-- Loader page -->
+    <%--	<div id="pageloader">   
+	    <div class="loader-item text-center">
+	        <div class="loader">Loading...</div>
+	    </div>
+	</div>--%>
+    <!-- End loader page -->
+
+    <form id="form1" runat="server">
+        <div id="sb-site" class="primaryContainer">
+            <div class="page-wrap">
+                <!-- Menu ================================================== -->
+                <div id="livestream"></div>
+                <!-- logo and contact -->
+
+
+                <div id="MenuUpper">
+                    <div class="container">
+                        <a href="/ssw/" id="MenuLogo">
+                            <img id="SSWLogo" src="/SSW/images/Raven/SSWLogo.svg " alt="SSW - Enterprise Software Development" /></a>
+                        <a class="ignore" id="facebook-menu" title="SSW on Facebook" href="https://www.facebook.com/SSW.page" target="_blank">Facebook</a>
+                        <a class="ignore" id="twitter-menu" title="SSW on Twitter" href="https://twitter.com/SSW_TV" target="_blank">Twitter</a>
+
+                        <script>
+                            var currentTime = new Date();
+                            var curDate = currentTime.getDate();
+                            var curMonth = currentTime.getMonth(); //range 0-11
+
+                            if ((curMonth === 11) || ((curMonth === 0) && (curDate < 8))) {
+                                $('#SSWLogo').attr('src', '/SSW/images/Raven/SSWLogo-xmas.png');
+                            }
+                        </script>
+                        <div id="UserPanel">
+                            <ssw:LoginStatus ID="loginStatus" runat="server" />
+                            <span class="sales-inquiries"><a class="sales-icon" href="javascript:sendEmail('696e666f407373772e636f6d2e6175')" onmouseover="javascript:displayStatus('696e666f407373772e636f6d2e6175'); return true;" onmouseout="javascript:clearStatus(); return true;" name="Inquiry">
+                                <i class="fa fa-phone" style="font-size: 1.2rem; color: #9E9E9E; line-height: 2rem; vertical-align: middle; margin-right: .25rem;"></i></a><%-- sales and inquiries:--%> <a href="tel:+61299533000">+61 2 9953 3000</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- // logo and contact -->
+                <!-- main navigation -->
+                <% if (String.IsNullOrEmpty(Request.QueryString["hidemenu"])) { %>
+                <div id="MenuLower">
+                    <div class="container">
+                        <div id="MegaMenu">
+                            <div class="menu-content">
+                                <div class="visible-xs visible-sm"><a class="sb-toggle-left"><i class="fa fa-reorder"></i></a></div>
+                                <div class="menu-drop hidden-xs hidden-sm">
+                                    <uc1:Menu runat="server" />
+                                </div>
+                            </div>
+                            <div class="menu-search search-input">
+                                <input type="text" class="search-box" id="txtSearch" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //main navigation -->
+
+                <!-- breadcrumbs -->
+                <div id="Header">
+                    <div class="CategoryColor container">
+                        <div id="CategoryColor" runat="server"></div>
+                        <div class="carousel slide hidden-xs">
+                            <asp:ContentPlaceHolder ID="Slider" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="category-image"></div>
+                    </div>
+
+                    <div class="HeaderContent container">
+                        <div class="breadcrumb">
+                            <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="SSWXmlSiteMapProvider">
+                            </asp:SiteMapPath>
+                        </div>
+                        <asp:ContentPlaceHolder ID="title" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="facebook" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <% } %>
+                <!-- // end breadcrumbs -->
+                <!-- Content ================================================== -->
+                <% if (String.IsNullOrEmpty(Request.QueryString["hidecontent"])) { %>
+                <asp:ContentPlaceHolder ID="MainBody" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="Hero" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="stickynavigation" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="benefits" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="testimonials" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="aboutSSW" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="clients" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="technologies" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="solutions" runat="server">
+                </asp:ContentPlaceHolder>
+                <% } %>
+
+                <!-- Footer ================================================== -->
+                <ssw:Footer runat="server" />
+
+            </div>
+
+        </div>
+
+        <div class="sb-slidebar sb-left sb-width-custom" data-sb-width="84%" role="navigation">
+            <div class="menu-drop navbar-collapse">
+                <uc1:Menu runat="server" RenderMobile="True" MaxLevels="1" />
+                <ul class="nav navbar-nav" style="display: none;">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ssw/Consulting/Default.aspx">All Services</a></li>
+                            <li><a href="/ssw/Consulting/Consulting.aspx">Development Teams</a></li>
+                            <li><a href="/ssw/Consulting/WebsiteDesignAndUserExperience.aspx">Creative Teams</a></li>
+                            <li><a href="/ssw/Consulting/ContentManagement.aspx">Platform Development</a></li>
+                            <li><a href="/ssw/Hosting/Default.aspx">Hosting and Infrastructure</a></li>
+                            <li><a href="/ssw/Consulting/Consulting.aspx">Book Now</a></li>
+                            <li><a href="/ssw/Advertising/Default.aspx">Advertising</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ssw/Products/ProdSummaryList.aspx">All Products</a></li>
+                            <li><a href="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=1SQL">SQL Server</a></li>
+                            <li><a href="/ssw/Products/Default.aspx?filter=access-prod">Access</a></li>
+                            <li><a href="/ssw/Products/Default.aspx?filter=visualstudionet-prod">Visual Studio.NET</a></li>
+                            <li><a href="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=3WEB">Web</a></li>
+                            <li><a href="/ssw/Products/ProdCategory.aspx?CategoryID=8SUPP">Support</a></li>
+                            <li><a href="https://help.ssw.com.au">Knowledge Base</a></li>
+                            <li><a href="/ssw/Standards/Support/BugReportOrEnhancement.aspx">Report a Bug</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ssw/Events/">All Events</a></li>
+                            <li><a href="/ssw/Events/Venues/Hire-Conference-Room.aspx">Conference Room for Hire</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Group <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ssw/NETUG/Sydney.aspx">Sydney .Net UG</a></li>
+                            <li><a href="/ssw/NETUG/Canberra.aspx">Canberra .Net UG</a></li>
+                            <li><a href="/ssw/NETUG/Default.aspx">All User Group Resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rules <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://rules.ssw.com.au/Pages/default.aspx">New SSW Rules</a></li>
+                            <li><a href="/ssw/Standards/Default.aspx">SSW Rules</a></li>
+                            <li><a href="/ssw/Standards/BetterSoftwareSuggestions/">Suggestions for Better Software</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/ssw/Company/AboutUs.aspx">About Us</a></li>
+                            <li><a href="https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx">Our People</a></li>
+                            <li><a href="/ssw/Company/Clients.aspx">Our Clients</a></li>
+                            <li><a href="/ssw/Company/ContactUs.aspx">Contact Us</a></li>
+                            <li><a href="/ssw/Company/Offices.aspx">Our Offices</a></li>
+                            <li><a href="/ssw/Employment/Employment.aspx">Employment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://tv.ssw.com/" class="ignore">SSW TV</a></li>
+                </ul>
+            </div>
+        </div>
+
+         <% if (String.IsNullOrEmpty(Request.QueryString["hidegtmiframe"]))
+             { %>
+                <noscript>
+                    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+                        height="0" width="0" style="display: none; visibility: hidden"></iframe>
+                </noscript>
+        <% } %>
+        <asp:PlaceHolder runat="server">  
+            <% if (String.IsNullOrEmpty(Request.QueryString["hideeventsjs"]))
+                { %>
+                <%: Scripts.Render(BundlePaths_Javascript.EVENTS_TEST)%>  
+            <%} %>
+
+            <% if (String.IsNullOrEmpty(Request.QueryString["hidelivestreamjs"]))
+                { %>
+            <%: Scripts.Render(BundlePaths_Javascript.LIVESTREAM_TEST)%>    
+            <% } %>
+
+            <% if (String.IsNullOrEmpty(Request.QueryString["hideconsultingjquery"]))
+                { %>
+            <%: Scripts.Render(BundlePaths_Javascript.CONSULTING_TEST)%>
+            <% } %>
+
+            <% if (String.IsNullOrEmpty(Request.QueryString["hidepigeonjs"]))
+                { %>
+            <%: Scripts.Render(BundlePaths_Javascript.PIGEON_TEST)%> 
+            <% } %>
+
+
+            <%: Scripts.Render(BundlePaths_Javascript.MOMENTJS)%>              
+        </asp:PlaceHolder>
+        <script>
+            $.slidebars();
+        </script>
+        <asp:ContentPlaceHolder ID="FooterScripts" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <ssw:ContactForm runat="server"></ssw:ContactForm>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

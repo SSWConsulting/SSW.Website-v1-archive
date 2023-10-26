@@ -1,0 +1,213 @@
+<%@ Master Language="c#" CodeBehind="Pigeon.Master.cs" Inherits="SSW.Website.WebUI.Masters.Pigeon" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+<%@ Register Src="~/Components/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+<%@ Register Src="~/Components/Footer_New.ascx" TagName="Footer" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/LoginStatus.ascx" TagName="LoginStatus" TagPrefix="ssw" %>
+<!DOCTYPE html>
+<html lang="en">
+<head id="MasterHeader" runat="server">
+    <%--<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>--%>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="SSW Consulting has over 30 years of Microsoft software and web development experience. We build on top of Angular, React, .NET, Azure, Azure DevOps, SharePoint, Office 365, Dynamics 365 CRM and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China.">
+    <meta name="author" content="SSW">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="apple-touch-icon" sizes="57x57" href="/ssw/include/pigeon/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/ssw/include/pigeon/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/ssw/include/pigeon/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/ssw/include/pigeon/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/ssw/include/pigeon/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ssw/include/pigeon/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ssw/include/pigeon/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ssw/include/pigeon/img/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ssw/include/pigeon/img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/ssw/include/pigeon/img/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/ssw/include/pigeon/img/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/ssw/include/pigeon/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/ssw/include/pigeon/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/ssw/include/pigeon/img/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#cc4141">
+    <meta name="msapplication-TileImage" content="/ssw/include/pigeon/img/mstile-144x144.png">
+    <title>SSW Consulting - .NET, Web, Mobile, CRM, SharePoint, Azure, Power BI, Angular, React, Office 365 and Dynamics</title>
+    <%: Styles.Render(BundlePaths_Stylesheets.RAVEN) %>
+    <%: Styles.RenderFormat(BundleFormat.PRINT, BundlePaths_Stylesheets.RAVEN_PRINT) %>
+
+    <%: Scripts.Render(BundlePaths_Javascript.JQUERY) %>
+   
+
+    <%--    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/solarized_dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>--%>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="HeaderScripts" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google AdSense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6805008378183755",
+            enable_page_level_ads: true
+        });
+    </script>
+    <!-- END Google AdSense -->
+
+    <!-- Universal Event Tracking (UET) tag - Microsoft Ads: 28109857 -->
+        <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"28109857"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+    <!-- END Universal Event Tracking (UET) tag -->
+
+    <!-- Vimeo Tracking Code -->
+    <script type="text/javascript" defer="defer" src="https://extend.vimeocdn.com/ga/2032765.js"></script>
+    <!-- END Vimeo Tracking Code -->
+
+    <!-- Google Account verification -->
+    <meta name="google-site-verification" content="srl4jtFST_IrviojLVMYLdbjqGblS27CgSfHmsebqBQ" />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4589cd27-2d80-457c-a420-621182f9c776"> </script>
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <style>
+        body {
+            opacity: 0;
+        }
+        #MenuWrapper {
+            display: none;
+        }
+        #megamenu{
+            min-height: 36px;
+            background-color: #414141;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/fa582ffa80.js" crossorigin="anonymous"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '395200137918365');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=395200137918365&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+    
+<body class="Frame">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NXDBVV" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <form id="form1" runat="server">
+        <div id="sb-site" class="primaryContainer">
+            <div class="page-wrap">
+                <!-- Menu ================================================== -->
+                <div id="livestream"></div>
+                <div id="MenuUpper">
+                    <div class="container">
+                        <a href="/ssw/" id="MenuLogo">
+                            <img id="SSWLogo" src="/SSW/images/Raven/SSWLogo.svg " alt="SSW - Enterprise Software Development" />
+                        </a>
+                        <a class="ignore" id="wechat-menu" title="SSW on WeChat" 
+                            href=" https://mp.weixin.qq.com/s/jL4zEmzWM5VSTRu9DUW6-Q" 
+                            target="_blank"
+                            onMouseOut="hideORCode()" onmouseover="showORCode()"><i class="fa fa-wechat"></i>
+                            <span id="ORCode" style="display:none;">
+                                <img src="/ssw/Images/QRcode.jpg" alt="SSW QR Code" width="100" title="SSW WeChat QR Code" height="100" />
+                            </span>
+                        </a>
+                        <a class="ignore" id="twitter-menu" title="SSW on Twitter" href="https://twitter.com/SSW_TV" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a class="ignore" id="instagram-menu" title="SSW on Instagram" href="https://www.instagram.com/ssw_tv" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a class="ignore" id="facebook-menu" title="SSW on Facebook" href="https://www.facebook.com/SSW.page" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="ignore" id="linkedin-menu" title="SSW on LinkedIn" href="https://www.linkedin.com/company/ssw/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a class="ignore" id="youtube-menu" title="SSW on YouTube" href="https://www.youtube.com/user/sswtechtalks/" target="_blank"><i class="fa fa-youtube"></i></a>
+
+                        <script>
+                            var currentTime = new Date();
+                            var curDate = currentTime.getDate();
+                            var curMonth = currentTime.getMonth(); //range 0-11
+
+                            if ((curMonth === 11) || ((curMonth === 0) && (curDate < 8))) {
+                                $('#SSWLogo').attr('src', '/SSW/images/Raven/SSWLogo-xmas.svg');
+                            }
+
+                            function showORCode(){ 
+                                document.getElementById("ORCode").style.display='block'; 
+                                } 
+                            function hideORCode(){ 
+                                document.getElementById("ORCode").style.display='none'; 
+                            } 
+                        </script>
+                      
+
+                        <div id="UserPanel">
+                            <ssw:LoginStatus ID="loginStatus" runat="server" />
+                            <span class="sales-inquiries"><a class="sales-icon" href="javascript:sendEmail('696e666f407373772e636f6d2e6175')" onmouseover="javascript:displayStatus('696e666f407373772e636f6d2e6175'); return true;" onmouseout="javascript:clearStatus(); return true;" name="Inquiry">
+                                <i class="fa fa-phone" style="font-size: 1.2rem; color: #9E9E9E; line-height: 2rem; vertical-align: middle; margin-right: .25rem;"></i></a><%-- sales and inquiries:--%> <a href="tel:+61299533000">+61 2 9953 3000</a></span>
+                        </div>
+                          
+                   <div class="logotagline hidden-xs">Enterprise Software Development</div>
+                    </div>
+                  
+                </div>
+
+                <div id="MenuLower">
+                    <div class="container">
+                        <div id="megamenu">
+                        </div>
+                    </div>
+               </div>
+
+                <!-- Content ================================================== -->
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <!-- Footer ================================================== -->
+            <ssw:Footer runat="server" />
+        </div>
+
+        <div id="mobilemegamenu"></div>
+
+        
+
+        <asp:PlaceHolder runat="server">
+            <%: Scripts.Render(BundlePaths_Javascript.PIGEON)%>
+            <%: Scripts.Render(BundlePaths_Javascript.MOMENTJS)%>
+        </asp:PlaceHolder>
+
+        <asp:ContentPlaceHolder ID="FooterScripts" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+     <%: Scripts.Render("~/Scripts/dist/menu.js") %>
+    <script>
+        $(document).ready(function () { $(".MenuWrapper").css("display", "block"); $("body").animate({ opacity: 1 }, 250, function () { }); });
+    </script>
+</body>
+</html>

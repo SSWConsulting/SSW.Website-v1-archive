@@ -1,0 +1,25 @@
+<%@ Master Language="C#" Inherits="WebUI.Admin.Masters.DefaultMaster" Codebehind="RavenSubpage.master.cs" %>
+<%@ Register TagPrefix="ssw" TagName="Header" Src="~/Components/Header.ascx" %>
+<%@ Register TagPrefix="ssw" TagName="Footer" Src="~/Components/Footer.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+	<title>SSW - Sydney's Leading .NET and SQL Consultants</title>
+	<link href="../Include/Screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../Include/Print.css" rel="stylesheet" type="text/css" media="print" />
+	<link href="../Images/icoSSW_v2.ico" rel="shortcut icon" />
+	
+</head>
+<body id="MasterBody" runat="server" >
+    
+	<form id="form" runat="server">
+		<ssw:Header ID="hC" runat="server" />
+		<div id="mainContainer">
+			<asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<ssw:Footer ID="fC" runat="server" />
+	</form>
+</body>
+</html>

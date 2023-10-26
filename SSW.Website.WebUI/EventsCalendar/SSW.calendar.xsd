@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HomeCalendar" targetNamespace="http://tempuri.org/Calendar.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/Calendar.xsd" xmlns:mstns="http://tempuri.org/Calendar.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CalendarEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Title" type="xs:string" minOccurs="1" />
+        <xs:element name="URL" type="xs:string" minOccurs="0" />
+        <xs:element name="Image" type="xs:string" minOccurs="0" />
+        <xs:element name="Description" type="xs:string" minOccurs="0" />
+        <xs:element name="LongDescription" type="xs:string" minOccurs="0" />
+        <xs:element name="StartDateTime" type="xs:dateTime" minOccurs="1" />
+        <xs:element name="EndDateTime" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="CategoryTag" type="xs:string" minOccurs="0" />
+        <xs:element type="SpeakerList" name="Speakers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="SpeakerList">
+    <xs:sequence>
+      <xs:element type="Speaker" name="Speaker" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Speaker">
+    <xs:attribute name="Name" use="required" />
+    <xs:attribute name="EmployeeCode" use="optional" />
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,741 @@
+--This script was created by SSW Upsizing PRO!
+--3/03/2003 11:44:48 AM
+--www.ssw.com.au
+
+CREATE DATABASE [add database name here]	
+GO
+
+CREATE TABLE [Test2]
+(
+	[TestField2] varchar  (50) NOT NULL ,
+	[TestField3] varchar  (6) NOT NULL ,
+	[Notes] text NULL 
+) ON [PRIMARY]
+GO
+
+
+
+
+ALTER TABLE [Test2]
+	ADD CONSTRAINT [FK_Test1Test2] FOREIGN KEY
+	(
+		[TestField2],
+		[TestField3]
+	) REFERENCES [dbo].[Test1]
+	(
+		[TestField1],
+		[TestField2]
+	)	 ON UPDATE CASCADE 
+
+GO
+
+print 'Table Test2 was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [ProductInvoiceAnalysisTest]
+(
+	[ProdID] varchar  (6) NULL ,
+	[CountOfInvoiceID] integer NULL ,
+	[SumOfInvoice] smallmoney NULL ,
+	[CountOfReceiptID] integer NULL ,
+	[SumOfReceipt] smallmoney NULL ,
+	[Diff] smallmoney NULL ,
+	[DateUpdated] datetime NOT NULL ,
+	[EmpUpdated] varchar  (150) NOT NULL ,
+	[Month] varchar  (7) NULL ,
+	[ProdTotal] smallmoney NULL ,
+	[DateCreated] datetime NOT NULL ,
+	[BiggestClientInvoice] varchar  (6) NULL ,
+	[BiggestClientReceipt] varchar  (6) NULL 
+) ON [PRIMARY]
+GO
+
+
+
+CREATE UNIQUE INDEX [s_GUID] ON [dbo].[ProductInvoiceAnalysisTest]
+(
+	[s_GUID]
+)
+GO
+
+
+print 'Table ProductInvoiceAnalysisTest was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Order Details]
+(
+	[OrderID] integer NOT NULL ,
+	[ProductID] integer NOT NULL ,
+	[UnitPrice] smallmoney NOT NULL ,
+	[Quantity] integer NOT NULL ,
+	[Discount] real NOT NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Order Details]
+	ADD CONSTRAINT [PK_Order Details] PRIMARY KEY NONCLUSTERED 
+	( 
+		[OrderID],
+		[ProductID]
+	)
+GO
+
+CREATE INDEX [ProductID] ON [dbo].[Order Details]
+(
+	[ProductID]
+)
+GO
+
+ALTER TABLE [Order Details]
+	ADD CONSTRAINT [FK_OrdersOrder Details] FOREIGN KEY
+	(
+		[OrderID]
+	) REFERENCES [dbo].[Ord"ers]
+	(
+		[OrderID]
+	)	 ON DELETE CASCADE 
+
+GO
+ALTER TABLE [Order Details]
+	ADD CONSTRAINT [FK_OrdersOrder Details1] FOREIGN KEY
+	(
+		[OrderID]
+	) REFERENCES [dbo].[Ord"ers]
+	(
+		[OrderID]
+	)	 ON DELETE CASCADE 
+
+GO
+ALTER TABLE [Order Details]
+	ADD CONSTRAINT [FK_OrdersOrder Details2] FOREIGN KEY
+	(
+		[OrderID]
+	) REFERENCES [dbo].[Ord"ers]
+	(
+		[OrderID]
+	)	 ON DELETE CASCADE 
+
+GO
+
+print 'Table Order Details was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Categories]
+(
+	[CategoryID] integer IDENTITY (1,1) NOT NULL ,
+	[CategoryName] varchar  (15) NOT NULL ,
+	[Description] text NULL ,
+	[Picture] image NULL 
+) ON [PRIMARY]
+GO
+
+
+
+
+
+print 'Table Categories was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Test7]
+(
+	[ID] integer IDENTITY (1,1) NOT NULL ,
+	[Count] varchar  (50) NULL ,
+	[Temp] varchar  (50) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Test7]
+	ADD CONSTRAINT [PK_Test7] PRIMARY KEY NONCLUSTERED 
+	( 
+		[ID]
+	)
+GO
+
+CREATE INDEX [ID] ON [dbo].[Test7]
+(
+	[ID]
+)
+GO
+
+
+print 'Table Test7 was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Customers_FieldName_withspaces]
+(
+	[CustomerID] varchar  (5) NOT NULL ,
+	[Company'Name] varchar  (40) NOT NULL ,
+	[Contact*Name] varchar  (30) NULL ,
+	[ContactTitle] varchar  (30) NULL ,
+	[Address] varchar  (60) NULL ,
+	[City] varchar  (15) NULL ,
+	[Region] varchar  (15) NULL ,
+	[PostalCode] varchar  (10) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Customers_FieldName_withspaces]
+	ADD CONSTRAINT [PK_Customers_FieldName_withspaces] PRIMARY KEY NONCLUSTERED 
+	( 
+		[CustomerID]
+	)
+GO
+
+CREATE INDEX [Customers_FieldName_withspaces_Region] ON [dbo].[Customers_FieldName_withspaces]
+(
+	[Region]
+)
+GO
+
+
+print 'Table Customers_FieldName_withspaces was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Test1]
+(
+	[TestField1] varchar  (6) NOT NULL ,
+	[TestField2] varchar  (6) NOT NULL ,
+	[Name] varchar  (255) NULL ,
+	[Description] varchar  (255) NULL ,
+	[TestField4] integer NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Test1]
+	ADD CONSTRAINT [PK_Test1] PRIMARY KEY NONCLUSTERED 
+	( 
+		[TestField1],
+		[TestField2]
+	)
+GO
+
+CREATE INDEX [Test1TestField4] ON [dbo].[Test1]
+(
+	[TestField4]
+)
+GO
+
+
+print 'Table Test1 was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Test6]
+(
+	[TestField1] varchar  (6) NOT NULL ,
+	[TestField2] varchar  (6) NOT NULL ,
+	[Name] varchar  (255) NULL ,
+	[Description] varchar  (255) NULL ,
+	[TestField4] integer NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Test6]
+	ADD CONSTRAINT [PK_Test6] PRIMARY KEY NONCLUSTERED 
+	( 
+		[TestField1],
+		[TestField2]
+	)
+GO
+
+CREATE INDEX [Test1TestField4] ON [dbo].[Test6]
+(
+	[TestField4]
+)
+GO
+
+
+print 'Table Test6 was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Ord"ers]
+(
+	[OrderID] integer IDENTITY (1,1) NOT NULL ,
+	[CustomerID] varchar  (5) NULL ,
+	[EmployeeID] integer NULL ,
+	[OrderDate] datetime NULL ,
+	[RequiredDate] datetime NULL ,
+	[Approved] smallint NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Ord"ers]
+	ADD CONSTRAINT [PK_Ord"ers] PRIMARY KEY NONCLUSTERED 
+	( 
+		[OrderID]
+	)
+GO
+
+CREATE INDEX [OrderDate] ON [dbo].[Ord"ers]
+(
+	[OrderDate]
+)
+GO
+
+ALTER TABLE [Ord"ers]
+	ADD CONSTRAINT [FK_CustomersOrders] FOREIGN KEY
+	(
+		[CustomerID]
+	) REFERENCES [dbo].[Custo"mers]
+	(
+		[Custo"merID]
+	)	 ON UPDATE CASCADE 
+
+GO
+ALTER TABLE [Ord"ers]
+	ADD CONSTRAINT [FK_CustomersOrders1] FOREIGN KEY
+	(
+		[CustomerID]
+	) REFERENCES [dbo].[Custo"mers]
+	(
+		[Custo"merID]
+	)	 ON UPDATE CASCADE 
+
+GO
+
+print 'Table Ord"ers was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [EmployeesReportTO]
+(
+	[EmployeeID] integer IDENTITY (1,1) NOT NULL ,
+	[LastName] varchar  (20) NOT NULL ,
+	[FirstName] varchar  (10) NOT NULL ,
+	[Title] varchar  (30) NULL ,
+	[TitleOfCourtesy] varchar  (25) NULL ,
+	[BirthDate] datetime NULL ,
+	[HireDate] datetime NULL ,
+	[Address] varchar  (60) NULL ,
+	[City] varchar  (15) NULL ,
+	[Region] varchar  (15) NULL ,
+	[PostalCode] varchar  (10) NULL ,
+	[Country] varchar  (15) NULL ,
+	[HomePhone] varchar  (24) NULL ,
+	[Extension] varchar  (4) NULL ,
+	[Photo] image NULL ,
+	[Notes] text NULL ,
+	[ReportsTo] integer NOT NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [EmployeesReportTO]
+	ADD CONSTRAINT [PK_EmployeesReportTO] PRIMARY KEY NONCLUSTERED 
+	( 
+		[EmployeeID]
+	)
+GO
+
+CREATE INDEX [PostalCode] ON [dbo].[EmployeesReportTO]
+(
+	[PostalCode]
+)
+GO
+
+ALTER TABLE [EmployeesReportTO]
+	ADD CONSTRAINT [FK_EmployeesEmployeesReportTO] FOREIGN KEY
+	(
+		[EmployeeID]
+	) REFERENCES [dbo].[Employees]
+	(
+		[EmployeeID]
+	)
+GO
+
+print 'Table EmployeesReportTO was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Ord'ers]
+(
+	[Ord'erID] integer IDENTITY (1,1) NOT NULL ,
+	[Custo*merID] varchar  (5) NULL ,
+	[Emplo/yeeID] integer NULL ,
+	[Order\Date] datetime NULL ,
+	[Required#Date] datetime NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Ord'ers]
+	ADD CONSTRAINT [PK_Ord'ers] PRIMARY KEY NONCLUSTERED 
+	( 
+		[Ord'erID]
+	)
+GO
+
+CREATE INDEX [OrderDate] ON [dbo].[Ord'ers]
+(
+	[Order\Date]
+)
+GO
+
+
+print 'Table Ord'ers was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Test5]
+(
+	[OrderID] integer NOT NULL ,
+	[ProductID] integer NOT NULL ,
+	[UnitPrice] smallmoney NOT NULL ,
+	[Quantity] integer NOT NULL ,
+	[Discount] real NOT NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Test5]
+	ADD CONSTRAINT [PK_Test5] PRIMARY KEY NONCLUSTERED 
+	( 
+		[OrderID],
+		[ProductID]
+	)
+GO
+
+CREATE INDEX [ProductID] ON [dbo].[Test5]
+(
+	[ProductID]
+)
+GO
+
+
+print 'Table Test5 was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Customer's]
+(
+	[Custo'merID] varchar  (5) NOT NULL ,
+	[Company Name] varchar  (40) NOT NULL ,
+	[Contact Name] varchar  (30) NULL ,
+	[Contact Title] varchar  (30) NULL ,
+	[Add*ress] varchar  (60) NULL ,
+	[Ci/ty] varchar  (15) NULL ,
+	[Re\gion] varchar  (15) NULL ,
+	[Postal Code] varchar  (10) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Customer's]
+	ADD CONSTRAINT [PK_Customer's] PRIMARY KEY NONCLUSTERED 
+	( 
+		[Custo'merID]
+	)
+GO
+
+CREATE INDEX [Region] ON [dbo].[Customer's]
+(
+	[Re\gion]
+)
+GO
+
+
+print 'Table Customer's was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Browse]
+(
+	[RecordID] integer IDENTITY (1,1) NOT NULL ,
+	[Something] varchar  (50) NULL ,
+	[Field2] varchar  (50) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Browse]
+	ADD CONSTRAINT [PK_Browse] PRIMARY KEY NONCLUSTERED 
+	( 
+		[RecordID]
+	)
+GO
+
+CREATE INDEX [RecordID] ON [dbo].[Browse]
+(
+	[RecordID]
+)
+GO
+
+
+print 'Table Browse was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Emp Task]
+(
+	[TaskID] integer NOT NULL ,
+	[EmpID] varchar  (6) NULL ,
+	[Date] datetime NULL ,
+	[Rate] smallmoney NULL ,
+	[TimeID] integer NULL ,
+	[Priority] varchar  (6) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Emp Task]
+	ADD CONSTRAINT [PK_Emp Task] PRIMARY KEY NONCLUSTERED 
+	( 
+		[TaskID]
+	)
+GO
+
+CREATE UNIQUE INDEX [s_GUID] ON [dbo].[Emp Task]
+(
+	[s_GUID]
+)
+GO
+
+
+print 'Table Emp Task was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Custo"mers]
+(
+	[Custo"merID] varchar  (5) NOT NULL ,
+	[Company Name] varchar  (40) NOT NULL ,
+	[Contact Name] varchar  (30) NULL ,
+	[Contact Title] varchar  (30) NULL ,
+	[Address] varchar  (60) NULL ,
+	[City] varchar  (15) NULL ,
+	[Region] varchar  (15) NULL ,
+	[Postal Code] varchar  (10) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Custo"mers]
+	ADD CONSTRAINT [PK_Custo"mers] PRIMARY KEY NONCLUSTERED 
+	( 
+		[Custo"merID]
+	)
+GO
+
+CREATE INDEX [Region] ON [dbo].[Custo"mers]
+(
+	[Region]
+)
+GO
+
+
+print 'Table Custo"mers was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Test4]
+(
+	[OrderID] integer IDENTITY (1,1) NOT NULL ,
+	[CustomerID] varchar  (5) NULL ,
+	[EmployeeID] integer NULL ,
+	[Order%Date] datetime NULL ,
+	[Required/Date] datetime NULL ,
+	[Date\Created] datetime NULL ,
+	[Date'Created] datetime NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Test4]
+	ADD CONSTRAINT [PK_Test4] PRIMARY KEY NONCLUSTERED 
+	( 
+		[OrderID]
+	)
+GO
+
+CREATE INDEX [OrderDate] ON [dbo].[Test4]
+(
+	[Order%Date]
+)
+GO
+
+
+print 'Table Test4 was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Employees]
+(
+	[EmployeeID] integer IDENTITY (1,1) NOT NULL ,
+	[LastName] varchar  (20) NOT NULL ,
+	[FirstName] varchar  (10) NOT NULL ,
+	[Title] varchar  (30) NULL ,
+	[TitleOfCourtesy] varchar  (25) NULL ,
+	[BirthDate] datetime NULL ,
+	[HireDate] datetime NULL ,
+	[Address] varchar  (60) NULL ,
+	[City] varchar  (15) NULL ,
+	[Region] varchar  (15) NULL ,
+	[PostalCode] varchar  (10) NULL ,
+	[Country] varchar  (15) NULL ,
+	[HomePhone] varchar  (24) NULL ,
+	[Extension] varchar  (4) NULL ,
+	[Photo] image NULL ,
+	[Notes] text NULL ,
+	[ReportsTo] integer NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Employees]
+	ADD CONSTRAINT [PK_Employees] PRIMARY KEY NONCLUSTERED 
+	( 
+		[EmployeeID]
+	)
+GO
+
+CREATE INDEX [PostalCode] ON [dbo].[Employees]
+(
+	[PostalCode]
+)
+GO
+
+
+print 'Table Employees was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [OrdersLongTableNameAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA61characters]
+(
+	[OrderID] integer IDENTITY (1,1) NOT NULL ,
+	[CustomerID] varchar  (5) NULL ,
+	[EmployeeID] integer NULL ,
+	[OrderDate] datetime NULL ,
+	[RequiredDate] datetime NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [OrdersLongTableNameAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA61characters]
+	ADD CONSTRAINT [PK_OrdersLongTableNameAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA61characters] PRIMARY KEY NONCLUSTERED 
+	( 
+		[OrderID]
+	)
+GO
+
+CREATE INDEX [OrderDate] ON [dbo].[OrdersLongTableNameAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA61characters]
+(
+	[OrderDate]
+)
+GO
+
+
+print 'Table OrdersLongTableNameAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA61characters was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [Orders]
+(
+	[OrderID] integer IDENTITY (1,1) NOT NULL ,
+	[CustomerID] varchar  (5) NULL ,
+	[EmployeeID] integer NULL ,
+	[OrderDate] datetime NULL ,
+	[RequiredDate] datetime NULL ,
+	[ShippedDate] datetime NULL ,
+	[ShipVia] integer NULL ,
+	[Freight] smallmoney NULL ,
+	[ShipName] varchar  (40) NULL ,
+	[ShipAddress] varchar  (60) NULL ,
+	[ShipCity] varchar  (15) NULL ,
+	[ShipRegion] varchar  (15) NULL ,
+	[ShipPostalCode] varchar  (10) NULL ,
+	[ShipCountry] varchar  (15) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [Orders]
+	ADD CONSTRAINT [PK_Orders] PRIMARY KEY NONCLUSTERED 
+	( 
+		[OrderID]
+	)
+GO
+
+CREATE INDEX [ShipPostalCode] ON [dbo].[Orders]
+(
+	[ShipPostalCode]
+)
+GO
+
+ALTER TABLE [Orders]
+	ADD CONSTRAINT [FK_{69E5FD5F-BABA-453C-9D41-BF1C9A923F57}] FOREIGN KEY
+	(
+		[EmployeeID]
+	) REFERENCES [dbo].[Employees]
+	(
+		[EmployeeID]
+	)
+GO
+
+print 'Table Orders was created'	
+GO
+
+------------------------------------------
+
+CREATE TABLE [_zsDataVersion]
+(
+	[ChangeID] integer NOT NULL ,
+	[DateCreated] datetime NULL ,
+	[Note] text NULL ,
+	[BackEndPath] varchar  (255) NULL ,
+	[EmpUpdated] varchar  (150) NULL ,
+	[FrontEndPath] varchar  (255) NULL 
+) ON [PRIMARY]
+GO
+
+
+ALTER TABLE [_zsDataVersion]
+	ADD CONSTRAINT [PK__zsDataVersion] PRIMARY KEY NONCLUSTERED 
+	( 
+		[ChangeID]
+	)
+GO
+
+CREATE UNIQUE INDEX [s_GUID] ON [dbo].[_zsDataVersion]
+(
+	[s_GUID]
+)
+GO
+
+
+print 'Table _zsDataVersion was created'	
+GO
+
+------------------------------------------
+

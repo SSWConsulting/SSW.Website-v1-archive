@@ -1,0 +1,7 @@
+Currently, there're two registration folders in this project.
+1. /ssw/registration
+2. /ssw/standardsinternal/registration
+
+At first, there's only one Registration folder in the roor (/ssw/registration). However most of info is expected to be used for internal users, so they're moved to /ssw/standardsinternal/registration.
+
+/ssw/registration was left to keep info exposed to external users.

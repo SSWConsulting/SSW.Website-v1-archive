@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Executables xmlns="http://www.ssw.com.au/ssw/diagnostics/namespaces/Versions.xsd" version="1.125">
+	<Subsets>
+		<Subset code="ALL">Everything (Recommended)</Subset>
+	</Subsets>
+	
+	<File name="KERNEL32.DLL" subsets="ALL">
+
+		<!-- Windows 98/Windows Millenium -->
+		<Version productName="" productID="windows98" name="4.10.2222" latestVersion="4.10.2225" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 98 Second Edition</Version>
+		<Version productName="" productID="windows98" name="4.10.2225" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 98 Second Edition</Version>
+		<Version productName="" productID="windows98" name="4.90.3000" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 98 Second Edition</Version>
+		<!-- Windows 2000 -->
+		<Version productName="" productID="windows2000" name="5.00.2191" latestVersion="5.0.2195.7027" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 2000 SP2</Version>
+		<Version productName="" productID="windows2000" name="5.00.2195.4272" latestVersion="5.0.2195.7027" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 2000 SP4</Version>
+		<Version productName="" productID="windows2000" name="5.00.2195.5400" latestVersion="5.0.2195.7027" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 2000 SP4</Version>
+		<Version productName="" productID="windows2000" name="5.00.2195.6" latestVersion="5.0.2195.7027" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 2000 SP4</Version>
+		<Version productName="" productID="windows2000" name="5.00.2195.7006" latestVersion="5.0.2195.7027" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 2000 SP4 with KB891861</Version>
+		<Version productName="" productID="windows2000" name="5.0.2195.7027" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows 2000 SP4 with KB912919</Version>
+		<!-- Windows XP -->
+		<Exclude name="" productName="" pathContains="dllcache">Exclude if it is in dll cache folder</Exclude>
+		<Version productName="" productID="windowsXP" name="5.1.2600.0" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP</Version>		
+		<Version productName="" productID="windowsXP" name="5.1.2600.1081" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP1</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.1106" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP1</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.153" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.1560" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.2055" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.2082" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.2149" latestVersion="5.1.2600.2180" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.2180" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.2687" latestVersion="5.1.2600.2786" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+		<Version productName="" productID="windowsXP" name="5.1.2600.2786" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows XP SP2</Version>
+
+		<!-- Windows Server 2003 -->
+		<Version productName="" productID="windows2003" name="5.2.3790.0" latestVersion="5.2.3790.1830" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows Server 2003 SP1</Version>
+		<Version productName="" productID="windows2003" name="5.2.3790.1830" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows Server 2003 SP1</Version>
+		
+		<!--Windows Vista -->
+		<Version productName="" productID="windowsvista" name="6.0.5231.2" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows Vista - Beta</Version>
+		<Version productName="" productID="windowsvista" name="6.0.5270.9" latestVersion="Yes" update="http://update.microsoft.com/microsoftupdate/">Microsoft Windows Vista - Beta</Version>
+	</File>
+	
+	<File name="WINWORD.EXE" subsets="ALL">
+		<Exclude name="" productName="199" pathContains="">Exclude these weird versions</Exclude>
+		<Exclude name="" productName="200" pathContains="">Exclude these weird versions</Exclude>		
+		<Version productName="" name="6" latestVersion="Yes">Microsoft Word 6</Version>
+		<Version productName="" name="8.0" latestVersion="8.0.0.5622">Microsoft Word 97</Version>
+		<Version productName="" name="8.0.0.3514" latestVersion="8.0.0.5622">Microsoft Word 97</Version>
+		<Version productName="" name="8.0.0.5622" latestVersion="Yes">Microsoft Word 97 SR2</Version>
+		<Version productName="" name="9.0.0.2717" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000</Version>
+		<Version productName="" name="9.0.0.2823" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000</Version>
+		<Version productName="" name="9.0.3822" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000</Version>
+		<Version productName="" name="9.0.4527" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000</Version>
+		<Version productName="" name="9.0.6328" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SR1</Version>
+		<Version productName="" name="9.0.6926" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.6622" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.7626" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.7924" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.8216" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.2717" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.2823" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.8929" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.8930" latestVersion="9.0.8939" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+		<Version productName="" name="9.0.8939" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE">Microsoft Word 2000 SP3</Version>
+	
+		<Version productName="" name="10.0.2627" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP</Version>
+		<Version productName="" name="10.0.3416" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP1</Version>
+		<Version productName="" name="10.0.4030" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP</Version>
+		<Version productName="" name="10.0.4109" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP</Version>
+		<Version productName="" name="10.0.4219" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP2</Version>
+		<Version productName="" name="10.0.4524" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP2</Version>
+		<Version productName="" name="10.0.4921" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP2</Version>
+		<Version productName="" name="10.0.5012" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP?</Version>
+		<Version productName="" name="10.0.5815" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP?</Version>
+		<Version productName="" name="10.0.6612" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP3</Version>
+		<Version productName="" name="10.0.6754" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP3</Version>
+		<Version productName="" name="10.0.6764" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP3</Version>
+		<Version productName="" name="10.0.6775" latestVersion="10.0.6802" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP3</Version>
+		<Version productName="" name="10.0.6802" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word XP SP3</Version>
+
+		<Version productName="" name="11.0.4920" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 11 Beta 2</Version>
+		<Version productName="" name="11.0.5207" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 11 Beta 2</Version>
+		<Version productName="" name="11.0.5329" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 11 Beta 2 Refresh</Version>
+		<Version productName="" name="11.0.5604" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003</Version>
+		<Version productName="" name="11.0.5612" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003</Version>
+		<Version productName="" name="11.0.6113" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003 SP1</Version>
+		<Version productName="" name="11.0.6359" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003 SP1</Version>
+		<Version productName="" name="11.0.6502" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003 SP1</Version>
+		<Version productName="" name="11.0.6568" latestVersion="11.0.8026" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003 SP2</Version>
+		<Version productName="" name="11.0.8026" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Word 2003 SP2</Version>
+		
+		<Version productName="" name="12.0.3417.1004" latestVersion="12.0.4017.1006" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Word 2007</Version>
+		<Version productName="" name="12.0.3820.1003" latestVersion="12.0.4017.1006" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Word 2007</Version>
+		<Version productName="" name="12.0.4017.1006" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Word 2007</Version>
+		
+	</File>
+	
+	<File name="FRONTPG.EXE" subsets="ALL">
+		<Version productName="" name="3.0.2.1105" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2000</Version>
+		<Version productName="" name="4.0.2.3821" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2000</Version>
+		<Version productName="" name="4.0.2.2717" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2000</Version>
+		<Version productName="" name="4.0.2.3406" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2000</Version>
+		<Version productName="" name="4.0.2.4426" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2000 SR1</Version>
+		<Version productName="" name="4.0.2.6625" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2000 SP?</Version>
+		<Version productName="" name="10.0.2623" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2002</Version>
+		<Version productName="" name="10.0.3402" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2002 SP1</Version>
+		<Version productName="" name="10.0.4128" latestVersion="10.0.6308" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2002 SP2</Version>
+		<Version productName="" name="10.0.6308" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2002 SP3</Version>
+		<Version productName="" name="11.0.4920" latestVersion="11.0.6552" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 11 Beta 2</Version>
+		<Version productName="" name="11.0.5329" latestVersion="11.0.6552" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 11 Beta 2 Refresh</Version>
+		<Version productName="" name="11.0.5516" latestVersion="11.0.6552" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2003</Version>
+		<Version productName="" name="11.0.5612" latestVersion="11.0.6552" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2003 Enterprise</Version>
+		<Version productName="" name="11.0.6356" latestVersion="11.0.6552" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2003 SP1</Version>
+		<Version productName="" name="11.0.6552" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage 2003 SP2</Version>
+	
+	</File>
+	
+	<File name="EXCEL.EXE" subsets="ALL">
+		<Exclude name="" productName="199" pathContains="">Exclude these weird versions</Exclude>
+		<Exclude name="" productName="200" pathContains="">Exclude these weird versions</Exclude>
+
+		<Version productName="" name="8.0" latestVersion="8.0.1.5618">Microsoft Excel 97</Version>
+		<Version productName="" name="8.0.0.3515" latestVersion="8.0.1.5618">Microsoft Excel 97</Version>
+		<Version productName="" name="8.0.1.5618" latestVersion="Yes">Microsoft Excel 97 SR2</Version>
+		<Version productName="" name="9.0.2719" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000</Version>
+		<Version productName="" name="9.0.3822" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP1</Version>
+		<Version productName="" name="9.0.4430" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP2</Version>
+		<Version productName="" name="9.0.6608" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP3</Version>
+		<Version productName="" name="9.0.6627" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP3</Version>
+		<Version productName="" name="9.0.7626" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP?</Version>
+		<Version productName="" name="9.0.8216" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP?</Version>
+		<Version productName="" name="9.0.8924" latestVersion="9.0.8938" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP?</Version>
+		<Version productName="" name="9.0.8938" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=5C011C70-47D0-4306-9FA4-8E92D36332FE&amp;displaylang=en">Microsoft Excel 2000 SP?</Version>
+		
+		<Version productName="" name="10.0.2614" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsodt Excel XP</Version>
+		<Version productName="" name="10.0.2614.0" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP</Version>
+		<Version productName="" name="10.0.2701" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP</Version>
+		<Version productName="" name="10.0.3506" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP1</Version>
+		<Version productName="" name="10.0.4109" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP1</Version>
+		<Version productName="" name="10.0.4302" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP2</Version>
+		<Version productName="" name="10.0.4524" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP2</Version>
+		<Version productName="" name="10.0.5815" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP2</Version>
+		<Version productName="" name="10.0.6501" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP3</Version>
+		<Version productName="" name="10.0.6713" latestVersion="10.0.6789" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP3</Version>
+		<Version productName="" name="10.0.6789" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel XP SP3</Version>
+
+		<Version productName="" name="11.0.4920" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 11 Beta 2</Version>
+		<Version productName="" name="11.0.5207" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 11 Beta 2</Version>		
+		<Version productName="" name="11.0.5329" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 11 Beta 2 Refresh</Version>
+		<Version productName="" name="11.0.5612" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 2003</Version>
+		<Version productName="" name="11.0.6113" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 2003 SP?</Version>
+		<Version productName="" name="11.0.6355" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 2003 SP1</Version>
+		<Version productName="" name="11.0.6560" latestVersion="11.0.8012" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 2003 SP2</Version>
+		<Version productName="" name="11.0.8012" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Excel 2003 SP2</Version>
+	
+		<Version productName="" name="12.0.3417.1005" latestVersion="12.0.4017.1004" update="http://office.microsoft.com/officeupdate/default.aspx"> Microsoft Office Excel 2007</Version>
+		<Version productName="" name="12.0.3820.1003" latestVersion="12.0.4017.1004" update="http://office.microsoft.com/officeupdate/default.aspx"> Microsoft Office Excel 2007</Version>
+		<Version productName="" name="12.0.4017.1004" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx"> Microsoft Office Excel 2007</Version>
+		
+	</File>
+	<File name="SQLSERVR.EXE" subsets="ALL">
+		<Exclude name="" productName="" pathContains="MSDE">Exclude if it is part of MSDE</Exclude>
+		<Exclude name="" productName="7.00.623" pathContains="X86">Exclude as it is too old</Exclude>
+		
+		<Version productName="" name="1998.11.13" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000</Version>
+		<Version productName="" name="2000.080.0100" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000</Version>
+		<Version productName="" name="2000.080.0194" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP1</Version>
+		<Version productName="" name="2000.080.0384" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP1</Version>
+		<Version productName="" name="2000.080.0532" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP2</Version>
+		<Version productName="" name="2000.080.0534" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP2</Version>
+		<!-- Note: MS says that if you have SP3, you dont need SP3a. If you have SP1, or SP2, got straight to SP3a 
+!-->
+		<Version productName="" name="2000.080.0760.00" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP3</Version>
+		<Version productName="" name="2000.080.0760.09" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP3a</Version>
+		<Version productName="" name="2000.080.08" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP?</Version>
+		<Version productName="" name="2000.080.2039" latestVersion="Yes" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP4</Version>
+		
+		<!-- SQL Server 2005 -->
+		<Version productName="" name="2005.090.0836" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 April CTP</Version>
+		<Version productName="" name="2005.090.1187" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 June CTP</Version>
+		<Version productName="" name="2005.090.1293" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 August CTP</Version>
+		<Version productName="" name="2005.090.1311" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Dave Lean Build</Version>
+		<Version productName="" name="2005.090.1314" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 September CTP</Version>
+		<Version productName="" name="2005.090.1399" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005</Version>
+		<Version productName="" name="2005.090.1507.00" latestVersion="2005.090.2047.00" update="http://www.microsoft.com/downloads/details.aspx?familyid=cb6c71ea-d649-47ff-9176-e7cac58fd4bc">Microsoft SQL Server 2005</Version>
+		<Version productName="" name="2005.090.2047.00" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?familyid=cb6c71ea-d649-47ff-9176-e7cac58fd4bc">Microsoft SQL Server 2005 SP1</Version>
+
+	</File>
+	
+	<File name="REPORTINGSERVICESSERVICE.EXE" subsets="ALL">
+		<Version productName="" name="8.00.743" latestVersion="8.00.1038" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=502C0D89-1308-4662-8F58-CEC55EF1235B">Microsoft SQL Server 2000 Reporting Services</Version>
+		<Version productName="" name="8.00.878" latestVersion="8.00.1038" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=502C0D89-1308-4662-8F58-CEC55EF1235B">Microsoft SQL Server 2000 Reporting Services</Version>
+		<Version productName="" name="8.00.1038" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=502C0D89-1308-4662-8F58-CEC55EF1235B">Microsoft SQL Server 2000 Reporting Services SP2</Version>
+		<Version productName="" name="9.00.1311" latestVersion="9.00.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Reporting Services Beta 2</Version>
+		<Version productName="" name="9.00.1399" latestVersion="9.00.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Reporting Services</Version>
+		<Version productName="" name="9.00.2047.00" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?familyid=cb6c71ea-d649-47ff-9176-e7cac58fd4bc">Microsoft SQL Server 2005 Reporting Services SP1</Version>
+	</File>
+	
+	<File name="DTSSQL.CHM" subsets="ALL">
+	
+		<Version productName="" name="2000" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=a6f79cb1-a420-445f-8a4b-bd77a7da194b">Microsoft SQL 2000 Server Books Online</Version>
+		<Version productName="" name="2001" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=a6f79cb1-a420-445f-8a4b-bd77a7da194b">Microsoft SQL 2000 Server Books Online</Version>
+		<Version productName="" name="2002" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=a6f79cb1-a420-445f-8a4b-bd77a7da194b">Microsoft SQL 2000 Server Books Online</Version>
+		<Version productName="" name="2003" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=a6f79cb1-a420-445f-8a4b-bd77a7da194b">Microsoft SQL 2000 Server Books Online</Version>
+
+		<!--  SQL Server 2005 Books Online -->
+		<Version productName="" name="2006" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?familyid=BE6A2C5D-00DF-4220-B133-29C1E0B6585F">Microsoft SQL 2005 Server Books Online (April 2006)</Version>
+		
+	</File>
+	
+	<File name="SQLDMO.DLL" subsets="ALL">
+		<Exclude name="" productName="" pathContains="System32">Exclude if it is in System32 as this is MSDE</Exclude>
+		<Exclude name="" productName="" pathContains="SSW">Exclude if installed by SSW Prod such as TimePro or SQL Deploy</Exclude>
+		<!-- 1998-->
+		<Version productName="" name="1998.11.13" latestVersion="1998.11.13" update="http://www.microsoft.com/sql/downloads/70/default.mspx">Microsoft SQL Server 7.0 SP4 Distributed Management Objects</Version>
+		<!-- 2000 -->
+		<Version productName="" name="2000.080.0534" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP2 Distributed Management Objects</Version>
+		<Version productName="" name="2000.080.0194" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 Distributed Management Objects</Version>
+		<Version productName="" name="2000.080.0382" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP1 Distributed Management Objects</Version>
+		<Version productName="" name="2000.080.0384" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP1 Distributed Management Objects</Version>
+		<Version productName="" name="2000.080.0760" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP3 Distributed Management Objects</Version>
+		<Version productName="" name="2000.080.0818" latestVersion="2000.080.2039" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP3a Distributed Management Objects</Version>
+		<Version productName="" name="2000.080.2039" latestVersion="Yes" update="http://www.microsoft.com/sql/downloads/2000/sp4.asp">Microsoft SQL Server 2000 SP4 Distributed Management Objects</Version>
+		<!-- 2005 -->
+		<Version productName="" name="2000.085.1009" latestVersion="2000.085.1704.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Distributed Management Objects</Version>
+		<Version productName="" name="2000.085.1027" latestVersion="2000.085.1704.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Distributed Management Objects</Version>
+		<Version productName="" name="2000.085.1041" latestVersion="2000.085.1704.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Distributed Management Objects</Version>
+		<Version productName="" name="2000.085.1054" latestVersion="2000.085.1704.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Distributed Management Objects</Version>
+		<Version productName="" name="2000.085.1703.00" latestVersion="2000.085.1704.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Distributed Management Objects SP1</Version>
+		<Version productName="" name="2000.085.1704.00" latestVersion="Yes" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Distributed Management Objects SP1</Version>
+		
+
+	</File>
+	
+
+	<File name="MSACCESS.EXE" subsets="ALL">
+		<Version productName="" name="2.0" latestVersion="Yes">Microsoft Access 2.0</Version>
+		<Version productName="" name="8.0.3512" latestVersion="8.0.0.5903" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 97</Version>
+		<Version productName="" name="8.0.0.3512" latestVersion="8.0.0.5903" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 97</Version>
+		<Version productName="" name="8.0.0.4122" latestVersion="8.0.0.5903" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 97 SR1</Version>
+		<Version productName="" name="8.0.5903" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 97 SR2 or SR2b</Version>
+		<Version productName="" name="9.0.2719" latestVersion="9.0.7626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2000</Version>
+		<Version productName="" name="9.0.0.2719" latestVersion="9.0.7626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2000</Version>
+		<Version productName="" name="9.0.0.3822" latestVersion="9.0.7626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2000 SR1</Version>
+		<Version productName="" name="9.0.4402" latestVersion="9.0.7626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2002 SP1</Version>
+		<Version productName="" name="9.0.4506" latestVersion="9.0.7626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2000 SP2</Version>
+		<Version productName="" name="9.0.6620" latestVersion="9.0.7626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2000 SP3</Version>
+		<Version productName="" name="9.0.7626" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2000 SP?</Version>
+		<Version productName="" name="10.0.2616" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP</Version>
+		<Version productName="" name="10.0.2627" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP</Version>
+		<Version productName="" name="10.0.2701" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP</Version>
+		<Version productName="" name="10.0.3409" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP</Version>
+		<Version productName="" name="10.0.4109" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP</Version>
+		<Version productName="" name="10.0.4302" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP SP2</Version>
+		<Version productName="" name="10.0.6501" latestVersion="10.0.6771" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP SP3</Version>
+		<Version productName="" name="10.0.6771" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access XP SP3</Version>
+		<Version productName="" name="11.0.4920" latestVersion="11.0.6566" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 11 Beta 2</Version>
+		<Version productName="" name="11.0.5207" latestVersion="11.0.6566" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 11 Beta 2</Version>
+		<Version productName="" name="11.0.5329" latestVersion="11.0.6566" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 11 Beta 2 Refresh</Version>
+		<Version productName="" name="11.0.5612" latestVersion="11.0.6566" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2003</Version>
+		<Version productName="" name="11.0.5614" latestVersion="11.0.6566" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2003</Version>
+		<Version productName="" name="11.0.6355" latestVersion="11.0.6566" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2003 SP1</Version>
+		<Version productName="" name="11.0.6566" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Access 2003 SP2</Version>
+
+		<Version productName="" name="12.0.3417.1003" latestVersion="12.0.4017.1003" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Access 2007</Version>		
+		<Version productName="" name="12.0.3820.1002" latestVersion="12.0.4017.1003" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Access 2007</Version>
+		<Version productName="" name="12.0.4017.1003" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Access 2007</Version>
+
+	</File>
+	<File name="OUTLOOK.EXE" subsets="ALL">
+		<Version productName="" name="8.0" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 97</Version>
+		<Version productName="" name="8.1" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 97</Version>
+		<Version productName="" name="8.2" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 97</Version>
+		<Version productName="" name="8.3" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 97</Version>
+		<Version productName="" name="8.4" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 97 SR2 or SR2b</Version>
+		<Version productName="" name="8.5" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 97 SR2 or SR2b</Version>
+		<Version productName="" name="9.0.0.2416" latestVersion="9.0.6604" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2000 SR1</Version>
+		<Version productName="" name="9.00.0333" latestVersion="9.0.6604" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2000 SR1</Version>
+		<Version productName="" name="9.0.2416" latestVersion="9.0.6604" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2000 SR1</Version>
+		<Version productName="" name="9.0.6604" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2000</Version>
+		<Version productName="" name="10.0.2616" latestVersion="10.0.6626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP</Version>
+		<Version productName="" name="10.0.2627" latestVersion="10.0.6626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP</Version>
+		<Version productName="" name="10.0.2627.1" latestVersion="10.0.6626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP</Version>
+		<Version productName="" name="10.0.3416" latestVersion="10.0.6626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP SP1</Version>
+		<Version productName="" name="10.0.4024" latestVersion="10.0.6626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP SP2</Version>
+		<Version productName="" name="10.0.4510" latestVersion="10.0.6626" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP SP2</Version>
+		<Version productName="" name="10.0.6626" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook XP SP3</Version>
+		<Version productName="" name="11.0.4920" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 11 Beta 2</Version>
+		<Version productName="" name="11.0.5207" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 11 Beta 2</Version>
+		<Version productName="" name="11.0.5329" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 11 Beta 2 Refresh</Version>
+		<Version productName="" name="11.0.5510" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2003</Version>
+		<Version productName="" name="11.0.5612" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2003</Version>
+		<Version productName="" name="11.0.6353" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2003 SP1</Version>
+		<Version productName="" name="11.0.6565" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2003 SP2</Version>
+		<Version productName="" name="11.0.8000" latestVersion="11.0.8010" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2003 SP2 + Security Fixes</Version>
+		<Version productName="" name="11.0.8010" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Outlook 2003 SP2 + Security Fixes</Version>
+		
+		<Version productName="" name="12.0.3417.1005" latestVersion="12.0.4017.1006" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Outlook 2007</Version>
+		<Version productName="" name="12.0.3820.1002" latestVersion="12.0.4017.1006" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Outlook 2007</Version>
+		<Version productName="" name="12.0.4017.1006" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Office Outlook 2007</Version>
+		
+	</File>
+	<File name="VISIO.EXE" subsets="ALL">
+		<Version productName="" name="10.0" latestVersion="10.0.5006" update="http://www.microsoft.com/downloads/details.aspx?familyid=00B9DFE4-ED08-4328-B355-4BC63D6267B2&amp;displaylang=en">Microsoft Visio 2002</Version>
+		<Version productName="" name="10.0.2420" latestVersion="10.0.5006" update="http://www.microsoft.com/downloads/details.aspx?familyid=00B9DFE4-ED08-4328-B355-4BC63D6267B2&amp;displaylang=en">Microsoft Visio 2002 SP1</Version>
+		<Version productName="" name="10.0.5006" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?familyid=00B9DFE4-ED08-4328-B355-4BC63D6267B2&amp;displaylang=en">Microsoft Visio 2002 SP2</Version>
+		<Version productName="" name="11.0" latestVersion="Yes" update="http://office.microsoft.com/en-us/officeupdate/CD010798611033.aspx">Microsoft Visio 11</Version>
+	</File>
+	<File name="DEVENV.EXE" subsets="ALL">
+		<Version productName="" name="6.00.8167" latestVersion="6.01.8860" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Studio 6 SP6</Version>
+		<Version productName="" name="6.00.8178" latestVersion="6.01.8860" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Studio 6 SP6</Version>
+		<Version productName="" name="6.01.8860" latestVersion="Yes" update="http://msdn.microsoft.com/vstudio/downloads/updates/default.aspx">Microsoft Visual Studio 6 SP6</Version>
+		<Version productName="" name="7.00.9466" latestVersion="7.10.3077" update="http://msdn.microsoft.com/vstudio/downloads/updates/default.aspx">Microsoft Visual Studio .NET 2002</Version>
+		<Version productName="" name="7.00.9955" latestVersion="7.10.3077" update="http://msdn.microsoft.com/vstudio/downloads/updates/default.aspx">Microsoft Visual Studio .NET 2002</Version>
+		<Version productName="" name="7.10.2215.1" latestVersion="7.10.3077" update="http://msdn.microsoft.com/vstudio/downloads/updates/default.aspx">Microsoft Visual Studio .NET 2003 Beta 1</Version>
+		<Version productName="" name="7.10.2292" latestVersion="7.10.3077" update="http://msdn.microsoft.com/vstudio/downloads/updates/default.aspx">Microsoft Visual Studio .NET 2003 Final Beta</Version>
+		<Version productName="" name="7.10.3077" latestVersion="Yes" update="http://msdn.microsoft.com/vstudio/downloads/updates/default.aspx">Microsoft Visual Studio .NET 2003</Version>
+		
+		<!-- Visual Studio 2005-->
+		<Version productName="" name="8.0.40607.16" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005 Beta 1</Version>
+		<Version productName="" name="8.0.50215.44" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005 Beta 2</Version>
+		<Version productName="" name="8.0.50727.07" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005 RTM</Version>
+		<Version productName="" name="8.0.50727.14" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005 RTM</Version>
+		<Version productName="" name="8.0.50727.24" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005 RTM</Version>
+		<Version productName="" name="8.0.50727.26" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005 RTM</Version>
+		<Version productName="" name="8.0.50727.42" latestVersion="Yes"  update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Studio .NET 2005</Version>
+	</File>
+	<File name="VB6.EXE" subsets="ALL">
+		<Version productName="" name="6.00.8176" latestVersion="6.00.9782" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Basic 6</Version>
+		<Version productName="" name="6.00.8464" latestVersion="6.00.9782" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Basic 6 SP4</Version>
+		<Version productName="" name="6.00.8862" latestVersion="6.00.9782" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Basic 6 SP4</Version>
+		<Version productName="" name="6.00.8957" latestVersion="6.00.9782" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Basic 6 SP5</Version>
+		<Version productName="" name="6.00.8988" latestVersion="6.00.9782" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Basic 6 SP6</Version>
+		<Version productName="" name="6.00.9782" latestVersion="Yes" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Basic 6 SP6</Version>
+	</File>
+	<File name="SSEXP.EXE" subsets="ALL">
+		<Version productName="" name="05" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 5.0</Version>
+		<Version productName="" name="06.00.8163" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0</Version>
+		<Version productName="" name="06.00.8987" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0a</Version>
+		<Version productName="" name="06.00.9119" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0?</Version>
+		<Version productName="" name="06.00.9350" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0a</Version>
+		<Version productName="" name="06.00.9673" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0d</Version>
+		<Version productName="" name="06.00.9848" latestVersion="06.00.31222" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0d</Version>
+		<Version productName="" name="06.00.31222" latestVersion="Yes" update="http://msdn.microsoft.com/vstudio/downloads/updates/sp/vs6/sp6/default.aspx">Microsoft Visual Source Safe 6.0d</Version>
+
+		<Version productName="" name="8.0.40607.16" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual SourceSafe 2005 (beta 1)</Version>			
+		<Version productName="" name="8.0.50215.44" latestVersion="8.0.50727.42" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Source Safe 2005 (beta 2)</Version>
+		<Version productName="" name="8.0.50727.42" latestVersion="Yes" update="http://msdn.microsoft.com/subscriptions/">Microsoft Visual Source Safe 2005</Version>
+
+		
+	</File>
+	<File name="MSJET35.DLL" subsets="ALL">
+		<!-- This is part of a wise redistributable so we need to ignore it !-->
+		<Exclude productName="" name="3.50.3602.4" pathContains="">Jet 3.5</Exclude>
+		<Exclude productName="" name="3.50.3602.4" pathContains="">Jet 3.5</Exclude>
+		<Exclude productName="" name="" pathContains="Wise">Exclude Jet 3.5 Installed by Wise</Exclude>
+		<Version productName="" name="3.50.3907.4" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.50</Version>
+		<Version productName="" name="3.50.3907.5" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.50</Version>
+		<Version productName="" name="3.50.3428" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.50</Version>
+		<Version productName="" name="3.51.0623.4" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.51</Version>
+		<Version productName="" name="3.51.2026.0" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.51 SP1</Version>
+		<Version productName="" name="3.51.2723.0" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.51 SP2</Version>
+		<Version productName="" name="3.51.3203.0" latestVersion="3.51.3328.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.51 SP?</Version>
+		<Version productName="" name="3.51.3328.0" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=7e82ef88-52ec-4a8f-8bb2-8b06d6cb668d">Jet 3.51 SP3</Version>
+		
+		
+	</File>
+	<File name="MSJET40.DLL" subsets="ALL">
+		<!-- This is part of a Wise redistributable packageso we need to ignore it !-->
+		<Exclude productName="" name="4.00.2927.2" pathContains="">Jet 4.0 SP3</Exclude>
+		<Exclude productName="" name="200" pathContains="">Exclude Uninstall Version</Exclude>
+		<!-- This is part of an InstallShield redistributable package so we need to ignore it !-->
+		<Exclude productName="" name="4.00.2521.8" pathContains="">Jet 4.0 SP3</Exclude>
+		<Version productName="" name="4.00.2927.4" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP3</Version>
+		<Version productName="" name="4.00.2927.17" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP3</Version>
+		<Version productName="" name="4.00.3714.7" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP4</Version>
+		<Version productName="" name="4.00.4431" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP5</Version>
+		<Version productName="" name="4.00.5526.0" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP5</Version>
+		<Version productName="" name="4.00.6218.0" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP6</Version>
+		<Version productName="" name="4.00.6807.0" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP6</Version>
+		<Version productName="" name="4.00.7328.0" latestVersion="4.00.9614.0" update="http://support.microsoft.com/?kbid=829558">Jet 4.0 SP7</Version>
+		<Version productName="" name="4.00.8015.0" latestVersion="4.00.9614.0" update="http://www.microsoft.com/technet/security/Bulletin/MS04-014.mspx">Jet 4.0 SP8</Version>
+		<Version productName="" name="4.00.8618.0" latestVersion="4.00.9614.0" update="http://www.microsoft.com/technet/security/Bulletin/MS04-014.mspx">Jet 4.0 SP8 (with MS04-014 applied)</Version>
+		<Version productName="" name="4.00.9025.0" latestVersion="4.00.9614.0" update="http://www.microsoft.com/technet/security/Bulletin/MS04-014.mspx">Jet 4.0 SP8 (with MS04-014 applied)</Version>
+		<Version productName="" name="4.00.9600.0" latestVersion="4.00.9614.0" update="http://www.microsoft.com/technet/security/Bulletin/MS04-014.mspx">Jet 4.0 SP8 (with MS04-014 applied)</Version>
+		<Version productName="" name="4.00.9614.0" latestVersion="Yes" update="http://www.microsoft.com/technet/security/Bulletin/MS04-014.mspx">Jet 4.0 SP8 (with MS04-014 applied)</Version>
+	</File>
+	<File name="UEDIT32.EXE" subsets="ALL">
+		<Version productName="" name="7" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v7</Version>
+		<Version productName="" name="8" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v8</Version>
+		<Version productName="" name="9" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v9</Version>
+		<Version productName="" name="10" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v10</Version>
+		<Version productName="" name="11.00" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v11.00.0</Version>
+		<Version productName="" name="11.10" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v11.10a</Version>
+		<Version productName="" name="11.20" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v11.20</Version>
+		<Version productName="" name="12.00" latestVersion="12.10" update="http://www.ultraedit.com/">IDM UltraEdit v12.00</Version>
+		<Version productName="" name="12.10" latestVersion="Yes" update="http://www.ultraedit.com/">IDM UltraEdit v12.10</Version>
+	</File>
+
+	<File name="EDITPLUS.EXE" subsets="ALL">
+		<Version productName="" name="2,1,1,2096" latestVersion="2,2,1,330" update="http://www.editplus.com/">EditPlus Text Editor v2.11</Version>
+		<Version productName="" name="2,1,2,76" latestVersion="2,2,1,330" update="http://www.editplus.com/">EditPlus Text Editor v2.12</Version>
+		<Version productName="" name="2,2,1,330" latestVersion="Yes" update="http://www.editplus.com/">EditPlus Text Editor v2.21</Version>		
+		
+	</File>
+
+	<File name="FPEXEDLL.DLL" subsets="ALL">
+		<Exclude productName="" name="" pathContains="dllcache">Exclude version in DLL Cache folder</Exclude>
+		<Version productName="" name="3.0.2.1706" latestVersion="Yes">Microsoft Frontpage Server Extensions 98</Version>
+		<Version productName="" name="4.0.2.5526" latestVersion="4.0.2.7523" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=C84C3D10-A821-4819-BF58-D3BC70A77BFA">Microsoft Frontpage Server Extensions 2000</Version>
+		<Version productName="" name="4.0.2.5322" latestVersion="4.0.2.7523" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=C84C3D10-A821-4819-BF58-D3BC70A77BFA">Microsoft Frontpage Server Extensions 2000</Version>
+		<Version productName="" name="4.0.2.6513" latestVersion="4.0.2.7523" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=C84C3D10-A821-4819-BF58-D3BC70A77BFA">Microsoft Frontpage Server Extensions 2000</Version>
+		<Version productName="" name="4.0.2.7523" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyId=C84C3D10-A821-4819-BF58-D3BC70A77BFA">Microsoft Frontpage Server Extensions 2000</Version>
+		<Version productName="" name="10.0.2623" latestVersion="10.0.6754" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2002</Version>
+		<Version productName="" name="10.0.5012" latestVersion="10.0.6754" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2002</Version>
+		<Version productName="" name="10.0.6754" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2002</Version>
+	</File>
+	
+	<File name="FPWEL.DLL" subsets="ALL">
+		<Version productName="" name="11.0.4920" latestVersion="11.0.6551" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2003 Beta 2</Version>
+		<Version productName="" name="11.0.5329" latestVersion="11.0.6551" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2003 Beta 2 Refresh</Version>
+		<Version productName="" name="11.0.5516" latestVersion="11.0.6551" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2003</Version>
+		<Version productName="" name="11.0.6353" latestVersion="11.0.6551" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2003</Version>
+		<Version productName="" name="11.0.6551" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 2003 SP2</Version>
+		
+		<!-- Office 12 Beta -->
+		<Version productName="" name="12.0.3417.1003" latestVersion="12.0.4017.1004" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 12 Beta 1</Version>
+		<Version productName="" name="12.0.4017.1004" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft Frontpage Server Extensions 12 Beta 1</Version>
+	</File>
+	
+	<!--
+	<File name="CRAZY BROWSER.EXE" subsets="ALL">
+		<Version productName="" name="1.0.5.0" latestVersion="Yes">Crazy Browser</Version>
+	</File>
+	-->
+
+	<File name="ACRORD32.EXE" subsets="ALL">
+		<Version productName="" name="3" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 3.x</Version>
+		<Version productName="" name="4" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 4.x</Version>
+		<Version productName="" name="5" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 5.x</Version>
+		<Version productName="" name="6" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 6.x</Version>
+		<Version productName="" name="7.0.0" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 6.3</Version>
+		<Version productName="" name="7.0.1" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 7.0</Version>
+		<Version productName="" name="7.0.2" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 7.0</Version>
+		<Version productName="" name="7.0.5" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 7.0</Version>
+		<Version productName="" name="7.0.7" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 7.0</Version>
+		<Version productName="" name="7.0.7.2006011300" latestVersion="7.0.8.2006051600" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 7.0</Version>
+		<Version productName="" name="7.0.8.2006051600" latestVersion="Yes" update="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Acrobat Reader 7.0</Version>
+		
+		
+	</File>
+
+		
+	<File name="ACROBAT.EXE" subsets="ALL">
+		<Version productName="" name="4" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 4.x Professional</Version>
+		<Version productName="" name="5" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 5.x Professional</Version>
+		<Version productName="" name="6" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 6.x Professional</Version>
+		<Version productName="" name="7.0.0" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 7.0 Professional</Version>
+		<Version productName="" name="7.0.2" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 7.0 Professional</Version>
+		<Version productName="" name="7.0.5.2005092300" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 7.0 Professional</Version>
+		<Version productName="" name="7.0.7" latestVersion="7.0.8" update="http://www.adobe.com/products/acrobatpro/">Adobe Acrobat 7.0 Professional</Version>
+		<Version productName="" name="7.0.8.2006051600" latestVersion="Yes" update="http://www.adobe.com/products/acrobatpro">Adobe Acrobat Reader 7.0</Version>
+		
+	</File>
+	
+	<File name="MSCORLIB.DLL" subsets="ALL">
+		<Version productName="" name="1.0.2204.21" latestVersion="1.0.3705.6018" update="http://msdn.microsoft.com/netframework/downloads/updates/sp/default.aspx">Microsoft .NET Framework 1.0</Version>
+		<Version productName="" name="1.0.2268.00" latestVersion="1.0.3705.6018" update="http://msdn.microsoft.com/netframework/downloads/updates/sp/default.aspx">Microsoft .NET Framework 1.0</Version>
+		<Version productName="" name="1.0.3705.0" latestVersion="1.0.3705.6018" update="http://msdn.microsoft.com/netframework/downloads/updates/sp/default.aspx">Microsoft .NET Framework 1.0</Version>
+		<Version productName="" name="1.0.3705.288" latestVersion="1.0.3705.6018" update="http://msdn.microsoft.com/netframework/downloads/updates/sp/default.aspx">Microsoft .NET Framework 1.0 SP2</Version>
+		<Version productName="" name="1.0.3705.6007" latestVersion="1.0.3705.6018" update="http://msdn.microsoft.com/netframework/downloads/updates/sp/default.aspx">Microsoft .NET Framework 1.0 SP2</Version>
+		<Version productName="" name="1.0.3705.6018" latestVersion="Yes" update="http://msdn.microsoft.com/netframework/downloads/updates/sp/default.aspx">Microsoft .NET Framework 1.0 SP2</Version>
+		
+		<Version productName="" name="1.1.4322.535" latestVersion="1.1.4322.2300" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 1.1 Prerelease</Version>
+		<Version productName="" name="1.1.4322.573" latestVersion="1.1.4322.2300" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 1.1</Version>
+		<Version productName="" name="1.1.4322.940" latestVersion="1.1.4322.2300" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 1.1 SP?</Version>
+		<Version productName="" name="1.1.4322.985" latestVersion="1.1.4322.2300" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 1.1 SP?</Version>
+		<Version productName="" name="1.1.4322.2032" latestVersion="1.1.4322.2300" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 1.1 SP1</Version>
+		<Version productName="" name="1.1.4322.2300" latestVersion="Yes" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 1.1 SP1 - Server 2003</Version>
+		
+		
+		<Version productName="" name="2.0.31113" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 Beta</Version>
+		<Version productName="" name="2.0.40607" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 Beta</Version>
+		<Version productName="" name="2.0.50110" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 Beta 2</Version>
+		<Version productName="" name="2.0.50215" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 Beta 2</Version>
+		<Version productName="" name="2.0.50727.20" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 CTP</Version>
+		<Version productName="" name="2.0.50727.7" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 CTP</Version>
+		<Version productName="" name="2.0.50727.14" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 RTM</Version>
+		<Version productName="" name="2.0.50727.26" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0 RTM</Version>
+		<Version productName="" name="2.0.50727.42" latestVersion="2.0.50727.52" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0</Version>
+		<Version productName="" name="2.0.50727.52" latestVersion="Yes" update="http://msdn.microsoft.com/netframework/downloads/">Microsoft .NET Framework 2.0</Version>
+
+		<Exclude productName=".NET Compact Framework" name="" pathContains="">Microsoft .NET Compact Framework</Exclude>
+		<Exclude productName="" name="" pathContains="CompactFramework">Microsoft .NET Compact Framework</Exclude>
+		<Exclude productName="" name="" pathContains="NativeImages">Microsoft .NET Compact Framework</Exclude>
+		<Exclude productName="" name="" pathContains="Mobile">Microsoft .NET Compact Framework</Exclude>
+		<Exclude productName="" name="" pathContains="Samples">Microsoft .NET Compact Framework</Exclude>
+		
+		
+
+	</File>
+	<!--
+	<File name="MSXML3.DLL" subsets="ALL">
+		<Version productName="" name="8.10.8308.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP1</Version>
+		<Version productName="" name="8.20.8730.1" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP2</Version>
+		<Version productName="" name="8.20.9415.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP2</Version>
+		<Version productName="" name="8.30.9926.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP3</Version>
+		<Version productName="" name="8.40.9419.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP4</Version>
+		<Version productName="" name="8.50.2029.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP5</Version>
+		<Version productName="" name="8.50.2141.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP5</Version>
+		<Version productName="" name="8.50.2159.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP5</Version>
+		<Version productName="" name="8.50.2162.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP5</Version>
+		<Version productName="" name="8.60.1626.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP6</Version>
+		<Version productName="" name="8.60.1675.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP6</Version>
+		<Version productName="" name="8.60.1681.0" latestVersion="8.70.1104.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=28494391-052b-42ff-9674-f752bdca9582">Microsoft XML Parser 3 SP6</Version>
+		<Version productName="" name="8.70.1104.0" latestVersion="Yes">Microsoft XML Parser 3 SP7</Version>
+	</File> -->
+	<File name="MSXML4.DLL" subsets="ALL">
+		<Version productName="" name="4.00.9004.0" latestVersion="4.20.9828.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144b72b-b4f2-46da-b4b6-c5d7485f2b42">Microsoft XML Core Services 4</Version>
+		<Version productName="" name="4.10.9404.0" latestVersion="4.20.9828.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144b72b-b4f2-46da-b4b6-c5d7485f2b42">Microsoft XML Core Services 4 SP1</Version>
+		<Version productName="" name="4.10.9406.0" latestVersion="4.20.9828.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144b72b-b4f2-46da-b4b6-c5d7485f2b42">Microsoft XML Core Services 4 SP1</Version>
+		<Version productName="" name="4.20.9818.0" latestVersion="4.20.9828.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144b72b-b4f2-46da-b4b6-c5d7485f2b42">Microsoft XML Core Services 4 SP2</Version>
+		<Version productName="" name="4.20.9821.0" latestVersion="4.20.9828.0" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144b72b-b4f2-46da-b4b6-c5d7485f2b42">Microsoft XML Core Services 4 SP2</Version>
+		<Version productName="" name="4.20.9828.0" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144b72b-b4f2-46da-b4b6-c5d7485f2b42">Microsoft XML Core Services 4 SP2</Version>
+
+		<!-- SP4 available from http://www.microsoft.com/downloads/details.aspx?FamilyId=3144B72B-B4F2-46DA-B4B6-C5D7485F2B42&amp;displaylang=en#filelist 
+!-->
+	</File>
+	<File name="MSXML5.DLL" subsets="All">
+		<Version productName="" name="5.00.2009" latestVersion="5.20.1021" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5</Version>
+		<Version productName="" name="5.00.2502" latestVersion="5.20.1021" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5</Version>
+		<Version productName="" name="5.00.2607" latestVersion="5.20.1021" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5</Version>
+		<Version productName="" name="5.00.2916" latestVersion="5.20.1021" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5</Version>
+		<Version productName="" name="5.10.2925" latestVersion="5.20.1021" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5.1</Version>
+		<Version productName="" name="5.10.2927" latestVersion="5.20.1021" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5.1</Version>
+		<Version productName="" name="5.20.1021" latestVersion="Yes" update="http://office.microsoft.com/officeupdate/default.aspx">Microsoft XML Core Services 5.2 (Office 12 Beta 1)</Version>
+		
+	</File>
+	<File name="CRVSPACKAGE.DLL" subsets="ALL">
+		<Version productName="" name="9.0.1.0" latestVersion="9.7.40527.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio 2003 v1 (.NET 1.0)</Version>
+		<Version productName="" name="9.1.9360.0" latestVersion="9.7.40527.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio 2003 SP1 (.NET v1.1)</Version>
+		<Version productName="" name="9.1.9800.0" latestVersion="9.7.40527.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio v1 (.NET 1.0)</Version>
+		<Version productName="" name="9.2.9466.1" latestVersion="9.7.40527.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio v2 (.NET 1.1)</Version>
+		<Version productName="" name="9.2.9466.6" latestVersion="9.7.40527.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio v2 (.NET 1.1)</Version>
+		<Version productName="" name="9.7.40527.0" latestVersion="Yes" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for 
+Visual Studio 2005 Beta 2</Version>
+		<Version productName="" name="10.2.50207.0" latestVersion="10.2.51014.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for .NET Framework 2.0</Version>
+		<Version productName="" name="10.0.9500.0" latestVersion="10.2.51014.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio .NET</Version>
+		<Version productName="" name="10.0.9500.10" latestVersion="10.2.51014.0" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for Visual Studio .NET</Version>
+		<Version productName="" name="10.2.51014.0" latestVersion="Yes" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for .NET Framework 2.0</Version>
+		<Version productName="" name="11.0.9500.0" latestVersion="11.0.9500.50" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for .NET Framework 2.0</Version>
+		<Version productName="" name="11.0.9500.50" latestVersion="Yes" update="http://support.businessobjects.com/fix/hot/si75/default.asp#Crystal%20Reports%20Service%20Packs">Crystal Reports for .NET Framework 2.0</Version>
+	</File>
+	
+	<File name="MSMDSRV.EXE" subsets="ALL">
+		<Version productName="" name="8.0.194" latestVersion="8.00.2039" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Server Analysis Services</Version>
+		<Version productName="" name="8.00.194" latestVersion="8.00.2039" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Server Analysis Services</Version>
+		<Version productName="" name="8.0.382" latestVersion="8.00.2039" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Server Analysis Services SP1</Version>
+		<Version productName="" name="8.0.534" latestVersion="8.00.2039" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Server Analysis Services SP2</Version>
+		<Version productName="" name="8.0.760" latestVersion="8.00.2039" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Server Analysis Services SP3a</Version>
+		<Version productName="" name="8.00.760" latestVersion="8.00.2039" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Server Analysis Services SP3a</Version>
+		<Version productName="" name="8.00.2039" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?familyid=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5">Microsoft SQL Analysis Services SP4</Version>
+		
+		<!-- Analysis Services 2005 -->
+		<Version productName="" name="2005.090.1311" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Analysis Services - Dave Lean Version</Version>
+		<Version productName="" name="2005.090.1314" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Analysis Services September CTP</Version>
+		<Version productName="" name="2005.090.1399" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Analysis Services</Version>
+		<Version productName="" name="2005.090.2040.00" latestVersion="2005.090.2047.00" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Analysis Services</Version>
+		<Version productName="" name="2005.090.2047.00" latestVersion="Yes" update="http://msdn.microsoft.com/subscriptions/">Microsoft SQL Server 2005 Analysis Services SP1</Version>
+		
+	</File>
+	<File name="IEXPLORE.EXE" subsets="ALL">
+		<!-- <Exclude productName="" name="3.50.3602.4"></Exclude> -->
+		<Exclude productName="" name="200" pathContains="">Pocket IE</Exclude>
+		<Exclude productName="" name="" pathContains="Avant">Avant Browser</Exclude>
+		
+		<Version productName="" name="5.0" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 5</Version>
+		<Version productName="" name="5.5" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 5.5</Version>
+		<Version productName="" name="6.00.2505.0000" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6</Version>
+		<Version productName="" name="6.00.2600.0000" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6</Version>		
+		<Version productName="" name="6.00.2800.1081" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6</Version>
+		<Version productName="" name="6.00.2800.1106" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6</Version>
+		<Version productName="" name="6.00.2900.2055" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6 - XP SP2</Version>
+		<Version productName="" name="6.00.2900.2149" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6 - XP SP2</Version>
+		<Version productName="" name="6.00.2900.2180" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6 - XP SP2</Version>
+		<Version productName="" name="6.00.5231.2" latestVersion="6.00.3790" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6 - XP SP2</Version>
+		<Version productName="" name="6.00.3790" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 6 - Server 2003 SP1</Version>
+
+		<Version productName="" name="7.00.5112" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		
+		<Version productName="" name="7.00.5270.9" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		
+		<Version productName="" name="7.00.5296" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		<Version productName="" name="7.00.5299" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		<Version productName="" name="7.00.5335" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		<Version productName="" name="7.00.5335.5" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		<Version productName="" name="7.00.5346.5" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>
+		<Version productName="" name="7.00.5358.0" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Beta</Version>		
+		<Version productName="" name="7.98.0003" latestVersion="Yes" update="http://www.microsoft.com/windows/ie/downloads/">Microsoft Internet Explorer 7 - Voice Chat</Version>
+
+	</File>
+	<File name="WCESMGR.EXE" subsets="ALL">
+		<Version productName="" name="3.1.9439" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 3.5</Version>
+		<Version productName="" name="3.5" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 3.5</Version>
+		<Version productName="" name="3.7" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 3.7</Version>
+		<Version productName="" name="3.8.0.5004" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 3.8</Version>
+		<Version productName="" name="4.0.4343" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 4.0</Version>
+		<Version productName="" name="4.1.4807" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 4.1</Version>
+		<Version productName="" name="4.1.4841" latestVersion="4.2.4855" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 4.1</Version>
+		<Version productName="" name="4.2.4855" latestVersion="Yes" update="http://www.microsoft.com/windowsmobile/downloads/activesync41.mspx">Microsoft ActiveSync 4.1</Version>
+	</File>
+	<!--
+	<File name="VSSRVC.EXE" subsets="ALL">
+		<Version productName="" name="1.1.465.254" latestVersion="Yes">Microsoft Virtual Server 2005 SP1 
+Beta</Version>
+	</File>
+	-->
+	
+	<File name="VIRTUAL PC.EXE" subsets="ALL">
+		<Version productName="" name="5.2.0.418" latestVersion="5.3.582.32" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=b07c9ef0-265a-4237-ae3b-25bc8937d40f">Microsoft Virtual PC 2004</Version>
+		<Version productName="" name="5.3.0.582" latestVersion="5.3.582.32" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=b07c9ef0-265a-4237-ae3b-25bc8937d40f">Microsoft Virtual PC 2004</Version>
+		<Version productName="" name="5.3.582.27" latestVersion="5.3.582.32" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=b07c9ef0-265a-4237-ae3b-25bc8937d40f">Microsoft Virtual PC 2004 SP1</Version>
+		<Version productName="" name="5.3.582.32" latestVersion="Yes" update="http://www.microsoft.com/downloads/details.aspx?FamilyID=b07c9ef0-265a-4237-ae3b-25bc8937d40f">Microsoft Virtual PC 2004 SP1 (hotfix)</Version>	
+	</File>
+
+	<File name="DAEMON.EXE" subsets="ALL">
+		<Version productName="" name="3.33.0.0" latestVersion="4.0.3" update="http://www.daemon-tools.cc/dtcc/download.php">Daemon Tools 3.4x</Version>
+		<Version productName="" name="3.4" latestVersion="4.0.3" update="http://www.daemon-tools.cc/dtcc/download.php">Daemon Tools 3.4x</Version>
+		<Version productName="" name="4.00" latestVersion="4.0.3" update="http://www.daemon-tools.cc/dtcc/download.php">Daemon Tools 4.0.0</Version>
+		<Version productName="" name="4.01" latestVersion="4.0.3" update="http://www.daemon-tools.cc/dtcc/download.php">Daemon Tools 4.0.0</Version>
+		<Version productName="" name="4.03" latestVersion="Yes" update="http://www.daemon-tools.cc/dtcc/download.php">Daemon Tools 4.0.3</Version>
+	</File>
+	
+	<File name="PLX_CORE.DLL" subsets="ALL">
+		<Exclude productName="" name="" pathContains="s53g">Exclude as this folder contains the same dll so getting 2 results</Exclude>
+		<Version productName="" name="1"		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 1.x for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.0"		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.0 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.1."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.1 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.2."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.2 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.3."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.3 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.4."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.4 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.5."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.5 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.6."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.6 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.7."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.7 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.8."		latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.8 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.9.0.38" latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.9 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.10.0.30" latestVersion="2.10.0.32" update="http://www.plaxo.com/downloads">Plaxo 2.10 for Outlook and Outlook Express</Version>
+		<Version productName="" name="2.10.0.32" latestVersion="Yes" update="http://www.plaxo.com/downloads">Plaxo 2.10 for Outlook and Outlook Express</Version>
+		
+
+	</File>	
+	
+	<File name="WINDOWSSEARCH.EXE" subsets="ALL">
+		<Version productName="" name="02.01.0000.2214" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.02.0000.1007" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.05.0001.1119" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.05.0000.1105" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.05.0000.1082" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.06.0000.2083" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.06.5000.5373" latestVersion="02.06.5000.5378" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		<Version productName="" name="02.06.5000.5378" latestVersion="Yes" update="http://www.microsoft.com/windows/desktopsearch/enterprise/default.mspx">Windows Desktop Search</Version>
+		
+	</File>
+
+	
+</Executables>

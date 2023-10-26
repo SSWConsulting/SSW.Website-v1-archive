@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://ssw.com.au/ssw/Products/Source-Code-License-Agreement/") %>

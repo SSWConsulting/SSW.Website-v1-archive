@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<XML_DIZ_INFO>
+<MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>1.15</MASTER_PAD_VERSION>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+</MASTER_PAD_VERSION_INFO>
+<Company_Info>
+        <Company_Name>SSW Pty Ltd</Company_Name>
+        <Address_1>Suite 10, Gateway Court</Address_1>
+        <Address_2>81 - 91 Military Rd Neutral Bay</Address_2>
+        <City_Town>Sydney</City_Town>
+        <State_Province>NSW</State_Province>
+        <Zip_Postal_Code>2089</Zip_Postal_Code>
+        <Country>Australia</Country>
+        <Company_WebSite_URL>http://www.ssw.com.au</Company_WebSite_URL>
+<Contact_Info>
+        <Author_First_Name>Sophie</Author_First_Name>
+        <Author_Last_Name>Belle</Author_Last_Name>
+        <Author_Email>info@ssw.com.au</Author_Email>
+        <Contact_First_Name>Daniel</Contact_First_Name>
+        <Contact_Last_Name>Hyles</Contact_Last_Name>
+        <Contact_Email>info@ssw.com.au</Contact_Email>
+    </Contact_Info>
+<Support_Info>
+        <Sales_Email>info@ssw.com.au</Sales_Email>
+        <Support_Email>info@ssw.com.au</Support_Email>
+        <General_Email>info@ssw.com.au</General_Email>
+        <Sales_Phone>+61 2 9953 3000</Sales_Phone>
+        <Support_Phone>+61 2 9953 3000</Support_Phone>
+        <General_Phone>+61 2 9953 3000</General_Phone>
+        <Fax_Phone>+61 2 9953 3105</Fax_Phone>
+    </Support_Info>
+</Company_Info>
+<Program_Info>
+        <Program_Name>SSW Team Calendar for Exchange 2000</Program_Name>
+        <Program_Version>9.17</Program_Version>
+        <Program_Release_Month>09</Program_Release_Month>
+        <Program_Release_Day>25</Program_Release_Day>
+        <Program_Release_Year>2006</Program_Release_Year>
+        <Program_Cost_Dollars>305</Program_Cost_Dollars>
+        <Program_Cost_Other_Code>AUD</Program_Cost_Other_Code>
+        <Program_Cost_Other>390</Program_Cost_Other>
+        <Program_Type>Shareware</Program_Type>
+        <Program_Release_Status>New Release</Program_Release_Status>
+        <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+        <Program_OS_Support>Windows2000</Program_OS_Support>
+        <Program_Language>English</Program_Language>
+<File_Info>
+        <Filename_Versioned />
+        <Filename_Previous />
+        <Filename_Generic />
+        <Filename_Long />
+        <File_Size_Bytes />
+        <File_Size_K />
+        <File_Size_MB>4.3</File_Size_MB>
+    </File_Info>
+<Expire_Info>
+        <Has_Expire_Info>Y</Has_Expire_Info>
+        <Expire_Count>365</Expire_Count>
+        <Expire_Based_On>Days</Expire_Based_On>
+        <Expire_Other_Info>3 users</Expire_Other_Info>
+        <Expire_Month />
+        <Expire_Day />
+        <Expire_Year />
+    </Expire_Info>
+        <Program_Change_Info />
+        <Program_Specific_Category>Utilities</Program_Specific_Category>
+        <Program_Categories>Exchange tools</Program_Categories>
+        <Program_System_Requirements>MDAC 2.6, Exchange 2000</Program_System_Requirements>
+        <Includes_JAVA_VM>N</Includes_JAVA_VM>
+        <Includes_VB_Runtime>N</Includes_VB_Runtime>
+        <Includes_DirectX>N</Includes_DirectX>
+</Program_Info>
+<Program_Descriptions>
+<English>
+        <Keywords>Managing Calendars Managing your employees</Keywords>
+        <Char_Desc_45>Share your Calendar with SSW Team Calendar</Char_Desc_45>
+        <Char_Desc_80>Share your Calendar with SSW Team Calendar for Exchange 2000</Char_Desc_80>
+        <Char_Desc_250>SSW Team Calendar for Exchange 2000 extracts calendar information stored on your Microsoft Exchange Server and makes it available on the web. Managers and staff have an an up-to-date schedule of appointments for all mailboxes on Exchange.</Char_Desc_250>
+        <Char_Desc_450>Share your Calendar with SSW Team Calendar for Exchange 2000. SSW Team Calendar for Exchange 2000 extracts calendar information stored on your Microsoft Exchange Server and makes it available on the web. Managers and staff have an an up-to-date schedule of appointments for all mailboxes on Exchange simply by using their web browser.</Char_Desc_450>
+        <Char_Desc_2000>Share your Calendar with SSW Team Calendar for Exchange 2000 
+
+SSW Team Calendar for Exchange 2000 extracts calendar information stored on your Microsoft Exchange Server and makes it available on the web. Managers and staff have an an up-to-date schedule of appointments for all mailboxes on Exchange simply by using their web browser.</Char_Desc_2000>
+</English>
+</Program_Descriptions>
+<Web_Info>
+<Application_URLs>
+        <Application_Info_URL>http://www.ssw.com.au/SSW/TeamCalendar</Application_Info_URL>
+        <Application_Order_URL>http://www.ssw.com.au/ssw/Products/ProdCategory.aspx?CategoryID=SSWTC</Application_Order_URL>
+        <Application_Screenshot_URL>http://www.ssw.com.au/ssw/TeamCalendar/images/demo_week.gif</Application_Screenshot_URL>
+        <Application_Icon_URL>http://www.ssw.com.au/ssw/TeamCalendar/Images/ExchangeTeamCalendar.gif</Application_Icon_URL>
+        <Application_XML_File_URL>http://www.ssw.com.au/SSW/Download/PADFiles/pad_SSWTeamCalendar.xml</Application_XML_File_URL>
+    </Application_URLs>
+<Download_URLs>
+        <Primary_Download_URL>http://download.us.ssw.com.au/SSWExchangeTeamCalendar_ver9-17.exe</Primary_Download_URL>
+        <Secondary_Download_URL />
+        <Additional_Download_URL_1 />
+        <Additional_Download_URL_2 />
+    </Download_URLs>
+</Web_Info>
+<Permissions>
+        <Distribution_Permissions />
+        <EULA />
+</Permissions>
+<ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>N</ASP_Member>
+    <ASP_Member_Number />
+</ASP>
+</XML_DIZ_INFO>

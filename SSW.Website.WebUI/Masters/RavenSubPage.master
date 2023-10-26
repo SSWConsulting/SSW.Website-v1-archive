@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PigeonSubPage.master.cs" Inherits="Masters.PigeonSubPage" MasterPageFile="~/Masters/Raven.Master" %>
+
+<%@ Register Src="~/Components/Newsletter.ascx" TagName="Newsletter" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/OurExperience.ascx" TagName="OurExperience" TagPrefix="ssw" %>
+
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="HeaderScripts">
+    <asp:ContentPlaceHolder ID="HeaderScripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" runat="Server" ContentPlaceHolderID="Content">
+    <div id="MasterBody" runat="server">
+        <div id="Subpage">
+            <div id="Header">
+                <div class="CategoryColor container">
+                    <div id="CategoryColor" runat="server"></div>
+                    <div class="carousel slide hidden-xs">
+                        <asp:ContentPlaceHolder ID="Slider" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="category-image"></div>
+                </div>
+
+                <div class="HeaderContent container">
+                    <div class="breadcrumb">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="SSWXmlSiteMapProvider">
+                        </asp:SiteMapPath>
+                    </div>
+                    <asp:ContentPlaceHolder ID="title" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="facebook" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="content clearfix">
+                <div class="container">
+                    <div id="maincontentFull" class="row">
+                        <div class="col-sm-12">
+                            <asp:ContentPlaceHolder ID="maincontentFull" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div id="maincontentColumns" class="row">
+                        <div class="col-sm-3 hidden" id="SidebarLeft">
+                            <asp:ContentPlaceHolder ID="asideleft" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div id="maincontent" class="col-sm-12">
+                            <asp:ContentPlaceHolder ID="maincontent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="col-sm-3 hidden" id="SidebarRight">
+                            <div id="index">
+                                <asp:ContentPlaceHolder ID="index" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <div id="asideright">
+                                <asp:ContentPlaceHolder ID="asideright" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <div id="sidebar">
+
+                                <asp:ContentPlaceHolder ID="sidebarcontainer" runat="server">
+                                    <asp:ContentPlaceHolder ID="sidebar" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                    <% if (PageCategory.ToLower() == "services")
+                                        {%>
+                                    <ssw:OurExperience ID="OurExperience" runat="server" />
+                                    <%  } %>
+                                    <% if (PageCategory.ToLower() == "user group")
+                                        {%>
+                                    <ssw:Newsletter ID="Newsletter" runat="server" />
+                                    <%  } %>
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="maincontentLater" class="row">
+                        <asp:ContentPlaceHolder ID="maincontentLater" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="Location" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <asp:HiddenField ID="hiddenCategory" runat="server" />
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+
+
+    <script>
+        $(document).on("DetectServiceComplete",
+            function (event, service) {
+                if (service.name === "google" && service.successful) {
+                    console.log("init optinmonster");
+                    var om58059cd335566, om58059cd335566_poll = function () { var r = 0; return function (n, l) { clearInterval(r), r = setInterval(n, l) } }(); !function (e, t, n) { if (e.getElementById(n)) { om58059cd335566_poll(function () { if (window['om_loaded']) { if (!om58059cd335566) { om58059cd335566 = new OptinMonsterApp(); return om58059cd335566.init({ "s": "24214.58059cd335566", "staging": 0, "dev": 0, "beta": 0 }); } } }, 25); return; } var d = false, o = e.createElement(t); o.id = n, o.src = "//a.optnmnstr.com/app/js/api.min.js", o.onload = o.onreadystatechange = function () { if (!d) { if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") { try { d = om_loaded = true; om58059cd335566 = new OptinMonsterApp(); om58059cd335566.init({ "s": "24214.58059cd335566", "staging": 0, "dev": 0, "beta": 0 }); o.onload = o.onreadystatechange = null; } catch (t) { } } } }; (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(o) }(document, "script", "omapi-script");
+                }
+            });
+
+    </script>
+    <!-- / OptinMonster -->
+</asp:Content>
+
+<asp:Content ID="FooterScriptsContent" runat="server" ContentPlaceHolderID="FooterScripts">
+    <asp:ContentPlaceHolder ID="FooterScripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

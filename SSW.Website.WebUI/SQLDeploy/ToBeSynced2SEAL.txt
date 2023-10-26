@@ -1,0 +1,138 @@
+\\bee\ssw\ExchangeApps\TeamCalendar\CalendarItem.asp(179):	Error	WEB - Anchor names must be valid
+\\bee\ssw\ExchangeApps\TeamCalendar\CalendarItem.asp(184):	Error	WEB - Anchor names must be valid
+\\bee\ssw\ExchangeApps\TeamCalendar\CalendarItem.asp(189):	Error	WEB - Anchor names must be valid
+\\bee\ssw\ExchangeApps\TeamCalendar\CalendarItem.asp(194):	Error	WEB - Anchor names must be valid
+\\bee\ssw\ExchangeApps\TeamCalendar\CalendarItem.asp(199):	Error	WEB - Anchor names must be valid
+\\bee\ssw\LinkAuditor\Samples\A.aspx(18):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\DeveloperDotNet\DotNetStandard_ObjectNaming.aspx(1194):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\DeveloperGeneral\CreatingScheduledJobsOnAServer.aspx(73):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\DeveloperGeneral\ExchangeServer.aspx(40):	Error	WEB - Anchor names must be valid
+\\bee\ssw\Standards\DeveloperGeneral\TheBest3rdPartyTools.aspx(36):	Error	WEB - URLs should be correctly cased for Google
+\\bee\ssw\Standards\DeveloperGeneral\TheBest3rdPartyTools.aspx(36):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\DeveloperInstallationNetworkSetup\UsingPerformanceMonitor.aspx(73):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\DeveloperSQLServer\SSWStandardForUpsizing.aspx(23):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\DeveloperSQLServer\SSWStandardForUpsizing.aspx(83):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\GoogleKeywords.aspx(83):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterAccessDatabases.aspx(33):	Error	WEB - URLs should be correctly cased for Google
+\\bee\ssw\Standards\Rules\RulestoBetterCode.aspx(81):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterCode.aspx(957):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterDotNetProjects.aspx(2439):	Error	WEB - FONT tags must not be used
+\\bee\ssw\Standards\Rules\RulesToBetterDotNetProjects.aspx(2480):	Error	WEB - FONT tags must not be used
+\\bee\ssw\Standards\Rules\RulesToBetterDotNetProjects.aspx(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Standards\Rules\RulesToBetterDotNetProjects.aspx(2320):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterDotNetProjects.aspx(2599):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterGoogleRankings.aspx(651):	Error	WEB - Documents should not contain "click here" to improve Google relevancy
+\\bee\ssw\Standards\Rules\RulesToBetterGoogleRankings.aspx(655):	Error	WEB - Documents should not contain "click here" to improve Google relevancy
+\\bee\ssw\Standards\Rules\RulesToBetterGoogleRankings.aspx(651):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterInterfaces.aspx(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Standards\Rules\RulesToBetterInterfaces.aspx(1499):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterInterfaces.aspx(1819):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterNetworks.aspx(93):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\Standards\Rules\RulesToBetterNetworks.aspx(100):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\Standards\Rules\RulesToBetterNetworks.aspx(93):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterSetups.aspx(32):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(899):	Error	WEB - Empty tags must not exist (except server tags, SCRIPT or TD)
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(53):	Error	WEB - URLs should be correctly cased for Google
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(704):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(1388):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(1750):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(1811):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(1840):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(1902):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(1924):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterSQLServerDatabases.aspx(2002):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulestoBetterWebsites.aspx(40):	Error	WEB - URLs should be correctly cased for Google
+\\bee\ssw\Standards\Rules\RulesToBetterWebsitesAdministration.aspx(630):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterWebsitesAdministration.aspx(738):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterWebsitesContent.aspx(71):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterWebsitesContent.aspx(309):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterWebsitesMarketing.aspx(55):	Error	WEB - URLs should be correctly cased for Google
+\\bee\ssw\Standards\Rules\RulesToBetterWindowsForms.aspx(938):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\RulesToBetterWindowsForms.aspx(1124):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\rulestosuccessfulprojects.aspx(194):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\Standards\Rules\rulestosuccessfulprojects.aspx(218):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\BlogServer\HowToUseTheBlogServer.aspx(32):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(294):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(298):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(326):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(403):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(410):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(526):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(709):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(834):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(843):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(864):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(1101):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\EmployeeResponsibilities.aspx(1107):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionAdministrators.aspx(429):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionAdministrators.aspx(485):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(1039):	Error	WEB - Anchor names must be valid
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(580):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(581):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(37):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(751):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(882):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay1.aspx(918):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay3.aspx(254):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDay4.aspx(211):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDevelopers.aspx(304):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDevelopers.aspx(481):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDevelopers.aspx(501):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionDevelopers.aspx(314):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionMarketing.aspx(226):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\InductionProjectManagers.aspx(107):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\StandardsInternal\InductionTraining\InductionProjectManagers.aspx(156):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\InductionTraining\TimesheetInvoicing.aspx(652):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\Retreat\Default.aspx(37):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\StandardsInternal\VisualBuildProSetup\default.aspx(28):	Error	WEB - Documents should not contain "click here" to improve Google relevancy
+\\bee\ssw\StandardsInternal\VisualBuildProSetup\default.aspx(28):	Error	WEB - URLs should be correctly cased for Google
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(66):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(82):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(86):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(89):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(91):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(94):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(130):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\TeamCalendar\Installation\ReadMe.htm(89):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\TimeProOnline\Invoice\InvoiceOutstanding.aspx(303):	Error	WEB - Empty tags must not exist (except server tags, SCRIPT or TD)
+\\bee\ssw\TimeProOnline\Invoice\InvoiceOutstanding.aspx(77):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\ClientContactFollowedUpList.aspx(13):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\ClientContactFollowUpDownload.aspx(87):	Error	WEB - Empty tags must not exist (except server tags, SCRIPT or TD)
+\\bee\ssw\TimeProOnline\Report\ClientContactFollowUpDownload.aspx(89):	Error	WEB - Empty tags must not exist (except server tags, SCRIPT or TD)
+\\bee\ssw\TimeProOnline\Report\ClientContactFollowUpDownload.aspx(95):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\ClientContactFollowUpDownloadResult.aspx(8):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\ClientContactFollowUpDownloadResult.aspx(46):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\default.aspx(7):	Error	WEB - Empty tags must not exist (except server tags, SCRIPT or TD)
+\\bee\ssw\TimeProOnline\Report\LogScanner.aspx(7):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\ProductDownloadGraph.aspx(21):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SpaceAllocatedbyDatabaseGraph.aspx(7):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SpaceAllocatedbyDatabaseGraph.aspx(19):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SpaceAllocatedbyTableGraph.aspx(7):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SpaceAllocatedbyTableGraph.aspx(17):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SQLPerformanceLogGraph.aspx(75):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SQLPerformanceLogGraph.aspx(116):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SQLUpDownTimeGraph.aspx(7):	Error	WEB - Table tags should not specify the width
+\\bee\ssw\TimeProOnline\Report\SQLUpDownTimeGraph.aspx(19):	Error	WEB - Table tags should not specify the width
+File is being ignored:\\bee\ssw\TimeProOnline\Tools\PerformanceMonitor_SSWServers_Processor.htm( ): ErrorWEB - Anchor name must not start with #
+\\bee\ssw\Company\Directions\Coogee\BalconyApplication.aspx(162):	Error	WEB - No absolute paths or direct external links
+\\bee\ssw\Demos\Olap\data\Billablehours.htm(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Demos\Olap\data\ClientInvoiceCount.htm(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Demos\Olap\data\ClientReferredBy.htm(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Demos\Olap\data\EmpLeft.htm(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Demos\Olap\data\EmpTimeByProject.htm(1):	Error	WEB - Files must not be too large for Google
+\\bee\ssw\Demos\Olap\data\ReminderEmailsSent.htm(1):	Error	WEB - Files must not be too large for Google
+File is being ignored:\\bee\ssw\Demos\pollAdmin\Poll_WebAdmin\PollDataResults.aspx( ): ErrorWEB - Anchor name must not start with #
+File is being ignored:\\bee\ssw\KB\CodeBase\07HTML-JavaScript\DoubleClick.aspx( ): ErrorWEB - Anchor name must not start with #
+File is being ignored:\\bee\ssw\TimeProOnline\MailMerge\Newsletter\14 Principles of Polite Apps.htm( ): ErrorWEB - Anchor name must not start with #
+\\bee\ssw\TimeProOnline\MailMerge\Newsletter\2001Jul.htm(238):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\TimeProOnline\MailMerge\Newsletter\2001Jun.htm(207):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\TimeProOnline\MailMerge\Newsletter\2002FebNZDevdays.htm(134):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\TimeProOnline\MailMerge\Newsletter\2002FebVSNETLaunch.htm(93):	Error	WEB - Pages must not link to the same URL twice
+\\bee\ssw\TimeProOnline\MailMerge\Newsletter\2002Jan.htm(233):	Error	WEB - Pages must not link to the same URL twice
+	218 errors found.
+9656 File(s) scanned.
+
+
+Please resolve by double clicking on each line in ‘Output Window’ and following the instructions in the Tutorial
+
+------ Scan Finished ------

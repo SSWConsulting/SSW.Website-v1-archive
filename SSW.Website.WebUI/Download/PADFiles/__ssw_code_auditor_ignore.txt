@@ -1,0 +1,1 @@
+Note: Use absolute path because this pad files will be outside SSW web site. e.g. download.com

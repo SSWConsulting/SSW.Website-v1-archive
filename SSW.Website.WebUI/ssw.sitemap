@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<siteMap>
+  <siteMapNode url="/ssw/Default.aspx" title="Home" description="SSW - Australia's Leading .NET and SQL Consultants" roles="">
+    <siteMapNode url="/ssw/Company/Default.aspx" title="Company"  description="SSW offices, employees, clients, news, and more" roles="">
+      <siteMapNode url="/ssw/Company/Directions/China/Default.aspx" title="Beijing Office" description="Beijing Office" />
+      <siteMapNode url="/ssw/Company/Directions/NeutralBay/Default.aspx" title="Sydney Office" description="Neutral Bay Office" />
+      <siteMapNode url="/ssw/Redirect/SSWSharePointEmployee.htm" title="Our People" description="Our People" />
+      <siteMapNode url="/ssw/Testimonials/default.aspx" title="Testimonials" description="Testimonials - What people say about us" />
+      <siteMapNode url="/ssw/Employment/Employment.aspx" title="Employment Opportunities" description="Employment" />
+      <siteMapNode url="/ssw/News/News.aspx" title="News" description="SSW News" />
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/Consulting/Default.aspx" title="Services" description="SSW’s consulting services, solutions and probably everything you will need on your next application." roles="">
+      <siteMapNode url="/ssw/Consulting/ALM.aspx" title="Application Lifecycle Management" description="Application Lifecycle Management (ALM)">
+        <siteMapNode url="/ssw/Consulting/alm-building-quality-applications.aspx" title="Building Quality Applications" description="Building Quality Applications" />
+        <siteMapNode url="/ssw/Consulting/alm-project-and-process-management.aspx" title="Project and Process Management" description="Project and Process Management" />
+        <siteMapNode url="/ssw/Consulting/alm-source-control-branching.aspx" title="Source Control Branching" description="Source Control Branching" />
+        <siteMapNode url="/ssw/Consulting/alm-test-quality-assurance.aspx" title="Test Quality Assurance" description="Test Quality Assurance" />
+      </siteMapNode>
+      <siteMapNode url="/ssw/Consulting/ContentManagement.aspx" title="Content Management Systems (CMS)" description="Content Management Systems (CMS)">
+        <siteMapNode url="/ssw/Consulting/SharePoint.aspx" title="SharePoint" description="SharePoint" />
+        <siteMapNode url="/ssw/Consulting/Sitecore.aspx" title="Sitecore" description="Sitecore" />
+        <siteMapNode url="/ssw/Consulting/DNN-DotNetNuke.aspx" title="Dot Net Nuke" description="Dot Net Nuke" />
+      </siteMapNode>
+      <siteMapNode url="/ssw/Hosting/Default.aspx" title="Hosting Plans and Domain Names" description="Hosting Plans and Domain Names" />
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/Events/Events.aspx" title="Events" description="Events" roles="" />
+
+    <siteMapNode url="/ssw/Products/ProdSummaryList.aspx?" title="Products" description="SSW’s products. Great tools to help you code better.">
+      <siteMapNode url="/ssw/Products/ProdSummaryList.aspx" title="All SSW Products (58)" description="All SSW Products" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=1SQL" title="... for SQL Server (6)" description="Products for SQL Server" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=2ACCESS" title="... for Access (9)" description="Products for Access" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=10DOTNET" title="... for Visual Studio.Net (2)" description="Products for Visual Studio.Net" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=3WEB" title="... for Web (3)" description="Products for Web" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=5BUS" title="... for Business/Word/Excel (6)" description="Products for Business/Word/Excel" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=4EXOUT" title="... for Exchange/Outlook (4)" description="Products for Exchange/Outlook" />
+      <siteMapNode url="/ssw/Products/ProdCategoryList.aspx?GroupCategoryID=13WIN" title="... for Windows (1)" description="Products for Windows" />
+      <siteMapNode url="/ssw/Products/ProdCategory.aspx?CategoryID=8SUPP" title="SSW Custom Support" description="SSW Custom Support" />
+      <siteMapNode url="/ssw/Standards/Support/BugReportOrEnhancement.aspx" title="Report Bug/Enhancement" description="Bugs and Enhancements" />
+      <siteMapNode url="/ssw/AccessReporter/Default.aspx" title="Access Reporter"  description="Access Reporter" />
+      <siteMapNode url="/ssw/AgileTemplate/Default.aspx" title="Agile Template" description="Agile Template" />
+      <siteMapNode url="/ssw/CodeAuditor/Default.aspx" title="Code Auditor"  description="Code Auditor" />
+      <siteMapNode url="/ssw/DataMergePRO/Default.aspx" title="Data Merge PRO"  description="Data Merge PRO" />
+      <siteMapNode url="/ssw/Diagnostics/Default.aspx" title="Diagnostics"  description="Diagnostics" />
+      <siteMapNode url="/ssw/ExchangeReporter/Default.aspx" title="Exchange Reporter"  description="Exchange Reporter" />
+      <siteMapNode url="/ssw/eXtremeEmails/Default.aspx" title="eXtreme Emails" description="eXtreme Emails" />
+      <siteMapNode url="/ssw/HealthAuditor/Default.aspx" title="Health Auditor"  description="Health Auditor" />
+      <siteMapNode url="/ssw/LinkAuditor/Default.aspx" title="Link Auditor"  description="Link Auditor" />
+      <siteMapNode url="/ssw/NETToolkit/Default.aspx" title=".NET Toolkit"  description=".NET Toolkit" />
+      <siteMapNode url="/ssw/SQLDeploy/Default.aspx" title="SQL Deploy"  description="SQL Deploy" />
+      <siteMapNode url="/ssw/SQLAuditor/Default.aspx" title="SQL Auditor"  description="SQL Auditor" />
+      <siteMapNode url="/ssw/TeamCalendar/Default.aspx" title="Team Calendar"  description="Team Calendar" />
+      <siteMapNode url="/ssw/TimePRONet/Default.aspx" title="Time PRO .NET"  description="Time PRO .NET" />
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/Training/Default.aspx" title="Training" description="SSW’s training, courses, events, workshops and even a healthy breakfast.">
+      <siteMapNode url="/ssw/Training/Training.aspx" title="Other Training Options" description="Other Training Options" />
+      <siteMapNode url="/ssw/Events/Brain-Quest-VisualStudio2010-TFS2010-SharePoint2010.aspx" title="SSW Brain Quest" description="SSW Brain Quest: Team Foundation Server and SharePoint 2010" />
+      <siteMapNode url="/ssw/Events/Hire-Conference-Room.aspx" title="Conference Room for Hire" description="Conference Room for Hire" />
+      <siteMapNode url="/ssw/Training/Courses.aspx" title="Courses" description="Training Courses" roles="">
+        <siteMapNode url="/ssw/Training/AccesstoSQLServerandNET.aspx" title="Microsoft Access: Upgrading and Migrating to SQL Server and .NET" />
+        <siteMapNode url="/ssw/Training/BI.aspx" title="Microsoft BI Bootcamp: SQL Server 2005, Office System 2007 and PerformancePoint Server 2007" />
+        <siteMapNode url="/ssw/Training/Expression.aspx" title="Build a .NET App in 1 Day with Microsoft Expression and Workflow" />
+        <siteMapNode url="/ssw/Training/ReportingServices.aspx" title="Creating Reporting Solutions Using Microsoft SQL Server 2005 Reporting Services" />
+        <siteMapNode url="/ssw/Training/SharePoint.aspx" title="Managing and Using SharePoint 2007" />
+        <siteMapNode url="/ssw/Training/SharePointForBusiness.aspx" title="SharePoint 101 for Business" />
+        <siteMapNode url="/ssw/Training/ProcessImprovementForSoftwareTeams.aspx" title="Process Improvement 101 For Software Teams" />
+        <siteMapNode url="/ssw/Training/BusinessIntelligenceForBusiness.aspx" title="Business Intelligence 101 For Business" />
+        <siteMapNode url="/ssw/Events/Scrum-Training-Course.aspx" title="Scrum Developer Training" />
+        <siteMapNode url="/ssw/Events/Scrum-Training-Course-China.aspx" title="Scrum Developer Training" />
+        <siteMapNode url="/ssw/Events/Steve-Forte-Agile-Seminar.aspx" title="Scrum Developer Training" />
+        <siteMapNode url="/ssw/Training/SQLServer.aspx" title="SQL Server for Developers" />
+        <siteMapNode url="/ssw/Training/VisualStudio.aspx" title="Developing Windows and Web Applications using Visual Studio.NET (C# and VB.NET)" />
+        <siteMapNode url="/ssw/Training/ALM.aspx" title="Visual Studio Team System (Overview)" />
+        <siteMapNode url="/ssw/Training/BI2010.aspx" title="BI 2010" />
+        <siteMapNode url="/ssw/Training/ALMCustomization.aspx" title="Visual Studio Team System: Drilling into Work Items and Customization" />
+      </siteMapNode>
+      <siteMapNode url="/ssw/Training/PowerSessions.aspx" title="Power Sessions">
+        <siteMapNode url="/ssw/Training/Sessions-Past.aspx" title="Power Sessions Archive" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/NETUG/Default.aspx" title="User Group" description="SSW’s user groups. The best way to learn, socialize and build contacts in Sydney and Canberra.">
+      <siteMapNode url="/ssw/NETUG/Sydney.aspx" title="Sydney .NET Users Group" description="Sydney .NET Users Group">
+        <siteMapNode url="/ssw/NETUG/UserGroupMapDirectionsSydney.aspx" title="Map to Microsoft" description="Map to Microsoft" />
+      </siteMapNode>
+      <siteMapNode url="/ssw/NETUG/Canberra.aspx" title="Canberra .NET Users Group" description="Canberra .NET Users Group">
+        <siteMapNode url="/ssw/NETUG/UserGroupMapDirectionsCanberra.aspx" title="Map to Microsoft" description="Map to Microsoft" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/Download/Download.aspx" title="Downloads" description="SSW’s downloads. The place to get a good product.">
+      <siteMapNode url="/ssw/download/ProdBasket.aspx" title="Download Basket" description="Review Download Basket" />
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/Shop/Login.aspx?" title="Your Account" description="Your Account">
+      <siteMapNode url="/ssw/Shop/CcvDetails.aspx" title="CCV Number" description="CCV Number" />
+      <siteMapNode url="/ssw/Shop/ClientDetail.aspx" title="My Details" description="My Details" />
+      <siteMapNode url="/ssw/Shop/ClientDownloadHistory.aspx" title="My Download History" description="My Download History" />
+      <siteMapNode url="/ssw/Shop/ClientInvoiceSummary.aspx" title="Invoice Summary" description="Invoice Summary" />
+      <siteMapNode url="/ssw/Shop/ClientInterests.aspx" title="Your Interests" description="Your Interests" />
+      <siteMapNode url="/ssw/Shop/ClientPasswordChange.aspx" title="Change My password" description="Change My password" />
+      <siteMapNode url="/ssw/Shop/encode.aspx" title="Encoding" description="Encoding" />
+      <siteMapNode url="/ssw/Shop/EditDetail.aspx" title="My Details" description="Enable Cookies" />
+      <siteMapNode url="/ssw/Shop/EnablingCookies.aspx" title="Enable Cookies" description="My Details" />
+      <siteMapNode url="/ssw/Shop/Login.aspx" title="Logon/Join" description="Logon/Join" />
+      <siteMapNode url="/ssw/Shop/LostPassword.aspx" title="Forgot Password" description="Forgot Password" />
+      <siteMapNode url="/ssw/Shop/UserGuide.aspx" title="SSW Shopping Process" description="SSW Shopping Process" />
+      <siteMapNode url="/ssw/Shop/UserGuideFlash.aspx" title="Flash Runthrough for Purchasing Products" description="Flash Runthrough" />
+      <siteMapNode url="/ssw/shop/ClientRemove.aspx" title="Remove My Account" description="Remove My Account" />
+      <siteMapNode url="/ssw/Shop/Basket.aspx" title="My Cart" description="View my current shopping basket">
+        <siteMapNode url="/ssw/Shop/Checkout.aspx" title="Order Summary">
+          <siteMapNode url="/ssw/shop/Congratulations.aspx" title="Order Confirmation" description="Order Confirmation" />
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/zsValidate/Default.aspx" title="zsValidate"  description="zsValidate">
+      <siteMapNode url="/ssw/zsValidate/Reports/Downloads.aspx" title="Downloads"  description="Downloads" />
+      <siteMapNode url="/ssw/zsValidate/Reports/NetworkHealth.aspx" title="Network Health"  description="Network Health" />
+      <siteMapNode url="/ssw/zsValidate/Reports/Setup_Info.aspx" title="Setup_Info"  description="Setup_Info" />
+      <siteMapNode url="/ssw/zsValidate/Reports/Timesheets.aspx" title="Timesheets"  description="Timesheets" />
+      <siteMapNode url="/ssw/zsValidate/Reports/TimesheetsMissing.aspx" title="TimesheetsMissing"  description="TimesheetsMissing" />
+      <siteMapNode url="/ssw/zsValidate/Reports/WebsiteHealth.aspx" title="Website Health"  description="Website Health" />
+    </siteMapNode>
+
+    <siteMapNode url="/ssw/services/default.aspx" title="Services" description="Services">
+      <siteMapNode url="/ssw/services/websitedevelopment.aspx" title="Custom Web Application Development"  description="Custom Web Application Development" />
+      <siteMapNode url="/ssw/services/sharepoint.aspx" title="Custom SharePoint Solutions"  description="Custom SharePoint Solutions" />
+      <siteMapNode url="/ssw/services/microsoft-dynamics-crm.aspx" title="Microsoft Dynamics CRM"  description="Microsoft Dynamics CRM" />
+      <siteMapNode url="/ssw/services/microsoft-access.aspx" title="Microsoft Access"  description="Microsoft Access" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

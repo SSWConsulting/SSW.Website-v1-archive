@@ -1,0 +1,5 @@
+Print the Illustrator file to the Adobe Distiller printer to generate 
+PDF files that will work with the XEROX Phaser printer.
+
+The PDF file that Illustrator generates will not print on that printer. 
+The size of the PDF's that the distiller creates are a lot smaller also.

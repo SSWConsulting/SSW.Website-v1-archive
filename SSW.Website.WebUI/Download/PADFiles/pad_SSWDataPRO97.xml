@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<XML_DIZ_INFO>
+<MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>1.15</MASTER_PAD_VERSION>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+</MASTER_PAD_VERSION_INFO>
+<Company_Info>
+        <Company_Name>SSW Pty Ltd</Company_Name>
+        <Address_1>Suite 10, Gateway Court</Address_1>
+        <Address_2>81 - 91 Military Rd Neutral Bay</Address_2>
+        <City_Town>Sydney</City_Town>
+        <State_Province>NSW</State_Province>
+        <Zip_Postal_Code>2089</Zip_Postal_Code>
+        <Country>Australia</Country>
+        <Company_WebSite_URL>http://www.ssw.com.au</Company_WebSite_URL>
+<Contact_Info>
+        <Author_First_Name>Sophie</Author_First_Name>
+        <Author_Last_Name>Belle</Author_Last_Name>
+        <Author_Email>info@ssw.com.au</Author_Email>
+        <Contact_First_Name>Sergei</Contact_First_Name>
+        <Contact_Last_Name>Tchernykh</Contact_Last_Name>
+        <Contact_Email>info@ssw.com.au</Contact_Email>
+    </Contact_Info>
+<Support_Info>
+        <Sales_Email>info@ssw.com.au</Sales_Email>
+        <Support_Email>info@ssw.com.au</Support_Email>
+        <General_Email>info@ssw.com.au</General_Email>
+        <Sales_Phone>+61 2 9953 3000</Sales_Phone>
+        <Support_Phone>+61 2 9953 3000</Support_Phone>
+        <General_Phone>+61 2 9953 3000</General_Phone>
+        <Fax_Phone>+61 2 9953 3105</Fax_Phone>
+    </Support_Info>
+</Company_Info>
+<Program_Info>
+        <Program_Name>SSW Data PRO! 97</Program_Name>
+        <Program_Version>17.90</Program_Version>
+        <Program_Release_Month>09</Program_Release_Month>
+        <Program_Release_Day>30</Program_Release_Day>
+        <Program_Release_Year>2002</Program_Release_Year>
+        <Program_Cost_Dollars>299</Program_Cost_Dollars>
+        <Program_Cost_Other_Code />
+        <Program_Cost_Other />
+        <Program_Type>Shareware</Program_Type>
+        <Program_Release_Status>New Release</Program_Release_Status>
+        <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+        <Program_OS_Support>Win98,WinME,WinNT 3.x,WinNT 4.x,WinXP,Windows2000</Program_OS_Support>
+        <Program_Language>English</Program_Language>
+<File_Info>
+        <Filename_Versioned />
+        <Filename_Previous />
+        <Filename_Generic />
+        <Filename_Long />
+        <File_Size_Bytes>1869656</File_Size_Bytes>
+        <File_Size_K>1826</File_Size_K>
+        <File_Size_MB>1.83</File_Size_MB>
+    </File_Info>
+<Expire_Info>
+        <Has_Expire_Info>Y</Has_Expire_Info>
+        <Expire_Count>60</Expire_Count>
+        <Expire_Based_On>Uses</Expire_Based_On>
+        <Expire_Other_Info />
+        <Expire_Month />
+        <Expire_Day />
+        <Expire_Year />
+    </Expire_Info>
+        <Program_Change_Info />
+        <Program_Specific_Category>Utilities</Program_Specific_Category>
+        <Program_Categories>Database tools</Program_Categories>
+        <Program_System_Requirements>MDAC 2.6, Microsoft Access 97 or higher</Program_System_Requirements>
+        <Includes_JAVA_VM>N</Includes_JAVA_VM>
+        <Includes_VB_Runtime>N</Includes_VB_Runtime>
+        <Includes_DirectX>N</Includes_DirectX>
+</Program_Info>
+<Program_Descriptions>
+<English>
+        <Keywords>Access Utilities</Keywords>
+        <Char_Desc_45>Deploy new versions of your Access backend</Char_Desc_45>
+        <Char_Desc_80>Deploy new versions of your Access backend simply with SSW Data PRO!!</Char_Desc_80>
+        <Char_Desc_250>SSW Data PRO! records every change made to your Access backend. When the new frontend is installed at the client site, the backend will automatically be upgraded with the changes you made. Never be out of sync again!</Char_Desc_250>
+        <Char_Desc_450>Deploy new versions of your Access backend simply with SSW Data PRO!! 
+
+SSW Data PRO! records every change made to your Access backend. When the new frontend is installed at the client site, the backend will automatically be upgraded with the changes you made. Never be out of sync again! SSW Data PRO! is available for Access 97, 2000 2002.</Char_Desc_450>
+        <Char_Desc_2000>Deploy new versions of your Access backend simply with SSW Data PRO!! 
+
+SSW Data PRO! records every change made to your Access backend. When the new frontend is installed at the client site, the backend will automatically be upgraded with the changes you made. Never be out of sync again! SSW Data PRO! is available for Access 97, 2000 2002. 
+ 
+ 'SSW Data PRO!' is version control for you database written for Microsoft Access and SQL Server. 'SSW Data PRO!' is available in Microsoft Access 97 and 2000, and SQL Server 7 and 2000. 
+
+With SSW Data PRO! .... When your client gets the new version of your database, it will detect that the data structure needs revisions and performs the revisions automatically. 
+
+'SSW Data PRO!' was developed with the Microsoft Access and SQL Server developer clearly in mind. It's highly effective, easy to use and slashes the time required to administer database structures by up to 90%. 
+
+A Common Scenario of a Access/SQL Server Developer 
+
+You have a new version of a database ready for your client ...&quot;Oh no, now I'll have to find out the new tables, fields and relationships that I've added. I'd better get the client to send me a copy of their data so I can do a comparison andmake the changes.... Hope they don't mind being offline for a day.... Hope I haven't forgotten any of the changes. What were those fields that I renamed?.....&quot; 
+
+SSW Data PRO! (97/2000/SQL) is a powerful utility that will make your life easier!</Char_Desc_2000>
+</English>
+</Program_Descriptions>
+<Web_Info>
+<Application_URLs>
+        <Application_Info_URL>http://www.ssw.com.au/SSW/DataPRO</Application_Info_URL>
+        <Application_Order_URL>http://www.ssw.com.au/SSW/Products/ProdCategory.aspx?CategoryID=1DP</Application_Order_URL>
+        <Application_Screenshot_URL>http://www.ssw.com.au/SSW/datapro/Images/imgOldNew.gif</Application_Screenshot_URL>
+        <Application_Icon_URL>http://www.ssw.com.au/ssw/images/SSWsmall.gif</Application_Icon_URL>
+        <Application_XML_File_URL>http://www.ssw.com.au/SSW/Download/PADFiles/pad_SSWDataPRO97.xml</Application_XML_File_URL>
+    </Application_URLs>
+<Download_URLs>
+        <Primary_Download_URL>http://www.ssw.com.au/SSW/Redirect/SSWDataPRO97.asp</Primary_Download_URL>
+        <Secondary_Download_URL />
+        <Additional_Download_URL_1 />
+        <Additional_Download_URL_2 />
+    </Download_URLs>
+</Web_Info>
+<Permissions>
+        <Distribution_Permissions />
+        <EULA />
+</Permissions>
+<ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>N</ASP_Member>
+    <ASP_Member_Number />
+</ASP>
+</XML_DIZ_INFO>

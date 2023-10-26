@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML xmlns:signature="urn:schemas-microsoft-com:office:access">
+<HEAD>
+<title> </title>
+<LINK href="/ssw/Include/ssw.css" type="text/css" rel="stylesheet">
+
+<link href="/ssw/Images/icossw_v2.ico" rel="shortcut icon">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8"/>
+</HEAD>
+
+<SCRIPT event=onload for=window>
+  objData = new ActiveXObject("MSXML.DOMDocument");
+  objData.async = false;
+  objData.load("rptCustomerOrder.xml");
+  if (objData.parseError.errorCode != 0)
+    alert(objData.parseError.reason);
+  
+  objStyle = new ActiveXObject("MSXML.DOMDocument");
+  objStyle.async = false;
+  objStyle.load("rptCustomerOrder.xsl");
+  if (objStyle.parseError.errorCode != 0)
+    alert(objStyle.parseError.reason);
+
+  document.open("text/html","replace");
+  document.write(objData.transformNode(objStyle));
+</SCRIPT>
+
+</HTML>

@@ -1,0 +1,254 @@
+<?xml version='1.0'?>
+<project version='5'>
+	<comment><![CDATA[This sample demonstrates an entire build process that uses Microsoft Visual Studio 6.0 and .NET. It uses a sample SourceSafe project, which is created by calling SourceSafe.bld and can be browsed by starting SourceSafe Explorer, choosing File|Open, navigating to <TEMP Path>\VStudio\Database, clicking OK, and entering a user of Guest (blank password).  If one of the build steps failis because VS6 or VS.NET is not installed, uncheck that step and continue the build (F7).
+
+The build recursively gets the latest files to %TEMP%\VisBuildPro\VStudio\work, checks out the executable files, registers the components, builds the Visual Studio projects, generates a build manifest, checks in the updated executables, labels the SourceSafe project with a build number (after incrementing the build number via script), and writes a line to a success log.
+
+Custom actions are used to build the Visual Studio projects, which provides incremental builds (only building when source files or references have changed), increments projects versions for projects that need to be built, sets project base addresses to improve performance, processes all dependencies to determine the correct build order, etc.
+
+If any step fails, the failure steps are executed, which undos any checkouts, logs the failed step to a failure file, and sends an e-mail with the error output from the failed step.  Update the TO_EMAIL, FROM_EMAIL, SMTP_SERVER project macro, and check and update the username and password of the Send Mail steps before building so that those steps will succeed.
+
+The first time the project is built, all the projects are built; if built again (close and reopen project or type Alt+F7 to reset build status, then F7), VisBuildPro detects that they are up-to-date and none of the projects get built (with the exception of C# and VB.NET, since Visual Studio .NET always compiles the executable for these projects even if they are up-to-date).  If the project is rebuilt (Shift+F7), all projects will be cleaned and rebuilt (achieved by using the Builder.LaunchType property in a field override for the force field on the Build steps).
+
+Note: On systems where the TEMP path is a long filename, building the web application project in the VS.NET solution may fail; this occurs only because the sample builds in the TEMP folder, whose value is provided as a short filename, and VS.NET thinks the virtual directory path is different than the file's path (because it does an [invalid] comparison of a long filename to a short filename) and treats it as an error condition. As long as you avoid performing your builds in the TEMP path (or change your TEMP path to something like c:\Temp) this won't be a problem for real builds.
+
+The build also includes unchecked steps that demonstrate building a Visual J++ project and creating a Microsoft Installer file for the built files and copying it to a network path.  They are excluded from the build, because they would require Visual J++ and Visual Studio Installer to be installed and knowledge of a network path.  If you have these tools installed, update the network path and check these steps before building to include them in the build.  The .MSI that is created requires Microsoft Installer in order to run.
+
+Several standard macros are used, such as PROJDIR, to generically determine the file locations, FAILSTEP_OUTPUT to show the error message from a previous step, DOSCMD to execute operating system commands, DATETIME to log the current date/time.  The Visual Build Pro help provides more details on these macros and creating builds that use Visual Studio tools--click Help and lookup 'global macros', 'system macros', and 'Microsoft Visual Studio' in the help index for more information.  A LOGFILE project macro is also defined to log all build output to VStudio.log in the project directory.]]></comment>
+	<step action='Run Script' type='0'>
+		<Language>VBScript</Language>
+		<Script><![CDATA[Set objMacro = Application.Macros(vbldMacroTemporary).Item("buildMode")
+
+if LCase(objMacro.Value) <> "report" then
+	'Yes returns 6, No returns 7
+	mode = msgbox("Is this a Release Build? (Click No to run a 'Test Please' Build)",4,"Mode of Build")
+	objMacro.Value = mode
+else
+	objMacro.Value = "Report"
+end if
+]]></Script>
+		<name>Mode of build</name>
+	</step>
+	<step action='SourceSafe' type='0'>
+		<AutoLocate type='11'>-1</AutoLocate>
+		<CompareOpt type='3'>2</CompareOpt>
+		<Database>%VSS%</Database>
+		<LocalPath>%PROJDIR%\..\</LocalPath>
+		<LongFilenames type='11'>-1</LongFilenames>
+		<Operation>Get</Operation>
+		<Password>rating</Password>
+		<Project>%VSSPath%/%VSSProject%.sln</Project>
+		<PromptOff type='11'>-1</PromptOff>
+		<Recurse type='11'>-1</Recurse>
+		<ShowFilesOnly type='11'>0</ShowFilesOnly>
+		<TimeOpt type='3'>1</TimeOpt>
+		<Username>Admin</Username>
+		<WriteOpt type='3'>0</WriteOpt>
+		<checked type='11'>0</checked>
+		<description><![CDATA[Get the latest source code (recursive), replacing any writeable files,
+If there are files checked out then the build will skip all processes.
+]]></description>
+		<name>Get Latest of .sln file</name>
+		<outputfrom type='3'>1</outputfrom>
+	</step>
+	<step action='Run Script' type='0'>
+		<Language>VBScript</Language>
+		<Script><![CDATA['Application.Macros(vbldMacroTemporary).Clear
+Set FileManagment = CreateObject ("Scripting.FileSystemObject")
+Set slnFile = FileManagment.GetFile("%PROJDIR%\..\%VSSProject%.sln")
+Set textStreamRead = slnFile.OpenAsTextStream(1)
+
+dim arrProj(20)
+i = 0
+projCount = 0
+dim objMacro
+
+do while textStreamRead.AtEndOfStream <> true
+	projExists = false
+	findProj = textStreamRead.ReadLine
+	
+	'find the line in the sln file that contains the referenced folders
+	if instr(findProj, "Project(""{") then
+		if instr(findProj, "..\") Then
+			startRef = instr(findProj, "..\") + 3
+			endRef = instr(startRef,findProj,"\")
+			projRef = mid(findProj,startRef, endRef - startRef)
+
+			if instr(findProj, "..\..\") Then
+				startRef = instr(findProj, "..\") + 3
+				endRef = instr(startRef + 3,findProj,"\")
+				projRef = mid(findProj,startRef, endRef - startRef)
+			end if
+			if instr(findProj, "..\..\..\") Then
+				startRef = instr(findProj, "..\") + 3
+				endRef = instr(startRef + 6,findProj,"\")
+				projRef = mid(findProj,startRef, endRef - startRef)
+			end if
+			if instr(findProj, "..\..\..\..\") Then
+				startRef = instr(findProj, "..\") + 3
+				endRef = instr(startRef + 9,findProj,"\")
+				projRef = mid(findProj,startRef, endRef - startRef)
+			end if
+			
+			do while i <= 20
+				if arrProj(i) = projRef then
+					projExists = true
+					exit do
+				end if
+				i = i + 1
+			loop
+			i = 0			
+
+			if projExists = false then
+				arrProj(projCount) = projRef
+				Set objMacro = Application.Macros(vbldMacroTemporary).Add("projRef" & projCount)
+				objMacro.Value = projRef
+				projCount = projCount + 1
+			end if
+
+		end if
+	end if
+
+loop
+textStreamRead.Close
+
+'Set objMacroCount = Application.Macros(vbldMacroTemporary)
+Set objSetMacro = Application.Macros(vbldProject).Item("COUNTER")
+objSetMacro.Value = projCount
+Set objSetMacro = Application.Macros(vbldProject).Item("LOOP_COUNT")
+objSetMacro.Value = 0
+
+
+
+j = 0
+do while j <= 20 and arrProj(j) <> ""
+
+	Set textStreamRead = slnFile.OpenAsTextStream(1)
+	do while textStreamRead.AtEndOfStream <> true
+'		projExists = false
+		findProj = textStreamRead.ReadLine
+	
+		if instr(findProj, "SccProjectName") then
+			if instr(Ucase(findProj), Ucase(replace(arrProj(j),"..\",""))) Then
+				startRef = instr(findProj, "$")
+				endRef = instr(startRef,Ucase(findProj),Ucase(replace(arrProj(j),"..\",""))) + len(Ucase(replace(arrProj(j),"..\","")))
+				projRef = mid(findProj,startRef, endRef - startRef)
+				Set objMacro = Application.Macros(vbldMacroTemporary).Add("sourceSafeRef" & j)
+				objMacro.Value = projRef
+				exit do
+			end if
+		end if
+	
+	loop
+	textStreamRead.Close
+
+	j = j + 1
+loop
+
+
+]]></Script>
+		<name>Find Project References</name>
+	</step>
+	<step action='Run Script' type='0'>
+		<Language>VBScript</Language>
+		<Script><![CDATA[Set objMacro = Application.Macros(vbldProject).Item("VBPAutoBld")
+objMacro.Value = "True"
+
+const isFolder = 0
+const isFile = 1
+
+const checkedOutME = 2
+const checkedOut = 1
+const notCheckedOut = 0
+
+dim previousFix
+previousFix = "True"
+
+dim VSS_FolderName
+VSS_FolderName = "%VSSPath%/"
+
+Set VSS = CreateObject("SourceSafe")
+VSS.open "%VSS%"
+
+CheckTheFolder VSS.VSSItem (VSS_FolderName)
+
+i = 0
+do while i < "%COUNTER%"
+
+	Set objGetMacro = Application.Macros(vbldMacroTemporary).Item("sourceSafeRef" & i)
+
+	VSS_FolderName = objGetMacro.Value & "/"
+	CheckTheFolder VSS.VSSItem (VSS_FolderName)
+
+	i = i + 1
+loop
+
+
+Sub CheckTheFolder(objVSSFolder)
+
+	For Each VSSObj In objVSSFolder.Items(False)
+		
+		If VSSObj.Type = isFile Then
+			If VSSObj.IsCheckedOut = 2 Then
+				Set objMacro = Application.Macros(vbldProject).Item("VBPAutoBld")
+				objMacro.Value = "False"	
+				msgbox "You have an item checked out in " & VSS_FolderName,0,"VBPAutoBuild"
+				If VSSObj.IsCheckedOut <> 2 Then
+					if previousFix = "True" then
+						objMacro.Value = "True"
+						previousFix = "True"
+					end if
+				else
+					previousFix = "False"
+				end if
+			End if
+		Else
+			
+			
+			VSS_FolderName = VSS_FolderName & VSSObj.Name & "/"
+						
+			set objVSS_SubFolder = VSS.VSSItem (VSS_FolderName)		
+			CheckTheFolder(objVSS_SubFolder)
+
+
+			lastindex = instrrev(VSS_FolderName, VSSObj.Name & "/") - 1
+
+			
+			'msgbox _
+			'	"VSSFolder: " & VSS_FolderName & vbcrlf & _
+			'	"VSSFile: " & VSSObj.Name & vbcrlf & _
+			'	"NewFolder: " & Replace( VSS_FolderName,VSSObj.Name & "/","") & vbcrlf & _
+			'	"NewFolder: " & sTest & vbcrlf & _
+			'	"Length: " & len(VSS_FolderName) & vbcrlf & _
+			'	"LastIndex: " & instrrev(VSS_FolderName, VSSObj.Name & "/")
+				
+			
+			VSS_FolderName =  left(VSS_FolderName, lastindex) 
+			'VSS_FolderName = replace(VSS_FolderName, VSSObj.Name & "/","")			
+
+		End if
+	Next
+
+End Sub
+]]></Script>
+		<condcomparison type='3'>6</condcomparison>
+		<condexpr>%Not_eXtreme%</condexpr>
+		<name>If any file is Checked-out, SKIP ALL</name>
+	</step>
+	<step action='Group' type='0'>
+		<condcomparison type='3'>6</condcomparison>
+		<condexpr>%VBPAutoBld%</condexpr>
+		<name>VBP Build Process</name>
+	</step>
+	<step action='SourceSafe' type='0'>
+		<AutoLocate type='11'>-1</AutoLocate>
+		<CompareOpt type='3'>2</CompareOpt>
+		<Database>%VSS%</Database>
+		<LocalPath>%PROJDIR%\..\</LocalPath>
+		<LongFilenames type='11'>-1</LongFilenames>
+		<Operation>Get</Operation>
+		<Password>rating</Password>
+		<Project>%VSSPath%</Project>
+		<PromptOff type='11'>-1</PromptOff>
+		<Recurse type='11'>-1</Recurse>
+		<ShowFilesOnly type='11'>0

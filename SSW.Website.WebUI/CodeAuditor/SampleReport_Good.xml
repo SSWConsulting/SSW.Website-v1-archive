@@ -1,0 +1,3719 @@
+<?xml version='1.0' standalone='yes'?>
+<?xml-stylesheet type='text/xsl' href='.\Xsl\StandardReport.xslt'?>
+<ReportDataSet>
+  <Rule>
+    <RuleID>78</RuleID>
+    <RuleName>C# Code- AssemblyInfo.cs must have AssemblyVersion attribute (Tip: Fix this in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>\[Assembly:\s*AssemblyVersion\s*\(\s*"\d+\.\d+</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>AssemblyInfo.cs</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Version info must exists within AssemblyInfo</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>1</TotalFileScanned>
+    <TotalTimeTaken>94</TotalTimeTaken>
+    <DateCreated>2003-10-20T22:54:58.907+08:00</DateCreated>
+    <EmpCreated>johnliu/KOALA</EmpCreated>
+    <DateUpdated>2005-08-15T18:18:25.741+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+    <ErrorMessage>(missing)</ErrorMessage>
+  </Rule>
+  <Rule>
+    <RuleID>86</RuleID>
+    <RuleName>C# Code- Boolean Properties must be prefixed by a verb (Tip: Change the prefix of the property name.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:bool\s*\b(?!(?:Is|Has|Supports|Allow|Accept|Use|Visible|Available|Check|Exists|Can|Should)|(?=\b\w*ed\b)\w*)(\w+)\s*(?:\[\])?\s*\{.*?\})</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Boolean Properties must be prefixed by a verb Verbs like "Supports", "Allow", "Accept", "Use" should be valid. Also properties like "Visible", "Available" should be accepted (maybe not) http://www.ssw.com.au/SSW/Standards/Rules/RulestoBetterCode.aspx#BooleanPropertyNamingConventions</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>1270</TotalTimeTaken>
+    <DateCreated>2003-12-09T15:21:34.712+08:00</DateCreated>
+    <EmpCreated>MarkLiu/SHARK</EmpCreated>
+    <DateUpdated>2006-07-28T15:31:12.39+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>190</RuleID>
+    <RuleName>C# Code- Catch and re-throw exception improperly (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# catch statement
+catch\s*
+(?:
+# With ExceptionName
+(?:\(\s*\w+[^\s)]*\s+(?&lt;ExceptionName&gt;\w+)\)\s*)
+|
+# Without ExceptionName
+(?:\(\s*\w+[^\)]*\)\s*)?
+)
+# catch block - open curly bracket
+\{\s*
+# skip all comments
+(?:(?://[^\n]*|/\*.*?\*/)\s*)*
+(?:
+# empty catch block
+|
+# catch block that re-throws the exception without doing anything else
+(?:throw\s*;\s*)[^\}]*
+|
+# Re-throw the exception by passing the original exception object
+(?:[^\}]*?throw\s+\&lt;ExceptionName&gt;\s*;\s*)[^\}]*
+)
+# catch block - close curly bracket
+\}
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>2834</TotalTimeTaken>
+    <DateCreated>2005-05-12T17:24:15.031+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-03-22T11:26:38.078+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterdotNETProjects.aspx#CatchRethrow</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>157</RuleID>
+    <RuleName>C# Code- Do you make your Catch Exceptions specific?</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>catch\s*\(\s*Exception</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Exception should not just catch "Exception"
+
+For example
+
+Bad:
+Try 
+{
+       connection.Open();
+} 
+catch( Exception ex)
+{
+       return ex.ToString ();
+}
+
+Good:
+Try 
+{ 
+       connection.Open();
+} 
+catch( InvalidOperationException ex)
+{
+       return ex.ToString ();
+}
+catch( SqlException ex)
+{
+       return ex.ToString ();
+}
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>690</TotalTimeTaken>
+    <DateCreated>2005-01-20T16:06:46.308+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2007-08-15T15:03:58.011+08:00</DateUpdated>
+    <EmpUpdated>EvanLin/RACOON</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterdotNETProjects.aspx#Catch_Exception</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>53</RuleID>
+    <RuleName>C# Code- If statement must have braces (Tip: Add brace in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+^                                     # begin on new line
+   (?&lt;sol&gt;[\u0020\t]*)                # funny spaces
+   (?!//[\u0020\t]*)                  # ignore comments
+   (?&lt;space&gt;\b)                       
+   (
+   (?&lt;if&gt;(else\s+)?if\s*\(            # match (else) if
+       (?&gt;[^()]+                      # greedy match everything
+       |
+         \((?&lt;DEPTH&gt;)                 # increase depth if match (
+       |
+         \)(?&lt;-DEPTH&gt;)                # gobble depth if match )
+       )+(?(DEPTH)(?!))               # if depth is unbalanced - fail
+     \)
+   )
+   |
+   (?&lt;else&gt;else\s+(?!if))             # if match "else" - not "else if"
+   )
+(?!\s*
+
+(?&lt;Comment&gt;
+(?six:
+(
+(\/\*
+((?&lt;star&gt;\*\/)|\*|(?(star)(?!)|([^*/])))+
+\/
+)
+|
+//[^\n]*\n))
+)*
+(\s*{)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Regular Expression - Find any if statements that are not followed by a curly bracket ({). Ignore statements that have been commented out.
+Options: Multiline, IgnoreCase, IgnorePatternwhitespace
+
+Ross Donald</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>50</TotalFileScanned>
+    <TotalTimeTaken>743</TotalTimeTaken>
+    <DateCreated>2003-02-04T10:58:33+08:00</DateCreated>
+    <EmpCreated>KOALA</EmpCreated>
+    <DateUpdated>2006-08-29T13:40:16+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulestoBetterCode.aspx#IfStatement</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>74</RuleID>
+    <RuleName>C# Code- No empty catch blocks (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+{\s*}(?&lt;=catch(?&lt;a&gt;[^{]*){\s*})
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>try { } catch(Exception e) { }
+try { } catch { }</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>699</TotalTimeTaken>
+    <DateCreated>2003-09-24T09:56:29.596+08:00</DateCreated>
+    <EmpCreated>johnliu/KOALA</EmpCreated>
+    <DateUpdated>2005-08-16T10:29:58.468+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>169</RuleID>
+    <RuleName>C# Code- No empty code blocks (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?ix-smn:
+# Empty block
+{\s*}
+
+# Ignore - constructor overloading
+(?&lt;!:\s*(?:this|base)\(.*\)\s*{\s*})
+
+# Ignore - empty class constructor that has no parameters is OK
+(?!
+(?&lt;=\s+(?&lt;ClassName&gt;\w+)\(\s*\)\s*{\s*})    # Get the class name
+(?&lt;=(?s:class\s+\k&lt;ClassName&gt;    # Locate the class
+(?:\s*:\s*(?:\w+\.)*\w+    # This class inherits or implements a base class or an interface
+(?:\s*,\s*(?:\w+\.)*\w+)*    # This class inherits or implements more than one base class or interface
+|    # This class doesn't inherit or implement anything
+)\s*{.*))
+)
+
+# Ignore - empty partial class - this could be created by VS 2005 Dataset designer
+(?&lt;!partial\s+class\s+\w+\s*{\s*})
+
+# Ignore - Inherited class (support Generic &lt;T&gt;)
+(?&lt;!:\s*(?:\w+\.)*\w+(?:\&lt;.*\&gt;|)\s*{\s*})
+
+# Ignore - empty array
+(?&lt;!\[\]\s*{\s*})
+
+# Ignore - this is a string, not empty code block
+(?!
+(?&lt;="[^\n]*{\s*})
+(?=[^\n]*?")
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Empty Visual Basic .NET procedure or Visual C# .NET method consume program resources unnecessarily.
+
+Put comment in code block if its stub for future application.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>704</TotalTimeTaken>
+    <DateCreated>2005-02-11T15:37:11.32+08:00</DateCreated>
+    <EmpCreated>MarkLiu/ORCA</EmpCreated>
+    <DateUpdated>2007-02-08T15:14:59.062+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>161</RuleID>
+    <RuleName>C# Code- No hard coded connection string (Tip: Move the string to settings file.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+"[^"\n]*(?:Driver|Data\sSource)\s*=[^"]*"
+
+# Ignore: This is generated by VS for Settings class
+(?!
+(?&lt;=\[global::System\.Configuration\.DefaultSettingValueAttribute\("[^\n]*)
+(?=[^\n]*\)\])
+)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>706</TotalTimeTaken>
+    <DateCreated>2005-02-01T11:36:36.752+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2006-08-07T15:53:11.078+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterdotNETProjects.aspx#HardCode</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>101</RuleID>
+    <RuleName>C# Code- No variable name with the same class name (Tip: Change the variable name.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?mix-sn:
+# Match for ClassName className
+(?:^|\.)(?&lt;1&gt;\w+)\s+\1(?:\s*)(?:;|=.*?;)
+# Ignore Inline Comment //
+(?&lt;!//.*)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Variable name should not be the same as class name.
+Bad Example: 
+Array array = new Array();
+Good Example:
+Array objects = new Array();
+
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>747</TotalTimeTaken>
+    <DateCreated>2004-03-17T18:03:34.644+08:00</DateCreated>
+    <EmpCreated>MarkLiu/SHARK</EmpCreated>
+    <DateUpdated>2005-12-21T22:29:15.843+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>123</RuleID>
+    <RuleName>C# Code- SQL stored procedure names should be prefixed with the owner (dbo) (Tip: Fix in Sql server and then Code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>SqlCommand\s+(\w+)(?=.*?\1\.CommandType\s*=\s*CommandType.StoredProcedure).+?\1\.CommandText\s*=\s*"(?!dbo\.)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If a stored procedure name is not prefixed by the owner, SQL server will look for a procedure with that name for the current user first. This causes a performance hit.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>677</TotalTimeTaken>
+    <DateCreated>2004-10-16T19:35:56+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2005-08-03T12:16:31.655+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulestoBetterCode.aspx#PrefixProcName</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>202</RuleID>
+    <RuleName>C# Code- Static constructor must be Protected (Tip: Add 'protected' for static constructor in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixn-m:
+	# Match Class/Struct
+	(class|struct)\s+
+	# Match Class name
+	(?&lt;ClassName&gt;\w+)\s*
+	# Match Inheritance stuff
+	(?&lt;Inherit&gt;:[\s\w\.\,]*)?\s*
+	{
+	(.*(?&lt;Result&gt;public\s*static\s*\k&lt;ClassName&gt;\()|.*(?&lt;Result&gt;static\s*public\s*\k&lt;ClassName&gt;\())
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>50</TotalFileScanned>
+    <TotalTimeTaken>1195</TotalTimeTaken>
+    <DateCreated>2005-07-05T09:21:54.758+08:00</DateCreated>
+    <EmpCreated>garylam/BADGER</EmpCreated>
+    <DateUpdated>2005-08-03T12:19:11.482+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL />
+  </Rule>
+  <Rule>
+    <RuleID>138</RuleID>
+    <RuleName>C# Code- String should be @-quoted instead of using escape character for "\\" (Tip: Fix in code)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# Find \\
+\\\\
+
+# Ignore: Already @-quoted
+(?&lt;!
+@(?:"[^"]*?")*(?:"[^"]*?\\\\)
+)
+
+# Ignore: This is a character, not string
+(?&lt;!(?:,|\(|{|=)\s*'\\\\)
+(?!(?='\s*:)(?&lt;=(?:\)\s*{|:|;)\s*case\s*'\\\\)) # switch case
+
+# Ignore: This is generated by VS Designer - not necessary to change it
+(?!
+(?&lt;=\#region\s*Windows\s*Form\s*Designer\s*generated\s*code.*?private\s*void\s*InitializeComponent\(\)\s*\{.*?\\\\)
+(?=.*?\}\s*\#endregion)
+)
+
+# Ignore: This is generated by VS for Settings class
+(?!
+(?&lt;=\[global::System\.Configuration\.DefaultSettingValueAttribute\("[^\n]*)
+(?=[^\n]*"\)\])
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Good:
+    string path = @"C:\Program Files\SSW Code Auditor";
+
+Bad:
+    string path = "C:\\Program Files\\SSW Code Auditor";</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>710</TotalTimeTaken>
+    <DateCreated>2004-10-17T12:51:54+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2006-08-04T13:45:50.921+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>170</RuleID>
+    <RuleName>C# Code- Structs and Classes member accessibility must be declared (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixn-m:
+	# Match Class/Struct
+	(class|struct)\s+
+	# Match Class name
+	(?&lt;ClassName&gt;\w+)\s*
+	# Match Inheritance stuff
+	(?&lt;Inherit&gt;:[\s\w\.\,]*)?\s*
+	{
+	(?&gt;
+		(?(Brace)
+			# Ignore matches in child bracers
+			([^{}]+)
+		|
+			# Match things in class bracer
+			(
+				# Skip whitespaces
+				\s+
+			|
+				# Skip comment block
+				/\*((?!\*/).)*\*/
+
+			|
+				# Skip compile directive and comment block
+				(\#|//)
+				[^\n]*\n
+			|
+				# Skip Attributes
+				\[
+				[^{}\]]+\]
+			|
+				# Skip Semi colon
+				;
+			|
+				# Skip lines with member accessbility
+				(static\s*|new\s*)*(public|private|protected|internal|static\s+\k&lt;ClassName&gt;)
+				([^{};]+(?({\d})[^;]*);?)
+			|
+				# Match lines without member accessibility
+				(?&lt;Result&gt;[^{};]+(?({\d})[^;]*);?)
+			)+
+		)
+	|
+		# Add child bracer to stack
+		{(?&lt;Brace&gt;)
+	|
+		# Remove child bracer from stack
+		}(?&lt;-Brace&gt;)
+	)*
+	# Child Bracer must be empty
+	(?(Brace)(?!))
+	}
+	(?(Result)|(?!))
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Not explicitly specifying the access type for members of a structure or class can be deceiving for other developers that are using this structure or class. 
+
+The default structure and class members access in Visual C# .NET is always private. The default class member access in Visual Basic .NET is private. However, the default structure member access in Visual Basic .NET is public.
+
+Note: current regular expression cannot check embedded classes.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>55</TotalFileScanned>
+    <TotalTimeTaken>878</TotalTimeTaken>
+    <DateCreated>2005-02-11T15:38:17.033+08:00</DateCreated>
+    <EmpCreated>MarkLiu/ORCA</EmpCreated>
+    <DateUpdated>2006-03-16T08:40:20.093+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBettercode.aspx#ClassAccess</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>183</RuleID>
+    <RuleName>C# UI &amp; Code- Button Height - Standard Button must be 23 pixels height (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+	# Match button
+	\WButton\s+(\w+);
+	# Look-forward for button's size
+	(?=
+		# Skip junk character
+		.+?
+		\1\.Size\s*=\s*new\s*(?:System\.Drawing\.)?Size\s*\((?(\d*\s*,\s*[2][3]\s*)(?!)|(?&lt;Result&gt;[^)]*))\)
+	)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Button should be in 23 pixels height.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <TotalFileScanned>10</TotalFileScanned>
+    <TotalTimeTaken>680</TotalTimeTaken>
+    <DateCreated>2005-04-28T14:08:50.932+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-04-28T14:08:50.932+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>166</RuleID>
+    <RuleName>C# UI &amp; Code- Button Height and Width - for Ellipsis button (27 x 23) pixels (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn: 
+\WButton\s+(\w+);(?=.+?\1\.Text\s*=\s*[^;]+"\.\.\."\s*;).+?\1\.Size\s*=\s*new\s*(?&lt;Result&gt;System\.Drawing\.)?Size\s*(?(\(\s*[2][7]\s*,\s*[2][3]\s*\))(?!)|([^;]*;))
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Please make the size to (27,23).
+
+http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterWindowsForms.aspx#CommonControl</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>50</TotalFileScanned>
+    <TotalTimeTaken>836</TotalTimeTaken>
+    <DateCreated>2005-02-03T18:45:47.849+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-08-03T12:09:54.476+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>195</RuleID>
+    <RuleName>C# UI &amp; Code- Variable must follow .NET naming standard (Tip: Fix in designer.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+############
+# WinForm Button
+############
+
+(?:friend|private|protected|public|shared|function)
+\s+(?:System.Windows.Forms.Button\s+
+     (?(btn\w+)                     
+      (?!)                          
+     |(?&lt;Result&gt;\w+)                
+      )\s*;
+)
+
+|
+############
+# WinForm List Box
+############
+
+(?:friend|private|protected|public|shared|function)
+\s+(?:System.Windows.Forms.ListBox\s+
+     (?(lst\w+)                     
+      (?!)                          
+     |(?&lt;Result&gt;\w+)                
+      )\s*;
+)
+
+|
+
+############
+# WinForm Label
+############
+
+(?:friend|private|protected|public|shared|function)
+\s+(?:System.Windows.Forms.Label\s+
+     (?(lbl\w+)                     
+      (?!)                          
+     |(?&lt;Result&gt;\w+)                
+      )\s*;
+)
+
+# Check whether this label is being used
+# Ignore all code in the Windows Form Designer generated code region
+(?=.*\#region\sWindows\sForm\sDesigner\sgenerated\scode
+.*
+\#endregion
+.*
+# This label is being used, it needs to be named correctly
+\1\..+;)
+
+|
+
+############
+# WinForm TextBox
+############
+
+(?:friend|private|protected|public|shared|function)
+\s+(?:System.Windows.Forms.TextBox\s+
+     (?(txt\w+)                     
+      (?!)                          
+     |(?&lt;Result&gt;\w+)                
+      )\s*;
+)
+
+|
+
+############
+# WinForm ComboBox
+############
+
+(?:friend|private|protected|public|shared|function)
+\s+(?:System.Windows.Forms.ComboBox\s+
+     (?(cbo\w+)                     
+      (?!)                          
+     |(?&lt;Result&gt;\w+)                
+      )\s*;
+)
+######################
+# Custom standard may add to here
+######################
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Here is our recommended prefix to use in Win Forms UI
+
+User Interface  	    Prefix  	
+====================
+Button 	                      btn 	
+Label 	                       lbl 	
+TextBox 	                      txt 	
+ComboBox 	      cbo 		
+ListBox 	                       lst 			
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>740</TotalTimeTaken>
+    <DateCreated>2005-06-01T19:02:05.027+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-12-21T22:30:54.843+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/DeveloperDotNet/DotNetStandard_ObjectNaming.aspx</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>192</RuleID>
+    <RuleName>C# UI- Do not use ComboBox for users to select Boolean type values (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?xsi-mn:
+
+this\.(\w+)\.Items\.AddRange\(new\sobject\[\]\s*\{\s*
+(?:
+\"Enabled\"\,\s*\"Disabled\" |
+\"Enable\"\,\s*\"Disable\" |
+\"True\",\s*\"False\" |
+\"Yes\",\s*\"No\" |
+\"On\",\s*\"Off\"
+)
+\s*\}\);
+
+(?&lt;=
+this\.\1\s=\snew\sSystem\.Windows\.Forms\.ComboBox\(\)\;.*
+)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Don't use ComboBox for users to select Boolean type values
+
+Use a single CheckBox instead, see Rule URL for more information.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>676</TotalTimeTaken>
+    <DateCreated>2005-05-13T18:16:03.484+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2005-08-03T12:11:08.767+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#UseCheckBox</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>140</RuleID>
+    <RuleName>C# UI- MonthCalendar must not have ShowToday or ShowTodayCircle set to false (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>MonthCalendar\s+(\w+).+?\1\.ShowToday(?:Circle)?\s*=\s*false</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>678</TotalTimeTaken>
+    <DateCreated>2004-10-23T15:07:07+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2005-08-03T12:12:04.135+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>289</RuleID>
+    <RuleName>C#/VB.NET - Use resource file to store messages</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm: 
+".+?" 
+|
+'.+?'
+)
+
+</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>331</TotalFileScanned>
+    <TotalTimeTaken>5840</TotalTimeTaken>
+    <DateCreated>2007-08-10T16:42:36.701+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-10T16:46:41.621+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/rules/rulestobettercode.aspx#StoreMessage</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>221</RuleID>
+    <RuleName>C#/VB.NET Code - Assembly minor version should start with 11</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six: (\[|\&lt;)Assembly:\s*AssemblyVersion\s*\(\s*"\d+\.(?&lt;Result&gt;10|[0][0-9]|[0-9])\.)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>In .NET, it removes any 0 in the prefix and so e.g. _v1-02 becomes _v1-2.  The rather contrived solution is to start minor versions at 11. Therefore _v1-11.exe is your first version.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>2289</TotalTimeTaken>
+    <DateCreated>2005-08-16T15:52:09.327+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2006-07-27T13:21:47.703+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/Rules/RulestoBetterCode.aspx#SetupFileName</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>275</RuleID>
+    <RuleName>C#/VB.NET Code - Constants should not be in upper case</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?x-i:
+# C#:
+const\s+\w+\s+[A-Z]{3,}[^a-z]*?\s
+|
+# VB .NET:
+Const\s+[A-Z]{3,}[^a-z]*\s
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs; *.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>723</TotalTimeTaken>
+    <DateCreated>2006-12-14T13:29:45.764+08:00</DateCreated>
+    <EmpCreated>ericphan/ORCA</EmpCreated>
+    <DateUpdated>2007-01-29T11:28:25.328+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL />
+  </Rule>
+  <Rule>
+    <RuleID>296</RuleID>
+    <RuleName>C#/VB.NET Code - Environment.NewLine is always at the end of the line</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+(?&lt;a&gt;Environment\.NewLine\+?[^\n]+\w+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Bad Example:
+str = "aaa" + Environment.Newline + "bbb";
+
+Good Example:
+str = "aaa" + Environment.NewLine +
+         "bbb";</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>10</TotalFileScanned>
+    <TotalTimeTaken>671</TotalTimeTaken>
+    <DateCreated>2008-04-21T16:17:22.983+08:00</DateCreated>
+    <EmpCreated>BillChen/DEER</EmpCreated>
+    <DateUpdated>2008-04-22T12:08:21.134+08:00</DateUpdated>
+    <EmpUpdated>BillChen/DEER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/Rules/RulestoBetterCode.aspx#Environment</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>303</RuleID>
+    <RuleName>C#/VB.NET Code – Button or LinkLabel should always has a clicked event handler</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>2</ProjectVersion>
+    <SearchString>using System;
+using SSW.CodeAuditor.Business;
+using SSW.CodeAuditor.Business.Rules;
+using SSW.CodeAuditor.Business.Targets;
+using System.Text.RegularExpressions;
+using System.IO;
+
+public class MyRule : IRuleSnippet
+{
+    public void Check(ITarget target, TargetCollection targets, RuleResult result)
+    {
+            string pattern = @"(?sixn-m:
+(?:this|Me)?\.(?&lt;ButtonName&gt;\w+)\s+=\s+New\s+System\.Windows\.Forms\.Button
+(?!.*\k&lt;ButtonName&gt;\.Click\s+\+=\s+.*)
+(?!.*\s+Handles\s+.*\k&lt;ButtonName&gt;\.Click)
+|
+(?:this|Me)?\.(?&lt;LinkLabelName&gt;\w+)\s+=\s+New\s+System\.Windows\.Forms\.LinkLabel
+(?!.*\k&lt;LinkLabelName&gt;\.((LinkClicked\s+\+)|(Tag\s+))=\s+.*)(?!.*\s+Handles\s+\k&lt;LinkLabelName&gt;\.LinkClicked)
+)";
+            if (target.FileExtension.Equals(".cs", StringComparison.CurrentCultureIgnoreCase))
+            {
+                string formFile = Path.GetDirectoryName(target.FilePath) + @"\" + target.FileName.Replace("Designer.cs", "vb");
+                if (File.Exists(formFile))
+                {
+                    StreamReader sr = new StreamReader(formFile);
+                    target.TextContent += sr.ReadToEnd();
+                    sr.Close();
+                }
+            }
+
+            string content = target.TextContent;
+
+            foreach (Match match in Regex.Matches(content,pattern))
+            {
+                result.LineNumbers.Add(new LineObject(match.Captures[0].Index));
+            }
+
+            if (result.LineNumbers.Count &gt; 0)
+            {
+                result.ResultCode = RuleResultCode.Failed;
+            }
+            else
+            {
+                result.ResultCode = RuleResultCode.Passed;
+            }
+     }
+}</SearchString>
+    <RuleType>4</RuleType>
+    <FileFilter>*.Designer.vb;*.Designer.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>This rule can check missing of such event handler made by accident</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>5</TotalFileScanned>
+    <TotalTimeTaken>453</TotalTimeTaken>
+    <DateCreated>2008-08-11T18:22:22.187+08:00</DateCreated>
+    <EmpCreated>BillChen/WOLF</EmpCreated>
+    <DateUpdated>2008-08-11T18:23:05.969+08:00</DateUpdated>
+    <EmpUpdated>BillChen/WOLF</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/rules/rulestobettercode.aspx#CheckButtonEventHandler</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>269</RuleID>
+    <RuleName>C#/VB.NET Code- Application entry method should handle "UnhandledException" and "ThreadException" events</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?:
+# ---------- &lt;C#&gt; ----------
+# Application entry method
+\[STAThread\]\s+
+(?:(?:public|private|static)\s+){1,2}(?:void|int)\s+Main\((?:string\[\]\s+\w*|)\)\s*
+(?=\{.*?Application\.Run\([^;]*;.*?\})
+
+(?:
+# AppDomain.CurrentDomain.UnhandledException
+(?!(?&lt;=AppDomain\.CurrentDomain.*\.UnhandledException\s*\+=\s*new\s+UnhandledExceptionEventHandler\([^)]*\)\s*;.*)
+|(?=.*AppDomain\.CurrentDomain.*\.UnhandledException\s*\+=\s*new\s+UnhandledExceptionEventHandler\([^)]*\)\s*;))
+|
+# Application.ThreadExceptions
+(?!(?&lt;=Application\.ThreadException\s*\+=\s*new\s*(?:System\.Threading\.|)ThreadExceptionEventHandler\([^)]*\)\s*;.*)
+|(?=.*Application\.ThreadException\s*\+=\s*new\s*(?:System\.Threading\.|)ThreadExceptionEventHandler\([^)]*\)\s*;))
+)
+# ---------- &lt;/C#&gt; ----------
+|
+# ---------- &lt;VB .NET&gt; ----------
+# Application entry method
+(?:(?&lt;IsShared&gt;Shared\s+)|)(?:Sub|Function)\s+Main\((?:ByVal\s+\w*\(\)\s+As\s+String|)\)(?:\s+As\s+Integer|)
+(?(IsShared)|(?&lt;=Module\s+\w+.*)(?=.*End\s+Module))
+(?=.*?Application\.Run\([^)]*\).*?
+End\s+Sub)
+
+(?:
+# AppDomain.CurrentDomain.UnhandledException
+(?!(?&lt;=AddHandler\s+.*?\.UnhandledException(?&lt;=AppDomain\.CurrentDomain.*?),\s+AddressOf\s+[^\s]*.*)
+|(?=.*AddHandler\s+.*?\.UnhandledException(?&lt;=AppDomain\.CurrentDomain.*?),\s+AddressOf\s+[^\s]*))
+|
+# Application.ThreadExceptions
+(?!(?&lt;=AddHandler\s+Application\.ThreadException,\s+AddressOf\s+[^\s]*.*)
+|(?=.*AddHandler\s+Application\.ThreadException,\s+AddressOf\s+[^\s]*))
+)
+# ---------- &lt;/VB .NET&gt; ----------
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Good:
+C#: (Both must exist)
+1) AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
+2) Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+
+VB .NET: (Both must exist)
+1) AddHandler AppDomain.CurrentDomain.UnhandledException, AddressOf OnUnhandledException
+2) AddHandler Application.ThreadException, AddressOf OnThreadException</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>752</TotalTimeTaken>
+    <DateCreated>2006-08-03T16:58:39.671+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-08-04T11:17:16.843+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterdotNETProjects.aspx#EMAB</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>260</RuleID>
+    <RuleName>C#/VB.NET Code- Don't ignore Cross-Thread warning with CheckForIllegalCrossThreadCalls = false</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>2</ProjectVersion>
+    <SearchString>\bCheckForIllegalCrossThreadCalls\s*=\s*false\b</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If you use multithreading to improve the performance your Windows Forms applications, you must be careful to make calls to your controls in a thread-safe way.
+
+Please refer to http://msdn2.microsoft.com/en-US/library/ms171728.aspx for the article "How to: Make Thread-Safe Calls to Windows Forms Controls".</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>678</TotalTimeTaken>
+    <DateCreated>2006-04-11T13:30:04.687+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-04-11T13:33:50.703+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>273</RuleID>
+    <RuleName>C#/VB.NET Code- Don't throw System.Exception</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+throw\snew\s(?:System\.|)Exception\s*\(
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If you throw an exception with the code "throw Exception()", what you need subsequently to handle the exception will be the infamous "catch (Exception ex)".</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>691</TotalTimeTaken>
+    <DateCreated>2006-09-28T11:43:53.046+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-10-02T16:45:39.921+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterdotNETProjects.aspx#DoNotThrowSystemException</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>281</RuleID>
+    <RuleName>C#/VB.NET Code- Enum types should not be suffixed with the word "Enum"</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?ix-smn:
+\w*\senum\s.*\w*Enum\W
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs; *.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>This is against the .NET Object Naming Conventions and inconsistent with the framework.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>1279</TotalTimeTaken>
+    <DateCreated>2007-02-07T14:48:13.531+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2007-02-07T14:54:06.671+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulestoBetterCode.aspx#DontSuffixEnum</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>135</RuleID>
+    <RuleName>C#/VB.NET Code- Exception variables should be called ex (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?:
+catch\s*\(\s*(?:\w+\.)*\w+\s+(?!ex\))\w+\)    # C#
+# Ignore it if this is a DataSet, you can't fix it because the code will be regenerated:
+(?&lt;!public\s+(?:partial\s+|)class\s+\w+\s*\:\s*(?:System\.Data\.|)DataSet.*)
+|
+Catch\s+(?!ex\s+)\w+\s+As\s+(?:\w+\.)*\w+    # VB
+# Ignore it if this is a DataSet, you can't fix it because the code will be regenerated:
+(?&lt;!(?:Partial\s+|)Public\s+Class\s+\w+\s+Inherits\s+(?:System\.Data\.|)DataSet.*)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs; *.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>We have an exception allowing "e" for generated datasets, because there is no point changing generated code from Microsoft – even if it is wrong!</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>712</TotalTimeTaken>
+    <DateCreated>2004-10-17T12:32:35+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2006-07-21T21:43:36.781+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulestoBetterCode.aspx#nameex</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>145</RuleID>
+    <RuleName>C#/VB.NET Code- Message box title must be the application's product name and version only (Tip: Fix in code.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+MessageBox.Show\((?:\s_|)
+(?:
+(?!
+# Skip 1 or 2 parameters (as few as possible) as the MessageBox's title is only either the 2nd or 3rd parameter
+([^\^;]+?,(?:\s_|)(?:\s*)){1,2}
+(Application\.ProductName\s*\+\s*"\s"\s*\+\s*new\s*Version\(Application\.ProductVersion\)\.ToString\(2\))
+[^\)]*?\)
+)
+|(?!)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>We just provide one way to create ProductName and Version number in the title of message boxes.
+
+Version Number Format:
+
+XX.XX
+
+Sample:
+
+MessageBox.Show(this, sMessage, Application.ProductName + " " + new Version(Application.ProductVersion).ToString(2))</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>702</TotalTimeTaken>
+    <DateCreated>2004-10-30T12:05:10+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2006-03-07T14:45:42.125+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>146</RuleID>
+    <RuleName>C#/VB.NET Code- MessageBoxIcon.Question should not be used (Tip: Fix in code.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+MessageBoxIcon\.Question
+(?=\s*(?:\)|,))
+(?&lt;=
+\bMessageBox\.Show\("
+.*?\s*,(?:\s_|)(?:\s*)
+MessageBoxButtons\.\w+\s*,(?:\s_|)(?:\s*)
+MessageBoxIcon\.Question
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>MessageBox.Question has been deprecated by Microsoft and exists for backward compatibility purposes only. See http://www.ssw.com.au/ssw/standards/rules/rulestobetterinterfaces.aspx#MessageBoxGuidelines and http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnwue/html/ch09f.asp for more information.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>689</TotalTimeTaken>
+    <DateCreated>2004-10-30T12:54:36+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2006-03-23T08:53:03.609+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#MessageBoxGuidelines</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>117</RuleID>
+    <RuleName>C#/VB.NET Code- MessageBoxes must have icons (Tip: Fix in code.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+	MessageBox\.Show\s*
+	# Bracket must be used, otherwise cannot determine when MessageBox ends
+	\(
+	# Match argument inside MessageBox.Show
+	(
+		(?:
+			# Add the ( to stack s
+			(?&lt;s&gt;\()|
+			# Pop the last ( from stack s
+			(?&lt;-s&gt;\))| 
+			# If stack s is empty, this is the argument for MessageBox.Show
+			# If stack s is not empty, this is argument for another function
+			# Only check for MessageBoxIcon if stack s is empty.
+			(?(s)|(?!MessageBoxIcon))[^()]
+		)*
+	)
+	# Make sure all bracket are closed
+	(?(s)(?!))
+	# Match the ending bracket for MessageBox.Show
+	\)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>692</TotalTimeTaken>
+    <DateCreated>2004-10-16T15:10:11+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2005-09-07T14:02:22.617+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#MessageBoxGuidelines</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>162</RuleID>
+    <RuleName>C#/VB.NET Code- Never return "", Use String.Empty (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six:
+return\s*(?&lt;!\\)""
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>We use String.Empty for consistency and easier to read.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>691</TotalTimeTaken>
+    <DateCreated>2005-02-01T12:30:58.979+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-08-03T12:22:18.124+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulestoBetterCode.aspx#StringEmpty</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>178</RuleID>
+    <RuleName>C#/VB.NET Code- Should have Regenerate.bat for data access layer and store procs (Tip: Fix in code.)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>_regenerate.bat</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*data*.csproj;*data*.vbproj</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote> A _Regenerate.bat file must exist under the solution items to recreate data access layer and stored procs.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2005-04-11T16:39:10.898+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-08-30T15:36:46.565+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/Rulestobetterwindowsforms.aspx#CodeGenerators</RuleURL>
+    <ErrorMessage>(missing)</ErrorMessage>
+  </Rule>
+  <Rule>
+    <RuleID>277</RuleID>
+    <RuleName>C#/VB.NET Code- Unit test classes should be suffixed "Tests"</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?:
+# C# NUnit [TestFixture] class without "Tests" suffix
+\[TestFixture\]
+(?!\s+public\s+class\s+\w+Tests\W)
+|
+# VB .NET NUnit [TestFixture] class without "Tests" suffix
+&lt;TestFixture\(\)&gt;
+(?!(?:\s_|)\s+Public\sClass\s\w+Tests\W)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Unit test classes should be suffixed with the word "Tests" for better coding readability.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>723</TotalTimeTaken>
+    <DateCreated>2007-02-06T12:19:55.468+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2007-02-06T12:57:05.562+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulestoBetterCode.aspx#UnitTestSuffix</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>163</RuleID>
+    <RuleName>C#/VB.NET Project- Release with Debug Info to assist debugging (Tip: Fix in project's properties)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+#VS 2005
+(&lt;PropertyGroup\sCondition=.[^&gt;]*(?=Release)
+.*?
+&lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
+.*?
+&lt;/PropertyGroup&gt;)
+|
+#VS 2003
+(\&lt;Config[^&gt;]*(?=Name\s*=\s*"Release")[^&gt;]*DebugSymbols\s*=\s*"\s*true\s*")
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.csproj;*.vbproj</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Warning: Some developers may not want to do this rule because they care about their intellectual property and telling them to release with Debug Symbol is not justified.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>6</TotalFileScanned>
+    <TotalTimeTaken>138</TotalTimeTaken>
+    <DateCreated>2005-02-02T12:30:31.795+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2006-01-31T19:17:37.353+08:00</DateUpdated>
+    <EmpUpdated>RyanTee/PITBULL</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterdotNETProjects.aspx#Release</RuleURL>
+    <ErrorMessage>(settings error)</ErrorMessage>
+  </Rule>
+  <Rule>
+    <RuleID>271</RuleID>
+    <RuleName>C#/VB.NET Solution- Solution should have both "References" and "Setup" solution folders</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# This regex should only matches VS 2005 solution
+^\s*Microsoft\sVisual\sStudio\sSolution\sFile,\sFormat\sVersion\s9.00
+(?:
+(?:.*?Project\("{[^}]*}"\)\s=\s"(?&lt;FolderName&gt;References|Setup)",\s"\k&lt;FolderName&gt;",\s"{[^}]*}"
+\s*(?:ProjectSection\(SolutionItems\)\s=\spreProject|EndProject)){2}
+|
+# Ignore - Solution doesn't have any solution items
+(?!.*Project\("{[^}]*}"\)\s=\s"(?&lt;FolderName&gt;(?!References|Setup).*?)",\s"\k&lt;FolderName&gt;",\s"{[^}]*}"
+\s*ProjectSection\(SolutionItems\)\s=\spreProject)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.sln</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>6</TotalFileScanned>
+    <TotalTimeTaken>202</TotalTimeTaken>
+    <DateCreated>2006-08-11T14:33:49.843+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-08-14T11:25:49.406+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterdotNETProjects.aspx#StructuredSolutionFolders</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>105</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- AcceptButton must be called "OK" (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# Find the AcceptButton
+(?:Me|this)\.AcceptButton\s*=\s*(?:Me|this)\.(?&lt;AcceptButton&gt;\w+)\b
+
+# Check the button.text must be "OK"
+(?:
+(?:(?=.*\1\.(?&lt;Result&gt;Text)\s*=\s*\"(?!(?:OK)\"))|
+(?&lt;=\1\.(?&lt;Result&gt;Text)\s*=\s*\"(?!(?:OK)\").*))
+)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>We suggested every form have button should have Accept and Cancel button, which is convenience for user to press "enter" and "esc" keys. And for consistency within the programme we suggested to use the same name of all the Accept and cancel button. Here we choose Ok and Cancel. 
+
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>733</TotalTimeTaken>
+    <DateCreated>2004-05-19T09:42:44.537+08:00</DateCreated>
+    <EmpCreated>JoeHardy/BEE</EmpCreated>
+    <DateUpdated>2007-02-13T16:16:01.296+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/rulestobetterwindowsforms.aspx#ACCBTN</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>108</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- Buttons (except OK, Cancel, and Close), CheckBoxes, RadioButtons must have mnemonics (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# Look for any button/checkbox/radio button
+(?:
+Friend\s+WithEvents\s+(?&lt;Control&gt;\w+)\s+As\s+(?:System\.Windows\.Forms\.)?(?:Button|CheckBox|RadioButton)
+|
+\W(?:System\.Windows\.Forms\.)?(?:Button|CheckBox|RadioButton)\s+(?&lt;Control&gt;\w+)\s*\;
+)
+(?:
+(?=.*(?&lt;Result&gt;\b\k&lt;Control&gt;.Text\s*=\s*"(?!(?:OK|Cancel|Close|\.\.\.))[^&amp;"]+"))
+|
+(?&lt;=(?&lt;Result&gt;\b\k&lt;Control&gt;.Text\s*=\s*"(?!(?:OK|Cancel|Close|\.\.\.))[^&amp;"]+").*)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs; *.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>1514</TotalTimeTaken>
+    <DateCreated>2004-06-11T10:32:31.563+08:00</DateCreated>
+    <EmpCreated>JoeHardy/BEE</EmpCreated>
+    <DateUpdated>2007-02-09T14:40:32.64+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulestoBetterInterfaces.aspx#UseMnemonic</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>106</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- CancelButton must be called "Cancel" or "Close" (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# Find the CancelButton
+(?:Me|this)\.CancelButton\s*=\s*(?:Me|this)\.(?&lt;CancelButton&gt;\w+)\b
+
+# Check the button.text must be "Cancel" or "Close"
+(?:
+(?:(?=.*\1\.(?&lt;Result&gt;Text)\s*=\s*\"(?!(?:Cancel|Close)\"))|
+(?&lt;=\1\.(?&lt;Result&gt;Text)\s*=\s*\"(?!(?:Cancel|Close)\").*))
+)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>We suggested every form have button should have Accept and Cancel button, which is convenience for user to press "enter" and "esc" keys. And for consistency within the programme we suggested to use the same name of all the Accept and cancel button. Here we choose Ok and Cancel. 
+
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>688</TotalTimeTaken>
+    <DateCreated>2004-05-19T09:49:36.589+08:00</DateCreated>
+    <EmpCreated>JoeHardy/BEE</EmpCreated>
+    <DateUpdated>2007-02-13T16:16:50.25+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/rulestobetterwindowsforms.aspx#ACCBTN</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>122</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- OK, Cancel and Close buttons should not have mnemonics (Tip: Fix in designer/code).</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>((?:this)?\.\w+\.Text\s=\s"(?:&amp;OK|&amp;Ok|&amp;Cancel|&amp;Close)")</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>755</TotalTimeTaken>
+    <DateCreated>2004-10-16T19:32:46+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2005-10-05T09:51:16.28+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#UseMnemonic</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>61</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- Ok is not OK (Tip: Fix in designer)</RuleName>
+    <ProjectType>1</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?-i:\b(?:O|o)k\b)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb;*.js</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>(?-i:(?:O|o)k)
+
+This rule requires the Case-Insensitive to be turned off.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>722</TotalTimeTaken>
+    <DateCreated>2003-09-16T15:26:35.166+08:00</DateCreated>
+    <EmpCreated>johnliu/KOALA</EmpCreated>
+    <DateUpdated>2005-08-03T12:23:00.059+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>232</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- TextBox's MultiLine Property-If it is true ,AcceptsReturn should be True</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+   (?:this)?\.(?&lt;txtName&gt;(\w+))\s+=\s+New\s+System\.windows\.Forms\.TextBox
+
+(?=.*\k&lt;txtName&gt;\.Multiline\s+ =\s+True)
+
+   (?!.*\k&lt;txtName&gt;\.AcceptsReturn\s+ =\s+True)  
+
+(?!.*\k&lt;txtName&gt;\.ReadOnly\s+ =\s+True)       
+      .*(?&lt;Result&gt;\k&lt;txtName&gt;\.Multiline\s+ =\s+True)  
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If Textbox's  Multiline is true and  acceptsReturn property  is  true, 
+ then user can press enter to go next line</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>907</TotalTimeTaken>
+    <DateCreated>2005-11-02T12:01:35.65+08:00</DateCreated>
+    <EmpCreated>mathyvijay/GREENGUM</EmpCreated>
+    <DateUpdated>2005-11-24T12:17:06.175+08:00</DateUpdated>
+    <EmpUpdated>mathyvijay/GREENGUM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>171</RuleID>
+    <RuleName>C#/VB.NET UI &amp; Code- Windows form name should not start with frm (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>frm[^.]*\.</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.csproj;*.vbproj</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>For example: Every form named frmXXX should be called XXXForm</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>6</TotalFileScanned>
+    <TotalTimeTaken>66</TotalTimeTaken>
+    <DateCreated>2005-03-02T15:19:00.814+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2006-02-07T13:48:49.298+08:00</DateUpdated>
+    <EmpUpdated>RyanTee/PITBULL</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterdotNETProjects.aspx#MEANINGFULNAMES</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>297</RuleID>
+    <RuleName>C#/VB.NET UI - Set row select mode as "FullRowSelect" for DataGridView if it is read only</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>using System;
+using System.Text;
+using System.Text.RegularExpressions;
+using SSW.CodeAuditor.Business.Targets;
+using SSW.CodeAuditor.Business;
+using SSW.CodeAuditor.Business.Rules;
+
+    public class MyRule : IRuleSnippet
+    {
+
+        public void Check(ITarget currentTarget, TargetCollection targets, RuleResult result)
+        {
+            string getControlRegex = @"(?six-mn:
+
+# Find GridDataView
+(?:this|Me)\.(?&lt;control&gt;\w+)\s=\s*new\s*(?:System\.Windows\.Forms\.|)DataGridView(?:\(\);|)
+
+# Get the GridDataView with ReadOnly attribute
+(?:
+(?:(?=.*(?:Me|this)\.\k&lt;control&gt;\.(?&lt;ReadOnly&gt;ReadOnly)\s*=\s*true)|
+(?&lt;=(?:Me|this)\.\k&lt;control&gt;\.(?&lt;ReadOnly&gt;ReadOnly)\s*=\s*true))
+)
+
+)";
+            string getFullRowSelectRegex = @"(?six-mn:
+
+#Check the GridDataView if to be setted FullRowSelect attribute
+(?:
+(?:(?=(?:Me|this)\.$\.SelectionMode\s*=\s*(?:System\.Windows\.Forms\.|)DataGridViewSelectionMode\.FullRowSelect)|
+(?&lt;=(?:Me|this)\.$\.SelectionMode\s*=\s*(?:System\.Windows\.Forms\.|)DataGridViewSelectionMode\.FullRowSelect))
+)
+
+)";
+            string content = currentTarget.TextContent;
+            foreach (Match regexMatch in Regex.Matches(content, getControlRegex))
+            {
+                string controlName = regexMatch.Groups["control"].Value;
+                string fullRowSelectRegex = getFullRowSelectRegex.Replace("$", controlName);
+                if (Regex.Match(content, fullRowSelectRegex).Success == false)
+                {
+                    result.LineNumbers.Add(new LineObject(regexMatch.Groups["ReadOnly"].Index));
+                }
+            }
+
+            if (result.LineNumbers.Count &gt; 0)
+            {
+                result.ResultCode = RuleResultCode.Failed;
+            }
+            else
+            {
+                result.ResultCode = RuleResultCode.Passed;
+            }
+        }
+
+    }
+</SearchString>
+    <RuleType>4</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If you use the DataGridView control that is read only, you had better set row select mode as "FullRowSelect", becaue if the data can not be modified we can let users select all row instead of one colume. </RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>10</TotalFileScanned>
+    <TotalTimeTaken>778</TotalTimeTaken>
+    <DateCreated>2008-04-24T16:27:37.268+08:00</DateCreated>
+    <EmpCreated>BillChen/DEER</EmpCreated>
+    <DateUpdated>2008-12-02T15:08:05.577+08:00</DateUpdated>
+    <EmpUpdated>BillChen/SWAN</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#FullRowSelect</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>120</RuleID>
+    <RuleName>C#/VB.NET UI- "OK" button should be set as form's AcceptButton (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?xsi-mn:
+
+# Look for control with text = "OK"
+#(\w+)\.(\w+).Text\s=\s\"(OK|[&amp;Next]{4,5}\s\&gt;)\" -- 30/1/2007 Updated to only look for "OK" button, this rule doesn't apply to Wizard form's "Next &gt;" button
+(\w+)\.(\w+).Text\s=\s\"(OK)\"
+
+# Check whether the control is a button
+(?&lt;=\1\.\2\s=\snew\sSystem\.Windows\.Forms\.Button.*)
+
+# Check whether form has AcceptButton, if not then the button should be set as AcceptButton
+(?:(?!.*\1\.AcceptButton\s=\s)
+|(?!)) 
+
+# Look for a "ClientSize" property to make sure this is a WinForm and not a UserControl
+(?=.*this.ClientSize)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If you have a OK button, you should set it as form's AcceptButton.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>1308</TotalTimeTaken>
+    <DateCreated>2004-10-16T19:14:17+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2007-01-30T13:33:23.453+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>264</RuleID>
+    <RuleName>C#/VB.NET UI- Button Height and Width - for Standard Button (75 x 23) pixels (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>using System;
+using SSW.CodeAuditor.Business;
+using SSW.CodeAuditor.Business.Rules;
+using SSW.CodeAuditor.Business.Targets;
+using System.Text.RegularExpressions;
+
+public class MyRule : IRuleSnippet
+{
+    public void Check(ITarget currentTarget, TargetCollection targets, RuleResult result)
+    {
+        string standardButtonRegex = @"\b(?:Add|Edit|Delete|OK|Close|Cancel|Save|Browse|Select|Test|&lt;\sBack|Next\s&gt;|Remove|Refresh)\b";
+
+        string getButtonTextRegex = @"(?six-mn:
+
+# Find Buttons
+(?:this|Me)\.(\w+)\s=\snew\s(?:System\.Windows\.Forms\.|)Button(?:\(\);|)
+
+# Get buttons that size not = 75, 23
+(?:
+(?:(?=.*(?:Me|this)\.\1\.(?&lt;Size&gt;Size)\s*=\s*New\s+(?:System\.Drawing\.)Size\((?!75,\s*23).*?\))|
+(?&lt;=(?:Me|this)\.\1\.(?&lt;Size&gt;Size)\s*=\s*New\s+(?:System\.Drawing\.)Size\.\((?!75,\s*23).*?\).*))
+)
+
+# Get the text
+(?:
+(?:(?=.*?(?-s:(?:Me|this)\.\1\.Text\s*=\s*\""(?&lt;Text&gt;.*)\""))|
+(?&lt;=(?-s:(?:Me|this)\.\1\.Text\s*=\s*\""(?&lt;Text&gt;.*)\"").*?))
+)
+
+)";
+
+        string content = currentTarget.TextContent;
+        
+        foreach (Match regexMatch in Regex.Matches(content, getButtonTextRegex))
+        {
+            // Remove ellipsis: ...
+            string buttonTextWithoutEllipsis = regexMatch.Groups["Text"].Value.Replace("...", "");
+            // Remove mnemonic: &amp;
+            string buttonTextWithoutMnemonic = Regex.Replace(buttonTextWithoutEllipsis, "&amp;([^&amp;])", "$1");
+
+            if (Regex.Match(buttonTextWithoutMnemonic, standardButtonRegex, RegexOptions.IgnoreCase).Success)
+            {
+                result.LineNumbers.Add(new LineObject(regexMatch.Groups["Size"].Index));
+            }
+        }
+
+        if (result.LineNumbers.Count &gt; 0)
+        {
+            result.ResultCode = RuleResultCode.Failed;
+        }
+        else
+        {
+            result.ResultCode = RuleResultCode.Passed;
+        }
+    }
+}</SearchString>
+    <RuleType>4</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>These are the standard buttons naming list:
+
+* Add
+* Delete
+* Edit
+* OK
+* Close
+* Cancel
+* Save
+* Browse
+* Select
+* Test
+* Next &gt;
+* &lt; Back
+* Refresh
+* Remove</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>5737</TotalTimeTaken>
+    <DateCreated>2006-06-13T13:24:26.64+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-06-13T16:00:37.218+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterWindowsForms.aspx#CommonControl</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>121</RuleID>
+    <RuleName>C#/VB.NET UI- Cancel button should be set as form's CancelButton (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?xsi-mn:
+
+# Look for control with text = "Cancel"
+(\w+)\.(\w+).Text\s=\s\"Cancel\"
+
+# Check whether the control is a button
+(?&lt;=\1\.\2\s=\snew\sSystem\.Windows\.Forms\.Button.*)
+
+# Check whether form has CancelButton, if not then the button should be set as CancelButton
+(?:(?!.*\1\.CancelButton\s=\s)
+|(?!)) 
+
+# This rule doesn't apply to Wizard form, check whether this winform has a "&lt; Back" button (Wizard form should have this button)
+(?:
+(?!
+(?:(?&lt;=(\w+)\.(\w+).Text\s=\s\"&lt;\s[&amp;Back]{4,5}\".*)|(?=.*(\w+)\.(\w+).Text\s=\s\"&lt;\s[&amp;Back]{4,5}\")
+(?&lt;=(?:\3\.\4|\5\.\6)\s=\snew\sSystem\.Windows\.Forms\.Button.*))
+)|(?!)
+)
+
+# Look for a "ClientSize" property to make sure this is a WinForm and not a UserControl
+(?=.*this.ClientSize)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If you have a Cancel button, you should set it as form's CancelButton.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>1336</TotalTimeTaken>
+    <DateCreated>2004-10-16T19:31:37+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2007-01-30T13:32:56.875+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>259</RuleID>
+    <RuleName>C#/VB.NET UI- DateTimePicker's size should be (200, 21) for Long date display format or (94, 21) for Short date display format</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+# Look for DateTimePicker
+(?:
+Friend\s+WithEvents\s+(?&lt;Control&gt;\w+)\s+As\s+(?:System\.Windows\.Forms\.)?DateTimePicker
+|
+\W(?:System\.Windows\.Forms\.)?DateTimePicker\s+(?&lt;Control&gt;\w+)\s*\;
+)
+
+(?:
+# DateTimePicker's size will vary by font - check this DateTimePicker is using Tahoma 8.25
+(?:(?=.*?(?:\.|\b)\1\.Font\s*=\s*new\s*(?:System\.Drawing\.|)Font\("Tahoma",\s*8\.25(?:F|!),\s*(?:System\.Drawing\.|)FontStyle\.Regular)
+|(?&lt;=(?:\.|\b)\1\.Font\s*=\s*new\s*(?:System\.Drawing\.|)Font\("Tahoma",\s*8\.25(?:F|!),\s*(?:System\.Drawing\.|)FontStyle\.Regular.*?))
+|
+# or
+# Condition 1: The Winform or UserControl that contains this DateTimePicker is using Tahoma 8.25
+# + Condition 2: DateTimePicker isn't using a different font other than Tahoma 8.25
+# Checks Condition 1:
+(?:(?=.*?(?:this|Me)\.Font\s*=\s*new\s*(?:System\.Drawing\.|)Font\("Tahoma",\s*8\.25(?:F|!),\s*(?:System\.Drawing\.|)FontStyle\.Regular)
+|(?&lt;=(?:this|Me)\.Font\s*=\s*new\s*(?:System\.Drawing\.|)Font\("Tahoma",\s*8\.25(?:F|!),\s*(?:System\.Drawing\.|)FontStyle\.Regular.*?))
+# Checks Condition 2:
+(?!
+(?:(?=.*?(?:\.|\b)\1\.Font\s*=\s*new\s*(?:System\.Drawing\.|)Font\((?!"Tahoma",\s*8\.25(?:F|!),\s*(?:System\.Drawing\.|)FontStyle\.Regular))
+|(?&lt;=(?:\.|\b)\1\.Font\s*=\s*new\s*(?:System\.Drawing\.|)Font\((?!"Tahoma",\s*8\.25(?:F|!),\s*(?:System\.Drawing\.|)FontStyle\.Regular).*?))
+)
+)
+
+(?:
+# ----- Long -----
+# DateTimePickerFormat.Long
+(?!
+(?:(?=.*?(?:\.|\b)\1.Format\s*=\s*(?:System\.Windows\.Forms\.|)DateTimePickerFormat\.(?!Long))
+|(?&lt;=(?:\.|\b)\1.Format\s*=\s*(?:System\.Windows\.Forms\.|)DateTimePickerFormat\.(?!Long).*))
+)
+
+# Size not = 200, 21
+(?:(?=.*?(?:\.|\b)\1.Size\s*=\s*new\s*(?:System\.Drawing\.|)Size\((?!200,\s*21)[^\)]*\))
+|(?&lt;=(?:\.|\b)\1.Size\s*=\s*new\s*(?:System\.Drawing\.|)Size\((?!200,\s*21)[^\)]*\).*))
+# ----- Long -----
+|
+# ----- Short -----
+# DateTimePickerFormat.Short
+(?:(?=.*?(?:\.|\b)\1.Format\s*=\s*(?:System\.Windows\.Forms\.|)DateTimePickerFormat\.(?:\[|)Short(?:\]|))
+|(?&lt;=(?:\.|\b)\1.Format\s*=\s*(?:System\.Windows\.Forms\.|)DateTimePickerFormat\.(?:\[|)Short(?:\]|).*?))
+
+# Size not = 94, 21
+(?!
+(?:(?=.*?(?:\.|\b)\1.Size\s*=\s*new\s*(?:System\.Drawing\.|)Size\(94,\s*21\))
+|(?&lt;=(?:\.|\b)\1.Size\s*=\s*new\s*(?:System\.Drawing\.|)Size\(94,\s*21\).*?))
+)
+# ----- Short -----
+)
+
+# Capture the size value in a regex group named "Result" for Code Auditor
+(?:(?=.*(?:\.|\b)\1.Size\s*=\s*new\s*(?:System\.Drawing\.|)Size\((?&lt;Result&gt;[^\)]*)\))|(?&lt;=(?:\.|\b)\1.Size\s*=\s*new\s*(?:System\.Drawing\.|)Size\((?&lt;Result&gt;[^\)]*)\).*)|)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>The size of DateTimePicker should be (200, 21) for Long date display format or (94, 21) for Short date display format.
+
+* This only applies to DateTimePicker that uses the font "Tahoma 8.25".</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>859</TotalTimeTaken>
+    <DateCreated>2006-03-20T08:28:02.593+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-05-11T09:28:48+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterWindowsForms.aspx#CommonControl</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>231</RuleID>
+    <RuleName>C#/VB.NET UI- Don't use a button for "Select All"</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?xsi-mn:
+
+# Look for control with text = "Select All"
+(\w+)\.(\w+).Text\s=\s\"Select\sAll\"
+
+# Check whether the control is a button
+(?&lt;=\1\.\2\s=\snew\sSystem\.Windows\.Forms\.Button.*)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>1354</TotalTimeTaken>
+    <DateCreated>2005-10-04T21:23:48.956+08:00</DateCreated>
+    <EmpCreated>RyanTee/BADGER</EmpCreated>
+    <DateUpdated>2005-10-04T21:24:13.122+08:00</DateUpdated>
+    <EmpUpdated>RyanTee/BADGER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#SelectAll</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>103</RuleID>
+    <RuleName>C#/VB.NET UI- Don't use listboxes (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>System\.Windows\.Forms\.ListBox</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>674</TotalTimeTaken>
+    <DateCreated>2004-04-30T09:54:35.468+08:00</DateCreated>
+    <EmpCreated>JoeHardy/SLUG</EmpCreated>
+    <DateUpdated>2006-04-07T10:01:33.656+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterInterfaces.aspx#ListBoxesAreEvil</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>112</RuleID>
+    <RuleName>C#/VB.NET UI- FixedDialog must be used with CenterParent (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?:
+# Find FixedDialog
+(?:Me|this)\.FormBorderStyle\s*=\s*(?:System.Windows.Forms.)FormBorderStyle\.FixedDialog
+# If FixedDialog is found, CenterParent must be found too
+(?:(?=.*(?:Me|this)\.StartPosition\s*=\s*(?:System.Windows.Forms.)FormStartPosition.(?!CenterParent))|
+(?&lt;=(?:Me|this)\.StartPosition\s*=\s*(?:System.Windows.Forms.)FormStartPosition.(?!CenterParent).*))
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>726</TotalTimeTaken>
+    <DateCreated>2004-08-24T18:26:45.779+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/BEE</EmpCreated>
+    <DateUpdated>2007-02-22T14:37:03.75+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>130</RuleID>
+    <RuleName>C#/VB.NET UI- FixedSingle must be used with CenterScreen (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?:
+# Find FixedSingle
+(?:Me|this)\.FormBorderStyle\s*=\s*(?:System.Windows.Forms.)FormBorderStyle\.FixedSingle
+# If FixedSingle is found, CenterScreen must be found too
+(?:(?=.*(?:Me|this)\.StartPosition\s*=\s*(?:System.Windows.Forms.)FormStartPosition.(?!CenterScreen))|
+(?&lt;=(?:Me|this)\.StartPosition\s*=\s*(?:System.Windows.Forms.)FormStartPosition.(?!CenterScreen).*))
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>728</TotalTimeTaken>
+    <DateCreated>2004-10-17T11:17:27+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2007-02-22T14:38:36.921+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>114</RuleID>
+    <RuleName>C#/VB.NET UI- Forms should use Tahoma 8.25 Font, Header use Verdana 12 Font (Tip: Fix in designer – select Font, right click and click ‘Reset’).</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixn-m:
+	# Matching Font Property. I.e, "Font = "
+	(this|Me)\.Font\s*=\s*
+	# Matching Font Constructor. I.e, "new System.Drawing.Font("
+	new\s+(System\.Drawing\.)?Font\s*\(\s*
+	# Matching Font constructor arguments
+	(?!"Tahoma"\s*,\s*8.25[F!]) # Don't match Tahoma 8.25F It is valid Form Font
+	(?!"Verdana"\s*,\s*12[F!])  # Don't match Verdana 12F Is valid Header Font
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>As per "Design Specifications and Guidelines - Visual Design"
+http://msdn.microsoft.com/library/en-us/dnwue/html/ch14d.asp?frame=true
+
+For the proper header please read this.
+
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/propsheet/wizards.asp</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>707</TotalTimeTaken>
+    <DateCreated>2004-05-20T16:52:11+08:00</DateCreated>
+    <EmpCreated>MarkLiu/SHARK</EmpCreated>
+    <DateUpdated>2005-08-03T12:21:43.508+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterInterfaces.aspx#Font</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>142</RuleID>
+    <RuleName>C#/VB.NET UI- MonthCalendar FirstDayOfWeek must be Monday (Tip: Fix in designer.)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+
+# Find MonthCalendar
+(?:this|Me)\.(\w+)\s=\snew\s(?:System\.Windows\.Forms\.|)MonthCalendar(?:\(\);|)
+
+# FirstDayOfWeek must be Monday
+(?!
+(?:(?=.*(?:Me|this)\.\1\.(?&lt;Result&gt;FirstDayOfWeek)\s*=\s*(?:System\.Windows\.Forms\.)Day\.Monday)|
+(?&lt;=(?:Me|this)\.\1\.(?&lt;Result&gt;FirstDayOfWeek)\s*=\s*(?:System\.Windows\.Forms\.)Day\.Monday.*))
+)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>59</TotalFileScanned>
+    <TotalTimeTaken>723</TotalTimeTaken>
+    <DateCreated>2004-10-23T15:08:14+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2006-06-13T16:32:56+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>118</RuleID>
+    <RuleName>C#/VB.NET UI- TextAlign should be TopLeft or MiddleLeft (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+
+# Find Label and TextBox
+(?:this|Me)\.(\w+)\s=\snew\s(?:System\.Windows\.Forms\.|)(?:Label|TextBox)(?:\(\);|)
+
+# Find control with TextAlign not set to TopLeft or MiddleLeft
+(?:(?=.*(?:Me|this)\.\1\.(?&lt;Result&gt;TextAlign)\s*=\s*(?:System\.Drawing\.)ContentAlignment\.(?!TopLeft|MiddleLeft))|
+(?&lt;=(?:Me|this)\.\1\.(?&lt;Result&gt;TextAlign)\s*=\s*(?:System\.Drawing\.)ContentAlignment\.(?!TopLeft|MiddleLeft).*))
+
+# If this Label control has an image, the TextAlign can be something else other than TopLeft and MiddleLeft
+(?!
+(?:(?=.*(?:Me|this)\.\1\.Image\s*=\s*)|
+(?&lt;=(?:Me|this)\.\1\.Image\s*=\s*.*))
+)
+
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>1093</TotalTimeTaken>
+    <DateCreated>2004-10-16T16:44:00+08:00</DateCreated>
+    <EmpCreated>EdwardForgacs/CAT</EmpCreated>
+    <DateUpdated>2006-06-13T16:25:33+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>254</RuleID>
+    <RuleName>C#/VB.NET UI- TextBox's PasswordChar must be *</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?&lt;TextBoxName&gt;\w+)\.PasswordChar\s*=\s
+(?!
+\'\*\'
+|
+(?:Global\.|)(?:Microsoft\.VisualBasic\.|)ChrW\(42\)
+)
+(?&lt;=(?:\.|\b)\k&lt;TextBoxName&gt;\s*=\s*new\s+(?:System\.Windows\.Forms\.|)TextBox(?:\(\)|).*)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs; *.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>1019</TotalTimeTaken>
+    <DateCreated>2006-01-30T16:06:33.671+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-03-25T18:42:42.531+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL />
+  </Rule>
+  <Rule>
+    <RuleID>299</RuleID>
+    <RuleName>C#/VB.NET UI- Windows Form should have a minimum size (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(this|me)\.MinimumSize</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.Designer.cs</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If windows form does not setup a minimum size, user could have unpredictable form behavior, for example, user could stretch the form to a point that can't see any controls.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>5</TotalFileScanned>
+    <TotalTimeTaken>339</TotalTimeTaken>
+    <DateCreated>2008-06-04T16:44:38.522+08:00</DateCreated>
+    <EmpCreated>BillChen/DEER</EmpCreated>
+    <DateUpdated>2008-06-05T09:55:10.699+08:00</DateUpdated>
+    <EmpUpdated>BillChen/DEER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulestoBetterInterfaces.aspx#minisize</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>93</RuleID>
+    <RuleName>C#/VB.NET UI- Windows applications must have a MainForm or WizardPage (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(&lt;Settings[^&gt;]*OutputType\s*=\s*"WinExe"[^&gt;]*&gt;)(?=(?(&lt;File\s*RelPath\s*=\s*"([^"]*MainForm|[^"]*WizardPage|Startup).cs"\s*SubType\s*=\s*"Form|UserControl"(?(/&gt;)(?!)|.)*/&gt;)(?!)|.)*\Z)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.csproj</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>All Windows Forms projects should have a main form named MainForm, unless they are a Wizard, in which case they should have a Wizard Template page named WizardPage. 
+
+If you project doesn't contain any Forms.
+The file contains main function should call Startup.cs
+
+See http://www.ssw.com.au/SSW/Standards/DeveloperDotNet/DotNetStandard_ObjectNaming.aspx for more information.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>5</TotalFileScanned>
+    <TotalTimeTaken>67</TotalTimeTaken>
+    <DateCreated>2003-12-11T12:42:16.476+08:00</DateCreated>
+    <EmpCreated>MarkLiu/SHARK</EmpCreated>
+    <DateUpdated>2005-08-03T12:24:02.705+08:00</DateUpdated>
+    <EmpUpdated>RamPrasad/RAM</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>268</RuleID>
+    <RuleName>C#/VB.NET UI- Winform should have its own icon instead of using the default .NET application icon (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>using System;
+using SSW.CodeAuditor.Business;
+using SSW.CodeAuditor.Business.Rules;
+using SSW.CodeAuditor.Business.Targets;
+using System.Text.RegularExpressions;
+
+public class MyRule : IRuleSnippet
+{
+    public void Check(ITarget currentTarget, TargetCollection targets, RuleResult result)
+    {
+        string csRegex = @"(?six-mn:
+# C# Winform
+public\s+(?:partial\s+|)class\s+(?&lt;Form&gt;\w+)\s*:(?&gt;\s*)(?((?&lt;Inherit&gt;(?:System\.Windows\.Forms\.|(?&lt;=using\s+System\.Windows\.Forms;.*?))Form))
+# If it inherits System.Windows.Forms.Form, it should have icon
+(?!.*this\.Icon\s*=\s*\(\((?:System\.Drawing\.|)Icon\)\(resources\.GetObject\(""\$this\.Icon""\)\)\);)
+|
+# else it should not have icon
+(?=.*this\.Icon\s*=\s*\(\((?:System\.Drawing\.|)Icon\)\(resources\.GetObject\(""\$this\.Icon""\)\)\);)
+)
+)";
+
+        string vbRegex = @"(?six-mn:
+# VB .NET Winform
+(?:Public|Partial)\sClass\s(?&lt;Form&gt;\w+)\s*Inherits\s(?((?&lt;Inherit&gt;(?:System\.Windows\.Forms\.|(?&lt;=Imports\s+System\.Windows\.Forms.*?))Form))
+# If it inherits System.Windows.Forms.Form, it should have icon
+(?!.*Me\.Icon\s=\sCtype\(resources.GetObject\(""\$this\.Icon""\),\s(?:System\.Drawing\.|)Icon\))
+|
+# else it should not have icon
+(?=.*Me\.Icon\s=\sCtype\(resources.GetObject\(""\$this\.Icon""\),\s(?:System\.Drawing\.|)Icon\))
+)
+)";
+
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        sb.Append(currentTarget.TextContent);
+        string regexToRun;
+
+        if (currentTarget.FileName.EndsWith(".cs"))
+        {
+            // C# 2005
+            string designClassPath = currentTarget.FilePath.Insert(currentTarget.FilePath.Length - 3, ".Designer");
+
+            if (System.IO.File.Exists(designClassPath))
+            {
+                sb.Append(System.IO.File.ReadAllText(designClassPath));
+            }
+            regexToRun = csRegex;
+        }
+        else
+        {
+            regexToRun = vbRegex;
+        }
+
+        Match regexMatch = Regex.Match(sb.ToString(), regexToRun);
+
+        if (regexMatch.Success)
+        {
+            if (regexMatch.Groups["Inherit"].Length != 0)
+            {
+                result.Notes = "This form should have its own icon.";
+            }
+            else
+            {
+                result.Notes = "This form should not have its own icon.";
+            }
+            
+            result.ResultCode = RuleResultCode.Failed;
+        }
+        else
+        {
+            result.ResultCode = RuleResultCode.Passed;
+        }
+    }
+}</SearchString>
+    <RuleType>4</RuleType>
+    <FileFilter>*.cs; *.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>* A winform that inherits System.Windows.Forms.Form should have its own icon instead of using the default icon, this is usually the corporate base winform class.
+
+* Other winforms that inherit the customized base winform (not System.Windows.Forms.Form) should not have its own icon, the icon should be inherited from the base winform for consistent icon.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <TotalFileScanned>57</TotalFileScanned>
+    <TotalTimeTaken>4543</TotalTimeTaken>
+    <DateCreated>2006-07-25T16:56:38.468+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-07-25T17:19:08.328+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterWindowsForms.aspx#InheritedForms</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>104</RuleID>
+    <RuleName>C#/VB.NET UI- Winform size is too big for a system with 800x600 screen resolution and with default XP theme (Tip: Fix in designer)</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+(?:
+# Check width
+(?:this|Me)\.ClientSize\s*=\s*new\s*(?:System\.Drawing|)\.Size\(
+(?:
+# If FormBorderStyle = FixedSingle or Dialog
+(?=.*(?:this|Me)\.FormBorderStyle\s*=\s*(?:System\.Windows\.Forms\.|)FormBorderStyle\.(?:FixedSingle|FixedDialog))
+# ClientSize width must not over794
+(?:79[5-9]||[8-9]\d{2}|\d{4})\D
+|
+# If FormBorderStyle = Sizable
+(?:(?!.*(?:this|Me)\.FormBorderStyle\s*=\s*)|(?=.*\.FormBorderStyle\s*=\s*(?:System\.Windows\.Forms\.|)FormBorderStyle\.Sizable))
+# ClientSize width must not over792
+(?:79[3-9]||[8-9]\d{2}|\d{4})\D
+)
+
+|
+# Check height
+(?:this|Me)\.ClientSize\s*=\s*new\s*(?:System\.Drawing|)\.Size\(\d*,\s
+(?:
+# If FormBorderStyle = FixedSingle or Dialog
+(?=.*(?:this|Me)\.FormBorderStyle\s*=\s*(?:System\.Windows\.Forms\.|)FormBorderStyle\.(?:FixedSingle|FixedDialog))
+# ClientSize height must not over 568
+(?:569|5[7-9]\d|[6-9]\d{2}|\d{4})\D
+|
+# If FormBorderStyle = Sizable
+(?:(?!.*(?:this|Me)\.FormBorderStyle\s*=\s*)|(?=.*\.FormBorderStyle\s*=\s*(?:System\.Windows\.Forms\.|)FormBorderStyle\.Sizable))
+# ClientSize height must not over 566
+(?:56[7-9]|5[7-9]\d|[6-9]\d{2}|\d{4})\D
+)
+)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.cs,*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>If FormBorderStyle is FixedSingle or FixedDiaglog, the ClientSize must not exceed 794, 568.
+If FormBorderStyle is Sizable, the ClientSize must not exceed 792, 566.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>790</TotalTimeTaken>
+    <DateCreated>2006-03-25T17:38:33+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-03-25T17:45:07.531+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulestoBetterInterfaces.aspx#Resolutions</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>288</RuleID>
+    <RuleName>Database Project - Scripts should be stored in the standard folders and with standard name</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>using System;
+using SSW.CodeAuditor.Business;
+using SSW.CodeAuditor.Business.Rules;
+using SSW.CodeAuditor.Business.Targets;
+using System.Text.RegularExpressions;
+
+public class MyRule : IRuleSnippet
+{
+    public void Check(ITarget primaryTarget, TargetCollection targets, RuleResult result)
+    {
+     string filePath = primaryTarget.FilePath;
+            filePath = filePath.Replace("/", @"\");            
+            string folderName = filePath.Remove(filePath.LastIndexOf(@"\"));
+            folderName = folderName.Substring(folderName.LastIndexOf(@"\") + 1);
+            string fileName = primaryTarget.FileName;
+   
+            string folderRegex = @"Change Scripts|Create Scripts|Queries|Auto-Generated Stored Procedures";
+            string fileRegex = @"\d{3,4}\w+";
+
+            if (Regex.IsMatch(folderName, folderRegex))
+            {
+                if (Regex.IsMatch(fileName, fileRegex))
+                {
+                    //result.ResultCode = RuleResultCode.Passed;
+result.ResultCode = RuleResultCode.Failed;
+                }
+                else
+                {
+                    result.ResultCode = RuleResultCode.Failed;
+                    result.Notes = "SQL File name should start with 4 numbers.";
+                }
+            }
+            else
+            {
+                result.ResultCode = RuleResultCode.Failed;
+                result.Notes = "Folder name is not standard.";
+            }
+    }
+}</SearchString>
+    <RuleType>4</RuleType>
+    <FileFilter>*.sql</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Every change to the database should be scripted out.
+
+The scripts should be stored in four standard folders:Change Scripts|Create Scripts|Queries|Auto-Generated Stored Procedures
+
+The script file format should be: &lt;version&gt;_&lt;description&gt;.sql
+
+The &lt;version&gt; should be a number which is padded with leading zeros (0) on the right to firm 3 or 4 digits.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <TotalFileScanned>292</TotalFileScanned>
+    <TotalTimeTaken>150722</TotalTimeTaken>
+    <DateCreated>2007-08-10T16:29:00.055+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-13T15:47:37.668+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/Rules/RulestoBetterSQLServerdatabases.aspx#ScriptOutChanges</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>5</RuleID>
+    <RuleName>FILE - .BMP files must not exist (Tip: Move the bmp file or convert it to gif/jpg.)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>.*\.bmp</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.bmp</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>1</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2002-03-05T00:00:00+08:00</DateCreated>
+    <EmpCreated>HIPPO</EmpCreated>
+    <DateUpdated>2006-03-25T18:11:44.421+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterWebsitesGraphics.aspx#ImagesBmp</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>156</RuleID>
+    <RuleName>FILE - Always include setup file in Setup folder (Tip: add setup file in ..\Setup\.)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?simx:
+setup(?:/|\\)[^.]*\.                        # match everything up to the .
+    (?:(?(wsi\s*|wse\s*)
+        (?'WsiShouldExists'[a-zA-Z]*) # wse or wsi file should exists
+        |(?!)))                                      # Fail
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.wsi;*.wse</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>1</CheckWhat>
+    <RuleNote>We should always have the setup files in the setup folder.
+Forexample: we are using wise installer, so that we need to have a *.wse or *.wsi file in setup folder</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2005-01-19T16:49:34.211+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-08-03T11:15:01.606+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterdotNETProjects.aspx#SETUP</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>49</RuleID>
+    <RuleName>FILE - BAK files must not exist (Tip: Remove bak file.)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>.*\.bak</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.bak</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>1</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2003-11-02T18:13:17+08:00</DateCreated>
+    <EmpCreated>HIPPO</EmpCreated>
+    <DateUpdated>2003-06-18T11:04:25.056+08:00</DateUpdated>
+    <EmpUpdated>KOALA</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>155</RuleID>
+    <RuleName>FILE - Images folder must contain image files only. (Tip: Move non image files to other folder)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?imsx-n:
+# Find "Images" folder
+(?:/|\\)Images(?:/|\\).*\.
+# Known image file extensions
+(?!.*(?:ico|gif|jpg|jpeg|png|bmp|scc|db|psd|ai|eps|tif|pdf|swf|fla|ttf|snp|mzv|ttf)$)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.*</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>1</CheckWhat>
+    <RuleNote>Scan for all folders called "Images" and make sure they don't have another file type other then (gif|jpg|png|bmp).
+User may add custom image type to the regex.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>235</TotalFileScanned>
+    <TotalTimeTaken>179319</TotalTimeTaken>
+    <DateCreated>2005-01-19T14:16:38.003+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2006-05-11T09:35:20+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterdotNETProjects.aspx#IMG</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>45</RuleID>
+    <RuleName>FILE - Images should be in the images directory (Tip: Create an image folder and put this file in)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+.*images(/|\\).*\.(gif|jpg|jpeg|tiff|ico|png|bmp)
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.gif;*.jpg;*.png;*.bmp</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>1</CheckWhat>
+    <RuleNote>
+http://www.ssw.com.au/SSW/Methodology/RulestoBetterWebsites.aspx#WebsiteStructure</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>19</TotalFileScanned>
+    <TotalTimeTaken>163</TotalTimeTaken>
+    <DateCreated>2003-01-28T15:23:01+08:00</DateCreated>
+    <EmpCreated>HIPPO</EmpCreated>
+    <DateUpdated>2005-06-24T16:20:54.348+08:00</DateUpdated>
+    <EmpUpdated>GaryLam/HAMSTER</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterdotNETProjects.aspx#IMG</RuleURL>
+    <ErrorMessage>(not in folder)</ErrorMessage>
+  </Rule>
+  <Rule>
+    <RuleID>22</RuleID>
+    <RuleName>FILE - zz-ed files must not exist (Tip: Remove this file.)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>.*(\\|\/)zz.*\..*</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*zz*.*</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>1</CheckWhat>
+    <RuleNote>At SSW we prefix zz to files we no longer think we need, before we actually delete them.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2002-11-06T16:30:13+08:00</DateCreated>
+    <EmpCreated>HIPPO</EmpCreated>
+    <DateUpdated>2003-03-03T16:26:37.341+08:00</DateUpdated>
+    <EmpUpdated>NUMBAT</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>293</RuleID>
+    <RuleName>Reporting Services - Reports should have standard footer</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>using System;
+using SSW.CodeAuditor.Business;
+using SSW.CodeAuditor.Business.Rules;
+using SSW.CodeAuditor.Business.Targets;
+using System.Text.RegularExpressions;
+
+public class MyRule : IRuleSnippet
+{
+       public void Check(ITarget primaryTarget, TargetCollection targets, RuleResult result)
+        {
+            string content = primaryTarget.TextContent;
+
+            bool isValid = false;
+            bool hasExTime , hasUser , hasPage , hasCompany , hasSlogan ;
+            hasExTime = hasUser = hasPage = hasCompany = hasSlogan = false;
+
+            RegexOptions regOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline;
+
+            Regex regFooter = new Regex(@"&lt;PageFooter&gt;(\n|.)+&lt;/PageFooter&gt;", regOptions);
+            Regex regTextbox = new Regex(@"&lt;Textbox\s+Name=""[^&gt;]+""&gt;(\n|.)+?&lt;/TextBox&gt;", regOptions);
+            Regex regAction = new Regex(@"&lt;Action&gt;(\n|.)+?&lt;/Action&gt;",regOptions);
+             
+            Regex regExecutionTime = new Regex(@"=""Execution Time\: """, regOptions);
+            Regex regUser = new Regex(@""" Printed by "" \+ User\!UserID \+ "" on "" \+ Globals\!ExecutionTime\.ToString\(\)", regOptions);
+            Regex regPage = new Regex(@"=""Page "" \+ Globals\!PageNumber\.ToString\(\) \+ "" of "" \+ Globals\!TotalPages\.ToString\(\)", regOptions);
+            Regex regCompany = new Regex(@"&lt;Value&gt;[\w- ./?%&amp;=]*&lt;/Value&gt;", regOptions);
+            Regex regCompanyLink = new Regex(@"&lt;Hyperlink&gt;[a-zA-z]+:/{0,2}[\w- ./?%&amp;=]*&lt;/Hyperlink&gt;", regOptions);
+            Regex regSlogan = new Regex(@"&lt;Value&gt;[\w\s""]+&lt;/Value&gt;", regOptions);
+
+            Match mFooter = regFooter.Match(content);
+
+            MatchCollection mcTextbox = regTextbox.Matches(mFooter.Value);
+
+            foreach (Match textbox in mcTextbox)
+            {
+                if(regExecutionTime.IsMatch(textbox.Value))
+                {
+                    hasExTime = true;
+                    continue;
+                }
+                if (regUser.IsMatch(textbox.Value))
+                {
+                    hasUser = true;
+                    continue;
+                }
+                if (regPage.IsMatch(textbox.Value))
+                {
+                    hasPage = true;
+                    continue;
+                }
+                if (regCompany.IsMatch(textbox.Value))
+                {
+                    if (regAction.IsMatch(textbox.Value))
+                    {
+                        if (regCompanyLink.IsMatch(textbox.Value))
+                        {
+                            hasCompany = true;
+                            continue;
+                        }
+                    }
+                }
+                if (regSlogan.IsMatch(textbox.Value))
+                {
+                    hasSlogan = true;
+                    continue;
+                }
+            }
+
+            isValid = hasCompany &amp; hasExTime &amp; hasPage &amp; hasSlogan &amp; hasUser;
+
+            if (isValid)
+            {
+                result.ResultCode = RuleResultCode.Passed;
+            }
+            else
+            {
+                result.ResultCode = RuleResultCode.Failed;
+                result.Notes = "The footer is not standard.";
+                if (!hasCompany)
+                    result.Notes += "Lack of Company info.";
+                else if(!hasExTime)
+                    result.Notes += "Lack of Execute Time.";
+                else if (!hasPage)
+                    result.Notes += "Lack of Page info.";
+                else if (!hasSlogan)
+                    result.Notes += "Lack of Slogan.";
+                else if (!hasUser)
+                    result.Notes += "Lack of User info.";
+            }
+        }
+
+}</SearchString>
+    <RuleType>4</RuleType>
+    <FileFilter>*.rdl</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <TotalFileScanned>36</TotalFileScanned>
+    <TotalTimeTaken>14797</TotalTimeTaken>
+    <DateCreated>2007-08-14T11:19:58.332+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-17T15:43:51.71+08:00</DateUpdated>
+    <EmpUpdated>jameszhou/ORYX</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx#UsefulFooter</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>291</RuleID>
+    <RuleName>Reporting Services – Report language should follow user's language setting</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>\&lt;Language\&gt;=User!Language\&lt;/Language\&gt;</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.rdl</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>13</TotalFileScanned>
+    <TotalTimeTaken>3859</TotalTimeTaken>
+    <DateCreated>2007-08-13T18:18:08.766+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-13T18:18:35.915+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/rules/rulestobettersqlreportingservices.aspx#LanguageSetting</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>302</RuleID>
+    <RuleName>TEXT  -  Don't use "Retry", use "Try Again"</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+\bretry\b
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote> Don't use "Retry", use "Try Again"</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>10</TotalFileScanned>
+    <TotalTimeTaken>683</TotalTimeTaken>
+    <DateCreated>2008-08-11T10:41:45.795+08:00</DateCreated>
+    <EmpCreated>BillChen/WOLF</EmpCreated>
+    <DateUpdated>2008-08-11T11:45:35.023+08:00</DateUpdated>
+    <EmpUpdated>BillChen/WOLF</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#TryAgain</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>263</RuleID>
+    <RuleName>TEXT - Common spelling mistake</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+\b(?:thankyou|recieve|paremeter|definate|seperate)\b
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>thankyou -&gt; thank you
+recieve -&gt; receive
+paremeter -&gt; parameter
+definate -&gt; definite
+seperate -&gt; separate</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>961</TotalTimeTaken>
+    <DateCreated>2006-05-31T13:32:41.875+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2007-01-29T10:49:11.64+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>301</RuleID>
+    <RuleName>TEXT - Don't use "Task bar", use "Taskbar"</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+\btask\sbar\b
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Don't use "Task Bar", use "Taskbar"</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>10</TotalFileScanned>
+    <TotalTimeTaken>672</TotalTimeTaken>
+    <DateCreated>2008-08-11T10:30:47.29+08:00</DateCreated>
+    <EmpCreated>BillChen/WOLF</EmpCreated>
+    <DateUpdated>2008-08-11T10:40:26.397+08:00</DateUpdated>
+    <EmpUpdated>BillChen/WOLF</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#TaskBar</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>284</RuleID>
+    <RuleName>TEXT - Don't use "click on", use "click"</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+
+\bclick\son\b
+
+)
+</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>do not  use 'click on' but use 'click'</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>13</TotalFileScanned>
+    <TotalTimeTaken>176459</TotalTimeTaken>
+    <DateCreated>2007-08-08T15:48:40.647+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-08T15:50:01.329+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#FewWords</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>285</RuleID>
+    <RuleName>TEXT - Don't use "should" use "will"</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+
+\bshould\b
+
+)
+</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>do not use 'should' but use 'will'
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>14</TotalFileScanned>
+    <TotalTimeTaken>733</TotalTimeTaken>
+    <DateCreated>2007-08-08T15:50:14.921+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-08T15:58:15.247+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#WillNotShould</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>220</RuleID>
+    <RuleName>TEXT - Don't use 'set up' or 'set-up' (Tip: Use an alternative verb - e.g 'configure')</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?sixm:
+\bset\sup\b|\bset-up\b
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.htm;*.html;*.cs;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Often when writing technical documents, you will instruct the reader to "set up" his PC or run a "setup" file. Remember that "set up" is a verb, and "setup" is a noun.
+
+Correct use of "setup": Verify that your network setup is correct before attempting to connect to the Internet.
+
+Correct use of "set up": Click Go to set up your database
+
+To avoid confusion we suggest replacing "set up" the verb with an alternative, e.g. "configure".</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>67</TotalFileScanned>
+    <TotalTimeTaken>14037</TotalTimeTaken>
+    <DateCreated>2005-08-16T15:26:25.753+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2005-12-21T22:49:06.781+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#Setup</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>255</RuleID>
+    <RuleName>TEXT - E-mail is not Email</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?ix:
+e-mail
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Yes Microsoft Word spell checker is wrong.
+Good - "email"
+Bad - "e-mail"
+
+I do prefer to see e-mail as email as the hyphen is really an extra thing that serves no purpose anymore.
+What if you wanted to say "Re-email this report please"... surely you would not say "Re-e-email this report"... sounds like you have a stutter. </RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>122</TotalFileScanned>
+    <TotalTimeTaken>784</TotalTimeTaken>
+    <DateCreated>2006-02-07T13:03:04.171+08:00</DateCreated>
+    <EmpCreated>RyanTee/PITBULL</EmpCreated>
+    <DateUpdated>2006-08-15T11:22:12.671+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#Email</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>262</RuleID>
+    <RuleName>TEXT - Internet is always capitalized</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?-i:\binternet\b)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Bad: internet
+Good: Internet</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString>(Empty)</ReplaceString>
+    <TotalFileScanned>70</TotalFileScanned>
+    <TotalTimeTaken>916</TotalTimeTaken>
+    <DateCreated>2006-05-31T12:20:09.859+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-08-15T11:22:07.031+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>26</RuleID>
+    <RuleName>TEXT - No carriage returns without line feed (Tip: Make sure the text file is in Window style not Unix)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>\r(?!\n)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.cs;*.htm;*.html;*.txt;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>112</TotalFileScanned>
+    <TotalTimeTaken>772</TotalTimeTaken>
+    <DateCreated>2002-12-18T11:56:10+08:00</DateCreated>
+    <EmpCreated>HIPPO</EmpCreated>
+    <DateUpdated>2003-06-18T11:04:25.086+08:00</DateUpdated>
+    <EmpUpdated>SHARK</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>72</RuleID>
+    <RuleName>TEXT - Non ASCII characters must not exist (Tip: Clean up all non ASCII charaters)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?ix:
+# Match all non ASCII characters..
+[^\x00-\x7F]
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.cs;*.htm;*.html;*.txt;*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>To use certain non ASCII characters or symbols in web, please use the numerical or alternate literal strings.
+Eg:
+© = &amp;copy;
+® = &amp;reg;
+™ = &amp;#153;
+</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>29</TotalFileScanned>
+    <TotalTimeTaken>790</TotalTimeTaken>
+    <DateCreated>2003-09-20T15:06:43.994+08:00</DateCreated>
+    <EmpCreated>johnliu/KOALA</EmpCreated>
+    <DateUpdated>2005-12-21T22:48:12.203+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>179</RuleID>
+    <RuleName>TEXT - Use American Standard English (Tip: Fix in file)</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?six-mn:
+Analyse|Analysing|Authorise|Authorisation|
+Customise|
+Dialogue|
+Initialise|Initialising|
+Organise|Organisation|Organising|
+Recognise|Recognising|
+Specialising|
+Utilise|Utilising
+)</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.master;*.htm;*.html;*.cs;*.vb;*.xml;*.config;*.txt</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>We use American standards instead of Australian standards.
+
+Analyse -&gt;  Analyze
+Analysing -&gt; Analyzing
+Authorise -&gt; Authorize
+Authorisation -&gt; Authorization
+Customise -&gt; Customize
+Dialogue -&gt; Dialog
+Initialise -&gt; Initialize
+Initialising -&gt; Initializing
+Organise -&gt; Organize
+Organisation -&gt; Organization
+Organising -&gt; Organizing
+Recognise -&gt; Recognize
+Recognising -&gt; Recognizing
+Specialising -&gt; Specializing
+Utilise -&gt; Utilize
+Utilising -&gt; Utilizing</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>122</TotalFileScanned>
+    <TotalTimeTaken>1576</TotalTimeTaken>
+    <DateCreated>2005-04-11T17:00:54.692+08:00</DateCreated>
+    <EmpCreated>GaryLam/HAMSTER</EmpCreated>
+    <DateUpdated>2006-08-15T11:19:55.187+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>276</RuleID>
+    <RuleName>VB.NET Code - Constants should not be in uppercase</RuleName>
+    <ProjectType>2</ProjectType>
+    <ProjectLanguage>1</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>(?-i:Const\s+[A-Z]+[^a-z])</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.vb</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote />
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2006-12-14T13:41:21.294+08:00</DateCreated>
+    <EmpCreated>ericphan/ORCA</EmpCreated>
+    <DateUpdated>2006-12-14T16:12:15.952+08:00</DateUpdated>
+    <EmpUpdated>ericphan/ORCA</EmpUpdated>
+    <RuleURL />
+  </Rule>
+  <Rule>
+    <RuleID>287</RuleID>
+    <RuleName>WEB - Don't use &amp;apos;</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>&amp;a(spo|pos);</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.htm;*.html</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>"&amp;apos;" is not a valid HTML entity, it is a standard entity in XML and thus in XHTML. browers which does not support XHTML will have problem to display it correctly.</RuleNote>
+    <ShouldReplace>true</ShouldReplace>
+    <ReplaceString>&amp;#039;</ReplaceString>
+    <TotalFileScanned>13709</TotalFileScanned>
+    <TotalTimeTaken>11462688</TotalTimeTaken>
+    <DateCreated>2007-08-09T10:30:09.209+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-09T18:14:49.512+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/standards/rules/RulesToBetterWebsitesLayout.aspx</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>286</RuleID>
+    <RuleName>WEB - Every page should have breadcrumb</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>\&lt;asp\:SiteMapPath\s</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.aspx;</FileFilter>
+    <ShouldExist>true</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>Breadcrumb should be on every page.</RuleNote>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>2597</TotalFileScanned>
+    <TotalTimeTaken>31700</TotalTimeTaken>
+    <DateCreated>2007-08-08T19:19:09.133+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-14T15:57:33.916+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/SSW/standards/rules/RulesToBetterwebsiteslayout.aspx#Breadcrumb</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>283</RuleID>
+    <RuleName>WEB - Use the correct symbols when documenting instructions</RuleName>
+    <ProjectType>0</ProjectType>
+    <ProjectLanguage>0</ProjectLanguage>
+    <ProjectVersion>0</ProjectVersion>
+    <SearchString>\s(-&gt;)\s</SearchString>
+    <RuleType>0</RuleType>
+    <FileFilter>*.ascx;*.asp;*.aspx;*.htm;*.html</FileFilter>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <RuleNote>list the items in the order the user selects them</RuleNote>
+    <ShouldReplace>true</ShouldReplace>
+    <ReplaceString />
+    <TotalFileScanned>209</TotalFileScanned>
+    <TotalTimeTaken>4575391</TotalTimeTaken>
+    <DateCreated>2007-08-07T14:01:50.304+08:00</DateCreated>
+    <EmpCreated>BriteCheng/SHEEP</EmpCreated>
+    <DateUpdated>2007-08-08T17:30:02.344+08:00</DateUpdated>
+    <EmpUpdated>BriteCheng/SHEEP</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterTechnicalDocumentation.aspx#Instructions</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>-5</RuleID>
+    <RuleName>Maximum errors reached</RuleName>
+    <ProjectType>-1</ProjectType>
+    <ProjectLanguage>-1</ProjectLanguage>
+    <ProjectVersion>-1</ProjectVersion>
+    <RuleType>0</RuleType>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2006-07-12T11:24:50+08:00</DateCreated>
+    <EmpCreated>ML</EmpCreated>
+    <DateUpdated>2006-07-12T11:24:50+08:00</DateUpdated>
+    <EmpUpdated>ML</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>-4</RuleID>
+    <RuleName>SKIP FILE</RuleName>
+    <ProjectType>-1</ProjectType>
+    <ProjectLanguage>-1</ProjectLanguage>
+    <ProjectVersion>-1</ProjectVersion>
+    <RuleType>0</RuleType>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2002-12-11T00:00:00+08:00</DateCreated>
+    <EmpCreated>KOALA</EmpCreated>
+    <DateUpdated>2002-12-11T00:00:00+08:00</DateUpdated>
+    <EmpUpdated>KOALA</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>-3</RuleID>
+    <RuleName>ACCESS ERROR</RuleName>
+    <ProjectType>-1</ProjectType>
+    <ProjectLanguage>-1</ProjectLanguage>
+    <ProjectVersion>-1</ProjectVersion>
+    <RuleType>0</RuleType>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2002-12-11T00:00:00+08:00</DateCreated>
+    <EmpCreated>KOALA</EmpCreated>
+    <DateUpdated>2002-12-11T00:00:00+08:00</DateUpdated>
+    <EmpUpdated>KOALA</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>-2</RuleID>
+    <RuleName>FILE ERROR</RuleName>
+    <ProjectType>-1</ProjectType>
+    <ProjectLanguage>-1</ProjectLanguage>
+    <ProjectVersion>-1</ProjectVersion>
+    <RuleType>0</RuleType>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2002-12-11T00:00:00+08:00</DateCreated>
+    <EmpCreated>KOALA</EmpCreated>
+    <DateUpdated>2002-12-11T00:00:00+08:00</DateUpdated>
+    <EmpUpdated>KOALA</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Rule>
+    <RuleID>-1</RuleID>
+    <RuleName>HTTP ERROR</RuleName>
+    <ProjectType>-1</ProjectType>
+    <ProjectLanguage>-1</ProjectLanguage>
+    <ProjectVersion>-1</ProjectVersion>
+    <RuleType>0</RuleType>
+    <ShouldExist>false</ShouldExist>
+    <CheckWhat>0</CheckWhat>
+    <ShouldReplace>false</ShouldReplace>
+    <ReplaceMode>0</ReplaceMode>
+    <TotalFileScanned>0</TotalFileScanned>
+    <TotalTimeTaken>0</TotalTimeTaken>
+    <DateCreated>2002-12-04T00:00:00+08:00</DateCreated>
+    <EmpCreated>KOALA</EmpCreated>
+    <DateUpdated>2002-12-04T00:00:00+08:00</DateUpdated>
+    <EmpUpdated>KOALA</EmpUpdated>
+    <RuleURL>http://www.ssw.com.au/ssw/CodeAuditor/</RuleURL>
+  </Rule>
+  <Job>
+    <JobID>0</JobID>
+    <JobName>NorthwindWindowsCS</JobName>
+  </Job>
+  <Path>
+    <PathID>0</PathID>
+    <PathLoc>C:\Program Files (x86)\SSW Code Auditor\Samples\NorthwindWindowsCS2008</PathLoc>
+    <PathEnabled>true</PathEnabled>
+  </Path>
+  <JobRule>
+    <JobRuleID>0</JobRuleID>
+    <RuleID>78</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>1</JobRuleID>
+    <RuleID>86</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>2</JobRuleID>
+    <RuleID>190</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>3</JobRuleID>
+    <RuleID>157</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>4</JobRuleID>
+    <RuleID>53</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>5</JobRuleID>
+    <RuleID>74</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>6</JobRuleID>
+    <RuleID>169</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>7</JobRuleID>
+    <RuleID>161</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>8</JobRuleID>
+    <RuleID>101</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>9</JobRuleID>
+    <RuleID>123</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>10</JobRuleID>
+    <RuleID>202</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>11</JobRuleID>
+    <RuleID>138</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>12</JobRuleID>
+    <RuleID>170</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>13</JobRuleID>
+    <RuleID>183</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>14</JobRuleID>
+    <RuleID>166</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>15</JobRuleID>
+    <RuleID>195</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>16</JobRuleID>
+    <RuleID>192</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>17</JobRuleID>
+    <RuleID>140</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>18</JobRuleID>
+    <RuleID>289</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>19</JobRuleID>
+    <RuleID>221</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>20</JobRuleID>
+    <RuleID>275</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>21</JobRuleID>
+    <RuleID>296</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>22</JobRuleID>
+    <RuleID>303</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>23</JobRuleID>
+    <RuleID>269</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>24</JobRuleID>
+    <RuleID>260</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>25</JobRuleID>
+    <RuleID>273</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>26</JobRuleID>
+    <RuleID>281</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>27</JobRuleID>
+    <RuleID>135</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>28</JobRuleID>
+    <RuleID>145</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>29</JobRuleID>
+    <RuleID>146</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>30</JobRuleID>
+    <RuleID>117</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>31</JobRuleID>
+    <RuleID>162</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>32</JobRuleID>
+    <RuleID>178</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>33</JobRuleID>
+    <RuleID>277</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>34</JobRuleID>
+    <RuleID>163</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>35</JobRuleID>
+    <RuleID>271</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>36</JobRuleID>
+    <RuleID>105</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>37</JobRuleID>
+    <RuleID>108</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>38</JobRuleID>
+    <RuleID>106</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>39</JobRuleID>
+    <RuleID>122</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>40</JobRuleID>
+    <RuleID>61</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>41</JobRuleID>
+    <RuleID>232</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>42</JobRuleID>
+    <RuleID>171</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>43</JobRuleID>
+    <RuleID>297</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>44</JobRuleID>
+    <RuleID>120</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>45</JobRuleID>
+    <RuleID>264</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>46</JobRuleID>
+    <RuleID>121</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>47</JobRuleID>
+    <RuleID>259</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>48</JobRuleID>
+    <RuleID>231</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>49</JobRuleID>
+    <RuleID>103</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>50</JobRuleID>
+    <RuleID>112</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>51</JobRuleID>
+    <RuleID>130</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>52</JobRuleID>
+    <RuleID>114</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>53</JobRuleID>
+    <RuleID>142</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>54</JobRuleID>
+    <RuleID>118</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>55</JobRuleID>
+    <RuleID>254</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>56</JobRuleID>
+    <RuleID>299</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>57</JobRuleID>
+    <RuleID>93</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>58</JobRuleID>
+    <RuleID>268</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>59</JobRuleID>
+    <RuleID>104</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>60</JobRuleID>
+    <RuleID>288</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>61</JobRuleID>
+    <RuleID>5</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>62</JobRuleID>
+    <RuleID>156</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>63</JobRuleID>
+    <RuleID>49</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>64</JobRuleID>
+    <RuleID>155</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>65</JobRuleID>
+    <RuleID>45</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>66</JobRuleID>
+    <RuleID>22</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>67</JobRuleID>
+    <RuleID>293</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>68</JobRuleID>
+    <RuleID>291</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>69</JobRuleID>
+    <RuleID>302</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>70</JobRuleID>
+    <RuleID>263</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>71</JobRuleID>
+    <RuleID>301</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>72</JobRuleID>
+    <RuleID>284</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>73</JobRuleID>
+    <RuleID>285</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>74</JobRuleID>
+    <RuleID>220</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>75</JobRuleID>
+    <RuleID>255</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>76</JobRuleID>
+    <RuleID>262</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>77</JobRuleID>
+    <RuleID>26</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>78</JobRuleID>
+    <RuleID>72</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>79</JobRuleID>
+    <RuleID>179</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>80</JobRuleID>
+    <RuleID>276</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>81</JobRuleID>
+    <RuleID>287</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>82</JobRuleID>
+    <RuleID>286</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <JobRule>
+    <JobRuleID>83</JobRuleID>
+    <RuleID>283</RuleID>
+    <JobID>0</JobID>
+    <IsEnabled>true</IsEnabled>
+  </JobRule>
+  <RuleException>
+    <RuleExceptionID>8</RuleExceptionID>
+    <RuleID>86</RuleID>
+    <ExceptionName>WebService - Reference.cs</ExceptionName>
+    <SearchString>\\Web\sReferences\\[^\\]*\\Reference\.cs$</SearchString>
+    <SearchIn>1</SearchIn>
+    <ShouldExist>true</ShouldExist>
+    <DateCreated>2006-07-28T15:16:35.343+08:00</DateCreated>
+    <EmpCreated>RyanTee</EmpCreated>
+    <DateUpdated>2006-07-28T15:16:35.343+08:00</DateUpdated>
+    <EmpUpdated>RyanTee</EmpUpdated>
+  </RuleException>
+  <Summary AssemblyName="SSWCodeAuditor.exe" AssemblyVersion="13.18" StartTime="01/22/2009 17:14:51" EndTime="01/22/2009 17:15:40" TimeTaken="00:00:48" FailedRules="22" FailedFiles="12" ErrorsMatched="35" FilesProcessed="20" FileCount="20" ExecutedRules="84" RuleCount="84" ReportPath="." />
+</ReportDataSet>

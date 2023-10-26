@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="false" Inherits="SSW.SSWCookiesDetection1" Codebehind="CookiesDetection.ascx.cs" %>
+<iframe src="/ssw/Shop/CookiesDetection/CookiesDetection.aspx" name="CookiesIFrame" width="500" height="0" scrolling="no" frameborder="no"></iframe>

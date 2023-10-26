@@ -1,0 +1,235 @@
+﻿body {
+	background: url('images/PageTexture.jpg');
+	background-position: top;
+	background-color: #ebebeb;
+	margin: 0px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: 150%;
+}
+a, a:link {
+	color: #1A12C3;
+	border-bottom: 1px dotted #1A12C3;
+}
+.thumbnail {
+	border: 1px solid #C0C0C0;
+	width: 69px;
+	float: left;
+	margin: 0px 5px 5px 0px;
+}
+* html .thumbnail {
+	width: 67px;
+}
+.thumbnail img {
+	border: 1px solid #c0c0c0;
+	margin: 1px;
+}
+.section {
+	margin-bottom: 25px;
+}
+.section .content {
+	border: 1px #d2d2d2 solid;
+}
+#mainPane {
+	width: 525px;
+	float: left;
+}
+#subPane {
+	width: 252px;
+	float: left;
+	padding: 0 0 0 14px;
+}
+#wrapper {
+	background-image: url(images/background.png);
+	background-repeat: repeat-y;
+	background-position: top center;
+	min-width: 800px;
+}
+* html div#wrapper {
+	background-image: url(images/backgroundIE6.gif);
+	padding-left: 1px;
+}
+#container {
+	width: 800px;
+	margin: 0 auto;
+	border-bottom: 1px #aaaaaa solid;
+	position:relative;
+}
+.clear {
+	clear: both;
+}
+#subPane .section h1 {
+	background-image: url('images/box_header.gif');
+	background-repeat: no-repeat;
+	display: block;
+	padding: 0 0 0 20px;
+	color: #ffffff;
+	height: 24px;
+	font-size: 0.9em;
+}
+#mainPane .section {
+	padding: 0 50px 0 25px;
+	margin-bottom: 40px;
+}
+.section .content {
+	background: url(images/bg_section.gif);
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	background-position: 0 -1px;
+	padding: 5px;
+}
+#featurewall img {
+	border-bottom: 3px #c0c0c0 solid;
+	text-align: center;
+}
+#mainPane div.ad {
+	text-align: center;
+	clear: both;
+	display: block
+}
+#mainPane .section h1 {
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #fd1912;
+	font-size: 1.7em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+#mainPane .section > h1 {
+	margin-top: 30px;
+	padding-bottom: 5px;
+}
+#subPane #search {
+	margin: 25px auto 20px auto;
+}
+#search .go {
+	vertical-align: middle;
+	border: 1px solid #a2a2a2;
+}
+#search input.q {
+	border: solid #a2a2a2;
+	border-width: 1px 0 1px 1px;
+	padding: 2px 2px 0 2px;
+	width: 220px;
+	height: 18px;
+	vertical-align: middle;
+	font-size: 90%;
+	color: #808080;
+	font-style: italic;
+}
+#search input.q:focus, #search input.q:active {
+	background-image: url(images/searchglow.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	font-style: normal;
+	color: #333333;
+}
+#subPane .testimonial blockquote {
+	font-family: Georgia,"Times New Roman",Times,serif;;
+	font-style: italic;
+	font-size: 1.2em;
+	background-image: url(images/quote_open.gif);
+	background-repeat: no-repeat;
+	padding-top: 10px;
+}
+#subPane .testimonial blockquote:after {
+	content: '"';
+}
+#subPane .testimonial p {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 0.8em;
+	line-height: normal;
+}
+.popular {
+	width: 48%;
+	float: left;
+}
+.popular li {
+	background: url(images/bullet_diamond.gif);
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	background-position: 0px 7px;
+}
+.testimonial {
+	background: url(images/nt.gif) repeat;
+}
+.rbtop div {
+	background: url(images/tl.gif) no-repeat top left;
+}
+.rbtop {
+	background: url(images/tr.gif) no-repeat top right;
+}
+.rbbot div {
+	background: url(images/bl.gif) no-repeat bottom left;
+}
+.rbbot {
+	background: url(images/br.gif) no-repeat bottom right;
+}
+.rbtop div, .rbtop, .rbbot div, .rbbot {
+	width: 100%;
+	height: 7px;
+	font-size: 1px;
+}
+.rbcontent {
+	padding: 0 15px 7px 15px;
+}
+.testimonial {
+	width: auto;
+	text-align: right;
+	margin-bottom: 25px;
+}
+p.daystogo {
+	color: #a2a2a2;
+	right: 0px;
+	top: 0px;
+	font-weight: bold;
+}
+p.daystogo span {
+	font-size: 1.8em;
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	color: #EA8D1E;
+}
+p.datetime {
+	line-height: 1.2em;
+	margin-bottom: 15px;
+}
+.datetime span.date {
+	font-weight: bold;
+}
+.showmore {
+	font-size: 80%;
+}
+#subPane .event {
+	padding-bottom: 20px;
+}
+#nav {
+	background-image: url('images/bg_nav.gif');
+	background-repeat:repeat-x;
+	height: 117px;
+}
+#msgoldpartner {
+	position:absolute;
+	top: 10px;
+	left: 690px;
+}
+#sswlogo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#nav h1 {
+	font-size: 20px;
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	font-weight: normal;
+	color:#444444;
+	position:absolute;
+	top: 50px;
+	left: 150px;
+	width: 520px;
+	height: 30px;
+	overflow:hidden;
+	line-height: 150%;
+}
+p.showmore {
+	text-align: right;
+}

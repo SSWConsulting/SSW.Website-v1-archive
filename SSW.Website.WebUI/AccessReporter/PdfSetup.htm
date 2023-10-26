@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>SSW Access Reporter - User Guide</title>
+		<meta name="author" content="John Elliot - Database Developer - SSW">
+		<link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon">
+			<Link rel="stylesheet" type="text/css" href="/ssw/Include/ssw.css">
+	</head>
+	<body TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" TEXT="#000000" ALINK="#003399" LINK="#003399" VLINK="#003399">
+		<TABLE WIDTH="100%" BGCOLOR="white" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+			<TR>
+				<TD align="left">
+					<IMG src="/ssw/Images/SSWsmall.gif" alt="ssw small" name="Image1" width="58" height="45"><IMG height="45" src="./Images/AccessReporterBanner.gif" alt="Access Reporter" width="525"><IMG src="/ssw/Images/hd_2.gif" alt="hd_2" width="200" height="45">
+				</TD>
+			</TR>
+		</TABLE>
+		<table bgcolor="white" cellpadding="0" cellspacing="0" width="101%" border="0">
+			<tr>
+				<!-- spacer row - specify all others with colspan or rowspan-->
+				<!--1-->
+				<td width="11"></td>
+				<!--2-->
+				<td width="213"></td>
+				<!--3-->
+				<td width="1"></td>
+				<!--4-->
+				<td width="24"></td>
+				<!--5-->
+				<td width="362"></td>
+				<!--6-->
+				<td width="32"></td>
+				<!--7-->
+				<td width="97"></td>
+				<!--8-->
+				<td width="32"></td>
+				<!--9-->
+				<td width="208"></td>
+				<!--10-->
+				<td width="30"></td>
+			</tr>
+			<tr>
+				<!-- spacer column -->
+				<td rowspan="2" valign="top" colspan="2">
+				</td>
+				<!-- spacer column -->
+				<td rowspan="2" bgcolor="#7d7d7d" width="1"></td>
+				<!-- spacer column -->
+				<td rowspan="2" width="24"></td>
+				<!--main content cell-->
+				<td colspan="5" valign="top">
+					<p>
+						<IMG src="Images/AccessReporterLogo.gif" alt="Access Reporter Logo" width="250" height="83">
+					</p>
+					<table width="100%" cellpadding="0">
+						<tr bgcolor="#ff0033">
+							<td align="right">.</td>
+						</tr>
+					</table>
+					<table width="100%" cellpadding="0">
+						<tr bgcolor="#cccccc">
+							<td><b>PDF configuration</b></td>
+						</tr>
+					</table>
+					<p>In order to be able to output reports in PDF format, you need to choose either 
+						Ghost Script or Acrobat Distiller.
+						<br>
+						Ghost Script (Recommended) is a free PDF converter which is packaged with SSW 
+						Access Reporter.
+						<br>
+						Acrobat Distiller is an industry standard PDF converter. Some reports come out 
+						better using this however you require a license from Adobe to use it.</p>
+					<p>You will also need to install a PostScript printer. This printer will create a 
+						file when you print to it. The PDF creator will use this file.</p>
+					<p><b>So how do I configure this Post Script printer?</b>
+						<br>
+						Go to start, settings then control panel. Click printers then "add printer" and 
+						follow the wizard.</p>
+					<p>
+						<img src="Images/PrinterSetup1.gif" alt="Printer setup 1" width="513" height="402"><br>
+						<strong>Figure: Uncheck the Auto detect option because we are not adding a physical 
+							printer</strong></p>
+					<p>
+						<img src="Images/PrinterSetup2.gif" alt="Printer setup 2" width="513" height="402"><br>
+						<strong>Figure: Create a new Local Port</strong></p>
+					<p>
+						<img src="Images/PrinterSetup3.gif" alt="printer setup 3" width="337" height="110"><br>
+						<strong>Figure: Specify the file name and path where you want the postscript file 
+							to be created</strong></p>
+					<p>
+						<img src="Images/PrinterSetup4.gif" alt="printer setup 4" width="513" height="402"><br>
+						<strong>Figure: Add any post script printer. I recommend the HP Color LaserJet PS 
+							printers</strong></p>
+					<p>
+						<img src="Images/PrinterSetup5.gif" alt="printer setup 5" width="513" height="402"><br>
+						<strong>Figure: You may be asked if you want to keep the existing driver</strong></p>
+					<p>
+						<img src="Images/PrinterSetup6.gif" alt="printer setup 6" width="513" height="402"><br>
+						<strong>Figure: Give the printer a meaningful name so you wont forget what it is 
+							for</strong></p>
+					<p>One you have finished setting up the new printer, test the printer by printing a 
+						test page.
+						<br>
+						If the file C:\OutputPS.ps exists on your computer, you have configured the 
+						printer correctly.</p>
+					<p>Once the Post Script printer has been installed, open up SSW Access Reporter 
+						Manager
+						<ul>
+							<li>
+								Click Tools -&gt; Options from the menu
+							</li>
+							<li>
+								Click on the &quot;PDF Settings&quot; tab
+							</li>
+							<li>
+								Select a PDF Generator from the list</li>
+							<li>
+								Choose the printer we just created</li>
+							<li>
+								Enter in the path the postscript file goes to. You can print a test page then 
+								pick the &quot;...&quot; button and navigate to the file</li>
+						</ul>
+					<p><img src="Images/PDFOptions.gif" alt="PDF Options" width="508" height="460"><br>
+						<strong>Figure: PDF generation settings</strong></p>
+					<p>There you go, PDF configuration is now complete.</p>
+					<hr style="LEFT: 0px; TOP: 637px">
+					<center>
+						<IMG src="/ssw/Images/ft_ssw.gif" alt="SSW Footer" useMap="#MapMap" border="0" width="300" height="45">
+						<map name="MapMap">
+							<area shape="RECT" coords="206,16,296,29" href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info, e4='?Subject=Employment';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));">
+							<area shape="RECT" coords="60,17,151,28" href="">
+						</map>
+					</center>
+				<td rowspan="2" width="30"></td>
+			</tr>
+			<tr> <!--to be implemented-->
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<xs:schema id="Report" targetNamespace="http://www.ssw.com.au/ssw/linkauditor/linkauditoreport.xsd"
+	xmlns:mstns="http://www.ssw.com.au/ssw/linkauditor/linkauditoreport.xsd"
+	xmlns="http://www.ssw.com.au/ssw/linkauditor/linkauditoreport.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="Report">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Settings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="InitialURI" type="xs:string" minOccurs="0" />
+							<xs:element name="FollowBeyondDomain" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Statistics">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TimeStarted" type="xs:string" minOccurs="0" />
+							<xs:element name="TimeFinished" type="xs:string" minOccurs="0" />
+							<xs:element name="TimeElapsed" type="xs:string" minOccurs="0" />
+							<xs:element name="TotalTargets" type="xs:positiveInteger" minOccurs="0" />
+							<xs:element name="TotalLinks" type="xs:positiveInteger" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ReportEntries" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ReportEntry" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TargetURI" type="xs:string" minOccurs="1" maxOccurs="1" />
+										<xs:element name="Status" type="ReportEntryStatus" minOccurs="1" maxOccurs="1" />
+										<xs:element name="StatusDetail" type="mstns:ReportEntryStatusDetail" minOccurs="1" maxOccurs="1" />
+										<xs:element name="HttpResponseCode" type="xs:positiveInteger" minOccurs="0" maxOccurs="1" />
+										<xs:element name="Links" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Element" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="SourceURI" type="xs:string" minOccurs="1" msdata:Ordinal="0" maxOccurs="1" />
+																<xs:element name="TargetURI" type="xs:string" minOccurs="1" msdata:Ordinal="1" maxOccurs="1" />
+																<xs:element name="Index" type="xs:positiveInteger" minOccurs="1" msdata:Ordinal="2" maxOccurs="1" />
+																<xs:element name="Length" type="xs:positiveInteger" minOccurs="1" msdata:Ordinal="3" maxOccurs="1" />
+																<xs:element name="Type" type="mstns:ElementType" minOccurs="1" msdata:Ordinal="4" maxOccurs="1" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="ReportEntryStatus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Success" />
+			<xs:enumeration value="Warning" />
+			<xs:enumeration value="Failure" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ReportEntryStatusDetail">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Success" />
+			<xs:enumeration value="NotFound" />
+			<xs:enumeration value="BeyondDomain" />
+			<xs:enumeration value="FragmentMissing" />
+			<xs:enumeration value="FragmentDuplicated" />
+			<xs:enumeration value="InvalidFormat" />
+			<xs:enumeration value="HttpException" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ElementType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ImageTag" />
+			<xs:enumeration value="LinkTag" />
+			<xs:enumeration value="ScriptTag" />
+			<xs:enumeration value="BackgroundSound" />
+			<xs:enumeration value="ObjectTag" />
+			<xs:enumeration value="AnchorTag" />
+			<xs:enumeration value="MetaRefreshTag" />
+			<xs:enumeration value="FormTarget" />
+			<xs:enumeration value="Javcascript" />
+			<xs:enumeration value="HttpRefreshHeader" />
+			<xs:enumeration value="FrameSrc" />
+			<xs:enumeration value="AreaTag" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

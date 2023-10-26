@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "include/pigeon/css/default.css",
+    "inputFile": "include/pigeon/css/default.less"
+  },
+  {
+    "outputFile": "include/consulting/css/default.css",
+    "inputFile": "include/consulting/css/default.less"
+  },
+  {
+    "outputFile": "include/pigeon/css/bootstrap.ssw.css",
+    "inputFile": "include/pigeon/css/bootstrap.ssw.less"
+  }
+]

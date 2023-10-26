@@ -1,0 +1,30 @@
+<%@ Page Inherits="WebUI.Admin.AffiliateSoftwareDetailPage" Language="C#" MasterPageFile="Masters/Diagnostics.master" Title="AffiliateSoftware Detail" Codebehind="AffiliateSoftwareDetail.aspx.cs" %>
+<%@ Register TagPrefix="blinq" Assembly="PageDataSource" Namespace="Microsoft.Web.UI.Controls" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="pagePlaceHolder" Runat="Server">
+   <div class="pagecontent">
+        <h1>AffiliateSoftware Detail</h1>      
+<asp:HyperLink runat="server" ID="ViewAllLink" NavigateUrl="AffiliateSoftwares.aspx">Show All AffiliateSoftwares</asp:HyperLink>
+<br />
+<asp:DetailsView runat="server" DataSourceID="AffiliateSoftwaresDataSource" EmptyDataText="The requested record was not found." ID="AffiliateSoftwaresDetailsView" AutoGenerateRows="False" DataKeyNames="SoftwareID"  OnItemUpdating="AffiliateSoftwaresDetailsView_ItemUpdating"><Fields>
+<asp:BoundField ReadOnly="True" DataField="SoftwareID" InsertVisible="False" HeaderText="SoftwareID"></asp:BoundField>
+<asp:BoundField DataField="SoftwareName" InsertVisible="False" HeaderText="SoftwareName"></asp:BoundField>
+<asp:BoundField DataField="SoftwareDescription" InsertVisible="False" HeaderText="SoftwareDescription"></asp:BoundField>
+<asp:BoundField DataField="AffiliatedSoftwareUrl" InsertVisible="False" HeaderText="AffiliatedSoftwareUrl"></asp:BoundField>
+<asp:BoundField DataField="SoftwareImage" InsertVisible="False" HeaderText="SoftwareImage"></asp:BoundField>
+<asp:BoundField DataField="SoftwareCounter" InsertVisible="False" HeaderText="SoftwareCounter"></asp:BoundField>
+<asp:BoundField DataField="DateCreated" InsertVisible="False" HeaderText="DateCreated" ApplyFormatInEditMode="True" DataFormatString="{0:G}" HtmlEncode="False"></asp:BoundField>
+<asp:BoundField DataField="CreatedBy" InsertVisible="False" HeaderText="CreatedBy"></asp:BoundField>
+<asp:BoundField DataField="DateUpdated" InsertVisible="False" HeaderText="DateUpdated"></asp:BoundField>
+<asp:BoundField DataField="UpdatedBy" InsertVisible="False" HeaderText="UpdatedBy"></asp:BoundField>
+<asp:HyperLinkField Text="View ProductAffiliateSoftwares" DataNavigateUrlFormatString="ProductAffiliateSoftwares.aspx?Table=AffiliateSoftware_ProductAffiliateSoftwares&amp;ProductAffiliateSoftwares_SoftwareID={0}" DataNavigateUrlFields="SoftwareID," Visible="false"></asp:HyperLinkField>
+<asp:CommandField ShowDeleteButton="True" ShowEditButton="True"></asp:CommandField>
+</Fields>
+</asp:DetailsView>
+
+<blinq:PageDataSource runat="server" DeleteMethod="Delete" EnableCaching="True" ConflictDetection="CompareAllValues" InsertMethod="Insert" SelectMethod="GetAffiliateSoftware" ID="AffiliateSoftwaresDataSource" DataObjectTypeName="WebUI.Admin.AffiliateSoftware" UpdateMethod="Update" OldValuesParameterFormatString="original_{0}"><SelectParameters>
+<asp:QueryStringParameter ConvertEmptyStringToNull="False" Name="SoftwareID" QueryStringField="SoftwareID"></asp:QueryStringParameter>
+</SelectParameters>
+</blinq:PageDataSource>
+
+    </div>
+</asp:Content>

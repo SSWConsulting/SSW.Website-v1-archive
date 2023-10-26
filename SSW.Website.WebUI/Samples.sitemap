@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/ssw/LinkAuditor/Samples/default.aspx" title="Samples"  description="Samples">
+    <siteMapNode url="/ssw/LinkAuditor/Samples/A.aspx" title="A Tag"  description="A Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/AREA.aspx" title="AREA Tag"  description="AREA Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/BGSOUND.aspx" title="BGSOUND Tag"  description="BGSOUND Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/FORM.aspx" title="FORM Tag"  description="FORM Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/FRAME.aspx" title="FRAME Tag"  description="FRAME Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/HeaderRedirect2.aspx" title="Header Redirect"  description="Header Redirect" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/IFRAME.aspx" title="IFRAME Tag"  description="IFRAME Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/IMG.aspx" title="IMG Tag"  description="IMG Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/LINK.aspx" title="LINK Tag"  description="LINK Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/META.aspx" title="META Tag"  description="META Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/OBJECT.aspx" title="OBJECT Tag"  description="OBJECT Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/SCRIPT.aspx" title="SCRIPT Tag"  description="SCRIPT Tag" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/inconsistentcasing.aspx" title="Inconsistent Casing Links"  description="Inconsistent Casing Links" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/FileTypes.aspx" title="Exclude File Types"  description="Exclude File Types" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/IgnorePage.aspx" title="Ignore Page"  description="Ignore Page" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/IgnoreBlocks.aspx" title="Ignore Blocks"  description="Ignore Blocks" />
+    <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/Default.aspx" title="Rules"  description="Rules">
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/DescriptiveTag.aspx" title="Rule Descriptive Tag"  description="Rule Descriptive Tag" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/Relevancy.aspx" title="Rule Relevancy"  description="Rule Relevancy" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoInvalidHTMLEntity.aspx" title="Rule No Invalid HTML Entity"  description="Rule No Invalid HTML Entity" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoMETATag.aspx" title="Rule No META Tag Redirect"  description="Rule No META Tag Redirect" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/ObjectTag.aspx" title="Rule No Classid in Object Tag"  description="Rule No Classid in Object Tag" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/LessThan101K.aspx" title="Rule Page Size Less Than 101 KB"  description="Rule Page Size Less Than 101 KB" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/OnloadEvent.aspx" title="Rule Don't Open Window in Onload Event"  description="Rule Don't Open Window in Onload Event" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/CorrectSymbols.aspx" title="Rule Use Correct Symbols"  description="Rule Use Correct Symbols" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/CasedURL.aspx" title="Rule URL Using Consistent Case"  description="Rule URL Using Consistent Case" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/Favicon.aspx" title="Rule Using Favicon"  description="Rule Using Favicon" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/CSSStylesheet.aspx" title="Rule Using CSS Stylesheet"  description="Rule Using CSS Stylesheet" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoRepeatedURL.aspx" title="Rule Pages must not link to the same URL more than once"  description="Rule Pages must not link to the same URL more than once" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/ReadingBackLink.aspx" title="Rule Use &quot;&lt; Back&quot; As Reading Back Link"  description="Rule Use &quot;&lt; Back&quot; As Reading Back Link" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoResetButton.aspx" title="Rule Not Use Reset Button"  description="Rule Not Use Reset Button" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/AnchorNameNotStartSharp.aspx" title="Anchor name must not start with # "  description="Anchor name must not start with # " />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/AnchorNameStandard.aspx" title="Anchor names must be valid "  description="Anchor names must be valid " />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/CSSWithDocType.aspx" title="CSS stylesheets must have DocType to display accurately across all browsers  "  description="CSS stylesheets must have DocType to display accurately across all browsers " />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoAbsolutePath.aspx" title="No absolute paths or direct external links "  description="No absolute paths or direct external links" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoEmailAddress.aspx" title="No email address in all web pages"  description="No email address in all web pages" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoMetaDescription.aspx" title="Pages must contain META description"  description="Pages must contain META description" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoMETAKeyword.aspx" title="Pages must contain META keywords"  description="Pages must contain META keywords" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoServerTagInHTML.aspx" title="ASP/ASP.NET tags must not exist in plain HTML documents "  description="ASP/ASP.NET tags must not exist in plain HTML documents" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoUNCInHTML.aspx" title="No UNC in HTML Link"  description="No UNC in HTML Link" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoSpaceInHTML.aspx" title="No space in HTML Link"  description="No space in HTML Link" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/ReturnTo.aspx" title="'Return to' links should not be used in inter-page navigation"  description="'Return to' links should not be used in inter-page navigation" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/UsePre.aspx" title="Should use &lt;pre&gt; to replace &lt;code&gt;  to display code"  description="'Should use &lt;pre&gt; to replace &lt;code&gt;  to display code" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoWidthInTable.aspx" title="Width for table tags should be specified in CSS"  description="Width for table tags should be specified in CSS" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/NoTimesNewRoman.aspx" title="Times New Roman should not be used"  description="Times New Roman should not be used" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/ImageWithAlt.aspx" title=" Image tags must have an alt or title attribute for Google"  description=" Image tags must have an alt or title attribute for Google" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/ImageInImgFolder.aspx" title="Referenced images must be in /images directory"  description="Referenced images must be in /images directory" />
+      <siteMapNode url="/ssw/LinkAuditor/Samples/Rules/HeadingTags.aspx" title="Heading tags should not contain bold or strong tags"  description="Heading tags should not contain bold or strong tags" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
+

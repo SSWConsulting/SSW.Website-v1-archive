@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://www.ssw.com.au/ssw/Company/Offices/Melbourne/Directions/") %>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<mediaDefinition>
+	<mediaItems>
+		<mediaItem mediaSource="eXtremeEmailsShowcase_v6.wmv">
+			<chapters>   
+				<chapter position="28.734" thumbnailSource="eXtremeEmailsShowcase_v6_28.734.jpg" title="Introduction"/>   
+				<chapter position="73.821" thumbnailSource="eXtremeEmailsShowcase_v6_73.821.jpg" title="Toolbar"/>   
+				<chapter position="122.786" thumbnailSource="eXtremeEmailsShowcase_v6_122.786.jpg" title="Incident Button"/>   
+				<chapter position="174.758" thumbnailSource="eXtremeEmailsShowcase_v6_174.758.jpg" title="Release Plan"/>   
+				<chapter position="250.743" thumbnailSource="eXtremeEmailsShowcase_v6_250.743.jpg" title="Task Completion"/>   
+				<chapter position="300.345" thumbnailSource="eXtremeEmailsShowcase_v6_300.345.jpg" title="Status Update"/>   
+				<chapter position="358.317" thumbnailSource="eXtremeEmailsShowcase_v6_358.317.jpg" title="Test Please"/>   
+				<chapter position="414.496" thumbnailSource="eXtremeEmailsShowcase_v6_414.496.jpg" title="Summary"/>              
+			</chapters>
+		</mediaItem>
+	</mediaItems>   
+</mediaDefinition>

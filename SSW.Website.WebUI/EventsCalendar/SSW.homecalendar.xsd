@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="HomeCalendar" targetNamespace="http://tempuri.org/HomeCalendar.xsd" elementFormDefault="qualified"
+	xmlns="http://tempuri.org/HomeCalendar.xsd" xmlns:mstns="http://tempuri.org/HomeCalendar.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="CalendarEntry">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Title" type="xs:string" minOccurs="1" />
+				<xs:element name="URL" type="xs:string" minOccurs="0" />
+				<xs:element name="Image" type="xs:image" minOccurs="0" />
+        <xs:element name="Presenter" type="xs:string" minOccurs="0" />
+				<xs:element name="Description" type="xs:string" minOccurs="0" />
+				<xs:element name="StartDateTime" type="xs:dateTime" minOccurs="1" />
+				<xs:element name="EndDateTime" type="xs:dateTime" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

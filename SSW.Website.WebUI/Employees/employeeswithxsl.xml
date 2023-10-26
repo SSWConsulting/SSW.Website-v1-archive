@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl" ?>
+<employees>
+    <employee>
+        <EmpID>DK</EmpID>
+        <Surname>Klein</Surname>
+        <FirstName>David</FirstName>
+        <description>
+	<![CDATA[
+		Position: Database Architect<br>
+		Qualifications: B Com MCP<br>
+		<br>
+	]]>
+		</description>
+        <description2>As SSW David Klein is in charge of Networking. As a Database Architect David also overseas technical review, design and development on key SSW projects.
+		With over 4 years experience in Information Technology David has extensive experience in Microsoft ASP .NET, ASP, VB .NET, VB, 
+		SQL Server and Access.  He has developed many SQL Server databases for clients including: 
+&lt;br&gt;
+* Woven Image
+&lt;br&gt;
+* Kane's Hire
+&lt;br&gt;
+* Microsoft
+&lt;br&gt;
+* Media Monitors
+&lt;p&gt;
+ Interests: Working out at the gym, bushwalking, online gaming and reading MS Press Books! 
+		</description2>
+        <description3bold>
+        </description3bold>
+        <description4>
+&lt;p&gt;
+His favourite quote is "Divide and Conquer!".
+&lt;p&gt;
+David may be contacted at DavidKlein&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt;
+</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/DavidKlein_Small.gif</imagedrawn>
+        <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    </employee>
+    <employee>
+        <EmpID>CS</EmpID>
+        <Surname>Shaw</Surname>
+        <FirstName>Cameron</FirstName>
+        <description>
+		Position: Project Manager&lt;br&gt;
+		Qualifications: BA Grad. Dip. Ed.&lt;br&gt;
+		&lt;br&gt;</description>
+        <description2>Cameron enjoys improving processes within SSW and communication with its clients, and loves managing projects
+		using XPDM (SSW's version of eXtreme Programming). Cameron is in charge of Client Relations and manages new business. 
+		If you have any requests in regards to what SSW can do for you, send him an email, he guarantees a prompt response 
+		and will always follow up.</description2>
+        <description3bold>
+        </description3bold>
+        <description4>
+&lt;p&gt;
+His favourite quote is "Before you take a step forward, turn around and see where you've been".
+&lt;p&gt;
+Cameron may be contacted at cameron&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; 
+</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/CameronShaw_Small.gif</imagedrawn>
+        <imagecertification>/SSW/Company/Images/mous.gif</imagecertification>
+    </employee>
+    <employee>
+        <EmpID>AC</EmpID>
+        <Surname>Cogan</Surname>
+        <FirstName>Adam</FirstName>
+        <description>
+		Position: Database Services Manager, Microsoft Developer Network Regional Director&lt;br&gt;
+		Qualifications: B Bus JP MCP&lt;br&gt;
+		&lt;br&gt;
+		At SSW, Adam has been developing custom solutions for businesses across a range of industries such as banking, insurance and manufacturing for 10 years.  Adam develops primarily in Microsoft technologies such as SQL Server 2000, ASP.NET, VB.NET, Access 2002, and Outlook 2002/Exchange Server 2000 often using n-tier architecture. </description>
+        <description2>Adam is one of only two Microsoft Regional Directors in Australia. In this role, he regularly visits Microsoft headquarters in Seattle to learn the latest on Microsoft strategic directions and to undertake training in development technologies. (This provides SSW employees, its clients and user group attendees with a special relationship in the computer software industry - technical support at the highest level, and a measure of protection for their business investments in a rapidly evolving technology environment). Adam has been President of the 'Microsoft .NET User Group, Sydney' since 1992. After computers, his interests lie in travelling and sports, especially tennis and soccer.</description2>
+        <description3bold>
+        </description3bold>
+        <description4>In addition Adam is a regular speaker at conferences and &lt;a href="/ssw/events/SSWTechBreakfast.aspx"&gt;SSW Tech Breakfasts&lt;/a&gt;, these have included &lt;a href="/ssw/redirect/Microsoft/msRoadshow.htm" target="_blank" &gt;Microsoft Roadshows&lt;/a&gt; &lt;img alt="You are going to a site outside of SSW" height=8 src="/SSWAdvWorks/multimedia/images/leavesite.GIF" width=19&gt; and Dev Days Australia wide, &lt;a href="/ssw/redirect/vslive.htm"  target="_blank" &gt;VS Live Australia and Chicago 2001 and 2002&lt;/a&gt;&lt;img alt="You are going to a site outside of SSW" height=8 src="/SSWAdvWorks/multimedia/images/leavesite.GIF" width=19&gt;,IDC Conferences South Africa and SGW Forum's DevCons. 
+
+		He recently made a guest presentation on 'XML for Database Developers' at the '&lt;a href="/ssw/redirect/ntmsdevsigs.htm" target="_blank"&gt;Texas PC User Group&lt;/a&gt;&lt;img alt="You are going to a site outside of SSW" height=8 src="/SSWAdvWorks/multimedia/images/leavesite.GIF" width=19&gt;' in which he was &lt;a href="/ssw/redirect/SSW/DejaNtmsdevsigs.htm" target="_blank"&gt;well received&lt;/a&gt;&lt;img alt="You are going to a site outside of SSW" height=8 src="/SSWAdvWorks/multimedia/images/leavesite.GIF" width=19&gt;.
+
+		Adam has been President of the '&lt;a href="http://www.ssw.com.au/NETUG/"&gt;Microsoft .NET User Group, Sydney&lt;/a&gt;' since 1992. 
+
+		&lt;p&gt;
+		His favourite quote is "There is always free cheese in a mousetrap". 
+		&lt;p&gt;
+		Adam may be contacted at AdamCogan&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt;</description4>
+        <descriptionprofile>&lt;div&gt;&lt;p align="center"&gt;&lt;img src="Images/msRoad1.GIF" width="416" height="239"&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;font face="verdana,Arial, Helvetica, sans-serif" size="1"&gt;Adam has spoken in Microsoft Roadshow conference around Australia in 1999.&lt;/font&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;a href="http://www.ssw.com.au/sgw/devcon2000/"&gt;&lt;img src="Images/devcon2000.GIF" border="1"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;font face="verdana,Arial, Helvetica, sans-serif" size="1"&gt;Adam has spoken with Tom in the DevCon2000 conference held in Perth, Sydney.&lt;/font&gt;&lt;/p&gt; &lt;p align="center"&gt;&lt;img src="Images/withMom.jpg" width="400" height="600" align="center"&gt;&lt;/p&gt;  &lt;p align="center"&gt;&lt;font face="verdana,Arial, Helvetica, sans-serif" size="1"&gt;With his mum in the Neutral Bay Office, August 2000.&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;</descriptionprofile>
+        <imagedrawn>Images/AdamCogan_Caricature_Small.gif</imagedrawn>
+        <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+        <extraLink1>Adam contributes to &lt;a href="/SSW/products/training.aspx"&gt;SSW Developer Training&lt;/a&gt;, &lt;a href="/SSW/events/sswtechbreakfast.aspx"&gt;SSW Breakfast Sessions&lt;/a&gt;, and loves the opportunity to speak at &lt;a href="/SSW/events/conference.asp"&gt;conferences&lt;/a&gt;.</extraLink1>
+    </employee>
+    <employee>
+        <EmpID>ST</EmpID>
+        <Surname>Tchernykh</Surname>
+        <FirstName>Sergei</FirstName>
+        <description>
+		Position: Database Architect&lt;br&gt;
+		Qualifications: B Eng MCP&lt;br&gt;
+		&lt;br&gt;
+</description>
+        <description2>Sergei arrived in Australia in 1996. He worked as a software engineer in the University of Newcastle.
+In 1998 Sergei joined SSW.
+
+Sergei's main areas of expertise are in Microsoft technologies such as Access, ASP.NET, C++, VB.NET, C# and SQL Server and he is the lead developer on SSW Data PRO! and SSW Data Renovator.
+His experience spans from database design to performance tuning.
+
+He worked for Bradman corporation (8 months contract), for leading Australian insurer VERO (18 months contract) and for Australia's largest independently-owned network of financial planning accountants and advisers Count (6 weeks contract).
+
+At present, his interests are focused on .NET and SQL Server performance tuning.
+
+When Sergei is not developing business solutions he enjoys reading and spending time with family and friends.
+</description2>
+        <description3bold>
+        </description3bold>
+        <description4>
+&lt;p&gt;
+His favourite quote is "There is always room at the top". 
+&lt;p&gt;		
+		
+		</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/SergeiTchernykh_Small.gif</imagedrawn>
+        <imagecertification />
+    </employee>
+    <employee>
+        <EmpID>DC</EmpID>
+        <Surname>Cai</Surname>
+        <FirstName>David</FirstName>
+        <description>
+		Position: Senior Database Developer&lt;br&gt;
+		Qualifications: M Sc MCP&lt;br&gt;
+		&lt;br&gt;
+		He has been a VB guru since version 4 but loves the power of .NET and you wouldn't find him using anything else but VB.NET now.</description>
+        <description2>David joined SSW as a senior database developer in 1999. Since joining SSW, David has specialised in SQL Server 2000, web site development specifically using ASP.NET technology, undertaking work for a variety of government and private enterprises. After computers, his interests lie in swimming, running, reading and listening to music. 
+		</description2>
+        <description3bold>
+        </description3bold>
+        <description4>
+&lt;p&gt;
+His favourite quote is: "Rudeness is a cheap imitation of power."
+&lt;p&gt;
+David may be contacted at david&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; 
+</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/DavidCai_Small.gif</imagedrawn>
+        <imagecertification />
+    </employee>
+    <employee>
+        <EmpID>JL</EmpID>
+        <Surname>Liu</Surname>
+        <FirstName>John</FirstName>
+        <description>
+		Position: Database Developer&lt;br&gt;
+		Qualifications: B CSc (Hons)&lt;br&gt;
+		&lt;br&gt;John Liu joined SSW as a Database Developer, where he is responsible for developing and maintaining applications using ASP.NET, ASP, Access, SQL Server and Exchange Server. John is the lead developer on SSW's Outlook COM add-in - &lt;a href="/ssw/LookOut"&gt;LookOut&lt;/a&gt;.
+Prior to SSW, John worked as a web project developer using ASP.  </description>
+        <description2>He has also worked as a tutor and taught over 200 students in SQL, RDBMS design, Java and C++.</description2>
+        <description3bold>
+        </description3bold>
+        <description4>His favourite quote is "Learn from other's mistakes, never laugh".  
+John Liu can be contacted at johnliu&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt;</description4>
+    </employee>
+    <employee>
+        <EmpID>PD</EmpID>
+        <Surname>Devkota</Surname>
+        <FirstName>Prajwol</FirstName>
+        <description>
+		Position: Database Architect&lt;br&gt;
+		Qualifications: B IT&lt;br&gt;
+		&lt;br&gt;
+Prior to SSW he worked for Warranty Works in technical support and progressed to the Helpdesk Manager. This gave Prajwol great experience in hardware and networking. 
+		</description>
+        <description2>Prajwol has knowledge of C++, Visual Basic.NET, Access, ASP.NET and HTML. </description2>
+        <description3bold>
+        </description3bold>
+        <description4>
+&lt;p&gt;
+His favourite quote is "Every job is the self portrait of the person who did it. Autograph your work with excellence".
+&lt;p&gt;
+Prajwol may be contacted at praj&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt;  
+		</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/PrajwolDevkota_Small.gif</imagedrawn>
+        <imagecertification />
+    </employee>
+    <employee>
+        <EmpID>PA</EmpID>
+        <Surname>Ahn</Surname>
+        <FirstName>Peter</FirstName>
+        <description>
+		Position: Senior Database Developer&lt;br&gt;
+		Qualifications: Dip IT, MCP&lt;br&gt;
+		&lt;br&gt;
+
+		Peter Ahn joined SSW as a Internet developer where has specialised in Web Database development including HTML, Java Script, XML, ASP.NET, Visual Basic.NET, SQL Server and COM+.</description>
+        <description2>He is undertaking work for a variety of web development and database enterprises including www.sportsbiz.com.au, &lt;a href="http://www.designhome.com.au" target="_blank" &gt;www.designhome.com.au&lt;/a&gt;, www.sgw.com.au, &lt;a href="http://www.academytiles.com.au" target="_blank" &gt;www.academytiles.com.au&lt;/a&gt;, &lt;a href="http://www.frdc.com.au/research/applicants/instruction.htm" target="_blank" &gt;FRDC&lt;/a&gt; &lt;a href="http://www.ssw.com.au/frdc" target="_blank" &gt;Web Application&lt;/a&gt; and Commonwealth Bank Property Intranet Project - www.commbank.ams.com.au which is not visible from outside Commonwealth Bank. </description2>
+        <description3bold>
+        </description3bold>
+        <description4>&lt;p&gt;
+		His favourite quote is "A wise man will make more opportunities than he finds."
+&lt;p&gt;
+		Peter may be contacted at peter&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; </description4>
+        <descriptionprofile />
+        <imagedrawn>Images/PeterAhn_Small.gif</imagedrawn>
+        <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    </employee>
+    <employee>
+        <EmpID>RD</EmpID>
+        <Surname>Donald</Surname>
+        <FirstName>Ross</FirstName>
+        <description>
+		Position: Senior Database Developer&lt;br&gt;
+		Qualifications: Dip IT, MCP&lt;br&gt;
+		&lt;br&gt;
+			Joining SSW 6 years ago, Ross has worked on a large range of applications for SME's and large corporations
+			such as Cap Gemini Ernst &amp; Young and Media Monitors. 
+		</description>
+        <description2>Ross is the lead developer on SSW SQL Auditor and now specialises in VB .NET, 
+		Microsoft Office Development and SQL Server. In his spare time, Ross enjoys swimming, reading and skateboarding. Ross still
+		reminds SSW that in July 1997, Ross won first prize in a competition conducted by the Microsoft Access Group, Sydney for 
+		third party utilities for Access. His product was an Access comparision tool which became SSW's Data Renovator.
+		</description2>
+        <description3bold>
+        </description3bold>
+        <description4>His favourite quote is "The time is now". He can  be contacted at Ross&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; </description4>
+        <descriptionprofile />
+        <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    </employee>
+    <employee>
+        <EmpID>JHL</EmpID>
+        <Surname>Lien</Surname>
+        <FirstName>Jason</FirstName>
+        <description>
+		Position: Database Developer&lt;br&gt;
+		Qualifications: B IT&lt;br&gt;
+		&lt;br&gt;  
+			Jason works with ASP, VB, Access, ASP .NET, VB .NET, SQL Server and Exchange Server 2000. 
+		</description>
+        <description2>
+			As a Database Developer Jason works with Database Architects designing functional specifications, analysing and 
+			improving business processes and developing and testing the application. Jason has extensive experience migrating legacy business systems to new 
+			technologies. Jason is also the lead developer on SSW Incident PRO! which is built in VB .NET and integrates 
+			with Exchange Server 2000.
+		</description2>
+        <description3bold>
+        </description3bold>
+        <description4>
+			Jason can be contacted at JasonLien&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; 
+		</description4>
+    </employee>
+    <employee>
+        <EmpID>JP</EmpID>
+        <Surname>Prince</Surname>
+        <FirstName>John</FirstName>
+        <description>
+		Position: Database Developer&lt;br&gt;
+		Qualifications: Dip IT&lt;br&gt;
+		&lt;br&gt;
+		John works mainly with Visual Basic and ASP. He also specialises in packaging up clients and SSW 
+		products using Wise and InstallShield. He would rather tidy his office than work with the Package and Deploy 
+		Wizard that comes with VB6 and Access.</description>
+        <description2>He is no longer scared of DLL Hell and related distribution problems, but loves working with .NET.</description2>
+        <description3bold>
+        </description3bold>
+        <description4>His favourite quote is "Never give up"&lt;p&gt;John can be contacted at JohnPrince&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; </description4>
+        <imagedrawn>Images/JohnPrince_Large.gif</imagedrawn>
+    </employee>
+    <employee>
+        <EmpID>DH</EmpID>
+        <Surname>Hyles	</Surname>
+        <FirstName>Daniel</FirstName>
+        <description>
+		Position: Senior Database Developer&lt;br&gt;
+		Qualifications: Dip IT&lt;br&gt;
+		&lt;br&gt;
+		Daniel joined SSW as an Internet developer where he has specialised in Web E-commerce solutions that 
+		incorporate HTML, Java Script, XML, PHP, Active Server pages, Visual Basic, SQL Server, COM+ and .NET.
+		</description>
+        <description4>His favourite quote is "Share your knowledge. It's the way to achieve immortality" 
+		 Daniel can be contacted at DanielHyles&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; </description4>
+        <imagedrawn>Images/DanielHyles_Small.gif</imagedrawn>
+    </employee>
+    <!--
+	<employee>
+		<EmpID>RM</EmpID>
+		<Surname>Moukaddem</Surname>
+		<FirstName>Ray</FirstName>
+		<description>
+		Position: Senior Database Developer&lt;br&gt;
+		Qualifications: B Sc&lt;br&gt;
+		&lt;br&gt; 
+		Ray is a specialist in Consulting and Web Database development using the latest Microsoft technologies including C#, VB 
+		.NET, ASP .NET, Active Server Pages, SQL Server, HTML, JavaScript, Website design and Access.  Ray holds the position of Senior Database Developer.
+		</description> 
+		<description2>Ray has many years of business experience and a keen mind for streamlining and implementing better business processes.
+		Recently Ray assisted Toyota Head Office in optimising their business processes using many of Microsoft's packages.
+		Some of the projects included C#.NET graphing, DHTML forms and a C#.NET mapping.  Other projects for other clients 
+		include SQL Server 2000 and ASP intranet solutions. He is also lead developer on Time PRO Projects, our flagship Project Management software package.
+		</description2>
+		
+		<description3bold></description3bold>
+		<description4>His favourite quote is "Patience is a virtue."
+		Ray can be contacted at RayMoukaddem&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; </description4>
+	</employee>
+	-->
+    <employee>
+        <EmpID>IP</EmpID>
+        <Surname>Pluzhnik</Surname>
+        <FirstName>Igor</FirstName>
+        <description>
+        </description>
+        <description2>12 years of IT experience 7 years of Client-Server development. 6 years database administration and database design/implementation, 7 years of VB development. Datawarehousing design, implementation and administration. 2 years of Internet/Intranet development, E-Commerce, workflow applications. COM, DCOM, MTS, COM+ design and implementation. </description2>
+        <description3bold>Igor holds a Master Information Technology (UNSW), Master of Economy (Uni of Kiev) and is an MCSE, MCDBA and MCSD.	
+		</description3bold>
+        <description4>
+&lt;p&gt;
+His favourite quote is "Walking on water and developing software from a specification are easy....If both are frozen". 
+&lt;p&gt;		
+		
+		</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/IgorPluzhnik_Small.gif</imagedrawn>
+        <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    </employee>
+    <employee>
+        <EmpID>RF</EmpID>
+        <Surname>Fernandez</Surname>
+        <FirstName>Richard</FirstName>
+        <description>Richard finished his AB from De La Salle University in the Philippines in 1979 and obtained an Operations Research certificate from Case Western Reserve University in 1987. After a career in forestry consulting, he emigrated to Australia in 1997 and is beginning a second career as a software developer. </description>
+        <description2 />
+        <description3bold />
+        <description4>
+&lt;p&gt;
+He believes that "as you go through life, no matter what your goal, keep your eye upon the donut, and not upon the hole." 
+&lt;p&gt;
+Richard may be contacted at richard&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; . 
+		</description4>
+        <descriptionprofile />
+        <imagecertification />
+    </employee>
+    <employee>
+        <EmpID>CJ</EmpID>
+        <Surname>Joosse</Surname>
+        <FirstName>Casey</FirstName>
+        <description>Casey has a distinctive management career which includes having been CEO, President and MD of several multinational firms, in Australia, Brazil, South Africa, Mexico and the USA.</description>
+        <description2>His presence as our team leader provides a management's view of the IT industry, with the understanding that all of our client's investments need to be not only highly operative, but cost effective. 
+		</description2>
+        <description3bold />
+        <description4>Casey may be contacted at casey&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; </description4>
+        <descriptionprofile />
+        <imagecertification />
+    </employee>
+    <employee>
+        <EmpID>CA</EmpID>
+        <Surname>Alexis</Surname>
+        <FirstName>Con</FirstName>
+        <description>Con has done extensive work with Visual Basic 6 and SQL Server for the past year at Media Monitors, Media Monitors has four huge in-house applications that gather Media information from around Australia.</description>
+        <description2>At SSW Con has also been involved with heaps of Exchange 2000 development, being the principal developer behind SSW Incident PRO, an SSW Internal project.</description2>
+        <description4>His favourite quote is "You know your drunk when you look straight and see your shoulder!"</description4>
+        <imagedrawn>/SSW/Company/Images/cona.GIF</imagedrawn>
+    </employee>
+    <employee>
+        <EmpID>EC</EmpID>
+        <Surname>Cogan</Surname>
+        <FirstName>Eve</FirstName>
+        <description>Eve is progressing her way through the SSW by getting on side with the right people.</description>
+        <description2>Joining SSW on January 4 2002 at a very early hour, Eve is expected to make big changes in the way the company is run.</description2>
+        <description3bold>At SSW, Eve is responsible for keeping mum and dad busy, and generally being cute. Find some more pictures '&lt;a href="evecogan.asp"&gt;here&lt;/a&gt;</description3bold>
+        <description4>Eve's favourite quote is not yet known... Eve may be contacted at eve&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; 
+		</description4>
+        <descriptionprofile />
+        <imagedrawn>/SSW/Company/Images/Eve.jpg</imagedrawn>
+    </employee>
+    <employee>
+        <EmpID>GJ</EmpID>
+        <Surname>Joosse</Surname>
+        <FirstName>Greg</FirstName>
+        <description>After studying overseas, Greg returned to Australia to work for a computer reseller as a System Support Officer. Later, he moved to News Limited as a Network and Communications Engineer. The role developed into Network Manager for News Limited's largest colour pre-press site. 
+		</description>
+        <description2>After more than two years with News limited, Greg joined the Super League Consortium as Technology Manager. This exciting position created ground breaking advances for Rugby League and co-ordinated the modernisation of club technology in the office and on the field. Whilst completing his Bachelor of Business at the University of Technology Sydney, Greg also satisfied his interest in computers by programming and indulging in some low-level 'hacking'. He then completed his Certified Novell Engineer in 1992 and then attained the coveted MCSE (Microsoft Certified System Engineer). 
+		</description2>
+        <description4>His favourite quote is "If you can't run with the big dogs, stay on the porch." &lt;p&gt; Greg may be contacted at greg&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; .
+		</description4>
+        <descriptionprofile />
+        <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    </employee>
+    <employee>
+        <EmpID>AJ</EmpID>
+        <Surname>Julius</Surname>
+        <FirstName>Andrew</FirstName>
+        <description>Andrew graduated from the University of Technology in 1994 with a Bachelor of Business Degree in Finance and Marketing. He worked for the next year with Prudential Corporation Australia in their Wholesale Porfolio Sector. </description>
+        <description2>Joining SSW in 1995, he used his computing knowledge to establish the Internet arm of the company. Since then, he has gained experience building web sites for small to medium sized companies in a variety of industries. 
+		</description2>
+        <description3bold>At SSW, Andrew is responsible for Internet and Electronic Commerce Services. </description3bold>
+        <description4>To view some of the web sites developed by SSW, visit our Internet Clients page. Andrew's software specialisations are in HTML editors (Frontpage, Dreamweaver and Homesite) and Microsoft Internet Information Server. Andrew believes no price is too high for personal fitness - "Fit in Body = Fit in Mind". He is a keen triathlete, although enjoys the less masochistic pursuits of golf, tennis, squash and travel. 
+&lt;p&gt;
+His favourite quote is "Don't be afraid to take a large leap if you can't cross a chasm in two small steps" 
+&lt;p&gt;
+Andrew may be contacted at andrew&lt;img src="/SSW/Images/SSWLogo/ssw_com_au_NoShadow.gif" align="center"&gt; 
+		</description4>
+        <descriptionprofile />
+        <imagedrawn>Images/AndrewJulius_Small.gif</imagedrawn>
+        <imagecertification />
+    </employee>
+</employees>

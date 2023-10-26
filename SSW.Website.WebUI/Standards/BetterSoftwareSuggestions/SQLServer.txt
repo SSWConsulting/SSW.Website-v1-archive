@@ -1,0 +1,21 @@
+<p>
+<b>Ideas for Better Software</b>
+</p>
+<p>
+<a href="Office.aspx">Office</a><br>
+<a href="InternetExplorer.aspx">Internet Explorer</a><br>
+<span class="boldred">SQL Server</span><br>
+<a href="TerminalServices.aspx">Terminal Services</a><br>
+<a href="SourceSafe.aspx">Visual Source Safe</a><br>
+<a href="VisualStudio.aspx">Visual Studio .NET</a><br>
+<a href="Windows.aspx">Windows</a><br>
+<a href="MSNMessenger.aspx">MSN Messenger</a><br>
+<a href="SharePointTeamServices.aspx">SharePoint Team Services</a><br>
+<a href="DataAnalyzer.aspx">Data Analyzer</a><br>
+<a href="Exchange.aspx">Exchange Server</a><br>
+<a href="IIS.aspx">IIS</a><br>
+<a href="OutlookExpress.aspx">Outlook Express</a><br>
+<a href="ReportingServices.aspx">Reporting Services</a><br>
+<a href="Google.aspx">Google</a><br>
+<a href="msaccess.aspx">MS Access</a><br>
+</p>

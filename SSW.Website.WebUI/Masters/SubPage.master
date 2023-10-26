@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="SubPage.master.cs" Inherits="SSW.Website.WebUI.Masters.SubPage"
+    MasterPageFile="~/Masters/New.Master" %>
+
+<asp:Content ID="Content1" runat="Server" ContentPlaceHolderID="NewContentPlaceHolder">
+    <div id="subpage">
+        <div id="title">
+            <asp:ContentPlaceHolder ID="title" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="titleSales">
+            <asp:ContentPlaceHolder ID="titleSales" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="titleCase">
+            <asp:ContentPlaceHolder ID="titleCase" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="titleUX">
+            <asp:ContentPlaceHolder ID="titleUX" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="image">
+            <asp:ContentPlaceHolder ID="featureimage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="index">
+            <asp:ContentPlaceHolder ID="index" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="showcase">
+            <asp:ContentPlaceHolder ID="showcase" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="maincontentCase">
+            <asp:ContentPlaceHolder ID="maincontentCase" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="maincontentFull">
+            <div>
+                <asp:SiteMapPath ID="SiteMapPathMaster" runat="server" SiteMapProvider="SSWXmlSiteMapProvider">
+                </asp:SiteMapPath>
+            </div>
+            <asp:ContentPlaceHolder ID="maincontentFull" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="maincontent">
+            <asp:ContentPlaceHolder ID="maincontent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="border: medium none; height: 30px; overflow: hidden; position: relative;
+            top: 20px;">
+            <iframe id="fackbookFrame" runat="server" src="" scrolling="no" frameborder="0" allowtransparency="true"
+                style="border: medium none; overflow: hidden; width: 90px; margin-left: 138px;
+                height: 30px"></iframe>
+        </div>
+        <div id="sidebar">
+            <asp:ContentPlaceHolder ID="sidebar" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <div id="Newsletter">
+                <div class="rounded">
+                    <h3>
+                        Newsletter</h3>
+                </div>
+                <div class="section">
+                    Join our newsletter and receive updates, tips, and special deals on SSW events.<br />
+                    <asp:TextBox ID="newsletterEmailTextBox" runat="Server" CssClass="emailinput" value="Your Email"
+                        onblur="if (value == '') {value = 'Your Email'}" onfocus="if (value == 'Your Email') {value =''}"></asp:TextBox>
+                    <asp:Button ID="newsletterSignUpButton" runat="Server" Text="Go" CssClass="button">
+                    </asp:Button><br />
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="newsletterEmailTextBox"
+                        ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" ErrorMessage="Invalid email address"
+                        Font-Size="X-Small"></asp:RegularExpressionValidator><br />
+                    <a href="/ssw/netug/sswupdateprevious.aspx">View Newsletter Archive</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="HeadingContent1" ContentPlaceHolderID="HeadingPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="HeadingPlaceHolder" runat="server">
+        <h1>
+            <asp:Label ID="lblHeading" Style="word-break: break-all; word-wrap: break-word" runat="server">SSW - Sydney&#39;s Leading .NET and SQL Consultants</asp:Label></h1>
+    </asp:ContentPlaceHolder>
+</asp:Content>

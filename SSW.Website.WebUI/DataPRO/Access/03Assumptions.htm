@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>SSW-Data PRO!</title>
+		<LINK href="/ssw/Include/ssw.css" type="text/css" rel="stylesheet">
+			<link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon">
+	</head>
+	<body BACKGROUND="../Images/GreenBackground.gif" TEXT="Black" LINK="#000000" VLINK="#000000" ALINK="#000000" bgcolor="#FFFFFF">
+		<basefont face="Arial" size="10">
+			<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+				<tr>
+					<td WIDTH="101" VALIGN="top">
+						<p align="left">
+							<b><a href="../Default.aspx">HOME PAGE</a></b>
+						<p><b><a href="01Introduction.htm">Introduction</a></b>
+							<br>
+							&nbsp;&nbsp;<a href="02HowItWorks.htm">How It Works</a>
+							<br>
+							&nbsp;&nbsp;Assumptions</p>
+						<p><b><a href="04GettingStarted.htm">Getting started</a></b></p>
+						<p><b><a href="05FirstTimeUse.htm">First Time Use</a></b>
+							<br>
+							&nbsp;&nbsp;<a href="06Setup.htm">Setup</a></p>
+						<p><b><a href="07Tutorial.htm">Tutorial</a></b></p>
+						<p><b><a href="08ChangingData.htm">Changing Data</a></b>
+							<br>
+							&nbsp;&nbsp;<a href="09DataStructure.htm">Data Structure</a>
+							<br>
+							&nbsp;&nbsp;<a href="10Data.htm">Data</a>
+							<br>
+							&nbsp;&nbsp;<a href="11Relationship.htm">Relationship</a>
+							<br>
+							&nbsp;&nbsp;<a href="12Dataindex.htm">Index</a>
+							<br>
+							&nbsp;&nbsp;<a href="13comments.htm">Comments</a></p>
+						<p><b><a href="14DistributeFrontEnd.htm">Distributing Your New Front End</a></b></p>
+						<p><strong><a href="../frmLinks.htm">Data PRO Links</a></strong>
+						</p>
+					</td>
+					<td WIDTH="35"></td>
+					<td width="507" valign="TOP">
+						<IMG border="0" src="../Images/banDataStart.gif" alt="Ban Data Start" width="143" height="92"><IMG border="0" src="../Images/BanDataPRO.gif" alt="Ban Data PRO" width="324" height="92">
+						<p align="left">
+							<b>Assumptions </b>
+						<p>
+							Most Microsoft Access developers use a 'split database' method to develop 
+							databases. There are 2 main reasons:&#9;
+							<ol>
+								<li>
+								Performance across a Network
+								<li>
+								Easier to issue new versions to clients - without upsetting their data.
+							</ol>
+						<p>Therefore we make the following assumptions:
+							<ul>
+								<li>
+									Your database consists of 2 main files the application mdb file and the 
+									data mdb file - although the 'SSW Data PRO!' utility still works if you use 
+									only one mdb file.
+									<br>
+									<table width="75%" border="1" bgcolor="#CCCCCC">
+										<tr>
+											<td>
+												<p><b>IMPORTANT:
+														<br>
+													</b>If you are using a Visual Basic Front-End / &quot;Application&quot;, you <b>can </b>
+													use all the features of Data PRO! All that needs to be done is to create a 
+													blank *.mdb file and place it in your application directory. This file should 
+													be shipped with your application so that it can upgrade your backend if 
+													necessary.</p>
+											</td>
+										</tr>
+									</table>
+									<br>
+								</li>
+								<li>
+									The application files (including the application mdb file, bmps, icons, etc) 
+									are installed locally onto each users hard drive, eg their C: drive.
+								</li>
+								<li>
+									The data file is the only file that should be stored on the network drive, 
+									eg. F: drive.</li>
+							</ul>
+						<p>&nbsp;</p>
+						<p><img src="../Images/Image44.gif" alt="Data Diagram" width="495" height="323"></p>
+						<p>&nbsp;</p>
+						<p>
+						Note: To share a Microsoft Access database across a network, the data mdb 
+						file (eg. NorthwindDATA.mdb) must be moved to a network location that is 
+						accessible by everyone who wants to use the database. The 'data' database 
+						contains only tables and your data, not queries, forms, reports and modules. 
+						Most developers use a naming convention of the word data in this files name, 
+						to easily recognise it. A copy of the 'application' database e.g. 
+						NorthwindAPPLICATION.mdb is required on each computer to access the shared 
+						data. This file contains the queries, forms, reports and modules.
+						<p>
+						To serve as an example we have included a copy of NorthwindAPPLICATION.mdb - 
+						the sample database that comes with Microsoft Access 97 &amp; 2000. We have 
+						split the database as explained above, to give as an example and allow you to 
+						test 'SSW Data PRO!'
+						<p>
+						When 'SSW Data PRO!' is installed, these files are added to the directory 
+						C:\DataPRO\Sample\.
+						<p align="CENTER"><a href="02HowItWorks.htm"> <img src="../Images/btnPrevious.gif" alt="Previous Button" border="0" width="30" height="30"></a>
+							<a href="04GettingStarted.htm"><img src="../Images/btnNext.gif" alt="Next Button" border="0" width="30" height="30"></a>
+							<center><img src="/ssw/Images/ft_ssw.gif" alt="SSW Footer" width="339" height="73"></center>
+							<map name="SSWfooter">
+								<area shape="RECT" alt="SSW" coords="86,31,209,46" href="/ssw/" onMouseOver="window.status='SSW'">
+								<area shape="RECT" alt="info@s*w.com.au" coords="230,29,367,46" href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info', e4='?Subject=From%20Footer';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;" onMouseOver="window.status='Email Us'">
+								<area shape="RECT" coords="0,0,0,0">
+							</map>
+					</td>
+				</tr>
+			</TABLE>
+	</body>
+</html>

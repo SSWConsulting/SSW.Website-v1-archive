@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SecurePayXMLSchema" targetNamespace="http://tempuri.org/SecurePayXMLSchema.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/SecurePayXMLSchema.xsd" xmlns:mstns="http://tempuri.org/SecurePayXMLSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="MessageInfo">
+		<xs:sequence>
+			<xs:element name="messageID" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="messageTimestamp" type="xs:string" maxOccurs="1" minOccurs="1" />
+			<xs:element name="timeoutValue" type="xs:integer" minOccurs="0" maxOccurs="1" default="60" />
+			<xs:element name="apiVersion" type="xs:string" maxOccurs="1" minOccurs="1" fixed="xml-4.2" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MerchantInfo">
+		<xs:sequence>
+			<xs:element name="merchantID" type="xs:string" maxOccurs="1" minOccurs="1" />
+			<xs:element name="password" type="xs:string" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CreditCardInfo">
+		<xs:sequence>
+			<xs:element name="cardNumber" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="cvv" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="pan" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="expiryDate" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="cardType" type="xs:integer" maxOccurs="1" minOccurs="0" />
+			<xs:element name="cardDescription" type="xs:string" maxOccurs="1" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Txn">
+		<xs:sequence>
+			<xs:element name="txnType" type="xs:integer" maxOccurs="1" minOccurs="1" default="0" />
+			<xs:element name="txnSource" type="xs:integer" maxOccurs="1" minOccurs="1" default="23" />
+			<xs:element name="amount" type="xs:integer" maxOccurs="1" minOccurs="1" />
+			<xs:element name="currency" type="xs:string" maxOccurs="1" minOccurs="1" default="AUD" />
+			<xs:element name="purchaseOrderNo" type="xs:string" maxOccurs="1" minOccurs="1" />
+			<xs:element name="approved" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="responseCode" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="responseText" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="settlementDate" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="txnID" type="xs:string" maxOccurs="1" minOccurs="0" />
+			<xs:element name="CreditCardInfo" type="CreditCardInfo" maxOccurs="1" minOccurs="1" />
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:integer" fixed="1" use="required" />
+	</xs:complexType>
+	<xs:complexType name="SecurePayRequest">
+		<xs:sequence>
+			<xs:element name="MessageInfo" type="MessageInfo" maxOccurs="1" minOccurs="1" />
+			<xs:element name="MerchantInfo" type="MerchantInfo" maxOccurs="1" minOccurs="1" />
+			<xs:element name="RequestType" type="xs:string" maxOccurs="1" minOccurs="1" />
+			<xs:element name="Payment" maxOccurs="1" minOccurs="0" type="Payment">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SecurePayResponse">
+		<xs:sequence>
+			<xs:element name="MessageInfo" type="MessageInfo" maxOccurs="1" minOccurs="1" />
+			<xs:element name="MerchantInfo" type="MerchantInfo" maxOccurs="1" minOccurs="1" />
+			<xs:element name="RequestType" type="xs:string" maxOccurs="1" minOccurs="1" />
+			<xs:element name="Status" type="Status" maxOccurs="1" minOccurs="1" />
+			<xs:element name="Payment" maxOccurs="1" minOccurs="0" type="Payment">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Status">
+		<xs:sequence>
+			<xs:element name="statusCode" type="xs:string" maxOccurs="1" minOccurs="1" />
+			<xs:element name="statusDescription" type="xs:string" maxOccurs="1" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Payment">
+		<xs:sequence>
+			<xs:element name="TxnList" maxOccurs="1" minOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Txn" type="Txn" maxOccurs="1" minOccurs="1" />
+					</xs:sequence>
+					<xs:attribute name="count" type="xs:integer" fixed="1" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SecurePayRequest" type="SecurePayRequest">
+	</xs:element>
+	<xs:element name="SecurePayReponse" type="SecurePayResponse">
+	</xs:element>
+</xs:schema>

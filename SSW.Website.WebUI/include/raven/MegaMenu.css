@@ -1,0 +1,213 @@
+
+.row .col-md-2 {
+    float: left;
+    width: 16.66%;
+}
+
+.row .col-md-3 {
+    float: left;
+    width: 25%;
+}
+
+.row .col-md-4 {
+    float: left;
+    width: 33.33%;
+}
+
+.row .col-md-5 {
+    float: left;
+    width: 41.66%;
+}
+
+.row .col-md-6 {
+    float: left;
+    width: 50%;
+}
+
+
+#MegaMenu {
+    clear: both;
+    height: 36px;
+    line-height: 24px;
+    padding-left: 0;
+    z-index: 11;
+    background: none repeat scroll 0 0 #414141;
+    position: relative;
+}
+
+    #MegaMenu a:hover {
+        text-decoration: none;
+    }
+
+    #MegaMenu li.Popular {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAOCAIAAADmEAgNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQTJCMDg3OTFDMjMxMUU1QkYxNkQzRUE1Q0I0QzhENCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQTJCMDg3QTFDMjMxMUU1QkYxNkQzRUE1Q0I0QzhENCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNBMkIwODc3MUMyMzExRTVCRjE2RDNFQTVDQjRDOEQ0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNBMkIwODc4MUMyMzExRTVCRjE2RDNFQTVDQjRDOEQ0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+2JRVPgAAAb9JREFUeNpiPOdgyzCYABPDIAOjDiIEWOAs9UVLuWRlgYy/3749mTvn3bo1InEJUuERzFxcv96+fb5sKVBEKChEPjcPov7LjRu3M9P0tu54e+jg0852FmER3TXrnq9Z/WbFcgjjxdTJcMO116xnExa+29Lyae8urHZhD6GP586dd7T7+fataEAg0G7ZxCSgaqDI2/37gO7gNjGDKLtVWvJw8iQeDQ2gGmI8zefsBnQN0G4BeztMu4Rd3QhH2b+vX3kMDIABA3E70K9A43jNzdGU/fn4iRgHAd0BDM5X27YKGJtgyv58/Qqng/iNjAz3HwIyHvX1snDz4LJArbsHGGDASIGEP2EHGZt8vnL5242bwNgHJgN0u+pqcDoIEow346J/3r754egRYDhDIkUiOxdo1ueTJ+FRBlQGSSLfHz3i0dYBxYu9A5AE2ormGqALgHolQ0KVa0AWC1pawe0CxjswJcGdiJ6o0QAwstgkJYEhAUTAuANq/nrmFLucHJoyYFgq1NZB/AoJM2DqBrKBLgCib48fA2MfSAI9CRSULq8U8/BkV1WHWwFMGMB88/3aNaDhEEHG0ZJ61EEUAoAAAwCvXdrp+ivLHwAAAABJRU5ErkJggg==') /*../../Images/popular.png*/ no-repeat scroll 152px 4px transparent;
+    }
+
+
+    #MegaMenu .menu-drop {
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 11;
+    }
+
+        #MegaMenu .menu-drop > ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+
+            #MegaMenu .menu-drop > ul > li {
+                padding: 0;
+                display: inline-block;
+                line-height: 36px;
+                float: left;
+                height: 36px;
+            }
+
+                #MegaMenu .menu-drop > ul > li:hover {
+                    background: #eeeeee;
+                    color: #333333 !important;
+                }
+
+
+        #MegaMenu .menu-drop li a {
+            text-decoration: none;
+            border-bottom: 0;
+            color: #eeeeee;
+            text-transform: uppercase;
+            padding: 0 15px;
+            font-size: 12px;
+            background: none;
+        }
+
+        #MegaMenu .menu-drop .fa {
+            padding-left: 5px;
+        }
+
+        #MegaMenu .menu-drop > ul > li > a:hover {
+            border-bottom: 0;
+        }
+
+        #MegaMenu .menu-drop > ul > li:hover > div.Menu {
+            display: block;
+        }
+
+        #MegaMenu .menu-drop > ul > li:hover > a {
+            color: #545454;
+        }
+
+    #MegaMenu .Menu {
+        display: none;
+        position: absolute;
+        top: 36px;
+        left: 0;
+        z-index: 2000;
+        background-color: #f0f0f0;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+        #MegaMenu .Menu .MenuImg img {
+            width: 100%;
+        }
+
+        #MegaMenu .Menu .MenuWrapper {
+            padding: 10px 10px 10px 60px;
+            width: 100%;
+            margin: 0;
+            float: left;
+            box-sizing: border-box;
+        }
+
+            #MegaMenu .Menu .MenuWrapper > ul {
+                padding: 0 10px;
+                list-style: none;
+            }
+
+                #MegaMenu .Menu .MenuWrapper > ul li a {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                    #MegaMenu .Menu .MenuWrapper > ul li a:hover {
+                        border-bottom: 1px solid #cc4141 !important;
+                        color: #cc4141 !important;
+                    }
+
+                #MegaMenu .Menu .MenuWrapper > ul li.level1 {
+                    padding-bottom: 0;
+                    padding-right: 2px;
+                }
+
+                    #MegaMenu .Menu .MenuWrapper > ul li.level1 a {
+                        background: none repeat scroll 0 0 transparent;
+                        border-bottom: 1px dotted #9e9e9e;
+                        color: #333333;
+                        /*font-size: 1rem;*/
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding-bottom: 3px;
+                        padding-top: 3px;
+                        margin-bottom: 5px;
+                        text-transform: none;
+                        display: block;
+                        line-height: normal;
+                    }
+
+                #MegaMenu .Menu .MenuWrapper > ul li.level2 {
+                    line-height: normal;
+                    padding: 0 0 0 10px;
+                }
+
+                    #MegaMenu .Menu .MenuWrapper > ul li.level2 a {
+                        background: none repeat scroll 0 0 transparent;
+                        border-bottom: 1px solid transparent;
+                        color: #333333;
+                        /*font-size: 0.9rem;*/
+                        font-size: 12px;
+                        font-weight: normal;
+                        padding: 4px 0 3px;
+                        margin: 0;
+                        line-height: 1.4;
+                        text-transform: none;
+                        display: block;
+                    }
+
+    #MegaMenu .menu-content {
+        width: 100%;
+        z-index: 11;
+    }
+
+    #MegaMenu .menu-search {
+        display: inline-block;
+        float: right;
+        padding-right: 0;
+        z-index: 11;
+        position: absolute;
+        right: 0;
+    }
+
+        #MegaMenu .menu-search input.search-box[type="text"] {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABHUlEQVQ4y93UvytFYRgH8FtkUn5k8iOLrBaLkgxSl0HyIQZZZFL+Ea74AxRFysqfwGBhwCSDlJQkuZfUdSyPusN1Ozd3Yfgu57zP57zv23OeTJIkmVon87dR9CCHJxQiV1hCY9UoRnCHBPe4wCXe4tkR2lOj6MUDithGP1rQhkmclsANadHNKNpBXZlTdMcpiphIi77gFn0/FWA5PryVFv3EGZoqoEOB7qZFE5yjuQI6HOv206I30UbZCuh6oKtp0ZUoOEFXGTCLd7xiNC3aiuOAr6PZBzCINeTjXQHz1TR/Jw7xEUBp8rHTBI+YquY3rccs9nAQ2cAYFqP1vuHpmgwUzOG5ZPfjNZlSWCi5ilzNRh9m4lo6/tGQ/m2+AKRZhGCAHrS0AAAAAElFTkSuQmCC") no-repeat scroll 3px 3px #9e9e9e;
+            border: medium none;
+            color: #9e9e9e;
+            height: 22px;
+            line-height: 22px;
+            margin: 5px;
+            padding: 2px 0 2px 26px;
+            width: 1px;
+            -moz-transition: all 0.5s ease-in-out 0s;
+            -o-transition: all 0.5s ease-in-out 0s;
+            -webkit-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;
+        }
+
+            #MegaMenu .menu-search input.search-box[type="text"]:hover {
+                background-color: #fff;
+            }
+
+            #MegaMenu .menu-search input.search-box[type="text"]:focus {
+                width: 225px;
+                background-color: #fff;
+            }

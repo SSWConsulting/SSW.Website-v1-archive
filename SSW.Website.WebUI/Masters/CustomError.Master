@@ -1,0 +1,11 @@
+<%@ Master Language="C#" MasterPageFile="~/Masters/New.Master" %>
+<asp:Content ID="Content1" runat="Server" ContentPlaceHolderID="NewContentPlaceHolder">    
+        <asp:ContentPlaceHolder ID="CustomError404PlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>   
+</asp:Content>
+<asp:Content ID="HeadingContent1" ContentPlaceHolderID="HeadingPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="HeadingPlaceHolder" runat="server">
+        <h1>
+            <asp:Label ID="lblHeading" runat="server">404 - Page Not Found</asp:Label></h1>
+    </asp:ContentPlaceHolder>
+</asp:Content>

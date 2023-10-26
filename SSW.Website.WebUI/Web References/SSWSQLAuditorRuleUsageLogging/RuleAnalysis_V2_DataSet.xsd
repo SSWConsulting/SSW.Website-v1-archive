@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/RuleAnalysis_V2_DataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/RuleAnalysis_V2_DataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/RuleAnalysis_V2_DataSet.xsd" id="RuleAnalysis_V2_DataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="RuleAnalysis_V2_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewRuleAnalysis">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" default="0" name="SQLAuditorRuleID" type="xs:int" />
+              <xs:element minOccurs="0" name="SelectedTimes" type="xs:int" />
+              <xs:element minOccurs="0" name="TotalTimes" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="AgreeTimes" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="DisagreeTimes" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="TooHardToImplementTimes" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="IgnoreTimes" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="DontUnderstandTimes" type="xs:int" />
+              <xs:element default="0" name="RuleID" type="xs:int" />
+              <xs:element minOccurs="0" default="0" name="ImplementedTimes" type="xs:int" />
+              <xs:element minOccurs="0" default="-1" name="RuleOpinionID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:viewRuleAnalysis" />
+      <xs:field xpath="mstns:RuleID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

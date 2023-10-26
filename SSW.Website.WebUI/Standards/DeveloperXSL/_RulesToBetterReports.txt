@@ -1,0 +1,13 @@
+1. Reporting via XML/XSL
+	a) Manually with Notepad
+	b) With LogiXML
+		http://www.logixml.com/products/ReportDev/reportDev_technology.htm
+	
+
+2. Reporting with Crystal Reports
+
+3. Reporting with Graphs
+	Office XP Tool: Web Components
+	http://office.microsoft.com/downloads/2002/owc10.aspx
+
+

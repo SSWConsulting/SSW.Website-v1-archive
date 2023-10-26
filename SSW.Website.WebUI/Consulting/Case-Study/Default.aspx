@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://www.ssw.com.au/SSW/Company/Clients") %>

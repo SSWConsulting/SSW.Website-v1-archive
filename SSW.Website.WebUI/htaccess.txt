@@ -1,0 +1,25 @@
+redirect 301 /Company/WebsiteDevelopment.aspx /Consulting/WebsiteDevelopment.aspx
+
+redirect 301 /Company/WebsiteDesignAndUserExperience.aspx /Consulting/WebsiteDesignAndUserExperience.aspx
+
+redirect 301 /Company/ApplicationDevelopment.aspx /Consulting/ApplicationDevelopment.aspx
+
+redirect 301 /Company/DatabaseDevelopment.aspx /Consulting/DatabaseDevelopment.aspx
+
+redirect 301 /Company/EnterpriseReporting.aspx /Consulting/EnterpriseReporting.aspx
+
+redirect 301 /Company/ContentManagement.aspx /Consulting/ContentManagement.aspx
+
+redirect 301 /Company/SharePoint.aspx /Consulting/SharePoint.aspx
+
+redirect 301 /Company/MicrosoftCRM.aspx /Consulting/MicrosoftCRM.aspx
+
+redirect 301 /Company/SoftwareAudit.aspx /Consulting/SoftwareAudit.aspx
+
+redirect 301 /Company/BingMap.aspx /Consulting/BingMap.aspx
+
+redirect 301 /Company/SoftwareAuditWindowsVistaLogo.aspx /Consulting/SoftwareAuditWindowsVistaLogo.aspx
+
+redirect 301 /Company/SourceControl.aspx /Consulting/SourceControl.aspx
+
+redirect 301 /Company/OrganizationWorkflowAndTools.aspx /Consulting/OrganizationWorkflowAndTools.aspx

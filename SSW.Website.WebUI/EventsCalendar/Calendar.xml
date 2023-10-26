@@ -1,0 +1,1967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Calendar xmlns="http://tempuri.org/Calendar.xsd">
+  <CalendarEntry>
+    <Title>The Architect Master Class</Title>
+    <URL>/SSW/events/Juval-Lowy-Architect-Master-class.aspx</URL>
+    <Image>/ssw/Events/images/thumb_juval.jpg</Image>
+    <Presenter>Juval Lowy</Presenter>
+    <Description>5 days ultimate resource for the professional architect</Description>
+    <StartDateTime>2012-03-12T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2012-03-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Newcastle .NET User Group 6th Anniversary</Title>
+    <URL>http://www.ncg.asn.au/Home.aspx</URL>
+    <Image>EventsCalendar/Images/Newcastle_65x65.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Interface Useability</Description>
+    <StartDateTime>2011-11-02T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-11-02T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>http://www.ssw.com.au/ssw/NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>George Doubinski</Presenter>
+    <Description>Building Hybrid Social Apps with Dynamics CRM, Windows Azure and Twitter</Description>
+    <StartDateTime>2011-09-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-09-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>http://www.ssw.com.au/ssw/NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Philip Laureano</Presenter>
+    <Description>Blind Refactoring - Extracting elegant domain models from ugly code bases</Description>
+    <StartDateTime>2011-08-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-08-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>http://www.ssw.com.au/ssw/NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Peter Gfader</Presenter>
+    <Description>Continuous Delivery with TFS, msbuild and msdeploy</Description>
+    <StartDateTime>2011-07-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-07-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Webinar</Title>
+    <URL>http://www.ssw.com.au/ssw/Training/SharePointForBusiness.aspx</URL>
+    <Image>EventsCalendar/images/sharepoint-logo.jpg</Image>
+    <Presenter>Marlon Marescia</Presenter>
+    <Description>SharePoint 101 for Business - Free Webinar</Description>
+    <StartDateTime>2011-09-01T11:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-09-01T12:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Webinar</Title>
+    <URL>http://www.ssw.com.au/ssw/Training/SharePointForBusiness.aspx</URL>
+    <Image>EventsCalendar/images/sharepoint-logo.jpg</Image>
+    <Presenter>Marlon Marescia</Presenter>
+    <Description>SharePoint 101 for Business - Free Webinar</Description>
+    <StartDateTime>2011-10-04T11:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-10-04T12:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Project Managers are from Mars, Developers are from Venus</Title>
+    <URL>https://www.microsoft.com.au/events/register/home.aspx?levent=655124</URL>
+    <Image>/EventsCalendar/Images/smlmarvenus.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Microsoft Platform Power Briefings - Sydney</Description>
+    <StartDateTime>2011-06-30T14:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-06-30T15:45:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Project Managers are from Mars, Developers are from Venus</Title>
+    <URL>https://www.microsoft.com.au/events/register/home.aspx?levent=655124</URL>
+    <Image>/ssw/EventsCalendar/Images/smlmarvenus.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Microsoft Platform Power Briefings - Melbourne</Description>
+    <StartDateTime>2011-06-28T14:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-06-28T15:45:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Project Managers are from Mars, Developers are from Venus</Title>
+    <URL>https://www.microsoft.com.au/events/register/home.aspx?levent=655124</URL>
+    <Image>/ssw/EventsCalendar/Images/smlmarvenus.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Microsoft Platform Power Briefings - Brisbane</Description>
+    <StartDateTime>2011-06-27T14:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-06-27T15:45:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group **Special Session**</Title>
+    <URL>http://www.ssw.com.au/ssw/NETUG/Sydney.aspx</URL>
+    <Image>/sswEventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Daniel McPherson</Presenter>
+    <Description>Social Computing and the Enterprise</Description>
+    <StartDateTime>2011-06-29T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-06-29T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Los Angeles</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Los Angeles, USA.</Description>
+    <StartDateTime>2011-09-19T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-09-23T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Sydney</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Sydney.</Description>
+    <StartDateTime>2011-11-07T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-11-11T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Perth</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Perth.</Description>
+    <StartDateTime>2011-11-14T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-11-18T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Brisbane</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Brisbane.</Description>
+    <StartDateTime>2011-11-21T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-11-25T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Melbourne</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Melbourne.</Description>
+    <StartDateTime>2011-11-28T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-12-02T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course New York</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in New York, USA.</Description>
+    <StartDateTime>2011-09-26T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-09-30T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Toronto</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Toronto, Canada.</Description>
+    <StartDateTime>2011-10-03T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-10-07T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course New Delhi</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in New Delhi, India.</Description>
+    <StartDateTime>2011-05-30T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-06-03T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>http://www.ssw.com.au/ssw/NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Stephen Godbold</Presenter>
+    <Description></Description>
+    <StartDateTime>2011-04-20T17:45:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .NET User Group</Title>
+    <URL>http://www.ssw.com.au/ssw/NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>Rory Primrose</Presenter>
+    <Description></Description>
+    <StartDateTime>2011-04-06T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-07T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>ALM Conference (New Zealand)</Title>
+    <URL>http://www.nzalm.co.nz/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2011-04-06T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-07T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Virtualization for Developers</Title>
+    <URL>Events/Brian-Randell-Virtualization-for-Developers.aspx</URL>
+    <Image>Events/Images/BrianRandell_thumb.jpg</Image>
+    <Presenter>Brian Randell</Presenter>
+    <Description></Description>
+    <StartDateTime>2011-04-11T17:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-11T19:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2011-03-21T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-21T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter>Joel Semeniuk</Presenter>
+    <Description>Behind the Scenes with Telerik</Description>
+    <StartDateTime>2011-03-16T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-16T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Scrum Developer Course Wellington</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Sydney.</Description>
+    <StartDateTime>2011-03-28T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-01T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Sydney</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2011-08-01T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-08-01T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Brisbane</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2012-01-16T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2012-01-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Telerik Australia - Focus on Developer Productivity</Title>
+    <URL>/ssw/NETUG/SSWUpdate/_2011_03__Telerik%20Australia%20event%20-%20Focus%20on%20Developer%20Productivity_.htm</URL>
+    <Image>/ssw/EventsCalendar/images/thumb_telerik.jpg</Image>
+    <Presenter>Stephen Forte</Presenter>
+    <Description>In-depth sessions with industry experts and Telerik Senior Leadership</Description>
+    <StartDateTime>2011-03-15T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-15T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW and Telerik FREE Joint Event</Title>
+    <URL>/ssw/NETUG/SSWUpdate/_2011_03__Telerik%20Australia%20event%20-%20Focus%20on%20Developer%20Productivity_.htm</URL>
+    <Image>/ssw/EventsCalendar/images/thumb_telerik.jpg</Image>
+    <Presenter>Stephen Forte</Presenter>
+    <Description>Taking Agile Teams from an Idea to a Test</Description>
+    <StartDateTime>2011-03-18T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-18T12:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>The Architect Master Class</Title>
+    <URL>/SSW/events/Juval-Lowy-Architect-Master-class.aspx</URL>
+    <Image>/ssw/Events/images/thumb_juval.jpg</Image>
+    <Presenter>Juval Lowy</Presenter>
+    <Description>5 days ultimate resource for the professional architect</Description>
+    <StartDateTime>2011-07-11T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-07-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Rapid SharePoint Development</Title>
+    <URL>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</URL>
+    <Image>/ssw/Training/images/thumb_SharePoint_and_TFS_2010.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>For Teams Using Visual Studio 2010 - Sydney</Description>
+    <StartDateTime>2011-03-28T15:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-28T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Rapid SharePoint Development</Title>
+    <URL>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</URL>
+    <Image>/ssw/Training/images/thumb_SharePoint_and_TFS_2010.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>For Teams Using Visual Studio 2010 - Melbourne</Description>
+    <StartDateTime>2011-03-29T15:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-29T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Rapid SharePoint Development</Title>
+    <URL>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</URL>
+    <Image>/ssw/Training/images/thumb_SharePoint_and_TFS_2010.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>For Teams Using Visual Studio 2010 - Canberra</Description>
+    <StartDateTime>2011-03-30T15:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-30T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Rapid SharePoint Development</Title>
+    <URL>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</URL>
+    <Image>/ssw/Training/images/thumb_SharePoint_and_TFS_2010.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>For Teams Using Visual Studio 2010 - Brisbane</Description>
+    <StartDateTime>2011-03-31T15:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-31T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Rapid SharePoint Development</Title>
+    <URL>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</URL>
+    <Image>/ssw/Training/images/thumb_SharePoint_and_TFS_2010.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>For Teams Using Visual Studio 2010 - Adelaide</Description>
+    <StartDateTime>2011-04-12T15:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-12T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Rapid SharePoint Development</Title>
+    <URL>/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.aspx</URL>
+    <Image>/ssw/Training/images/thumb_SharePoint_and_TFS_2010.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>For Teams Using Visual Studio 2010 - Perth</Description>
+    <StartDateTime>2011-04-13T15:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-04-13T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Australian SharePoint Conference 2011</Title>
+    <URL>www.sharepointconference.com.au</URL>
+    <Image>Events/images/sharepoint.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>The Annual Australian SharePoint Conference</Description>
+    <StartDateTime>2011-03-08T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-03-09T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2011-01-24T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-01-24T19:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .Net User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2011-01-19T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2011-01-19T19:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Los Angeles</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Los Angeles.</Description>
+    <StartDateTime>2011-01-31T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-02-04T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Vancouver</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Vancouver.</Description>
+    <StartDateTime>2011-02-07T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-02-11T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Honolulu</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Honolulu.</Description>
+    <StartDateTime>2011-06-27T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-07-01T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course San Francisco</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in San Francisco.</Description>
+    <StartDateTime>2011-02-14T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-02-18T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Scrum Developer Course Perth</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Perth.</Description>
+    <StartDateTime>2011-01-24T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-01-28T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Canberra</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Canberra.</Description>
+    <StartDateTime>2011-02-21T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-02-25T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-07-19T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-07-19T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-08-16T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-16T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-09-20T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-20T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-10-18T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-18T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-11-15T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-11-15T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-12-20T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-12-20T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter>Justin King</Presenter>
+    <Description>Double Session on Visual Studio 2010 toolset</Description>
+    <StartDateTime>2010-07-21T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-07-21T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-08-18T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-18T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-09-15T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-15T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-10-20T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-20T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-11-17T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-11-17T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter></Presenter>
+    <Description></Description>
+    <StartDateTime>2010-12-15T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-12-15T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+
+  <CalendarEntry>
+    <Title>Special .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/images/icon_sydney.jpg</Image>
+    <Presenter>Paul Culmsee and Nicolas Hadlee</Presenter>
+    <Description>New location: The Hilton Hotel, 488 George St, Sydney</Description>
+    <StartDateTime>2010-06-16T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-06-16T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Sydney</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Sydney.</Description>
+    <StartDateTime>2010-09-13T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-17T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Perth</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Perth.</Description>
+    <StartDateTime>2010-10-11T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Melbourne</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Melbourne.</Description>
+    <StartDateTime>2010-09-20T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-24T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Special .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>Events/images/steveforte_thumb.jpg</Image>
+    <Presenter>Steve Forte</Presenter>
+    <Description>Silverlight 4.0 Overview for the Business Developer</Description>
+    <StartDateTime>2010-05-19T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-19T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint Conference New Zealand</Title>
+    <URL>http://www.sharepointconference.co.nz</URL>
+    <Image>Events/images/sharepoint.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>SharePoint</Description>
+    <StartDateTime>2010-06-09T08:45:00.0000000</StartDateTime>
+    <EndDateTime>2010-06-10T17:15:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint Conference Sydney</Title>
+    <URL>http://www.regonline.com/builder/site/Default.aspx?eventid=804948</URL>
+    <Image>Events/images/sharepointsyd.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>SharePoint</Description>
+    <StartDateTime>2010-06-16T08:45:00.0000000</StartDateTime>
+    <EndDateTime>2010-06-17T17:15:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brisbane Business Productivity Users Group</Title>
+    <URL>http://www.sharepointusers.org.au/Brisbane/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>SharePoint 2010 Performance Point Services At Microsoft HQ- </Description>
+    <StartDateTime>2010-05-04T17:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-04T19:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint Saturday Brisbane</Title>
+    <URL>http://www.sharepointsaturday.org/brisbane/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>SharePoint 2010 BCS + Facebook integration At Excom L1, 344 Queen Street, Brisbane QLD 4000 - </Description>
+    <StartDateTime>2010-05-08T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-08T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Tour de Wagga</Title>
+    <URL>http://www.tourdewagga.com.au</URL>
+    <Image>EventsCalendar/Images/icon_tourdewagga.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>
+      A bike ride from Sydney to Wagga that takes place during the five days before the Code Camp Oz 2010
+    </Description>
+    <StartDateTime>2010-11-15T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-11-19T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>.NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>
+      Windows Phone 7... Start.... Hub... Pivot... Metro... Threads...
+      All Systems are go! by Nick Randolph
+    </Description>
+    <StartDateTime>2010-04-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-04-21T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Agile Seminar</Title>
+    <URL>http://ssw.com.au/ssw/Events/Steve-Forte-Agile-Seminar.aspx</URL>
+    <Image>Events/images/steveforte_thumb.jpg</Image>
+    <Presenter>Steve Forte</Presenter>
+    <Description>Agile Development, Tools and Teams</Description>
+    <StartDateTime>2010-05-19T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-19T12:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>.NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Microsoft PerformancePoint 2010 (Part of SharePoint 2010)</Description>
+    <StartDateTime>2010-03-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-03-17T20:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>.NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Juval Lowy</Presenter>
+    <Description>Introducing the .NET Service Bus; Discover a new WCF with Discovery;</Description>
+    <StartDateTime>2010-03-24T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-03-24T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Brain Quest Sydney</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-12-17T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-12-17T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Brisbane</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-12-13T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-12-13T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Brain Quest London</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_london.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-07-21T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-07-21T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Beijing</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_Beijing.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-11-29T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-12-02T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Canberra</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Canberra.</Description>
+    <StartDateTime>2010-05-03T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-07T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Sydney</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Sydney.</Description>
+    <StartDateTime>2010-05-24T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-28T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Sydney</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Sydney.</Description>
+    <StartDateTime>2011-01-10T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-01-14T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Melbourne</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Melbourne.</Description>
+    <StartDateTime>2010-06-21T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-06-25T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Wellington</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Wellington, NZ.</Description>
+    <StartDateTime>2010-11-29T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-12-03T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Wellington</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-09-02T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-02T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Milan</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Milan, Italy.</Description>
+    <StartDateTime>2010-06-28T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-07-02T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Milan</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_milan.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-07-05T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-07-05T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Scrum Developer Course London</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in London, UK.</Description>
+    <StartDateTime>2010-07-26T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-07-30T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Beijing</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Beijing, China.</Description>
+    <StartDateTime>2010-08-02T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-06T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Scrum Developer Course Beijing</Title>
+    <URL>events/Scrum-Training-Course.aspx</URL>
+    <Image>/ssw/Training/images/thumb_Scrum_Training.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>One week Scrum Training in Beijing, China.</Description>
+    <StartDateTime>2010-03-07T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-03-11T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Special - Sydney .NET User Group</Title>
+    <URL>http://www.facebook.com/event.php?eid=114102895282072</URL>
+    <Image>http://profile.ak.fbcdn.net/object2/1553/94/n114102895282072_2560.jpg</Image>
+    <Presenter>Sam Guckenheimer</Presenter>
+    <Description>A night with the man behind the product that you know as Visual Studio Team System/ALM and TFS by Sam Guckenheimer</Description>
+    <StartDateTime>2010-04-12T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-04-12T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Australian Application Lifecycle Management Conference</Title>
+    <URL>http://www.australianalm.com.au/default.html</URL>
+    <Image>EventsCalendar/Images/AustALMConf.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>The conference features some of Australia's best known presenters as well as industry speakers from some of Australia's leading corporations.</Description>
+    <StartDateTime>2010-04-13T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-04-14T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Silverlight CodeCamp '10</Title>
+    <URL>http://www.silverlightcodecamp.com.au/</URL>
+    <Image>EventsCalendar/Images/SL_CC.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Get ready for a weekend of Silverlight</Description>
+    <StartDateTime>2010-01-30T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-01-31T16:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>SoCal Code Camp</Title>
+    <URL>http://www.socalcodecamp.com/</URL>
+    <Image>EventsCalendar/Images/icon_usa.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Southern California Code Camp San Diego is a place for developers to come and learn from their peers. This community driven event has become an international trend where peer groups of all platforms, programming languages and disciplines band together to bring content to the community.</Description>
+    <StartDateTime>2009-11-21T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-11-22T17:15:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/breakfastsmall_65x65.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>SYDNEY: Something About Mary (SharePoint and Office 2010)</Description>
+    <StartDateTime>2010-11-26T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-11-26T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/breakfastsmall_65x65.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>SYDNEY: Team Foundation Server 2010 (TFS) for Successful Project Management </Description>
+    <StartDateTime>2009-12-04T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-12-04T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>SharePoint 101 for Business</Title>
+    <URL>Events/SharePointForBusiness.aspx</URL>
+    <Image>EventsCalendar/Images/workshopSmall65x65.jpg</Image>
+    <Presenter>Joe Hardy</Presenter>
+    <Description>If you need to understand how SharePoint fits into your business, this workshop is a must.</Description>
+    <StartDateTime>2009-12-2T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-12-2T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Peter Gfader</Presenter>
+    <Description>Testing the world with Visual Studio 2010</Description>
+    <StartDateTime>2009-11-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-11-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>What is new in SharePoint 2010</Description>
+    <StartDateTime>2009-12-09T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-12-09T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>John Liu</Presenter>
+    <Description>SharePoint 2010 - Theory of Evolution</Description>
+    <StartDateTime>2010-01-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-01-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Paul Neumeyer</Presenter>
+    <Description>What is Scrum... and is another project methodology really that useful?</Description>
+    <StartDateTime>2010-02-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-02-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Adelaide SQL Server User Group</Title>
+    <URL>http://www.sqlserver.org.au/</URL>
+    <Image>EventsCalendar/Images/adelaide_65x65.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Managing Schema Updates: smack down of Red-Gate vs Data Dude</Description>
+    <StartDateTime>2010-01-19T12:00:00+10:30</StartDateTime>
+    <EndDateTime>2010-01-19T14:00:00+10:30</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Adelaide SQL Server User Group</Title>
+    <URL>http://www.sqlserver.org.au/Events/ViewEvent.aspx?EventId=448</URL>
+    <Image>EventsCalendar/Images/adelaide_65x65.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Is Adam Cogan a Data Dude?</Description>
+    <StartDateTime>2010-03-23T17:00:00+10:30</StartDateTime>
+    <EndDateTime>2010-03-23T19:00:00+10:30</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Adelaide SQL Server User Group</Title>
+    <URL>http://www.sqlserver.org.au/</URL>
+    <Image>EventsCalendar/Images/adelaide_65x65.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Is Adam Cogan a Data Dude?</Description>
+    <StartDateTime>2010-03-23T12:00:00+10:30</StartDateTime>
+    <EndDateTime>2010-03-23T14:00:00+10:30</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Adelaide</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_adelaide.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-06-07T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-06-07T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Melbourne</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_melbourne.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-03-10T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-03-10T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Melbourne</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_melbourne.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-09-27T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-27T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Canberra</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-05-21T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-05-21T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Sydney</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-01-13T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-01-13T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Sydney</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2011-10-31T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-10-31T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Brisbane</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-03-28T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-03-28T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Brain Quest Perth</Title>
+    <URL>events/VisualStudio2010_TFS2010_SharePoint2010.aspx</URL>
+    <Image>EventsCalendar/Images/icon_perth.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Team Foundation Server and SharePoint 2010.</Description>
+    <StartDateTime>2010-03-03T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-03-03T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+
+  <CalendarEntry>
+    <Title>TFS for Successful Project Management </Title>
+    <URL>http://sdnug.org/</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Evening: Team Foundation Server 2010 (TFS) for Successful Project Management</Description>
+    <StartDateTime>2009-11-05T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-11-05T20:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint Saturday - Adelaide</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/adelaide_65x65.jpg</Image>
+    <Description>Join SharePoint architects, developers, and other professionals that work with Microsoft SharePoint Technologies for ‘SharePoint Saturday’</Description>
+    <StartDateTime>2009-08-15T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-15T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint 101 for Business</Title>
+    <URL>Events/SharePointForBusiness.aspx</URL>
+    <Image>EventsCalendar/Images/workshopSmall65x65.jpg</Image>
+    <Presenter>Joe Hardy</Presenter>
+    <Description>If you need to understand how SharePoint fits into your business, this workshop is a must.</Description>
+    <StartDateTime>2009-10-21T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-21T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SQL Code Camp</Title>
+    <URL>Events/Events.aspx</URL>
+    <Image>EventsCalendar/Images/SQLDownUnderCodeCampLogo_65x65.jpg</Image>
+    <Description>SQL Down Under Code Camp is an annual community-driven event for SQL Server professionals. Each year, well over a hundred DBAs and Developers come together to learn from each other and to network.</Description>
+    <StartDateTime>2009-10-10T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-11T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Tour De Wagga</Title>
+    <URL>Events/2009TourDeWagga/Default.aspx</URL>
+    <Image>EventsCalendar/Images/SQLDownUnderCodeCampLogo_65x65.jpg</Image>
+    <Description>SQL Code Camp October 5 Day Detox .NET/SharePoint/SQL Bike Trip</Description>
+    <StartDateTime>2009-10-05T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-09T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SQL Code Camp</Title>
+    <URL>http://www.sqldownunder.com/SDUCodeCamp/tabid/100/Default.aspx</URL>
+    <Image>EventsCalendar/Images/SQLDownUnderCodeCampLogo_65x65.jpg</Image>
+    <Description>The number one SQL Server event on the Australian calendar</Description>
+    <StartDateTime>2009-10-10T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-11T17:15:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>
+      Team Foundation Server (TFS) for Successful Project Management by Adam Cogan
+    </Description>
+    <StartDateTime>2009-04-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-04-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Overview of .NET
+    </Description>
+    <StartDateTime>2010-08-05T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-05T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Data in Forms
+    </Description>
+    <StartDateTime>2010-08-12T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-12T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Usability - AJAX and other ASP.NET Features
+    </Description>
+    <StartDateTime>2010-08-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Reporting Services and Web Security
+    </Description>
+    <StartDateTime>2010-08-26T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-26T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Advanced Topics and Future Technology
+    </Description>
+    <StartDateTime>2010-09-02T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-02T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Overview of .NET
+    </Description>
+    <StartDateTime>2010-09-09T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-09T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Data in Forms
+    </Description>
+    <StartDateTime>2010-09-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Usability - Rules to Better Windows Forms
+    </Description>
+    <StartDateTime>2010-09-23T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-23T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Click Once
+    </Description>
+    <StartDateTime>2010-09-30T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-30T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Web Services and Threading
+    </Description>
+    <StartDateTime>2010-10-07T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-07T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Web Services and Threading
+    </Description>
+    <StartDateTime>2010-10-14T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-14T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2011UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>
+      Start date
+    </Description>
+    <StartDateTime>2011-08-11T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-08-11T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>Events/2010UTSNET/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>
+      End date
+    </Description>
+    <StartDateTime>2010-10-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2011UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>
+      Start date
+    </Description>
+    <StartDateTime>2011-08-10T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-08-10T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2011UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>
+      End date
+    </Description>
+    <StartDateTime>2011-10-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-10-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2011UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>Start date</Description>
+    <StartDateTime>2011-08-09T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-08-09T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2011UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>End date</Description>
+    <StartDateTime>2011-09-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2011-09-06T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 1 - Overview
+    </Description>
+    <StartDateTime>2010-08-04T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-04T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 2 - Navigation and UI
+    </Description>
+    <StartDateTime>2010-08-11T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-11T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 3 - Lists
+    </Description>
+    <StartDateTime>2010-08-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 4 - Document Libraries
+    </Description>
+    <StartDateTime>2010-08-25T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-08-25T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 5 - Search
+    </Description>
+    <StartDateTime>2010-09-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 6 - SharePoint Designer
+    </Description>
+    <StartDateTime>2010-09-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-08T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 7 - Web Publishing
+    </Description>
+    <StartDateTime>2010-09-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 8 - BCS
+    </Description>
+    <StartDateTime>2010-09-22T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-22T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 9 - Forms and Excel Services
+    </Description>
+    <StartDateTime>2010-09-29T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-29T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 10 - Administration
+    </Description>
+    <StartDateTime>2010-10-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-06T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SharePoint Course</Title>
+    <URL>Events/2010UTSSharePoint/default.aspx</URL>
+    <Image>EventsCalendar/Images/uts_65x65.jpg</Image>
+    <Description>
+      Session 10 - Administration
+    </Description>
+    <StartDateTime>2010-10-13T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-13T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>SharePoint 101 Workshop</Title>
+    <URL>Events/SharePointWorkshop.aspx</URL>
+    <Image>EventsCalendar/Images/workshopSmall65x65.jpg</Image>
+    <Description>
+      If you need to understand how SharePoint fits into your business, this workshop is a must
+    </Description>
+    <StartDateTime>2009-05-27T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-05-27T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint 101 for Business</Title>
+    <URL>Events/SharePointForBusiness.aspx</URL>
+    <Image>EventsCalendar/Images/workshopSmall65x65.jpg</Image>
+    <Description>
+      If you need to understand how SharePoint fits into your business, this workshop is a must
+    </Description>
+    <StartDateTime>2009-06-12T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-06-12T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint 101 for Business</Title>
+    <URL>Events/SharePointForBusiness.aspx</URL>
+    <Image>EventsCalendar/Images/workshopSmall65x65.jpg</Image>
+    <Description>
+      If you need to understand how SharePoint fits into your business, this workshop is a must
+    </Description>
+    <StartDateTime>2009-09-09T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-09T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SharePoint Saturday - Sydney</Title>
+    <URL>Events/Conference.aspx</URL>
+    <Image>EventsCalendar/Images/HarborBridge_65x65.jpg</Image>
+    <Description>
+      Join SharePoint architects, developers, and other professionals that work with Microsoft SharePoint Technologies for ‘SharePoint Saturday’
+    </Description>
+    <StartDateTime>2009-08-08T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-08T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Queensland MSDN User Group</Title>
+    <URL>http://www.qmsdnug.org/</URL>
+    <Image>EventsCalendar/Images/brisbane_65x65.jpg</Image>
+    <Description>
+      Team Foundation Server (TFS) for Successful Project Management by Adam Cogan
+    </Description>
+    <StartDateTime>2009-08-18T17:30:00+11:00</StartDateTime>
+    <EndDateTime>2009-08-18T20:30:00+11:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - Top 15 SQL Server DBA Tasks for SQL Server 2005/2008 by Adam Cogan and Justin King
+    </Description>
+    <StartDateTime>2009-01-19T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-01-19T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - Top 15 SQL Server DBA Tasks for SQL Server 2005/2008 by Adam Cogan and Justin King
+    </Description>
+    <StartDateTime>2009-01-19T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-01-19T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>Lunch: SharePoint - follow the Yellow Brick Road to Public Web Sites by Adam Cogan</Description>
+    <StartDateTime>2009-02-16T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-02-16T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>Evening: SharePoint - follow the Yellow Brick Road to Public Web Sites by Adam Cogan</Description>
+    <StartDateTime>2009-02-16T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-02-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>
+      Business Continuity with Backup and Restore by Peter Ward and Top 15 SQL Server DBA Tasks for SQL Server 2005/2008 by Adam Cogan and Justin King
+    </Description>
+    <StartDateTime>2009-01-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-01-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Sydney.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>
+      How to implement a custom Site Map in SharePoint and Data View web part Tips and Tricks - RapidFire by Sergio Otoya and SharePoint - follow the Yellow Brick Road to Public Web Sites by Adam Cogan
+    </Description>
+    <StartDateTime>2009-02-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-02-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: Dynamic Data - Data entry made easy</Description>
+    <StartDateTime>2009-03-27T08:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-03-27T11:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>SSW Tech Breakfast</Title>
+    <URL>events/SSWTechBreakfast.aspx</URL>
+    <Image>EventsCalendar/Images/icon_techbreakfast.jpg</Image>
+    <Description>SYDNEY: SharePoint - Yellow Brick Road</Description>
+    <StartDateTime>2009-04-24T08:00:00+10:00</StartDateTime>
+    <EndDateTime>2009-04-24T11:00:00+10:00</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Adam Cogan - Something About Mary (SharePoint and Office 2007)</Description>
+    <StartDateTime>2009-05-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-05-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>John Liu - SharePoint – 8 Tips from the Trenches</Description>
+    <StartDateTime>2009-06-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-06-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Eliminating No-repro Bugs – A look at the new Microsoft Visual Studio® Team Test 2010 product by Anthony Borton</Description>
+    <StartDateTime>2009-07-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-07-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>What is new in VS2010 &amp; .NET FX 4.0... and what should you be use in your next project?</Description>
+    <StartDateTime>2009-08-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description></Description>
+    <StartDateTime>2009-09-16T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-16T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Sydney .NET User Group</Title>
+    <URL>NETUG/Default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_sydney.jpg</Image>
+    <Description>Get Up and Running with Windows Workflow Foundation (WF) 4.0 AND Build Composite WPF and Silverlight Applications with Prism by Brian Noyes</Description>
+    <StartDateTime>2009-10-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - Something About Mary (SharePoint and Office 2007) by Adam Cogan
+    </Description>
+    <StartDateTime>2009-05-18T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-05-18T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - Something About Mary (SharePoint and Office 2007) by Adam Cogan
+    </Description>
+    <StartDateTime>2009-05-18T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-05-18T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - SharePoint – 8 Tips from the Trenches by John Liu
+    </Description>
+    <StartDateTime>2009-06-15T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-06-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - SharePoint – 8 Tips from the Trenches by John Liu
+    </Description>
+    <StartDateTime>2009-06-15T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-06-15T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - What Just Happened to Silverlight &amp; Expression! by Scott Barnes
+    </Description>
+    <StartDateTime>2009-07-28T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-07-28T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - What Just Happened to Silverlight &amp; Expression! by Scott Barnes
+    </Description>
+    <StartDateTime>2009-07-28T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-07-28T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - What is new in VS2010 &amp; .NET FX 4.0... and what should you be use in your next project?
+    </Description>
+    <StartDateTime>2009-08-17T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-17T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - What is new in VS2010 &amp; .NET FX 4.0... and what should you be use in your next project?
+    </Description>
+    <StartDateTime>2009-08-17T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-17T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening -
+    </Description>
+    <StartDateTime>2009-09-21T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-21T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch -
+    </Description>
+    <StartDateTime>2009-09-21T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-21T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - Managing Schema Updates (smack down of Red-gate vs Visual Studio’s Data Dude) by Peter Gfader
+    </Description>
+    <StartDateTime>2009-10-19T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-19T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - Managing Schema Updates (smack down of Red-gate vs Visual Studio’s Data Dude) by Peter Gfader
+    </Description>
+    <StartDateTime>2009-10-19T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-19T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - Testing the world with Visual Studio 2010 by Peter Gfader
+    </Description>
+    <StartDateTime>2009-11-16T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-11-16T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - Testing the world with Visual Studio 2010 by Peter Gfader
+    </Description>
+    <StartDateTime>2009-11-16T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-11-16T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Evening - What is new in SharePoint 2010 by Adam Cogan
+    </Description>
+    <StartDateTime>2009-12-07T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-12-07T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Description>
+      Lunch - What is new in SharePoint 2010 by Adam Cogan
+    </Description>
+    <StartDateTime>2009-12-07T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2009-12-07T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>John Liu</Presenter>
+    <Description>
+      Evening - SharePoint 2010 - Theory of Evolution
+    </Description>
+    <StartDateTime>2010-01-18T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-01-18T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>John Liu</Presenter>
+    <Description>
+      Lunch - SharePoint 2010 - Theory of Evolution
+    </Description>
+    <StartDateTime>2010-01-18T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-01-18T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>John Liu</Presenter>
+    <Description>
+      Evening - What is Scrum... and is another project methodology really that useful?
+    </Description>
+    <StartDateTime>2010-02-15T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-02-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>John Liu</Presenter>
+    <Description>
+      Lunch - What is Scrum... and is another project methodology really that useful?
+    </Description>
+    <StartDateTime>2010-02-15T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-02-15T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>
+      Evening - Microsoft PerformancePoint 2010 (Part of SharePoint 2010)
+    </Description>
+    <StartDateTime>2010-02-15T16:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-02-15T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Canberra .Net User Group</Title>
+    <URL>NETUG/Canberra.aspx</URL>
+    <Image>EventsCalendar/Images/icon_canberra.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>
+      Lunch - Microsoft PerformancePoint 2010 (Part of SharePoint 2010)
+    </Description>
+    <StartDateTime>2010-02-15T12:30:00.0000000</StartDateTime>
+    <EndDateTime>2010-02-15T13:30:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Brisbane .NET User Group</Title>
+    <URL>http://www.qmsdnug.org/</URL>
+    <Image>EventsCalendar/Images/icon_brisbane.jpg</Image>
+    <Description>SharePoint - Follow the yellow brick road to public web sites by Adam Cogan</Description>
+    <StartDateTime>2009-05-19T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-05-19T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech.Ed Australia</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd09_64x64.jpg</Image>
+    <Description>What is new in VS2010 and .NET FX 4.0... and what should you be using in your next project? by Adam Cogan</Description>
+    <StartDateTime>2009-09-08T07:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-11T16:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Microsoft Tech.Ed North America</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/TechEd09_64x64.jpg</Image>
+    <Description></Description>
+    <StartDateTime>2009-05-11T07:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-05-15T16:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>PDC 2009</Title>
+    <URL>http://microsoftpdc.com/</URL>
+    <Image>EventsCalendar/Images/icon_usa.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Professional Developers Conference Los Angeles</Description>
+    <StartDateTime>2009-11-16T07:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-11-19T16:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2009UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1</Description>
+    <StartDateTime>2009-08-04T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-04T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2009UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2</Description>
+    <StartDateTime>2009-08-11T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-11T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2009UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3</Description>
+    <StartDateTime>2009-08-18T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-18T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2009UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4</Description>
+    <StartDateTime>2009-08-25T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-25T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2009UTSSQL-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5: Full-Text Search</Description>
+    <StartDateTime>2009-09-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2010UTSSQL/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 1</Description>
+    <StartDateTime>2010-09-14T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-14T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2010UTSSQL/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 2</Description>
+    <StartDateTime>2010-09-21T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-21T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2010UTSSQL/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 3</Description>
+    <StartDateTime>2010-09-28T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-09-28T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL for Developers Course</Title>
+    <URL>events/2010UTSSQL/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 4</Description>
+    <StartDateTime>2010-10-05T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-05T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS SQL Course</Title>
+    <URL>events/2010UTSSQL/default.aspx</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS SQL Session 5: Full-Text Search</Description>
+    <StartDateTime>2010-10-12T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2010-10-12T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2009UTSNET-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 1</Description>
+    <StartDateTime>2009-08-06T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-06T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2009UTSNET-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 2</Description>
+    <StartDateTime>2009-08-13T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-13T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2009UTSNET-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 3</Description>
+    <StartDateTime>2009-08-20T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-20T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2009UTSNET-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 4</Description>
+    <StartDateTime>2009-08-27T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-08-27T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2009UTSNET-August/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 5</Description>
+    <StartDateTime>2009-09-03T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-03T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 1</Description>
+    <StartDateTime>2009-09-17T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-17T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 2</Description>
+    <StartDateTime>2009-09-24T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-09-24T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 3</Description>
+    <StartDateTime>2009-10-01T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-01T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 4</Description>
+    <StartDateTime>2009-10-08T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-08T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>UTS .NET Course</Title>
+    <URL>events/2007UTSNET/</URL>
+    <Image>EventsCalendar/Images/icon_uts.jpg</Image>
+    <Description>UTS .NET Session 5</Description>
+    <StartDateTime>2009-10-15T18:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-10-15T21:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>New Zealand Community SharePoint Conference 2009</Title>
+    <URL>events/conference.aspx</URL>
+    <Image>EventsCalendar/Images/icon_newzealand.gif</Image>
+    <Description>with expert local and international speakers presenting on topics that will help you understand and succeed with your SharePoint projects.</Description>
+    <StartDateTime>2009-07-02T10:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-07-03T18:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+  <CalendarEntry>
+    <Title>Code Camp Oz - Wagga Wagga</Title>
+    <URL>http://www.codecampoz.com/</URL>
+    <Image>EventsCalendar/Images/SQLDownUnderCodeCampLogo_65x65.jpg</Image>
+    <Description>Two days of great speakers and lots of code.</Description>
+    <StartDateTime>2009-04-04T09:00:00.0000000</StartDateTime>
+    <EndDateTime>2009-04-05T17:00:00.0000000</EndDateTime>
+  </CalendarEntry>
+
+  <CalendarEntry>
+    <Title>Newcastle Coders Group</Title>
+    <URL>http://www.ncg.asn.au</URL>
+    <Image>EventsCalendar/Images/icon_newcastle.jpg</Image>
+    <Presenter>Adam Cogan</Presenter>
+    <Description>Microsoft PerformancePoint 2010 (Part of SharePoint 2010) </Description>
+    <StartDateTime>2010-04-07T18:00:00+10:00</StartDateTime>
+    <EndDateTime>2010-04-07T20:00:00+10:00</EndDateTime>
+  </CalendarEntry>
+</Calendar>

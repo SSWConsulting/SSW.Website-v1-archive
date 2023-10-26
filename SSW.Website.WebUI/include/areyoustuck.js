@@ -1,0 +1,15 @@
+$(function(){
+    $('.divBussiness').hide();
+    $('.btnDeveloper').click(function(){
+         $('.divBussiness').hide();
+         $('.divDeveloper').show();
+         $('.btnDeveloper').addClass('highlight')
+         $('.btnBussiness').removeClass('hightLight')
+    })
+    $('.btnBussiness').click(function(){
+         $('.divDeveloper').hide();
+         $('.divBussiness').show();
+         $('.btnDeveloper').addClass('highlight')
+         $('.btnBussiness').removeClass('hightLight')
+    })
+})

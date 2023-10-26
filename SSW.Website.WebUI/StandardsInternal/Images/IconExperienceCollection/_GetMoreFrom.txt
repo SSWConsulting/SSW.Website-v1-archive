@@ -1,0 +1,15 @@
+IconExperienceCollection     www.iconexperience.com
+------------------------
+
+These are used by developers for the customers applications we build
+
+Should be here 
+\\tuna\DataSSW\FilesFromSSWWebSite\ImageLibrary\Icons\IconExperienceCollection
+
+But we have put a copy here so developers at clients (without VPN) can get them
+
+
+
+ToDo: Find what is the version? (Adam knows as he got the licence from the guy)
+PS: Adam should get the new version
+PPS: We recommend this guy on our web site.

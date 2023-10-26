@@ -1,0 +1,71 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+
+  
+  
+
+  
+
+
+<asp:DetailsView Runat="Server"  
+  AllowPaging="True"
+  CaptionAlign="Left"
+  CellPadding="2"
+  BackColor="#F0F0F0"
+  ForeColor="black"
+  
+  BorderStyle="Ridge"
+  BorderWidth="5"
+  
+  HeaderStyle-BackColor="#DDDDDD"
+  HeaderStyle-ForeColor="black"
+  HeaderStyle-Font-Names="Verdana"
+  HeaderStyle-Font-Size="10pt"
+  HeaderStyle-Font-Bold = "True"
+  HeaderStyle-BorderColor="#FF0000"
+  HeaderStyle-BorderStyle="solid"
+  HeaderStyle-BorderWidth="5px" 
+     
+  RowStyle-Font-Names="Verdana"
+  RowStyle-Font-Size="10pt"
+  RowStyle-Font-Bold = "True"
+    
+  PagerStyle-BackColor="#E0E0E0"  
+  PagerStyle-Font-Bold = "True"
+  
+  CommandRowStyle-BackColor="#DDDDDD"/>
+  
+  
+    BorderStyle="Ridge"
+    BorderWidth="10"
+  
+  --%>
+  
+  <asp:DetailsView 
+    runat="server" 
+    BackColor="#F0F0F0"
+    ForeColor="black" 
+    GridLines="None"
+    AllowPaging="True"
+    CssClass="DetailsView">
+    <FooterStyle CssClass="Footer"/>
+    <CommandRowStyle CssClass="CommandRow"/>
+    <EditRowStyle CssClass="EditRow" />
+    <RowStyle CssClass="Row" /> 
+    <PagerStyle CssClass="Pager" />
+    <FieldHeaderStyle CssClass="FieldHeader" />
+    <HeaderStyle CssClass="Header" />
+</asp:DetailsView>

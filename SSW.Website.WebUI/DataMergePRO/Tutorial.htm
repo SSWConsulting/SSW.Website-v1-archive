@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+        <head>
+                <title>SSW Merge Master</title>
+                <Link rel="stylesheet" type="text/css" href="/ssw/Include/sswmenu.css">
+        </head>
+        <body TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" TEXT="#000000" ALINK="#003399" LINK="#003399" VLINK="#003399">
+                <TABLE WIDTH="100%" BGCOLOR="white" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+                        <TR>
+                                <TD align="left">
+                                        <IMG src="../../ssw/Images/SSWsmall.gif" alt="SSW Logo small" name="Image1" width="67" height="45" ><IMG height="45" src="images/MergePROBanner.gif" alt="Merge Master"  width="525"><IMG height="45" src="../../ssw/Images/hd_2.gif" alt="header" width="200">
+                                </TD>
+                        </TR>
+                </TABLE>
+                <script language="JavaScript" src="../include/IncNavTop.js">
+                </script>
+               
+<SCRIPT language=JavaScript type=text/javascript>
+                  function updateIt()
+                    {
+                          if (document.all)
+                          {
+                                document.all["MainTable"].style.top = 45;
+                                setTimeout("updateIt()", 200);
+                          }
+                        }
+                  <%
+                  'Check whether the user is using IE or Netscape. If they are using IE, then populate hierarchal menu.
+                  'Else just print the main links.
+                  If InStr(Request.ServerVariables("HTTP_USER_AGENT"), "Netscape6/6.0") = 0 Then
+                  %>
+                  showToolbar();
+                  <% Else %>
+                  showToolbarFlat();
+                  <% End If %>
+                  updateIt();
+</SCRIPT>
+                <table bgcolor="white" cellpadding="0" cellspacing="0" width="101%" border="0">
+                        <tr> <!-- spacer row - specify all others with colspan or rowspan--> <!--1-->
+                                <td width="11">
+                                </td> <!--2-->
+                                <td width="213">
+                                </td> <!--3-->
+                                <td width="1">
+                                </td> <!--4-->
+                                <td width="24">
+                                </td> <!--5-->
+                                <td width="362">
+                                </td> <!--6-->
+                                <td width="32">
+                                </td> <!--7-->
+                                <td width="97">
+                                </td> <!--8-->
+                                <td width="32">
+                                </td> <!--9-->
+                                <td width="208">
+                                </td> <!--10-->
+                                <td width="30">
+                                </td>
+                        </tr>
+                        <tr> <!-- spacer column -->
+                                <td rowspan="2" valign="top" colspan="2"> <!--#include virtual="/ssw/"-->
+                                </td> <!-- spacer column -->
+                                <td rowspan="2" bgcolor="#7d7d7d" width="1">
+                                </td> <!-- spacer column -->
+                                <td rowspan="2" width="24">
+                                </td>
+                                <!--main content cell-->
+                                <td colspan="5" valign="top">
+                                       
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>SSW
+                                                                                        Merge&nbsp;PRO! Tutorial</b>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>
+                                                                <IMG src="Images/MergePRO.gif" alt="Merge Pro" width="167" height="77">
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        
+                                                <P>
+                                                        <br>
+                                                        SSW Merge RPO! is great utility that merges two different databases into one.
+                                                        The two databases can have different format i.e. MS Access, SQL Server and even
+                                                        have different structure i.e. different table names and different field names.
+                                                </P>
+                                                <P>
+                                                        Merge RPO! use an user defined duplicate criteria to decide which records are
+                                                        duplicates. It is designed to work with any popular database, but currently has
+                                                        only been tested extensively on Access and SQL Server.&nbsp;If you are
+                                                        interested to try out on other database(s), <A href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info', e4='?Subject=Enquiry%20Merge%20PRO!';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;">
+                                                                let us know</A> !&nbsp;
+                                                </P>
+                                        
+                                        <p>
+                                                When two databases are
+                                                        mergered, all records in the source database will be indicated how many
+                                                        duplicates may exist in the destination database, based on the user defined
+                                                        duplicate criteria. the user can then decide whether to add the source record
+                                                        into the destination database.
+                                                        <br>
+                                                        <br>
+                                                        This screenshot below shows the result of merging Northwind with another SQL
+                                                        Server database.
+                                                <br>
+                                                <br>
+                                                <IMG src="Images/sampleresult.gif" alt="Sample Result" width="444" height="498">
+                                                <br>
+                                        </p>
+                                        <p>
+                                                With the merge result,
+                                                        the user can decide what to do with the source data:
+                                                        <br>
+                                                
+                                        </p>
+                                        <UL>
+                                                <li>
+                                                        Add to the destination
+                                                                withought any change.
+                                                <li>
+                                                        Don't Add to the
+                                                                destination database. 
+                                                <li>
+                                                        Compare with the
+                                                                destination data first and modify before adding to destination database. 
+                                                </li>
+                                        </UL>
+                                        <P>
+                                                To learn more about how to use SSW Merge PRO! Please
+                                                        read SSW Merge PRO! <a href="tutorial.htm">Tutoria</a>
+                                        </P>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>Features:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <UL>
+                                                <LI>
+                                                        User Defined Duplicate
+                                                                Criteria: Decide which records are duplicates based on same field value.
+                                                <LI>
+                                                        Deduplicate Field
+                                                                Mapping: not allowing a destination field being mapped to more than one source
+                                                                field.
+                                                <LI>
+                                                        Loading All fields with
+                                                                same field name.
+                                                <LI>
+                                                        Editing destination
+                                                                database: When you see an error in the destination database, you can correct it
+                                                                directly.
+                                                <LI>
+                                                        UDL wizard: Launch an
+                                                                UDL wizard to construct connection string.</LI>
+                                        </UL>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>Settings:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <br>
+                                        Merge PRO! allows you
+                                                to set a default destination database, so that when a new merge is created, it
+                                                loads all default destination database information. Merge PRO! also allows you
+                                                to set how many records to process on each processing.
+                                                <br>
+                                        
+                                        <br>
+                                        <IMG height="469" src="Images/options.gif" alt="Options" width="438">
+                                        <table width="100%" cellpadding="0" style="LEFT: 0px; TOP: 1613px">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>System
+                                                                                        Requirements:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <br>
+                                        .NET frame work. You
+                                                may download .Net Frame work for free from Microsoft (17.8MB).<A href="/ssw/Redirect/Net/DotNetFramework.htm" target="_blank">
+                                                        <IMG height="8" alt="You are going to a site outside of SSW" src="/ssw/Images/imgleavesite.GIF" width="19" border="0"></A>
+                                        
+                                        <br>
+                                        <br>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>Installation
+                                                                                        Guide:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <br>
+                                        When you run the
+                                                install exe there is a simple wizard interface to guide you thru the setup
+                                                process. All you have to do is select which directory you want SSW Merge PRO!
+                                                to be installed into. 
+                                        <br>
+                                        <br>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td>
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td height="17">
+                                                                <b><a name="MediaMonit">
+                                                                                        </a>Getting Support:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        
+                                                <br>
+                                                If you can't find it in the product documentation then check our <a href="/ssw/KB/KB.aspx">
+                                                        knowledge base</a> for further information and tips about this product.
+                                        <br>
+                                        <br>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>Download
+                                                                                        the 30 day trial:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <br>
+                                        Click here to download
+                                                SSW Merge PRO!. <A href="/ssw/Download/download.asp"><IMG height="16" src="/ssw/Images/Download.gif" alt="Download" width="19" border="0"></A>
+                                                <br>
+                                                <br>
+                                                Please send us <A href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info', e4='?Subject=Bug%20Reports';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;">bug reports</A> and <A href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info', e4='?Subject=Feedback';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;">
+                                                        feedback</A> so that we can evolve SSW Merge PRO! into a product that
+                                                matches your requirements.
+                                                <br>
+                                        
+                                        <BR>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#ff0033">
+                                                        <td align="right">
+                                                                .
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0">
+                                                <tr bgcolor="#cccccc">
+                                                        <td>
+                                                                <b>Purchasing
+                                                                                        Information:</b>
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <p>
+                                                <A href="/ssw/products/newprodcategory.aspx">
+                                                                Information on
+                                                        purchasing SSW Merge PRO! and other SSW products</A>. Merge PRO! has a volume pricing strategy, please refer to this pricing page.
+                                        </p>
+                                        
+
+                                        <center>
+                                                <IMG height="45" src="../../ssw/Images/ft_ssw.gif" alt="Footer SSW" width="300" useMap="#MapMap" border="0">
+                                                <map name="MapMap">
+                                                        <area shape="RECT" coords="206,16,296,29" href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info, e4='?Subject=Employment';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;">
+                                                        <area shape="RECT" coords="60,17,151,28" href="/ssw/">
+                                                </map>
+                                        </center>
+                                
+                                <td rowspan="2" width="30">
+                                </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                </table>
+        </body>
+</html>

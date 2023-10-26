@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <List Name="Detail">
+        <Style>
+          <BackgroundColor>#ffffff</BackgroundColor>
+        </Style>
+        <Sorting>
+          <SortBy>
+            <SortExpression>=Fields!ProductName.Value</SortExpression>
+            <Direction>Ascending</Direction>
+          </SortBy>
+        </Sorting>
+        <ReportItems>
+          <Textbox Name="ProductName">
+            <Style>
+              <PaddingLeft>0cm</PaddingLeft>
+              <FontFamily>Times New Roman</FontFamily>
+              <BackgroundColor>#ffffff</BackgroundColor>
+              <BorderColor>
+                <Default>#000000</Default>
+              </BorderColor>
+              <LineHeight>15pt</LineHeight>
+              <Color>#000000</Color>
+              <PaddingBottom>0cm</PaddingBottom>
+              <PaddingTop>0cm</PaddingTop>
+              <PaddingRight>0cm</PaddingRight>
+              <FontWeight>700</FontWeight>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <Top>0.079cm</Top>
+            <Height>0.502cm</Height>
+            <Width>5.82cm</Width>
+            <Value>=Fields!ProductName.Value</Value>
+            <Left>0.026cm</Left>
+          </Textbox>
+          <Textbox Name="UnitPrice">
+            <Style>
+              <PaddingLeft>0cm</PaddingLeft>
+              <FontFamily>Times New Roman</FontFamily>
+              <BackgroundColor>#ffffff</BackgroundColor>
+              <BorderColor>
+                <Default>#000000</Default>
+              </BorderColor>
+              <LineHeight>15pt</LineHeight>
+              <TextAlign>Right</TextAlign>
+              <Color>#000000</Color>
+              <PaddingBottom>0cm</PaddingBottom>
+              <PaddingTop>0cm</PaddingTop>
+              <PaddingRight>0cm</PaddingRight>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Top>0.079cm</Top>
+            <Height>0.502cm</Height>
+            <Width>1.772cm</Width>
+            <Value>=Fields!UnitPrice.Value</Value>
+            <Left>12.888cm</Left>
+          </Textbox>
+          <Textbox Name="QuantityPerUnit">
+            <Style>
+              <PaddingLeft>0cm</PaddingLeft>
+              <FontFamily>Times New Roman</FontFamily>
+              <BackgroundColor>#ffffff</BackgroundColor>
+              <BorderColor>
+                <Default>#000000</Default>
+              </BorderColor>
+              <LineHeight>15pt</LineHeight>
+              <Color>#000000</Color>
+              <PaddingBottom>0cm</PaddingBottom>
+              <PaddingTop>0cm</PaddingTop>
+              <PaddingRight>0cm</PaddingRight>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <Top>0.079cm</Top>
+            <Height>0.502cm</Height>
+            <Width>3.809cm</Width>
+            <Value>=Fields!QuantityPerUnit.Value</Value>
+            <Left>8.386cm</Left>
+          </Textbox>
+          <Textbox Name="ProductID">
+            <Style>
+              <PaddingLeft>0cm</PaddingLeft>
+              <FontFamily>Times New Roman</FontFamily>
+              <BackgroundColor>#ffffff</BackgroundColor>
+              <BorderColor>
+                <Default>#000000</Default>
+              </BorderColor>
+              <LineHeight>15pt</LineHeight>
+              <Color>#000000</Color>
+              <PaddingBottom>0cm</PaddingBottom>
+              <PaddingTop>0cm</PaddingTop>
+              <PaddingRight>0cm</PaddingRight>
+            </Style>
+            <Top>0.079cm</Top>
+            <Height>0.502cm</Height>
+            <Width>1.269cm</Width>
+            <Value>=Fields!ProductID.Value</Value>
+            <Left>6.1cm</Left>
+          </Textbox>
+        </ReportItems>
+      </List>
+    </ReportItems>
+    <Style />
+    <Height>0.661cm</Height>
+  </Body>
+  <DataSources>
+    <DataSource Name="DataSource11">
+      <rd:DataSourceID>f5cadc85-a81d-4e80-9c15-c4bcdf96a702</rd:DataSourceID>
+      <DataSourceReference>DataSource1</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>14.708cm</Width>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="ProductID">
+          <DataField>ProductID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProductName">
+          <DataField>ProductName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SupplierID">
+          <DataField>SupplierID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CategoryID">
+          <DataField>CategoryID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="QuantityPerUnit">
+          <DataField>QuantityPerUnit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UnitPrice">
+          <DataField>UnitPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UnitsInStock">
+          <DataField>UnitsInStock</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="UnitsOnOrder">
+          <DataField>UnitsOnOrder</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ReorderLevel">
+          <DataField>ReorderLevel</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Discontinued">
+          <DataField>Discontinued</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource11</DataSourceName>
+        <CommandText>SELECT     [ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], 
+                      [Discontinued]
+FROM         [Products]</CommandText>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <rd:ReportID>adc37d96-d9e2-4caa-a8c5-3e9fba43a87b</rd:ReportID>
+</Report>

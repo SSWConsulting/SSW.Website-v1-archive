@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getClientID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identityName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getClientIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getClientStatusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getClientIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getClientID" />
+  </wsdl:message>
+  <wsdl:message name="getClientIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getClientIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getClientStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:getClientStatus" />
+  </wsdl:message>
+  <wsdl:message name="getClientStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:getClientStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CurrentStatusSoap">
+    <wsdl:operation name="getClientID">
+      <wsdl:input message="tns:getClientIDSoapIn" />
+      <wsdl:output message="tns:getClientIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getClientStatus">
+      <wsdl:input message="tns:getClientStatusSoapIn" />
+      <wsdl:output message="tns:getClientStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CurrentStatusSoap" type="tns:CurrentStatusSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getClientID">
+      <soap:operation soapAction="http://tempuri.org/getClientID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientStatus">
+      <soap:operation soapAction="http://tempuri.org/getClientStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CurrentStatusSoap12" type="tns:CurrentStatusSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getClientID">
+      <soap12:operation soapAction="http://tempuri.org/getClientID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientStatus">
+      <soap12:operation soapAction="http://tempuri.org/getClientStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CurrentStatus">
+    <wsdl:port name="CurrentStatusSoap" binding="tns:CurrentStatusSoap">
+      <soap:address location="http://webservices.internal.ssw.com.au/SSWWebService/CurrentStatus.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CurrentStatusSoap12" binding="tns:CurrentStatusSoap12">
+      <soap12:address location="http://webservices.internal.ssw.com.au/SSWWebService/CurrentStatus.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

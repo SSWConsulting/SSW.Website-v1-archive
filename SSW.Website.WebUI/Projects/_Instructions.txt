@@ -1,0 +1,3 @@
+The \\ant\ssw\projects has been moved to http://ant/projects.
+Reason: because plesk and iis cannot handle multiple versions of Asp.net under single ssw dir
+Another reason: Because this projects folder is 3gb++.

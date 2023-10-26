@@ -1,0 +1,2648 @@
+﻿<?xml version="1.0" ?>
+<!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Greg Harris (SSW) -->
+<employees>
+  <employee>
+    <EmpID>AC</EmpID>
+    <Surname>Cogan</Surname>
+    <FirstName>Adam</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx</SharePointURL>
+    <description>
+
+      Position: Chief Architect, &lt;a href="/SSW/Redirect/MSRD.htm" target="Blank"&gt;Microsoft Regional Director&lt;/a&gt; &lt;img src="/ssw/images/leavesite.GIF"&gt;   &lt;br /&gt; Qualifications: B Bus, JP, MCP, Microsoft MVP (Visual Studio Team System)&lt;br /&gt;
+
+
+
+      &lt;br /&gt;
+      <!-- &lt;img src="/SSW/Images/Regional_Director.gif" align="left" alt="Regional Director Program"&gt; -->
+
+
+
+      Adam Cogan is the Chief Architect at SSW, a Microsoft Certified Gold Partner specializing in custom .NET, SharePoint and Business Intelligence solutions. At SSW, Adam has been developing custom solutions for businesses across a range of industries such as Government, banking, insurance and manufacturing since 1990 for clients such as Microsoft, Quicken, and the Fisheries Research and Development Corporation.
+    </description>
+    <description2>
+      &lt;IMG height="75" src="/SSW/Employees/Images/Adam_MVP.jpg" alt="Microsoft MVP" width="175" align="right" border="0"&gt;
+      &lt;br /&gt;
+      Some of Adam's project highlights have been:
+      &lt;br /&gt;
+      &lt;ul&gt;
+      &lt;li&gt;Being lead developer on Australia's first live ASP.NET site - using a version that was pre Beta 1. &lt;/li&gt;
+      &lt;li&gt;Developing the Smart Tag implementation for Quicken Australia. &lt;/li&gt;
+      &lt;li&gt;Developing the Reporting Services and Exchange Server samples for Microsoft that turned into a hugely popular Exchange Reporting Tool. Giving the first BI solutions on Exchange Server Data. &lt;/li&gt;
+      &lt;li&gt;Developing the SharePoint site for Worley Parsons which was the largest public facing site at the time (it used the built in Web Content Management features, proving the SharePoint Platform for all companies). &lt;/li&gt;
+      &lt;/ul&gt;
+      Adam is one of only three &lt;a target=_blank href="/ssw/redirect/AdamsMRDProfile.htm"&gt;Microsoft Regional Directors in Australia&lt;/a&gt;  &lt;img src="/ssw/images/leavesite.GIF"&gt;.
+      In this role, he regularly presents in conferences such as TechEd (USA, Australia, New Zealand and Malaysia). A couple of times a year, he visits Microsoft headquarters in Seattle to learn the latest on Microsoft strategic directions and
+      to undertake training in development technologies.&lt;/P&gt;
+
+    </description2>
+    <description3bold>
+      At SSW, Adam reviews the architecture of large .NET projects, while also taking an active interest in the overall User Experience (UX). Adam may be contacted at &lt;br/&gt; &lt;img src="/ssw/Images/IconMailTo.gif" alt="Icon MailTo" /&gt; &lt;a href="javascript:sendEmail('6164616D636F67616E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('6164616D636F67616E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;adamcogan&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+
+    </description3bold>
+    <description4>
+      Tip: This email cannot be harvested by spammers
+      &lt;br/&gt; &lt;br/&gt;
+      In addition Adam is a regular speaker at &lt;a href="/ssw/events/SSWTechBreakfast.aspx"&gt;SSW Tech
+      Breakfasts&lt;/a&gt; and conferences, including:
+      &lt;ul&gt;
+      &lt;li&gt;Microsoft Tech Ed in USA (a highlight being a highly rated joint session with &lt;a href="/ssw/redirect/NET/dotNETMasters.htm" target="_blank" &gt;Billy Hollis&lt;/a&gt; &lt;img src="/ssw/images/leavesite.GIF"&gt;), Malaysia, New Zealand and Australia  &lt;/li&gt;
+      &lt;li&gt;Microsoft Tech Ed in Malaysia, New Zealand and Australia (a highlight being #4 (of 90) rated speaker in NZ after a bad sheep joke!) &lt;/li&gt;
+      &lt;li&gt;&lt;a href="/ssw/redirect/Microsoft/msRoadshow.htm" target="_blank" &gt;Microsoft Roadshows&lt;/a&gt; &lt;img src="/ssw/images/leavesite.GIF"&gt;  &lt;/li&gt;
+      &lt;li&gt;&lt;a href="/ssw/redirect/vslive.htm" target="_blank" &gt;  Dev Days Australia wide&lt;/a&gt; &lt;img src="/ssw/images/leavesite.GIF" &gt;&lt;/li&gt;
+      &lt;li&gt;VS Live Australia and Chicago &lt;/li&gt;
+      &lt;li&gt;IDC Conferences South Africa and SGW Forum's DevCons  &lt;/li&gt;
+      &lt;li&gt;Code Camp Australia, New Zealand and San Diego&lt;/li&gt;
+      &lt;li&gt;SQL Code Camp Australia and New Zealand&lt;/li&gt;
+      &lt;li&gt;University of Sydney and University of Technology, Sydney&lt;/li&gt;
+      &lt;/ul&gt;
+      He recently made a guest presentation on 'XML for
+      Database Developers' at the &lt;a href="/ssw/redirect/ntmsdevsigs.htm" target="_blank"&gt;Texas PC
+      User Group&lt;/a&gt; &lt;img alt="You are going to a site outside of SSW" src="/ssw/images/leavesite.GIF" &gt; in which
+      he was &lt;a href="/ssw/redirect/SSW/DejaNtmsdevsigs.htm" target="_blank"&gt;well
+      received&lt;/a&gt; &lt;img alt="You are going to a site outside of SSW" src="/ssw/images/leavesite.GIF" &gt;.
+
+      &lt;br /&gt;
+      &lt;br /&gt;
+      In his spare time, Adam runs the &lt;a href="/SSW/NETUG/"&gt;Microsoft .NET User Group in Sydney&lt;/a&gt;, is the chair of the Speaker Bureau of the APAC INETA organization and is actively involved in the
+      regional INETA management process.&lt;br /&gt;&lt;br /&gt;
+
+
+
+
+      Adam loves to spend time working on his &lt;a href="/ssw/standards/rules/"&gt;Rules&lt;/a&gt; pages, and his favourite quote is "There is always free cheese in a mousetrap".
+      &lt;br /&gt;&lt;br /&gt;
+
+      &lt;div class="center"&gt;
+      &lt;dl class="image"&gt;
+      &lt;dt&gt;
+      &lt;img src="images/nezumi.jpg" alt="Squeak"&gt;&lt;/dt&gt;
+      &lt;dd&gt;Figure: Well all rules are meant to be broken :-)&lt;/dd&gt;
+      &lt;/dl&gt;
+
+      &lt;p&gt;&lt;p&gt;
+      &lt;br /&gt;
+      &lt;dl class="image"&gt;
+      &lt;dt&gt;
+      &lt;img src="/ssw/Employees/Images/Adam_Cogans_World_Map_From_Douweosinga-com.gif" alt="World map"&gt;
+      &lt;/dt&gt;
+      &lt;dd&gt;Figure: Adam has spoken at user groups/conferences in these countries&lt;/dd&gt;
+      &lt;br/&gt;
+      &lt;/dl&gt;
+
+      &lt;p&gt;&lt;p&gt;
+      &lt;br /&gt;
+      &lt;dl class="image"&gt;
+      &lt;dt&gt;
+      &lt;img src="/ssw/Employees/Images/icebergs.jpg" alt="Splash!"&gt;
+      &lt;/dt&gt;
+      &lt;dd&gt;Figure: Adam is a proud "Bondi Iceberg" every Sunday thoughout the winter, rain, hail or shine!&lt;/dd&gt;
+      &lt;/dl&gt;
+      &lt;/div&gt;
+    </description4>
+    <descriptionprofile>
+      &lt;div&gt;
+
+      &lt;p align="center"&gt;
+      &lt;img src="Images/AdamCogan_MicrosoftRoadShow.GIF" alt="Microsoft Roadshow" width="416" height="239"&gt;
+      &lt;/p&gt;
+      &lt;p align="center"&gt;
+      &lt;strong&gt;Figure: Adam has spoken in Microsoft Roadshow conference around Australia in 1999&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;p align="center"&gt;
+      &lt;a href="/sgw/devcon2000/"&gt;
+      &lt;img src="Images/AdamCogan_devcon2000.GIF" border="1" alt="Adam and Tom"&gt;
+      &lt;/a&gt;
+      &lt;/p&gt;
+      &lt;p align="center"&gt;
+      &lt;strong&gt;Figure: Adam has spoken with Tom in the DevCon2000 conference held in Perth, Sydney&lt;/strong&gt;&lt;/p&gt; <!--&lt;p align="center">&lt;img src="Images/withMom.jpg" width="400" height="600" align="center">&lt;/p> &lt;p align="center">&lt;font face="verdana,Arial, Helvetica, sans-serif" size="1">With his mum in the Neutral Bay Office, August 2000.&lt;/font>&lt;/p>-->&lt;/div&gt;&lt;/p&gt;
+
+
+
+      &lt;p align="center"&gt;
+      &lt;img src="Images/AdamCogan_AtSSW.jpg" border="1" alt="Adam at SSW"&gt;
+      &lt;/p&gt;
+      &lt;p align="center"&gt;
+      &lt;strong&gt;Figure: Adam Cogan at SSW in Neutral Bay&lt;/strong&gt;
+      &lt;/p&gt;
+
+      &lt;p align="center"&gt;
+      &lt;img src="Images/AdamCogan_Profil_1.jpg" border="1" alt="Adam at SSW"&gt;
+      &lt;/p&gt;
+      &lt;p align="center"&gt;
+      &lt;strong&gt;Figure: Adam Cogan at SSW in Neutral Bay&lt;/strong&gt;
+      &lt;/p&gt;
+
+      &lt;p align="center"&gt;
+      &lt;img src="Images/AdamCogan_Profil_2.jpg" border="1" alt="Adam at SSW"&gt;
+      &lt;/p&gt;
+      &lt;p align="center"&gt;
+      &lt;strong&gt;Figure: Adam Cogan at SSW in Neutral Bay&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;/div&gt;
+
+
+
+    </descriptionprofile>
+    <imagedrawn>Images/AdamCogan_Caricature_Small.gif</imagedrawn>
+    <imagelarge>Images/AdamCogan_Caricature_Large.gif</imagelarge>
+    <!--<imagelarge2>Images/AdamCogan_AtSSW.jpg</imagelarge2>-->
+    <imagecertification>/SSW/Images/certificates.gif</imagecertification>
+    <extraLink1>Adam contributes to &lt;a href="/SSW/products/training.aspx"&gt;SSW Developer Training&lt;/a&gt;, &lt;a href="/SSW/events/sswtechbreakfast.aspx"&gt;SSW Breakfast Sessions&lt;/a&gt;, and loves the opportunity to speak at &lt;a href="/SSW/events/conference.aspx"&gt;conferences&lt;/a&gt;.</extraLink1>
+  </employee>
+
+
+  <employee>
+    <EmpID>EP</EmpID>
+    <Surname>Phan</Surname>
+    <FirstName>Eric</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Eric.aspx</SharePointURL>
+    <description>Position: Solution Architect&lt;br /&gt; Qualifications: B.E. - Software Engineering (UNSW)&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Eric Phan is keen Solution Architect who doesn't mind a challenge. He has a in-depth knowledge of most aspects of .NET as well as experience with Java (J2SE &amp; J2ME).
+      He is also up to date with the latest developments in .NET world and an advocate of coding standards compliance and unit testing. He has a blog at &lt;a href="http://www.ericphan.info"&gt; www.ericphan.info&lt;/a&gt;
+      &lt;br /&gt;
+      Eric's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;Maximus Internatioal/Imprnt Global Pty Ltd&lt;/b&gt; A HR firm looking to deliver an online HR Management system that facilitates career management, selection, surveys and performance management&lt;br /&gt;
+      Related Technology: (ASP.NET 2.0 Application, Nhibernate, SQL Server 2000, XMLFO Reports, LMS Integration).
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Hills Transport Pty Ltd&lt;/b&gt; A transport company looking to establish a greater web presence and automate its package delivery and consignment note system.&lt;br /&gt;
+      Related Technology: VB.NET Windows Forms with Click Once deployment, Web Services, DotNetNuke, SQL Server 2005, Image Scanning and recognition.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Media Monitors.&lt;/b&gt; A media company looking to develop an intranet site to manage their media directory.&lt;br /&gt;
+      Related Technology: Intranet ASP.NET 2.0 Website - with ComponentArt\AJAX
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Anglican Care - Developer Training&lt;/b&gt; Ran a four day training course on ASP.NET 2 Web Developement with Visual Studio Team System&lt;br /&gt;
+      Related Technology: Visual Studio Team Suite, Visual Studio Team Foundation Server, ASP.NET 2, Web Services
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;UTS .NET Short Course&lt;/b&gt; Developed and lectured the UTS .NET Short Course when Visual Studio 2005 was in beta 2&lt;br /&gt;
+      Related Technology: .NET Framework 2, AJAX, Click Once, SQL Server 2005, ADO.NET, Visual Studio Team Suite, Visual Studio Team Foundation Server, Windows Forms, ASP.NET 2, Web Services
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      Eric's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW eXtreme Emails&lt;/b&gt; Outlook based task management system.&lt;br /&gt;
+      Related Technology: VB.NET, VSTO 2005 SE, Windows Form, Outlook, XML, XSL.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Web Pager.&lt;/b&gt; SSW Web Pager is a utility that sends any web page to your inbox. This utility has many applications - from emailing you the latest news daily to emailing  daily and monthly HTML reports to your administrator. Everything you need will be in one centralized location - the Inbox, saving you from opening many web pages to view all the pages you visit daily.&lt;br /&gt;
+      Related Technology: C#, Windows Form, Socket Programming, Regular Expression, XML, XSL.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+    </description2>
+    <description3>Eric spends his spare time practicing martial arts, ballroom dancing and watching Sci-Fi flicks.</description3>
+    <description4>
+      His favourite quote is "There are 10 types of people in the world. Ones that understand binary and ones that don't."
+      &lt;br /&gt;&lt;br /&gt;
+      Eric may be contacted at &lt;a href="javascript:sendEmail('457269635068616E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('457269635068616E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;EricPhan&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+  </employee>
+
+  <employee>
+    <EmpID>PN</EmpID>
+    <Surname>Neumeyer</Surname>
+    <FirstName>Dr. Paul</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Paul.aspx</SharePointURL>
+    <description>Position: Solution Architect &lt;br/&gt; Qualifications: B.E. Computer Systems Engineering (Hons) Ph.D</description>
+    <description2>
+      Dr. Paul Neumeyer is enthusiastic about innovating and streamlining technology so that real value is transferred to businesses and individuals. He has enjoyed consulting to a wide range of IT Sectors for over 10 years including the banking sector, health sector, finance and online businesses. He is also passionate about encrypting data and protecting it, data patterns for business intelligence and making smart automated systems.
+      &lt;br/&gt;&lt;br/&gt;
+
+      Paul's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;McDonalds Asia Pacific Consortium P/L&lt;/b&gt; A part of the McDonalds Enterprise that provides meat inventory and logistics to the Asia Pacific region.
+      &lt;br/&gt;Related Technology: Web Services, XML, Windows Forms, SQL Server 2005.
+      &lt;/li&gt;
+
+      &lt;li&gt;
+      &lt;b&gt;Westlink Consulting P/L&lt;/b&gt; Are a young and forward-thinking property and valuation consultancy whose aim is to provide unbiased, up-to-date and effective property advice and valuations.
+      &lt;br/&gt;Related Technology: ASP.NET 2.0, SQL Server 2005.
+      &lt;/li&gt;
+
+
+      &lt;li&gt;
+      &lt;b&gt;Queensland Water Infrastructure P/L&lt;/b&gt; Is managing several major water infrastructure projects that will supply significant additional water to South East Queensland
+      &lt;br/&gt;Related Technology: SharePoint 2007 MOSS/WSS, ASP.NET 2.0, SQL Server 2005
+      &lt;/li&gt;
+
+      &lt;li&gt;
+      &lt;b&gt;UTS SharePoint Short Course&lt;/b&gt; Developed and lectures the UTS SharePoint Short Course for SharePoint in the Real World
+      &lt;br/&gt;Related Technology: SharePoint 2007, SQL Server 2005, ASP.NET 3.5
+      &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;br/&gt;
+      Paul's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Superior SharePoint Kit.&lt;/b&gt; SharePoint 2007 is a powerful product with a vast array of uses.  SSW has gained real world experience and created the world’s largest publicly facing SharePoint site.  The SSW Superior SharePoint Kit contains the distilled improvements and tools that every SharePoint installation should have, but does not come with out-of-the-box.
+      &lt;br/&gt;Related Technology: SharePoint 2007, ASP.NET 3.5, AJAX, Outlook, XML.
+      &lt;/li&gt;
+
+      &lt;li&gt;
+      &lt;b&gt;SSW Superior Timesheets.&lt;/b&gt; SSW Superior Timesheets is a utility that every business needs – accurate and timely completed timesheets allow the business to track staff costs, see areas where time is spent and estimate budget overrun or underrun. This software has many applications - from daily and weekly reports to your administrator staff to creating invoices for the work done. You can even set it to send your task starting and stop time to clients from one centralized location, saving you time and keeping clients happy.
+      &lt;br/&gt;Related Technology: ASP.NET 3.5, AJAX, C#, Windows Form, XML, XSL.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;br /&gt;
+      &lt;dl class="image"&gt;
+      &lt;dt&gt;
+      &lt;img src="/ssw/Employees/Images/PaulNeumeyer_proposal.jpg" alt="Paul Neumeyer in SSW - Sydney"&gt;
+      &lt;/dt&gt;
+      &lt;dd&gt;Figure: Paul in SSW - Sydney&lt;/dd&gt;
+      &lt;br/&gt;
+      &lt;/dl&gt;
+
+    </description2>
+    <description4>
+      His favourite quote is "Whether you think you can or think you can't, you are probably right", Henry Ford
+      &lt;br /&gt;&lt;br /&gt;
+      Paul may be contacted at &lt;a href="javascript:sendEmail('7061756C6E65756D65796572407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('7061756C6E65756D65796572407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;PaulNeumeyer&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+
+  </employee>
+
+
+  <employee>
+    <EmpID>GMH</EmpID>
+    <Surname>Harris</Surname>
+    <FirstName>Greg</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Greg.aspx</SharePointURL>
+    <description>Position: Solution Architect &lt;br/&gt; Qualifications: B.Sc. Information Systems</description>
+    <description2>
+      Greg is a Project Manager, Business Analyst, Software Developer and General Consultant at SSW.
+      Greg has extensive experience in all stages of the project development life cycle,
+      having contributed to dozens of projects for a range of clients during his 30 years in all facets of the IT industry.
+
+      &lt;br/&gt;
+      &lt;br/&gt;
+
+      Greg also enjoys sharing his knowledge by teaching the
+      &lt;a href="http://it.uts.edu.au/course/shortcourse/programming/" target="_blank" &gt;UTS Short Courses&lt;/a&gt;
+      in .NET and SQL Server and presenting at the local user groups on SilverLight technology.
+
+      &lt;br/&gt;
+      &lt;br/&gt;
+
+      Some of Greg's key clients have included:
+      &lt;ul&gt;
+      &lt;li&gt;Queensland Water Infrastructure
+      &lt;li&gt;Conquest Solutions
+      &lt;li&gt;Optus Communications
+      &lt;li&gt;American Express
+      &lt;li&gt;I.B.M.
+      &lt;li&gt;Hewlett-Packard
+      &lt;li&gt;TabCorp
+      &lt;li&gt;The Hong Kong Jockey Club
+      &lt;li&gt;DPWorld / P&amp;O Ports
+      &lt;li&gt;N.S.W. Government
+      &lt;li&gt;Otago University
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      &lt;br/&gt;
+
+      Greg's current SSW client projects include:
+
+      &lt;ul&gt;
+
+      &lt;li&gt;	&lt;b&gt;Queensland Water Infrastructure P/L&lt;/b&gt;
+      Is managing several major water infrastructure projects that
+      will supply significant additional water to South East Queensland
+      &lt;br/&gt;	Related Technology: SharePoint 2007 MOSS/WSS, ASP.NET 2.0, SQL Server 2005
+      &lt;/li&gt;
+
+      &lt;li&gt;	&lt;b&gt;Conquest Solutions P/L&lt;/b&gt;
+      Conquest Solutions is a leading provider of corporate
+      asset management solutions both in Australia and New Zealand.
+      &lt;br/&gt;	Related Technology: Silverlight, ASP.NET 3.5, SQL Server 2008
+      &lt;/li&gt;
+
+      &lt;/ul&gt;
+
+
+    </description2>
+
+    <description4>
+      Greg's favourite quote is "We learn best in moments of enjoyment", Dr. Ralph C. Smedley
+      &lt;br /&gt;&lt;br /&gt;
+      Greg may be contacted at &lt;a href="javascript:sendEmail('47726567486172726973407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('47726567486172726973407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;GregHarris&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+
+  </employee>
+
+
+
+
+
+
+  <employee>
+    <EmpID>JK</EmpID>
+    <Surname>King</Surname>
+    <FirstName>Justin</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Justin.aspx</SharePointURL>
+    <description>Position: Senior Software Architect&lt;br /&gt; Qualifications: B App Science&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Justin King is a Senior Software Architect at SSW specialising in SQL Server .NET Solutions.
+      &lt;br /&gt;
+      &lt;br /&gt;
+      With over 10 years of Software Development experience, Justin has worked with many different technologies across varied platforms.
+      &lt;br /&gt;Coming from a VB6/ASP web background then into Java and C# for last 6 years he has also started working with Windows Communcation Foundation, Windows Presentation Foundation and Windows Workflow.
+      Developing in other technologies such as Ruby, Linux Systems and relational databases Oracle, SQL
+      Server 7/2000/2005, Mysql and PostgresSQL and integrating between different platforms.
+      &lt;br /&gt;
+      &lt;br /&gt;Justin is a self confessed User Group addict and loves keeping up with the latest software development news. He can also be found teaching &lt;a href="http://it.uts.edu.au/course/shortcourse/programming/" target="_blank" &gt;UTS Short Courses&lt;/a&gt; in .NET and SQL Server 2005.
+      &lt;br /&gt;
+      &lt;br /&gt;
+      At SSW, Justin works on Websites and Applications specialising in code generation tools for the Data Access Layer using NetTiers with CodeSmith and NHibernate.
+      &lt;br /&gt;
+      &lt;br /&gt;You can also visit Justin's &lt;a href="http://kingjustin.com" target="_blank" &gt;blog&lt;/a&gt; for the latest news.
+      &lt;br /&gt;
+    </description2>
+    <description3bold>
+      Justin may be contacted at &lt;a href="javascript:sendEmail('4A757374696E4B696E67407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A757374696E4B696E67407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JustinKing&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      His favourite quote is "Measure twice, cut once!"
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+  </employee>
+
+
+
+
+  <employee>
+    <EmpID>MSM</EmpID>
+    <Surname>Marescia</Surname>
+    <FirstName>Marlon</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Marlon.aspx</SharePointURL>
+    <!-- Modified by ZV, Date: 01/11/07 -->
+    <description>Position: Sales Manager&lt;br /&gt; </description>
+    <!-- End of modification -->
+    <description2>
+      Marlon Marescia is the Sales Manager at SSW and has had experience in .NET, Windows Mobile, ASP.NET, Outlook Add-Ins and Microsoft CRM. His past experience as a consultant, building and implementing strategic and operational plans within small to medium businesses gives him a unique understanding of our client's needs. He has also taken a keen interest in the efficiencies that Microsoft CRM (Client Relationship Management) can make to the sales and marketing effectiveness of a business.
+
+      In his spare time Marlon enjoys watching movies, cooking Thai food, thinking about getting fit, and playing with his 3 boys who are all under 5 years old.
+
+      &lt;br /&gt;
+      &lt;br /&gt;You can also visit Marlon's &lt;a href="http://www.marlonmarescia.com" target="_blank" &gt;blog&lt;/a&gt; for the latest news.
+      &lt;br /&gt;
+    </description2>
+    <description3bold>
+      He may be contacted at &lt;a href="javascript:sendEmail('4D61726C6F6E4D61726573636961407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4D61726C6F6E4D61726573636961407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;MarlonMarescia&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>His favorite quote is "Remember, today is the tomorrow you worried about yesterday."</description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>TK</EmpID>
+    <Surname>Kremer</Surname>
+    <FirstName>Tim</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/TimK.aspx</SharePointURL>
+    <description>
+      Position: Consulting Director&lt;br /&gt;
+      Qualifications: B.Eng (Software) - Sydney University
+    </description>
+    <description2>
+      Tim Kremer is the Consulting Director at SSW. He has
+      managed projects developed in C#, VB.NET, ASP.NET, Winforms, SQL Server and Microsoft Office SharePoint
+      Server and has experience in all
+      stages of the project cycle. He is especially accomplished at Specification Reviews, having performed
+      dozens for all ranges of clients. A successful spec reviews requires skills in documenting user
+      requirements, architecture design, resource allocation and developing release plans.
+      &lt;p&gt;
+      After joining SSW in 2004, Tim quickly took responsibility for managing client relationships in key
+      SSW projects. His most recent engagement is a six-month project with a Queensland Government
+      organisation which supervises multi-billion dollar infrastructure developments. The project sees Tim implement two
+      main application roll-outs.
+      The first is focused on implementing Microsoft Office Sharepoint Server for document management to a
+      group of 60 key users. This requires him to liaise with external IT providers and the Queensland
+      Premiers department within stringent control processes. Tim is also managing the deployment process,
+      working with the Learning and Development Department and IT Training Centre to develop training
+      curriculums to ensure effective roll out, user acceptance and utilization of the new system. The second
+      sees Tim manage the development and implementation of a Land Acquisition system.
+      &lt;/p&gt;
+      &lt;p&gt;
+      As Consulting Director of SSW Tim supervises a team of more than 25 developers and as such has
+      played a leading role with other SSW clients including:
+      &lt;ul&gt;
+      &lt;li&gt;&lt;b&gt;Microsoft Australia
+      &lt;li&gt;Ninemsn
+      &lt;li&gt;Commonwealth Bank
+      &lt;li&gt;Energy Australia
+      &lt;li&gt;Media Monitors
+      &lt;li&gt;BizTechGuide.com.au
+      &lt;/b&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+      Tim also lectures at the University of Technology, delivering courses on SQL Server: Design Development and Administration, and .NET Application Development.
+      &lt;/p&gt;
+    </description2>
+    <description3bold>
+      Tim may be contacted at &lt;a href="javascript:sendEmail('74696D6B72656D6572407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('74696D6B72656D6572407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;timkremer&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      His favourite pursuits include the Brazilian martial art called Capoeira, white-water Kayaking, rock climbing, skiing, soccer, hockey, violin, fencing and magic.&lt;p&gt;
+      His favourite quote is "You can tell a lot about a fellow's character by his way of eating jellybeans" - &lt;i&gt;Ronald Reagan.&lt;/i&gt;
+    </description4>
+    <descriptionprofile />
+    <imagecertification>/SSW/Images/Microsoft/mous.gif</imagecertification>
+  </employee>
+
+  <employee>
+    <EmpID>TF</EmpID>
+    <Surname>Fletcher</Surname>
+    <FirstName>Tim</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/TimF.aspx</SharePointURL>
+    <description>Position: Project Manager&lt;br /&gt; Qualifications: BSc (Pure Math)</description>
+    <description2>
+      Tim Fletcher is a Project Manager at SSW, a Microsoft Certified Partner specialising in .NET
+      Solutions. Tim likes ensuring that we're getting optimum performance from our team. He's also good at improving business processes
+      within SSW and communication with its clients. Tim is in charge of Client Relations and manages new business. If you have
+      any requests in regards to what SSW can do for you, send him an email, he guarantees a prompt response and will always follow up.
+    </description2>
+    <description3bold>
+      At SSW Tim manages project initialisations and contracts. Tim may be contacted at &lt;a href="javascript:sendEmail('74696D666C657463686572407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('74696D666C657463686572407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;timfletcher&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>His favourite quote is "I believe in getting into hot water - it keeps you clean".</description4>
+    <descriptionprofile/>
+    <imagedrawn>Images/TimFletcher_Small.gif</imagedrawn>
+    <imagecertification>/SSW/Images/Microsoft/mous.gif</imagecertification>
+  </employee>
+
+  <employee>
+    <EmpID>UM</EmpID>
+    <Surname>Maclaren</Surname>
+    <FirstName>Ulysses</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Uly.aspx</SharePointURL>
+    <!-- Modified by ZV, Date: 01/11/07 -->
+    <description>Position: Account Manager&lt;br /&gt; Qualifications: B.Eng - Electrical (hons) - Sydney University</description>
+    <!-- End of modification -->
+    <description2>
+      Ulysses Maclaren is a project manager at SSW and has had experience in SQL, ASP.NET and C# over the past five years.
+      He graduated from Sydney University in 2005 and is now overseeing our developers in our current and new projects.
+      He is also involved in client relations and managing new business.
+      In his spare time, he also teaches salsa and studies capoeira.
+    </description2>
+    <description3bold>
+      At SSW, Ulysses manages new projects and contracts. He may be contacted at &lt;a href="javascript:sendEmail('756C79737365736D61636C6172656E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('756C79737365736D61636C6172656E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;ulyssesmaclaren&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>His favorite quote is "Try not to become a man of success but rather to become a man of value" - Albert Einstein </description4>
+    <descriptionprofile/>
+    <imagecertification>/SSW/Images/Microsoft/mous.gif</imagecertification>
+  </employee>
+
+  <employee>
+    <EmpID>DDK</EmpID>
+    <Surname>Klein</Surname>
+    <FirstName>David</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DavidK.aspx</SharePointURL>
+    <description>Position: Senior Software Architect&lt;br /&gt; Qualifications: B Com (Information Systems\HRM with Merit), MCP, MCDBA&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      David Klein is a Senior Software Architect at SSW, a Microsoft Certified Professional specialising in SQL Server .NET Solutions.
+      With more than 7 years in Information Technology at SSW, David has extensive experience with Microsoft Technologies, both pre and post .NET, and loves working with ASP.NET 2.0, C#, VB .NET, Reporting services and SQL 2005.
+      &lt;br /&gt;
+      &lt;br /&gt;
+      David's clients include:
+      &lt;ul&gt;
+      &lt;li&gt;  &lt;b&gt; QANTAS  &lt;/b&gt;  (Meal Forecasting Application, SQL 2005 processing stored procedures, done through Datacom consulting)&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Zimmer &lt;/b&gt; (&lt;a href="https://eb.zimmer.com/"&gt;https://eb.zimmer.com/&lt;/a&gt;,Hospital Parts ordering, consignment and loanset system based on DB2/AS400 iSeries backend, ASP.NET 2.0 frontend with ComponentArt Controls &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Macquarie Bank (SmartSalary) &lt;/b&gt; (VB6, VB.NET, C# - Salary Packaging Applications) &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Pfizer &lt;/b&gt; (ASP.NET 2.0 Application Audits) &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Maximus International &lt;/b&gt; (ASP.NET 2.0 Application, Nhibernate, SQL Server 2000, Crystal Reports)&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Media Monitors &lt;/b&gt; (Intranet ASP.NET 2.0 - with ComponentArt\AJAX and Visual Basic 6 applications) &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Quicken &lt;/b&gt; (.NET 2.0 and Office COM addins)&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; AT&amp;T &lt;/b&gt; (Marketing Database - Access 2002)&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Optus &lt;/b&gt; (Access)  &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; University Of Technology Sydney &lt;/b&gt; (SQL 2005 and SQL 2005 BI courses presenter) &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Sydney Kitchens &lt;/b&gt; (Winforms .NET 1.1) &lt;/li&gt;
+      &lt;li&gt;  Committed Capital (Sharepoint 2007 /WSS 3.0)&lt;/li&gt;
+      &lt;li&gt;  Multibase (LegalCo and Unifleet ASP.NET Web Applications)  &lt;/li&gt;
+      &lt;li&gt;  Kanes Hire (.NET, Access)&lt;/li&gt;
+      &lt;li&gt;  Laissez Faire Catering (Event database using SQL 2000 Backend) &lt;/li&gt;
+      &lt;li&gt;  The Eastern Heart Clinic (Winforms .NET 2.0)&lt;/li&gt;
+      &lt;li&gt;  Microsoft Consulting Services (SQL Server 2005)&lt;/li&gt;
+      &lt;li&gt;	&lt;a href="http://www.wovenimage.com"&gt;www.wovenimage.com&lt;/a&gt; (Web- Classic ASP) &lt;/li&gt;
+      &lt;li&gt;  WorldSmart (.NET and Architecture Audit	- SmartCard Applications company based in Adelaide)&lt;/li&gt;
+      &lt;li&gt;  AussiePay (ASP.NET Application Audit)&lt;/li&gt;
+      &lt;li&gt;  Dolman Legal Recruitment (see application screenshots &lt;a href="/ssw/Standards/Rules/RulesToBetterAccessUI.aspx"&gt;here&lt;/a&gt;) (Access) &lt;/li&gt;
+      &lt;li&gt;&lt;a href="http://www.BigBucksTrivia.com"&gt;www.BigBucksTrivia.com&lt;/a&gt; &lt;img src="/ssw/images/leavesite.GIF"&gt; (Gaming Web Site in ASP.NET 2.0) &lt;/li&gt;
+      &lt;li&gt;  System 77 (POS systems) (Winforms .NET 1.1)&lt;/li&gt;
+      &lt;li&gt;  Pisces Communications (Audits of VB6 and Java Swing Applications for Loan Brokers) &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      At SSW, David oversees technical review, design and development on key SSW projects. David develops SSW training course-ware, and has spoken at the Sydney .NET User Group and conducts hands-on training with clients. He also develops internal products such as SSW eXtreme Emails.
+    </description2>
+    <description3bold>
+      David may be contacted at &lt;a href="javascript:sendEmail('44617669644B6C65696E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('44617669644B6C65696E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;DavidKlein&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      His favourite quotes are "Divide and Conquer!" and "If in Doubt, Restart it!"
+      &lt;p&gt;
+
+      &lt;img alt="MCP" src="/SSW/Company/Images/mcp.gif" &gt;
+      &lt;img alt="MCDBA" src="/SSW/Company/Images/mcdba.gif" &gt;
+      &lt;/p&gt;
+
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+    <imagedrawn>Images/DavidKlein_Small.gif</imagedrawn>
+    <imagelarge>Images/DavidKlein_Large.gif</imagelarge>
+
+
+
+  </employee>
+
+  <!-- //_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´ -->
+  <employee>
+    <EmpID>PGG</EmpID>
+    <Surname>Gfader</Surname>
+    <FirstName>Peter</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect&lt;br /&gt; Qualifications: Master of Science (MSc), Computer Sciences at Technical University of Vienna Austria &lt;i&gt;(Diplom Ingenieur, Dipl.Ing. in german)&lt;/i&gt; &lt;br /&gt;
+      &lt;br /&gt;
+    </description>
+    <description2>
+      Peter Gfader is a Senior Software Architect at SSW, a Microsoft Certified Professional specialising in SQL Server .NET Solutions.
+      &lt;br /&gt;
+      &lt;br /&gt;
+      <!-- 
+      Peter's clients include:
+      &lt;ul&gt;
+      &lt;li&gt;  &lt;b&gt; EnergyAustralia  &lt;/b&gt; Field Operating Management System in asp.net dynamic data, sqlserver &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; NRMA &lt;/b&gt; asp.net web application &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; peaksolutions &lt;/b&gt; Upsizing Access97 to Sql Server and .net 3.5 with Training &lt;/li&gt;
+      &lt;/ul&gt; -->
+      &lt;br /&gt;
+      More information about Peter, can be found on his &lt;a href="http://gfader.com/"&gt;personal homepage&lt;/a&gt;. &lt;br /&gt;
+      Check out &lt;a href="http://peitor.blogspot.com/"&gt; Peters blog&lt;/a&gt; for solutions, tips + tricks to common .net troubles
+    </description2>
+    <description3bold>
+      Peter may be contacted at &lt;a href="javascript:sendEmail('7065746572676661646572407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('7065746572676661646572407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;PeterGfader&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      His favourite quote is "Carpe diem, et noctem!"
+      &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;p&gt;
+      &lt;img border="0" src="/SSW/Company/Images/MCPD-windev-rgb_505.jpg"&gt;
+      &lt;img border="0" src="/SSW/Company/Images/MCTS-dotnet-2-windows-apps-rgb_512.jpg"&gt;
+      &lt;img border="0" src="/SSW/Company/Images/MCAD-RGB.gif"&gt;
+      &lt;img border="0" src="/SSW/Company/Images/mcp-rgb.gif"&gt;
+      &lt;/p&gt;
+
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+    <!--<imagedrawn>Images/DavidKlein_Small.gif</imagedrawn>
+    <imagelarge>Images/DavidKlein_Large.gif</imagelarge>-->
+
+
+
+  </employee>
+  <!-- //_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´¯`.¸_¸.·´ -->
+  <employee>
+    <EmpID>GO</EmpID>
+    <Surname>Orr</Surname>
+    <FirstName>Geoff</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Senior Software Architect&lt;br /&gt; Qualifications: B App Sc (Computer Science), MCAD&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Geoff Orr is a Senior Software Architect at SSW, a Microsoft Certified Partner specialising in SQL Server .NET Solutions.
+      Geoff has been a consultant since the 80s in both Europe and Australia.  <p>
+        Key companies Geoff
+        has worked for in the past include:
+        &lt;ul&gt;
+        &lt;li&gt;Microsoft
+        &lt;li&gt;Pollak Partners
+        &lt;li&gt;American Express
+        &lt;li&gt;Forestrun Computers
+        &lt;/ul&gt;
+        &lt;br /&gt;
+      </p>
+      <p>
+        At SSW Geoff oversees database development projects.  Geoff is a speaker and trainer in SQL and development.
+      </p>
+      <p>
+        Geoff is able to drive all aspects of the product lifecycle from a concept through design, development and implementation even to the Business Intelligence
+        reporting at the other end.
+      </p>
+    </description2>
+    <description3bold>
+      Geoff may be contacted at &lt;a href="javascript:sendEmail('67656F66666F7272407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('67656F66666F7272407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;geofforr&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      We love data as it has a story all its own
+
+      &lt;img alt="MCAD" src="/SSW/Company/Images/mcad.gif" &gt;
+
+    </description4>
+
+  </employee>
+
+
+  <employee>
+    <EmpID>MG</EmpID>
+    <Surname>Gildina</Surname>
+    <FirstName>Masha</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Personal Assistant/Marketing Manager&lt;br /&gt; Qualifications: B. Commerce</description>
+    <description2>
+      Masha's role at SSW is as PA and Marketing Manager. Her duties include tending to administration and assisting with the daily duties of Adam and employees. Additionally, her marketing responsibilities range from updating monthly newsletters to organising events and promotions, as well as assisting with sales.
+    </description2>
+    <description3bold>
+      At SSW Masha manages Marketing, Administration, and Sales. She may be contacted at &lt;a href="javascript:sendEmail('4D6173686147696C64696E61407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4D6173686147696C64696E61407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;MashaGildina&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>Her favourite quote is "You've got to stand for something or you'll fall for anything".</description4>
+    <descriptionprofile />
+  </employee>
+
+
+  <employee>
+    <EmpID>CS</EmpID>
+    <Surname>Shaw</Surname>
+    <FirstName>Cameron</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Cameron.aspx</SharePointURL>
+    <description>Position: Account Manager&lt;br /&gt; Qualifications: BA GradDipEd DipFinMar&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>Cameron Shaw is an Account Manager at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Cameron enjoys improving processes within SSW and communication with its clients. Cameron is in charge of Client Relations and manages new business. If you have any requests in regards to what SSW can do for you, send him an email, he guarantees a prompt response and will always follow up.</description2>
+    <description3bold>At SSW Cameron manages project initialisations and contracts. Cameron may be contacted at &lt;a href="mailto:Cameron@s*w.com.au"&gt;Cameron@s*w.com.au&lt;/a&gt;  </description3bold>
+    <description4>His favourite quote is "Before you take a step forward, turn around and see where you've been".</description4>
+    <descriptionprofile />
+    <imagedrawn>Images/CameronShaw_Small.gif</imagedrawn>
+    <imagelarge>Images/CameronShaw_Large.gif</imagelarge>
+    <imagecertification></imagecertification>
+  </employee>
+
+  <employee>
+    <EmpID>CPT</EmpID>
+    <Surname>Townshend</Surname>
+    <FirstName>Cameron</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/CameronT.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect&lt;br /&gt; Qualifications: B Sc (Mathematics), MCP (SQL Server, VB.Net, MS Access, MS Excel, Networking)
+      &lt;br/&gt;
+      &lt;br/&gt;
+
+      &lt;b&gt;"Never ascribe to malice, that which can be explained by incompetence."
+      &lt;br/&gt;--  Napoleon Bonaparte&lt;/b&gt;
+      &lt;br/&gt;
+    </description>
+    <description2>
+      Cameron Townshend is a Senior Software Architect at SSW. A Microsoft Certified Professional
+      specializing in .NET and SQL Server Solutions, Cameron has more than 15 years experience in software
+      development and project management at numerous organizations. Cameron is currently working with
+      ASP.NET 2.0, C#, VB .NET, LINQ, MS WF, SQL Server Analysis Services, SQL Server Reporting Services and
+      SQL Server 2005.
+      Cameron has successfully delivered the following projects. All clients are happy, some we could even consider raving fans.
+      &lt;ul&gt;
+      &lt;p&gt;
+      &lt;/p&gt;
+      &lt;li&gt;
+      Swift Engineering - Project manager and Development Team Leader - Cameron is currently managing the development of a Engineering Management System for SwiftEngineering in Mackay, North Queensland.
+      Built on SQL Server 2005, ASP.Net 3.5, LINQ and Microsoft Workflow(WF).
+      Cameron is both Project Manager and Technical lead, gathering and documenting requirements, developing the architecture and managing a team of 4 developers
+      and 1 web designer. He has also successfully implemented scrum agile methodology which has improved our teams productivity immensely.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;
+      &lt;/p&gt;
+      &lt;b&gt;
+      &lt;a href="http://www.theguide.com.au/"&gt;TheGuide.com.au&lt;/a&gt; - Development Team Leader - Public website.
+      &lt;/b&gt;
+      Developed in SQL Server 2005, Reporting Services, ASP.Net 2.0, C#, NetTiers and nHibernate.
+      &lt;/li&gt;
+      Cameron managed the development of the website. The client wanted to take their very successful Perth based
+      advertising portal national. Key drivers for Cameron in the architecture was to ensure that the site was scalable and reliable yet also simple and easy to use for the end users.
+      Built on SQL Server 2005, ASP.Net 2.0, C#, and net Tiers. Cameron was both Project Manager and Technical lead, gathering and
+      documenting requirements, liasing with the client and managing deliverables and project schedules, developing the architecture and managing 4 developers
+      (including technical client staff) and 1 web designer.
+      &lt;/p&gt;
+      &lt;p&gt;
+      &lt;li&gt;
+      &lt;b&gt;
+      Chubb Australia - Audit - Internal rostering application.
+      &lt;/b&gt;
+      &lt;/li&gt;
+      Cameron performed a review of the ASP.NET/SQL Server 2000 application developed offshore. The client was concerned about the poor perfomance of the application. Cameron
+      uncovered the performance bottlenecks and documented these. He then presented his findings to the CIO with specific plans for targeting the key issues and developed an improvement plan.
+      These plans were then implemented in partnership with the outsource development company with dramatic (orders of magnitude) improvements in performance realised for the application.
+      &lt;li&gt;
+      &lt;b&gt;
+      Toyota Australia - Development Project Manager - Fleet vehicle tracking project.
+      &lt;/b&gt;
+      Developed in SQL Server 2000, Reporting Services, ASP.Net 2.0, and Access
+      &lt;/li&gt;
+      &lt;p&gt;Cameron managed the three year project with a team of 4 developers, 2 testers, 2 documenters, and was team leader of 4 client staff using System Development Life Cycle management method.
+      &lt;p&gt;Managing budget and expenditure, issues, costs, and developing and implementing a Requirements Traceability Matrix, Cameron reported to the head of the Fleet Department Business Unit at Toyota.
+      &lt;p&gt;Successful implementing of the new system helped the Fleet Manager win Fleet Manager of the year in 2005.
+      &lt;/p&gt;
+      &lt;li&gt;
+      &lt;b&gt;
+      Commonwealth Bank - Lead Developer - Vostro Billing System
+      &lt;/b&gt;
+      &lt;/li&gt;
+      &lt;p&gt;
+      Cameron was the lead developer in this 6 month project, Worldwide Interbank Payment system between international banks.
+      &lt;/p&gt;
+      &lt;li&gt;
+      &lt;b&gt;
+      NSW Health - System Architect - Business Intelligence Dashboard Pilot Project
+      &lt;/b&gt;
+      &lt;/li&gt;
+      &lt;p&gt;
+      Cameron managed architecture design on this 3 month project, liaising with the Business Scorecard Manager, implementing a SQL Server 2005, Analysis Services and Reporting Services solution. The architecture was handed on to a development team for completion.
+      &lt;/p&gt;
+
+      &lt;li&gt;
+      &lt;b&gt;
+      Oznet Security - Project Manager - Sales tracking system
+      &lt;/b&gt;
+      &lt;/li&gt;
+      &lt;p&gt;
+      Cameron managed a team of 3 developers on this 12 month project, reporting to the CEO of Oznet. The project was developed in Microsoft SQL Server 2000 and VB6.
+      &lt;/p&gt;
+      &lt;li&gt;
+      &lt;b&gt;
+      NSW Cancer Council - Testing Team Leader - Cancer Registry system
+      &lt;/b&gt;
+      &lt;/li&gt;
+      &lt;p&gt;
+      Cameron was Testing Team Leader on this project, managing a team of 4 testers, creating and managing test cases, and reporting progress directly to the client.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+      &lt;li&gt;
+      &lt;b&gt;
+      Other clients - Pfizer, University of NSW, LSI, Newton Fisher, MAC Australia, Honeywell Australia, NSW Health.
+      &lt;/b&gt;
+      &lt;/li&gt;
+      &lt;/br&gt;
+      At SSW, Cameron oversees project reviews and architecture, design and development on key SSW projects. Cameron speaks at the Sydney .NET User Group.
+      &lt;/p&gt;
+
+      &lt;li&gt;In his spare time Cameron has been known to play a little rugby
+      &lt;img src="http://members.optusnet.com.au/~ctownshend/mainpic.jpg"&gt;
+      &lt;p&gt;Cameron is front row 4th from the left.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+    </description2>
+    <description3bold>
+      Cameron may be contacted at &lt;a href="javascript:sendEmail('43616D65726F6E546F776E7368656E64407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('43616D65726F6E546F776E7368656E64407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;CameronTownshend&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      &lt;p&gt;
+
+      &lt;img alt="MCP" src="/SSW/Company/Images/mcp.gif" &gt;
+      &lt;/p&gt;
+
+
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+
+
+
+  </employee>
+
+  <employee>
+    <EmpID>JRT</EmpID>
+    <FirstName>Jonny</FirstName>
+    <Surname>Trees</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Jonny.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect &lt;br /&gt; Qualifications: BSc (Software Engineering) Hons. Durham University&lt;br /&gt;
+    </description>
+    <description2>
+      Jonny Trees is a Senior Software Architect at SSW, a Microsoft Certified Gold Partner specializing in database driven .NET Solutions.
+      Jonny specializes in building ASP.NET web applications with SQL Server backends, Microsoft Dynamics CRM solutions and SharePoint 2007.
+      &lt;br/&gt;
+      &lt;br/&gt;
+      Jonny's clients include:
+      &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt; Microsoft Australia&lt;/b&gt;  Project Manager for the implementation of the <a href="http://www.microsoftsharepoint.com">Microsoft SharePoint Forum 2008</a>.  The site built in SharePoint 2007 takes advantage of many of SharePoint's web publishing features and includes the use of JQuery for improved UI experience and Live maps integration.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; Caltex Australia&lt;/b&gt;  Training employees in C# .Net, Ajax and Reporting Services.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; WorleyParsons&lt;/b&gt;  The creation of WorleyParsons new public facing website using SharePoint 2007.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; Estate Master&lt;/b&gt;  Maintenance and development of a .Net 2.0 application built around Sales Force integration.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; SDN&lt;/b&gt;  Project Management of a Microsoft Dynamics CRM 4.0 project, creating a platform to manage the placement of children into childcare.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; University of Technology Sydney&lt;/b&gt;  Running the Introduction to .Net Web Development course for students at UTS.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; Pfizer&lt;/b&gt;  Conversion of a paper and spreadsheet based product returns system into a C# .Net 3.5 solution using Visual Studio 2008, Linq and a custom built workflow engine.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; Westbus&lt;/b&gt;  Maintenance and development of a C# .Net 1.1 application using DataSets and Crystal Reports
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; Fill My Truck&lt;/b&gt;  An online trading system for the transport industry - C# .Net 2.0 and SQL Server. Migration from an Access DB to SQL Server.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; The Dialog Group&lt;/b&gt;  Building internal systems for the company - C# .Net 1.1, SQL Server, Web Services, Reporting Services and Ultimus
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt; Peace Direct UK&lt;/b&gt;  Creation of a system to allow monitoring of street fundraising, and to automate Direct Debit donation claims using BACS - C# .Net 1.1, SQL Server, SQL Reporting Services, Web Services
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      Outside of work, Jonny loves travelling, music, sport and cooking.  He currently plays guitar and harmonica, and is learning piano.  To date his travels have led him across Europe, South America and Africa.
+    </description2>
+    <description4>
+
+      &lt;p&gt;
+      His favourite saying is "Where there's muck there's brass."
+      &lt;/p&gt;
+      Jonny may be contacted at &lt;a href="javascript:sendEmail('6A6F6E6E797472656573407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('6A6F6E6E797472656573407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JonnyTrees&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+
+
+
+  <employee>
+    <EmpID>AH</EmpID>
+    <Surname>Helal</Surname>
+    <FirstName>Adel</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect&lt;br /&gt;
+      Qualifications: B of Computer Science (Software Engineering)&lt;br /&gt;
+      Diploma in Electrical Engineering - Electrical Technology&lt;br /&gt;&lt;br /&gt;
+    </description>
+    <description2>
+      Adel Helal has been working with SSW for over two years and since that time has worked on some exciting projects.&lt;br /&gt;
+      These include the following:&lt;br /&gt;&lt;br /&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      The &lt;b&gt;Commonwealth Bank&lt;/b&gt;'s &lt;i&gt;CommTrack&lt;/i&gt;.&lt;br /&gt;
+      An intranet website used to capture user's activities, manage demands and work-in-progress.
+      &lt;/li&gt;
+      &lt;li&gt;
+      The &lt;b&gt;Commonwealth Bank&lt;/b&gt;'s supporting intranet website &lt;i&gt;MIS Toolbox&lt;/i&gt;.&lt;br /&gt;
+      Used to manage their Budget, Forecast and Baseline expectations.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Lavender&lt;/b&gt;'s public website and CMS &lt;i&gt;PfastTrack&lt;/i&gt;.&lt;br /&gt;
+      Implemented for &lt;b&gt;Pfizer&lt;/b&gt;, this application deals with Education Modules for Pharmacies.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Hills Transport&lt;/b&gt;'s secure website and windows application &lt;i&gt;T2&lt;/i&gt;.&lt;br /&gt;
+      Deals with Point of Delivery, scanning Consignment notes and Barcode reading.
+      &lt;/li&gt;
+      &lt;li&gt;
+      Our biggest internal application &lt;i&gt;TimePRO.NET&lt;/i&gt; which is an integrated database application used for time sheeting.&lt;br /&gt;
+      It supports both direct database connection and web service.
+      &lt;/li&gt;
+      &lt;li&gt;
+      Adel is also responsible for the wise installation scripts and the build scripts that help us deploy all our products.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      He has experience in developing Multi-Tier Client-Server systems with the following related technologies: C# and VB.NET; ASP, ASP.NET and ASP.NET 2.0; SQL Server 2000 and SQL Server 2005; Web Services; Windows Forms; Windows Communication Foundation (WCF); as well as Scripting Languages for Systems Programming.&lt;br /&gt;&lt;br /&gt;
+      He has discovered his love for debugging and can't remember his life before it&lt;a href="employeesprofile.aspx?empID=AH"&gt;.&lt;/a&gt;
+    </description2>
+    <description3bold>
+      Adel may be contacted at &lt;a href="javascript:sendEmail('4164656C48656C616C407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4164656C48656C616C407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;AdelHelal&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>His favourite quotes are:&lt;br /&gt;"Success is not the position you stand, but the direction in which you look."&lt;br /&gt;"Contentment is not the fulfillment of what you want, it is the realization of how much you already have."</description4>
+    <imagelarge>Images/Adel.jpg</imagelarge>
+    <imagedrawn>Images/AdelHelal_Small.jpg</imagedrawn>
+
+    <!--imagecertification>/SSW/Company/Images/mcp.gif</imagecertification-->
+  </employee>
+
+  <employee>
+    <EmpID>SB</EmpID>
+    <Surname>Belle</Surname>
+    <FirstName>Sophie</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: PR Manager</description>
+    <description2>Sophie Belle is the PR manager and the friendly face of SSW. She has had over 5 years' experience in human relations at a number of high-profile firms. Her passion is helping SSW provide a professional, personal and friendly service to all of our valuable customers. Sophie is often out of the office seeking ways to improve SSW's services. Sophie loves to read and her favourite books are "A Brief History of Time", "War and Peace" and books on "The Theory of Relativity". Sophie also aspires to be a chess Grandmaster in the future.</description2>
+    <description3bold>
+      At SSW Sophie looks after the needs of our customers and end-users, and keeps everyone in the office happy. She may be contacted at &lt;a href="javascript:sendEmail('536F7068696542656C6C65407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('536F7068696542656C6C65407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;SophieBelle&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>Her favourite quote is "The successful person has the habit of doing things that the failures don't like to do".</description4>
+    <descriptionprofile>&lt;center&gt;&lt;img src="/ssw/Employees/images/SophieBelle/YoungSmall.gif"&gt;&lt;/center&gt;</descriptionprofile>
+  </employee>
+
+  <!--employee>
+		<EmpID>RG</EmpID>
+		<Surname>Gardiner</Surname>
+		<FirstName>Rebecca</FirstName>
+		<description>Position: Administration and Marketing Manager&lt;br /&gt; Qualifications: BIT, Dip. Software Development</description>
+		<description2>Rebecca Gardiner is the Administration and Marketing Manager at SSW, a Microsoft Certified Partner specialising in .NET Solutions.  At SSW Rebecca is in 
+			charge of our marketing, sales and events promotion. From design to implementation, she leads SSW's marketing efforts by creating 
+			and implementing direct mail campaigns, outbound telemarketing campaigns and events promotion (promoting and organising our tech 
+			breakfasts and conferences) and is also in charge of our product sales for Australia and New Zealand.
+ 			If you have any requests in regards to what SSW can do for you, send her an email, she guarantees a prompt response and will 
+			always follow up.
+    </description2>
+		<description3bold>At SSW Rebecca manages sales, marketing, and Adam. She may be contacted at
+    	&lt;a href="mailto:RebeccaGardiner@s*w.com.au"&gt;RebeccaGardiner@s*w.com.au&lt;/a&gt;</description3bold>
+		<description4>Her favourite quote is "Life's too short".</description4>
+		<descriptionprofile />
+		<imagecertification>/SSW/Images/Microsoft/mous.gif</imagecertification>
+	</employee!-->
+
+  <!--employee>
+		<EmpID>SF</EmpID>
+		<Surname>Fletcher</Surname>
+		<FirstName>Scott</FirstName>
+		<description>Position: Marketing Manager&lt;br /&gt; Qualifications: B.Sc, Information Technology and Commercial Law</description>
+		<description2>Scott is the Marketing Manager at SSW, a Microsoft Certified Partner specialising in .NET Solutions.  At SSW Scott 
+			is in charge of our marketing and Administration with Rebecca. He helps with product support and co-ordinating bug fixes. 
+			Scott helps with new clients and puts people in touch with the right developer for the job. if you would like to know about any of SSW's 
+			products, then contact Scott or send him an email, he guarantees a prompt response and will always follow up.
+    </description2>
+		<description3bold>At SSW Scott manages Marketing, new business, and business development. He may be contacted at
+    	&lt;a href="mailto:ScottFletcher@s*w.com.au"&gt;ScottFletcher@s*w.com.au&lt;/a&gt;</description3bold>
+		<description4>His favourite quote is "Keep it Real".</description4>
+		<descriptionprofile />
+		<imagecertification>/SSW/Images/Microsoft/mous.gif</imagecertification>
+	</employee!-->
+
+
+
+  <employee>
+    <EmpID>JL</EmpID>
+    <Surname>Liu</Surname>
+    <FirstName>John</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/John.aspx</SharePointURL>
+    <description>Position: Senior Software Architect&lt;br /&gt; Qualifications: B CSc&lt;br /&gt; &lt;br /&gt;John Liu is a Software Architect at SSW, a Microsoft Certified Partner specialising in .NET and SharePoint solutions. John is responsible for developing and maintaining ASP.NET and WinForm applications using C#, ASP, Access, SQL Server and Exchange Server. John is the lead developer on SSW's Outlook COM add-in - &lt;a href="/ssw/LookOut"&gt;LookOut&lt;/a&gt;. </description>
+    <description2>His major clients over the past years has been Scolari ClubsInc (C# windows application/Access), Smart Salary (VB.NET windows application upgrade/SQL Server), Commonwealth Bank (ASP.NET/SQL Server), WorleyParsons (SharePoint) and Microsoft (SharePoint)</description2>
+    <description3bold />
+    <description4>He reminds himself that "There are always more than one point of view". &lt;p&gt;John may be contacted at &lt;a href="mailto:JohnLiu@s*w.com.au"&gt;JohnLiu@s*w.com.au&lt;/a&gt;  </description4>
+    <descriptionprofile />
+    <imagedrawn>images/JohnLiu_Small.gif</imagedrawn>
+    <imagelarge>images/JohnLiu_Small.gif</imagelarge>
+  </employee>
+  <employee>
+    <EmpID>RD</EmpID>
+    <Surname>Donald</Surname>
+    <FirstName>Ross</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Senior Software Architect&lt;br /&gt; Qualifications: Dip IT, MCP&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Ross Donald is a Senior Software Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Ross has worked on a large range of applications for SME's and large corporations such as Cap Gemini Ernst &amp; Young and Media Monitors.&lt;br /&gt; &lt;br /&gt;Ross is the lead developer on &lt;a href="/ssw/sqlAuditor" target="_blank" &gt;SSW SQL Auditor&lt;/a&gt; and now specialises in VB .NET, Microsoft Office Development and SQL Server. In his spare time, Ross enjoys swimming, reading and skateboarding. Recently, he has also been working on a &lt;a href="/ssw/redirect/RADNextGeneration.htm"&gt;.NET code generator&lt;/a&gt; to make programmers work a bit easier. Ross still reminds SSW that in July 1997, Ross won first prize in a competition conducted by the Microsoft Access Group, Sydney for third party utilities for Access. His product was an Access comparision tool which became SSW's Data Renovator.&lt;br/&gt;&lt;br/&gt;
+      Be sure to check out Ross' &lt;a href="/ssw/redirect/DevNewsGroups.htm"&gt;news resource for developers&lt;/a&gt;
+    </description2>
+    <description3bold>
+      Ross may be contacted at &lt;a href="javascript:sendEmail('526F7373446F6E616C64407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('526F7373446F6E616C64407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;RossDonald&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      His favourite quote is "The time is now".
+    </description4>
+    <descriptionprofile />
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    <imagedrawn>images/RossDonald_Small.gif</imagedrawn>
+    <imagelarge>images/RossDonald_Large.gif</imagelarge>
+  </employee>
+  <employee>
+    <EmpID>NR</EmpID>
+    <Surname>Roodyn</Surname>
+    <FirstName>Neil</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Associate and Trainer&lt;br> Qualifications: PhD&lt;br>&lt;br></description>
+    <description2>
+      Neil Roodyn is an Associate and Trainer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Neil has been travelling the world helping software companies become more productive. Over the last couple of decades Neil has worked with a variety of companies including:
+      &lt;ul&gt;
+      &lt;li&gt;Synon&lt;li&gt;Updata&lt;li&gt;NASDAQ Europe&lt;li&gt;ComputaCenter&lt;li&gt;SLK&lt;li&gt;Object Training&lt;li&gt;Citect&lt;/ul&gt;&lt;br /&gt; Neil has also been involved in the formation of several software start-ups. Neil brings his business and technical skills to the companies he works with to ensure he has happy customers. &lt;br> &lt;br> Neil started teaching C++ in the early 1990's. Then in 1995 getting to grips with the details of COM and travelling around Europe teaching and mentoring development teams. Since 1999 Neil has been involved with the agile development movement, especially eXtreme Programming, which he has been using to help teams get more productive. In the last 2 years Neil has been leading the push to .NET, by running several .NET projects and teaching .NET courses. Neil studied Software Architectures for Real Time Systems at University College London, for which he received a PhD. &lt;br> &lt;br> Neil also heads up the &lt;a href="/SSW/Redirect/SyXPAC.htm" target="blank" >Sydney eXtreme Programming Activity Club (SyXPAC)&lt;/a>
+    </description2>
+    <description3bold>At SSW Neil provides architecture and training services.</description3bold>
+    <description4>His favourite quote is "Only back a winner".</description4>
+    <descriptionprofile/>
+    <imagedrawn>images/NeilRoodyn_Small.gif</imagedrawn>
+    <imagelarge>Images/NeilRoodyn_Large.gif</imagelarge>
+
+    <imagecertification/>
+  </employee>
+  <employee>
+    <EmpID>ST</EmpID>
+    <Surname>Tchernykh</Surname>
+    <FirstName>Sergei</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Sergei.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect&lt;br /&gt; He is also a Microsoft Certified Technology Specialist (MCTS) in SQL Server 2005 and a Microsoft Certified Database
+
+      Administrator (MCDBA). &lt;br /&gt;Qualifications: Master of Science &lt;br /&gt; &lt;br /&gt;
+    </description>
+    <description2>
+      Sergei Tchernykh is a Senior Software Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions. He worked as a software engineer in the University of
+
+      Newcastle. Sergei's main areas of expertise are in Microsoft technologies such as SQL Server 2005, SQL Server 2000, ASP.NET, C++, VB.NET, C#, Business Intelligence, Access and Business Objects XI
+
+      (Crystal Reports) and he is the product manager on SSW Upsizing PRO. His experience spans from database design to performance tuning.
+      He worked for clients such as:
+      &lt;ul&gt;&lt;li&gt; &lt;b&gt;  Bradman corporation &lt;/b&gt;(ASP, SQL Server 2000)  &lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; Leading Australian insurer VERO  &lt;/b&gt;(ASP.NET, C#, SQL Server 2000, Access 2003 Data Project) &lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; Count Financial &lt;/b&gt;(SQL Server 2000 - merge replication, performance tuning, production dba duties)&lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; Phonak(Australia) &lt;/b&gt; (ASP.NET, C#, SQL Server 2000, Reporting Services 2000, DTS)  &lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; Maximus International &lt;/b&gt; (Business Objects XI, SQL Server 2000)  &lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; PowerTel &lt;/b&gt; (SQL Server 2000, Access 2003 Data Project)  &lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; HCF &lt;/b&gt; (SQL Server 2000/2005 Upsizing training session)  &lt;/li&gt;
+      &lt;li&gt; &lt;b&gt; UTS(Sydney) &lt;/b&gt;  Lectures on SQL Server 2005 Business Intelligence and Full-Text Search &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; McDonalds Asia Pacific Consortium P/L&lt;/b&gt;  Meat Inventory and Logistics System - Upsize to SQL Server 2005, Access frontend and Migrate Crystal
+
+      to Reporting Services 2005, SSIS &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; QANTAS  &lt;/b&gt;  (Meal Forecasting Application, SQL 2005 processing stored procedures, done through Datacom consulting)&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; NRMA  &lt;/b&gt;  Project Application &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; DEVI Floor Heat  &lt;/b&gt;  (SQl Server 2000 financial application) &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt;  Gadens Lawyers (Sydney) &lt;/b&gt; (SQL Server 2005 Reporting Services training session)  &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt;  Sparke Helmore (Sydney) &lt;/b&gt; (SQL Server 2005 Reporting Services training session, Reporting services scale-out and scale-in configuration)  &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt;  Commonwealth Bank (Sydney) &lt;/b&gt; (Valuer Search application, HR application)  &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt;  Department of Education and Science (Canberra) &lt;/b&gt; (SQL Server 2005 Reporting Services training session)  &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt;  Rice Daubney (Sydney) &lt;/b&gt; (CAD application)  &lt;/li&gt;
+      &lt;/ul&gt;&lt;br /&gt;
+
+      At present, his interests are focused on SQL Server 2000/2005 configuration, performance tuning of financial calculations and .NET. When Sergei is not developing business
+
+      solutions he enjoys reading Microsoft white papers and spending time with family and friends.
+    </description2>
+    <description3bold />
+    <description4>
+      &lt;p&gt; His favourite quote is "There is always room at the top".
+      &lt;p&gt;
+      Sergei may be contacted at &lt;a href="javascript:sendEmail('53657267656954636865726E796B68407373772E636F6D2E6175')"
+
+      onmouseover="javascript:displayStatus('53657267656954636865726E796B68407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;SergeiTchernykh&lt;img
+
+      onmouseover="src='/ssw/images/sswlogo/email/infored_atOnlyBold.gif';" onmouseout="src='/ssw/images/sswlogo/email/infoblue_atOnlyBold.gif';" src="/ssw/images/sswlogo/email/infoblue_atOnlyBold.gif"
+
+      class="email" alt="email"/&gt;
+
+      &lt;br /&gt;
+      <!--&lt;img alt="MCTS" src="/SSW/Company/Images/mcts.gif" &gt;
+			&lt;img alt="MCDBA" src="/SSW/Company/Images/mcdba.gif" &gt;
+			&lt;img alt="MCP" src="/SSW/Company/Images/mcp.gif" &gt;-->
+
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/SergeiTchernykh_Small.gif</imagedrawn>
+    <imagelarge>Images/SergeiTchernykh_Large.gif</imagelarge>
+    <imagecertification>/SSW/Company/Images/mcitp.gif</imagecertification>
+  </employee>
+  <employee>
+    <EmpID>PA</EmpID>
+    <Surname>Ahn</Surname>
+    <FirstName>Peter</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Software Architect&lt;br /&gt; Qualifications: Dip IT, MCP</description>
+    <description2>
+      Peter Ahn is a Software Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Peter has extensive experience in Microsoft with more than 7 years in Information Technology . Peter specialises in Web Database development including ASP, ASP.NET, ASP.NET 2, VB.NET, C#.NET, XML, MS SQL Server (including version 7, 2000, 2005), MS Access, HTML, Java Script, Reporting Services, Data Cubes, Web Services, and COM+.&lt;br /&gt; &lt;br /&gt;He has been undertaking work for a variety of web development and database enterprises including: &lt;ul&gt;&lt;li&gt;Smart Salary Reimbursement Manager (RemMan) Windows Application (VB.NET, SQL
+      Server)&lt;li&gt;Cisco web wite (ASP, MS Access)&lt;li&gt;SportsBiz web site (ASP, MS
+      Access)&lt;li&gt;DesignHome web project (ASP, SQL Server)&lt;li&gt; SGW Forum web site
+      (ASP, MS Access)&lt;li&gt;AcademyTiles web site (ASP, MS Access)&lt;li&gt;FRDC Web Application
+      (ASP.NET, SQL Server, SSW AccessReporter)&lt;li&gt;Commonwealth Bank Asset Modelling System Intranet Project (SQL Server, ASP, Javascript, RDO)&lt;li&gt;Get247 (&lt;span style="font-size: 11pt;
+      font-family: Arial; mso-fareast-font-family: SimSun; mso-ansi-language: EN-US;
+      mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"&gt;ASP.NET 1, MS SQL Server
+      2000, IIS, C#)&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt; Web Application for Vodafone dealer (ASP.NET, SQL Server, Bar Code System)&lt;li&gt;Web Application for Vodafone call center (ASP.NET, SQL Server)&lt;li&gt;Media Monitors Target Web Site and Data migration project (ASP.NET 2, SQL Server, ComponentArt,
+      AJAX)&lt;li&gt;Lavender SQL Reporting Services Report Project (ASP.NET 2, SQL Server,
+      SQL Reporting Service, Kentico)&lt;li&gt;Sydney Kitchen web site (ASP.NET 2, SQL Server)&lt;/li&gt;
+      &lt;li&gt;Umetrad Auction web site (ASP.NET, SQL Server)&lt;/li&gt;
+      &lt;li&gt;EvansNet Database Migration (MS Access to SQL Server 2005)&lt;/li&gt;
+      &lt;li&gt;  Pisces Communications (Audits of VB6 and Java web Applications for Loan Brokers) &lt;/li&gt;
+      &lt;li&gt;Lane Cove Motorway Transtoll (XML, ASP.NET, C#, Web Service)&lt;/li&gt;
+      &lt;/ul&gt;
+
+
+
+      &lt;br /&gt;
+    </description2>
+    <description3bold />
+    <description4>
+      &lt;p&gt; His favourite quote is "A wise man will make more opportunities than he finds."&lt;/p&gt;
+      Peter may be contacted at &lt;a href="javascript:sendEmail('506574657241686E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('506574657241686E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;PeterAhn&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+      &lt;br /&gt;
+      &lt;img alt="MCP" src="/SSW/Company/Images/mcp.gif" &gt;
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/PeterAhn_Small.gif</imagedrawn>
+    <imagelarge>Images/PeterAhn_Large.gif</imagelarge>
+    <imagecertification></imagecertification>
+  </employee>
+
+
+
+  <employee>
+    <EmpID>GD</EmpID>
+    <Surname>Doubinski</Surname>
+    <FirstName>George</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/GeorgeD.aspx</SharePointURL>
+    <description>Position: Architectural Consultant&lt;br /&gt; &lt;br /&gt; Qualifications: Masters of Science&lt;br /&gt;</description>
+    <description2>George lends SSW his expertise as an Architectural Consultant, especially in the area of CRM.</description2>
+    <description3bold>
+      George may be contacted at &lt;a href="javascript:sendEmail('47656F726765446F7562696E736B69407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('47656F726765446F7562696E736B69407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;GeorgeDoubinski&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      George has a total of 17 years experience in architecting, designing, developing and deploying enterprise IT solutions. Systems he has worked on include project management
+      and leadership, system administration, technical consulting and troubleshooting.
+    </description4>
+    <descriptionprofile/>
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+  </employee>
+
+
+  <employee>
+    <EmpID>DH</EmpID>
+    <Surname>Hyles</Surname>
+    <FirstName>Daniel</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DanielH.aspx</SharePointURL>
+    <description>
+      &lt;p&gt;
+      Position: Senior Software Architect&lt;br /&gt;
+      Qualifications: Dip IT MCP
+    </description>
+    <description2>
+      &lt;/p&gt;
+      &lt;p&gt;Daniel Hyles is a Senior Software Architect at SSW, a Microsoft Certified Partner specialising in SQL Server .NET Solutions.
+      Although specialising in Web E-commerce solutions, Daniel has extensive experience in Microsoft both pre and post .NET and loves working with C#, VB .NET, SQL Server and applications for PDA's/smartphones.&lt;br /&gt;
+      Daniel also helps many clients and SSW with network administration. Daniel helps develop internal products such as SSW Access Reporter. &lt;/p&gt;
+      &lt;p&gt;Some recent clients include:&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Estate Master&lt;/strong&gt; &lt;span class="style1"&gt;(&lt;a href="http://www.estatemaster.net/"&gt;www.estatemaster.net&lt;/a&gt;, ASP.NET 2.0 Application, VB.NET Application, SQL Server 2000, Web Services, MS Access)&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Westbus&lt;/strong&gt; &lt;span class="style1"&gt;(Data collaboration into SQL from many systems. Reporting, OLAP, ASP.NET Intranet applications) &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Sortstec&lt;/strong&gt; &lt;span class="style1"&gt;(&lt;a href="/ssw/redirect/sportstec.htm"&gt;www.sportstec.com&lt;/a&gt;, C# PDA Application, ASP.NET Application, Web Services) &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Quicken&lt;/strong&gt; &lt;span class="style1"&gt;(Microsoft Work Smart Tag plug-in) &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Toyota&lt;/strong&gt; &lt;span class="style1"&gt;(Upsize Access application to SQL, DTS) &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Colonial First State&lt;/strong&gt; &lt;span class="style1"&gt;(ASP, SQL, Intranet application) &lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Bradcorp&lt;/strong&gt; &lt;span class="style1"&gt;(Migration from Exchange 5.5, Network Admin, ASP.NET) &lt;/span&gt;&lt;/li&gt;
+    </description2>
+    <description4>
+      His favourite quote is "Share your knowledge. It's the way to achieve immortality". &lt;br/&gt;&lt;br/&gt;Daniel may be contacted at &lt;a href="javascript:sendEmail('44616E69656C48796C6573407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('44616E69656C48796C6573407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;DanielHyles&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <imagedrawn>Images/DanielHyles_Large.gif</imagedrawn>
+    <imagelarge>Images/DanielHyles_Large.gif</imagelarge>
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+  </employee>
+
+  <!--employee>
+		<EmpID>PH</EmpID>
+		<FirstName>Peter</FirstName>
+		<Surname>Huang</Surname>
+		<description>
+		Position: Senior Software Developer&lt;br /&gt; 
+		Degree(s): B Eng M Com (final year)&lt;br /&gt;&lt;br /&gt; 
+		Peter Huang is a Senior Software Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. 
+		Peter specialises in application architecture, C#, VB.NET, T-SQL. Peters clients include the Department of Human Services, Woven Image and 
+		Royal &amp; Sun Alliance. At SSW he is Program Manager of both SSW Reminder Manager (a cutting edge application built on the Microsoft SQL 
+		Notification Services) and SSW Code Auditor. Peter presents frequently at the .NET Users Group on .NET technologies.
+	    </description>
+		<description4>His favourite quote is "Type fast, think quicker".&lt;p&gt;Peter may be contacted at &lt;a href="mailto:PeterHuang@s*w.com.au"&gt;PeterHuang@s*w.com.au&lt;/a&gt;  &lt;a style=&quot;display: none&quot; href=&quot;/ssw/redirect/Phuang.htm&quot;&gt;Peter Huang&lt;/a&gt;</description4>
+		<descriptionprofile />
+		<imagedrawn>images/PeterHuang_Small.gif</imagedrawn>
+		<imagelarge>images/PeterHuang_Large.gif</imagelarge>
+	</employee-->
+
+  <!--
+	<employee>
+		<EmpID>AW</EmpID>
+		<Surname>Weaver</Surname>
+		<FirstName>Andrew</FirstName>
+		<description>
+			&lt;p&gt; Position: Software Architect&lt;/p&gt;
+			&lt;p&gt; Qualifications: B.C.S.T.(hons) - Computer Science and Technology &lt;/p&gt;
+		</description>
+		<description2>
+			&lt;p&gt;
+			Andrew is a Software Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions. He is a keen .NET developer,
+			having developed several windows and web-based .NET applications in C# and VB.NET.  He stumbled into programming while in university and
+			found that he liked the challenge of "nutting things out" and then never looked back from the impending career in IT. While at uni,
+			Andrew tutored a number of courses including introductions to software design and practice, user interface design,
+			and computer system organisation. Andrew has been involved in one of our latest products -
+			&lt;a href="/ssw/exchangereporter" target="_blank" &gt;SSW Exchange Reporter&lt;/a&gt; as well as helping develop many SSW training courses.
+			He has developed a strong expertise in ASP.NET projects, Reporting Services and SQL databases.
+			&lt;p&gt;Andrew's clients include:&lt;/p&gt;
+			&lt;ul&gt;
+			&lt;li&gt;
+			&lt;b&gt;Commonwealth Bank's CommTrack Application.&lt;/b&gt; A time tracking application used to capture activities of a user, and
+			demands and work in progress of a team.&lt;br /&gt;
+			Related Technology: C#, VB.NET, Web Services, Javascripts, ASP.NET 1.1 and SQL Server 2000.
+			&lt;/li&gt;
+			&lt;li&gt;
+			&lt;b&gt;Suntory Cocktail Menu Builder.&lt;/b&gt; A Windows Form application that creates a pdf menu based on designer templates.&lt;br /&gt;
+			Related Technology: C#, Windows Form, ClickOnce and SQL Server 2000 with replication.
+			&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;p&gt;
+			Andrew's internal projects:
+			&lt;/p&gt;
+			&lt;ul&gt;
+			&lt;li&gt;
+			&lt;b&gt;Microsoft CRM Deployment&lt;/b&gt; Involved extensive customisation, data migration, and synchronisation with the existing corporate databases&lt;br /&gt;
+			Related Technology: C#, Web Services, Exchange 2003, SQL Server 2005 and SSIS.
+			&lt;/li&gt;&lt;li&gt;
+			&lt;b&gt;SSW Time PRO .NET.&lt;/b&gt; Time sheeting application that supports both direct database connection and Web Services.&lt;br /&gt;
+			Related Technology: C#, VB.NET, Windows Form, Web Service, Windows Communication Foundation and SQL Server 2005.
+			&lt;/li&gt;
+			&lt;li&gt;
+			&lt;b&gt;SSW Code Auditor.&lt;/b&gt; A powerful code auditing engine that support multiple rule types (such as Regular Expressions, wild cards,
+			and code snippets) and multiple target types (such as Visual Studio projects, Mirosoft Access Project, and website outputs)&lt;br /&gt;
+			Related Technology: C#, Windows Form, Regular Expression, XML, XSL and Microsoft Access database
+			&lt;/li&gt;
+			&lt;li&gt;
+			&lt;b&gt;SSW Exchange Reporter.&lt;/b&gt; A reporting tool used to efficiently analyze an organization's email usage. Built in Exchange,
+			using SQL Server Reporting Services, reports range from who is sending the most emails, to who has the largest mailbox.
+			&lt;br /&gt;
+			Related Technology: C#, Windows Form, SQL Server 2005, Reporting Services 2005, and Exchange 2003
+			&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;p&gt;
+			While not at work Andrew, is a keen surfer, rock climber, and skier. He spends most of his spare
+			time down at the beach.
+			&lt;/p&gt;
+		</description2>
+		<description3bold></description3bold>
+		<description4>
+			&lt;p&gt;
+			His favourite quote is "What the mind can perceive, the hand can build".
+			&lt;/p&gt;
+			&lt;br /&gt;
+			Andrew may be contacted at &lt;a href="javascript:sendEmail('616E64726577776561766572407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('616E64726577776561766572407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;AndrewWeaver&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+		</description4>
+		<imagelarge>images/AndrewWeaver_large.gif</imagelarge>
+		<imagedrawn>images/AndrewWeaver_Small.gif</imagedrawn>
+		<blogname>AndrewWeaver</blogname>
+	</employee>
+-->
+
+  <employee>
+    <EmpID>JV</EmpID>
+    <Surname>Valabjee</Surname>
+    <FirstName>Jatin</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/JatinV.aspx</SharePointURL>
+    <description>Position: Design Production Manager&lt;br /&gt; Qualifications: B.Sc.(Comp)&lt;br /&gt;</description>
+    <description2>Jatin Valabjee is a design production manager at SSW, a Microsoft Certified Partner specialising in .NET Solutions. He has extensive industrial experience developing Microsoft solutions. Jatin leads our graphics team to design modern and useable Windows and Web applications for our suite of products and for our clients.</description2>
+    <description3bold />
+    <description4>
+      His favourite quote is "Don't sweat the small stuff". &lt;br/&gt; &lt;br/&gt; Jatin may be contacted at &lt;a href="javascript:sendEmail('4A6174696E56616C61626A6565407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A6174696E56616C61626A6565407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JatinValabjee&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+
+    <imagelarge>images/JatinValabjee_large.gif</imagelarge>
+    <imagedrawn>images/JatinValabjee_small.gif</imagedrawn>
+
+  </employee>
+
+  <employee>
+    <EmpID>TKK</EmpID>
+    <Surname>Kurniawan</Surname>
+    <FirstName>Tristan</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Tristan.aspx</SharePointURL>
+    <description>Position: Senior Web Designer&lt;br /&gt; Qualifications: Bachelor of Information Technology&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Trainer, blogger and presenter, Tristan Kurniawan has dedicated himself to web interface development for over 7 years and is a pioneer in User eXperience (UX). Tristan has extensive experience of intranet, extranet, ecommerce content management and general internet applications by merging his concept development and design experience with rich media and CSS design. His commitment to web standards development benefits our clients with consistent and efficient code that is easy to maintain. We also think Tristan is the best skinner in Australia for DotNetNuke pages.
+    </description2>
+    <description4>
+      Tristan's clients include: &lt;br /&gt;&lt;br /&gt;
+      &lt;ul&gt;
+      &lt;li&gt;NineMSN&lt;/li&gt;
+      &lt;li&gt;Zimmer&lt;/li&gt;
+      &lt;li&gt;CeBIT Australia&lt;/li&gt;
+      &lt;li&gt;Audi&lt;/li&gt;
+      &lt;li&gt;The Guide&lt;/li&gt;
+      &lt;li&gt;NSW Department of Education&lt;/li&gt;
+      &lt;li&gt;Unicef&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;&lt;br /&gt;Tristan can be contacted at &lt;a href="javascript:sendEmail('5472697374616E4B75726E696177616E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('5472697374616E4B75726E696177616E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;TristanKurniawan&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+      &lt;br /&gt;&lt;br /&gt;&lt;a href="/ssw/Employees/Portfolio_Kurniawan.pdf" class="pdf"&gt;View Tristan's Portfolio&lt;/a&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>TA</EmpID>
+    <Surname>Araujo</Surname>
+    <FirstName>Tiago</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Tiago.aspx</SharePointURL>
+    <description>Position: Web Designer&lt;br /&gt; Qualifications: Bachelor of Adversing&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Tiago is a creative individual who enjoys a challenge. He has five years experience working as a designer for both print and web projects. He also loves spending time playing with photoshop while listen to old songs.
+    </description2>
+    <description4>
+      His favourite quote is "It's not what you look at that matters, it's what you see". &lt;br /&gt; &lt;br /&gt;Tiago can be contacted at &lt;a href="javascript:sendEmail('5472697374616E4B75726E696177616E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('5472697374616E4B75726E696177616E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;TiagoAraujo&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+
+
+  <employee>
+    <EmpID>JH</EmpID>
+    <Surname>Hardy</Surname>
+    <FirstName>Joe</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Joe.aspx</SharePointURL>
+    <description>Position: Senior Database Developer</description>
+    <description2>
+      Joe Hardy first discovered the wonders of coding as a young impressionable 7 year old who came across a copy of the BASIC interpreter
+      on his copy of PC-DOS. And there was no going back. Now Joe focuses primarily on the .NET framework, ASP and SQL Server and
+      has considerable experience in website and application development, subsequently winning several awards in 2001
+      from the ABPA Bell Awards, such as the "Best Business Internet Site of the Year".
+      Joe strongly believes in developing a thorough plan from inception to facilitate defining and meeting system specifications.&lt;/p&gt;
+      &lt;p&gt;Aside from programming, Joe has a strong interest in artistic expression. This is seen a little in the digital domain with his
+      forays into graphic design and sound engineering, but comes out most in musical output of various forms. Other things he enjoys on a regular
+      basis include hanging out with his friends and family, eating good food, reading a quality book and exploring and growing in the Christian
+      faith that he holds.&lt;/p&gt;&lt;p&gt;His favourite quote is &lt;a href="/ssw/redirect/BibleGatewayJoe.htm"&gt;Romans 8:38-39&lt;/a&gt;
+      &lt;img alt="You are going to a site outside of SSW" src="/ssw/images/leavesite.GIF"&gt;&lt;/p&gt;
+      &lt;br/&gt;&lt;br/&gt;Joe may be contacted at &lt;a href="javascript:sendEmail('4A6F654861726479407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A6F654861726479407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JoeHardy&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description2>
+    <imagedrawn>Images/JoeHardy_Small.gif</imagedrawn>
+    <blogname>JoeHardy</blogname>
+  </employee>
+
+
+  <!--<employee>
+		<EmpID>ACM</EmpID>
+		<Surname>Moollan</Surname>
+		<FirstName>Ashraf</FirstName>
+		<description>Position: Senior Software Developer&lt;br /&gt; Qualifications: B.Bus(Computing and Information Systems)&lt;br /&gt;</description>
+		<description2>Ash Moollan is a Senior Software Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Ash started programming on a Sinclair when he was 11 (or actually tweaked the codes to get the highest scores on the games he was playing). At University he was awarded a Certificate of Achievement for Outstanding Technical Skills in Programming. His past clients include Alternative Health in Brisbane and Australasian Traffic Survey in Sydney. He has experience in developing Multi-Tier Client Server systems and Webservices and currently works on projects like SSW Incident Pro. His interests is in Mobile Development and in SharePoint Portal Server which he is in charge of at SSW.</description2>
+		<description3bold />
+		<description4>&lt;p&gt; His favourite quote is "Sure, why not?" because he believes that everything is doable, unless proven otherwise. &lt;p&gt;  Ash may be contacted at &lt;a href="mailto:AshMoollan@s*w.com.au"&gt;AshMoollan@s*w.com.au&lt;/a&gt;  </description4>
+		<descriptionprofile />
+		<imagedrawn>Images/AshMoollan_Small.gif</imagedrawn>
+		<imagelarge>Images/AshMoollan_Large.gif</imagelarge>
+	</employee>-->
+
+  <!--
+	<employee>
+		<EmpID>TO</EmpID>
+		<FirstName>Tatham</FirstName>
+		<Surname>Oddie</Surname>
+		<description>Position: Senior Software Developer&lt;br /&gt;&lt;br /&gt;Tatham Oddie is a Senior Software Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Tatham has spent a short stint in Germany, and since returning to Australia has spent the last seven years programming Microsoft solutions. In 2002 Tatham joined SSW. Tathams's main areas of expertise are in Microsoft technologies such as Access, ASP.NET, VB.NET, C# and SQL Server and he is the lead developer on SSW Diagnostics and &lt;a href="/ssw/linkAuditor" target="_blank" &gt;SSW Link Auditor&lt;/a&gt;. His experience spans from database design to graphics and user interface design. At present, his interests lie in .NET, focussing on structural tools such as remoting, web services and custom socket implementations. When Tatham is not developing business solutions he enjoys hiking, sailing, and diving.</description>
+		<description4>His favourite quote is "You can't build a reputation on what you are going to do."&lt;p&gt;Tatham may be contacted at &lt;a href="mailto:TathamOddie@s*w.com.au"&gt;TathamOddie@s*w.com.au&lt;/a&gt;  </description4>
+		<descriptionprofile />
+		<imagedrawn>Images/TathamOddie_Small.gif</imagedrawn>
+	</employee>
+-->
+  <employee>
+    <EmpID>GM</EmpID>
+    <FirstName>Ghulam</FirstName>
+    <Surname>Mustafa</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/GhulamM.aspx</SharePointURL>
+    <description>Position: Software Architect</description>
+    <description2>
+      Qualifications: Master of Science in Computer Science and Technology &lt;br /&gt;&lt;br /&gt;Ghulam Mustafa is a Software Architect at SSW. He is also a Microsoft Certified Solution Developer (MCSD) and Microsoft Certified Database Administrator (MCDBA). He has extensive industrial experience developing Microsoft solutions with .NET Technologies using VB.NET, C#, ASP.NET, Web Services and SQL Server.
+
+    </description2>
+    <description4>
+      His favourite quote is &quot;The only thing that can stop you is the doubt that you carry in your mind.&quot;
+      &lt;br /&gt;&lt;br /&gt;
+      Mustafa may be contacted at &lt;a href="javascript:sendEmail('4768756C616D4D757374616661407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4768756C616D4D757374616661407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;GhulamMustafa&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+      &lt;br /&gt;&lt;br /&gt;
+      &lt;img alt="MCP" src="/SSW/Company/Images/mcsd.gif"&gt;
+      &lt;img alt="MCAD" src="/SSW/Company/Images/mcad.gif"&gt;
+    </description4>
+
+    <descriptionprofile />
+
+  </employee>
+
+  <employee>
+    <EmpID>EF</EmpID>
+    <FirstName>Edward</FirstName>
+    <Surname>Forg cs </Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/EdwardF.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer
+    </description>
+    <description2>
+      Edward Forgacs is a Senior Software Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Edward has extensive experience programming Microsoft solutions. His main areas of expertise are ASP, ASP.NET, C#, VB.NET, VB6, SQL Server and user interface design.
+    </description2>
+    <description4>
+      His favourite quote is &quot;When the customer demands the impossible, they will end up buying from the guy who offers them the impossible. And the results, though tragic, are sadly predictable.&quot;
+
+      &lt;br /&gt;&lt;br /&gt;Edward may be contacted at &lt;a href="javascript:sendEmail('456477617264466F7267616373407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('456477617264466F7267616373407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;EdwardForgacs&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/EdwardForgacs_Small.gif</imagedrawn>
+  </employee>
+
+  <employee>
+    <EmpID>MA</EmpID>
+    <FirstName>Marten</FirstName>
+    <Surname>Ataalla</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/MartenA.aspx</SharePointURL>
+    <description>Position: Senior Software Architect &lt;br /&gt; Qualifications: B.Eng (Software) Hons. Sydney University&lt;br /&gt;</description>
+    <description2>
+      Marten acts as lead developer on numerous SSW projects where his genuine client focus and excellent communication skills successfully guide the projects. He specializes in application deployment (ClickOnce), SQL Reporting Services, application auditing and Sharepoint Server 2003 and 2007. He is also responsible for managing internal development and training. He presents in Sydney .Net User groups as well as UTS courses, lectures and labs.
+
+      &lt;br/&gt;
+      &lt;br/&gt;
+      Marten's major clients include:
+      &lt;ul&gt;
+      &lt;li&gt;  &lt;b&gt; Centrepoint Finance&lt;/b&gt;  Financial Loan Application - .Net Windows Forms, SQL Server, Reporting services and Web Services&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Microsoft USA&lt;/b&gt;  Microsoft Exchange Server Reports Pack - SQL Server, Reporting Services &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; McDonalds Asia Pacific Consortium P/L&lt;/b&gt;  Meat Inventory and Logistics System - Upsize to SQL Server 2005, Access frontend and Migrate Crystal to Reporting Services 2005 &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Suntory&lt;/b&gt;  Cocktail Menu Creation - SQL Server 2005 Replication and .Net Windows Forms (Tablet PC) &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Law Cover&lt;/b&gt;  Complete Software Audit on the corporate system, followed by system fixes. &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Admin Bandit&lt;/b&gt;  Accounting and finance website - ASP.Net 2.0 &lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; University of Technology Sydney&lt;/b&gt;  Developer Training Lectures - Windows forms, Web forms and SQL Server Lecturing&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Leighton Contractors Pty Limited&lt;/b&gt;  Project Management Application - Microsoft Access frontend, backend and reports&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Comitted Capital&lt;/b&gt;  SharePoint 2003 Audit and Migration to 2007&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; Forex Group&lt;/b&gt;  Foreign Currency Exchange Application - ASP.Net 2.0, SQL Server 2005&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; St Vincent De Paul&lt;/b&gt;  Internal SharePoint 2003 Portal - SharePoint 2003 theme design&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; SeQoya Pty. Ltd&lt;/b&gt;  Developer Training - SQL Reporting Services 2005&lt;/li&gt;
+      &lt;li&gt;  &lt;b&gt; CMS Hospitality&lt;/b&gt;  Developer Training - Introduction to SharePoint 2007&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      Outside of work, Marten leads a Christian group ,  &lt;a href="http://www.ssayouth.com/web" &gt;Campbelltown Arabic Baptist Church (Currently, SSA Youth)&lt;/a&gt;&lt;img alt="You are going to a site outside of SSW" src="/ssw/images/leavesite.GIF"&gt;, and also enjoys kicking the ball around with inmates on weekends as part of the Prison Ministry SLAM.
+    </description2>
+    <description4>
+      His favourite quote is from The Bible: &lt;a href="/ssw/redirect/Phillipians4-16.htm" target="_blank" &gt;Phillipians 4:16 &lt;/a&gt;&lt;img alt="You are going to a site outside of SSW" src="/ssw/images/leavesite.GIF"&gt;
+      &lt;br /&gt;&lt;br /&gt;
+      Marten may be contacted at &lt;a href="javascript:sendEmail('4D617274656E417461616C6C61407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4D617274656E417461616C6C61407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;MartenAtaalla&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/MartenAtaalla_Small.gif</imagedrawn>
+    <imagelarge>Images/MartenAtaalla_Large.gif</imagelarge>
+  </employee>
+
+  <employee>
+    <EmpID>MM</EmpID>
+    <FirstName>Michael</FirstName>
+    <Surname>Mileos</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Senior Software Developer&lt;br /&gt;Qualifications:&lt;br /&gt; Bachelor of Science in Computer Science (Honours) - City Universtiy of New York (CUNY)&lt;br /&gt;Associate of Applied Science in Computer Programming (CUNY).&lt;br /&gt;</description>
+    <description2>Michael Mileos is a keen Senior Software Developer who began working at SSW through work experience. Michael is a perfectionist at heart and is best known for his can-do attitude and his persistence. While his first love was C++, Michael has quickly adapted and has grown to favour developing in the .Net framework with C# and Visual Basic. Michael has worked extensively with SQL Server 2005 Analysis Services and Reporting Services to create BI solutions with OLAP.</description2>
+    <description4>
+      His favourite quote is "Its a conspiracy!"
+      &lt;br /&gt;&lt;br /&gt;
+      Michael may be contacted at &lt;a href="javascript:sendEmail('4D69636861656C4D696C656F73407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4D69636861656C4D696C656F73407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;MichaelMileos&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+  </employee>
+
+  <!--employee>
+		<EmpID>IA</EmpID>
+		<Surname>Ahrens</Surname>
+		<FirstName>Irina</FirstName>
+		<description>Position: Software Architect&lt;br /&gt; Qualifications: M ComSc Hons. MCP&lt;br /&gt; &lt;br /&gt; Irina Ahrens is a Software Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions.</description>
+<description2>Irina has been developing Microsoft applications for over 15 years. Her extensive experience includes business analysis, systems design, implementation and support. Irina started at SSW as a Senior Software Developer. Using .NET technologies she has been working on internal products (&lt;a href="/ssw/sqlAuditor" target="_blank" &gt;SSW SQL Auditor&lt;/a&gt;, SSW website) and for clients such as Centrepoint Finance (Windows desktop application using SQL Server 2000, VB.NET and C#, web services, XML), and Commonwealth Bank (web application using ASP.NET, SQL Server 2000, VB.NET and C#). In her spare time Irina enjoys digital photography and scapbooking, reading, swimming, and cooking.</description2>
+		<description3bold></description3bold>
+		<description4>Her favourite quote is "If you want to achieve something, you will find the ways, if you do not want, you will find the reasons". &lt;p&gt;Irina may be contacted at &lt;a href="mailto:IrinaAhrens@s*w.com.au"&gt;IrinaAhrens@s*w.com.au&lt;/a&gt;  </description4>
+		<descriptionprofile />
+		<imagedrawn>Images/IrinaAhrens_Small.jpg</imagedrawn>
+		<imamelarge></imagelarge>
+		<imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+	</employee-->
+
+  <!--	
+		<employee>
+		<EmpID>KM</EmpID>
+		<FirstName>Kyall</FirstName>
+		<Surname>Mai</Surname>
+		<description>
+			Position: Marketing and Events Co-ordinator&lt;br /&gt; Qualifications: BCom &lt;br /&gt;&lt;br /&gt;&lt;br /&gt; Kyall completed his 
+			Bachelor of Commerce majoring in Marketing and Information Systems at The University of New South Wales. At SSW Kyall is in 
+			charge of our marketing, sales and events promotion. From design to implementation, he leads SSW's marketing efforts by creating 
+			and implementing direct mail campaigns, outbound telemarketing campaigns and events promotion (promoting and organising our tech 
+			breakfasts and conferences).
+   </description>
+   
+		<description2> 
+			   Kyall has established himself as a lead figure in web search engine optimisation techniques with his 
+			   popular page devoted to &lt;a href="/SSW/methodology/RulesToBetterGoogleRankings.aspx"&gt;Rules To Better Google Rankings&lt;/a&gt;. 
+   </description2>
+		<description4>
+			   He writes the content for the &lt;a href="/SSW/NETUG/SSWUpdatePrevious.aspx"&gt;SSW Newsletter&lt;/a&gt;, and is also in charge of our
+			   product sales for Australia and New Zealand. Kyall also edits our website and maintains the SSW Database.
+ 
+ &lt;p&gt;
+   				His favourite quote is: "Yesterday is a memory, tomorrow is a mystery and today is a gift. Thats why they call it the present". &lt;p&gt;Kyall may be contacted at &lt;a href="mailto:KyallMai@s*w.com.au"&gt;KyallMai@s*w.com.au&lt;/a&gt;
+    </description4>
+		<descriptionprofile />
+		<imagedrawn>images/KyallMai_Small.gif</imagedrawn>
+		<imagelarge>images/KyallMai_Large.gif</imagelarge>
+	</employee>
+	<employee>
+
+
+		<EmpID>AJ</EmpID>
+		<Surname>Julius</Surname>
+		<FirstName>Andrew</FirstName>
+		<description>Position: Project Manager&lt;br /&gt;
+		Qualifications: BBus&lt;br /&gt;
+		&lt;br /&gt;
+		Andrew graduated from the University of Technology in 1994 with a Bachelor of Business Degree in Finance and Marketing. He worked for the next year with Prudential Corporation Australia in their Wholesale Porfolio Sector. </description>
+		<description2>Joining SSW in 1995, he used his computing knowledge to establish the Internet arm of the company. Since then, he has gained experience building web sites for small to medium sized companies in a variety of industries. 
+		</description2>
+		<description3bold></description3bold>
+		<description4>To view some of the web sites developed by SSW, visit our Internet Clients page. Andrew's software specialisations are in HTML editors (Frontpage, Dreamweaver and Homesite) and Microsoft Internet Information Server. Andrew believes no price is too high for personal fitness - "Fit in Body = Fit in Mind". He is a keen triathlete, although enjoys the less masochistic pursuits of golf, tennis, squash and travel. 
+		&lt;p&gt;
+		His favourite quote is "Don't be afraid to take a large leap if you can't cross a chasm in two small steps"
+		</description4>
+		<descriptionprofile />
+		<imagedrawn>Images/AndrewJulius_Small.GIF</imagedrawn>
+		<imagecertification />
+	</employee>
+
+
+	<employee>
+		<EmpID>RF</EmpID>
+		<Surname>Fernandez</Surname>
+		<FirstName>Richard</FirstName>
+		<description>Position: Database Develoeprs&lt;br /&gt;
+		Qualifications: AB&lt;br /&gt;
+		&lt;br /&gt;Richard finished his AB from De La Salle University in the Philippines in 1979 and obtained an Operations Research certificate from Case Western Reserve University in 1987. After a career in forestry consulting, he emigrated to Australia in 1997 and is beginning a second career as a software developer. </description>
+		<description2 />
+		<description3bold />
+		<description4>
+&lt;p&gt;
+He believes that "as you go through life, no matter what your goal, keep your eye upon the donut, and not upon the hole." 
+&lt;p&gt;
+ 
+		</description4>
+		<descriptionprofile />
+		<imagecertification />
+	</employee>
+	
+	
+	<employee>
+		<EmpID>CJ</EmpID>
+		<Surname>Joosse</Surname>
+		<FirstName>Casey</FirstName>
+		<description>Position: Project Manager&lt;br /&gt;
+		
+		&lt;br /&gt;
+		Casey has a distinctive management career which includes having been CEO, President and MD of several multinational firms, in Australia, Brazil, South Africa, Mexico and the USA.</description>
+		<description2>His presence as our team leader provides a management's view of the IT industry, with the understanding that all of our client's investments need to be not only highly operative, but cost effective. 
+		</description2>
+		<description3bold />
+		<description4></description4>
+		<descriptionprofile />
+		<imagecertification />
+	</employee>
+	
+	
+	<employee>
+		<EmpID>CA</EmpID>
+		<Surname>Alexis</Surname>
+		<FirstName>Con</FirstName>
+		<description>Position: Senior Database Developer&lt;br /&gt;
+		Qualifications: Dip IT&lt;br /&gt;
+		&lt;br /&gt;
+		Con has done extensive work with Visual Basic 6 and SQL Server for the past year at Media Monitors, Media Monitors has four huge in-house applications that gather Media information from around Australia.</description>
+		<description2>At SSW Con has also been involved with heaps of Exchange 2000 development, being the principal developer behind SSW Incident PRO, an SSW Internal project.</description2>
+		<description4>His favourite quote is "You know your drunk when you look straight and see your shoulder!"</description4>
+		<imagedrawn>/SSW/Company/Images/cona.GIF</imagedrawn>
+	</employee-->
+
+
+  <employee>
+    <EmpID>GJ</EmpID>
+    <Surname>Joosse</Surname>
+    <FirstName>Greg</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>
+      Position: Network Administrator
+    </description>
+    <description2>
+      After studying overseas, Greg returned to Australia to work for a computer reseller as a System Support Officer. Later, he moved to News Limited as a Network and Communications Engineer. The role developed into Network Manager for News Limited's largest colour pre-press site.&lt;br /&gt;&lt;br /&gt;After more than two years with News limited, Greg joined the Super League Consortium as Technology Manager. This exciting position created ground breaking advances for Rugby League and co-ordinated the modernisation of club technology in the office and on the field. Whilst completing his Bachelor of Business at the University of Technology Sydney, Greg also satisfied his interest in computers by programming and indulging in some low-level 'hacking'. He then completed his Certified Novell Engineer in 1992 and then attained the coveted MCSE (Microsoft Certified System Engineer).
+    </description2>
+    <description4>
+      His favourite quote is "If you can't run with the big dogs, stay on the porch." &lt;p&gt;
+    </description4>
+    <descriptionprofile />
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+  </employee>
+
+
+  <!--employee>
+    <EmpID>RM</EmpID>
+    <Surname>Moukaddem</Surname>
+    <FirstName>Ray</FirstName>
+    <description>Position: Senior Database Developer&lt;br> Qualifications: B Sc&lt;br> &lt;br> Ray Moukaddem is a Senior Database Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Ray is a specialist in Consulting and Web Database development using the latest Microsoft technologies including C#, VB .NET, ASP .NET, Active Server Pages, SQL Server, HTML, JavaScript, Website design and Access. Ray holds the position of Senior Database Developer.</description>
+    <description2>Ray has many years of business experience and a keen mind for streamlining and implementing better business processes. Recently Ray assisted Toyota Head Office in optimising their business processes using many of Microsoft's packages. Some of the projects included C#.NET graphing, DHTML forms and a C#.NET mapping. Other projects for other clients include SQL Server 2000 and ASP intranet solutions. He is also lead developer on Time PRO Projects, our flagship Project Management software package.</description2>
+    <description3bold/>
+    <description4>His favourite quote is Patience is a virtue."&lt;p>Ray may be contacted at &lt;a href="mailto:RayMoukaddem@s*w.com.au"&gt;RayMoukaddem@s*w.com.au&lt;/a&gt;  </description4>
+    <imagedrawn>images/RayMoukaddem_Small.gif</imagedrawn>
+    <imagelarge>images/RayMoukaddem_Large.gif</imagelarge>
+  </employee>
+
+!-->
+
+  <employee>
+    <EmpID>JP</EmpID>
+    <Surname>Prince</Surname>
+    <FirstName>John</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Database Developer&lt;br /&gt; Qualifications: Dip IT</description>
+    <description2>
+      John Prince is a Database Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. John works mainly with Visual Basic and ASP. He also specialises in packaging up clients and SSW products using Wise and InstallShield. He would rather tidy his office than work with the Package and Deploy Wizard that comes with VB6 and Access.&lt;br /&gt; &lt;br /&gt;He is no longer scared of DLL Hell and related distribution problems, but loves working with .NET.
+    </description2>
+    <description3bold />
+    <description4>
+      His favourite quote is "Never give up"
+      &lt;br /&gt;&lt;br /&gt;
+      John may be contacted at &lt;a href="javascript:sendEmail('4A6F686E5072696E6365407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A6F686E5072696E6365407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JohnPrince&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <imagedrawn>Images/JohnPrince_Large.gif</imagedrawn>
+    <imagelarge>Images/JohnPrince_Large.gif</imagelarge>
+  </employee>
+
+  <employee>
+    <EmpID>JHL</EmpID>
+    <Surname>Lien</Surname>
+    <FirstName>Jason</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Database Developer&lt;br /&gt; Qualifications: B IT</description>
+    <description2>
+      Jason works with ASP, VB, Access, ASP .NET, VB .NET, SQL Server and Exchange Server 2000.&lt;br /&gt; &lt;br /&gt;Jason Lien is a Database Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Jason works alongside Database Architects designing functional specifications, analysing and improving business processes and developing and testing the application. Jason has extensive experience migrating legacy business systems to new technologies. Jason is also the lead developer on SSW Incident PRO! which is built in VB .NET and integrates with Exchange Server 2000.
+    </description2>
+    <description3bold />
+    <description4>
+      Jason may be contacted at &lt;a href="javascript:sendEmail('4A61736F6E4C69656E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A61736F6E4C69656E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JasonLien&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <imagedrawn>images/JasonLien_Small.gif</imagedrawn>
+    <imagelarge>images/JasonLien_Large.gif</imagelarge>
+  </employee>
+
+  <employee>
+    <EmpID>DC</EmpID>
+    <Surname>Cai</Surname>
+    <FirstName>David</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DavidC.aspx</SharePointURL>
+    <description>
+      Position: Senior Database Developer&lt;br /&gt;
+      Qualifications: M Sc MCP
+    </description>
+    <description2>
+      David Cai is a Senior Database Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. He has been a VB guru since version 4 but loves the power of .NET and you wouldn't find him using anything else but VB.NET now.&lt;br /&gt; &lt;br /&gt;David joined SSW as a senior database developer in 1999. Since joining SSW, David has specialised in SQL Server 2000, web site development specifically using ASP.NET technology, undertaking work for a variety of government and private enterprises. After computers, his interests lie in swimming, running, reading and listening to music.
+    </description2>
+    <description3bold></description3bold>
+    <description4>
+      His favourite quote is: "Rudeness is a cheap imitation of power."
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/DavidCai_Small.gif</imagedrawn>
+    <imagelarge>Images/DavidCai_Large.gif</imagelarge>
+    <imagecertification />
+  </employee>
+
+  <employee>
+    <EmpID>PD</EmpID>
+    <Surname>Devkota</Surname>
+    <FirstName>Prajwol</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>
+      Position: Database Architect&lt;br /&gt;
+      Qualifications: Masters of Computing (Software Engineering)
+    </description>
+    <description2>
+      Prajwol Devkota is a Database Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions. Prior to SSW he worked for Warranty Works in technical support and progressed to the Helpdesk Manager. This gave Prajwol great experience in hardware and networking.&lt;br /&gt;&lt;br /&gt;Prajwol has knowledge of C++, Visual Basic.NET, Access, ASP.NET and HTML.
+    </description2>
+    <description3bold></description3bold>
+    <description4>
+      His favourite quote is "Every job is the self portrait of the person who did it. Autograph your work with excellence".
+
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/PrajwolDevkota_Small.gif</imagedrawn>
+    <imagelarge>Images/PrajwolDevkota_Large.gif</imagelarge>
+    <imagecertification />
+  </employee>
+
+  <employee>
+    <EmpID>IP</EmpID>
+    <Surname>Pluzhnik</Surname>
+    <FirstName>Igor</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>
+      Position: Senior Network Administrator&lt;br /&gt;
+      Qualifications: MIT, MEc, MCSE, MCDBA, MCSD&lt;br /&gt;
+      &lt;br /&gt;
+    </description>
+    <description2>Igor Pluzhnik is a Senior Network Administrator at SSW, a Microsoft Certified Partner specialising in .NET Solutions. 12 years of IT experience 7 years of Client-Server development. 6 years database administration and database design/implementation, 7 years of VB development. Datawarehousing design, implementation and administration. 2 years of Internet/Intranet development, E-Commerce, workflow applications. COM, DCOM, MTS, COM+ design and implementation. </description2>
+    <description3bold></description3bold>
+    <description4>
+      &lt;p&gt;
+      His favourite quote is "Walking on water and developing software from a specification are easy....If both are frozen".
+      &lt;p&gt;
+
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/IgorPluzhnik_Small.gif</imagedrawn>
+    <imagelarge>Images/IgorPluzhnik_Small.gif</imagelarge>
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+  </employee>
+  <employee>
+    <EmpID>DR</EmpID>
+    <Surname>Reidy</Surname>
+    <FirstName>David</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Senior Database Architect&lt;br /&gt; Qualifications: B.Sc.(Hons); Dip.Ed; MCP &lt;br /&gt;</description>
+    <description2>David Reidy is a Senior Database Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions. David built his first computer in 1977 and has been involved with computing ever since. Starting with binary and assembly languages he progressed to Fortran while completing his Astrophysics degree and then moved onto developing in Pascal and C on Apple computers while teaching High School Physics. David moved into the Windows world in 1996 after becoming the owner of a scuba diving shop and needing a point-of-sale system. David started working with .Net technologies when the first PDC alpha became available in 2000 and has now taught C# quite extensively to adults and school students through TAFE and high schools.&lt;br /&gt; When not programming David is also a PADI Master Scuba Diving Instructor and is the author of three books on amateur astronomy, two of which became best-sellers.</description2>
+    <description3bold />
+    <description4>
+      His favourite quote is "All of us are in the gutter, but some of us are looking at the stars".
+      &lt;br /&gt;&lt;br /&gt;David may be contacted at &lt;a href="javascript:sendEmail('44617669645265696479407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('44617669645265696479407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;DavidReidy&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>Images/DavidReidy_Small.gif</imagedrawn>
+    <imagelarge>Images/DavidReidy_Large.gif</imagelarge>
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+  </employee>
+
+  <employee>
+    <EmpID>SC</EmpID>
+    <Surname>Chen</Surname>
+    <FirstName>Serena</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Serena.aspx</SharePointURL>
+    <description>Position: Web Designer&lt;br /&gt; Qualifications: B.Graphic Design&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      "... I've followed my dream of being a designer..." says Serena Chen, a graphic/web designer at SSW. She aims to create vibrant and detailed designs while taking account of usability aspects and webstandards. As someone who lives and breathes design she loves to keep up to date on the design world. She has been in the design industry for 6.5 years. She started out her career as a photographer assistant for 2 months after achieving a BA in Art &amp; Design through Beijing Union University. And then worked as graphic designer for 4 years in Shanghai China before She moved to Sydney. Working at SSW she has got chance to work with developers to know how to collaborate with them to get the job done.&lt;br /&gt;
+      Serena loves building things and keep learning...
+    </description2>
+    <description4>
+      &lt;br /&gt;&lt;br /&gt;Serena can be contacted at &lt;a href="javascript:sendEmail('736572656E616368656E407373772E636F6D2E617500')" onmouseover="javascript:displayStatus('736572656E616368656E407373772E636F6D2E617500');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;Serenachen&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+
+
+
+
+  <employee>
+    <EmpID>EZF</EmpID>
+    <Surname>Fang</Surname>
+    <FirstName>Eric</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/EricF.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer&lt;br /&gt;
+      Qualifications: Bachelor of IT (Software Development), MCSD, MCDBA, MCSE&lt;br /&gt;&lt;br /&gt;
+    </description>
+    <description2>
+      With over 10 years' IT experience, Eric Fang still loves software development.&lt;br /&gt;
+      &lt;br /&gt;
+      Eric's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;Zimmer&lt;/b&gt;'s internal web application.&lt;br /&gt;
+      Related Technology: C#, ASP.NET 2.0, Code Generation, DB2/400 and SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Law Cover&lt;/b&gt;'s internal web application.&lt;br /&gt;
+      Related Technology: C#, ASP.NET 2.0 and SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Warringah Council&lt;/b&gt;'s web site.&lt;br /&gt;
+      Related Technology: C#, DotNetNuke, ASP.NET 2.0 and SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Hills Transport&lt;/b&gt;'s secure website and windows application &lt;i&gt;T2&lt;/i&gt;.&lt;br /&gt;
+      Deals with Point of Delivery, scanning Consignment notes and Barcode reading.&lt;br /&gt;
+      Related Technology: C#, Windows Form and SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;TechGuide Website.&lt;/b&gt; Provides users simple ways of finding Technology Solution Providers. &lt;br /&gt;
+      Related Technology: VB.NET, Javascripts, ASP.NET 2.0, DotNetNuke 4, Atlas, CSS and SQL Server 2005.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      Eric's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Diagnostics.&lt;/b&gt; Simple, powerful and effective utility keeps your system up to date, and helps to resolve intricate software compatibility issues.&lt;br /&gt;
+      Related Technology: C#, Windows Form, ClickOnce, XML and Microsoft Access Database.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Access Reporter .NET.&lt;/b&gt; Deliver existing MS Access reports online with minimal re-coding.&lt;br /&gt;
+      Related Technology: VB.NET, Windows Form, ASP.NET 2, Web Service, Windows Service and Microsoft Access Database.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Code Auditor.&lt;/b&gt; A powerful code auditing engine that support multiple rule types (such as Regular expression, wild card, and code snippets) and multiple target types (such as Visual Studio projects, Mirosoft Access Project, and website outputs)&lt;br /&gt;
+      Related Technology: C#, Windows Form, Regular Expression, XML, XSL and Microsoft Access database
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+    </description2>
+    <description3>
+      Eric may be contacted at &lt;a href="javascript:sendEmail('4572696346616E67407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4572696346616E67407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;EricFang&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3>
+    <description4>
+      His favourite quote is "Should not be so complex".&lt;br /&gt;&lt;br /&gt;
+      &lt;img alt="MCSD" src="/SSW/Company/Images/mcsd.gif"&gt; &lt;img alt="MCDBA" src="/SSW/Company/Images/mcdba.gif"&gt;
+    </description4>
+  </employee>
+
+
+
+
+  <employee>
+    <EmpID>ML</EmpID>
+    <Surname>Liu</Surname>
+    <FirstName>Mark</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Mark.aspx</SharePointURL>
+    <description>Position: Senior Software Architect&lt;br /&gt; Qualifications: B.C.S.T - Computer Science and Technology &lt;br /&gt;</description>
+    <description2>
+      Mark Liu is a Senior Software Architect at SSW, a Microsoft Certified Partner specialising in .NET Solutions.
+      He is specialized in developing solutions with C#, VB.NET, ASP.NET (1.1 and 2.0), Web Services, Sql Server and Microsoft Office Integration.&lt;br /&gt;
+      &lt;br /&gt;
+      Mark's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;Powertel Pty Ltd&lt;/b&gt; A DSL provisioning system supporting over 100,000 ADSL subscribers.&lt;br /&gt;
+      Related Technology: SQL Server 2005, SSIS, C#, DTS, Virtualisation and Access 2003.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Commonwealth Bank's CommTrack Application.&lt;/b&gt; A time tracking application used to capture activities of a user, and demands and work in progress of a team.&lt;br /&gt;
+      Related Technology: C#, VB.NET, Web Services, Javascripts, ASP.NET 1.1 and SQL Server 2000.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Suntory Cocktail Menu Builder.&lt;/b&gt; A Windows Form application that creates a pdf menu based on designer templates.&lt;br /&gt;
+      Related Technology: C#, Windows Form, ClickOnce and SQL Server 2000 with replication.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;System77 Point of Sale.&lt;/b&gt; A client application that connects to System77's backend through Web Services.&lt;br /&gt;
+      Related Technology: C#, Windows Form and Web Services.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Online client portal, Forex Group.&lt;/b&gt; A web application that lets client place and keep track of orders online.&lt;br /&gt;
+      Related Technology: VB.NET, ASP.NET 2.0 and SQL Server 2000.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;RCW, Vero.&lt;/b&gt; An Access application used to manage construction insurance policies, invoices, and customer entities.&lt;br /&gt;
+      Related Technology: Access 2000, C# and SQL Server 2000.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      Mark's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Time PRO .NET.&lt;/b&gt; Time sheeting application that supports both direct database connection and Web Services.&lt;br /&gt;
+      Related Technology: C#, VB.NET, Windows Form, Web Service, Windows Communication Foundation and SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Code Auditor.&lt;/b&gt; A powerful code auditing engine that support multiple rule types (such as Regular Expressions, wild cards,
+      and code snippets) and multiple target types (such as Visual Studio projects, Mirosoft Access Project, and website outputs)&lt;br /&gt;
+      Related Technology: C#, Windows Form, Regular Expression, XML, XSL and Microsoft Access database
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      Mark's personal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;Raid Point.&lt;/b&gt; A web application that uses zero-sum point system to keep track of his World of Warcraft's guild progression.&lt;br /&gt;
+      Related Technology: C#, ASP.NET 2.0, SQL Server 2000
+      &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;br /&gt;
+      &lt;dl class="image"&gt;
+      &lt;dt&gt;
+      &lt;img src="/ssw/Employees/Images/MarkLiu_proposal.jpg" alt="Mark Liu"&gt;
+      &lt;/dt&gt;
+      &lt;dd&gt;Figure: Mark Liu&lt;/dd&gt;
+      &lt;br/&gt;
+      &lt;/dl&gt;
+
+    </description2>
+    <description4>
+      His favourite quote is "Sometimes I dream that a big, giant squirrel is carrying me away. Does that make me a nut?".
+      &lt;br /&gt;&lt;br /&gt;
+      Mark may be contacted at &lt;a href="javascript:sendEmail('4D61726B4C6975407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4D61726B4C6975407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;MarkLiu&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+    <imagedrawn>images/MarkLiu_Small.gif</imagedrawn>
+    <imagelarge>images/MarkLiu_Large.gif</imagelarge>
+  </employee>
+
+
+
+
+  <employee>
+    <EmpID>GL</EmpID>
+    <Surname>Lam</Surname>
+    <FirstName>Gary</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer&lt;br /&gt;
+      Qualifications: B Sc (UNSW) , MCAD
+    </description>
+    <description2>
+      Gary Lam is a Senior Software Developer at SSW, a Microsoft Certified Partner specialising in .NET Solutions. He is specialized in developing solutions with C#, ASP.NET and Sql Server. Including Medical Data Management, and business and financial services. On the other side he focusing on developing SSW Code Auditor, which ensure coding standard in the industry.
+    </description2>
+    <description3bold>
+      Gary may be contacted at &lt;a href="javascript:sendEmail('476172794C616D407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('476172794C616D407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;GaryLam&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      His favourite quote is: "<!--StartFragment -->
+      <b style="color: black;">S</b>uccessful people keep moving. They make mistakes, they learn from it, but they never quit.
+      "
+    </description4>
+    <imagecertification>/SSW/Company/Images/mcsd.gif</imagecertification>
+
+    <descriptionprofile />
+
+  </employee>
+
+  <employee>
+    <EmpID>AF</EmpID>
+    <Surname>Foyn</Surname>
+    <FirstName>Adrian</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Senior Software Developer&lt;br /&gt; Qualifications: Nat Dip Information Technology&lt;br /&gt;MCP VB.NET&lt;br /&gt;&lt;br /&gt; </description>
+    <description2>
+      With over 10 years' IT experience, Adrian wrote his first commercial application while still in school.
+      Originally from South Africa, Adrian spent 5 years in London before immigrating to Sydney.
+      Adrian is proficient in all things .NET, Access and SQL Server, with recent Access and WinForm development experience, in addition to DotNetNuke v2 and v3.
+
+      Adrian has been instrumental in improving the design and performance of our SSW &lt;a href="/ssw/SQLDeploy" target="_blank"&gt;SQL Deploy&lt;/a&gt; software.
+
+    </description2>
+    <description3bold>
+      Adrian can be contacted at &lt;a href="javascript:sendEmail('41647269616E466F796E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('41647269616E466F796E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;AdrianFoyn&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>Favourite saying is "2B OR NOT 2B, is always 2 TRUE" - it's a logic thing.</description4>
+    <imagelarge>Images/AdrianFoyn_Large.gif</imagelarge>
+    <imagedrawn>Images/AdrianFoyn_Large.gif</imagedrawn>
+    <imagecertification>/SSW/Company/Images/mcp.gif</imagecertification>
+    <descriptionprofile>
+      Adrian has presented a few short courses at UTS.
+    </descriptionprofile>
+  </employee>
+
+  <employee>
+    <EmpID>KW</EmpID>
+    <Surname>Wijewantha</Surname>
+    <FirstName>Kusal</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/KusalW.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer
+      &lt;br /&gt; Qualifications: Bachelor of IT, Diploma in IT (Software Development)
+      &lt;br /&gt;
+      &lt;br /&gt;
+    </description>
+    <description2>
+      Kusal Wijewantha is a Senior Software Developer at SSW, a Microsoft Certified Partner and a Microsoft Certified Application Developer specialising in .NET Solutions.
+      &lt;p&gt;
+      Kusal is a proficient programmer in VB.NET, SQL Server and Reporting Services. Kusal has extensive experience in developing
+      Content Management Solutions using
+      &lt;a href="http://www.dotnetnuke.com/"&gt;DotNetNuke (DNN)&lt;/a&gt;. He has worked with DNN version 1, 2, 3 and the latest version 4.3.4.&lt;/p&gt;
+      &lt;p&gt;
+      Kusal has been involved in more than 30 DotNetNuke based projects. He has
+      architected and developed over 75 DotNetNuke Modules and Skin Objects.
+      In addition Kusal has experience in integrating DotNetNuke based Web
+      Applications with Microsoft SQL Reporting Service, SAP and MYOB.&lt;/p&gt;
+      &lt;p&gt;
+      Kusal is a member of the Open Source DotNetNuke Development Team.
+      Presently he is contributing to the
+      &lt;a href="http://dotnetnuke.com/DotNetNukeProjects/ModuleHelp/tabid/850/Default.aspx"&gt;DotNetNuke Help Module Project&lt;/a&gt;.
+      &lt;/p&gt;
+      &lt;p&gt;His recent DNN projects include:
+      &lt;ul&gt;
+      &lt;li&gt;&lt;b&gt;Microsoft (Developer and Platform Evangelism Team) - &lt;/b&gt;&lt;i&gt;Community Portal&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Medico-Legal Opinions PTY LTD&lt;/b&gt; - &lt;i&gt;Appointment Management, Scheduling, Workflow System&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;KPMG&lt;/b&gt; - &lt;i&gt;Alumni Application&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;McGrath Nicol + Partners&lt;/b&gt; - &lt;i&gt;Content Management Portal&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Asthma Foundation Victoria&lt;/b&gt; - &lt;i&gt;Health Monitoring and Alert System&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;PaperlinX&lt;/b&gt; - &lt;i&gt;Global Communication Tool&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Readify&lt;/b&gt; - &lt;i&gt;Online Course Booking System&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;City of Charles Sturt Council, South Australia &lt;/b&gt;- &lt;i&gt;Intranet Publishing System&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Warringah Council, New South Wales&lt;/b&gt; - &lt;i&gt;Intranet/Internet Publishing System&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;RatesMate&lt;/b&gt; - &lt;i&gt;Content Management Portal&lt;/i&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+      Kusal's favourite sports are cricket and rugby.
+      &lt;/p&gt;
+    </description2>
+    <description3bold>
+      Kusal can be contacted at &lt;a href="javascript:sendEmail('4B7573616C57696A6577616E746861407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4B7573616C57696A6577616E746861407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;KusalWijewantha&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>
+      &lt;img alt="MCP" src="/SSW/Company/Images/mcp.gif"&gt;
+      &lt;img alt="MCAD" src="/SSW/Company/Images/mcad.gif"&gt;
+      &lt;img alt="DotNetNuke Help Project Team Member" src="/SSW/Company/Images/dnn_pt_help_130x49_border.gif"&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>LX</EmpID>
+    <Surname>Xu</Surname>
+    <FirstName>Lei</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Lei.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect, Chief Representative Officer&lt;br /&gt; Qualifications: B.Eng - Industrial Engineering &amp; Computer Science,  M.Info - Information Science
+    </description>
+    <description2>
+      Lei Xu is a Senior Software Architect at SSW, a Microsoft Certified Partner specialising in .NET solutions. He specializes in developing solutions with C#, VB.NET, ASP.NET, WinForms, WPF/WCF/WF, Windows Services, Reporting Services, SQL Server and Exchange Server. In 2005, Lei went back to China and established SSW Beijing Office as the Chief Representative Officer; so he is in charge of the day to day operation of the office as well as taking lead in the technical directions.
+      &lt;IMG src="/SSW/Company/Images/mvplogo.gif" alt="Microsoft MVP" align="right" border="0"&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      Lei is a Microsoft Most Valuable Professional (MVP) for 2 years (MVP), specialising Windows Networking (2006-2007), Windows Desktop Experience (2007-2008). He was running Windows Vista Compatibilities Testing Program for Microsoft China for over 2 year since Windows Vista’s RTM at 2006 and he has helped many leading software vendors in China to get their products working with Windows Vista, e.g. PowerWord (KingSoft), QQ (Tencent), LeiYi (Yahoo China), Wopti Utilities etc.
+      &lt;br /&gt;
+      &lt;br /&gt;
+      Lei is also a TechEd speaker and a frequent speaker at Microsoft (Beijing) .NET User Group, he is working closely with the managing team of .NET User Group to deliver many award winning courses covering the cutting edge technologies, such as .NET Framework 3.0/3.5 (WCF/WF/WPF), SQL Server 2005/2008 and Reporting Services, IE8.0, Windows Vista and Server 2008 new features etc.
+      &lt;br /&gt;
+      &lt;br /&gt;
+      Right now, Lei is focusing on project management and spent most of his time on improving the process by utilizing Visual Studio Team System and Team Foundation Server. He likes Agile Development Process, and coaching the team with SSW Extreme Programming Method (XPDM) is always the favourite part of the job.
+      &lt;br /&gt;
+      &lt;br /&gt;
+    </description2>
+
+    <description4>
+      His favourite quote is "I don't want to get to the end of my life and find that I have just lived the length of it. I want to have lived the width of it as well."
+      &lt;br /&gt;&lt;br /&gt;
+      Lei may be contacted at &lt;a href="javascript:sendEmail('4C65695875407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4C65695875407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;LeiXu&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <imagecertification>/SSW/Company/Images/mvplogo.gif</imagecertification>
+    <descriptionprofile />
+    <imagedrawn>images/LeiXu_Small.gif</imagedrawn>
+    <imagelarge>images/LeiXu_Large.gif</imagelarge>
+  </employee>
+
+  <employee>
+    <EmpID>WW</EmpID>
+    <Surname>Wu</Surname>
+    <FirstName>Wilson</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Wilson.aspx</SharePointURL>
+    <description>
+      Position: Testing and Support Engineer
+    </description>
+    <description2>
+      Wilson Wu is a Testing and Support Engineer at SSW, He specializes in developing solutions with C#, ASP.NET, WinForms, VSTS and Windows Vista. He is the lead developer on SSW's Diagnostics product  - &lt;a href="/ssw/Diagnostics" target="_blank" &gt;SSW Diagnostics&lt;/a&gt; and provides customer support for clients. Wilson has extensive experiences in .NET Development.
+      &lt;IMG src="/SSW/Company/Images/mvplogo.gif" alt="Microsoft MVP - VSTS" align="right" border="0"&gt;
+    </description2>
+
+    <description4>
+      His favourite quote is "Only believe myself"
+      &lt;br /&gt;&lt;br /&gt;
+      Wilson may be contacted at &lt;a href="javascript:sendEmail('4C65695875407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4C65695875407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;WilsonWu&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <imagecertification>/SSW/Company/Images/mvplogo.gif</imagecertification>
+    <descriptionprofile />
+  </employee>
+
+
+  <employee>
+    <EmpID>JZ</EmpID>
+    <Surname>Zhou</Surname>
+    <FirstName>James</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/James.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer &lt;br /&gt; Qualifications: B. Eng - Information System Management, MCAD
+    </description>
+    <description2>
+      James is an experienced developer, having completed numerous .NET projects using C#, VB.NET, ASP.NET, SQL Server and Reporting Services. Since graduating, James has kept himself on the cutting-edge of the .NET world. He is responsible for several SSW Products such as &lt;a href="/ssw/exchangereporter" target="_blank" &gt;SSW Exchange Reporter&lt;/a&gt;, &lt;a href="/ssw/linkAuditor" target="_blank" &gt; &lt;a href="/ssw/linkAuditor" target="_blank" &gt;SSW Link Auditor&lt;/a&gt; &lt;/a&gt; and &lt;a href="/ssw/nettoolkit" target="_blank" &gt;SSW .NET Toolkit&lt;/a&gt;.&lt;br /&gt; &lt;br /&gt;His favorite quote is "Always do your best; never do anything half-heartedly."
+    </description2>
+    <description4>
+      James may be contacted at &lt;a href="javascript:sendEmail('4A616D65735A686F75407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A616D65735A686F75407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JamesZhou&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <imagecertification>/SSW/Company/Images/mcad.gif</imagecertification>
+    <descriptionprofile />
+  </employee>
+
+  <employee>
+    <EmpID>JKZ</EmpID>
+    <Surname>Zhou</Surname>
+    <FirstName>Jack</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Senior Software Developer&lt;br /&gt; Qualifications: B.Eng - International Engineering Management, MCP&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>
+      Jack is an experienced software developer. He has a MCP certification and he specializes in developing solutions with C#, VB.NET, ASP.NET, Windows Services and SQL Server. He is responsible for the SSW website and customer support as well as several SSW products such as &lt;a href="/ssw/timepronet" target="_blank" &gt;SSW Time PRO .NET&lt;/a&gt;.
+    </description2>
+    <description4>
+      His favourite quote is "A dwarf standing on the shoulders of a giant may see farther than a giant himself."
+      &lt;br /&gt;&lt;br /&gt;Jack can be contacted at &lt;a href="javascript:sendEmail('4A61636B5A686F75407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A61636B5A686F75407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JackZhou&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+      &lt;br /&gt;&lt;br /&gt;&lt;img alt="MCP" src="/SSW/Company/Images/mcp.gif" &gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>FW</EmpID>
+    <Surname>Wang</Surname>
+    <FirstName>Frank</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer&lt;br /&gt; Qualifications: B. Eng - Electronic Technologies
+    </description>
+    <description2>
+      Frank Wang is a senior software developer at SSW. He specializes in developing solutions with C#, VB.NET, ASP.NET 1.1/2.0, Windows Services, Web Services, SQL Server 2000/2005 and Reporting Services.&lt;br /&gt;&lt;br /&gt;
+      Frank's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;Web Preferences, Timetabling.&lt;/b&gt; - a web application that allows a registered student to login and select subjects, in order of preference, for their next term of study;&lt;br /&gt;
+      Related Technology: C#, ASP.NET 2.0, Javascripts, SQL Server 2000 and Reporting Services.		&lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SMC, WardyIT.&lt;/b&gt; A win app for Store Management Central.&lt;br /&gt;
+      Related Technology: C#, Windows Form, Reflection and Active Directory
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;iStopwatch, PWC.com/au.&lt;/b&gt; A win app for calculating time taken for each application was running.&lt;br /&gt;
+      Related Technology: C#, Windows Form and COM+.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      Frank's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW SQL Auditor.&lt;/b&gt; Maintaining consistent quality code across a large team is difficult. Even when standards are in place developers can make mistakes that will slip through QA. SSW SQL Auditor, built in VB .NET, allows a developer to set SQL Server design rules and then check the database for code or design elements that ignores those rules.&lt;br /&gt;
+      Related Technology: C#, VB.NET, Windows Form, Web Service, SQL Server 2000 and 2005, SQL Reporting Services
+      &lt;/li&gt;
+
+      &lt;li&gt;
+      &lt;b&gt;SSW SQL Reporting Services Auditor.&lt;/b&gt; A Web-Application that iterates through all the reports on a report server and lets shows whether they have rendered correctly or if any errors occurred.&lt;br /&gt;
+      Related Technology: C#, Web Service, SQL Server 2000 and 2005, SQL Reporting Services.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW EmailMerge PRO!.&lt;/b&gt; Makes sending bulk email a breeze. Especially useful for periodical email newsletters, it provides real time tracking information and reports on bounced emails, enabling you to keep your subscribers list clean and up-to-date&lt;br /&gt;
+      Related Technology: C#, Windows Form, Regular Expression.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      He enjoys programming and very warm hearted. Beside job, Frank likes sport, music and reading, and basketball is his favorite sport.
+    </description2>
+
+    <description4>
+      His favourite quote is "Tomorrow is another day".
+      &lt;br /&gt;&lt;br /&gt;
+      Frank may be contacted at &lt;a href="javascript:sendEmail('4672616E6B57616E67407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4672616E6B57616E67407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;FrankWang&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+  </employee>
+
+  <employee>
+    <EmpID>EL</EmpID>
+    <Surname>Lin</Surname>
+    <FirstName>Evan</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Evan.aspx</SharePointURL>
+    <description>Position: Senior Software Developer&lt;br /&gt; Qualifications: B.Eng &lt;br /&gt; &lt;br /&gt;</description>
+    <description2>Evan is a software developer at SSW. He specializes in developing solutions with C#,ASP.NET,SQL Server and Reporting Services. He is responsible for the <![CDATA[SSW Web Site and <a href="/ssw/linkAuditor" target="_blank">SSW Link Auditor</a>]]>.</description2>
+    <description4>
+      His favourite quote is "Nothing seek, nothing find."
+      &lt;br /&gt;&lt;br /&gt;Evan can be contacted at &lt;a href="javascript:sendEmail('4576616E4C696E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4576616E4C696E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;EvanLin&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>JAYLIN</EmpID>
+    <Surname>Lin</Surname>
+    <FirstName>Jay</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Jay.aspx</SharePointURL>
+    <description>Position: Senior Software Developer&lt;br /&gt; Qualifications: B.Eng - Computer Science &lt;br /&gt; &lt;br /&gt;</description>
+    <description2>Jay is a Senior Software Developer at SSW. He specializes in developing solutions with C#, C++, ASP.NET, WinForms, SQL Server and Reporting Services. He is responsible for the <![CDATA[SSW Web Site and <a href="/ssw/linkAuditor" target="_blank">SSW Link Auditor</a>]]>.</description2>
+    <description4>
+      He is fond of all kinds of sport,especially football.
+      &lt;br /&gt;
+      His favourite quote is "Many a little makes a mickle."
+      &lt;br /&gt;
+      &lt;br /&gt;
+      Jay can be contacted at &lt;a href="javascript:sendEmail('4A61794C696E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('4A61794C696E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;JayLin&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>RT</EmpID>
+    <Surname>Tee</Surname>
+    <FirstName>Ryan</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Position: Software Architect&lt;br /&gt;Qualifications: MCSD, MCDBA, Diploma in Computer Studies (Major in Oracle Database)</description>
+    <description2>
+      Ryan Tee is a Software Architect at SSW, a Microsoft Certified Professional specializing in .NET solution. He has extensive industrial experience developing Microsoft solutions. He is a bilingual .NET developer that well-versed in both C# and VB .NET.
+      &lt;br /&gt;He is the man behind the development of &lt;a href="/ssw/CodeAuditor" target="_blank"&gt;SSW Code Auditor&lt;/a&gt; and &lt;a href="/ssw/HealthAuditor" target="_blank"&gt;SSW Health Auditor&lt;/a&gt;, the products that keep your code healthy. While on development of these 2 products, he learns the concept of "you either pay now, or pay later", so he always aims to get things right at the first time. Ryan enjoys every bit of working on Code Auditor and the very mind-challenging (or perhaps mind-torturing) regular expressions.
+      &lt;br /&gt;
+      &lt;br /&gt;
+
+      Ryan's client project:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;&lt;a href="/ssw/redirect/LouiseCogan.htm" target="_blank"&gt;Louise Cogan&lt;/a&gt; from &lt;a href="/ssw/redirect/GorgeousGetaways.htm" target="_blank"&gt;Gorgeous Getaways&lt;/a&gt;&lt;/b&gt; - Setup and administer server and network.&lt;br /&gt;
+      Related Technology: Microsoft Windows Small Business Server 2003 R2, Exchange Server 2003, Office 2007, Windows Mobile 5.0 and Direct Push Technology.
+      &lt;/li&gt;
+
+      &lt;/ul&gt;
+      &lt;br /&gt;His favorite quote is "Those who stand for nothing fall for anything".
+    </description2>
+    <description3bold>
+      Ryan may contacted at &lt;a href="javascript:sendEmail('5279616E546565407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('5279616E546565407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;RyanTee&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <description4>&lt;img alt="MCSD" src="/SSW/Company/Images/mcsd.gif"&gt; &lt;img alt="MCDBA" src="/SSW/Company/Images/mcdba.gif"&gt;</description4>
+    <descriptionprofile />
+  </employee>
+
+  <employee>
+    <EmpID>BC</EmpID>
+    <Surname>Cheng</Surname>
+    <FirstName>Brite</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Brite.aspx</SharePointURL>
+    <description>Position: Senior Software Developer&lt;br /&gt; Qualifications: B.Eng - Computer Science&lt;br /&gt; &lt;br /&gt;</description>
+    <description2>Brite is a Senior Software Developer at SSW. He specializes in developing solutions with C#,ASP.NET and SQL Server. </description2>
+    <description4>
+      He loves sports, especially basetball. He also like reading something about philosophy, history, and military.
+      &lt;br /&gt;
+      His favourite quote is "We need men who can dream of things that never were."
+      &lt;br /&gt;&lt;br /&gt;Brite can be contacted at &lt;a href="javascript:sendEmail('42726974654368656E67407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('42726974654368656E67407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;BriteCheng&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile/>
+  </employee>
+
+  <employee>
+    <EmpID>AM</EmpID>
+    <Surname>Cogan</Surname>
+    <FirstName>Anastasia</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Anastasia.aspx</SharePointURL>
+    <description>Position: Financial Controller&lt;br /&gt; Qualifications: Bachelor of Business (UTS), CPA</description>
+    <description2>
+      Anastasia is the Financial Controller at SSW. Her main duties vary from the day-to-day management of finance and administration functions to reviewing and approving payroll. She manages human resources issues, legal issues and company secretarial obligations.
+      &lt;br /&gt;
+      She is responsible for the GST/BAS reporting, preparation of Income Tax Returns and monthly financial statements.
+      Anastasia is also an expert in MYOB.
+      &lt;br /&gt; &lt;br /&gt;
+      She enjoys looking after her two gorgeous little girls.
+    </description2>
+    <description3bold>
+      Anastasia may be contacted at &lt;a href="javascript:sendEmail('616E61737461736961407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('616E61737461736961407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;Anastasia&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description3bold>
+    <imagedrawn>Images/AnaMavrogeorgis_Small.gif</imagedrawn>
+  </employee>
+  <!--
+	<employee>
+		<EmpID>BN</EmpID>
+		<Surname>Nguyen</Surname>
+		<FirstName>Bao</FirstName>
+		<description>Position: Accounts &amp; Administration &lt;br /&gt; Qualifications: DipAcc (NTU)</description>
+		<description2>
+			Bao is a versatile member of SSW and looks after many areas including Accounts and Administration activities as follows:
+			&lt;ul&gt;
+			&lt;li&gt;Building &amp; office renovation and maintenance&lt;/li&gt;
+			&lt;li&gt;Search and organize office equipment&lt;/li&gt;
+			&lt;li&gt;General repairs and maintenance&lt;/li&gt;
+			&lt;li&gt;Recruitment issues&lt;/li&gt;
+			&lt;li&gt;Motor vehicle registration, insurance and renewal&lt;/li&gt;
+			&lt;li&gt;Litigation matters&lt;/li&gt;
+			&lt;li&gt;Relief MYOB accounting duties for the Accountant&lt;/li&gt;
+			&lt;li&gt;Research and Development Grant issues&lt;/li&gt;
+			&lt;li&gt;Business sponsorship and Trade Mark applications&lt;/li&gt;
+			&lt;/ul&gt;
+		</description2>
+
+		<description4>
+			He enjoys swimming, playing tennis and 8-ball pool. Bao may be contacted at &lt;a href="javascript:sendEmail('42616F4E677579656E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('42616F4E677579656E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;BaoNguyen&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+		</description4>
+
+		<descriptionprofile />
+	</employee>
+-->
+  <employee>
+    <EmpID>EC</EmpID>
+    <Surname>Cogan</Surname>
+    <FirstName>Eve</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Employees.aspx</SharePointURL>
+    <description>Eve is progressing her way through the SSW by getting on side with the right people.</description>
+    <description2>Joining SSW on January 4 2002 at a very early hour, Eve is expected to make big changes in the way the company is run.</description2>
+    <description3bold>At SSW, Eve is responsible for keeping mum and dad busy, and generally being cute. Find some more pictures &lt;a href="evecogan.aspx"&gt;Eve Cogan&lt;/a&gt;</description3bold>
+    <description4>Eve's favourite quote is not yet known... but we know that her favourite game is &lt;a href="Bubbles1-1.zip"&gt;Bubbles.NET&lt;/a&gt;</description4>
+    <descriptionprofile />
+    <imagedrawn>/SSW/Company/Images/Eve.jpg</imagedrawn>
+    <imagelarge>/SSW/Company/Images/Eve.jpg</imagelarge>
+  </employee>
+
+  <employee>
+    <EmpID>ZV</EmpID>
+    <FirstName>Zune</FirstName>
+    <Surname>Vien</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Zune.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer &lt;br /&gt; Qualifications: Bachelor of Software Engineering at University of New South Wales&lt;br /&gt;
+    </description>
+    <description2>
+      Zune is a Senior Software Developer at SSW. He specializes in developing solutions with C#,ASP.NET and SQL Server.&lt;br /&gt;&lt;br /&gt;
+      Zune's client project:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;EveryTree&lt;/b&gt; A web application with advanced mapping functionality includes SQL Server 2008 Spatial data type for storing, retrieving and clustering pins on the map and JQuery for improved UI.&lt;br /&gt;
+      Related Technology: C#, ASP.NET 3.5, AJAX, JQuery, WCF, Web Service, ADO.NET Entity Framework, LINQ, SQL Server 2008 (Spatial and FileStream data types), Multiple Mapping APIs including: Google maps, Virtual Earth...
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SATSUMA&lt;/b&gt; DotNetNuke website with custom modules that allows user to developer School Environment Management Plans.&lt;br /&gt;
+      Related Technology: C#, VB.NET, ASP.NET 2, DotNetNuke, SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Admin Bandit&lt;/b&gt; DotNetNuke with custom modules, i.e: online store, feedback...&lt;br /&gt;
+      Related Technology: VB.NET, ASP.NET 2, DotNetNuke, SQL Server 2005.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      Zune's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW TimePro.NET.&lt;/b&gt; Time sheeting application that supports both direct database connection and Web Services.&lt;br /&gt;
+      Related Technology: C#, Windows Form, WCF, SQL Server 2005, Microsoft Sync Services for ADO.NET.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW CRM v3.0 and v4.0.&lt;/b&gt; Migrating existing database to CRM, implementation of CRM Customizations, callouts and plugins.&lt;br /&gt;
+      Related Technology: C#, ASP.NET 1.1, ASP.NET 2, Web Service, SQL Server 2005.
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW DotNetNuke Traning Site.&lt;/b&gt; SSW traning site for DotNetNuke with a collection of numerous tutorials, training videos, 3rd party tools, handy tips and resources.&lt;br /&gt;
+      Related Technology: VB.NET, ASP.NET 2, SQL Server 2005, DotNetNuke
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+    </description2>
+    <description4>
+      His favourite quote is "The best way to escape from a problem is to solve it".
+      &lt;br /&gt;&lt;br /&gt;
+      Zune may be contacted at &lt;a href="javascript:sendEmail('5A756E655669656E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('5A756E655669656E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;ZuneVien&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+  </employee>
+
+  <employee>
+    <EmpID>EB</EmpID>
+    <FirstName>Ed</FirstName>
+    <Surname>Brown</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/EdB.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Architect &lt;br /&gt; Qualifications: Assoc. Dip. Computer Applications &amp; Development&lt;br /&gt;
+    </description>
+    <description2>
+      Ed started his employment with SSW on 2/1/2008 with more than 10 years commercial software development experience behind him. He has worked in various industries and companys including Corporate Express Australia, Entertainment Distribution Company, Nutrimetics Australia and Hills Transport (to name a few).&lt;br /&gt;
+      Ed's duties at these organizations included software developer, team leader, project manager and general consultant.
+    </description2>
+    <description4>
+      &lt;br /&gt;&lt;br /&gt;
+      Ed may be contacted at &lt;a href="javascript:sendEmail('456442726F776E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('456442726F776E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;EdBrown&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+  </employee>
+
+  <employee>
+    <EmpID>ALS</EmpID>
+    <FirstName>Alvin</FirstName>
+    <Surname>Shen</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Alvin.aspx</SharePointURL>
+    <description>
+      Position: Software Architect &lt;br /&gt; Qualifications: Bachelor of IT(Software Engineering) at Queensland University of Technology &amp; Master of Commerce(Information System) at University of New South Wales &amp; MCTS&lt;br /&gt;
+    </description>
+    <imagecertification>images/AlvinShenMCTS.gif</imagecertification>
+    <description2>
+      Alvin is a Software Architect at SSW. He specializes in developing solutions with .NET Framework 3.5,C#,VB.NET,XML,Web Service,ASP.NET and SQL Server.
+      He is also familar with some design softwares such as Photoshop and Dreamweaver.
+      &lt;br /&gt;
+      Alvin's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;eMove&lt;/b&gt; A agent company looking to build their e-business website by using DNN&lt;br /&gt;
+      Related Technology: .NET NUKE(DNN),ASP.NET 2.O Application,VB.NET,SQL Server 2005,
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;QWI(Queensland Water Infrastructure Pty Ltd )&lt;/b&gt; A government founded company looking to deploy sharepoint in their system&lt;br /&gt;
+      Related Technology: SharePoint
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Swift&lt;/b&gt; A heavy engineering company looking to build a ERP like internal management system&lt;br /&gt;
+      Related Technology: ASP.NET 3.5 Application, C#, WPF, WCF, Web Service, Workflow, LINQ, SQL Server 2005
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      Alvin's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Website&lt;/b&gt; SSW's official website. Helped to upgrade our website form ASP.NET 2.0 TO ASP.NET 3.5, Fixed sync. problems among different servers and TFS.&lt;br /&gt;
+      Related Technology: XML,ASP.NET 3.5,C#,VB.NET,Web Service,TFS
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;Microsoft New Technologies Presentation&lt;/b&gt; Helping Adam Cogan our Chief Architect prepare the demos and scripts of presentation and assiting him in road show around Sydney's universities.
+      Related Technology: C#, SilverLight, LINQ, ASP.NET 3.5
+      &lt;/li&gt;
+      &lt;/ul&gt;
+    </description2>
+    <description4>
+      &lt;br /&gt;
+      Alvin may be contacted at &lt;a href="javascript:sendEmail('416C76696E5368656E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('416C76696E5368656E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;AlvinShen&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+  </employee>
+
+  <employee>
+    <EmpID>AGT</EmpID>
+    <FirstName>Andy</FirstName>
+    <Surname>Taslim</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Andy.aspx</SharePointURL>
+    <description>
+      Position: Software Architect &lt;br /&gt; Qualifications: Bachelor of Computer Science(Software Development) at University of Wollongong &amp; Master of Information System at University of New South Wales&lt;br /&gt;
+    </description>
+    <description2>
+      &lt;br /&gt;
+      Andy is a Software Architect at SSW. He specializes in developing solutions with .NET Framework 3.5, C#, VB.NET, ASP.NET, Web Services / WCF, LINQ, SQL Server and MS Access.
+      &lt;br /&gt;
+      Andy's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;MAC&lt;/b&gt; A logistic company that distributes beef around the world&lt;br /&gt;
+      Related Technology: C#, SQL Server 2005, LINQ, Web Services, and MS Access
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;DUPONT&lt;/b&gt; A company that puts science to work by creating sustainable solutions to better, safer, healthier life for people everywhere &lt;br /&gt;
+      Related Technology: MS Access
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+
+      Andy's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW TimePro.NET&lt;/b&gt; An integrated database application designed for corporations who bill on a time or product basis.&lt;br /&gt;
+      Related Technology: .NET Framework 3.5, C#, WCF, SQL Server and SQL Server Compact Edition
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;b&gt;SSW Vista Image&lt;/b&gt; Managing the preset software development image that will be used through out the whole company.
+      Related Technology: VMWare, and ImageXTool
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;br /&gt;
+      Andy can also be found teaching &lt;a href="http://it.uts.edu.au/course/shortcourse/programming/" target="_blank" &gt;UTS Short Courses&lt;/a&gt; in .NET
+
+    </description2>
+    <description4>
+      His favourite quote is "The more passions and desires one has, the more ways one has of being happy".
+      &lt;br /&gt;&lt;br /&gt;
+      Andy may be contacted at &lt;a href="javascript:sendEmail('416E64795461736C696D407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('416E64795461736C696D407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;AndyTaslim&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+  </employee>
+
+  <employee>
+    <EmpID>GHH</EmpID>
+    <FirstName>Gordon</FirstName>
+    <Surname>Hartley</Surname>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/GordonH.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer &lt;br /&gt; Qualifications: Diploma in Financial Markets (SIA)
+    </description>
+    <description2>
+      Gordon is a Senior Software Developer at SSW specialising in software best practices.
+      &lt;br /&gt;
+      &lt;br /&gt;He has over 10 years of experience in IT, primarily from the financial sector with Microsoft technologies, but makes use of other free and proprietary tools and environments as needed
+      (e.g. FreeBSD, OS X, Linux, Apache, Ruby, NAnt, xUnit, Cygwin, Emacs, LLBLGen, ReSharper)
+      &lt;br /&gt;
+      &lt;br /&gt;You can visit Gordon's &lt;a href="http://www.informationisnotknowledge.com" target="_blank" &gt;blog&lt;/a&gt; and his poor excuse for a &lt;a href="http://www.gordonhartley.com" target="_blank" &gt;website&lt;/a&gt; (warning - contains cute kitten photo's).
+    </description2>
+    <description4>
+      His favourite quote is "Information is not knowledge".
+      &lt;br /&gt;&lt;br /&gt;
+      Gordon may be contacted at &lt;a href="javascript:sendEmail('476F72646F6E486172746C6579407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('476F72646F6E486172746C6579407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;GordonHartley&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+  </employee>
+  <employee>
+    <EmpID>DDB</EmpID>
+    <Surname>Bian</Surname>
+    <FirstName>David</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/David.aspx</SharePointURL>
+    <description>Position: Software Developer &lt;br/&gt; Qualifications: BMgmt - Management Information Systems</description>
+    <description2>
+      David is a software developer at SSW. He specializes in developing solutions with C#, VB.NET, ASP.NET, SQL Server and Reporting Services.
+      &lt;br/&gt;&lt;br/&gt;
+
+      David's client projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;&lt;a href="http://www.theguide.com.au/" target="_blank"&gt;TheGuide.com.au&lt;/a&gt;&lt;/b&gt; - A website delivering accurate and up-to-date information about Restaurants, Bars and Hotels in Australia.
+      &lt;br/&gt;Related Technology: C#, VB.NET, SQL Server 2005, Reporting Services, NetTiers and nHibernate.
+      &lt;/li&gt;
+
+      &lt;li&gt;
+      &lt;b&gt;&lt;a href="http://www.blitzbooks.com.au/" target="_blank"&gt;Blitzbooks&lt;/a&gt;&lt;/b&gt; - A site that provides great musicianship books for both teachers and students.
+      &lt;br/&gt;Related Technology: C#, VB.NET, SQL Server 2005, DNN (DotNetNuke).
+      &lt;/li&gt;
+
+
+      &lt;li&gt;
+      &lt;b&gt;&lt;a href="http://www.emove.com.au/" target="_blank"&gt;eMove&lt;/a&gt;&lt;/b&gt; - It offers a range of "moving" services to make moving easier with a convenient one-stop-shop format.
+      &lt;br/&gt;Related Technology: C#, VB.NET, SQL Server 2005, DNN (DotNetNuke).
+      &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;br/&gt;
+      David's internal projects:
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;b&gt;&lt;a href="http://www.ssw.com.au/ssw/codeauditor/" target="_blank"&gt;SSW Code Auditor&lt;/a&gt;&lt;/b&gt; - A powerful code auditing engine that support multiple rule types (such as Regular Expressions, wild cards, and code snippets) and multiple target types (such as Visual Studio projects, Mirosoft Access Project, and website outputs)
+      &lt;br/&gt;Related Technology: C#, Windows Form, Regular Expression, XML, XSL and Microsoft Access database.
+      &lt;/li&gt;
+      &lt;/ul&gt;
+    </description2>
+    <description4>
+      David may be contacted at &lt;a href="javascript:sendEmail('64617669646269616E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('64617669646269616E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;DavidBian&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+
+    <descriptionprofile>
+    </descriptionprofile>
+
+  </employee>
+
+  <employee>
+    <EmpID>CDW</EmpID>
+    <Surname>Wang</Surname>
+    <FirstName>Cindy</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Cindy.aspx</SharePointURL>
+    <description>Position: PA to General Manager(Beijing) &lt;br /&gt; Qualifications: Bachelor of Economics</description>
+    <description2>
+      Cindy is the only girl team member of SSW Beijing office and reponsible for the administrative activities and financial payments, etc.
+      She Oversees the administrative management of Executive Office and provide efficient secretarial support to the General Manager, to ensure smooth operation in administrative work flow and management reporting.
+      &lt;br /&gt;
+      She is responsible for the team activity organization, office supplies purchasing and some recruitment issues.
+      &lt;br /&gt; Her favorite quote is "Where there is a will,there is a way".
+      &lt;br /&gt; She enjoys reading, playing tennis and watching film.
+    </description2>
+
+    <description4>
+      Cindy may be contacted at &lt;a href="javascript:sendEmail('42616F4E677579656E407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('42616F4E677579656E407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;CindyWang&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+
+    <descriptionprofile />
+  </employee>
+
+  <employee>
+    <EmpID>RM</EmpID>
+    <Surname>Maman</Surname>
+    <FirstName>Ron</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/RonM.aspx</SharePointURL>
+    <description>Position: Software Architect&lt;br /&gt; Qualifications: B. Software Engineering</description>
+    <description2>
+      His major clients over the past years has been involved with goverment, banking and insurance sectors.
+      Ron is a Microsoft Certified Technology Specialist in SharePoint 2007 and currently working on one of our internal SharePoint projects.
+      Ron has over 8 years of cemmercial experience with Microsoft's technologies which includes .NET 2.0 .NET 3.5 using C#, VB.NET, and Silverlight.
+      From the database point of view, Ron can fully design and manage SQL Server 2005.
+    </description2>
+    <description3bold />
+    <description4>He reminds himself that "There are always more than one point of view and computing is a battle between the developer and the computer - and in most cases, the developer wins!!". &lt;p&gt;Ron may be contacted at &lt;a href="mailto:RonMaman@s*w.com.au"&gt;RonMaman@s*w.com.au&lt;/a&gt;  </description4>
+    <imagecertification>images/RonMamanMCTS.jpg</imagecertification>
+    <descriptionprofile />
+    <imagedrawn>images/RonMaman.jpg</imagedrawn>
+    <imagelarge>images/RonMaman.jpg</imagelarge>
+  </employee>
+
+  <employee>
+    <EmpID>ALZ</EmpID>
+    <Surname>Zhou</Surname>
+    <FirstName>Allan</FirstName>
+    <SharePointURL>https://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Allan.aspx</SharePointURL>
+    <description>
+      Position: Senior Software Developer &lt;br /&gt; Qualifications: Bachelor of Computer
+    </description>
+    <description2>
+      Allan Zhou is a Senior Software Developer at SSW, a Microsoft Certified Gold Partner specializing in database driven .NET Solutions.
+      Allan has more than 7 years experience in software development and project management. Allan is currently
+      working with C#, VB.NET, ASP.NET, Win Forms, WPF/Silverlight, SQL Server, Oracle,
+      Microsoft Dynamic CRM and Microsoft Office SharePoint Server. He also has some work experience on Microsoft BizTalk Server.
+    </description2>
+
+    <description4>
+      Allan may be contacted at &lt;a href="javascript:sendEmail('616C6C616E7A686F75407373772E636F6D2E6175')" onmouseover="javascript:displayStatus('616C6C616E7A686F75407373772E636F6D2E6175');return true;" onmouseout="javascript:clearStatus(); return true;"&gt;AllanZhou&lt;img src="/ssw/images/sswlogo/ssw_com_au_NoShadow.gif" class="email" alt="email"/&gt;&lt;/a&gt;
+    </description4>
+    <descriptionprofile />
+  </employee>
+</employees>
+

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project version='6'>
+	<steps type='0'>
+		<step action='Group'>
+			<name>Project steps</name>
+		</step>
+		<step action='Run Program'>
+			<command>"%VS80COMNTOOLS%..\IDE\tf.exe" get "%PROJDIR%" /all /recursive /noprompt</command>
+			<indent type='3'>1</indent>
+			<name>Get Latest Version from TFS</name>
+			<outputfrom type='3'>1</outputfrom>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>\\ant\ssw\eXtremeEmails\Reports</DestDir>
+			<ExclExt><![CDATA[_deploytowebsite.bld
+zz*.*
+/zz*]]></ExclExt>
+			<Ext>*.*</Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Purge type='11'>-1</Purge>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>1</indent>
+			<name>Copy Files to Ant</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>ftp://us.ssw.com.au/httpdocs/ssw/eXtremeEmails/Reports/</DestDir>
+			<ExclExt><![CDATA[_deploytowebsite.bld
+zz*.*
+/zz*]]></ExclExt>
+			<Ext>*.*</Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Purge type='11'>-1</Purge>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<checked type='11'>0</checked>
+			<indent type='3'>1</indent>
+			<name>Sync to US server</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>ftp://au.ssw.com.au/httpdocs/ssw/eXtremeEmails/Reports/</DestDir>
+			<ExclExt><![CDATA[_deploytowebsite.bld
+zz*.*
+/zz*]]></ExclExt>
+			<Ext>*.*</Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Purge type='11'>-1</Purge>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<checked type='11'>0</checked>
+			<indent type='3'>1</indent>
+			<name>Sync to AU server</name>
+		</step></steps>
+</project>

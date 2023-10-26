@@ -1,0 +1,12 @@
+Done - Convert to .net 4.5.1
+Done - Implement SSW Health Check
+Done - Run VB -> C# project converter. (As per what DNN used)
+
+Add Application Insights
+Change the authentication system. It is emailing clear text passwords!?!?!?
+Upgrade to ASP.Net vNext
+Re-enable Knowledge Base. (done I think? It is online & working. Maybe the Admin module was still offline?)
+Remove /TimeProOnline
+Finish zsValidate.
+Reduce file of website down from 2.5 GB to 250 MB. Currently at 1GB
+Implement Octopus Deploy. (waiting for Octopus 3.0 to be released with support for deploying deltas)

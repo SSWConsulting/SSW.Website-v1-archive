@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="/SSW/default.aspx" title="Home"  description="Home">
+    <siteMapNode url="/SSW/StandardsInternal/browse.aspx" title="SSW Standards Internal"  description="SSW Standards Internal">
+      <siteMapNode url="/SSW/StandardsInternal/Backup/default.aspx" title="Backup"  description="Backup" />
+      <siteMapNode url="/SSW/StandardsInternal/BlogServer/default.aspx" title="Blog Server"  description="Blog Server" />
+      <siteMapNode url="/SSW/StandardsInternal/ComputerSetup/default.aspx" title="Computer Setup"  description="Computer Setup" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperGeneral/browse.aspx" title="Developer General"  description="Developer General" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperInternet/default.aspx" title="Developer Internet"  description="Developer Internet" />
+      <siteMapNode url="/SSW/StandardsInternal/PeerEvaluation/Default.aspx" title="Peer Evaluation"  description="Peer Evaluation" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperNetworkPhone/browse.aspx" title ="Developer Network Phone" description="Developer Network Phone" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperOutlook-Exchange/default.aspx" title="Developer Outlook-Exchange"  description="Developer Outlook-Exchange" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperProductsHosting/default.aspx" title="Developer Products Hosting"  description="Developer Products Hosting" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperSQLServer/default.aspx" title="Developer SQL Server"  description="Developer SQL Server" />
+      <siteMapNode url="/SSW/StandardsInternal/Forms/default.aspx" title="Forms"  description="Forms" />
+      <siteMapNode url="/SSW/StandardsInternal/GeneralNonComputer/default.aspx" title="General Non Computer"  description="General Non Computer" />
+      <siteMapNode url="/SSW/StandardsInternal/InductionTraining/default.aspx" title="Induction Training"  description="Induction Training" />
+      <siteMapNode url="/SSW/StandardsInternal/Marketing/default.aspx" title="Marketing"  description="Marketing" />
+      <siteMapNode url="/SSW/StandardsInternal/Meetings/MeetingsScheduleAgendas.aspx" title="Meetings"  description="SSW Meetings and Agendas" />
+      <siteMapNode url="/SSW/StandardsInternal/DeveloperCRM/RulesToBetterMicrosoftCRM3.aspx" title="Rules to Better Microsoft CRM 3"  description="Rules to Better Microsoft CRM 3" />
+      <siteMapNode url="/SSW/StandardsInternal/TestpageEmployment/Work_experience_screening_standard.aspx" title="Work Experience Screening Standard"  description="Work Experience Screening Standard" />
+      <siteMapNode url="/SSW/StandardsInternal/Employment/employmenttest.aspx" title="Employment Test" description="Employment Test">
+        <siteMapNode url="/SSW/StandardsInternal/Employment/employment_phonescreen_developergraphics.aspx" title="Employment Phonescreen Developer Graphics" description="Employment Phonescreen Developer Graphics" />
+        <siteMapNode url="/SSW/StandardsInternal/Employment/employment_phonetest_developergraphicsprojectmanager.aspx" title="Employment Phone Test Developer Graphics Project Manager" description="Employment Phone Test Developer Graphics Project Manager" />
+        <siteMapNode url="/SSW/StandardsInternal/Employment/employment_codingtestrequirements.aspx" title="Employment Coding Test Requirments" description="Employment Coding Test Requirments" />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,21 @@
+Note from Adam
+--------------
+
+Dont give the direct link to a download 
+	eg. http://download.us.ssw.com.au/SSWCodeAuditor_v8-44.exe
+
+
+Instead give:
+* a link to the basket (recommended)
+	eg. http://www.ssw.com.au/ssw/redirect/SSWCodeAuditorBasket.asp
+
+* a link to download page
+	eg. http://www.ssw.com.au/ssw/download 
+
+* a link to the redirect 
+	eg. http://www.ssw.com.au/ssw/redirect/SSWCodeAuditor.asp,
+	
+	
+	Report
+	http://ant/ssw/eXtremeEmails/Reports/TestPleaseReport.htm
+	http://ant/ssw/zsValidate/Reports/Downloads.aspx 

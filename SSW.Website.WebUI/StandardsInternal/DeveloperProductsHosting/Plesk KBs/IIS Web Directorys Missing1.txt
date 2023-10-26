@@ -1,0 +1,8 @@
+This error means that some subdomain is not configured in IIS. It's needed to be re-configured. You can do it using Plesk tool:
+
+"%plesk_bin%\websrvmng.exe" --update-subdomain --vhost-name=<domain> --subdomain=<subdomain> 
+
+For example:
+subdomain.domain.com has problems. To re-configure it:
+
+"%plesk_bin%\websrvmng.exe" --update-subdomain --vhost-name=domain.com --subdomain=subdomain 

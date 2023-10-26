@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://www.ssw.com.au/ssw/Events/Training/Angular-Superpowers-Tour.aspx") %>

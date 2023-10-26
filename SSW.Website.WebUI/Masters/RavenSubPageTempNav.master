@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="RavenSubPageTempNav.master.cs" Inherits="SSW.Website.WebUI.Masters.RavenSubPageTempNav" 
+    MasterPageFile="~/Masters/RavenTempNav.Master" %>
+
+<%@ Register Src="~/Components/Newsletter.ascx" TagName="Newsletter" TagPrefix="ssw" %>
+<%@ Register Src="~/Components/OurExperience.ascx" TagName="OurExperience" TagPrefix="ssw" %>
+
+<asp:Content ID="ContentHeader" runat="server" ContentPlaceHolderID="HeaderScripts">
+    <asp:ContentPlaceHolder ID="HeaderScripts" runat="server">
+        <meta name="description" content="SSW, Superior Software for Windows, Consultants for software, database and website development using VB.net, C#.net, ASP.Net, SQL Server, Microsoft Access, Exchange Server and SharePoint Portal Server, Custom database software solutions and downloads in Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil!!" />
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="FooterScriptsContent" runat="server" ContentPlaceHolderID="FooterScripts">
+    <asp:ContentPlaceHolder ID="FooterScripts" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" runat="Server" ContentPlaceHolderID="Content">
+    <div ID="MasterBody" runat="server">
+        <div id="Subpage">
+            <div class="CategoryColor full-margin">
+                <div id="CategoryColor" runat="server"></div>
+                <div class="slider-wrapper theme-default background">
+                    <asp:ContentPlaceHolder ID="Slider" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="category-image"></div>
+            </div>
+            <div id="Header">
+                <div class="full-margin">
+                    <div class="breadcrumb">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="SSWXmlSiteMapProvider">
+                        </asp:SiteMapPath>
+                    </div>
+                    <asp:ContentPlaceHolder ID="title" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="facebook" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="content clearfix">
+                <div class="full-margin">
+                    <div id="maincontentFull">
+                        <asp:ContentPlaceHolder ID="maincontentFull" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="aside-left" id="SidebarLeft">
+                        <asp:ContentPlaceHolder ID="asideleft" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="aside-right" id="SidebarRight">
+                        <div id="index" class="clearfix">
+                            <asp:ContentPlaceHolder ID="index" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div id="asideright" class="clearfix">
+                            <asp:ContentPlaceHolder ID="asideright" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div id="sidebar" class="clearfix">
+                            <asp:ContentPlaceHolder ID="sidebarcontainer" runat="server">
+
+                                <asp:ContentPlaceHolder ID="sidebar" runat="server">
+                                </asp:ContentPlaceHolder>                                
+                                <ssw:OurExperience ID="OurExperience" runat="server" />
+                                <ssw:Newsletter ID="Newsletter" runat="server" />
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div id="maincontent" class="clearfix">
+                        <asp:ContentPlaceHolder ID="maincontent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div id="maincontentLater">
+                        <asp:ContentPlaceHolder ID="maincontentLater" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="Location" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
+

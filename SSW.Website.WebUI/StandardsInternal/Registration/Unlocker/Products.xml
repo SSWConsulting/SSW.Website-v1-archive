@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="en-AU">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProdNameInRegistrationDll" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ProdNameInRegistrationDll>Exchange Reporter</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>Patient Management Enterprise</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Access Reporter For IIS NET</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Code Auditor</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Data PRO!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Data Renovator</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Email Merge PRO!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW eXtreme Emails!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Incident PRO!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Link Auditor</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW LookOut!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Performance PRO!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Property and Event PRO!</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW SQL Auditor</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW SQL Deploy</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Team Calendar</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Time PRO! Smart Tags</ProdNameInRegistrationDll>
+  </Table>
+  <Table>
+    <ProdNameInRegistrationDll>SSW Upsizing PRO!</ProdNameInRegistrationDll>
+  </Table>
+</NewDataSet>

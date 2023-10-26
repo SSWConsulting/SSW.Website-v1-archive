@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/SSWHistoryReportListDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/SSWHistoryReportListDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/SSWHistoryReportListDataSet.xsd" id="SSWHistoryReportListDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="SSWHistoryReportListDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HistoryReportList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ReportID" type="xs:int" />
+              <xs:element minOccurs="0" name="SSWContactID" type="xs:string" />
+              <xs:element minOccurs="0" name="EmpUpdate" type="xs:string" />
+              <xs:element minOccurs="0" name="Good" type="xs:string" />
+              <xs:element minOccurs="0" name="Bad" type="xs:string" />
+              <xs:element minOccurs="0" name="Unrecognised" type="xs:string" />
+              <xs:element msdata:DateTimeMode="Utc" minOccurs="0" name="ReportDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="DiagnosticsVersion" type="xs:string" />
+              <xs:element minOccurs="0" name="ComputerName" type="xs:string" />
+              <xs:element minOccurs="0" name="ComputerIP" type="xs:string" />
+              <xs:element msdata:DateTimeMode="Utc" minOccurs="0" name="DateCreated" type="xs:dateTime" />
+              <xs:element msdata:DateTimeMode="Utc" minOccurs="0" name="DateUpdated" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

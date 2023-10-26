@@ -1,0 +1,18 @@
+<table class="clsTblSmallText">
+	<tr>
+		<td>
+			<a href="/ssw/Download"><img src="/ssw/images/Download.gif" border="0" align="absmiddle"></a> 
+		</td>
+		<td>
+			<a href="/ssw/Download">Download</a> Free Trial Version
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/ssw/Products/ProdCategory.aspx?CategoryID=SQLTUN"><img src="/ssw/images/Buy.gif" border="0" align="absmiddle"></a>
+		</td>
+		<td>
+			<a href="/ssw/Products/ProdCategory.aspx?CategoryID=SQLTUN">Purchase</a> Full Version
+		</td>
+	</tr>
+</table>

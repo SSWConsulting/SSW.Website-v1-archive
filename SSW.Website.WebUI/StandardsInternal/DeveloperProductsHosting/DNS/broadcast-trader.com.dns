@@ -1,0 +1,30 @@
+;
+;  Database file broadcast-trader.com.dns for broadcast-trader.com zone.
+;      Zone version:  12
+;
+
+@                       IN  SOA seal.sydney.ssw.com.au.  admin.sydney.ssw.com.au. (
+                        	12           ; serial number
+                        	900          ; refresh
+                        	600          ; retry
+                        	86400        ; expire
+                        	3600       ) ; minimum TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	seal.sydney.ssw.com.au.
+seal.sydney.ssw.com.au. A	61.8.3.146
+@                       NS	pridns.pacific.net.au.
+pridns.pacific.net.au.  A	210.23.129.35
+
+;
+;  Zone records
+;
+
+@                       MX	10	beyond.net.au.
+@                       MX	10	mail.beyond.net.au.
+@                       MX	50	mail.ssw.com.au.
+@                       MX	80	mail2.ssw.com.au.
+www                     A	61.8.3.148

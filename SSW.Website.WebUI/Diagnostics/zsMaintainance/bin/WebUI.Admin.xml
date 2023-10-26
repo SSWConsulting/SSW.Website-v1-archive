@@ -1,0 +1,109 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebUI.Admin
+</name>
+</assembly>
+<members>
+<member name="F:WebUI.Admin.NewProductVersionPage.ViewAllLink">
+	<summary>
+ViewAllLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebUI.Admin.NewProductVersionPage.ProductVersionsDetailsView">
+	<summary>
+ProductVersionsDetailsView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebUI.Admin.NewProductVersionPage.ProductVersionsDataSource">
+	<summary>
+ProductVersionsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:WebUI.Admin.NewProductVersionPage">
+	<summary>
+NewProductVersionPage class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:WebUI.Admin.Components.NonNullTextBox.txtBox">
+	<summary>
+txtBox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebUI.Admin.Components.NonNullTextBox.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:WebUI.Admin.Components.NonNullTextBox">
+	<summary>
+NonNullTextBox class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="P:WebUI.Admin.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WebUI.Admin.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WebUI.Admin.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:WebUI.Admin.NewProductPage.ViewAllLink">
+	<summary>
+ViewAllLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebUI.Admin.NewProductPage.ProductsDetailsView">
+	<summary>
+ProductsDetailsView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebUI.Admin.NewProductPage.ProductsDataSource">
+	<summary>
+ProductsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:WebUI.Admin.NewProductPage">
+	<summary>
+NewProductPage class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member>
+</members>
+</doc>

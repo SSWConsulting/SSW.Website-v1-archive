@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>FREE Microsoft Technical Briefings October</title>
+	<LINK href="/ssw/Include/ssw.css" type="text/css" rel="stylesheet">
+<link href="/ssw/Images/icoSSW_v2.ico" rel="shortcut icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+	<meta name="ProgId" content="FrontPage.Editor.Document">
+</head>
+<body>
+<div id="Layer9" style="position:absolute; width:597px; height:216px; z-index:10; left: 12px; top: 370px"> 
+  <table border="1" bgcolor="#FFFFCC">
+    <tr>
+      <td>You will see compelling new features for 
+        the professional developer including sub datasheets, Data Access Pages, 
+        new Access Projects (ADPs) for SQL Server and enhancements to the MDB, 
+        Jet 4.0 and VBA. Conversion from previous versions of Access and issues 
+        like ADO vs. DAO will also be covered. </td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" cellpadding="5" >
+    <caption align="left" ><b>Free Technical Briefings Locations</b></caption>
+    <tr bgcolor="#CCCCFF"> 
+      <td valign="top" width="100"> 
+        <div align="center"> 
+          <p>Adelaide<br>
+            (19-20 October)</p>
+          <p>Adelaide Hilton, 233 Victoria Terrace </p>
+        </div>
+      </td>
+      <td valign="top" width="100"> 
+        <p align="center">&nbsp;Bendigo<br>
+          (15 November)</p>
+        <p align="center">All Seasons International, 171 - 183 
+          McIvor Road </p>
+      </td>
+      <td valign="top" width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Brisbane<br>
+            (8-9 November)</p>
+          <p>Brisbane Convention & Exhibition Centre, Cnr Merivale 
+            & Glenelg Streets  </p>
+        </div>
+      </td>
+      <td valign="top" width="100"> 
+        <p align="center">&nbsp;Cairns<br>
+          (17 November)<br>
+          <br>
+          Hilton Cairns, Wharf Street </p>
+      </td>
+      <td valign="top" width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Canberra<br>
+            (26-27 October)</p>
+          <p>Hyatt Hotel, Commonwealth Avenue </p>
+        </div>
+      </td>
+      <td valign="top" width="100"> 
+        <p align="center">&nbsp;Coffs Harbour<br>
+          (9 November)</p>
+        <p align="center">Pacific Bay Resort, Cnr Pacific Highway 
+          & Bay Drive  </p>
+      </td>
+    </tr>
+    <tr valign="top" bgcolor="#CCCCFF"> 
+      <td width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Darwin<br>
+            (19 November)</p>
+          <p>Rydges Plaza Darwin, 32 Mitchell Street </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <p align="center">&nbsp;Geelong<br>
+          (17 November)</p>
+        <p align="center">All Seasons Ambassador, Cnr Geringhap 
+          & Myer Street </p>
+      </td>
+      <td width="100"> 
+        <p align="center">&nbsp;Hobart<br>
+          (19 November)</p>
+        <p align="center">Hotel Grand Chancellor, 1 Davey Street 
+          </p>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Melbourne<br>
+            (16-17 November)</p>
+          <p>Grand Hyatt, 123 Collins Street </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p> &nbsp;Newcastle<br>
+            (10 November)</p>
+          <p>Noahs on the Beach, NewcastleCorner Shortland Esplanade 
+            & Zaara Street  </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p>Orange<br>
+            (12 November)</p>
+          <p>Orange ex-services Club, 231-243 Anson Street 
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr valign="top" bgcolor="#CCCCFF"> 
+      <td width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Perth<br>
+            (13-14 October)</p>
+          <p>Hyatt Regency, 99 Adelaide Terrace </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Sydney<br>
+            (3-4 November)</p>
+          <p>Wentworth Hotel, 61-101 Philip Street </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p>Tamworth<br>
+            (12 November)</p>
+          <p>Small Business Centre, Level 1, 307 
+            Peel Street </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Townsville<br>
+            (15 November)</p>
+          <p>Sheraton Townsville, Sir Leslie Thiess Drive </p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center"> 
+          <p>&nbsp;Wollongong<br>
+            (8 November)</p>
+          <p>Novotel Northbeach, 2-4 Cliff Road</p>
+        </div>
+      </td>
+      <td width="100"> 
+        <div align="center">&nbsp; </div>
+      </td>
+    </tr>
+  </table>
+  <p><a href="/ssw/Redirect/Microsoft/msbrief.htm" target="_blank">Reserve 
+    your place at Microsoft's free Technical Briefings</a><img src="/ssw/Images/LeaveSite.gif" alt="You are about to leave the site">&nbsp;&nbsp;&nbsp;Make 
+    time to be there........... </p>
+  <p><b>Microsoft Windows 2000 Sessions</b><br>
+    <br>
+    This session is for developers who are taking 
+    a first time look at Windows 2000. Fundamentals of Windows 2000 technologies 
+    like COM+ will be introduced by building a Windows DNA application from the 
+    ground up, line by line, and ending with a functional solution to a simple 
+    business process.<br>
+    <br>
+    Not sure of the difference between COM, MTS &amp; COM+? Don t panic. Along 
+    with introducing a slew of new acronyms - IMDB, QC, TSPM, WLBS, CRM, and more 
+    - Windows 2000 introduces a variety of rich new application services that 
+    build on the foundation laid by COM &amp; MTS. These application services 
+    are collectively known as COM+. If you re thinking of building a distributed 
+    application, you need to know about COM+.<br>
+    <br>
+     <b>Microsoft Access 2000 Sessions</b><br>
+    <br>
+    This session is for professional developers 
+    who are experienced in using previous versions of Access to develop commercial 
+    solutions. This product update will highlight compelling new features for 
+    the professional developer including sub datasheets, <b>Data Access Pages</b>, 
+    new <b>Access Projects (ADPs) for SQL Server</b> and enhancements to the MDB, 
+    Jet 4.0 and VBA. Conversion from previous versions of Access and issues like 
+    <b>ADO vs. DAO</b> will also be covered. Lessons learnt from the field and 
+    top support issues with Access 2000 will complete this session.<br>
+    <br>
+    Access Projects that work natively with SQL Server 7 and the <b>Microsoft 
+    Database Engine (MSDE) </b>are made possible with Access 2000. Professional 
+    developers need to know about building these new projects, upsizing from Jet, 
+    <b>replication</b> and the traps and pitfalls. This material will show how 
+    Access 2000 can be used to build scalable, distributed and mobile solutions. 
+    Database licensing for MSDE and SQL Server 7 will also be covered.<br>
+    </p>
+  
+  <p><center><img border=2 src="Images/SSWfooter.jpg" alt="SSW" width="500" height="68" usemap=#SSWfooter></center></p>
+     <map name="SSWfooter">
+	<area shape="RECT" alt="SSW" coords="86,31,209,46" href="http://www.ssw.com.au" onMouseOver="window.status='SSW'">
+	<area shape="RECT" alt="info@s*w.com.au" coords="230,29,367,46" href="javascript:var e1='s%73%77&#046;%63%6f%6d%2e%61%75',e2='&#109;&#097;&#105;&#108;&#116;&#111;&#058;%20', e3='info', e4='?Subject=From%20Footer';var e0=e2+e3+'&#064;'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" title="&#105;&#110;&#102;&#111;&#064;&#115;&#115;&#119;&#046;&#099;&#111;&#109;&#046;&#097;&#117;" onMouseOver="window.status='Email Us'">
+	<area shape="RECT" coords=0,0,0,0>
+    </map>
+  </div>
+<center>
+  <div id="Layer1" style="position:absolute; width:601px; height:85px; z-index:1; left: 19px; top: 19px"> 
+    <div align="left"><img src="Images/banSSWstart.gif" alt="SSW" width="143" height="92"><img src="Images/banMicrosoftRoadshow.JPG" alt="Microsoft Road Show" width="457" height="92"></div>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div id="Layer10" style="position:absolute; width:163px; height:16px; z-index:11; top: 112px; left: 225px"><a href="/ssw/">Back 
+    To SSW</a></div>
+  <div id="Layer6" style="position:absolute; width:176px; height:28px; z-index:6; left: 24px; top: 122px"><b>FREE 
+    Microsoft Technical Briefings Australia Wide</b></div>
+  <p align="left">&nbsp;</p>
+  <div id="Layer4" style="position:absolute; width:149px; height:22px; z-index:4; left: 51px; top: 167px"><b><i>Brought 
+    to you by</i></b></div>
+  <div id="Layer3" style="position:absolute; width:200px; height:65px; z-index:3; left: 96px; top: 200px"><img src="Images/MicrosoftLogo.gif" alt="Microsoft" width="246" height="64"></div>
+  <p align="left">&nbsp;</p>
+  <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; left: 369px; top: 171px"><img src="Images/SSWlogosml.jpg" alt="SSW" width="150" height="111"></div>
+  <div id="Layer8" style="position:absolute; width:213px; height:42px; z-index:9; left: 37px; top: 289px"> 
+    <div align="left"><img src="/ssw/Images/Download.gif" alt="Download the presentation" width="19" height="16" border="0" align="left"><br>
+      <a href="/ssw/Download/download.asp"><img src="Images/btnDownload2.jpg" alt="Download" width="154" height="27" border="0"></a><br>
+    </div>
+  </div>
+  
+  
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <div id="Layer7" style="position:absolute; width:226px; height:46px; z-index:7; left: 374px; top: 305px">Adam 
+    Cogan and David Lean are presenting on SQL Server 7 and Microsoft Access 2000.</div>
+  <div id="Layer5" style="position:absolute; width:200px; height:38px; z-index:8; left: 414px; top: 123px">Do 
+    not miss this latest and greatest</div>
+  <p align="left">&nbsp;</p>
+  <p align="left"><br>
+  </p>
+</center>
+
+<br><br>
+<br>
+<div align="center">  <br>
+
+</div>
+<p>&nbsp;<br>
+  &nbsp; <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  &nbsp;<br>
+  <br>
+  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  &nbsp;<br>
+  &nbsp;<br>
+  <br>
+</p>
+
+
+</body></html>

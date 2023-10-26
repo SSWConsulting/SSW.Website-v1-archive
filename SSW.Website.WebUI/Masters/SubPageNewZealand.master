@@ -1,0 +1,43 @@
+<%@ Master Language="C#" MasterPageFile="~/Masters/NewNewZealand.Master" %>
+<asp:Content ID="Content1" runat="Server" ContentPlaceHolderID="NewContentPlaceHolder">
+    <div id="subpage">
+        <div id="title">
+            <asp:ContentPlaceHolder ID="title" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="titleSales">
+            <asp:ContentPlaceHolder ID="titleSales" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="titleCase">
+            <asp:ContentPlaceHolder ID="titleCase" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="image">
+            <asp:ContentPlaceHolder ID="featureimage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="index">
+            <asp:ContentPlaceHolder ID="index" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="maincontent">
+            <asp:ContentPlaceHolder ID="maincontent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="sidebar">
+            <asp:ContentPlaceHolder ID="sidebar" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="maincontentCase">
+            <asp:ContentPlaceHolder ID="maincontentCase" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>        
+    </div>
+</asp:Content>
+
+<asp:Content ID="HeadingContent1" ContentPlaceHolderID="HeadingPlaceHolder" runat="server">
+<asp:ContentPlaceHolder ID="HeadingPlaceHolder" runat="server">
+<h1><asp:Label ID="lblHeading" runat="server">SSW - Sydney&#39;s Leading .NET and SQL Consultants</asp:Label></h1>
+</asp:ContentPlaceHolder>
+</asp:Content>

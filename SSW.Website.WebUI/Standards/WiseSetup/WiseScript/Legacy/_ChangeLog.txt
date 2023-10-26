@@ -1,0 +1,23 @@
+This is the changelog file for the SSW.MSI wise setup template.
+
+Please log any changes you make in here.
+
+
+1.21 AH 13/01/2006
+- Updated to check for MDAC's correct Registry Path even on win2003.
+
+1.22 LX 17/01/2006
+- Fix "Exit Dialog", put WiseUninstall condition on the IE icone
+- Fix "Exit Dialog", put Diagnostics label text into the checkbox to make it consisitent with all other checkboxes on the page
+
+1.23 AH 09/06/2006
+- Re-added WiseUpdate Merge Module
+- Added DOTNET 2.0 system search
+- Updated "Select Feature" Dialog to remove folder path of INSTALLDIR (for Code Auditor only)
+- Remove all files on uninstall.
+
+1.24 AH 21/06/2006
+- Implement "Continue Anyway" checkbox.
+- Removed WiseUpdate Merge Module
+- Added CasPol script action (for eXtreme Emails only)
+

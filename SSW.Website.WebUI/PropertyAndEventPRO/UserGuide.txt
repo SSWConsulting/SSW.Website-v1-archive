@@ -1,0 +1,48 @@
+<table class="clsTblSmallText">
+	<tr>
+		<td>
+			<a href="/SSW/Download"><img src="/ssw/images/Download.gif" border="0" align="absmiddle"></a> 
+		</td>
+		<td>
+			<a href="/SSW/Download">Download</a> Free Trial Version
+		</td>
+			
+
+	<tr>
+		<td>
+			<a href="/SSW/Products/ProdCategory.aspx?CategoryID=PROPER"><img src="/ssw/images/Buy.gif" border="0" align="absmiddle"></a>
+		</td>
+		<td>
+			<a href="/SSW/Products/ProdCategory.aspx?CategoryID=PROPER">Purchase</a> Full Version
+		</td>
+	</tr>
+	<tr>
+		<td height="5">
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			<b>
+				Other SSW Products:
+			</b>
+			<br><br>
+
+			Do you need to make changes to the same access backend?<br><br>
+			Do you need an easy way to script out the changes and then run the script on your other access backends?<br><br>
+			
+			<a href='/SSW/DataPRO'>SSW Data PRO!</a> records every change made to your Access backend. When the new 
+			frontend is installed at the client site, the backend will automatically be upgraded with the changes you made. 
+			Never be out of sync again! SSW Data PRO! is available for Access 97, 2000 2002.
+
+		</td>
+	</tr>
+
+</table>
+
+
+		
+
+
+	

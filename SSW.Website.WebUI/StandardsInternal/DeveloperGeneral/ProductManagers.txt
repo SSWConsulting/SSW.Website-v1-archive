@@ -1,0 +1,371 @@
+<%@ Page  Language="C#"  MasterPageFile="~/Masters/Default.master" Title="
+			Product Managers for SSW Products
+		"  %>
+<asp:content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="server">
+    <p>        
+	<asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="SSWStandardsInternalXmlSiteMapProvider">
+        </asp:SiteMapPath>
+    </p>
+	<div class="TableOfContents">
+		<h3>Product Managers</h3>
+		<ol>
+			<li><a href="#Support">Managing SSW Product Support</a> </li>
+		</ol>
+		<br />
+		<p>
+        * To view by employees, see <a href="/ssw/StandardsInternal/InductionTraining/EmployeeResponsibilities.aspx">EmployeeResponsibilities.aspx</a>.
+        </p>
+	</div>
+<br />
+<div id="mainContent">
+
+<ol>
+
+	<li>
+			<h2><a name="Support"></a>Managing SSW Product Support</h2>
+			<p>
+				If you are the Product Manager or the Secondary Contact on any SSW software product, ensure that you follow this 
+				standard for managing support and enhancement requests from external users 
+				and/or your SSW manager.
+			</p>
+			<table class="clsSSWTable" width = "80%">
+					<tr>
+						<td>
+							<h2>Product</h2>
+						</td>
+						<td>
+							<h2>Product Manager</h2>
+						</td>
+						<td>
+							<h2>Secondary Contact/s</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Note: In order of importance</td>
+						<td>
+							&nbsp;
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor = "#DFDFDF" colspan="3">
+							<b><i>Internal</i></b>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Web Site
+						</td>
+						<td>
+							FW
+						</td>
+						<td>
+							PA
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Shopping Pages
+						</td>
+						<td>
+							DH
+						</td>
+						<td>
+							n/a
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Invoice Reminder
+						</td>
+						<td>
+							PA
+						</td>
+						<td>
+							n/a
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor = "#DFDFDF" colspan="3">
+							<b><i>.NET</i></b>
+						</td>
+						</tr>
+					<tr>
+						<td>
+							Exchange Reporter
+						</td>
+						<td>
+							JZ</td>
+						<td>
+							LX</td>
+					</tr>
+					<tr>
+						<td>
+							Code Auditor
+						</td>
+						<td>
+							RT</td>
+						<td>
+							ML</td>
+					</tr>
+					<tr>
+						<td>
+							Health Auditor</td>
+						<td>
+							RT</td>
+						<td>
+							ML</td>
+					</tr>
+					<tr>
+						<td>
+							SQL Auditor
+						</td>
+						<td>
+							FW</td>
+						<td>
+							BP, LX</td>
+					</tr>
+					<tr>
+						<td>
+							SQL Deploy
+						</td>
+						<td>
+							 KW</td>
+						<td>
+							MA, AW</td>
+					</tr>
+					<tr>
+						<td>
+							Link Auditor</td>
+						<td>
+                            JZ</td>
+						<td>
+							EL, LX</td>
+					</tr>
+					<tr>
+						<td>
+							eXtreme Emails!
+						</td>
+						<td>
+							EP</td>
+						<td>
+							DDK</td>
+					</tr>
+					<tr>
+						<td>
+							NetToolkit	
+						</td>
+						<td>
+							BP</td>
+						<td>
+							ML</td>
+					</tr>
+					<tr>
+						<td>
+							Diagnostics
+						</td>
+						<td>
+							TK
+						</td>
+						<td>
+							FG
+					    </td>
+					</tr>
+					<tr>
+						<td>
+							Web Pager & SSW Alerts</td>
+						<td>
+							EP
+						</td>
+						<td>
+							TK</td>
+					</tr>
+					<tr>
+						<td>
+							Time PRO! .NET</td>
+						<td>
+							AH</td>
+						<td>
+							ML, ST</td>
+					</tr>
+					
+					<tr>
+						<td>
+							Smart Tags
+						</td>
+						<td>
+							EP
+						</td>
+						<td>
+							TK</td>
+					</tr>
+					<tr>
+						<td>
+							Email Merge PRO!</td>
+						<td>
+							PA
+						</td>
+						<td>
+							TK</td>
+					</tr>
+					<tr>
+						<td>
+							Access Reporter
+						</td>
+						<td>
+							DH</td>
+						<td>
+							EF, TK</td>
+					</tr>
+					<tr>
+						<td>
+							Log Explorer
+						</td>
+						<td>
+							DDK</td>
+						<td>
+							TK</td>
+					</tr>
+					<tr>
+							<td bgcolor = "#DFDFDF" colspan="3">
+							<b><i>VB6 and ASP</i></b>
+						</td>
+						</tr>
+					<tr>
+						<td>
+							LookOut!
+						</td>
+						<td>
+							ML
+						</td>
+						<td>
+							TK</td>
+					</tr>
+					<tr>
+						<td>
+							Team Calendar
+						</td>
+						<td>
+							RT</td>
+						<td>
+							DH (Move into Exch Rept)</td>
+					</tr>
+					<tr>
+						<td>
+							SQL Total Compare
+						</td>
+						<td>
+							ST</td>
+						<td>
+							ST (Upgrade to SQL 2005)</td>
+					</tr>
+					<tr>
+						<td bgcolor = "#DFDFDF" colspan="3">
+							<b><i>Access</i></b>
+						</td>
+						</tr>
+					<tr>
+						<td>
+							Time PRO!
+						</td>
+						<td>
+							AH</td>
+						<td>
+							ML, ST</td>
+					</tr>
+					<tr>
+						<td>
+							Upsizing PRO!
+						</td>
+						<td>
+							ST</td>
+						<td>
+							RD</td>
+					</tr>
+					<tr>
+						<td>
+							Performance PRO!
+						</td>
+						<td>
+							ST</td>
+						<td>
+							RD</td>
+					</tr>
+					<tr>
+						<td>
+							Data Renovator
+						</td>
+						<td>
+							ST</td>
+						<td>
+							RD
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Data PRO!
+						</td>
+						<td>
+							ST</td>
+						<td >
+							RD
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Property and Event PRO!
+						</td>
+						<td >
+							ST</td>
+						<td >
+							RD
+						</td>
+					</tr>
+				</table>	
+			<p><!--SSW Code Auditor - Ignore next line(HTML)-->  
+				Support emails arrive in the info mailbox. The info@ssw.com.au mailbox administrator will reply to the email from the user 
+				with a request &quot;Please action&quot; (with the user CC'd) to 
+				you as the Product Manager.
+			</p>
+			<p>
+				Developers need to know allocate high priority bugs over low priority 
+				ones. (look up &quot;<a target="_blank" href="../../Redirect/Google/Google.htm">Triage Bugs</a>&quot; on google). This is how you 
+				<a title="Triaging is the process of pushing Bugs through their life cycle as well as reprioritizing Bugs according to user reports and as a result of Bugs being closed by developers" target="_blank" href="../../Redirect/Google/Google2.htm">triage</a> the email at 
+				SSW:</p><ul>
+					<li>LITTLE INCIDENTS&nbsp; - If it is a quick issue (i.e. &lt; 1/2 hour) 
+					then action immediately 
+					<ul>
+						<li>examples are known issues (email using a KB link) or a quick BUG fix</li><li>reply using Incident PRO! (as an additional item in the current 
+						release)</li></ul></li>
+					<li>IMPORTANT - If it is a bigger issue (i.e. &gt; 1/2 hour) it is 
+					allocated into the Public Folder 
+					<ul>
+						<li>examples are more complicated bugs </li>
+						<li>move to Public Folder using Incident PRO!  usually to the 
+						current release eg. Release09</li><li>Note: Reply to the customer using Client Diary Category &quot;Product - 
+						Support - Product Suggestion</li></ul></li>
+					<li>STANDARD - enhancements and suggestions (ensure enhancements are 
+					approved)<ul>
+						<li>examples are user interface improvements, changes to reports</li><li>move to Public Folder using Incident PRO!  usually to the next 
+						release eg. Release10</li></ul>
+					</li>
+					<li>FUTURE FEATURES - things we don't need at SSW and probably will 
+					never do<ul>
+						<li>examples are adding security support to Data Renovator</li><li>move to Public Folder using Incident PRO!  to a folder named 
+						zsFutureFeature</li></ul>
+					</li>
+					</ul>
+					<p>If you are the primary developer and are overloaded (that is you are not able to action the Incident within 48 hours), you 
+					get help from the secondary developer (or contact your manager). eg. I am 
+					working on site for 3 weeks and have 10 customer emails that I cannot do.</p>
+					<p>Note: a developer should not have any support emails from customers (in their inbox) that are older than 2 days.</p>
+			
+		</li>		
+
+	</ol>
+	
+</div>		
+	</asp:content>

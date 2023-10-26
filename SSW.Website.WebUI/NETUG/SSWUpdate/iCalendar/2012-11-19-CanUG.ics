@@ -1,0 +1,92 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 14.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:AUS Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16010401T030000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=4
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16011007T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=10
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20121114T035546Z
+DESCRIPTION:Implementing Scrum Using Team Foundation Server 2012\nToday\, 8
+	4% of Agile teams are using Scrum. Gerard will guide you through what’s 
+	new in TFS 2012\, changes in the Visual Studio Scrum template\, how to use
+	 the new Agile project management tools\, and many other best practices. H
+	e will create and manage a product backlog\, forecast and plan work for a 
+	Sprint\, and manage the Sprint tasks using the new tools in TFS.\n\nABOUT 
+	THE PRESENTER\nUsed to working under pressure\, with ten years industry ex
+	perience\, Gerard Beckerleg is from the new breed of software architects w
+	ho are able to combine excellent technical skills with great communication
+	 and commercial awareness. Although specialising in Web E-commerce solutio
+	ns\, Gerard has extensive experience in Microsoft.NET and loves working wi
+	th C#\, MVC\, SQL Server\, Umbraco\, Kendo UI and SharePoint.\nAn establis
+	hed and confident speaker and trainer Gerard has delivered numerous course
+	s including SharePoint 2010 at the University of Technology in Sydney.\n\n
+DTEND;TZID="AUS Eastern Standard Time":20121119T200000
+DTSTAMP:20121114T035547Z
+DTSTART;TZID="AUS Eastern Standard Time":20121119T180000
+LAST-MODIFIED:20121114T035546Z
+LOCATION:Walter Turnbull Building Level 2\, 44 Sydney Ave\, Barton
+ORGANIZER;CN="Adam Cogan www.ssw.com.au":mailto:AdamCogan@ssw.com.au
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-au:Canberra .NET User Group: Implementing Scrum Using T
+	FS 2012 - Gerard Beckerleg
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E0080000000070A3BC2078C2CD01000000000000000
+	01000000035880454C426DB48879C58EED315BF47
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html\; 
+	charset=iso-8859-1">\n<META NAME="Generator" CONTENT="MS Exchange Server v
+	ersion 14.02.0283.000">\n<TITLE>Canberra .NET User Group: Implementing Scr
+	um Using TFS 2012 - Gerard Beckerleg</TITLE>\n</HEAD>\n<BODY>\n<!-- Conver
+	ted from text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN
+	 LANG="en-au"></SPAN><SPAN LANG="en-au"><FONT COLOR="#000000" SIZE=5 FACE=
+	"Verdana">Implementing Scrum Using Team Foundation Server 2012<BR>\n</FONT
+	></SPAN><SPAN LANG="en-au"><FONT FACE="Calibri">Today\, 84% of Agile teams
+	 are using Scrum. Gerard will guide you through what&#8217\;s new in TFS 2
+	012\, changes in the Visual Studio Scrum template\, how to use the new Agi
+	le project management tools\, and many other best practices. He will creat
+	e and manage a product backlog\, forecast and plan work for a Sprint\, and
+	 manage the Sprint tasks using the new tools in TFS.</FONT></SPAN><SPAN LA
+	NG="en-au"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN></P>\n\n<P 
+	DIR=LTR><SPAN LANG="en-au"></SPAN><SPAN LANG="en-au"></SPAN><SPAN LANG="en
+	-au"><FONT COLOR="#000000" SIZE=4 FACE="Verdana">ABOUT THE PRESENTER<BR>\n
+	</FONT></SPAN><SPAN LANG="en-au"><FONT FACE="Calibri">Used to working unde
+	r pressure\, with ten years industry experience\, Gerard Beckerleg is from
+	 the new breed of software architects who are able to combine excellent te
+	chnical skills with great communication and commercial awareness. Although
+	 specialising in Web E-commerce solutions\, Gerard has extensive experienc
+	e in Microsoft.NET and loves working with C#\, MVC\, SQL Server\, Umbraco\
+	, Kendo UI and SharePoint.</FONT></SPAN><SPAN LANG="en-au"></SPAN></P>\n\n
+	<P DIR=LTR><SPAN LANG="en-au"><FONT FACE="Calibri">An established and conf
+	ident speaker and trainer Gerard has delivered numerous courses including 
+	SharePoint 2010 at the University of Technology in Sydney.</FONT></SPAN></
+	P>\n\n<P DIR=LTR><SPAN LANG="en-au"></SPAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+X-MS-OLK-SENDER;CN="Megan Weeks www.ssw.com.au":mailto:MeganWeeks@ssw.com.a
+	u
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

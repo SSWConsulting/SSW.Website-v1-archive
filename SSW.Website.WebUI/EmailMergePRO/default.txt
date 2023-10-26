@@ -1,0 +1,5 @@
+<!--
+<a href="/SSW/Download"><img src="/SSW/Images/Download.gif" border="0" align="absmiddle"><font size="1">Download</a> Free Trial Version
+<p>
+<a href="/SSW/Products/ProdCategory.aspx?CategoryID=MMP"><img src="/SSW/Images/Buy.gif" border="0" align="absmiddle">Purchase</a> Full Version
+-->

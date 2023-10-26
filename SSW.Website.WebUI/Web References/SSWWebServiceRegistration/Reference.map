@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://webservices.internal.ssw.com.au/SSWRegistrationWebService/Registration_v2.asmx?wsdl" filename="Registration_v2.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://webservices.internal.ssw.com.au/SSWRegistrationWebService/Registration_v2.asmx?disco" filename="Registration_v2.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

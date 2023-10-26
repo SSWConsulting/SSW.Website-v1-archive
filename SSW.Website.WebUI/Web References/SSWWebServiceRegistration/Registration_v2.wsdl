@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="IsWebserviceAlive">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsWebserviceAliveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsWebserviceAliveResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectProducts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prodNameInRegistrationDLL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currencyID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectProductsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectProductsResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Product">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ProdID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProdName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductSellAmt" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductCurrency" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductSellAmtAUD" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductSellAmtUSER" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductCurrencyRate" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductCurrencyRateUpdated" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProdRegistrationInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProdName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intClientContactID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProdRegistrationInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProdRegistrationInfoResult" type="tns:clsRegistrationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="clsRegistrationInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UpgradeExpiryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="NewestVersionRegistered" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HasRegisteredToManyTimesThisMonth" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CanExtendTrial" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RemoveClientExtedTrialAbility">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intClientContactID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveClientExtedTrialAbilityResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ClientDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intContactID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientDetailResult" type="tns:clsContactFullDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="clsContactFullDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Surname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CoName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Industry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Suburb" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PSuburb" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PPostcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneW" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FaxW" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FaxH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneOther" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WWW" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferredBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SearchEngine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OffMailingEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OffMailingPostal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OffMailingFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Concurrency" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateUpdated" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ClientUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intContactID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="objContactDetails" type="tns:clsContactFullDetails" />
+            <s:element minOccurs="1" maxOccurs="1" name="bolConcurrencyCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientUpdateResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bolConcurrencyCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientContactLoginSelect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strScreenRes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strBrowserType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNote" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientContactLoginSelectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientContactLoginSelectResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientEmailExistSelect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientEmailExistSelectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientEmailExistSelectResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientSubmitOrder2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intClientContactID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="arrProdSubmitOrder" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="1" maxOccurs="1" name="dciGSTPercent" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNote" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ClientSubmitOrder2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientSubmitOrder2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientDiaryInsertWithClientTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intContactID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCategoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDownloadVersionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prodNameInRegistrationDLL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRegistrationUnlockKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRegistrationComputerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRegistrationComputerName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dteClientTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientDiaryInsertWithClientTimeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CurrencySelect">
+        <s:complexType />
+      </s:element>
+      <s:element name="CurrencySelectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrencySelectResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientOrderConfirmationEmail2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrProdSubmitOrder" type="tns:ArrayOfAnyType" />
+            <s:element minOccurs="1" maxOccurs="1" name="dciTax" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="dciTotal" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="intInvoiceNumber" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPaymentMethod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strToName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCurrency" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClientOrderConfirmationEmail2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientOrderConfirmationEmail2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zzDummy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="tns:ProdSubmitOrder" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProdSubmitOrder">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ProdID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountPercent" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="zzDummyResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IsWebserviceAliveSoapIn">
+    <wsdl:part name="parameters" element="tns:IsWebserviceAlive" />
+  </wsdl:message>
+  <wsdl:message name="IsWebserviceAliveSoapOut">
+    <wsdl:part name="parameters" element="tns:IsWebserviceAliveResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectProductsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectProducts" />
+  </wsdl:message>
+  <wsdl:message name="SelectProductsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProdRegistrationInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ProdRegistrationInfo" />
+  </wsdl:message>
+  <wsdl:message name="ProdRegistrationInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProdRegistrationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveClientExtedTrialAbilitySoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveClientExtedTrialAbility" />
+  </wsdl:message>
+  <wsdl:message name="RemoveClientExtedTrialAbilitySoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveClientExtedTrialAbilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:ClientDetail" />
+  </wsdl:message>
+  <wsdl:message name="ClientDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:ClientDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ClientUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ClientUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ClientUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientContactLoginSelectSoapIn">
+    <wsdl:part name="parameters" element="tns:ClientContactLoginSelect" />
+  </wsdl:message>
+  <wsdl:message name="ClientContactLoginSelectSoapOut">
+    <wsdl:part name="parameters" element="tns:ClientContactLoginSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientEmailExistSelectSoapIn">
+    <wsdl:part name="parameters" element="tns:ClientEmailExistSelect" />
+  </wsdl:message>
+  <wsdl:message name="ClientEmailExistSelectSoapOut">
+    <wsdl:part name="parameters" element="tns:ClientEmailExistSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientSubmitOrder2SoapIn">
+    <wsdl:part name="parameters" element="tns:ClientSubmitOrder2" />
+  </wsdl:message>
+  <wsdl:message name="ClientSubmitOrder2SoapOut">
+    <wsdl:part name="parameters" element="tns:ClientSubmitOrder2Response" />
+  </wsdl:message>
+  <wsdl:message name="ClientDiaryInsertWithClientTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:ClientDiaryInsertWithClientTime" />
+  </wsdl:message>
+  <wsdl:message name="ClientDiaryInsertWithClientTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:ClientDiaryInsertWithClientTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CurrencySelectSoapIn">
+    <wsdl:part name="parameters" element="tns:CurrencySelect" />
+  </wsdl:message>
+  <wsdl:message name="CurrencySelectSoapOut">
+    <wsdl:part name="parameters" element="tns:CurrencySelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientOrderConfirmationEmail2SoapIn">
+    <wsdl:part name="parameters" element="tns:ClientOrderConfirmationEmail2" />
+  </wsdl:message>
+  <wsdl:message name="ClientOrderConfirmationEmail2SoapOut">
+    <wsdl:part name="parameters" element="tns:ClientOrderConfirmationEmail2Response" />
+  </wsdl:message>
+  <wsdl:message name="zzDummySoapIn">
+    <wsdl:part name="parameters" element="tns:zzDummy" />
+  </wsdl:message>
+  <wsdl:message name="zzDummySoapOut">
+    <wsdl:part name="parameters" element="tns:zzDummyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RegistrationSoap">
+    <wsdl:operation name="IsWebserviceAlive">
+      <wsdl:input message="tns:IsWebserviceAliveSoapIn" />
+      <wsdl:output message="tns:IsWebserviceAliveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectProducts">
+      <wsdl:input message="tns:SelectProductsSoapIn" />
+      <wsdl:output message="tns:SelectProductsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProdRegistrationInfo">
+      <wsdl:input message="tns:ProdRegistrationInfoSoapIn" />
+      <wsdl:output message="tns:ProdRegistrationInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveClientExtedTrialAbility">
+      <wsdl:input message="tns:RemoveClientExtedTrialAbilitySoapIn" />
+      <wsdl:output message="tns:RemoveClientExtedTrialAbilitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientDetail">
+      <wsdl:input message="tns:ClientDetailSoapIn" />
+      <wsdl:output message="tns:ClientDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientUpdate">
+      <wsdl:input message="tns:ClientUpdateSoapIn" />
+      <wsdl:output message="tns:ClientUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientContactLoginSelect">
+      <wsdl:input message="tns:ClientContactLoginSelectSoapIn" />
+      <wsdl:output message="tns:ClientContactLoginSelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientEmailExistSelect">
+      <wsdl:input message="tns:ClientEmailExistSelectSoapIn" />
+      <wsdl:output message="tns:ClientEmailExistSelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientSubmitOrder2">
+      <wsdl:input message="tns:ClientSubmitOrder2SoapIn" />
+      <wsdl:output message="tns:ClientSubmitOrder2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientDiaryInsertWithClientTime">
+      <wsdl:input message="tns:ClientDiaryInsertWithClientTimeSoapIn" />
+      <wsdl:output message="tns:ClientDiaryInsertWithClientTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrencySelect">
+      <wsdl:input message="tns:CurrencySelectSoapIn" />
+      <wsdl:output message="tns:CurrencySelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientOrderConfirmationEmail2">
+      <wsdl:input message="tns:ClientOrderConfirmationEmail2SoapIn" />
+      <wsdl:output message="tns:ClientOrderConfirmationEmail2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="zzDummy">
+      <wsdl:input message="tns:zzDummySoapIn" />
+      <wsdl:output message="tns:zzDummySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RegistrationSoap" type="tns:RegistrationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsWebserviceAlive">
+      <soap:operation soapAction="http://tempuri.org/IsWebserviceAlive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectProducts">
+      <soap:operation soapAction="http://tempuri.org/SelectProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProdRegistrationInfo">
+      <soap:operation soapAction="http://tempuri.org/ProdRegistrationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveClientExtedTrialAbility">
+      <soap:operation soapAction="http://tempuri.org/RemoveClientExtedTrialAbility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientDetail">
+      <soap:operation soapAction="http://tempuri.org/ClientDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientUpdate">
+      <soap:operation soapAction="http://tempuri.org/ClientUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientContactLoginSelect">
+      <soap:operation soapAction="http://tempuri.org/ClientContactLoginSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientEmailExistSelect">
+      <soap:operation soapAction="http://tempuri.org/ClientEmailExistSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientSubmitOrder2">
+      <soap:operation soapAction="http://tempuri.org/ClientSubmitOrder2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientDiaryInsertWithClientTime">
+      <soap:operation soapAction="http://tempuri.org/ClientDiaryInsertWithClientTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrencySelect">
+      <soap:operation soapAction="http://tempuri.org/CurrencySelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientOrderConfirmationEmail2">
+      <soap:operation soapAction="http://tempuri.org/ClientOrderConfirmationEmail2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zzDummy">
+      <soap:operation soapAction="http://tempuri.org/zzDummy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RegistrationSoap12" type="tns:RegistrationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsWebserviceAlive">
+      <soap12:operation soapAction="http://tempuri.org/IsWebserviceAlive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectProducts">
+      <soap12:operation soapAction="http://tempuri.org/SelectProducts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProdRegistrationInfo">
+      <soap12:operation soapAction="http://tempuri.org/ProdRegistrationInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveClientExtedTrialAbility">
+      <soap12:operation soapAction="http://tempuri.org/RemoveClientExtedTrialAbility" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientDetail">
+      <soap12:operation soapAction="http://tempuri.org/ClientDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ClientUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientContactLoginSelect">
+      <soap12:operation soapAction="http://tempuri.org/ClientContactLoginSelect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientEmailExistSelect">
+      <soap12:operation soapAction="http://tempuri.org/ClientEmailExistSelect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientSubmitOrder2">
+      <soap12:operation soapAction="http://tempuri.org/ClientSubmitOrder2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientDiaryInsertWithClientTime">
+      <soap12:operation soapAction="http://tempuri.org/ClientDiaryInsertWithClientTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrencySelect">
+      <soap12:operation soapAction="http://tempuri.org/CurrencySelect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientOrderConfirmationEmail2">
+      <soap12:operation soapAction="http://tempuri.org/ClientOrderConfirmationEmail2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zzDummy">
+      <soap12:operation soapAction="http://tempuri.org/zzDummy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Registration">
+    <wsdl:port name="RegistrationSoap" binding="tns:RegistrationSoap">
+      <soap:address location="http://webservices.internal.ssw.com.au/SSWRegistrationWebService/Registration_v2.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RegistrationSoap12" binding="tns:RegistrationSoap12">
+      <soap12:address location="http://webservices.internal.ssw.com.au/SSWRegistrationWebService/Registration_v2.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

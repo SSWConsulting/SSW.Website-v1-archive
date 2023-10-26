@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <State>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SourceControl xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;Enabled&gt;false&lt;/Enabled&gt;
+  &lt;ProjectName /&gt;
+  &lt;AuxPath /&gt;
+  &lt;LocalPath /&gt;
+  &lt;Provider /&gt;
+&lt;/SourceControl&gt;</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>UpsizeNorthwindSQL.rds</Name>
+      <FullPath>UpsizeNorthwindSQL.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <Reports>
+    <ProjectItem>
+      <Name>Catalog Subreport.rdl</Name>
+      <FullPath>Catalog Subreport.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Catalog.rdl</Name>
+      <FullPath>Catalog.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+        <TargetFolder>NorthwindTest</TargetFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>Reports</TargetFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Production</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>Reports</TargetFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

@@ -1,0 +1,59 @@
+body, input
+{
+	font-family: Verdana;
+	font-size: 12px;
+}
+h1
+{
+	font-size: 18px;
+	display: inline;
+	color: white;
+}
+h2
+{
+	font-weight: bold;
+	font-size: small;
+	border-bottom: 2px solid red;
+	background-color: #eeeeee;
+	font-size: 14px;
+	padding: 3px;
+	margin: 20px 0 10px 0;
+}
+h3
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+th
+{
+	font-size: 10px;
+	font-size: x-small;
+	background-color: #CCCCCC;
+	text-align: left;
+}
+table.data
+{
+	font-size: 11px;
+	border-top: solid 1px #CCCCCC;
+	border-left: solid 1px #CCCCCC;
+}
+td.data
+{
+	font-size: 11px;
+	border-right: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+pre
+{
+	border: solid 1px #999999;
+	border-left:solid 10px #999999;
+	background-color: #E7E6F4;
+	padding: 5px;
+	margin: 0px;
+	width: 500px;
+}
+
+.Highlight{
+	background-color: #FFFF00;
+}

@@ -1,0 +1,83 @@
+﻿<!-- AGT 13SEP2010 V5.0 -->
+<ApplicationList>
+  <InstallationOptions>
+    <SimultaneousDownloads>3</SimultaneousDownloads>
+  </InstallationOptions>
+  <Application>
+    <Name>Camtasia Studio</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\Camtasia\TechsmithCamtasiaStudio6\camtasia.msi</FileUrl>
+    <Comment>With Camtasia Studio, you can record your PC screen and create professional-looking videos that clearly demonstrate a process, a product, or an idea.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>FullShot</Name>
+    <FileUrl>\\fileserver\SetupFiles\SetupNotMS\SetupProgram\Fullshot\Fullshot 9\fshot9513.exe</FileUrl>
+    <Comment>FullShot is a professional screen capture (print screen) application designed for any Windows user who needs an effortless, effective way to take screenshots of Windows screens.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SnagIt</Name>
+    <FileUrl>\\fileserver\setupfiles\SetupNotMS\SetupProgram\SnagIt\Snagit9.1.2\snagit.exe</FileUrl>
+    <Comment>Snagit is the only screen shot utility available with five different capture modes and over 40 different ways to copy text, videos, images and websites content from your screen.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SSW Diagnostics</Name>
+    <FileUrl>http://www.ssw.com.au/ssw/Diagnostics/Download/SSWDiagnostics.application</FileUrl>
+    <Comment>Run this application weekly to avoid using out-dated software</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SSW SQL Deploy</Name>
+    <FileUrl>http://us.ssw.com.au/ssw/Download/SSWSQLDeployForWindows_ver12-35.exe</FileUrl>
+    <Comment>SQL Deploy solves this problem by automatically performing Database updates as a part of your application deployment.</Comment>
+    <Options>
+      <Checked>false</Checked>
+    </Options>
+  </Application>
+
+  <Application>
+    <Name>SSW Code Auditor</Name>
+    <FileUrl>http://us.ssw.com.au/ssw/Download/SSWCodeAuditor_ver13-43.exe</FileUrl>
+    <Comment>For developer, install this to analyse your code. You may also need to run this to pass the TEST PLEASE</Comment>
+    <Options>
+      <Checked>false</Checked>
+      <InstallerArguments>/quiet</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SSW Link Auditor</Name>
+    <FileUrl>http://us.ssw.com.au/ssw/Download/SSWLinkAuditor_ver4-21.exe</FileUrl>
+    <Comment>Install this to analyse your website, it will tell you any broken links found</Comment>
+    <Options>
+      <Checked>false</Checked>
+      <InstallerArguments>/quiet</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SSW SQL Auditor</Name>
+    <FileUrl>http://us.ssw.com.au/ssw/Download/SSWSQLAuditor_ver10-41.exe</FileUrl>
+    <Comment>For developer, install this to analyse your database schema. You may also need to run this to pass the TEST PLEASE</Comment>
+    <Options>
+      <Checked>false</Checked>
+      <InstallerArguments>/quiet</InstallerArguments>
+    </Options>
+  </Application>
+  <Application>
+    <Name>SSW Time PRO .NET</Name>
+    <FileUrl>http://us.ssw.com.au/ssw/download/SSWTimePRONET_ver9-24.exe</FileUrl>
+    <Comment>IMPORTANT!!! Every developer needs to enter their timesheet through this application every week</Comment>
+    <Options>
+      <Checked>false</Checked>
+      <InstallerArguments>/quiet</InstallerArguments>
+    </Options>
+  </Application>
+</ApplicationList>

@@ -1,0 +1,31 @@
+	<table>
+		<tr>
+			<TD>&nbsp;&nbsp;
+			</TD>
+			<TD>
+				<table  class="clsSSWTable"  align="left" style="{width:148;}">
+					<tr>
+						<td>
+							<font size=1>
+								<p>
+								"As a first time user to SSW, I must admit that I am very impressed by the "email downloads" facility you offer!
+								<p>
+								Thank you and keep up the great work!"
+								<p>
+								Sean Nijenhuis 
+							</font>
+						</td>
+					</tr>
+				</table>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+			&nbsp;&nbsp;
+			</TD>
+			<TD>
+			</TD>
+		<TR>		
+
+	</TABLE>
+<!--TODO: ADD Links -->

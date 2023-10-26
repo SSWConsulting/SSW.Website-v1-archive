@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://tempuri.org/RuleAnalysisDataSet.xsd" />
+      <s:import namespace="http://tempuri.org/RuleAnalysis_V2_DataSet.xsd" />
+      <s:import namespace="http://tempuri.org/RuleAgreementDataSet.xsd" />
+      <s:import schemaLocation="http://webservices.internal.ssw.com.au/SSWSQLAuditorRuleUsageLogging/SQLAuditorDataAnalysisService.asmx?schema=RuleAgreementDataSet" namespace="http://tempuri.org/RuleAgreementDataSet.xsd" />
+      <s:import schemaLocation="http://webservices.internal.ssw.com.au/SSWSQLAuditorRuleUsageLogging/SQLAuditorDataAnalysisService.asmx?schema=RuleAnalysisDataSet" namespace="http://tempuri.org/RuleAnalysisDataSet.xsd" />
+      <s:import schemaLocation="http://webservices.internal.ssw.com.au/SSWSQLAuditorRuleUsageLogging/SQLAuditorDataAnalysisService.asmx?schema=RuleAnalysis_V2_DataSet" namespace="http://tempuri.org/RuleAnalysis_V2_DataSet.xsd" />
+      <s:element name="InsertDatabaseAndStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usageDS">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDatabaseAndStatsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDatabaseAndStatsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRank">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Complexity" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRankResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRankResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDbID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Complexity" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataBaseName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ComputerName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDbIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDbIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDatabaseAndRuleUsage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usageDS">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDatabaseAndRuleUsageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDatabaseAndRuleUsageResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSingleRuleUsageRecordFromSQLAuditor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SARuleID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ruleOpinionID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSingleRuleUsageRecordFromSQLAuditorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSingleRuleUsageRecordFromSQLAuditorResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SARuleID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ruleOpinionID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="sswContactID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSingleRuleUsageRecordFromWebsite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="websiteRuleID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ruleOpinionID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sswContactID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSingleRuleUsageRecordFromWebsiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSingleRuleUsageRecordFromWebsiteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRuleAnalysisDataSet">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRuleAnalysisDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRuleAnalysisDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/RuleAnalysisDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRuleAnalysisDataSetWithContactID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRuleAnalysisDataSetWithContactIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRuleAnalysisDataSetWithContactIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/RuleAnalysis_V2_DataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRuleAgreementStatDataSet">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRuleAgreementStatDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRuleAgreementStatDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/RuleAgreementDataSet.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRuleUsageTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRuleUsageTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRuleUsageTableResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRuleUsageCountTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRuleUsageCountTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRuleUsageCountTableResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWhoVotedTableForSQLAuditor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SqlAuditorRuleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWhoVotedTableForSQLAuditorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWhoVotedTableForSQLAuditorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWhoVotedTableForWebsite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WebsiteRuleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWhoVotedTableForWebsiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWhoVotedTableForWebsiteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertDatabaseAndStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDatabaseAndStats" />
+  </wsdl:message>
+  <wsdl:message name="InsertDatabaseAndStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDatabaseAndStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRankSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRank" />
+  </wsdl:message>
+  <wsdl:message name="GetRankSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRankResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDbIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDbID" />
+  </wsdl:message>
+  <wsdl:message name="GetDbIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDbIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDatabaseAndRuleUsageSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDatabaseAndRuleUsage" />
+  </wsdl:message>
+  <wsdl:message name="InsertDatabaseAndRuleUsageSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDatabaseAndRuleUsageResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSingleRuleUsageRecordFromSQLAuditorSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSingleRuleUsageRecordFromSQLAuditor" />
+  </wsdl:message>
+  <wsdl:message name="InsertSingleRuleUsageRecordFromSQLAuditorSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSingleRuleUsageRecordFromSQLAuditorResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact" />
+  </wsdl:message>
+  <wsdl:message name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSingleRuleUsageRecordFromWebsiteSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSingleRuleUsageRecordFromWebsite" />
+  </wsdl:message>
+  <wsdl:message name="InsertSingleRuleUsageRecordFromWebsiteSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSingleRuleUsageRecordFromWebsiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRuleAnalysisDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRuleAnalysisDataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetRuleAnalysisDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRuleAnalysisDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRuleAnalysisDataSetWithContactIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRuleAnalysisDataSetWithContactID" />
+  </wsdl:message>
+  <wsdl:message name="GetRuleAnalysisDataSetWithContactIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRuleAnalysisDataSetWithContactIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRuleAgreementStatDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRuleAgreementStatDataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetRuleAgreementStatDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRuleAgreementStatDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRuleUsageTableSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRuleUsageTable" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRuleUsageTableSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRuleUsageTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRuleUsageCountTableSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRuleUsageCountTable" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRuleUsageCountTableSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRuleUsageCountTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWhoVotedTableForSQLAuditorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWhoVotedTableForSQLAuditor" />
+  </wsdl:message>
+  <wsdl:message name="GetWhoVotedTableForSQLAuditorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWhoVotedTableForSQLAuditorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWhoVotedTableForWebsiteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWhoVotedTableForWebsite" />
+  </wsdl:message>
+  <wsdl:message name="GetWhoVotedTableForWebsiteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWhoVotedTableForWebsiteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RuleUsageLoggingServiceSoap">
+    <wsdl:operation name="InsertDatabaseAndStats">
+      <wsdl:input message="tns:InsertDatabaseAndStatsSoapIn" />
+      <wsdl:output message="tns:InsertDatabaseAndStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRank">
+      <wsdl:input message="tns:GetRankSoapIn" />
+      <wsdl:output message="tns:GetRankSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDbID">
+      <wsdl:input message="tns:GetDbIDSoapIn" />
+      <wsdl:output message="tns:GetDbIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDatabaseAndRuleUsage">
+      <wsdl:input message="tns:InsertDatabaseAndRuleUsageSoapIn" />
+      <wsdl:output message="tns:InsertDatabaseAndRuleUsageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromSQLAuditor">
+      <wsdl:input message="tns:InsertSingleRuleUsageRecordFromSQLAuditorSoapIn" />
+      <wsdl:output message="tns:InsertSingleRuleUsageRecordFromSQLAuditorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact">
+      <wsdl:input message="tns:InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactSoapIn" />
+      <wsdl:output message="tns:InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromWebsite">
+      <wsdl:input message="tns:InsertSingleRuleUsageRecordFromWebsiteSoapIn" />
+      <wsdl:output message="tns:InsertSingleRuleUsageRecordFromWebsiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAnalysisDataSet">
+      <wsdl:input message="tns:GetRuleAnalysisDataSetSoapIn" />
+      <wsdl:output message="tns:GetRuleAnalysisDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAnalysisDataSetWithContactID">
+      <wsdl:input message="tns:GetRuleAnalysisDataSetWithContactIDSoapIn" />
+      <wsdl:output message="tns:GetRuleAnalysisDataSetWithContactIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAgreementStatDataSet">
+      <wsdl:input message="tns:GetRuleAgreementStatDataSetSoapIn" />
+      <wsdl:output message="tns:GetRuleAgreementStatDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleUsageTable">
+      <wsdl:input message="tns:UpdateRuleUsageTableSoapIn" />
+      <wsdl:output message="tns:UpdateRuleUsageTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleUsageCountTable">
+      <wsdl:input message="tns:UpdateRuleUsageCountTableSoapIn" />
+      <wsdl:output message="tns:UpdateRuleUsageCountTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoVotedTableForSQLAuditor">
+      <wsdl:input message="tns:GetWhoVotedTableForSQLAuditorSoapIn" />
+      <wsdl:output message="tns:GetWhoVotedTableForSQLAuditorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoVotedTableForWebsite">
+      <wsdl:input message="tns:GetWhoVotedTableForWebsiteSoapIn" />
+      <wsdl:output message="tns:GetWhoVotedTableForWebsiteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RuleUsageLoggingServiceSoap" type="tns:RuleUsageLoggingServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDatabaseAndStats">
+      <soap:operation soapAction="http://tempuri.org/InsertDatabaseAndStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRank">
+      <soap:operation soapAction="http://tempuri.org/GetRank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDbID">
+      <soap:operation soapAction="http://tempuri.org/GetDbID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDatabaseAndRuleUsage">
+      <soap:operation soapAction="http://tempuri.org/InsertDatabaseAndRuleUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromSQLAuditor">
+      <soap:operation soapAction="http://tempuri.org/InsertSingleRuleUsageRecordFromSQLAuditor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact">
+      <soap:operation soapAction="http://tempuri.org/InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromWebsite">
+      <soap:operation soapAction="http://tempuri.org/InsertSingleRuleUsageRecordFromWebsite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAnalysisDataSet">
+      <soap:operation soapAction="http://tempuri.org/GetRuleAnalysisDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAnalysisDataSetWithContactID">
+      <soap:operation soapAction="http://tempuri.org/GetRuleAnalysisDataSetWithContactID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAgreementStatDataSet">
+      <soap:operation soapAction="http://tempuri.org/GetRuleAgreementStatDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleUsageTable">
+      <soap:operation soapAction="http://tempuri.org/UpdateRuleUsageTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleUsageCountTable">
+      <soap:operation soapAction="http://tempuri.org/UpdateRuleUsageCountTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoVotedTableForSQLAuditor">
+      <soap:operation soapAction="http://tempuri.org/GetWhoVotedTableForSQLAuditor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoVotedTableForWebsite">
+      <soap:operation soapAction="http://tempuri.org/GetWhoVotedTableForWebsite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RuleUsageLoggingServiceSoap12" type="tns:RuleUsageLoggingServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDatabaseAndStats">
+      <soap12:operation soapAction="http://tempuri.org/InsertDatabaseAndStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRank">
+      <soap12:operation soapAction="http://tempuri.org/GetRank" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDbID">
+      <soap12:operation soapAction="http://tempuri.org/GetDbID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDatabaseAndRuleUsage">
+      <soap12:operation soapAction="http://tempuri.org/InsertDatabaseAndRuleUsage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromSQLAuditor">
+      <soap12:operation soapAction="http://tempuri.org/InsertSingleRuleUsageRecordFromSQLAuditor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact">
+      <soap12:operation soapAction="http://tempuri.org/InsertSingleRuleUsageRecordFromSQLAuditorWithSSWContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSingleRuleUsageRecordFromWebsite">
+      <soap12:operation soapAction="http://tempuri.org/InsertSingleRuleUsageRecordFromWebsite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAnalysisDataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetRuleAnalysisDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAnalysisDataSetWithContactID">
+      <soap12:operation soapAction="http://tempuri.org/GetRuleAnalysisDataSetWithContactID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleAgreementStatDataSet">
+      <soap12:operation soapAction="http://tempuri.org/GetRuleAgreementStatDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleUsageTable">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRuleUsageTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleUsageCountTable">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRuleUsageCountTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoVotedTableForSQLAuditor">
+      <soap12:operation soapAction="http://tempuri.org/GetWhoVotedTableForSQLAuditor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWhoVotedTableForWebsite">
+      <soap12:operation soapAction="http://tempuri.org/GetWhoVotedTableForWebsite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RuleUsageLoggingService">
+    <wsdl:port name="RuleUsageLoggingServiceSoap" binding="tns:RuleUsageLoggingServiceSoap">
+      <soap:address location="http://webservices.internal.ssw.com.au/SSWSQLAuditorRuleUsageLogging/SQLAuditorDataAnalysisService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RuleUsageLoggingServiceSoap12" binding="tns:RuleUsageLoggingServiceSoap12">
+      <soap12:address location="http://webservices.internal.ssw.com.au/SSWSQLAuditorRuleUsageLogging/SQLAuditorDataAnalysisService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,3 @@
+<font size="1">
+The <a href="../Products/ProdCategoryList.aspx">SSW Product range</a> includes software to assist Microsoft developers and tools 
+to increase the functionality of Microsoft products in a business environment.  </font>

@@ -1,0 +1,3 @@
+This file is used for Optimus Solutions, so that when they install the 
+MM Outlook Plugin and dont have the .NET Framework install it will point
+them to the SSW Download's directory to download the file.

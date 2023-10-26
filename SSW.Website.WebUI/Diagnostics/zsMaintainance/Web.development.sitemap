@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="Default.aspx" title="SSWDiagnostics" description="" xmlns="">
+    <siteMapNode url="RegistryKeyDefinitions.aspx" title="RegistryKeyDefinitions" description="View/edit all items">
+      <siteMapNode url="NewRegistryKeyDefinition.aspx" title="New RegistryKeyDefinition" description="Add new item" />
+      <siteMapNode url="RegistryKeyDefinitionDetail.aspx" title="RegistryKeyDefinition Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="RegistryKeys.aspx" title="RegistryKeys" description="View/edit all items">
+      <siteMapNode url="NewRegistryKey.aspx" title="New RegistryKey" description="Add new item" />
+      <siteMapNode url="RegistryKeyDetail.aspx" title="RegistryKey Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="ProductAffiliateBooks.aspx" title="ProductAffiliateBooks" description="View/edit all items">
+      <siteMapNode url="NewProductAffiliateBook.aspx" title="New ProductAffiliateBook" description="Add new item" />
+      <siteMapNode url="ProductAffiliateBookDetail.aspx" title="ProductAffiliateBook Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="ProductVersions.aspx" title="ProductVersions" description="View/edit all items">
+      <siteMapNode url="NewProductVersion.aspx" title="New ProductVersion" description="Add new item" />
+      <siteMapNode url="ProductVersionDetail.aspx" title="ProductVersion Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="Categories.aspx" title="Categories" description="View/edit all items">
+      <siteMapNode url="NewCategory.aspx" title="New Category" description="Add new item" />
+      <siteMapNode url="CategoryDetail.aspx" title="Category Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="AffiliateSoftwares.aspx" title="AffiliateSoftwares" description="View/edit all items">
+      <siteMapNode url="NewAffiliateSoftware.aspx" title="New AffiliateSoftware" description="Add new item" />
+      <siteMapNode url="AffiliateSoftwareDetail.aspx" title="AffiliateSoftware Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="FileDefinitions.aspx" title="FileDefinitions" description="View/edit all items">
+      <siteMapNode url="NewFileDefinition.aspx" title="New FileDefinition" description="Add new item" />
+      <siteMapNode url="FileDefinitionDetail.aspx" title="FileDefinition Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="Excludes.aspx" title="Excludes" description="View/edit all items">
+      <siteMapNode url="NewExclude.aspx" title="New Exclude" description="Add new item" />
+      <siteMapNode url="ExcludeDetail.aspx" title="Exclude Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="ProductGroups.aspx" title="ProductGroups" description="View/edit all items">
+      <siteMapNode url="NewProductGroup.aspx" title="New ProductGroup" description="Add new item" />
+      <siteMapNode url="ProductGroupDetail.aspx" title="ProductGroup Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="Products.aspx" title="Products" description="View/edit all items">
+      <siteMapNode url="NewProduct.aspx" title="New Product" description="Add new item" />
+      <siteMapNode url="ProductDetail.aspx" title="Product Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="AffiliateBooks.aspx" title="AffiliateBooks" description="View/edit all items">
+      <siteMapNode url="NewAffiliateBook.aspx" title="New AffiliateBook" description="Add new item" />
+      <siteMapNode url="AffiliateBookDetail.aspx" title="AffiliateBook Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="Manufacturers.aspx" title="Manufacturers" description="View/edit all items">
+      <siteMapNode url="NewManufacturer.aspx" title="New Manufacturer" description="Add new item" />
+      <siteMapNode url="ManufacturerDetail.aspx" title="Manufacturer Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="Sysdiagrams.aspx" title="Sysdiagrams" description="View/edit all items">
+      <siteMapNode url="NewSysdiagram.aspx" title="New Sysdiagram" description="Add new item" />
+      <siteMapNode url="SysdiagramDetail.aspx" title="Sysdiagram Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+    <siteMapNode url="ProductAffiliateSoftwares.aspx" title="ProductAffiliateSoftwares" description="View/edit all items">
+      <siteMapNode url="NewProductAffiliateSoftware.aspx" title="New ProductAffiliateSoftware" description="Add new item" />
+      <siteMapNode url="ProductAffiliateSoftwareDetail.aspx" title="ProductAffiliateSoftware Detail" description="Item details" displayInMenu="false" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

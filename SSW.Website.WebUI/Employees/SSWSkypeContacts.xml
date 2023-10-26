@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml:stylesheet type="text/xsl" href="SSWSkypeContacts.xsl" ?>
+<opml version="1.1">
+	<head>
+		<title>SSW Skype List</title>
+		<dateCreated>18/02/2005 6:05 PM</dateCreated>
+		<dateModified>16/03/2005 3:52 PM</dateModified>
+		<ownerName>Joe Hardy</ownerName>
+		<ownerEmail>JoeHardy@ssw.com.au</ownerEmail>
+	</head>
+	<body>
+		<outline type="rss" skypeName="underscoreyoda" title="Joe Hardy" />
+		<outline type="rss" skypeName="andrewweaver" title="Andrew Weaver (Work)" />
+		<outline type="rss" skypeName="reddogaw" title="Andrew Weaver (Home)" />
+		<outline type="rss" skypeName="adamcogan" title="Adam Cogan" />
+		<outline type="rss" skypeName="dotnetdann" title="Daniel Hyles" />
+		<outline type="rss" skypeName="edwardforgacs" title="Edward Forgacs" />
+		<outline type="rss" skypeName="johnnliu" title="John Liu" />
+		<outline type="rss" skypeName="tathamoddie" title="Tatham Oddie" />
+		<outline type="rss" skypeName="rebeccagardiner" title="Rebecca Gardiner" />
+		<outline type="rss" skypeName="rossdonald" title="Ross Donald" />
+		<outline type="rss" skypeName="leixussw" title="Lei Xu" />
+		<outline type="rss" skypeName="jatin_v" title="Jatin (work)" />
+    <outline type="rss" skypeName="paulneumeyerssw" title="Dr Paul Neumeyer (Work)" />
+  </body>
+</opml>

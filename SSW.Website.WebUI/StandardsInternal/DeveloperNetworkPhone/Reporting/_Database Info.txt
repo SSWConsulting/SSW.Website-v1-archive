@@ -1,0 +1,6 @@
+
+ hostname = cockatoo
+ dbname=asteriskcdrdb
+
+ user = root
+ password = passw0rd

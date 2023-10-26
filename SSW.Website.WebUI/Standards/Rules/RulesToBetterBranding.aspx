@@ -1,0 +1,1 @@
+<% Response.RedirectPermanent("https://www.ssw.com.au/rules/rules-to-better-websites-branding-and-marketing/") %>
