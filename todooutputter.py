@@ -11,18 +11,17 @@ def output_markdown(path, file, indent=0):
           has_aspx = True
           break
       if has_aspx:
-        file.write('    ' * indent + f'📁 {item}\n')
+        file.write('    ' * indent + f'- 📁 {item}\n')
         output_markdown(item_path, file, indent+1)
 
     elif os.path.isfile(item_path) and item_path.endswith('.aspx'):
-      print(item_path)
       if item_path.split('\\')[-1].startswith('zz'):
-        file.write('    ' * indent + f'[x] {item}\n')
+        file.write('    ' * indent + f'- [x] {item}\n')
       else:
-        file.write('    ' * indent + f'[ ] {item}\n')
+        file.write('    ' * indent + f'- [ ] {item}\n')
       
 
 
 
 file = open("todos.md", "w", encoding="utf-8")
-output_markdown('./', file)  
+output_markdown('./SSW.Website.WebUI', file)  
