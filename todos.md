@@ -138,79 +138,79 @@
         [ ] Smart-Office-and-Smart-Home.aspx
         [ ] SoftwareAuditWindows7Logo.aspx
         [ ] SourceControl.aspx
-        [ ] zzAccess-Database-Upsizing.aspx
-        [ ] zzALM-Azure-DevOps.aspx
-        [ ] zzAngular.aspx
-        [ ] zzAre-You-Stuck.aspx
-        [ ] zzArtificialIntelligence.aspx
-        [ ] zzAzure-Synapse.aspx
-        [ ] zzAzure.aspx
-        [ ] zzBackBlaze-and-CloudBerry-Backup.aspx
-        [ ] zzBackup-Recovery.aspx
-        [ ] zzBlazor.aspx
-        [ ] zzBots.aspx
-        [ ] zzChinafy-App.aspx
-        [ ] zzContentManagement.aspx
-        [ ] zzData-Protection-Manager.aspx
-        [ ] zzDatabase-Development.aspx
-        [ ] zzDefault.aspx
-        [ ] zzDesktop-Development.aspx
-        [ ] zzDevOps.aspx
-        [ ] zzDNN-DotNetNuke.aspx
-        [ ] zzEnterprise-Reporting.aspx
-        [ ] zzGPT.aspx
-        [ ] zzHoloLens.aspx
-        [ ] zzHyper-V.aspx
-        [ ] zzIntune.aspx
-        [ ] zzJamstack.aspx
-        [ ] zzKentico.aspx
-        [ ] zzKubernetes.aspx
-        [ ] zzMentoring.aspx
-        [ ] zzMicrosoft-Dynamics-365.aspx
-        [ ] zzMicrosoft-Teams.aspx
-        [ ] zzMicrosoft-Viva.aspx
-        [ ] zzMobile-Application-Development.aspx
-        [ ] zzNetwork-Architecture.aspx
-        [ ] zzOffice-365.aspx
-        [ ] zzOrchard.aspx
-        [ ] zzPayPerClick.aspx
-        [ ] zzPower-BI.aspx
-        [ ] zzPower-Platform.aspx
-        [ ] zzPowerShell.aspx
-        [ ] zzProduct-Design.aspx
-        [ ] zzReact.aspx
-        [ ] zzRemote-Work.aspx
-        [ ] zzScrum.aspx
-        [ ] zzSecurity.aspx
-        [ ] zzService-Desk.aspx
-        [ ] zzSharePoint.aspx
-        [ ] zzSiteCore.aspx
-        [ ] zzSitefinity.aspx
-        [ ] zzSoftware-Audit.aspx
-        [ ] zzSoftwareAudit.aspx
-        [ ] zzStrategic-Architecture.aspx
-        [ ] zzSupport-Plans.aspx
+        [x] zzAccess-Database-Upsizing.aspx
+        [x] zzALM-Azure-DevOps.aspx
+        [x] zzAngular.aspx
+        [x] zzAre-You-Stuck.aspx
+        [x] zzArtificialIntelligence.aspx
+        [x] zzAzure-Synapse.aspx
+        [x] zzAzure.aspx
+        [x] zzBackBlaze-and-CloudBerry-Backup.aspx
+        [x] zzBackup-Recovery.aspx
+        [x] zzBlazor.aspx
+        [x] zzBots.aspx
+        [x] zzChinafy-App.aspx
+        [x] zzContentManagement.aspx
+        [x] zzData-Protection-Manager.aspx
+        [x] zzDatabase-Development.aspx
+        [x] zzDefault.aspx
+        [x] zzDesktop-Development.aspx
+        [x] zzDevOps.aspx
+        [x] zzDNN-DotNetNuke.aspx
+        [x] zzEnterprise-Reporting.aspx
+        [x] zzGPT.aspx
+        [x] zzHoloLens.aspx
+        [x] zzHyper-V.aspx
+        [x] zzIntune.aspx
+        [x] zzJamstack.aspx
+        [x] zzKentico.aspx
+        [x] zzKubernetes.aspx
+        [x] zzMentoring.aspx
+        [x] zzMicrosoft-Dynamics-365.aspx
+        [x] zzMicrosoft-Teams.aspx
+        [x] zzMicrosoft-Viva.aspx
+        [x] zzMobile-Application-Development.aspx
+        [x] zzNetwork-Architecture.aspx
+        [x] zzOffice-365.aspx
+        [x] zzOrchard.aspx
+        [x] zzPayPerClick.aspx
+        [x] zzPower-BI.aspx
+        [x] zzPower-Platform.aspx
+        [x] zzPowerShell.aspx
+        [x] zzProduct-Design.aspx
+        [x] zzReact.aspx
+        [x] zzRemote-Work.aspx
+        [x] zzScrum.aspx
+        [x] zzSecurity.aspx
+        [x] zzService-Desk.aspx
+        [x] zzSharePoint.aspx
+        [x] zzSiteCore.aspx
+        [x] zzSitefinity.aspx
+        [x] zzSoftware-Audit.aspx
+        [x] zzSoftwareAudit.aspx
+        [x] zzStrategic-Architecture.aspx
+        [x] zzSupport-Plans.aspx
         📁 zzTerms-and-Conditions
-            [ ] zzDefault.aspx
-        [ ] zzTest-Practice.aspx
-        [ ] zzUI-UX-Design.aspx
-        [ ] zzUmbraco.aspx
-        [ ] zzVideo-Conferencing.aspx
+            [x] zzDefault.aspx
+        [x] zzTest-Practice.aspx
+        [x] zzUI-UX-Design.aspx
+        [x] zzUmbraco.aspx
+        [x] zzVideo-Conferencing.aspx
         📁 zzVideo-Production
-            [ ] zzConference-Video-Recording.aspx
-            [ ] zzDefault.aspx
-            [ ] zzVideo-Production-Content-Marketing.aspx
-            [ ] zzVideo-Production-Custom-Video.aspx
-            [ ] zzVideo-Production-Presentation.aspx
-            [ ] zzVideo-Production-Product-Services.aspx
-            [ ] zzVideo-Production-Reusable-Extras.aspx
-            [ ] zzVideo-Production-Training.aspx
-        [ ] zzVuejs.aspx
-        [ ] zzWeb-Applications.aspx
-        [ ] zzWordPress.aspx
-        [ ] zzXero-MYOB.aspx
-        [ ] zzZendesk.aspx
-        [ ] zzzSoftware-Audit.aspx
+            [x] zzConference-Video-Recording.aspx
+            [x] zzDefault.aspx
+            [x] zzVideo-Production-Content-Marketing.aspx
+            [x] zzVideo-Production-Custom-Video.aspx
+            [x] zzVideo-Production-Presentation.aspx
+            [x] zzVideo-Production-Product-Services.aspx
+            [x] zzVideo-Production-Reusable-Extras.aspx
+            [x] zzVideo-Production-Training.aspx
+        [x] zzVuejs.aspx
+        [x] zzWeb-Applications.aspx
+        [x] zzWordPress.aspx
+        [x] zzXero-MYOB.aspx
+        [x] zzZendesk.aspx
+        [x] zzzSoftware-Audit.aspx
     [ ] Courses.aspx
     [ ] CRMService.aspx
     📁 Database
@@ -309,7 +309,7 @@
     📁 Employment
         [ ] Employment.aspx
         [ ] EmploymentChina.aspx
-        [ ] zzDefault.aspx
+        [x] zzDefault.aspx
     [ ] ErrorPage.aspx
     📁 Events
         📁 2001MSDevDays
@@ -475,14 +475,14 @@
             [ ] Training-Options.aspx
             [ ] TSQL-Fundamentals.aspx
             [ ] VS-2012.aspx
-            [ ] zzAngular-Superpowers-Tour.aspx
-            [ ] zzAngular-Workshop.aspx
-            [ ] zzAzure-Superpowers-Tour.aspx
-            [ ] zzAzure-Superskills.aspx
-            [ ] zzClean-Architecture-Superpowers-Tour.aspx
-            [ ] zzClean-Architecture-Workshop.aspx
-            [ ] zzNET-Superpowers-Tour.aspx
-            [ ] zzProfessional-Tailored-Scrum.aspx
+            [x] zzAngular-Superpowers-Tour.aspx
+            [x] zzAngular-Workshop.aspx
+            [x] zzAzure-Superpowers-Tour.aspx
+            [x] zzAzure-Superskills.aspx
+            [x] zzClean-Architecture-Superpowers-Tour.aspx
+            [x] zzClean-Architecture-Workshop.aspx
+            [x] zzNET-Superpowers-Tour.aspx
+            [x] zzProfessional-Tailored-Scrum.aspx
         [ ] UTSSharePoint.aspx
         [ ] UTSSQL.aspx
         [ ] Visual-Studio-2013-Rapid-SharePoint-Development.aspx
@@ -546,7 +546,7 @@
         [ ] DatabaseEdit.aspx
         [ ] Default.aspx
         [ ] Details.aspx
-        [ ] zzhostingtermsconditions.aspx
+        [x] zzhostingtermsconditions.aspx
     📁 LinkAuditor
         [ ] Default.aspx
         📁 Desktop
@@ -1048,7 +1048,7 @@
             [ ] RemoteSupportViaNetMeeting.aspx
             [ ] RemoteSupportViaTeamViewer.aspx
             [ ] RemoteSupportViaUltraVNC.aspx
-            [ ] zzRemoteSupportViaMSN.aspx
+            [x] zzRemoteSupportViaMSN.aspx
         📁 Templates
             [ ] Default.aspx
             [ ] SSWGoogleReportTemplate.aspx
