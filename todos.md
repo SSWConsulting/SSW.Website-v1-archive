@@ -84,6 +84,7 @@
             - [x] zzDefault.aspx
         - 📁 History
             - [x] zzDefault.aspx
+        - [ ] History.aspx
         - [ ] Melbourne.aspx
         - [ ] Newcastle.aspx
         - [ ] Offices.aspx
@@ -92,7 +93,6 @@
         - [ ] Sydney.aspx
         - [ ] Web-Reference.aspx
         - [x] zzAboutUs.aspx
-        - [x] zzHistory.aspx
         - 📁 zzOffices
             - [x] zzDefault.aspx
     - 📁 Components
