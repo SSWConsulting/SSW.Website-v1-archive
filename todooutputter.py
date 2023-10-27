@@ -24,4 +24,4 @@ def output_markdown(path, file, indent=0):
 
 
 file = open("todos.md", "w", encoding="utf-8")
-output_markdown('./', file)  
+output_markdown('./SSW.Website.WebUI', file)  
