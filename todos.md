@@ -1133,11 +1133,10 @@
         [ ] howtobooksomeoneformeeting.aspx
         [ ] userguide.aspx
     📁 Testimonials
-        [ ] default.aspx
-        [ ] ViewAll.aspx
+        [x] zzdefault.aspx
+        [x] zzViewAll.aspx
     📁 Testmockup
         [ ] default.aspx
-    [ ] ThankYou.aspx
     [ ] ThankyouShare.aspx
     📁 TimePRO
         [ ] Default.aspx
@@ -1200,3 +1199,4 @@
     📁 zsMaintenance
         [ ] Default.aspx
         [ ] testimonialmodify.aspx
+    [x] zzThankYou.aspx
