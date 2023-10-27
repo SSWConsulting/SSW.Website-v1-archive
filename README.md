@@ -9,6 +9,16 @@ We are not zzing pages on the original repo because we want those pages to stay 
 v1 site - https://dev.azure.com/ssw2/ssw.website   
 bypass frontdoor (to see old pages) - https://prod.ssw.com.au/
 
+## Script
+
+To run the Python script that generates the `todos.md` file, run the following command:
+
+```
+python todooutputter.py
+```
+
+This will find and list all the aspx files in the project with associated directories, and tick off pages that have zz at the start. 
+
 ## Tasks
 - [ ] Turn off the v1 website's server 
 - [ ] Remove this repo once all pages have been migrated to v3 
