@@ -312,7 +312,7 @@
     - 📁 2001MSDevDays
         - [ ] Default.aspx
     - 📁 2001ODDC
-        - [ ] default.aspx
+        - [x] zzdefault.aspx
     - 📁 2002VSLive
         - [ ] Default.aspx
     - 📁 2004AccessToSQLServerAndNET
@@ -354,8 +354,8 @@
     - 📁 2006TeamSystem
         - [ ] Default.aspx
     - 📁 2006UTSNET
-        - [ ] Default.aspx
         - [ ] resources.aspx
+        - [x] zzDefault.aspx
     - 📁 2006UTS_BI
         - [ ] resources.aspx
     - 📁 2007AprilCanberraNETUG
@@ -403,7 +403,6 @@
         - [ ] Default.aspx
     - 📁 2011UTSSQL
         - [ ] Default.aspx
-    - [ ] ADNUG.aspx
     - [ ] Brian-Randell-Virtualization-for-Developers.aspx
     - [ ] Chinafy-Experience.aspx
     - [ ] ConferencePast.aspx
@@ -434,8 +433,6 @@
         - [ ] Enterprise-MVC-Day-2.aspx
         - [ ] Enterprise-MVC-Day-3.aspx
         - [ ] Enterprise-MVC-Day-4.aspx
-        - [ ] Enterprise-MVC-Part-1.aspx
-        - [ ] Enterprise-MVC-Part-2.aspx
         - [ ] Enterprise-Xamarin-2-Day-Essentials.aspx
         - [ ] Ionic-Superpowers-Tour.aspx
         - [ ] Juval-Lowy-Architects-Clinic.aspx
@@ -465,15 +462,14 @@
         - [x] zzdefault.aspx
         - [x] zzDevOps-SuperPowers-VS2015-ASP-NET-vNext-Discount.aspx
         - [x] zzDevOps-SuperPowers-VS2015-ASP-NET-vNext.aspx
+        - [x] zzEnterprise-MVC-Part-1.aspx
+        - [x] zzEnterprise-MVC-Part-2.aspx
         - [x] zzNET-5-Superpowers-Tour.aspx
         - [x] zzNET-6-Superpowers-Tour.aspx
         - [x] zzNET-Core-Superpowers-Tour.aspx
         - [x] zzNET-Superpowers-Tour.aspx
         - [x] zzProfessional-Tailored-Scrum.aspx
-    - [ ] UTSSharePoint.aspx
-    - [ ] UTSSQL.aspx
     - [ ] Visual-Studio-2013-Rapid-SharePoint-Development.aspx
-    - [ ] VisualStudio2010_TFS2010_Sharepoint2010.aspx
     - 📁 Webinars
         - [ ] 8-Month-Software-Development-Retrospective.aspx
         - [ ] Building-SPA-with-MVC4.aspx
@@ -506,6 +502,7 @@
         - [ ] Windows-Azure.aspx
     - 📁 Workshops
         - [ ] Tech-Breakfast.aspx
+    - [x] zzADNUG.aspx
     - [x] zzBI-Bootcamp.aspx
     - [x] zzBrain-Quest-VisualStudio2010-TFS2010-Sharepoint2010.aspx
     - [x] zzConference.aspx
@@ -516,6 +513,9 @@
     - [x] zzScrum-Training-Course-3-days.aspx
     - [x] zzScrum-Training-Course.aspx
     - [x] zzSSWTechBreakfast.aspx
+    - [x] zzUTSSharePoint.aspx
+    - [x] zzUTSSQL.aspx
+    - [x] zzVisualStudio2010_TFS2010_Sharepoint2010.aspx
 - 📁 ExchangeReporter
     - [ ] Default.aspx
     - 📁 Reports
@@ -680,8 +680,8 @@
     - [ ] FileList.aspx
     - [ ] SSWDiagnostics.aspx
 - 📁 Registration
-    - [ ] default.aspx
     - [ ] userguide.aspx
+    - [x] zzdefault.aspx
 - 📁 Rewards
     - [x] zzDefault.aspx
 - 📁 Shop
@@ -700,8 +700,6 @@
     - [ ] ClientRemove.aspx
     - 📁 CookiesDetection
         - [ ] cookiesdetection.aspx
-    - [ ] default.aspx
-    - [ ] EditDetail.aspx
     - [ ] EnablingCookies.aspx
     - [ ] encode.aspx
     - [ ] LostPassword.aspx
@@ -712,6 +710,8 @@
         - [ ] UserGuideFlash.aspx
     - [ ] UserGuide.aspx
     - [ ] UserGuideFlash.aspx
+    - [x] zzdefault.aspx
+    - [x] zzEditDetail.aspx
 - 📁 SQLAuditor
     - [ ] Default.aspx
     - [ ] SampleReport.aspx
@@ -732,8 +732,6 @@
 - 📁 SQLTotalCompare
     - [ ] Default.aspx
     - [ ] userguide.aspx
-- [ ] SSWCustomError404.aspx
-- [ ] SSWExceptionTest.aspx
 - 📁 Standards
     - [ ] AdventureWorksSamples.aspx
     - 📁 BetterSoftwareSuggestions
@@ -849,33 +847,31 @@
     - 📁 DeveloperAccess
         - [ ] AccessShortcutKeys.aspx
         - [ ] attachmentmanageroverview.aspx
-        - [ ] Default.aspx
         - [ ] howtodomailmergeinwordusingaccessdata.aspx
         - [ ] howtoimproveaccessperformance.aspx
         - [ ] WhatToDoAfterCrash.aspx
         - [ ] whydatarenovator.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperDotNet
-        - [ ] Default.aspx
         - [ ] DotNetStandard_ObjectNaming.aspx
         - [ ] DotNetStandard_ProjectNaming.aspx
         - [ ] EditXMLPage.aspx
         - [ ] GuidelinesForReporting.aspx
         - [ ] GuidelinesForReportingRichClient.aspx
         - [ ] GuidelinesForReportingWebClient.aspx
-        - [ ] HowToMigrate.aspx
         - [ ] InteropInDotNetAndHowToAvoidDLLHell.aspx
         - 📁 Resources
-            - [ ] Default.aspx
             - 📁 Northwind
-                - [ ] Default.aspx
+                - [x] zzDefault.aspx
+            - [x] zzDefault.aspx
         - [ ] SSWNorthwindArchitectureSupportingWebServices.aspx
         - [ ] UsingTFSToEditWebsite.aspx
+        - [x] zzDefault.aspx
+        - [x] zzHowToMigrate.aspx
     - 📁 DeveloperGeneral
         - [ ] AccessTools.aspx
         - [ ] CreatingScheduledJobsOnAServer.aspx
-        - [ ] Default.aspx
         - [ ] ExchangeServer.aspx
-        - [ ] Favourite3rdPartyTools.aspx
         - [ ] internetexplorertools.aspx
         - [ ] LaptopTools.aspx
         - [ ] netTools.aspx
@@ -898,22 +894,23 @@
         - [ ] WindowsMobile.aspx
         - [ ] WindowsTools.aspx
         - [ ] WinformControls.aspx
+        - [x] zzDefault.aspx
+        - [x] zzFavourite3rdPartyTools.aspx
     - 📁 DeveloperInternet
         - [ ] 216color.aspx
-        - [ ] Default.aspx
         - [ ] howtofixbrokenlinks.aspx
         - [ ] HowToFTPWithIExplorer.aspx
         - [ ] HowToFTPWithIExplorerpassword.aspx
         - [ ] StandardWebColours.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperSharePoint
         - [ ] VMDevelopment.aspx
     - 📁 DeveloperSQLReportingServices
-        - [ ] Default.aspx
         - [ ] SQLServerReportingService_1_ReportsNaming.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperSQLServer
         - [ ] creatingasqlserverprofilertrace.aspx
         - [ ] dataschemastandard.aspx
-        - [ ] Default.aspx
         - [ ] setupsqlserverserviceforreplication.aspx
         - [ ] SQLServerStandard_1_ObjectNaming.aspx
         - [ ] SQLServerStandard_2_StoredProcedureNaming.aspx
@@ -922,19 +919,19 @@
         - [ ] SQLServerStandard_5_RelationshipNaming.aspx
         - [ ] SQLServerStandard_6_DatabaseDesignStandards.aspx
         - [ ] SSWStandardForUpsizing.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperXSL
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 Forms
-        - [ ] Default.aspx
         - [x] zzConsultingOrderTermsConditions.aspx
+        - [x] zzDefault.aspx
         - [x] zzSourceCodeLicenseAgreement.aspx
     - 📁 Rules
         - [ ] CreatingATimeDimensionIn10EasySteps.aspx
         - [ ] dataschemastandard.aspx
-        - [ ] Default.aspx
         - 📁 DeveloperSQLReportingServices
-            - [ ] Default.aspx
             - [ ] SQLServerReportingService_1_ReportsNaming.aspx
+            - [x] zzDefault.aspx
         - [ ] GoodThingsBadThings.aspx
         - [ ] MakingOLAPReports.aspx
         - [ ] RulesToBeingSoftwareConsultantsDealingWithClients.aspx
@@ -962,7 +959,6 @@
         - [ ] RulesToBetterInboundCalls.aspx
         - [ ] RulestoBetterInstantMessenger.aspx
         - [ ] RulesToBetterInterfaces-Controls.aspx
-        - [ ] RulesToBetterInterfaces-Data.aspx
         - [ ] RulesToBetterInterfaces-Forms.aspx
         - [ ] RulesToBetterInterfaces-General.aspx
         - [ ] RulesToBetterInterfaces-Mobile.aspx
@@ -998,8 +994,6 @@
         - [ ] RulesToBetterSQLReportingServices.aspx
         - [ ] RulesToBetterSQLServerDatabases.aspx
         - [ ] RulesToBetterSSWProducts.aspx
-        - [ ] RulesToBetterTeamMembers.aspx
-        - [ ] RulestoBetterTeams.aspx
         - [ ] RulesToBetterTechnicalDocumentation.aspx
         - [ ] RulesToBetterTimesheets.aspx
         - [ ] RulesToBetterUnitTests.aspx
@@ -1007,9 +1001,7 @@
         - [ ] RulesToBetterVirtualPCs.aspx
         - [ ] RulesToBetterVistaCompatibilities.aspx
         - [ ] RulesToBetterWebsitesAdministration.aspx
-        - [ ] RulesToBetterWebsitesContent.aspx
         - [ ] RulesToBetterWebsitesDevelopment.aspx
-        - [ ] RulesToBetterWebsitesGraphics.aspx
         - [ ] RulesToBetterWebsitesLayout.aspx
         - [ ] RulesToBetterWebsitesMarketing.aspx
         - [ ] RulesToBetterWebsitesNavigation.aspx
@@ -1031,41 +1023,45 @@
         - [ ] RulesToUpsizingAccess.aspx
         - [ ] Training.aspx
         - [ ] UsingGoogleCalendar.aspx
+        - [x] zzDefault.aspx
         - [x] zzRulesToBetterBranding.aspx
         - [x] zzRulesToBetterDevelopers.aspx
+        - [x] zzRulesToBetterInterfaces-Data.aspx
+        - [x] zzRulesToBetterTeamMembers.aspx
+        - [x] zzRulestoBetterTeams.aspx
+        - [x] zzRulesToBetterWebsitesContent.aspx
+        - [x] zzRulesToBetterWebsitesGraphics.aspx
     - 📁 SSWLogo
         - [ ] Default.aspx
     - 📁 Support
         - [ ] BugReportOrEnhancement.aspx
-        - [ ] Default.aspx
         - [ ] RemoteSupportSampleScript.aspx
         - [ ] RemoteSupportViaCopilot.aspx
         - [ ] RemoteSupportViaNetMeeting.aspx
         - [ ] RemoteSupportViaTeamViewer.aspx
         - [ ] RemoteSupportViaUltraVNC.aspx
+        - [x] zzDefault.aspx
         - [x] zzRemoteSupportViaMSN.aspx
     - 📁 Templates
-        - [ ] Default.aspx
         - [ ] SSWGoogleReportTemplate.aspx
+        - [x] zzDefault.aspx
         - [x] zzSSWWebTemplate.aspx
     - [ ] Training.aspx
     - 📁 WiseSetup
-        - [ ] Default.aspx
         - [ ] ReleasingAVersion.aspx
         - [ ] UserGuide.aspx
         - [ ] WiseStandards.aspx
+        - [x] zzDefault.aspx
 - 📁 StandardsInternal
     - 📁 ComputerSetup
-        - [ ] Default.aspx
         - [ ] SettingUpVPN.aspx
         - [ ] SSWCRMInstruction.aspx
         - [ ] SSWCRMUpAndRunning_CRM2011.aspx
         - [ ] SSWCRMUpAndRunning_CRM4.aspx
         - [ ] Windows7DeploymentChangeLog.aspx
-    - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperGeneral
         - [ ] CleaningYourMailbox.aspx
-        - [ ] Default.aspx
         - [ ] HowToCheckLinkAuditorReports.aspx
         - [ ] HowToCleanErrorLogs.aspx
         - [ ] HowToConductTraining.aspx
@@ -1076,29 +1072,30 @@
         - [ ] UpgradeToVS2005AndTFS.aspx
         - [ ] UsingFTPSync.aspx
         - [ ] WebMaster_HowToCleanAndResolveErrorLogs.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperNetworkPhone
         - [ ] PhoneSystemSetup.aspx
         - [ ] PhoneSystemUsage.aspx
     - 📁 DeveloperProductsHosting
         - [ ] Browse_Plesk_Instructions.aspx
-        - [ ] default.aspx
         - 📁 DNS
-            - [ ] default.aspx
+            - [x] zzdefault.aspx
         - [ ] dotNET_Hosting_Setup.aspx
         - 📁 Images
             - [ ] default.aspx
+        - [x] zzdefault.aspx
     - 📁 DeveloperSQLServer
-        - [ ] Default.aspx
         - [ ] HOWTOChangeSSWData2000.aspx
         - [ ] HOWTOSetupConcurrencyForTheWebSite.aspx
+        - [x] zzDefault.aspx
     - 📁 DeveloperVB
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 Employment
         - [ ] accountsassessment.aspx
-        - [ ] Default.aspx
         - [ ] employmenttest.aspx
         - [ ] SharepointExpertQuestions.aspx
         - [ ] Work_experience_screening_standard.aspx
+        - [x] zzDefault.aspx
     - 📁 GeneralAdministration
         - [ ] AlarmSystem.aspx
     - 📁 InductionTraining
@@ -1118,7 +1115,8 @@
         - [ ] RegistrationForDevelopers.aspx
     - 📁 VisualBuildProSetup
         - [ ] Default.aspx
-    - [ ] WhereToGoToday.aspx
+    - [x] zzDefault.aspx
+    - [x] zzWhereToGoToday.aspx
 - 📁 Support
     - [ ] PCAnywhere.aspx
     - [x] zzDefault.aspx
@@ -1198,4 +1196,6 @@
 - [x] zzdefault.aspx
 - [x] zzSharePointEventsService.aspx
 - [x] zzSharePointExternalSpeakersService.aspx
+- [x] zzSSWCustomError404.aspx
+- [x] zzSSWExceptionTest.aspx
 - [x] zzThankYou.aspx
