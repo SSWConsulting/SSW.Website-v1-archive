@@ -33,7 +33,6 @@
     - [ ] HowtobeGoodCodeAuditorDailyBuildMaster.aspx
     - [ ] ImageSizeBad.aspx
     - [ ] ImageSizeGood.aspx
-    - [ ] RegExTutorial.aspx
     - [ ] resources.aspx
     - [ ] rsuserguide.aspx
     - [ ] Rules.aspx
@@ -48,10 +47,10 @@
     - [ ] UserGuideWizard.aspx
     - [ ] UserGuide_Old.aspx
     - [ ] webmag.aspx
+    - [x] zzRegExTutorial.aspx
 - 📁 Company
     - 📁 Awards
         - [ ] Default.aspx
-    - [ ] Awards.aspx
     - 📁 Clients
         - [x] zzDefault.aspx
     - [ ] ConfirmEMailSent.aspx
@@ -82,6 +81,7 @@
     - [ ] Resources.aspx
     - [ ] Web-Reference.aspx
     - [x] zzAboutUs.aspx
+    - [x] zzAwards.aspx
     - [x] zzBrisbane.aspx
     - [x] zzClients.aspx
     - [x] zzContactUs.aspx
@@ -98,13 +98,11 @@
     - [x] zzShowFileIcon.aspx
 - 📁 Consulting
     - 📁 Case-Study
-        - [ ] Auctions-Plus.aspx
         - [ ] AuctionsPlus.aspx
         - [ ] Aurecon.aspx
         - [ ] Ausgrid.aspx
         - [ ] BCE.aspx
         - [ ] Bupa.aspx
-        - [ ] Default.aspx
         - [ ] eMove.aspx
         - [ ] EstateMaster.aspx
         - [ ] EventCinemas.aspx
@@ -119,6 +117,8 @@
         - [ ] Toll.aspx
         - [ ] VulcanSteel.aspx
         - [ ] WorleyParsons.aspx
+        - [x] zzAuctions-Plus.aspx
+        - [x] zzDefault.aspx
     - [ ] Consulting.aspx
     - [ ] Crash-Plan-Pro.aspx
     - [ ] Maps-Development.aspx
@@ -404,8 +404,6 @@
     - 📁 2011UTSSQL
         - [ ] Default.aspx
     - [ ] ADNUG.aspx
-    - [ ] BI-Bootcamp.aspx
-    - [ ] Brain-Quest-VisualStudio2010-TFS2010-Sharepoint2010.aspx
     - [ ] Brian-Randell-Virtualization-for-Developers.aspx
     - [ ] Chinafy-Experience.aspx
     - [ ] ConferencePast.aspx
@@ -416,7 +414,6 @@
     - [ ] Juval-Lowy-Architect-Master-Class.aspx
     - [ ] Juval-Lowy-Architects-Clinic.aspx
     - [ ] SampleTrainingDay.aspx
-    - [ ] SSWTechBreakfast.aspx
     - [ ] SSWTechBreakfastPast.aspx
     - [ ] Steve-Forte-Agile-Seminar.aspx
     - 📁 TechBreakfast
@@ -425,21 +422,14 @@
         - [ ] How-to-upgrade-your-skills-to-developer-in-2015.aspx
     - 📁 Training
         - [ ] Advanced-TSQL.aspx
-        - [ ] Angular-ASP-MVC-in-VS2015-Jumpstart.aspx
         - [ ] ASP-NET-MVC-AngularJS-TechEd-Secret.aspx
         - [ ] ASP-NET-MVC-AngularJS-TechEd.aspx
         - [ ] BI-Bootcamp.aspx
         - [ ] BI-Immersion.aspx
         - [ ] Brain-Quest-ALM-in-a-Day.aspx
         - [ ] Brain-Quest-VS-TFS-Sharepoint.aspx
-        - [ ] Brain-Quest-VS2015-ASP-NET-vNext-DevOps-Discount.aspx
-        - [ ] Brain-Quest-VS2015-ASP-NET-vNext-DevOps.aspx
-        - [ ] Courses.aspx
         - [ ] Data-Mining-Seminar.aspx
-        - [ ] default.aspx
         - [ ] DevOps-SuperPowers-VisualStudio.aspx
-        - [ ] DevOps-SuperPowers-VS2015-ASP-NET-vNext-Discount.aspx
-        - [ ] DevOps-SuperPowers-VS2015-ASP-NET-vNext.aspx
         - [ ] Enterprise-MVC-Day-1.aspx
         - [ ] Enterprise-MVC-Day-2.aspx
         - [ ] Enterprise-MVC-Day-3.aspx
@@ -449,9 +439,6 @@
         - [ ] Enterprise-Xamarin-2-Day-Essentials.aspx
         - [ ] Ionic-Superpowers-Tour.aspx
         - [ ] Juval-Lowy-Architects-Clinic.aspx
-        - [ ] NET-5-Superpowers-Tour.aspx
-        - [ ] NET-6-Superpowers-Tour.aspx
-        - [ ] NET-Core-Superpowers-Tour.aspx
         - [ ] Optimization-Performance.aspx
         - [ ] Power-Sessions.aspx
         - [ ] QUT-Angular2.aspx
@@ -465,12 +452,22 @@
         - [ ] Training-Options.aspx
         - [ ] TSQL-Fundamentals.aspx
         - [ ] VS-2012.aspx
+        - [x] zzAngular-ASP-MVC-in-VS2015-Jumpstart.aspx
         - [x] zzAngular-Superpowers-Tour.aspx
         - [x] zzAngular-Workshop.aspx
         - [x] zzAzure-Superpowers-Tour.aspx
         - [x] zzAzure-Superskills.aspx
+        - [x] zzBrain-Quest-VS2015-ASP-NET-vNext-DevOps-Discount.aspx
+        - [x] zzBrain-Quest-VS2015-ASP-NET-vNext-DevOps.aspx
         - [x] zzClean-Architecture-Superpowers-Tour.aspx
         - [x] zzClean-Architecture-Workshop.aspx
+        - [x] zzCourses.aspx
+        - [x] zzdefault.aspx
+        - [x] zzDevOps-SuperPowers-VS2015-ASP-NET-vNext-Discount.aspx
+        - [x] zzDevOps-SuperPowers-VS2015-ASP-NET-vNext.aspx
+        - [x] zzNET-5-Superpowers-Tour.aspx
+        - [x] zzNET-6-Superpowers-Tour.aspx
+        - [x] zzNET-Core-Superpowers-Tour.aspx
         - [x] zzNET-Superpowers-Tour.aspx
         - [x] zzProfessional-Tailored-Scrum.aspx
     - [ ] UTSSharePoint.aspx
@@ -509,6 +506,8 @@
         - [ ] Windows-Azure.aspx
     - 📁 Workshops
         - [ ] Tech-Breakfast.aspx
+    - [x] zzBI-Bootcamp.aspx
+    - [x] zzBrain-Quest-VisualStudio2010-TFS2010-Sharepoint2010.aspx
     - [x] zzConference.aspx
     - [x] zzDefault.aspx
     - [x] zzDevSuperpowers-In-Person.aspx
@@ -516,6 +515,7 @@
     - [x] zzPast.aspx
     - [x] zzScrum-Training-Course-3-days.aspx
     - [x] zzScrum-Training-Course.aspx
+    - [x] zzSSWTechBreakfast.aspx
 - 📁 ExchangeReporter
     - [ ] Default.aspx
     - 📁 Reports
@@ -719,12 +719,12 @@
     - [ ] UserguideWizards.aspx
     - [ ] VoteResult.aspx
 - 📁 SQLDeploy
-    - [ ] Default.aspx
     - [ ] developerguide.aspx
     - [ ] ExeMode.aspx
     - [ ] ExistingDataBase.aspx
     - [ ] IntegrationMode.aspx
     - [ ] userguide.aspx
+    - [x] zzDefault.aspx
 - 📁 SQLReportingServicesAuditor
     - [ ] Default.aspx
     - [ ] PostInstallation.aspx
@@ -799,7 +799,6 @@
         - [ ] RulesToBetterXDA.aspx
         - [ ] Scrum.aspx
         - [ ] sharepoint.aspx
-        - [ ] sharepointteamservices.aspx
         - [ ] Silverlight.aspx
         - [ ] Skype.aspx
         - [ ] SMH.aspx
@@ -842,6 +841,7 @@
         - [ ] WindowsPhotoViewer.aspx
         - [ ] Wise.aspx
         - [ ] WPF.aspx
+        - [x] zzsharepointteamservices.aspx
     - 📁 CRM
         - [ ] CRM4_HowToSendACrmNewsletter.aspx
         - [ ] RulestoBetterCRMMailMergeTemplate.aspx
@@ -925,9 +925,9 @@
     - 📁 DeveloperXSL
         - [ ] Default.aspx
     - 📁 Forms
-        - [ ] ConsultingOrderTermsConditions.aspx
         - [ ] Default.aspx
-        - [ ] SourceCodeLicenseAgreement.aspx
+        - [x] zzConsultingOrderTermsConditions.aspx
+        - [x] zzSourceCodeLicenseAgreement.aspx
     - 📁 Rules
         - [ ] CreatingATimeDimensionIn10EasySteps.aspx
         - [ ] dataschemastandard.aspx
@@ -945,7 +945,6 @@
         - [ ] RulestoBetterAccounting.aspx
         - [ ] RulesToBetterASPDotNet.aspx
         - [ ] RulestoBetterBlogs.aspx
-        - [ ] RulesToBetterBranding.aspx
         - [ ] RulesToBetterBusinessIntelligence.aspx
         - [ ] RulesToBetterBusinessIntelligenceResourceSetup.aspx
         - [ ] RulesToBetterCars.aspx
@@ -953,7 +952,6 @@
         - [ ] RulestoBetterCommandLines.aspx
         - [ ] RulesToBetterConnectionStrings.aspx
         - [ ] RulesToBetterCRM3To4Migration.aspx
-        - [ ] RulesToBetterDevelopers.aspx
         - [ ] RulestoBetterDotNetNuke.aspx
         - [ ] RulesToBetterDotNetProjects.aspx
         - [ ] RulesToBetterEmail.aspx
@@ -1033,6 +1031,8 @@
         - [ ] RulesToUpsizingAccess.aspx
         - [ ] Training.aspx
         - [ ] UsingGoogleCalendar.aspx
+        - [x] zzRulesToBetterBranding.aspx
+        - [x] zzRulesToBetterDevelopers.aspx
     - 📁 SSWLogo
         - [ ] Default.aspx
     - 📁 Support
@@ -1047,7 +1047,7 @@
     - 📁 Templates
         - [ ] Default.aspx
         - [ ] SSWGoogleReportTemplate.aspx
-        - [ ] SSWWebTemplate.aspx
+        - [x] zzSSWWebTemplate.aspx
     - [ ] Training.aspx
     - 📁 WiseSetup
         - [ ] Default.aspx
@@ -1120,9 +1120,9 @@
         - [ ] Default.aspx
     - [ ] WhereToGoToday.aspx
 - 📁 Support
-    - [ ] Default.aspx
     - [ ] PCAnywhere.aspx
-    - [ ] Support.aspx
+    - [x] zzDefault.aspx
+    - [x] zzSupport.aspx
 - 📁 TeamCalendar
     - [ ] Default.aspx
     - [ ] howtobooksomeoneformeeting.aspx
@@ -1134,9 +1134,9 @@
     - [ ] default.aspx
 - [ ] ThankyouShare.aspx
 - 📁 TimePRO
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 TimePRONet
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 TimePROSmartTags
     - [ ] Default.aspx
     - [ ] UserGuide.aspx
@@ -1146,31 +1146,31 @@
     - [ ] ALMCustomization.aspx
     - [ ] BI-TheGlory.aspx
     - [ ] BI-TheGuts.aspx
-    - [ ] BI.aspx
-    - [ ] BI2010.aspx
     - [ ] BusinessIntelligenceForBusiness.aspx
-    - [ ] Courses.aspx
-    - [ ] Default.aspx
     - [ ] Expression.aspx
-    - [ ] PowerSessions.aspx
     - [ ] ProcessImprovementForSoftwareTeams.aspx
     - [ ] ReportingServices.aspx
-    - [ ] Schedule.aspx
     - [ ] Sessions-Past.aspx
-    - [ ] Sessions.aspx
     - [ ] SharePoint.aspx
-    - [ ] SharePointForBusiness.aspx
     - [ ] SharePointUTS.aspx
     - [ ] SQLBI.aspx
     - [ ] SQLServer.aspx
     - [ ] SQLServerBI.aspx
-    - [ ] Top-8-ways-to-speed-up-SQL-Server.aspx
-    - [ ] Training.aspx
-    - [ ] UpcomingTrainingAndEvents.aspx
     - [ ] VisualStudio.aspx
-    - [ ] VSTS.aspx
-    - [ ] VSTSCustomization.aspx
-    - [ ] Windows-Azure-Webinar.aspx
+    - [x] zzBI.aspx
+    - [x] zzBI2010.aspx
+    - [x] zzCourses.aspx
+    - [x] zzDefault.aspx
+    - [x] zzPowerSessions.aspx
+    - [x] zzSchedule.aspx
+    - [x] zzSessions.aspx
+    - [x] zzSharePointForBusiness.aspx
+    - [x] zzTop-8-ways-to-speed-up-SQL-Server.aspx
+    - [x] zzTraining.aspx
+    - [x] zzUpcomingTrainingAndEvents.aspx
+    - [x] zzVSTS.aspx
+    - [x] zzVSTSCustomization.aspx
+    - [x] zzWindows-Azure-Webinar.aspx
 - 📁 UpsizingPRO
     - [ ] Default.aspx
     - [ ] dtsproblem.aspx
