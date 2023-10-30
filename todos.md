@@ -12,19 +12,19 @@
         - [ ] Default.aspx
     - [ ] UserGuide.aspx
 - 📁 Angular
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 Bot
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 Bots
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - [ ] CacheManagement.aspx
 - 📁 China
-    - [ ] blank.aspx
-    - [ ] ChinaPigeon.aspx
-    - [ ] ChinaRaven.aspx
-    - [ ] ChinaRavenSubPage.aspx
-    - [ ] default.aspx
-    - [ ] EmploymentChina.aspx
+    - [x] zzblank.aspx
+    - [x] zzChinaPigeon.aspx
+    - [x] zzChinaRaven.aspx
+    - [x] zzChinaRavenSubPage.aspx
+    - [x] zzdefault.aspx
+    - [x] zzEmploymentChina.aspx
 - 📁 CodeAuditor
     - 📁 Contact
         - [ ] Default.aspx
@@ -52,30 +52,26 @@
     - 📁 Awards
         - [ ] Default.aspx
     - [ ] Awards.aspx
-    - [ ] Brisbane.aspx
     - 📁 Clients
         - [x] zzDefault.aspx
-    - [ ] Clients.aspx
     - [ ] ConfirmEMailSent.aspx
-    - [ ] ContactUs.aspx
     - 📁 Culture
         - [x] zzDefault.aspx
-    - [ ] Default.aspx
     - 📁 Directions
         - 📁 Beijing
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
         - 📁 Brisbane
             - [x] zzDefault.aspx
         - 📁 China
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
         - 📁 Coogee
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
         - 📁 Hangzhou
             - [x] zzDefault.aspx
         - 📁 Melbourne
             - [x] zzDefault.aspx
         - 📁 NeutralBay
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
         - 📁 Newcastle
             - [x] zzDefault.aspx
         - 📁 Sydney
@@ -83,26 +79,24 @@
         - [x] zzDefault.aspx
     - 📁 History
         - [x] zzDefault.aspx
-    - [ ] History.aspx
-    - [ ] Melbourne.aspx
-    - [ ] Newcastle.aspx
-    - [ ] Offices.aspx
-    - [ ] Privacy.aspx
     - [ ] Resources.aspx
-    - [ ] Sydney.aspx
     - [ ] Web-Reference.aspx
     - [x] zzAboutUs.aspx
+    - [x] zzBrisbane.aspx
+    - [x] zzClients.aspx
+    - [x] zzContactUs.aspx
+    - [x] zzDefault.aspx
+    - [x] zzHistory.aspx
+    - [x] zzMelbourne.aspx
+    - [x] zzNewcastle.aspx
     - 📁 zzOffices
         - [x] zzDefault.aspx
+    - [x] zzOffices.aspx
+    - [x] zzPrivacy.aspx
+    - [x] zzSydney.aspx
 - 📁 Components
-    - [ ] ShowFileIcon.aspx
+    - [x] zzShowFileIcon.aspx
 - 📁 Consulting
-    - [ ] Access-Database-Development.aspx
-    - [ ] Accounting-Packages.aspx
-    - [ ] alm-building-quality-applications.aspx
-    - [ ] alm-project-and-process-management.aspx
-    - [ ] alm-source-control-branching.aspx
-    - [ ] alm-test-quality-assurance.aspx
     - 📁 Case-Study
         - [ ] Auctions-Plus.aspx
         - [ ] AuctionsPlus.aspx
@@ -127,18 +121,16 @@
         - [ ] WorleyParsons.aspx
     - [ ] Consulting.aspx
     - [ ] Crash-Plan-Pro.aspx
-    - [ ] Document-Management-Workflow.aspx
-    - [ ] HostedTFS.aspx
     - [ ] Maps-Development.aspx
     - [ ] NewSharePointBenefits.aspx
-    - [ ] PerformancePoint.aspx
-    - [ ] Silverlight.aspx
-    - [ ] Skype-for-Business.aspx
-    - [ ] Smart-Office-and-Smart-Home.aspx
-    - [ ] SoftwareAuditWindows7Logo.aspx
-    - [ ] SourceControl.aspx
+    - [x] zzAccess-Database-Development.aspx
     - [x] zzAccess-Database-Upsizing.aspx
+    - [x] zzAccounting-Packages.aspx
     - [x] zzALM-Azure-DevOps.aspx
+    - [x] zzalm-building-quality-applications.aspx
+    - [x] zzalm-project-and-process-management.aspx
+    - [x] zzalm-source-control-branching.aspx
+    - [x] zzalm-test-quality-assurance.aspx
     - [x] zzAngular.aspx
     - [x] zzAre-You-Stuck.aspx
     - [x] zzArtificialIntelligence.aspx
@@ -156,9 +148,11 @@
     - [x] zzDesktop-Development.aspx
     - [x] zzDevOps.aspx
     - [x] zzDNN-DotNetNuke.aspx
+    - [x] zzDocument-Management-Workflow.aspx
     - [x] zzEnterprise-Reporting.aspx
     - [x] zzGPT.aspx
     - [x] zzHoloLens.aspx
+    - [x] zzHostedTFS.aspx
     - [x] zzHyper-V.aspx
     - [x] zzIntune.aspx
     - [x] zzJamstack.aspx
@@ -173,6 +167,7 @@
     - [x] zzOffice-365.aspx
     - [x] zzOrchard.aspx
     - [x] zzPayPerClick.aspx
+    - [x] zzPerformancePoint.aspx
     - [x] zzPower-BI.aspx
     - [x] zzPower-Platform.aspx
     - [x] zzPowerShell.aspx
@@ -183,10 +178,15 @@
     - [x] zzSecurity.aspx
     - [x] zzService-Desk.aspx
     - [x] zzSharePoint.aspx
+    - [x] zzSilverlight.aspx
     - [x] zzSiteCore.aspx
     - [x] zzSitefinity.aspx
+    - [x] zzSkype-for-Business.aspx
+    - [x] zzSmart-Office-and-Smart-Home.aspx
     - [x] zzSoftware-Audit.aspx
     - [x] zzSoftwareAudit.aspx
+    - [x] zzSoftwareAuditWindows7Logo.aspx
+    - [x] zzSourceControl.aspx
     - [x] zzStrategic-Architecture.aspx
     - [x] zzSupport-Plans.aspx
     - 📁 zzTerms-and-Conditions
@@ -300,13 +300,13 @@
     - [ ] Default.aspx
     - [ ] userguide.aspx
 - 📁 Employees
-    - [ ] EmployeesProfile.aspx
-    - [ ] EmployeesXML.aspx
-    - [ ] EmployeesXMLMenu.aspx
+    - [x] zzEmployeesProfile.aspx
+    - [x] zzEmployeesXML.aspx
+    - [x] zzEmployeesXMLMenu.aspx
 - 📁 Employment
-    - [ ] Employment.aspx
-    - [ ] EmploymentChina.aspx
     - [x] zzDefault.aspx
+    - [x] zzEmployment.aspx
+    - [x] zzEmploymentChina.aspx
 - [ ] ErrorPage.aspx
 - 📁 Events
     - 📁 2001MSDevDays
@@ -408,19 +408,14 @@
     - [ ] Brain-Quest-VisualStudio2010-TFS2010-Sharepoint2010.aspx
     - [ ] Brian-Randell-Virtualization-for-Developers.aspx
     - [ ] Chinafy-Experience.aspx
-    - [ ] Conference.aspx
     - [ ] ConferencePast.aspx
-    - [ ] DevSuperpowers-In-Person.aspx
     - 📁 ebooks
         - [ ] angularjs-5-lessons-from-the-trenches.aspx
     - [ ] Event.aspx
-    - [ ] Events.aspx
     - [ ] HoloLens-experience.aspx
     - [ ] Juval-Lowy-Architect-Master-Class.aspx
     - [ ] Juval-Lowy-Architects-Clinic.aspx
     - [ ] SampleTrainingDay.aspx
-    - [ ] Scrum-Training-Course-3-days.aspx
-    - [ ] Scrum-Training-Course.aspx
     - [ ] SSWTechBreakfast.aspx
     - [ ] SSWTechBreakfastPast.aspx
     - [ ] Steve-Forte-Agile-Seminar.aspx
@@ -514,8 +509,13 @@
         - [ ] Windows-Azure.aspx
     - 📁 Workshops
         - [ ] Tech-Breakfast.aspx
+    - [x] zzConference.aspx
     - [x] zzDefault.aspx
+    - [x] zzDevSuperpowers-In-Person.aspx
+    - [x] zzEvents.aspx
     - [x] zzPast.aspx
+    - [x] zzScrum-Training-Course-3-days.aspx
+    - [x] zzScrum-Training-Course.aspx
 - 📁 ExchangeReporter
     - [ ] Default.aspx
     - 📁 Reports
@@ -628,16 +628,12 @@
     - [ ] Default.aspx
     - [ ] UserGuide.aspx
 - 📁 NETUG
-    - [ ] DeveloperLinks.aspx
     - 📁 Evaluation-Survey
         - [ ] Default.aspx
-    - [ ] EvaluationSurvey.aspx
     - [ ] Hanselman-User-Group-Live.aspx
     - [ ] Hanselman-User-Group-Special.aspx
     - [ ] History.aspx
     - [ ] NewsletterFeedback.aspx
-    - [ ] PastSessions.aspx
-    - [ ] RecentSessions.aspx
     - [ ] SSWUpdatePrevious.aspx
     - [ ] The-Agile-Olympics-with-Jesse-Houwing.aspx
     - [ ] Top-Sessions.aspx
@@ -646,12 +642,16 @@
     - [x] zzBrisbane.aspx
     - [x] zzCanberra.aspx
     - [x] zzDefault.aspx
+    - [x] zzDeveloperLinks.aspx
+    - [x] zzEvaluationSurvey.aspx
     - [x] zzMelbourne.aspx
+    - [x] zzPastSessions.aspx
+    - [x] zzRecentSessions.aspx
     - [x] zzSydney.aspx
 - 📁 Newcastle
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 News
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 NewZealand
     - [ ] default.aspx
 - 📁 PerformancePRO
