@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import requests
 
-WHITELIST = ["AccessReporter"]
+WHITELIST = ["AccessReporter", "WisePRO"]
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
@@ -28,20 +28,25 @@ def output_csv(path):
                 images = driver.find_elements(By.TAG_NAME, "img")
                 for image in images:
                     src = image.get_attribute("src")
-                    if src is None:
+                    if src is None or src.endswith(".axd"):
                         continue
-                    if src.startswith("https://www.ssw.com.au/ssw/"):
+                    if src.startswith("https://www.ssw.com.au"):
                         split_src = src.split("/")
                         image_name = split_src[-1]
-                        image_path = "saved/" + "/".join(split_src[3:-1])
+                        image_path = "saved/" + "/".join(split_src[4:-1])
                         if not os.path.exists(image_path):
                             os.makedirs(image_path)
                         img_data = requests.get(src).content
-                        with open(image_path + "/" + image_name, "wb") as f:
+
+                        store_path = (image_path + "/" + image_name).split("?")[0]
+                        
+
+
+                        with open(store_path, "wb") as f:
                             f.write(img_data)
 
                         
-                        page_source = page_source.replace(src.replace("https://www.ssw.com.au", ""), "/saved/" + "/".join(split_src[3:]))
+                        page_source = page_source.replace(src.replace("https://www.ssw.com.au", ""), "/saved/" + "/".join(split_src[4:]))
                         
                 links = driver.find_elements(By.TAG_NAME, "link")
                 for link in links:
@@ -50,13 +55,10 @@ def output_csv(path):
                         if href is None:
                             continue
                         if "ssw_raven_print" in href:
-                            print(href.replace("https://www.ssw.com.au", ""))
                             page_source = page_source.replace(href.replace("https://www.ssw.com.au", ""), "/saved/ssw_raven_print.css")
                         elif "ssw_raven" in href:
-                            print(href.replace("https://www.ssw.com.au", ""))
                             page_source = page_source.replace(href.replace("https://www.ssw.com.au", ""), "/saved/ssw_raven.css")
                 
-                print("saved/" + "/".join(split_path[1:-1]))
                 if not os.path.exists("saved/" + "/".join(split_path[1:-1])):
                     os.makedirs("saved/" + "/".join(split_path[1:-1]))
                 with open("saved/" + uri + ".html", "w+", encoding="utf-8") as f:
