@@ -4,11 +4,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import requests
 
-WHITELIST = ["AccessReporter", "WisePRO"]
+WHITELIST = ["Events"]
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
+PARENT_DIR = "history/"
 
 def output_csv(path):
     for item in os.listdir(path):
@@ -33,7 +34,7 @@ def output_csv(path):
                     if src.startswith("https://www.ssw.com.au"):
                         split_src = src.split("/")
                         image_name = split_src[-1]
-                        image_path = "saved/" + "/".join(split_src[4:-1])
+                        image_path = PARENT_DIR + "/".join(split_src[4:-1])
                         if not os.path.exists(image_path):
                             os.makedirs(image_path)
                         img_data = requests.get(src).content
@@ -46,7 +47,7 @@ def output_csv(path):
                             f.write(img_data)
 
                         
-                        page_source = page_source.replace(src.replace("https://www.ssw.com.au", ""), "/saved/" + "/".join(split_src[4:]))
+                        page_source = page_source.replace(src.replace("https://www.ssw.com.au", ""), "/" + PARENT_DIR + "/".join(split_src[4:]))
                         
                 links = driver.find_elements(By.TAG_NAME, "link")
                 for link in links:
@@ -59,9 +60,9 @@ def output_csv(path):
                         elif "ssw_raven" in href:
                             page_source = page_source.replace(href.replace("https://www.ssw.com.au", ""), "/saved/ssw_raven.css")
                 
-                if not os.path.exists("saved/" + "/".join(split_path[1:-1])):
-                    os.makedirs("saved/" + "/".join(split_path[1:-1]))
-                with open("saved/" + uri + ".html", "w+", encoding="utf-8") as f:
+                if not os.path.exists(PARENT_DIR + "/".join(split_path[1:-1])):
+                    os.makedirs(PARENT_DIR + "/".join(split_path[1:-1]))
+                with open(PARENT_DIR + uri + ".html", "w+", encoding="utf-8") as f:
                     f.write(page_source)
 
 
