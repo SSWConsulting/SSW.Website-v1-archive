@@ -5,7 +5,34 @@ from selenium.webdriver.common.by import By
 import requests
 from bs4 import BeautifulSoup
 
-WHITELIST = ["NETUG", "WisePRO"]
+# TODO: eXtremeEmails
+WHITELIST = [
+    # "AccessReporter",
+    # "AgileTemplate",
+    # "DataMergePRO",
+    # "DataPRO",
+    # "DataRenovator",
+    # "EmailMergePRO",
+    # "Events",
+    # "ExchangeReporter",
+    # "HealthAuditor",
+    # "LinkAuditor",
+    # "LookOut",
+    # "PerformancePRO",
+    # "NETToolkit",
+    # "PropertyAndEventPRO",
+    # "SQLAuditor",
+    # "SQLDeploy",
+    # "SQLReportingServicesAuditor",
+    # "SQLTotalCompare",
+    # TODO: "Standards",
+    # TODO: "StandardsInternal",
+    # "TeamCalendar",
+    # "UpsizingPRO",
+    # "WebPager"
+    # "NETUG",
+    # "WisePRO",
+]
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
