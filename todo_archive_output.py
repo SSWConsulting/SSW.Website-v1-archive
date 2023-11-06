@@ -106,6 +106,7 @@ def output_csv(path: str) -> None:
                 driver.get(url)
 
                 if driver.current_url != url:
+                    print("Redirect: " + url + " -> " + driver.current_url)
                     continue
 
                 soup = BeautifulSoup(driver.page_source, "lxml")
