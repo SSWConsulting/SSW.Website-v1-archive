@@ -14,7 +14,8 @@ PARENT_DIR = "history/"
 SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
 
-def download_image(src, path): 
+
+def download_image(src, path):
     offset = 2
     base_url = ""
     if src.startswith(SSW_URL):
@@ -29,7 +30,7 @@ def download_image(src, path):
     src = src.split("?")[0]
     split_src = src.split("/")
     image_name = split_src[-1]
-    
+
     image_path = PARENT_DIR + "/".join(split_src[offset:-1])
     if not os.path.exists(image_path):
         os.makedirs(image_path)
@@ -42,7 +43,7 @@ def download_image(src, path):
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
-    
+
     if img_res.status_code != 200:
         print("Failed: " + request_path)
         return ""
@@ -50,29 +51,30 @@ def download_image(src, path):
     with open(store_path, "wb") as f:
         f.write(img_data)
 
-    
-    
     output_src = ("/" + PARENT_DIR + "/".join(split_src[offset:])).replace("//", "/")
     return output_src
-    
+
 
 def fix_images(soup, path):
     images = soup.find_all("img")
     for image in images:
         src = image["src"]
-        if src is None or src.endswith(".axd"):
+        if (
+            src is None
+            or src.endswith(".axd")
+            or (src.startswith("http") and not src.startswith(SSW_URL))
+        ):
             continue
-            
-        image["src"] = download_image(src, path)            
-        
+
+        image["src"] = download_image(src, path)
+
     return soup
 
 
 def fix_css(soup, path):
-
     links = soup.find_all("link")
     for link in links:
-        if link['rel'] == ['stylesheet']:
+        if link["rel"] == ["stylesheet"]:
             href = link["href"]
             if href is None:
                 continue
@@ -80,7 +82,7 @@ def fix_css(soup, path):
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
-        elif link['rel'] == ['icon']:
+        elif link["rel"] == ["icon"]:
             href = link["href"]
             if href is None:
                 continue
@@ -103,12 +105,26 @@ def output_csv(path: str) -> None:
                 url = SSW_URL + "/ssw/" + uri
                 driver.get(url)
 
-                if (driver.current_url != url):
+                if driver.current_url != url:
                     continue
 
                 soup = BeautifulSoup(driver.page_source, "lxml")
 
                 for element in soup.find_all(["script", "iframe"]):
+                    if element.get("src") is not None:
+                        if "javascript_bundles/ssw_pigeon" in element["src"]:
+                            element["src"] = "/history/ssw_pigeon.js"
+                            continue
+                        elif "javascript_bundles/jquery" in element["src"]:
+                            element["src"] = "/history/jquery.js"
+                            continue
+                        elif "javascript_bundles/moment" in element["src"]:
+                            element["src"] = "/history/moment.js"
+                            continue
+                        # TODO: Fix as was removed as was causing errors with images, will not be responsive
+                        # elif "dist/menu.js" in element["src"]:
+                        #     element["src"] = "/history/menu.js"
+                        #     continue
                     element.extract()
 
                 base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
@@ -122,6 +138,7 @@ def output_csv(path: str) -> None:
                     os.makedirs(PARENT_DIR + dir)
                 with open(PARENT_DIR + uri + ".html", "w+", encoding="utf-8") as f:
                     f.write(page_source)
+
 
 if __name__ == "__main__":
     output_csv("SSW.Website.WebUI")
