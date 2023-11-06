@@ -53,11 +53,11 @@ def fix_css(driver, page_source: str) -> str:
                 continue
             if "ssw_raven_print" in href:
                 modified_page_source = page_source.replace(
-                    href.replace(SSW_URL, ""), "/saved/ssw_raven_print.css"
+                    href.replace(SSW_URL, ""), "/history/ssw_raven_print.css"
                 )
             elif "ssw_raven" in href:
                 modified_page_source = page_source.replace(
-                    href.replace(SSW_URL, ""), "/saved/ssw_raven.css"
+                    href.replace(SSW_URL, ""), "/history/ssw_raven.css"
                 )
     return modified_page_source
 
