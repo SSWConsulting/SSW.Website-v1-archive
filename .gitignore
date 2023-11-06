@@ -1,2 +1,10 @@
 history/*
+!history/jquery.js
+!history/menu.js
+!history/moment.js
+!history/ssw_piegon.js
+!history/ssw_raven_print.css
+!history/ssw_raven.css
+!history/svg-sprite-sheet.svg
+
 saved/*
