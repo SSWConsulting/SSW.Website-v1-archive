@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#formContent {width:800px; padding:30px 20px;}
+#formContent p {font-weight:bold; margin-bottom:4px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px;}
+	#formContent p span {font-weight:normal;}
+.formHeader h1 {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; background-color:#f1f1f1; border:1px solid #ccc; border-bottom:none; font-size:18px; color:#000; font-weight:bold; padding:10px; line-height:18px; width:180px; text-align:center;}
+#formContent input.text {border:1px solid #ccc; line-height:20px; padding:4px;}
+	#formContent input.list {padding:4px; vertical-align:bottom; width:100%;}
+#formContent textarea {border:1px solid #ccc; padding:4px; margin-bottom:4px; width:100%;}
+
+#aboutPerson {border:1px solid #eee; margin-bottom:30px;}
+#aboutSession, #aboutSSW {border:1px solid #ccc; padding:30px 30px 0; margin-bottom:30px;}
+	#aboutSession .item, #aboutSSW .item {margin-bottom:30px; line-height:20px;}
+	#aboutSession .item span, #aboutSSW .item span {margin-right:20px;}
+	#aboutSession .item ol li, #aboutSSW .item ol li {margin-bottom:10px;}
+	
+	#aboutSession .item table, #aboutSSW .item  table {width:100%;}
+	#aboutSession .item table tbody tr, #aboutSSW .item table tbody tr {height:25px;}
+	
+	#aboutSession .item table.diagram tbody tr td {border-bottom:1px solid #eee; vertical-align:middle;}
+	#aboutSession .item table.diagram tbody tr td.fixedWidth {width:80px;}
+	
+	#aboutPerson {width:100%;}
+	#aboutPerson span.print, .screenNone {display:none;}
+	#aboutPerson table {width:100%;}
+	#aboutPerson input {padding:5px; margin:10px; border:1px solid #ccc; width:365px; font-size:18px; font-weight:bold; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+	tr.darker {background-color:#eee;}

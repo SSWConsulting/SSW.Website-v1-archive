@@ -100,6 +100,9 @@ def fix_images(soup, path):
 
 def fix_css(soup, path):
     links = soup.find_all("link")
+    css_files = os.listdir(PARENT_DIR + "css")
+    print(css_files)
+
     for link in links:
         if link["rel"] == ["stylesheet"]:
             href = link["href"]
@@ -109,6 +112,12 @@ def fix_css(soup, path):
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
+            elif "Content.css" in href:
+                link["href"] = "/history/css/Content.css"
+            elif "Screen.css" in href:
+                link["href"] = "/history/css/Screen.css"
+            elif "Print.css" in href:
+                link["href"] = "/history/css/Print.css"
         elif link["rel"] == ["icon"]:
             href = link["href"]
             if href is None:
