@@ -22,3 +22,9 @@ This will find and list all the aspx files in the project with associated direct
 ## Tasks
 - [ ] Turn off the v1 website's server 
 - [ ] Remove this repo once all pages have been migrated to v3 
+
+
+## Prefix Meaning 
+- zz - migrated to v3 or contains no content
+- zr - redirects to another page
+- za - migrated to archive

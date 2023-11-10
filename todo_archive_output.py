@@ -7,31 +7,31 @@ from bs4 import BeautifulSoup
 
 # TODO: eXtremeEmails
 WHITELIST = [
-    # "AccessReporter",
-    # "AgileTemplate",
-    # "DataMergePRO",
-    # "DataPRO",
-    # "DataRenovator",
-    # "EmailMergePRO",
-    # "Events",
-    # "ExchangeReporter",
-    # "HealthAuditor",
-    # "LinkAuditor",
-    # "LookOut",
-    # "PerformancePRO",
-    # "NETToolkit",
-    # "PropertyAndEventPRO",
-    # "SQLAuditor",
-    # "SQLDeploy",
-    # "SQLReportingServicesAuditor",
-    # "SQLTotalCompare",
-    "Standards",
+    "AccessReporter",
+    "AgileTemplate",
+    "DataMergePRO",
+    "DataPRO",
+    "DataRenovator",
+    "EmailMergePRO",
+    "Events",
+    "ExchangeReporter",
+    "HealthAuditor",
+    "LinkAuditor",
+    "LookOut",
+    "PerformancePRO",
+    "NETToolkit",
+    "PropertyAndEventPRO",
+    "SQLAuditor",
+    "SQLDeploy",
+    "SQLReportingServicesAuditor",
+    "SQLTotalCompare",
+    # "Standards",
     # "StandardsInternal",
-    # "TeamCalendar",
-    # "UpsizingPRO",
-    # "WebPager"
-    # "NETUG",
-    # "WisePRO",
+    "TeamCalendar",
+    "UpsizingPRO",
+    "WebPager"
+    "NETUG",
+    "WisePRO",
 ]
 
 service = Service("C:\\selenium\\chromedriver.exe")
@@ -139,6 +139,9 @@ def output_csv(path: str) -> None:
 
                 if driver.current_url != url:
                     print("Redirect: " + url + " -> " + driver.current_url)
+                    new_path_split = item_path.split("\\")
+                    new_path_split[-1] = "zr" + new_path_split[-1]
+                    os.rename(item_path, "/".join(new_path_split))
                     continue
 
                 soup = BeautifulSoup(driver.page_source, "lxml")
@@ -171,6 +174,10 @@ def output_csv(path: str) -> None:
                     os.makedirs(PARENT_DIR + dir)
                 with open(PARENT_DIR + uri + ".html", "w+", encoding="utf-8") as f:
                     f.write(page_source)
+                
+                new_path_split = item_path.split("\\")
+                new_path_split[-1] = "za" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
 
 
 if __name__ == "__main__":
