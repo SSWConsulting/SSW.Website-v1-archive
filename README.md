@@ -28,3 +28,10 @@ This will find and list all the aspx files in the project with associated direct
 - zz - migrated to v3 or contains no content
 - zr - redirects to another page
 - za - migrated to archive
+
+## CSV Headings
+- `Page` - URL of the page
+- `Status` - Either Done, Archived, Redirect or To-do
+- `Priority` - value in powers of 2 e.g. 1, 2, 4, etc. - higher no. = higher priority
+- `Complexity` - value in powers of 2 e.g. 1, 2, 4, etc. - higher no. = higher complexity
+- `Notes` - additional info if required
