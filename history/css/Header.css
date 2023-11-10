@@ -1,0 +1,189 @@
+/* Header and Title properties */
+#header{
+	background-image: url('/ssw/images/bg_nav.gif');
+	background-repeat:repeat-x;
+	width: auto;
+}
+/*** Styles for the main title page ***/
+#header h1
+{
+	font-size: 20px;
+	font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+	font-weight: normal;
+	color:#444444;
+	overflow:hidden;
+	line-height: 150%;
+	height:30px;
+    padding: 50px 0 0 155px;
+}
+
+#msgoldpartner {
+	position:absolute;
+	top: 10px;
+	right: 15px;
+}
+
+#sswlogo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#headerMenu 
+{
+	padding: 5px 0 0 155px;
+	background-repeat: repeat-x;
+	/*background-image: url(../Images/HeaderMenuBarBack.gif);*/
+	height: 30px;
+	font-size: 80%;
+	top: 81px;
+	position:absolute;
+	left: 49px;
+	z-index:10;
+}
+
+#headerMenu .RadMenu_Default .rmRootGroup {
+    background: none;
+    border: 0px;
+    }
+    
+.MenuImg {
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+   height: 80px;
+   }
+
+#headerMenu .RadMenu_Default .rmRootGroup {
+    background: none;
+    border: 0px;
+    }
+    
+.MenuImg {
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+   height: 80px;
+   }
+
+#headerMenu .RadMenu .rmGroup .rmText {
+     padding: 0 0 0 0;
+     margin: 0 0 0 0;
+     background-image: none;
+     }
+    
+#headerMenu .RadMenu_Default .rmGroup, .RadMenu_Default .rmMultiColumn, .RadMenu_Default .rmGroup .rmVertical {
+    background: #fff;
+    }
+    
+#headerMenu .MenuWrapper {
+    padding: 0px 0px 8px 0px;
+    }
+    
+#headerMenu a.rmLink {
+    background-image: none;
+    line-height: 29px;}
+
+#headerMenu a.rmLink:hover, #headerMenu a.rmExpanded, #headerMenu a.rmExpanded:hover {
+    background-color:#bcbcbc;
+    color: #fff;
+    }
+
+#headerMenu li.hide > a.rsmLink {
+    display: none;
+    }
+
+#headerMenu .rsmLink, #headerMenu .rsmItem {
+      display:block;
+      margin-left: 0px;
+      padding-bottom: 0px ;
+      }
+
+#headerMenu .hide 
+{
+    *margin-top: -16px;
+    *padding-bottom: 5px;
+    }
+
+#headerMenu .rsmLink {
+    line-height: normal;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    }
+
+#headerMenu .rsmLevel2 { 
+    padding-bottom: 5px;
+    }
+
+#headerMenu .NoChild .rsmLink {
+    font-family:Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    color:#fff;
+    background: #999; 
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #ccc;
+    text-shadow: #999 0px 1px 0px;
+    margin-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px; 
+    } 
+
+#headerMenu .rsmLevel2 .rsmLink {
+    font-size: 11px;
+    background: transparent;
+    font-weight: lighter;
+    border-bottom: 1px solid #fff;
+    border-right: none;  
+    border-left:none;
+    border-top: none;
+    color: #3A66CC;
+    font-weight: normal;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-shadow: none;
+    }
+
+#headerMenu .RadMenu_Default .rmGroup 
+{
+    background-image: none;
+    }
+
+#headerMenu .rsmLink {
+    color:#333;
+    background: transparent; 
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 2px;
+    margin-left: 8px;
+    border-bottom: 1px dashed #fff;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    }
+
+ #headerMenu .rsmLevel2 .rsmLink:visited{
+    color:#999;
+    }
+
+#headerMenu .rsmLink:hover, #headerMenu .rsmLevel2 .rsmLink:hover {
+    color:#cc4141;
+    border-bottom: 1px solid #cc4141;
+    }
+
+#headerMenu li.Popular 
+{
+    background: url('/ssw/images/popular.png') no-repeat 120px;
+    }
+ 
+#headerMenu .NoChild .rsmLink:hover {
+    background: #bcbcbc;
+    color:#fff;
+    border-bottom: 1px solid #999;
+    }
+
+#headerMenu .2col {
+    margin-right: 5px;
+    }
+
+#headerMenu .LoginMenu {
+    margin-top: 8px;
+    }
