@@ -171,6 +171,10 @@ def output_csv(path: str) -> None:
                     os.makedirs(PARENT_DIR + dir)
                 with open(PARENT_DIR + uri + ".html", "w+", encoding="utf-8") as f:
                     f.write(page_source)
+                
+                new_path_split = item_path.split("\\")
+                new_path_split[-1] = "za" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
 
 
 if __name__ == "__main__":
