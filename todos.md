@@ -1139,22 +1139,22 @@
     - [ ] Default.aspx
     - [ ] UserGuide.aspx
 - 📁 Training
-    - [ ] AccesstoSQLServerandNET.aspx
-    - [ ] ALM.aspx
-    - [ ] ALMCustomization.aspx
-    - [ ] BI-TheGlory.aspx
-    - [ ] BI-TheGuts.aspx
-    - [ ] BusinessIntelligenceForBusiness.aspx
-    - [ ] Expression.aspx
-    - [ ] ProcessImprovementForSoftwareTeams.aspx
-    - [ ] ReportingServices.aspx
-    - [ ] Sessions-Past.aspx
-    - [ ] SharePoint.aspx
-    - [ ] SharePointUTS.aspx
-    - [ ] SQLBI.aspx
-    - [ ] SQLServer.aspx
-    - [ ] SQLServerBI.aspx
-    - [ ] VisualStudio.aspx
+    - [x] zaAccesstoSQLServerandNET.aspx
+    - [x] zaALM.aspx
+    - [x] zaALMCustomization.aspx
+    - [x] zaBI-TheGlory.aspx
+    - [x] zaBI-TheGuts.aspx
+    - [x] zaBusinessIntelligenceForBusiness.aspx
+    - [x] zaExpression.aspx
+    - [x] zaProcessImprovementForSoftwareTeams.aspx
+    - [x] zaReportingServices.aspx
+    - [x] zaSessions-Past.aspx
+    - [x] zaSharePoint.aspx
+    - [x] zaSharePointUTS.aspx
+    - [x] zaSQLBI.aspx
+    - [x] zaSQLServer.aspx
+    - [x] zaSQLServerBI.aspx
+    - [x] zaVisualStudio.aspx
     - [x] zzBI.aspx
     - [x] zzBI2010.aspx
     - [x] zzCourses.aspx
