@@ -139,6 +139,9 @@ def output_csv(path: str) -> None:
 
                 if driver.current_url != url:
                     print("Redirect: " + url + " -> " + driver.current_url)
+                    new_path_split = item_path.split("\\")
+                    new_path_split[-1] = "zr" + new_path_split[-1]
+                    os.rename(item_path, "/".join(new_path_split))
                     continue
 
                 soup = BeautifulSoup(driver.page_source, "lxml")
