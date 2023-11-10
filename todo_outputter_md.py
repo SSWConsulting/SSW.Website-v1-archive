@@ -15,7 +15,7 @@ def output_markdown(path, file, indent=0):
         output_markdown(item_path, file, indent+1)
 
     elif os.path.isfile(item_path) and item_path.endswith('.aspx'):
-      if item_path.split('\\')[-1].startswith('zz'):
+      if item_path.split('\\')[-1].startswith('zz') or item_path.split('\\')[-1].startswith('za'):
         file.write('    ' * indent + f'- [x] {item}\n')
       else:
         file.write('    ' * indent + f'- [ ] {item}\n')

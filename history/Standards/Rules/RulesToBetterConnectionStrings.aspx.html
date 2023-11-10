@@ -1,0 +1,306 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><title>
+	SSW Rules to Better Connection Strings
+</title><meta content="en-au" http-equiv="Content-Language"/><meta content="IE=Edge" http-equiv="X-UA-Compatible"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/><meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/><meta content="SSW" name="author"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="/history/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/><link href="../../include/Adapters/CSS/Import.css" id="ctl00_AdaptersInvariantImportCSS" rel="stylesheet" type="text/css"/><link href="/history/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/><link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/ssw/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/><link href="/ssw/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+<link href="/history/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/></head>
+<body id="ctl00_MasterBody">
+<form action="./RulesToBetterConnectionStrings.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKLTYyNDgzNjExNA9kFgJmD2QWAgIDD2QWAgIBD2QWCAIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGQCCQ9kFgICAw9kFgICBg8PFgQeBFRleHQF/Ac8cCBzdHlsZT0iZm9udC1zaXplIDogMTFweDsgY29sb3IgOiAjYWFhIj5UaGVyZSB3YXMgYW4gZXJyb3IgZGlzcGxheWluZyB0aGUgdGVzdGltb25pYWxzLiBQbGVhc2UgPEEgSFJFRj0ibWFpbHRvOmluZm9Acyp3LmNvbS5hdT9TdWJqZWN0PUVycm9yIGRpc3BsYXlpbmcgVGVzdGltb25pYWxzJmJvZHk9IFVSTDogaHR0cHM6Ly9zc3cuY29tLmF1L3Nzdy9TdGFuZGFyZHMvUnVsZXMvUnVsZXNUb0JldHRlckNvbm5lY3Rpb25TdHJpbmdzLmFzcHgNCg0KJTBEIEVycm9yOiBBIG5ldHdvcmstcmVsYXRlZCBvciBpbnN0YW5jZS1zcGVjaWZpYyBlcnJvciBvY2N1cnJlZCB3aGlsZSBlc3RhYmxpc2hpbmcgYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIuIFRoZSBzZXJ2ZXIgd2FzIG5vdCBmb3VuZCBvciB3YXMgbm90IGFjY2Vzc2libGUuIFZlcmlmeSB0aGF0IHRoZSBpbnN0YW5jZSBuYW1lIGlzIGNvcnJlY3QgYW5kIHRoYXQgU1FMIFNlcnZlciBpcyBjb25maWd1cmVkIHRvIGFsbG93IHJlbW90ZSBjb25uZWN0aW9ucy4gKHByb3ZpZGVyOiBOYW1lZCBQaXBlcyBQcm92aWRlciwgZXJyb3I6IDQwIC0gQ291bGQgbm90IG9wZW4gYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIpIj5yZXBvcnQgdGhpcyBlcnJvcjwvYT4gdG8gU1NXIGFuZCBpbmNsdWRlIHRoZSBmb2xsb3dpbmcgdGV4dDo8YnI+IC0gQSBuZXR3b3JrLXJlbGF0ZWQgb3IgaW5zdGFuY2Utc3BlY2lmaWMgZXJyb3Igb2NjdXJyZWQgd2hpbGUgZXN0YWJsaXNoaW5nIGEgY29ubmVjdGlvbiB0byBTUUwgU2VydmVyLiBUaGUgc2VydmVyIHdhcyBub3QgZm91bmQgb3Igd2FzIG5vdCBhY2Nlc3NpYmxlLiBWZXJpZnkgdGhhdCB0aGUgaW5zdGFuY2UgbmFtZSBpcyBjb3JyZWN0IGFuZCB0aGF0IFNRTCBTZXJ2ZXIgaXMgY29uZmlndXJlZCB0byBhbGxvdyByZW1vdGUgY29ubmVjdGlvbnMuIChwcm92aWRlcjogTmFtZWQgUGlwZXMgUHJvdmlkZXIsIGVycm9yOiA0MCAtIENvdWxkIG5vdCBvcGVuIGEgY29ubmVjdGlvbiB0byBTUUwgU2VydmVyKTwvcD4fAGdkZGRmECBt5o9emZkaNkp4an9cTvIc0vPrTskm++ZDm22Duw=="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="CDEC5E95"/>
+</div>
+<div id="header" title="SSW Rules to Better Connection Strings">
+<a href="/ssw/">
+<img alt="SSW Logo" height="100" id="sswlogo" src="/history/images/SSWLogo.png" width="130"/></a>
+<a href="/ssw/Company/AboutUs.aspx">
+<img alt="Microsoft Gold Partner Logo" height="41" id="msgoldpartner" src="/history/company/images/small_partnerlogo.png" width="110"/></a>
+<h1>
+        SSW Rules to Better Connection Strings</h1>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1"><a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"><img alt="Skip Navigation Links" height="0" src="/history/WebResource.axd" style="border-width:0px;" width="0"/></a><span><a href="/ssw/Default.aspx" title="Home">Home</a></span><span> &gt; </span><span><a href="/ssw/Standards/Default.aspx" title="SSW Standards">SSW Standards</a></span><span> &gt; </span><span><a href="/ssw/Standards/Rules/Default.aspx" title="Rules">Rules</a></span><span> &gt; </span><span>SSW Rules to Better Connection Strings</span><a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"></a></span>
+</p>
+<span id="ctl00_mainContentPlaceHolder_testimonial_lblError"><p style="font-size : 11px; color : #aaa">There was an error displaying the testimonials. Please <a href="mailto:info@s*w.com.au?Subject=Error displaying Testimonials&amp;body= URL: https://ssw.com.au/ssw/Standards/Rules/RulesToBetterConnectionStrings.aspx
+
+%0D Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)">report this error</a> to SSW and include the following text:<br/> - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</p></span>
+
+ 
+
+    <div class="Intro">
+<p>
+            Do you agree with them all? Are we missing some? <a href="javascript:sendEmail('6D61696C746F3A696E666F407373772E636F6D2E61753F5375626A6563743D52756C6573253230746F2532304265747465722532304C494E51')">
+                Let us know</a> what you think.
+        </p>
+</div>
+<div class="TableOfContents">
+<p>
+<strong>SSW Rules to Better Connection Strings</strong></p>
+<ol>
+<li><a href="#HowToMake">Do you know how to make connection strings in different environment?</a></li>
+<li><a href="#BusinessModule">Do you avoid putting connection strings in Business module?</a></li>
+<li><a href="#StronglyTypedConn">Do you avoid using non strongly typed connection strings?</a></li>
+<li><a href="#ApplicationName">Do you add the Application Name in the SQL Server connection string?</a></li>
+<li><a href="#Connectionstring">Do you know the best place to place the connection string</a></li>
+</ol>
+</div>
+<div id="mainContent">
+<ol>
+<li>
+<h2>
+<a name="HowToMake"></a>Do you know how to make connection strings among different
+                    environment?</h2>
+<p>
+                    Different data sources provide different connection strings, for example, the connection
+                    string for Access is totally different from SQL Server's, even the same product
+                    but different versions have special requirement, so how do we make it easy?
+                </p>
+<p>
+                    The answer is the very useful website -- <a class="external" href="/ssw/Redirect/ConnectionStrings.htm" target="_blank">www.ConnectionStrings.com</a>
+                    , which provides abundant connection strings ranging from different database products
+                    to excel files, actually, you can find most of the connection strings of popular
+                    products with detail usage.
+                </p>
+</li>
+<li>
+<h2>
+<a name="BusinessModule"></a>Do you avoid putting connection strings in Business
+                    module?</h2>
+<p>
+                    We strongly recommend that putting all connection strings together and saving them to one file, it is convenient for management and deployment.
+                </p>
+<dl class="badImage">
+<dt>
+<img alt="Saving connection strings in Business module." src="/history/images/appConfig.gif"/>
+</dt>
+<dd>
+                        Bad example - Putting connection strings in Business module.
+                    </dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="StronglyTypedConn"></a>Do you avoid using non strongly typed connection
+                    strings?</h2>
+<p>
+                    Using non strongly typed connection strings means that you have to hard code at
+                    some point in your code. Once you change the name of your connection strings, you
+                    have to change the code that references them too.
+                </p>
+<p>
+                    Visual Studio 2005 and higher provide a convenient tool, called Application Settings,
+                    that allows you to manage all of your connection strings from only one location.
+                    You can use its wizard to compose connection strings quickly and correctly. Also,
+                    it provides a management class to read and write all of your connection strings.
+                </p>
+<dl class="badCode">
+<dt>string ConnString = System.Configuration.ConfigurationManager.ConnectionStrings[<span style="background-color: #FFFF00">"WinFormTester.Properties.Settings.ConnectString"</span>].ToString();<br/>
+                        SqlConnection conn = new SqlConnection(ConnString);
+                        <br/>
+                        SqlCommand cmd = new SqlCommand(strSql, conn);
+                        <br/>
+                        conn.Open();
+                        <br/>
+                        cmd.ExecuteNonQuery();
+                        <br/>
+                        conn.Close(); </dt>
+<dd>
+                        Bad Example: Using non strongly typed connection strings, the highlighted text is
+                        hard code actually.</dd>
+</dl>
+<dl class="goodImage">
+<dt>
+<img alt="Using Application Settings to configure connection strings." src="/history/images/conn.gif"/>
+</dt>
+<dd>
+                        Good example - Using Application Settings to configure connection strings.
+                    </dd>
+</dl>
+</li>
+<li>
+<h2><a name="ApplicationName"></a>Do you add the Application Name in the SQL Server connection string?</h2>
+<p>When you make connection strings for SQL Server, it is better to add the application name to your connection strings, see the <a href="RulestoBetterCode.aspx#AppNameforSCS">explicit explanation.</a>.
+            </p>
+</li>
+<li>
+<h2>
+<a name="Connectionstring"></a>Do you know the best place to place the connection string</h2>
+<p>
+                    The best place to put the connection string is in the Web.Config file.That makes the code simple and easy to read. Look into the following code:
+                    <br/>
+</p><dl class="badCode">
+<dt>
+                    string cnnString = "data source=(local); integrated security=SSPI; persist security info=False; pooling=False; initial catalog=Northwind2";
+                    </dt>
+<dd>Bad Example</dd>
+</dl>
+<br/>
+                     
+                     and observe the following code which is simple and easy to read:
+                     
+                     
+                     <dl class="goodCode">
+<dt>
+                        string cnnString = LinqToNorthwind.Properties.Settings.Default.NorthwindEFConnectionString;
+                     </dt>
+<dd>
+                        Good Example
+                     </dd>
+</dl>
+<dl class="goodCode">
+<dt>
+                   private void Form1_Load(object sender, System.EventArgs e)
+                   <br/>
+                   {
+                       <br/>
+                       //string connString = "data source=(local); integrated security=SSPI; persist security info=False; pooling=False; initial catalog=Northwind2";
+                       <br/>
+                       string cnnString = LinqToNorthwind.Properties.Settings.Default.NorthwindEFConnectionString;
+                       <br/>
+                       cboCity.Items.Add("London");
+                       <br/>
+                       cboCity.Items.Add("Madrid");
+                       <br/>
+                       cboCity.Items.Add("Sao Paulo");
+                       <br/>
+                       db = new NorthwindDataContext(cnnString);
+                       <br/>
+                       cboCity.SelectedIndex = 0;
+                       <br/>
+                  }
+                   </dt>
+<dd>
+                   Good Example
+                   </dd>
+</dl>
+<p></p>
+</li>
+</ol>
+<h2>
+            Acknowledgements</h2>
+<p>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan</a><br/>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=EZF">Eric Phan</a>
+</p>
+</div>
+<br/>
+</div>
+
+<div id="footer">
+<p class="callnow">Call Now +61 2 9953 3000</p>
+<span class="copyright">© Copyright SSW 1990-2023. All Rights Reserved.</span>
+<ul>
+<li class="first"><a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F52756C6573546F426574746572436F6E6E656374696F6E537472696E67732E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">Feedback to SSW</a></li>
+<li><a href="/ssw/Company/AboutUs.aspx">About SSW</a></li>
+<li><a href="/ssw/Advertising/Default.aspx">Advertising</a></li>
+<li class="last"><a href="/ssw/MenuMap.aspx">Sitemap</a></li>
+</ul>
+<span class="proudly"><a href="http://www.ssw.com.au">Proudly developed by SSW Sydney Web Design</a></span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.</p>
+</div>
+</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+
+
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><!-- / OptinMonster -->
+<div style="visibility: visible;"><div></div><div><style>
+        @-webkit-keyframes ww-0cf3b034-9591-4934-bc50-3d50bf586c2d-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes ww-0cf3b034-9591-4934-bc50-3d50bf586c2d-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes ww-0cf3b034-9591-4934-bc50-3d50bf586c2d-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes ww-0cf3b034-9591-4934-bc50-3d50bf586c2d-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style></div></div></body></html>

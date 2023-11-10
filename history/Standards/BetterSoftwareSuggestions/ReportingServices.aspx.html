@@ -1,0 +1,1990 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><title>
+	SSW Microsoft SQL Reporting Services Suggestions
+</title><meta content="en-au" http-equiv="Content-Language"/><meta content="IE=Edge" http-equiv="X-UA-Compatible"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/><meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/><meta content="SSW" name="author"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="/history/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/><link href="../../include/Adapters/CSS/Import.css" id="ctl00_AdaptersInvariantImportCSS" rel="stylesheet" type="text/css"/><link href="/history/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/><link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/ssw/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/><link href="/ssw/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+<link href="/history/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/></head>
+<body id="ctl00_MasterBody">
+<form action="./ReportingServices.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJNDYwOTE4NjMxD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGQuEdneKma6Mi3apx+qllPU5lJQpKadzQiny5FqI1sQlQ=="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="11AA753F"/>
+</div>
+<div id="header" title="SSW Microsoft SQL Reporting Services Suggestions">
+<a href="/ssw/">
+<img alt="SSW Logo" height="100" id="sswlogo" src="/history/images/SSWLogo.png" width="130"/></a>
+<a href="/ssw/Company/AboutUs.aspx">
+<img alt="Microsoft Gold Partner Logo" height="41" id="msgoldpartner" src="/history/company/images/small_partnerlogo.png" width="110"/></a>
+<h1>
+        SSW Microsoft SQL Reporting Services Suggestions</h1>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1"><a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"><img alt="Skip Navigation Links" height="0" src="/history/WebResource.axd" style="border-width:0px;" width="0"/></a><span><a href="/ssw/Default.aspx" title="Home">Home</a></span><span> &gt; </span><span><a href="/ssw/Standards/Default.aspx" title="SSW Standards">SSW Standards</a></span><span> &gt; </span><span><a href="/ssw/Standards/BetterSoftwareSuggestions/Default.aspx" title="Better Software Suggestions">Better Software Suggestions</a></span><span> &gt; </span><span>SSW Microsoft SQL Reporting Services Suggestions</span><a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"></a></span>
+</p>
+<span id="ctl00_mainContentPlaceHolder_lblWelcome"></span><p>
+        Every day there are little things that we find annoying with the programs we use.
+        Sometimes we just can't quite do what we want or there may just be room for improvement.
+        We could write books about it, like Annoyances.org, but we thought this would be
+        more constructive. Here is what we would like Microsoft to change within SQL Server
+        Reporting Services.</p>
+<table cellpadding="2" cellspacing="2" class="clsSSWTableOfContents" style="width: 100%" summary="Index">
+<tbody><tr>
+<td>
+<b>Microsoft SQL Reporting Services Suggestions<br/>
+</b>
+<ol>
+<li><a href="#templates">ASP.NET 2 Master page style report templates</a></li>
+<li><a href="#OutputCSS">Report output CSS for specific report format</a></li>
+<li><a href="#InheritMaster">Add option to inherit a template (aka Master Page)</a></li>
+<li><a href="#EditIntegration">Browser Integration for Editing Reports</a></li>
+<li><a href="#QueryStrings">Query Strings</a></li>
+<li><strike><a href="#ExpressionParser">Syntax Checker for Expression fields</a></strike>
+<span style="font-weight: bold; color: red">* Fixed by Microsoft in Reporting Services
+                            2005 *</span> </li>
+<li><a href="#TaskList2">The Task List should be more interactive, add filtering and auto
+                        shortcuts</a></li>
+<li><strike><a href="#TimeTaken">Please add a Global!ExecutionTimeTaken</a></strike>
+<strong><span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005
+                            *</span></strong> </li>
+<li><strike><a href="#IntelliSense">Intellisense for Expression fields</a></strike>
+<strong><span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005
+                            *</span></strong> </li>
+<li><a href="#ParameterControl">Report Parameter Control - Date Pickers and Auto buttons</a></li>
+<li><strike><a href="#SelectAll">Toggle "Select All" in multi-value parameter lists</a></strike>
+<span style="color: #ff0000"><strong>* Fixed by Microsoft in Reporting Services 2005
+                            Service Pack 2 (coming soon) *</strong></span> </li>
+<li><strike><a href="#Diagnostics">SQL Reporting Services Diagnostics System</a></strike>
+<span style="color: #ff0000"><strong>* Fixed by Microsoft in Reporting Services 2005
+                            *</strong></span> </li>
+<li><a href="#VisualNonDefaults">User Interface: A visual indication of which tabs are
+                        not on their defaults (Updated!)</a></li>
+<li><a href="#ListGroups">User Interface: List control grouping parameters</a></li>
+<li><a href="#Charting">Charting - Flexibility to resize individual chart elements</a></li>
+<li><a href="#ChartExpressions">Charting - Default maximum and minimum scale values
+                        for charts</a></li>
+<li><a href="#InternetContent">Add an Internet Content Control for embedding HTML</a></li>
+<li><a href="#RichTexbox">Rich Textbox Control</a></li><li><strike><a href="#MultiSelect">
+                        Multi Select in Parameters</a></strike> <strong><span style="color: #ff0000">* Fixed
+                            by Microsoft in Reporting Services 2005 *</span></strong> </li>
+<li><a href="#LongRunning">Long Running Reports - Delay reporting</a></li>
+<li><a href="#ImportAccess">Select Reports to Import from Access</a></li>
+<li><a href="#TaskList">The Task List is lost on restart of Visual Studio</a></li>
+<li><a href="#tooltips">Tool tips on column headings</a></li>
+<li><a href="#showhide">Show / hide columns</a></li>
+<li><a href="#xmlsql">Get the XML and SQL behind a report</a></li>
+<li><a href="#EmbeddedImages">Embedded Images</a></li>
+<li><a href="#LinkedImages">Linked Images that are deployed to a relative path don't
+                        show in Designer</a></li>
+<li><a href="#DefaultZoomLevel">Set the default zoom level</a></li>
+<li><a href="#ReportingService">Stop/start the Reporting Services service from service
+                        manager</a></li>
+<li><a href="#FormattingOptions">Show built-in formatting options for report controls</a></li>
+<li><a href="#DynamicTitle">Add the ability to dynamically change the title of the report</a></li>
+<li><a href="#VersionInfo">Version Info</a></li>
+<li><a href="#RequiredParams">Add icon to denote Required Parameters</a></li>
+<li><a href="#ExportWord">Add MS Word to the Export list</a></li>
+<li><a href="#CalendarView">Add a Calendar View and Gantt Chart Control - Like MS Project</a></li>
+<li><a href="#ParamLabels">Parameters - When you add a Parameter it should automatically
+                        add a label to the designer</a></li>
+<li><a href="#PostbackParams">Add an AutoPostback property for parameters</a></li>
+<li><a href="#LinkedDataSources">Add option to select a Linked DataSource</a></li>
+<li><a href="#BetterMatrix">A much better Matrix control - add pivot table interactivity
+                        without OWC</a></li>
+<li><a href="#HomeDirectory">Report builder should default to a home directory</a></li>
+<li><a href="#ReportBuilder">Help me use Report Builder 2</a></li>
+<li><a href="#StyleTemplates">The wizard should accept style templates (aka .css files)</a></li>
+<li><a href="#AutoSizeCols">Auto-sizing columns</a></li>
+<li><a href="#RecursiveData">Sample report showing Recursive Data</a></li>
+<li><a href="#XPath">XML Data Sources should accept XPath</a></li>
+<li><a href="#ShowErrorInRed">The NoRow property on table control should be improved to
+                        allow more control.</a></li>
+<li><a href="#PaginationBug">Pagination does not work with hidden items for HTML output</a></li>
+<li><a href="#authenticate">Choose how IIS authenticates clients</a></li>
+<li><a href="#PageBreakInWebArchive">No need of page break in the subscription email
+                        with render format of Web Archive</a></li>
+<li><a href="#SubscriptionWithUserInfo">Report subscriptions are disabled if a report
+                        contains User information e.g. User!UserID</a></li>
+<li><a href="#InconsistentNames">Fix all inconsistent names – where different
+                        names have been used for the same properties</a></li>
+<li><a href="#SchedulePrinting">Schedule printing a report directly to a printer</a></li>
+<li><a href="#ImageDisplay">Image display</a></li><li><a href="#ImageSize">Image size
+                        is not correct in subscription</a></li>
+<li><a href="#ReEmail">Add trigger in report subscription email to resend report</a></li>
+<li><a href="#MissedSP">Sample Reports for Report Execution Log doesn't work properly</a></li>
+<li><a href="#CompatibleForBrowsers">Improve compatibility for Firefox</a></li>
+<li><a href="#ProgressPrompt">Add progress prompt on the Exporting Progress Form</a></li>
+<li><a href="#AccessWrapper">Add a special data source type wrapper for Access</a></li>
+<li><a href="#IISService">Make the IIS service more visible</a></li>
+<li><a href="#CalculatedValueIcon">Add back the different icon for calculated values</a></li>
+<li><a href="#FriendlySQLErrorMessage">Make this error more friendly by making it visually
+                        consistent with the SQL Server Configuration Manager</a></li>
+<li><a href="#DescriptiveTitle">Make the title of the report more descriptive</a></li>
+<li><a href="#DeployReportPath">Make every report has its own deployment path</a></li>
+<li><a href="#AddDateFunction">Add built-in date function</a></li>
+<li><a href="#ExpressionHelp">Help more on the expression builder</a></li>
+<li><a href="#LookUpForm">Add a lookup form to search the big table</a></li>
+<li><a href="#InsertDataset">Insert dataset as a table (with totals)</a></li>
+<li><a href="#ReportWizard">Report wizard intelligence</a></li>
+<li><a href="#LongRunningProcess">Make long-running processes user-friendly</a></li>
+<li><a href="#ChangeNoBold">Change no bold</a></li>
+<li><a href="#DSFromAnotherReport">Dataset from another report</a></li>
+<li><a href="#LatestSP">Add tick to check if Reporting Service is the latest</a></li>
+<li><a href="#SPWorkwithRS">Let SharePoint work with Reporting Service easily</a></li>
+<li><a href="#SPIntegInfo">More information on SharePoint Integration</a></li>
+<li><a href="#SPIntegSmpSite">Sample in the reports document library</a></li>
+<li><a href="#SPIntegTstBtn">Test dTest data source connection</a></li>
+<li><a href="#DescriptionName">The subscription needs an extra Name field</a></li>
+<li><a href="#QryDesner">Highlight the current field in yellow in the "Diagram
+                        Pane"</a> </li>
+<li><a href="#FormatConfig">Add a page to configure the export format</a> </li>
+<li><a href="#ConnectionString">Add a connection string builder</a></li>
+<li><a href="#LINQDataSource">Allow me to report against both LINQ Data Sources (.edmx
+                        and .dbml)</a></li>
+<li><a href="#SharePointDataSource">Report Builder 2.0 - Offer the ability to report against SharePoint</a></li>
+<li><a href="#VerticalText">Allow Vertical text writing mode to also have bottom to top</a></li>
+<li><a href="#CommonPeriod">Add parameter type for common periods</a></li>
+<li><a href="#InteractiveSort">Interactive Sort does not work well with chart</a></li>
+<li><a href="#SendEmailOption">Reports should have an easy way to email to another person</a></li>
+<li><a href="#StrikethroughInPDF">Show strikethrough in exported PDF file</a></li>
+<li><a href="#ReportSounds">Developing - Sounds</a></li>
+<li><a href="#DecimalPlace">Give users a runtime option to increase or decrease decimals places</a></li>
+<li><a href="#LinkedReports">Linked Reports - No hyperlink available to Linked Report on Property General page</a></li>
+</ol>
+</td>
+</tr>
+</tbody></table>
+<h2>
+        Microsoft SQL Reporting Services Suggestions
+    </h2>
+<ol>
+<li>
+<h2>
+<a name="templates"></a>ASP.NET 2 master page style report templates</h2>
+<p>
+                We, like most of you, use letterheads and standard document templates to ensure
+                that every document that leaves the company is the same. So why should this be any
+                different with your reports? Reporting Services does not have this functionality,
+                which causes a few big problems:</p>
+<ol>
+<li>You have to copy and paste your company logo into every single header of your existing
+                    and new reTest data source connection</li>
+<li><a href="#DescriptionName">The subscription needs an extra Name field</a></li>
+</ol>
+            Microsoft SQL Reporting Services suggests all this into every report, it is
+            hard to make sure that everything is consistently aligned and sized for all reports;
+            the designer is very flexible so it is easy to get this wrong.
+            <img height="343" src="/history/Images/RSsuggestion_templates.gif" width="600"/><br/>
+<b>Figure: Reports should copy the concept of ASP.NET 2.0 master pages so that you can
+                have a template master that all reports use</b>
+</li><li><a name="OutputCSS"></a>
+<h2>
+                    Report output CSS for specific report format</h2>
+<p>
+                    With web pages you define multiple .css to define styles for different output devices.
+                    E.g. Screen.css, Print.css and Mobile.css. So when someone prints the page it will
+                    say use a much smaller font.
+                    <br/>
+                    Is there a way this can happen in Reporting Services reports – like when they
+                    choose to export to Pdf it formats with a smaller font. Eg. Screen.css, Pdf.css,
+                    Excel.css, Mobile.css.
+                </p>
+</li>
+<li><a name="InheritMaster"></a>
+<h2>
+                    Add option to inherit a template (aka Master Page)</h2>
+<p>
+                    Like Master Pages in .NET 2.0, reports should be able to inherit from a master report.
+                    When a report is added inheriting a Master Report, it can automatically have standard
+                    header &amp; footer.</p>
+<dl class="image">
+<dt>
+<img border="0" height="476" src="/history/Images/MasterPages.jpg" width="704"/></dt><dd>Figure:
+                            When adding a new item in VS.NET 2005, you may choose a master page to inherit from</dd></dl>
+</li>
+<li>
+<h2>
+<a name="EditIntegration"></a>Browser Integration for Editing Reports</h2>
+<p>
+                    Although perhaps rather difficult, when viewing a report from ReportManager I want
+                    to be able to click a button (preferably like the one in IE for editing pages using
+                    FrontPage) and the Report Definition File is automatically downloaded and then opened
+                    in Visual Studio (providing the RS client is installed).</p>
+<p>
+                    This is already possible for editing pages directly in Frontpage via a button in
+                    the web browser. To see how to set this up, see our <a href="/ssw/Standards/Rules/RulesToBetterWebsitesDevelopment.aspx#MSExpressionWeb">
+                        rule on Rules to Better Websites - Development</a>.</p>
+<dl class="image">
+<dt>
+<img alt="Frontpage" height="126" src="/history/Standards/Rules/Images/FrontPage.gif" width="600"/></dt><dd>Figure: Quickly editing a webpage using the browser integration
+                                for Frontpage. Can SQL Reporting Services developers be offered the same functionality?</dd></dl>
+<p>
+                    In this way all employees (with sufficient privilege) can conveniently make changes
+                    to the report when needed. To see why we think users will be able to efficiently
+                    change web documents see our <a href="/ssw/Standards/Rules/RulesToBetterWebsitesDevelopment.aspx?HideLeftNav=True#MSExpressionWeb">
+                        rules to better websites</a>
+</p>
+<p>
+                    A possible solution would be to have the report server append a meta tag to the
+                    output html source. A browser plugin would then detect the meta tag and allow editing
+                    of the appropriate report.</p>
+</li>
+<li>
+<h2>
+<a name="QueryStrings"></a>Query Strings</h2>
+<p>
+                    When a report is viewed either directly from the ReportServer or via the ReportManager
+                    the querystring for the report including the parameter values will automatically
+                    be updated after the "Preview Report" button has been pressed.</p>
+<p>
+                    In this way, a report with the given parameters can be easily bookmarked or passed
+                    on using only the address in the address bar.</p>
+<dl class="image">
+<dt>
+<img alt="Report with incomplete query string" height="213" src="/history/Images/rs_querystring.gif" width="500"/></dt><dd>Figure: This report has an incomplete query string - when you
+                                view a report the query string should automatically get re-generated</dd></dl>
+<p>
+                    For example, since I have used non-default parameter values, the query string will
+                    read:</p>
+<p>
+<u><span style="color: #0000FF">http://localhost/reportserver?%2fSSW+Exchange+Reporter%2fEmailSentItemByDate&amp;rs:Command=Render</span></u><span style="color: #FF0000">&amp;DateStart=1/1/2004&amp;DateEnd=31/1/2004</span></p>
+<p>
+                    This could be an option for either the report (specified at design time) or for
+                    the entire report server (specified at install time / via server config files) so
+                    that they can be turned on or off (for those with issues with privacy). See why
+                    we think query strings are important on our <a href="/ssw/Standards/Rules/RulesToBetterWebsitesDevelopment.aspx?HideLeftNav=True#querystring">
+                        rules to better websites</a></p>
+<p>
+                    It is true that if there are a large number of parameters the query string method
+                    may not work. All software has limitations - just put a warning messagebox when
+                    you turn it on.</p>
+</li>
+<li>
+<h2>
+<a name="ExpressionParser"></a><strike>Syntax Checker for Expression fields</strike>
+                    - <span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005 *</span></h2>
+<p>
+                    After entering an expression into a field there should be a button to verify the syntax
+                    within that expression. At the moment you have to run the page to see the error.
+                    It is such a pain.</p>
+<p>
+</p><p>
+                        Figure below shows the expression box. Please add a button "Check Syntax".</p>
+<p>
+                         </p>
+<p></p>
+</li>
+<li>
+<h2>
+<a name="TaskList2"></a>The Task List should be more interactive, add filtering and
+                    auto shortcuts</h2>
+<p>
+                    When you use the task list to manage your SQL Reporting Services issues (such as
+                    those generated during the import from Access) we would like to be able to:</p>
+<p>
+</p><ol>
+<li>click each warning and have it take us to the place in the report design (or at
+                            least open the relevant report).</li><li>As issues are resolved they are automatically
+                                removed from the task list</li><li>Filter on the current file only, so that we can see
+                                    only the warnings for the report that we're working on. (If turned on).</li></ol>
+<p>
+                        This is the same functionality provided for coding in Visual Studio, but doesn't
+                        work here.</p>
+<p>
+                         </p>
+<p></p>
+</li>
+<li>
+<h2>
+<a name="TimeTaken"></a><strike>Please add a variable Global!ExecutionTimeTaken</strike>
+                    - <span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005 *</span></h2>
+<p>
+<strong>NOTE:</strong> You can do this using an expression. See our <a href="/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx#UsefulFooter">
+                        rule on Rules to Better Reporting Services</a>.</p>
+<p>
+                    We need an easy way to see how long a report takes to execute. Often when you add
+                    controls and grouping to a complicated page you want a way to test the performance
+                    impact of these changes.</p>
+<dl class="goodImage">
+<dt>
+<img alt="good - useful footer" height="315" src="/history/Standards/Rules/Images/RSRulesGoodFooter.gif" width="702"/></dt><dd>Figure: It is useful to show the execution time
+                                along with other information at the bottom of your report</dd></dl>
+</li>
+<li>
+<h2>
+<a name="IntelliSense"></a><strike>Intellisense for Expression fields</strike> -
+                    <span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005 *</span></h2>
+</li>
+<p>
+                Use Intellisense inside expression fields to pre-empt what operation we want to
+                perform. Because there is still a huge number of methods available other than what's
+                in the pre-defined expressions panel this would be convenient. For example using
+                controls inside another namespace such as System.String or a custom code function
+                denoted with the Code.&lt;Function&gt; operations.</p>
+<li>
+<h2><a name="ParameterControl"></a>Report Parameter Control - Date Pickers and Auto buttons</h2>
+</li>
+<p>
+                There is no control over the parameter input bar on the reports viewed through the
+                browser other than type validation and drop down lists. We would like to see more
+                customisation of these controls, such as:</p>
+</ol><ul>
+<li>Next Month / Quarter / Year</li><li>Previous Month / Quarter / Year</li></ul>
+<p>
+                We like <a href="/ssw/Redirect/PeterBlum.htm" target="_blank">Peter Blum's</a>
+<img height="11" src="/history/Images/LeaveSite.gif" width="17"/>date picker control.</p>
+<dl class="image">
+<dt>
+<img height="180" src="/history/Images/rs_peterblumdatepicker1.gif" width="200"/>
+<img height="140" src="/history/Images/rs_peterblumdatepicker2.gif" width="300"/>
+</dt>
+<dd>]Figure: We would like to see better date navigation controls (like these) in Reporting
+                    Services</dd></dl>
+<p>Besides, it would be great to have a DateRangePicker control. Instead of picking the start date and end date in two separate controls, we can pick the start date and end date easily in the same control.</p>
+<dl class="image">
+<dt>
+<img src="/history/standards/BetterSoftwareSuggestions/images/daterangepicker.gif"/></dt>
+<dd>Figure: DateRangePicker</dd>
+</dl>
+<p>
+             We would also like to have such controls in <a href="/ssw/Standards/BetterSoftwareSuggestions/MSAjax.aspx#DateTimePickerControl" target="_blank">ASP.NET</a> <img src="/history/images/IconNewWindow.png" title="This opens in a New Window"/>.</p>
+<li>
+<h2>
+<a name="SelectAll"><strike>Toggle "Select All" in multi-value parameter lists</strike> 
+                    <span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005 Service
+                        Pack 2 (coming soon) as per Brian Welcker's blog, see below *</span></a></h2><a name="SelectAll">
+</a><p><a name="SelectAll">
+                    The initial release of Reporting Services 2005 comes with a "Select All" option
+                    for multi-valued parameter lists. With SP1 this has been removed because, according
+                    to Microsoft, "the option affects performance when used with a multidimensional
+                    data source". That's all well and good, but what if my parameter list only has 5
+                    or 10 values? The solution is to give the user an option (in the form of a checkbox in the parameter
+                    properties) to include a "Select All" option. There is a </a><a href="/ssw/Redirect/MSDN/rs_multivalue.htm" target="_blank">workaround</a> which involves modifying your SQL query, but
+                    this is quite tedious.
+                </p>
+<p><span style="color: #ff0000">
+                    UPDATE: This was fixed by Microsoft in Reporting Services 2005 Service Pack 2 as per
+                    Brian Welcker's blog:</span><br/>
+<a href="http://blogs.msdn.com/bwelcker/archive/2006/08/14/700189.aspx">http://blogs.msdn.com/bwelcker/archive/2006/08/14/700189.aspx</a>
+</p>
+<dl class="image">
+<dt>
+<img height="283" src="/history/Images/rs_multivaluenoselectall.gif" width="321"/></dt><dd>Figure:
+                            Microsoft added and then removed the "Select All" option from multi-valued parameter
+                            lists, but we think it's more flexible to be given the option to show/hide this
+                            property</dd></dl>
+</li>
+<li>
+<h2>
+<a name="Diagnostics"><strike>A SQL Reporting Services Diagnostics System</strike> 
+                    <span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005 *</span></a></h2><a name="Diagnostics">
+<p>
+                    I believe that programs that have a lot of components should have a diagnostics system.
+                    (e.g. Start | SQL Server 2000 | Reporting Services | Diagnostics). For example,
+                    it should at least check that the page and system is working rather than giving a
+                    security error when you actually attempt to run a page.</p>
+<p>
+                    For example, we installed a Yukon Beta, with a Whidbey Beta, and the IIS settings
+                    were reconfigured but there was no indication of a problem except by running an
+                    actual report. But having fixed that problem, we cant be sure that it wont break
+                    on some other functionality - a diagnostics system would tell us nothing is wrong.</p>
+</a><p><a name="Diagnostics">
+                    In our products (for example </a><a href="/ssw/CodeAuditor">SSW Code Auditor</a>) we
+                    implement a "Run Unit Tests" item on the help menu that will open NUnit and run
+                    a number of tests to verify the configuration settings are functioning.</p>
+</li>
+<li>
+<h2>
+<a name="VisualNonDefaults"></a>User Interface: Please give me a visual indication
+                    of which tabs are not on their defaults</h2>
+                For example, I should be able to see that Sorting has something in it before I get
+                to it I would suggest a different colour background on the tab or even a little
+                asterisk or marker to suggest fields of interest. As per David Leans' suggestion,
+                this would best be done with the tab label being put in <b>bold</b>.
+                <dl class="image">
+<dt>
+<img alt="High lighted tabs" border="0" height="325" src="/history/Images/rs_highlightedtabs.gif" width="350"/>
+</dt>
+<dd>    
+                        Figure 6. A value has been entered on the sorting tab so there should be some indication
+                    </dd>
+</dl>
+<p>
+                    This way editing a report that someone else has designed would be much easier as
+                    I could quickly see what fields have non-empty / non-default properties assigned.
+                </p>
+<p> </p>
+</li>
+<li>
+<h2>
+<a name="ListGroups"></a>User Interface: List control grouping parameters (Inconsistency)</h2>
+<p>
+                    The grouping controls for a table control are nice in that you can conveniently
+                    manage them with a straight forward add, edit, and delete buttons. But why does
+                    the list box control have such a horrible one?</p>
+<dl>
+<dt>
+<img alt="Grouping list controls" border="0" height="343" src="/history/Images/rs_groupinglistcontrols.gif" width="350"/>
+</dt>
+<dd>Figure 7. The good! Grouping on the table control.</dd>
+</dl>
+<p>
+                     </p>
+<p>
+                    whereas for the list box control we need to navigate to a similar screen through
+                    the button.</p>
+<table align="center" border="0" id="table8">
+<tbody><tr>
+<td>
+<p align="center">
+<img alt="Edit list group" border="0" height="31" src="/history/Images/rs_editlistgroup.gif" width="265"/>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<b>Figure 8. The bad! Grouping on the list control</b>
+</td>
+</tr>
+</tbody></table>
+<p>
+                    If this button is necessary, then tie it in with the idea above, so that you can
+                    conveniently see whether groups are defined. Or this could be done by having the
+                    "Edit" button disabled if no groups exist and an additional button for
+                    "New Detail Group".</p>
+</li>
+<li>
+<h2>
+<a name="Charting"></a>Charting - Flexibility to resize individual chart elements</h2>
+</li>
+<p>
+                Charting controls need to be more flexible. You cannot resize individual elements
+                of the chart control such as the size of the key or the plot area. These are basic
+                properties that we have in Excel charts but not in SQL Reporting Services charting
+                components.</p>
+<p>
+                 </p>
+<li>
+<h2>
+<a name="ChartExpressions"></a>Charting - Default maximum and minimum scale values
+                    for charts<span style="color: #ff0000"></span></h2>
+<p>
+                    Many of the properties of the charting component do not allow expressions for their
+                    values. Some major examples include dynamic size (so that we could base it on the
+                    number of items), the scale (so that we can make the max scale for multiple graphs
+                    all appear the same).</p>
+<p>
+                    The max and min scale properties have been partially fixed in Reporting Services
+                    2005 - you can now use expressions in the Max Value and Min Value fields of your
+                    charts. See our <a href="/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx#maxminvalues">
+                        rule on Rules to Better Reporting Services</a>.</p>
+<p>
+                    I say partially, because you still have to manually set these values on a chart
+                    and it requires a bit of a hack to do (see the above rule). Why can't a chart automatically
+                    work out its maximum and minimum value based on the grouping level? There should be
+                    a default value, and an option to enter an expression.</p>
+<dl class="badImage">
+<dt>
+<img height="555" src="/history/Standards/Rules/Images/RSRulesChart02.gif" width="570"/></dt><dd>Figure:
+                            Reporting Services will work out the maximum and minimum values for the chart's
+                            scale - currently you have to do it manually</dd></dl>
+</li>
+<li><a name="InternetContent"></a>
+<h2>
+                    Add an Internet Content Control for embedding HTML</h2>
+<p>
+                    Reporting Services is missing the ability to embed web pages into its reports. For
+                    example, say you have some web pages that are updated regularly (e.g a project page)
+                    and you want these pages to be emailed to you weekly. It would be great to take
+                    advantage of the Reporting Services subscription engine, but we need to be able
+                    to embed HTML pages into RS reports to get this done.</p>
+<p>
+                    We think that an Internet Content Control will be introduced and it will have the
+                    ability to:
+                </p>
+<ul>
+<li>Set the resulting HTML at the control level </li>
+<li>Set the CSS property </li>
+<li>Set the title property of the HTML page </li>
+</ul>
+</li>
+<li>
+<h2>
+<a name="RichTexbox"></a>Rich Textbox Control</h2>
+<p>
+                    We need a textbox control that you can format the internal content. For example
+                    we might want to have text display like this:</p>
+<p>
+                        This is a <b>bold</b> label with <i>italics</i> in it too.</p>
+<p>
+                    This would be useful for building reports that are used for invoicing or contracts
+                    that you use all the time but need to be tailored for a specific contact.</p>
+<p>
+                     </p>
+</li>
+<li>
+<h2>
+<a name="MultiSelect"></a><strike>Multiple Select in Parameters</strike> - <span style="color: #ff0000">* Fixed by Microsoft in Reporting Services 2005 *</span></h2>
+<p>
+                    We need a parameter type that will enable us to have a list of values (likely from
+                    a query) such that you can select multiple values from the list and then use the
+                    set of parameter values in your dataset queries or report items. For example, we
+                    want to allow our users to report on set of suppliers all at once, rather than one
+                    at a time.</p>
+<table align="center" border="0" id="table10">
+<tbody><tr>
+<td>
+<p align="center">
+<img alt="New Parameter" border="0" height="428" src="/history/Images/rs_NewParameter.gif" width="600"/>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center">
+<b>Figure. Add a new datatype - MultipleSelect to allow selection of multiple parameter
+                                    values from a list.</b>
+</p>
+</td>
+</tr>
+</tbody></table>
+<p align="left">
+                    The resulting control displayed on the parameter bar will be a checkbox list control.
+                    <a href="/ssw/Standards/Rules/RulestoBetterInterfaces-Controls.aspx#ListBoxesAreEvil2">See why</a>.</p>
+<p align="left">
+                    The parameter value would then require restrictions put onto it so that it can only
+                    be used in aggregate or set functions within the dataset. For example:</p>
+<div class="Section1">
+<pre style="font-size: 10pt; font-family: Courier New; margin-left: 0cm; margin-right: 0cm;
+                        margin-top: 0cm; margin-bottom: 0pt"><pre style="font-family: Courier New">       
+                                SELECT au_lname, state</pre></pre>
+<pre style="font-size: 10pt; font-family: Courier New; margin-left: 0cm; margin-right: 0cm;
+                        margin-top: 0cm; margin-bottom: 0pt"><pre style="font-family: Courier New">       
+                                FROM authors</pre></pre>
+<pre style="font-size: 10pt; font-family: Courier New; margin-left: 0cm; margin-right: 0cm;
+                        margin-top: 0cm; margin-bottom: 0pt"><pre style="font-family: Courier New">       
+                                WHERE state IN ('CA', 'IN', 'MD')</pre></pre>
+</div>
+</li>
+<li>
+<h2>
+<a name="LongRunning"></a>Long Running Reports - Delay reporting</h2>
+<p>
+                    If you have a report which is known to run for a long time, an administrator will
+                    be able to select an option for the report so that the user is notified that the
+                    report is going to take a while to execute, and are forced to have the report returned
+                    via email. The server can then complete processing on a background thread.</p>
+<p>
+                     </p>
+</li>
+<li>
+<h2>
+<a name="ImportAccess"></a>Select Reports to Import from Access</h2>
+<p>
+                    When you use the "Import Reports" from Access functionality, it always
+                    imports all the reports rather than allowing you to import just a few.</p>
+<p>
+                    For example, the import feature within Access allows this. You should be able to select
+                    only the reports you want.
+                        </p><dl class="image">
+<dd><img alt="Import reports" border="0" height="250" src="/history/Images/rs_importreports.gif" width="450"/></dd>
+<dt>Figure 10. Importing reports from another Access database within Access. In SQL Reporting
+                                        Services you should be able to selectively import reports also.</dt>
+</dl>
+<p></p>
+</li>
+<li>
+<h2>
+<a name="TaskList"></a>The Task List is lost on restart of Visual Studio</h2>
+<p>
+                    The task list is a handy feature built into Visual Studio. It provides a single
+                    point of reference for any user tasks, compile-time warnings and errors found in
+                    your reports. In most cases you can double-click the task to jump to the offending
+                    line of code or control. For some reason Reporting Services does not retain this
+                    list of errors once you close Visual Studio, so you have to copy and paste the errors
+                    into notepad, which can be annoying. (Note: this works for items manually created.)</p>
+<p>
+                    When the report is first imported there are comments in the .RDL file for each warning;
+                    however, after any changes to the reports these disappear. We would like to see
+                    this task list retained, so that the developer can check off tasks in the task list
+                    as they are done.</p>
+<dl class="image">
+<dt>
+<img alt="Task list" height="435" src="/history/Images/rs_tasklist.gif" width="600"/></dt><dd>Figure:
+                            If I close down this solution, all the task list items related to the import process
+                            are lost.</dd></dl>
+</li>
+<li>
+<h2>
+<a name="tooltips"></a>Tool tips on column headings</h2>
+<p>
+                    It would be handy to show a descriptive tool tip when you move the cursor over a
+                    column heading. This would be great because the user could see more information
+                    about the data in a column.
+                </p>
+<p>
+<img height="258" src="/history/Images/RSsuggestion_tooltips.gif" width="597"/><br/>
+<strong>Figure: it would be great to have descriptive tooltips like this when you mouse
+                        over a heading </strong>
+</p>
+</li>
+<li>
+<h2>
+<a name="showhide"></a>Show / hide columns</h2>
+<p>
+                    Sometimes we want to print a report with certain columns shown or hiding. This would
+                    be great for custom reporting without having to go back to the developers to make
+                    the change.
+                </p>
+<p>
+<img height="414" src="/history/Images/RSsuggestion_showhidecolumns.gif" width="271"/><br/>
+<strong>Figure: It would be great to have MS Access-style show/hide columns</strong></p>
+</li>
+<li>
+<h2>
+<a name="xmlsql"></a>Get the XML and SQL behind a report</h2>
+<p>
+                    When I run a report, sometimes the data doesn't look right. Instead of chasing the
+                    developer to investigate, I want to be able to find out the SQL behind the report
+                    and run it myself using SQL Server Management Studio. I would also like to be able
+                    to see the XML (RDL) behind the report.</p>
+</li>
+<li>
+<h2>
+<a name="EmbeddedImages"></a>Embedded Images</h2>
+<p>
+                    If you create a report with an embedded image and then you delete that image, it
+                    remains in the xml report definition, therefore unnecessarily increasing report
+                    size. To get rid of the image, you need to either:</p>
+<ul>
+<li>Manually delete &lt;EmbeddedImages&gt;&lt;/EmbeddedImages&gt; from xml.</li><li>
+                        Understand that you deleting the image control – there is a 1:many relationship
+                        between embedded images and image controls (you can reuse images in multiple places
+                        on the report). To delete an embedded image, select “Report” –
+                        “Embedded Images”.</li></ul>
+<p>
+                    What should happen is - when you delete an image control it asks:</p>
+<blockquote>
+<p>
+<em>"Would you also like to delete the embedded image?"</em></p>
+<p>
+<em>Yes / No</em></p>
+</blockquote>
+<p>
+                    If you select Yes it could open this "Embedded Images" form</p>
+</li>
+<li>
+<h2>
+<a name="LinkedImages"></a>Linked Images that are deployed to a relative path don't
+                    show in Designer</h2>
+<p>
+                    When we use images in our reports we like to make a separate project to deploy the
+                    images to a path relative to the report location (e.g. ./Images/logo.gif). This
+                    process is detailed more in the <a href="/ssw/Redirect/Whitepapers/HowToMigrateSqlReportingServices.htm">
+                        reporting services whitepaper</a> (under "Tip 3 - Organizing Images"
+                    at the end of the paper).</p>
+<p>
+                    The problem is that during design time, despite the images still being correctly
+                    in the relative path to the .rdl files, they don't show up in the designer. Understandably
+                    the relative path won't necessarily be correct for the deployed version to work,
+                    but if the path is valid then the image should show.</p>
+<p>
+</p><table align="center" border="0">
+<tbody><tr>
+<td>
+<p align="center">
+<img alt="Linked Images" border="0" height="280" src="/history/Images/rs_linkedImages.gif" width="585"/>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center">
+<b>Figure 11. The path on the images is correct both for the deployed and non-deployed
+                                        reports. It should show in the designer.</b>
+</p>
+</td>
+</tr>
+</tbody></table>
+<p></p>
+</li>
+<li>
+<h2>
+<a name="DefaultZoomLevel"></a>Set the default zoom level</h2>
+<p>
+                    We need to be able to set the default zoom level. For example, reports should open
+                    with the zoom level set to "Page Width" rather than 100%.</p>
+<p>
+<img alt="Reporting Services Zoom" src="/history/Images/ReportingServicesZoom.gif"/></p>
+</li>
+<li>
+<h2>
+<a name="ReportingService"></a>Stop/start the Reporting Services service from service
+                    manager</h2>
+<p>
+                    Since reporting services is part of SQL Server, we should be able to control the service
+                    from SQL Server Services Manager.</p>
+<p>
+<img alt="Services Manager" height="254" src="/history/Images/ServicesManager.gif" width="291"/></p>
+</li>
+<li>
+<h2>
+<a name="FormattingOptions"></a>Show built-in formatting options for report controls</h2>
+<p>
+                    When you select formatting for text in a textbox or other Reporting Services report
+                    controls, the built in formatting options should be selectable from the list (such
+                    as C for currency and P for percentage)</p>
+<p>
+<img alt="Formatting Control In Access" height="452" src="/history/Images/FormattingControlInAccess.gif" width="600"/><br/>
+<b>Figure: Just like when setting formatting for controls in Access...</b></p>
+<p>
+<img alt="Reporting formatting options in dll" height="461" src="/history/Images/ReportingFormattingOptionsInDDL.gif" width="600"/><br/>
+<b>Figure: ...there should be built-in formatting options in the Format property for a
+                        report control</b></p>
+</li>
+<li>
+<h2>
+<a name="DynamicTitle"></a>Add the ability to dynamically change the title of the
+                    report</h2>
+<p>
+                    Say you have a sales report that you generate once a month and export to a file.
+                    You want to build an archive of these reports for comparison and to keep a history
+                    of sales. You also want to expose this history for searching and browsing through
+                    a content portal such as Plumtree or Microsoft SharePoint. Currently you cannot
+                    do this with Reporting Services, as the report title is static.
+                </p>
+<p>
+<img alt="Reporting Static Title" height="449" src="/history/Images/ReportingStaticTitle.gif" width="600"/><br/>
+<b>Figure: You cannot change the title in Report Manager, which makes it hard to index,
+                        search and archive reports</b></p>
+                Ideally there should be a <b>Page Title</b> attribute in the report properties dialog
+                (shown below) which lets you enter a custom title to display with the report. You
+                should also be able to enter an expression with parameters into the title, for example,
+                <b>{ReportName} - {Month} {Year}</b>.
+                <p>
+<img alt="Reporting Title Tag" height="477" src="/history/Images/ReportingTitleTag.gif" width="600"/><br/>
+<b>Figure: Add a property to this table called <i>Title Tag</i></b></p>
+<p>
+<img alt="Reporting Title HTML" height="414" src="/history/Images/ReportingTitleHTML.gif" width="600"/><br/>
+<b>Figure: This is the HTML Title Tag you need to be able to change</b></p>
+<p>
+                    These parameters should appear in the report parameters dialog so that you can link
+                    them to fields in your data source.</p>
+<p>
+<img alt="ReportingReport Parameters" height="186" src="/history/Images/ReportingReportParameters.gif" width="600"/><br/>
+<b>Figure: You should be able to add report parameters to your report which can then be
+                        used in an expression for the page title</b></p>
+</li>
+<li>
+<h2>
+<a name="VersionInfo"></a>Version Info</h2>
+<img height="480" src="/history/Images/RSVersionInfo.gif" width="600"/><br/>
+<b>Figure: Reporting Services does not have explicit version information.</b>
+<p>
+                    This needs:
+                </p>
+<ul type="disc">
+<li>a description like "Service Pack 2" and</li><li>a link to a page with all the version
+                        numbers and what they are (eg, SP1 or SP2)</li><li>also a link to <a href="/ssw/Redirect/microloads.htm">
+                            http://www.microsoft.com/downloads/details.aspx?FamilyId=502C0D89-1308-4662-8F58-CEC55EF1235B&amp;displaylang=en</a></li></ul>
+</li>
+<li><a name="RequiredParams"></a>
+<h2>
+                    Add icon to denote Required Parameters</h2>
+<p>
+                    As there is the option to allow some parameters to be left blank, required parameters
+                    should have an icon depicting that they are required. On reports that have many parameters,
+                    this makes it easier for the users to distinguish between required and non required
+                    parameters.</p>
+<p>
+<img border="1" height="182" src="/history/Images/blankparams.gif" width="600"/><br/>
+<b>Figure: Blank and Null Parameters are allowed</b></p>
+<p>
+<img border="1" height="36" src="/history/Images/RequiredField.gif" width="552"/><br/>
+<b>Figure: But what RS needs is the ability to show a Required Field Icon like in this
+                        example</b></p>
+</li>
+<li><a name="ExportWord"></a>
+<h2>
+                    Add MS Word to the Export list</h2>
+<p>
+                    There should be an option in the Export to file list that allows a user to export
+                    to a Word document.</p>
+<p>
+<img border="1" height="113" src="/history/Images/ExportList.gif" width="219"/><br/>
+<b>Figure: Current RS Export List</b></p>
+</li>
+<li><a name="CalendarView"></a>
+<h2>
+                    Add a Calender View and Gannt Chart Control - Like MS Project</h2>
+<p>
+                    There should be a calendar control (similar to that in MS Project) that allows a user
+                    to drop Calendar related data onto it which is automatically puts into the right
+                    place. There should also be a Gantt chart control or a Gantt chart type option added
+                    to the existing chart control.
+                </p>
+<p>
+<img border="1" height="416" src="/history/Images/ProjectCalendar2.gif" width="597"/><br/>
+<b>Figure: RS needs the Calendar Control like MS Project</b></p>
+<p>
+<img border="1" height="450" src="/history/Images/ProjectCalendar1.gif" width="597"/><br/>
+<b>Figure: RS needs the Gantt Control like MS Project</b></p>
+</li>
+<li><a name="ParamLabels"></a>
+<h2>
+                    Parameters - When you add a Parameter it should automatically add a label to the designer</h2>
+<p>
+                    Too many developers forget to add their parameters to the design of a report. Then
+                    when the user exports it to say a .pdf, they see the report, but they dont know
+                    the parameters that gave the data they are looking at.
+                </p>
+<p>
+                    When a parameter is added to a report, the labels should be automatically added that
+                    display the parameters being used on the report.
+                </p>
+</li>
+<li><a name="PostbackParams"></a>
+<h2>
+                    Add an AutoPostback property for parameters</h2>
+<p>
+                    Especially when there is only one parameter people dont want to click View Report.
+                </p>
+<p>
+                    When a parameter is displayed (especially when using combo boxes and multi select
+                    is not enabled), the report should automatically refresh upon selecting a new parameter
+                    from the combo.
+                </p>
+<p>
+                    This would make it consistent with the ASP.NET.
+                </p>
+</li>
+<li><a name="LinkedDataSources"></a>
+<h2>
+                    Add option to select a Linked DataSource</h2>
+<p>
+                    There should be an option Add Linked Data Source; that is, a way to add Linked Data
+                    Sources so that the same Data Sources can be shared by many different report server
+                    projects.
+                </p>
+</li>
+<li><a name="BetterMatrix"></a>
+<h2>
+                    A much better Matrix control</h2>
+<p>
+                    There should be a Matrix control that has Pivot Table interactivity (like Cognos).
+                    It should allow for Drag and Drop functionality and allow the user to drill through
+                    automatically.
+                    <br/>
+                    While drag and drop, and auto-drill through can be seen in the Reports Builder,
+                    a similar control should be implemented for the Report Developers to use as well.</p>
+</li>
+<li><a name="HomeDirectory"></a>
+<h2>
+                    Report builder should default to a home directory</h2>
+<p>
+                    When a user creates a report using the Report Builder, the save path currently defaults
+                    to the Report Server's root directory this seems to be the only place you would
+                    not like users to save reports to.
+                </p>
+<p>
+                    Therefore, when saving the ad-hoc reports created by Report Builder, the save path
+                    should default to a directory such as the Windows Username, Eg. \AdamCogan\Report1
+                </p>
+<p>
+<img border="1" height="416" src="/history/Images/ReportBuilderSave.gif" width="512"/><br/>
+<b>Figure: Saving currently defaults to the Root directory... it should default to a Username
+                        folder instead</b></p>
+</li>
+<li><a name="ReportBuilder"></a>
+<h2>
+                    Help me use Report Builder 2</h2>
+<p>
+                  I have Report Builder 2 on my PC but when I click "Report Builder" it still opens version 1.  
+                </p>
+<p>
+                Why not automatically set the 'Custom Report Builder launch URL' field<br/> 
+               (to http://SERVERNAME/ReportServer/ReportBuilder/ReportBuilder_2_0_0_0.application) when I install the latest SQL Server Service Pack?    
+                </p>
+<p>
+                PS: It should also happen when you install the stand alone download <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9f783224-9871-4eea-b1d5-f3140a253db6&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?FamilyID=9f783224-9871-4eea-b1d5-f3140a253db6&amp;displaylang=en</a>
+</p>
+<p>
+                PPS: and make that last text box wider.
+                </p>
+<dl class="image">
+<dt>
+<img alt="Set the 'Custom Report Builder launch URL' field" src="/history/Images/ReportBuilderVersion.jpg"/></dt>
+<dd>Figure: Automatically set the 'Custom Report Builder launch URL' field so the users are using Report Builder 2 (instead of version 1)</dd>
+</dl>
+</li>
+<li><a name="StyleTemplates"></a>
+<h2>
+                    The wizard should accept style templates (aka .css files)</h2>
+<p>
+                    While using the New Report wizard, you should be able to add to the list of Styles
+                    available in order to help to create reports that are consistent with a company's
+                    color scheme.</p>
+<p>
+                    I suggest adding an "Add Template" button to this wizard page and allowing you to
+                    select an XSL Style Templates or CSS templates against a report (just like ASP.NET).
+                </p>
+<p>
+                    Note: At a form level an extra property Template File needs to be added.</p>
+<p>
+<img border="1" height="490" src="/history/Images/AddTemplate.gif" width="520"/><br/>
+<b>Figure: This page of the wizard needs an Add Templates button to enable you to select
+                        .xsl or .css file. </b>
+</p>
+</li>
+<li><a name="AutoSizeCols"></a>
+<h2>Auto-sizing columns</h2>
+<p>When you preview your report, sometimes it can take some time, switching back and
+                    forth between layout and preview modes, in order to get the column widths the right
+                    size to allow prevent your report from looking ugly. For this reason, there should
+                    be some functionality added to help overcome this problem.</p>
+<p>A few implementation suggestions are:</p>
+</li>
+<blockquote>
+<ul>
+<li>In design view there could be a smart task on the table/matrix that executes the
+                        data and works out an intelligent width.</li><li>You could add a multi-line property,
+                            to the cells of a table/matrix, that defaults to true. When it is set to false it
+                            could force the data to be on one line, and not wrap down to another line, forcing
+                            the column to widen to accommodate the single line of data. </li>
+<li>In preview view there could be the ability to resize the columns (as you are seeing
+                        the data) and when you switch back to design view, you could have a messagebox asking
+                        if they would like to save the changed column widths - this would be like an Access
+                        datasheet.</li></ul>
+</blockquote>
+<li><a name="RecursiveData"></a>
+<h2>
+                    Sample report showing Recursive Data</h2>
+<p>
+                    There should be a sample report added that demonstrates a report that uses recursive
+                    data.
+                </p>
+<p>
+                    We suggest showing the Employees and Managers in Adventure Works, as managers are
+                    employees too and can also have their own managers. This should be shown using padding
+                    to achieve the visual nesting.
+                </p>
+</li>
+<li><a name="XPath"></a>
+<h2>
+                    XML Data Sources should accept XPath</h2>
+<p>
+                    While working with XML Data sources, you really should be able to use XPath to
+                    query the data that the .xml file or webservice returns.
+                </p>
+<p>
+                    This functionality would make it easier to work with XML data that contains multiple
+                    data sets, and would make XML Datasources generally more usable.
+                </p>
+<p>
+<img border="1" height="384" src="/history/Images/XMLDataSource.gif" width="464"/><br/>
+<b>Figure: Entering a query into the "Query string" box for an XML data source
+                        causes no data to be returned... it should accept XPath</b></p>
+</li>
+<li>
+<h2>
+<a name="ShowErrorInRed"> </a>The NoRow property on table control should be improved to allow
+                        more control.
+                </h2>
+                In Access, we have NoData event to handle when there is no data returned from data
+                source, this feature has been migrated into a NoRow property of Table control, which
+                allow you to set a message.
+                <p>
+<img border="0" height="235" src="/history/Images/RSShowErrorInRed6.gif" width="600"/><br/>
+<b>Figure: NoRows property of table control in Reporting Services</b></p>
+<p>
+                    Compare to Access, this is much easier to use, but we lost our control over the
+                    message, we cannot even set our error message to Red color. See our <a href="/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx#ErrorsInRed">
+                        Rules for Better Reporting Services. </a>
+</p>
+<p>
+                    More advanced property should be allowed for this, such as changing color, font, etc.<br/>
+                     </p>
+</li>
+<li>
+<h2>
+<a name="PaginationBug"></a>Pagination does not work with hidden items for HTML
+                    output</h2>
+                We have a report which has a table with some hidden items. These hidden items will
+                be collapsed initially in the HTML output. Pagination does not work for this report
+                - all the data show in one page. This is horrible for huge data report.
+                <br/>
+<br/>
+<img alt="HiddenItem" border="0" height="101" src="/history/Images/PagingBug_HiddenItem.jpg" width="471"/><br/>
+<b>Figure: Hidden item in report</b><br/>
+<br/>
+<img alt="Pagination doesn't work" border="0" height="187" src="/history/Images/PagingBug_NotPaging.jpg" width="484"/><br/>
+<b>Figure: Pagination does not work with hidden item</b><br/>
+<br/>
+                But the pagination works if we make those items visible initially<br/>
+<br/>
+<img alt="No Hidden Item" border="0" height="98" src="/history/Images/PagingBug_NoHiddenItem.jpg" width="455"/><br/>
+<b>Figure: No hidden item in report</b><br/>
+<br/>
+<img alt="Pagination works" border="0" height="220" src="/history/Images/PagingBug_Paging.jpg" width="504"/><br/>
+<b>Figure: Pagination works well with no hidden items </b>
+<br/>
+<br/>
+                There's no way to have pagination and collapse work in same report.<br/>
+</li>
+<li>
+<h2>
+<a name="authenticate"></a>Choose how IIS authenticates clients</h2>
+                We think that we should have the ability to choose how IIS authenticates clients -
+                read our Reporting Services suggestion. IIS should be able to:
+                <ol>
+<li>Try Integrated authentication first</li><li>Then use the Anonymous username (if
+                        specified)</li><li>Then prompt for a user name and password to use.</li></ol>
+</li><li><a name="PageBreakInWebArchive"></a>
+<h2>
+                        No need of page break in subscription email with render format of Web Archive</h2>
+                    Page break is a useful feature for big report to avoid performance issue when viewed
+                    in browsers. However for a report subscription email (select Web Archive as Render
+                    Format in subscription settings), page break causes redundant headers and footers
+                    and make the email difficult to read.
+                    <br/>
+<br/>
+<img alt="Report in a subscription email" border="0" height="547" src="/history/Images/PageBreakTop.gif" width="724"/><br/>
+<b>Figure: Report in a subscription email</b><br/>
+<br/>
+<img alt="redundant report header following a page break" border="0" height="430" src="/history/Images/PageBreakBottom.gif" width="717"/><br/>
+<b>Figure: redundant report header following a page break</b><br/>
+</li>
+<li><a name="SubscriptionWithUserInfo"></a>
+<h2>
+                        Report subscriptions are disabled if a report contains User information e.g. User!UserID</h2>
+<img alt="Report footer" border="0" height="120" src="/history/Images/FooterInDesigner.gif" width="693"/><br/>
+<b>Figure: This report footer with "User!UserID" will give problems later when setting
+                        up subscriptions</b><br/>
+<table align="right" cellpadding="5" class="clsSSWTable" width="40%">
+<tbody>
+<tr>
+<td>
+<p>
+<strong>From:</strong>Daniel Hyles www.ssw.com.au<br/>
+<strong>To:</strong>James Zhou www.ssw.com.au<br/>
+<strong>Cc:</strong>Adam Cogan www.ssw.com.au<br/>
+<strong>Subject:</strong>RE:GroupHealth<br/>
+<strong>Importance:</strong>High
+                                    </p>
+<p>
+                                        James,<br/>
+                                        Ever since you made changes to this report the data bound subscription does not
+                                        work. When I attempt to fix it I get
+                                        <br/>
+                                        The '/WhatsUp/GroupHealth' report has user profile dependencies and cannot be run
+                                        unattended. (rsHasUserProfileDependencies)
+                                    </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+                        Best practise for reports is to have the User!UserID in footer as per rule <a href="/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx#UsefulFooter">
+                            Do you include a useful footer at the bottom of your reports?</a>
+</p>
+<p>
+                        However later when dealing with subscriptions you may get this email:
+                    </p>
+<p>
+<img alt="Data-driven subscription cannot be created because the credentials used to run the report are not stored, the report is using user-defined parameter values, or if a linked report, the link is no longer valid." border="0" height="188" src="/history/Images/DisabledSubscription.gif" width="694"/><br/>
+<b>Figure: Disabled Subscription</b><br/>
+<br/>
+                        The fix is to remove the "User!UserID" from the footer to enable subscriptions.
+                        In Reporting Services 2005, they have improved this - normal subscription is enabled,
+                        but Data-driven subscription is still disabled in this case. The behaviour should
+                        allow the report to work and a different value entered for UserID eg."N/A"
+                    </p>
+</li>
+<li><a name="InconsistentNames"></a>
+<h2>
+                        Fix all inconsistent names – where different names have been used for the
+                        same properties</h2>
+<p>
+                        I was very familiar with CanGrow and CanShrink but was not familiar with what ‘Can
+                        increase to accommodate contents’ was. Imagine my surprise when I find out
+                        they are the same thing!<br/>
+<br/>
+<img alt="Inconsistent Names" border="0" height="513" src="/history/Images/InconsistentNames.gif" width="777"/><br/>
+<b>Figure: “Can increase to accommodate contents” is the same as “Can
+                            Grow” – they should be named the same </b>
+<br/>
+</p>
+</li>
+<li><a name="SchedulePrinting"></a>
+<h2>
+                        Schedule printing a report directly to a printer</h2>
+<p>
+                        Some senior executives do not open their email. For this reason, it would be useful
+                        to be able to schedule for a report to be printed directly to a printer.
+                    </p>
+<p>
+<img border="1" height="576" src="/history/Images/SchedulePrinting.gif" width="834"/>
+<br/>
+<b>Figure: Option to allow printing a report on a schedule</b>
+</p>
+</li>
+<li><a name="ImageDisplay"></a>
+<h2>
+                        Image display</h2>
+<p>
+                        Reporting Services report doesn't support transparent image background. When you
+                        use embedded images in the report, if the image file's background color is "transparent",
+                        it will only display correctly in designer (VS2005), but if you view the report
+                        in IE, the image will have a shadow background which is bad.
+                    </p>
+<p>
+<img border="1" height="54" src="/history/Images/Imageshadow.gif" width="134"/>
+<br/>
+<b>Figure: Image with transparent background</b>
+</p>
+<p>
+                        Here is a workaround. You need to change the image's background to "white" in order
+                        to remove the shadow.
+                    </p>
+<p>
+<img border="1" height="54" src="/history/Images/imagewithoutshadow.gif" width="134"/>
+<br/>
+<b>Figure: Image with white background</b>
+</p>
+</li>
+<li><a name="ImageSize"></a>
+<h2>
+                        Image size is not correct in subscription
+                    </h2>
+<p>
+                        Reporting Services subscription report doesn't support image resize. In designer
+                        (VS2005), you can set the image box's "sizing" properties as "FitProportional" to
+                        allow a large size image file displays correctly in image box, but when we use the
+                        subscription to send the report as an email, images display incorrectly with its
+                        original size.
+                    </p>
+<p>
+<img border="1" height="80" src="/history/Images/imageresize.gif" width="135"/>
+<br/>
+<b>Figure: Image can't be resized</b>
+</p>
+<p>
+                        When you reply or forward the report email, images display as their original size,
+                        report can’t apply the "sizing" properties of image box in here.
+                    </p>
+<p>
+<img border="1" height="205" src="/history/Images/imagenoresize.gif" width="229"/>
+<br/>
+<b>Figure: Image with original size</b>
+</p>
+<p>
+                        Here is a workaround. In order to make the report look more consistently, you have
+                        to change the image file size to a proper size to fit the image into the box.
+                    </p>
+</li>
+<li><a name="ReEmail"></a>
+<h2>
+                        Add trigger in report subscription email to resend report
+                    </h2>
+<p>
+                        Reporting Services 2005's subscription can be triggered by time, it can send a report
+                        email at a preset time. After you receive the email, if you want RS to resend the
+                        report, you have to wait until the subscription is triggered again.
+                    </p>
+<p>
+                        Add a trigger in the report subscription email will make the Reporting Services
+                        more convenient.
+                    </p>
+</li>
+<li><a name="MissedSP"></a>
+<h2>
+                        Sample Reports for Report Execution Log doesn't work properly</h2>
+                    Created a new job for Retrieving Report Execution Log Data successfully as per <a href="/SSW/Redirect/MSDN2/ServerManagementReportSamples.htm">Configure Server Management
+                        Report Samples</a>, then it was executed failed.
+                    <p>
+<img height="656" src="/history/Images/rsExecuteLog1.gif" width="738"/><br/>
+                        Figure: executed failed for this job;</p>
+<p>
+<img height="658" src="/history/Images/rsExecuteLog2.gif" width="746"/><br/>
+                        Figure: Could not find stored procedure 'msdb.dbo.xp_sqlagent_notify' for RSExecuteLog
+                        which was created by running Createtables.sql (under C:\Program Files\Microsoft
+                        SQL Server\90\Samples\Reporting Services\Report Samples\Server Management Sample
+                        Reports\Execution Log Sample Reports by default);</p>
+                    It is because of missing stored procedure "dbo.xp_sqlagent_notify" for "Report Execution
+                    Log" Database, Microsoft should make sure all samples databases and reports works
+                    properly! And it said that this error will be fixed in SQL Server 2005 SP2 - See
+                    <a href="/SSW/Redirect/MicrosoftForum/MSForum.htm">Could not find stored procedure 'msdb.dbo.xp_sqlagent_notify'</a>
+                    for more details. </li>
+<li><a name="CompatibleForBrowsers"></a>
+<h2>
+                        Improve compatibility for Firefox</h2>
+                    Reporting Services Reports (2005) makes beautiful reports, well it does in IE, but
+                    the HTML is not good for some non-IE browsers (aka Firefox). Reports are displayed
+                    in an IFRAME that's deep in nested table land, and the IFRAME's height setting only
+                    works in IE. This cause reports can't display correctly - the IFRAME's height defaults
+                    to a few hundred pixels, so you only see the top 2 inches of the report. Like this:
+                    <p>
+<img height="576" src="/history/images/RSinFirefox.JPG" width="571"/><br/>
+                        Figure: Reporting services report in Firefox looks terrible</p>
+<p>
+                        Workaround: though we can fix it by adding a min-height into ReportingServices.css
+                        file (it's found in "C:\Program Files\Microsoft SQL Server\MSSQL.3\Reporting Services\ReportManager\Styles\"
+                        by default):
+                        </p><div class="greyBox">
+<p>
+<span style="color: rgb(0, 128, 0);">/* Fix report IFRAME height for Firefox */</span><br/>
+<span style="color: rgb(128, 0, 0);">.DocMapAndReportFrame<br/>
+</span>{<span style="color: rgb(255, 0, 0);"><br/>
+                                        min-height</span>:<span style="color: rgb(0, 0, 255);"> 860px</span>;<br/>
+                                }
+                            </p>
+</div>
+<br/>
+                        But the report still can't display in correct width even if you added a min-width
+                        element, like this:
+                        <p>
+<img height="714" src="/history/images/RSinFirefox_2.gif" width="816"/><br/>
+                            Figure: Reporting services report in Firefox still looks terrible after fixed height
+                            problem</p>
+<p>
+                            This problem still has not been fixed in SQL Server Reporting Services 2008.
+                            <img src="/history/images/ReportingServiceFireFox.jpg"/>
+</p>
+                        There are several ways to try to resolve this, but none can fix it completely.
+                        (See <a class="newWindow" href="/SSW/Redirect/Weblogs.htm" target="_blank">Reporting
+                            Services CSS-fix for Firefox</a> <img src="/history/images/IconNewWindow.png" title="This opens in a New Window"/> for more) 
+                    <p></p>
+</li>
+<li><a name="ProgressPrompt"></a>
+<h2>
+                        Add progress prompt on the Exporting Progress Form</h2>
+                    Sometimes exporting takes forever, it should give the progress prompt (e.g. xx% complete)
+                    on the exporting progress form, so we can know where it is up to.
+                    <p>
+<img height="620" src="/history/images/RSProgressPrompt.gif" width="994"/><br/>
+                        Figure: Exporting takes forever</p>
+</li>
+<li><a name="AccessWrapper"></a>
+<h2>
+                    Add a special data source type wrapper for Access</h2>
+                Many Access developers think that Access is ODBC compliant – but not OLE DB...
+                So we suggest:
+                <ul>
+<li>Add a special wrapper called Jet over ODBC (Access) to the list then you can just
+                        select an MDB</li>
+</ul>
+<dl class="image">
+<dt>
+<img alt="Choosing new Data Source type" height="407" src="/history/Images/DataSource.gif" width="476"/>
+</dt>
+<dd>
+                        Figure: Choosing Data Source Type</dd>
+</dl>
+</li>
+<li><a name="IISService"></a>
+<h2>
+                Make the IIS service more visible</h2>
+<p>
+                What is required for RS to work? Well you check both services (SQL Server and SQL
+                Server Reporting Services) are running in SQL Server Configuration Manager, and
+                then you check you have all green ticks in Reporting Services Configuration Manager.
+                What if I check these and Reporting Service is still not working... what could it
+                be?<br/>
+</p><dl class="image">
+<dt>
+<img alt="What could it be?" height="914" src="/history/Images/RSNotWorking.gif" width="1229"/>
+</dt>
+<dd>
+                        Figure: Both services are running in SS Configuration Manager and all green ticks
+                        in RS Configuration Manager, but RS is still not working</dd>
+</dl>
+<p></p>
+<p>
+                The answer is IIS is not running:
+                </p><dl class="image">
+<dt>
+<img alt="IIS is not running." height="299" src="/history/Images/IISNotRunning.gif" width="314"/>
+</dt>
+<dd>
+                        Figure: IIS is not running. This should be more visible on both the above pages</dd>
+</dl>
+<p></p>
+<p>
+                We suggest:
+                </p><ol>
+<li>On SQL Server Configuration Manager add "SQL Server Required Service (IIS)"</li>
+<li>On Reporting Services Configuration Manager add "IIS"</li>
+</ol>
+                This makes this service more visible to users and makes it a true one stop shop
+                (instead of finding and using Computer Management).
+            <p></p>
+</li>
+<li><a name="CalculatedValueIcon"></a>
+<h2>
+                Add back the different icon for calculated values</h2>
+<p>
+                Unlike those in Visual Studio 2003, the icons of every kind of the fields are the
+                same in Visual Studio 2005. It becomes not easy for the developers to separate the
+                calculated values from the original ones.</p>
+<p>
+                So we suggest adding back the special icon for calculated values</p>
+<p>
+</p><dl class="image">
+<dt>
+<img alt="Calculated Value's Icon in VS2003" height="185" src="/history/Images/ReportingService_CalculatedField_VS2003.gif" width="187"/>
+</dt>
+<dd>
+                        Figure: In VS2003, the icon of calculated values is different from others'.</dd>
+</dl>
+<dl class="image">
+<dt>
+<img alt="Calculated Value's Icon in VS2005" height="191" src="/history/Images/ReportingService_CalculatedField_VS2005.gif" width="224"/>
+</dt>
+<dd>
+                        Figure: In VS2005, all the icons are the same.</dd>
+</dl>
+<p></p>
+</li>
+<li><a name="FriendlySQLErrorMessage"></a>
+<h2>
+                Make this error more friendly by making it visually consistent with the SQL Server
+                Configuration Manager</h2>
+<p>
+                I would not normally comment on error messages, but these ones are commonly seen.
+                </p><p>
+                    Ideally you should not have to read the error message to be able to fix it
+                </p>
+<p>
+                    As a minimum I would add the same icon and text from the SQL Server Configuration
+                    Manager
+                </p>
+<p>
+                    Slightly better would be an image with a circle around the missing reference
+                </p>
+<p>
+                    Ideally I would provide a link that opened the Microsoft Management Console (aka
+                    MMC snap-ins) – I would not even mind if it required you to allow “Active
+                    Content” inside IE (like Index.htm on MSDN Subscription DVD)
+                </p>
+<dl class="image">
+<dt>
+<img alt="FriendlySQLErrorMessage" height="437" src="/history/Images/FriendlySQLErrorMessage_1.gif" width="1079"/>
+</dt>
+</dl>
+<dl class="image">
+<dt>
+<img alt="FriendlySQLErrorMessage" height="452" src="/history/Images/FriendlySQLErrorMessage_2.gif" width="808"/>
+</dt>
+<dd>
+                        Same for this error message</dd>
+</dl>
+<p></p>
+</li>
+<li><a name="DescriptiveTitle"></a>
+<h2>
+                Make the title of the report more descriptive</h2>
+<p>
+                The report &lt;title&gt; tag needs to be more descriptive, as non-descriptive title
+                will reduce your Google rankings. See <a href="/ssw/Standards/Rules/RulesToBetterGoogleRankings.aspx#DescriptiveTags">
+                    Are your &lt;title&gt;, &lt;h1&gt;, and &lt;h2&gt; tags descriptive?</a> for
+                more information.
+            </p>
+<p>
+</p><dl class="image">
+<dt>
+<img alt="Non-descriptive report title" height="329" src="/history/Images/ReportTitle.gif" width="710"/>
+</dt>
+<dd>
+                        Figure: Non-descriptive report title</dd>
+</dl>
+<p></p>
+<p>
+                We have a suggestion to make the report title more descriptive, see <a href="#DynamicTitle">
+                    Add the ability to dynamically change the title of the report</a>.</p>
+</li>
+<li><a name="DeployReportPath"></a>
+<h2>
+                Make every report has its own deployment path</h2>
+<p>
+                We should be able to choose the folder that a report deploys to, rather than having
+                to create a separate project for each deployment path.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Project Deploy Path" src="/history/Images/ReportService_DeployReport_1.gif"/><br/>
+<img alt="Project Deploy Path" src="/history/Images/ReportService_DeployReport_2.gif"/>
+</dt>
+<dd>
+                    Each project has only one deployment folder</dd>
+</dl>
+<dl class="image">
+<dt>
+<img alt="Report Properties" src="/history/Images/ReportService_DeployReport_3.gif"/></dt>
+<dd>
+                    Reports don't have their own deployment path property, so the reports in one project
+                    can be deployed to the same folder only.</dd>
+</dl>
+</li>
+<li><a name="AddDateFunction"></a>
+<h2>
+                Add built-in date function</h2>
+<p>
+                There should be built-in date functions to calculate Week Ending, Month Ending and
+                Year Ending for a date, like GetCurrentWeekEnding(), GetLastMonthEnding(), so we
+                can get the report of weeks and months easily.
+                <br/>
+                The week ending function needs to consider the local culture while calculating.
+                In different countries, the weekend day may be not the same. So this function should
+                accept a parameter to load the local information, such like User!Language or something
+                like that. And of course it should have a parameter to let the user set which day
+                of the week is the week ending day manually (e.g. Friday or Sunday)</p>
+<dl class="code">
+<dt>(SELECT CONVERT(char(10), DATEADD(day, - (1 * (DATEPART(weekday, Agreement.ProjectedDepositPaymentDate)
+                    - 6)), Agreement.ProjectedDepositPaymentDate), 103) AS Expr1) AS ProjectedDepositPaymentDateWeekEnding
+                </dt>
+<dd>
+                    This is how we get the week ending now</dd>
+</dl>
+<dl class="code">
+<dt>(SELECT GetWeekEnding(Agreement.ProjectedDepositPaymentDate)) AS ProjectedDepositPaymentDateWeekEnding
+                </dt>
+<dd>
+                    using build-in functions would be efficient and more readable.</dd>
+</dl>
+</li>
+<li><a name="ExpressionHelp"></a>
+<h2>
+                Help more on the expression builder</h2>
+<p>
+                When user press OK on the expression builder:</p>
+<dl class="image">
+<dt>
+<img alt="Expression builder" src="/history/Images/ExpressionBuilder.gif"/></dt>
+<dd>
+                    Figure: Expression builder</dd>
+</dl>
+<p>
+                It should try to help more and more... E.g. Show a dialog like:<br/>
+<br/>
+                Did you refer to a control instead of a dataset?<br/>
+                You have used the function CountRows("Scans") that refers to a control "Scans".<br/>
+                Did you instead mean the dataset "dsScans"?<br/>
+<br/>
+                "Yes - Correct this"    "No - Leave it"<br/>
+</p>
+</li>
+<li><a id="LookUpForm"></a>
+<h2>
+                Add a lookup form to search the big table</h2>
+<ol>
+<li>
+<p>
+                        It is confused for user to input an unknown value. Also, it isn't feasible to use
+                        a combo to contain more than 30,000 records.</p>
+<dl class="image">
+<dt>
+<img alt="Lookup Search" height="580" src="/history/Images/LookUpForm_bad.JPG" width="737"/></dt>
+<dd>
+                            Figure: Bad Search</dd>
+</dl>
+</li>
+<li>
+<p>
+                        What do you think of this suggestion<br/>
+                        Use a ellipse button with a popup search form (better than using a combo when you
+                        have &gt;100 records)<br/>
+<br/>
+                        One tab will do – but 4 tabs would be better <a href="/SSW/Redirect/SSW/SSWNettoolkit.htm">
+                            http://www.ssw.com.au/ssw/nettoolkit/02WinSearch.aspx</a><br/>
+</p>
+<dl class="image">
+<dt>
+<img alt="Good Search" height="544" src="/history/Images/LookUpForm_good.JPG" width="550"/></dt>
+<dd>
+                            Figure: Good Search</dd>
+</dl>
+</li>
+</ol>
+</li>
+<li><a id="InsertDataset"></a>
+<h2>
+                Insert dataset as a table (with totals)</h2>
+<ol>
+<li>
+<p>
+                        Productivity Suggestion
+                        <br/>
+                        Under “add” item, add right click menu “Insert dataset as a table
+                        (with totals)”</p>
+<ol>
+<li>Auto generate the dataset’s name to the title at the top of table.</li>
+<li>Auto generate every column of dataset.</li>
+<li>Auto generate Totals row at the bottom of table.</li>
+</ol>
+<dl class="image">
+<dt>
+<img alt="Insert Dataset as table" height="316" src="/history/Images/rsInsertDatasetAsTable.JPG" width="611"/></dt>
+<dd>
+                            Figure: Insert Dataset as table</dd>
+</dl>
+</li>
+</ol>
+</li>
+<li><a id="ReportWizard"></a>
+<h2>
+                Report Wizard Intelligence</h2>
+<p>
+                It is not convenient for developers to generate SQL without intelligence in Report
+                Wizard. They have to look for the table name or the field name in SQL Server Management
+                Studio and generate SQL. If there is an intelligence in textbox or table list in
+                the left hand navigate, it will be much better.</p>
+<dl class="image">
+<dt>
+<img alt="Report Wizard without Intellisense" height="485" src="/history/Images/rsReportWizard.JPG" width="522"/></dt>
+<dd>
+                    Figure: Report Wizard without Intellisense</dd>
+</dl>
+<p>
+                The goals are to help me get to this…</p>
+<dl class="image">
+<dt>
+<img alt="Report Wizard with Intellisense" height="485" src="/history/Images/rsReportWizard_autofill.JPG" width="522"/></dt>
+<dd>
+                    Figure: Report Wizard with Intellisense</dd>
+</dl>
+</li>
+<li><a id="LongRunningProcess"></a>
+<h2>
+                Make long-running processes user-friendly</h2>
+<p>
+                When your wizard has a lot of processing, allow the user to skip that processing
+                when appropriate. Show a status description information above the progress bar and
+                also allow users to cancel the process. After processing finished, it should jump
+                to the next wizard.
+            </p>
+<p>
+                See our rule on Rules to Better Interfaces at <a href="../Rules/RulestoBetterInterfaces-Windows-Applications.aspx#LongProcessFriendly">
+                    SSW Rules to Better Interfaces</a></p>
+</li>
+<li><a id="ChangeNoBold"></a>
+<h2>
+                Change No Bold</h2>
+<p>
+                UI problem – when Visibility is collapsed there is no bold (even though the
+                setting is not at default). So we need to see bold when collapsed
+            </p>
+<dl class="image">
+<dt>
+<img alt="Change No Bold" height="350" src="/history/Images/rsChangeNoBold.JPG" width="273"/></dt><dd>Figure:
+                        Change No Bold</dd></dl>
+</li>
+<li><a id="DSFromAnotherReport"></a>
+<h2>
+                Dataset from another report</h2>
+<p>
+                Often you want a dataset from another report (or another project)<br/>
+<br/>
+                On the “Data” toolbar add some buttons
+                <br/>
+                    “Copy dataset from”<br/>
+                    “Import from XML”<br/>
+                    “Save as XML”<br/>
+<br/>
+                Note: Not only do I want to select a project, then report…. I want to be able
+                to select a published report (select a server, then report, then dataset)
+            </p>
+<dl class="image">
+<dt>
+<img alt="Dataset from another report" height="194" src="/history/Images/rsDSFromAnotherRpt.JPG" width="604"/>
+</dt>
+<dd>
+                    Figure: Selecting dataset from another report</dd>
+</dl>
+</li>
+<li><a id="LatestSP"></a>
+<h2>
+                Add tick to check if Reporting Service is the latest</h2>
+<p>
+                If the version of Reporting Service can't match that of Database, there will be
+                a warning to let user upgrade. Can we have a tick to say Reporting Service is the
+                latest or where we can download the latest version.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Version of Reporting Service can't match the Database" height="499" src="/history/Images/RSVersionCantMatch.JPG" width="576"/>
+</dt>
+<dd>
+                    Figure: Version of Reporting Service can't match the Database</dd>
+</dl>
+</li>
+<li><a id="SPWorkwithRS"></a>
+<h2>
+                Let SharePoint work with Reporting Service easily</h2>
+<p>
+                It is not easy for user to configurate SharePoint and Reporting Service working
+                together. If is much better to click one button and they can run in the same box
+                smoothly without knowing anything special.
+            </p>
+</li>
+<li><a id="SPIntegInfo"></a>
+<h2>
+                More information on SharePoint Integration</h2>
+<p>
+                The “SharePoint Integration” page in Reporting Service Configuration
+                Manager is too simple, we need more information on this page to tell our users:
+                </p><ol>
+<li>What will be the new functionality to add in SharePoint? </li>
+<li>How to generate RS reports by using SharePoint Integrated mode? </li>
+<li>How to manage reports in SharePoint? </li>
+</ol>
+<p></p>
+<dl class="image">
+<dt>
+<img alt="Simple information in Reporting Services Manager" height="148" src="/history/Images/SPIntegInfo.gif" width="561"/>
+</dt>
+<dd>
+                    Figure: Simple information in Reporting Services Manager</dd>
+</dl>
+</li>
+<li><a id="SPIntegSmpSite"></a>
+<h2>
+                Sample in the reports document library</h2>
+<p>
+                It is not easy for users to build report in SharePoint without tutorial. If there
+                are some sample reports in SharePoint, users can refer to the samples and learn
+                by themselves.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Add sample in reports document library" height="222" src="/history/Images/SPIntegSmpSite.gif" width="827"/>
+</dt>
+<dd>
+                    Figure: Add sample in reports document library</dd>
+</dl>
+</li>
+<li><a id="SPIntegTstBtn"></a>
+<h2>
+                Test data source connection</h2>
+<p>
+                Users can create a report data source in SharePoint, but they don't know the connection
+                string is not correct until the report raises error. So there should be a test button
+                to check the connection string.
+            </p>
+<dl class="image">
+<dt>
+<img alt="No button to test the connection string" height="458" src="/history/Images/SPIntegTstBtn.gif" width="390"/>
+</dt>
+<dd>
+                    Figure: No button to test the connection string</dd>
+</dl>
+</li>
+<li><a id="DescriptionName"></a>
+<h2>
+                The subscription needs an extra Name field</h2>
+<p>
+                The current UI doesn’t have a name filed, make it impossible to tell the difference
+                between each of the subscriptions.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Need to add a Name field" src="/history/Images/AddName.gif"/>
+</dt>
+<dd>
+                    Figure: Need to add a Name field</dd>
+</dl>
+</li>
+<li><a name="QryDesner"></a>
+<h2 style="font-weight: bold">
+                Highlight the current field in yellow in the "Diagram Pane"</h2>
+<p class="MsoNormal">
+                Highlight the current field in yellow in the "Diagram Pane" (aka Query
+                By Design window) when you select a row in the "Grid Pane" it would be
+                so useful when you are working on an unfamiliar database schema</p>
+<dl class="image">
+<dt>
+<img alt="The message when loss network" src="/history/Images/QueryDesigner.JPG" style="width: 1186px"/></dt>
+<br/>
+                Figure: The Diagram Pane without any highlights</dl>
+</li>
+<li><a name="FormatConfig"></a>
+<h2 style="font-weight: bold">
+                Add a page to configure the export format</h2>
+<p class="MsoNormal">
+                Currently, if we want to configure the export format, we have to edit the .config
+                file mannually. It is much better to add a configuration page and allow users to
+                add or remove report export formats easily.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Export Format List" src="/history/Images/ExportFormat.gif"/>
+</dt>
+<dd>
+                    Figure: Export Format List
+                </dd>
+</dl>
+</li>
+<li><a name="ConnectionString"></a>
+<h2>
+                Add a connection string builder</h2>
+<p>
+                We really need a builder for a connection string
+                <br/>
+                I can never remember the right syntax for the "Connection String" textbox<br/>
+                (As a minimum it would improve the demo experience for presenters)</p>
+<dl class="image">
+<dt>
+<img alt="Connection String Builder" src="/history/images/RSConnStringBuilder.jpg"/></dt>
+<dd>
+                    Figure: Building a connection string is too hard – we need a builder</dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="LINQDataSource"></a>Allow me to report against both LINQ Data Sources (.edmx
+                and .dbml)</h2>
+<p>
+                Ideally I would love to do a report based on a .dbml or .edmx file<br/>
+                I just select a LINQ (.dbml or .edmx) file as the datasource of a report<br/>
+                Plus I would like some samples added so we have an instant demo.
+            </p>
+</li>
+<li>
+<h2>
+<a name="SharePointDataSource"></a>Report Builder 2.0 - Offer the ability to report against SharePoint</h2>
+<p>A few new ones in this list... but when will be able to select a SharePoint list?</p>
+<p>PS: Back in 1992 Access would not have been as popular as quickly, without the ability for users to be able to query their data... SharePoint Lists are the new Access (for Power Users).</p>
+<dl class="image">
+<dt>
+<img alt="" src="/history/images/RS_DataSource.jpg"/></dt>
+<dd>
+                    Figure: SharePoint list is not supported</dd>
+</dl>
+</li>
+<li><h2><a name="VerticalText"></a>Allow Vertical text writing mode to also have bottom to top</h2>
+<p>Text boxes at the moment only allow writing modes of top to bottom. This is not always the way report viewers want to read the report. There should be another option of bottom to top, i.e. bt-lr.</p>
+<p>See the images and explanation on <a href="/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx#VerticalText">Rules to Better SQL Reporting Services - Use Vertical text for Columns</a></p>
+</li>
+<li><a name="CommonPeriod"></a><h2>Add parameter type for common periods</h2>
+<p>
+                we look for common period parameter type like week, month or quarter instead of having to specify start and end parameters of datetime.
+            </p>
+</li>
+<li><a name="InteractiveSort"></a><h2>Interactive Sort does not work well with chart</h2>
+<p>
+                We found a problem of Interactive Sort column with chart within it:
+            </p>
+<dl class="image">
+<dt>
+<img alt="" src="/history/images/RS_InteractiveSort_design.gif"/></dt>
+<dd>
+                    Figure: design view</dd>
+</dl>
+<dl class="image">
+<dt>
+<img alt="" src="/history/images/RS_InteractiveSort_preview.gif"/></dt>
+<dd>
+                    Figure: preview view</dd>
+</dl>
+<dl class="image">
+<dt>
+<img alt="" src="/history/images/RS_InteractiveSort_error.gif"/></dt>
+<dd>
+                    Figure: error when sorting</dd>
+</dl>
+</li>
+<li><a name="SendEmailOption"></a><h2>Reports should have an easy way to email to another person</h2>
+<p>
+                There should be an option which can make the users send the report by email directly.It's more convenient.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Send the report by email option" src="/history/images/AnotherOption_SendEmail.jpg"/></dt>
+<dd>
+                    Figure: There should be an option "Send Email"</dd>
+</dl>
+</li>
+<li><a name="StrikethroughInPDF"></a><h2>Show strikethrough in exported PDF file</h2>
+<p>
+                When report has strikethroughs(with the TextDecoration property set to "LineThrough"), it looks fine in Report Viewer.
+				When export to PDF format, the resulting document does not have the strikethrough applied.
+            </p>
+<dl class="image">
+<dt>
+<img alt="Strikethroughs in reoport" src="/history/images/SSRS_Strikethroughs.jpg"/></dt>
+<dd>
+                    Figure: Strikethrough works fine in Report Viewer</dd>
+</dl>
+<dl class="image">
+<dt>
+<img alt="Stikethrough doesn't work in PDF" src="/history/images/SSRS_StrikethroughInPDF.jpg"/>
+</dt>
+<dd>
+                    Figure: Strikethrough doesn't work in PDF</dd>
+</dl>
+<p>It is a known bug that you can check on Microsoft Connect.</p>
+</li>
+<li>
+<h2>
+<a name="ReportSounds"></a>Developing - Sounds</h2>
+<p>We need a "completed" sound after rendering a slow report. The problem is after 30 seconds of waiting you ALT+TAB to another window and forget when it finishes.</p>
+<p>A good example is the sound on the long process on <a href="http://www.ssw.com.au/SSW/Diagnostics/default.aspx"> SSW Diagnostics</a></p>
+<p>More info at <a href="/ssw/Standards/Rules/RulestoBetterInterfaces-Windows-Applications.aspx#LongProcessFriendly"> Rules to Better Interfaces - Long Process - Do you know how to make long-running processes user-friendly?</a> </p>
+<dl class="badImage">
+<dt>
+<img alt="This isn't a sound when the report finally generated." src="/history/images/ReportEndingWithoutSounds.jpg"/></dt>
+<dd>
+                    Figure: When Developing slow reports, please play a sound once the reports renders</dd>
+</dl>
+<dl class="goodImage">
+<dt>
+<img alt="SSW Diagnostic is a good example because it'll play a sound to inform the users that the report is accomplished." src="/history/images/SSWDiagnosticReport.jpg"/></dt>
+<dd>
+                    Figure: SSW Diagnostic will play a sound when the report successfully generated.</dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="DecimalPlace"></a>Give users a runtime option to increase or decrease decimals places
+            </h2>
+<p>
+                In some cases, the nubmers need to be accurate and reconciliations for the users, while in other cases, the decimal places are not required in the report.
+            </p>
+<p>So we need a runtime option to add/remove decimal place.</p>
+<dl class="goodImage">
+<dt>
+<img alt="Give users the option to show decimal places." src="/history/images/DecimalPlace.gif"/></dt>
+<dd>
+                    Figure: For some users, like accountants, the decimal place is necessary; for others, it might be not.</dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="LinkedReports"></a>Linked Reports - No hyperlink available to Linked Report on Property General page
+           </h2>
+<p>Reporting Services 2005. Linked Reports, when you look at the Properties tab it shows the path of the "parent" report and a button to "Change Link" but there is no quick link to take you to that parent report. You have to navigate to all the folders to get to it.</p>
+</li>
+<h2>
+        Acknowledgements</h2>
+<p>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan</a>
+</p>
+<br/>
+</div>
+
+<div id="footer">
+<p class="callnow">Call Now +61 2 9953 3000</p>
+<span class="copyright">© Copyright SSW 1990-2023. All Rights Reserved.</span>
+<ul>
+<li class="first"><a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F426574746572536F66747761726553756767657374696F6E732F5265706F7274696E6753657276696365732E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">Feedback to SSW</a></li>
+<li><a href="/ssw/Company/AboutUs.aspx">About SSW</a></li>
+<li><a href="/ssw/Advertising/Default.aspx">Advertising</a></li>
+<li class="last"><a href="/ssw/MenuMap.aspx">Sitemap</a></li>
+</ul>
+<span class="proudly"><a href="http://www.ssw.com.au">Proudly developed by SSW Sydney Web Design</a></span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.</p>
+</div>
+</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+
+
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><!-- / OptinMonster -->
+<div style="visibility: visible;"><div></div><div><style>
+        @-webkit-keyframes ww-cd13525b-5b41-4bc3-aa45-db0dd8fb3a30-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes ww-cd13525b-5b41-4bc3-aa45-db0dd8fb3a30-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes ww-cd13525b-5b41-4bc3-aa45-db0dd8fb3a30-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes ww-cd13525b-5b41-4bc3-aa45-db0dd8fb3a30-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style></div></div></body></html>

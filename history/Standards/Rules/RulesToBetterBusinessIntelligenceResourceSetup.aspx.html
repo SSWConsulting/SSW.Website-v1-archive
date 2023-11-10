@@ -1,0 +1,184 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><title>
+	SSW Rules to Better Business Intelligence - Setting up Resources
+</title><meta content="en-au" http-equiv="Content-Language"/><meta content="IE=Edge" http-equiv="X-UA-Compatible"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/><meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/><meta content="SSW" name="author"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="/history/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/><link href="../../include/Adapters/CSS/Import.css" id="ctl00_AdaptersInvariantImportCSS" rel="stylesheet" type="text/css"/><link href="/history/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/><link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/ssw/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/><link href="/ssw/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+<link href="/history/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/></head>
+<body id="ctl00_MasterBody">
+<form action="./RulesToBetterBusinessIntelligenceResourceSetup.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTM2MDA3ODg2OQ9kFgJmD2QWAgIDD2QWAgIBD2QWCAIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGQCCQ9kFgICAw9kFgICBg8PFgQeBFRleHQFjAg8cCBzdHlsZT0iZm9udC1zaXplIDogMTFweDsgY29sb3IgOiAjYWFhIj5UaGVyZSB3YXMgYW4gZXJyb3IgZGlzcGxheWluZyB0aGUgdGVzdGltb25pYWxzLiBQbGVhc2UgPEEgSFJFRj0ibWFpbHRvOmluZm9Acyp3LmNvbS5hdT9TdWJqZWN0PUVycm9yIGRpc3BsYXlpbmcgVGVzdGltb25pYWxzJmJvZHk9IFVSTDogaHR0cHM6Ly9zc3cuY29tLmF1L3Nzdy9TdGFuZGFyZHMvUnVsZXMvUnVsZXNUb0JldHRlckJ1c2luZXNzSW50ZWxsaWdlbmNlUmVzb3VyY2VTZXR1cC5hc3B4DQoNCiUwRCBFcnJvcjogQSBuZXR3b3JrLXJlbGF0ZWQgb3IgaW5zdGFuY2Utc3BlY2lmaWMgZXJyb3Igb2NjdXJyZWQgd2hpbGUgZXN0YWJsaXNoaW5nIGEgY29ubmVjdGlvbiB0byBTUUwgU2VydmVyLiBUaGUgc2VydmVyIHdhcyBub3QgZm91bmQgb3Igd2FzIG5vdCBhY2Nlc3NpYmxlLiBWZXJpZnkgdGhhdCB0aGUgaW5zdGFuY2UgbmFtZSBpcyBjb3JyZWN0IGFuZCB0aGF0IFNRTCBTZXJ2ZXIgaXMgY29uZmlndXJlZCB0byBhbGxvdyByZW1vdGUgY29ubmVjdGlvbnMuIChwcm92aWRlcjogTmFtZWQgUGlwZXMgUHJvdmlkZXIsIGVycm9yOiA0MCAtIENvdWxkIG5vdCBvcGVuIGEgY29ubmVjdGlvbiB0byBTUUwgU2VydmVyKSI+cmVwb3J0IHRoaXMgZXJyb3I8L2E+IHRvIFNTVyBhbmQgaW5jbHVkZSB0aGUgZm9sbG93aW5nIHRleHQ6PGJyPiAtIEEgbmV0d29yay1yZWxhdGVkIG9yIGluc3RhbmNlLXNwZWNpZmljIGVycm9yIG9jY3VycmVkIHdoaWxlIGVzdGFibGlzaGluZyBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlci4gVGhlIHNlcnZlciB3YXMgbm90IGZvdW5kIG9yIHdhcyBub3QgYWNjZXNzaWJsZS4gVmVyaWZ5IHRoYXQgdGhlIGluc3RhbmNlIG5hbWUgaXMgY29ycmVjdCBhbmQgdGhhdCBTUUwgU2VydmVyIGlzIGNvbmZpZ3VyZWQgdG8gYWxsb3cgcmVtb3RlIGNvbm5lY3Rpb25zLiAocHJvdmlkZXI6IE5hbWVkIFBpcGVzIFByb3ZpZGVyLCBlcnJvcjogNDAgLSBDb3VsZCBub3Qgb3BlbiBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlcik8L3A+HwBnZGRk9X2Qbyulh+PHVAjBMguRr0rP0wTDDF/meHVpVW1EhMA="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="98AA084C"/>
+</div>
+<div id="header" title="SSW Rules to Better Business Intelligence - Setting up Resources">
+<a href="/ssw/">
+<img alt="SSW Logo" height="100" id="sswlogo" src="/history/images/SSWLogo.png" width="130"/></a>
+<a href="/ssw/Company/AboutUs.aspx">
+<img alt="Microsoft Gold Partner Logo" height="41" id="msgoldpartner" src="/history/company/images/small_partnerlogo.png" width="110"/></a>
+<h1>
+        SSW Rules to Better Business Intelligence - Setting up Resources</h1>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1"><a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"><img alt="Skip Navigation Links" height="0" src="/history/WebResource.axd" style="border-width:0px;" width="0"/></a><span><a href="/ssw/Default.aspx" title="Home">Home</a></span><span> &gt; </span><span><a href="/ssw/Standards/Default.aspx" title="SSW Standards">SSW Standards</a></span><span> &gt; </span><span><a href="/ssw/Standards/Rules/Default.aspx" title="Rules">Rules</a></span><span> &gt; </span><span>SSW Rules to Better Business Intelligence - Setting up Resources</span><a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"></a></span>
+</p>
+<span id="ctl00_mainContentPlaceHolder_testimonial_lblError"><p style="font-size : 11px; color : #aaa">There was an error displaying the testimonials. Please <a href="mailto:info@s*w.com.au?Subject=Error displaying Testimonials&amp;body= URL: https://ssw.com.au/ssw/Standards/Rules/RulesToBetterBusinessIntelligenceResourceSetup.aspx
+
+%0D Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)">report this error</a> to SSW and include the following text:<br/> - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</p></span>
+
+ 
+
+		
+		
+	    <h2>Attaching the AdventureWorks2000DW Data Warehouse Database</h2>
+<p class="MsoNormal">In Enterprise Manager, right click <b>Databases </b>-&gt;<b> 
+New Database</b>...</p>
+<p class="MsoNormal">Create a database with the name 
+		"AdventureWorks2000DW".</p>
+<p class="MsoNormal">Refresh the Enterprise Manager view so that the new 
+		database is displayed. Right click the AdventureWorks2000DW database 
+		that you just created, and select <b>All Tasks</b> -&gt; <b>Restore 
+		Database</b>...</p>
+<p class="MsoNormal">In the <b>Restore</b> radio button group select 
+		"From Device", click <b>Select Device</b>. Click <b>Add</b> and 
+		select the file that you downloaded (and uncompressed) to restore the 
+		database.</p>
+<p class="MsoNormal">Note: you will need to make sure there are no 
+		current connections to the database.</p>
+<h2>Bring in the AdventureWorks2000 Cube</h2>
+<p class="MsoNormal">In Analysis Manager, right click server -&gt; Restore 
+Database. Select the .cab file to create the Reseller Sales cube.</p>
+<p class="MsoNormal">You might need to change the data source for the 
+		new cube, if you used an a different database name in the above steps. 
+		In the data source dialog reselect the appropriate table and configure 
+		any security information.</p>
+<p class="MsoNormal">You might want to fix some of the properties of the cube. 
+Check out
+<a href="http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterBusinessIntelligence.aspx" style="font-family: Tahoma; color: blue; text-decoration: underline; text-underline: single">
+http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterBusinessIntelligence.aspx</a>
+for some rules that we think are important.</p>
+<h2><a name="AcknowledgementsLikeThis"></a>Acknowledgements</h2>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AW">Andrew Weaver</a><br/>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan</a><br/>
+					Grant Paisley
+				
+        <br/>
+</div>
+
+<div id="footer">
+<p class="callnow">Call Now +61 2 9953 3000</p>
+<span class="copyright">© Copyright SSW 1990-2023. All Rights Reserved.</span>
+<ul>
+<li class="first"><a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F52756C6573546F426574746572427573696E657373496E74656C6C6967656E63655265736F7572636553657475702E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">Feedback to SSW</a></li>
+<li><a href="/ssw/Company/AboutUs.aspx">About SSW</a></li>
+<li><a href="/ssw/Advertising/Default.aspx">Advertising</a></li>
+<li class="last"><a href="/ssw/MenuMap.aspx">Sitemap</a></li>
+</ul>
+<span class="proudly"><a href="http://www.ssw.com.au">Proudly developed by SSW Sydney Web Design</a></span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.</p>
+</div>
+</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+
+
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><!-- / OptinMonster -->
+<div style="visibility: visible;"><div></div><div><style>
+        @-webkit-keyframes ww-db5f5884-bf4d-4dae-90a5-3bb4397edf2b-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes ww-db5f5884-bf4d-4dae-90a5-3bb4397edf2b-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes ww-db5f5884-bf4d-4dae-90a5-3bb4397edf2b-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes ww-db5f5884-bf4d-4dae-90a5-3bb4397edf2b-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style></div></div></body></html>
