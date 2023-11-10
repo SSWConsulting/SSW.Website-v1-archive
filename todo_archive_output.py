@@ -25,8 +25,8 @@ WHITELIST = [
     # "SQLDeploy",
     # "SQLReportingServicesAuditor",
     # "SQLTotalCompare",
-    # TODO: "Standards",
-    # TODO: "StandardsInternal",
+    "Standards",
+    # "StandardsInternal",
     # "TeamCalendar",
     # "UpsizingPRO",
     # "WebPager"
@@ -100,8 +100,7 @@ def fix_images(soup, path):
 
 def fix_css(soup, path):
     links = soup.find_all("link")
-    css_files = os.listdir(PARENT_DIR + "css")
-    print(css_files)
+    css_files = os.listdir("C:\\Users\\hazro\\code\\ssw\\SSW.Website-v1-Progress\\history\\css")
 
     for link in links:
         if link["rel"] == ["stylesheet"]:
@@ -112,12 +111,9 @@ def fix_css(soup, path):
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
-            elif "Content.css" in href:
-                link["href"] = "/history/css/Content.css"
-            elif "Screen.css" in href:
-                link["href"] = "/history/css/Screen.css"
-            elif "Print.css" in href:
-                link["href"] = "/history/css/Print.css"
+            for css_file in css_files: 
+                if css_file in href:
+                    link["href"] = "/history/css/" + css_file
         elif link["rel"] == ["icon"]:
             href = link["href"]
             if href is None:
