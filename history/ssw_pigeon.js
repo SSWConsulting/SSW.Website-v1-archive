@@ -1883,452 +1883,453 @@ addLoadEvent(onLoading);
     _init();
 
 })();;
-var cacheDuration = 600000; //10 mins
+// var cacheDuration = 600000; //10 mins
 
-function timeToAir(startdatetime, enddatetime) {
-    var retString = 'Streaming Live Now.';
+// function timeToAir(startdatetime, enddatetime) {
+//     var retString = 'Streaming Live Now.';
 
-    var rightnow = new Date();
-    var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
-    livestream_startdatetimeUTC = moment(startdatetime).zone('+0000');
-    livestream_enddatetimeUTC = moment(enddatetime).zone('+0000');
-    var diff = livestream_startdatetimeUTC - rightnowUTC;
+//     var rightnow = new Date();
+//     var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
+//     livestream_startdatetimeUTC = moment(startdatetime).zone('+0000');
+//     livestream_enddatetimeUTC = moment(enddatetime).zone('+0000');
+//     var diff = livestream_startdatetimeUTC - rightnowUTC;
 
-    if (diff > 0) {
-        var seconds = Math.floor(diff / 1000); //ignore any left over units smaller than a second
-        var minutes = Math.floor(seconds / 60);
-        seconds = seconds % 60;
-        var hours = Math.floor(minutes / 60);
-        minutes = minutes % 60;
+//     if (diff > 0) {
+//         var seconds = Math.floor(diff / 1000); //ignore any left over units smaller than a second
+//         var minutes = Math.floor(seconds / 60);
+//         seconds = seconds % 60;
+//         var hours = Math.floor(minutes / 60);
+//         minutes = minutes % 60;
 
-        if (hours == 0 && minutes == 0) {
-            retString = 'Streaming Live Now.';
-        }
-        else {
-            retString = '<span class="red">Airing in ';
-            if (hours == 1) {
-                retString += hours + ' Hour';
-            }
-            else if (hours > 1) {
-                retString += hours + ' Hours';
-            }
-            if (hours > 0 && minutes > 0) {
-                retString += ' and ';
-            }
-            if (minutes == 1) {
-                retString += minutes + ' Minute';                
-            }
-            else if (minutes > 1) {
-                retString += minutes + ' Minutes';
-            }
-            retString += '.</span>';
-            //retString += seconds + ' Seconds.';
-        }
+//         if (hours == 0 && minutes == 0) {
+//             retString = 'Streaming Live Now.';
+//         }
+//         else {
+//             retString = '<span class="red">Airing in ';
+//             if (hours == 1) {
+//                 retString += hours + ' Hour';
+//             }
+//             else if (hours > 1) {
+//                 retString += hours + ' Hours';
+//             }
+//             if (hours > 0 && minutes > 0) {
+//                 retString += ' and ';
+//             }
+//             if (minutes == 1) {
+//                 retString += minutes + ' Minute';                
+//             }
+//             else if (minutes > 1) {
+//                 retString += minutes + ' Minutes';
+//             }
+//             retString += '.</span>';
+//             //retString += seconds + ' Seconds.';
+//         }
         
-    }
+//     }
 
-    if (rightnowUTC - livestream_enddatetimeUTC > 0)
-    {
-        retString = '';
-    }
-    //console.log(retString + ' - time to air - ' + livestream_startdatetimeUTC.format() + ' - ' + livestream_enddatetimeUTC.format() + ' at UTC time ' + rightnowUTC.format());
-    return retString;
-}
+//     if (rightnowUTC - livestream_enddatetimeUTC > 0)
+//     {
+//         retString = '';
+//     }
+//     //console.log(retString + ' - time to air - ' + livestream_startdatetimeUTC.format() + ' - ' + livestream_enddatetimeUTC.format() + ' at UTC time ' + rightnowUTC.format());
+//     return retString;
+// }
+// Removed banner info function
+// function updateBannerInfo() {
 
-function updateBannerInfo() {
+//     var calendarData = $.jStorage.get('livestream');
+//     var livestream_startdatetimeUTC = $.jStorage.get('livestream_startdatetimeUTC');
+//     var livestream_enddatetimeUTC = $.jStorage.get('livestream_enddatetimeUTC');
 
-    var calendarData = $.jStorage.get('livestream');
-    var livestream_startdatetimeUTC = $.jStorage.get('livestream_startdatetimeUTC');
-    var livestream_enddatetimeUTC = $.jStorage.get('livestream_enddatetimeUTC');
+//     livestream_enddatetimeUTC = moment(livestream_enddatetimeUTC).zone('+0000');  //SharePoint store UTC datetime
 
-    livestream_enddatetimeUTC = moment(livestream_enddatetimeUTC).zone('+0000');  //SharePoint store UTC datetime
+//     var rightnow = new Date();
+//     var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
 
-    var rightnow = new Date();
-    var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
+//     if (livestream_enddatetimeUTC < rightnowUTC) {
+//         //console.log(livestream_enddatetimeUTC.format() + ' - event finished - UTC time ' + rightnowUTC.format());
+//         return;
+//     }
 
-    if (livestream_enddatetimeUTC < rightnowUTC) {
-        //console.log(livestream_enddatetimeUTC.format() + ' - event finished - UTC time ' + rightnowUTC.format());
-        return;
-    }
+//     if (calendarData == null || calendarData == "") {
 
-    if (calendarData == null || calendarData == "") {
+//         var dateFilter = rightnowUTC.format('YYYY-MM-DD') + "T" + rightnowUTC.format('HH:mm:ss') + "Z";  //HH is 24 hours, hh is 12 hours
 
-        var dateFilter = rightnowUTC.format('YYYY-MM-DD') + "T" + rightnowUTC.format('HH:mm:ss') + "Z";  //HH is 24 hours, hh is 12 hours
-
-        //SharePoint 2013 is using new rest api to replace listdata.svc
-        var oDataFilter = "$filter=Enabled ne false and StartShowBannerDateTime le datetime'" + dateFilter + "' and EndShowBannerDateTime ge datetime'" + dateFilter + "'&$orderby=StartDateTime asc&$top=1";
-        //console.log(eventsURL + oDataFilter + ' at UTC time ' + rightnowUTC.format());
-        $.get('/ssw/SharePointEventsService.aspx?odataFilter=' + encodeURIComponent(oDataFilter), function (d) {
-            var sortedSet = $(d);
-            //console.log(sortedSet.length + ' at UTC time ' + rightnowUTC.format());
-            $(sortedSet).each(function () {
-                var $CalendarEntry = $(this)[0];
-                var title = $CalendarEntry["Title"];
-                var url = $CalendarEntry['LiveStreamUrl'] ? $CalendarEntry['LiveStreamUrl']['Url'] : "";
-                var startdatetime = $CalendarEntry['StartDateTime'];  //date in SharePoint is using UTC timezone +0000;
-                var enddatetime = $CalendarEntry['EndDateTime'];
-                var startdatetimeSydney = moment(startdatetime).tz('Australia/Sydney'); //.zone('+1100');
-                var enddatetimeSydney = moment(enddatetime).tz('Australia/Sydney');
-                var eventId = $CalendarEntry['Id'];
-                var rightnow = new Date();
-                var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
+//         //SharePoint 2013 is using new rest api to replace listdata.svc
+//         var oDataFilter = "$filter=Enabled ne false and StartShowBannerDateTime le datetime'" + dateFilter + "' and EndShowBannerDateTime ge datetime'" + dateFilter + "'&$orderby=StartDateTime asc&$top=1";
+//         //console.log(eventsURL + oDataFilter + ' at UTC time ' + rightnowUTC.format());
+//         $.get('/ssw/SharePointEventsService.aspx?odataFilter=' + encodeURIComponent(oDataFilter), function (d) {
+//             var sortedSet = $(d);
+//             //console.log(sortedSet.length + ' at UTC time ' + rightnowUTC.format());
+//             $(sortedSet).each(function () {
+//                 var $CalendarEntry = $(this)[0];
+//                 var title = $CalendarEntry["Title"];
+//                 var url = $CalendarEntry['LiveStreamUrl'] ? $CalendarEntry['LiveStreamUrl']['Url'] : "";
+//                 var startdatetime = $CalendarEntry['StartDateTime'];  //date in SharePoint is using UTC timezone +0000;
+//                 var enddatetime = $CalendarEntry['EndDateTime'];
+//                 var startdatetimeSydney = moment(startdatetime).tz('Australia/Sydney'); //.zone('+1100');
+//                 var enddatetimeSydney = moment(enddatetime).tz('Australia/Sydney');
+//                 var eventId = $CalendarEntry['Id'];
+//                 var rightnow = new Date();
+//                 var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
                 
-                var livestream_startdatetimeUTC = moment(startdatetime).zone('+0000');  //SharePoint store UTC datetime
-                var livestream_enddatetimeUTC = moment(enddatetime).zone('+0000');  //SharePoint store UTC datetime
+//                 var livestream_startdatetimeUTC = moment(startdatetime).zone('+0000');  //SharePoint store UTC datetime
+//                 var livestream_enddatetimeUTC = moment(enddatetime).zone('+0000');  //SharePoint store UTC datetime
 
-                var timeToAirValue = timeToAir(startdatetime, enddatetime);
+//                 var timeToAirValue = timeToAir(startdatetime, enddatetime);
 
-                if (livestream_enddatetimeUTC >= rightnowUTC) {
-                    var html = '<div class="livestream">';
-                    if (livestream_startdatetimeUTC > rightnowUTC) {
-                        html += '<div class="event-banner hidden-xs alert alert-dismissible" role="alert">';
-                    } else {
-                        html += '<div class="event-banner livestreamonair hidden-xs alert alert-dismissible" role="alert">';
-                    }
+//                 if (livestream_enddatetimeUTC >= rightnowUTC) {
+//                     var html = '<div class="livestream">';
+//                     if (livestream_startdatetimeUTC > rightnowUTC) {
+//                         html += '<div class="event-banner hidden-xs alert alert-dismissible" role="alert">';
+//                     } else {
+//                         html += '<div class="event-banner livestreamonair hidden-xs alert alert-dismissible" role="alert">';
+//                     }
 
-                    html += '<div class="container">';
-                    html += '<a href="'+ url +'" title="' + title + '" id="livestreamlink" class="livestream-permanent">';
-                    html += '<div class="livestreamtitle"><span class="livestreamtitlespan">';
-                    html += title;
-                    html += '</span>';
-                    html += '<div class="livestreamtime"><span id="timeToAir">' + timeToAir(startdatetime, enddatetime) + '</span> (' + startdatetimeSydney.format('hA') + " Sydney, " + enddatetimeSydney.format('Do MMM YYYY') + ') #NETUG</div>';
-                    html += '</div></a>';
-                    html += '</div>';
-                    html += '</div>';
-                    html += '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>';
-                    html += '</div>';
-                    $('#livestream').append(html);
-                }
+//                     html += '<div class="container">';
+//                     html += '<a href="'+ url +'" title="' + title + '" id="livestreamlink" class="livestream-permanent">';
+//                     html += '<div class="livestreamtitle"><span class="livestreamtitlespan">';
+//                     html += title;
+//                     html += '</span>';
+//                     html += '<div class="livestreamtime"><span id="timeToAir">' + timeToAir(startdatetime, enddatetime) + '</span> (' + startdatetimeSydney.format('hA') + " Sydney, " + enddatetimeSydney.format('Do MMM YYYY') + ') #NETUG</div>';
+//                     html += '</div></a>';
+//                     html += '</div>';
+//                     html += '</div>';
+//                     html += '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>';
+//                     html += '</div>';
+//                     $('#livestream').append(html);
+//                 }
 
-                $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration }); 
-                $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
-                $.jStorage.set('livestream_event_id', eventId, { TTL: cacheDuration });
-                //console.log(startdatetime + ' and ' + enddatetime + ' are cached at UTC time ' + rightnowUTC.format());
-                updateLiveStreamWidget(timeToAirValue === 'Streaming Live Now.');
-            });
+//                 $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration }); 
+//                 $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
+//                 $.jStorage.set('livestream_event_id', eventId, { TTL: cacheDuration });
+//                 //console.log(startdatetime + ' and ' + enddatetime + ' are cached at UTC time ' + rightnowUTC.format());
+//                 updateLiveStreamWidget(timeToAirValue === 'Streaming Live Now.');
+//             });
 
-            $.jStorage.set('livestream', $('#livestream').html(), { TTL: cacheDuration }); 
-            //console.log($('#livestream').html() + ' - livestream html is cached at UTC time ' + rightnowUTC.format());
-            setIntervalFunction();
-        }, "json");
+//             $.jStorage.set('livestream', $('#livestream').html(), { TTL: cacheDuration }); 
+//             //console.log($('#livestream').html() + ' - livestream html is cached at UTC time ' + rightnowUTC.format());
+//             setIntervalFunction();
+//         }, "json");
 
-    } else {
-        if (livestream_enddatetimeUTC == null || livestream_enddatetimeUTC.format() == 'Invalid date') {
-            //console.log(livestream_enddatetimeUTC.format() + ' - Invalid date - at UTC time ' + rightnowUTC.format());
-            return;
-        }
-        if (livestream_enddatetimeUTC >= rightnowUTC) {
-            var timeToAirValue = timeToAir(livestream_startdatetimeUTC, livestream_enddatetimeUTC);
-            //console.log(livestream_enddatetimeUTC.format() + ' - using cached html at UTC time ' + rightnowUTC.format());
-            $('#livestream').html(calendarData);
-            updateLiveStreamWidget(timeToAirValue === 'Streaming Live Now.');
-            setIntervalFunction();
-        }
-        else {
-            //console.log(livestream_enddatetimeUTC.format() + ' - cleaning banner html at UTC time ' + rightnowUTC.format());
-            $('#livestream').html('');
-            return;
-        }
-    }
-}
+//     } else {
+//         if (livestream_enddatetimeUTC == null || livestream_enddatetimeUTC.format() == 'Invalid date') {
+//             //console.log(livestream_enddatetimeUTC.format() + ' - Invalid date - at UTC time ' + rightnowUTC.format());
+//             return;
+//         }
+//         if (livestream_enddatetimeUTC >= rightnowUTC) {
+//             var timeToAirValue = timeToAir(livestream_startdatetimeUTC, livestream_enddatetimeUTC);
+//             //console.log(livestream_enddatetimeUTC.format() + ' - using cached html at UTC time ' + rightnowUTC.format());
+//             $('#livestream').html(calendarData);
+//             updateLiveStreamWidget(timeToAirValue === 'Streaming Live Now.');
+//             setIntervalFunction();
+//         }
+//         else {
+//             //console.log(livestream_enddatetimeUTC.format() + ' - cleaning banner html at UTC time ' + rightnowUTC.format());
+//             $('#livestream').html('');
+//             return;
+//         }
+//     }
+// }
 
-function setIntervalFunction() {
+// function setIntervalFunction() {
 
-    //set interval - time to air
-    var rightnow = new Date();
-    var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
+//     //set interval - time to air
+//     var rightnow = new Date();
+//     var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
 
-    //console.log('try to start to set interval - at UTC time ' + rightnowUTC.format());
-    var livestream_startdatetimeUTC = $.jStorage.get('livestream_startdatetimeUTC');
-    var livestream_enddatetimeUTC = $.jStorage.get('livestream_enddatetimeUTC');
-    var livestream_event_id = $.jStorage.get('livestream_event_id');
+//     //console.log('try to start to set interval - at UTC time ' + rightnowUTC.format());
+//     var livestream_startdatetimeUTC = $.jStorage.get('livestream_startdatetimeUTC');
+//     var livestream_enddatetimeUTC = $.jStorage.get('livestream_enddatetimeUTC');
+//     var livestream_event_id = $.jStorage.get('livestream_event_id');
 
-    if (livestream_startdatetimeUTC == null || livestream_enddatetimeUTC == null) {
-        return;
-    }
-    //console.log(livestream_startdatetimeUTC + ' - ' + livestream_enddatetimeUTC + ' - start to set interval at UTC time ' + rightnowUTC.format());
-    var interval = setInterval(function () {
+//     if (livestream_startdatetimeUTC == null || livestream_enddatetimeUTC == null) {
+//         return;
+//     }
+//     //console.log(livestream_startdatetimeUTC + ' - ' + livestream_enddatetimeUTC + ' - start to set interval at UTC time ' + rightnowUTC.format());
+//     var interval = setInterval(function () {
 
-        var rightnow = new Date();
-        var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
-        //console.log(livestream_startdatetimeUTC + ' - ' + livestream_enddatetimeUTC + ' - running interval function at UTC time ' + rightnowUTC.format());
+//         var rightnow = new Date();
+//         var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
+//         //console.log(livestream_startdatetimeUTC + ' - ' + livestream_enddatetimeUTC + ' - running interval function at UTC time ' + rightnowUTC.format());
 
-        var timeToAirValue = timeToAir(livestream_startdatetimeUTC, livestream_enddatetimeUTC)
+//         var timeToAirValue = timeToAir(livestream_startdatetimeUTC, livestream_enddatetimeUTC)
 
-        if (timeToAirValue == '') {
-            $('#timeToAir').html('Finished!');            
-            $('#livestream').html('');
-            $.jStorage.set('livestream', '', { TTL: cacheDuration });
-            $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration });
-            $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
+//         if (timeToAirValue == '') {
+//             $('#timeToAir').html('Finished!');            
+//             $('#livestream').html('');
+//             $.jStorage.set('livestream', '', { TTL: cacheDuration });
+//             $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration });
+//             $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
 
-            updateLiveStreamWidget(false);
-            clearInterval(interval);
-            return;
-        }
-        else if (timeToAirValue == 'Streaming Live Now.') {
-            $('.event-banner').addClass('livestreamonair');
-            updateLiveStreamWidget(true);
+//             updateLiveStreamWidget(false);
+//             clearInterval(interval);
+//             return;
+//         }
+//         else if (timeToAirValue == 'Streaming Live Now.') {
+//             $('.event-banner').addClass('livestreamonair');
+//             updateLiveStreamWidget(true);
 
-            $.jStorage.set('livestream', $('#livestream').html(), { TTL: cacheDuration });
-            $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration });
-            $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
-            $.jStorage.set('livestream_event_id', livestream_event_id, { TTL: cacheDuration });
-        }
+//             $.jStorage.set('livestream', $('#livestream').html(), { TTL: cacheDuration });
+//             $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration });
+//             $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
+//             $.jStorage.set('livestream_event_id', livestream_event_id, { TTL: cacheDuration });
+//         }
 
-        //update time to air container text
-        if ($('#timeToAir').html() != timeToAirValue) {
-            $('#timeToAir').html(timeToAirValue);
-            $.jStorage.set('livestream', $('#livestream').html(), { TTL: cacheDuration });
-            $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration });
-            $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
-            $.jStorage.set('livestream_event_id', livestream_event_id, { TTL: cacheDuration });
-            updateLiveStreamWidget(false);
-        }
-    }, 30000); //30 secs
-}
+//         //update time to air container text
+//         if ($('#timeToAir').html() != timeToAirValue) {
+//             $('#timeToAir').html(timeToAirValue);
+//             $.jStorage.set('livestream', $('#livestream').html(), { TTL: cacheDuration });
+//             $.jStorage.set('livestream_startdatetimeUTC', livestream_startdatetimeUTC, { TTL: cacheDuration });
+//             $.jStorage.set('livestream_enddatetimeUTC', livestream_enddatetimeUTC, { TTL: cacheDuration });
+//             $.jStorage.set('livestream_event_id', livestream_event_id, { TTL: cacheDuration });
+//             updateLiveStreamWidget(false);
+//         }
+//     }, 30000); //30 secs
+// }
 
-function updateLiveStreamWidget(showWidget = false) {
-    var event_id = $.jStorage.get('livestream_event_id');
-    var rightnow = new Date();
-    var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
-    var loadExternalSpeakers = $.Deferred();
-    var loadInternalSpeakers = $.Deferred();
-    var stored_speaker = $.jStorage.get('livestream_speakers');
+// function updateLiveStreamWidget(showWidget = false) {
+//     var event_id = $.jStorage.get('livestream_event_id');
+//     var rightnow = new Date();
+//     var rightnowUTC = moment(rightnow).zone('+0000');  //SharePoint store UTC datetime
+//     var loadExternalSpeakers = $.Deferred();
+//     var loadInternalSpeakers = $.Deferred();
+//     var stored_speaker = $.jStorage.get('livestream_speakers');
 
-    if (event_id === null || event_id === '' || !showWidget) {
-        $('#Livestream_Widget').removeClass("in");
-        $('#livestream_Video').html('');
-        $('#livestream_Chat').html('');
-        $('#yt-button-container').html('');
+//     if (event_id === null || event_id === '' || !showWidget) {
+//         $('#Livestream_Widget').removeClass("in");
+//         $('#livestream_Video').html('');
+//         $('#livestream_Chat').html('');
+//         $('#yt-button-container').html('');
 
-        return;
-    } else {
-        var dateFilter = rightnowUTC.format('YYYY-MM-DD') + "T" + rightnowUTC.format('HH:mm:ss') + "Z";  //HH is 24 hours, hh is 12 hours
-        //SharePoint 2013 is using new rest api to replace listdata.svc
-        var oDataFilter = "$filter=Id eq " + event_id + "&$orderby=StartDateTime asc&$top=1";
-        oDataFilter += "&$select=*,InternalPresenters/EMail&$expand=InternalPresenters/Id";
+//         return;
+//     } else {
+//         var dateFilter = rightnowUTC.format('YYYY-MM-DD') + "T" + rightnowUTC.format('HH:mm:ss') + "Z";  //HH is 24 hours, hh is 12 hours
+//         //SharePoint 2013 is using new rest api to replace listdata.svc
+//         var oDataFilter = "$filter=Id eq " + event_id + "&$orderby=StartDateTime asc&$top=1";
+//         oDataFilter += "&$select=*,InternalPresenters/EMail&$expand=InternalPresenters/Id";
 
-        $.get('/ssw/SharePointEventsService.aspx?odataFilter=' + encodeURIComponent(oDataFilter), function (d) {
-            var data = $(d);
+//         $.get('/ssw/SharePointEventsService.aspx?odataFilter=' + encodeURIComponent(oDataFilter), function (d) {
+//             var data = $(d);
 
-            $(data).each(function () {
-                var $event = $(this)[0];
+//             $(data).each(function () {
+//                 var $event = $(this)[0];
 
-                var youtube_id = $event['YouTubeId'];
-                var speakersCount = 0;
+//                 var youtube_id = $event['YouTubeId'];
+//                 var speakersCount = 0;
 
-                if (youtube_id === null || youtube_id === '') {
-                    return;
-                }
+//                 if (youtube_id === null || youtube_id === '') {
+//                     return;
+//                 }
 
-                var title = $event['Title'].split(':')[1];
-                var survey_url = $event['EvalFormURL'] ? $event['EvalFormURL']['Url'] : null;
-                var github_url = $event['GitHubURL'] ? $event['GitHubURL']['Url'] : null;
-                var about_talk = $event['EventDescription'];
-                var speakers = [];
+//                 var title = $event['Title'].split(':')[1];
+//                 var survey_url = $event['EvalFormURL'] ? $event['EvalFormURL']['Url'] : null;
+//                 var github_url = $event['GitHubURL'] ? $event['GitHubURL']['Url'] : null;
+//                 var about_talk = $event['EventDescription'];
+//                 var speakers = [];
 
-                var video_url = "https://www.youtube.com/embed/" + youtube_id + "?rel=0&autoplay=1";
-                var chat_url = "https://www.youtube.com/live_chat?v=" + youtube_id + "&embed_domain=" + window.location.hostname;
-                var livestream_link = "https://www.youtube.com/watch?v=" + youtube_id;
+//                 var video_url = "https://www.youtube.com/embed/" + youtube_id + "?rel=0&autoplay=1";
+//                 var chat_url = "https://www.youtube.com/live_chat?v=" + youtube_id + "&embed_domain=" + window.location.hostname;
+//                 var livestream_link = "https://www.youtube.com/watch?v=" + youtube_id;
 
-                if ($event['ExternalPresentersId'].results !== undefined && $event['ExternalPresentersId'].results.length > 0) {
-                    speakersCount = $event['ExternalPresentersId'].results.length;
-                    $event['ExternalPresentersId']['results'].forEach(function (id) {
-                        $.when(getExternalSpeaker(id)).done(function (result) {
-                            speakers.push(result);
+//                 if ($event['ExternalPresentersId'].results !== undefined && $event['ExternalPresentersId'].results.length > 0) {
+//                     speakersCount = $event['ExternalPresentersId'].results.length;
+//                     $event['ExternalPresentersId']['results'].forEach(function (id) {
+//                         $.when(getExternalSpeaker(id)).done(function (result) {
+//                             speakers.push(result);
 
-                            if (speakers.length === $event['ExternalPresentersId'].results.length) {
-                                loadExternalSpeakers.resolve(true);
-                            }
-                        });
-                    });
-                } else {
-                    loadExternalSpeakers.resolve(false);
-                }
+//                             if (speakers.length === $event['ExternalPresentersId'].results.length) {
+//                                 loadExternalSpeakers.resolve(true);
+//                             }
+//                         });
+//                     });
+//                 } else {
+//                     loadExternalSpeakers.resolve(false);
+//                 }
 
-                if ($event['InternalPresenters'].results !== undefined && $event['InternalPresenters'].results.length > 0) {
-                    speakersCount += $event['InternalPresenters'].results.length
-                    $event['InternalPresenters']['results'].forEach(function (r) {
-                        $.when(getPresenterCRMDetails(r.EMail)).done(function (result) {
-                            speakers.push(result);
-                            if (speakers.length === speakersCount) {
-                                loadInternalSpeakers.resolve(true);
-                            }
-                        });
-                    });
-                } else {
-                    loadInternalSpeakers.resolve(false);
-                }
-
-
-                if (showWidget) {
-                    var video_frame = $("#video-embed");
-                    var chat_frame = $("#chat-embed");
-
-                    if (video_frame[0] === undefined || (video_frame[0] !== undefined && video_frame[0].src !== video_url)) {
-                        let frame = document.createElement("iframe");
-                        frame.referrerPolicy = "origin";
-                        frame.src = video_url;
-                        frame.frameBorder = "0";
-                        frame.style = "position:absolute;top:0;left:0;width:100%;height:100%;margin:0"
-                        frame.allowFullscreen = "true";
-                        frame.allow = "autoplay";
-                        frame.id = "video-embed";
-                        $('#livestream_Video').html(frame);
-                    }
-
-                    if (isMobile()) {
-                        $('#livestream_Chat').addClass('hidden');
-                        $('#livestream_Chat_mobile').removeClass('hidden');
-                        $('#livestream_Chat_mobile').html('<a href="' + livestream_link + '" target="_blank" class="red next btn rounded-btn">Chat with us on YouTube</a>');
-                    } else {
-                        $('#livestream_Chat').removeClass('hidden');
-                        $('#livestream_Chat_mobile').addClass('hidden');
-
-                        if (chat_frame[0] === undefined || (chat_frame[0] !== undefined && chat_frame[0].src !== chat_url)) {
-                            frame = document.createElement("iframe");
-                            frame.referrerPolicy = "origin";
-                            frame.src = chat_url;
-                            frame.frameBorder = "0";
-                            frame.style = "width: 100%; height: 420px;"
-                            frame.id = "chat-embed";
-                            $('#livestream_Chat').html(frame);
-                        }
-                    }
-
-                    if (survey_url === null || survey_url === '') {
-                        $('#livestream_Survey_Url').attr('href', '/ssw/NETUG/EvaluationSurvey.aspx');
-                    } else {
-                        $('#livestream_Survey_Url').attr('href', survey_url);
-                    }
-
-                    if (github_url === null || github_url === '') {
-                        $('#livestream_GitHub').addClass('hidden');
-                    } else {
-                        $('#livestream_GitHub').removeClass('hidden');
-                        $('#livestream_GitHub_Url').attr('href', github_url);
-                    }
-
-                    $('#livestream_Image').attr('alt', title);
-                    $('#livestream_Title').text(title);
+//                 if ($event['InternalPresenters'].results !== undefined && $event['InternalPresenters'].results.length > 0) {
+//                     speakersCount += $event['InternalPresenters'].results.length
+//                     $event['InternalPresenters']['results'].forEach(function (r) {
+//                         $.when(getPresenterCRMDetails(r.EMail)).done(function (result) {
+//                             speakers.push(result);
+//                             if (speakers.length === speakersCount) {
+//                                 loadInternalSpeakers.resolve(true);
+//                             }
+//                         });
+//                     });
+//                 } else {
+//                     loadInternalSpeakers.resolve(false);
+//                 }
 
 
-                    if ( $('#livestream_talk_description').html() !== about_talk) {
-                        $('#livestream_talk_description').html(about_talk);
-                    }
+//                 if (showWidget) {
+//                     var video_frame = $("#video-embed");
+//                     var chat_frame = $("#chat-embed");
 
-                    //TODO: include a foreach to run CRMDetails to each presenter from SharePoint
-                    $.when(loadInternalSpeakers, loadExternalSpeakers).done(function (r1, r2) {
-                        if ((r1 || r2) && ($('#livestream_About_Speaker').html().length <= 0 || speakers.every(r => stored_speaker.find(r1 => r1.id === r.id)) === false)) {
-                            about_speaker = "";
-                            speakers.forEach(function (s) {
-                                about_speaker += buildPresenterHTML(s);
-                            });
+//                     if (video_frame[0] === undefined || (video_frame[0] !== undefined && video_frame[0].src !== video_url)) {
+//                         let frame = document.createElement("iframe");
+//                         frame.referrerPolicy = "origin";
+//                         frame.src = video_url;
+//                         frame.frameBorder = "0";
+//                         frame.style = "position:absolute;top:0;left:0;width:100%;height:100%;margin:0"
+//                         frame.allowFullscreen = "true";
+//                         frame.allow = "autoplay";
+//                         frame.id = "video-embed";
+//                         $('#livestream_Video').html(frame);
+//                     }
 
-                            $('#livestream_About_Speaker').html(about_speaker);
-                            $.jStorage.set('livestream_speakers', speakers, { TTL: cacheDuration });
-                        }
-                    });
+//                     if (isMobile()) {
+//                         $('#livestream_Chat').addClass('hidden');
+//                         $('#livestream_Chat_mobile').removeClass('hidden');
+//                         $('#livestream_Chat_mobile').html('<a href="' + livestream_link + '" target="_blank" class="red next btn rounded-btn">Chat with us on YouTube</a>');
+//                     } else {
+//                         $('#livestream_Chat').removeClass('hidden');
+//                         $('#livestream_Chat_mobile').addClass('hidden');
 
-                    $('#Livestream_Widget').addClass("in");
+//                         if (chat_frame[0] === undefined || (chat_frame[0] !== undefined && chat_frame[0].src !== chat_url)) {
+//                             frame = document.createElement("iframe");
+//                             frame.referrerPolicy = "origin";
+//                             frame.src = chat_url;
+//                             frame.frameBorder = "0";
+//                             frame.style = "width: 100%; height: 420px;"
+//                             frame.id = "chat-embed";
+//                             $('#livestream_Chat').html(frame);
+//                         }
+//                     }
 
-                    //render youtube subscribe button
-                    var container = $('#yt-button-container')[0];
-                    var yt_button = '<div class="g-ytsubscribe" data-channelid="UCBFgwtV9lIIhvoNh0xoQ7Pg"></div>';
-                    if (container.innerHTML === "") {
-                        container.innerHTML = yt_button;
-                        gapi.ytsubscribe.go(container);
-                    }
-                }
-            });
-        });
-    }
-}
+//                     if (survey_url === null || survey_url === '') {
+//                         $('#livestream_Survey_Url').attr('href', '/ssw/NETUG/EvaluationSurvey.aspx');
+//                     } else {
+//                         $('#livestream_Survey_Url').attr('href', survey_url);
+//                     }
 
-function isMobile() {
-    var isMobile = false; //initiate as false
-    // device detection
-    if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
-        || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
-        isMobile = true;
-    }
-    return isMobile;
-}
+//                     if (github_url === null || github_url === '') {
+//                         $('#livestream_GitHub').addClass('hidden');
+//                     } else {
+//                         $('#livestream_GitHub').removeClass('hidden');
+//                         $('#livestream_GitHub_Url').attr('href', github_url);
+//                     }
 
-function getExternalSpeaker(externalPresentersId) {
-    var oDataFilter = "$filter=Id eq " + externalPresentersId;
-    var result = $.Deferred();
+//                     $('#livestream_Image').attr('alt', title);
+//                     $('#livestream_Title').text(title);
 
-    $.ajax({
-        type: "GET", async: false, url: '/ssw/SharePointExternalSpeakersService.aspx?odataFilter=' + encodeURIComponent(oDataFilter), success: function (d) {
-            var data = $(d)[0];
 
-//            var presenterGitHubRepo = data[0]["PresenterGitHubRepo"];
+//                     if ( $('#livestream_talk_description').html() !== about_talk) {
+//                         $('#livestream_talk_description').html(about_talk);
+//                     }
 
-            result.resolve({
-                id: 'ext' + externalPresentersId,
-                photo_url: data["PresenterProfileImage"]["Url"],
-                name: data["Title"],
-                description: $.parseHTML(data["PresenterShortDescription"].toString())[0].innerText,
-                profile_url: data["PresenterProfileLink"],
-                profile_text: data["Title"] + "'s profile"
-            });
-        }
-    });
+//                     //TODO: include a foreach to run CRMDetails to each presenter from SharePoint
+//                     $.when(loadInternalSpeakers, loadExternalSpeakers).done(function (r1, r2) {
+//                         if ((r1 || r2) && ($('#livestream_About_Speaker').html().length <= 0 || speakers.every(r => stored_speaker.find(r1 => r1.id === r.id)) === false)) {
+//                             about_speaker = "";
+//                             speakers.forEach(function (s) {
+//                                 about_speaker += buildPresenterHTML(s);
+//                             });
 
-    return $.when(result).done(function (r) {
-        return r;
-    }).promise();
-}
+//                             $('#livestream_About_Speaker').html(about_speaker);
+//                             $.jStorage.set('livestream_speakers', speakers, { TTL: cacheDuration });
+//                         }
+//                     });
 
-function getPresenterCRMDetails(userEmail = '') {
-    if (userEmail === '') {
-        return;
-    }
+//                     $('#Livestream_Widget').addClass("in");
 
-    var result = $.Deferred();
+//                     //render youtube subscribe button
+//                     var container = $('#yt-button-container')[0];
+//                     var yt_button = '<div class="g-ytsubscribe" data-channelid="UCBFgwtV9lIIhvoNh0xoQ7Pg"></div>';
+//                     if (container.innerHTML === "") {
+//                         container.innerHTML = yt_button;
+//                         gapi.ytsubscribe.go(container);
+//                     }
+//                 }
+//             });
+//         });
+//     }
+// }
 
-    $.get('/ssw/CRMService.aspx?odata=' + encodeURIComponent(userEmail), function (d) {
-        var data = $(d)[0];
+// function isMobile() {
+//     var isMobile = false; //initiate as false
+//     // device detection
+//     if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+//         || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
+//         isMobile = true;
+//     }
+//     return isMobile;
+// }
 
-        result.resolve({
-            id: userEmail,
-            photo_url: data['PhotoURL'],
-            name: data['Nickname'] ? data['FirstName'] + ' (' + data['Nickname'] + ') ' + data['LastName'] : data['FirstName'] + ' ' + data['LastName'],
-            description: data['ShortDescription'],
-            profile_url: data['ProfileURL'],
-            profile_text: (data['Nickname'] || data['FirstName']) + "'s profile"
-        });
-    });
+// function getExternalSpeaker(externalPresentersId) {
+//     var oDataFilter = "$filter=Id eq " + externalPresentersId;
+//     var result = $.Deferred();
 
-    return $.when(result).done(function(r){
-        return r;
-    }).promise();
-}
+//     $.ajax({
+//         type: "GET", async: false, url: '/ssw/SharePointExternalSpeakersService.aspx?odataFilter=' + encodeURIComponent(oDataFilter), success: function (d) {
+//             var data = $(d)[0];
 
-function buildPresenterHTML(data) {
-    var html = null;
+// //            var presenterGitHubRepo = data[0]["PresenterGitHubRepo"];
 
-    html = '<div class="row" style="margin-bottom:1rem">';
-    html += '<div class="col-sm-2">';
-    html += '<img src="' + data.photo_url + '"/>';
-    html += '</div>';
-    html += '<div class="col-sm-9">';
-    html += '<p style="font-weight: bold;">' + data.name + '</p>';
-    html += '<p style="text-align:justify">' + data.description + '</p>';
-    if (data.profile_url !== null || data.profile_url !== "") {
-        html += '<a style="float:right;" href="' + data.profile_url + '">​​' + data.profile_text + '<i class="fas fa-chevron-right" style="padding-right:.5rem"></i></a>';
-    }
-    html += '</div>';
-    html += '</div>';
+//             result.resolve({
+//                 id: 'ext' + externalPresentersId,
+//                 photo_url: data["PresenterProfileImage"]["Url"],
+//                 name: data["Title"],
+//                 description: $.parseHTML(data["PresenterShortDescription"].toString())[0].innerText,
+//                 profile_url: data["PresenterProfileLink"],
+//                 profile_text: data["Title"] + "'s profile"
+//             });
+//         }
+//     });
 
-    return html;
-}
+//     return $.when(result).done(function (r) {
+//         return r;
+//     }).promise();
+// }
 
-$(document).ready(function () {
-    updateBannerInfo();
-});;
+// function getPresenterCRMDetails(userEmail = '') {
+//     if (userEmail === '') {
+//         return;
+//     }
+
+//     var result = $.Deferred();
+
+//     $.get('/ssw/CRMService.aspx?odata=' + encodeURIComponent(userEmail), function (d) {
+//         var data = $(d)[0];
+
+//         result.resolve({
+//             id: userEmail,
+//             photo_url: data['PhotoURL'],
+//             name: data['Nickname'] ? data['FirstName'] + ' (' + data['Nickname'] + ') ' + data['LastName'] : data['FirstName'] + ' ' + data['LastName'],
+//             description: data['ShortDescription'],
+//             profile_url: data['ProfileURL'],
+//             profile_text: (data['Nickname'] || data['FirstName']) + "'s profile"
+//         });
+//     });
+
+//     return $.when(result).done(function(r){
+//         return r;
+//     }).promise();
+// }
+
+// function buildPresenterHTML(data) {
+//     var html = null;
+
+//     html = '<div class="row" style="margin-bottom:1rem">';
+//     html += '<div class="col-sm-2">';
+//     html += '<img src="' + data.photo_url + '"/>';
+//     html += '</div>';
+//     html += '<div class="col-sm-9">';
+//     html += '<p style="font-weight: bold;">' + data.name + '</p>';
+//     html += '<p style="text-align:justify">' + data.description + '</p>';
+//     if (data.profile_url !== null || data.profile_url !== "") {
+//         html += '<a style="float:right;" href="' + data.profile_url + '">​​' + data.profile_text + '<i class="fas fa-chevron-right" style="padding-right:.5rem"></i></a>';
+//     }
+//     html += '</div>';
+//     html += '</div>';
+
+//     return html;
+// }
+
+// Remove fetch to get banner info
+// $(document).ready(function () {
+//     updateBannerInfo();
+// });;
 /*! nanoScrollerJS - v0.8.7 - (c) 2015 James Florentino; Licensed MIT */
 
 !function(a){return"function"==typeof define&&define.amd?define(["jquery"],function(b){return a(b,window,document)}):"object"==typeof exports?module.exports=a(require("jquery"),window,document):a(jQuery,window,document)}(function(a,b,c){"use strict";var d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H;z={paneClass:"nano-pane",sliderClass:"nano-slider",contentClass:"nano-content",enabledClass:"has-scrollbar",flashedClass:"flashed",activeClass:"active",iOSNativeScrolling:!1,preventPageScrolling:!1,disableResize:!1,alwaysVisible:!1,flashDelay:1500,sliderMinHeight:20,sliderMaxHeight:null,documentContext:null,windowContext:null},u="scrollbar",t="scroll",l="mousedown",m="mouseenter",n="mousemove",p="mousewheel",o="mouseup",s="resize",h="drag",i="enter",w="up",r="panedown",f="DOMMouseScroll",g="down",x="wheel",j="keydown",k="keyup",v="touchmove",d="Microsoft Internet Explorer"===b.navigator.appName&&/msie 7./i.test(b.navigator.appVersion)&&b.ActiveXObject,e=null,D=b.requestAnimationFrame,y=b.cancelAnimationFrame,F=c.createElement("div").style,H=function(){var a,b,c,d,e,f;for(d=["t","webkitT","MozT","msT","OT"],a=e=0,f=d.length;f>e;a=++e)if(c=d[a],b=d[a]+"ransform",b in F)return d[a].substr(0,d[a].length-1);return!1}(),G=function(a){return H===!1?!1:""===H?a:H+a.charAt(0).toUpperCase()+a.substr(1)},E=G("transform"),B=E!==!1,A=function(){var a,b,d;return a=c.createElement("div"),b=a.style,b.position="absolute",b.width="100px",b.height="100px",b.overflow=t,b.top="-9999px",c.body.appendChild(a),d=a.offsetWidth-a.clientWidth,c.body.removeChild(a),d},C=function(){var a,c,d;return c=b.navigator.userAgent,(a=/(?=.+Mac OS X)(?=.+Firefox)/.test(c))?(d=/Firefox\/\d{2}\./.exec(c),d&&(d=d[0].replace(/\D+/g,"")),a&&+d>23):!1},q=function(){function j(d,f){this.el=d,this.options=f,e||(e=A()),this.$el=a(this.el),this.doc=a(this.options.documentContext||c),this.win=a(this.options.windowContext||b),this.body=this.doc.find("body"),this.$content=this.$el.children("."+this.options.contentClass),this.$content.attr("tabindex",this.options.tabIndex||0),this.content=this.$content[0],this.previousPosition=0,this.options.iOSNativeScrolling&&null!=this.el.style.WebkitOverflowScrolling?this.nativeScrolling():this.generate(),this.createEvents(),this.addEvents(),this.reset()}return j.prototype.preventScrolling=function(a,b){if(this.isActive)if(a.type===f)(b===g&&a.originalEvent.detail>0||b===w&&a.originalEvent.detail<0)&&a.preventDefault();else if(a.type===p){if(!a.originalEvent||!a.originalEvent.wheelDelta)return;(b===g&&a.originalEvent.wheelDelta<0||b===w&&a.originalEvent.wheelDelta>0)&&a.preventDefault()}},j.prototype.nativeScrolling=function(){this.$content.css({WebkitOverflowScrolling:"touch"}),this.iOSNativeScrolling=!0,this.isActive=!0},j.prototype.updateScrollValues=function(){var a,b;a=this.content,this.maxScrollTop=a.scrollHeight-a.clientHeight,this.prevScrollTop=this.contentScrollTop||0,this.contentScrollTop=a.scrollTop,b=this.contentScrollTop>this.previousPosition?"down":this.contentScrollTop<this.previousPosition?"up":"same",this.previousPosition=this.contentScrollTop,"same"!==b&&this.$el.trigger("update",{position:this.contentScrollTop,maximum:this.maxScrollTop,direction:b}),this.iOSNativeScrolling||(this.maxSliderTop=this.paneHeight-this.sliderHeight,this.sliderTop=0===this.maxScrollTop?0:this.contentScrollTop*this.maxSliderTop/this.maxScrollTop)},j.prototype.setOnScrollStyles=function(){var a;B?(a={},a[E]="translate(0, "+this.sliderTop+"px)"):a={top:this.sliderTop},D?(y&&this.scrollRAF&&y(this.scrollRAF),this.scrollRAF=D(function(b){return function(){return b.scrollRAF=null,b.slider.css(a)}}(this))):this.slider.css(a)},j.prototype.createEvents=function(){this.events={down:function(a){return function(b){return a.isBeingDragged=!0,a.offsetY=b.pageY-a.slider.offset().top,a.slider.is(b.target)||(a.offsetY=0),a.pane.addClass(a.options.activeClass),a.doc.bind(n,a.events[h]).bind(o,a.events[w]),a.body.bind(m,a.events[i]),!1}}(this),drag:function(a){return function(b){return a.sliderY=b.pageY-a.$el.offset().top-a.paneTop-(a.offsetY||.5*a.sliderHeight),a.scroll(),a.contentScrollTop>=a.maxScrollTop&&a.prevScrollTop!==a.maxScrollTop?a.$el.trigger("scrollend"):0===a.contentScrollTop&&0!==a.prevScrollTop&&a.$el.trigger("scrolltop"),!1}}(this),up:function(a){return function(b){return a.isBeingDragged=!1,a.pane.removeClass(a.options.activeClass),a.doc.unbind(n,a.events[h]).unbind(o,a.events[w]),a.body.unbind(m,a.events[i]),!1}}(this),resize:function(a){return function(b){a.reset()}}(this),panedown:function(a){return function(b){return a.sliderY=(b.offsetY||b.originalEvent.layerY)-.5*a.sliderHeight,a.scroll(),a.events.down(b),!1}}(this),scroll:function(a){return function(b){a.updateScrollValues(),a.isBeingDragged||(a.iOSNativeScrolling||(a.sliderY=a.sliderTop,a.setOnScrollStyles()),null!=b&&(a.contentScrollTop>=a.maxScrollTop?(a.options.preventPageScrolling&&a.preventScrolling(b,g),a.prevScrollTop!==a.maxScrollTop&&a.$el.trigger("scrollend")):0===a.contentScrollTop&&(a.options.preventPageScrolling&&a.preventScrolling(b,w),0!==a.prevScrollTop&&a.$el.trigger("scrolltop"))))}}(this),wheel:function(a){return function(b){var c;if(null!=b)return c=b.delta||b.wheelDelta||b.originalEvent&&b.originalEvent.wheelDelta||-b.detail||b.originalEvent&&-b.originalEvent.detail,c&&(a.sliderY+=-c/3),a.scroll(),!1}}(this),enter:function(a){return function(b){var c;if(a.isBeingDragged)return 1!==(b.buttons||b.which)?(c=a.events)[w].apply(c,arguments):void 0}}(this)}},j.prototype.addEvents=function(){var a;this.removeEvents(),a=this.events,this.options.disableResize||this.win.bind(s,a[s]),this.iOSNativeScrolling||(this.slider.bind(l,a[g]),this.pane.bind(l,a[r]).bind(""+p+" "+f,a[x])),this.$content.bind(""+t+" "+p+" "+f+" "+v,a[t])},j.prototype.removeEvents=function(){var a;a=this.events,this.win.unbind(s,a[s]),this.iOSNativeScrolling||(this.slider.unbind(),this.pane.unbind()),this.$content.unbind(""+t+" "+p+" "+f+" "+v,a[t])},j.prototype.generate=function(){var a,c,d,f,g,h,i;return f=this.options,h=f.paneClass,i=f.sliderClass,a=f.contentClass,(g=this.$el.children("."+h)).length||g.children("."+i).length||this.$el.append('<div class="'+h+'"><div class="'+i+'" /></div>'),this.pane=this.$el.children("."+h),this.slider=this.pane.find("."+i),0===e&&C()?(d=b.getComputedStyle(this.content,null).getPropertyValue("padding-right").replace(/[^0-9.]+/g,""),c={right:-14,paddingRight:+d+14}):e&&(c={right:-e},this.$el.addClass(f.enabledClass)),null!=c&&this.$content.css(c),this},j.prototype.restore=function(){this.stopped=!1,this.iOSNativeScrolling||this.pane.show(),this.addEvents()},j.prototype.reset=function(){var a,b,c,f,g,h,i,j,k,l,m,n;return this.iOSNativeScrolling?void(this.contentHeight=this.content.scrollHeight):(this.$el.find("."+this.options.paneClass).length||this.generate().stop(),this.stopped&&this.restore(),a=this.content,f=a.style,g=f.overflowY,d&&this.$content.css({height:this.$content.height()}),b=a.scrollHeight+e,l=parseInt(this.$el.css("max-height"),10),l>0&&(this.$el.height(""),this.$el.height(a.scrollHeight>l?l:a.scrollHeight)),i=this.pane.outerHeight(!1),k=parseInt(this.pane.css("top"),10),h=parseInt(this.pane.css("bottom"),10),j=i+k+h,n=Math.round(j/b*i),n<this.options.sliderMinHeight?n=this.options.sliderMinHeight:null!=this.options.sliderMaxHeight&&n>this.options.sliderMaxHeight&&(n=this.options.sliderMaxHeight),g===t&&f.overflowX!==t&&(n+=e),this.maxSliderTop=j-n,this.contentHeight=b,this.paneHeight=i,this.paneOuterHeight=j,this.sliderHeight=n,this.paneTop=k,this.slider.height(n),this.events.scroll(),this.pane.show(),this.isActive=!0,a.scrollHeight===a.clientHeight||this.pane.outerHeight(!0)>=a.scrollHeight&&g!==t?(this.pane.hide(),this.isActive=!1):this.el.clientHeight===a.scrollHeight&&g===t?this.slider.hide():this.slider.show(),this.pane.css({opacity:this.options.alwaysVisible?1:"",visibility:this.options.alwaysVisible?"visible":""}),c=this.$content.css("position"),("static"===c||"relative"===c)&&(m=parseInt(this.$content.css("right"),10),m&&this.$content.css({right:"",marginRight:m})),this)},j.prototype.scroll=function(){return this.isActive?(this.sliderY=Math.max(0,this.sliderY),this.sliderY=Math.min(this.maxSliderTop,this.sliderY),this.$content.scrollTop(this.maxScrollTop*this.sliderY/this.maxSliderTop),this.iOSNativeScrolling||(this.updateScrollValues(),this.setOnScrollStyles()),this):void 0},j.prototype.scrollBottom=function(a){return this.isActive?(this.$content.scrollTop(this.contentHeight-this.$content.height()-a).trigger(p),this.stop().restore(),this):void 0},j.prototype.scrollTop=function(a){return this.isActive?(this.$content.scrollTop(+a).trigger(p),this.stop().restore(),this):void 0},j.prototype.scrollTo=function(a){return this.isActive?(this.scrollTop(this.$el.find(a).get(0).offsetTop),this):void 0},j.prototype.stop=function(){return y&&this.scrollRAF&&(y(this.scrollRAF),this.scrollRAF=null),this.stopped=!0,this.removeEvents(),this.iOSNativeScrolling||this.pane.hide(),this},j.prototype.destroy=function(){return this.stopped||this.stop(),!this.iOSNativeScrolling&&this.pane.length&&this.pane.remove(),d&&this.$content.height(""),this.$content.removeAttr("tabindex"),this.$el.hasClass(this.options.enabledClass)&&(this.$el.removeClass(this.options.enabledClass),this.$content.css({right:""})),this},j.prototype.flash=function(){return!this.iOSNativeScrolling&&this.isActive?(this.reset(),this.pane.addClass(this.options.flashedClass),setTimeout(function(a){return function(){a.pane.removeClass(a.options.flashedClass)}}(this),this.options.flashDelay),this):void 0},j}(),a.fn.nanoScroller=function(b){return this.each(function(){var c,d;if((d=this.nanoscroller)||(c=a.extend({},z,b),this.nanoscroller=d=new q(this,c)),b&&"object"==typeof b){if(a.extend(d.options,b),null!=b.scrollBottom)return d.scrollBottom(b.scrollBottom);if(null!=b.scrollTop)return d.scrollTop(b.scrollTop);if(b.scrollTo)return d.scrollTo(b.scrollTo);if("bottom"===b.scroll)return d.scrollBottom(0);if("top"===b.scroll)return d.scrollTop(0);if(b.scroll&&b.scroll instanceof a)return d.scrollTo(b.scroll);if(b.stop)return d.stop();if(b.destroy)return d.destroy();if(b.flash)return d.flash()}return d.reset()})},a.fn.nanoScroller.Constructor=q});
@@ -2653,27 +2654,22 @@ $(document).on("DetectServiceComplete",
 
     });
 
-$(document).on("DetectServiceComplete",
-    function (event, service) {
-        if (service.name === "google" && service.successful) {
-            //console.log("init google tag manager");
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || []; w[l].push({
-                    'gtm.start':
-                        new Date().getTime(), event: "gtm.js"
-                }); var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l !== "dataLayer" ? "&l=" + l : ""; j.async = true; j.src =
-                        "//www.googletagmanager.com/gtm.js?id=" + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-NXDBVV");
-        }
-    });
+// $(document).on("DetectServiceComplete",
+//     function (event, service) {
+//         if (service.name === "google" && service.successful) {
+//             //console.log("init google tag manager");
+//             (function (w, d, s, l, i) {
+//                 w[l] = w[l] || []; w[l].push({
+//                     'gtm.start':
+//                         new Date().getTime(), event: "gtm.js"
+//                 }); var f = d.getElementsByTagName(s)[0],
+//                     j = d.createElement(s), dl = l !== "dataLayer" ? "&l=" + l : ""; j.async = true; j.src =
+//                         "//www.googletagmanager.com/gtm.js?id=" + i + dl; f.parentNode.insertBefore(j, f);
+//             })(window, document, "script", "dataLayer", "GTM-NXDBVV");
+//         }
+//     });
 
 
 
 //adding this method to the global namespace before tracking everypage is using it
 var toggle_visibility = SSW.toggleVisibility;
-
-
-
-
-;
