@@ -181,70 +181,105 @@ def add_archive_header(soup, url):
 
     return soup
 
+def output_index_page(file_list: list[str], path: str):
+
+    if len(file_list) <= 0:
+        return
+
+    buf = """<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Pages</title>
+</head>
+<body>
+    <h1>Training Pages</h1>
+    <ul>
+"""
+    for file in file_list:
+        buf += (f"      <li><a href='{file}'>{file}</a></li>\n")
+
+    buf += """
+    </ul>
+</body>
+</html>
+"""
+    with open(os.path.join(path, "index.html"), "w") as f:
+        f.write(buf)
+
+
+def output_sitemap(path: str):
+    # TODO: Output sitemap
+    pass
 
 def archive_pages(path: str) -> None:
+    items_written = []
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
+        split_path = item_path.split("\\")
 
-        if os.path.isdir(item_path):
+        if os.path.isdir(item_path) and split_path[1] in WHITELIST:
             archive_pages(item_path)
+            output_sitemap(item_path)
 
-        elif os.path.isfile(item_path) and item_path.endswith(".aspx"):
-            split_path = item_path.split("\\")
-            if (not split_path[-1].startswith("zz")) and split_path[1] in WHITELIST:
-                if split_path[-1].startswith("za"):
-                    split_path[-1] = split_path[-1][2:]
+        elif os.path.isfile(item_path) and item_path.endswith(".aspx") and not split_path[-1].startswith("zz") and split_path[1] in WHITELIST:
+            if split_path[-1].startswith("za"):
+                split_path[-1] = split_path[-1][2:]
 
-                uri = "/".join(split_path[1:])
-                url = SSW_URL + "/ssw/" + uri
-                driver.get(url)
+            uri = "/".join(split_path[1:])
+            url = SSW_URL + "/ssw/" + uri
+            driver.get(url)
 
-                if driver.current_url != url:
-                    print("Redirect: " + url + " -> " + driver.current_url)
-                    new_path_split = item_path.split("\\")
-                    new_path_split[-1] = "zr" + new_path_split[-1]
-                    os.rename(item_path, "/".join(new_path_split))
-                    continue
-
-                soup = BeautifulSoup(driver.page_source, "lxml")
-
-                for element in soup(["script", "iframe"]):
-                    if element.get("src") is not None:
-                        if "javascript_bundles/ssw_pigeon" in element["src"]:
-                            element["src"] = "/history/ssw_pigeon.js"
-                            continue
-                        elif "javascript_bundles/jquery" in element["src"]:
-                            element["src"] = "/history/jquery.js"
-                            continue
-                        elif "javascript_bundles/moment" in element["src"]:
-                            element["src"] = "/history/moment.js"
-                            continue
-                        # TODO: Fix as was removed as was causing errors with images, will not be responsive
-                        # elif "dist/menu.js" in element["src"]:
-                        #     element["src"] = "/history/menu.js"
-                        #     continue
-                    element.extract()
-
-                base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
-                soup = fix_images(soup, base_path)
-                soup = fix_css(soup, base_path)
-
-                soup = add_archive_header(soup, url)
-
-                page_source = str(soup)
-
-                dir = "/".join(split_path[1:-1])
-                if not os.path.exists(PARENT_DIR + dir):
-                    os.makedirs(PARENT_DIR + dir)
-                with open(PARENT_DIR + uri + ".html", "w+", encoding="utf-8") as f:
-                    f.write(page_source)
-
+            if driver.current_url != url:
+                print("Redirect: " + url + " -> " + driver.current_url)
                 new_path_split = item_path.split("\\")
+                new_path_split[-1] = "zr" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
+                continue
 
-                if not new_path_split[-1].startswith("za"):
-                    new_path_split[-1] = "za" + new_path_split[-1]
-                    os.rename(item_path, "/".join(new_path_split))
+            soup = BeautifulSoup(driver.page_source, "lxml")
 
+            for element in soup(["script", "iframe"]):
+                if element.get("src") is not None:
+                    if "javascript_bundles/ssw_pigeon" in element["src"]:
+                        element["src"] = "/history/ssw_pigeon.js"
+                        continue
+                    elif "javascript_bundles/jquery" in element["src"]:
+                        element["src"] = "/history/jquery.js"
+                        continue
+                    elif "javascript_bundles/moment" in element["src"]:
+                        element["src"] = "/history/moment.js"
+                        continue
+                    # TODO: Fix as was removed as was causing errors with images, will not be responsive
+                    # elif "dist/menu.js" in element["src"]:
+                    #     element["src"] = "/history/menu.js"
+                    #     continue
+                element.extract()
+
+            base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
+            soup = fix_images(soup, base_path)
+            soup = fix_css(soup, base_path)
+
+            soup = add_archive_header(soup, url)
+
+            page_source = str(soup)
+
+            dir = "/".join(split_path[1:-1])
+            if not os.path.exists(PARENT_DIR + dir):
+                os.makedirs(PARENT_DIR + dir)
+
+            output_filename = PARENT_DIR + uri + ".html"
+            with open(output_filename, "w+", encoding="utf-8") as f:
+                f.write(page_source)
+                items_written.append(output_filename)
+
+            new_path_split = item_path.split("\\")
+
+            if not new_path_split[-1].startswith("za"):
+                new_path_split[-1] = "za" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
+
+    output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
+    output_index_page(items_written, output_path)
 
 if __name__ == "__main__":
     archive_pages("SSW.Website.WebUI")
