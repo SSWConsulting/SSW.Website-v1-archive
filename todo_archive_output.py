@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import requests
 from bs4 import BeautifulSoup
+import re
 
 # TODO: eXtremeEmails
 WHITELIST = [
@@ -45,6 +46,8 @@ driver = webdriver.Chrome(service=service)
 PARENT_DIR = "history/"
 SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
+SSW_REGEX = "((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
+SSW_V1_REGEX = "((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
 
 
 def download_image(src, path):
@@ -137,6 +140,18 @@ def fix_css(soup, path):
 
     return soup
 
+def fix_links(soup): 
+    links = soup.find_all("a", href=True)
+    for link in links:
+        if link is None:
+            continue
+        href = link["href"]
+
+        if not re.match(SSW_V1_REGEX, href):
+            continue
+        
+        print("/history/" + re.sub(SSW_V1_REGEX, "", href))
+    return soup
 
 def add_archive_header(soup, url):
     archive_div = soup.new_tag("div")
@@ -258,6 +273,7 @@ def archive_pages(path: str) -> None:
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
+            soup = fix_links(soup)
 
             soup = add_archive_header(soup, url)
 
