@@ -27,13 +27,17 @@ WHITELIST = [
     # "SQLTotalCompare",
     # "Standards",
     # TODO: "StandardsInternal",
-    # "Training",
+    "Training",
     # "TeamCalendar",
     # "UpsizingPRO",
-    "WebPager"
+    # "WebPager"
     # "NETUG",
     # "WisePRO","
 ]
+
+IMAGE_REPLACEMENTS = {
+    "adam_thumb.jpg": "https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg"
+}
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
@@ -86,6 +90,13 @@ def download_image(src, path):
 def fix_images(soup, path):
     images = soup.find_all("img")
     for image in images:
+
+        # Replace broken images with the correct URLs if possible
+        for key in IMAGE_REPLACEMENTS:
+            if image["src"].endswith(key):
+                image["src"] = IMAGE_REPLACEMENTS[key]
+
+        # Skip images that are not hosted on SSW + are not .axd files
         src = image["src"]
         if (
             src is None
@@ -94,6 +105,7 @@ def fix_images(soup, path):
         ):
             continue
 
+        # Set the image src to the downloaded image's path
         image["src"] = download_image(src, path)
 
     return soup
@@ -101,7 +113,9 @@ def fix_images(soup, path):
 
 def fix_css(soup, path):
     links = soup.find_all("link")
-    css_files = os.listdir("C:\\Users\\hazro\\code\\ssw\\SSW.Website-v1-Progress\\history\\css")
+    css_files = os.listdir(
+        "C:\\Users\\hazro\\code\\ssw\\SSW.Website-v1-Progress\\history\\css"
+    )
 
     for link in links:
         if link["rel"] == ["stylesheet"]:
@@ -112,7 +126,7 @@ def fix_css(soup, path):
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
-            for css_file in css_files: 
+            for css_file in css_files:
                 if css_file in href:
                     link["href"] = "/history/css/" + css_file
         elif link["rel"] == ["icon"]:
@@ -124,16 +138,63 @@ def fix_css(soup, path):
     return soup
 
 
-def output_csv(path: str) -> None:
+def add_archive_header(soup, url):
+    archive_div = soup.new_tag("div")
+
+    attention_span = soup.new_tag("div")
+    attention_span.string = "ATTENTION"
+    attention_span["style"] = "color: #cc4141; font-size: 24px; font-weight: 600;"
+
+    archive_div.append(attention_span)
+
+    content_p = soup.new_tag("p")
+
+    content_p.append(" This is an archived page originally from " + url)
+    content_p.append(" and is no longer maintained. Some links may not work and information may be out of date. Please navigate to ")
+
+    new_link = soup.new_tag("a", href="https://www.ssw.com.au/events", style="color: #999")
+    new_link.append("ssw.com.au/events")
+
+    content_p.append(new_link)
+    content_p.append(" for updated information.")
+
+    archive_div.append(content_p)
+
+    archive_div[
+        "style"
+    ] = """
+        text-align: center; 
+        font-size: 1.125rem; 
+        color: #999; 
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    """
+
+    primary_container = soup.find("div", {"class": "primaryContainer"})
+    if primary_container is None:
+        soup.body.insert(0, archive_div)
+    else: 
+        primary_container.insert(0, archive_div)
+
+    return soup
+
+
+def archive_pages(path: str) -> None:
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
 
         if os.path.isdir(item_path):
-            output_csv(item_path)
+            archive_pages(item_path)
 
         elif os.path.isfile(item_path) and item_path.endswith(".aspx"):
             split_path = item_path.split("\\")
             if (not split_path[-1].startswith("zz")) and split_path[1] in WHITELIST:
+                if split_path[-1].startswith("za"):
+                    split_path[-1] = split_path[-1][2:]
+
                 uri = "/".join(split_path[1:])
                 url = SSW_URL + "/ssw/" + uri
                 driver.get(url)
@@ -168,6 +229,8 @@ def output_csv(path: str) -> None:
                 soup = fix_images(soup, base_path)
                 soup = fix_css(soup, base_path)
 
+                soup = add_archive_header(soup, url)
+
                 page_source = str(soup)
 
                 dir = "/".join(split_path[1:-1])
@@ -176,8 +239,7 @@ def output_csv(path: str) -> None:
                 with open(PARENT_DIR + uri + ".html", "w+", encoding="utf-8") as f:
                     f.write(page_source)
 
-                
-                new_path_split = item_path.split("\\")               
+                new_path_split = item_path.split("\\")
 
                 if not new_path_split[-1].startswith("za"):
                     new_path_split[-1] = "za" + new_path_split[-1]
@@ -185,4 +247,4 @@ def output_csv(path: str) -> None:
 
 
 if __name__ == "__main__":
-    output_csv("SSW.Website.WebUI")
+    archive_pages("SSW.Website.WebUI")
