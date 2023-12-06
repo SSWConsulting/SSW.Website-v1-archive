@@ -149,8 +149,11 @@ def fix_links(soup):
 
         if not re.match(SSW_V1_REGEX, href):
             continue
-        
-        print("/history/" + re.sub(SSW_V1_REGEX, "", href))
+
+        if href.endswith("Training/Default.aspx"):
+            link["href"] = "index.html"
+        elif href.endswith("Training/Courses.aspx"):
+            link["href"] = "https://www.ssw.com.au/events"
     return soup
 
 def add_archive_header(soup, url):
@@ -188,11 +191,7 @@ def add_archive_header(soup, url):
         padding-left: 0.75rem;
     """
 
-    primary_container = soup.find("div", {"class": "primaryContainer"})
-    if primary_container is None:
-        soup.body.insert(0, archive_div)
-    else: 
-        primary_container.insert(0, archive_div)
+    soup.body.insert(0, archive_div)
 
     return soup
 
@@ -223,7 +222,7 @@ def output_index_page(file_list: list[str], path: str):
 
 
 def output_sitemap(path: str):
-    # TODO: Output sitemap
+    # TODO: Output sitemap - use Pandas https://www.jcchouinard.com/create-xml-sitemap-with-python/
     pass
 
 def archive_pages(path: str) -> None:
