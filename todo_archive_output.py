@@ -150,6 +150,7 @@ def fix_links(soup):
         if not re.match(SSW_V1_REGEX, href):
             continue
 
+        # These if statements are only to fix the breadcrumbs links on Training pages
         if href.endswith("Training/Default.aspx"):
             link["href"] = "index.html"
         elif href.endswith("Training/Courses.aspx"):
