@@ -103,9 +103,13 @@ def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
         src = image["src"]
         if (
             src is None
-            or src.endswith(".axd")
             or (src.startswith("http") and not src.startswith(SSW_URL))
         ):
+            continue
+
+        # Added to remove .axd files from the HTML doc as they are not images
+        if '.axd' in src:
+            image.extract()
             continue
 
         # Set the image src to the downloaded image's path
@@ -125,13 +129,16 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             href = link["href"]
             if href is None:
                 continue
+        
             if "ssw_raven_print" in href:
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
+
             for css_file in css_files:
                 if css_file in href:
                     link["href"] = "/history/css/" + css_file
+            
         elif link["rel"] == ["icon"]:
             href = link["href"]
             if href is None:
@@ -147,6 +154,7 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             continue
         href = link["href"]
 
+        # If it's not on the v1 site, skip it
         if not re.match(SSW_V1_REGEX, href):
             continue
 
@@ -155,6 +163,13 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             link["href"] = "index.html"
         elif href.endswith("Training/Courses.aspx"):
             link["href"] = "https://www.ssw.com.au/events"
+
+        # Direct book now buttons to the new book now page
+        inner_text = link.get_text()
+        if inner_text is not None and 'book now' in inner_text.lower() and '/shop/' in href.lower():
+            link["href"] = "https://www.ssw.com.au/booknow"
+
+        # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
 
 def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
@@ -292,6 +307,7 @@ def archive_pages(path: str) -> None:
             if not os.path.exists(PARENT_DIR + dir):
                 os.makedirs(PARENT_DIR + dir)
 
+            # Filename with .aspx removed
             output_filename = PARENT_DIR + uri.replace(".aspx", "") + ".html"
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
@@ -299,6 +315,7 @@ def archive_pages(path: str) -> None:
 
             new_path_split = item_path.split("\\")
 
+            # If the file has not been archived before, add za to the start of the filename
             if not new_path_split[-1].startswith("za"):
                 new_path_split[-1] = "za" + new_path_split[-1]
                 os.rename(item_path, "/".join(new_path_split))
