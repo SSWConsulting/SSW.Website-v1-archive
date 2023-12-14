@@ -66,7 +66,7 @@ def download_image(src: str, path: str) -> str:
     split_src = src.split("/")
     image_name = split_src[-1]
 
-    image_path = PARENT_DIR + "/".join(split_src[offset:-1])
+    image_path = (PARENT_DIR + "/".join(split_src[offset:-1])).lower()
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
@@ -83,7 +83,7 @@ def download_image(src: str, path: str) -> str:
         print("Failed: " + request_path)
         return ""
 
-    with open(store_path, "wb") as f:
+    with open(store_path.lower(), "wb") as f:
         f.write(img_data)
 
     output_src = ("/" + PARENT_DIR + "/".join(split_src[offset:])).replace("//", "/")
@@ -304,11 +304,12 @@ def archive_pages(path: str) -> None:
             page_source = soup.prettify()
 
             dir = "/".join(split_path[1:-1])
-            if not os.path.exists(PARENT_DIR + dir):
-                os.makedirs(PARENT_DIR + dir)
+            output_dir = (PARENT_DIR + dir).lower()
+            if not os.path.exists(output_dir):
+                os.makedirs(output_dir)
 
             # Filename with .aspx removed
-            output_filename = PARENT_DIR + uri.replace(".aspx", "") + ".html"
+            output_filename = (PARENT_DIR + uri.replace(".aspx", "") + ".html").lower()
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
                 items_written.append(output_filename)
