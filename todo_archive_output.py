@@ -102,6 +102,7 @@ def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
     return soup
 
 def download_image(src: str, path: str) -> str:
+    # TODO: Change to Regex
     # This offset thing is done because we split by slash
     # imagine the offset for: https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg
     # where the split would return: [https:, , www.ssw.com.au, ssw, Events, Training, Images, adam_thumb.jpg]
