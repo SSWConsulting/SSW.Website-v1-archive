@@ -1,5 +1,6 @@
 {
   "python.analysis.typeCheckingMode": "basic",
   "livePreview.autoRefreshPreview": "Never",
+  "livePreview.portNumber": 4000,
   "editor.tabSize": 4
 }
