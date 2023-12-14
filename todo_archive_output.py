@@ -133,7 +133,7 @@ def download_image(src: str, path: str) -> str:
     img_res = requests.get(request_path)
     img_data = img_res.content
 
-    store_path = (image_path + "/" + image_name).replace("//", "/")
+    store_path = (image_path + "/" + image_name).replace("//", "/").lower()
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
@@ -142,11 +142,10 @@ def download_image(src: str, path: str) -> str:
         print("Failed: " + request_path)
         return ""
 
-    with open(store_path.lower(), "wb") as f:
+    with open(store_path, "wb") as f:
         f.write(img_data)
 
-    output_src = ("/" + PARENT_DIR + "/".join(split_src[offset:])).replace("//", "/")
-    return output_src
+    return "/" + store_path
 
 
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
