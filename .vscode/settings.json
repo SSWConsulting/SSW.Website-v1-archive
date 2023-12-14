@@ -1,4 +1,5 @@
 {
   "python.analysis.typeCheckingMode": "basic",
   "livePreview.autoRefreshPreview": "Never",
+  "editor.tabSize": 4
 }

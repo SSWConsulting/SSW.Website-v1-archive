@@ -1,10 +1,10 @@
 import os
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 import requests
 from bs4 import BeautifulSoup
 import re
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 
 # TODO: eXtremeEmails
 WHITELIST = [
@@ -40,17 +40,17 @@ IMAGE_REPLACEMENTS = {
     "adam_thumb.jpg": "https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg"
 }
 
-service = Service("C:\\selenium\\chromedriver.exe")
-driver = webdriver.Chrome(service=service)
-
 PARENT_DIR = "history/"
 SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
-SSW_REGEX = "((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
-SSW_V1_REGEX = "((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
+SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
+SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
+
+service = Service("C:\\selenium\\chromedriver.exe")
+driver = webdriver.Chrome(service=service)
 
 
-def download_image(src, path):
+def download_image(src: str, path: str) -> str:
     offset = 2
     base_url = ""
     if src.startswith(SSW_URL):
@@ -90,7 +90,7 @@ def download_image(src, path):
     return output_src
 
 
-def fix_images(soup, path):
+def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
     images = soup.find_all("img")
     for image in images:
 
@@ -114,7 +114,7 @@ def fix_images(soup, path):
     return soup
 
 
-def fix_css(soup, path):
+def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
     links = soup.find_all("link")
     css_files = os.listdir(
         "C:\\Users\\hazro\\code\\ssw\\SSW.Website-v1-Progress\\history\\css"
@@ -140,7 +140,7 @@ def fix_css(soup, path):
 
     return soup
 
-def fix_links(soup): 
+def fix_links(soup: BeautifulSoup) -> BeautifulSoup: 
     links = soup.find_all("a", href=True)
     for link in links:
         if link is None:
@@ -157,7 +157,7 @@ def fix_links(soup):
             link["href"] = "https://www.ssw.com.au/events"
     return soup
 
-def add_archive_header(soup, url):
+def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     archive_div = soup.new_tag("div")
 
     attention_span = soup.new_tag("div")
@@ -192,7 +192,8 @@ def add_archive_header(soup, url):
         padding-left: 0.75rem;
     """
 
-    soup.body.insert(0, archive_div)
+    if soup.body is not None:
+        soup.body.insert(0, archive_div)
 
     return soup
 
@@ -211,7 +212,7 @@ def output_index_page(file_list: list[str], path: str):
     <ul>
 """
     for file in file_list:
-        buf += (f"      <li><a href='{file}'>{file}</a></li>\n")
+        buf += (f"      <li><a href='/{file}'>{file}</a></li>\n")
 
     buf += """
     </ul>
@@ -222,28 +223,31 @@ def output_index_page(file_list: list[str], path: str):
         f.write(buf)
 
 
-def output_sitemap(path: str):
-    # TODO: Output sitemap - use Pandas https://www.jcchouinard.com/create-xml-sitemap-with-python/
-    pass
-
 def archive_pages(path: str) -> None:
     items_written = []
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
         split_path = item_path.split("\\")
 
+        # Recursively call archive_pages on subdirectories
         if os.path.isdir(item_path) and split_path[1] in WHITELIST:
             archive_pages(item_path)
-            output_sitemap(item_path)
 
+        # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
         elif os.path.isfile(item_path) and item_path.endswith(".aspx") and not split_path[-1].startswith("zz") and split_path[1] in WHITELIST:
+            # If it starts with za (means it has been archived before), remove the za
             if split_path[-1].startswith("za"):
                 split_path[-1] = split_path[-1][2:]
 
+            # URI on the v1 website e.g. Training/Default.aspx
             uri = "/".join(split_path[1:])
+            # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
             url = SSW_URL + "/ssw/" + uri
             driver.get(url)
 
+            # If the page has been redirected, rename the file to start with zr
+            # Redirect checking as per https://stackoverflow.com/a/13482990
+            # if len(req.history) > 0:
             if driver.current_url != url:
                 print("Redirect: " + url + " -> " + driver.current_url)
                 new_path_split = item_path.split("\\")
@@ -251,10 +255,13 @@ def archive_pages(path: str) -> None:
                 os.rename(item_path, "/".join(new_path_split))
                 continue
 
+            # Parse HTML content
             soup = BeautifulSoup(driver.page_source, "lxml")
 
+            # Remove most scripts and iframes
             for element in soup(["script", "iframe"]):
                 if element.get("src") is not None:
+                    # If the script is a common script, replace it with the local version
                     if "javascript_bundles/ssw_pigeon" in element["src"]:
                         element["src"] = "/history/ssw_pigeon.js"
                         continue
@@ -268,22 +275,24 @@ def archive_pages(path: str) -> None:
                     # elif "dist/menu.js" in element["src"]:
                     #     element["src"] = "/history/menu.js"
                     #     continue
+                # Removes the script tag
                 element.extract()
 
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
+
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
             soup = fix_links(soup)
 
             soup = add_archive_header(soup, url)
 
-            page_source = str(soup)
+            page_source = soup.prettify()
 
             dir = "/".join(split_path[1:-1])
             if not os.path.exists(PARENT_DIR + dir):
                 os.makedirs(PARENT_DIR + dir)
 
-            output_filename = PARENT_DIR + uri + ".html"
+            output_filename = PARENT_DIR + uri.replace(".aspx", "") + ".html"
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
                 items_written.append(output_filename)
