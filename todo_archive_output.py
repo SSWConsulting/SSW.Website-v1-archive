@@ -50,44 +50,28 @@ service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
 
-def download_image(src: str, path: str) -> str:
-    offset = 2
-    base_url = ""
-    if src.startswith(SSW_URL):
-        offset = 4
-    elif src.lower().startswith("/ssw"):
-        base_url = SSW_URL
-        offset = 2
-    elif not src.startswith("/") and not src.startswith("http"):
-        base_url = path + "/"
-        offset = 0
+def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
+    # Remove most scripts and iframes
+    for element in soup(["script", "iframe"]):
+        if element.get("src") is not None:
+            # If the script is a common script, replace it with the local version
+            if "javascript_bundles/ssw_pigeon" in element["src"]:
+                element["src"] = "/history/ssw_pigeon.js"
+                continue
+            elif "javascript_bundles/jquery" in element["src"]:
+                element["src"] = "/history/jquery.js"
+                continue
+            elif "javascript_bundles/moment" in element["src"]:
+                element["src"] = "/history/moment.js"
+                continue
+            # TODO: Fix as was removed as was causing errors with images, will not be responsive
+            # elif "dist/menu.js" in element["src"]:
+            #     element["src"] = "/history/menu.js"
+            #     continue
+        # Removes the script tag
+        element.extract()
 
-    src = src.split("?")[0]
-    split_src = src.split("/")
-    image_name = split_src[-1]
-
-    image_path = (PARENT_DIR + "/".join(split_src[offset:-1])).lower()
-    if not os.path.exists(image_path):
-        os.makedirs(image_path)
-
-    request_path = (base_url + src).strip()
-    img_res = requests.get(request_path)
-    img_data = img_res.content
-
-    store_path = (image_path + "/" + image_name).replace("//", "/")
-
-    if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
-        print("404 - " + request_path)
-
-    if img_res.status_code != 200:
-        print("Failed: " + request_path)
-        return ""
-
-    with open(store_path.lower(), "wb") as f:
-        f.write(img_data)
-
-    output_src = ("/" + PARENT_DIR + "/".join(split_src[offset:])).replace("//", "/")
-    return output_src
+    return soup
 
 
 def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
@@ -116,6 +100,52 @@ def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
         image["src"] = download_image(src, path)
 
     return soup
+
+def download_image(src: str, path: str) -> str:
+    # This offset thing is done because we split by slash
+    # imagine the offset for: https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg
+    # where the split would return: [https:, , www.ssw.com.au, ssw, Events, Training, Images, adam_thumb.jpg]
+    # and the offset would be 4
+    # so the array with an offset of 4 would be [Events, Training, Images, adam_thumb.jpg]
+    offset = 2
+    base_url = ""
+    if src.startswith(SSW_URL):
+        offset = 4
+    elif src.lower().startswith("/ssw"):
+        base_url = SSW_URL
+        offset = 2
+    elif not src.startswith("/") and not src.startswith("http"):
+        base_url = path + "/"
+        offset = 0
+
+    src = src.split("?")[0]
+    split_src = src.split("/")
+
+    
+    image_name = split_src[-1]
+
+    image_path = (PARENT_DIR + "/".join(split_src[offset:-1])).lower()
+    if not os.path.exists(image_path):
+        os.makedirs(image_path)
+
+    request_path = (base_url + src).strip()
+    img_res = requests.get(request_path)
+    img_data = img_res.content
+
+    store_path = (image_path + "/" + image_name).replace("//", "/")
+
+    if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
+        print("404 - " + request_path)
+
+    if img_res.status_code != 200:
+        print("Failed: " + request_path)
+        return ""
+
+    with open(store_path.lower(), "wb") as f:
+        f.write(img_data)
+
+    output_src = ("/" + PARENT_DIR + "/".join(split_src[offset:])).replace("//", "/")
+    return output_src
 
 
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
@@ -172,6 +202,13 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
 
+def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
+    # Change the canonical to the new URL
+    for i in soup.find_all('link', rel='canonical'):
+        i["href"] = i["href"].replace("/ssw/", "/history/")
+
+    return soup
+
 def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     archive_div = soup.new_tag("div")
 
@@ -212,7 +249,7 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
 
     return soup
 
-def output_index_page(file_list: list[str], path: str):
+def output_index_page(file_list: dict[str, str], path: str):
 
     if len(file_list) <= 0:
         return
@@ -221,16 +258,34 @@ def output_index_page(file_list: list[str], path: str):
 <html>
 <head>
     <title>Training Pages</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Training Pages</h1>
-    <ul>
-"""
+    <table>
+        <tr>
+            <th>Old URL</th>
+            <th>New URL</th>
+        </tr>"""
+
     for file in file_list:
-        buf += (f"      <li><a href='/{file}'>{file}</a></li>\n")
+        buf += f"""      
+        <tr>
+            <td><a href='{file}'>{file}</a></td>
+            <td><a href='/{file_list[file]}'>{file_list[file]}</a></td>
+        </tr>"""
 
     buf += """
-    </ul>
+    </table>
 </body>
 </html>
 """
@@ -239,7 +294,7 @@ def output_index_page(file_list: list[str], path: str):
 
 
 def archive_pages(path: str) -> None:
-    items_written = []
+    items_written: dict[str, str] = {}
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
         split_path = item_path.split("\\")
@@ -261,8 +316,6 @@ def archive_pages(path: str) -> None:
             driver.get(url)
 
             # If the page has been redirected, rename the file to start with zr
-            # Redirect checking as per https://stackoverflow.com/a/13482990
-            # if len(req.history) > 0:
             if driver.current_url != url:
                 print("Redirect: " + url + " -> " + driver.current_url)
                 new_path_split = item_path.split("\\")
@@ -273,31 +326,13 @@ def archive_pages(path: str) -> None:
             # Parse HTML content
             soup = BeautifulSoup(driver.page_source, "lxml")
 
-            # Remove most scripts and iframes
-            for element in soup(["script", "iframe"]):
-                if element.get("src") is not None:
-                    # If the script is a common script, replace it with the local version
-                    if "javascript_bundles/ssw_pigeon" in element["src"]:
-                        element["src"] = "/history/ssw_pigeon.js"
-                        continue
-                    elif "javascript_bundles/jquery" in element["src"]:
-                        element["src"] = "/history/jquery.js"
-                        continue
-                    elif "javascript_bundles/moment" in element["src"]:
-                        element["src"] = "/history/moment.js"
-                        continue
-                    # TODO: Fix as was removed as was causing errors with images, will not be responsive
-                    # elif "dist/menu.js" in element["src"]:
-                    #     element["src"] = "/history/menu.js"
-                    #     continue
-                # Removes the script tag
-                element.extract()
-
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
+            soup = fix_scripts(soup)
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
             soup = fix_links(soup)
+            soup = fix_head(soup)
 
             soup = add_archive_header(soup, url)
 
@@ -312,7 +347,7 @@ def archive_pages(path: str) -> None:
             output_filename = (PARENT_DIR + uri.replace(".aspx", "") + ".html").lower()
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
-                items_written.append(output_filename)
+                items_written[url] = output_filename
 
             new_path_split = item_path.split("\\")
 
@@ -322,6 +357,7 @@ def archive_pages(path: str) -> None:
                 os.rename(item_path, "/".join(new_path_split))
 
     output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
+
     output_index_page(items_written, output_path)
 
 if __name__ == "__main__":
