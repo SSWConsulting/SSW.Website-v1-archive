@@ -51,6 +51,9 @@ SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
+def main():
+    archive_pages("SSW.Website.WebUI")
+
 
 def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
     # Remove most scripts and iframes
@@ -363,4 +366,4 @@ def archive_pages(path: str) -> None:
     output_index_page(items_written, output_path)
 
 if __name__ == "__main__":
-    archive_pages("SSW.Website.WebUI")
+    main()
