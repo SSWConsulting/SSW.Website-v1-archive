@@ -54,6 +54,73 @@ driver = webdriver.Chrome(service=service)
 def main():
     archive_pages("SSW.Website.WebUI")
 
+def archive_pages(path: str) -> None:
+    items_written: dict[str, str] = {}
+    for item in os.listdir(path):
+        item_path = os.path.join(path, item)
+        split_path = item_path.split("\\")
+
+        # Recursively call archive_pages on subdirectories
+        if os.path.isdir(item_path) and split_path[1] in WHITELIST:
+            archive_pages(item_path)
+
+        # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
+        elif os.path.isfile(item_path) and item_path.endswith(".aspx") and not split_path[-1].startswith("zz") and split_path[1] in WHITELIST:
+            # If it starts with za (means it has been archived before), remove the za
+            if split_path[-1].startswith("za"):
+                split_path[-1] = split_path[-1][2:]
+
+            # URI on the v1 website e.g. Training/Default.aspx
+            uri = "/".join(split_path[1:])
+            # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
+            url = SSW_URL + "/ssw/" + uri
+            driver.get(url)
+
+            # If the page has been redirected, rename the file to start with zr
+            if driver.current_url != url:
+                print("Redirect: " + url + " -> " + driver.current_url)
+                new_path_split = item_path.split("\\")
+                new_path_split[-1] = "zr" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
+                continue
+
+            # Parse HTML content
+            soup = BeautifulSoup(driver.page_source, "lxml")
+
+            base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
+
+            soup = fix_scripts(soup)
+            soup = fix_images(soup, base_path)
+            soup = fix_css(soup, base_path)
+            soup = fix_links(soup)
+            soup = fix_head(soup)
+
+            soup = add_archive_header(soup, url)
+
+            page_source = soup.prettify()
+
+            dir = "/".join(split_path[1:-1])
+            output_dir = (PARENT_DIR + dir).lower()
+            if not os.path.exists(output_dir):
+                os.makedirs(output_dir)
+
+            # Filename with .aspx removed
+            output_filename = (PARENT_DIR + uri.replace(".aspx", "") + ".html").lower()
+            with open(output_filename, "w+", encoding="utf-8") as f:
+                f.write(page_source)
+                items_written[url] = output_filename
+
+            new_path_split = item_path.split("\\")
+
+            # If the file has not been archived before, add za to the start of the filename
+            if not new_path_split[-1].startswith("za"):
+                new_path_split[-1] = "za" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
+
+    output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
+
+    output_index_page(items_written, output_path)
+
 
 def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
     # Remove most scripts and iframes
@@ -297,73 +364,6 @@ def output_index_page(file_list: dict[str, str], path: str):
     with open(os.path.join(path, "index.html"), "w") as f:
         f.write(buf)
 
-
-def archive_pages(path: str) -> None:
-    items_written: dict[str, str] = {}
-    for item in os.listdir(path):
-        item_path = os.path.join(path, item)
-        split_path = item_path.split("\\")
-
-        # Recursively call archive_pages on subdirectories
-        if os.path.isdir(item_path) and split_path[1] in WHITELIST:
-            archive_pages(item_path)
-
-        # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
-        elif os.path.isfile(item_path) and item_path.endswith(".aspx") and not split_path[-1].startswith("zz") and split_path[1] in WHITELIST:
-            # If it starts with za (means it has been archived before), remove the za
-            if split_path[-1].startswith("za"):
-                split_path[-1] = split_path[-1][2:]
-
-            # URI on the v1 website e.g. Training/Default.aspx
-            uri = "/".join(split_path[1:])
-            # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
-            url = SSW_URL + "/ssw/" + uri
-            driver.get(url)
-
-            # If the page has been redirected, rename the file to start with zr
-            if driver.current_url != url:
-                print("Redirect: " + url + " -> " + driver.current_url)
-                new_path_split = item_path.split("\\")
-                new_path_split[-1] = "zr" + new_path_split[-1]
-                os.rename(item_path, "/".join(new_path_split))
-                continue
-
-            # Parse HTML content
-            soup = BeautifulSoup(driver.page_source, "lxml")
-
-            base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
-
-            soup = fix_scripts(soup)
-            soup = fix_images(soup, base_path)
-            soup = fix_css(soup, base_path)
-            soup = fix_links(soup)
-            soup = fix_head(soup)
-
-            soup = add_archive_header(soup, url)
-
-            page_source = soup.prettify()
-
-            dir = "/".join(split_path[1:-1])
-            output_dir = (PARENT_DIR + dir).lower()
-            if not os.path.exists(output_dir):
-                os.makedirs(output_dir)
-
-            # Filename with .aspx removed
-            output_filename = (PARENT_DIR + uri.replace(".aspx", "") + ".html").lower()
-            with open(output_filename, "w+", encoding="utf-8") as f:
-                f.write(page_source)
-                items_written[url] = output_filename
-
-            new_path_split = item_path.split("\\")
-
-            # If the file has not been archived before, add za to the start of the filename
-            if not new_path_split[-1].startswith("za"):
-                new_path_split[-1] = "za" + new_path_split[-1]
-                os.rename(item_path, "/".join(new_path_split))
-
-    output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
-
-    output_index_page(items_written, output_path)
 
 if __name__ == "__main__":
     main()
