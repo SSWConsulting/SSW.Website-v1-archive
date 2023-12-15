@@ -4,5 +4,5 @@ az storage blob upload-batch^
  --destination-path history^
  --source history^
  --auth-mode key^
- --account-key {{ KEY_HERE }}^
+ --account-key $archiveStoreKey^
  --overwrite
