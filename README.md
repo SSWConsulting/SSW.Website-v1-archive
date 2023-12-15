@@ -54,6 +54,25 @@ python todo_outputter_csv.py
 This will output a file called `todos.csv` that can be exported to Excel if required. The status of a page is determined by the prefix of the page name (more detail on prefixes below).
 
 
+### Blob Storage Upload Script 
+
+To run the shell script that uploads the `history` folder to Azure Blob Storage, run the following command:
+
+Windows: 
+
+```shell
+set archiveStoreKey={{ KEY_HERE }}
+upload_blob.cmd
+```
+
+Bash (Linux/Mac): 
+
+```bash
+ARCHIVE_KEY={{ KEY_HERE }}
+./upload_blob.sh
+```
+
+
 ## Tasks
 - [ ] Turn off the v1 website's server 
 - [ ] Remove this repo once all pages have been migrated to v3 
