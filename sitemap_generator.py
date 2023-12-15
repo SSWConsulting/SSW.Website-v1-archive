@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-WHITELIST = ["Training"]
+WHITELIST = ["training"]
 
 
 def get_urls(path: str) -> list[str]:
@@ -14,7 +14,7 @@ def get_urls(path: str) -> list[str]:
         if os.path.isdir(item_path) and split_path[1] in WHITELIST:
             urls.extend(get_urls(item_path))
         elif item_path.endswith(".html"):
-            urls.append("https://www.ssw.com.au/" + "/".join(split_path))
+            urls.append(("https://www.ssw.com.au/" + "/".join(split_path)).lower())
 
     return urls
 
@@ -30,7 +30,7 @@ def output_sitemap(path: str):
                 "loc": url,
                 "lastmod": "2023-12-12",
                 "changefreq": "monthly",
-                "priority": "0.5",
+                "priority": "0.4",
             }
         )
 
