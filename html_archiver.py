@@ -300,10 +300,6 @@ def fix_breadcrumbs(soup: BeautifulSoup) -> BeautifulSoup:
     breadcrumbs[1]["href"] = "/history"
     breadcrumbs[1].string = "History"
 
-    
-
-    print(breadcrumbs[1])
-
     return soup
 
 def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
