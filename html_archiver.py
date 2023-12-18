@@ -97,7 +97,7 @@ def archive_pages(path: str) -> None:
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
             soup = fix_links(soup)
-            soup = fix_breadcrumbs(soup)
+            soup = fix_breadcrumbs(soup, split_path[1])
             soup = fix_head(soup)
 
             soup = add_archive_header(soup, url)
@@ -289,7 +289,7 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
 
-def fix_breadcrumbs(soup: BeautifulSoup) -> BeautifulSoup:
+def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup:
     breadcrumbs = soup.select("div[class='breadcrumb'] > span > span > a")
 
     if len(breadcrumbs) < 2:
@@ -302,6 +302,10 @@ def fix_breadcrumbs(soup: BeautifulSoup) -> BeautifulSoup:
     # Replace second crumb with history
     breadcrumbs[1]["href"] = "/history"
     breadcrumbs[1].string = "History"
+
+    if len(breadcrumbs) > 2:
+        # Remove the third crumb
+        breadcrumbs[2]["href"] = "/history/" + whitelist_folder.lower()
 
     return soup
 
