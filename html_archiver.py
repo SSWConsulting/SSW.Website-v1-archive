@@ -40,6 +40,7 @@ IMAGE_REPLACEMENTS = {
     "adam_thumb.jpg": "https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg",
     "mehmet-thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Mehmet.jpg",
     "eric_thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/eric_phan.jpg",
+    "SSWLogo-xmas.svg": "https://www.ssw.com.au/SSW/images/Raven/SSWLogo.svg",
 }
 
 PARENT_DIR = "history/"
@@ -47,6 +48,8 @@ SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
 SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
 SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
+
+SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
@@ -85,7 +88,8 @@ def archive_pages(path: str) -> None:
                 continue
 
             # Parse HTML content
-            soup = BeautifulSoup(driver.page_source, "lxml")
+            page_content = "<!DOCTYPE html>\n" + driver.page_source
+            soup = BeautifulSoup(page_content, "html5lib")
 
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
@@ -93,11 +97,12 @@ def archive_pages(path: str) -> None:
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
             soup = fix_links(soup)
+            soup = fix_breadcrumbs(soup)
             soup = fix_head(soup)
 
             soup = add_archive_header(soup, url)
 
-            page_source = soup.prettify()
+            page_source = soup.prettify(formatter="html5")
 
             dir = "/".join(split_path[1:-1])
             output_dir = (PARENT_DIR + dir).lower()
@@ -266,12 +271,38 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         elif href.endswith("Training/Courses.aspx"):
             link["href"] = "https://www.ssw.com.au/events"
 
+        # If it's a link to an employee profile, change to SSW people
+        
+
+         # If page has been migrated, change the link to the history page
+        for folder in WHITELIST:
+            match = re.search(SECOND_FOLDER_REGEX, link["href"])
+            if match != None and folder == match.group(1):
+                link["href"] = link["href"].replace("/ssw/", "/history/").replace(".aspx", ".html").lower()
+
         # Direct book now buttons to the new book now page
+        # should this cover all shop pages?
         inner_text = link.get_text()
         if inner_text is not None and 'book now' in inner_text.lower() and '/shop/' in href.lower():
             link["href"] = "https://www.ssw.com.au/booknow"
 
         # TODO: Add replacing of links to /history when pages have been moved to /history
+    return soup
+
+def fix_breadcrumbs(soup: BeautifulSoup) -> BeautifulSoup:
+    breadcrumbs = soup.select("div[class='breadcrumb'] > span > span > a")
+
+    if len(breadcrumbs) < 2:
+        return soup
+    
+    # Reset to non-aspx root (i.e. ssw.com.au/)
+    breadcrumbs[0]["href"] = "/"
+    breadcrumbs[0].string = "Home"
+
+    # Replace second crumb with history
+    breadcrumbs[1]["href"] = "/history"
+    breadcrumbs[1].string = "History"
+
     return soup
 
 def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
@@ -285,7 +316,7 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     archive_div = soup.new_tag("div")
 
     attention_span = soup.new_tag("div")
-    attention_span.string = "ATTENTION"
+    attention_span.string = "⚠️ This page has been archived"
     attention_span["style"] = "color: #cc4141; font-size: 24px; font-weight: 600;"
 
     archive_div.append(attention_span)
@@ -295,8 +326,12 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     content_p.append(" This is an archived page originally from " + url)
     content_p.append(" and is no longer maintained. Some links may not work and information may be out of date. Please navigate to ")
 
-    new_link = soup.new_tag("a", href="https://www.ssw.com.au/events", style="color: #999")
-    new_link.append("ssw.com.au/events")
+    if "Training" in url:
+        new_link = soup.new_tag("a", href="https://www.ssw.com.au/events", style="color: #999")
+        new_link.append("ssw.com.au/events")
+    else: 
+        new_link = soup.new_tag("a", href="https://www.ssw.com.au", style="color: #999")
+        new_link.append("ssw.com.au")
 
     content_p.append(new_link)
     content_p.append(" for updated information.")
