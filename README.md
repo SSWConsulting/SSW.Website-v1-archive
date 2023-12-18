@@ -61,7 +61,7 @@ To run the shell script that uploads the `history` folder to Azure Blob Storage,
 Windows: 
 
 ```shell
-set archiveStoreKey={{ KEY_HERE }}
+set ARCHIVE_KEY={{ KEY_HERE }}
 upload_blob.cmd
 ```
 

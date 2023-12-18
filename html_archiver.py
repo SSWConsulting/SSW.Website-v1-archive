@@ -271,6 +271,9 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         elif href.endswith("Training/Courses.aspx"):
             link["href"] = "https://www.ssw.com.au/events"
 
+        # If it's a link to an employee profile, change to SSW people
+        
+
          # If page has been migrated, change the link to the history page
         for folder in WHITELIST:
             match = re.search(SECOND_FOLDER_REGEX, link["href"])
