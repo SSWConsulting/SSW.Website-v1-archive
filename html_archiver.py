@@ -130,7 +130,7 @@ def archive_pages(path: str) -> None:
 
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
-    regex = "(?<!^)([a-z])([A-Z])|([A-Z])([a-z])";
+    regex = "([a-z])([A-Z])";
 
     return re.sub(regex, r"\1-\2", s).lower()
 
