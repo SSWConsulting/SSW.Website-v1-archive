@@ -110,7 +110,8 @@ def archive_pages(path: str) -> None:
                 os.makedirs(output_dir)
 
             # Filename with .aspx removed
-            output_filename = (PARENT_DIR + uri.replace(".aspx", "") + ".html").lower()
+            print(uri.replace(".aspx", ""))
+            output_filename = (PARENT_DIR + pascal_to_kebab(uri.replace(".aspx", "")) + ".html")
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
                 items_written[url] = output_filename
@@ -125,6 +126,18 @@ def archive_pages(path: str) -> None:
     output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
 
     output_index_page(items_written, output_path)
+
+
+def pascal_to_kebab(s: str) -> str:
+    # Convert PascalCase to kebab-case
+    regex = "([a-z])([A-Z])|(?<!^)([A-Z])([a-z])";
+
+    if re.search(regex, s) is None:
+        return s.lower()
+    
+    print(re.search(regex, s))
+
+    return re.sub(regex, r"\1-\2", s).lower()
 
 
 def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
