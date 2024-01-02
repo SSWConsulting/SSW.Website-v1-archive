@@ -109,9 +109,8 @@ def archive_pages(path: str) -> None:
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir)
 
-            # Filename with .aspx removed
-            print(pascal_to_kebab(uri.replace(".aspx", "")))
-            output_filename = (PARENT_DIR + uri.replace(".aspx", "") + ".html")
+            # Filename with .aspx removed and kebab-case
+            output_filename = (PARENT_DIR + pascal_to_kebab(uri.replace(".aspx", "")) + ".html")
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
                 items_written[url] = output_filename
@@ -130,7 +129,16 @@ def archive_pages(path: str) -> None:
 
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
-    regex = "([a-z])([A-Z])";
+    regex = r"([a-z])([A-Z0-9])";
+    
+    s = s.replace("NET", "Net")
+    s = s.replace("SQL", "Sql")
+    s = s.replace("BI", "Bi")
+    s = s.replace("ALM", "Alm")
+
+    s = re.sub(r"and([A-Z0-9])", r"And\1", s) 
+    s = re.sub(r"to([A-Z0-9])", r"To\1", s) 
+    s = s.replace("SharePoint", "Sharepoint")
 
     return re.sub(regex, r"\1-\2", s).lower()
 
