@@ -400,15 +400,15 @@ def output_index_page(file_list: dict[str, str], path: str):
     <h1>Training Pages</h1>
     <table>
         <tr>
-            <th>Old URL</th>
             <th>New URL</th>
+            <th>Old URL (TODO: delete after signoff from Adam)</th>
         </tr>"""
 
     for file in file_list:
         buf += f"""      
         <tr>
-            <td><a href='{file}'>{file}</a></td>
             <td><a href='/{file_list[file]}'>{file_list[file]}</a></td>
+            <td><a href='{file}'>{file}</a></td>
         </tr>"""
 
     buf += """
