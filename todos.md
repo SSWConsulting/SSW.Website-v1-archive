@@ -1,16 +1,16 @@
 - 📁 AccessReporter
-    - [x] zaDefault.aspx
-    - [x] zaPDFViewer.aspx
-    - [x] zazaAccessReporterDemo.aspx
+    - [ ] Default.aspx
+    - [ ] PDFViewer.aspx
+    - [x] zaAccessReporterDemo.aspx
     - [ ] zrUserGuide.aspx
 - 📁 Advertising
     - [ ] Default.aspx
 - 📁 AgileTemplate
+    - [ ] Default.aspx
+    - [ ] ManageProjects.aspx
     - 📁 Reports
-        - [x] zaDefault.aspx
-    - [x] zaDefault.aspx
-    - [x] zaManageProjects.aspx
-    - [x] zaUserGuide.aspx
+        - [ ] Default.aspx
+    - [ ] UserGuide.aspx
 - 📁 Angular
     - [x] zzDefault.aspx
 - 📁 Bot
@@ -221,13 +221,13 @@
     - [ ] NET.aspx
     - [ ] sswdatarenovatorinfo.aspx
 - 📁 DataMergePRO
-    - [x] zaDefault.aspx
-    - [x] zaTutorial.aspx
+    - [ ] Default.aspx
+    - [ ] Tutorial.aspx
 - 📁 DataPRO
-    - [x] zaDefault.aspx
+    - [ ] Default.aspx
 - 📁 DataRenovator
-    - [x] zaDefault.aspx
-    - [x] zaUserGuide.aspx
+    - [ ] Default.aspx
+    - [ ] UserGuide.aspx
 - 📁 decommissioned
     - [ ] googlekeywords.aspx
     - [ ] SpeechServer_Telephony_Solutions.aspx
@@ -297,8 +297,8 @@
 - 📁 Educational
     - [x] zzDefault.aspx
 - 📁 EmailMergePRO
-    - [x] zaDefault.aspx
-    - [x] zauserguide.aspx
+    - [ ] Default.aspx
+    - [ ] userguide.aspx
 - 📁 Employees
     - [x] zzEmployeesProfile.aspx
     - [x] zzEmployeesXML.aspx
@@ -310,134 +310,142 @@
 - [ ] ErrorPage.aspx
 - 📁 Events
     - 📁 2001MSDevDays
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2001ODDC
         - [x] zzdefault.aspx
     - 📁 2002VSLive
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2004AccessToSQLServerAndNET
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2004Ascend
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2004Kenya
-        - [x] zaAgenda.aspx
-        - [x] zaDefault.aspx
+        - [ ] Agenda.aspx
+        - [ ] Default.aspx
     - 📁 2004MalaysiaConference
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2005-11UG
-        - [x] zaConference.aspx
+        - [ ] Conference.aspx
     - 📁 2005AccessToSQLServerAndNET
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2005ReportingServices
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
         - [ ] zrresources.aspx
     - 📁 2005SouthAmericaJanuary
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2005SouthAmericaOctober
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2005UTSNET
-        - [x] zaresources.aspx
+        - [ ] resources.aspx
         - [ ] zrDefault.aspx
     - 📁 2006EarnMorePerHour
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
         - [ ] zrresources.aspx
     - 📁 2006EarnMorePerHourWorkshop
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
         - [ ] zrresources.aspx
     - 📁 2006Expression
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2006SQL
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2006TeamSystem
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2006UTSNET
         - [ ] zrresources.aspx
         - [x] zzDefault.aspx
     - 📁 2006UTS_BI
-        - [x] zaresources.aspx
+        - [ ] resources.aspx
     - 📁 2007AprilCanberraNETUG
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2007NET
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2007SQL
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2007UTSNET
         - [ ] zrDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2007UTS_BI
-        - [x] zaresources.aspx
+        - [ ] resources.aspx
     - 📁 2008BICourse
         - [ ] zrDefault.aspx
     - 📁 2008UTSNET
         - [ ] zrDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2008UTSSQL
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2009TourDeWagga
-        - [x] zaDailyBreakdown.aspx
-        - [x] zaDefault.aspx
+        - [ ] DailyBreakdown.aspx
+        - [ ] Default.aspx
     - 📁 2009UTSNET
         - [ ] zrDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2009UTSSharePoint
         - [ ] zrDefault.aspx
     - 📁 2009UTSSQL
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2010UTSBI
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2010UTSSharePoint
         - [ ] zrDefault.aspx
     - 📁 2010UTSSQL
-        - [x] zaDefault.aspx
-        - [x] zaresources.aspx
+        - [ ] Default.aspx
+        - [ ] resources.aspx
     - 📁 2011UTSNET
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2011UTSSharePoint
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 2011UTSSQL
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
+    - [ ] Brian-Randell-Virtualization-for-Developers.aspx
+    - [ ] ConferencePast.aspx
     - 📁 ebooks
-        - [x] zaangularjs-5-lessons-from-the-trenches.aspx
+        - [ ] angularjs-5-lessons-from-the-trenches.aspx
+    - [ ] Event.aspx
+    - [ ] HoloLens-experience.aspx
+    - [ ] Juval-Lowy-Architect-Master-Class.aspx
+    - [ ] SampleTrainingDay.aspx
+    - [ ] SSWTechBreakfastPast.aspx
+    - [ ] Steve-Forte-Agile-Seminar.aspx
     - 📁 TechBreakfast
-        - [x] zaHow-to-become-a-developer-in-2015.aspx
-        - [x] zaHow-to-change-your-career-and-become-a-developer-in-2015.aspx
-        - [x] zaHow-to-upgrade-your-skills-to-developer-in-2015.aspx
+        - [ ] How-to-become-a-developer-in-2015.aspx
+        - [ ] How-to-change-your-career-and-become-a-developer-in-2015.aspx
+        - [ ] How-to-upgrade-your-skills-to-developer-in-2015.aspx
     - 📁 Training
-        - [x] zaAdvanced-TSQL.aspx
-        - [x] zaASP-NET-MVC-AngularJS-TechEd-Secret.aspx
-        - [x] zaASP-NET-MVC-AngularJS-TechEd.aspx
-        - [x] zaBI-Bootcamp.aspx
-        - [x] zaBI-Immersion.aspx
-        - [x] zaBrain-Quest-ALM-in-a-Day.aspx
-        - [x] zaBrain-Quest-VS-TFS-Sharepoint.aspx
-        - [x] zaData-Mining-Seminar.aspx
-        - [x] zaDevOps-SuperPowers-VisualStudio.aspx
-        - [x] zaEnterprise-MVC-Day-1.aspx
-        - [x] zaEnterprise-MVC-Day-2.aspx
-        - [x] zaEnterprise-MVC-Day-3.aspx
-        - [x] zaEnterprise-MVC-Day-4.aspx
-        - [x] zaEnterprise-Xamarin-2-Day-Essentials.aspx
-        - [x] zaIonic-Superpowers-Tour.aspx
-        - [x] zaJuval-Lowy-Architects-Clinic.aspx
-        - [x] zaOptimization-Performance.aspx
-        - [x] zaPower-Sessions.aspx
-        - [x] zaQUT-Angular2.aspx
-        - [x] zaScrum-Master-Training-Course.aspx
-        - [x] zaScrum-Training-Course-3-days.aspx
-        - [x] zaScrum-Training-Course.aspx
-        - [x] zaSolidQ-Courses.aspx
-        - [x] zaSQL-Server-2012-Integration-Services.aspx
-        - [x] zaSSIS-Seminar.aspx
-        - [x] zaTechBreakfast-VS-2012.aspx
-        - [x] zaTSQL-Fundamentals.aspx
-        - [x] zaVS-2012.aspx
+        - [ ] Advanced-TSQL.aspx
+        - [ ] ASP-NET-MVC-AngularJS-TechEd-Secret.aspx
+        - [ ] ASP-NET-MVC-AngularJS-TechEd.aspx
+        - [ ] BI-Bootcamp.aspx
+        - [ ] BI-Immersion.aspx
+        - [ ] Brain-Quest-ALM-in-a-Day.aspx
+        - [ ] Brain-Quest-VS-TFS-Sharepoint.aspx
+        - [ ] Data-Mining-Seminar.aspx
+        - [ ] DevOps-SuperPowers-VisualStudio.aspx
+        - [ ] Enterprise-MVC-Day-1.aspx
+        - [ ] Enterprise-MVC-Day-2.aspx
+        - [ ] Enterprise-MVC-Day-3.aspx
+        - [ ] Enterprise-MVC-Day-4.aspx
+        - [ ] Enterprise-Xamarin-2-Day-Essentials.aspx
+        - [ ] Ionic-Superpowers-Tour.aspx
+        - [ ] Juval-Lowy-Architects-Clinic.aspx
+        - [ ] Optimization-Performance.aspx
+        - [ ] Power-Sessions.aspx
+        - [ ] QUT-Angular2.aspx
+        - [ ] Scrum-Master-Training-Course.aspx
+        - [ ] Scrum-Training-Course-3-days.aspx
+        - [ ] Scrum-Training-Course.aspx
+        - [ ] SolidQ-Courses.aspx
+        - [ ] SQL-Server-2012-Integration-Services.aspx
+        - [ ] SSIS-Seminar.aspx
+        - [ ] TechBreakfast-VS-2012.aspx
+        - [ ] TSQL-Fundamentals.aspx
+        - [ ] VS-2012.aspx
         - [ ] zrTraining-Options.aspx
         - [x] zzAngular-ASP-MVC-in-VS2015-Jumpstart.aspx
         - [x] zzAngular-Superpowers-Tour.aspx
@@ -459,47 +467,39 @@
         - [x] zzNET-Core-Superpowers-Tour.aspx
         - [x] zzNET-Superpowers-Tour.aspx
         - [x] zzProfessional-Tailored-Scrum.aspx
+    - [ ] Visual-Studio-2013-Rapid-SharePoint-Development.aspx
     - 📁 Webinars
-        - [x] za8-Month-Software-Development-Retrospective.aspx
-        - [x] zaBuilding-SPA-with-MVC4.aspx
-        - [x] zaDevSuperpowers-AngularJS-with-TypeScript.aspx
-        - [x] zaDevSuperpowers-AngularJS.aspx
-        - [x] zaDevSuperpowers-ASP-NET-MVC.aspx
-        - [x] zaDevSuperpowers-ASP-NET-vNext.aspx
-        - [x] zaDevSuperpowers-Azure.aspx
-        - [x] zaDevSuperpowers-Bootstrap.aspx
-        - [x] zaDevSuperpowers-iOS-and-Android.aspx
-        - [x] zaDevSuperpowers-Project-Management-with-Visual-Studio-Online.aspx
-        - [x] zaDevSuperpowers-SignalR.aspx
-        - [x] zaDevSuperpowers-web-API.aspx
-        - [x] zaDevSuperpowers-XamarinForms-MVVM.aspx
-        - [x] zaGreat-Intranets-James-Robertson.aspx
-        - [x] zaHiring-Software-Companies.aspx
-        - [x] zaLessons-Learned-Writing-Mobile-Sites.aspx
-        - [x] zaLightswitch.aspx
-        - [x] zaMaster-Scrum.aspx
-        - [x] zaMVC-Apps.aspx
-        - [x] zaMVC-Dont_use_Web_Forms_again.aspx
-        - [x] zaMVC-Migrating-from-Web-Forms.aspx
-        - [x] zaPhoneGap-for-Mobile-Developers.aspx
-        - [x] zaPromotional-Videos-How-To.aspx
-        - [x] zaSharePoint-Client-Side-Rendering.aspx
-        - [x] zaSharePoint-for-Business.aspx
-        - [x] zaSolidQ.aspx
-        - [x] zaSpeed-Up-SQL-Server.aspx
-        - [x] zaWindows-Azure.aspx
+        - [ ] 8-Month-Software-Development-Retrospective.aspx
+        - [ ] Building-SPA-with-MVC4.aspx
+        - [ ] DevSuperpowers-AngularJS-with-TypeScript.aspx
+        - [ ] DevSuperpowers-AngularJS.aspx
+        - [ ] DevSuperpowers-ASP-NET-MVC.aspx
+        - [ ] DevSuperpowers-ASP-NET-vNext.aspx
+        - [ ] DevSuperpowers-Azure.aspx
+        - [ ] DevSuperpowers-Bootstrap.aspx
+        - [ ] DevSuperpowers-iOS-and-Android.aspx
+        - [ ] DevSuperpowers-Project-Management-with-Visual-Studio-Online.aspx
+        - [ ] DevSuperpowers-SignalR.aspx
+        - [ ] DevSuperpowers-web-API.aspx
+        - [ ] DevSuperpowers-XamarinForms-MVVM.aspx
+        - [ ] Great-Intranets-James-Robertson.aspx
+        - [ ] Hiring-Software-Companies.aspx
+        - [ ] Lessons-Learned-Writing-Mobile-Sites.aspx
+        - [ ] Lightswitch.aspx
+        - [ ] Master-Scrum.aspx
+        - [ ] MVC-Apps.aspx
+        - [ ] MVC-Dont_use_Web_Forms_again.aspx
+        - [ ] MVC-Migrating-from-Web-Forms.aspx
+        - [ ] PhoneGap-for-Mobile-Developers.aspx
+        - [ ] Promotional-Videos-How-To.aspx
+        - [ ] SharePoint-Client-Side-Rendering.aspx
+        - [ ] SharePoint-for-Business.aspx
+        - [ ] SolidQ.aspx
+        - [ ] Speed-Up-SQL-Server.aspx
+        - [ ] Windows-Azure.aspx
         - [ ] zrDevSuperpowers.aspx
     - 📁 Workshops
-        - [x] zaTech-Breakfast.aspx
-    - [x] zaBrian-Randell-Virtualization-for-Developers.aspx
-    - [x] zaConferencePast.aspx
-    - [x] zaEvent.aspx
-    - [x] zaHoloLens-experience.aspx
-    - [x] zaJuval-Lowy-Architect-Master-Class.aspx
-    - [x] zaSampleTrainingDay.aspx
-    - [x] zaSSWTechBreakfastPast.aspx
-    - [x] zaSteve-Forte-Agile-Seminar.aspx
-    - [x] zaVisual-Studio-2013-Rapid-SharePoint-Development.aspx
+        - [ ] Tech-Breakfast.aspx
     - [ ] zrChinafy-Experience.aspx
     - [ ] zrJuval-Lowy-Architects-Clinic.aspx
     - [x] zzADNUG.aspx
@@ -517,11 +517,11 @@
     - [x] zzUTSSQL.aspx
     - [x] zzVisualStudio2010_TFS2010_Sharepoint2010.aspx
 - 📁 ExchangeReporter
+    - [ ] Default.aspx
     - 📁 Reports
-        - [x] zaDefault.aspx
-    - [x] zaDefault.aspx
-    - [x] zaReportSamples.aspx
-    - [x] zaUserGuide.aspx
+        - [ ] Default.aspx
+    - [ ] ReportSamples.aspx
+    - [ ] UserGuide.aspx
 - 📁 eXtremeEmails
     - [ ] Default.aspx
     - 📁 ExcelProductList
@@ -534,10 +534,10 @@
 - 📁 HackDay
     - [ ] Default.aspx
 - 📁 HealthAuditor
-    - [x] zaDefault.aspx
-    - [x] zaFxCopTutorial.aspx
-    - [x] zaNUnitTutorial.aspx
-    - [x] zauserguide.aspx
+    - [ ] Default.aspx
+    - [ ] FxCopTutorial.aspx
+    - [ ] NUnitTutorial.aspx
+    - [ ] userguide.aspx
 - 📁 Hosting
     - [ ] AliasForSQLServer.aspx
     - [ ] DatabaseEdit.aspx
@@ -545,11 +545,11 @@
     - [ ] Details.aspx
     - [x] zzhostingtermsconditions.aspx
 - 📁 LinkAuditor
+    - [ ] Default.aspx
     - 📁 Desktop
-        - [x] zaUserGuide.aspx
-    - [x] zaDefault.aspx
-    - [x] zaHowtobeGoodLinkAuditorDailyBuildMaster.aspx
-    - [x] zaUserGuide.aspx
+        - [ ] UserGuide.aspx
+    - [ ] HowtobeGoodLinkAuditorDailyBuildMaster.aspx
+    - [ ] UserGuide.aspx
 - 📁 Live
     - [ ] Default.aspx
 - 📁 Logo
@@ -611,22 +611,22 @@
     - 📁 XamarinHackDay
         - [ ] Default.aspx
 - 📁 LookOut
+    - [ ] Default.aspx
     - 📁 Sample
-        - [x] zaCustomer.aspx
-    - [x] zaDefault.aspx
-    - [x] zaUserGuide.aspx
+        - [ ] Customer.aspx
+    - [ ] UserGuide.aspx
 - [ ] MenuMap.aspx
 - 📁 NETToolkit
-    - [x] za01WinValidator.aspx
-    - [x] za02WinSearch.aspx
-    - [x] za03DataEntry.aspx
-    - [x] za04ExceptionReporter.aspx
-    - [x] za05WizardForms.aspx
-    - [x] za06ConfigurationBlock.aspx
-    - [x] za07VersionChecker.aspx
-    - [x] za08ProgressbarsStatusforms.aspx
-    - [x] zaDefault.aspx
-    - [x] zaUserGuide.aspx
+    - [ ] 01WinValidator.aspx
+    - [ ] 02WinSearch.aspx
+    - [ ] 03DataEntry.aspx
+    - [ ] 04ExceptionReporter.aspx
+    - [ ] 05WizardForms.aspx
+    - [ ] 06ConfigurationBlock.aspx
+    - [ ] 07VersionChecker.aspx
+    - [ ] 08ProgressbarsStatusforms.aspx
+    - [ ] Default.aspx
+    - [ ] UserGuide.aspx
 - 📁 NETUG
     - 📁 Evaluation-Survey
         - [ ] Default.aspx
@@ -655,8 +655,8 @@
 - 📁 NewZealand
     - [ ] default.aspx
 - 📁 PerformancePRO
-    - [x] zaDefault.aspx
-    - [x] zaUserGuide.aspx
+    - [ ] Default.aspx
+    - [ ] UserGuide.aspx
 - [ ] PowerSessions.aspx
 - [ ] ProcessImprovementForSoftwareTeams.aspx
 - 📁 Products
@@ -673,8 +673,8 @@
     - [ ] Tester.aspx
     - [x] zzDefault.aspx
 - 📁 PropertyAndEventPRO
-    - [x] zaDefault.aspx
-    - [x] zauserguide.aspx
+    - [ ] Default.aspx
+    - [ ] userguide.aspx
 - 📁 Redirect
     - [ ] downloadredirect.aspx
     - [ ] FileList.aspx
@@ -713,123 +713,124 @@
     - [x] zzdefault.aspx
     - [x] zzEditDetail.aspx
 - 📁 SQLAuditor
-    - [x] zaDefault.aspx
-    - [x] zaSampleReport.aspx
-    - [x] zauserguide.aspx
-    - [x] zaUserguideWizards.aspx
+    - [ ] Default.aspx
+    - [ ] SampleReport.aspx
+    - [ ] userguide.aspx
+    - [ ] UserguideWizards.aspx
     - [ ] zrVoteResult.aspx
 - 📁 SQLDeploy
-    - [x] zadeveloperguide.aspx
-    - [x] zaExeMode.aspx
-    - [x] zaExistingDataBase.aspx
-    - [x] zaIntegrationMode.aspx
-    - [x] zauserguide.aspx
+    - [ ] developerguide.aspx
+    - [ ] ExeMode.aspx
+    - [ ] ExistingDataBase.aspx
+    - [ ] IntegrationMode.aspx
+    - [ ] userguide.aspx
     - [x] zzDefault.aspx
 - 📁 SQLReportingServicesAuditor
-    - [x] zaDefault.aspx
-    - [x] zaPostInstallation.aspx
-    - [x] zaUserGuide.aspx
+    - [ ] Default.aspx
+    - [ ] PostInstallation.aspx
+    - [ ] UserGuide.aspx
 - 📁 SQLTotalCompare
-    - [x] zaDefault.aspx
-    - [x] zauserguide.aspx
+    - [ ] Default.aspx
+    - [ ] userguide.aspx
 - 📁 Standards
+    - [ ] AdventureWorksSamples.aspx
     - 📁 BetterSoftwareSuggestions
+        - [ ] activesync.aspx
+        - [ ] antispyware.aspx
+        - [ ] ASPNET.aspx
+        - [ ] Asterix.aspx
+        - [ ] Bing.aspx
+        - [ ] blinq.aspx
+        - [ ] Camtasia.aspx
+        - [ ] CRM.aspx
+        - [ ] dataanalyzer.aspx
+        - [ ] Default.aspx
+        - [ ] dnn.aspx
+        - [ ] DOTNET.aspx
+        - [ ] DotNetNuke.aspx
+        - [ ] DynamicData.aspx
+        - [ ] exchange.aspx
+        - [ ] Expression.aspx
+        - [ ] ExpressionBlend.aspx
+        - [ ] ExpressionSuite.aspx
+        - [ ] Facebook.aspx
+        - [ ] Foursquare.aspx
+        - [ ] google.aspx
+        - [ ] GoogleAnalytics.aspx
+        - [ ] Hohm.aspx
+        - [ ] HyperV.aspx
+        - [ ] iis.aspx
+        - [ ] Instyler.aspx
+        - [ ] isaserver.aspx
+        - [ ] LINQ.aspx
+        - [ ] LiveMeeting.aspx
+        - [ ] LiveWriter.aspx
+        - [ ] mediacenter.aspx
+        - [ ] MediaPlayer.aspx
+        - [ ] Microsoft_Project.aspx
+        - [ ] MSAjax.aspx
+        - [ ] MSDN.aspx
+        - [ ] MSForm.aspx
+        - [ ] MSNMessenger.aspx
+        - [ ] MSWebsite.aspx
+        - [ ] MYOB.aspx
+        - [ ] NetTiers.aspx
+        - [ ] PerformancePoint.aspx
+        - [ ] Plaxo.aspx
+        - [ ] Pluralsight.aspx
+        - [ ] Project.aspx
+        - [ ] ProjectServer.aspx
+        - [ ] Project_Server.aspx
+        - [ ] Project_Server_Integration.aspx
+        - [ ] Project_TFS.aspx
+        - [ ] QueryDesigner.aspx
+        - [ ] ReportingServiceReportBuilder.aspx
+        - [ ] ReportingServices.aspx
+        - [ ] RescueTime.aspx
+        - [ ] RulesToBetterXDA.aspx
+        - [ ] sharepoint.aspx
+        - [ ] Silverlight.aspx
+        - [ ] Skype.aspx
+        - [ ] SMH.aspx
+        - [ ] Snagit.aspx
+        - [ ] SourceSafe.aspx
+        - [ ] sqlserver.aspx
+        - [ ] SQLserverOLAP.aspx
+        - [ ] SugarSync.aspx
+        - [ ] TeamCompanion.aspx
+        - [ ] TeamFoundationServer.aspx
+        - [ ] TeamFoundationServer2010.aspx
+        - [ ] Telerik.aspx
+        - [ ] TelerikASPWeb.aspx
+        - [ ] TelerikSharePointAccelerationKit.aspx
+        - [ ] TelerikTests.aspx
+        - [ ] TelerikTestStudio.aspx
+        - [ ] TelerikWindowsForms.aspx
+        - [ ] terminalservices.aspx
+        - [ ] TFS-Azure.aspx
+        - [ ] TFSDebuggerCanvas.aspx
+        - [ ] TFSSidekicks.aspx
+        - [ ] TFS_TWA-Portal.aspx
+        - [ ] TFS_VSScrumProcess.aspx
+        - [ ] Tweetdeck.aspx
+        - [ ] vbuildpro.aspx
+        - [ ] VirtualEarth.aspx
+        - [ ] VirtualPC.aspx
+        - [ ] Vista.aspx
+        - [ ] VisualStudio.aspx
+        - [ ] VSBuildandDeploy.aspx
+        - [ ] VSTT.aspx
         - 📁 WaitingForSugggestionsToMoveToSharePoint
-            - [x] zaVSGallery.aspx
-        - [x] zaactivesync.aspx
-        - [x] zaantispyware.aspx
-        - [x] zaASPNET.aspx
-        - [x] zaAsterix.aspx
-        - [x] zaBing.aspx
-        - [x] zablinq.aspx
-        - [x] zaCamtasia.aspx
-        - [x] zaCRM.aspx
-        - [x] zadataanalyzer.aspx
-        - [x] zaDefault.aspx
-        - [x] zadnn.aspx
-        - [x] zaDOTNET.aspx
-        - [x] zaDotNetNuke.aspx
-        - [x] zaDynamicData.aspx
-        - [x] zaexchange.aspx
-        - [x] zaExpression.aspx
-        - [x] zaExpressionBlend.aspx
-        - [x] zaExpressionSuite.aspx
-        - [x] zaFacebook.aspx
-        - [x] zaFoursquare.aspx
-        - [x] zagoogle.aspx
-        - [x] zaGoogleAnalytics.aspx
-        - [x] zaHohm.aspx
-        - [x] zaHyperV.aspx
-        - [x] zaiis.aspx
-        - [x] zaInstyler.aspx
-        - [x] zaisaserver.aspx
-        - [x] zaLINQ.aspx
-        - [x] zaLiveMeeting.aspx
-        - [x] zaLiveWriter.aspx
-        - [x] zamediacenter.aspx
-        - [x] zaMediaPlayer.aspx
-        - [x] zaMicrosoft_Project.aspx
-        - [x] zaMSAjax.aspx
-        - [x] zaMSDN.aspx
-        - [x] zaMSForm.aspx
-        - [x] zaMSNMessenger.aspx
-        - [x] zaMSWebsite.aspx
-        - [x] zaMYOB.aspx
-        - [x] zaNetTiers.aspx
-        - [x] zaPerformancePoint.aspx
-        - [x] zaPlaxo.aspx
-        - [x] zaPluralsight.aspx
-        - [x] zaProject.aspx
-        - [x] zaProjectServer.aspx
-        - [x] zaProject_Server.aspx
-        - [x] zaProject_Server_Integration.aspx
-        - [x] zaProject_TFS.aspx
-        - [x] zaQueryDesigner.aspx
-        - [x] zaReportingServiceReportBuilder.aspx
-        - [x] zaReportingServices.aspx
-        - [x] zaRescueTime.aspx
-        - [x] zaRulesToBetterXDA.aspx
-        - [x] zasharepoint.aspx
-        - [x] zaSilverlight.aspx
-        - [x] zaSkype.aspx
-        - [x] zaSMH.aspx
-        - [x] zaSnagit.aspx
-        - [x] zaSourceSafe.aspx
-        - [x] zasqlserver.aspx
-        - [x] zaSQLserverOLAP.aspx
-        - [x] zaSugarSync.aspx
-        - [x] zaTeamCompanion.aspx
-        - [x] zaTeamFoundationServer.aspx
-        - [x] zaTeamFoundationServer2010.aspx
-        - [x] zaTelerik.aspx
-        - [x] zaTelerikASPWeb.aspx
-        - [x] zaTelerikSharePointAccelerationKit.aspx
-        - [x] zaTelerikTests.aspx
-        - [x] zaTelerikTestStudio.aspx
-        - [x] zaTelerikWindowsForms.aspx
-        - [x] zaterminalservices.aspx
-        - [x] zaTFS-Azure.aspx
-        - [x] zaTFSDebuggerCanvas.aspx
-        - [x] zaTFSSidekicks.aspx
-        - [x] zaTFS_TWA-Portal.aspx
-        - [x] zaTFS_VSScrumProcess.aspx
-        - [x] zaTweetdeck.aspx
-        - [x] zavbuildpro.aspx
-        - [x] zaVirtualEarth.aspx
-        - [x] zaVirtualPC.aspx
-        - [x] zaVista.aspx
-        - [x] zaVisualStudio.aspx
-        - [x] zaVSBuildandDeploy.aspx
-        - [x] zaVSTT.aspx
-        - [x] zaWhatsApp.aspx
-        - [x] zawindows.aspx
-        - [x] zawindows2008r2.aspx
-        - [x] zawindows7.aspx
-        - [x] zaWindowsDesktopSearch.aspx
-        - [x] zaWindowsMobile.aspx
-        - [x] zaWindowsPhotoViewer.aspx
-        - [x] zaWise.aspx
-        - [x] zaWPF.aspx
+            - [ ] VSGallery.aspx
+        - [ ] WhatsApp.aspx
+        - [ ] windows.aspx
+        - [ ] windows2008r2.aspx
+        - [ ] windows7.aspx
+        - [ ] WindowsDesktopSearch.aspx
+        - [ ] WindowsMobile.aspx
+        - [ ] WindowsPhotoViewer.aspx
+        - [ ] Wise.aspx
+        - [ ] WPF.aspx
         - [ ] zrApple.aspx
         - [ ] zrInternetexplorer.aspx
         - [ ] zrIphone.aspx
@@ -842,77 +843,78 @@
     - 📁 CRM
         - [ ] zrCRM4_HowToSendACrmNewsletter.aspx
         - [ ] zrRulestoBetterCRMMailMergeTemplate.aspx
+    - [ ] Default.aspx
     - 📁 DeveloperAccess
-        - [x] zaAccessShortcutKeys.aspx
-        - [x] zaattachmentmanageroverview.aspx
-        - [x] zahowtodomailmergeinwordusingaccessdata.aspx
-        - [x] zahowtoimproveaccessperformance.aspx
-        - [x] zaWhatToDoAfterCrash.aspx
-        - [x] zawhydatarenovator.aspx
+        - [ ] AccessShortcutKeys.aspx
+        - [ ] attachmentmanageroverview.aspx
+        - [ ] howtodomailmergeinwordusingaccessdata.aspx
+        - [ ] howtoimproveaccessperformance.aspx
+        - [ ] WhatToDoAfterCrash.aspx
+        - [ ] whydatarenovator.aspx
         - [x] zzDefault.aspx
     - 📁 DeveloperDotNet
+        - [ ] DotNetStandard_ObjectNaming.aspx
+        - [ ] DotNetStandard_ProjectNaming.aspx
+        - [ ] EditXMLPage.aspx
+        - [ ] GuidelinesForReporting.aspx
+        - [ ] GuidelinesForReportingRichClient.aspx
+        - [ ] GuidelinesForReportingWebClient.aspx
+        - [ ] InteropInDotNetAndHowToAvoidDLLHell.aspx
         - 📁 Resources
             - 📁 Northwind
                 - [x] zzDefault.aspx
             - [x] zzDefault.aspx
-        - [x] zaDotNetStandard_ObjectNaming.aspx
-        - [x] zaDotNetStandard_ProjectNaming.aspx
-        - [x] zaEditXMLPage.aspx
-        - [x] zaGuidelinesForReporting.aspx
-        - [x] zaGuidelinesForReportingRichClient.aspx
-        - [x] zaGuidelinesForReportingWebClient.aspx
-        - [x] zaInteropInDotNetAndHowToAvoidDLLHell.aspx
-        - [x] zaSSWNorthwindArchitectureSupportingWebServices.aspx
-        - [x] zaUsingTFSToEditWebsite.aspx
+        - [ ] SSWNorthwindArchitectureSupportingWebServices.aspx
+        - [ ] UsingTFSToEditWebsite.aspx
         - [x] zzDefault.aspx
         - [x] zzHowToMigrate.aspx
     - 📁 DeveloperGeneral
-        - [x] zaAccessTools.aspx
-        - [x] zaCreatingScheduledJobsOnAServer.aspx
-        - [x] zaExchangeServer.aspx
-        - [x] zainternetexplorertools.aspx
-        - [x] zaLaptopTools.aspx
-        - [x] zanetTools.aspx
-        - [x] zanetworktools.aspx
-        - [x] zaoutlooktools.aspx
-        - [x] zapocketpctools.aspx
-        - [x] zaSilverlightTools.aspx
-        - [x] zaSQLservertools.aspx
-        - [x] zaSuburbCombo.aspx
-        - [x] zaTeamFoundationServerPowerTools.aspx
-        - [x] zaTFS.aspx
-        - [x] zaTFSTools.aspx
-        - [x] zaTheBest3rdPartyTools.aspx
-        - [x] zaTheBestWebsites.aspx
-        - [x] zaVisualStudioTools.aspx
-        - [x] zawebdevelopmenttools.aspx
-        - [x] zaWebdevelopmentToolsASPNET.aspx
-        - [x] zaWebsites.aspx
-        - [x] zawindowsdevelopmenttools.aspx
-        - [x] zaWindowsMobile.aspx
-        - [x] zaWindowsTools.aspx
-        - [x] zaWinformControls.aspx
+        - [ ] AccessTools.aspx
+        - [ ] CreatingScheduledJobsOnAServer.aspx
+        - [ ] ExchangeServer.aspx
+        - [ ] internetexplorertools.aspx
+        - [ ] LaptopTools.aspx
+        - [ ] netTools.aspx
+        - [ ] networktools.aspx
+        - [ ] outlooktools.aspx
+        - [ ] pocketpctools.aspx
+        - [ ] SilverlightTools.aspx
+        - [ ] SQLservertools.aspx
+        - [ ] SuburbCombo.aspx
+        - [ ] TeamFoundationServerPowerTools.aspx
+        - [ ] TFS.aspx
+        - [ ] TFSTools.aspx
+        - [ ] TheBest3rdPartyTools.aspx
+        - [ ] TheBestWebsites.aspx
+        - [ ] VisualStudioTools.aspx
+        - [ ] webdevelopmenttools.aspx
+        - [ ] WebdevelopmentToolsASPNET.aspx
+        - [ ] Websites.aspx
+        - [ ] windowsdevelopmenttools.aspx
+        - [ ] WindowsMobile.aspx
+        - [ ] WindowsTools.aspx
+        - [ ] WinformControls.aspx
         - [x] zzDefault.aspx
         - [x] zzFavourite3rdPartyTools.aspx
     - 📁 DeveloperInternet
-        - [x] za216color.aspx
-        - [x] zahowtofixbrokenlinks.aspx
-        - [x] zaHowToFTPWithIExplorer.aspx
-        - [x] zaHowToFTPWithIExplorerpassword.aspx
-        - [x] zaStandardWebColours.aspx
+        - [ ] 216color.aspx
+        - [ ] howtofixbrokenlinks.aspx
+        - [ ] HowToFTPWithIExplorer.aspx
+        - [ ] HowToFTPWithIExplorerpassword.aspx
+        - [ ] StandardWebColours.aspx
         - [x] zzDefault.aspx
     - 📁 DeveloperSharePoint
-        - [x] zaVMDevelopment.aspx
+        - [ ] VMDevelopment.aspx
     - 📁 DeveloperSQLReportingServices
-        - [x] zaSQLServerReportingService_1_ReportsNaming.aspx
+        - [ ] SQLServerReportingService_1_ReportsNaming.aspx
         - [x] zzDefault.aspx
     - 📁 DeveloperSQLServer
-        - [x] zacreatingasqlserverprofilertrace.aspx
-        - [x] zadataschemastandard.aspx
-        - [x] zasetupsqlserverserviceforreplication.aspx
-        - [x] zaSQLServerStandard_3_StoredProcedureFormatting.aspx
-        - [x] zaSQLServerStandard_6_DatabaseDesignStandards.aspx
-        - [x] zaSSWStandardForUpsizing.aspx
+        - [ ] creatingasqlserverprofilertrace.aspx
+        - [ ] dataschemastandard.aspx
+        - [ ] setupsqlserverserviceforreplication.aspx
+        - [ ] SQLServerStandard_3_StoredProcedureFormatting.aspx
+        - [ ] SQLServerStandard_6_DatabaseDesignStandards.aspx
+        - [ ] SSWStandardForUpsizing.aspx
         - [ ] zrSQLServerStandard_1_ObjectNaming.aspx
         - [ ] zrSQLServerStandard_2_StoredProcedureNaming.aspx
         - [ ] zrSQLServerStandard_4_IndexesNaming.aspx
@@ -925,46 +927,46 @@
         - [x] zzDefault.aspx
         - [x] zzSourceCodeLicenseAgreement.aspx
     - 📁 Rules
+        - [ ] CreatingATimeDimensionIn10EasySteps.aspx
+        - [ ] dataschemastandard.aspx
         - 📁 DeveloperSQLReportingServices
-            - [x] zaSQLServerReportingService_1_ReportsNaming.aspx
+            - [ ] SQLServerReportingService_1_ReportsNaming.aspx
             - [x] zzDefault.aspx
-        - [x] zaCreatingATimeDimensionIn10EasySteps.aspx
-        - [x] zadataschemastandard.aspx
-        - [x] zaGoodThingsBadThings.aspx
-        - [x] zaMakingOLAPReports.aspx
-        - [x] zaRulesToBetterAccessApplications.aspx
-        - [x] zaRulesToBetterASPDotNet.aspx
-        - [x] zaRulesToBetterBusinessIntelligence.aspx
-        - [x] zaRulesToBetterBusinessIntelligenceResourceSetup.aspx
-        - [x] zaRulestoBetterCommandLines.aspx
-        - [x] zaRulesToBetterConnectionStrings.aspx
-        - [x] zaRulesToBetterCRM3To4Migration.aspx
-        - [x] zaRulestoBetterDotNetNuke.aspx
-        - [x] zaRulesToBetterExchangeServer.aspx
-        - [x] zaRulesToBetterISAServer.aspx
-        - [x] zaRulesToBetterLargeDotNetProjects.aspx
-        - [x] zaRulesToBetterMicrosoftCRMDataSynchronization.aspx
-        - [x] zaRulesToBetterOLAPClients.aspx
-        - [x] zaRulesToBetterProjectManagementWithTFS.aspx
-        - [x] zaRulesToBetterProjectManagerMethodology.aspx
-        - [x] zaRulesToBetterRegularExpressions.aspx
-        - [x] zaRulesToBetterReportingSolutions.aspx
-        - [x] zaRulesToBetterSetups.aspx
-        - [x] zaRulesToBetterSQLReportingServices.aspx
-        - [x] zaRulesToBetterSSWProducts.aspx
-        - [x] zaRulestoBetterVB6MigrationtoDotNET.aspx
-        - [x] zaRulesToBetterVirtualPCs.aspx
-        - [x] zaRulesToBetterVistaCompatibilities.aspx
-        - [x] zaRulesToBetterWebsitesOnlineTransactions.aspx
-        - [x] zaRulesToBetterWindows2003.aspx
-        - [x] zaRulesToBetterWindows7Deployment.aspx
-        - [x] zaRulesToBetterWindows8Deployment.aspx
-        - [x] zaRulesToBetterWindowsForms.aspx
-        - [x] zaRulesToBetterWindowsFormsClickOnce.aspx
-        - [x] zaRulestoBetterWindowsVistaDeployment.aspx
-        - [x] zaRulesToUpsizingAccess.aspx
-        - [x] zaTraining.aspx
-        - [x] zaUsingGoogleCalendar.aspx
+        - [ ] GoodThingsBadThings.aspx
+        - [ ] MakingOLAPReports.aspx
+        - [ ] RulesToBetterAccessApplications.aspx
+        - [ ] RulesToBetterASPDotNet.aspx
+        - [ ] RulesToBetterBusinessIntelligence.aspx
+        - [ ] RulesToBetterBusinessIntelligenceResourceSetup.aspx
+        - [ ] RulestoBetterCommandLines.aspx
+        - [ ] RulesToBetterConnectionStrings.aspx
+        - [ ] RulesToBetterCRM3To4Migration.aspx
+        - [ ] RulestoBetterDotNetNuke.aspx
+        - [ ] RulesToBetterExchangeServer.aspx
+        - [ ] RulesToBetterISAServer.aspx
+        - [ ] RulesToBetterLargeDotNetProjects.aspx
+        - [ ] RulesToBetterMicrosoftCRMDataSynchronization.aspx
+        - [ ] RulesToBetterOLAPClients.aspx
+        - [ ] RulesToBetterProjectManagementWithTFS.aspx
+        - [ ] RulesToBetterProjectManagerMethodology.aspx
+        - [ ] RulesToBetterRegularExpressions.aspx
+        - [ ] RulesToBetterReportingSolutions.aspx
+        - [ ] RulesToBetterSetups.aspx
+        - [ ] RulesToBetterSQLReportingServices.aspx
+        - [ ] RulesToBetterSSWProducts.aspx
+        - [ ] RulestoBetterVB6MigrationtoDotNET.aspx
+        - [ ] RulesToBetterVirtualPCs.aspx
+        - [ ] RulesToBetterVistaCompatibilities.aspx
+        - [ ] RulesToBetterWebsitesOnlineTransactions.aspx
+        - [ ] RulesToBetterWindows2003.aspx
+        - [ ] RulesToBetterWindows7Deployment.aspx
+        - [ ] RulesToBetterWindows8Deployment.aspx
+        - [ ] RulesToBetterWindowsForms.aspx
+        - [ ] RulesToBetterWindowsFormsClickOnce.aspx
+        - [ ] RulestoBetterWindowsVistaDeployment.aspx
+        - [ ] RulesToUpsizingAccess.aspx
+        - [ ] Training.aspx
+        - [ ] UsingGoogleCalendar.aspx
         - [ ] zrRulesToBeingSoftwareConsultantsDealingWithClients.aspx
         - [ ] zrRulesToBeingSoftwareConsultantsWorkingInATeam.aspx
         - [ ] zrRulestoBetterAccessDatabases.aspx
@@ -1030,28 +1032,26 @@
         - [x] zzRulesToBetterWebsitesContent.aspx
         - [x] zzRulesToBetterWebsitesGraphics.aspx
     - 📁 SSWLogo
-        - [x] zaDefault.aspx
+        - [ ] Default.aspx
     - 📁 Support
-        - [x] zaBugReportOrEnhancement.aspx
-        - [x] zaRemoteSupportSampleScript.aspx
-        - [x] zaRemoteSupportViaCopilot.aspx
-        - [x] zaRemoteSupportViaNetMeeting.aspx
-        - [x] zaRemoteSupportViaTeamViewer.aspx
-        - [x] zaRemoteSupportViaUltraVNC.aspx
+        - [ ] BugReportOrEnhancement.aspx
+        - [ ] RemoteSupportSampleScript.aspx
+        - [ ] RemoteSupportViaCopilot.aspx
+        - [ ] RemoteSupportViaNetMeeting.aspx
+        - [ ] RemoteSupportViaTeamViewer.aspx
+        - [ ] RemoteSupportViaUltraVNC.aspx
         - [x] zzDefault.aspx
         - [x] zzRemoteSupportViaMSN.aspx
     - 📁 Templates
-        - [x] zaSSWGoogleReportTemplate.aspx
+        - [ ] SSWGoogleReportTemplate.aspx
         - [x] zzDefault.aspx
         - [x] zzSSWWebTemplate.aspx
+    - [ ] Training.aspx
     - 📁 WiseSetup
-        - [x] zaReleasingAVersion.aspx
-        - [x] zaUserGuide.aspx
-        - [x] zaWiseStandards.aspx
+        - [ ] ReleasingAVersion.aspx
+        - [ ] UserGuide.aspx
+        - [ ] WiseStandards.aspx
         - [x] zzDefault.aspx
-    - [x] zaAdventureWorksSamples.aspx
-    - [x] zaDefault.aspx
-    - [x] zaTraining.aspx
 - 📁 StandardsInternal
     - 📁 ComputerSetup
         - [ ] SettingUpVPN.aspx
@@ -1122,9 +1122,9 @@
     - [x] zzDefault.aspx
     - [x] zzSupport.aspx
 - 📁 TeamCalendar
-    - [x] zaDefault.aspx
-    - [x] zahowtobooksomeoneformeeting.aspx
-    - [x] zauserguide.aspx
+    - [ ] Default.aspx
+    - [ ] howtobooksomeoneformeeting.aspx
+    - [ ] userguide.aspx
 - 📁 Testimonials
     - [x] zzdefault.aspx
     - [x] zzViewAll.aspx
@@ -1170,16 +1170,16 @@
     - [x] zzVSTSCustomization.aspx
     - [x] zzWindows-Azure-Webinar.aspx
 - 📁 UpsizingPRO
-    - [x] zaDefault.aspx
-    - [x] zadtsproblem.aspx
-    - [x] zajan02sqlserverprofessional.aspx
-    - [x] zaResources.aspx
-    - [x] zaSQL_Server_Migration_Assistant_Wizard_for_Access.aspx
-    - [x] zatalesfromthebattlefield.aspx
-    - [x] zaupsizingdatatypemapping.aspx
-    - [x] zaUserGuide.aspx
-    - [x] zaworkafter.aspx
-    - [x] zaworkbefore.aspx
+    - [ ] Default.aspx
+    - [ ] dtsproblem.aspx
+    - [ ] jan02sqlserverprofessional.aspx
+    - [ ] Resources.aspx
+    - [ ] SQL_Server_Migration_Assistant_Wizard_for_Access.aspx
+    - [ ] talesfromthebattlefield.aspx
+    - [ ] upsizingdatatypemapping.aspx
+    - [ ] UserGuide.aspx
+    - [ ] workafter.aspx
+    - [ ] workbefore.aspx
 - [ ] Version.aspx
 - 📁 Video
     - [ ] Default.aspx
@@ -1188,7 +1188,7 @@
     - [ ] Default.aspx
     - [ ] UserGuide.aspx
 - 📁 WisePRO
-    - [x] zaDefault.aspx
+    - [ ] Default.aspx
 - 📁 zsMaintenance
     - [ ] Default.aspx
     - [ ] testimonialmodify.aspx
