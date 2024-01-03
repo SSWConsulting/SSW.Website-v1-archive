@@ -33,6 +33,11 @@ To run the Python script that generates the `history` folder, run the following 
 python html_archiver.py
 ```
 
+
+#### Features
+
+> **Image Replacement**
+
 ### Markdown Todo List
 
 To run the Python script that generates the `todos.md` file, run the following command:

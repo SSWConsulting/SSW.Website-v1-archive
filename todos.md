@@ -1185,8 +1185,8 @@
     - [ ] Default.aspx
     - [ ] Why-Choose-SSW.aspx
 - 📁 WebPager
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - 📁 WisePRO
     - [x] zaDefault.aspx
 - 📁 zsMaintenance
