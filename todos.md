@@ -105,7 +105,6 @@
         - [ ] Bupa.aspx
         - [ ] eMove.aspx
         - [ ] EstateMaster.aspx
-        - [ ] EventCinemas.aspx
         - [ ] HutchisonWeller.aspx
         - [ ] Maximus.aspx
         - [ ] Medibank.aspx
@@ -119,6 +118,7 @@
         - [ ] WorleyParsons.aspx
         - [x] zzAuctions-Plus.aspx
         - [x] zzDefault.aspx
+        - [x] zzEventCinemas.aspx
     - [ ] Consulting.aspx
     - [ ] Crash-Plan-Pro.aspx
     - [ ] Maps-Development.aspx
