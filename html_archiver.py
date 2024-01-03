@@ -337,33 +337,36 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
 
     attention_span = soup.new_tag("div")
     attention_span.string = "⚠️ This page has been archived"
-    attention_span["style"] = "color: #cc4141; font-size: 24px; font-weight: 600;"
+    attention_span["style"] = "color: white; font-size: 2rem; font-weight: 600;"
 
     archive_div.append(attention_span)
 
+    content_div = soup.new_tag("div")
+    content_div["style"] = "color: white; font-size: 1.125rem; font-weight: 600;"
     content_p = soup.new_tag("p")
 
-    content_p.append(" This is an archived page originally from " + url)
-    content_p.append(" and is no longer maintained. Some links may not work and information may be out of date. Please navigate to ")
+    content_p.append("✅ New page with updated info: ")
 
     if "Training" in url:
-        new_link = soup.new_tag("a", href="https://www.ssw.com.au/events", style="color: #999")
+        new_link = soup.new_tag("a", href="https://www.ssw.com.au/events", style="color: white")
         new_link.append("ssw.com.au/events")
     else: 
-        new_link = soup.new_tag("a", href="https://www.ssw.com.au", style="color: #999")
+        new_link = soup.new_tag("a", href="https://www.ssw.com.au", style="color: white")
         new_link.append("ssw.com.au")
 
     content_p.append(new_link)
-    content_p.append(" for updated information.")
 
-    archive_div.append(content_p)
+    content_div.append(content_p)
 
+    archive_div.append(content_div)
+
+    # TODO: Maybe should be red
     archive_div[
         "style"
     ] = """
         text-align: center; 
         font-size: 1.125rem; 
-        color: #999; 
+        color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
