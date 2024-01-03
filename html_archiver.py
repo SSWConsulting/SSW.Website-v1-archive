@@ -244,7 +244,7 @@ def download_image(src: str, path: str) -> str:
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
     links = soup.find_all("link")
     css_files = os.listdir(
-        "C:\\Users\\hazro\\code\\ssw\\SSW.Website-v1-Progress\\history\\css"
+        "./history/css"
     )
 
     for link in links:
