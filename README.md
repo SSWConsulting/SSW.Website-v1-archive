@@ -15,7 +15,18 @@ bypass frontdoor (to see old pages) - https://prod.ssw.com.au/
 
 This script will save every page from the v1 website as HTML files in the `history` folder. It will scan each page and locate any images and save them in the `history` folder as well, preserving the original path of the images on the v1 site. 
 
-Core CSS and JS files exist in the `history` folder, and will be added to each page if required. Files include:
+To run the Python script that generates the `history` folder, run the following command:
+
+```bash
+python html_archiver.py
+```
+
+
+#### Features
+
+> **Script + CSS Linking - `fix_scripts` and `fix_css`**
+
+Modified existing core CSS and JS files exist in the `history` folder, and will be added to each page if required. Files include:
 
 - `jquery.js` - JQuery
 - `menu.js` - Megamenu script
@@ -27,16 +38,34 @@ Core CSS and JS files exist in the `history` folder, and will be added to each p
 
 The script also removes all `iframe` and `script` tags to ensure we do not recieve unecessary noise + interaction (e.g. Chatbase, Google Analytics, etc.) when we are viewing these archived pages.
 
-To run the Python script that generates the `history` folder, run the following command:
+> **Image Downloading - `fix_images`**
 
-```bash
-python html_archiver.py
-```
+By default, the script will download all images from every page it saves from the v1 site and save them in the `history` folder. It will save them in the same relative path as the original image on the v1 site e.g. `ssw.com.au/ssw/images/Raven/SSWLogo.svg` will save in `history/images/Raven/SSWLogo.svg`.
 
+> **Image Replacement - `fix_images`**
 
-#### Features
+By updating the `IMAGE_REPLACEMENTS` dictionary in the `html_archiver.py` file, you can replace any image on the v1 site with another image. The key (e.g. `adam_thumb.jpg`) will replace any image URL that ends with the key (e.g. `https://www.ssw.com.au/ssw/Standards/Images/adam_thumb.jpg`) with a non-broken image (e.g. `https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg`) and then save that image instead of the broken original image. 
 
-> **Image Replacement**
+> **Link Replacement - `fix_links`**
+
+This function replaces broken links, and links already archived (i.e. have `za` as the file prefix in the `SSW.Website.WebUI` folder). 
+
+> **Banner Addition - `add_archive_header`**
+
+This function adds a banner to the top of the page to indicate that the page has been archived.
+
+![Alt text](_docs/archive_banner.png)
+
+**Figure: The banner added to each page**
+
+> **Index Page Creation - `output_index_page`**
+
+This function generates a table of the pages that have been archived, and the links to the old pages.
+
+![Alt text](image.png)
+
+**Figure: Index page example for `/Training`**
+
 
 ### Markdown Todo List
 
