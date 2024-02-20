@@ -44,6 +44,7 @@ IMAGE_REPLACEMENTS = {
 }
 
 PARENT_DIR = "history/"
+FONTS_DIR = PARENT_DIR + "fonts/"
 SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
 SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
@@ -57,7 +58,7 @@ driver = webdriver.Chrome(service=service)
 def main():
     archive_pages("SSW.Website.WebUI")
 
-def archive_pages(path: str) -> None:
+def archive_pages(path: str) -> dict[str, str]:
     items_written: dict[str, str] = {}
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
@@ -65,12 +66,12 @@ def archive_pages(path: str) -> None:
 
         # Recursively call archive_pages on subdirectories
         if os.path.isdir(item_path) and split_path[1] in WHITELIST:
-            archive_pages(item_path)
+            items_written.update(archive_pages(item_path))
 
         # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
         elif os.path.isfile(item_path) and item_path.endswith(".aspx") and not split_path[-1].startswith("zz") and split_path[1] in WHITELIST:
             # If it starts with za (means it has been archived before), remove the za
-            if split_path[-1].startswith("za"):
+            if split_path[-1].startswith("za") or split_path[-1].startswith("zr"):
                 split_path[-1] = split_path[-1][2:]
 
             # URI on the v1 website e.g. Training/Default.aspx
@@ -110,7 +111,9 @@ def archive_pages(path: str) -> None:
                 os.makedirs(output_dir)
 
             # Filename with .aspx removed and kebab-case
-            output_filename = (PARENT_DIR + pascal_to_kebab(uri.replace(".aspx", "")) + ".html")
+            # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
+            filename = uri.replace(".aspx", "") + ".html";
+            output_filename = (PARENT_DIR + pascal_to_kebab(filename))
             with open(output_filename, "w+", encoding="utf-8") as f:
                 f.write(page_source)
                 items_written[url] = output_filename
@@ -125,6 +128,7 @@ def archive_pages(path: str) -> None:
     output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
 
     output_index_page(items_written, output_path)
+    return items_written
 
 
 def pascal_to_kebab(s: str) -> str:
@@ -135,11 +139,19 @@ def pascal_to_kebab(s: str) -> str:
     s = s.replace("SQL", "Sql")
     s = s.replace("BI", "Bi")
     s = s.replace("ALM", "Alm")
+    s = s.replace("SSW", "Ssw")
+    s = s.replace("iOS", "Ios")
+    s = s.replace("SignalR", "Signalr")
+    s = s.replace("AngularJS", "Angularjs")
+    s = s.replace("HoloLens", "Hololens")
+    s = s.replace("UTS", "Uts")
+
 
     s = re.sub(r"and([A-Z0-9])", r"And\1", s) 
     s = re.sub(r"to([A-Z0-9])", r"To\1", s) 
     s = s.replace("SharePoint", "Sharepoint")
-    
+    s = s.replace("_", "-")
+
     # add dashes between words and numbers 
     s = re.sub(r"(\d+)([A-Z])", r"\1-\2", s)
 
@@ -229,7 +241,7 @@ def download_image(src: str, path: str) -> str:
     img_res = requests.get(request_path)
     img_data = img_res.content
 
-    store_path = (image_path + "/" + image_name).replace("//", "/").lower()
+    store_path = pascal_to_kebab(image_path + "/" + image_name).replace("//", "/")
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
@@ -270,6 +282,28 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             if href is None:
                 continue
             link["href"] = download_image(href, path)
+
+    font_filename_pattern = r"url\(['\"](.+\/(.+\.(?:eot|ttf|woff2|woff|svg)).+)['\"]\)"
+    styles = soup.find_all("style")
+    for style in styles: 
+        matches = re.findall(font_filename_pattern, style.string)
+        for match in matches:
+            font_buf = requests.get(match[0])
+
+            if (font_buf.status_code != 200):
+                print(f"Failed to download font: {match[0]}")
+                continue
+
+            font_path = (FONTS_DIR + match[1]).lower()
+            if not os.path.exists(FONTS_DIR):
+                os.makedirs(FONTS_DIR)
+            
+            if os.path.exists(font_path):
+                continue
+
+            with open(font_path, "wb") as f:
+                f.write(font_buf.content)
+            style.string = style.string.replace(match[0], f"/history/fonts/{match[1]}")
 
     return soup
 
@@ -390,7 +424,7 @@ def output_index_page(file_list: dict[str, str], path: str):
     buf = """<!DOCTYPE html>
 <html>
 <head>
-    <title>Training Pages</title>
+    <title>""" + path.split("/")[0] + """ Pages</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -403,7 +437,7 @@ def output_index_page(file_list: dict[str, str], path: str):
     </style>
 </head>
 <body>
-    <h1>Training Pages</h1>
+    <h1>""" + path.split("/")[0] + """ Pages</h1>
     <table>
         <tr>
             <th>New URL</th>
