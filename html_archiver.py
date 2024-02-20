@@ -5,7 +5,7 @@ import re
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-import html
+import urllib.parse
 
 # TODO: eXtremeEmails
 WHITELIST = [
@@ -140,25 +140,32 @@ def archive_pages(path: str) -> dict[str, str]:
     return items_written
 
 
+import re
+
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
     regex = r"([a-z])([A-Z0-9])"
+    replacements = {
+        "NET": "Net",
+        "SQL": "Sql",
+        "BI": "Bi",
+        "ALM": "Alm",
+        "SSW": "Ssw",
+        "iOS": "Ios",
+        "SignalR": "Signalr",
+        "AngularJS": "Angularjs",
+        "HoloLens": "Hololens",
+        "UTS": "Uts",
+        "DevOps": "Devops",
+        "SharePoint": "Sharepoint",
+        "_": "-",
+    }
 
-    s = s.replace("NET", "Net")
-    s = s.replace("SQL", "Sql")
-    s = s.replace("BI", "Bi")
-    s = s.replace("ALM", "Alm")
-    s = s.replace("SSW", "Ssw")
-    s = s.replace("iOS", "Ios")
-    s = s.replace("SignalR", "Signalr")
-    s = s.replace("AngularJS", "Angularjs")
-    s = s.replace("HoloLens", "Hololens")
-    s = s.replace("UTS", "Uts")
+    for old, new in replacements.items():
+        s = s.replace(old, new)
 
     s = re.sub(r"and([A-Z0-9])", r"And\1", s)
     s = re.sub(r"to([A-Z0-9])", r"To\1", s)
-    s = s.replace("SharePoint", "Sharepoint")
-    s = s.replace("_", "-")
 
     # add dashes between words and numbers
     s = re.sub(r"(\d+)([A-Z])", r"\1-\2", s)
@@ -210,7 +217,7 @@ def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             continue
 
         # Set the image src to the downloaded image's path
-        image["src"] = download_image(src, html.unescape(path))
+        image["src"] = download_image(src, path)
 
     return soup
 
@@ -246,7 +253,7 @@ def download_image(src: str, path: str) -> str:
     img_res = requests.get(request_path)
     img_data = img_res.content
 
-    store_path = pascal_to_kebab(image_path + "/" + image_name).replace("//", "/")
+    store_path = urllib.parse.unquote(pascal_to_kebab(image_path + "/" + image_name).replace("//", "/")).replace(" ", "")
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
