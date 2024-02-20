@@ -14,7 +14,7 @@ WHITELIST = [
     # "DataPRO",
     # "DataRenovator",
     # "EmailMergePRO",
-    # "Events",
+    "Events",
     # "ExchangeReporter",
     # "HealthAuditor",
     # "LinkAuditor",
@@ -28,7 +28,7 @@ WHITELIST = [
     # "SQLTotalCompare",
     # "Standards",
     # TODO: "StandardsInternal",
-    "Training",
+    # "Training",
     # "TeamCalendar",
     # "UpsizingPRO",
     # "WebPager"
@@ -105,7 +105,7 @@ def archive_pages(path: str) -> None:
             page_source = soup.prettify(formatter="html5")
 
             dir = "/".join(split_path[1:-1])
-            output_dir = (PARENT_DIR + dir).lower()
+            output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir)
 
@@ -139,6 +139,9 @@ def pascal_to_kebab(s: str) -> str:
     s = re.sub(r"and([A-Z0-9])", r"And\1", s) 
     s = re.sub(r"to([A-Z0-9])", r"To\1", s) 
     s = s.replace("SharePoint", "Sharepoint")
+    
+    # add dashes between words and numbers 
+    s = re.sub(r"(\d+)([A-Z])", r"\1-\2", s)
 
     return re.sub(regex, r"\1-\2", s).lower()
 
@@ -419,7 +422,8 @@ def output_index_page(file_list: dict[str, str], path: str):
 </body>
 </html>
 """
-    with open(os.path.join(path, "index.html"), "w") as f:
+    index_path = os.path.join(pascal_to_kebab(path), "index.html")
+    with open(index_path, "w") as f:
         f.write(buf)
 
 
