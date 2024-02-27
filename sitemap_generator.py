@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-WHITELIST = ["training"]
+WHITELIST = ["training", "events"]
 
 
 def get_urls(path: str) -> list[str]:
