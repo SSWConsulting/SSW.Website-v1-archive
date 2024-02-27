@@ -42,6 +42,7 @@ IMAGE_REPLACEMENTS = {
     "mehmet-thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Mehmet.jpg",
     "eric_thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/eric_phan.jpg",
     "SSWLogo-xmas.svg": "https://www.ssw.com.au/SSW/images/Raven/SSWLogo.svg",
+    "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
 }
 
 PARENT_DIR = "history/"
@@ -55,6 +56,7 @@ SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
+
 
 def main():
     archive_pages("SSW.Website.WebUI")
@@ -91,7 +93,9 @@ def archive_pages(path: str) -> dict[str, str]:
             if driver.current_url != url:
                 print("Redirect: " + url + " -> " + driver.current_url)
                 new_path_split = item_path.split("\\")
-                if not new_path_split[-1].startswith("za") and not new_path_split[-1].startswith("zr"):
+                if not new_path_split[-1].startswith("za") and not new_path_split[
+                    -1
+                ].startswith("zr"):
                     new_path_split[-1] = "zr" + new_path_split[-1]
                     os.rename(item_path, "/".join(new_path_split))
                 continue
@@ -141,6 +145,7 @@ def archive_pages(path: str) -> dict[str, str]:
 
 
 import re
+
 
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
@@ -245,7 +250,11 @@ def download_image(src: str, path: str) -> str:
 
     image_name = split_src[-1]
 
-    image_path = (PARENT_DIR + "/".join(split_src[offset:-1])).lower()
+    image_path = re.sub(
+        r"/+",
+        "/",
+        (PARENT_DIR + "/".join(split_src[offset:-1])).lower().replace("../", "/"),
+    )
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
@@ -253,7 +262,12 @@ def download_image(src: str, path: str) -> str:
     img_res = requests.get(request_path)
     img_data = img_res.content
 
-    store_path = urllib.parse.unquote(pascal_to_kebab(image_path + "/" + image_name).replace("//", "/")).replace(" ", "")
+    store_path = urllib.parse.unquote(
+        pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
+    )
+
+    if "header-tour-de-wagga" in store_path:
+        print(store_path)
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
@@ -386,6 +400,7 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 
     return soup
 
+
 def fix_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for i in soup.find_all("div", id="livestream"):
         i.extract()
@@ -416,7 +431,7 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
 
     content_p.append("✅ New page with updated info: ")
 
-    if "Training" in url:
+    if "Training" in url or "Events" in url:
         new_link = soup.new_tag(
             "a", href="https://www.ssw.com.au/events", style="color: white"
         )
