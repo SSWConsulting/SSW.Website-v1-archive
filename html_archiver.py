@@ -292,13 +292,17 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             if href is None:
                 continue
 
+            if "Import.css" in href:
+                link.extract()
+                continue
+
             if "ssw_raven_print" in href:
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
 
             for css_file in css_files:
-                if css_file in href:
+                if css_file.lower() in href.lower():
                     link["href"] = "/history/css/" + css_file
 
         elif link["rel"] == ["icon"]:
@@ -339,9 +343,6 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             continue
         href = link["href"]
 
-        if "2009" in href:
-            print("2009: " + href)
-
         # If it's not on the v1 site, skip it
         if not re.match(SSW_V1_REGEX, href):
             continue
@@ -355,8 +356,6 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         # TODO: If it's a link to an employee profile, change to SSW people
 
         # TODO: fix the link on http://127.0.0.1:4000/history/events/2006-sql/default.html to reference the new page
-        if "2009" in href:
-            print("got here: ", re.search(SECOND_FOLDER_REGEX, link["href"]))
 
         # If page has been migrated, change the link to the history page
         for folder in WHITELIST:
@@ -421,12 +420,16 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
 
     attention_span = soup.new_tag("div")
     attention_span.string = "⚠️ This page has been archived"
-    attention_span["style"] = "color: white; font-size: 2rem; font-weight: 600;"
+    attention_span["style"] = (
+        "color: white; font-size: 2rem !important; font-weight: 600;"
+    )
 
     archive_div.append(attention_span)
 
     content_div = soup.new_tag("div")
-    content_div["style"] = "color: white; font-size: 1.125rem; font-weight: 600;"
+    content_div["style"] = (
+        "color: white; font-size: 1.125rem !important; font-weight: 600;"
+    )
     content_p = soup.new_tag("p")
 
     content_p.append("✅ New page with updated info: ")
@@ -452,6 +455,7 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     archive_div[
         "style"
     ] = """
+        line-height: 1.5;
         text-align: center; 
         font-size: 1.125rem; 
         color: #999;
@@ -497,16 +501,16 @@ def output_index_page(file_list: dict[str, str], path: str):
         + """ Pages</h1>
     <table>
         <tr>
-            <th>New URL</th>
             <th>Old URL (TODO: delete after signoff from Adam)</th>
+            <th>New URL</th>
         </tr>"""
     )
 
     for file in file_list:
         buf += f"""      
         <tr>
-            <td><a href='/{file_list[file]}'>{file_list[file]}</a></td>
             <td><a href='{file}'>{file}</a></td>
+            <td><a href='/{file_list[file]}'>{file_list[file]}</a></td>
         </tr>"""
 
     buf += """

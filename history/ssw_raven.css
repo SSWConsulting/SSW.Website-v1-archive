@@ -11625,15 +11625,15 @@ body {
 .footer .footer-deploy p {
 	border-top: solid #414141 1px;
 }
-img[src$="LeaveSite.gif"],
+img[src$="leave-site.gif"],
 img[src$="leavesite.gif"],
-img[src$="NewWindow.gif"],
-img[src$="IconPdf.gif"],
-img[src$="NewWindow.gif"],
-img[src$="IconDoc.gif"],
+img[src$="new-window.gif"],
+img[src$="icon-pdf.gif"],
+img[src$="new-window.gif"],
+img[src$="icon-doc.gif"],
 img[src$="iconwmv.gif"],
-img[src$="iconAudio.gif"],
-img[src$="IconPPT.gif"] {
+img[src$="icon-audio.gif"],
+img[src$="Icon-ppt.gif"] {
 	display: none;
 }
 #WhatWeDo .col-xs-1,
