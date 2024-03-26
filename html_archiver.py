@@ -408,7 +408,7 @@ def fix_menu(soup: BeautifulSoup) -> BeautifulSoup:
 def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
     # Change the canonical to the new URL
     for i in soup.find_all("link", rel="canonical"):
-        i["href"] = transform_path(i["href"])
+        i["href"] = transform_path(i["href"]).replace("http://", "https://")
 
     return soup
 
