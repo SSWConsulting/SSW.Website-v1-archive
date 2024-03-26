@@ -361,9 +361,7 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         for folder in WHITELIST:
             match = re.search(SECOND_FOLDER_REGEX, link["href"])
             if match != None and folder == match.group(1):
-                link["href"] = pascal_to_kebab(
-                    link["href"].replace("/ssw/", "/history/").replace(".aspx", ".html")
-                )
+                link["href"] = transform_path(link["href"])
 
         # Direct book now buttons to the new book now page
         # should this cover all shop pages?
@@ -410,7 +408,7 @@ def fix_menu(soup: BeautifulSoup) -> BeautifulSoup:
 def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
     # Change the canonical to the new URL
     for i in soup.find_all("link", rel="canonical"):
-        i["href"] = i["href"].replace("/ssw/", "/history/")
+        i["href"] = transform_path(i["href"])
 
     return soup
 
@@ -521,6 +519,12 @@ def output_index_page(file_list: dict[str, str], path: str):
     index_path = os.path.join(pascal_to_kebab(path), "index.html")
     with open(index_path, "w") as f:
         f.write(buf)
+
+
+def transform_path(input_url: str) -> str:
+    return pascal_to_kebab(
+        input_url.replace("/ssw/", "/history/").replace(".aspx", ".html")
+    )
 
 
 if __name__ == "__main__":
