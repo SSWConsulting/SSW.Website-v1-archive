@@ -492,6 +492,9 @@ def output_index_page(file_list: dict[str, str], path: str):
             padding: 5px;
         }
     </style>
+    <link rel="canonical" href="https://www.ssw.com.au/"""
+        + path.replace("\\", "/")
+        + """>
 </head>
 <body>
     <h1>"""
