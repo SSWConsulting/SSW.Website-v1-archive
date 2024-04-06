@@ -403,7 +403,6 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuUpper"):
         div.decompose()
 
-    # Find and remove divs with class "MenuLower"
     for div in soup.find_all("div", id="MenuLower"):
         div.decompose()
 
