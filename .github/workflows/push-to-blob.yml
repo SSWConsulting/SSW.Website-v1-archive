@@ -1,0 +1,12 @@
+name: push-to-blob-on-push
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run-shell-script:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: chmod +x ./upload-blob.sh
+      - run: ./upload-blob.sh
