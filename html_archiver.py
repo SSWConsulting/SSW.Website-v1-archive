@@ -113,6 +113,7 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_breadcrumbs(soup, split_path[1])
             soup = fix_menu(soup)
             soup = fix_head(soup)
+            soup = remove_header_and_menu(soup)
 
             soup = add_archive_header(soup, url)
 
@@ -397,6 +398,15 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 
     return soup
 
+
+def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
+    for div in soup.find_all("div", id="MenuUpper"):
+        div.decompose()
+
+    for div in soup.find_all("div", id="MenuLower"):
+        div.decompose()
+
+    return soup
 
 def fix_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for i in soup.find_all("div", id="livestream"):
