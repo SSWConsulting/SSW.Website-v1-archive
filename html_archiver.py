@@ -139,7 +139,9 @@ def archive_pages(path: str) -> dict[str, str]:
                 new_path_split[-1] = "za" + new_path_split[-1]
                 os.rename(item_path, "/".join(new_path_split))
 
-    output_path = os.path.join("history", "/".join(path.split("\\")[1:]))
+    output_path = os.path.join(
+        PARENT_DIR, pascal_to_kebab("/".join(path.split("\\")[1:]))
+    )
 
     output_index_page(items_written, output_path)
     return items_written
@@ -266,9 +268,6 @@ def download_image(src: str, path: str) -> str:
     store_path = urllib.parse.unquote(
         pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
     )
-
-    if "header-tour-de-wagga" in store_path:
-        print(store_path)
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
@@ -408,6 +407,7 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
 
     return soup
 
+
 def fix_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for i in soup.find_all("div", id="livestream"):
         i.extract()
@@ -485,12 +485,14 @@ def output_index_page(file_list: dict[str, str], path: str):
     if len(file_list) <= 0:
         return
 
+    formatted_path = path.replace("\\", "/")
+
     buf = (
         """<!DOCTYPE html>
 <html>
 <head>
     <title>"""
-        + path.split("/")[0]
+        + formatted_path.split("/")[-1]
         + """ Pages</title>
     <style>
         body {
@@ -503,8 +505,9 @@ def output_index_page(file_list: dict[str, str], path: str):
         }
     </style>
     <link rel="canonical" href="https://www.ssw.com.au/"""
-        + path.replace("\\", "/")
-        + """>
+        + formatted_path
+        + '">'
+        + """
 </head>
 <body>
     <h1>"""
