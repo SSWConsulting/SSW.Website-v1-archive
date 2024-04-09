@@ -1,4 +1,5 @@
 name: push-to-blob-on-push
+
 on:
   push:
     paths:
@@ -9,6 +10,8 @@ on:
 jobs:
   run-shell-script:
     runs-on: ubuntu-latest
+    env:
+      ARCHIVE_KEY: ${{ secrets.AZURE_BLOB_STORAGE_KEY }}
     steps:
       - uses: actions/checkout@v4
       - run: git update-index --chmod=+x upload-blob.sh
