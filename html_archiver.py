@@ -486,6 +486,7 @@ def output_index_page(file_list: dict[str, str], path: str):
         return
 
     formatted_path = path.replace("\\", "/")
+    title = formatted_path.split("/")[-1]
 
     buf = (
         """<!DOCTYPE html>
@@ -511,7 +512,7 @@ def output_index_page(file_list: dict[str, str], path: str):
 </head>
 <body>
     <h1>"""
-        + path.split("/")[0]
+        + title
         + """ Pages</h1>
     <table>
         <tr>
