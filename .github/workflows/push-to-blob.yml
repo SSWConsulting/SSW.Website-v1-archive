@@ -1,6 +1,8 @@
 name: push-to-blob-on-push
 on:
   push:
+    paths:
+      - './history/**'
     branches:
       - main
   workflow_dispatch:
@@ -14,10 +16,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Check for Changes in './history' Directory
+      - name: Check For File Changes
         id: set_change
         run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^./history'; then
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^./'; then
             echo "::set-output name=changes_detected::true"
           else
             echo "::set-output name=changes_detected::false"
