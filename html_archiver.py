@@ -57,6 +57,13 @@ SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
+# To block Google Tag Manager from inserting stuff
+driver.execute_cdp_cmd(
+    "Network.setBlockedURLs",
+    {"urls": ["googletagmanager.com", "googlesyndication.com"]},
+)
+driver.execute_cdp_cmd("Network.enable", {})
+
 
 def main():
     archive_pages("SSW.Website.WebUI")
@@ -202,6 +209,15 @@ def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
         # Removes the script tag
         element.extract()
 
+    for element in soup(["meta"]):
+        if element.get("http-equiv") is not None and element["http-equiv"] == "refresh":
+            element.decompose()
+
+    for element in soup.select(
+        'div[id*="batBeacon"]',
+    ):
+        element.decompose()
+
     return soup
 
 
@@ -283,6 +299,10 @@ def download_image(src: str, path: str) -> str:
 
 
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
+
+    # remove inline styles from body (i.e. fix for opacity)
+    del soup("body")[0]["style"]
+
     links = soup.find_all("link")
     css_files = os.listdir("./history/css")
 
