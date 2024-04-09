@@ -5,9 +5,28 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  run-shell-script:
+  check_changes: #uses git diff to determine whether any of the files were changed
     runs-on: ubuntu-latest
+    outputs:
+      changes_detected: ${{ steps.set_change.outputs.changes_detected }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check for Changes in './history' Directory
+        id: set_change
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^./history'; then
+            echo "::set-output name=changes_detected::true"
+          else
+            echo "::set-output name=changes_detected::false"
+          fi
+  run-shell-script:
+    needs: check_changes
+    if: ${{ needs.check_changes.outputs.changes_detected == 'true' }}
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: chmod +x ./upload-blob.sh
+      - run: git update-index --chmod=+x upload-blob.sh
       - run: ./upload-blob.sh
