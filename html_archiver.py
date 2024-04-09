@@ -9,32 +9,32 @@ import urllib.parse
 
 # TODO: eXtremeEmails
 WHITELIST = [
-    # "AccessReporter",
-    # "AgileTemplate",
-    # "DataMergePRO",
-    # "DataPRO",
-    # "DataRenovator",
-    # "EmailMergePRO",
+    "AccessReporter",
+    "AgileTemplate",
+    "DataMergePRO",
+    "DataPRO",
+    "DataRenovator",
+    "EmailMergePRO",
     "Events",
-    # "ExchangeReporter",
-    # "HealthAuditor",
-    # "LinkAuditor",
-    # "LookOut",
-    # "PerformancePRO",
-    # "NETToolkit",
-    # "PropertyAndEventPRO",
-    # "SQLAuditor",
-    # "SQLDeploy",
-    # "SQLReportingServicesAuditor",
-    # "SQLTotalCompare",
+    "ExchangeReporter",
+    "HealthAuditor",
+    "LinkAuditor",
+    "LookOut",
+    "PerformancePRO",
+    "NETToolkit",
+    "PropertyAndEventPRO",
+    "SQLAuditor",
+    "SQLDeploy",
+    "SQLReportingServicesAuditor",
+    "SQLTotalCompare",
     # "Standards",
     # TODO: "StandardsInternal",
     "Training",
-    # "TeamCalendar",
-    # "UpsizingPRO",
-    # "WebPager"
+    "TeamCalendar",
+    "UpsizingPRO",
+    "WebPager"
     # "NETUG",
-    # "WisePRO","
+    "WisePRO",
 ]
 
 IMAGE_REPLACEMENTS = {
