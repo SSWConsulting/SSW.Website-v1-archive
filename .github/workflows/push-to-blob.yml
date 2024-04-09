@@ -25,7 +25,7 @@ jobs:
   run-shell-script:
     needs: check_changes
     if: ${{ needs.check_changes.outputs.changes_detected == 'true' }}
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: git update-index --chmod=+x upload-blob.sh
