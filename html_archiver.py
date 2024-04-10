@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import urllib.parse
 import re
+import json
 
 # TODO: eXtremeEmails
 WHITELIST = [
@@ -65,11 +66,17 @@ driver.execute_cdp_cmd(
 )
 driver.execute_cdp_cmd("Network.enable", {})
 
-redirect_map = {}
+REDIRECT_CACHE_LOC = "redirect_cache.json"
+redirect_map: dict[str, str] = {}
+with open(REDIRECT_CACHE_LOC, "r") as f:
+    redirect_map = json.load(f)
 
 
 def main():
     archive_pages("SSW.Website.WebUI")
+
+    with open(REDIRECT_CACHE_LOC, "w") as f:
+        json.dump(redirect_map, f, indent=4)
 
 
 def archive_pages(path: str) -> dict[str, str]:
@@ -436,12 +443,15 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             # TODO: Add multi-threading cos this slows it down significantly
             test_res = requests.get(req_url)
 
-            if test_res.history:
+            # if the page has been redirected, change the link to the new page
+            if test_res.history or "Redirect" in match.group(1):
+                # if the link redirected to is on the v3 site, change the link to the new page
                 if re.search(SECOND_FOLDER_REGEX, test_res.url) == None:
                     link["href"] = test_res.url
                     print("v3 redirect: " + test_res.url)
                     redirect_map[req_url] = test_res.url
-                else:  # If the link is not on the v1 site, skip it
+                # If the link redirects to something on the v1 site, skip it
+                else:
                     print(
                         "Redirected to v1 site: " + link["href"] + "->" + test_res.url
                     )
@@ -455,7 +465,7 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             # If page has been migrated, change the link to the history page
             for folder in WHITELIST:
                 # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
-                if folder == match.group(1):
+                if folder.lower() == match.group(1).lower():
 
                     # If the link has zz or zr at the start know it hasn't been archived
                     link["href"] = transform_path(link["href"])
