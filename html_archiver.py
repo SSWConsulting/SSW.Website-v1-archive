@@ -68,14 +68,18 @@ driver.execute_cdp_cmd("Network.enable", {})
 
 REDIRECT_CACHE_LOC = "redirect_cache.json"
 redirect_map: dict[str, str] = {}
-with open(REDIRECT_CACHE_LOC, "r") as f:
-    redirect_map = json.load(f)
+
+try:
+    with open(REDIRECT_CACHE_LOC, "r") as f:
+        redirect_map = json.load(f)
+except FileNotFoundError:
+    redirect_map = {}
 
 
 def main():
     archive_pages("SSW.Website.WebUI")
 
-    with open(REDIRECT_CACHE_LOC, "w") as f:
+    with open(REDIRECT_CACHE_LOC, "w+") as f:
         json.dump(redirect_map, f, indent=4)
 
 
@@ -455,8 +459,18 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
                     print(
                         "Redirected to v1 site: " + link["href"] + "->" + test_res.url
                     )
-                    link["href"] = ""
-                    redirect_map[req_url] = ""
+
+                    has_been_archived = False
+                    for folder in WHITELIST:
+                        if folder.lower() == match.group(1).lower():
+                            has_been_archived = True
+
+                    if has_been_archived:
+                        link["href"] = transform_path(link["href"])
+                    else:
+                        link["href"] = ""
+
+                    redirect_map[req_url] = link["href"]
             elif test_res.status_code >= 400:
                 print("error here: " + link["href"])
                 link["href"] = ""
@@ -469,13 +483,6 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
 
                     # If the link has zz or zr at the start know it hasn't been archived
                     link["href"] = transform_path(link["href"])
-                    print(
-                        "other path: "
-                        + "status code: "
-                        + str(test_res.status_code)
-                        + " "
-                        + link["href"]
-                    )
 
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
