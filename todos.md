@@ -559,22 +559,22 @@
     - 📁 CodeAuditor
         - [x] zzDefault.aspx
     - 📁 DataOnion
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 Dory
         - [x] zzDefault.aspx
     - 📁 FireBootCamp
         - [x] zzDefault.aspx
     - 📁 HealthCheck
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 LinkAuditor
         - [x] zzDefault.aspx
     - 📁 MAUIHackDay
         - 📁 images
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
         - [x] zzDefault.aspx
     - 📁 NETUG
         - 📁 NETUG-old
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
         - [x] zzDefault.aspx
     - 📁 SmashingBarrier
         - [x] zzDefault.aspx
@@ -583,30 +583,30 @@
     - 📁 SophieHub
         - [x] zzDefault.aspx
     - 📁 SQLDeploy
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSRS
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSW
         - [x] zzDefault.aspx
     - 📁 SSW-1994
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSW-TV
         - [x] zzDefault.aspx
     - 📁 SSW-TV-2009
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSWRewards
         - [x] zzDefault.aspx
     - 📁 SSWRules
         - [x] zzDefault.aspx
     - 📁 SugarLearning
-        - [ ] Default_new.aspx
         - [x] zzDefault.aspx
+        - [x] zzDefault_new.aspx
     - 📁 TimePRO
         - [x] zzDefault.aspx
     - 📁 TimePRO-old
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 XamarinHackDay
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - [x] zzDefault.aspx
     - [x] zzPast.aspx
 - 📁 LookOut
