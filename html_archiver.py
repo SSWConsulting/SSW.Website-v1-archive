@@ -57,6 +57,13 @@ SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
+# To block Google Tag Manager from inserting stuff
+driver.execute_cdp_cmd(
+    "Network.setBlockedURLs",
+    {"urls": ["googletagmanager.com", "googlesyndication.com"]},
+)
+driver.execute_cdp_cmd("Network.enable", {})
+
 
 def main():
     archive_pages("SSW.Website.WebUI")
@@ -202,6 +209,41 @@ def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
         # Removes the script tag
         element.extract()
 
+    for element in soup(["meta"]):
+        if element.get("http-equiv") is not None and element["http-equiv"] == "refresh":
+            element.decompose()
+
+    for element in soup.select(
+        'div[id*="batBeacon"]',
+    ):
+        element.decompose()
+
+    # Add GTM script to the head
+    gtm_script = soup.new_tag("script")
+    gtm_script.string = """
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+    """
+    head_tag = soup.find("head")
+    if head_tag is not None:
+        head_tag.insert(0, gtm_script)
+
+    # Add GTM noscript to the body
+    gtm_noscript = soup.new_tag("noscript")
+    gtm_iframe = soup.new_tag("iframe")
+    gtm_iframe["src"] = "https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+    gtm_iframe["height"] = "0"
+    gtm_iframe["width"] = "0"
+    gtm_iframe["style"] = "display:none;visibility:hidden"
+    gtm_noscript.append(gtm_iframe)
+
+    body_tag = soup.find("body")
+    if body_tag is not None:
+        body_tag.insert(0, gtm_noscript)
+
     return soup
 
 
@@ -283,6 +325,10 @@ def download_image(src: str, path: str) -> str:
 
 
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
+
+    # remove inline styles from body (i.e. fix for opacity)
+    del soup("body")[0]["style"]
+
     links = soup.find_all("link")
     css_files = os.listdir("./history/css")
 
