@@ -1,14 +1,14 @@
 name: push-to-blob-on-push
-
 on:
-  push:
+  pull_request:
+    types: [closed]
+    branches: main
     paths:
       - './history/**'
-    branches:
-      - main
   workflow_dispatch:
 jobs:
   run-shell-script:
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     env:
       ARCHIVE_KEY: ${{ secrets.AZURE_BLOB_STORAGE_KEY }}
