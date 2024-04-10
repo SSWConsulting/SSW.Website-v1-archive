@@ -109,6 +109,9 @@ This will output a file called `todos.csv` that can be exported to Excel if requ
 
 ### Blob Storage Upload Script
 
+All migrated files in your branch will automatically be pushed to blob storage when your PR is merged with main. Alternatively you can push the files to blob storage by triggering the workflow manually [here](https://github.com/SSWConsulting/SSW.Website-v1-Progress/actions/runs/8611464520).
+
+<!-- Hi Harry, let me new instructions are decent
 To run the shell script that uploads the `history` folder to Azure Blob Storage, run the following command:
 
 Windows:
@@ -124,7 +127,7 @@ Bash (Linux/Mac):
 ARCHIVE_KEY={{ KEY_HERE }}
 ./upload_blob.sh
 ```
-
+-->
 ## Tasks
 
 - [ ] Turn off the v1 website's server
