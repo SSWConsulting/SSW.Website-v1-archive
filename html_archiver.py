@@ -405,8 +405,13 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
 
         # If page has been migrated, change the link to the history page
         for folder in WHITELIST:
+            # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
             match = re.search(SECOND_FOLDER_REGEX, link["href"])
             if match != None and folder == match.group(1):
+
+                # If the link has zz or zr at the start know it hasn't been archived
+                print(link["href"])
+
                 link["href"] = transform_path(link["href"])
 
         # Direct book now buttons to the new book now page
