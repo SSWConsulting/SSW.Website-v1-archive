@@ -346,7 +346,7 @@ def download_image(src: str, path: str) -> str:
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
 
     # remove inline styles from body (i.e. fix for opacity)
-    del soup("body")[0]["style"]
+    soup("body")[0]["style"] = "opacity: 1 !important;"
 
     links = soup.find_all("link")
     css_files = os.listdir("./history/css")
@@ -439,7 +439,11 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             if req_url.startswith("/ssw"):
                 req_url = SSW_URL + req_url
 
-            if req_url in redirect_map:
+            if (
+                redirect_map.get(req_url) is not None
+                and match.group(1) not in WHITELIST
+            ):
+                print("Cached: " + req_url + " -> " + redirect_map[req_url])
                 # If in the cache, use the cached value
                 link["href"] = redirect_map[req_url]
                 continue
@@ -447,12 +451,20 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             # TODO: Add multi-threading cos this slows it down significantly
             test_res = requests.get(req_url)
 
+            if (
+                test_res.status_code >= 400
+                or "ErrorPage".lower() in test_res.url.lower()
+            ):
+                print("error here: " + link["href"])
+                link["href"] = ""
+                redirect_map[req_url] = ""
+                continue
             # if the page has been redirected, change the link to the new page
-            if test_res.history or "Redirect" in match.group(1):
+            elif test_res.history or "Redirect" in match.group(1):
                 # if the link redirected to is on the v3 site, change the link to the new page
                 if re.search(SECOND_FOLDER_REGEX, test_res.url) == None:
+                    print("v3 redirect: " + req_url + " -> " + test_res.url)
                     link["href"] = test_res.url
-                    print("v3 redirect: " + test_res.url)
                     redirect_map[req_url] = test_res.url
                 # If the link redirects to something on the v1 site, skip it
                 else:
@@ -466,21 +478,16 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
                             has_been_archived = True
 
                     if has_been_archived:
-                        link["href"] = transform_path(link["href"])
+                        link["href"] = transform_path(test_res.url)
                     else:
                         link["href"] = ""
 
                     redirect_map[req_url] = link["href"]
-            elif test_res.status_code >= 400:
-                print("error here: " + link["href"])
-                link["href"] = ""
-                redirect_map[req_url] = ""
 
             # If page has been migrated, change the link to the history page
             for folder in WHITELIST:
                 # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
                 if folder.lower() == match.group(1).lower():
-
                     # If the link has zz or zr at the start know it hasn't been archived
                     link["href"] = transform_path(link["href"])
 
