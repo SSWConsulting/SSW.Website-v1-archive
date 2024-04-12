@@ -431,65 +431,75 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
 
         # TODO: If it's a link to an employee profile, change to SSW people
 
-        # TODO: fix the link on http://127.0.0.1:4000/history/events/2006-sql/default.html to reference the new page
+        # This code replaces broken links with the correct URLs if possible, but has been commented
+        # as it adds unncessary complexity. It does work, and doesn't slow the script down significantly
+        # because of the redirect cache, but it's not necessary because we can use Front Door.
 
-        match = re.search(SECOND_FOLDER_REGEX, link["href"])
-        if match != None:
-            req_url = link["href"]
-            if req_url.startswith("/ssw"):
-                req_url = SSW_URL + req_url
+        # What this does is that instead of just running the below for loop to fix links that already
+        # exist in history, has additional testing to check if there's a redirect, as if there's a redirect
+        # then it knows that the page hasn't been saved. e.g. /history/events/2007-uts-net/default.html is
+        # not a real history page, because https://www.ssw.com.au/ssw/Events/2007UTSNET/default.aspx redirects
+        # to an error page.
 
-            if (
-                redirect_map.get(req_url) is not None
-                and match.group(1) not in WHITELIST
-            ):
-                print("Cached: " + req_url + " -> " + redirect_map[req_url])
-                # If in the cache, use the cached value
-                link["href"] = redirect_map[req_url]
-                continue
+        # This will also fix the above todo relating to links to employee profile - as it will redirect to /people.
 
-            # TODO: Add multi-threading cos this slows it down significantly
-            test_res = requests.get(req_url)
+        # match = re.search(SECOND_FOLDER_REGEX, link["href"])
+        # if match != None:
+        #     req_url = link["href"]
+        #     if req_url.startswith("/ssw"):
+        #         req_url = SSW_URL + req_url
 
-            if (
-                test_res.status_code >= 400
-                or "ErrorPage".lower() in test_res.url.lower()
-            ):
-                print("error here: " + link["href"])
-                link["href"] = ""
-                redirect_map[req_url] = ""
-                continue
-            # if the page has been redirected, change the link to the new page
-            elif test_res.history or "Redirect" in match.group(1):
-                # if the link redirected to is on the v3 site, change the link to the new page
-                if re.search(SECOND_FOLDER_REGEX, test_res.url) == None:
-                    print("v3 redirect: " + req_url + " -> " + test_res.url)
-                    link["href"] = test_res.url
-                    redirect_map[req_url] = test_res.url
-                # If the link redirects to something on the v1 site, skip it
-                else:
-                    print(
-                        "Redirected to v1 site: " + link["href"] + "->" + test_res.url
-                    )
+        #     if (
+        #         redirect_map.get(req_url) is not None
+        #         and match.group(1) not in WHITELIST
+        #     ):
+        #         print("Cached: " + req_url + " -> " + redirect_map[req_url])
+        #         # If in the cache, use the cached value
+        #         link["href"] = redirect_map[req_url]
+        #         continue
 
-                    has_been_archived = False
-                    for folder in WHITELIST:
-                        if folder.lower() == match.group(1).lower():
-                            has_been_archived = True
+        #     # TODO: Add multi-threading cos this slows it down significantly
+        #     test_res = requests.get(req_url)
 
-                    if has_been_archived:
-                        link["href"] = transform_path(test_res.url)
-                    else:
-                        link["href"] = ""
+        #     if (
+        #         test_res.status_code >= 400
+        #         or "ErrorPage".lower() in test_res.url.lower()
+        #     ):
+        #         print("error here: " + link["href"])
+        #         link["href"] = ""
+        #         redirect_map[req_url] = ""
+        #         continue
+        #     # if the page has been redirected, change the link to the new page
+        #     elif test_res.history or "Redirect" in match.group(1):
+        #         # if the link redirected to is on the v3 site, change the link to the new page
+        #         if re.search(SECOND_FOLDER_REGEX, test_res.url) == None:
+        #             print("v3 redirect: " + req_url + " -> " + test_res.url)
+        #             link["href"] = test_res.url
+        #             redirect_map[req_url] = test_res.url
+        #         # If the link redirects to something on the v1 site, skip it
+        #         else:
+        #             print(
+        #                 "Redirected to v1 site: " + link["href"] + "->" + test_res.url
+        #             )
 
-                    redirect_map[req_url] = link["href"]
+        #             has_been_archived = False
+        #             for folder in WHITELIST:
+        #                 if folder.lower() == match.group(1).lower():
+        #                     has_been_archived = True
 
-            # If page has been migrated, change the link to the history page
-            for folder in WHITELIST:
-                # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
-                if folder.lower() == match.group(1).lower():
-                    # If the link has zz or zr at the start know it hasn't been archived
-                    link["href"] = transform_path(link["href"])
+        #             if has_been_archived:
+        #                 link["href"] = transform_path(test_res.url)
+        #             else:
+        #                 link["href"] = ""
+
+        #             redirect_map[req_url] = link["href"]
+
+        #     # If page has been migrated, change the link to the history page
+        #     for folder in WHITELIST:
+        #         # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
+        #         if folder.lower() == match.group(1).lower():
+        #             # If the link has zz or zr at the start know it hasn't been archived
+        #             link["href"] = transform_path(link["href"])
 
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
