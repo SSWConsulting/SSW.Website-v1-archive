@@ -11,11 +11,11 @@ import json
 
 # TODO: eXtremeEmails
 WHITELIST = [
-    # "AccessReporter",
-    # "AgileTemplate",
-    # "DataMergePRO",
-    # "DataPRO",
-    # "DataRenovator",
+    "AccessReporter",
+    "AgileTemplate",
+    "DataMergePRO",
+    "DataPRO",
+    "DataRenovator",
     # "EmailMergePRO",
     "Events",
     # "ExchangeReporter",
