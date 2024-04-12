@@ -66,21 +66,23 @@ driver.execute_cdp_cmd(
 )
 driver.execute_cdp_cmd("Network.enable", {})
 
-REDIRECT_CACHE_LOC = "redirect_cache.json"
-redirect_map: dict[str, str] = {}
+# See fix_links comment for reason why this was commented out
+# REDIRECT_CACHE_LOC = "redirect_cache.json"
+# redirect_map: dict[str, str] = {}
 
-try:
-    with open(REDIRECT_CACHE_LOC, "r") as f:
-        redirect_map = json.load(f)
-except FileNotFoundError:
-    redirect_map = {}
+# try:
+#     with open(REDIRECT_CACHE_LOC, "r") as f:
+#         redirect_map = json.load(f)
+# except FileNotFoundError:
+#     redirect_map = {}
 
 
 def main():
     archive_pages("SSW.Website.WebUI")
 
-    with open(REDIRECT_CACHE_LOC, "w+") as f:
-        json.dump(redirect_map, f, indent=4)
+    # See fix_links comment for reason why this was commented out
+    # with open(REDIRECT_CACHE_LOC, "w+") as f:
+    #     json.dump(redirect_map, f, indent=4)
 
 
 def archive_pages(path: str) -> dict[str, str]:
