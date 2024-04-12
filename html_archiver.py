@@ -6,6 +6,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import urllib.parse
+import re
+import json
 
 # TODO: eXtremeEmails
 WHITELIST = [
@@ -64,9 +66,23 @@ driver.execute_cdp_cmd(
 )
 driver.execute_cdp_cmd("Network.enable", {})
 
+# See fix_links comment for reason why this was commented out
+# REDIRECT_CACHE_LOC = "redirect_cache.json"
+# redirect_map: dict[str, str] = {}
+
+# try:
+#     with open(REDIRECT_CACHE_LOC, "r") as f:
+#         redirect_map = json.load(f)
+# except FileNotFoundError:
+#     redirect_map = {}
+
 
 def main():
     archive_pages("SSW.Website.WebUI")
+
+    # See fix_links comment for reason why this was commented out
+    # with open(REDIRECT_CACHE_LOC, "w+") as f:
+    #     json.dump(redirect_map, f, indent=4)
 
 
 def archive_pages(path: str) -> dict[str, str]:
@@ -113,14 +129,14 @@ def archive_pages(path: str) -> dict[str, str]:
 
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
-            soup = fix_scripts(soup)
+            soup = remove_header_and_menu(soup)
+            soup = fix_scripts(soup, base_path)
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
             soup = fix_links(soup)
             soup = fix_breadcrumbs(soup, split_path[1])
             soup = fix_menu(soup)
             soup = fix_head(soup)
-            soup = remove_header_and_menu(soup)
 
             soup = add_archive_header(soup, url)
 
@@ -154,9 +170,6 @@ def archive_pages(path: str) -> dict[str, str]:
     return items_written
 
 
-import re
-
-
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
     regex = r"([a-z])([A-Z0-9])"
@@ -188,7 +201,7 @@ def pascal_to_kebab(s: str) -> str:
     return re.sub(regex, r"\1-\2", s).lower()
 
 
-def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
+def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
     # Remove most scripts and iframes
     for element in soup(["script", "iframe"]):
         if element.get("src") is not None:
@@ -212,6 +225,14 @@ def fix_scripts(soup: BeautifulSoup) -> BeautifulSoup:
     for element in soup(["meta"]):
         if element.get("http-equiv") is not None and element["http-equiv"] == "refresh":
             element.decompose()
+
+        if element.get("content") is not None and (
+            element["content"].endswith(".png") or element["content"].endswith(".jpg")
+        ):
+            href = element["content"]
+            if href is None:
+                continue
+            element["content"] = download_image(href, path)
 
     for element in soup.select(
         'div[id*="batBeacon"]',
@@ -327,7 +348,7 @@ def download_image(src: str, path: str) -> str:
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
 
     # remove inline styles from body (i.e. fix for opacity)
-    del soup("body")[0]["style"]
+    soup("body")[0]["style"] = "opacity: 1 !important;"
 
     links = soup.find_all("link")
     css_files = os.listdir("./history/css")
@@ -351,7 +372,7 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
                 if css_file.lower() in href.lower():
                     link["href"] = "/history/css/" + css_file
 
-        elif link["rel"] == ["icon"]:
+        elif link["href"].endswith(".png") or link["href"].endswith(".jpg"):
             href = link["href"]
             if href is None:
                 continue
@@ -393,22 +414,6 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         if not re.match(SSW_V1_REGEX, href):
             continue
 
-        # These if statements are only to fix the breadcrumbs links on Training pages
-        if href.endswith("Training/Default.aspx"):
-            link["href"] = "index.html"
-        elif href.endswith("Training/Courses.aspx"):
-            link["href"] = "https://www.ssw.com.au/events"
-
-        # TODO: If it's a link to an employee profile, change to SSW people
-
-        # TODO: fix the link on http://127.0.0.1:4000/history/events/2006-sql/default.html to reference the new page
-
-        # If page has been migrated, change the link to the history page
-        for folder in WHITELIST:
-            match = re.search(SECOND_FOLDER_REGEX, link["href"])
-            if match != None and folder == match.group(1):
-                link["href"] = transform_path(link["href"])
-
         # Direct book now buttons to the new book now page
         # should this cover all shop pages?
         inner_text = link.get_text()
@@ -418,6 +423,85 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
             and "/shop/" in href.lower()
         ):
             link["href"] = "https://www.ssw.com.au/booknow"
+            continue
+
+        # These if statements are only to fix the breadcrumbs links on Training pages
+        if href.endswith("Training/Default.aspx"):
+            link["href"] = "index.html"
+        elif href.endswith("Training/Courses.aspx"):
+            link["href"] = "https://www.ssw.com.au/events"
+
+        # TODO: If it's a link to an employee profile, change to SSW people
+
+        # This code replaces broken links with the correct URLs if possible, but has been commented
+        # as it adds unncessary complexity. It does work, and doesn't slow the script down significantly
+        # because of the redirect cache, but it's not necessary because we can use Front Door.
+
+        # What this does is that instead of just running the below for loop to fix links that already
+        # exist in history, has additional testing to check if there's a redirect, as if there's a redirect
+        # then it knows that the page hasn't been saved. e.g. /history/events/2007-uts-net/default.html is
+        # not a real history page, because https://www.ssw.com.au/ssw/Events/2007UTSNET/default.aspx redirects
+        # to an error page.
+
+        # This will also fix the above todo relating to links to employee profile - as it will redirect to /people.
+
+        # match = re.search(SECOND_FOLDER_REGEX, link["href"])
+        # if match != None:
+        #     req_url = link["href"]
+        #     if req_url.startswith("/ssw"):
+        #         req_url = SSW_URL + req_url
+
+        #     if (
+        #         redirect_map.get(req_url) is not None
+        #         and match.group(1) not in WHITELIST
+        #     ):
+        #         print("Cached: " + req_url + " -> " + redirect_map[req_url])
+        #         # If in the cache, use the cached value
+        #         link["href"] = redirect_map[req_url]
+        #         continue
+
+        #     # TODO: Add multi-threading cos this slows it down significantly
+        #     test_res = requests.get(req_url)
+
+        #     if (
+        #         test_res.status_code >= 400
+        #         or "ErrorPage".lower() in test_res.url.lower()
+        #     ):
+        #         print("error here: " + link["href"])
+        #         link["href"] = ""
+        #         redirect_map[req_url] = ""
+        #         continue
+        #     # if the page has been redirected, change the link to the new page
+        #     elif test_res.history or "Redirect" in match.group(1):
+        #         # if the link redirected to is on the v3 site, change the link to the new page
+        #         if re.search(SECOND_FOLDER_REGEX, test_res.url) == None:
+        #             print("v3 redirect: " + req_url + " -> " + test_res.url)
+        #             link["href"] = test_res.url
+        #             redirect_map[req_url] = test_res.url
+        #         # If the link redirects to something on the v1 site, skip it
+        #         else:
+        #             print(
+        #                 "Redirected to v1 site: " + link["href"] + "->" + test_res.url
+        #             )
+
+        #             has_been_archived = False
+        #             for folder in WHITELIST:
+        #                 if folder.lower() == match.group(1).lower():
+        #                     has_been_archived = True
+
+        #             if has_been_archived:
+        #                 link["href"] = transform_path(test_res.url)
+        #             else:
+        #                 link["href"] = ""
+
+        #             redirect_map[req_url] = link["href"]
+
+        #     # If page has been migrated, change the link to the history page
+        #     for folder in WHITELIST:
+        #         # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
+        #         if folder.lower() == match.group(1).lower():
+        #             # If the link has zz or zr at the start know it hasn't been archived
+        #             link["href"] = transform_path(link["href"])
 
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup

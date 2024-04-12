@@ -50,7 +50,7 @@
     - [x] zzRegExTutorial.aspx
 - 📁 Company
     - 📁 Awards
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 Clients
         - [x] zzDefault.aspx
     - [ ] ConfirmEMailSent.aspx
@@ -78,8 +78,6 @@
         - [x] zzDefault.aspx
     - 📁 History
         - [x] zzDefault.aspx
-    - [ ] Resources.aspx
-    - [ ] Web-Reference.aspx
     - [x] zzAboutUs.aspx
     - [x] zzAwards.aspx
     - [x] zzBrisbane.aspx
@@ -93,32 +91,34 @@
         - [x] zzDefault.aspx
     - [x] zzOffices.aspx
     - [x] zzPrivacy.aspx
+    - [x] zzResources.aspx
     - [x] zzSydney.aspx
+    - [x] zzWeb-Reference.aspx
 - 📁 Components
     - [x] zzShowFileIcon.aspx
 - 📁 Consulting
     - 📁 Case-Study
-        - [ ] AuctionsPlus.aspx
-        - [ ] Aurecon.aspx
-        - [ ] Ausgrid.aspx
-        - [ ] BCE.aspx
-        - [ ] Bupa.aspx
-        - [ ] eMove.aspx
-        - [ ] EstateMaster.aspx
-        - [ ] HutchisonWeller.aspx
-        - [ ] Maximus.aspx
-        - [ ] Medibank.aspx
-        - [ ] PwC.aspx
-        - [ ] SharePoint-Office-Forum.aspx
-        - [ ] Shepherd-Centre.aspx
-        - [ ] SydneyUni.aspx
-        - [ ] TAFE.aspx
-        - [ ] Toll.aspx
-        - [ ] VulcanSteel.aspx
-        - [ ] WorleyParsons.aspx
         - [x] zzAuctions-Plus.aspx
+        - [x] zzAuctionsPlus.aspx
+        - [x] zzAurecon.aspx
+        - [x] zzAusgrid.aspx
+        - [x] zzBCE.aspx
+        - [x] zzBupa.aspx
         - [x] zzDefault.aspx
+        - [x] zzeMove.aspx
+        - [x] zzEstateMaster.aspx
         - [x] zzEventCinemas.aspx
+        - [x] zzHutchisonWeller.aspx
+        - [x] zzMaximus.aspx
+        - [x] zzMedibank.aspx
+        - [x] zzPwC.aspx
+        - [x] zzSharePoint-Office-Forum.aspx
+        - [x] zzShepherd-Centre.aspx
+        - [x] zzSydneyUni.aspx
+        - [x] zzTAFE.aspx
+        - [x] zzToll.aspx
+        - [x] zzVulcanSteel.aspx
+        - [x] zzWorleyParsons.aspx
     - [ ] Consulting.aspx
     - [ ] Crash-Plan-Pro.aspx
     - [ ] Maps-Development.aspx
@@ -293,7 +293,6 @@
         - 📁 VersionsXml
             - [ ] XmlGeneration.aspx
             - [ ] zsValidate.aspx
-- [ ] Domains-For-Sale.aspx
 - 📁 Educational
     - [x] zzDefault.aspx
 - 📁 EmailMergePRO
@@ -310,142 +309,134 @@
 - [ ] ErrorPage.aspx
 - 📁 Events
     - 📁 2001MSDevDays
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2001ODDC
         - [x] zzdefault.aspx
     - 📁 2002VSLive
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2004AccessToSQLServerAndNET
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2004Ascend
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2004Kenya
-        - [ ] Agenda.aspx
-        - [ ] Default.aspx
+        - [x] zaAgenda.aspx
+        - [x] zaDefault.aspx
     - 📁 2004MalaysiaConference
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2005-11UG
-        - [ ] Conference.aspx
+        - [x] zaConference.aspx
     - 📁 2005AccessToSQLServerAndNET
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2005ReportingServices
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2005SouthAmericaJanuary
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2005SouthAmericaOctober
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2005UTSNET
-        - [ ] resources.aspx
+        - [x] zaresources.aspx
         - [ ] zrDefault.aspx
     - 📁 2006EarnMorePerHour
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2006EarnMorePerHourWorkshop
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2006Expression
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2006SQL
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2006TeamSystem
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2006UTSNET
         - [ ] zrresources.aspx
         - [x] zzDefault.aspx
     - 📁 2006UTS_BI
-        - [ ] resources.aspx
+        - [x] zaresources.aspx
     - 📁 2007AprilCanberraNETUG
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2007NET
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2007SQL
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2007UTSNET
         - [ ] zrDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2007UTS_BI
-        - [ ] resources.aspx
+        - [x] zaresources.aspx
     - 📁 2008BICourse
         - [ ] zrDefault.aspx
     - 📁 2008UTSNET
         - [ ] zrDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2008UTSSQL
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2009TourDeWagga
-        - [ ] DailyBreakdown.aspx
-        - [ ] Default.aspx
+        - [x] zaDailyBreakdown.aspx
+        - [x] zaDefault.aspx
     - 📁 2009UTSNET
         - [ ] zrDefault.aspx
         - [ ] zrresources.aspx
     - 📁 2009UTSSharePoint
         - [ ] zrDefault.aspx
     - 📁 2009UTSSQL
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2010UTSBI
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2010UTSSharePoint
         - [ ] zrDefault.aspx
     - 📁 2010UTSSQL
-        - [ ] Default.aspx
-        - [ ] resources.aspx
+        - [x] zaDefault.aspx
+        - [x] zaresources.aspx
     - 📁 2011UTSNET
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2011UTSSharePoint
-        - [ ] Default.aspx
+        - [x] zaDefault.aspx
     - 📁 2011UTSSQL
-        - [ ] Default.aspx
-    - [ ] Brian-Randell-Virtualization-for-Developers.aspx
-    - [ ] ConferencePast.aspx
+        - [x] zaDefault.aspx
     - 📁 ebooks
-        - [ ] angularjs-5-lessons-from-the-trenches.aspx
-    - [ ] Event.aspx
-    - [ ] HoloLens-experience.aspx
-    - [ ] Juval-Lowy-Architect-Master-Class.aspx
-    - [ ] SampleTrainingDay.aspx
-    - [ ] SSWTechBreakfastPast.aspx
-    - [ ] Steve-Forte-Agile-Seminar.aspx
+        - [x] zzzrangularjs-5-lessons-from-the-trenches.aspx
     - 📁 TechBreakfast
-        - [ ] How-to-become-a-developer-in-2015.aspx
-        - [ ] How-to-change-your-career-and-become-a-developer-in-2015.aspx
-        - [ ] How-to-upgrade-your-skills-to-developer-in-2015.aspx
+        - [x] zaHow-to-become-a-developer-in-2015.aspx
+        - [x] zaHow-to-change-your-career-and-become-a-developer-in-2015.aspx
+        - [x] zaHow-to-upgrade-your-skills-to-developer-in-2015.aspx
     - 📁 Training
-        - [ ] Advanced-TSQL.aspx
-        - [ ] ASP-NET-MVC-AngularJS-TechEd-Secret.aspx
-        - [ ] ASP-NET-MVC-AngularJS-TechEd.aspx
-        - [ ] BI-Bootcamp.aspx
-        - [ ] BI-Immersion.aspx
-        - [ ] Brain-Quest-ALM-in-a-Day.aspx
-        - [ ] Brain-Quest-VS-TFS-Sharepoint.aspx
-        - [ ] Data-Mining-Seminar.aspx
-        - [ ] DevOps-SuperPowers-VisualStudio.aspx
-        - [ ] Enterprise-MVC-Day-1.aspx
-        - [ ] Enterprise-MVC-Day-2.aspx
-        - [ ] Enterprise-MVC-Day-3.aspx
-        - [ ] Enterprise-MVC-Day-4.aspx
-        - [ ] Enterprise-Xamarin-2-Day-Essentials.aspx
-        - [ ] Ionic-Superpowers-Tour.aspx
-        - [ ] Juval-Lowy-Architects-Clinic.aspx
-        - [ ] Optimization-Performance.aspx
-        - [ ] Power-Sessions.aspx
-        - [ ] QUT-Angular2.aspx
-        - [ ] Scrum-Master-Training-Course.aspx
-        - [ ] Scrum-Training-Course-3-days.aspx
-        - [ ] Scrum-Training-Course.aspx
-        - [ ] SolidQ-Courses.aspx
-        - [ ] SQL-Server-2012-Integration-Services.aspx
-        - [ ] SSIS-Seminar.aspx
-        - [ ] TechBreakfast-VS-2012.aspx
-        - [ ] TSQL-Fundamentals.aspx
-        - [ ] VS-2012.aspx
+        - [x] zaAdvanced-TSQL.aspx
+        - [x] zaASP-NET-MVC-AngularJS-TechEd-Secret.aspx
+        - [x] zaASP-NET-MVC-AngularJS-TechEd.aspx
+        - [x] zaBI-Bootcamp.aspx
+        - [x] zaBI-Immersion.aspx
+        - [x] zaBrain-Quest-ALM-in-a-Day.aspx
+        - [x] zaBrain-Quest-VS-TFS-Sharepoint.aspx
+        - [x] zaData-Mining-Seminar.aspx
+        - [x] zaDevOps-SuperPowers-VisualStudio.aspx
+        - [x] zaEnterprise-MVC-Day-1.aspx
+        - [x] zaEnterprise-MVC-Day-2.aspx
+        - [x] zaEnterprise-MVC-Day-3.aspx
+        - [x] zaEnterprise-MVC-Day-4.aspx
+        - [x] zaEnterprise-Xamarin-2-Day-Essentials.aspx
+        - [x] zaIonic-Superpowers-Tour.aspx
+        - [x] zaJuval-Lowy-Architects-Clinic.aspx
+        - [x] zaOptimization-Performance.aspx
+        - [x] zaPower-Sessions.aspx
+        - [x] zaQUT-Angular2.aspx
+        - [x] zaScrum-Master-Training-Course.aspx
+        - [x] zaScrum-Training-Course-3-days.aspx
+        - [x] zaScrum-Training-Course.aspx
+        - [x] zaSolidQ-Courses.aspx
+        - [x] zaSQL-Server-2012-Integration-Services.aspx
+        - [x] zaSSIS-Seminar.aspx
+        - [x] zaTechBreakfast-VS-2012.aspx
+        - [x] zaTSQL-Fundamentals.aspx
+        - [x] zaVS-2012.aspx
         - [ ] zrTraining-Options.aspx
         - [x] zzAngular-ASP-MVC-in-VS2015-Jumpstart.aspx
         - [x] zzAngular-Superpowers-Tour.aspx
@@ -467,39 +458,47 @@
         - [x] zzNET-Core-Superpowers-Tour.aspx
         - [x] zzNET-Superpowers-Tour.aspx
         - [x] zzProfessional-Tailored-Scrum.aspx
-    - [ ] Visual-Studio-2013-Rapid-SharePoint-Development.aspx
     - 📁 Webinars
-        - [ ] 8-Month-Software-Development-Retrospective.aspx
-        - [ ] Building-SPA-with-MVC4.aspx
-        - [ ] DevSuperpowers-AngularJS-with-TypeScript.aspx
-        - [ ] DevSuperpowers-AngularJS.aspx
-        - [ ] DevSuperpowers-ASP-NET-MVC.aspx
-        - [ ] DevSuperpowers-ASP-NET-vNext.aspx
-        - [ ] DevSuperpowers-Azure.aspx
-        - [ ] DevSuperpowers-Bootstrap.aspx
-        - [ ] DevSuperpowers-iOS-and-Android.aspx
-        - [ ] DevSuperpowers-Project-Management-with-Visual-Studio-Online.aspx
-        - [ ] DevSuperpowers-SignalR.aspx
-        - [ ] DevSuperpowers-web-API.aspx
-        - [ ] DevSuperpowers-XamarinForms-MVVM.aspx
-        - [ ] Great-Intranets-James-Robertson.aspx
-        - [ ] Hiring-Software-Companies.aspx
-        - [ ] Lessons-Learned-Writing-Mobile-Sites.aspx
-        - [ ] Lightswitch.aspx
-        - [ ] Master-Scrum.aspx
-        - [ ] MVC-Apps.aspx
-        - [ ] MVC-Dont_use_Web_Forms_again.aspx
-        - [ ] MVC-Migrating-from-Web-Forms.aspx
-        - [ ] PhoneGap-for-Mobile-Developers.aspx
-        - [ ] Promotional-Videos-How-To.aspx
-        - [ ] SharePoint-Client-Side-Rendering.aspx
-        - [ ] SharePoint-for-Business.aspx
-        - [ ] SolidQ.aspx
-        - [ ] Speed-Up-SQL-Server.aspx
-        - [ ] Windows-Azure.aspx
+        - [x] za8-Month-Software-Development-Retrospective.aspx
+        - [x] zaBuilding-SPA-with-MVC4.aspx
+        - [x] zaDevSuperpowers-AngularJS-with-TypeScript.aspx
+        - [x] zaDevSuperpowers-AngularJS.aspx
+        - [x] zaDevSuperpowers-ASP-NET-MVC.aspx
+        - [x] zaDevSuperpowers-ASP-NET-vNext.aspx
+        - [x] zaDevSuperpowers-Azure.aspx
+        - [x] zaDevSuperpowers-Bootstrap.aspx
+        - [x] zaDevSuperpowers-iOS-and-Android.aspx
+        - [x] zaDevSuperpowers-Project-Management-with-Visual-Studio-Online.aspx
+        - [x] zaDevSuperpowers-SignalR.aspx
+        - [x] zaDevSuperpowers-web-API.aspx
+        - [x] zaDevSuperpowers-XamarinForms-MVVM.aspx
+        - [x] zaGreat-Intranets-James-Robertson.aspx
+        - [x] zaHiring-Software-Companies.aspx
+        - [x] zaLessons-Learned-Writing-Mobile-Sites.aspx
+        - [x] zaLightswitch.aspx
+        - [x] zaMaster-Scrum.aspx
+        - [x] zaMVC-Apps.aspx
+        - [x] zaMVC-Dont_use_Web_Forms_again.aspx
+        - [x] zaMVC-Migrating-from-Web-Forms.aspx
+        - [x] zaPhoneGap-for-Mobile-Developers.aspx
+        - [x] zaPromotional-Videos-How-To.aspx
+        - [x] zaSharePoint-Client-Side-Rendering.aspx
+        - [x] zaSharePoint-for-Business.aspx
+        - [x] zaSolidQ.aspx
+        - [x] zaSpeed-Up-SQL-Server.aspx
+        - [x] zaWindows-Azure.aspx
         - [ ] zrDevSuperpowers.aspx
     - 📁 Workshops
-        - [ ] Tech-Breakfast.aspx
+        - [x] zaTech-Breakfast.aspx
+    - [x] zaBrian-Randell-Virtualization-for-Developers.aspx
+    - [x] zaConferencePast.aspx
+    - [x] zaEvent.aspx
+    - [x] zaHoloLens-experience.aspx
+    - [x] zaJuval-Lowy-Architect-Master-Class.aspx
+    - [x] zaSampleTrainingDay.aspx
+    - [x] zaSSWTechBreakfastPast.aspx
+    - [x] zaSteve-Forte-Agile-Seminar.aspx
+    - [x] zaVisual-Studio-2013-Rapid-SharePoint-Development.aspx
     - [ ] zrChinafy-Experience.aspx
     - [ ] zrJuval-Lowy-Architects-Clinic.aspx
     - [x] zzADNUG.aspx
@@ -532,7 +531,7 @@
     - [ ] userguide.aspx
 - [ ] FolderBrowser.aspx
 - 📁 HackDay
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 HealthAuditor
     - [ ] Default.aspx
     - [ ] FxCopTutorial.aspx
@@ -541,8 +540,8 @@
 - 📁 Hosting
     - [ ] AliasForSQLServer.aspx
     - [ ] DatabaseEdit.aspx
-    - [ ] Default.aspx
     - [ ] Details.aspx
+    - [x] zzDefault.aspx
     - [x] zzhostingtermsconditions.aspx
 - 📁 LinkAuditor
     - [ ] Default.aspx
@@ -551,65 +550,65 @@
     - [ ] HowtobeGoodLinkAuditorDailyBuildMaster.aspx
     - [ ] UserGuide.aspx
 - 📁 Live
-    - [ ] Default.aspx
+    - [x] zzDefault.aspx
 - 📁 Logo
     - 📁 AIHackDay
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 AngularHackDay
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 CodeAuditor
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 DataOnion
-        - [ ] Default.aspx
-    - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 Dory
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 FireBootCamp
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 HealthCheck
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 LinkAuditor
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 MAUIHackDay
-        - [ ] Default.aspx
         - 📁 images
-            - [ ] Default.aspx
+            - [x] zzDefault.aspx
+        - [x] zzDefault.aspx
     - 📁 NETUG
-        - [ ] Default.aspx
         - 📁 NETUG-old
-            - [ ] Default.aspx
-    - [ ] Past.aspx
+            - [x] zzDefault.aspx
+        - [x] zzDefault.aspx
     - 📁 SmashingBarrier
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SophieBot
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SophieHub
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SQLDeploy
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSRS
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSW
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSW-1994
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSW-TV
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSW-TV-2009
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSWRewards
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SSWRules
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 SugarLearning
-        - [ ] Default.aspx
-        - [ ] Default_new.aspx
+        - [x] zzDefault.aspx
+        - [x] zzDefault_new.aspx
     - 📁 TimePRO
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 TimePRO-old
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
     - 📁 XamarinHackDay
-        - [ ] Default.aspx
+        - [x] zzDefault.aspx
+    - [x] zzDefault.aspx
+    - [x] zzPast.aspx
 - 📁 LookOut
     - [ ] Default.aspx
     - 📁 Sample
@@ -1194,6 +1193,7 @@
     - [ ] testimonialmodify.aspx
 - [x] zzCRMService.aspx
 - [x] zzdefault.aspx
+- [x] zzDomains-For-Sale.aspx
 - [x] zzSharePointEventsService.aspx
 - [x] zzSharePointExternalSpeakersService.aspx
 - [x] zzSSWCustomError404.aspx
