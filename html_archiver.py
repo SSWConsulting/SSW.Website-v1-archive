@@ -346,10 +346,6 @@ def download_image(src: str, path: str) -> str:
 
 
 def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
-
-    # remove inline styles from body (i.e. fix for opacity)
-    soup("body")[0]["style"] = "opacity: 1 !important;"
-
     links = soup.find_all("link")
     css_files = os.listdir("./history/css")
 
