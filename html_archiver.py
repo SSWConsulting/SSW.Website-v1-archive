@@ -535,6 +535,14 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuLower"):
         div.decompose()
 
+    nav_div = soup.find("div", id="nav")
+    
+    if nav_div:
+        # Find the first <ul> child in nav div that contains menu
+        ul = nav_div.find("ul")
+        if ul:
+            ul.decompose()
+
     return soup
 
 
