@@ -85,89 +85,102 @@ def main():
     #     json.dump(redirect_map, f, indent=4)
 
 
-def archive_pages(path: str) -> dict[str, str]:
-    items_written: dict[str, str] = {}
-    for item in os.listdir(path):
-        item_path = os.path.join(path, item)
-        split_path = item_path.split("\\")
+def archive_pages(path: str):# -> dict[str, str]:
+    #items_written: dict[str, str] = {}
+    #for item in os.listdir(path):
+
+    # item_path = os.path.join(path, item)
+    # split_path = item_path.split("\\")
 
         # Recursively call archive_pages on subdirectories
-        if os.path.isdir(item_path) and split_path[1] in WHITELIST:
-            items_written.update(archive_pages(item_path))
+    #    if os.path.isdir(item_path) and split_path[1] in WHITELIST:
+    #        items_written.update(archive_pages(item_path))
 
         # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
-        elif (
-            os.path.isfile(item_path)
-            and item_path.endswith(".aspx")
-            and not split_path[-1].startswith("zz")
-            and split_path[1] in WHITELIST
-        ):
+    #    elif (
+    #        os.path.isfile(item_path)
+    #        and item_path.endswith(".aspx")
+    #        and not split_path[-1].startswith("zz")
+    #        and split_path[1] in WHITELIST
+    #    ):
             # If it starts with za (means it has been archived before), remove the za
-            if split_path[-1].startswith("za") or split_path[-1].startswith("zr"):
-                split_path[-1] = split_path[-1][2:]
+    #        if split_path[-1].startswith("za") or split_path[-1].startswith("zr"):
+    #            split_path[-1] = split_path[-1][2:]
 
             # URI on the v1 website e.g. Training/Default.aspx
-            uri = "/".join(split_path[1:])
+            # uri = "/".join(split_path[1:])
             # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
-            url = SSW_URL + "/ssw/" + uri
-            driver.get(url)
+            #url = SSW_URL + "/ssw/" + uri
+    url = "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx"
+    driver.get(url)
 
             # If the page has been redirected, rename the file to start with zr
-            if driver.current_url != url:
-                print("Redirect: " + url + " -> " + driver.current_url)
-                new_path_split = item_path.split("\\")
-                if not new_path_split[-1].startswith("za") and not new_path_split[
-                    -1
-                ].startswith("zr"):
-                    new_path_split[-1] = "zr" + new_path_split[-1]
-                    os.rename(item_path, "/".join(new_path_split))
-                continue
+    #        if driver.current_url != url:
+    #            print("Redirect: " + url + " -> " + driver.current_url)
+    # new_path_split = item_path.split("\\")
+    #     if not new_path_split[-1].startswith("za") and not new_path_split[
+    #                 -1
+    #             ].startswith("zr"):
+    #                 new_path_split[-1] = "zr" + new_path_split[-1]
+    #                 os.rename(item_path, "/".join(new_path_split))
+    #             continue
 
             # Parse HTML content
-            page_content = "<!DOCTYPE html>\n" + driver.page_source
-            soup = BeautifulSoup(page_content, "html5lib")
 
-            base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
-            soup = remove_header_and_menu(soup)
-            soup = fix_scripts(soup, base_path)
-            soup = fix_images(soup, base_path)
-            soup = fix_css(soup, base_path)
-            soup = fix_links(soup)
-            soup = fix_breadcrumbs(soup, split_path[1])
-            soup = fix_menu(soup)
-            soup = fix_head(soup)
+    # split_path = item_path.split("\\")
+    page_content = "<!DOCTYPE html>\n" + driver.page_source
+    soup = BeautifulSoup(page_content, "html5lib")
 
-            soup = add_archive_header(soup, url)
+    # base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
+    base_path = SSW_V1_URL
+    soup = remove_header_and_menu(soup)
+    soup = fix_scripts(soup, base_path)
+    soup = fix_images(soup, base_path)
+    soup = fix_css(soup, base_path)
+    soup = fix_links(soup)
 
-            page_source = soup.prettify(formatter="html5")
 
-            dir = "/".join(split_path[1:-1])
-            output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
-            if not os.path.exists(output_dir):
-                os.makedirs(output_dir)
 
+    # This is hard coded because I was trying to make it work for the exchange reporter page
+    soup = fix_breadcrumbs(soup, "ExchangeReporter")
+    soup = fix_menu(soup)
+    soup = fix_head(soup)
+    soup = add_archive_header(soup, url)
+    page_source = soup.prettify(formatter="html5")
+    # dir = "/".join(split_path[1:-1])
+    # output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
+
+
+    
+    if not os.path.exists("/history"):
+        os.makedirs("/history")
             # Filename with .aspx removed and kebab-case
             # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
-            filename = uri.replace(".aspx", "") + ".html"
-            output_filename = PARENT_DIR + pascal_to_kebab(filename)
-            with open(output_filename, "w+", encoding="utf-8") as f:
-                f.write(page_source)
-                items_written[url] = output_filename
+    # filename = uri.replace(".aspx", "") + ".html"
+    
+    # output_filename = PARENT_DIR + pascal_to_kebab(filename)\
 
-            new_path_split = item_path.split("\\")
+    # writes to /history every time
+
+    # with open(output_filename, "w+", encoding="utf-8") as f:
+    with open("./history/test.html", "w+",  encoding= "utf-8") as f:
+        f.write(page_source)
+    # items_written[url] = output_filename
+
+   #  new_path_split = item_path.split("\\")
 
             # If the file has not been archived before, add za to the start of the filename
-            if not new_path_split[-1].startswith("za"):
-                new_path_split[-1] = "za" + new_path_split[-1]
-                os.rename(item_path, "/".join(new_path_split))
+    # if not new_path_split[-1].startswith("za"):
+    #     new_path_split[-1] = "za" + new_path_split[-1]
+    # os.rename(item_path, "/".join(new_path_split))
 
     output_path = os.path.join(
         PARENT_DIR, pascal_to_kebab("/".join(path.split("\\")[1:]))
     )
 
-    output_index_page(items_written, output_path)
-    return items_written
+    # output_index_page(items_written, output_path)
+    #return items_written
 
 
 def pascal_to_kebab(s: str) -> str:
