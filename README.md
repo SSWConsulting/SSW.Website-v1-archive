@@ -97,6 +97,12 @@ python todo_outputter_md.py
 
 This will find and list all the aspx files in the project with associated directories, and tick off pages that have zz or za at the start.
 
+Additionally, to generate a `todos-notdone.md` file that lists all the pages that are not yet migrated, run the following command:
+
+```bash
+python todo_outputter_md.py --notdone-only
+```
+
 ### CSV Todo List
 
 To run the Python script that generates the `todos.csv` file, run the following command:
