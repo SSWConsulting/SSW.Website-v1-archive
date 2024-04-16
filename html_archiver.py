@@ -38,7 +38,7 @@ WHITELIST = [
     "WebPager",
     "WisePRO",
     "TimePROSmartTags",
-    # Don't uncomment this one unless you aren't in the office (uses prod.ssw.com.au)
+    # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
     # "Products",
 ]
 
