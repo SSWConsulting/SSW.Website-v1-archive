@@ -33,10 +33,11 @@ WHITELIST = [
     # TODO: "StandardsInternal",
     "Training",
     "TeamCalendar",
-    # "UpsizingPRO",
-    # "WebPager"
-    # "NETUG",
-    # "WisePRO","
+    "UpsizingPRO",
+    "NETUG",
+    "WebPager",
+    "WisePRO",
+    "TimePROSmartTags",
 ]
 
 IMAGE_REPLACEMENTS: dict[str, str] = {
