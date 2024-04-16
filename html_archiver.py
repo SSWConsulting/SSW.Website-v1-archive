@@ -47,6 +47,10 @@ IMAGE_REPLACEMENTS = {
     "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
 }
 
+PAGE_REPLACEMENTS = {
+    "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
+}
+
 PARENT_DIR = "history/"
 FONTS_DIR = PARENT_DIR + "fonts/"
 SSW_URL = "https://www.ssw.com.au"
@@ -110,10 +114,14 @@ def archive_pages(path: str) -> dict[str, str]:
             uri = "/".join(split_path[1:])
             # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
             url = SSW_URL + "/ssw/" + uri
+
+            is_replaced = url in PAGE_REPLACEMENTS
+            if is_replaced:
+                url = PAGE_REPLACEMENTS[url]
             driver.get(url)
 
             # If the page has been redirected, rename the file to start with zr
-            if driver.current_url != url:
+            if driver.current_url != url and not is_replaced:
                 print("Redirect: " + url + " -> " + driver.current_url)
                 new_path_split = item_path.split("\\")
                 if not new_path_split[-1].startswith("za") and not new_path_split[
@@ -536,7 +544,7 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
         div.decompose()
 
     nav_div = soup.find("div", id="nav")
-    
+
     if nav_div:
         # Find the first <ul> child in nav div that contains menu
         ul = nav_div.find("ul")
