@@ -39,12 +39,16 @@ WHITELIST = [
     # "WisePRO","
 ]
 
-IMAGE_REPLACEMENTS = {
+IMAGE_REPLACEMENTS: dict[str, str] = {
     "adam_thumb.jpg": "https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg",
     "mehmet-thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Mehmet.jpg",
     "eric_thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/eric_phan.jpg",
     "SSWLogo-xmas.svg": "https://www.ssw.com.au/SSW/images/Raven/SSWLogo.svg",
     "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
+}
+
+PAGE_REPLACEMENTS: dict[str, str] = {
+    "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
 }
 
 PARENT_DIR = "history/"
@@ -110,10 +114,14 @@ def archive_pages(path: str) -> dict[str, str]:
             uri = "/".join(split_path[1:])
             # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
             url = SSW_URL + "/ssw/" + uri
+
+            is_replaced = url in PAGE_REPLACEMENTS
+            if is_replaced:
+                url = PAGE_REPLACEMENTS[url]
             driver.get(url)
 
             # If the page has been redirected, rename the file to start with zr
-            if driver.current_url != url:
+            if driver.current_url != url and not is_replaced:
                 print("Redirect: " + url + " -> " + driver.current_url)
                 new_path_split = item_path.split("\\")
                 if not new_path_split[-1].startswith("za") and not new_path_split[
@@ -129,6 +137,7 @@ def archive_pages(path: str) -> dict[str, str]:
 
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
+            soup = fix_wayback_machine(soup)
             soup = remove_header_and_menu(soup)
             soup = fix_scripts(soup, base_path)
             soup = fix_images(soup, base_path)
@@ -535,6 +544,14 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuLower"):
         div.decompose()
 
+    nav_div = soup.find("div", id="nav")
+
+    if nav_div:
+        # Find the first <ul> child in nav div that contains menu
+        ul = nav_div.find("ul")
+        if ul:
+            ul.decompose()
+
     return soup
 
 
@@ -550,6 +567,13 @@ def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
     for i in soup.find_all("link", rel="canonical"):
         i["href"] = transform_path(i["href"]).replace("http://", "https://")
 
+    return soup
+
+
+def fix_wayback_machine(soup: BeautifulSoup) -> BeautifulSoup:
+    # remove all divs with wm- attributes
+    for div in soup.find_all("div", id=re.compile("wm-")):
+        div.decompose()
     return soup
 
 
