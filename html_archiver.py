@@ -33,10 +33,13 @@ WHITELIST = [
     # TODO: "StandardsInternal",
     "Training",
     "TeamCalendar",
-    # "UpsizingPRO",
-    # "WebPager"
-    # "NETUG",
-    # "WisePRO","
+    "UpsizingPRO",
+    "NETUG",
+    "WebPager",
+    "WisePRO",
+    "TimePROSmartTags",
+    # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
+    # "Products",
 ]
 
 IMAGE_REPLACEMENTS: dict[str, str] = {
@@ -48,9 +51,17 @@ IMAGE_REPLACEMENTS: dict[str, str] = {
 }
 
 PAGE_REPLACEMENTS: dict[str, str] = {
-    "https://www.ssw.com.au/ssw/DataPRO/": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
+    "https://www.ssw.com.au/ssw/DataPRO/Default.aspx": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
     "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
-    "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx"
+    "https://www.ssw.com.au/ssw/Products/3rdPartySoftware.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftware.aspx",
+    "https://www.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx",
+    "https://www.ssw.com.au/ssw/Products/Awards.aspx": "https://prod.ssw.com.au/ssw/Products/Awards.aspx",
+    "https://www.ssw.com.au/ssw/Products/Default_bkp.aspx": "https://prod.ssw.com.au/ssw/Products/Default_bkp.aspx",
+    "https://www.ssw.com.au/ssw/Products/Ineta.aspx": "https://prod.ssw.com.au/ssw/Products/Ineta.aspx",
+    "https://www.ssw.com.au/ssw/Products/livedemonstration.aspx": "https://prod.ssw.com.au/ssw/Products/livedemonstration.aspx",
+    "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
+    "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
+    "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
 }
 
 PARENT_DIR = "history/"
@@ -186,6 +197,7 @@ def pascal_to_kebab(s: str) -> str:
     regex = r"([a-z])([A-Z0-9])"
     replacements = {
         "NET": "Net",
+        "NetUG": "Netug",
         "SQL": "Sql",
         "BI": "Bi",
         "ALM": "Alm",
@@ -555,9 +567,12 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuLower"):
         div.decompose()
     nav_div = soup.find("div", id="nav")
-    red_banner = soup.find("div", class_="CategoryColor")
-    if red_banner is not None:
-        red_banner.decompose()
+
+    # we are keeping the red banner because it breaks some pages with the carousel
+    # red_banner = soup.find("div", id="ctl00_ctl00_Content_CategoryColor")
+    # if red_banner is not None:
+    #     red_banner.decompose()
+
     if nav_div:
         # Find the first <ul> child in nav div that contains menu
         ul = nav_div.find("ul")
