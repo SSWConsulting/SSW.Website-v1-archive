@@ -540,10 +540,8 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuUpper"):
         div.decompose()
-    re
     for div in soup.find_all("div", id="MenuLower"):
         div.decompose()
-
     nav_div = soup.find("div", id="nav")
     red_banner = soup.find("div", class_="CategoryColor")
     if red_banner is not None:
