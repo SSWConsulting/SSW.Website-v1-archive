@@ -2,28 +2,35 @@ import os
 import argparse
 
 
+def is_done(filename: str):
+    return (
+        filename.startswith("zz")
+        or filename.startswith("za")
+        or filename.startswith("zr")
+    )
+
+
 def output_markdown(path, file, indent=0, notdone_only=False):
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
 
         if os.path.isdir(item_path):
             has_aspx = False
+            is_not_done = False
             for item2 in os.listdir(item_path):
                 if item2.endswith(".aspx"):
+                    if not is_done(item2):
+                        is_not_done = True
                     has_aspx = True
-                    break
-            if has_aspx:
+
+            if has_aspx and is_not_done:
                 file.write("    " * indent + f"- 📁 {item}\n")
                 output_markdown(item_path, file, indent + 1, notdone_only)
 
         elif os.path.isfile(item_path) and item_path.endswith(".aspx"):
             filename = item_path.split("\\")[-1]
 
-            if (
-                filename.startswith("zz")
-                or filename.startswith("za")
-                or filename.startswith("zr")
-            ):
+            if is_done(filename):
                 if not notdone_only:
                     file.write("    " * indent + f"- [x] {item}\n")
             else:
