@@ -38,6 +38,8 @@ WHITELIST = [
     "WebPager",
     "WisePRO",
     "TimePROSmartTags",
+    # Don't uncomment this one unless you aren't in the office (uses prod.ssw.com.au)
+    # "Products",
 ]
 
 IMAGE_REPLACEMENTS: dict[str, str] = {
@@ -49,8 +51,16 @@ IMAGE_REPLACEMENTS: dict[str, str] = {
 }
 
 PAGE_REPLACEMENTS: dict[str, str] = {
-    "https://www.ssw.com.au/ssw/DataPRO/": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
+    "https://www.ssw.com.au/ssw/DataPRO/Default.aspx": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
     "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
+    "https://www.ssw.com.au/ssw/Products/3rdPartySoftware.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftware.aspx",
+    "https://www.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx",
+    "https://www.ssw.com.au/ssw/Products/Awards.aspx": "https://prod.ssw.com.au/ssw/Products/Awards.aspx",
+    "https://www.ssw.com.au/ssw/Products/Default_bkp.aspx": "https://prod.ssw.com.au/ssw/Products/Default_bkp.aspx",
+    "https://www.ssw.com.au/ssw/Products/Ineta.aspx": "https://prod.ssw.com.au/ssw/Products/Ineta.aspx",
+    "https://www.ssw.com.au/ssw/Products/livedemonstration.aspx": "https://prod.ssw.com.au/ssw/Products/livedemonstration.aspx",
+    "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
+    "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
 }
 
 PARENT_DIR = "history/"

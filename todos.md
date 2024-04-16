@@ -659,17 +659,17 @@
 - [ ] PowerSessions.aspx
 - [ ] ProcessImprovementForSoftwareTeams.aspx
 - 📁 Products
-    - [ ] 3rdPartySoftware.aspx
-    - [ ] 3rdPartySoftwarePriceIndicator.aspx
-    - [ ] Awards.aspx
-    - [ ] Default_bkp.aspx
-    - [ ] GenerateRegistrationID.aspx
-    - [ ] Ineta.aspx
-    - [ ] livedemonstration.aspx
-    - [ ] pwpmag.aspx
     - 📁 Source-Code-License-Agreement
-        - [ ] Default.aspx
-    - [ ] Tester.aspx
+        - [x] zazrDefault.aspx
+    - [x] zazr3rdPartySoftware.aspx
+    - [x] zazr3rdPartySoftwarePriceIndicator.aspx
+    - [x] zazrAwards.aspx
+    - [x] zazrDefault_bkp.aspx
+    - [x] zazrIneta.aspx
+    - [x] zazrlivedemonstration.aspx
+    - [x] zazrpwpmag.aspx
+    - [x] zrGenerateRegistrationID.aspx
+    - [x] zrTester.aspx
     - [x] zzDefault.aspx
 - 📁 PropertyAndEventPRO
     - [ ] Default.aspx
