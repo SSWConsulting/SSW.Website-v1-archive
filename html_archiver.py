@@ -39,7 +39,7 @@ WHITELIST = [
     # "WisePRO","
 ]
 
-IMAGE_REPLACEMENTS = {
+IMAGE_REPLACEMENTS: dict[str, str] = {
     "adam_thumb.jpg": "https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg",
     "mehmet-thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Mehmet.jpg",
     "eric_thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/eric_phan.jpg",
@@ -47,7 +47,7 @@ IMAGE_REPLACEMENTS = {
     "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
 }
 
-PAGE_REPLACEMENTS = {
+PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
 }
 
@@ -137,6 +137,7 @@ def archive_pages(path: str) -> dict[str, str]:
 
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
+            soup = fix_wayback_machine(soup)
             soup = remove_header_and_menu(soup)
             soup = fix_scripts(soup, base_path)
             soup = fix_images(soup, base_path)
@@ -566,6 +567,13 @@ def fix_head(soup: BeautifulSoup) -> BeautifulSoup:
     for i in soup.find_all("link", rel="canonical"):
         i["href"] = transform_path(i["href"]).replace("http://", "https://")
 
+    return soup
+
+
+def fix_wayback_machine(soup: BeautifulSoup) -> BeautifulSoup:
+    # remove all divs with wm- attributes
+    for div in soup.find_all("div", id=re.compile("wm-")):
+        div.decompose()
     return soup
 
 
