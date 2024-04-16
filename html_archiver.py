@@ -61,6 +61,7 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/Products/livedemonstration.aspx": "https://prod.ssw.com.au/ssw/Products/livedemonstration.aspx",
     "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
     "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
+    "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
 }
 
 PARENT_DIR = "history/"
