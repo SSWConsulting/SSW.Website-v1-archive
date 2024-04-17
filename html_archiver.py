@@ -21,7 +21,7 @@ WHITELIST = [
     # "ExchangeReporter",
     # "HealthAuditor",
     # "LinkAuditor",
-    "LookOut",
+    # "LookOut",
     # "PerformancePRO",
     "NETToolkit",
     # "PropertyAndEventPRO",
@@ -330,6 +330,8 @@ def download_image(src: str, path: str) -> str:
     src = src.split("?")[0]
     img_src = src
 
+    RELATIVE_REGEX = r"\/(\w+\/\.\.)"
+
     if src.startswith(SSW_URL):
         offset = 4
     elif src.lower().startswith("/ssw"):
@@ -340,10 +342,10 @@ def download_image(src: str, path: str) -> str:
         offset = 0
         if not img_src.startswith("../"):
             img_src = re.sub(SSW_V1_REGEX_SUB, "", base_url) + img_src
-        else:
-            print((base_url + src).strip())
+            if "VersionChecker" in img_src:
+                print(img_src)
 
-    split_src = src.split("/")
+    split_src = img_src.split("/")
     image_name = split_src[-1]
 
     image_path = PARENT_DIR + "/".join(split_src[offset:-1])
@@ -358,7 +360,7 @@ def download_image(src: str, path: str) -> str:
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
-    request_path = (base_url + src).strip()
+    request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
     img_res = requests.get(request_path)
     img_data = img_res.content
 
