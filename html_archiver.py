@@ -11,12 +11,13 @@ import json
 
 # TODO: eXtremeEmails
 WHITELIST = [
-    "AccessReporter",
-    "AgileTemplate",
-    "DataMergePRO",
-    "DataPRO",
-    "DataRenovator",
+    # "AccessReporter",
+    # "AgileTemplate",
+    # "DataMergePRO",
+    # "DataPRO",
+    # "DataRenovator",
     # "EmailMergePRO",
+    # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
     "Events",
     # "ExchangeReporter",
     # "HealthAuditor",
@@ -26,18 +27,18 @@ WHITELIST = [
     # "NETToolkit",
     # "PropertyAndEventPRO",
     # "SQLAuditor",
-    "SQLDeploy",
-    "SQLReportingServicesAuditor",
-    "SQLTotalCompare",
+    # "SQLDeploy",
+    # "SQLReportingServicesAuditor",
+    # "SQLTotalCompare",
     # "Standards",
     # TODO: "StandardsInternal",
-    "Training",
-    "TeamCalendar",
-    "UpsizingPRO",
-    "NETUG",
-    "WebPager",
-    "WisePRO",
-    "TimePROSmartTags",
+    # "Training",
+    # "TeamCalendar",
+    # "UpsizingPRO",
+    # "NETUG",
+    # "WebPager",
+    # "WisePRO",
+    # "TimePROSmartTags",
     # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
     # "Products",
 ]
@@ -62,6 +63,7 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
     "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
     "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
+    "https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
 PARENT_DIR = "history/"
@@ -239,6 +241,9 @@ def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             elif "javascript_bundles/moment" in element["src"]:
                 element["src"] = "/history/moment.js"
                 continue
+            elif "javascript_bundles/ssw_consulting" in element["src"]:
+                element["src"] = "/history/ssw_consulting.js"
+                continue
             # TODO: Fix as was removed as was causing errors with images, will not be responsive
             # elif "dist/menu.js" in element["src"]:
             #     element["src"] = "/history/menu.js"
@@ -401,6 +406,11 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
+            # TODO: Fix up the references to /ssw images in these CSS files
+            elif "ssw_consulting_slim" in href:
+                link["href"] = "/history/css/ssw_consulting_slim.css"
+            elif "ssw_consulting_defer" in href:
+                link["href"] = "/history/css/ssw_consulting_defer.css"
 
             for css_file in css_files:
                 if css_file.lower() in href.lower():
