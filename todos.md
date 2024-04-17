@@ -628,15 +628,15 @@
     - [ ] UserGuide.aspx
 - 📁 NETUG
     - 📁 Evaluation-Survey
-        - [ ] Default.aspx
-    - [ ] Hanselman-User-Group-Live.aspx
-    - [ ] Hanselman-User-Group-Special.aspx
-    - [ ] History.aspx
-    - [ ] NewsletterFeedback.aspx
-    - [ ] The-Agile-Olympics-with-Jesse-Houwing.aspx
-    - [ ] Top-Sessions.aspx
-    - [ ] UserGroupMapDirectionsCanberra.aspx
-    - [ ] UserGroupMapDirectionsSydney.aspx
+        - [x] zaDefault.aspx
+    - [x] zaHanselman-User-Group-Live.aspx
+    - [x] zaHanselman-User-Group-Special.aspx
+    - [x] zaHistory.aspx
+    - [x] zaThe-Agile-Olympics-with-Jesse-Houwing.aspx
+    - [x] zaTop-Sessions.aspx
+    - [x] zaUserGroupMapDirectionsCanberra.aspx
+    - [x] zaUserGroupMapDirectionsSydney.aspx
+    - [x] zrNewsletterFeedback.aspx
     - [x] zzBrisbane.aspx
     - [x] zzCanberra.aspx
     - [x] zzDefault.aspx
@@ -659,17 +659,17 @@
 - [ ] PowerSessions.aspx
 - [ ] ProcessImprovementForSoftwareTeams.aspx
 - 📁 Products
-    - [ ] 3rdPartySoftware.aspx
-    - [ ] 3rdPartySoftwarePriceIndicator.aspx
-    - [ ] Awards.aspx
-    - [ ] Default_bkp.aspx
-    - [ ] GenerateRegistrationID.aspx
-    - [ ] Ineta.aspx
-    - [ ] livedemonstration.aspx
-    - [ ] pwpmag.aspx
     - 📁 Source-Code-License-Agreement
-        - [ ] Default.aspx
-    - [ ] Tester.aspx
+        - [x] zazrDefault.aspx
+    - [x] zazr3rdPartySoftware.aspx
+    - [x] zazr3rdPartySoftwarePriceIndicator.aspx
+    - [x] zazrAwards.aspx
+    - [x] zazrDefault_bkp.aspx
+    - [x] zazrIneta.aspx
+    - [x] zazrlivedemonstration.aspx
+    - [x] zazrpwpmag.aspx
+    - [x] zrGenerateRegistrationID.aspx
+    - [x] zrTester.aspx
     - [x] zzDefault.aspx
 - 📁 PropertyAndEventPRO
     - [ ] Default.aspx
@@ -1135,8 +1135,8 @@
 - 📁 TimePRONet
     - [x] zzDefault.aspx
 - 📁 TimePROSmartTags
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - 📁 Training
     - [x] zaAccesstoSQLServerandNET.aspx
     - [x] zaALM.aspx
@@ -1169,25 +1169,25 @@
     - [x] zzVSTSCustomization.aspx
     - [x] zzWindows-Azure-Webinar.aspx
 - 📁 UpsizingPRO
-    - [ ] Default.aspx
-    - [ ] dtsproblem.aspx
-    - [ ] jan02sqlserverprofessional.aspx
-    - [ ] Resources.aspx
-    - [ ] SQL_Server_Migration_Assistant_Wizard_for_Access.aspx
-    - [ ] talesfromthebattlefield.aspx
-    - [ ] upsizingdatatypemapping.aspx
-    - [ ] UserGuide.aspx
-    - [ ] workafter.aspx
-    - [ ] workbefore.aspx
+    - [x] zaDefault.aspx
+    - [x] zadtsproblem.aspx
+    - [x] zajan02sqlserverprofessional.aspx
+    - [x] zaResources.aspx
+    - [x] zaSQL_Server_Migration_Assistant_Wizard_for_Access.aspx
+    - [x] zatalesfromthebattlefield.aspx
+    - [x] zaupsizingdatatypemapping.aspx
+    - [x] zaUserGuide.aspx
+    - [x] zaworkafter.aspx
+    - [x] zaworkbefore.aspx
 - [ ] Version.aspx
 - 📁 Video
     - [ ] Default.aspx
     - [ ] Why-Choose-SSW.aspx
 - 📁 WebPager
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - 📁 WisePRO
-    - [ ] Default.aspx
+    - [x] zaDefault.aspx
 - 📁 zsMaintenance
     - [ ] Default.aspx
     - [ ] testimonialmodify.aspx
