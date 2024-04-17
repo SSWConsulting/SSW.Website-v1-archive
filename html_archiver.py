@@ -342,8 +342,6 @@ def download_image(src: str, path: str) -> str:
         offset = 0
         if not img_src.startswith("../"):
             img_src = re.sub(SSW_V1_REGEX_SUB, "", base_url) + img_src
-            if "VersionChecker" in img_src:
-                print(img_src)
 
     split_src = img_src.split("/")
     image_name = split_src[-1]
