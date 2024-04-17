@@ -122,7 +122,7 @@ def archive_pages(path: str) -> dict[str, str]:
         ):
             # If it starts with za (means it has been archived before), remove the za
             if split_path[-1].startswith("za") or split_path[-1].startswith("zr"):
-                split_path[-1] = split_path[-1][2:]
+                split_path[-1] = split_path[-1].replace("za", "").replace("zr", "")
 
             # URI on the v1 website e.g. Training/Default.aspx
             uri = "/".join(split_path[1:])
