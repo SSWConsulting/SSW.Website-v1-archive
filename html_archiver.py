@@ -39,7 +39,7 @@ WHITELIST = [
     "WisePRO",
     "TimePROSmartTags",
     # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
-    "Products",
+    # "Products",
 ]
 
 IMAGE_REPLACEMENTS: dict[str, str] = {
