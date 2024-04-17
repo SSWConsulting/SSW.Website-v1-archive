@@ -351,7 +351,13 @@ def download_image(src: str, path: str) -> str:
     split_src = img_src.split("/")
     image_name = split_src[-1]
 
-    image_path = PARENT_DIR + "/".join(split_src[offset:-1])
+    image_path = os.path.normpath(PARENT_DIR + "/".join(split_src[offset:-1])).replace(
+        "\\", "/"
+    )
+
+    if re.match(r"\/?history\/\w+", image_path) is not None:
+        image_path = "/history/" + image_path
+
     image_path = pascal_to_kebab(
         re.sub(
             r"/+",
@@ -363,13 +369,13 @@ def download_image(src: str, path: str) -> str:
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
-    request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
-    img_res = requests.get(request_path)
-    img_data = img_res.content
-
     store_path = urllib.parse.unquote(
         pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
     )
+
+    request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
+    img_res = requests.get(request_path)
+    img_data = img_res.content
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)

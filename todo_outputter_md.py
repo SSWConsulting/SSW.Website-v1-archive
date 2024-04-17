@@ -23,7 +23,7 @@ def output_markdown(path, file, indent=0, notdone_only=False):
                         is_not_done = True
                     has_aspx = True
 
-            if has_aspx and is_not_done:
+            if has_aspx and is_not_done and not item.startswith("zz"):
                 file.write("    " * indent + f"- 📁 {item}\n")
                 output_markdown(item_path, file, indent + 1, notdone_only)
 
