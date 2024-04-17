@@ -355,16 +355,16 @@ def download_image(src: str, path: str) -> str:
         "\\", "/"
     )
 
+    image_path = re.sub(
+        r"/+",
+        "/",
+        image_path,
+    )
+
     if re.match(r"\/?history\/\w+", image_path) is not None:
         image_path = "/history/" + image_path
 
-    image_path = pascal_to_kebab(
-        re.sub(
-            r"/+",
-            "/",
-            image_path,
-        )
-    )
+    image_path = pascal_to_kebab(image_path)
 
     if not os.path.exists(image_path):
         os.makedirs(image_path)
