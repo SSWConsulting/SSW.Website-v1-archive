@@ -17,6 +17,7 @@ WHITELIST = [
     "DataPRO",
     "DataRenovator",
     # "EmailMergePRO",
+    # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
     "Events",
     # "ExchangeReporter",
     # "HealthAuditor",
@@ -33,10 +34,13 @@ WHITELIST = [
     # TODO: "StandardsInternal",
     "Training",
     "TeamCalendar",
-    # "UpsizingPRO",
-    # "WebPager"
-    # "NETUG",
-    # "WisePRO","
+    "UpsizingPRO",
+    "NETUG",
+    "WebPager",
+    "WisePRO",
+    "TimePROSmartTags",
+    # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
+    # "Products",
 ]
 
 IMAGE_REPLACEMENTS: dict[str, str] = {
@@ -48,9 +52,18 @@ IMAGE_REPLACEMENTS: dict[str, str] = {
 }
 
 PAGE_REPLACEMENTS: dict[str, str] = {
-    "https://www.ssw.com.au/ssw/DataPRO/": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
+    "https://www.ssw.com.au/ssw/DataPRO/Default.aspx": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
     "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
-    "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx"
+    "https://www.ssw.com.au/ssw/Products/3rdPartySoftware.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftware.aspx",
+    "https://www.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx",
+    "https://www.ssw.com.au/ssw/Products/Awards.aspx": "https://prod.ssw.com.au/ssw/Products/Awards.aspx",
+    "https://www.ssw.com.au/ssw/Products/Default_bkp.aspx": "https://prod.ssw.com.au/ssw/Products/Default_bkp.aspx",
+    "https://www.ssw.com.au/ssw/Products/Ineta.aspx": "https://prod.ssw.com.au/ssw/Products/Ineta.aspx",
+    "https://www.ssw.com.au/ssw/Products/livedemonstration.aspx": "https://prod.ssw.com.au/ssw/Products/livedemonstration.aspx",
+    "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
+    "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
+    "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
+    "https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
 PARENT_DIR = "history/"
@@ -59,6 +72,7 @@ SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
 SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
 SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
+SSW_V1_REGEX_SUB = r"(https?:\/\/www\.ssw\.com\.au\/ssw)"
 
 SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 
@@ -110,7 +124,7 @@ def archive_pages(path: str) -> dict[str, str]:
         ):
             # If it starts with za (means it has been archived before), remove the za
             if split_path[-1].startswith("za") or split_path[-1].startswith("zr"):
-                split_path[-1] = split_path[-1][2:]
+                split_path[-1] = split_path[-1].replace("za", "").replace("zr", "")
 
             # URI on the v1 website e.g. Training/Default.aspx
             uri = "/".join(split_path[1:])
@@ -187,6 +201,7 @@ def pascal_to_kebab(s: str) -> str:
     regex = r"([a-z])([A-Z0-9])"
     replacements = {
         "NET": "Net",
+        "NetUG": "Netug",
         "SQL": "Sql",
         "BI": "Bi",
         "ALM": "Alm",
@@ -235,6 +250,9 @@ def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
                 continue
             elif "javascript_bundles/moment" in element["src"]:
                 element["src"] = "/history/moment.js"
+                continue
+            elif "javascript_bundles/ssw_consulting" in element["src"]:
+                element["src"] = "/history/ssw_consulting.js"
                 continue
             # TODO: Fix as was removed as was causing errors with images, will not be responsive
             # elif "dist/menu.js" in element["src"]:
@@ -323,6 +341,12 @@ def download_file(src: str, path: str) -> str:
     # so the array with an offset of 4 would be [Events, Training, Images, adam_thumb.jpg]
     offset = 2
     base_url = ""
+
+    src = src.split("?")[0]
+    img_src = src
+
+    RELATIVE_REGEX = r"\/(\w+\/\.\.)"
+
     if src.startswith(SSW_URL):
         offset = 4
     elif src.lower().startswith("/ssw"):
@@ -331,21 +355,25 @@ def download_file(src: str, path: str) -> str:
     elif not src.startswith("/") and not src.startswith("http"):
         base_url = path + "/"
         offset = 0
+        if not img_src.startswith("../"):
+            img_src = re.sub(SSW_V1_REGEX_SUB, "", base_url) + img_src
 
-    src = src.split("?")[0]
-    split_src = src.split("/")
-
+    split_src = img_src.split("/")
     image_name = split_src[-1]
 
-    image_path = re.sub(
-        r"/+",
-        "/",
-        (PARENT_DIR + "/".join(split_src[offset:-1])).lower().replace("../", "/"),
+    image_path = PARENT_DIR + "/".join(split_src[offset:-1])
+    image_path = pascal_to_kebab(
+        re.sub(
+            r"/+",
+            "/",
+            image_path,
+        )
     )
+
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
-    request_path = (base_url + src).strip()
+    request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
     img_res = requests.get(request_path)
     img_data = img_res.content
 
@@ -388,6 +416,11 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
                 link["href"] = "/history/ssw_raven_print.css"
             elif "ssw_raven" in href:
                 link["href"] = "/history/ssw_raven.css"
+            # TODO: Fix up the references to /ssw images in these CSS files
+            elif "ssw_consulting_slim" in href:
+                link["href"] = "/history/css/ssw_consulting_slim.css"
+            elif "ssw_consulting_defer" in href:
+                link["href"] = "/history/css/ssw_consulting_defer.css"
 
             for css_file in css_files:
                 if css_file.lower() in href.lower():
@@ -565,9 +598,12 @@ def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuLower"):
         div.decompose()
     nav_div = soup.find("div", id="nav")
-    red_banner = soup.find("div", class_="CategoryColor")
-    if red_banner is not None:
-        red_banner.decompose()
+
+    # we are keeping the red banner because it breaks some pages with the carousel
+    # red_banner = soup.find("div", id="ctl00_ctl00_Content_CategoryColor")
+    # if red_banner is not None:
+    #     red_banner.decompose()
+
     if nav_div:
         # Find the first <ul> child in nav div that contains menu
         ul = nav_div.find("ul")
