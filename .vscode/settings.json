@@ -3,5 +3,6 @@
   "livePreview.autoRefreshPreview": "Never",
   "livePreview.portNumber": 4000,
   "editor.tabSize": 4,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "livePreview.defaultPreviewPath": "/history/exchange-reporter/default.html"
 }
