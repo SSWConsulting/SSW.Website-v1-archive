@@ -335,15 +335,13 @@ def download_image(src: str, path: str) -> str:
     elif src.lower().startswith("/ssw"):
         base_url = SSW_URL
         offset = 2
-    # elif src.startswith("../"):
-    # todo
     elif not src.startswith("/") and not src.startswith("http"):
         base_url = path + "/"
         offset = 0
         if not img_src.startswith("../"):
             img_src = re.sub(SSW_V1_REGEX_SUB, "", base_url) + img_src
-
-        print(img_src)
+        else:
+            print((base_url + src).strip())
 
     split_src = src.split("/")
     image_name = split_src[-1]
