@@ -11,33 +11,33 @@ import json
 
 # TODO: eXtremeEmails
 WHITELIST = [
-    "AccessReporter",
-    "AgileTemplate",
-    "DataMergePRO",
-    "DataPRO",
-    "DataRenovator",
+    # "AccessReporter",
+    # "AgileTemplate",
+    # "DataMergePRO",
+    # "DataPRO",
+    # "DataRenovator",
     # "EmailMergePRO",
-    "Events",
+    # "Events",
     # "ExchangeReporter",
     # "HealthAuditor",
     # "LinkAuditor",
-    # "LookOut",
+    "LookOut",
     # "PerformancePRO",
-    # "NETToolkit",
+    "NETToolkit",
     # "PropertyAndEventPRO",
     # "SQLAuditor",
-    "SQLDeploy",
-    "SQLReportingServicesAuditor",
-    "SQLTotalCompare",
+    # "SQLDeploy",
+    # "SQLReportingServicesAuditor",
+    # "SQLTotalCompare",
     # "Standards",
     # TODO: "StandardsInternal",
-    "Training",
-    "TeamCalendar",
-    "UpsizingPRO",
-    "NETUG",
-    "WebPager",
-    "WisePRO",
-    "TimePROSmartTags",
+    # "Training",
+    # "TeamCalendar",
+    # "UpsizingPRO",
+    # "NETUG",
+    # "WebPager",
+    # "WisePRO",
+    # "TimePROSmartTags",
     # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
     # "Products",
 ]
@@ -70,6 +70,7 @@ SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
 SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
 SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
+SSW_V1_REGEX_SUB = r"(https?:\/\/www\.ssw\.com\.au\/ssw)"
 
 SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 
@@ -325,25 +326,37 @@ def download_image(src: str, path: str) -> str:
     # so the array with an offset of 4 would be [Events, Training, Images, adam_thumb.jpg]
     offset = 2
     base_url = ""
+
+    src = src.split("?")[0]
+    img_src = src
+
     if src.startswith(SSW_URL):
         offset = 4
     elif src.lower().startswith("/ssw"):
         base_url = SSW_URL
         offset = 2
+    # elif src.startswith("../"):
+    # todo
     elif not src.startswith("/") and not src.startswith("http"):
         base_url = path + "/"
         offset = 0
+        if not img_src.startswith("../"):
+            img_src = re.sub(SSW_V1_REGEX_SUB, "", base_url) + img_src
 
-    src = src.split("?")[0]
+        print(img_src)
+
     split_src = src.split("/")
-
     image_name = split_src[-1]
 
-    image_path = re.sub(
-        r"/+",
-        "/",
-        (PARENT_DIR + "/".join(split_src[offset:-1])).lower().replace("../", "/"),
+    image_path = PARENT_DIR + "/".join(split_src[offset:-1])
+    image_path = pascal_to_kebab(
+        re.sub(
+            r"/+",
+            "/",
+            image_path,
+        )
     )
+
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
