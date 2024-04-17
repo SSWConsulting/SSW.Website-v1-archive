@@ -311,6 +311,7 @@ def download_image(src: str, path: str) -> str:
     # where the split would return: [https:, , www.ssw.com.au, ssw, Events, Training, Images, adam_thumb.jpg]
     # and the offset would be 4
     # so the array with an offset of 4 would be [Events, Training, Images, adam_thumb.jpg]
+    url_relevant_to_current = not src.startswith("/") and not src.startswith("http") 
     offset = 2
     base_url = ""
     if src.startswith(SSW_URL):
@@ -318,31 +319,43 @@ def download_image(src: str, path: str) -> str:
     elif src.lower().startswith("/ssw"):
         base_url = SSW_URL
         offset = 2
-    elif not src.startswith("/") and not src.startswith("http"):
+    elif url_relevant_to_current:
         base_url = path + "/"
         offset = 0
-
     src = src.split("?")[0]
+    current_directory = pascal_to_kebab(path.split("/")[4])
     split_src = src.split("/")
-
     image_name = split_src[-1]
+    image_subdirectory = "/".join(split_src[offset:-1])
+    image_subdirectory = pascal_to_kebab(image_subdirectory)
 
+
+    # if the directory for the file starts with the directory of the current file
+    # (i.e.) Northwind/ crop it so that the file doesn't get saved to Northwind/Northwind
+    if image_subdirectory.startswith(current_directory):
+        image_subdirectory = image_subdirectory[len(current_directory) + 1 :]
     image_path = re.sub(
         r"/+",
         "/",
-        (PARENT_DIR + "/".join(split_src[offset:-1])).lower().replace("../", "/"),
-    )
+        (PARENT_DIR  + "/" + image_subdirectory).lower().replace("../", "/"),
+        )
+    if(url_relevant_to_current):
+        image_path = re.sub(
+            r"/+",
+            "/",
+            (PARENT_DIR + "/" + current_directory + "/" + image_subdirectory).lower().replace("../", "/"),
+        )
+    # NOTE: this will break if the image is within a subdirectory (i.e. ExchangeReporter\Product)
+    # but only if a duplicate image name exists in the subdirectory
     if not os.path.exists(image_path):
         os.makedirs(image_path)
 
     request_path = (base_url + src).strip()
     img_res = requests.get(request_path)
     img_data = img_res.content
-
     store_path = urllib.parse.unquote(
         pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
     )
-
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
 
@@ -587,7 +600,6 @@ def fix_wayback_machine(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id=re.compile("wm-")):
         div.decompose()
     return soup
-
 
 def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     archive_div = soup.new_tag("div")
