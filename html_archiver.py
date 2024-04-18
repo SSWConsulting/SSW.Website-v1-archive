@@ -19,13 +19,13 @@ WHITELIST = [
     # "EmailMergePRO",
     # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
     "Events",
-    # "ExchangeReporter",
-    # "HealthAuditor",
-    # "LinkAuditor",
-    # "LookOut",
-    # "PerformancePRO",
-    # "NETToolkit",
-    # "PropertyAndEventPRO",
+    "ExchangeReporter",
+    "HealthAuditor",
+    "LinkAuditor",
+    "LookOut",
+    "PerformancePRO",
+    "NETToolkit",
+    "PropertyAndEventPRO",
     # "SQLAuditor",
     "SQLDeploy",
     "SQLReportingServicesAuditor",
@@ -63,7 +63,7 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
     "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
     "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
-    "https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
+    #"https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
 PARENT_DIR = "history/"

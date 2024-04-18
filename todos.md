@@ -516,11 +516,11 @@
     - [x] zzUTSSQL.aspx
     - [x] zzVisualStudio2010_TFS2010_Sharepoint2010.aspx
 - 📁 ExchangeReporter
-    - [ ] Default.aspx
     - 📁 Reports
-        - [ ] Default.aspx
-    - [ ] ReportSamples.aspx
-    - [ ] UserGuide.aspx
+        - [x] zaDefault.aspx
+    - [x] zaDefault.aspx
+    - [x] zaReportSamples.aspx
+    - [x] zaUserGuide.aspx
 - 📁 eXtremeEmails
     - [ ] Default.aspx
     - 📁 ExcelProductList
@@ -533,10 +533,10 @@
 - 📁 HackDay
     - [x] zzDefault.aspx
 - 📁 HealthAuditor
-    - [ ] Default.aspx
-    - [ ] FxCopTutorial.aspx
-    - [ ] NUnitTutorial.aspx
-    - [ ] userguide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaFxCopTutorial.aspx
+    - [x] zaNUnitTutorial.aspx
+    - [x] zauserguide.aspx
 - 📁 Hosting
     - [ ] AliasForSQLServer.aspx
     - [ ] DatabaseEdit.aspx
@@ -544,11 +544,11 @@
     - [x] zzDefault.aspx
     - [x] zzhostingtermsconditions.aspx
 - 📁 LinkAuditor
-    - [ ] Default.aspx
     - 📁 Desktop
-        - [ ] UserGuide.aspx
-    - [ ] HowtobeGoodLinkAuditorDailyBuildMaster.aspx
-    - [ ] UserGuide.aspx
+        - [x] zaUserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaHowtobeGoodLinkAuditorDailyBuildMaster.aspx
+    - [x] zaUserGuide.aspx
 - 📁 Live
     - [x] zzDefault.aspx
 - 📁 Logo
@@ -610,33 +610,33 @@
     - [x] zzDefault.aspx
     - [x] zzPast.aspx
 - 📁 LookOut
-    - [ ] Default.aspx
     - 📁 Sample
-        - [ ] Customer.aspx
-    - [ ] UserGuide.aspx
+        - [x] zaCustomer.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - [ ] MenuMap.aspx
 - 📁 NETToolkit
-    - [ ] 01WinValidator.aspx
-    - [ ] 02WinSearch.aspx
-    - [ ] 03DataEntry.aspx
-    - [ ] 04ExceptionReporter.aspx
-    - [ ] 05WizardForms.aspx
-    - [ ] 06ConfigurationBlock.aspx
-    - [ ] 07VersionChecker.aspx
-    - [ ] 08ProgressbarsStatusforms.aspx
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] za01WinValidator.aspx
+    - [x] za02WinSearch.aspx
+    - [x] za03DataEntry.aspx
+    - [x] za04ExceptionReporter.aspx
+    - [x] za05WizardForms.aspx
+    - [x] za06ConfigurationBlock.aspx
+    - [x] za07VersionChecker.aspx
+    - [x] za08ProgressbarsStatusforms.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - 📁 NETUG
     - 📁 Evaluation-Survey
-        - [ ] Default.aspx
-    - [ ] Hanselman-User-Group-Live.aspx
-    - [ ] Hanselman-User-Group-Special.aspx
-    - [ ] History.aspx
-    - [ ] NewsletterFeedback.aspx
-    - [ ] The-Agile-Olympics-with-Jesse-Houwing.aspx
-    - [ ] Top-Sessions.aspx
-    - [ ] UserGroupMapDirectionsCanberra.aspx
-    - [ ] UserGroupMapDirectionsSydney.aspx
+        - [x] zaDefault.aspx
+    - [x] zaHanselman-User-Group-Live.aspx
+    - [x] zaHanselman-User-Group-Special.aspx
+    - [x] zaHistory.aspx
+    - [x] zaThe-Agile-Olympics-with-Jesse-Houwing.aspx
+    - [x] zaTop-Sessions.aspx
+    - [x] zaUserGroupMapDirectionsCanberra.aspx
+    - [x] zaUserGroupMapDirectionsSydney.aspx
+    - [x] zrNewsletterFeedback.aspx
     - [x] zzBrisbane.aspx
     - [x] zzCanberra.aspx
     - [x] zzDefault.aspx
@@ -654,8 +654,8 @@
 - 📁 NewZealand
     - [ ] default.aspx
 - 📁 PerformancePRO
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - [ ] PowerSessions.aspx
 - [ ] ProcessImprovementForSoftwareTeams.aspx
 - 📁 Products
@@ -672,8 +672,8 @@
     - [ ] Tester.aspx
     - [x] zzDefault.aspx
 - 📁 PropertyAndEventPRO
-    - [ ] Default.aspx
-    - [ ] userguide.aspx
+    - [x] zaDefault.aspx
+    - [x] zauserguide.aspx
 - 📁 Redirect
     - [ ] downloadredirect.aspx
     - [ ] FileList.aspx
@@ -1135,8 +1135,8 @@
 - 📁 TimePRONet
     - [x] zzDefault.aspx
 - 📁 TimePROSmartTags
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - 📁 Training
     - [x] zaAccesstoSQLServerandNET.aspx
     - [x] zaALM.aspx
