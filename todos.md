@@ -516,11 +516,11 @@
     - [x] zzUTSSQL.aspx
     - [x] zzVisualStudio2010_TFS2010_Sharepoint2010.aspx
 - 📁 ExchangeReporter
-    - [ ] Default.aspx
     - 📁 Reports
-        - [ ] Default.aspx
-    - [ ] ReportSamples.aspx
-    - [ ] UserGuide.aspx
+        - [x] zaDefault.aspx
+    - [x] zaDefault.aspx
+    - [x] zaReportSamples.aspx
+    - [x] zaUserGuide.aspx
 - 📁 eXtremeEmails
     - [ ] Default.aspx
     - 📁 ExcelProductList
@@ -533,10 +533,10 @@
 - 📁 HackDay
     - [x] zzDefault.aspx
 - 📁 HealthAuditor
-    - [ ] Default.aspx
-    - [ ] FxCopTutorial.aspx
-    - [ ] NUnitTutorial.aspx
-    - [ ] userguide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaFxCopTutorial.aspx
+    - [x] zaNUnitTutorial.aspx
+    - [x] zauserguide.aspx
 - 📁 Hosting
     - [ ] AliasForSQLServer.aspx
     - [ ] DatabaseEdit.aspx
@@ -544,11 +544,11 @@
     - [x] zzDefault.aspx
     - [x] zzhostingtermsconditions.aspx
 - 📁 LinkAuditor
-    - [ ] Default.aspx
     - 📁 Desktop
-        - [ ] UserGuide.aspx
-    - [ ] HowtobeGoodLinkAuditorDailyBuildMaster.aspx
-    - [ ] UserGuide.aspx
+        - [x] zaUserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaHowtobeGoodLinkAuditorDailyBuildMaster.aspx
+    - [x] zaUserGuide.aspx
 - 📁 Live
     - [x] zzDefault.aspx
 - 📁 Logo
@@ -610,22 +610,22 @@
     - [x] zzDefault.aspx
     - [x] zzPast.aspx
 - 📁 LookOut
-    - [ ] Default.aspx
     - 📁 Sample
-        - [ ] Customer.aspx
-    - [ ] UserGuide.aspx
+        - [x] zaCustomer.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - [ ] MenuMap.aspx
 - 📁 NETToolkit
-    - [ ] 01WinValidator.aspx
-    - [ ] 02WinSearch.aspx
-    - [ ] 03DataEntry.aspx
-    - [ ] 04ExceptionReporter.aspx
-    - [ ] 05WizardForms.aspx
-    - [ ] 06ConfigurationBlock.aspx
-    - [ ] 07VersionChecker.aspx
-    - [ ] 08ProgressbarsStatusforms.aspx
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] za01WinValidator.aspx
+    - [x] za02WinSearch.aspx
+    - [x] za03DataEntry.aspx
+    - [x] za04ExceptionReporter.aspx
+    - [x] za05WizardForms.aspx
+    - [x] za06ConfigurationBlock.aspx
+    - [x] za07VersionChecker.aspx
+    - [x] za08ProgressbarsStatusforms.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - 📁 NETUG
     - 📁 Evaluation-Survey
         - [x] zaDefault.aspx
@@ -654,26 +654,26 @@
 - 📁 NewZealand
     - [ ] default.aspx
 - 📁 PerformancePRO
-    - [ ] Default.aspx
-    - [ ] UserGuide.aspx
+    - [x] zaDefault.aspx
+    - [x] zaUserGuide.aspx
 - [ ] PowerSessions.aspx
 - [ ] ProcessImprovementForSoftwareTeams.aspx
 - 📁 Products
+    - [ ] 3rdPartySoftware.aspx
+    - [ ] 3rdPartySoftwarePriceIndicator.aspx
+    - [ ] Awards.aspx
+    - [ ] Default_bkp.aspx
+    - [ ] GenerateRegistrationID.aspx
+    - [ ] Ineta.aspx
+    - [ ] livedemonstration.aspx
+    - [ ] pwpmag.aspx
     - 📁 Source-Code-License-Agreement
-        - [x] zazrDefault.aspx
-    - [x] zazr3rdPartySoftware.aspx
-    - [x] zazr3rdPartySoftwarePriceIndicator.aspx
-    - [x] zazrAwards.aspx
-    - [x] zazrDefault_bkp.aspx
-    - [x] zazrIneta.aspx
-    - [x] zazrlivedemonstration.aspx
-    - [x] zazrpwpmag.aspx
-    - [x] zrGenerateRegistrationID.aspx
-    - [x] zrTester.aspx
+        - [ ] Default.aspx
+    - [ ] Tester.aspx
     - [x] zzDefault.aspx
 - 📁 PropertyAndEventPRO
-    - [ ] Default.aspx
-    - [ ] userguide.aspx
+    - [x] zaDefault.aspx
+    - [x] zauserguide.aspx
 - 📁 Redirect
     - [ ] downloadredirect.aspx
     - [ ] FileList.aspx
@@ -1169,25 +1169,25 @@
     - [x] zzVSTSCustomization.aspx
     - [x] zzWindows-Azure-Webinar.aspx
 - 📁 UpsizingPRO
-    - [x] zaDefault.aspx
-    - [x] zadtsproblem.aspx
-    - [x] zajan02sqlserverprofessional.aspx
-    - [x] zaResources.aspx
-    - [x] zaSQL_Server_Migration_Assistant_Wizard_for_Access.aspx
-    - [x] zatalesfromthebattlefield.aspx
-    - [x] zaupsizingdatatypemapping.aspx
-    - [x] zaUserGuide.aspx
-    - [x] zaworkafter.aspx
-    - [x] zaworkbefore.aspx
+    - [ ] Default.aspx
+    - [ ] dtsproblem.aspx
+    - [ ] jan02sqlserverprofessional.aspx
+    - [ ] Resources.aspx
+    - [ ] SQL_Server_Migration_Assistant_Wizard_for_Access.aspx
+    - [ ] talesfromthebattlefield.aspx
+    - [ ] upsizingdatatypemapping.aspx
+    - [ ] UserGuide.aspx
+    - [ ] workafter.aspx
+    - [ ] workbefore.aspx
 - [ ] Version.aspx
 - 📁 Video
     - [ ] Default.aspx
     - [ ] Why-Choose-SSW.aspx
 - 📁 WebPager
-    - [x] zaDefault.aspx
-    - [x] zaUserGuide.aspx
+    - [ ] Default.aspx
+    - [ ] UserGuide.aspx
 - 📁 WisePRO
-    - [x] zaDefault.aspx
+    - [ ] Default.aspx
 - 📁 zsMaintenance
     - [ ] Default.aspx
     - [ ] testimonialmodify.aspx
