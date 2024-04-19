@@ -134,7 +134,12 @@ def archive_pages(path: str) -> dict[str, str]:
             is_replaced = url in PAGE_REPLACEMENTS
             if is_replaced:
                 url = PAGE_REPLACEMENTS[url]
-            driver.get(url)
+
+            try:
+                driver.get(url)
+            except Exception as e:
+                print(f"Failed to get {url}: {e}")
+                continue
 
             # If the page has been redirected, rename the file to start with zr
             if driver.current_url != url and not is_replaced:
@@ -346,6 +351,7 @@ def download_file(src: str, path: str) -> str:
     img_src = src
 
     RELATIVE_REGEX = r"\/(\w+\/\.\.)"
+    RELATIVE_REPLACEMENT = r"((\.\.\/)+)"
 
     if src.startswith(SSW_URL):
         offset = 4
@@ -361,25 +367,37 @@ def download_file(src: str, path: str) -> str:
     split_src = img_src.split("/")
     image_name = split_src[-1]
 
-    image_path = PARENT_DIR + "/".join(split_src[offset:-1])
-    image_path = pascal_to_kebab(
-        re.sub(
-            r"/+",
-            "/",
-            image_path,
-        )
+    image_path = os.path.normpath(PARENT_DIR + "/".join(split_src[offset:-1])).replace(
+        "\\", "/"
     )
 
-    if not os.path.exists(image_path):
-        os.makedirs(image_path)
+    image_path = re.sub(
+        r"/+",
+        "/",
+        image_path,
+    )
 
-    request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
-    img_res = requests.get(request_path)
-    img_data = img_res.content
+    if re.match(r"\/?history\/\w+", image_path) is None:
+        if image_path.startswith("/"):
+            image_path = image_path[1:]
+        image_path = ("history/" + image_path).replace("//", "/")
+
+    image_path = pascal_to_kebab(image_path)
 
     store_path = urllib.parse.unquote(
         pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
     )
+
+    store_path = re.sub(RELATIVE_REPLACEMENT, "", store_path)
+
+    folder_path = "/".join(store_path.split("/")[:-1])
+
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
+    img_res = requests.get(request_path)
+    img_data = img_res.content
 
     if b"<!DOCTYPE html>" in img_data and img_res.status_code != 200:
         print("404 - " + request_path)
