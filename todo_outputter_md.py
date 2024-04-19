@@ -1,7 +1,7 @@
 import os
 
 
-def output_markdown(path, file, indent=0):
+def output_markdown(path, file, indent=0, is_not_done=False):
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
 
@@ -13,7 +13,7 @@ def output_markdown(path, file, indent=0):
 
             if has_aspx and is_not_done and not item.startswith("zz"):
                 file.write("    " * indent + f"- 📁 {item}\n")
-                output_markdown(item_path, file, indent + 1)
+                output_markdown(item_path, file, indent + 1, is_not_done)
 
         elif os.path.isfile(item_path) and item_path.endswith(".aspx"):
             filename = item_path.split("\\")[-1]
