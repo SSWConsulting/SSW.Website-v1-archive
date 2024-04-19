@@ -19,13 +19,13 @@ WHITELIST = [
     # "EmailMergePRO",
     # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
     "Events",
-    # "ExchangeReporter",
-    # "HealthAuditor",
-    # "LinkAuditor",
-    # "LookOut",
-    # "PerformancePRO",
-    # "NETToolkit",
-    # "PropertyAndEventPRO",
+    "ExchangeReporter",
+    "HealthAuditor",
+    "LinkAuditor",
+    "LookOut",
+    "PerformancePRO",
+    "NETToolkit",
+    "PropertyAndEventPRO",
     # "SQLAuditor",
     "SQLDeploy",
     "SQLReportingServicesAuditor",
@@ -63,7 +63,7 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
     "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
     "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
-    "https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
+    #"https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
 PARENT_DIR = "history/"
@@ -164,6 +164,7 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_images(soup, base_path)
             soup = fix_css(soup, base_path)
             soup = fix_links(soup)
+            soup = get_pdfs(soup, base_path)
             soup = fix_breadcrumbs(soup, split_path[1])
             soup = fix_menu(soup)
             soup = fix_head(soup)
@@ -231,8 +232,17 @@ def pascal_to_kebab(s: str) -> str:
 
     return re.sub(regex, r"\1-\2", s).lower()
 
+def get_pdfs(soup: BeautifulSoup, path: str) -> BeautifulSoup:
+    for link in soup.find_all("a"):
+        if not link.has_attr("href"):
+           continue
+        elif link["href"].endswith(".pdf"):
+            href = link["href"]
+            link["href"] = download_file(href, path)
+    return soup
 
 def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
+
     # Remove most scripts and iframes
     for element in soup(["script", "iframe"]):
         if element.get("src") is not None:
@@ -266,7 +276,7 @@ def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             href = element["content"]
             if href is None:
                 continue
-            element["content"] = download_image(href, path)
+            element["content"] = download_file(href, path)
 
     for element in soup.select(
         'div[id*="batBeacon"]',
@@ -322,12 +332,12 @@ def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             continue
 
         # Set the image src to the downloaded image's path
-        image["src"] = download_image(src, path)
+        image["src"] = download_file(src, path)
 
     return soup
 
 
-def download_image(src: str, path: str) -> str:
+def download_file(src: str, path: str) -> str:
     # TODO: Change to Regex
     # This offset thing is done because we split by slash
     # imagine the offset for: https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg
@@ -438,7 +448,7 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             href = link["href"]
             if href is None:
                 continue
-            link["href"] = download_image(href, path)
+            link["href"] = download_file(href, path)
 
     font_filename_pattern = r"url\(['\"](.+\/(.+\.(?:eot|ttf|woff2|woff|svg)).+)['\"]\)"
     webkit_frame_pattern = r"@-webkit-keyframes.*-launcherOnOpen"
