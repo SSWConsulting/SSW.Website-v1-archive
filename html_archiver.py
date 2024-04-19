@@ -341,6 +341,7 @@ def download_image(src: str, path: str) -> str:
     img_src = src
 
     RELATIVE_REGEX = r"\/(\w+\/\.\.)"
+    RELATIVE_REPLACEMENT = r"((\.\.\/)+)"
 
     if src.startswith(SSW_URL):
         offset = 4
@@ -367,16 +368,22 @@ def download_image(src: str, path: str) -> str:
     )
 
     if re.match(r"\/?history\/\w+", image_path) is None:
-        image_path = "/history/" + image_path
+        if image_path.startswith("/"):
+            image_path = image_path[1:]
+        image_path = ("history/" + image_path).replace("//", "/")
 
     image_path = pascal_to_kebab(image_path)
-
-    if not os.path.exists(image_path):
-        os.makedirs(image_path)
 
     store_path = urllib.parse.unquote(
         pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
     )
+
+    store_path = re.sub(RELATIVE_REPLACEMENT, "", store_path)
+
+    folder_path = "/".join(store_path.split("/")[:-1])
+
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
     request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
     img_res = requests.get(request_path)
