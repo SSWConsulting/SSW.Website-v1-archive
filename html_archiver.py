@@ -134,7 +134,12 @@ def archive_pages(path: str) -> dict[str, str]:
             is_replaced = url in PAGE_REPLACEMENTS
             if is_replaced:
                 url = PAGE_REPLACEMENTS[url]
-            driver.get(url)
+
+            try:
+                driver.get(url)
+            except Exception as e:
+                print(f"Failed to get {url}: {e}")
+                continue
 
             # If the page has been redirected, rename the file to start with zr
             if driver.current_url != url and not is_replaced:
@@ -361,7 +366,7 @@ def download_image(src: str, path: str) -> str:
         image_path,
     )
 
-    if re.match(r"\/?history\/\w+", image_path) is not None:
+    if re.match(r"\/?history\/\w+", image_path) is None:
         image_path = "/history/" + image_path
 
     image_path = pascal_to_kebab(image_path)
