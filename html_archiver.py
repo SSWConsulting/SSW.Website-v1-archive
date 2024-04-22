@@ -6,172 +6,49 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import urllib.parse
-from typing import List
-import threading
+import re
 import json
 
-
-
-
-HTML_FILES = [
-    ""
-]
-
-# def clone_page(relative_dir : str):
-#     page_name = page_url.split("/")[-1]
-#     driver.get(page_url)
-#     # Parse HTML content
-#     page_content = "<!DOCTYPE html>\n" + driver.page_source
-#     soup = BeautifulSoup(page_content, "html5lib")
-#     base_path = SSW_V1_URL
-#     soup = fix_wayback_machine(soup)
-#     soup = remove_header_and_menu(soup)
-#     soup = fix_scripts(soup, base_path)
-#     soup = fix_images(soup, base_path)
-#     soup = fix_css(soup, base_path)
-#     soup = fix_links(soup)
-#     soup = get_pdfs(soup, base_path)
-#     soup = fix_breadcrumbs(soup, "/")
-#     soup = fix_menu(soup)
-#     soup = fix_head(soup)
-#     soup = add_archive_header(soup, page_url)
-#     page_source = soup.prettify(formatter="html5")
-#     dir = "/"
-#     output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
-#     if not os.path.exists(output_dir):
-#         os.makedirs(output_dir)
-#     # Filename with .aspx removed and kebab-case
-#     # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
-#     # filename = uri.replace(".aspx", "") + ".html"
-
-#     page_name = page_name.replace(".aspx", "") + ".html"
-#     output_filename = output_dir + pascal_to_kebab(page_name)
-#     with open(output_filename, "w+", encoding="utf-8") as f:
-#         f.write(page_source)
-
-# def manually_clone_page(page_url: str):
-#     # If the page has been redirected, rename the file to start with zr
-#     page_name = page_url.split("/")[-1]
-
-#     driver.get(page_url)
-#     # Parse HTML content
-#     page_content = "<!DOCTYPE html>\n" + driver.page_source
-#     soup = BeautifulSoup(page_content, "html5lib")
-#     base_path = SSW_V1_URL
-#     soup = fix_wayback_machine(soup)
-#     soup = remove_header_and_menu(soup)
-#     soup = fix_scripts(soup, base_path)
-#     soup = fix_images(soup, base_path)
-#     soup = fix_css(soup, base_path)
-#     soup = fix_links(soup)
-#     soup = get_pdfs(soup, base_path)
-#     soup = fix_breadcrumbs(soup, "/")
-#     soup = fix_menu(soup)
-#     soup = fix_head(soup)
-#     soup = add_archive_header(soup, page_url)
-#     page_source = soup.prettify(formatter="html5")
-#     dir = "/"
-#     output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
-#     if not os.path.exists(output_dir):
-#         os.makedirs(output_dir)
-#     # Filename with .aspx removed and kebab-case
-#     # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
-#     # filename = uri.replace(".aspx", "") + ".html"
-
-#     page_name = page_name.replace(".aspx", "") + ".html"
-#     output_filename = output_dir + pascal_to_kebab(page_name)
-#     with open(output_filename, "w+", encoding="utf-8") as f:
-#         f.write(page_source)
-        # items_written[url] = output_filename
-
-    # new_path_split = item_path.split("\\")
-
-    # If the file has not been archived before, add za to the start of the filename
-    # if not new_path_split[-1].startswith("za"):
-    #     new_path_split[-1] = "za" + new_path_split[-1]
-    #     os.rename(item_path, "/".join(new_path_split))
 # TODO: eXtremeEmails
 WHITELIST = [
-    # "AccessReporter",
+    "AccessReporter",
     "AgileTemplate",
-    # "CodeAuditor",    
-    # "Registration",
-    # "SQLAuditor",
-    # "Database",
-    # "DataMergePRO",
-    # "DataPRO",
-    # "DataRenovator",
-    # "decomisisoned",
+    "DataMergePRO",
+    "DataPRO",
+    "DataRenovator",
     # "EmailMergePRO",
     # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
-    # "Events",
-    # "ExchangeReporter",
-    # "eXtremeEmails",
-    # "HealthAuditor",
-    # "LinkAuditor",
-    # "LookOut",
-    # "PerformancePRO",
-    # "NETToolkit",
-    # "PropertyAndEventPRO",
+    "Events",
+    "ExchangeReporter",
+    "HealthAuditor",
+    "LinkAuditor",
+    "LookOut",
+    "PerformancePRO",
+    "NETToolkit",
+    "PropertyAndEventPRO",
     # "SQLAuditor",
-    # "SQLDeploy",
-    # "SQLReportingServicesAuditor",
-    # "SQLTotalCompare",
-    # # "Standards",
-    # # TODO: "StandardsInternal",
-    # "Training",
-    # "TeamCalendar",
-    # "UpsizingPRO",
-    # "NETUG",
-    # "WebPager",
-    # "WisePRO",
-    # "TimePROSmartTags",
+    "SQLDeploy",
+    "SQLReportingServicesAuditor",
+    "SQLTotalCompare",
+    # "Standards",
+    # TODO: "StandardsInternal",
+    "Training",
+    "TeamCalendar",
+    "UpsizingPRO",
+    "NETUG",
+    "WebPager",
+    "WisePRO",
+    "TimePROSmartTags",
     # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
     # "Products",
 ]
 
-ARCHIVE_BANNER_LINKS = {
-    "CodeAuditor" : "https://codeauditor.com/",
-    "Events" : "https://ssw.com.au/events",
-    "Training" : "https://ssw.com.au/events",
-}
-ARCHIVE_BANNER_LINK_TEXT = {
-    "CodeAuditor" : "codeauditor.com",
-    "Events" : "ssw.com.au/events",
-    "Training" : "ssw.com.au/events"
-}
-MANUAL_DOWNLOAD_LIST = [
-
-]
-
-# The archive script will automatically ignore these pages
-BLACKLISTED_PAGES = [
-    "https://www.ssw.com.au/ssw/CodeAuditor/ImageSizeGood.aspx",
-    "https://www.ssw.com.au/ssw/CodeAuditor/ImageSizeBad.aspx"
-]
-# If a broken image is found, add it as a key in this dictionary and add a known working url to the 
-# right to replace it
 IMAGE_REPLACEMENTS: dict[str, str] = {
     "adam_thumb.jpg": "https://www.ssw.com.au/ssw/Events/Training/Images/adam_thumb.jpg",
     "mehmet-thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Mehmet.jpg",
     "eric_thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/eric_phan.jpg",
     "SSWLogo-xmas.svg": "https://www.ssw.com.au/SSW/images/Raven/SSWLogo.svg",
     "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
-    "codeauditor-logo.png": "https://www.ssw.com.au/ssw/CodeAuditor/images/codeauditor-logo.png",
-    "fromvs.png": "https://www.ssw.com.au/ssw/CodeAuditor/images/fromvs.png",
-    "fromca.png": "https://www.ssw.com.au/ssw/CodeAuditor/images/fromca.png",
-    "extension.png": "https://www.ssw.com.au/ssw/CodeAuditor/Images/extension.png",
-    "addjob.png": "https://www.ssw.com.au/ssw/CodeAuditor/Images/addjob.png",
-    "SSWCodeAuditorStartSmall.jpg" : "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/SSWCodeAuditorStartSmall.jpg",
-    "MakeYourOwnRulesSmall.jpg" : "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/MakeYourOwnRulesSmall.jpg",
-    "StayOnTopOfThingsSmall.jpg" : "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/StayOnTopOfThingsSmall.jpg",
-    "SpanningTheBigPictureSmall.jpg" : "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/SpanningTheBigPictureSmall.jpg",
-    "jobReportsSmall.jpg" : "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/jobReportsSmall.jpg",
-    "VSTSAddinThickboxSmall.jpg": "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/VSTSAddinThickboxSmall.jpg",
-    "WordIcon.gif" : "https://www.ssw.com.au/ssw/CodeAuditor/Images/WordIcon.gif",
-    "SelectJobSmall.jpg" : "https://www.ssw.com.au/ssw/CodeAuditor/images/Thickbox/SelectJobSmall.jpg",
-    "codeauditorcompliant.gif": "https://www.ssw.com.au/ssw/CodeAuditor/Images/codeauditorcompliant.gif",
-    "productBox_CodeAuditor.gif": "https://ssw.com.au/ssw/CodeAuditor/images/productBox_CodeAuditor.gif",
 }
 
 PAGE_REPLACEMENTS: dict[str, str] = {
@@ -186,15 +63,8 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
     "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
     "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
-
-
-
-
     #"https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
-# OVERRIDE_BANNER_REDIRECTS: dict[str, str] = {
-#     "https://codeauditor.com/"
-# }
 
 PARENT_DIR = "history/"
 FONTS_DIR = PARENT_DIR + "fonts/"
@@ -203,14 +73,10 @@ SSW_V1_URL = SSW_URL + "/ssw"
 SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
 SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
 SSW_V1_REGEX_SUB = r"(https?:\/\/www\.ssw\.com\.au\/ssw)"
-BASE_FOLDER = "SSW.Website.WebUI"
 
 SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
-items_written: dict[str, str] = {}
-service = Service("C:\\selenium\\chromedriver.exe")
-options = webdriver.ChromeOptions()
-options.add_argument("--headless")
 
+service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
 # To block Google Tag Manager from inserting stuff
@@ -232,93 +98,22 @@ driver.execute_cdp_cmd("Network.enable", {})
 
 
 def main():
-
-    # The archive script will not download anything in the root of the original repo
-    for link in MANUAL_DOWNLOAD_LIST:
-        archive_page(link)
-    archive_subdirectory(BASE_FOLDER)
+    archive_pages("SSW.Website.WebUI")
 
     # See fix_links comment for reason why this was commented out
     # with open(REDIRECT_CACHE_LOC, "w+") as f:
     #     json.dump(redirect_map, f, indent=4)
 
-# Downloads the page and marks it's original counterpart as archived or a redirect (if necessary)
-def archive_page(url: str):
-    directory = "/".join(url.split("/")[4:-1])
-    original_file_name = url.split("/")[-1]
-    original_file_uri =  os.path.join(BASE_FOLDER, "/".join(url.split("/")[4:]))
-    original_file_local_uri = original_file_uri.replace("/", "\\")
-    
-    base_directory = directory.split("/")[0]
-    v1_repo_directory = os.path.join(BASE_FOLDER , base_directory).replace("/", "\\")
-    archived_uri = os.path.join(v1_repo_directory, "za" + original_file_name)
-    redirect_uri = os.path.join(v1_repo_directory, "zr" + original_file_name)
-    item_path = os.path.join(directory, original_file_name)
-    v1_base_path = SSW_V1_URL + "/" + directory
-    try:
-        driver.get(url)
-    except Exception as e:
-        print(f"Failed to get {url}: {e}")
-        return
-    is_replaced = url in PAGE_REPLACEMENTS
-    # If the page has been redirected, rename the file to start with zr
-    if driver.current_url != url and not is_replaced:
-        print("Redirect: " + url + " -> " + driver.current_url)
-        if os.path.exists(archived_uri) and not os.path.exists(redirect_uri):
-        # if not original_file_name.startswith("za") and not original_file_name.startswith("zr"):
-            # new_file_name = "za" + original_file_name
-            # old_file_uri = os.path.join(v1_repo_directory, original_file_name)
-            # new_file_uri = os.path.join(v1_repo_directory, new_file_name)
-            os.rename(original_file_local_uri, redirect_uri)
 
-        return
-    # Parse HTML content
-    page_content = "<!DOCTYPE html>\n" + driver.page_source
-    soup = BeautifulSoup(page_content, "html5lib")
-    # base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
-    print("base path (archive pages) : " + v1_base_path)
-    soup = fix_wayback_machine(soup)
-    soup = remove_header_and_menu(soup)
-    soup = fix_scripts(soup, v1_base_path)
-    soup = fix_images(soup, v1_base_path)
-    soup = fix_css(soup, v1_base_path)
-    soup = fix_links(soup)
-    soup = get_pdfs(soup, v1_base_path)
-    soup = fix_breadcrumbs(soup, base_directory)
-    soup = fix_menu(soup)
-    soup = fix_head(soup)
-    soup = add_archive_header(soup, url)
-    page_source = soup.prettify(formatter="html5")
-    is_replaced = url in PAGE_REPLACEMENTS
-    dir = "/".join(directory)
-    output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    # Filename with .aspx removed and kebab-case
-    # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
-    filename = item_path.replace(".aspx", ".html")
-    output_filename = PARENT_DIR + pascal_to_kebab(filename)
-    with open(output_filename, "w+", encoding="utf-8") as f:
-        f.write(page_source)
-        items_written[url] = output_filename
-
-    # check if there's an archived version of the file in the original directory
-    # if not, create one
-    if not os.path.exists(archived_uri):
-        new_file_name = "za" + original_file_name
-        new_file_uri = os.path.join(v1_repo_directory, new_file_name)
-        os.rename(original_file_local_uri, new_file_uri)
-
-
-def archive_subdirectory(path: str) -> dict[str, str]:
+def archive_pages(path: str) -> dict[str, str]:
+    items_written: dict[str, str] = {}
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
-        print("item_path: "+ item_path)
         split_path = item_path.split("\\")
 
         # Recursively call archive_pages on subdirectories
         if os.path.isdir(item_path) and split_path[1] in WHITELIST:
-            items_written.update(archive_subdirectory(item_path))
+            items_written.update(archive_pages(item_path))
 
         # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
         elif (
@@ -335,73 +130,68 @@ def archive_subdirectory(path: str) -> dict[str, str]:
             uri = "/".join(split_path[1:])
             # URL on the v1 website e.g. ssw.com.au/ssw/Training/Default.aspx
             url = SSW_URL + "/ssw/" + uri
-            if url in BLACKLISTED_PAGES:
-                print("Skipping archive of: " + url)
-                continue
-            else: 
-                print("Archiving: " + url)
+
             is_replaced = url in PAGE_REPLACEMENTS
             if is_replaced:
                 url = PAGE_REPLACEMENTS[url]
-            archive_page(url)
-            
-            # try:
-            #     driver.get(url)
-            # except Exception as e:
-            #     print(f"Failed to get {url}: {e}")
-            #     continue
 
-            # # If the page has been redirected, rename the file to start with zr
-            # if driver.current_url != url and not is_replaced:
-            #     print("Redirect: " + url + " -> " + driver.current_url)
-            #     new_path_split = item_path.split("\\")
-            #     if not new_path_split[-1].startswith("za") and not new_path_split[
-            #         -1
-            #     ].startswith("zr"):
-            #         new_path_split[-1] = "zr" + new_path_split[-1]
-            #         os.rename(item_path, "/".join(new_path_split))
-            #     continue
+            try:
+                driver.get(url)
+            except Exception as e:
+                print(f"Failed to get {url}: {e}")
+                continue
 
-            # # Parse HTML content
-            # page_content = "<!DOCTYPE html>\n" + driver.page_source
-            # soup = BeautifulSoup(page_content, "html5lib")
+            # If the page has been redirected, rename the file to start with zr
+            if driver.current_url != url and not is_replaced:
+                print("Redirect: " + url + " -> " + driver.current_url)
+                new_path_split = item_path.split("\\")
+                if not new_path_split[-1].startswith("za") and not new_path_split[
+                    -1
+                ].startswith("zr"):
+                    new_path_split[-1] = "zr" + new_path_split[-1]
+                    os.rename(item_path, "/".join(new_path_split))
+                continue
 
-            # base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
-            # print("base path (archive pages) : " + base_path)
-            # soup = fix_wayback_machine(soup)
-            # soup = remove_header_and_menu(soup)
-            # soup = fix_scripts(soup, base_path)
-            # soup = fix_images(soup, base_path)
-            # soup = fix_css(soup, base_path)
-            # soup = fix_links(soup)
-            # soup = get_pdfs(soup, base_path)
-            # soup = fix_breadcrumbs(soup, split_path[1])
-            # soup = fix_menu(soup)
-            # soup = fix_head(soup)
+            # Parse HTML content
+            page_content = "<!DOCTYPE html>\n" + driver.page_source
+            soup = BeautifulSoup(page_content, "html5lib")
 
-            # soup = add_archive_header(soup, url)
+            base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
 
-            # page_source = soup.prettify(formatter="html5")
+            soup = fix_wayback_machine(soup)
+            soup = remove_header_and_menu(soup)
+            soup = fix_scripts(soup, base_path)
+            soup = fix_images(soup, base_path)
+            soup = fix_css(soup, base_path)
+            soup = fix_links(soup)
+            soup = get_pdfs(soup, base_path)
+            soup = fix_breadcrumbs(soup, split_path[1])
+            soup = fix_menu(soup)
+            soup = fix_head(soup)
 
-            # dir = "/".join(split_path[1:-1])
-            # output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
-            # if not os.path.exists(output_dir):
-            #     os.makedirs(output_dir)
+            soup = add_archive_header(soup, url)
 
-            # # Filename with .aspx removed and kebab-case
-            # # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
-            # filename = uri.replace(".aspx", "") + ".html"
-            # output_filename = PARENT_DIR + pascal_to_kebab(filename)
-            # with open(output_filename, "w+", encoding="utf-8") as f:
-            #     f.write(page_source)
-            #     items_written[url] = output_filename
+            page_source = soup.prettify(formatter="html5")
 
-            # new_path_split = item_path.split("\\")
+            dir = "/".join(split_path[1:-1])
+            output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
+            if not os.path.exists(output_dir):
+                os.makedirs(output_dir)
 
-            # # If the file has not been archived before, add za to the start of the filename
-            # if not new_path_split[-1].startswith("za"):
-            #     new_path_split[-1] = "za" + new_path_split[-1]
-            #     os.rename(item_path, "/".join(new_path_split))
+            # Filename with .aspx removed and kebab-case
+            # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
+            filename = uri.replace(".aspx", "") + ".html"
+            output_filename = PARENT_DIR + pascal_to_kebab(filename)
+            with open(output_filename, "w+", encoding="utf-8") as f:
+                f.write(page_source)
+                items_written[url] = output_filename
+
+            new_path_split = item_path.split("\\")
+
+            # If the file has not been archived before, add za to the start of the filename
+            if not new_path_split[-1].startswith("za"):
+                new_path_split[-1] = "za" + new_path_split[-1]
+                os.rename(item_path, "/".join(new_path_split))
 
     output_path = os.path.join(
         PARENT_DIR, pascal_to_kebab("/".join(path.split("\\")[1:]))
@@ -520,8 +310,6 @@ def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
         body_tag.insert(0, gtm_noscript)
 
     return soup
-
-
 
 
 def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
@@ -883,28 +671,17 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
     content_p = soup.new_tag("p")
 
     content_p.append("✅ New page with updated info: ")
-    src = "https://www.ssw.com.au"
-    link_text = "ssw.com.au"
-    for key in ARCHIVE_BANNER_LINKS:
-        if key in url:
-            src = ARCHIVE_BANNER_LINKS[key]
-    for key in ARCHIVE_BANNER_LINK_TEXT:
-        if key in url:
-            link_text = ARCHIVE_BANNER_LINK_TEXT[key]
 
-    new_link = soup.new_tag("a", href=src, style="color: white")
-    new_link.append(link_text)
-    
-    # if "Training" in url or "Events" in url:
-    #     new_link = soup.new_tag(
-    #         "a", href="https://www.ssw.com.au/events", style="color: white"
-    #     )
-    #     new_link.append("ssw.com.au/events")
-    # else:
-    #     new_link = soup.new_tag(
-    #         "a", href="https://www.ssw.com.au", style="color: white"
-    #     )
-    #     new_link.append("ssw.com.au")
+    if "Training" in url or "Events" in url:
+        new_link = soup.new_tag(
+            "a", href="https://www.ssw.com.au/events", style="color: white"
+        )
+        new_link.append("ssw.com.au/events")
+    else:
+        new_link = soup.new_tag(
+            "a", href="https://www.ssw.com.au", style="color: white"
+        )
+        new_link.append("ssw.com.au")
 
     content_p.append(new_link)
 
