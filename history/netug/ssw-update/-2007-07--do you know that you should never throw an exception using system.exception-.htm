@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+    </script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>SSW Update - Do you know that you should never throw an exception using System.Exception?
+</title>
+
+</head>
+<body bgcolor="#e7e7cf"><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript><div style="
+            line-height: 1.5;
+            text-align: center; 
+            font-size: 1.125rem; 
+            color: #999;
+            background-color: #333333;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+                ⚠️ This page has been archived
+            </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p>
+                    ✅ New page with updated info:
+                    <a href="https://www.ssw.com.au" style="color: white">
+                        ssw.com.au
+                    </a>
+</p>
+</div>
+</div>
+<style type="text/css">
+<!--
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0px;
+}
+td, th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.sectionTitle {
+	font-family: "Century Gothic", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #f25622;
+	font-weight: normal;
+}
+.newsTitle {
+	color: #f25622;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.magazineTitle {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	color: #f25622;
+	font-weight: normal;
+	font-size: 30px;
+}
+.section {
+	border-top: 1px #cccccc dotted;
+}
+.copyright {
+	font-weight: bold;
+	color: #999999;
+	font-size: 10px;
+}
+.proudly {
+	font-weight: normal;
+	font-size: 9px;
+	color: #999999;
+}
+.noborder {
+	border: none;
+}
+}
+.footer a {
+	color: gray;
+}
+-->
+</style>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<table align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" id="container" style="border: 1px #cccccc solid;" width="710">
+<tr>
+<td bgcolor="#efefef" width="100%">
+<table border="0" cellpadding="15" cellspacing="0" width="98%">
+<tr>
+<td><span class="Subject"><strong>SSW Update - </strong>Do you know 
+				that you should never throw an exception using System.Exception?</span></td>
+</tr>
+</table>
+</td>
+<td bgcolor="#efefef" style="border-top: 4px #f26522 solid; border-left: 1px #cccccc solid;" valign="middle" width="200">
+<img align="right" alt="Microsoft Gold Partner Logo" height="35" src="/history/images/gold-certified-partner-74x-35.gif" style="padding: 5px;" width="75"/></td>
+</tr>
+<tr>
+<td id="main" valign="top">
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr>
+<td>
+<a href="/ssw/Redirect/sswupdate/2007Mar/TechBreakfast.htm">
+<img alt="SSW Tech Breakfast" border="0" class="banner" height="60" src="/history/images/ssw-tech-breakfast-banner.gif" width="468"/></a>
+<h1> </h1>
+<h1 style="color: #a7a9ac; font-size: 30px;">[<span class="magazineTitle"> 
+				the cutting edge</span> ]</h1>
+<p>G'Day Developers! </p>
+<p>While everyone knows that "catch (Exception ex)" is bad, no one 
+				has really noticed that "throw Exception()" is actually the root 
+				of all evil. </p>
+<p>System.Exception is a very extensive class, and it is inherited 
+				by all other exception classes. If you throw an exception with the 
+				code "throw Exception()", what you need subsequently to handle the 
+				exception will be the infamous "catch (Exception ex)". </p>
+<p>As a standard, you should use an exception class with the name 
+				that best describes the exception's detail. All exception classes 
+				in .NET Framework follow this standard very well. As a result, when 
+				you see exceptions like FileNotFoundException or DivideByZeroException, 
+				you know what's happening just by looking at the exception's name. 
+				.NET Framework has provided us a comprehensive list of exception 
+				classes that can we can use. If you really can't find one that is 
+				suitable for the situation, then create your own exception class 
+				with the name that best describes the exception (eg: EmployeeListNotFoundException).
+				</p>
+				Also, System.ApplicationException should be avoided as well unless 
+				it's an exception related to the application. While it's acceptable 
+				and should be used in certain cases, be aware that using it massively 
+				will be just as bad as "throw (Exception ex)".
+				<p>We have a program called
+				<a href="/ssw/CodeAuditor/Default.aspx">SSW 
+				Code Auditor</a> to check for this rule.</p>
+<p>To see more rules like this, go to the
+				<a href="/ssw/Standards/Rules/RulesToBetterTeamMembers.aspx">
+				SSW Rules</a> page.</p>
+<p>Cheers until next time,
+				<a href="/ssw/Redirect/SSWUpdate/2007Jul/adamprofile.htm">
+				Adam</a><br/>
+				SSW Chief Architect and Microsoft Regional Director, Australia 
+				</p>
+<p>Got a comment for Adam?
+				<a encode="6164616d636f67616e407373772e636f6d2e6175" onclick="javascript:sendEmailWithoutSubject('6164616d636f67616e407373772e636f6d2e6175',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('6164616d636f67616e407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">6164616d636f67616e407373772e636f6d2e6175</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">
+<a id="SydneyDotnetUsergroup" name="SydneyDotnetUsergroup">
+</a>SPECIAL Sydney .NET User Group - <br/>
+				The best place to learn .NET for free in Sydney</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="210">
+<img alt="User Group" height="133" src="/history/images/sdnug.jpg" width="200"/></td>
+<td valign="bottom">
+<h3>5 days to go!</h3>
+<p>
+<a href="/ssw/Redirect/SSWUpdate/2007Mar/NewsletterNetUG.htm">
+						Sydney .NET User Group</a><br/>
+						Wednesday 18th July 2007<br/>
+						5:45pm - 9:00pm<br/>
+						Microsoft, Sydney</p>
+</td>
+</tr>
+</table>
+<p><strong>Adam Cogan presents: Next Generation Visual Studio Team 
+				System</strong> </p>
+<p>Microsoft Visual Studio Team System has given us the integration 
+				of development, project management, testing and analysis tool that 
+				was missing in the previous version of Visual Studio. In this talk 
+				you will learn about what’s coming up in the next version of Visual 
+				Studio Orcas, Visual Studio Team System 2008 (Rosario) and Team 
+				Foundation Server 2008. You will also see what’s currently hot on 
+				the Visual Studio widgets scene with a demo-driven session on the 
+				most useful tools for Visual Studio Team System</p>
+<p>Features covered include: </p>
+<ul>
+<li>What’s coming in Visual Studio Orcas Beta 2</li>
+<li>What’s new in Rosario and Team Foundation Server 2008</li>
+<li>Hot widgets: Team Foundation Power Tools, MSSCCIs, Team 
+					Plain, Diff Dog, SSW Code Auditor, MS Build GUI and much more!</li>
+</ul>
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','See%20You%20There%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				See You There!!!</a>|
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','subject=Sorry%20I%20can%27t%20make%20it%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Sorry I can't make it</a></td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">
+<a id="A1" name="CanberraDotnetUsergroup"></a>Canberra .NET User 
+				Group - <br/>
+				The best place to learn .NET for free in Canberra</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="210">
+<img alt="User Group" height="133" src="/history/images/canberra.gif" width="200"/></td>
+<td valign="bottom">
+<h3>6 days to go!</h3>
+<p><a href="/ssw/Redirect/SSWUpdate/2007Jul/NewsletterCanbUG.htm">
+						Canberra .NET Developers User Group</a><br/>
+						Thursday 19th July 2007<br/>
+<b>Lunchtime</b> 12:30pm - 1:30pm<br/>
+						King O'Malley's Irish Pub<br/>
+						131 City Walk<br/>
+						Canberra City<br/>
+<b>Evening</b> 4:30pm-6:00pm <br/>
+						Microsoft Canberra Branch<br/>
+						Walter Turnbull Building<br/>
+						Level 2, 44 Sydney Ave<br/>
+						Barton ACT </p>
+</td>
+</tr>
+</table>
+<p><strong>How to use Access 2007 and SharePoint 2007 together</strong></p>
+<p>Adam Cogan will discuss how to use Access 2007 and SharePoint 
+				2007 together. SharePoint 2007 and Access 2007 have had an enormous 
+				amount of work done in this version and they work together beautifully. 
+				SharePoint 2007 to many is a web version of Access. (this session 
+				will run for 40 mins during the lunch time presentation). </p>
+<p>Adam will cover:</p>
+<ul>
+<li>using SharePoint data in your Access solution </li>
+<li>using Access to report on your SharePoint data </li>
+<li>upsizing your Access data to SharePoint and then continue 
+					with Access as the frontend </li>
+<li>upsizing your entire Access solution to SharePoint and then 
+					finish using Access as your platform </li>
+</ul>
+<p>
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','See%20You%20There%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				See You There!!!</a>|
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','subject=Sorry%20I%20can%27t%20make%20it%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Sorry I can't make it</a></p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">
+<a id="A1" name="CanberraDotnetUsergroup"></a>UTS SQL and .NET 
+				Courses</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td style="width: 200px" valign="top">
+<img alt="User Group" height="133" src="/history/events-calendar/images/uts.jpg"/></td>
+<td valign="bottom">
+<h3>25 days to go!</h3>
+<p>Tuesday 7th August 2007<br/>
+						6:00pm - 9:00pm<br/>
+						UTS City Campus<br/>
+						Building 10, Level 3, Room 210<br/>
+						Sydney<br/>
+</p>
+</td>
+</tr>
+</table>
+<p><strong>Developing Windows and Web Applications using Visual 
+				Studio.NET (C# and VB.NET) (Starting 09/08/2007)</strong></p>
+<p>This course introduces students to the Microsoft .NET 2.0 Framework 
+				through hands-on exercises and live demos. Both C# and VB .NET code 
+				is provided side-by-side giving the students a deeper understanding 
+				of the commonalities between the languages. Students will also get 
+				a glimpse of what is possible using .NET 3.0. </p>
+<p><strong>SQL Server 2005 for Developers and BI (Starting 07/08/2007)</strong></p>
+<p>This course provides attendees with the knowledge necessary to 
+				take advantage of new features provided by SQL Server 2005. It provides 
+				a comprehensive overview of technologies, security, and design best 
+				practices with particular emphasis on hands-on skills.</p>
+<p><strong>Application Details</strong></p>
+<p>To apply and reserve a place in the course of your preference, 
+				please complete the application form
+				<a href="http://it.uts.edu.au/course/shortcourse/shortcourses_apply.pdf">
+				http://it.uts.edu.au/course/shortcourse/shortcourses_apply.pdf</a> 
+				with your credit card details and fax to 9514 1844 without delay.
+				</p>
+<p>Please direct any queries to Julie Lui ph: 9514 1806 or Elaine 
+				Lawrence ph: 9514 1861 or email:
+				<a href="mailto:shortcourses@it.uts.edu.au">shortcourses@it.uts.edu.au</a>
+</p>
+<p>
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','See%20You%20There%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				See You There!!!</a>|
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','subject=Sorry%20I%20can%27t%20make%20it%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Sorry I can't make it</a></p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">
+<a id="A1" name="WollongongDotnetUsergroup"></a>Wollongong .NET User 
+				Group - <br/>
+				The best place to learn .NET for free in Wollongong</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="210">
+<img alt="User Group" height="133" src="/history/images/newcastle.jpg" width="200"/></td>
+<td valign="bottom">
+<h3>26 days to go!</h3>
+<p>Wollongong .NET User Group<br/>
+						Wednesday 8th August 2007<br/>
+						6:30pm - 8:30pm<br/>
+						CSC Wollongong campus<br/>
+						Coniston Technology Park<br/>
+						Mt St Thomas<br/>
+</p>
+</td>
+</tr>
+</table>
+<p><strong>Visual Studio for Database Professionals (Data Dude)
+				</strong></p>
+<p>In this session
+				<a href="/ssw/Redirect/SSWUpdate/2007Jul/adamprofile.htm">
+				Adam Cogan</a> will provide an introduction to Visual Studio Team 
+				Edition for Database Professionals and will cover: schema maintenance, 
+				unit testing and data generation, including a discussion on ways 
+				of extending this newly released product.</p>
+<p>
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','See%20You%20There%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				See You There!!!</a>|
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','subject=Sorry%20I%20can%27t%20make%20it%20',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Sorry I can't make it</a></p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<a href="/ssw/redirect/sswupdate/2007Jul/InfillBannerAd.htm">
+<img alt="In-car computers" border="0" class="banner" height="60" src="/history/netug/ssw-update/images/infill-banner.jpg" width="468"/></a>
+<h3 class="newsTitle">
+<a id="featuredproduct" name="featuredproduct"></a>Featured Product: 
+				SSW Code Auditor</h3>
+<p><strong>Keep your code *healthy* with SSW Code Auditor - the 
+				best .NET Refactor Tool</strong><a href="/ssw/Redirect/sswupdate/2007Jul/Product.htm">
+<img align="right" alt="SSW Upsizing Pro" class="noborder" height="246" src="/history/code-auditor/images/product-box-code-auditor.gif"/></a></p>
+<p>Are you looking to eradicate bugs and ensure consistency? SSW 
+				Code Auditor is a tool that allows developers to take control of 
+				your code, ensuring large, complex source code can be simplified, 
+				cleaned and maintained. The built-in rules focus on the most popular 
+				.NET languages (C#, VB.NET) for both Windows Forms and ASP.NET; 
+				however, the flexibility of SSW Code Auditor allows the developer 
+				to add their own rules to target any language in any text file.</p>
+<p> </p>
+<p>
+<a href="/ssw/Redirect/sswupdate/2007Jul/Product.htm">
+				More on SSW Code Auditor</a> </p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">Advertise with SSW</h3>
+<p>If you would like to advertise your product or service with SSW 
+				or would like to find out more about various advertising opportunities, 
+				please email your enquiry to
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" onclick="javascript:sendEmailWithoutSubject('736f7068696562656c6c65407373772e636f6d2e6175',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">736f7068696562656c6c65407373772e636f6d2e6175</a><br/>
+				or call: +61 2 9953 3000.</p>
+</td>
+</tr>
+</table>
+</td>
+<td bgcolor="#eeeeee" id="sidebar" style="border-left: 1px #cccccc solid; border-bottom: 10px #f26522 solid;" valign="top">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<img alt="SSW " class="featureimage" height="300" src="/history/netug/ssw-update/images/newsletter-nov.jpg" width="200"/></font><table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr>
+<td bgcolor="#FFFFFF">
+<h3 class="sectionTitle">July 2007</h3>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="sectionTitle">Tech Breakfast</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="55">
+<img alt="Extreme Programming" height="46" src="/history/netug/ssw-update/images/icon-techbreakfast.gif" width="46"/></td>
+<td valign="top"><strong>14 days to go </strong>
+<p>SYDNEY: Access to SharePoint 2007 </p>
+<p><font color="#666666" size="1">Friday, 27th July 2007<br/>
+						8:00am-11:00am</font></p>
+</td>
+</tr>
+</table>
+<p>Presented by Adam Cogan, this session will cover how to migrate 
+				effectively from Access to SharePoint 2007. </p>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<p align="right">
+<a href="/ssw/Redirect/SSWUpdate/2007Jul/SSWTechBreakfast1.htm">
+<img alt="Register Now" border="0" src="/history/images/button-register-small.gif"/></a></p>
+</font>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="55">
+<img alt="Visual Studio for Database Professionals" height="46" src="/history/netug/ssw-update/images/icon-techbreakfast.gif" width="46"/></td>
+<td valign="top"><strong>49 days to go </strong>
+<p>CRM Titan (with workflow)</p>
+<p><font color="#666666" size="1">Friday, 31st August. 2007<br/>
+						8:00am-11:00am</font></p>
+</td>
+</tr>
+</table>
+<p>Adam Cogan will introduce Microsoft CRM which has been designed 
+				to provide a complete suite of powerful marketing, sales, and customer 
+				service capabilities, all with a familiar and consistent user experience 
+				based on Microsoft Office and the Microsoft Office Outlook messaging 
+				and collaboration client. </p>
+<p>The session will be broken into the following sections:</p>
+<ul>
+<li>Up and Running on Microsoft CRM 4</li>
+<li>Experiences with customizing and extending CRM 4</li>
+<li>Using Workflow in CRM 4</li>
+</ul>
+<p align="right">
+<a href="/ssw/Redirect/SSWUpdate/2007Jul/SSWTechBreakfast2.htm">
+<img alt="Register Now" border="0" src="/history/images/button-register-small.gif"/></a></p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="sectionTitle">Tips</h3>
+<p>Databases:<br/>
+<a href="/ssw/Redirect/SSWUpdate/2007Jul/kb1.htm">
+				How do I restore the Northwind sample Database to its original state?</a><br/>
+				-answered by:<br/>
+				Ross Donald </p>
+<p>T-SQL:<br/>
+<a href="/ssw/Redirect/SSWUpdate/2007Jul/kb2.htm">
+				I use IIF in Access, how do I do the same thing in T-SQL?</a><br/>
+				-answered by:<br/>
+				Adam Cogan</p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="sectionTitle">Employment</h3>
+<p>Due to the tremendous growth that our business has experienced 
+				over the last few months, we are seeking enthusiastic people to 
+				join the SSW team.</p>
+<p>Our Company is based in Neutral Bay which is one of the most 
+				elegant and scenic areas of Sydney. SSW is an Australian owned progressive 
+				consulting firm specialising in building, implementing and maintaining 
+				Microsoft .NET software applications.</p>
+<p>We are currently strongly looking for a <strong>Technical BDM
+				</strong>to take initial meetings and manage clients in Brisbane, 
+				Melbourne, or Canberra.</p>
+<p>We are also currently looking for:</p>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td valign="top">•</td>
+<td valign="top" width="100%"><strong>ASP.NET, VB.NET, C#, 
+						OLAP, SharePoint Software Developer </strong></td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td><strong>Technical BDM in Melbourne, Brisbane, or Canberra</strong>
+</td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td valign="top" width="100%"><strong>Personal Assistant</strong></td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td valign="top"><strong>IT Senior Marketing Consultant 
+						(part-time)</strong></td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td valign="top"><strong>Project Manager</strong></td>
+</tr>
+</table>
+<p>
+<a href="/ssw/Redirect/sswupdate/2007Jul/Employment.htm">
+				Read more and Apply NOW...</a></p>
+</td>
+</tr>
+</table>
+ </td>
+</tr>
+</table>
+<table align="center" width="710">
+<tr>
+<td class="copyright">Copyright ?SSW 1990-2007. All Rights Reserved.</td>
+<td align="right" class="proudly">Proudly developed by
+		<a href="">SSW Sydney Web Design</a></td>
+</tr>
+<tr>
+<td class="footer" colspan="2">
+<table>
+<tr class="footer" valign="top">
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','Advertisting',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Advertise with SSW</a>| </td>
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','Please%20Unsubscribe%20Me',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Unsubscribe</a> | </td>
+<td align="center" valign="top">
+<a href="/ssw/NETUG/SSWUpdatePrevious.aspx" target="_blank">
+				Previous SSW Updates</a> | </td>
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','Hot%20Tip',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Got a Hot Tip to share?</a> | </td>
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','About%20your%20newsletter',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Got a comment to make?</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</font>
+</body>
+</html>
