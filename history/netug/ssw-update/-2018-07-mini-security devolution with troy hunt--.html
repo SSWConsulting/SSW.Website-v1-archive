@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+    </script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="telephone=no" name="format-detection"/>
+<title>SSW Update: Security Devolution with Troy Hunt</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+        /* Outlook link fix */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Hotmail background &amp; line height fixes */
+        .ExternalClass {
+            width: 100% !important;
+        }
+
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,
+            .ExternalClass td, .ExternalClass div {
+                line-height: 100%;
+            }
+
+        /* Image borders &amp; formatting */
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            margin: 0 0 0 0 !important;
+        }
+
+        a img {
+            border: none;
+            margin: 0 0 0 0 !important;
+        }
+
+        /* Re-style iPhone automatic links (eg. phone numbers) */
+        .applelinks a {
+            color: #222222;
+            text-decoration: none;
+        }
+
+        /* Hotmail symbol fix for mobile devices */
+        .ExternalClass img[class^=Emoji] {
+            width: 10px !important;
+            height: 10px !important;
+            display: inline !important;
+        }
+
+        .tpl-content {
+            display: inline !important;
+        }
+
+        /* Media Query for mobile */
+        @media screen and (max-width: 639px) {
+
+            table[class=wrap100], td[class=wrap100] {
+                width: 100% !important;
+            }
+
+            table[class=wrap1001], td[class=wrap1001] {
+                width: 96% !important;
+                float: none !important;
+                margin: 0 auto !important;
+            }
+
+            table[class=wrap1002], td[class=wrap1002] {
+                width: 132px !important;
+                float: none !important;
+                margin: 0 auto !important;
+                display: inline-block !important;
+            }
+
+            img[class=resize_img] {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            td[class=split_cont] {
+                width: 100% !important;
+                display: inline-block !important;
+                text-align: center !important;
+            }
+
+            td[class=font_resize] {
+                font-size: 22px !important;
+                line-height: normal !important;
+                float: none !important;
+                text-align: center !important;
+            }
+
+            td[class=split_cont7] {
+                width: 100% !important;
+                display: inline-block !important;
+            }
+
+            td[class=split_cont8] {
+                display: none !important;
+            }
+        }
+
+        @media screen and (max-width: 599px) {
+
+            table[class=wrap1001], td[class=wrap1001] {
+                width: 93% !important;
+                float: none !important;
+                margin: 0 auto !important;
+            }
+
+            table[class=wrap1003], td[class=wrap1003] {
+                width: 130px !important;
+                float: none !important;
+                margin: 0 auto !important;
+            }
+
+            td[class=split_cont1] {
+                width: 100% !important;
+                display: inline-block !important;
+                text-align: center !important;
+            }
+
+            td[class=split_cont2] {
+                display: none !important;
+            }
+
+            td[class=split_cont3] {
+                width: 100% !important;
+                display: inline-block !important;
+                text-align: center !important;
+                height: auto !important;
+                padding: 15px 0 0 0 !important;
+            }
+
+            td[class=split_cont4] {
+                width: 100% !important;
+                display: inline-block !important;
+                text-align: center !important;
+                height: auto !important;
+                padding: 10px 0 15px 0 !important;
+            }
+        }
+
+        @media screen and (max-width: 439px) {
+
+            td[class=split_cont5] {
+                width: 100% !important;
+                display: inline-block !important;
+                text-align: center !important;
+                height: auto !important;
+                padding: 10px 0 15px 0 !important;
+            }
+
+            td[class=split_cont6] {
+                width: 100% !important;
+                display: inline-block !important;
+                height: auto !important;
+                padding: 10px 0 15px 0 !important;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            /* This resizes tables and images to be 100% wide with a proportionate width */
+        }
+
+        a:hover {
+            text-decoration: underline !important;
+        }
+    </style>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+</head>
+<body style="padding:0; margin:0; -webkit-text-size-adjust: 100%;"><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript><div style="
+            line-height: 1.5;
+            text-align: center; 
+            font-size: 1.125rem; 
+            color: #999;
+            background-color: #333333;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+                ⚠️ This page has been archived
+            </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p>
+                    ✅ New page with updated info:
+                    <a href="https://www.ssw.com.au" style="color: white">
+                        ssw.com.au
+                    </a>
+</p>
+</div>
+</div>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" bgcolor="#333333" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap100" width="640">
+<tr>
+<td align="left" bgcolor="#ffffff" class="split_cont3" height="69" style="padding:0 0 0 20px;" valign="middle"><a href="https://www.ssw.com.au"><img alt="logo" border="0" height="42" src="http://ssw.com.au/ssw/NETUG/SSWUpdate/Images/Template/ssw-logo.png" width="80"/></a></td>
+<td align="right" bgcolor="#ffffff" class="split_cont4" height="69" style="font-family: 'Open Sans', sans-serif; font-size:24px; color:#cc4141; font-weight:300; text-transform:uppercase; line-height:14px; padding:0 16px 0 0;" valign="middle"><strong style="color:#999999;font-size:30px;">[</strong>the cutting edge<strong style="color:#999999; font-size:30px;">]</strong></td>
+</tr>
+<tr>
+<td align="left" bgcolor="#444444" class="split_cont3" height="35" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:normal; line-height:14px; padding:0 0 0 20px; text-transform:uppercase;" valign="middle">SSW Mini Update: Security Devolution with Troy Hunt</td>
+<td align="right" bgcolor="#444444" class="split_cont4" height="35" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:normal; line-height:14px; padding:0 20px 0 0; text-transform:uppercase;" valign="middle"><strong>July 2018  | </strong> <a href="https://www.ssw.com.au/ssw/netug/SSWUpdate/_2018_07_Mini_Security%20Devolution%20with%20Troy%20Hunt__.html" style="color:#448ccb; text-decoration:none;">View Online</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#cccccc" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap100" width="640">
+<tr>
+<td align="left" valign="top"><a href="https://www.ssw.com.au/ssw/netug/SSWUpdate/_2018_07_Mini_Security%20Devolution%20with%20Troy%20Hunt__.html"><img align="left" alt="Security Devolution with Troy Hunt" border="0" class="resize_img" height="200" src="http://ssw.com.au/ssw/NETUG/SSWUpdate/Images/banner-security-devolution-with-troy-hunt.png" width="640"/></a></td>
+</tr>
+<tr>
+<td align="left" bgcolor="#ffffff" height="25" valign="top"> </td>
+</tr>
+<tr>
+<td align="center" bgcolor="#ffffff" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap1001" width="580">
+<tr>
+<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:30px; color:#cc4141; font-weight:300; padding:0 0px 10px 0;" valign="top">Security Devolution with Troy Hunt</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#bbbbbb" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap100" width="640">
+<tr>
+<td align="center" bgcolor="#ffffff" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap1001" width="580">
+<tr>
+<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#444444; font-weight:normal; padding:0 0 0 0; line-height:17px;" valign="top">
+<p><a href="https://www.troyhunt.com/" style="color:#448ccb; text-decoration:none;">Troy Hunt</a> is one of the top cybersecurity experts in the world right now, and he is everywhere. Not only is he a <a href="https://mvp.microsoft.com/en-us/PublicProfile/4031649?fullName=Troy%20%20Hunt" style="color:#448ccb; text-decoration:none;">Microsoft MVP for Developer Security</a>, he's also a <a href="https://rd.microsoft.com/en-us/troy-hunt" style="color:#448ccb; text-decoration:none;">Microsoft Regional Director</a>, he's got a bunch of <a href="https://www.pluralsight.com/authors/troy-hunt" style="color:#448ccb; text-decoration:none;">courses on Pluralsight</a>, and he's <a href="https://docs.house.gov/meetings/IF/IF02/20171130/106662/HHRG-115-IF02-Wstate-HuntT-20171130.pdf" style="color:#448ccb; text-decoration:none;">testified</a> to the US congress about the impact of data breaches. Troy's website <a href="https://haveibeenpwned.com/" style="color:#448ccb; text-decoration:none;">haveibeenpwned.com</a> helps people (and governments!) world-wide check if their data's been leaked. He even has his own <a href="https://en.wikipedia.org/wiki/Troy_Hunt" style="color:#448ccb; text-decoration:none;">Wikipedia page</a>.</p>
+<p>Troy was an SSW client for many years, and even did his first public presentation here.</p>
+<p>For one night only, Troy will be presenting at the SSW-run Sydney .NET User Group.</p>
+<p>Join us on the evening of Wednesday, July 25 to see Troy Hunt in person as he gives his latest presentation.</p>
+</td>
+</tr>
+<tr>
+<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:18px; color:#cc4141; padding:20px 0 0 0;" valign="top">The session: Security devolution with Troy Hunt</td>
+</tr>
+<tr>
+<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#444444; font-weight:normal; padding:13px 0 0 0; line-height:17px;" valign="top">
+<p>Web security has come a long way in recent years and these days, there's a whole bunch of browser security features that can not only make your site more secure than ever, but make your job as a developer even easier. But the features remain largely unused with many developers not knowing of their existence nor how to properly leverage them.</p>
+<p>In this talk you'll see the mechanics of a whole bunch of acronyms you've probably never heard of before, but will witness firsthand as they're put into action. You'll see the attacks they prevent, how to implement them and ultimately, how they help better protect the apps you're building.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#333333" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap100" width="640">
+<tr>
+<td align="center" bgcolor="#ffffff" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrap1001" width="580">
+<tr>
+<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#444444; font-weight:normal; padding:13px 0 13px 0; line-height:17px;" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+<tbody>
+<tr>
+<td align="center" style="width:310px;" valign="top">
+<a href="https://www.ssw.com.au/ssw/NETUG/Sydney.aspx" target="_blank">
+<img align="middle" alt="net" border="0" src="https://ssw.com.au/ssw/NETUG/SSWUpdate/Images/Template/NETUG-logo-group.png" style="width:254px;height:70px;"/>
+</a>
+</td>
+<td align="left" style="width:22px;" valign="top"></td>
+<td align="left" style="width:270px;" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-bottom: 5px;">
+<tbody>
+<tr>
+<td align="center" bgcolor="#bbbbbb" style="width:54px;height:54px;font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#444444; font-weight:normal;text-transform:uppercase;" valign="middle">
+<!-- EDIT HERE -->
+<strong>JUL</strong>
+<br/>
+<strong style="font-size:24px; line-height:21px;">25</strong>
+<br/> Wed
+                                                                        <!-- END EDIT HERE -->
+</td>
+<td align="left" bgcolor="#cccccc" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#444444; font-weight:normal; padding:0 0 0 18px;" valign="middle">
+<!-- EDIT HERE -->
+<strong>SSW Sydney</strong>
+<br/> Gateway Court Suite 15
+                                                                        <br/> 81-91 Military Road, Neutral Bay
+                                                                        <!-- END EDIT HERE -->
+</td>
+</tr>
+</tbody>
+</table>
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<!-- EDIT HERE -->
+<tbody>
+<tr>
+<td style="width:70px;">
+<a href="https://www.facebook.com/events/2153652211580647/" target="_blank">
+<img align="left" alt="fb" border="0" src="https://ssw.com.au/ssw/NETUG/SSWUpdate/Images/Template/btn-fb.png" style="width:65px;height:30px;"/>
+</a>
+</td>
+<td style="width:60px;">
+<a href="https://www.linkedin.com/groups/1520317/1520317-6423069298130067457" target="_blank">
+<img align="left" alt="linkedin" border="0" src="https://ssw.com.au/ssw/NETUG/SSWUpdate/Images/Template/btn-linkedin.png" style="width:55px;height:30px;">
+</img></a>
+</td>
+<td style="width:55px;">
+<a href="https://www.meetup.com/Sydney-NET-User-Group/events/252697473/" target="_blank">
+<img align="left" alt="meetup" border="0" src="https://ssw.com.au/ssw/NETUG/SSWUpdate/Images/Template/btn-meetup.png" style="width:50px;height:30px;"/>
+</a>
+</td>
+<td style="width:77px;">
+<a href="https://www.ssw.com.au/ssw/Live/" target="_blank">
+<img align="left" alt="Livestream" border="0" src="https://ssw.com.au/ssw/NETUG/SSWUpdate/Images/Template/btn-livestream.png" style="width:72px;height:30px;"/>
+</a>
+</td>
+</tr>
+<!-- END EDIT HERE -->
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#444444; font-weight:normal; padding:13px 0 0 0; line-height:17px;" valign="top">
+<p>If you're unable to attend the session in person, <a href="https://www.ssw.com.au/ssw/Live" style="color:#448ccb; text-decoration:none;">we'll be live streaming the event from our venue in Sydney at 6:30pm AEST, on Wednesday, July 25</a>.</p>
+<p>
+                                            Unsure of what time that will be for you?<br>
+                                            Use <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20180725T083000&amp;p1=240" style="color:#448ccb; text-decoration:none;" target="_blank">this time difference calculator</a> to figure out what time to log on.
+                                        </br></p>
+</td>
+</tr>
+<tr>
+<td align="left" height="35" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#444444; font-weight:normal;" valign="top"> </td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" style="border-bottom:1px solid #444444; padding:10px 0 10px 0;" valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" class="wrap1001" width="100%">
+<tr>
+<td align="left" class="split_cont1" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#7e7e7e; font-weight:normal;" valign="middle">Copyright © SSW 1990-2015. All Rights Reserved.</td>
+<td align="right" class="split_cont1" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#7e7e7e; font-weight:normal;" valign="middle">Proudly developed by <a href="https://www.ssw.com.au/" style="color:#7e7e7e; text-decoration:none;">SSW Sydney Web Design</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#7e7e7e; font-weight:normal; text-transform:uppercase;padding:10px 0 10px 0;" valign="middle"><a href="mailto:info@ssw.com.au?subject=Advertisting" style="color:#7e7e7e; text-decoration:none;">Advertise with SSW</a> |  <a href=" http//ssw.com.au/unsubscribetag " style="color:#7e7e7e; text-decoration:none;">Unsubscribe</a> |  <a href="http://www.ssw.com.au/ssw/NETUG/SSWUpdatePrevious.aspx" style="color:#7e7e7e; text-decoration:none;">Previous SSW Updates</a> |  <a href="mailto:info@ssw.com.au?subject=Got a Hot Tip to share?" style="color:#7e7e7e; text-decoration:none;">Got a Hot Tip to share?</a> |  <a href="mailto:info@ssw.com.au?subject=Got a comment to make?" style="color:#7e7e7e; text-decoration:none;">Got a comment to make?</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

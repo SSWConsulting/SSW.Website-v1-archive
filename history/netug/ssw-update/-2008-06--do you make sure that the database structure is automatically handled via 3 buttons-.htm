@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+    </script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>SSW Update - Do you make sure that the database structure is automatically handled via 3 buttons?</title>
+
+</head>
+<body bgcolor="#e7e7cf"><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript><div style="
+            line-height: 1.5;
+            text-align: center; 
+            font-size: 1.125rem; 
+            color: #999;
+            background-color: #333333;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+                ⚠️ This page has been archived
+            </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p>
+                    ✅ New page with updated info:
+                    <a href="https://www.ssw.com.au" style="color: white">
+                        ssw.com.au
+                    </a>
+</p>
+</div>
+</div>
+<style type="text/css">
+<!--
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0px;
+}
+td, th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.sectionTitle {
+	font-family: "Century Gothic", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #f25622;
+	font-weight: normal;
+}
+.newsTitle {
+	color: #f25622;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.magazineTitle {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	color: #f25622;
+	font-weight: normal;
+	font-size: 30px;
+}
+.section {
+	border-top: 1px #cccccc dotted;
+}
+.copyright {
+	font-weight: bold;
+	color: #999999;
+	font-size: 10px;
+}
+.proudly {
+	font-weight: normal;
+	font-size: 9px;
+	color: #999999;
+}
+.noborder {
+	border: none;
+}
+}
+.footer a {
+	color: gray;
+}
+-->
+</style>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<table align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" id="container" style="border: 1px #cccccc solid;" width="710">
+<tr>
+<td bgcolor="#efefef" width="100%">
+<table border="0" cellpadding="15" cellspacing="0" width="98%">
+<tr>
+<td><span class="Subject"><strong>SSW Update - </strong>Do you make sure that the database structure is automatically handled via 3 buttons "Create", "Upgrade" and "Reconcile"?</span></td>
+</tr>
+</table>
+</td>
+<td bgcolor="#efefef" style="border-top: 4px #f26522 solid; border-left: 1px #cccccc solid;" valign="middle" width="200">
+<img align="right" alt="Microsoft Gold Partner Logo" height="35" src="/history/images/gold-certified-partner-74x-35.gif" style="padding: 5px;" width="75"/></td>
+</tr>
+<tr>
+<td id="main" valign="top">
+<table border="0" cellpadding="20" cellspacing="0" width="100%">
+<tr>
+<td>
+<a href="/ssw/Redirect/sswupdate/2008Jun/TechBreakfast.htm">
+<img alt="SSW Tech Breakfast" border="0" class="banner" height="60" src="/history/images/ssw-tech-breakfast-banner.gif" width="468"/></a>
+<h1> </h1>
+<h1 style="color: #a7a9ac; font-size: 30px;">[<span class="magazineTitle"> 
+				the cutting edge</span> ]</h1>
+<p>G'Day Developers! </p>
+<p>You get an error message reported from a user like: </p>
+<blockquote><i>When I click the Save button on the product form it gives an error message about a missing field.</i></blockquote>
+<p>You try and reproduce it on your version in the office and everything works perfectly, you suspect that the customer probably has changed the schema. So you 
+				start drafting an email to the user like: </p>
+<blockquote>
+<div style="background-color: #eee;border: 1px solid #ccc; padding: 15px 10px;">
+<i>Mary, I need you to send me your database schema as it might be different from what it should be. Can you:</i><br/>
+<ol>
+<li><i>Open up Enterprise Manager (or SQL Management Studio)</i></li>
+<li><i>Open the first tree</i></li>
+<li><i>Open the second tree</i></li>
+<li><i>Select your server</i></li>
+<li><i>Open that tree</i></li>
+<li><i>Select Databases</i></li>
+<li><i>Open that tree</i></li>
+<li><i>Select the database called Northwind</i></li>
+<li><i>Right click on it and choose All Tasks, then Generate SQL Script</i></li>
+<li><i>Then select the options</i></li>
+<li><i>etc</i></li>
+<li><i>Then when I get this I will compare and I will make a script file for you to run and fix the problem </i></li>
+</ol>
+</div>
+</blockquote>
+<p>STOP! STOP! STOP!<br/>
+				It would be much better to just say:</p>
+<blockquote><i>Mary, click the "Reconcile" button and it will tell us what is wrong</i></blockquote>
+<p>Bottom line is the customers' database schema should always be correct and this should be managed automatically by the application.</p>
+<p>
+<img alt="Reconcile" height="571" src="/history/standards/rules/images/reconcile.jpg" width="520"/>
+</p>
+<p>Therefore, we always deliver an application with the buttons "Create", Upgrade" and "Reconcile", accessible via "Tools - Options" 
+				and a "Database" tab. We do this by using SSW SQL Deploy  and throwing on the inherited user-control from the SSW.SQLDeploy.Options 
+				project.</p>
+<p>See this and other hints on <a href="/ssw/Redirect/SSWUpdate/2008Jun/NewsletterRule.htm">Rules to Better .NET Projects.</a></p>
+<p>Cheers until next time,
+				<a href="/ssw/Redirect/SSWUpdate/2008Jun/adamprofile.htm">
+				Adam</a><br/>
+				SSW Chief Architect and Microsoft Regional Director, Australia 
+				</p>
+<p>Got a comment for Adam?
+				<a encode="6164616d636f67616e407373772e636f6d2e6175" onclick="javascript:sendEmailWithoutSubject('6164616d636f67616e407373772e636f6d2e6175',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('6164616d636f67616e407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">6164616d636f67616e407373772e636f6d2e6175</a>
+</p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">
+<a id="SydneyDotnetUsergroup" name="SydneyDotnetUsergroup">
+</a>Sydney .NET User Group - <br/>
+				The best place to learn .NET for free in Sydney</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="210">
+<img alt="User Group" height="133" src="/history/images/sdnug.jpg" width="200"/></td>
+<td valign="bottom">
+<h3>2 days to go!</h3>
+<p>
+<a href="/ssw/Redirect/SSWUpdate/2008Jun/NewsletterNetUG.htm">
+						Sydney .NET User Group</a><br/>
+						Wednesday 18th June 2008<br/>
+						5:45pm - 9:00pm<br/>
+						Microsoft, Sydney<br/>
+						1 Epping Road, North Ryde</p>
+</td>
+</tr>
+</table>
+<p><strong>Do you want a connection with that? (An introduction to building applications that don’t rely on a network connection)
+				by Nick Randolph</strong> </p>
+<p>Most developers have this obsession with building applications that connect directly to a database. Whether they be a web application or a rich client 
+				application, connecting directly or via a web service, the reality is that these applications need to be served with a reliable connection. Using some of 
+				the latest additions to the .NET Framework this session will walk you through building applications that will continue to work long after your connection 
+				drops out. You’ll see how easily the ADO.NET Synchronisation Services can be configured to establish a local cache for your data and how the Client 
+				Application Services will help you extend your existing security infrastructure to include your occasionally connected application.</p>
+<p><strong>‘LINQ to SQL’ vs ‘LINQ to Entities’ by Adam Cogan</strong> </p>
+<p>Come hear Adam Cogan demonstrate Visual Studio 2008 using LINQ to SQL and LINQ to Entities.</p>
+<p>LINQ is the future of ORM on the .NET platform and, with the release of Visual Studio 2008, 
+				we have a new way of working with databases. In this presentation you will learn about the different 
+				types of LINQ and how to use LINQ to quickly build data-driven applications. Adam will present on 
+				LINQ to SQL and LINQ to Entities showing the advantages and disadvantages of using in your .NET 
+				applications. You will also see how the LINQ syntax can easily make your queries more manageable 
+				and strongly typed for compile time checking.</p>
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','See%20You%20There%20-%20Sydney',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				See You There!!!</a>|
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','subject=Sorry%20I%20can%27t%20make%20it%20-%20Sydney',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Sorry I can't make it</a>
+<p>
+<img align="left" alt="facebook" src="/history/netug/images/facebook.jpg"/>
+					See the new <a href="/ssw/Redirect/SSWUpdate/2008Jun/SSWFaceBookGroup.htm">facebook group</a> for the latest news.
+				</p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">
+<a id="featuredproduct" name="featuredproduct"></a>Featured Product: SSW Exchange Reporter</h3>
+<p><a href="/ssw/redirect/sswupdate/2008Jun/Product.htm">
+<img align="right" alt="SSW Exchange Reporter" class="noborder" src="/history/exchange-reporter/images/productbox.gif"/></a><strong>View 
+				reports on email usage for your Exchange Server users with SSW Exchange Reporter.</strong></p>
+<p>Is Microsoft Exchange Server an integral part of your organization? If so, SSW Exchange Reporter provides the tools and reports you 
+				need to efficiently analyze your organizations email usage. Built in Exchange reports range from who is sending the most emails, to 
+				who has the largest mailbox.<br/>
+				As new emails are sent and received, to and from your exchange server, our lightweight windows service seamlessly extracts email messages 
+				and folder statistics to your fast SQL Server backend. By taking advantage of SQL Servers Reporting Services, the generated reports can 
+				easily be customized and extended while being viewed securely from anywhere. That is why experts say that SSW Exchange Reporter is the 
+				most powerful and the only flexible solution to understanding your organizations communications.</p>
+<p>
+<a href="/ssw/redirect/sswupdate/2008Jun/Product.htm">More on 
+				SSW's Exchange Reporter</a> </p>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="newsTitle">Advertise with SSW</h3>
+<p>If you would like to advertise your product or service with 
+				SSW or would like to find out more about various advertising 
+				opportunities, please email your enquiry to
+				<a encode="736f7068696562656c6c65407373772e636f6d2e6175" onclick="javascript:sendEmailWithoutSubject('736f7068696562656c6c65407373772e636f6d2e6175',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">736f7068696562656c6c65407373772e636f6d2e6175</a><br/>
+				or call: +61 2 9953 3000.</p>
+</td>
+</tr>
+</table>
+</td>
+<td bgcolor="#eeeeee" id="sidebar" style="border-left: 1px #cccccc solid; border-bottom: 10px #f26522 solid;" valign="top">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<img alt="SSW Update" class="featureimage" height="300" src="/history/netug/ssw-update/images/feature-image-2008/06.jpg" width="200"/></font><table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr>
+<td bgcolor="#FFFFFF">
+<h3 class="sectionTitle">June 2008</h3>
+</td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="sectionTitle">Tech Breakfast</h3>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="55">
+<img alt="Join us for Tech Breakfast" height="46" src="/history/netug/ssw-update/images/icon-techbreakfast.gif" width="46"/></td>
+<td valign="top"><strong>11 days to go </strong>
+<p>SYDNEY: ‘LINQ to SQL’ vs ‘LINQ to Entities’</p>
+<p><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						Friday, 27th June 2008<br/>
+						8:00am-11:00am</font></p>
+</td>
+</tr>
+</table>
+<p>LINQ (Language Integrated Query) is a key innovation introduced with .NET 3.0 which
+        brings SQL-style query expressions into VB and C#.</p>
+<p>In this session Adam will compare ‘LINQ to SQL’ and ‘LINQ to Entities’ showing the strengths 
+    and weaknesses of each and in what situations each should be used, providing you with a roadmap 
+    of what tools/techniques should be used in what situations.</p>
+<p>Adam’s discussion will include:</p>
+<ul>
+<li>Introduction to both ‘LINQ to SQL’ and ‘LINQ to Entities’</li>
+<li>Building models in the data designers of each framework</li>
+<li>Mapping your database in a conceptual schema and modifying the schema</li>
+<li>Hooking up your application to your new data layer</li>
+<li>Show the advantages of LINQ over more traditional ADO.NET methods</li>
+</ul>
+<p>To finish Adam will build an application that uses both data layers and how easily you can 
+    make your applications data aware.</p>
+<p align="right">
+<a href="/ssw/Redirect/SSWUpdate/2008Jun/SSWTechBreakfast1.htm">
+<img alt="Register Now" border="0" src="/history/images/button-register-small.gif"/></a></p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="55">
+<img alt="Join us for Tech Breakfast" height="46" src="/history/netug/ssw-update/images/icon-techbreakfast.gif" width="46"/></td>
+<td valign="top"><strong>39 days to go </strong>
+<p>SYDNEY: Hardcore LINQ to Entities</p>
+<p><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif" size="1">
+						Friday, 25th July 2008<br/>
+						8:00am-11:00am</font></p>
+</td>
+</tr>
+</table>
+<p>Adam will take a deep dive into LINQ to Entities showing you best practices, pitfalls to 
+    avoid, and answers to the most frequently asked questions, telling you exactly what you need 
+    to know. Adam will pull apart all the key components of the LINQ to Entities framework, 
+    discussing and showing how each part integrates with each other, and how you can quickly 
+    create and modify your data access conceptual schema.</p>
+<p>This session will provide samples on how you can use the power of LINQ plus the new 
+    ADO.NET Entity Framework, to build advanced and fully featured data access layers immediately, 
+    without pain.</p>
+<p align="right">
+<a href="/ssw/Redirect/SSWUpdate/2008Jun/SSWTechBreakfast2.htm">
+<img alt="Register Now" border="0" src="/history/images/button-register-small.gif"/></a></p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" width="55">
+<img alt="Join us for Tech Breakfast" height="46" src="/history/netug/ssw-update/images/icon-techbreakfast.gif" width="46"/></td>
+<td valign="top"><strong>74 days to go </strong>
+<p>SYDNEY: Build a Silverlight Web Application by Greg Harris</p>
+<p><font color="#666666" size="1">Friday, 29th August
+						2008<br/>
+						8:00am-11:00am</font></p>
+</td>
+</tr>
+</table>
+<p>Now that we have heard what Silverlight can do for our web sites, lets get down to writing 
+    some real code and implement a real Silverlight based web application, that you can use on 
+    your web sites.<br/>
+    By the end of the session, attendees will be able to create their own Silverlight application.
+    </p>
+<p>To get the most out of the session, attendees should bring their own development laptop.</p>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<p align="right">
+<a href="/ssw/Redirect/SSWUpdate/2008Jun/SSWTechBreakfast3.htm">
+<img alt="Register Now" border="0" src="/history/images/button-register-small.gif"/></a></p>
+</font></td>
+</tr>
+<tr>
+<td class="section">
+<h3 class="sectionTitle">Employment</h3>
+<p>Due to the tremendous growth that our business has 
+				experienced over the last few months, we are seeking 
+				enthusiastic people to join the SSW team.</p>
+<p>Our Company is based in Neutral Bay which is one of the most 
+				elegant and scenic areas of Sydney. SSW is an Australian owned 
+				progressive consulting firm specialising in building, 
+				implementing and maintaining Microsoft .NET software 
+				applications.</p>
+<p>We are currently strongly looking for a <strong>Technical BDM
+				</strong>to take initial meetings and manage clients in 
+				Brisbane, Melbourne, or Canberra.</p>
+<p>We are also currently looking for:</p>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td valign="top">•</td>
+<td valign="top" width="100%"><strong>ASP.NET, VB.NET, 
+						C#, OLAP, SharePoint Software Developer </strong></td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td><strong>Technical BDM in Melbourne, Brisbane, or 
+						Canberra</strong>
+</td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td valign="top"><strong>IT Senior Marketing Consultant 
+						(part-time)</strong></td>
+</tr>
+<tr>
+<td valign="top">•</td>
+<td valign="top"><strong>Project Manager</strong></td>
+</tr>
+</table>
+<p>
+<a href="/ssw/Redirect/sswupdate/2008Jun/Employment.htm">
+				Read more and Apply NOW...</a></p>
+</td>
+</tr>
+</table>
+ </td>
+</tr>
+</table>
+<table align="center" width="710">
+<tr>
+<td class="copyright">Copyright ?SSW 1990-2007. All Rights Reserved.</td>
+<td align="right" class="proudly">Proudly developed by
+		<a href="">SSW Sydney Web Design</a></td>
+</tr>
+<tr>
+<td class="footer" colspan="2">
+<table>
+<tr class="footer" valign="top">
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','Advertisting',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Advertise with SSW</a>| </td>
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','Please%20Unsubscribe%20Me',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Unsubscribe</a> | </td>
+<td align="center" valign="top">
+<a href="/ssw/NETUG/SSWUpdatePrevious.aspx" target="_blank">
+				Previous SSW Updates</a> | </td>
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','Hot%20Tip',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Got a Hot Tip to share?</a> | </td>
+<td align="center" valign="top">
+<a encode="736f7068696562656c6c65407373772e636f6d2e6175" keeptext="true" onclick="javascript:sendEmailWithSubject('736f7068696562656c6c65407373772e636f6d2e6175','About%20your%20newsletter',this)" onmouseout="self.status='';return true;" onmouseover="self.status='mailto:' + decodeit('736f7068696562656c6c65407373772e636f6d2e6175'); return true;" process="true" style=" text-decoration: underline; cursor:pointer">
+				Got a comment to make?</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</font>
+</body>
+</html>
