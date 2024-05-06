@@ -43,12 +43,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.ssw.com.au/history/access-reporter/read-me.htm</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://www.ssw.com.au/history/agile-template/default.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -104,12 +98,6 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/history/code-auditor/default.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/history/code-auditor/defaultmockup.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -338,12 +326,6 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/history/data-pro/default.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/history/data-pro/frm-links.htm</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
