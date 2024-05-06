@@ -11,35 +11,35 @@ import json
 
 # TODO: eXtremeEmails
 WHITELIST = [
-    "AccessReporter",
-    "AgileTemplate",
-    "DataMergePRO",
-    "DataPRO",
-    "DataRenovator",
+    # "AccessReporter",
+    # "AgileTemplate",
+    # "DataMergePRO",
+    # "DataPRO",
+    # "DataRenovator",
     # "EmailMergePRO",
     # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
-    "Events",
-    "ExchangeReporter",
-    "HealthAuditor",
-    "LinkAuditor",
+    # "Events",
+    # "ExchangeReporter",
+    # "HealthAuditor",
+    # "LinkAuditor",
     "LookOut",
-    "PerformancePRO",
-    "NETToolkit",
-    "PropertyAndEventPRO",
-    # "SQLAuditor",
-    "SQLDeploy",
-    "SQLReportingServicesAuditor",
-    "SQLTotalCompare",
-    # "Standards",
-    # TODO: "StandardsInternal",
-    "Training",
-    "TeamCalendar",
-    "UpsizingPRO",
-    "NETUG",
-    "WebPager",
-    "WisePRO",
-    "TimePROSmartTags",
-    # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
+    # "PerformancePRO",
+    # "NETToolkit",
+    # "PropertyAndEventPRO",
+    # # "SQLAuditor",
+    # "SQLDeploy",
+    # "SQLReportingServicesAuditor",
+    # "SQLTotalCompare",
+    # # "Standards",
+    # # TODO: "StandardsInternal",
+    # "Training",
+    # "TeamCalendar",
+    # "UpsizingPRO",
+    # "NETUG",
+    # "WebPager",
+    # "WisePRO",
+    # "TimePROSmartTags",
+    # # Only uncomment this one if you aren't in the office (uses prod.ssw.com.au)
     # "Products",
 ]
 
@@ -669,7 +669,7 @@ def add_archive_header(soup: BeautifulSoup, url: str) -> BeautifulSoup:
         "color: white; font-size: 1.125rem !important; font-weight: 600;"
     )
     content_p = soup.new_tag("p")
-
+    content_p['style'] = 'color:white;'
     content_p.append("✅ New page with updated info: ")
 
     if "Training" in url or "Events" in url:
