@@ -22,7 +22,7 @@ WHITELIST = [
     # "ExchangeReporter",
     # "HealthAuditor",
     # "LinkAuditor",
-    "LookOut",
+    # "LookOut",
     # "PerformancePRO",
     # "NETToolkit",
     # "PropertyAndEventPRO",
@@ -30,7 +30,7 @@ WHITELIST = [
     # "SQLDeploy",
     # "SQLReportingServicesAuditor",
     # "SQLTotalCompare",
-    # # "Standards",
+    "Standards",
     # # TODO: "StandardsInternal",
     # "Training",
     # "TeamCalendar",
@@ -168,7 +168,7 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_breadcrumbs(soup, split_path[1])
             soup = fix_menu(soup)
             soup = fix_head(soup)
-
+            soup = delete_existing_header(soup)
             soup = add_archive_header(soup, url)
 
             page_source = soup.prettify(formatter="html5")
@@ -200,6 +200,11 @@ def archive_pages(path: str) -> dict[str, str]:
     output_index_page(items_written, output_path)
     return items_written
 
+def delete_existing_header (soup: BeautifulSoup) -> BeautifulSoup:
+    head = soup.find("div", id="header")
+    if head is not None:    
+        head.decompose()
+    return soup
 
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
