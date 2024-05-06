@@ -1,8 +1,6 @@
 import os
 import pandas as pd
 
-WHITELIST = ["training", "events"]
-
 
 def get_urls(path: str) -> list[str]:
     urls: list[str] = []
@@ -11,9 +9,9 @@ def get_urls(path: str) -> list[str]:
         item_path = os.path.join(path, item)
         split_path = item_path.split("\\")
 
-        if os.path.isdir(item_path) and split_path[1] in WHITELIST:
+        if os.path.isdir(item_path):
             urls.extend(get_urls(item_path))
-        elif item_path.endswith(".html"):
+        elif item_path.endswith(".html") or item_path.endswith(".htm"):
             urls.append(("https://www.ssw.com.au/" + "/".join(split_path)).lower())
 
     return urls
