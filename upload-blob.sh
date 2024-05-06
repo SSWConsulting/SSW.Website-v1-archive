@@ -1,4 +1,4 @@
-az storage blob upload-batch \
+az storage blob sync \
  --auth-mode key \
  --account-key "$ARCHIVE_KEY" \
  --destination "\$web" \
