@@ -30,7 +30,7 @@ WHITELIST = [
     # "SQLDeploy",
     # "SQLReportingServicesAuditor",
     # "SQLTotalCompare",
-    "Standards",
+    # "Standards",
     # # TODO: "StandardsInternal",
     # "Training",
     # "TeamCalendar",
@@ -166,6 +166,7 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_links(soup)
             soup = get_pdfs(soup, base_path)
             soup = fix_breadcrumbs(soup, split_path[1])
+            soup = fix_breadcrumbs_new(soup)
             soup = fix_menu(soup)
             soup = fix_head(soup)
             soup = delete_existing_header(soup)
@@ -613,7 +614,7 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 
     return soup
 
-def fix_breadcrumbs_new(soup: BeautifulSoup)
+def fix_breadcrumbs_new(soup: BeautifulSoup):
     if soup.find("span",id="ctl00_mainContentPlaceHolder_SiteMapPath1") is None:
         return soup
     tag = soup.find("span",{'id': "ctl00_mainContentPlaceHolder_SiteMapPath1"})
@@ -632,7 +633,7 @@ def fix_breadcrumbs_new(soup: BeautifulSoup)
                 href = href.replace(".aspx", ".html")
             href = pascal_to_kebab(href)
             a_tag['href'] = pascal_to_kebab(href)
-            print(a_tag['href'])
+    return soup
 
 def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuUpper"):
