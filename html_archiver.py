@@ -593,7 +593,6 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
 
-
 def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup:
     breadcrumbs = soup.select("div[class='breadcrumb'] > span > span > a")
 
@@ -614,6 +613,26 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 
     return soup
 
+def fix_breadcrumbs_new(soup: BeautifulSoup)
+    if soup.find("span",id="ctl00_mainContentPlaceHolder_SiteMapPath1") is None:
+        return soup
+    tag = soup.find("span",{'id': "ctl00_mainContentPlaceHolder_SiteMapPath1"})
+    for child in tag.findChildren("span", recursive=False):
+        a_tag = child.find("a")
+        if a_tag is None:
+            continue
+        href = a_tag['href']
+        if href.startswith("/ssw"):
+            href = href.replace("/ssw", "/history", 1)
+            if href.endswith("Default.aspx"):
+                href = href.replace("/Default.aspx", "")
+            if href.endswith("Browse.aspx"):
+                href = href.replace("Browse.aspx", "")
+            elif href.endswith(".aspx"):
+                href = href.replace(".aspx", ".html")
+            href = pascal_to_kebab(href)
+            a_tag['href'] = pascal_to_kebab(href)
+            print(a_tag['href'])
 
 def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuUpper"):
