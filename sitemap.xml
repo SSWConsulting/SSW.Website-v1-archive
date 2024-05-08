@@ -3469,12 +3469,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.ssw.com.au/history/standards/developer-general/suburb-combo.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://www.ssw.com.au/history/standards/developer-general/team-foundation-server-power-tools.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -3655,18 +3649,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.ssw.com.au/history/standards/developer-xsl/index.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/history/standards/developer-xsl/rpt-customer-order.htm</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://www.ssw.com.au/history/standards/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -3758,12 +3740,6 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/history/standards/rules/rules-to-better-exchange-server.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/history/standards/rules/rules-to-better-interfaces-wird.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
