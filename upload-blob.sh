@@ -1,8 +1,7 @@
-az storage blob upload-batch \
- --auth-mode key \
- --account-key "$ARCHIVE_KEY" \
- --destination "\$web" \
+
+az storage blob sync \
+ --container "\$web" \
+ --source history/ \
+ --destination history/ \
  --account-name stsswwebsitezjkojq27uhqb \
- --destination-path history \
- --source history \
- --overwrite \
+ --account-key "$ARCHIVE_KEY" \
