@@ -2,10 +2,9 @@ img {
   behavior: url(/ssw/include/iepngfix.htc);
 }
 body {
-  background-image: url(/history/images/background_dna.gif);
   background-repeat: repeat-x;
   background-position: top;
-  background-color: #555;
+  background-color: #ffffff;
   margin: 0;
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 0.8em;
