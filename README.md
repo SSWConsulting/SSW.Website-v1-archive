@@ -154,5 +154,5 @@ ARCHIVE_KEY={{ KEY_HERE }}
 - `Notes` - additional info if required
 
 ## Running the Archive script
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sHJU79ONMZA?si=nJDlCnOEYU8ncBnO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+The video below explains how to archive pages using the script and submit changes to the site
+[![Archive script tutorial](https://img.youtube.com/vi/sHJU79ONMZA/0.jpg)](https://www.youtube.com/watch?v=sHJU79ONMZA)
