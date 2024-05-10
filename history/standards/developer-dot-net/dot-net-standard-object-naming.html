@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+<script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+  </script>
+<title>
+   SSW .NET Object Naming Standard
+  </title>
+<meta content="en-au" http-equiv="Content-Language"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
+<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
+<meta content="SSW" name="author"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/history/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/history/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/history/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+<link href="/history/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
+<link href="/history/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+<link href="/history/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
+</head>
+<body id="ctl00_MasterBody" style="opacity: 1 !important;">
+<div style="
+        line-height: 1.5;
+        text-align: center; 
+        font-size: 1.125rem; 
+        color: #999;
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+    ⚠️ This page has been archived
+   </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p style="color:white;">
+     ✅ New page with updated info:
+     <a href="https://www.ssw.com.au" style="color: white">
+      ssw.com.au
+     </a>
+</p>
+</div>
+</div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
+</iframe>
+</noscript>
+<form action="./DotNetStandard_ObjectNaming.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTM2MDA3ODg2OQ9kFgJmD2QWAgIDD2QWAgIBD2QWCAIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGQCCQ9kFgICAw9kFgICBg8PFgQeBFRleHQFgwg8cCBzdHlsZT0iZm9udC1zaXplIDogMTFweDsgY29sb3IgOiAjYWFhIj5UaGVyZSB3YXMgYW4gZXJyb3IgZGlzcGxheWluZyB0aGUgdGVzdGltb25pYWxzLiBQbGVhc2UgPEEgSFJFRj0ibWFpbHRvOmluZm9Acyp3LmNvbS5hdT9TdWJqZWN0PUVycm9yIGRpc3BsYXlpbmcgVGVzdGltb25pYWxzJmJvZHk9IFVSTDogaHR0cHM6Ly9zc3cuY29tLmF1L3Nzdy9TdGFuZGFyZHMvRGV2ZWxvcGVyRG90TmV0L0RvdE5ldFN0YW5kYXJkX09iamVjdE5hbWluZy5hc3B4DQoNCiUwRCBFcnJvcjogQSBuZXR3b3JrLXJlbGF0ZWQgb3IgaW5zdGFuY2Utc3BlY2lmaWMgZXJyb3Igb2NjdXJyZWQgd2hpbGUgZXN0YWJsaXNoaW5nIGEgY29ubmVjdGlvbiB0byBTUUwgU2VydmVyLiBUaGUgc2VydmVyIHdhcyBub3QgZm91bmQgb3Igd2FzIG5vdCBhY2Nlc3NpYmxlLiBWZXJpZnkgdGhhdCB0aGUgaW5zdGFuY2UgbmFtZSBpcyBjb3JyZWN0IGFuZCB0aGF0IFNRTCBTZXJ2ZXIgaXMgY29uZmlndXJlZCB0byBhbGxvdyByZW1vdGUgY29ubmVjdGlvbnMuIChwcm92aWRlcjogTmFtZWQgUGlwZXMgUHJvdmlkZXIsIGVycm9yOiA0MCAtIENvdWxkIG5vdCBvcGVuIGEgY29ubmVjdGlvbiB0byBTUUwgU2VydmVyKSI+cmVwb3J0IHRoaXMgZXJyb3I8L2E+IHRvIFNTVyBhbmQgaW5jbHVkZSB0aGUgZm9sbG93aW5nIHRleHQ6PGJyPiAtIEEgbmV0d29yay1yZWxhdGVkIG9yIGluc3RhbmNlLXNwZWNpZmljIGVycm9yIG9jY3VycmVkIHdoaWxlIGVzdGFibGlzaGluZyBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlci4gVGhlIHNlcnZlciB3YXMgbm90IGZvdW5kIG9yIHdhcyBub3QgYWNjZXNzaWJsZS4gVmVyaWZ5IHRoYXQgdGhlIGluc3RhbmNlIG5hbWUgaXMgY29ycmVjdCBhbmQgdGhhdCBTUUwgU2VydmVyIGlzIGNvbmZpZ3VyZWQgdG8gYWxsb3cgcmVtb3RlIGNvbm5lY3Rpb25zLiAocHJvdmlkZXI6IE5hbWVkIFBpcGVzIFByb3ZpZGVyLCBlcnJvcjogNDAgLSBDb3VsZCBub3Qgb3BlbiBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlcik8L3A+HwBnZGRkdX0Kl3uWvn9pkgsBvejDnIxhX1KuQA2lguY+OZCnLIo="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="5A418DDE"/>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+<span>
+<a href="/history" title="Home">
+        Home
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/history/standards" title="SSW Standards">
+        SSW Standards
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/history/standards/developer-dot-net" title="Developer .Net">
+        Developer .Net
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+       SSW .NET Object Naming Standard
+      </span>
+<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+</span>
+</p>
+<span id="ctl00_mainContentPlaceHolder_testimonial_lblError">
+<p style="font-size : 11px; color : #aaa">
+      There was an error displaying the testimonials. Please
+      <a href="mailto:info@s*w.com.au?Subject=Error displaying Testimonials&amp;body= URL: https://ssw.com.au/ssw/Standards/DeveloperDotNet/DotNetStandard_ObjectNaming.aspx
+
+%0D Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)">
+       report this error
+      </a>
+      to SSW and include the following text:
+      <br/>
+      - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+     </p>
+</span>
+     
+    <div class="TableOfContents">
+<h3>
+      SSW .NET Object Naming Standard
+     </h3>
+<ol>
+<li>
+<a href="#Syntax">
+        User Interface Syntax and Object/Code Syntax
+       </a>
+</li>
+<li>
+<a href="#Constants">
+        Constants
+       </a>
+</li>
+<li>
+<a href="#DataAdapter">
+        DataAdapter
+       </a>
+</li>
+<li>
+<a href="#CDec">
+        Class declaration
+       </a>
+</li>
+<li>
+<a href="#NoVarSameClass">
+        No variable name with the same class name
+       </a>
+</li>
+<li>
+<a href="#MainForm">
+        Main Form of a Windows Application
+       </a>
+</li>
+<li>
+<a href="#OldCom">
+        Old Com Objects
+       </a>
+</li>
+<li>
+<a href="#ClassLevel">
+        Do you use a standard naming convention for class level variables in C# and VB .NET?
+       </a>
+</li>
+<li>
+<a href="#Other">
+        Other Links
+       </a>
+</li>
+</ol>
+</div>
+<div id="mainContent">
+<b>
+      .NET Object Naming Standard
+     </b>
+<p>
+      This standard outlines our standards on naming objects within VS.NET. Use these standards when 
+								naming any object or if you find another object 
+						that doesn't follow these standards within SSW. For the 
+						'Other style' 
+						naming, we have tried to keep the length of any prefix 
+						to 3. However there may be some with a length of 4 or 5.
+     </p>
+<p>
+      Ideally we dont want to use Hungarian notation anymore, except user interfaces. It is nice and neat when you implement them 
+					   in code.
+     </p>
+<p>
+      Do you agree with them all? Are we missing some?
+      <a href="javascript:sendEmail('496E666F407373772E636F6D2E61753F5375626A6563743D2E4E6574205374616E64617264204F626A656374204E616D696E6720436F6E76656E74696F6E')">
+       Let us know
+      </a>
+      what you think.
+     </p>
+<ol>
+<li>
+<h2>
+<a name="Syntax">
+</a>
+        User Interface Syntax and Object/Code Syntax
+       </h2>
+<table cellpadding="2" class="clsSSWTable" style="border-color: #FFFFFF" summary="Formatting Table" width="100%">
+<tbody>
+<tr>
+<th width="28%">
+           User Interface Syntax
+          </th>
+<th width="24%">
+           Recommended Style
+          </th>
+<th width="24%">
+           Other Style
+          </th>
+<th width="44%">
+           Notes
+          </th>
+</tr>
+<tr>
+<td>
+           Button
+          </td>
+<td class="clsRecommendedStyle">
+           btnCustomer
+          </td>
+<td class="clsOtherStyle">
+           customerButton
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Label
+          </td>
+<td class="clsRecommendedStyle">
+           lblCustomer
+          </td>
+<td class="clsOtherStyle">
+           customerLabel
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           TextBox
+          </td>
+<td class="clsRecommendedStyle">
+           txtCustomer
+          </td>
+<td class="clsOtherStyle">
+           customerTextBox
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           ComboBox
+          </td>
+<td class="clsRecommendedStyle">
+           cboCustomer
+          </td>
+<td class="clsOtherStyle">
+           customerComboBox
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           ListBox
+          </td>
+<td class="clsRecommendedStyle">
+           lstCustomer
+          </td>
+<td class="clsOtherStyle">
+           customerListBox
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           For all other controls
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           ctlCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+            
+          </td>
+<td class="clsRecommendedStyle">
+            
+          </td>
+<td class="clsOtherStyle">
+            
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Form
+          </td>
+<td class="clsRecommendedStyle">
+           OrdersForm
+          </td>
+<td class="clsOtherStyle">
+           frmOrders
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Report
+          </td>
+<td class="clsRecommendedStyle">
+           CustomerReport
+          </td>
+<td class="clsOtherStyle">
+           rptCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Calendar
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           cldCustomer; dueDate
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           AdRotator 
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           artCustomer; customerRotator
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           CheckBox
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           chkCustomer; wantsMailouts
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           CheckBoxList
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           chkLCustomer; activeCustomers
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           CompareValidator
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           cmvCustomer; stateCorrect
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           CrystalReportViewer
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           crvCustomer; eomCustomerReport
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           CustomValidator
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           ctvCustomer; detailsCorrect
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DropDownList
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           ddlCustomer; currentCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           GroupBox
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           grpCustomer; customerDetails
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           HyperLink
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           hypCustomer; customerLink
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Image
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           imgCustomer; currentPhoto
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           ImageButton
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           ibtnCustomer; proceed
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           LinkButton
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           lbtnCustomer; customerOrders
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           LinkLabel
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           llblCustomer; customerOrders
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           ListBox
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomers
+          </td>
+<td class="clsOtherStyle">
+           lstCustomer; currentCustomers
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Panel
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           pnlCustomer; customerDetails
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Picture
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           picCustomer; wife
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           ProgressBar
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           prgCustomer; progress
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           RadioButton/OptionButton
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           optCustomer; wantsPhonecalls
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           RadioButtonList
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           rbtnlCustomer; contactOptions
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           RangeValidator
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           rgvCustomer; costCorrect
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           RegularExpressionValidator
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           revCustomer; emailAppropriate
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Repeater
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           repCustomer; detailsList
+          </td>
+<td>
+           rpt is used for reports
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           RequiredFieldValidator
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           rfvCustomer; emailCorrect
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           TabControl
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           tabCustomer; pages
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           ValidationSummary
+          </td>
+<td class="clsRecommendedStyle">
+           ctlCustomer
+          </td>
+<td class="clsOtherStyle">
+           vsmCustomer; allCorrect
+          </td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<table cellpadding="2" class="clsSSWTable" style="border-color: #FFFFFF" summary="Formatting Table" width="100%">
+<tbody>
+<tr>
+<th width="28%">
+           Code Syntax
+          </th>
+<th width="24%">
+           Recommended Style
+          </th>
+<th width="24%">
+           Other Style
+          </th>
+<th width="44%">
+           Notes
+          </th>
+</tr>
+<tr>
+<td>
+           ArrayList
+          </td>
+<td class="clsRecommendedStyle">
+           customerList
+          </td>
+<td class="clsOtherStyle">
+           aylCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataGrid
+          </td>
+<td class="clsRecommendedStyle">
+           orderItems
+          </td>
+<td class="clsOtherStyle">
+           dgdCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataList
+          </td>
+<td class="clsRecommendedStyle">
+           orderItems
+          </td>
+<td class="clsOtherStyle">
+           dlsCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataRowView
+          </td>
+<td class="clsRecommendedStyle">
+           orderItem
+          </td>
+<td class="clsOtherStyle">
+           drvCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataSet
+          </td>
+<td class="clsRecommendedStyle">
+           dailyOrders
+          </td>
+<td class="clsOtherStyle">
+           dstCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataTable
+          </td>
+<td class="clsRecommendedStyle">
+           orderItems
+          </td>
+<td class="clsOtherStyle">
+           dtbCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataRow
+          </td>
+<td class="clsRecommendedStyle">
+           orderItem
+          </td>
+<td class="clsOtherStyle">
+           drwCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataColumn
+          </td>
+<td class="clsRecommendedStyle">
+           taxAmount
+          </td>
+<td class="clsOtherStyle">
+           dclCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           DataView
+          </td>
+<td class="clsRecommendedStyle">
+           currentOrder
+          </td>
+<td class="clsOtherStyle">
+           dvwCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Hashtable
+          </td>
+<td class="clsRecommendedStyle">
+           securityCode
+          </td>
+<td class="clsOtherStyle">
+           htbCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Literal
+          </td>
+<td class="clsRecommendedStyle">
+           customerName
+          </td>
+<td class="clsOtherStyle">
+           litCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           PlaceHolder
+          </td>
+<td class="clsRecommendedStyle">
+           setting
+          </td>
+<td class="clsOtherStyle">
+           plhCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           Table
+          </td>
+<td class="clsRecommendedStyle">
+           orders
+          </td>
+<td class="clsOtherStyle">
+           tblCustomer
+          </td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+           TableCell
+          </td>
+<td class="clsRecommendedStyle">
+           gstAmount
+          </td>
+<td class="clsOtherStyle">
+           tdCustomer
+          </td>
+<td>
+           Consistent with HTML
+          </td>
+</tr>
+<tr>
+<td>
+           TableRow
+          </td>
+<td class="clsRecommendedStyle">
+           customer
+          </td>
+<td class="clsOtherStyle">
+           trCustomer
+          </td>
+<td>
+           Consistent with HTML
+          </td>
+</tr>
+<tr>
+<td>
+           Xml
+          </td>
+<td class="clsRecommendedStyle">
+           detailsXml
+          </td>
+<td class="clsOtherStyle">
+           XmlCustomer
+          </td>
+</tr>
+</tbody>
+</table>
+<br/>
+<table cellpadding="2" class="clsSSWTable" style="border-color: #FFFFFF" summary="Formatting Table" width="100%">
+<tbody>
+<tr>
+<th width="28%">
+           Object Syntax
+          </th>
+<th width="24%">
+           Recommended Style
+          </th>
+<th width="24%">
+           Other Style
+          </th>
+<th width="44%">
+           Notes
+          </th>
+</tr>
+<tr>
+<td>
+<div align="left">
+            DataColumn
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            column
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            dc
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            DataRow
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            row
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            dr
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            SqlConnection
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            connection
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            cnn
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            SqlCommand
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            command
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            cmd
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            SqlDataAdapter
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            dataAdapter
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            adp
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+           SqlParameter
+          </td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            parameter
+           </div>
+</td>
+<td class="clsOtherStyle">
+           prm
+          </td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            SqlDataReader
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            reader
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            drd
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            OleDbConnection
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            connection
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            cnn
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            OleDbCommand
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            command
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            cmd
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="left">
+            OleDbDataAdapter
+           </div>
+</td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            dataAdapter
+           </div>
+</td>
+<td class="clsOtherStyle">
+<div align="left">
+            adp
+           </div>
+</td>
+</tr>
+<tr>
+<td>
+           OleDbDataReader
+          </td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            reader
+           </div>
+</td>
+<td class="clsOtherStyle">
+           drd
+          </td>
+</tr>
+<tr>
+<td>
+           OleDbParameter
+          </td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            parameter
+           </div>
+</td>
+<td class="clsOtherStyle">
+           prm
+          </td>
+</tr>
+<tr>
+<td>
+           SQL String
+          </td>
+<td class="clsRecommendedStyle">
+<div align="left">
+            sqlString
+           </div>
+</td>
+<td class="clsOtherStyle">
+           sql
+          </td>
+</tr>
+</tbody>
+</table>
+</li>
+<p class="productBox">
+       We have a program called
+       <a href="/ssw/CodeAuditor/#CSyntax">
+        SSW Code Auditor
+       </a>
+       to check for this rule.
+      </p>
+<li>
+<h2>
+<a name="Constants">
+</a>
+        Constants
+       </h2>
+<p>
+        Try to name your constants using Pascal Case (e.g. ConnectionString) instead of using UPPER CASE.
+       </p>
+<dl class="badCode">
+<dt>
+<pre>private const string CONNECTION_STRING = "server=tuna;uid=sa;database=LiveStats";
+</pre>
+</dt>
+<dd>
+         Figure: Bad example
+        </dd>
+</dl>
+<dl class="goodCode">
+<dt>
+<pre>private const string ConnectionString = "server=tuna;uid=sa;database=LiveStats";
+</pre>
+</dt>
+<dd>
+         Figure: Good example
+        </dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="DataAdapter">
+</a>
+        DataAdapter
+       </h2>
+<p>
+        Try to stick to the IDataAdapter naming conventions. That means to start naming your methods with "Fill" or "Update".
+        <br/>
+        You could use "Select", "Load" or whatever, but we think it is better and more efficient to stick to the .NET naming conventions.
+       </p>
+<dl class="badImage">
+<dt>
+<img alt="Data Adapter" height="135" src="/history/standards/developer-dot-net/images/data-adapter-2.gif" width="172"/>
+</dt>
+<dd>
+         Figure: Bad example
+        </dd>
+</dl>
+<dl class="goodImage">
+<dt>
+<img alt="Data Adapter" height="112" src="/history/standards/developer-dot-net/images/data-adapter.gif" width="174"/>
+</dt>
+<dd>
+         Figure: Good example
+        </dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="CDec">
+</a>
+        Class declaration
+       </h2>
+<p>
+        Class structure should be declare in 
+                            the following order to provide a logical flow to 
+                            reader:
+       </p>
+<ol>
+<li>
+         Variable
+        </li>
+<li>
+         Constructor
+        </li>
+<li>
+         Property
+        </li>
+<li>
+         Events
+        </li>
+<li>
+         Methods
+        </li>
+</ol>
+<dl class="image">
+<dt>
+<img alt="Example Declaration of Class Structure" height="217" src="/history/standards/developer-dot-net/images/class-decleration-example.gif" width="213"/>
+</dt>
+<dd>
+         Figure: Example Declaration of Class Structure
+        </dd>
+</dl>
+</li>
+<h2>
+<a name="NoVarSameClass">
+</a>
+       No variable name with the same class name
+      </h2>
+<p>
+       In C#, do not declare variable name with the same class name (but different 
+casing). This can confuse other developers, and will cause problem when porting 
+code to VB.
+      </p>
+<dl class="badCode">
+<dt>
+<pre>Array array = new Array();
+</pre>
+</dt>
+<dd>
+        Figure: Bad Example
+       </dd>
+</dl>
+<dl class="goodCode">
+<dt>
+<pre>Array objects = new Array();
+</pre>
+</dt>
+<dd>
+        Figure: Good Example
+       </dd>
+</dl>
+<p class="productBox">
+       We have a program called
+       <a href="/ssw/CodeAuditor/">
+        SSW Code Auditor
+       </a>
+       to check for this rule.
+      </p>
+<li>
+<h2>
+<a name="MainForm">
+</a>
+        Main Form of a Windows Application
+       </h2>
+<p>
+        There is only one name that should ever be used for the main form of a Windows Application:
+        <b>
+         MainForm
+        </b>
+        . Don't use Main, frmMain, Startup, frmStartup, MenuMain, 
+		frmMenuMain, etc. In the case of a Wizard application, there may not be 
+		a single form in the project - this is fine too. Instead there will be a 
+		class named
+        <b>
+         WizardPage
+        </b>
+        which inherits from the template 
+		UserControl used by your wizard framework.
+       </p>
+<p class="productBox">
+        We have a program called
+        <a href="/ssw/CodeAuditor/">
+         SSW Code Auditor
+        </a>
+        to check for this rule.
+       </p>
+</li>
+<li>
+<h2>
+<a name="OldCom">
+</a>
+        Old Com Objects
+       </h2>
+<table cellpadding="2" cellspacing="2" class="clsSSWTable" summary="Formatting Table" width="70%">
+<tbody>
+<tr>
+<th width="33%">
+           Object
+          </th>
+<th width="16%">
+           Prefix
+          </th>
+<th width="51%">
+           Sample
+          </th>
+</tr>
+<tr>
+<td>
+           Recordset
+          </td>
+<td>
+           rst
+          </td>
+<td>
+           rstCustomer
+          </td>
+</tr>
+<tr>
+<td>
+           Connection
+          </td>
+<td>
+           cnn
+          </td>
+<td>
+           cnn
+          </td>
+</tr>
+<tr>
+<td>
+           Command
+          </td>
+<td>
+           cmd
+          </td>
+<td>
+           cmd
+          </td>
+</tr>
+</tbody>
+</table>
+<br/>
+</li>
+<li>
+<h2>
+<a name="ClassLevel">
+</a>
+        Do you use a standard naming convention for class level variables in C# and VB .NET?
+       </h2>
+<p>
+        Class level variables should have a prefix so that you can see at a glance what the scope of the variable is eg mMyInt, m_MyInt.
+                I like
+        <b>
+         m
+        </b>
+        for member/instance variables,
+        <b>
+         p
+        </b>
+        for parameter variables, and no prefix for locally declared variables.
+                Some dont like the specific use of the underscore because of the difficulty typing it eg m_MyInt.
+        <br/>
+        Using a prefix is a naming convention that can be used in both VB.NET and C#.
+        <br/>
+</p>
+<p>
+        Note: Some teams use "_" to prefix private member variables, others "m_" and some are just using camel case.
+        <br/>
+        Often teams don't have a personal preference so you should make sure that you are consistent in your team/solution.
+       </p>
+<dl class="badCode">
+<dt>
+<pre>public class MyClass
+{
+    private int <span style="background-color: Yellow;">myInt;</span>
+
+    public MyClass(int myInt)
+    {
+        <span style="background-color: Yellow;">this.myInt</span> = myInt;
+    }
+
+    public int MyInt
+    {
+        get { return <span style="background-color: Yellow;">this.myInt;</span> }
+    }
+}</pre>
+</dt>
+<dd>
+         Figure: Bad Example - Can only be used in C# because C# is case sensitive
+        </dd>
+</dl>
+<dl class="goodCode">
+<dt>
+<pre>public class MyClass
+{
+    private int <span style="background-color: Yellow;">mMyInt;</span>
+
+    public MyClass(int pMyInt)
+    {
+        <span style="background-color: Yellow;">mMyInt</span> = pMyInt;
+    }
+
+    public int MyInt
+    {
+        get { return <span style="background-color: Yellow;">mMyInt;</span> }
+    }
+}</pre>
+</dt>
+<dd>
+         Figure: Good Example - Can be used in VB.NET and C#
+        </dd>
+</dl>
+</li>
+<li>
+<h2>
+<a name="Other">
+</a>
+        Other Links
+       </h2>
+<p>
+<a href="/ssw/Redirect/Microsoft/MSDNVBNamingConventions.htm" target="_blank">
+         Microsoft's Naming Guidelines (for VB 6)
+        </a>
+<img alt="You are going to a site outside of SSW" height="11" src="/history/images/leave-site.gif" width="17"/>
+<br/>
+        Microsoft's Standard for naming objects (for VB 6)
+       </p>
+<p>
+<a href="/ssw/Redirect/Microsoft/MSDNVBDotNetNamingConventions.htm" target="_blank">
+         Microsoft's Naming Guidelines (for the .NET Framework)
+        </a>
+<img alt="You are going to a site outside of SSW" height="11" src="/history/images/leave-site.gif" width="17"/>
+<br/>
+        Microsoft's Standard for naming objects (for the .NET Framework)
+       </p>
+<p>
+<a href="/ssw/Redirect/Microsoft/MSRulesRedirect.htm" target="_blank">
+         Naming Conventions for VB
+        </a>
+<img alt="You are going to a site 
+		outside of SSW" height="11" src="/history/images/leave-site.gif" width="17"/>
+<br/>
+        Object Hungarian Notation Naming Conventions for VB (Q173738)
+       </p>
+<p>
+<a href="/ssw/Redirect/FMSNamingConventionsRedirect.htm" target="_blank">
+         Changes to Naming Conventions for VB.NET
+        </a>
+<img alt="You are going to a site 
+		outside of SSW" height="11" src="/history/images/leave-site.gif" width="17"/>
+<br/>
+        FMS Inc Naming Conventions
+       </p>
+<p>
+<a href="/ssw/Redirect/Microsoft/MSDNVBNamingConventions.htm" target="_blank">
+         Microsoft's Object Naming Conventions for 
+		VB6/Access
+        </a>
+<img alt="You are going to a site outside of SSW" height="11" src="/history/images/leave-site.gif" width="17"/>
+<br/>
+        Microsoft's Old Standard for naming objects. This is deprecated, but 
+                        you should still follow these conventions for VB6/Access 
+                        projects.
+       </p>
+</li>
+</ol>
+</div>
+<br/>
+</div>
+<div id="footer">
+<p class="callnow">
+     Call Now
+     <a href="tel:+61299533000">
+      +61 2 9953 3000
+     </a>
+</p>
+<span class="copyright">
+     © Copyright SSW 1990-2024. All Rights Reserved.
+    </span>
+<ul>
+<li class="first">
+<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F446576656C6F706572446F744E65742F446F744E65745374616E646172645F4F626A6563744E616D696E672E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
+       Feedback to SSW
+      </a>
+</li>
+<li>
+<a href="/ssw/Company/AboutUs.aspx">
+       About SSW
+      </a>
+</li>
+<li>
+<a href="/ssw/Advertising/Default.aspx">
+       Advertising
+      </a>
+</li>
+<li class="last">
+<a href="/ssw/MenuMap.aspx">
+       Sitemap
+      </a>
+</li>
+</ul>
+<span class="proudly">
+<a href="http://www.ssw.com.au">
+      Proudly developed by SSW Sydney Web Design
+     </a>
+</span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">
+     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
+    </p>
+</div>
+</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+<!-- / OptinMonster -->
+<div style="visibility: visible;">
+<div>
+</div>
+<div>
+</div>
+</div>
+</body>
+</html>

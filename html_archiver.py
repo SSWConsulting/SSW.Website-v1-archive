@@ -22,7 +22,7 @@ WHITELIST = [
     # "ExchangeReporter",
     # "HealthAuditor",
     # "LinkAuditor",
-    "LookOut",
+    # "LookOut",
     # "PerformancePRO",
     # "NETToolkit",
     # "PropertyAndEventPRO",
@@ -30,7 +30,7 @@ WHITELIST = [
     # "SQLDeploy",
     # "SQLReportingServicesAuditor",
     # "SQLTotalCompare",
-    # # "Standards",
+    # "Standards",
     # # TODO: "StandardsInternal",
     # "Training",
     # "TeamCalendar",
@@ -166,9 +166,10 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_links(soup)
             soup = get_pdfs(soup, base_path)
             soup = fix_breadcrumbs(soup, split_path[1])
+            soup = fix_breadcrumbs_new(soup)
             soup = fix_menu(soup)
             soup = fix_head(soup)
-
+            soup = delete_existing_header(soup)
             soup = add_archive_header(soup, url)
 
             page_source = soup.prettify(formatter="html5")
@@ -200,6 +201,11 @@ def archive_pages(path: str) -> dict[str, str]:
     output_index_page(items_written, output_path)
     return items_written
 
+def delete_existing_header (soup: BeautifulSoup) -> BeautifulSoup:
+    head = soup.find("div", id="header")
+    if head is not None:    
+        head.decompose()
+    return soup
 
 def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
@@ -588,7 +594,6 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
 
-
 def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup:
     breadcrumbs = soup.select("div[class='breadcrumb'] > span > span > a")
 
@@ -609,6 +614,26 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 
     return soup
 
+def fix_breadcrumbs_new(soup: BeautifulSoup):
+    if soup.find("span",id="ctl00_mainContentPlaceHolder_SiteMapPath1") is None:
+        return soup
+    tag = soup.find("span",{'id': "ctl00_mainContentPlaceHolder_SiteMapPath1"})
+    for child in tag.findChildren("span", recursive=False):
+        a_tag = child.find("a")
+        if a_tag is None:
+            continue
+        href = a_tag['href']
+        if href.startswith("/ssw"):
+            href = href.replace("/ssw", "/history", 1)
+            if href.endswith("Default.aspx"):
+                href = href.replace("/Default.aspx", "")
+            if href.endswith("Browse.aspx"):
+                href = href.replace("Browse.aspx", "")
+            elif href.endswith(".aspx"):
+                href = href.replace(".aspx", ".html")
+            href = pascal_to_kebab(href)
+            a_tag['href'] = pascal_to_kebab(href)
+    return soup
 
 def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
     for div in soup.find_all("div", id="MenuUpper"):

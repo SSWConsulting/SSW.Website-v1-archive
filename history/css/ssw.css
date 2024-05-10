@@ -1,18 +1,15 @@
-﻿img {
-  behavior: url('/ssw/include/iepngfix.htc');
+img {
+  behavior: url(/ssw/include/iepngfix.htc);
 }
 body {
-  background-image: url('/history/images/background_dna.gif');
+  background-image: url(/history/images/background_dna.gif);
   background-repeat: repeat-x;
   background-position: top;
-  background-color: #555555;
-  margin: 0px;
+  background-color: #555;
+  margin: 0;
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 0.8em;
   line-height: 150%;
-}
-
-body > form {
 }
 #mainPane a,
 #mainPane a:link,
@@ -23,13 +20,11 @@ body > form {
   color: #3a66cc;
   border-bottom: 1px dotted #3a66cc;
 }
-
 #mainPane a:visited, #subPane a:visited, #subpage a:visited /* SEE: http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterWebsitesNavigation.aspx#visitedlink */
 {
   color: #2c4fa2;
   border-bottom: 1px dotted #2c4fa2;
 }
-
 #mainPane dl.image dt a,
 #mainPane dl.image dt a:link,
 #mainPane dl.image dt a:visited,
@@ -41,22 +36,18 @@ body > form {
 #subpage dl.image dt a:visited {
   border: none;
 }
-
 #mainPane a:hover,
 #subPane a:hover,
 #subpage a:hover {
   color: red;
   border-bottom: 1px red solid;
 }
-
 .right {
   float: right;
 }
-
 .left {
   float: left;
 }
-
 .clearfix:after {
   content: '.';
   display: block;
@@ -64,37 +55,30 @@ body > form {
   clear: both;
   visibility: hidden;
 }
-
 .clearfix {
   display: inline-block;
 }
-
 /* Hides from IE-mac */
-
 * html .clearfix {
   height: 1%;
 }
-
 .clearfix,
 .block {
   display: block;
 }
-
 .thumbnail {
   border: 1px solid #c0c0c0;
   float: left;
-  margin: 3px 10px 0px 0px;
+  margin: 3px 10px 0 0;
 }
 #train {
   padding-left: 10px;
 }
-
 #train img {
   background: #e1e1e1;
   margin: 2px;
   padding: 2px;
 }
-
 #train a,
 #train a:link,
 #train a:visited,
@@ -123,7 +107,8 @@ div.section {
 #mainPane {
   width: 529px;
   float: left;
-  background: #fff; /*Address text highlight issue in firefox */
+  background: #fff;
+  /*Address text highlight issue in firefox */
 }
 #subPane {
   width: 256px;
@@ -134,13 +119,13 @@ div.section {
   padding: 0 0 0 5px;
 }
 #wrapper {
-  background-image: url(/ssw/images/background.png);
+  background-image: url(/history/images/background.png);
   background-repeat: repeat-y;
   background-position: top center;
   min-width: 800px;
 }
 * html div#wrapper {
-  background-image: url(/ssw/images/backgroundIE6.gif);
+  background-image: url(/history/images/backgroundIE6.gif);
   padding-left: 1px;
 }
 #container {
@@ -154,11 +139,11 @@ div.section {
   clear: both;
 }
 #subPane .section h1 {
-  background-image: url('/ssw/images/box_header.gif');
+  background-image: url(/history/images/box_header.gif);
   background-repeat: no-repeat;
   display: block;
   padding: 0 0 0 20px;
-  color: #ffffff;
+  color: #fff;
   height: 24px;
   font-size: 0.9em;
 }
@@ -171,7 +156,6 @@ div.section {
   width: 500px;
   padding: 5px;
 }
-
 * html .expertise ul {
   width: 449px;
 }
@@ -181,7 +165,7 @@ div.section {
   margin: 0;
   padding: 0 0 0 10px;
   font-size: 0.85em;
-  background-image: url('/ssw/images/bullet_square.gif');
+  background-image: url(/history/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   color: #333;
@@ -199,9 +183,9 @@ div.section {
   margin-top: 10px;
 }
 .section .content {
-  background: url(/ssw/images/bg_section.gif);
+  background: url(/history/images/bg_section.gif);
   background-repeat: repeat-x;
-  background-color: #ffffff;
+  background-color: #fff;
   background-position: 0 -1px;
   padding: 5px;
   margin-right: 4px;
@@ -246,7 +230,7 @@ div.section {
 }
 #mainPane .section h2 {
   font-weight: normal;
-  color: #888888;
+  color: #888;
   margin-top: -5px;
   border-bottom: 1px dashed #ddd;
   padding-bottom: 2px;
@@ -278,32 +262,47 @@ input.q {
   border-left: 1px #edb7be solid;
   border-bottom: 1px #edb7be solid;
   font-style: normal;
-  color: #333333;
+  color: #333;
 }
 /*#subPane .testimonial blockquote {
+
 	font-family: Georgia,"Times New Roman",Times,serif;
+
 	font-style: italic;
+
 	font-size: 1.2em;
+
 	background-image: url(/ssw/images/quote_open_home.gif);
+
 	background-repeat: no-repeat;
+
 	padding-top: 10px;
+
 }
+
 */
 #subPane .testimonial blockquote p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1.2em;
-  background-image: url(/ssw/images/quote_open_home.gif);
+  background-image: url(/history/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
 /* 
 
+
+
 Removed this as it was causing linebreak issues
 
+
+
 #subPane .testimonial blockquote:after {
+
 	content: '"';
+
 } 
+
 */
 #subPane .testimonial p {
   font-weight: bold;
@@ -316,7 +315,7 @@ Removed this as it was causing linebreak issues
   font-style: italic;
   font-weight: normal;
   font-size: 1.2em;
-  background-image: url(/ssw/images/quote_open_home.gif);
+  background-image: url(/history/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
@@ -325,26 +324,26 @@ Removed this as it was causing linebreak issues
   float: left;
 }
 .popular li {
-  background: url(/ssw/images/bullet_square.gif);
+  background: url(/history/images/bullet_square.gif);
   background-repeat: no-repeat;
   padding-left: 15px;
-  background-position: 0px 9px;
+  background-position: 0 9px;
   font-size: 0.85em;
 }
 .testimonial {
   background: #e0e0e0;
 }
 .rbtop div {
-  background: url(/ssw/images/tl.gif) no-repeat top left;
+  background: url(/history/images/tl.gif) no-repeat top left;
 }
 .rbtop {
-  background: url(/ssw/images/tr.gif) no-repeat top right;
+  background: url(/history/images/tr.gif) no-repeat top right;
 }
 .rbbot div {
-  background: url(/ssw/images/bl.gif) no-repeat bottom left;
+  background: url(/history/images/bl.gif) no-repeat bottom left;
 }
 .rbbot {
-  background: url(/ssw/images/br.gif) no-repeat bottom right;
+  background: url(/history/images/br.gif) no-repeat bottom right;
 }
 .rbtop div,
 .rbtop,
@@ -365,8 +364,8 @@ Removed this as it was causing linebreak issues
 }
 p.daystogo {
   color: #a2a2a2;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -377,7 +376,7 @@ p.daystogo span {
 }
 p.datetime {
   line-height: 1.2em;
-  color: #333333;
+  color: #333;
   font-size: 90%;
   margin-bottom: 5px;
 }
@@ -397,13 +396,13 @@ p.presenter {
   padding-top: 20px;
 }
 #nav {
-  background-image: url('/images/bg_nav.gif');
+  background-image: url(/images/bg_nav.gif);
   background-repeat: repeat-x;
   height: 117px;
 }
 #msgoldpartner {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 680px;
 }
 #sswlogo {
@@ -415,7 +414,7 @@ p.presenter {
   font-size: 20px;
   font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
   font-weight: normal;
-  color: #444444;
+  color: #444;
   position: absolute;
   top: 40px;
   left: 160px;
@@ -424,7 +423,6 @@ p.presenter {
   overflow: hidden;
   line-height: 150%;
 }
-
 div#headerMenu {
   padding: 5px 0 0 155px;
   background-repeat: repeat-x;
@@ -457,7 +455,6 @@ div#headerMenu {
   top: 145px;
   left: 30px;
 }
-
 #subpage #title h1,
 #titleSales h1,
 #titleCase h1,
@@ -498,27 +495,23 @@ div#headerMenu {
   margin: 0;
 }
 #subpage .WebsiteDesign {
-  background: url('/ssw/company/images/header_ux.jpg') no-repeat;
+  background: url(/history/company/images/header_ux.jpg) no-repeat;
 }
-
 #subpage .ConsultingOptions {
-  background: url('/ssw/images/header_scrum_temp.png') no-repeat;
+  background: url(/history/images/header_scrum_temp.png) no-repeat;
   height: 208px;
   padding: 35px 20px 40px 475px;
   margin: 0;
 }
-
 #subpage #titleUX .ConsultingOptions ul {
-  padding: 15px 0px 20px 0px;
+  padding: 15px 0 20px 0;
 }
-
 #subpage #titleUX .ConsultingOptions ul li {
   background: transparent url(/ssw/images/tick.gif) no-repeat left center;
   font-size: 14px;
   padding: 3px 5px 3px 40px;
   margin-bottom: 10px;
 }
-
 #titleUX .UXcontent {
   width: 650px;
   padding: 50px 0 0 45px;
@@ -531,7 +524,7 @@ div#headerMenu {
   margin-bottom: 20px;
 }
 #subpage #titleUX ul li {
-  background-image: url('/ssw/images/bullet_square.gif');
+  background-image: url(/history/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -541,7 +534,7 @@ div#headerMenu {
   width: 719px;
 }
 #showcase .case {
-  border-top: 1px dashed #dddddd;
+  border-top: 1px dashed #ddd;
   padding: 15px 0;
   margin-top: 20px;
   min-height: 210px;
@@ -556,29 +549,29 @@ div#headerMenu {
   color: inherit;
 }
 #showcase ul.tech li {
-  background-image: url('/ssw/images/bullet_square.gif');
+  background-image: url(/history/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   margin-left: 1.5em;
   padding-left: 15px;
 }
 #showcase span.more {
-  background: url(/ssw/Images/icon_link.gif) no-repeat 100% 80%;
+  background: url(/history/Images/icon_link.gif) no-repeat 100% 80%;
   padding-right: 15px;
 }
 #showcase .details a.more {
   font-size: 11px;
 }
-
 /*jQuery light box*/
 #showcase .popeye {
   float: right;
-  background: url(/ssw/company/Images/showcases/thum_template.jpg) no-repeat;
+  background: url(/history/company/Images/showcases/thum_template.jpg) no-repeat;
   /*overflow:auto;    fallback popeye is scrolling! */
-  height: 235px; /* set to max height of fallback popeye */
+  height: 235px;
+  /* set to max height of fallback popeye */
 }
 .popeye-stagewrap {
-  background-color: #333333;
+  background-color: #333;
   width: 292px;
   height: 192px;
   margin: 5px 5px 13px 5px;
@@ -610,7 +603,7 @@ div#headerMenu {
 }
 .popeye-tools .popeye-next {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 .popeye-tools .popeye-count {
   position: absolute;
@@ -630,8 +623,8 @@ div#headerMenu {
   z-index: 5;
 }
 #subpage #index li {
-  background-image: url(/ssw/images/bullet_square.gif);
-  background-position: 0pt 9px;
+  background-image: url(/history/images/bullet_square.gif);
+  background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 15px;
 }
@@ -641,8 +634,8 @@ div#headerMenu {
 #maincontent ul li,
 #maincontentFull ul li,
 #maincontent ul li ul li {
-  background-image: url(/ssw/images/bullet_square.gif);
-  background-position: 0pt 9px;
+  background-image: url(/history/images/bullet_square.gif);
+  background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 15px;
   margin-left: 1.5em;
@@ -657,14 +650,12 @@ div#headerMenu {
 p + ul {
   padding: 0 0 1em 0;
 }
-
 #subpage #index ul {
   padding-top: 3px;
 }
 #subpage #index li:hover {
-  background-image: url(/ssw/images/arrow_tiny.gif);
+  background-image: url(/history/images/arrow_tiny.gif);
 }
-
 #maincontentCase {
   width: 720px;
   padding: 10px 10px 0 30px;
@@ -672,11 +663,11 @@ p + ul {
   float: left;
 }
 #maincontent ul li ul li {
-  background-image: url(/ssw/images/bullet_square_grey.gif);
+  background-image: url(/history/images/bullet_square_grey.gif);
 }
 #subpage #maincontent {
   width: 515px;
-  padding: 10px 0px 0 30px;
+  padding: 10px 0 0 30px;
   display: block;
   float: left;
 }
@@ -717,7 +708,6 @@ p + ul {
   padding: 5px 10px;
   border: 1px solid #ddd;
 }
-
 table.outline {
   margin: 1em 0 3em 0;
   font-size: 12px;
@@ -793,11 +783,10 @@ span.small {
   padding-top: 8px;
   clear: both;
 }
-
 #subpage #maincontent ul.benefits li,
 #maincontentFull ul.benefits li,
 #subpage #titleUX ul.benefits li {
-  background-image: url(/ssw/images/bullet_check.gif);
+  background-image: url(/history/images/bullet_check.gif);
   background-repeat: no-repeat;
   background-position: 8px 9px;
   padding: 6px 0 0 30px;
@@ -807,30 +796,28 @@ span.small {
   /*width:350px;*/
   margin-bottom: 30px;
 }
-
 /*This is for ssw/company/casestudy.aspx*/
 .sectionRight,
 .sectionRightpic {
   display: block;
   float: right;
-  margin: 20px 0px 0 20px;
+  margin: 20px 0 0 20px;
 }
 .sectionRight {
   width: 320px;
 }
 .sectionScreen {
   float: right;
-  margin: -85px -10px 0px 0px;
+  margin: -85px -10px 0 0;
   width: 340px;
 }
-
 #sidebar .section {
   border-color: #bdc2c6;
   border-style: solid;
   border-width: 0 1px 1px 1px;
   background-color: #f0f0f0;
   display: block;
-  margin: 0px;
+  margin: 0;
   padding: 10px 10px 20px 15px;
 }
 #sidebar .section {
@@ -847,10 +834,8 @@ span.small {
   padding: 0;
   color: #444;
 }
-#sidebar .rounded + .section {
-}
 #sidebar .rounded {
-  background-image: url(/ssw/images/bg_rounded.gif);
+  background-image: url(/history/images/bg_rounded.gif);
   background-repeat: no-repeat;
   background-position: left top;
   height: 27px;
@@ -875,19 +860,19 @@ div#sidebar .first {
   margin-bottom: 20px;
 }
 #sidebar div.offer .onsite {
-  background-image: url(/ssw/images/offer_onsite.png);
+  background-image: url(/history/images/offer_onsite.png);
 }
 #sidebar div.offer .customworkshop {
-  background-image: url(/ssw/images/offer_custom.png);
+  background-image: url(/history/images/offer_custom.png);
 }
 #sidebar div.offer .trainday {
-  background-image: url(/ssw/images/training_sun.png);
+  background-image: url(/history/images/training_sun.png);
 }
 #sidebar div.offer .trainnight {
-  background-image: url(/ssw/images/training_moon.png);
+  background-image: url(/history/images/training_moon.png);
 }
 #sidebar div.offer .selfpaced {
-  background-image: url(/ssw/images/offer_selfpaced.png);
+  background-image: url(/history/images/offer_selfpaced.png);
 }
 #sidebar .offer h4 {
   font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
@@ -912,19 +897,17 @@ div#sidebar .first {
 /*testimonial for sidebar*/
 #sidebar .sidebarTestimonial {
   display: block;
-  margin: 0px;
+  margin: 0;
   padding-top: 25px;
 }
-
 #sidebar .testimonial blockquote p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1.2em;
-  background-image: url(/ssw/images/quote_open_home.gif);
+  background-image: url(/history/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
-
 #sidebar .testimonial p {
   font-weight: bold;
   font-style: normal;
@@ -936,68 +919,63 @@ div#sidebar .first {
   font-style: italic;
   font-weight: normal;
   font-size: 1em;
-  background-image: url(/ssw/images/quote_open_home.gif);
+  background-image: url(/history/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
 #sidebar .rbtop div {
-  background: url(/ssw/images/tlw.gif) no-repeat top left;
+  background: url(/history/images/tlw.gif) no-repeat top left;
 }
 #sidebar .rbtop {
-  background: url(/ssw/images/trw.gif) no-repeat top right;
+  background: url(/history/images/trw.gif) no-repeat top right;
 }
-
 #sidebar .rbbot div {
-  background: url(/ssw/images/blw.gif) no-repeat bottom left;
+  background: url(/history/images/blw.gif) no-repeat bottom left;
 }
 #sidebar .rbbot {
-  background: url(/ssw/images/brw.gif) no-repeat bottom right;
+  background: url(/history/images/brw.gif) no-repeat bottom right;
 }
-
 /*end sidebar testimonial*/
 #maincontent .accordionHeader {
   padding: 5px 5px 7px 30px;
   margin: 5px 0;
-  background-image: url(/ssw/company/images/accordion_headers.gif);
+  background-image: url(/history/company/images/accordion_headers.gif);
   background-repeat: no-repeat;
 }
 #maincontent .accordionHeaderSelected {
   padding: 5px 5px 7px 30px;
   margin-top: 5px;
-  background-image: url(/ssw/company/images/accordion_headers_selected.gif);
+  background-image: url(/history/company/images/accordion_headers_selected.gif);
   background-repeat: no-repeat;
 }
 #maincontentCase .accordionHeader {
   padding: 5px 5px 7px 30px;
   margin-top: 5px;
-  background-image: url(/ssw/company/images/accordion_headers350.gif);
+  background-image: url(/history/company/images/accordion_headers350.gif);
   background-repeat: no-repeat;
 }
-
 #maincontent .accordionHeader a,
 #maincontent .accordionHeader a:link,
 #maincontent .accordionHeader a:visited {
   color: #444;
   text-decoration: none;
-  border-width: 0px;
+  border-width: 0;
 }
 #maincontentCase .accordionHeader a,
 #maincontentCase .accordionHeader a:link {
   color: #444;
   text-decoration: none;
 }
-
 #maincontent .accordionContent {
   padding: 0 20px 30px 30px;
 }
 #maincontentCase .accordionContent {
   padding: 0 20px 30px 30px;
 }
-
 #maincontentFull .accordionHeader {
   padding: 5px 5px 7px 30px;
   margin-top: 15px;
-  background-image: url(/ssw/company/images/accordion_headers_full.gif);
+  background-image: url(/history/company/images/accordion_headers_full.gif);
   background-repeat: no-repeat;
 }
 #maincontentFull h2 {
@@ -1005,11 +983,10 @@ div#sidebar .first {
   margin-top: 15px;
   clear: both;
 }
-
 /*testimonial for services pages*/
 #sidebar .servicesTestimonial {
   display: block;
-  margin: 0px;
+  margin: 0;
   padding: 10px;
   text-align: right;
 }
@@ -1018,7 +995,7 @@ div#sidebar .first {
   font-style: italic;
   font-weight: normal;
   font-size: 1.2em;
-  background: url(/ssw/images/quote_open_services.png) no-repeat;
+  background: url(/history/images/quote_open_services.png) no-repeat;
   padding-top: 5px;
 }
 #sidebar .servicesTestimonial p {
@@ -1027,23 +1004,27 @@ div#sidebar .first {
   font-size: 0.8em;
   line-height: normal;
 }
-
 /* ******************** */
 /* *  Link Css        * */
 /* ******************** */
-
 /* Removing this method and reverting to jquery. Does not suit the complexity of our website
 
+
+
 a[target^="_blank"]:after 
+
 {
+
     padding-left:4px;
+
     content: url(/ssw/images/external.gif);
+
     }
 
+
+
 */
-
 /* Cheat way to remove inline images */
-
 img[src$='LeaveSite.gif'],
 img[src$='leavesite.gif'],
 img[src$='NewWindow.gif'],
@@ -1055,7 +1036,6 @@ img[src$='iconAudio.gif'],
 img[src$='IconPPT.gif'] {
   display: none;
 }
-
 /* ******************** */
 /* *  Image  Caption  * */
 /* ******************** */
@@ -1072,18 +1052,18 @@ dl.imagemap dt {
 }
 dl.imagemap dt img {
   margin: 0 auto;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 15px;
-  color: #cccccc;
+  color: #ccc;
   background: #eee;
 }
 dl.imagemap dd {
   margin: 0;
   border: none;
-  padding: 0px;
+  padding: 0;
   font-size: 90%;
   font-weight: normal;
-  color: #000000;
+  color: #000;
 }
 dl.imagemap dd a {
   border-bottom: 1px dotted #007cc3;
@@ -1106,16 +1086,15 @@ dl.imgRight dt {
 dl.imgRight dd {
   margin: 0;
   border: none;
-  padding: 0px;
+  padding: 0;
   font-size: 90%;
   font-weight: normal;
-  color: #000000;
+  color: #000;
 }
 /* ******************** */
 /* *  EL 23/11/2007   * */
 /* *  CustomError 404 * */
 /* ******************** */
-
 #frmSearch {
   background-image: url(/history/Images/404page.jpg);
   display: block;
@@ -1136,7 +1115,7 @@ dl.imgRight dd {
   vertical-align: middle;
   padding: 5px 0 0 5px;
   border: 1px solid #a6a6a6;
-  color: #333333;
+  color: #333;
 }
 #frmSearch .content #btnSearch {
   position: relative;
@@ -1162,9 +1141,9 @@ Div.quoteRightWrap,
 Div.quote {
   display: block;
   background: #eee;
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-  background-image: url(/ssw/images/quote_open.gif);
+  background-image: url(/history/images/quote_open.gif);
   background-repeat: no-repeat;
   background-position: 10px 5px;
   padding: 10px 10px 0;
@@ -1175,14 +1154,14 @@ Div.quote blockquote {
   text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 120%;
-  margin: 0px 0px 0px 15px;
+  margin: 0 0 0 15px;
   font-style: italic;
 }
 Div.quoteRightWrap blockquote p {
   text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 120%;
-  margin: 0px 0px 0px 15px;
+  margin: 0 0 0 15px;
   font-style: italic;
   font-weight: normal;
 }
@@ -1192,7 +1171,7 @@ Div.quote p {
   font-size: 80%;
   font-weight: bold;
   text-align: right;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 Div.quoteRightWrap p img,
 Div.quote p img {
@@ -1213,32 +1192,30 @@ Div.quote p img {
   min-height: 360px;
 }
 table.clsSSWTable {
-  border: 2px solid #999999;
-  padding: 0px;
+  border: 2px solid #999;
+  padding: 0;
   margin: 4px;
   background-color: #f5f5f5;
 }
-
 table.clsSSWTable th {
   font-weight: bold;
-  color: Black; /*border-bottom: #ef0000; 	/*color: white;*/
-  background-color: #dddddd;
+  color: Black;
+  /*border-bottom: #ef0000; 	/*color: white;*/
+  background-color: #ddd;
   border-bottom: 1px solid #fd1912;
   text-align: left;
 }
-
 table.clsSSWTable tr {
   background-color: #f5f5f5;
 }
-
 table.clsSSWTable td {
   padding: 2px 4px;
 }
-
 table.data {
   font-size: x-small;
   border-color: #999;
-  border-collapse: collapse; /* Cellspacing in IE */
+  border-collapse: collapse;
+  /* Cellspacing in IE */
 }
 table.data tr:nth-child(2n) {
   background-color: white;
@@ -1248,15 +1225,15 @@ table.data tr:nth-child(2n) {
   font-weight: bold;
   font-size: small;
   border-bottom: 2px solid red;
-  background-color: #eeeeee;
+  background-color: #eee;
   font-size: 12px;
   padding: 3px;
   margin: 20px 0 10px 0;
 }
 TABLE.SSWTableShop {
   border: 1px solid #efefef;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   background-color: #f5f5f5;
   width: 100%;
 }
@@ -1287,7 +1264,6 @@ div.TableOfContents {
   padding: 10px 10px 20px 10px;
   margin: 2em 1em;
 }
-
 #contentPane ol,
 #maincontentFull ol,
 #maincontent ol {
@@ -1330,9 +1306,9 @@ dl.image dt img,
 dl.badImage dt img,
 dl.goodImage dt img {
   margin: 0 auto;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 15px;
-  color: #cccccc;
+  color: #ccc;
   background: #eee;
 }
 dl.image dd,
@@ -1340,36 +1316,42 @@ dl.goodImage dd,
 dl.badImage dd {
   margin: 0;
   border: none;
-  padding: 0px;
+  padding: 0;
   font-size: 90%;
   font-weight: bold;
-  color: #000000;
+  color: #000;
 }
 dl.goodImage dd {
-  background-image: url(/ssw/Standards/Rules/images/Good.gif);
+  background-image: url(/history/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
 }
 /*dl.goodImage dd:before
+
 {
+
 	content: "<img src=" /ssw/Standards/Rules/images/Good.gif ">";
+
 }*/
 dl.badImage dd {
-  background-image: url(/ssw/Standards/Rules/images/Bad.gif);
+  background-image: url(/history/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
 }
 /*dl.badImage dd:before
+
 {
+
 	content: "<img src=" /ssw/Standards/Rules/images/Bad.gif ">";
+
 }*/
 #contentPane a {
   text-decoration: underline;
 }
 .greyBox {
-  border: 1px solid #999999;
+  border: 1px solid #999;
   background: #f5f5f5;
   padding: 5px 10px;
   margin: 5px 10px;
@@ -1382,15 +1364,15 @@ dl.badImage dd {
 }
 .loginProgressContainer {
   border: solid 1px #808080;
-  border-width: 1px 0px;
+  border-width: 1px 0;
 }
 .loginProgressHeader {
-  background: url(/ssw/images/sprite.png) repeat-x 0px 0px;
+  background: url(/history/images/sprite.png) repeat-x 0 0;
   border-color: #808080 #808080 #ccc;
   border-style: solid;
-  border-width: 0px 1px 1px;
-  padding: 0px 10px;
-  color: #000000;
+  border-width: 0 1px 1px;
+  padding: 0 10px;
+  color: #000;
   font-size: 9pt;
   font-weight: bold;
   line-height: 1.9;
@@ -1400,75 +1382,136 @@ dl.badImage dd {
   background-color: #f2f2f2;
   border-color: #808080;
   border-style: solid;
-  border-width: 0px 1px;
+  border-width: 0 1px;
   padding: 10px;
 }
-
 /* ******************* */
 /* *   Link Styles   * */
 /* ******************* */
 /* a.external, a.external:link
+
 {
+
 	background-image: url(/ssw/Images/LeaveSite.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: right center;
+
 	padding-top: 0px;
+
 	padding-right: 20px;
+
 	padding-bottom: 1px;
+
 	padding-left: 4px;
+
 }
+
 a.newWindow, a.newWindow:link
+
 {
+
 	background-image: url(/ssw/Images/NewWindow.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: right center;
+
 	padding-top: 0px;
+
 	padding-right: 20px;
+
 	padding-bottom: 1px;
+
 	padding-left: 4px;
+
 } 
+
 a.pdf, a.pdf:link
+
 {
+
 	background-image: url(/ssw/Images/IconPdf.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: left top;
+
 	padding: 3px 4px 3px 20px;
+
 }
+
 a.audio, a.audio:link
+
 {
+
 	background-image: url(/ssw/Images/IconAudio.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: left top;
+
 	padding: 3px 4px 3px 20px;
+
 }
+
 a.video, a.video:link
+
 {
+
 	background-image: url(/ssw/Images/iconVideo.png);
+
 	background-repeat: no-repeat;
+
 	background-position: left top;
+
 	padding: 3px 4px 3px 20px;
+
 }
+
 a.wmv, a.wmv:link
+
 {
+
 	background-image: url(/ssw/Images/iconwmv.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: left top;
+
 	padding: 3px 4px 3px 20px;
+
 }
+
 a.eps, a.eps:link
+
 {
+
 	background-image: url(/ssw/Images/IconEps.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: -4px top;
+
 	padding: 3px 4px 3px 20px;
+
 }
+
 a.gif, a.gif:link
+
 {
+
 	background-image: url(/ssw/Images/iconGif.gif);
+
 	background-repeat: no-repeat;
+
 	background-position: left top;
+
 	padding: 3px 4px 3px 20px;
+
 }
+
 */
 /* ******************* */
 /* *  Rules Styles   * */
@@ -1477,99 +1520,88 @@ a.gif, a.gif:link
 dl.goodCode dt,
 dl.badCode dt {
   background: #e7e6f4 none repeat scroll 0 0;
-  border-color: #999999;
+  border-color: #999;
   border-style: solid;
   border-width: 1px 1px 1px 10px;
   margin: 5px 10px;
   padding: 5px 10px;
   font-size: 10px;
 }
-
 #maincontentFull dl.goodCode dd {
   background-color: transparent;
-  background-image: url(/ssw/Standards/Rules/images/Good.gif);
+  background-image: url(/history/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
 }
-
 #maincontentFull dl.badCode dd {
   background-color: transparent;
-  background-image: url(/ssw/Standards/Rules/images/Bad.gif);
+  background-image: url(/history/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
 }
-
 #maincontentFull dl.code dd,
 #maincontentFull dl.goodCode dd,
 #maincontentFull dl.badCode dd {
   padding: 0 0 0 20px;
   margin-left: 10px;
 }
-
 #maincontentFull dl.code dd,
 dl.goodCode dd,
 dl.badCode dd {
   border: medium none;
-  color: #000000;
+  color: #000;
   font-size: 11px;
   font-weight: bold;
 }
-
 #maincontentFull .highlight {
-  background-color: #ffff00;
+  background-color: #ff0;
 }
-
 #maincontentFull .strike,
 a.strike {
   text-decoration: line-through;
 }
-
 #maincontentFull .flyoutBox {
-  border-color: #999999;
+  border-color: #999;
   border-style: solid;
   border-width: 1px 0 1px 10px;
   margin: 5px 10px;
   padding: 5px 10px;
 }
-
 #maincontentFull .multimediaBox {
-  background: #ffffcc url(/ssw/Standards/Rules/Images/icon-multimedia.jpg)
+  background: #ffc url(/ssw/Standards/Rules/Images/icon-multimedia.jpg)
     no-repeat scroll 5px 5px;
-  border: 1px dashed #999999;
+  border: 1px dashed #999;
   margin: 5px 10px;
   padding: 10px 5px 15px 100px;
 }
-
 #maincontentFull .infoBox {
-  background-color: #eeeeee;
-  background-image: url(/ssw/Images/icon_info.gif);
+  background-color: #eee;
+  background-image: url(/history/Images/icon_info.gif);
   background-repeat: no-repeat;
   background-position: 5px 5px;
-  border: 1px dashed #999999;
+  border: 1px dashed #999;
   margin: 8px;
   padding: 10px 5px 15px 60px;
 }
-
 #maincontentFull .productBox {
   background-color: #f5f5f5;
-  border: 2px solid #ffcc00;
+  border: 2px solid #fc0;
   margin: 4px;
   padding: 5px;
 }
-
 #maincontentFull .download,
 #maincontent .download {
   /*background-color:#F4F3D5;
-    border:1px solid #FFC68F;*/
+
+        border:1px solid #FFC68F;*/
   margin: 8px 8px 8px 0;
   padding: 8px 0;
   text-align: center;
 }
-
 .interInfoBoxSide {
-  background-color: #eeeeee;
-  background-image: url(/ssw/Images/Icon_attention.png);
+  background-color: #eee;
+  background-image: url(/history/Images/Icon_attention.png);
   background-repeat: no-repeat;
   background-position: 10px 10px;
-  border: 1px dashed #999999;
+  border: 1px dashed #999;
   padding: 10px;
   float: none;
   margin: 8px;
@@ -1592,16 +1624,13 @@ div.quoteRightWrapImg {
   float: right;
   width: 350px;
 }
-
 #maincontentFull .techBreakfastIcon {
   float: left;
   margin-right: 10px;
 }
-
 #maincontentFull .techBreakfastDescription {
   margin-left: 106px;
 }
-
 #maincontentFull .download,
 #maincontent div.download {
   width: 300px;
@@ -1613,29 +1642,24 @@ div.quoteRightWrapImg {
   padding: 0;
   color: #555;
 }
-
 .NETUGdownload input[type='text'] {
   width: 200px;
   padding: 5px;
 }
-
 .NETUGdownload {
   text-align: center;
-  color: #555555;
+  color: #555;
   margin: 30px auto 50px;
   padding: 0;
 }
-
 .NETUGdownload a#newsletterSignUpButton {
   display: inline-block;
-  *zoom: 1;
   background: transparent url(/ssw/NETUG/Images/NEWbutton.jpg) no-repeat top
     left;
   width: 140px;
   height: 50px;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
-
 #oversizeMaincontent {
   width: 740px;
 }
@@ -1648,45 +1672,38 @@ div.quoteRightWrapImg {
   padding: 5px 15px 0 0;
   margin: 15px 15px 5px 0;
 }
-
 #maincontentFull .logoClient a img {
   border: none;
 }
-
 #maincontentFull .testimonialsOurClients {
   display: block;
   background: #eee;
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-  background-image: url(/ssw/images/quote_open.gif);
+  background-image: url(/history/images/quote_open.gif);
   background-repeat: no-repeat;
   background-position: 10px 5px;
   padding: 10px;
   margin: 10px 15px;
 }
-
 #maincontentFull .testimonialsOurClients blockquote {
   text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 120%;
   font-style: italic;
 }
-
 #maincontentFull .testimonialsOurClients p {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 80%;
   font-weight: bold;
   text-align: right;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   vertical-align: bottom;
 }
-
 #maincontentFull div.caseStudy {
   margin-left: 15px;
 }
-
 /**** display none to hide the unwanted content place holder form sub-master page****/
-
 .notshow {
   display: none;
 }
@@ -1703,9 +1720,8 @@ img.regist_grey {
   text-align: left;
   font-size: 11px;
   line-height: 130%;
-  margin-top: 0px;
+  margin-top: 0;
 }
-
 .joeVid p {
   margin: 0 0 0 10px;
   padding: 0 !important;
@@ -1714,13 +1730,11 @@ img.regist_grey {
 }
 /*seperate css from imgRight by using presenter's name to switch between class*/
 .joe {
-  background: transparent url('/ssw/Events/Images/hover_joe.jpg') no-repeat 0 0;
+  background: transparent url(/ssw/Events/Images/hover_joe.jpg) no-repeat 0 0;
 }
 .adam {
-  background: transparent url('/ssw/Company/Images/video_Adam.jpg') no-repeat 0
-    0;
+  background: transparent url(/ssw/Company/Images/video_Adam.jpg) no-repeat 0 0;
 }
-
 #subpage a.imgRight {
   width: 182px;
   height: 182px;
@@ -1737,7 +1751,6 @@ img.regist_grey {
   background-position: 0 -182px;
   border-bottom: none;
 }
-
 /* start video player styles */
 #wrap {
   height: 100%;
@@ -1748,7 +1761,6 @@ img.regist_grey {
   z-index: 1;
   background: black;
 }
-
 #homeVidWrapper {
   width: 522px;
   height: 298px;
@@ -1761,14 +1773,12 @@ img.regist_grey {
   display: none;
   z-index: 100;
 }
-
 #silverlightControlHost {
   background: black url(/ssw/Video/loading.gif) scroll no-repeat center center;
   width: 512px;
   height: 288px;
   border: 5px solid #333;
 }
-
 #homeVidWrapper .closebutton,
 #homeVidWrapper .popup {
   border: 1px solid #333;
@@ -1780,30 +1790,25 @@ img.regist_grey {
   line-height: 13px;
   font-weight: bold;
 }
-
 #homeVidWrapper a {
   color: white;
 }
-
 #homeVidWrapper .closebutton a {
   padding: 0 15px;
 }
-
 #homeVidWrapper .closebutton,
 #homeVidWrapper .closebutton a {
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 40px;
   height: 15px;
 }
-
 #homeVidWrapper .popup {
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   width: 135px;
   height: 15px;
 }
-
 /* Event styles */
 #eventsummary {
   font-family: Arial, Helvetica, Sans-Serif;
@@ -1826,7 +1831,8 @@ img.regist_grey {
   border-bottom: 4px solid #b6b6b6;
   padding-bottom: 23px;
   margin-bottom: 0;
-  min-height: 65px; /*this is the same height as the image thumbnail*/
+  min-height: 65px;
+  /*this is the same height as the image thumbnail*/
 }
 #eventsummary ul li,
 #eventsummary ul li ul li {
@@ -1846,8 +1852,6 @@ img.regist_grey {
   border-top: 1px solid #ccc;
   padding: 1px 0;
 }
-#eventsummary ul.schedule ul {
-}
 #eventsummary ul.schedule a {
   color: #333;
   text-decoration: none;
@@ -1856,10 +1860,11 @@ img.regist_grey {
 #eventsummary ul.schedule li li a:hover {
   color: #666;
   text-decoration: underline;
-  cursor: pointer; /*this is to force pointer in IE*/
+  cursor: pointer;
+  /*this is to force pointer in IE*/
 }
 #eventsummary ul.schedule li li {
-  border-left: 1px solid #cccccc;
+  border-left: 1px solid #ccc;
   display: block;
   float: left;
   font-size: 12px;
@@ -1873,24 +1878,20 @@ img.regist_grey {
   line-height: 13px;
   padding-top: 2px;
 }
-
 #eventsummary ul.conference li li {
   height: 40px;
   margin-left: 1px;
-  margin-top: 0px;
-  padding-top: 0px;
+  margin-top: 0;
+  padding-top: 0;
 }
-
 #eventsummary ul.conference li li.conferencelocation {
   background: none;
   width: 115px;
   line-height: 18px;
 }
-
 #eventsummary ul.conference li li.conferencelocation:hover {
   background: none;
 }
-
 #eventsummary ul.schedule li li span {
   display: block;
   font-weight: bold;
@@ -1939,94 +1940,76 @@ span.bookNow {
   width: 120px;
   padding: 0 0 0 12px;
 }
-
 #eventsummary ul.conference > li strong {
   line-height: normal;
   height: auto;
   padding: 5px 0 8px 12px;
 }
-
 #eventsummary ul.conference > li.flag {
   height: 50px;
   line-height: 50px;
 }
-
 #eventsummary ul.conference > li.flag strong {
   padding: 10px 0 8px 12px;
   width: 150px;
 }
-
 #eventsummary ul.conference li.flag li {
   line-height: 50px;
   height: 50px;
-  margin-top: 0px;
+  margin-top: 0;
 }
-
 #eventsummary ul.conference li.flag li a span {
   margin-top: 16px;
 }
-
 #eventsummary ul.conference li.discount {
   border-left: none;
   color: Red;
   line-height: 50px;
   width: 50px;
 }
-
 #eventsummary ul.conference li.discount:hover {
   background: white;
   color: Red;
 }
-
 #eventsummary ul.conference > li {
   height: 40px;
 }
-
 #eventsummary ul.conference > li strong span {
   text-transform: uppercase;
   color: #888;
   font-size: 9px;
   padding: 0 0;
 }
-
 #maincontent #eventsummary ul.conferenceprice li:first-child {
   width: 95px;
 }
-
 #maincontentFull #eventsummary ul.conferenceprice li:first-child {
   width: 160px;
 }
-
 #maincontent #eventsummary ul.conferenceprice li {
   width: 54px;
 }
-
 #maincontentFull #eventsummary ul.conferenceprice li {
   width: 160px;
 }
-
 #maincontent ul.conference li li:hover {
   background: #f5f5f5;
   color: #666;
 }
-
 #eventsummary ul.conference li li a span {
   line-height: 15px;
   margin-top: 12px;
 }
-
 #eventsummary ul.conference a {
   border-bottom: 1px dotted #3a66cc;
   color: #3a66cc;
   text-decoration: none;
 }
-
 #eventsummary ul.conference li li a:hover {
   color: red;
   text-decoration: underline;
   border: none;
 }
-
 #eventsummary ul.vitals {
   float: left;
   border-top: 2px solid #fff;
@@ -2103,7 +2086,6 @@ span.bookNow {
   background: #f5f5f5;
   color: #666;
 }
-
 #maincontent ul.events a.title {
   font-size: 15px;
   font-weight: bold;
@@ -2150,18 +2132,15 @@ img.floatleft {
   float: left;
   margin: 0 20px 2.2em 0;
 }
-
 img.left {
   padding-top: 5px;
   float: left;
   padding-right: 10px;
 }
-
 img.right {
   float: right;
   padding-left: 10px;
 }
-
 h1 img.floatleft {
   margin-top: 10px;
 }
@@ -2181,14 +2160,12 @@ img.edgeright {
 .breadcrumblight .current {
   display: none;
 }
-
 .calendarPresenter {
   font-size: 10px;
   color: #999;
   line-height: 12px;
   text-transform: uppercase;
 }
-
 /* Vertical Tabs  ----------------------------------*/
 .ui-tabs-vertical {
   width: 754px;
@@ -2207,7 +2184,8 @@ img.edgeright {
 }
 .ui-tabs-vertical .ui-tabs-nav li a {
   display: block;
-  outline: none; /* hides dotted line in Firefox */
+  outline: none;
+  /* hides dotted line in Firefox */
 }
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected {
   padding-bottom: 0;
@@ -2256,7 +2234,7 @@ img.edgeright {
   padding: 0;
   display: block;
   border-width: 0;
-  background: #fdfdfd url('/ssw/Company/Images/panel_bg.jpg') repeat-x;
+  background: #fdfdfd url(/ssw/Company/Images/panel_bg.jpg) repeat-x;
   width: 445px;
   padding: 25px 10px 0 30px;
   height: 480px;
@@ -2273,10 +2251,9 @@ img.edgeright {
 #maincontentFull #tabs ul.ui-tabs-nav li {
   margin-left: 0;
   padding: 0;
-  background: #fff url('/SSW/Company/Images/list_bg.jpg') no-repeat;
+  background: #fff url(/SSW/Company/Images/list_bg.jpg) no-repeat;
   border-top: 1px solid #e5e5e5;
 }
-
 #maincontentFull #tabs ul li img {
   float: left;
   margin: 9px 10px 0;
@@ -2290,7 +2267,7 @@ img.edgeright {
   color: #3a66cc;
 }
 #maincontentFull #tabs ul.ui-tabs-nav li.ui-state-active {
-  background: transparent url('/SSW/Company/Images/tab_active.png') no-repeat;
+  background: transparent url(/SSW/Company/Images/tab_active.png) no-repeat;
   width: 276px;
   display: block;
   border-top: 1px dotted transparent;
@@ -2299,7 +2276,7 @@ img.edgeright {
   color: #555;
 }
 #maincontentFull #tabs ul.ui-tabs-nav li a span {
-  color: #555555;
+  color: #555;
   font-size: 15px;
   line-height: 15px;
   display: block;
@@ -2307,21 +2284,17 @@ img.edgeright {
 }
 #maincontentFull #tabs ul.ui-tabs-nav li a span.detail {
   font-size: 10px;
-  color: #aaaaaa;
+  color: #aaa;
   padding-top: 0;
 }
 #subpage div.joeVid a {
   border: none;
 }
-
 #maincontentFull .banner {
   margin: 50px 0;
 }
-
 /* end vertical Tabs on Software Audit page*/
-
 /* unique sections */
-
 .challengeSection {
   background-color: #eee;
   border-left: 2px solid #fd1912;
@@ -2339,11 +2312,8 @@ img.edgeright {
   margin: 0;
   padding: 0 10px 5px 20px;
 }
-
 /* end unique sections */
-
 /* Top Level Index */
-
 #maincontentFull ul.topLevelIndex {
   border-bottom: 1px dotted #ddd;
   clear: both;
@@ -2351,7 +2321,6 @@ img.edgeright {
   overflow: auto;
   padding: 0 0 20px;
 }
-
 #maincontentFull ul.topLevelIndex li.section {
   width: 44%;
   float: left;
@@ -2363,7 +2332,6 @@ img.edgeright {
   padding: 0;
   min-height: 100px;
 }
-
 #maincontentFull ul.topLevelIndex li.section img {
   border: 1px solid #c0c0c0;
   float: left;
@@ -2371,18 +2339,15 @@ img.edgeright {
   width: 60px;
   height: 60px;
 }
-
 #maincontentFull ul.topLevelIndex li.section h1 {
   clear: none;
 }
-
 #maincontentFull ul.topLevelIndex li.clear {
   clear: both;
   padding: 0 5% 0 0;
 }
-
 #maincontentFull h1.indexHeading {
-  border-bottom: 1px dotted #dddddd;
+  border-bottom: 1px dotted #ddd;
   color: #444;
   font-size: 30px !important;
   padding-bottom: 10px;
@@ -2411,10 +2376,13 @@ img.edgeright {
 #maincontentFull h2.indexHeading a:hover {
   color: #fd1912;
 }
-
 /* 
 
+
+
 Lightbox Hover effect seen on events/HireConferenceHall.aspx. This can be reused by adding a class "lightbox-hover" to the <a> of image links. See lightboxhover.js for mechanics.
+
+
 
 */
 .overlay {
@@ -2422,19 +2390,17 @@ Lightbox Hover effect seen on events/HireConferenceHall.aspx. This can be reused
   width: 100%;
   background: black;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   text-align: left;
 }
-
 a.lightbox-hover {
   position: relative;
   display: inline-block;
   background: white;
-  margin: 5px 5px 0px 0px;
+  margin: 5px 5px 0 0;
   padding: 5px;
 }
-
 #mainPane a.lightbox-hover,
 #mainPane a.lightbox-hover:link,
 #mainPane a.lightbox-hover:visited,
@@ -2446,13 +2412,11 @@ a.lightbox-hover {
 #subpage a.lightbox-hover:visited {
   border: none;
 }
-
 /* Product Highlights list as in Code Auditor page */
-
 #productHighlights ul li,
 #subpage #titleUX #productHighlights ul li {
   background-image: none;
-  color: #666666;
+  color: #666;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 150%;
@@ -2461,13 +2425,10 @@ a.lightbox-hover {
   margin: 0 0 10px;
   padding-left: 0;
 }
-
 /* Courses Schedule */
-
 #coursesSchedule tr td img {
   display: none;
 }
-
 #coursesSchedule tr.coursesInfo td {
   background-color: #eee;
   border-top: 4px solid #ccc;
@@ -2484,15 +2445,12 @@ a.lightbox-hover {
   background-color: #eee;
   border-top: 4px solid #ccc;
 }
-
 #coursesSchedule tr:hover {
   background-color: #f6f6f6;
 }
-
 #coursesSchedule tr.coursesInfo:hover {
   background-color: #eee;
 }
-
 #coursesSchedule td,
 #coursesSchedule th {
   border-bottom: 1px solid #eee;
@@ -2511,22 +2469,17 @@ a.lightbox-hover {
   width: 61px;
   line-height: 16px;
 }
-
 #coursesSchedule td a span:hover {
   text-decoration: none;
   color: #f4d5d4;
 }
-
 #coursesSchedule td.CoursesTitles {
   width: 20%;
 }
-
 /* Hovering tooltip as seen in events/Scrum-Training-Courses.aspx - see includes/tooltip.js */
-
 .tooltip {
   padding: 5px 0;
 }
-
 .tooltip > .hover {
   display: none;
   width: 370px;
@@ -2534,29 +2487,23 @@ a.lightbox-hover {
   left: 220px;
   overflow: hidden;
 }
-
 .hovergroup {
-  background: url(/ssw/images/tooltipbg.png) no-repeat top left transparent;
-  padding: 0px 30px 25px 15px;
+  background: url(/history/images/tooltipbg.png) no-repeat top left transparent;
+  padding: 0 30px 25px 15px;
 }
-
 .hoverend {
-  background: url(/ssw/images/tooltipend.png) no-repeat top left transparent;
+  background: url(/history/images/tooltipend.png) no-repeat top left transparent;
   height: 15px;
   width: 100%;
 }
-
 .hover h3 {
   line-height: 16px;
   padding-bottom: 15px;
 }
-
 .tooltip:hover {
   background-color: #e9e9e9;
 }
-
 /* z-index : I am not sure if this is still needed but it is good to have proper z-indexes on the right elements... leaving it here */
-
 #wrapper {
   z-index: 0;
 }
@@ -2579,29 +2526,23 @@ a.lightbox-hover {
   z-index: 0;
   margin-bottom: 10px;
 }
-
 /* Temp Video Indexing */
-
 tr.parent + tr.child {
   display: none;
   background-color: #f6f6f6;
 }
-
 .activetr {
   background-color: #f6f6f6;
 }
-
 .VideoSection {
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 11px;
   font-weight: bold;
   padding: 6px;
 }
-
 .VideoSection:hover {
   background: white;
 }
-
 ul.homepage-special-list li {
   display: inline-block;
   background: #eee;
@@ -2616,28 +2557,25 @@ ul.homepage-special-list li {
   font-size: 11px;
   padding: 10px;
 }
-
 ul.homepage-special-list li:hover {
   background: #f7f7f7;
 }
-
 ul.homepage-special-list li h3 {
-  background: url('/ssw/consulting/images/homepage_services.jpg') repeat scroll
-    0 0 transparent;
-  border-color: #aaaaaa #ffffff #ffffff #aaaaaa;
+  background: url(/history/consulting/images/homepage_services.jpg) repeat
+    scroll 0 0 transparent;
+  border-color: #aaa #fff #fff #aaa;
   border-style: solid;
   border-width: 1px;
-  color: #ffffff;
+  color: #fff;
   font-size: 12px;
   font-weight: normal;
   height: 80px;
   padding-left: 77px;
   padding-right: 10px;
   padding-top: 40px;
-  text-shadow: 0 -1px 1px #000000;
+  text-shadow: 0 -1px 1px #000;
   width: 131px;
 }
-
 ul.homepage-special-list li h3.SharePoint {
   background-position: left top;
 }
@@ -2650,15 +2588,12 @@ ul.homepage-special-list li h3.Silverlight {
 ul.homepage-special-list li h3.Teams {
   background-position: right bottom;
 }
-
 ul.homepage-special-list li a.readmore {
   font-size: 10px;
 }
-
 ul.homepage-special-list li p {
   padding: 5px;
 }
-
 #mainPane div.OtherServices {
   clear: both;
 }
@@ -2666,7 +2601,6 @@ ul.homepage-special-list li p {
   text-decoration: none;
   border-bottom: none;
 }
-
 ul.services-rollover li {
   float: left;
   background: #ccc;
@@ -2679,18 +2613,16 @@ ul.services-rollover li {
   height: 67px;
   cursor: pointer;
 }
-
 ul.services-rollover li a.overlayhost {
   background: none repeat scroll 0 0 black;
   bottom: 0;
   display: block;
   padding-left: 10px;
-  padding-top: 0px;
+  padding-top: 0;
   position: absolute;
   width: 147px;
   height: 67px;
 }
-
 ul.services-rollover a.overlayhost div.hpoverlay {
   background: none repeat scroll 0 0 #333;
   bottom: 0;
@@ -2700,24 +2632,20 @@ ul.services-rollover a.overlayhost div.hpoverlay {
   position: absolute;
   width: 157px;
 }
-
 #mainPane ul.services-rollover a.overlayhost .hpDescription {
   padding: 15px 5px 2px 5px;
   color: #ddd;
-  text-shadow: #000000 2px 2px 1px;
+  text-shadow: #000 2px 2px 1px;
 }
-
 ul.services-rollover li:hover {
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
 }
-
 .homepage-buttons {
   padding: 20px 20px 10px 20px;
 }
-
 .homepage-buttons a {
   background: transparent url(/ssw/images/homepage_buttons3.jpg) no-repeat
     bottom;
@@ -2726,13 +2654,11 @@ ul.services-rollover li:hover {
   display: inline-block;
   outline: none;
 }
-
 #mainPane div#no-underline a {
   border-bottom: none;
   padding: none;
   text-decoration: none;
 }
-
 a#homepage-consulting {
   background-position: bottom left;
 }
@@ -2742,7 +2668,6 @@ a#homepage-training {
 a#homepage-products {
   background-position: bottom center;
 }
-
 .homepage-buttons a#homepage-consulting:hover {
   background-position: center left;
 }
@@ -2752,7 +2677,6 @@ a#homepage-products {
 .homepage-buttons a#homepage-products:hover {
   background-position: center center;
 }
-
 .homepage-buttons a#homepage-consulting:active {
   background-position: top left;
 }
@@ -2762,62 +2686,51 @@ a#homepage-products {
 .homepage-buttons a#homepage-products:active {
   background-position: top center;
 }
-
 .ConsultingOptionsButtons {
   background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
     repeat-x top left;
   padding-top: 16px;
   padding-left: 20px;
 }
-
 .ConsultingOptions-Text {
   background: transparent
     url(/ssw/consulting/images/consulting-optionsTextBG.jpg) repeat-x top left;
 }
-
 .ConsultingOptions-Text > div {
   padding: 10px 45px;
   min-height: 350px;
 }
-
 .ConsultingOptions-Text div.activity {
   width: 270px;
   float: right;
   margin-left: 15px;
 }
-
 .ConsultingOptions-Text > div > div {
   padding-top: 15px;
-  border-top: dashed 1px #dddddd;
+  border-top: dashed 1px #ddd;
 }
-
 .ConsultingOptions-Text h1 {
   padding-bottom: 10px;
   padding-top: 25px;
 }
-
 .ConsultingOptions-Text table.burndown {
   width: 100%;
   border-collapse: collapse;
 }
-
 .ConsultingOptions-Text table.burndown td {
-  background: #666666;
-  color: #eeeeee;
+  background: #666;
+  color: #eee;
   padding-left: 22px;
 }
-
 .ConsultingOptions-Text div.activity table.burndown td {
-  padding: 15px 0px 20px 20px;
+  padding: 15px 0 20px 20px;
 }
-
 .ConsultingOptions-Text table.burndown tr.even td {
-  background: #999999;
+  background: #999;
 }
-
 .ConsultingOptions-Text table.burndown th {
-  background: #555555;
-  color: #eeeeee;
+  background: #555;
+  color: #eee;
   font-weight: bold;
   border-top-right-radius: 10px;
   -moz-border-radius-topleft: 10px;
@@ -2826,15 +2739,12 @@ a#homepage-products {
   padding: 8px 20px;
   text-align: left;
 }
-
 .ConsultingOptions-Text table.burndown img {
   width: 660px;
 }
-
 .ConsultingOptions-Text table.burndown img.thumbnail {
   width: 100px;
 }
-
 #subpage .ConsultingOptions-Text table.burndown a,
 .ConsultingOptions-Text table.burndown h4 {
   font-size: 18px;
@@ -2844,16 +2754,13 @@ a#homepage-products {
   margin-bottom: 15px;
   border-color: #eee;
 }
-
 #subpage .ConsultingOptions-Text table.burndown a:hover {
   color: red;
   border-bottom: solid 1px red;
 }
-
 .ConsultingOptions-Text table.burndown p {
   font-size: 11px;
 }
-
 #subpage .ConsultingOptionsButtons a.expert {
   background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
     no-repeat -16px -294px;
@@ -2863,7 +2770,6 @@ a#homepage-products {
   border-bottom: none;
   cursor: pointer;
 }
-
 #subpage .ConsultingOptionsButtons a.team {
   background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
     no-repeat -401px -294px;
@@ -2873,17 +2779,14 @@ a#homepage-products {
   border-bottom: none;
   cursor: pointer;
 }
-
 #subpage .ConsultingOptionsButtons a.expert:hover {
   background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
     no-repeat -16px -155px;
 }
-
 #subpage .ConsultingOptionsButtons a.team:hover {
   background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
     no-repeat -401px -155px;
 }
-
 .consulting-image {
   background: transparent url(/ssw/company/Images/showcases/thum_template.jpg)
     no-repeat;
@@ -2891,18 +2794,15 @@ a#homepage-products {
   float: right;
   width: auto;
 }
-
 #subpage #titleUX ul.arrow li {
-  background-image: url(/ssw/images/arrow_tiny.gif);
+  background-image: url(/history/images/arrow_tiny.gif);
 }
-
 .image-caption {
   color: #aaa;
   padding: 20px 5px;
   width: 290px;
   font-size: 11px;
 }
-
 #maincontent .eventpast ul li {
   height: 49px;
   display: block;
@@ -2911,28 +2811,24 @@ a#homepage-products {
   margin-left: 0;
   padding: 1px 0 1px 0;
 }
-
 #maincontent .eventpast > ul {
   border-top: solid 1px #ccc;
 }
-
 #maincontent .eventpast ul > li strong {
   float: left;
-  background: url('/ssw/images/schedulebg.png') no-repeat scroll right center
+  background: url(/history/images/schedulebg.png) no-repeat scroll right center
     #e5e5e5;
   padding: 5px 15px;
   width: 120px;
   font-size: 12px;
 }
-
 #maincontent .eventpast ul li li {
   float: left;
   background-image: none;
   display: block;
   border-bottom: none;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
-
 #maincontent .eventpast ul li li span {
   color: #777;
   display: block;
@@ -2940,45 +2836,38 @@ a#homepage-products {
   font-weight: bold;
   line-height: 50px;
 }
-
 #maincontent .eventpast ul > li strong span {
   color: #777;
   font-size: 9px;
   padding: 0;
   text-transform: uppercase;
 }
-
 .video {
   /*    background: white url(/ssw/images/videobg.jpg) no-repeat top left; */
-  padding: 30px 0px;
+  padding: 30px 0;
   text-align: center;
 }
-
 /* CONTACT US PAGE */
-
 p.contactActionEmail,
 p.contactActionPhone {
   font-size: 18px;
   float: left;
   padding: 5px 0 0 44px;
-  background: url(/ssw/company/Images/contactIcons.png) no-repeat 0 0;
+  background: url(/history/company/Images/contactIcons.png) no-repeat 0 0;
   height: 26px;
   color: #575757;
   margin-top: 10px;
 }
-
 p.contactActionEmail {
   background-position: 0 0;
 }
-
 p.contactActionPhone {
   background-position: 0 -30px;
   margin-left: 30px;
 }
-
 h2.offices,
 h3.offices {
-  background: url(/ssw/company/Images/officesHeading_bg.png) repeat-x 0 0;
+  background: url(/history/company/Images/officesHeading_bg.png) repeat-x 0 0;
   height: 20px;
   width: 100%;
   font-weight: bold;
@@ -2986,66 +2875,54 @@ h3.offices {
   font-size: 14px;
   clear: both;
 }
-
 h3.offices {
   background: none;
   margin-bottom: 10px;
 }
-
 h2.offices a,
 h3.offices a {
   font-weight: normal;
   font-size: 0.9em;
 }
-
 h2.offices div.aus,
 h2.offices div.chi,
 h2.offices div.uk,
 h2.offices div.mal,
 h2.offices div.bra {
-  background: url(/ssw/company/Images/flags.png) no-repeat 0 0;
+  background: url(/history/company/Images/flags.png) no-repeat 0 0;
   width: 32px;
   height: 24px;
   display: block;
   float: left;
   margin-right: 10px;
 }
-
 h2.offices div.uk {
   background-position: 0 0;
 }
-
 h2.offices div.bra {
   background-position: -32px 0;
 }
-
 h2.offices div.mal {
   background-position: -64px 0;
 }
-
 h2.offices div.chi {
   background-position: -96px 0;
 }
-
 h2.offices div.aus {
   background-position: -128px 0;
 }
-
 a.directions {
-  background: url(/ssw/company/Images/earth_view.png) no-repeat 0 0;
+  background: url(/history/company/Images/earth_view.png) no-repeat 0 0;
   padding-left: 20px;
 }
-
 /*contact form */
-
 .contactForm {
   background: #f0f0f0;
   padding: 16px;
   color: #777;
 }
-
 .contactForm a.button {
-  background: url('/ssw/shop/images/button.png') no-repeat scroll right top
+  background: url(/history/shop/images/button.png) no-repeat scroll right top
     transparent;
   border: 0 none !important;
   color: white;
@@ -3060,9 +2937,8 @@ a.directions {
   position: relative;
   text-decoration: none !important;
 }
-
 .contactForm a.button span {
-  background: url('/ssw/shop/images/button.png') no-repeat scroll left top
+  background: url(/history/shop/images/button.png) no-repeat scroll left top
     transparent;
   display: inline-block;
   height: 30px;
@@ -3072,50 +2948,40 @@ a.directions {
   white-space: nowrap;
   color: #fff;
 }
-
 .contactForm a#btnSend {
   border: none;
 }
-
 .contactForm input.long {
   width: 270px;
 }
-
 .contactForm textarea.long {
   width: 410px;
   padding: 3px;
   font-size: 14px;
 }
-
 .contactForm input[type='text'],
 input[type='password'] {
   font-size: 14px;
   margin: 0 0 10px;
   padding: 3px;
 }
-
 .contactForm label {
   font-weight: bold;
 }
-
 .contactForm span.validation {
   color: Red;
 }
-
 .creditcard {
-  background: url('/ssw/company/Images/creditcards.png') no-repeat scroll left
+  background: url(/history/company/Images/creditcards.png) no-repeat scroll left
     center transparent;
   line-height: 24px;
 }
-
 #maincontent ul.greenTicks li {
-  background: url('/ssw/images/tick_small.png') no-repeat scroll left center
+  background: url(/history/images/tick_small.png) no-repeat scroll left center
     transparent;
   padding: 3px 5px 3px 30px;
 }
-
 /* HOSTING TABLE */
-
 #hostingPlansTable {
   border: 1px solid #ccc;
   margin: 20px 0;
@@ -3123,33 +2989,28 @@ input[type='password'] {
   background: #fff;
 }
 #hostingPlansTable thead.hostingOptions {
-  color: #666666;
+  color: #666;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
 }
-
 #hostingPlansTable thead.hostingOptions tr td {
   border-bottom: 1px dotted #ccc;
   padding: 10px 0;
 }
-
 #hostingPlansTable th {
   text-align: left;
   font-weight: normal;
   width: 25%;
 }
-
 #hostingPlansTable td,
 #hostingPlansTable th {
   padding: 5px;
 }
-
 #mainContent #hostingPlansTable a.btn {
   border: none;
   text-decoration: none;
 }
-
 #hostingPlansTable .lighter {
   background: none repeat scroll 0 0 #fff;
 }
@@ -3157,25 +3018,22 @@ input[type='password'] {
   background: none repeat scroll 0 0 #f0f0f0;
 }
 #hostingPlansTable .section {
-  background: none repeat scroll 0 0 #cccccc;
-  color: #ffffff;
+  background: none repeat scroll 0 0 #ccc;
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
   padding: 5px;
 }
-
 div.note {
   background: #f0f0f0;
   padding: 10px;
   margin: 10px 0;
 }
-
 div.exception {
   font-size: 11px;
   font-style: italic;
   margin-bottom: 15px;
 }
-
 th span.usServerMini,
 th span.auServerMini {
   background-position: 0 0;
@@ -3183,15 +3041,12 @@ th span.auServerMini {
   font-size: 11px;
   padding-left: 20px;
 }
-
 th span.usServerMini {
-  background-image: url('images/smallflag_us.png');
+  background-image: url(images/smallflag_us.png);
 }
-
 th span.auServerMini {
-  background-image: url('images/smallflag_au.png');
+  background-image: url(images/smallflag_au.png);
 }
-
 th span.usServer,
 th span.auServer {
   background-position: 0 0;
@@ -3200,58 +3055,45 @@ th span.auServer {
   font-weight: bold;
   padding-left: 30px;
 }
-
 th span.usServer {
-  background-image: url('images/flag_us.png');
+  background-image: url(images/flag_us.png);
 }
-
 th span.auServer {
-  background-image: url('images/flag_au.png');
+  background-image: url(images/flag_au.png);
 }
-
 .VS2008 {
-  background: url('images/VS2008Icon.png') no-repeat scroll 0 3px transparent;
+  background: url(images/VS2008Icon.png) no-repeat scroll 0 3px transparent;
   margin-left: 4px;
   padding-left: 24px;
 }
-
 .VS2010 {
-  background: url('images/VS2008Icon.png') no-repeat scroll 0 3px transparent;
+  background: url(images/VS2008Icon.png) no-repeat scroll 0 3px transparent;
   padding-left: 24px;
   margin-left: 4px;
 }
-
 .mainTestimonial {
-  background: url('images/mainTestimonial_bg.png') no-repeat scroll 5px 20px
+  background: url(images/mainTestimonial_bg.png) no-repeat scroll 5px 20px
     #f8f8f8;
   font-size: 14px;
   line-height: 20px;
   margin-top: -15px;
   padding: 25px 20px 20px 60px;
 }
-
-.mainTestimonialAuthor {
-}
-
 .mainTestimonialAuthor img {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #fff;
+  border: 1px solid #ccc;
   float: left;
   padding: 2px;
   margin-right: 12px;
 }
-
 .mainTestimonialAuthor p {
   padding: 5px 0;
 }
-
 .mainTestimonialAuthor p span {
   text-transform: uppercase;
   font-size: 11px;
 }
-
 /* PRODUCT SUMMARY */
-
 #productSummaryContainer {
   width: 100%;
   padding: 0;
@@ -3261,34 +3103,29 @@ th span.auServer {
 #productSummaryContainer td {
   vertical-align: top;
 }
-
 #productSummaryContainer h3 {
   border-bottom: none;
-  padding: 0px 10px 0px 0px;
-  margin: 0px 0px;
+  padding: 0 10px 0 0;
+  margin: 0 0;
   line-height: normal;
   height: auto;
 }
-
 #productSummaryContainer h4 {
   display: inline;
   font-weight: normal;
-  padding: 0px 0px;
-  margin: 0px 0px;
+  padding: 0 0;
+  margin: 0 0;
   line-height: normal;
   font-size: 90%;
 }
-
 #productSummaryContainer a {
   font-size: 90%;
 }
-
 #productSummaryContainer p {
   padding: 5px 0;
   margin: 0;
   line-height: 18px;
 }
-
 .productSummaryColumn {
   display: block;
   float: left;
@@ -3296,96 +3133,80 @@ th span.auServer {
   margin: none;
   padding: none;
 }
-
 .productSummaryCategory,
 .productSummaryImportantCategory {
   border: 1px solid #ccc;
   margin: 15px 5px 20px;
   padding: 0 0 10px;
 }
-
 .productSummaryCategory h2,
 .productSummaryImportantCategory h2 {
   /*display: inline-block;*/
-
   font-size: 125%;
   border-bottom: solid 2px red;
   background-color: #f0f0f0;
   padding: 5px;
   margin: none;
 }
-
 .productSummaryImportantCategory img {
   margin-top: 5px;
   margin-right: 5px;
 }
-
 .productSummaryCategory h2 {
   color: #000;
 }
 .productSummaryImportantCategory h2 {
   color: #fd1912;
 }
-
 .productSummaryEntry {
-  padding: 0px 10px;
+  padding: 0 10px;
   margin-top: 20px;
 }
-
 /* END OF PRODUCT SUMMARY */
-
 .testimonials {
   width: 468px;
   margin: 20px auto;
   padding: 10px 0;
   clear: both;
-  background: transparent url('/ssw/Testimonials/images/testimonial_top.png')
+  background: transparent url(/ssw/Testimonials/images/testimonial_top.png)
     no-repeat top left;
 }
-
 .testimonials-bg {
-  background: transparent url('/ssw/Testimonials/images/testimonial_repeat.png')
+  background: transparent url(/ssw/Testimonials/images/testimonial_repeat.png)
     repeat-y top left;
   font-size: 12px;
   font-style: italic;
   padding-left: 10px;
 }
-
 .testimonials-content {
-  background: transparent url('/ssw/Testimonials/images/testimonial_quote.png')
+  background: transparent url(/ssw/Testimonials/images/testimonial_quote.png)
     no-repeat top left;
-  padding: 10px 20px 0px 50px;
+  padding: 10px 20px 0 50px;
 }
-
 .testimonials-content-bottom {
-  background: transparent url('/ssw/Testimonials/images/testimonial_bottom.png')
+  background: transparent url(/ssw/Testimonials/images/testimonial_bottom.png)
     no-repeat top left;
   height: 25px;
 }
-
 .testimonials-source {
   width: 300px;
   float: right;
   text-align: right;
-  padding: 5px 5px 0px 0px;
+  padding: 5px 5px 0 0;
 }
-
 .testimonials-source-name {
   display: block;
   font-size: 14px;
   font-family: Trebuchet MS, Arial, Sans-Serif;
   color: #ea8d1e;
 }
-
 .testimonials-source-link {
   font-size: 10px;
 }
-
 .testimonials-edit {
   float: left;
   padding-left: 8px;
 }
-
 .testimonials-edit a,
 .testimonial-new a {
   width: 20px;
@@ -3393,33 +3214,28 @@ th span.auServer {
   border: #999 1px dotted;
   padding: 2px 5px;
 }
-
 .testimonials-edit a:hover,
 .testimonial-new a:hover {
   border: red 1px solid;
 }
-
 .testimonials-logo {
-  background: url('/ssw/Testimonials/images/testimonial_logo.png') no-repeat
+  background: url(/history/Testimonials/images/testimonial_logo.png) no-repeat
     right top;
   width: 67px;
   height: 57px;
   float: right;
 }
-
 .testimonials-logo img {
   width: 50px;
 }
-
 #subpage div.CMS-buttons a {
-  background-image: url('/ssw/consulting/images/CMS-buttons.jpg');
+  background-image: url(/history/consulting/images/CMS-buttons.jpg);
   width: 205px;
   height: 94px;
   display: block;
   border-bottom: none;
   margin-bottom: 5px;
 }
-
 div.CMS-buttons a.CMS-SharePoint {
   background-position: top right;
 }
@@ -3453,68 +3269,56 @@ div.CMS-buttons a.CMS-DNN:focus {
   background-position: center left;
   outline: none;
 }
-
 #headerMenu .RadMenu_Default .rmRootGroup {
   background: none;
-  border: 0px;
+  border: 0;
 }
-
 .MenuImg {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   height: 80px;
 }
-
 #headerMenu .RadMenu .rmGroup .rmText {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   background-image: none;
 }
-
 #headerMenu .RadMenu_Default .rmGroup,
 .RadMenu_Default .rmMultiColumn,
 .RadMenu_Default .rmGroup .rmVertical {
   background: #fff;
 }
-
 #headerMenu .MenuWrapper {
-  padding: 0px 0px 8px 0px;
+  padding: 0 0 8px 0;
 }
-
 #headerMenu a.rmLink {
   background-image: none;
   line-height: 29px;
 }
-
 #headerMenu a.rmLink:hover,
 #headerMenu a.rmExpanded,
 #headerMenu a.rmExpanded:hover {
   background-color: #bcbcbc;
   color: #fff;
 }
-
 #headerMenu li.hide > a.rsmLink {
   display: none;
 }
-
 #headerMenu .rsmLink,
 #headerMenu .rsmItem {
   display: block;
-  margin-left: 0px;
-  padding-bottom: 0px;
+  margin-left: 0;
+  padding-bottom: 0;
 }
-
 #headerMenu .rsmLink {
   line-height: normal;
   padding-left: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
 #headerMenu .rsmLevel2 {
   padding-bottom: 5px;
 }
-
 #headerMenu .NoChild .rsmLink {
   font-family: Tahoma;
   font-size: 13px;
@@ -3523,13 +3327,12 @@ div.CMS-buttons a.CMS-DNN:focus {
   background: #999;
   border-bottom: 1px solid #999;
   border-top: 1px solid #ccc;
-  text-shadow: #999 0px 1px 0px;
-  margin-left: 0px;
+  text-shadow: #999 0 1px 0;
+  margin-left: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
 }
-
 #headerMenu .rsmLevel2 .rsmLink {
   font-size: 11px;
   background: transparent;
@@ -3544,11 +3347,9 @@ div.CMS-buttons a.CMS-DNN:focus {
   padding-bottom: 4px;
   text-shadow: none;
 }
-
 #headerMenu .RadMenu_Default .rmGroup {
   background-image: none;
 }
-
 #headerMenu .rsmLink {
   color: #333;
   background: transparent;
@@ -3560,60 +3361,41 @@ div.CMS-buttons a.CMS-DNN:focus {
   padding-top: 12px;
   padding-bottom: 4px;
 }
-
 #headerMenu .rsmLevel2 .rsmLink:visited {
   color: #999;
 }
-
 #headerMenu .rsmLink:hover,
 #headerMenu .rsmLevel2 .rsmLink:hover {
-  color: #cc0000;
-  border-bottom: 1px solid #cc0000;
+  color: #c00;
+  border-bottom: 1px solid #c00;
 }
-
 #headerMenu li.Popular {
-  background: url('/ssw/images/popular.png') no-repeat 120px;
+  background: url(/history/images/popular.png) no-repeat 120px;
 }
-
 #headerMenu .NoChild .rsmLink:hover {
   background: #bcbcbc;
   color: #fff;
   border-bottom: 1px solid #999;
 }
-
-#headerMenu .2col {
-  margin-right: 5px;
-}
-
 #headerMenu .LoginMenu {
   margin-top: 8px;
 }
-
-#headerMenu .hide {
-  *margin-top: -16px;
-  *padding-bottom: 5px;
-}
-
 #Newsletter {
   float: right;
   margin-bottom: 20px;
   margin-top: 10px;
   display: inline-block;
   zoom: -1;
-  *float: none;
 }
-
 #Newsletter input {
   padding: 6px 1px;
   width: 115px;
 }
-
 #Newsletter a {
   font-size: 10px;
 }
-
 #Newsletter a.button {
-  margin: 10px 0px 10px 5px;
+  margin: 10px 0 10px 5px;
   border: 0;
   padding: 0 2px 0 0;
   display: inline-block;
@@ -3625,11 +3407,10 @@ div.CMS-buttons a.CMS-DNN:focus {
   font-weight: bold;
   font-size: 13px;
   text-decoration: none !important;
-  background: transparent url('/ssw/shop/images/button.png') no-repeat right top;
+  background: transparent url(/ssw/shop/images/button.png) no-repeat right top;
 }
-
 #Newsletter a.button span {
-  background: transparent url('/ssw/shop/images/button.png') no-repeat left top;
+  background: transparent url(/ssw/shop/images/button.png) no-repeat left top;
   height: 30px;
   line-height: 29px;
   margin: 0 0 0 -5px;
@@ -3637,88 +3418,64 @@ div.CMS-buttons a.CMS-DNN:focus {
   display: inline-block;
   white-space: nowrap;
 }
-
 #Newsletter a.button:active {
   background-position: right bottom;
 }
-
 #Newsletter a.button:active span {
   background-position: left bottom;
 }
-
 div.scrum-flow {
   width: 100%;
-  *margin-bottom: 10px;
 }
-
 div.scrum-flow-one {
-  background: url('/ssw/consulting/images/ScrumFlow-1.png') top left;
+  background: url(/history/consulting/images/ScrumFlow-1.png) top left;
   width: 171px;
   height: 108px;
   display: inline-block;
   position: relative;
   z-index: 5;
-  *display: inline;
-  *zoom: 1;
 }
-
 div.scrum-flow div.scrum-flow-one:hover {
-  background: url('/ssw/consulting/images/ScrumFlow-1.png') bottom left;
+  background: url(/history/consulting/images/ScrumFlow-1.png) bottom left;
 }
-
 div.scrum-flow-two {
-  background: url('/ssw/consulting/images/ScrumFlow-2.png') top left;
+  background: url(/history/consulting/images/ScrumFlow-2.png) top left;
   width: 172px;
   height: 108px;
   position: relative;
   z-index: 4;
   left: -30px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  *left: -25px;
 }
-
 div.scrum-flow div.scrum-flow-two:hover {
-  background: url('/ssw/consulting/images/ScrumFlow-2.png') bottom left;
+  background: url(/history/consulting/images/ScrumFlow-2.png) bottom left;
 }
-
 div.scrum-flow-three {
-  background: url('/ssw/consulting/images/ScrumFlow-3.png') top left;
+  background: url(/history/consulting/images/ScrumFlow-3.png) top left;
   width: 173px;
   height: 108px;
   position: relative;
   z-index: 3;
   left: -60px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  *left: -50px;
 }
-
 div.scrum-flow div.scrum-flow-three:hover {
-  background: url('/ssw/consulting/images/ScrumFlow-3.png') bottom left;
+  background: url(/history/consulting/images/ScrumFlow-3.png) bottom left;
 }
-
 div.scrum-flow-four {
-  background: url('/ssw/consulting/images/ScrumFlow-4.png') top left;
+  background: url(/history/consulting/images/ScrumFlow-4.png) top left;
   width: 173px;
   height: 108px;
   position: relative;
   z-index: 2;
   left: -90px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  *left: -75px;
 }
-
 div.scrum-flow div.scrum-flow-four:hover {
-  background: url('/ssw/consulting/images/ScrumFlow-4.png') bottom left;
+  background: url(/history/consulting/images/ScrumFlow-4.png) bottom left;
 }
-
 div.scrum-flow-five {
-  background: url('/ssw/consulting/images/ScrumFlow-5.png') top left;
+  background: url(/history/consulting/images/ScrumFlow-5.png) top left;
   width: 153px;
   height: 108px;
   position: absolute;
@@ -3726,75 +3483,59 @@ div.scrum-flow-five {
   left: 619px;
   top: 366px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  *top: 371px;
-  *left: 619px;
 }
-
 div.scrum-flow div.scrum-flow-five:hover {
-  background: url('/ssw/consulting/images/ScrumFlow-5.png') bottom left;
+  background: url(/history/consulting/images/ScrumFlow-5.png) bottom left;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav {
   border: none;
-  background: url(/ssw/consulting/images/ScrumFlow_TabBG.png) transparent
-    no-repeat 0px -2px;
+  background: url(/history/consulting/images/ScrumFlow_TabBG.png) transparent
+    no-repeat 0 -2px;
   width: 204px;
   height: 100%;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-state-default {
   background: transparent none;
   border-top: none;
   width: 100%;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-state-active a {
-  background: url(/ssw/consulting/images/ScrumFlow_TabSelect.png) transparent
-    no-repeat top center;
+  background: url(/history/consulting/images/ScrumFlow_TabSelect.png)
+    transparent no-repeat top center;
   border-top: none;
   width: 100%;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-state-hover a span {
   color: Red;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-state-active {
   background: none transparent;
   width: 100%;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-state-active a span {
   color: #fff;
-  text-shadow: #666 0px 1px;
+  text-shadow: #666 0 1px;
   border-bottom: none;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-corner-top {
   padding-top: 1px;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li a span {
-  color: #555555;
+  color: #555;
   display: block;
   font-size: 0.9em;
-  text-shadow: #fff 0px 1px;
+  text-shadow: #fff 0 1px;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li a {
   border: medium none;
   height: 53px;
-  padding-right: 0px;
+  padding-right: 0;
 }
-
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel {
   width: 491px;
   height: 100%;
   padding: 25px 20px 0 25px;
 }
-
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel h2 {
   color: red;
   font-size: 18px;
@@ -3804,77 +3545,65 @@ div.scrum-flow div.scrum-flow-five:hover {
   font-weight: normal;
   padding-bottom: 5px;
 }
-
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li a span {
   border-bottom: 2px groove #fff;
-  margin: 0px 20px;
+  margin: 0 20px;
   line-height: 55px;
-  padding-top: 0px;
+  padding-top: 0;
 }
-
 #maincontentFull .scrum #tabs ul li img {
   float: none;
-  margin: 0px 0px;
+  margin: 0 0;
 }
-
 div.ScrumHeader {
-  background: url(/ssw/consulting/images/ScrumFlowheader.png);
+  background: url(/history/consulting/images/ScrumFlowheader.png);
   height: 325;
   width: 799;
 }
-
 div.ScrumHeader ul {
   line-height: 39px;
   font-size: 15px;
   color: #eee;
-  text-shadow: #666 0px 1px;
-  padding: 125px 0px 44px 65px;
+  text-shadow: #666 0 1px;
+  padding: 125px 0 44px 65px;
 }
-
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel .image-caption {
   width: 491px;
-  padding: 0px 0px;
+  padding: 0 0;
 }
-
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel .image-caption a {
   background: #fafafa;
   padding: 5px;
-  -moz-box-shadow: 0px 0px 2px #999;
-  -webkit-box-shadow: 0px 0px 2px #999;
-  box-shadow: 0px 0px 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  -webkit-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
   display: inline-block;
   border: none;
 }
-
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel .image-caption a:hover {
   background: #fff;
-  -moz-box-shadow: 0px 0px 3px #333;
-  -webkit-box-shadow: 0px 0px 3px #333;
-  box-shadow: 0px 0px 3px #333;
+  -moz-box-shadow: 0 0 3px #333;
+  -webkit-box-shadow: 0 0 3px #333;
+  box-shadow: 0 0 3px #333;
 }
-
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel .image-caption img {
   width: 150px;
 }
-
 .definition {
   position: absolute;
   top: 95px;
   display: none;
 }
-
 .definition-table {
   width: 593px;
-  background: url(/ssw/consulting/images/ScrumFlow-DropBG.png) transparent
+  background: url(/history/consulting/images/ScrumFlow-DropBG.png) transparent
     no-repeat bottom left;
   padding: 1px 20px 20px 20px;
 }
-
 .definition-table table {
   border-collapse: collapse;
   border-bottom: 1px solid #ccc;
 }
-
 .definition-table th {
   border-top: 1px solid #ccc;
   color: #eee;
@@ -3884,15 +3613,13 @@ div.ScrumHeader ul {
   text-align: left;
   padding: 10px;
 }
-
 .definition-table td {
   border-top: 1px solid #ccc;
   color: #4d4d4d;
   width: 70%;
-  margin: 0px;
+  margin: 0;
   padding: 10px;
 }
-
 /* Twitter control */
 #mainPane .twtr-ft a {
   text-decoration: none;
@@ -3906,7 +3633,7 @@ div.ScrumHeader ul {
 }
 .twtr-widget h4,
 .twtr-hd h4 {
-  color: #333333;
+  color: #333;
   font-size: 14px !important;
   margin-bottom: 0.5em;
   padding-top: 7px;
@@ -3928,11 +3655,8 @@ div.ScrumHeader ul {
 .twtr-bd {
   padding: 0 !important;
 }
-
 /* End of Twitter control */
-
 /* End of Facebook control */
-
 .fb-box-section {
   padding: 0 !important;
   border: none !important;
@@ -3940,31 +3664,25 @@ div.ScrumHeader ul {
 .fb-box-section-header {
   border-bottom: none !important;
 }
-
 .fb-box-section .fbConnectWidgetTopmost {
   border-color: #d2d2d2 !important;
 }
-
 /* End of Facebook control */
-
 h2.calloutUG {
   font-size: 12px;
-  background: url(/ssw/images/calendar-ug.png) #f0f0f0 no-repeat 10px center;
+  background: url(/history/images/calendar-ug.png) #f0f0f0 no-repeat 10px center;
   padding: 10px 10px 10px 60px;
   color: #333;
   margin-bottom: 20px;
 }
-
 span.GST {
   color: #666;
   font-size: 10px;
   text-transform: uppercase;
 }
-
 .indent {
   margin-left: 40px;
 }
-
 /*- FILTER OPTIONS -*/
 #filterOptionsContainer {
   float: left;
@@ -3991,7 +3709,6 @@ ul#filterOptions li {
   margin: 0;
   padding-left: 15px;
 }
-
 ul#filterOptions li a {
   font-weight: bold;
   text-decoration: none !important;
@@ -4007,7 +3724,6 @@ ul#filterOptions li.active a {
   background: url(images/filterOptions-active-bg.png) no-repeat left;
   padding-left: 15px;
 }
-
 /*- OUR DATA HOLDER -*/
 ul.ourHolder {
   width: 550px;
@@ -4038,18 +3754,16 @@ ul.ourHolder li.item h3 {
   font-family: Helvetica;
   font-weight: normal;
 }
-
 p#IAmAfter {
   font-family: Helvetica 35 Thin;
   font-size: 18px;
   color: #5d5d5d;
 }
 /*- -*/
-
 blockquote.quote p {
   text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin: 0px 0px 0px 15px;
+  margin: 0 0 0 15px;
   font-style: italic;
 }
 blockquote.quote p span {
