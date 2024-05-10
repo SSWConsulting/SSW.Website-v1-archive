@@ -152,3 +152,7 @@ ARCHIVE_KEY={{ KEY_HERE }}
 - `Priority` - value in powers of 2 e.g. 1, 2, 4, etc. - higher no. = higher priority
 - `Complexity` - value in powers of 2 e.g. 1, 2, 4, etc. - higher no. = higher complexity
 - `Notes` - additional info if required
+
+## Running the Archive script
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sHJU79ONMZA?si=nJDlCnOEYU8ncBnO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
