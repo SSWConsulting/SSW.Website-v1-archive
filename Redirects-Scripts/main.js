@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const cheerio = require("cheerio");
 const createHTMLFileForStatus = require("./generate-url-status-html");
+const createHTMLFileForRedirects = require("./generate-redirect-report");
 
 let urls = [];
 let oldURLs = [];
@@ -149,13 +150,16 @@ async function extractURLStatus(folderPath) {
   traverseDirectory(folderPath, extractTDsFromFile);
   console.log("Extracted unique URLs: ", urls.length);
   await createHTMLFileForStatus(urls);
+  //await createHTMLFileForRedirects(urls);
 }
 
 // Main function to run the script
 async function main(folderPath) {
   // Uncomment this line to generate page for all archived URL status
-  // await extractURLStatus(folderPath);
+  //await extractURLStatus(folderPath);
+
   getRedirectMapping();
+  await createHTMLFileForRedirects(redirectMap);
 }
 
 main(folderPath);
