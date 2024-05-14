@@ -117,13 +117,23 @@ function groupByPath() {
 
 function displayGroupBy() {
   let count = 0;
-  Object.keys(groupedUrls).forEach((path, index) => {
+  let indexx = 1;
+
+  const groupEnteries = Object.entries(groupedUrls);
+  groupEnteries.sort((a, b) => a[1].count - b[1].count);
+  const sortedGroupedUrls = Object.fromEntries(groupEnteries);
+
+  Object.keys(sortedGroupedUrls).forEach((path, index) => {
     const pathInfo = groupedUrls[path];
     const emoji = ConflictingPathIcons[path] ?? "✅";
-    console.log(`${index + 1} - ${emoji} ${path}, Count: ${pathInfo.count}`);
+
+    if (pathInfo.count >= 17) {
+      console.log(`${indexx} - ${emoji} ${path}, Count: ${pathInfo.count}`);
+      count += pathInfo.count;
+      indexx++;
+    }
 
     //console.log("URLs:", pathInfo.urls);
-    count += pathInfo.count;
   });
   console.log("\n\n 🚀~ Total count:", count);
 }
