@@ -2424,7 +2424,7 @@ jQuery(function (ssw, $) {
              
         // filter items when filter link is clicked
         $("#filters a").click(function () {
-            if (!window.location.pathname.toLowerCase().startsWith("/history/events/")) {
+            if (!window.location.pathname.toLowerCase().startsWith("/archived/events/")) {
                 var $this = $(this);
                 // don't proceed if already selected
                 if ($this.hasClass("selected")) {

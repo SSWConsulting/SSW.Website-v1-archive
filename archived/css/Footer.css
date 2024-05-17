@@ -3,8 +3,9 @@
   margin: 0 5px 5px 0;
   padding: 0;
 }
+
 #footer {
-  background-image: url(/history/images/bg_footer.gif);
+  background-image: url(/archived/images/bg_footer.gif);
   background-repeat: repeat-x;
   background-position: 50% top;
   background-color: #eee;
@@ -19,12 +20,14 @@
   clear: both;
   /*width:788px;*/
 }
+
 p.callnow {
   font-size: 11px;
   font-weight: bolder;
   color: #666;
   margin: 0 auto 5px auto;
 }
+
 span.proudly {
   width: 350px;
   position: absolute;
@@ -34,26 +37,33 @@ span.proudly {
   text-align: right;
   text-decoration: underline;
 }
+
 span.proudly img {
   vertical-align: middle;
 }
+
 #footer a {
   color: #333;
 }
+
 #footer a:hover {
   color: #fd1912;
 }
+
 #footer li.first {
   padding-left: 0;
 }
+
 #footer li.last {
   border: none;
 }
+
 #footer span.copyright {
   color: #999;
   padding: 0;
   margin: 0 auto 5px auto;
 }
+
 #footer li {
   display: block;
   margin: 0;
@@ -62,6 +72,7 @@ span.proudly img {
   border-right: 1px solid #000;
   float: left;
 }
+
 p.serverName {
   position: absolute;
   bottom: 0;
@@ -69,19 +80,23 @@ p.serverName {
   font-size: 10px;
   color: #999;
 }
+
 #footer a.email {
-  background-image: url(/history/images/icon_email.gif);
+  background-image: url(/archived/images/icon_email.gif);
   background-repeat: no-repeat;
   background-position: 0 3px;
   padding-left: 13px;
 }
+
 #footer .proudly a,
 #footer .proudly a:link {
   color: #999;
 }
+
 #footer .proudly a:hover {
   color: #fd1912;
 }
+
 span.proudlyAjax {
   width: 350px;
   position: absolute;
@@ -89,6 +104,7 @@ span.proudlyAjax {
   right: 15px;
   text-align: right;
 }
+
 span.proudlyAjax img {
   vertical-align: middle;
 }

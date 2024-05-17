@@ -724,7 +724,7 @@ $(document).ready(function () {
     //     if (this.href.indexOf('/ssw/Redirect/') != -1) return false; // contains /ssw/redirect
     //     if (this.hostname.indexOf('ssw.com.au') == -1) return false; // not contain ssw.com.au
     //     return true;
-    // }).after(' <img src="/history/images/external.gif" title="You are now leaving SSW"/>');
+    // }).after(' <img src="/archived/images/external.gif" title="You are now leaving SSW"/>');
 
     // var $external = $a_not_has_img.filter('a:not(".ignore, .rsmLink")'); //Use class ignore on link to disable external links
 
