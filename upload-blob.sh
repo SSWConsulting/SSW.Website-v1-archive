@@ -1,7 +1,7 @@
 
 az storage blob sync \
  --container "\$web" \
- --source archived/ \
- --destination archived/ \
+ --source archive/ \
+ --destination archive/ \
  --account-name stsswwebsitezjkojq27uhqb \
  --account-key "$ARCHIVE_KEY" \
