@@ -18,7 +18,7 @@ jobs:
       AZCOPY_CONCURRENT_SCAN: 256
       BLOB_ACCOUNT: stsswwebsitezjkojq27uhqb
     steps:
-      - uses: actions/checkout@v4
+      - name: Upload files to Azure storage
         run: |
           sas=$(az storage account generate-sas \
             --account-name "$BLOB_ACCOUNT" \
