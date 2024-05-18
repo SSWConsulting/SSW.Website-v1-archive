@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+<script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+  </script>
+<title>
+   SSW Deployment - Data Schema
+  </title>
+<meta content="en-au" http-equiv="Content-Language"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
+<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
+<meta content="SSW" name="author"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
+<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+<link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
+</head>
+<body id="ctl00_MasterBody" style="opacity: 1 !important;">
+<div style="
+        line-height: 1.5;
+        text-align: center; 
+        font-size: 1.125rem; 
+        color: #999;
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+    ⚠️ This page has been archived
+   </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p style="color:white;">
+     ✅ New page with updated info:
+     <a href="https://www.ssw.com.au" style="color: white">
+      ssw.com.au
+     </a>
+</p>
+</div>
+</div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
+</iframe>
+</noscript>
+<form action="./dataschemastandard.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJODQyOTM2NjUyD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGSS7TrJI6yGXUNvdFYU1N6su8nI6VDZriR+Q5vqr3LNcg=="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="DB84EB60"/>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+<span>
+<a href="/archive" title="Home">
+        Home
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/archive/standards" title="SSW Standards">
+        SSW Standards
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/archive/standards/rules" title="Rules">
+        Rules
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+       SSW Deployment - Data Schema
+      </span>
+<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+</span>
+</p>
+<span id="ctl00_mainContentPlaceHolder_lblWelcome">
+</span>
+<!--
+			This is the main document.
+			-->
+<table cellpadding="2" cellspacing="2" summary="Formatting Table" width="100%">
+<tbody>
+<tr>
+<td>
+<h2>
+         Data Schema - How Changes are to be Implemented
+        </h2>
+<p>
+         One of the biggest deployment hassles is with the 
+	backend database. When you deploy the frontend from 
+	Development to Test to Production, it is usually a simple process 
+	of deleting the old files and replacing with a copy. The 
+	backend - particularly when it has data - is a different beast.
+        </p>
+<p>
+         Following this standard will mean you only need to run 
+	the changes made since the last version. Usually a matter of a couple of SQL files. The basic run is
+         <strong>
+          "Every change 
+		to a deployed Database Schema (tables, views, stored procedures, user functions 
+		and jobs) must be saved as a .sql script file and then run from Visual a 
+		Studio Database Project (where available) or Query Analyzer."
+         </strong>
+</p>
+<table bgcolor="#cccccc" border="0" width="100%">
+<tbody>
+<tr>
+<td>
+<b>
+             THE PROBLEM:
+            </b>
+</td>
+</tr>
+<tr>
+<td>
+            You are the highly strung developer of a popular 
+			online Easter-Egg store. It is now 1am, and the build is due at 9am sharp. You 
+			have finally ironed out all of the bugs, and have made several database 
+			changes. Unfortunately, you will have to find out all the changes that have 
+			been made, and hope that your development team have fully documented them. If 
+			the changes haven't been documented, you are up the proverbial creek without a 
+			paddle. You need a simple way of changing.
+           </td>
+</tr>
+</tbody>
+</table>
+<p>
+<b>
+          THE SOLUTION:
+         </b>
+</p>
+<p>
+         The basic principle is you should be able to run all 
+	the scripts to get to the current version in a couple of minutes. To this end 
+	you need to follow these steps:
+        </p>
+<p>
+         You talk to a client and create a schema (whatever way 
+	you want - we usually use Visual Studio.NET Database Project,
+		SQL Server Enterprise Manager or Access 2002 ADPs). It is highly 
+		recommended that you use a Visual Studio.NET&lt;
+	Project, and add it to Visual SourceSafe database. This will allow you to:
+        </p>
+<ul>
+<li>
+          Use templates, 
+		make/modify scripts and apply changes - all through the one integrated 
+		interface.
+         </li>
+<li>
+          Track if you have made 
+		changes to the scripts/older versions of the scripts before deployment
+         </li>
+<li>
+          Provide a 
+		checkin/checkout mechanism when multiple poeple are working on database schema 
+		changes.
+         </li>
+</ul>
+<p>
+<img alt="" height="361" src="/archive/standards/rules/images/data-schema-standard-add-solution-to-source-control.gif" width="216"/>
+</p>
+<p>
+<strong>
+          Figure 1:
+         </strong>
+         Adding your Visual 
+		Studio.NET database project to Visual SourceSafe control.
+        </p>
+<p>
+         Now, at this stage the 
+	database schema should be reasonably stable (ie there are no planned major 
+	developments.)
+        </p>
+<p>
+         Make sure it includes a table for recording the 
+	current version of the backend. We call it _zsDataVersion (_zs for a system 
+	table defined/created by us)
+         <br/>
+<strong>
+<br/>
+          FOR REPLICATED DATABASES ONLY:
+          <br/>
+          Note:
+         </strong>
+         Due to limitations in SQL Server Replication:
+         <br/>
+<br/>
+<strong>
+          SQL Server 7.0:
+         </strong>
+<br/>
+         A) If you have a replicated database in SQL Server 7 and you want to change 
+	table structure, then - before creating scripts, and after creating 
+	scripts - you will need to:
+         <br/>
+<br/>
+         1. In Enterprise manager, manually remove 
+	subscriptions to the database.
+         <br/>
+         2. Remove the articles on the publication for 
+	the table objects you want to change.
+         <br/>
+         3. Make the changes in script.
+         <br/>
+         4. Add the articles to publication again.
+         <br/>
+         5. Recreate the subscriptions, and when creating the subscription, make sure 
+	that you select the option to say that you 'already have the schema and data'
+        </p>
+<p>
+<strong>
+          SQL Server 2000:
+         </strong>
+<br/>
+         B) If you have a replicated database in SQL Server 2000 and you want to drop or 
+	remove columns, this can be done via Enterprise Manager. Changes will be 
+	propagated automatically to other replicas in the database.
+         <br/>
+         However, If you for example, you 
+	want to change the data type of a column in a table, you will need to follow 
+	steps 1 to 5 as per the SQL Server 7.0 procedure.
+        </p>
+<p>
+<strong>
+          FOR ALL DATABASES (Replicated and Non-Replicated):
+          <br/>
+</strong>
+<b>
+          1)
+         </b>
+         When you (and the 
+	client) are happy with the schema, open your Visual Studio Database Project 
+	(where available), and Right Click the database in the Server Explorer 
+	window. If Visual Studio.NET is not available, Open Enterprise Manager and 
+	Right Click the database, All Tasks, and Generate SQL Script.
+        </p>
+<p>
+<img alt="" height="290" src="/archive/standards/rules/images/generate-script.gif" width="395"/>
+<img alt="" src=""/>
+</p>
+<p>
+<strong>
+          Figure 2:
+         </strong>
+         Generate the 
+		Initial Script  e.g. ver001.sql - In Enterprise Manager (left), and 
+		Visual Studio.NET (right)
+        </p>
+<p>
+<strong>
+          Make sure the correct options are selected (this 
+		interface is the same in Enterprise Manager and Visual Studio.NET database 
+		projects):
+         </strong>
+</p>
+<p>
+<img alt="Create Script Standard" height="417" src="/archive/standards/rules/images/data-schema-standard-scripting-options.gif" width="544"/>
+<br/>
+<strong>
+          Figure 2: Create Script Standard 
+			Settings  
+         </strong>
+</p>
+<p>
+<img alt="Create Script Standard Settings" height="417" src="/archive/standards/rules/images/data-schema-standard-scripting-options.gif" width="544"/>
+<br/>
+<strong>
+          Figure 3: Create Script Standard Settings 
+          <br/>
+           
+          <br/>
+</strong>
+<img alt="Create Script Standard " height="417" src="/archive/standards/rules/images/data-schema-standard-scripting-options.gif" width="544"/>
+<br/>
+<strong>
+          Figure 4: Create Script Standard 
+			Settings  
+         </strong>
+</p>
+<p>
+         Open the initial script within Visual Studio.NET 
+		editor (where available) or your text editor and add an INSERT 
+		statement at the bottom to add a record to _zsDataVersion (sample script 
+		for this table as below)
+        </p>
+<p>
+</p>
+<table align="left" border="2" bordercolor="#ff0000" cellpadding="5" cellspacing="2" height="23%" width="20%">
+<tbody>
+<tr>
+<td bgcolor="#cccccc" bordercolor="#ffffff" width="410">
+<p>
+             Create table _zsDataVersion using .sql
+             <br/>
+</p>
+<pre>CREATE TABLE _zsDataVersionsql
+( 
+	ChangeID int NOT NULL,
+	DateCreated datetime NULL ,
+	BackEndPath nvarchar(255) NULL,
+	EmpUpdated nvarchar(150) NULL,
+	FrontEndPath nvarchar(255) NULL,
+	rowguid uniqueidentifier ROWGUIDCOL NOT NULL,
+	Note ntext NULL,
+	SSWTimeStamp timestamp NOT NULL 
+)
+ON PRIMARY 
+TEXTIMAGE_ON PRIMARY 
+GO</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<p>
+<br/>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+         If you require any sample data, make another SQL 
+	file, normally as SampleData.sql.
+        </p>
+<p>
+<b>
+          Note:
+         </b>
+         You may need to import the data in order, or you will need to remove foreign key constraints temporarily within your SQL 
+	file, otherwise the data inserts may fail.
+        </p>
+<p>
+<b>
+          2)
+         </b>
+         Changes after the initial full script (version 1 or ver001.sql) must be saved into the same 
+	directory. eg.
+        </p>
+<pre>D:\DataSQLScripts</pre>
+<p>
+</p>
+<p>
+<strong>
+          Before
+         </strong>
+<strong>
+          proceeding, make sure that the following options are checked on in Visual 
+		studio.NET (In Tools/Options)
+          <br/>
+</strong>
+<img alt="Create it via SQL Server Enterprise Manager" border="0" height="379" src="/archive/standards/rules/images/data-schema-standard-tools-options-vs.gif" width="594"/>
+<strong>
+<br/>
+</strong>
+</p>
+<p>
+         Make changes in the normal 
+		way - via SQL Server Enterprise Manager (as per
+         <strong>
+          Figure 1
+         </strong>
+         )
+        </p>
+<p>
+<img alt="Create it via SQL Server Enterprise Manager" border="1" height="310" src="/archive/standards/rules/images/save-script.gif" width="570"/>
+<br/>
+<strong>
+          Figure 5:
+         </strong>
+         Example of Adding a 
+	new field to a table
+        </p>
+<li>
+         If you are in Enterprise Manager, Do
+         <strong>
+          NOT
+         </strong>
+         save changes  
+         <img alt="" height="21" src="/archive/standards/rules/images/img-save-icon.gif" width="22"/>
+         .
+        </li>
+<li>
+         Instead save it as a script file (.sql)  
+         <img alt="" height="25" src="/archive/standards/rules/images/data-schema-standard-save-script-icon.gif" width="42"/>
+<br/>
+<br/>
+         If you are in Visual 
+	Studio .NET, click the save button and you will automatically be given the 
+	prompt as below
+         <br/>
+<br/>
+<img alt="Save your changes as a 
+		script file" border="0" height="347" src="/archive/standards/rules/images/script-change.gif" width="456"/>
+<br/>
+<strong>
+          Figure 6:
+         </strong>
+         Save your changes as a 
+		script file - Do
+         <strong>
+          NOT
+         </strong>
+         save the changes themselves.
+         <br/>
+</li>
+<li>
+         Open the script file through Visual Studio.NET (where 
+	available) or your text editor and add the INSERT STATEMENT. Make sure that the 
+	insert statement is within a BEGIN TRANSACTION and a COMMIT TRANSACTION block. 
+	e.g.
+         <p>
+</p>
+<table align="left" border="2" bordercolor="#ff0000" cellpadding="5" cellspacing="2" width="80%">
+<tbody>
+<tr>
+<td bgcolor="#cccccc" bordercolor="#ffffff">
+<p>
+              BEGIN TRANSACTION
+              <br/>
+              ALTER TABLE dbo.Categories ADD
+              <br/>
+              UnitID varchar(10) NULL
+              <br/>
+              GO
+              <br/>
+<br/>
+              INSERT INTO _zsDataVersion
+              <br/>
+              (ChangeID,DateCreated, BackEndPath, EmpUpdated, FrontEndPath, Note)
+              <br/>
+              VALUES
+              <br/>
+              ('387',GETDATE(),'Northwind','Peter/Peter/ALPACA','Northwind','Added field 
+							Category!UnitID')
+              <br/>
+              COMMIT
+              <br/>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<p>
+           
+         </p>
+<p>
+           
+         </p>
+<p>
+           
+         </p>
+<p>
+           
+         </p>
+<p>
+           
+         </p>
+<p>
+           
+         </p>
+</li>
+<p>
+          
+        </p>
+<p>
+          
+        </p>
+<p>
+<strong>
+          Figure 7:
+         </strong>
+         Open the script file and add the INSERT STATEMENT (Text in red colour)
+         <br/>
+</p>
+<li>
+         Save the script file. 
+	In visual studio.net, you will automatically be prompted for the name
+         <p>
+          You now have a directory 
+		with all changes (see
+          <strong>
+           Figure 8
+          </strong>
+          ) The idea is you run all the 
+		above scripts and you get up-to-date.  The _zsVersion table is a record of 
+		what state the database is at.
+         </p>
+<p>
+<img alt="" height="325" src="/archive/standards/rules/images/directory-structure.gif" width="531"/>
+<img alt="" src=""/>
+</p>
+<p>
+<strong>
+           Figure 8 (Above) - An example changes 
+				directory (left), the VS.NET changes directory (right)
+          </strong>
+<br/>
+</p>
+<p>
+<strong>
+           3) SYNCHRONISATION OF SCHEMAS:
+          </strong>
+</p>
+<p>
+<strong>
+           Determine the current version and the scripts to be run.
+          </strong>
+          You 
+	should check the current version of the database e.g.
+         </p>
+<strong>
+<pre>	SELECT Max(ChangeID) FROM _zsDataVersion</pre>
+</strong>
+<p>
+</p>
+<p>
+          and run the script which contains the next record for 
+	_zsDataVersion.  
+          <strong>
+           In VS.NET (where available),  right click 
+		on the script you want to run, and click Run or Run on to execute it.
+          </strong>
+</p>
+<p>
+<img alt="" src=""/>
+<img alt="" height="296" src="" width="238"/>
+</p>
+<p>
+          Figure: Running the scripts on the destination servers 
+		in VS.NET.
+         </p>
+<p>
+<strong>
+           Note:
+           <br/>
+</strong>
+          There are some important steps you should take before running these 
+	change scripts:
+          <br/>
+<strong>
+           1.
+          </strong>
+          Ideally, close off users 
+		(Check Management -&gt; Process Info - &gt; Current Activity). Otherwise, some 
+		major changes will time-out (because of locks held on those objects). Ideally, 
+		you should not have any other users with locks on the objects you are 
+		changing. 
+          <br/>
+<strong>
+           2.
+          </strong>
+          Backup 
+			database before making changes/running scripts. If there are major changes (esp 
+			large tables with many relationships), restore this backup to another SQL 
+			Server database (e.g.
+          <strong>
+           NorthwindScriptTest23112001
+          </strong>
+          when major changes are about to be made. Run the scripts on this test database 
+		before running it on the database proper. Fix 
+		any data-related problems and generate associated scripts to make the 
+		updates.
+         </p>
+<ul>
+<li>
+           Run each version script in Query Analyzer, first 
+			on the test database, then on the primary database. 
+          </li>
+</ul>
+<p>
+          Check the latest version in _zsVersion to confirm that 
+		the changes have been made.
+         </p>
+<table>
+<tbody>
+<tr>
+<td>
+<table align="left" border="2" bordercolor="#ff0000" cellpadding="5" cellspacing="2" width="60%">
+<tbody>
+<tr>
+<td bgcolor="#cccccc" bordercolor="#ffffff">
+<p>
+                  What about ADPs in ACCESS 2002?
+                  <br/>
+<br/>
+                  ACCESS 2002 is as great as you have a graphical view of stored procedure. It 
+								doesn't allow to save the changes to script file. But if you are disciplined 
+								then it is OK to use for stored procedures.
+                 </p>
+<p>
+<br/>
+<img alt="" height="205" src="/archive/standards/rules/images/design-view-access.gif" width="497"/>
+                  Figure: Design View of Stored 
+								Procedure in Access ADP
+                  <br/>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<table align="left" border="0" cellpadding="5" cellspacing="2" width="50%">
+<tbody>
+<tr>
+<td>
+<p>
+<img alt="Sample table" height="300" src="/archive/standards/rules/images/sample-table.gif" width="698"/>
+<br/>
+              Figure : An example of a backend table 
+						recording the version numbers
+             </p>
+<p>
+               
+             </p>
+</td>
+</tr>
+<tr>
+<td>
+<table align="left" border="2" bordercolor="#ff0000" cellpadding="5" cellspacing="2" width="70%">
+<tbody>
+<tr>
+<td bgcolor="#cccccc" bordercolor="#ffffff">
+<p>
+                  What about Data?
+                  <br/>
+<br/>
+                  Use Spreadsheet.
+                 </p>
+<p>
+                  Use 
+										the handy tool
+                  <a href="/ssw/Redirect/LockwoodTech.htm" target="_blank">
+                   Auto 
+										Insert
+                  </a>
+<img alt="you are about to leave the SSW site" height="8" src="/archive/standards/rules/images/leave-site.gif" width="19"/>
+                  .
+                  <br/>
+<img alt="" height="464" src="/archive/standards/rules/images/auto-insert-results.gif" width="557"/>
+<br/>
+                  Figure :Auto-Inserts results screen method
+                 </p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td width="410">
+<p>
+               
+             </p>
+<p>
+<img alt="" height="10" src="/archive/standards/rules/images/small-red-ball.gif" width="10"/>
+<b>
+               SQL Compare should be only as a validation tool.
+              </b>
+<br/>
+              We do not use SQL Compare on its own, as it does not record version numbers. 
+						e.g. There is no simple way of making sure what version I have  by 
+						looking at the two databases separately.
+             </p>
+<p>
+              The developer should be responsible for breaking 
+						the build as they make change without logging. This person is then in charge of 
+						checking SQL Compare until he finds the next person who breaks the build.
+             </p>
+<p>
+               
+             </p>
+</td>
+</tr>
+<tr>
+<td>
+<h2>
+              Acknowledgments
+             </h2>
+<p>
+              We hope this was helpful 
+						for you. If you have any comments or suggestions please
+              <a href="javascript:sendEmail('6D61696C746F3A696E666F407373772E636F6D2E61753F5375626A6563743D41626F7574253230796F757225323072756C6573253230746F253230626574746572253230636F64652E2E')">
+               contact us
+              </a>
+</p>
+<p>
+<a href="https://ssw.com.au/people/adam-cogan/">
+               Adam Cogan
+              </a>
+</p>
+<br/>
+<div id="footer">
+<p class="callnow">
+               Call Now
+               <a href="tel:+61299533000">
+                +61 2 9953 3000
+               </a>
+</p>
+<span class="copyright">
+               © Copyright SSW 1990-2024. All Rights Reserved.
+              </span>
+<ul>
+<li class="first">
+<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F64617461736368656D617374616E646172642E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
+                 Feedback to SSW
+                </a>
+</li>
+<li>
+<a href="/ssw/Company/AboutUs.aspx">
+                 About SSW
+                </a>
+</li>
+<li>
+<a href="/ssw/Advertising/Default.aspx">
+                 Advertising
+                </a>
+</li>
+<li class="last">
+<a href="/ssw/MenuMap.aspx">
+                 Sitemap
+                </a>
+</li>
+</ul>
+<span class="proudly">
+<a href="http://www.ssw.com.au">
+                Proudly developed by SSW Sydney Web Design
+               </a>
+</span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">
+               Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
+              </p>
+</div>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+<!-- / OptinMonster -->
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+<div style="visibility: visible;">
+<div>
+</div>
+<div>
+</div>
+</div>
+</body>
+</html>

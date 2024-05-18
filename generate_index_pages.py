@@ -2,7 +2,7 @@ import os
 import re
 from urllib.parse import urlparse, urlunparse
 
-historyroute = "archived"
+historyroute = "archive"
 webUi = "SSW.Website.WebUI"
 
 ### GENERATES INDEX PAGES AT THE BASE OF EACH ROUTE

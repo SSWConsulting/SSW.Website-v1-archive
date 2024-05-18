@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+<script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+  </script>
+<title>
+   Using TFS to Edit Website
+  </title>
+<meta content="en-au" http-equiv="Content-Language"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
+<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
+<meta content="SSW" name="author"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
+<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+<link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
+</head>
+<body id="ctl00_MasterBody" style="opacity: 1 !important;">
+<div style="
+        line-height: 1.5;
+        text-align: center; 
+        font-size: 1.125rem; 
+        color: #999;
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+    ⚠️ This page has been archived
+   </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p style="color:white;">
+     ✅ New page with updated info:
+     <a href="https://www.ssw.com.au" style="color: white">
+      ssw.com.au
+     </a>
+</p>
+</div>
+</div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
+</iframe>
+</noscript>
+<form action="./UsingTFSToEditWebsite.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTIzNTc4MzQxMQ9kFgJmD2QWAgIDD2QWAgIBD2QWBgIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGRkUvCyI0VyfifcR2h/O1g6fgaMC1sMi8VmQ3slBARLZ64="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="EC78E238"/>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+<span>
+<a href="/SSW/default.aspx" title="Home">
+        Home
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/archive/standards" title="Standards">
+        Standards
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/archive/standards/developer-dot-net" title="DeveloperDotNet">
+        DeveloperDotNet
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+       Using TFS to Edit Website
+      </span>
+<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+</span>
+</p>
+<p>
+<font color="#ff0000">
+      TODO: Add video
+     </font>
+</p>
+<h1>
+     The goal is to connect to TFS, get latest, copy a web page and add your name.
+    </h1>
+<h1>
+     Then see it automatically deploy.
+    </h1>
+<h1>
+     Note: This is an exercise followed by SSW employees on Induction Day.
+    </h1>
+<div class="TableOfContents">
+<h3>
+      Using TFS to Edit Website
+     </h3>
+<ol>
+<li>
+<a href="#SetupTFS">
+        Setup Team Explorer to connect to TFS
+       </a>
+</li>
+<li>
+<a href="#SourceControl">
+        Get Latest (aka: Download files to your local workspaces)
+       </a>
+</li>
+<li>
+<a href="#EditWeb">
+        Confirm your understanding how the toolbar was automatically opened
+       </a>
+</li>
+<li>
+<a href="#EditWebCode">
+        Editing Web Pages with code file
+       </a>
+</li>
+<li>
+<a href="#NewFolder">
+        Adding a new folder to the TFS
+       </a>
+</li>
+<li>
+<s>
+<a href="#FTPSync">
+         Use "FTPSync" to Copy from Ant to the Web
+        </a>
+</s>
+</li>
+<li>
+<a href="#BYCompare">
+        Use "Beyond Compare" to Copy from local(e.g. ant) to the Web
+       </a>
+</li>
+</ol>
+</div>
+<ol>
+<li>
+<h2>
+<a id="SetupTFS">
+</a>
+       Setup Team Explorer to connect to TFS
+      </h2>
+<div class="topoflist">
+<table border="0" id="table1">
+<tbody>
+<tr>
+<td style="height: 192px" width="905">
+<ol>
+<li>
+             Open Visual Studio.
+            </li>
+<li>
+             click View &gt; Team Explorer.  In Team explorer,click
+                                    "Add Existing Team Project"
+            </li>
+<dl class="image">
+<dt>
+<img alt="Connect to TFS" height="390" src="/archive/standards/developer-dot-net/images/s-1ins-connect-to-tfs.jpg" width="477"/>
+</dt>
+<dd>
+              Figure: Select the project you want to add
+             </dd>
+</dl>
+<li>
+             Click "OK" in this window.
+            </li>
+<li>
+             Go to "Source Control" then double click the solution file (.sln) to open the "Browse for folder"
+            </li>
+<dl class="image">
+<dt>
+<img alt="Select Path" height="334" src="/archive/standards/developer-dot-net/images/s-1ins-create-folder.jpg" width="344"/>
+</dt>
+<dd>
+              Figure: Select right path then create new folder for the project
+             </dd>
+</dl>
+<li>
+             Select right path for the project which follow by
+             <a href="/ssw/standards/Rules/RulesToBetterWindows7Deployment.aspx#FileStructure">
+              Organization of your Hard Disk
+             </a>
+             . e.g. c:\DataAlvinShen\ProjectsTFS\SSW.TimePROReports\
+            </li>
+</ol>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<h2>
+<a id="SourceControl">
+        Get Latest (aka: Download files to your local workspaces)
+       </a>
+</h2>
+<ol>
+<li>
+        click View &gt; Other Windows &gt; Source Control Explorer
+       </li>
+<li>
+        Navigate to the folder unicorn/SSW.website/trunk/SSW.Website.WebUI/StandardsInternal/_EmployeeTestArea.
+       </li>
+<li>
+        Notice that all the folder and file names are grayed out. This is because they do
+                                not exist on your local computer. Randomly right click one of the existing employee
+                                name folders.
+       </li>
+<dl class="image">
+<dt>
+<img alt="Grayed Out Names" height="383" src="/archive/standards/developer-dot-net/images/grey-out.gif" width="837"/>
+</dt>
+<dd>
+         Figure: Shows the Grayed Out Names in Source Control Explorer
+        </dd>
+</dl>
+<li>
+        Select get latest version from the right click menu. This will cause that folder
+                                to become resident on your local machine.
+       </li>
+</ol>
+</li>
+<li>
+<h2>
+<a id="EditWeb">
+</a>
+       Confirm your understanding how the toolbar was automatically opened
+      </h2>
+<ol>
+<li>
+        Open team Explorer or Source Control Explorer
+       </li>
+<dl class="image">
+<dt>
+<img alt="Source Control Explorer" height="620" src="/archive/standards/developer-dot-net/images/source-control-explorer.gif" width="468"/>
+</dt>
+<dd>
+         Figure: Open Source Control Explorer
+        </dd>
+</dl>
+<li>
+        Checkout file
+       </li>
+<dl class="image">
+<dt>
+<img alt="Get the latest" height="254" src="/archive/standards/developer-dot-net/images/check-out-file-1.gif" width="621"/>
+</dt>
+<dd>
+         Figure: Get the Latest Version
+        </dd>
+</dl>
+<dl class="image">
+<dt>
+<img alt="Check Out File" height="240" src="/archive/standards/developer-dot-net/images/check-out-file-2.gif" width="752"/>
+</dt>
+<dd>
+         Figure: Check Out File
+        </dd>
+</dl>
+<li>
+        View or Edit the file
+       </li>
+<li>
+<a name="copyFiletoServer">
+</a>
+        Save and then copy to your local server, e.g. ant (TODO:Automatically synchronization by Team Builder)
+       </li>
+<dl class="image">
+<dt>
+<img alt="Copy local file to the server" height="413" src="/archive/standards/developer-dot-net/images/sync-file-to-ant.gif" width="631"/>
+</dt>
+<dd>
+         Figure: Copy local file to the server
+        </dd>
+</dl>
+<li>
+        Check in
+       </li>
+<dl class="image">
+<dt>
+<img alt="Check In File" height="257" src="/archive/standards/developer-dot-net/images/check-in-file.gif" width="709"/>
+</dt>
+<dd>
+         Figure: Check In File
+        </dd>
+</dl>
+</ol>
+</li>
+<li>
+<h2>
+<a id="EditWebCode">
+</a>
+       Editing Web Pages with code behind
+      </h2>
+<ol>
+<li>
+        Open SSW.WebSite.sln
+       </li>
+<dl class="image">
+<dt>
+<img alt="Open SSW.WebSite.sln" height="551" src="/archive/standards/developer-dot-net/images/ssw-sln.gif" width="281"/>
+</dt>
+<dd>
+         Figure: Open solution file - SSW.WebSite.sln
+        </dd>
+</dl>
+<li>
+        Checkout and Edit file
+       </li>
+<li>
+        Build project, If failed, Stop working and asking for help
+       </li>
+<dl class="image">
+<dt>
+<img alt="Compile project" height="130" src="/archive/standards/developer-dot-net/images/build-project.gif" width="232"/>
+</dt>
+<dd>
+         Figure: Compile project
+        </dd>
+</dl>
+<li>
+<a name="copyDlltoServer">
+</a>
+        Copy the modified file and compiled dlls in bin folder into Live Server e.g. Ant.
+       </li>
+<dl class="image">
+<dt>
+<img alt="Copy the modified file and dlls into Ant" height="587" src="/archive/standards/developer-dot-net/images/copy-dll-to-ant.gif" width="656"/>
+</dt>
+<dd>
+         Figure: Copy the modified file and dlls into Ant
+        </dd>
+</dl>
+<li>
+        Check in
+       </li>
+</ol>
+</li>
+<li>
+<h2>
+<a id="NewFolder">
+</a>
+       Adding a new folder to the TFS
+      </h2>
+<ol>
+<li>
+        Go into Explorer (tip: hold click the windows button and the e key ). Navigate to
+                                your ProjectsTFS\trunk\SSW.Website.WebUI\StandardsInternal\_EmployeeTestArea\. You
+                                should see the folder name you created in the previous step.
+       </li>
+<li>
+        Copy this folder
+                                    and rename it to your name.
+       </li>
+<li>
+        Go back into Visual Studio. Select the _EmployeeTestArea
+                                        folder name and then click the Add Files Icon
+       </li>
+<dl class="image">
+<dt>
+<img alt="Add Files Icon" height="348" src="/archive/standards/developer-dot-net/images/add-files.gif" width="393"/>
+</dt>
+<dd>
+         Figure: Add Files Icon
+        </dd>
+</dl>
+<li>
+        The "Add to Source Control" window appears. Click "Add Folder.." button. The "Browse
+                                Folder" window appears.
+       </li>
+<li>
+        Navigate in this window to the _EmployeeTestArea and
+                                    then to the folder that you just created in Explorer. Select it and click the "OK"
+                                    button. The "Browse Folder" window disappears.
+       </li>
+<li>
+        Click the "OK" button in the
+                                        "Add to Source Window". It disappears.
+       </li>
+<li>
+        Your new folder appears with a "plus"
+                                            icon on left hand side.
+       </li>
+<li>
+        Open "aboutme.aspx" which is inside your newly created
+                                                folder
+       </li>
+<li>
+        Update "aboutme.aspx" with your own details. Don't forget to change the
+                                                    Title of the window as well. In order to reduce spam the "@ssw.com.au" of 
+                                                    the email address is depicted as an image so write only your username between the
+                                                    tags. 
+       </li>
+<li>
+        Right Click your folder name and select  "Check in Pending
+                                                        Changes". Your folder now exists on the TFS as well as your local machine.
+       </li>
+<br/>
+</ol>
+</li>
+<li>
+<h2>
+<a name="FTPSync">
+</a>
+<s>
+        Use FTPSync to Copy from Ant to the Web
+       </s>
+</h2>
+<b>
+<span style="color: #FF0000">
+        **NOW MOVED TO USING BEYOND COMPARE**
+       </span>
+</b>
+      (see
+      <a href="#BYCompare">
+       below
+      </a>
+      )
+      <ol>
+<li>
+<s>
+         Start FTPSync.
+        </s>
+</li>
+<li>
+<s>
+         Click the AU server and press the "connect" button.
+        </s>
+</li>
+<li>
+<s>
+         Browse to the correct file location on both your local computer and the remote server.
+        </s>
+</li>
+<dl class="image">
+<dt>
+<img alt="FtpSync Files Icon" height="179" src="/archive/standards/developer-dot-net/images/ftp-sync-files.gif" width="313"/>
+</dt>
+<dd>
+         Figure: Compare Files Icon
+        </dd>
+</dl>
+<li>
+<s>
+         Press the compare files icon.
+        </s>
+</li>
+<dl class="image">
+<dt>
+<img alt="Synchronise Icon" height="180" src="/archive/standards/developer-dot-net/images/ftp-sync-files-2.gif" width="306"/>
+</dt>
+<dd>
+         Figure: Synchronise Icon
+        </dd>
+</dl>
+<li>
+<s>
+         Press the green circle button on the right.
+        </s>
+</li>
+<li>
+<s>
+         The program asks you to confirm the transfer. Check the timestamp checkbox.
+        </s>
+</li>
+<dl class="image">
+<dt>
+<img alt="Set Local timestamps to Remote after transfer" height="248" src="/archive/standards-internal/developer-general/images/set-timestamps.gif" width="325"/>
+</dt>
+<dd>
+         Figure: Always tick Checkbox for "Set Local timestamps to Remote after transfer"
+        </dd>
+</dl>
+<li>
+<s>
+         Click the "OK" button.
+        </s>
+</li>
+<div class="Quote">
+<strong>
+         Note
+        </strong>
+        : Sync files to US server first and then to AU server.
+        <br/>
+<strong>
+         Reason
+        </strong>
+        : Make sure always have synchronized timestamps on AU server and local server.
+        <br/>
+        We only care about Timestamps on AU server because the local server recalls last timestamp. This way the colour of the file names becomes black not red or blue.
+       </div>
+</ol>
+<p>
+       Note: Did you follow the
+       <a href="/ssw/Standards/Rules/RulesToBetterWebsitesDevelopment.aspx#FTPSyncStraightAway">
+        synchronization standards
+       </a>
+       ?
+      </p>
+</li>
+<li>
+<h2>
+<a name="BYCompare">
+</a>
+       Use "Beyond Compare" to Copy from local (e.g. ant) to the Web
+      </h2>
+<ol>
+<li>
+        Start Beyond Compare.
+       </li>
+<li>
+        Confirm "Passive Mode" on Firewall/Proxy setting is enabled to avoid firewalls and other Internet connectivity issues
+       </li>
+<dl class="image">
+<dt>
+<img alt="Check Passivemode" height="377" src="/archive/standards/developer-dot-net/images/passivemode.jpg" width="388"/>
+</dt>
+<dd>
+         Figure: "Passive Mode?setting in Beyond Compare, Tools | Options | FTP |Firewall/Proxy
+        </dd>
+</dl>
+<li>
+        Choose local computer to one side and Web server to the other side then press the "OK" button.
+       </li>
+<dl class="image">
+<dt>
+<img alt="Connect to Web Server" height="377" src="/archive/standards/developer-dot-net/images/connect-to-web-server.jpg" width="388"/>
+</dt>
+<dd>
+         Figure: Choose the server
+        </dd>
+</dl>
+<li>
+        Browse to the correct file location on both your local computer and the remote server.
+       </li>
+<dl class="image">
+<dt>
+<img alt="Compare Items" height="469" src="/archive/standards/developer-dot-net/images/compare-items.jpg" width="833"/>
+</dt>
+<dd>
+         Figure: Compare Files Icon
+        </dd>
+</dl>
+<li>
+        Press the compare files icon.
+       </li>
+<li>
+        Select the file on your local computer side then press the copy button
+       </li>
+<li>
+        The program asks you to confirm the transfer. Press OK
+       </li>
+<dl class="image">
+<dt>
+<img alt="Transfer file" height="436" src="/archive/standards/developer-dot-net/images/copy-file.jpg" width="837"/>
+</dt>
+<dd>
+         Figure: Always tick Checkbox for "Set Local timestamps to Remote after transfer"
+        </dd>
+</dl>
+<li>
+        Click the "OK" button.
+       </li>
+<div class="Quote">
+<strong>
+         Note
+        </strong>
+        : Sync files to US server first and then to AU server.
+        <br/>
+<strong>
+         Reason
+        </strong>
+        : Make sure always have synchronized timestamps on AU server and local server.
+        <br/>
+        We only care about Timestamps on AU server because the local server recalls last timestamp. This way the colour of the file names becomes black not red or blue.
+       </div>
+</ol>
+<p>
+       Note: Did you follow the
+       <a href="/ssw/Standards/Rules/RulesToBetterWebsitesDevelopment.aspx#FTPSyncStraightAway">
+        synchronization standards
+       </a>
+       ?
+      </p>
+</li>
+</ol>
+<h2>
+     Acknowledgements
+    </h2>
+<p>
+<a href="https://ssw.com.au/people/adam-cogan/">
+      Adam Cogan
+     </a>
+<br/>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=ALS">
+      Alvin Shen
+     </a>
+<br/>
+</p>
+<br/>
+</div>
+<div id="footer">
+<p class="callnow">
+     Call Now
+     <a href="tel:+61299533000">
+      +61 2 9953 3000
+     </a>
+</p>
+<span class="copyright">
+     © Copyright SSW 1990-2024. All Rights Reserved.
+    </span>
+<ul>
+<li class="first">
+<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F446576656C6F706572446F744E65742F5573696E67544653546F45646974576562736974652E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
+       Feedback to SSW
+      </a>
+</li>
+<li>
+<a href="/ssw/Company/AboutUs.aspx">
+       About SSW
+      </a>
+</li>
+<li>
+<a href="/ssw/Advertising/Default.aspx">
+       Advertising
+      </a>
+</li>
+<li class="last">
+<a href="/ssw/MenuMap.aspx">
+       Sitemap
+      </a>
+</li>
+</ul>
+<span class="proudly">
+<a href="http://www.ssw.com.au">
+      Proudly developed by SSW Sydney Web Design
+     </a>
+</span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">
+     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
+    </p>
+</div>
+</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+<!-- / OptinMonster -->
+<div style="visibility: visible;">
+<div>
+</div>
+<div>
+</div>
+</div>
+</body>
+</html>
