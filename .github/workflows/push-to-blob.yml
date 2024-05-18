@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'archive/**'
+      - "archive/**"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,25 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ARCHIVE_KEY: ${{ secrets.AZURE_BLOB_STORAGE_KEY }}
+      AZCOPY_CONCURRENCY_VALUE: 256
+      AZCOPY_PARALLEL_STAT_FILES: true
+      AZCOPY_CONCURRENT_SCAN: 256
+      BLOB_ACCOUNT: stsswwebsitezjkojq27uhqb
     steps:
       - uses: actions/checkout@v4
-      - run: git update-index --chmod=+x upload-blob.sh
-      - run: ./upload-blob.sh
+        run: |
+          sas=$(az storage account generate-sas \
+            --account-name "$BLOB_ACCOUNT" \
+            --account-key "$ARCHIVE_KEY" \
+            --expiry $(date -d "tomorrow" +%Y-%m-%d) \
+            --permissions acdlrw \
+            --resource-types sco \
+            --services b \
+            --https-only \
+            --output tsv \
+          )
+          azcopy sync \
+            archive/ \
+            "https://$BLOB_ACCOUNT.blob.core.windows.net/archive/?$sas" \
+            --log-level="ERROR" \
+            --compare-hash=MD5 --put-md5 --delete-destination=true
