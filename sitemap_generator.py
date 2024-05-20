@@ -47,7 +47,7 @@ def output_sitemap(path: str):
 
 
 def main():
-    output_sitemap("archived")
+    output_sitemap("archive")
 
 
 if __name__ == "__main__":
