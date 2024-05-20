@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-NXDBVV');
+	</script>
+<title>SSW Access Reporter - User Guide</title>
+<meta content="John Elliot - Database Developer - SSW" name="author"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/archive/Images/IcoSSW_v2.ico" rel="shortcut icon"/>
+<link href="/archive/Include/ssw.css" rel="stylesheet" type="text/css"/>
+</head>
+<body alink="#003399" leftmargin="0" link="#003399" marginheight="0" marginwidth="0" text="#000000" topmargin="0" vlink="#003399"><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<div style="
+            line-height: 1.5;
+            text-align: center; 
+            font-size: 1.125rem; 
+            color: #999;
+            background-color: #333333;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+			⚠️ This page has been archived
+		</div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p>
+				✅ New page with updated info:
+				<a href="https://www.ssw.com.au" style="color: white">
+					ssw.com.au
+				</a>
+</p>
+</div>
+</div>
+<table bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left">
+<img alt="ssw small" height="45" name="Image1" src="/archive/images/sswsmall.gif" width="58"/><img alt="Access Reporter" height="45" src="/archive/access-reporter/images/access-reporter-banner.gif" width="525"/><img alt="hd_2" height="45" src="/archive/images/hd-2.gif" width="200"/>
+</td>
+</tr>
+</table>
+<table bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="101%">
+<tr>
+<!-- spacer row - specify all others with colspan or rowspan-->
+<!--1-->
+<td width="11"></td>
+<!--2-->
+<td width="213"></td>
+<!--3-->
+<td width="1"></td>
+<!--4-->
+<td width="24"></td>
+<!--5-->
+<td width="362"></td>
+<!--6-->
+<td width="32"></td>
+<!--7-->
+<td width="97"></td>
+<!--8-->
+<td width="32"></td>
+<!--9-->
+<td width="208"></td>
+<!--10-->
+<td width="30"></td>
+</tr>
+<tr>
+<!-- spacer column -->
+<td colspan="2" rowspan="2" valign="top">
+</td>
+<!-- spacer column -->
+<td bgcolor="#7d7d7d" rowspan="2" width="1"></td>
+<!-- spacer column -->
+<td rowspan="2" width="24"></td>
+<!--main content cell-->
+<td colspan="5" valign="top">
+<p>
+<img alt="Access Reporter Logo" height="83" src="/archive/access-reporter/images/access-reporter-logo.gif" width="250"/>
+</p>
+<table cellpadding="0" width="100%">
+<tr bgcolor="#ff0033">
+<td align="right">.</td>
+</tr>
+</table>
+<table cellpadding="0" width="100%">
+<tr bgcolor="#cccccc">
+<td><b>PDF configuration</b></td>
+</tr>
+</table>
+<p>In order to be able to output reports in PDF format, you need to choose either
+					Ghost Script or Acrobat Distiller.
+					<br/>
+					Ghost Script (Recommended) is a free PDF converter which is packaged with SSW
+					Access Reporter.
+					<br/>
+					Acrobat Distiller is an industry standard PDF converter. Some reports come out
+					better using this however you require a license from Adobe to use it.
+				</p>
+<p>You will also need to install a PostScript printer. This printer will create a
+					file when you print to it. The PDF creator will use this file.</p>
+<p><b>So how do I configure this Post Script printer?</b>
+<br/>
+					Go to start, settings then control panel. Click printers then "add printer" and
+					follow the wizard.
+				</p>
+<p>
+<img alt="Printer setup 1" height="402" src="/archive/access-reporter/images/printer-setup-1.gif" width="513"/><br/>
+<strong>Figure: Uncheck the Auto detect option because we are not adding a physical
+						printer</strong>
+</p>
+<p>
+<img alt="Printer setup 2" height="402" src="/archive/access-reporter/images/printer-setup-2.gif" width="513"/><br/>
+<strong>Figure: Create a new Local Port</strong>
+</p>
+<p>
+<img alt="printer setup 3" height="110" src="/archive/access-reporter/images/printer-setup-3.gif" width="337"/><br/>
+<strong>Figure: Specify the file name and path where you want the postscript file
+						to be created</strong>
+</p>
+<p>
+<img alt="printer setup 4" height="402" src="/archive/access-reporter/images/printer-setup-4.gif" width="513"/><br/>
+<strong>Figure: Add any post script printer. I recommend the HP Color LaserJet PS
+						printers</strong>
+</p>
+<p>
+<img alt="printer setup 5" height="402" src="/archive/access-reporter/images/printer-setup-5.gif" width="513"/><br/>
+<strong>Figure: You may be asked if you want to keep the existing driver</strong>
+</p>
+<p>
+<img alt="printer setup 6" height="402" src="/archive/access-reporter/images/printer-setup-6.gif" width="513"/><br/>
+<strong>Figure: Give the printer a meaningful name so you wont forget what it is
+						for</strong>
+</p>
+<p>One you have finished setting up the new printer, test the printer by printing a
+					test page.
+					<br/>
+					If the file C:\OutputPS.ps exists on your computer, you have configured the
+					printer correctly.
+				</p>
+<p>Once the Post Script printer has been installed, open up SSW Access Reporter
+					Manager
+				<ul>
+<li>
+						Click Tools -&gt; Options from the menu
+					</li>
+<li>
+						Click on the "PDF Settings" tab
+					</li>
+<li>
+						Select a PDF Generator from the list</li>
+<li>
+						Choose the printer we just created</li>
+<li>
+						Enter in the path the postscript file goes to. You can print a test page then
+						pick the "..." button and navigate to the file</li>
+</ul>
+<p><img alt="PDF Options" height="460" src="/archive/access-reporter/images/pdfoptions.gif" width="508"/><br/>
+<strong>Figure: PDF generation settings</strong>
+</p>
+<p>There you go, PDF configuration is now complete.</p>
+<hr style="LEFT: 0px; TOP: 637px"/>
+<center>
+<img alt="SSW Footer" border="0" height="45" src="/archive/images/ft-ssw.gif" usemap="#MapMap" width="300"/>
+<map name="MapMap">
+<area coords="206,16,296,29" href="javascript:var e1='s%73%77.%63%6f%6d%2e%61%75',e2='mailto:%20', e3='info, e4='?Subject=Employment';var e0=e2+e3+'@'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" shape="RECT"/>
+<area coords="60,17,151,28" href="" shape="RECT"/>
+</map>
+</center>
+<td rowspan="2" width="30"></td>
+</p>
+</td>
+</tr>
+<tr> <!--to be implemented-->
+</tr>
+</table>
+</body>
+</html>

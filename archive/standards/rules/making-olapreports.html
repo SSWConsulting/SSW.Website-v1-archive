@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+<script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+  </script>
+<title>
+   Making reports from an OLAP data source in Yukon
+  </title>
+<meta content="en-au" http-equiv="Content-Language"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
+<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
+<meta content="SSW" name="author"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon"/>
+<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
+<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+<link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
+<!-- Start of pdi-ssw Zendesk Widget script -->
+<!-- End of pdi-ssw Zendesk Widget script -->
+<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
+</head>
+<body id="ctl00_MasterBody" style="opacity: 1 !important;">
+<div style="
+        line-height: 1.5;
+        text-align: center; 
+        font-size: 1.125rem; 
+        color: #999;
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+    ⚠️ This page has been archived
+   </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p style="color:white;">
+     ✅ New page with updated info:
+     <a href="https://www.ssw.com.au" style="color: white">
+      ssw.com.au
+     </a>
+</p>
+</div>
+</div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
+</iframe>
+</noscript>
+<form action="./MakingOLAPReports.aspx" id="aspnetForm" method="post" name="aspnetForm">
+<div>
+<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJNjUxODEzNDExD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGTDVpXAmovEpi1PqQhwKgtCqFQZL8ui0a03DiFA0o54Lw=="/>
+</div>
+<div>
+<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="BC5C7353"/>
+</div>
+<div id="mainContainer">
+<div>
+</div>
+<p>
+<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+<span>
+<a href="/archive" title="Home">
+        Home
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/archive/standards" title="SSW Standards">
+        SSW Standards
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+<a href="/archive/standards/rules" title="Rules">
+        Rules
+       </a>
+</span>
+<span>
+       &gt;
+      </span>
+<span>
+       Making reports from an OLAP data source in Yukon
+      </span>
+<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+</a>
+</span>
+</p>
+<h3>
+     Making reports from an OLAP data source in Yukon
+    </h3>
+<p>
+     In this demo we will show you how to create a report using an OLAP data source. We will be basing our Report off the AdventureWorksDW sample database that is supplied with Yukon.
+    </p>
+<p>
+     We will be creating a report that shows The Adventure Works Internet Sales 
+			(by Product Category) and that will allow us to drill down into the Subcategory and Product levels.
+    </p>
+<p>
+<b>
+      Note:
+     </b>
+     Before trying to create a report on the AdventureWorksDW it is important to deploy and process the Adventure Works sample. To do this you will need to open the  
+			Adventure Works solution in VS2005 and deploy it to your Analysis Services 
+			Server. In a typical installation the Adventure Works solution can be found at this location: "C:\Program 
+			Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks Analysis 
+			Services Project\".
+    </p>
+<h2>
+     Getting Started
+    </h2>
+<ol>
+<li>
+      Open up the Business Intelligence Studio
+     </li>
+<li>
+      Create new Report Server project
+     </li>
+<li>
+      Enter name and location for the project
+     </li>
+<li>
+      Click OK
+      <p>
+<img height="505" src="/archive/standards/rules/images/creating-olapreports-01.gif" width="691"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       Creating a New Project.
+      </p>
+</li>
+</ol>
+<h2>
+     Connecting to Analysis Services
+    </h2>
+<p>
+     Under your project, in the solution explorer, you will now have two folders:
+    </p>
+<ul>
+<li>
+      Shared Data Sources
+     </li>
+<li>
+      Reports
+     </li>
+</ul>
+<p>
+</p>
+<ol>
+<li>
+      Right click Shared Data Sources
+     </li>
+<li>
+      Click Add New Data Source
+     </li>
+<li>
+      Change the Type of data source to Microsoft SQL Server Analysis Services
+     </li>
+<li>
+      Click Edit to create the connection string
+      <p>
+<img height="418" src="/archive/standards/rules/images/creating-olapreports-02.gif" width="486"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       Select Microsoft SQL Server Analysis Services.
+      </p>
+</li>
+<li>
+      In the Server Name field type in the Name of your Server (eg localhost)
+     </li>
+<li>
+      Select AdventureWorksDW 
+	from the Database dropdown list
+      <br/>
+<b>
+       Note:
+      </b>
+      If the sample has not been deployed properly, the AdventureWorksDW database will not be accessible.
+      <p>
+<img height="398" src="/archive/standards/rules/images/creating-olapreports-03.gif" width="314"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       Building the Connection String.
+      </p>
+</li>
+<li>
+      Click Test Connection
+     </li>
+<li>
+      If the Connection String is good click OK
+     </li>
+<li>
+      Name your Data Source after the Database (AdventureWorksDW)
+     </li>
+<li>
+      Click OK
+     </li>
+</ol>
+<p>
+     You will return to the IDE and you should now have an AdventureWorksDW.rds file listed under the Shared Data Sources folder.
+    </p>
+<h2>
+     Create the Report
+    </h2>
+<ol>
+<li>
+      Right click the Reports folder
+     </li>
+<li>
+      Click Add New Report
+     </li>
+<li>
+      Click Next on the splash screen
+     </li>
+<li>
+      Click Next to Select the AdventureWorksDW as our Data Source
+     </li>
+<li>
+      Click Query Builder to start building our Dataset
+     </li>
+</ol>
+<h2>
+     Lets make our Dataset
+    </h2>
+    On the left of the Query Builder window, you will notice a section with a tab labeled Metadata. In this section you will see all the Measures, KPIs and Dimensions associated with your cube.
+    <ol>
+<li>
+      Expand the Measures group by clicking the plus
+     </li>
+<li>
+      Expand the Direct Sales folder
+     </li>
+<li>
+      Drag Internet Sales Amount over to the empty pane on the right (This is the preview window)
+     </li>
+<li>
+      Scroll down to and expand the Products dimension
+     </li>
+<li>
+      Drag the Product Category heirarchy over to the preview window
+      <p>
+<img height="362" src="/archive/standards/rules/images/creating-olapreports-04.gif" width="518"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       Dragging dimension attributes across.
+      </p>
+<p>
+       We will also be adding a parameter so that we can report on different years.
+      </p>
+</li>
+<li>
+      Expand the Date Dimension
+     </li>
+<li>
+      Expand the Calendar Folder
+     </li>
+<li>
+      Drag the Calendar Year attribute over to the Filter window on the top right of the Query Builder
+     </li>
+<li>
+      Tick the Parameter box
+     </li>
+<li>
+      Select All Periods from the Filter Expression dropdown list
+      <p>
+       The Query Builder window should be looking something like this...
+      </p>
+<p>
+<img height="313" src="/archive/standards/rules/images/creating-olapreports-05.gif" width="797"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       The dataset is complete.
+      </p>
+</li>
+<li>
+      Click OK
+     </li>
+</ol>
+<h2>
+     Finishing Up the Wizard
+    </h2>
+<p>
+     After clicking OK on the Query Builder window, we will return to the Report wizard where you will see the MDX query that 
+we just created. Try not to look at it for too long, you may hurt your eyes.
+    </p>
+<ol>
+<li>
+      Click Next
+     </li>
+<li>
+      Select the Tabular report type and click Next
+     </li>
+<li>
+      Click Group&gt; three times to move the Category, Subcategory and Product Name over to the Groups section
+      <br/>
+<b>
+       Note:
+      </b>
+      The order in which you add the groups affects the way they will drill on the report.
+     </li>
+<li>
+      Click Details&gt; once to move the Internet Sales Amount across to the Details section
+     </li>
+<li>
+      Click Next
+     </li>
+<li>
+      Check the Enable Drill Down and Include Subtotals boxes
+     </li>
+<li>
+      Select the Corporate Style and Click Next (last time I promise)
+      <br/>
+<b>
+       Note:
+      </b>
+      Selecting a style does not apply a style sheet to your report. Rather, it just formats the initial report components to match this scheme. If you delete any report items, and add new ones they will be without this formatting.
+     </li>
+<li>
+      Name the Report (something like Internet Sales by Product Category)
+     </li>
+<li>
+      Click 
+Finish
+     </li>
+</ol>
+<p>
+     The bulk of our work is now done! You may preview your report by clicking on the Preview tab, but I must warn you, it needs some tidying up.
+    </p>
+<h2>
+     Tidying Things Up
+    </h2>
+<p>
+     If you preview your report now, 
+		it will look pretty ugly, but the functionality will be there. We will 
+		adjust the table a little to make it look neater and we will also format 
+		the sales figures to look like currency.
+    </p>
+<ol>
+<li>
+      Delete the Details row from the table
+      <br/>
+<b>
+       Note:
+      </b>
+      The details row adds an extra and unnecessary level of drilling to the report. Since we don't need it, we delete it. If you don't believe me, before you delete it, preview your report and drill down to the last level. It is redundant.
+      <p>
+<img height="328" src="/archive/standards/rules/images/creating-olapreports-06.gif" width="542"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       Deleting the Details row.
+      </p>
+</li>
+<li>
+      Select the three remaining Sales fields
+     </li>
+<li>
+      Set their Format property to C0 (currency with zero decimal places)
+      <p>
+<img height="154" src="/archive/standards/rules/images/creating-olapreports-07.gif" width="438"/>
+<br/>
+<b>
+        Figure:
+       </b>
+       Setting currency format.
+      </p>
+</li>
+<li>
+      Adjust the Column widths to fit the content
+      <br/>
+<b>
+       Note:
+      </b>
+      Switch between layout and preview adjusting the columns until they are right.
+     </li>
+</ol>
+<p>
+     The report should end up looking something like this
+    </p>
+<p>
+<img height="450" src="/archive/standards/rules/images/creating-olapreports-08.gif" width="670"/>
+<br/>
+<b>
+      Figure:
+     </b>
+     Voila...One report ready to go.
+    </p>
+<h2>
+     Deployment Time
+    </h2>
+<p>
+     Prior to deploying the Report you will need to set the location of your Report Server. To do this right click the Report Project and go to properties. Your Report server will be in the form of
+     <a href="MakingOLAPReports.aspx">
+      http://server/ReportServer
+     </a>
+     . 
+If you are working on your report server, you can simply set it to
+     <a href="MakingOLAPReports.aspx">
+      http://server/ReportServer
+     </a>
+     .
+    </p>
+<p>
+     Once you have set the Report Server, you can right click the Report Project and click Deploy.  Once it is complete you can view your reports in the Report Manager. Typically this URL is in the form of
+     <a href="MakingOLAPReports.aspx">
+      http://server/ReportServer
+     </a>
+     .
+    </p>
+<h2>
+     Final Thought
+    </h2>
+<p>
+     Was that easy or what? We made a report that supports drilling based off an OLAP source and we didnt have to write one line of MDX!
+    </p>
+<p>
+      
+    </p>
+<p>
+      
+    </p>
+<h2>
+     Acknowledgements
+    </h2>
+<a href="https://ssw.com.au/people/adam-cogan/">
+     Adam Cogan
+    </a>
+<br/>
+    Grant Paisley
+    <br/>
+<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=MM">
+     Michael Mileos
+    </a>
+<br/>
+</div>
+<div id="footer">
+<p class="callnow">
+     Call Now
+     <a href="tel:+61299533000">
+      +61 2 9953 3000
+     </a>
+</p>
+<span class="copyright">
+     © Copyright SSW 1990-2024. All Rights Reserved.
+    </span>
+<ul>
+<li class="first">
+<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F4D616B696E674F4C41505265706F7274732E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
+       Feedback to SSW
+      </a>
+</li>
+<li>
+<a href="/ssw/Company/AboutUs.aspx">
+       About SSW
+      </a>
+</li>
+<li>
+<a href="/ssw/Advertising/Default.aspx">
+       Advertising
+      </a>
+</li>
+<li class="last">
+<a href="/ssw/MenuMap.aspx">
+       Sitemap
+      </a>
+</li>
+</ul>
+<span class="proudly">
+<a href="http://www.ssw.com.au">
+      Proudly developed by SSW Sydney Web Design
+     </a>
+</span>
+<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+<p class="serverName">
+     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
+    </p>
+</div>
+</form>
+<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+<!-- / OptinMonster -->
+<div style="visibility: visible;">
+<div>
+</div>
+<div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,4167 @@
+[
+  {
+    "name": "ArchivedAccessreporterDefault",
+    "requestPaths": [
+      "/ssw/AccessReporter/Default.aspx"
+    ],
+    "redirectPath": "/archived/access-reporter/default.html"
+  },
+  {
+    "name": "ArchivedAccessreporter0205smartaccessextra",
+    "requestPaths": [
+      "/ssw/AccessReporter/0205SmartAccessExtra.htm"
+    ],
+    "redirectPath": "/archived/access-reporter/0205-smart-access-extra.htm"
+  },
+  {
+    "name": "ArchivedAccessreporterAccessreporterdemo",
+    "requestPaths": [
+      "/ssw/AccessReporter/AccessReporterDemo.aspx"
+    ],
+    "redirectPath": "/archived/access-reporter/access-reporter-demo.html"
+  },
+  {
+    "name": "ArchivedAccessreporterPdfsetup",
+    "requestPaths": [
+      "/ssw/AccessReporter/PdfSetup.htm"
+    ],
+    "redirectPath": "/archived/access-reporter/pdf-setup.htm"
+  },
+  {
+    "name": "ArchivedAgiletemplateReportsDefault",
+    "requestPaths": [
+      "/ssw/AgileTemplate/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archived/agile-template/reports/default.html"
+  },
+  {
+    "name": "ArchivedAgiletemplateDefault",
+    "requestPaths": [
+      "/ssw/AgileTemplate/Default.aspx"
+    ],
+    "redirectPath": "/archived/agile-template/default.html"
+  },
+  {
+    "name": "ArchivedAgiletemplateManageprojects",
+    "requestPaths": [
+      "/ssw/AgileTemplate/ManageProjects.aspx"
+    ],
+    "redirectPath": "/archived/agile-template/manage-projects.html"
+  },
+  {
+    "name": "ArchivedAgiletemplateUserguide",
+    "requestPaths": [
+      "/ssw/AgileTemplate/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/agile-template/user-guide.html"
+  },
+  {
+    "name": "ArchivedCodeauditorDefault",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/default.html"
+  },
+  {
+    "name": "ArchivedCodeauditor2407developercentralextra",
+    "requestPaths": [
+      "/ssw/CodeAuditor/2407DeveloperCentralExtra.htm"
+    ],
+    "redirectPath": "/archived/code-auditor/2407-developer-central-extra.htm"
+  },
+  {
+    "name": "ArchivedCodeauditorHowtobegoodcodeauditordailybuildmaster",
+    "requestPaths": [
+      "/ssw/CodeAuditor/HowtobeGoodCodeAuditorDailyBuildMaster.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/howtobe-good-code-auditor-daily-build-master.html"
+  },
+  {
+    "name": "ArchivedCodeauditorResources",
+    "requestPaths": [
+      "/ssw/CodeAuditor/resources.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/resources.html"
+  },
+  {
+    "name": "ArchivedCodeauditorRsuserguide",
+    "requestPaths": [
+      "/ssw/CodeAuditor/rsuserguide.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/rsuserguide.html"
+  },
+  {
+    "name": "ArchivedCodeauditorRules",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Rules.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/rules.html"
+  },
+  {
+    "name": "ArchivedCodeauditorSimplewebpages",
+    "requestPaths": [
+      "/ssw/CodeAuditor/simplewebpages.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/simplewebpages.html"
+  },
+  {
+    "name": "ArchivedCodeauditorTutorial",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Tutorial.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/tutorial.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguide",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguideaspmigration",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideASPMigration.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-aspmigration.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguideaspmigrationscreenshot",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideASPMigrationScreenshot.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-aspmigration-screenshot.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidecheckinpolicy",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideCheckInPolicy.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-check-in-policy.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidecustomruleforsql",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideCustomRuleforSQL.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-custom-rulefor-sql.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidevs",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideVS.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-vs.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidewizard",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideWizard.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-wizard.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguideold",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuide_Old.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-old.html"
+  },
+  {
+    "name": "ArchivedCodeauditorWebmag",
+    "requestPaths": [
+      "/ssw/CodeAuditor/webmag.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/webmag.html"
+  },
+  {
+    "name": "ArchivedConsultingNewsharepointbenefits",
+    "requestPaths": [
+      "/ssw/Consulting/NewSharePointBenefits.aspx"
+    ],
+    "redirectPath": "/archived/consulting/new-sharepoint-benefits.html"
+  },
+  {
+    "name": "ArchivedDatabaseDatabaseconnection",
+    "requestPaths": [
+      "/ssw/Database/databaseconnection.aspx"
+    ],
+    "redirectPath": "/archived/database/databaseconnection.html"
+  },
+  {
+    "name": "ArchivedDatabaseDatabasedocslinks",
+    "requestPaths": [
+      "/ssw/Database/databasedocslinks.aspx"
+    ],
+    "redirectPath": "/archived/database/databasedocslinks.html"
+  },
+  {
+    "name": "ArchivedDatabaseDllhell",
+    "requestPaths": [
+      "/ssw/Database/DLLHell.aspx"
+    ],
+    "redirectPath": "/archived/database/dllhell.html"
+  },
+  {
+    "name": "ArchivedDatabaseExchange",
+    "requestPaths": [
+      "/ssw/Database/Exchange.aspx"
+    ],
+    "redirectPath": "/archived/database/exchange.html"
+  },
+  {
+    "name": "ArchivedDatabaseLinkssoftwareupdates",
+    "requestPaths": [
+      "/ssw/Database/LinksSoftwareUpdates.aspx"
+    ],
+    "redirectPath": "/archived/database/links-software-updates.html"
+  },
+  {
+    "name": "ArchivedDatabaseMobileapplicationdevelopment",
+    "requestPaths": [
+      "/ssw/Database/MobileApplicationDevelopment.aspx"
+    ],
+    "redirectPath": "/archived/database/mobile-application-development.html"
+  },
+  {
+    "name": "ArchivedDatabaseNet",
+    "requestPaths": [
+      "/ssw/Database/NET.aspx"
+    ],
+    "redirectPath": "/archived/database/net.html"
+  },
+  {
+    "name": "ArchivedDatabaseSswdatarenovatorinfo",
+    "requestPaths": [
+      "/ssw/Database/sswdatarenovatorinfo.aspx"
+    ],
+    "redirectPath": "/archived/database/sswdatarenovatorinfo.html"
+  },
+  {
+    "name": "ArchivedDatamergeproDefault",
+    "requestPaths": [
+      "/ssw/DataMergePRO/Default.aspx"
+    ],
+    "redirectPath": "/archived/data-merge-pro/default.html"
+  },
+  {
+    "name": "ArchivedDatamergeproTutorial",
+    "requestPaths": [
+      "/ssw/DataMergePRO/Tutorial.aspx"
+    ],
+    "redirectPath": "/archived/data-merge-pro/tutorial.html"
+  },
+  {
+    "name": "ArchivedDatamergeproTutorial",
+    "requestPaths": [
+      "/ssw/DataMergePRO/Tutorial.htm"
+    ],
+    "redirectPath": "/archived/data-merge-pro/tutorial.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess01introduction",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/01Introduction.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/01-introduction.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess02howitworks",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/02HowItWorks.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/02-how-it-works.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess03assumptions",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/03Assumptions.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/03-assumptions.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess04gettingstarted",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/04GettingStarted.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/04-getting-started.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess05firsttimeuse",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/05FirstTimeUse.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/05-first-time-use.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess06setup",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/06Setup.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/06-setup.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess07tutorial",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/07Tutorial.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/07-tutorial.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess08changingdata",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/08ChangingData.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/08-changing-data.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess09datastructure",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/09DataStructure.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/09-data-structure.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess10data",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/10Data.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/10-data.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess11relationship",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/11Relationship.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/11-relationship.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess12dataindex",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/12Dataindex.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/12-dataindex.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess13comments",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/13comments.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/13comments.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess14distributefrontend",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/14DistributeFrontEnd.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/14-distribute-front-end.htm"
+  },
+  {
+    "name": "ArchivedDataproSql01introductionsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/01IntroductionSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/01-introduction-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql02howitworkssql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/02HowItWorksSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/02-how-it-works-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql03assumptionssql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/03AssumptionsSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/03-assumptions-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql04gettingstartedsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/04GettingStartedSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/04-getting-started-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql05firsttimeusesql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/05FirstTimeUseSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/05-first-time-use-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql06setupsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/06SetupSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/06-setup-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql07tutorialsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/07TutorialSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/07-tutorial-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql08changingdatasql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/08ChangingDataSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/08-changing-data-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql09distributefrontendsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/09DistributeFrontEndSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/09-distribute-front-end-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproDefault",
+    "requestPaths": [
+      "/ssw/DataPRO/Default.aspx"
+    ],
+    "redirectPath": "/archived/data-pro/default.html"
+  },
+  {
+    "name": "ArchivedDatarenovatorDefault",
+    "requestPaths": [
+      "/ssw/DataRenovator/Default.aspx"
+    ],
+    "redirectPath": "/archived/data-renovator/default.html"
+  },
+  {
+    "name": "ArchivedDatarenovatorUserguide",
+    "requestPaths": [
+      "/ssw/DataRenovator/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/data-renovator/user-guide.html"
+  },
+  {
+    "name": "ArchivedDecommissionedGooglekeywords",
+    "requestPaths": [
+      "/ssw/decommissioned/googlekeywords.aspx"
+    ],
+    "redirectPath": "/archived/decommissioned/googlekeywords.html"
+  },
+  {
+    "name": "ArchivedDecommissionedTestimonialsacademytiles",
+    "requestPaths": [
+      "/ssw/decommissioned/testimonialsacademytiles.aspx"
+    ],
+    "redirectPath": "/archived/decommissioned/testimonialsacademytiles.html"
+  },
+  {
+    "name": "ArchivedDecommissionedWhyweexist",
+    "requestPaths": [
+      "/ssw/decommissioned/WhyWeExist.aspx"
+    ],
+    "redirectPath": "/archived/decommissioned/why-we-exist.html"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadssw",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/PAD_SSW.NETToolkit.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw.net-toolkit.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswaccessreporter",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWAccessReporter.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-access-reporter.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswcodeauditor",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWCodeAuditor.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-code-auditor.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatapro2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataPRO2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-pro2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatapro97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataPRO97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-pro97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatarenovator2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataRenovator2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-renovator-2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatarenovator97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataRenovator97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-renovator-97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswemailmergepro",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/PAD_SSWEmailMergePRO.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-email-merge-pro.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswexchangereporter",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWExchangeReporter.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-exchange-reporter.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswextremeemails",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWeXtremeEmails.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-sswextreme-emails.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswlinkauditor",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/PAD_SSWLinkAuditor.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-link-auditor.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswlookout",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWLookout.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-lookout.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswnettoolkit",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWNETToolkit.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-net-toolkit.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswperformancepro2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPerformancePRO2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-performance-pro2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswperformancepro97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPerformancePRO97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-performance-pro97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswpropertyandeventpro2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPropertyAndEventPRO2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-property-and-event-pro2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswpropertyandeventpro97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPropertyAndEventPRO97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-property-and-event-pro97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswsqlauditor",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWSQLAuditor.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-auditor.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswsqldeploy",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWSQLDeploy.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-deploy.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswsqltotalcompare",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWSQLTotalCompare.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-total-compare.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswteamcalendar",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWTeamCalendar.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-team-calendar.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswupsizingpro",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWUpsizingPRO.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-upsizing-pro.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesSswca",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/SSWCA.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/ssw-ca.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesSswup",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/SSWUP.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/ssw-up.htm"
+  },
+  {
+    "name": "ArchivedDownloadSswdiagnostics",
+    "requestPaths": [
+      "/ssw/Download/SSWDiagnostics.htm"
+    ],
+    "redirectPath": "/archived/download/ssw-diagnostics.htm"
+  },
+  {
+    "name": "ArchivedEmailmergeproDefault",
+    "requestPaths": [
+      "/ssw/EmailMergePRO/Default.aspx"
+    ],
+    "redirectPath": "/archived/email-merge-pro/default.html"
+  },
+  {
+    "name": "ArchivedEmailmergeproDefault",
+    "requestPaths": [
+      "/ssw/EmailMergePRO/default.htm"
+    ],
+    "redirectPath": "/archived/email-merge-pro/default.htm"
+  },
+  {
+    "name": "ArchivedEmailmergeproUserguide",
+    "requestPaths": [
+      "/ssw/EmailMergePRO/userguide.aspx"
+    ],
+    "redirectPath": "/archived/email-merge-pro/userguide.html"
+  },
+  {
+    "name": "ArchivedEmployeesDefault",
+    "requestPaths": [
+      "/ssw/Employees/default.htm"
+    ],
+    "redirectPath": "/archived/employees/default.htm"
+  },
+  {
+    "name": "ArchivedEvents1999msroadshowDefault",
+    "requestPaths": [
+      "/ssw/Events/1999MSRoadShow/Default.htm"
+    ],
+    "redirectPath": "/archived/events/1999-msroad-show/default.htm"
+  },
+  {
+    "name": "ArchivedEvents1999msroadshowMsbrief",
+    "requestPaths": [
+      "/ssw/Events/1999MSRoadShow/msbrief.htm"
+    ],
+    "redirectPath": "/archived/events/1999-msroad-show/msbrief.htm"
+  },
+  {
+    "name": "ArchivedEvents2001msdevdaysDefault",
+    "requestPaths": [
+      "/ssw/Events/2001MSDevDays/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2001-msdev-days/default.html"
+  },
+  {
+    "name": "ArchivedEvents2002vsliveDefault",
+    "requestPaths": [
+      "/ssw/Events/2002VSLive/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2002-vslive/default.html"
+  },
+  {
+    "name": "ArchivedEvents2004accesstosqlserverandnetDefault",
+    "requestPaths": [
+      "/ssw/Events/2004AccessToSQLServerAndNET/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2004-access-to-sql-server-and-net/default.html"
+  },
+  {
+    "name": "ArchivedEvents2004accesstosqlserverandnetResources",
+    "requestPaths": [
+      "/ssw/Events/2004AccessToSQLServerAndNET/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2004-access-to-sql-server-and-net/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2004ascendDefault",
+    "requestPaths": [
+      "/ssw/Events/2004Ascend/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2004-ascend/default.html"
+  },
+  {
+    "name": "ArchivedEvents2004kenyaAgenda",
+    "requestPaths": [
+      "/ssw/Events/2004Kenya/Agenda.aspx"
+    ],
+    "redirectPath": "/archived/events/2004-kenya/agenda.html"
+  },
+  {
+    "name": "ArchivedEvents2004kenyaDefault",
+    "requestPaths": [
+      "/ssw/Events/2004Kenya/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2004-kenya/default.html"
+  },
+  {
+    "name": "ArchivedEvents2004kenyaE",
+    "requestPaths": [
+      "/ssw/Events/2004Kenya/e.htm"
+    ],
+    "redirectPath": "/archived/events/2004-kenya/e.htm"
+  },
+  {
+    "name": "ArchivedEvents2004malaysiaconferenceDefault",
+    "requestPaths": [
+      "/ssw/Events/2004MalaysiaConference/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2004-malaysia-conference/default.html"
+  },
+  {
+    "name": "ArchivedEvents200511ugConference",
+    "requestPaths": [
+      "/ssw/Events/2005-11UG/Conference.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-11-ug/conference.html"
+  },
+  {
+    "name": "ArchivedEvents2005accesstosqlserverandnetDefault",
+    "requestPaths": [
+      "/ssw/Events/2005AccessToSQLServerAndNET/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-access-to-sql-server-and-net/default.html"
+  },
+  {
+    "name": "ArchivedEvents2005accesstosqlserverandnetResources",
+    "requestPaths": [
+      "/ssw/Events/2005AccessToSQLServerAndNET/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-access-to-sql-server-and-net/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2005reportingservicesDefault",
+    "requestPaths": [
+      "/ssw/Events/2005ReportingServices/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-reporting-services/default.html"
+  },
+  {
+    "name": "ArchivedEvents2005southamericajanuaryDefault",
+    "requestPaths": [
+      "/ssw/Events/2005SouthAmericaJanuary/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-south-america-january/default.html"
+  },
+  {
+    "name": "ArchivedEvents2005southamericaoctoberDefault",
+    "requestPaths": [
+      "/ssw/Events/2005SouthAmericaOctober/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-south-america-october/default.html"
+  },
+  {
+    "name": "ArchivedEvents2005utsnetResources",
+    "requestPaths": [
+      "/ssw/Events/2005UTSNET/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2005-uts-net/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2006earnmoreperhourDefault",
+    "requestPaths": [
+      "/ssw/Events/2006EarnMorePerHour/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-earn-more-per-hour/default.html"
+  },
+  {
+    "name": "ArchivedEvents2006earnmoreperhourworkshopDefault",
+    "requestPaths": [
+      "/ssw/Events/2006EarnMorePerHourWorkshop/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-earn-more-per-hour-workshop/default.html"
+  },
+  {
+    "name": "ArchivedEvents2006expressionDefault",
+    "requestPaths": [
+      "/ssw/Events/2006Expression/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-expression/default.html"
+  },
+  {
+    "name": "ArchivedEvents2006sqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2006SQL/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-sql/default.html"
+  },
+  {
+    "name": "ArchivedEvents2006sqlResources",
+    "requestPaths": [
+      "/ssw/Events/2006SQL/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-sql/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2006teamsystemDefault",
+    "requestPaths": [
+      "/ssw/Events/2006TeamSystem/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-team-system/default.html"
+  },
+  {
+    "name": "ArchivedEvents2006utsbiResources",
+    "requestPaths": [
+      "/ssw/Events/2006UTS_BI/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2006-uts-bi/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2007aprilcanberranetugDefault",
+    "requestPaths": [
+      "/ssw/Events/2007AprilCanberraNETUG/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2007-april-canberra-netug/default.html"
+  },
+  {
+    "name": "ArchivedEvents2007netDefault",
+    "requestPaths": [
+      "/ssw/Events/2007NET/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2007-net/default.html"
+  },
+  {
+    "name": "ArchivedEvents2007netResources",
+    "requestPaths": [
+      "/ssw/Events/2007NET/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2007-net/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2007sqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2007SQL/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2007-sql/default.html"
+  },
+  {
+    "name": "ArchivedEvents2007sqlResources",
+    "requestPaths": [
+      "/ssw/Events/2007SQL/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2007-sql/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2007utsbiResources",
+    "requestPaths": [
+      "/ssw/Events/2007UTS_BI/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2007-uts-bi/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2008utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2008UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2008-uts-sql/default.html"
+  },
+  {
+    "name": "ArchivedEvents2008utssqlResources",
+    "requestPaths": [
+      "/ssw/Events/2008UTSSQL/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2008-uts-sql/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2009tourdewaggaDailybreakdown",
+    "requestPaths": [
+      "/ssw/Events/2009TourDeWagga/DailyBreakdown.aspx"
+    ],
+    "redirectPath": "/archived/events/2009-tour-de-wagga/daily-breakdown.html"
+  },
+  {
+    "name": "ArchivedEvents2009tourdewaggaDefault",
+    "requestPaths": [
+      "/ssw/Events/2009TourDeWagga/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2009-tour-de-wagga/default.html"
+  },
+  {
+    "name": "ArchivedEvents2009utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2009UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2009-uts-sql/default.html"
+  },
+  {
+    "name": "ArchivedEvents2009utssqlResources",
+    "requestPaths": [
+      "/ssw/Events/2009UTSSQL/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2009-uts-sql/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2010utsbiDefault",
+    "requestPaths": [
+      "/ssw/Events/2010UTSBI/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2010-uts-bi/default.html"
+  },
+  {
+    "name": "ArchivedEvents2010utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2010UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2010-uts-sql/default.html"
+  },
+  {
+    "name": "ArchivedEvents2010utssqlResources",
+    "requestPaths": [
+      "/ssw/Events/2010UTSSQL/resources.aspx"
+    ],
+    "redirectPath": "/archived/events/2010-uts-sql/resources.html"
+  },
+  {
+    "name": "ArchivedEvents2011utsnetDefault",
+    "requestPaths": [
+      "/ssw/Events/2011UTSNET/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2011-uts-net/default.html"
+  },
+  {
+    "name": "ArchivedEvents2011utssharepointDefault",
+    "requestPaths": [
+      "/ssw/Events/2011UTSSharePoint/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2011-uts-sharepoint/default.html"
+  },
+  {
+    "name": "ArchivedEvents2011utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2011UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archived/events/2011-uts-sql/default.html"
+  },
+  {
+    "name": "ArchivedEventsEbooksAngularjs5lessonsthankyou",
+    "requestPaths": [
+      "/ssw/Events/ebooks/angularjs-5-lessons-thankyou.html"
+    ],
+    "redirectPath": "/archived/events/ebooks/angularjs-5-lessons-thankyou.html"
+  },
+  {
+    "name": "ArchivedEventsTechbreakfastHowtobecomeadeveloperin2015",
+    "requestPaths": [
+      "/ssw/Events/TechBreakfast/How-to-become-a-developer-in-2015.aspx"
+    ],
+    "redirectPath": "/archived/events/tech-breakfast/how-to-become-a-developer-in-2015.html"
+  },
+  {
+    "name": "ArchivedEventsTechbreakfastHowtochangeyourcareerandbecomeadeveloperin2015",
+    "requestPaths": [
+      "/ssw/Events/TechBreakfast/How-to-change-your-career-and-become-a-developer-in-2015.aspx"
+    ],
+    "redirectPath": "/archived/events/tech-breakfast/how-to-change-your-career-and-become-a-developer-in-2015.html"
+  },
+  {
+    "name": "ArchivedEventsTechbreakfastHowtoupgradeyourskillstodeveloperin2015",
+    "requestPaths": [
+      "/ssw/Events/TechBreakfast/How-to-upgrade-your-skills-to-developer-in-2015.aspx"
+    ],
+    "redirectPath": "/archived/events/tech-breakfast/how-to-upgrade-your-skills-to-developer-in-2015.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingAdvancedtsql",
+    "requestPaths": [
+      "/ssw/Events/Training/Advanced-TSQL.aspx"
+    ],
+    "redirectPath": "/archived/events/training/advanced-tsql.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingAspnetmvcangularjstechedsecret",
+    "requestPaths": [
+      "/ssw/Events/Training/ASP-NET-MVC-AngularJS-TechEd-Secret.aspx"
+    ],
+    "redirectPath": "/archived/events/training/asp-net-mvc-angularjs-tech-ed-secret.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingAspnetmvcangularjsteched",
+    "requestPaths": [
+      "/ssw/Events/Training/ASP-NET-MVC-AngularJS-TechEd.aspx"
+    ],
+    "redirectPath": "/archived/events/training/asp-net-mvc-angularjs-tech-ed.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingBibootcamp",
+    "requestPaths": [
+      "/ssw/Events/Training/BI-Bootcamp.aspx"
+    ],
+    "redirectPath": "/archived/events/training/bi-bootcamp.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingBiimmersion",
+    "requestPaths": [
+      "/ssw/Events/Training/BI-Immersion.aspx"
+    ],
+    "redirectPath": "/archived/events/training/bi-immersion.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingBrainquestalminaday",
+    "requestPaths": [
+      "/ssw/Events/Training/Brain-Quest-ALM-in-a-Day.aspx"
+    ],
+    "redirectPath": "/archived/events/training/brain-quest-alm-in-a-day.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingBrainquestvstfssharepoint",
+    "requestPaths": [
+      "/ssw/Events/Training/Brain-Quest-VS-TFS-Sharepoint.aspx"
+    ],
+    "redirectPath": "/archived/events/training/brain-quest-vs-tfs-sharepoint.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingDataminingseminar",
+    "requestPaths": [
+      "/ssw/Events/Training/Data-Mining-Seminar.aspx"
+    ],
+    "redirectPath": "/archived/events/training/data-mining-seminar.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingDevopssuperpowersvisualstudio",
+    "requestPaths": [
+      "/ssw/Events/Training/DevOps-SuperPowers-VisualStudio.aspx"
+    ],
+    "redirectPath": "/archived/events/training/devops-super-powers-visual-studio.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingEnterprisemvcday1",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-1.aspx"
+    ],
+    "redirectPath": "/archived/events/training/enterprise-mvc-day-1.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingEnterprisemvcday2",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-2.aspx"
+    ],
+    "redirectPath": "/archived/events/training/enterprise-mvc-day-2.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingEnterprisemvcday3",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-3.aspx"
+    ],
+    "redirectPath": "/archived/events/training/enterprise-mvc-day-3.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingEnterprisemvcday4",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-4.aspx"
+    ],
+    "redirectPath": "/archived/events/training/enterprise-mvc-day-4.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingEnterprisexamarin2dayessentials",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-Xamarin-2-Day-Essentials.aspx"
+    ],
+    "redirectPath": "/archived/events/training/enterprise-xamarin-2-day-essentials.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingIonicsuperpowerstour",
+    "requestPaths": [
+      "/ssw/Events/Training/Ionic-Superpowers-Tour.aspx"
+    ],
+    "redirectPath": "/archived/events/training/ionic-superpowers-tour.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingJuvallowyarchitectsclinic",
+    "requestPaths": [
+      "/ssw/Events/Training/Juval-Lowy-Architects-Clinic.aspx"
+    ],
+    "redirectPath": "/archived/events/training/juval-lowy-architects-clinic.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingOptimizationperformance",
+    "requestPaths": [
+      "/ssw/Events/Training/Optimization-Performance.aspx"
+    ],
+    "redirectPath": "/archived/events/training/optimization-performance.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingPowersessions",
+    "requestPaths": [
+      "/ssw/Events/Training/Power-Sessions.aspx"
+    ],
+    "redirectPath": "/archived/events/training/power-sessions.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingQutangular2",
+    "requestPaths": [
+      "/ssw/Events/Training/QUT-Angular2.aspx"
+    ],
+    "redirectPath": "/archived/events/training/qut-angular-2.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingScrummastertrainingcourse",
+    "requestPaths": [
+      "/ssw/Events/Training/Scrum-Master-Training-Course.aspx"
+    ],
+    "redirectPath": "/archived/events/training/scrum-master-training-course.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingScrumtrainingcourse3days",
+    "requestPaths": [
+      "/ssw/Events/Training/Scrum-Training-Course-3-days.aspx"
+    ],
+    "redirectPath": "/archived/events/training/scrum-training-course-3-days.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingScrumtrainingcourse",
+    "requestPaths": [
+      "/ssw/Events/Training/Scrum-Training-Course.aspx"
+    ],
+    "redirectPath": "/archived/events/training/scrum-training-course.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingSolidqcourses",
+    "requestPaths": [
+      "/ssw/Events/Training/SolidQ-Courses.aspx"
+    ],
+    "redirectPath": "/archived/events/training/solid-q-courses.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingSqlserver2012integrationservices",
+    "requestPaths": [
+      "/ssw/Events/Training/SQL-Server-2012-Integration-Services.aspx"
+    ],
+    "redirectPath": "/archived/events/training/sql-server-2012-integration-services.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingSsisseminar",
+    "requestPaths": [
+      "/ssw/Events/Training/SSIS-Seminar.aspx"
+    ],
+    "redirectPath": "/archived/events/training/ssis-seminar.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingTechbreakfastvs2012",
+    "requestPaths": [
+      "/ssw/Events/Training/TechBreakfast-VS-2012.aspx"
+    ],
+    "redirectPath": "/archived/events/training/tech-breakfast-vs-2012.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingTsqlfundamentals",
+    "requestPaths": [
+      "/ssw/Events/Training/TSQL-Fundamentals.aspx"
+    ],
+    "redirectPath": "/archived/events/training/tsql-fundamentals.html"
+  },
+  {
+    "name": "ArchivedEventsTrainingVs2012",
+    "requestPaths": [
+      "/ssw/Events/Training/VS-2012.aspx"
+    ],
+    "redirectPath": "/archived/events/training/vs-2012.html"
+  },
+  {
+    "name": "ArchivedEventsWebinars8monthsoftwaredevelopmentretrospective",
+    "requestPaths": [
+      "/ssw/Events/Webinars/8-Month-Software-Development-Retrospective.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/8-month-software-development-retrospective.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsBuildingspawithmvc4",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Building-SPA-with-MVC4.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/building-spa-with-mvc4.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersangularjswithtypescript",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-AngularJS-with-TypeScript.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-angularjs-with-type-script.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersangularjs",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-AngularJS.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-angularjs.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersaspnetmvc",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-ASP-NET-MVC.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-asp-net-mvc.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersaspnetvnext",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-ASP-NET-vNext.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-asp-net-v-next.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersazure",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-Azure.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-azure.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersbootstrap",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-Bootstrap.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-bootstrap.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersiosandandroid",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-iOS-and-Android.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-ios-and-android.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersprojectmanagementwithvisualstudioonline",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-Project-Management-with-Visual-Studio-Online.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-project-management-with-visual-studio-online.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowerssignalr",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-SignalR.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-signalr.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowerswebapi",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-web-API.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-web-api.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsDevsuperpowersxamarinformsmvvm",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-XamarinForms-MVVM.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/dev-superpowers-xamarin-forms-mvvm.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsGreatintranetsjamesrobertson",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Great-Intranets-James-Robertson.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/great-intranets-james-robertson.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsHiringsoftwarecompanies",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Hiring-Software-Companies.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/hiring-software-companies.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsLessonslearnedwritingmobilesites",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Lessons-Learned-Writing-Mobile-Sites.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/lessons-learned-writing-mobile-sites.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsLightswitch",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Lightswitch.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/lightswitch.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsMasterscrum",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Master-Scrum.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/master-scrum.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsMvcapps",
+    "requestPaths": [
+      "/ssw/Events/Webinars/MVC-Apps.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/mvc-apps.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsMvcdontusewebformsagain",
+    "requestPaths": [
+      "/ssw/Events/Webinars/MVC-Dont_use_Web_Forms_again.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/mvc-dont-use-web-forms-again.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsMvcmigratingfromwebforms",
+    "requestPaths": [
+      "/ssw/Events/Webinars/MVC-Migrating-from-Web-Forms.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/mvc-migrating-from-web-forms.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsPhonegapformobiledevelopers",
+    "requestPaths": [
+      "/ssw/Events/Webinars/PhoneGap-for-Mobile-Developers.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/phone-gap-for-mobile-developers.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsPromotionalvideoshowto",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Promotional-Videos-How-To.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/promotional-videos-how-to.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsSharepointclientsiderendering",
+    "requestPaths": [
+      "/ssw/Events/Webinars/SharePoint-Client-Side-Rendering.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/sharepoint-client-side-rendering.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsSharepointforbusiness",
+    "requestPaths": [
+      "/ssw/Events/Webinars/SharePoint-for-Business.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/sharepoint-for-business.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsSolidq",
+    "requestPaths": [
+      "/ssw/Events/Webinars/SolidQ.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/solid-q.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsSpeedupsqlserver",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Speed-Up-SQL-Server.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/speed-up-sql-server.html"
+  },
+  {
+    "name": "ArchivedEventsWebinarsWindowsazure",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Windows-Azure.aspx"
+    ],
+    "redirectPath": "/archived/events/webinars/windows-azure.html"
+  },
+  {
+    "name": "ArchivedEventsWorkshopsTechbreakfast",
+    "requestPaths": [
+      "/ssw/Events/Workshops/Tech-Breakfast.aspx"
+    ],
+    "redirectPath": "/archived/events/workshops/tech-breakfast.html"
+  },
+  {
+    "name": "ArchivedEventsBrianrandellvirtualizationfordevelopers",
+    "requestPaths": [
+      "/ssw/Events/Brian-Randell-Virtualization-for-Developers.aspx"
+    ],
+    "redirectPath": "/archived/events/brian-randell-virtualization-for-developers.html"
+  },
+  {
+    "name": "ArchivedEventsConferencepast",
+    "requestPaths": [
+      "/ssw/Events/ConferencePast.aspx"
+    ],
+    "redirectPath": "/archived/events/conference-past.html"
+  },
+  {
+    "name": "ArchivedEventsEvent",
+    "requestPaths": [
+      "/ssw/Events/Event.aspx"
+    ],
+    "redirectPath": "/archived/events/event.html"
+  },
+  {
+    "name": "ArchivedEventsHololensexperience",
+    "requestPaths": [
+      "/ssw/Events/HoloLens-experience.aspx"
+    ],
+    "redirectPath": "/archived/events/hololens-experience.html"
+  },
+  {
+    "name": "ArchivedEventsJuvallowyarchitectmasterclass",
+    "requestPaths": [
+      "/ssw/Events/Juval-Lowy-Architect-Master-Class.aspx"
+    ],
+    "redirectPath": "/archived/events/juval-lowy-architect-master-class.html"
+  },
+  {
+    "name": "ArchivedEventsSampletrainingday",
+    "requestPaths": [
+      "/ssw/Events/SampleTrainingDay.aspx"
+    ],
+    "redirectPath": "/archived/events/sample-training-day.html"
+  },
+  {
+    "name": "ArchivedEventsSswtechbreakfastpast",
+    "requestPaths": [
+      "/ssw/Events/SSWTechBreakfastPast.aspx"
+    ],
+    "redirectPath": "/archived/events/ssw-tech-breakfast-past.html"
+  },
+  {
+    "name": "ArchivedEventsSteveforteagileseminar",
+    "requestPaths": [
+      "/ssw/Events/Steve-Forte-Agile-Seminar.aspx"
+    ],
+    "redirectPath": "/archived/events/steve-forte-agile-seminar.html"
+  },
+  {
+    "name": "ArchivedEventsVisualstudio2010rapidsharepointdevelopment",
+    "requestPaths": [
+      "/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.htm"
+    ],
+    "redirectPath": "/archived/events/visual-studio-2010-rapid-sharepoint-development.htm"
+  },
+  {
+    "name": "ArchivedEventsVisualstudio2013rapidsharepointdevelopment",
+    "requestPaths": [
+      "/ssw/Events/Visual-Studio-2013-Rapid-SharePoint-Development.aspx"
+    ],
+    "redirectPath": "/archived/events/visual-studio-2013-rapid-sharepoint-development.html"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentallmailboxesfolder",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_All_Mailboxes_Folder.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-all-mailboxes-folder.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentallmailboxesfolderl",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_All_Mailboxes_Folder_L.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-all-mailboxes-folder-l.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentfoldertreesizesall",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_Folder_Tree_Sizes_All.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-folder-tree-sizes-all.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentfoldertreesizesowner",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_Folder_Tree_Sizes_Owner.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-folder-tree-sizes-owner.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsDefault",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/default.html"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsExtractionlogallrecords",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Extraction_Log_All_Records.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/extraction-log-all-records.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsExtractionloglastextraction",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Extraction_Log_Last_Extraction.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/extraction-log-last-extraction.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsGrowthallmailboxes",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Growth_All_Mailboxes.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/growth-all-mailboxes.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsGrowthallmailboxesmonth",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Growth_All_mailboxes_Month.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/growth-all-mailboxes-month.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsGrowthindividualmailbox",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Growth_Individual_Mailbox.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/growth-individual-mailbox.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsIncomingbusyreceiversofincomingemail",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Incoming_Busy_Receivers_of_Incoming_Email.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/incoming-busy-receivers-of-incoming-email.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsIncomingreceivedemailsforuser",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Incoming_Received_Emails_For_User.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/incoming-received-emails-for-user.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsMailboxessummary",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Mailboxes_Summary.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/mailboxes-summary.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutgoingsentemailsforuserchart",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outgoing_Sent_Emails_For_User_Chart.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outgoing-sent-emails-for-user-chart.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutgoingsentemailsforuserl",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outgoing_Sent_Emails_For_User_L.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outgoing-sent-emails-for-user-l.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutgoingtop50busy",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outgoing_Top_50_Busy.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outgoing-top-50-busy.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutingtop50largeemail",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outing_Top_50_Large_Email.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outing-top-50-large-email.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbyemailaddress",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Email_Address.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-email-address.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsadvanced",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_keywords_Advanced.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-advanced.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsdetail",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Keywords_Detail.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-detail.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsmatrix",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Keywords_Matrix.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-matrix.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeyphrase",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Key_Phrase.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-key-phrase.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsTrendindividualmailbox",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Trend_Individual_Mailbox.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/trend-individual-mailbox.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterDefault",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Default.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/default.html"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsamples",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/ReportSamples.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/report-samples.html"
+  },
+  {
+    "name": "ArchivedExchangereporterUserguide",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/user-guide.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsExcelproductlistDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/ExcelProductList/Default.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/excel-product-list/default.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/default.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsNewversionreleasedreportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/new-version-released-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleasedebriefreportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-debrief-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleaseplanreportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleasePlanReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-plan-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsRevisedestimatefilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/RevisedEstimate_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/revised-estimate-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsTestpleasereportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/TestPleaseReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/test-please-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsUpdatereportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/UpdateReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/update-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsNewversionreleasedreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/new-version-released-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsPrereleasesummaryreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/Pre-ReleaseSummaryReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/pre-release-summary-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleasedebriefreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-debrief-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleaseplanreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleasePlanReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-plan-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsRevisedestimate",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/RevisedEstimate.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/revised-estimate.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsTestpleasereport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/TestPleaseReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/test-please-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsUpdatereport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/UpdateReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/update-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Default.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/default.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsSilverlight",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/silverlight.html"
+    ],
+    "redirectPath": "/archived/extreme-emails/silverlight.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsUntitled1",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Untitled-1.html"
+    ],
+    "redirectPath": "/archived/extreme-emails/untitled-1.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsUserguide",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/userguide.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/userguide.html"
+  },
+  {
+    "name": "ArchivedHealthauditorDefault",
+    "requestPaths": [
+      "/ssw/HealthAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archived/health-auditor/default.html"
+  },
+  {
+    "name": "ArchivedHealthauditorFxcoptutorial",
+    "requestPaths": [
+      "/ssw/HealthAuditor/FxCopTutorial.aspx"
+    ],
+    "redirectPath": "/archived/health-auditor/fx-cop-tutorial.html"
+  },
+  {
+    "name": "ArchivedHealthauditorNunittutorial",
+    "requestPaths": [
+      "/ssw/HealthAuditor/NUnitTutorial.aspx"
+    ],
+    "redirectPath": "/archived/health-auditor/nunit-tutorial.html"
+  },
+  {
+    "name": "ArchivedHealthauditorUserguide",
+    "requestPaths": [
+      "/ssw/HealthAuditor/userguide.aspx"
+    ],
+    "redirectPath": "/archived/health-auditor/userguide.html"
+  },
+  {
+    "name": "ArchivedIncludeFooterssw",
+    "requestPaths": [
+      "/ssw/include/FooterSSW.htm"
+    ],
+    "redirectPath": "/archived/include/footer-ssw.htm"
+  },
+  {
+    "name": "ArchivedLinkauditorDesktopUserguide",
+    "requestPaths": [
+      "/ssw/LinkAuditor/Desktop/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/link-auditor/desktop/user-guide.html"
+  },
+  {
+    "name": "ArchivedLinkauditorDefault",
+    "requestPaths": [
+      "/ssw/LinkAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archived/link-auditor/default.html"
+  },
+  {
+    "name": "ArchivedLinkauditorHowtobegoodlinkauditordailybuildmaster",
+    "requestPaths": [
+      "/ssw/LinkAuditor/HowtobeGoodLinkAuditorDailyBuildMaster.aspx"
+    ],
+    "redirectPath": "/archived/link-auditor/howtobe-good-link-auditor-daily-build-master.html"
+  },
+  {
+    "name": "ArchivedLinkauditorLastreport",
+    "requestPaths": [
+      "/ssw/LinkAuditor/LastReport.htm"
+    ],
+    "redirectPath": "/archived/link-auditor/last-report.htm"
+  },
+  {
+    "name": "ArchivedLinkauditorUserguide",
+    "requestPaths": [
+      "/ssw/LinkAuditor/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/link-auditor/user-guide.html"
+  },
+  {
+    "name": "ArchivedLookoutSampleCustomer",
+    "requestPaths": [
+      "/ssw/LookOut/Sample/Customer.aspx"
+    ],
+    "redirectPath": "/archived/look-out/sample/customer.html"
+  },
+  {
+    "name": "ArchivedLookoutSampleDefault",
+    "requestPaths": [
+      "/ssw/LookOut/Sample/default.htm"
+    ],
+    "redirectPath": "/archived/look-out/sample/default.htm"
+  },
+  {
+    "name": "ArchivedLookoutDefault",
+    "requestPaths": [
+      "/ssw/LookOut/Default.aspx"
+    ],
+    "redirectPath": "/archived/look-out/default.html"
+  },
+  {
+    "name": "ArchivedLookoutUserguide",
+    "requestPaths": [
+      "/ssw/LookOut/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/look-out/user-guide.html"
+  },
+  {
+    "name": "ArchivedNettoolkit01winvalidator",
+    "requestPaths": [
+      "/ssw/NETToolkit/01WinValidator.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/01-win-validator.html"
+  },
+  {
+    "name": "ArchivedNettoolkit02winsearch",
+    "requestPaths": [
+      "/ssw/NETToolkit/02WinSearch.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/02-win-search.html"
+  },
+  {
+    "name": "ArchivedNettoolkit03dataentry",
+    "requestPaths": [
+      "/ssw/NETToolkit/03DataEntry.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/03-data-entry.html"
+  },
+  {
+    "name": "ArchivedNettoolkit04exceptionreporter",
+    "requestPaths": [
+      "/ssw/NETToolkit/04ExceptionReporter.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/04-exception-reporter.html"
+  },
+  {
+    "name": "ArchivedNettoolkit05wizardforms",
+    "requestPaths": [
+      "/ssw/NETToolkit/05WizardForms.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/05-wizard-forms.html"
+  },
+  {
+    "name": "ArchivedNettoolkit06configurationblock",
+    "requestPaths": [
+      "/ssw/NETToolkit/06ConfigurationBlock.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/06-configuration-block.html"
+  },
+  {
+    "name": "ArchivedNettoolkit07versionchecker",
+    "requestPaths": [
+      "/ssw/NETToolkit/07VersionChecker.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/07-version-checker.html"
+  },
+  {
+    "name": "ArchivedNettoolkit08progressbarsstatusforms",
+    "requestPaths": [
+      "/ssw/NETToolkit/08ProgressbarsStatusforms.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/08-progressbars-statusforms.html"
+  },
+  {
+    "name": "ArchivedNettoolkitDefault",
+    "requestPaths": [
+      "/ssw/NETToolkit/Default.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/default.html"
+  },
+  {
+    "name": "ArchivedNettoolkitUserguide",
+    "requestPaths": [
+      "/ssw/NETToolkit/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/net-toolkit/user-guide.html"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200803",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_03.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-03.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200804",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_04.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-04.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200805",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_05.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-05.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200806",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_06.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-06.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200807",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_07.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-07.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200808",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_08.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-08.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200809",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_09.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-09.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200810",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_10.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-10.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200811",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200812",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_12.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-12.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug2008daychange",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_DayChange.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-day-change.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200901",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_01.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-01.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200902",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_02.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-02.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200903",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_03.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-03.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200904",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_04.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-04.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200905",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_05.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-05.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200906",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_06.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-06.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200907",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_07.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-07.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200908",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_08.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-08.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200909",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_09.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-09.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200910",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_10.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-10.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200911",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200912",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_12.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-12.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201001",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_01.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-01.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201002",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_02.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-02.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201003",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_03.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-03.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201007",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_07.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-07.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201008",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_08.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-08.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201009",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_09.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-09.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201010",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_10.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-10.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201011",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201012",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_12.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-12.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201102",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_02.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-02.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201104",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_04.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-04.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201105",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_05.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-05.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201106",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_06.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-06.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201111",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraugDefault",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/default.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/default.htm"
+  },
+  {
+    "name": "ArchivedNetugEvaluationsurveyDefault",
+    "requestPaths": [
+      "/ssw/NETUG/Evaluation-Survey/Default.aspx"
+    ],
+    "redirectPath": "/archived/netug/evaluation-survey/default.html"
+  },
+  {
+    "name": "ArchivedNetugFirebootcampMarch2014",
+    "requestPaths": [
+      "/ssw/NETUG/FireBootCamp/March2014.html"
+    ],
+    "redirectPath": "/archived/netug/fire-boot-camp/march-2014.html"
+  },
+  {
+    "name": "ArchivedNetugFirebootcampNovember2013",
+    "requestPaths": [
+      "/ssw/NETUG/FireBootCamp/November2013.html"
+    ],
+    "redirectPath": "/archived/netug/fire-boot-camp/november-2013.html"
+  },
+  {
+    "name": "ArchivedNetugSourcesEvaluationform",
+    "requestPaths": [
+      "/ssw/NETUG/sources/evaluationform.html"
+    ],
+    "redirectPath": "/archived/netug/sources/evaluationform.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateSelectclientMicrosoftaccesstosqlserver",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/SelectClient/MicrosoftAccessToSQLServer.htm"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/select-client/microsoft-access-to-sql-server.htm"
+  },
+  {
+    "name": "ArchivedNetugSswupdate2005nov",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/2005Nov.htm"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/2005-nov.htm"
+  },
+  {
+    "name": "ArchivedNetugSswupdateAanewtemplate201802",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/aaNewTemplate_2018_02____.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/aa-new-template-2018-02----.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateQldmsdnreminder",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/QLDMSDNReminder.htm"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/qldmsdnreminder.htm"
+  },
+  {
+    "name": "ArchivedNetugSswupdateSswnewslettertemplate",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/SSW-newsletter-template.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/ssw-newsletter-template.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateSsw201805basedtemplatewithfeaturedproductsection",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/SSW_2018_05-based__Template-with-featured-product-section.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/ssw-2018-05-based--template-with-featured-product-section.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateZzsswnewslettertemplate",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/zzSSWnewsletterTemplate.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/zz-sswnewsletter-template.html"
+  },
+  {
+    "name": "ArchivedNetugHanselmanusergrouplive",
+    "requestPaths": [
+      "/ssw/NETUG/Hanselman-User-Group-Live.aspx"
+    ],
+    "redirectPath": "/archived/netug/hanselman-user-group-live.html"
+  },
+  {
+    "name": "ArchivedNetugHanselmanusergroupspecial",
+    "requestPaths": [
+      "/ssw/NETUG/Hanselman-User-Group-Special.aspx"
+    ],
+    "redirectPath": "/archived/netug/hanselman-user-group-special.html"
+  },
+  {
+    "name": "ArchivedNetugHistory",
+    "requestPaths": [
+      "/ssw/NETUG/History.aspx"
+    ],
+    "redirectPath": "/archived/netug/history.html"
+  },
+  {
+    "name": "ArchivedNetugTheagileolympicswithjessehouwing",
+    "requestPaths": [
+      "/ssw/NETUG/The-Agile-Olympics-with-Jesse-Houwing.aspx"
+    ],
+    "redirectPath": "/archived/netug/the-agile-olympics-with-jesse-houwing.html"
+  },
+  {
+    "name": "ArchivedNetugTopsessions",
+    "requestPaths": [
+      "/ssw/NETUG/Top-Sessions.aspx"
+    ],
+    "redirectPath": "/archived/netug/top-sessions.html"
+  },
+  {
+    "name": "ArchivedNetugUsergroupmapdirectionscanberra",
+    "requestPaths": [
+      "/ssw/NETUG/UserGroupMapDirectionsCanberra.aspx"
+    ],
+    "redirectPath": "/archived/netug/user-group-map-directions-canberra.html"
+  },
+  {
+    "name": "ArchivedNetugUsergroupmapdirectionssydney",
+    "requestPaths": [
+      "/ssw/NETUG/UserGroupMapDirectionsSydney.aspx"
+    ],
+    "redirectPath": "/archived/netug/user-group-map-directions-sydney.html"
+  },
+  {
+    "name": "ArchivedPerformanceproDefault",
+    "requestPaths": [
+      "/ssw/PerformancePRO/Default.aspx"
+    ],
+    "redirectPath": "/archived/performance-pro/default.html"
+  },
+  {
+    "name": "ArchivedPerformanceproDefault",
+    "requestPaths": [
+      "/ssw/PerformancePRO/default.htm"
+    ],
+    "redirectPath": "/archived/performance-pro/default.htm"
+  },
+  {
+    "name": "ArchivedPerformanceproUserguide",
+    "requestPaths": [
+      "/ssw/PerformancePRO/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/performance-pro/user-guide.html"
+  },
+  {
+    "name": "ArchivedProjectsDefault",
+    "requestPaths": [
+      "/ssw/Projects/default.htm"
+    ],
+    "redirectPath": "/archived/projects/default.htm"
+  },
+  {
+    "name": "ArchivedPropertyandeventproDefault",
+    "requestPaths": [
+      "/ssw/PropertyAndEventPRO/Default.aspx"
+    ],
+    "redirectPath": "/archived/property-and-event-pro/default.html"
+  },
+  {
+    "name": "ArchivedPropertyandeventproUserguide",
+    "requestPaths": [
+      "/ssw/PropertyAndEventPRO/userguide.aspx"
+    ],
+    "redirectPath": "/archived/property-and-event-pro/userguide.html"
+  },
+  {
+    "name": "ArchivedRegistrationUserguide",
+    "requestPaths": [
+      "/ssw/Registration/userguide.aspx"
+    ],
+    "redirectPath": "/archived/registration/userguide.html"
+  },
+  {
+    "name": "ArchivedSqlauditorDefault",
+    "requestPaths": [
+      "/ssw/SQLAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archived/sql-auditor/default.html"
+  },
+  {
+    "name": "ArchivedSqlauditorSamplereport",
+    "requestPaths": [
+      "/ssw/SQLAuditor/SampleReport.aspx"
+    ],
+    "redirectPath": "/archived/sql-auditor/sample-report.html"
+  },
+  {
+    "name": "ArchivedSqlauditorUserguide",
+    "requestPaths": [
+      "/ssw/SQLAuditor/userguide.aspx"
+    ],
+    "redirectPath": "/archived/sql-auditor/userguide.html"
+  },
+  {
+    "name": "ArchivedSqlauditorUserguidewizards",
+    "requestPaths": [
+      "/ssw/SQLAuditor/UserguideWizards.aspx"
+    ],
+    "redirectPath": "/archived/sql-auditor/userguide-wizards.html"
+  },
+  {
+    "name": "ArchivedSqldeployDeveloperguide",
+    "requestPaths": [
+      "/ssw/SQLDeploy/developerguide.aspx"
+    ],
+    "redirectPath": "/archived/sql-deploy/developerguide.html"
+  },
+  {
+    "name": "ArchivedSqldeployExemode",
+    "requestPaths": [
+      "/ssw/SQLDeploy/ExeMode.aspx"
+    ],
+    "redirectPath": "/archived/sql-deploy/exe-mode.html"
+  },
+  {
+    "name": "ArchivedSqldeployExistingdatabase",
+    "requestPaths": [
+      "/ssw/SQLDeploy/ExistingDataBase.aspx"
+    ],
+    "redirectPath": "/archived/sql-deploy/existing-data-base.html"
+  },
+  {
+    "name": "ArchivedSqldeployIntegrationmode",
+    "requestPaths": [
+      "/ssw/SQLDeploy/IntegrationMode.aspx"
+    ],
+    "redirectPath": "/archived/sql-deploy/integration-mode.html"
+  },
+  {
+    "name": "ArchivedSqldeployUserguide",
+    "requestPaths": [
+      "/ssw/SQLDeploy/userguide.aspx"
+    ],
+    "redirectPath": "/archived/sql-deploy/userguide.html"
+  },
+  {
+    "name": "ArchivedSqlreportingservicesauditorDefault",
+    "requestPaths": [
+      "/ssw/SQLReportingServicesAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archived/sql-reporting-services-auditor/default.html"
+  },
+  {
+    "name": "ArchivedSqlreportingservicesauditorPostinstallation",
+    "requestPaths": [
+      "/ssw/SQLReportingServicesAuditor/PostInstallation.aspx"
+    ],
+    "redirectPath": "/archived/sql-reporting-services-auditor/post-installation.html"
+  },
+  {
+    "name": "ArchivedSqlreportingservicesauditorUserguide",
+    "requestPaths": [
+      "/ssw/SQLReportingServicesAuditor/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/sql-reporting-services-auditor/user-guide.html"
+  },
+  {
+    "name": "ArchivedSqltotalcompareDefault",
+    "requestPaths": [
+      "/ssw/SQLTotalCompare/Default.aspx"
+    ],
+    "redirectPath": "/archived/sql-total-compare/default.html"
+  },
+  {
+    "name": "ArchivedSqltotalcompareUserguide",
+    "requestPaths": [
+      "/ssw/SQLTotalCompare/userguide.aspx"
+    ],
+    "redirectPath": "/archived/sql-total-compare/userguide.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsActivesync",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/activesync.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/activesync.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsAntispyware",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/antispyware.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/antispyware.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsAspnet",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ASPNET.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/aspnet.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsAsterix",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Asterix.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/asterix.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsBing",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Bing.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/bing.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsBlinq",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/blinq.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/blinq.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsCamtasia",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Camtasia.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/camtasia.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsCrm",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/CRM.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/crm.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsDataanalyzer",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/dataanalyzer.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/dataanalyzer.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsDefault",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Default.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/default.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsDnn",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/dnn.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/dnn.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsDotnet",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/DOTNET.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/dotnet.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsDotnetnuke",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/DotNetNuke.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/dot-net-nuke.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsDynamicdata",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/DynamicData.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/dynamic-data.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsExchange",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/exchange.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/exchange.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsExpression",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Expression.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/expression.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsExpressionblend",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ExpressionBlend.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/expression-blend.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsExpressionsuite",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ExpressionSuite.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/expression-suite.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsFacebook",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Facebook.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/facebook.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsFoursquare",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Foursquare.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/foursquare.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsGoogle",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/google.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/google.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsGoogleanalytics",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/GoogleAnalytics.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/google-analytics.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsHohm",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Hohm.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/hohm.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsHyperv",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/HyperV.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/hyper-v.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsIis",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/iis.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/iis.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsInstyler",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Instyler.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/instyler.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsIsaserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/isaserver.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/isaserver.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsLinq",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/LINQ.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/linq.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsLivemeeting",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/LiveMeeting.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/live-meeting.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsLivewriter",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/LiveWriter.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/live-writer.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMediacenter",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/mediacenter.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/mediacenter.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMediaplayer",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MediaPlayer.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/media-player.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMicrosoftproject",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Microsoft_Project.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/microsoft-project.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMsajax",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSAjax.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/msajax.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMsdn",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSDN.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/msdn.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMsform",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSForm.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/msform.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMsnmessenger",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSNMessenger.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/msnmessenger.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMswebsite",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSWebsite.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/mswebsite.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsMyob",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MYOB.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/myob.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsNettiers",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/NetTiers.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/net-tiers.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsPerformancepoint",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/PerformancePoint.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/performance-point.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsPlaxo",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Plaxo.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/plaxo.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsPluralsight",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Pluralsight.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/pluralsight.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsProject",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/project.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsProjectserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ProjectServer.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/project-server.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsProjectserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project_Server.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/project-server.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsProjectserverintegration",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project_Server_Integration.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/project-server-integration.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsProjecttfs",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project_TFS.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/project-tfs.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsQuerydesigner",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/QueryDesigner.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/query-designer.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsReportingservicereportbuilder",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ReportingServiceReportBuilder.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/reporting-service-report-builder.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsReportingservices",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ReportingServices.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/reporting-services.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsRescuetime",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/RescueTime.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/rescue-time.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsRulestobetterxda",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/RulesToBetterXDA.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/rules-to-better-xda.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSharepoint",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/sharepoint.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/sharepoint.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSilverlight",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Silverlight.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/silverlight.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSkype",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Skype.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/skype.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSmh",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SMH.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/smh.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSnagit",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Snagit.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/snagit.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSourcesafe",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SourceSafe.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/source-safe.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSqlserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/sqlserver.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/sqlserver.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSqlserverolap",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SQLserverOLAP.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/sqlserver-olap.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsSugarsync",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SugarSync.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/sugar-sync.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTeamcompanion",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TeamCompanion.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/team-companion.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTeamfoundationserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TeamFoundationServer.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/team-foundation-server.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTeamfoundationserver2010",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TeamFoundationServer2010.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/team-foundation-server-2010.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTelerik",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Telerik.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/telerik.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTelerikaspweb",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikASPWeb.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/telerik-aspweb.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTeleriksharepointaccelerationkit",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikSharePointAccelerationKit.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/telerik-sharepoint-acceleration-kit.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTeleriktests",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikTests.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/telerik-tests.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTelerikteststudio",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikTestStudio.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/telerik-test-studio.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTelerikwindowsforms",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikWindowsForms.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/telerik-windows-forms.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTerminalservices",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/terminalservices.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/terminalservices.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTfsazure",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFS-Azure.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/tfs-azure.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTfsdebuggercanvas",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFSDebuggerCanvas.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/tfsdebugger-canvas.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTfssidekicks",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFSSidekicks.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/tfssidekicks.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTfstwaportal",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFS_TWA-Portal.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/tfs-twa-portal.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTfsvsscrumprocess",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFS_VSScrumProcess.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/tfs-vsscrum-process.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsTweetdeck",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Tweetdeck.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/tweetdeck.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVbuildpro",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/vbuildpro.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/vbuildpro.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVirtualearth",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VirtualEarth.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/virtual-earth.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVirtualpc",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VirtualPC.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/virtual-pc.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVista",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Vista.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/vista.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVisualstudio",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VisualStudio.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/visual-studio.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVsbuildanddeploy",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VSBuildandDeploy.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/vsbuild-and-deploy.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsVstt",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VSTT.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/vstt.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWhatsapp",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WhatsApp.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/whats-app.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWindows",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/windows.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/windows.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWindows2008r2",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/windows2008r2.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/windows-2008r-2.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWindows7",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/windows7.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/windows-7.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWindowsdesktopsearch",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WindowsDesktopSearch.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/windows-desktop-search.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWindowsmobile",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WindowsMobile.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/windows-mobile.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWindowsphotoviewer",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WindowsPhotoViewer.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/windows-pho-to-viewer.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWise",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Wise.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/wise.html"
+  },
+  {
+    "name": "ArchivedStandardsBettersoftwaresuggestionsWpf",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WPF.aspx"
+    ],
+    "redirectPath": "/archived/standards/better-software-suggestions/wpf.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperaccessAccessshortcutkeys",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/AccessShortcutKeys.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-access/access-shortcut-keys.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperaccessAttachmentmanageroverview",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/attachmentmanageroverview.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-access/attachmentmanageroverview.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperaccessHowtodomailmergeinwordusingaccessdata",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/howtodomailmergeinwordusingaccessdata.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-access/howtodomailmergeinwordusingaccessdata.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperaccessHowtoimproveaccessperformance",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/howtoimproveaccessperformance.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-access/howtoimproveaccessperformance.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperaccessWhattodoaftercrash",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/WhatToDoAfterCrash.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-access/what-to-do-after-crash.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperaccessWhydatarenovator",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/whydatarenovator.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-access/whydatarenovator.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetDotnetstandardobjectnaming",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/DotNetStandard_ObjectNaming.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/dot-net-standard-object-naming.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetDotnetstandardprojectnaming",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/DotNetStandard_ProjectNaming.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/dot-net-standard-project-naming.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetEditxmlpage",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/EditXMLPage.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/edit-xmlpage.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetGuidelinesforreporting",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/GuidelinesForReporting.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/guidelines-for-reporting.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetGuidelinesforreportingrichclient",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/GuidelinesForReportingRichClient.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/guidelines-for-reporting-rich-client.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetGuidelinesforreportingwebclient",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/GuidelinesForReportingWebClient.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/guidelines-for-reporting-web-client.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetInteropindotnetandhowtoavoiddllhell",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/InteropInDotNetAndHowToAvoidDLLHell.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/interop-in-dot-net-and-how-to-avoid-dllhell.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetSswnorthwindarchitecturesupportingwebservices",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/SSWNorthwindArchitectureSupportingWebServices.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/ssw-northwind-architecture-supporting-web-services.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperdotnetUsingtfstoeditwebsite",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/UsingTFSToEditWebsite.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-dot-net/using-tfsto-edit-website.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralAccesstools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/AccessTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/access-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralCreatingscheduledjobsonaserver",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/CreatingScheduledJobsOnAServer.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/creating-scheduled-jobs-on-aserver.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralExchangeserver",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/ExchangeServer.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/exchange-server.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralInternetexplorertools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/internetexplorertools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/internetexplorertools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralLaptoptools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/LaptopTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/laptop-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralNettools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/netTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/net-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralNetworktools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/networktools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/networktools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralOutlooktools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/outlooktools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/outlooktools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralPocketpctools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/pocketpctools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/pocketpctools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralSilverlighttools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/SilverlightTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/silverlight-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralSqlservertools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/SQLservertools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/sqlservertools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralTeamfoundationserverpowertools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TeamFoundationServerPowerTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/team-foundation-server-power-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralTfs",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TFS.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/tfs.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralTfstools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TFSTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/tfstools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralThebest3rdpartytools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TheBest3rdPartyTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/the-best-3rd-party-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralThebestwebsites",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TheBestWebsites.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/the-best-websites.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralVisualstudiotools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/VisualStudioTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/visual-studio-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWebdevelopmenttools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/webdevelopmenttools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/webdevelopmenttools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWebdevelopmenttoolsaspnet",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WebdevelopmentToolsASPNET.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/webdevelopment-tools-aspnet.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWebsites",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/Websites.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/websites.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWindowsdevelopmenttools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/windowsdevelopmenttools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/windowsdevelopmenttools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWindowsmobile",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WindowsMobile.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/windows-mobile.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWindowstools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WindowsTools.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/windows-tools.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopergeneralWinformcontrols",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WinformControls.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-general/winform-controls.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperinternet216color",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/216color.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-internet/216color.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperinternetHowtofixbrokenlinks",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/howtofixbrokenlinks.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-internet/howtofixbrokenlinks.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperinternetHowtoftpwithiexplorer",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/HowToFTPWithIExplorer.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-internet/how-to-ftpwith-iexplorer.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperinternetHowtoftpwithiexplorerpassword",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/HowToFTPWithIExplorerpassword.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-internet/how-to-ftpwith-iexplorerpassword.html"
+  },
+  {
+    "name": "ArchivedStandardsDeveloperinternetStandardwebcolours",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/StandardWebColours.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-internet/standard-web-colours.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersharepointVmdevelopment",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSharePoint/VMDevelopment.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sharepoint/vmdevelopment.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlreportingservicesSqlserverreportingservice1reportsnaming",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLReportingServices/SQLServerReportingService_1_ReportsNaming.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-reporting-services/sql-server-reporting-service-1-reports-naming.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlserverCreatingasqlserverprofilertrace",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/creatingasqlserverprofilertrace.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-server/creatingasqlserverprofilertrace.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlserverDataschemastandard",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/dataschemastandard.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-server/dataschemastandard.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlserverSetupsqlserverserviceforreplication",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/setupsqlserverserviceforreplication.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-server/setupsqlserverserviceforreplication.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlserverSqlserverstandard3storedprocedureformatting",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/SQLServerStandard_3_StoredProcedureFormatting.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-server/sql-server-standard-3-stored-procedure-formatting.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlserverSqlserverstandard6databasedesignstandards",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/SQLServerStandard_6_DatabaseDesignStandards.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-server/sql-server-standard-6-database-design-standards.html"
+  },
+  {
+    "name": "ArchivedStandardsDevelopersqlserverSswstandardforupsizing",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/SSWStandardForUpsizing.aspx"
+    ],
+    "redirectPath": "/archived/standards/developer-sql-server/ssw-standard-for-upsizing.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesDevelopersqlreportingservicesSqlserverreportingservice1reportsnaming",
+    "requestPaths": [
+      "/ssw/Standards/Rules/DeveloperSQLReportingServices/SQLServerReportingService_1_ReportsNaming.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/developer-sql-reporting-services/sql-server-reporting-service-1-reports-naming.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesCreatingatimedimensionin10easysteps",
+    "requestPaths": [
+      "/ssw/Standards/Rules/CreatingATimeDimensionIn10EasySteps.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/creating-atime-dimension-in-10-easy-steps.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesDataschemastandard",
+    "requestPaths": [
+      "/ssw/Standards/Rules/dataschemastandard.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/dataschemastandard.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesGoodthingsbadthings",
+    "requestPaths": [
+      "/ssw/Standards/Rules/GoodThingsBadThings.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/good-things-bad-things.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesMakingolapreports",
+    "requestPaths": [
+      "/ssw/Standards/Rules/MakingOLAPReports.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/making-olapreports.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetteraccessapplications",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterAccessApplications.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-access-applications.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetteraspdotnet",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterASPDotNet.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-aspdot-net.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterbusinessintelligence",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterBusinessIntelligence.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-business-intelligence.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterbusinessintelligenceresourcesetup",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterBusinessIntelligenceResourceSetup.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-business-intelligence-resource-setup.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettercommandlines",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulestoBetterCommandLines.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-comm-and-lines.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettercrm3to4migration",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterCRM3To4Migration.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-crm3-to-4-migration.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterdotnetnuke",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulestoBetterDotNetNuke.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-dot-net-nuke.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterexchangeserver",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterExchangeServer.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-exchange-server.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterisaserver",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterISAServer.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-isaserver.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettermicrosoftcrmdatasynchronization",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterMicrosoftCRMDataSynchronization.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-microsoft-crmdata-synchronization.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterolapclients",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterOLAPClients.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-olapclients.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterprojectmanagermethodology",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterProjectManagerMethodology.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-project-manager-methodology.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterreportingsolutions",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterReportingSolutions.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-reporting-solutions.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettersetups",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterSetups.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-setups.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettersqlreportingservices",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-sql-reporting-services.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettersswproducts",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterSSWProducts.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-ssw-products.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettervirtualpcs",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterVirtualPCs.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-virtual-pcs.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobettervistacompatibilities",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterVistaCompatibilities.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-vista-compatibilities.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterwebsitesonlinetransactions",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWebsitesOnlineTransactions.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-websites-online-transactions.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterwindows2003",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindows2003.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-windows-2003.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterwindows7deployment",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindows7Deployment.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-windows-7-deployment.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterwindows8deployment",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindows8Deployment.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-windows-8-deployment.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterwindowsformsclickonce",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindowsFormsClickOnce.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-windows-forms-click-once.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestobetterwindowsvistadeployment",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulestoBetterWindowsVistaDeployment.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-better-windows-vista-deployment.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesRulestoupsizingaccess",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToUpsizingAccess.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/rules-to-upsizing-access.html"
+  },
+  {
+    "name": "ArchivedStandardsRulesUsinggooglecalendar",
+    "requestPaths": [
+      "/ssw/Standards/Rules/UsingGoogleCalendar.aspx"
+    ],
+    "redirectPath": "/archived/standards/rules/using-google-calendar.html"
+  },
+  {
+    "name": "ArchivedStandardsSswlogoDefault",
+    "requestPaths": [
+      "/ssw/Standards/SSWLogo/Default.aspx"
+    ],
+    "redirectPath": "/archived/standards/ssw-logo/default.html"
+  },
+  {
+    "name": "ArchivedStandardsSupportBugreportorenhancement",
+    "requestPaths": [
+      "/ssw/Standards/Support/BugReportOrEnhancement.aspx"
+    ],
+    "redirectPath": "/archived/standards/support/bug-report-or-enhancement.html"
+  },
+  {
+    "name": "ArchivedStandardsSupportRemotesupportsamplescript",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportSampleScript.aspx"
+    ],
+    "redirectPath": "/archived/standards/support/remote-support-sample-script.html"
+  },
+  {
+    "name": "ArchivedStandardsSupportRemotesupportviacopilot",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaCopilot.aspx"
+    ],
+    "redirectPath": "/archived/standards/support/remote-support-via-copilot.html"
+  },
+  {
+    "name": "ArchivedStandardsSupportRemotesupportvianetmeeting",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaNetMeeting.aspx"
+    ],
+    "redirectPath": "/archived/standards/support/remote-support-via-net-meeting.html"
+  },
+  {
+    "name": "ArchivedStandardsSupportRemotesupportviateamviewer",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaTeamViewer.aspx"
+    ],
+    "redirectPath": "/archived/standards/support/remote-support-via-team-viewer.html"
+  },
+  {
+    "name": "ArchivedStandardsSupportRemotesupportviaultravnc",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaUltraVNC.aspx"
+    ],
+    "redirectPath": "/archived/standards/support/remote-support-via-ultra-vnc.html"
+  },
+  {
+    "name": "ArchivedStandardsTemplatesSswgooglereporttemplate",
+    "requestPaths": [
+      "/ssw/Standards/Templates/SSWGoogleReportTemplate.aspx"
+    ],
+    "redirectPath": "/archived/standards/templates/ssw-google-report-template.html"
+  },
+  {
+    "name": "ArchivedStandardsWisesetupReleasingaversion",
+    "requestPaths": [
+      "/ssw/Standards/WiseSetup/ReleasingAVersion.aspx"
+    ],
+    "redirectPath": "/archived/standards/wise-setup/releasing-aversion.html"
+  },
+  {
+    "name": "ArchivedStandardsWisesetupUserguide",
+    "requestPaths": [
+      "/ssw/Standards/WiseSetup/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/standards/wise-setup/user-guide.html"
+  },
+  {
+    "name": "ArchivedStandardsWisesetupWisestandards",
+    "requestPaths": [
+      "/ssw/Standards/WiseSetup/WiseStandards.aspx"
+    ],
+    "redirectPath": "/archived/standards/wise-setup/wise-standards.html"
+  },
+  {
+    "name": "ArchivedStandardsAdventureworkssamples",
+    "requestPaths": [
+      "/ssw/Standards/AdventureWorksSamples.aspx"
+    ],
+    "redirectPath": "/archived/standards/adventure-works-samples.html"
+  },
+  {
+    "name": "ArchivedStandardsDefault",
+    "requestPaths": [
+      "/ssw/Standards/Default.aspx"
+    ],
+    "redirectPath": "/archived/standards/default.html"
+  },
+  {
+    "name": "ArchivedStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/AccessDeniedWhenLogon.html"
+    ],
+    "redirectPath": "/archived/standards-internal/developer-products-hosting/plesk kbs/access-denied-when-logon.html"
+  },
+  {
+    "name": "ArchivedStandardsinternalDeveloperproductshostingPlesk kbsIis web directorys missing2",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/IIS Web Directorys Missing2.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/developer-products-hosting/plesk kbs/iis web directorys missing-2.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalDeveloperproductshostingSettingupauseronseal",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/SettingUpAUserOnSeal.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaCamerontownshendAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaDanielrussellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaJaywangAbout me",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/jay-wang/about me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaJonnytreesAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/jonny-trees/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaJosephropertiAbout me",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaMashagildinaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaMichellehuntAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaOlivianganAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/olivia-ngan/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaPaulstovellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaPhilipolsenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaSamakulaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/sam-akula/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaTiagoaraujoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/tiago-araujo/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaTimkremerAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaTristankurniawanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/ulysses-maclaren/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaVarunbalakrishnaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/VarunBalakrishna/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
+  },
+  {
+    "name": "ArchivedTeamcalendarInstallationCreateuser",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/CreateUser.htm"
+    ],
+    "redirectPath": "/archived/team-calendar/installation/create-user.htm"
+  },
+  {
+    "name": "ArchivedTeamcalendarInstallationDefault",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/Default.htm"
+    ],
+    "redirectPath": "/archived/team-calendar/installation/default.htm"
+  },
+  {
+    "name": "ArchivedTeamcalendarInstallationExchangepermissions",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/ExchangePermissions.htm"
+    ],
+    "redirectPath": "/archived/team-calendar/installation/exchange-permissions.htm"
+  },
+  {
+    "name": "ArchivedTeamcalendarInstallationIispermissions",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/IISPermissions.htm"
+    ],
+    "redirectPath": "/archived/team-calendar/installation/iispermissions.htm"
+  },
+  {
+    "name": "ArchivedTeamcalendarInstallationReadme",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/ReadMe.htm"
+    ],
+    "redirectPath": "/archived/team-calendar/installation/read-me.htm"
+  },
+  {
+    "name": "ArchivedTeamcalendarDefault",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Default.aspx"
+    ],
+    "redirectPath": "/archived/team-calendar/default.html"
+  },
+  {
+    "name": "ArchivedTeamcalendarHowtobooksomeoneformeeting",
+    "requestPaths": [
+      "/ssw/TeamCalendar/howtobooksomeoneformeeting.aspx"
+    ],
+    "redirectPath": "/archived/team-calendar/howtobooksomeoneformeeting.html"
+  },
+  {
+    "name": "ArchivedTeamcalendarUserguide",
+    "requestPaths": [
+      "/ssw/TeamCalendar/userguide.aspx"
+    ],
+    "redirectPath": "/archived/team-calendar/userguide.html"
+  },
+  {
+    "name": "ArchivedTestmockupMockup",
+    "requestPaths": [
+      "/ssw/Testmockup/mockup.htm"
+    ],
+    "redirectPath": "/archived/testmockup/mockup.htm"
+  },
+  {
+    "name": "ArchivedTimeprosmarttagsDefault",
+    "requestPaths": [
+      "/ssw/TimePROSmartTags/Default.aspx"
+    ],
+    "redirectPath": "/archived/time-prosmart-tags/default.html"
+  },
+  {
+    "name": "ArchivedTimeprosmarttagsUserguide",
+    "requestPaths": [
+      "/ssw/TimePROSmartTags/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/time-prosmart-tags/user-guide.html"
+  },
+  {
+    "name": "ArchivedTrainingAccesstosqlserverandnet",
+    "requestPaths": [
+      "/ssw/Training/AccesstoSQLServerandNET.aspx"
+    ],
+    "redirectPath": "/archived/training/access-to-sql-server-and-net.html"
+  },
+  {
+    "name": "ArchivedTrainingAlm",
+    "requestPaths": [
+      "/ssw/Training/ALM.aspx"
+    ],
+    "redirectPath": "/archived/training/alm.html"
+  },
+  {
+    "name": "ArchivedTrainingAlmcustomization",
+    "requestPaths": [
+      "/ssw/Training/ALMCustomization.aspx"
+    ],
+    "redirectPath": "/archived/training/alm-customization.html"
+  },
+  {
+    "name": "ArchivedTrainingBitheglory",
+    "requestPaths": [
+      "/ssw/Training/BI-TheGlory.aspx"
+    ],
+    "redirectPath": "/archived/training/bi-the-glory.html"
+  },
+  {
+    "name": "ArchivedTrainingBitheguts",
+    "requestPaths": [
+      "/ssw/Training/BI-TheGuts.aspx"
+    ],
+    "redirectPath": "/archived/training/bi-the-guts.html"
+  },
+  {
+    "name": "ArchivedTrainingBusinessintelligenceforbusiness",
+    "requestPaths": [
+      "/ssw/Training/BusinessIntelligenceForBusiness.aspx"
+    ],
+    "redirectPath": "/archived/training/business-intelligence-for-business.html"
+  },
+  {
+    "name": "ArchivedTrainingExpression",
+    "requestPaths": [
+      "/ssw/Training/Expression.aspx"
+    ],
+    "redirectPath": "/archived/training/expression.html"
+  },
+  {
+    "name": "ArchivedTrainingProcessimprovementforsoftwareteams",
+    "requestPaths": [
+      "/ssw/Training/ProcessImprovementForSoftwareTeams.aspx"
+    ],
+    "redirectPath": "/archived/training/process-improvement-for-software-teams.html"
+  },
+  {
+    "name": "ArchivedTrainingReportingservices",
+    "requestPaths": [
+      "/ssw/Training/ReportingServices.aspx"
+    ],
+    "redirectPath": "/archived/training/reporting-services.html"
+  },
+  {
+    "name": "ArchivedTrainingSessionspast",
+    "requestPaths": [
+      "/ssw/Training/Sessions-Past.aspx"
+    ],
+    "redirectPath": "/archived/training/sessions-past.html"
+  },
+  {
+    "name": "ArchivedTrainingSharepoint",
+    "requestPaths": [
+      "/ssw/Training/SharePoint.aspx"
+    ],
+    "redirectPath": "/archived/training/sharepoint.html"
+  },
+  {
+    "name": "ArchivedTrainingSharepointuts",
+    "requestPaths": [
+      "/ssw/Training/SharePointUTS.aspx"
+    ],
+    "redirectPath": "/archived/training/sharepoint-uts.html"
+  },
+  {
+    "name": "ArchivedTrainingSqlbi",
+    "requestPaths": [
+      "/ssw/Training/SQLBI.aspx"
+    ],
+    "redirectPath": "/archived/training/sql-bi.html"
+  },
+  {
+    "name": "ArchivedTrainingSqlserver",
+    "requestPaths": [
+      "/ssw/Training/SQLServer.aspx"
+    ],
+    "redirectPath": "/archived/training/sql-server.html"
+  },
+  {
+    "name": "ArchivedTrainingSqlserverbi",
+    "requestPaths": [
+      "/ssw/Training/SQLServerBI.aspx"
+    ],
+    "redirectPath": "/archived/training/sql-server-bi.html"
+  },
+  {
+    "name": "ArchivedTrainingVisualstudio",
+    "requestPaths": [
+      "/ssw/Training/VisualStudio.aspx"
+    ],
+    "redirectPath": "/archived/training/visual-studio.html"
+  },
+  {
+    "name": "ArchivedNotfound",
+    "requestPaths": [
+      "/ssw/not_found.html"
+    ],
+    "redirectPath": "/archived/not-found.html"
+  },
+  {
+    "name": "ArchivedProcessimprovementforsoftwareteams",
+    "requestPaths": [
+      "/ssw/ProcessImprovementForSoftwareTeams.aspx"
+    ],
+    "redirectPath": "/archived/process-improvement-for-software-teams.html"
+  },
+  {
+    "name": "ArchivedSswcustomerror404",
+    "requestPaths": [
+      "/ssw/SSWCustomError404.html"
+    ],
+    "redirectPath": "/archived/ssw-custom-error-404.html"
+  },
+  {
+    "name": "ArchivedSswcustommaintenance",
+    "requestPaths": [
+      "/ssw/SSWCustomMaintenance.htm"
+    ],
+    "redirectPath": "/archived/ssw-custom-maintenance.htm"
+  }
+]
