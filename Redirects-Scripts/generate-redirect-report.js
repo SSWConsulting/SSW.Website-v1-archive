@@ -55,8 +55,8 @@ async function generateHTMLTable(obj) {
     try {
       const finalURL =
         ProductionURL +
-        redirect.requestPaths[0].replace("/archived", "/history"); // remove replace once history is migrated
-      console.log("🚀 pinging :", finalURL);
+        redirect.requestPaths[0].replace("/archive", "/history"); // remove replace once history is migrated
+      console.log("🚀 " + index + ") pinging :", finalURL);
       const response = await axios.head(finalURL); // Use axios to send HEAD request
       const redirectedURL = response.request.res.responseUrl;
       const finalRedirectPath = ProductionURL + redirect.redirectPath;
@@ -77,7 +77,7 @@ async function generateHTMLTable(obj) {
     } catch (error) {
       const finalURL =
         ProductionURL +
-        redirect.requestPaths[0].replace("/archived", "/history");
+        redirect.requestPaths[0].replace("/archive", "/history");
       const finalRedirectPath = ProductionURL + redirect.redirectPath;
 
       console.error(`Error fetching URL ${finalURL}:`, error);
@@ -90,8 +90,8 @@ async function generateHTMLTable(obj) {
 
         </tr>
     `;
-      index++;
     }
+    index++;
   }
 
   html += `
@@ -106,13 +106,13 @@ async function generateHTMLTable(obj) {
 }
 
 async function createHTMLFileForRedirects(obj) {
-  const obj2 = [
-    {
-      requestPaths: ["/ssw/Standards/Rules/Training.aspx"],
-      redirectPath: "/events",
-    },
-  ];
-  const html = await generateHTMLTable(obj2);
+  //   const obj2 = [
+  //     {
+  //       requestPaths: ["/ssw/Standards/Rules/Training.aspx"],
+  //       redirectPath: "/events",
+  //     },
+  //   ];
+  const html = await generateHTMLTable(obj);
   fs.writeFileSync("url_redirect_report.html", html);
   console.log("📝 - HTML file has been created successfully.");
 }

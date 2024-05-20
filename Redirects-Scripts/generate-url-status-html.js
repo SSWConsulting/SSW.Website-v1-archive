@@ -51,7 +51,7 @@ async function generateHTMLTable(urls) {
 
   for (const url of urls) {
     try {
-      const appendedURL = ProductionURL + url.replace("/archived", "/history"); // remove replace once history is migrated
+      const appendedURL = ProductionURL + url.replace("/archive", "/history"); // remove replace once history is migrated
       const response = await axios.head(appendedURL); // Use axios to send HEAD request
       const status = response.status;
       html += `
@@ -66,7 +66,7 @@ async function generateHTMLTable(urls) {
         </tr>
     `;
     } catch (error) {
-      const appendedURL = ProductionURL + url.replace("/archived", "/history");
+      const appendedURL = ProductionURL + url.replace("/archive", "/history");
       console.error(`Error fetching URL ${appendedURL}:`, error);
       html += `
         <tr class="bg-danger text-white">
