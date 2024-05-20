@@ -1,0 +1,704 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+    </script>
+<meta content="False" name="vs_showGrid"/>
+<link href="/archive/Images/IcoSSW_v2.ico" rel="shortcut icon"/>
+<link href="/archive/Include/ssw.css" rel="stylesheet" type="text/css"/>
+<title>Smart Access eXtra May 2002</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body bgcolor="#FFFFFF" text="#000000"><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript><div style="
+            line-height: 1.5;
+            text-align: center; 
+            font-size: 1.125rem; 
+            color: #999;
+            background-color: #333333;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            ">
+<div style="color: white; font-size: 2rem !important; font-weight: 600;">
+                ⚠️ This page has been archived
+            </div>
+<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+<p>
+                    ✅ New page with updated info:
+                    <a href="https://www.ssw.com.au" style="color: white">
+                        ssw.com.au
+                    </a>
+</p>
+</div>
+</div>
+		*********************************************************<br/>
+		To unsubscribe from this eNewsletter, see the information at the footer of this 
+		message.
+		<p>*********************************************************<br/>
+			Welcome to Pinnacle Publishing's free monthly eNewsletter for professional 
+			developers. Thank you for
+			<br/>
+			requesting this service from our online sign-up form.</p>
+<p>*********************************************************<br/>
+			SMART ACCESS eXTRA<br/>
+			Microsoft Access Tips, Trends &amp; Technology eNewsletter Pinnacle Publishing 
+			http://www.pinnaclepublishing.com<br/>
+			Issue 3.5 May 23, 2002</p>
+<p>*********************************************************<br/>
+			TABLE OF CONTENTS:</p>
+<p>1) Another Month, Another Update<br/>
+			2) Web Services in Access: A Worked Example
+			<br/>
+			3) Survey Results<br/>
+			4) Developer's Bookshelf: WRITING SECURE CODE<br/>
+<table bgcolor="#CCCCCC" border="0" width="60%">
+<tr>
+<td height="2">
+<a href="#SSWAccessReporter"><b>5) Leverage Access Reports into IIS</b></a></td>
+</tr>
+</table>
+			6) On the Web<br/>
+			7) LiteSpeed Backups for SQL Server<br/>
+			8) KB Article: Bind DAPs to XML<br/>
+			9) Tip: When is a Change not a Change?<br/>
+		10) Reader Mail
+		<p>---------------------------------------------------------<br/>
+			Back issues of SMART ACCESS eXTRA and previous survey
+			<br/>
+			results are available at
+			<br/>
+			http://www.larkfarm.com/sax/smart_access_extra.htm .</p>
+<p>---------------------------------------------------------<br/>
+			1) ANOTHER MONTH, ANOTHER UPDATE<br/>
+			---------------------------------------------------------<br/>
+			We may have reached the point where it's completely impossible to determine 
+			what version of which files are
+			<br/>
+			installed when you're running Microsoft Access. The latest evidence: Knowledge 
+			Base article Q321076, "Updated
+			<br/>
+			Version of Jet Replication Files Available." You can read this at
+			<br/>
+			http://www.uptilt.com/ct.html?s=5bo,k44,4o2,1zm0,kc45,1e8r,f7ou</p>
+<p>if you like. The gist of it is that they apparently forgot to ship two files 
+			with Jet 4.0 Service Pack 6, so
+			<br/>
+			there's a little download that you can grab to install them. However, the files 
+			WERE in Jet 4.0 Service Pack 5.
+			<br/>
+			So, unless you went straight from SP4 or earlier to SP6, you should be fine.</p>
+<p>And also on the subject of obscure updates: The Universal Data Access site now 
+			has the "MDAC 2.7 RTM Refresh." Even
+			<br/>
+			after reading the site, I'm not sure whether there's anything more to this one 
+			than a change of version
+			<br/>
+			numbers for some files; if you'd like to look for yourself, check out 
+			http://www.microsoft.com/data/download.htm.</p>
+<p>Between service packs, security updates, refreshes, bug fixes, QFEs, and who 
+			knows what else, you could probably
+			<br/>
+			configure 500 different versions of the data access files on a Windows computer 
+			without half trying. That's too many.
+			<br/>
+			Unfortunately, I don't see any break in this pattern until we get some new 
+			drivers written from the ground up,
+			<br/>
+			and probably not even then.</p>
+<p>---------------------------------------------------------<br/>
+			2) WEB SERVICES IN ACCESS: A WORKED EXAMPLE<br/>
+			---------------------------------------------------------<br/>
+			If you're still puzzling about how to integrate XML Web Services with Microsoft 
+			Access (assuming you care, that
+			<br/>
+			is), there's a new article on MSDN that will help. "How to Create and 
+			Deploy XML Web Services Using Visual Studio
+			<br/>
+			.NET and Office XP" 
+			http://www.uptilt.com/ct.html?s=5bo,k44,4o2,jd1a,m88d,1e8r,f7ou<br/>
+			is from Microsoft's Frank Rice. Using Visual Studio .NET, Office XP, and the 
+			Office XP Web Services Toolkit, he
+			<br/>
+			walks you through the entire process, from understanding the architecture to 
+			building both the server and the client.</p>
+<p>So, if you can do this today, why am I still pushing for full .NET integration 
+			in the next version of Office?
+			<br/>
+			Because, as it stands, Office is positioned only as a *consumer* of Web 
+			Services. Those of us who launched our
+			<br/>
+			development careers in Access would really like to see Access as a *supplier* 
+			of Web Services as well. After
+			<br/>
+			all, some huge number of Web Services are going to offer data as their product. 
+			Right now, it's fairly easy to
+			<br/>
+			build those in Visual Studio .NET, using the ADO.NET data objects. But imagine 
+			what a future version of Access
+			<br/>
+			could bring to the table: a Web Services Wizard resembling the current form, 
+			report, or data access page
+			<br/>
+			wizards, that could produce a Web Service with minimal user intervention. Now 
+			*that* would be cool.</p>
+<p>Well, I can dream, can't I?
+		</p>
+<p>---------------------------------------------------------<br/>
+			3) SURVEY RESULTS<br/>
+			---------------------------------------------------------<br/>
+			Last month, I asked you about database size. For a change, the questions were 
+			pretty simple, so here's how
+			<br/>
+			the numbers came out:</p>
+<p>What's the largest number of objects (tables, forms, reports, and so on) you've 
+			ever worked with in a single
+			<br/>
+			Access database?</p>
+<p>11-50 -- 11<br/>
+			51-100 -- 21<br/>
+			101-500 -- 74<br/>
+			501-1000 -- 26<br/>
+			Over 1000 -- 12
+			<br/>
+<br/>
+			How large is the largest Access database you've ever worked with?</p>
+<p>0-100KB -- 2<br/>
+			101KB-1MB -- 7<br/>
+			2MB-10MB -- 23<br/>
+			11MB-100MB -- 60<br/>
+			101MB-1GB -- 40<br/>
+			Over 1 GB -- 12
+			<br/>
+<br/>
+			How large is the largest back-end database you've ever worked with from Access?</p>
+<p>0-1MB -- 9<br/>
+			1MB-100MB -- 45<br/>
+			101MB-1GB -- 48<br/>
+			2GB-100GB -- 25<br/>
+			101GB-1TB -- 7<br/>
+			Over 1TB -- 2
+			<br/>
+<br/>
+			Have you "hit the wall" in terms of database size and been forced to 
+			switch from Access to another database?</p>
+<p>Yes -- 35<br/>
+			No -- 109
+		</p>
+<p>Not surprisingly, there are some pretty large databases out there; you folks do 
+			an adequate job of disproving the
+			<br/>
+			perennial slander that Access is only suitable for tiny jobs (and I'm jealous 
+			of those of you playing with those
+			<br/>
+			terabyte databases). And there was a bunch of interesting comments, too. Here's 
+			a sampling:</p>
+<p>"I have had good success using a 100-200MB Access database with about three 
+			concurrent (with lots of
+			<br/>
+			activity) users. We had both the backend and frontend (both MDBs just split 
+			out) on a file server. Although
+			<br/>
+			probably not directly related to the size of this database, we had a series of 
+			about 40 nested action
+			<br/>
+			queries that we needed to run sequentially to process a batch. These were 
+			initially taking from 5-10 minutes each
+			<br/>
+			to run (yes, each query). We switched from using nested queries to creating 
+			temporary tables and then joining
+			<br/>
+			them appropriately, and this reduced the time to run to between two and 15 
+			seconds each. We deleted (using code)
+			<br/>
+			each of the temporary tables following each batch and averaged about five 
+			batches per day, and did not
+			<br/>
+			experience much database growth due to the use of these temporary tables."</p>
+<p>"I have developed many very large databases and have always got excellent 
+			results (includes real-time
+			<br/>
+			applications such as reporting train locations for all trains in country area 
+			of New South Wales). Having
+			<br/>
+			started developing database applications in 1972, I am astounded at the stupid 
+			way people go about designing
+			<br/>
+			systems today -- they don't understand how to do a lot with a little (including 
+			comms rates of 300 baud). Access
+			<br/>
+			97 is infinitely more powerful than the mainframes I used to work on, and is 
+			infinitely more stable. So let's cut
+			<br/>
+			the crap about Access being a toy and forcing people to use SQL Server or 
+			Oracle. I haven't found anything I
+			<br/>
+			can't do better with Access than other programmers working on 'industrial 
+			strength' databases."</p>
+<p>"I am wondering why Access cannot go larger than 2GB or handle more users? 
+			Is Microsoft trying to force us to a
+			<br/>
+			more expensive product? I do a lot of rapid development, and SQL Server is just 
+			not fast enough to develop in. In
+			<br/>
+			addition, I cannot find the speed advantage using SQL Server. When running a 
+			query off a two million record
+			<br/>
+			table and performing summation in the query, there was only a two-sec 
+			difference in speed. For the majority of
+			<br/>
+			applications, Access is more than enough database. Sometimes you have to link 
+			several databases together to
+			<br/>
+			handle the number of records you need, but that is not a big deal."</p>
+<p>"In process right now. Replication gets worse as the size (both number of 
+			objects AND amount of data) of the
+			<br/>
+			database grows. Also the larger the number of objects, the more strange things 
+			happen. Example when adding a new
+			<br/>
+			record, the Memo field won't hold more than 1,500 characters, but previous 
+			records hold 4,000 characters
+			<br/>
+			(yes, we have done the rebuild, compact, compress, held our collective breath, 
+			and most recently waited to do
+			<br/>
+			these things until the proper phase of the moon was upon us). And, of course, 
+			the stability of the MDB (mostly
+			<br/>
+			with Access 97) continues to degrade the larger the front-end database gets. 
+			And we are not talking about
+			<br/>
+			near one-gig in size."</p>
+<p>"I find it a bit weird that every time I make a small change to the 
+			database design, the database size grows by
+			<br/>
+			some Mbs. I mostly configure Access to compact the dbase when closing Access, 
+			but why is this an option? I would
+			<br/>
+			rather say it's a must!!"</p>
+<p>"The problem with large databases in Access is that routine activities -- 
+			especially queries -- may take
+			<br/>
+			hours to complete compared to seconds in other database products such as Visual 
+			FoxPro."</p>
+<p>"Pushing a million rows over a network was NOT a good idea..."</p>
+<p>"My current database has 1,341 objects (61 local tables, 60 linked tables, 
+			879 queries, 75 forms, 178 reports, 10
+			<br/>
+			macros, 78 modules). Compiled and compressed, it occupies 20 Mbytes. It is a 
+			front-end analysis and reporting
+			<br/>
+			package for accounts data read through ODBC, so it has no significant data 
+			storage (just a few megs of
+			<br/>
+			configuration data). I am worried that I am approaching Access's limitations 
+			but have no way of predicting when I
+			<br/>
+			will hit 'the wall.' I am very pleased with the way it has coped so far." 
+			Many of you apparently prototype in Access but then
+			<br/>
+			switch to an SQL Server or Oracle backend for production. I note that some of 
+			you switch when data is at 10MB, some
+			<br/>
+			at 100MB, some at 500MB or more.
+		</p>
+<p>Now for this month's survey: I've been asked by the Access team at Microsoft to 
+			do another survey to help
+			<br/>
+			them with future directions for the product. Congratulations! You folks have 
+			become a valued source of
+			<br/>
+			opinions. This time around, the topic is reporting -- what do you like about 
+			Access reports, and what's
+			<br/>
+			missing? Come over to http://www.larkfarm.com/sax/survey.asp to participate.
+			<br/>
+			I'll be giving away a copy of ACCESS 2002 ENTERPRISE DEVELOPER'S HANDBOOK to 
+			one random respondent.
+			<br/>
+			Congratulations, by the way, to Jan Borup Coyle, who was the random winner from 
+			last month. But wait; there's
+			<br/>
+			more! Because this is an "official" survey, Microsoft is going to 
+			throw in one copy of MapPoint 2002 for every 75
+			<br/>
+			respondents. See you there!</p>
+<p>---------------------------------------------------------<br/>
+			4) A DEVELOPER'S BOOKSHELF: WRITING SECURE CODE<br/>
+			---------------------------------------------------------<br/>
+			WRITING SECURE CODE, by Michael Howard and David LeBlanc (Microsoft Press, 
+			2002)
+		</p>
+<p>This book contains not a single line of Access code, or even of VBA. 
+			Nevertheless, I think it's essential reading
+			<br/>
+			for developers in this security-conscious age. Once you get over giggling at 
+			the proximity of "Microsoft" and
+			<br/>
+			"Secure," you'll find that this is quite a good book from a pair of 
+			guys who have put in much time trying to help
+			<br/>
+			teams at Microsoft write more secure code.</p>
+<p>The book takes a solid technical look at things like writing security-conscious 
+			C++ code, the right and wrong
+			<br/>
+			way to implement cryptography, and protecting against denial of service 
+			attacks. But even if you're not going
+			<br/>
+			to twiddle books at this level, the "security first" philosophy 
+			preached by this book is worth absorbing. It
+			<br/>
+			really does boil down to a few simple things: think about security, ship in a 
+			secure state by default, and stay in
+			<br/>
+			touch with the field. But it's the details that will kill you, and those 
+			details are well-covered here.</p>
+<p>If you write code that ships to customers, read this book.</p>
+<p>(Got a favorite software book of your own that you'd like to see in this space? 
+			Let me know, and perhaps I'll cover
+			<br/>
+			it in a future issue!)</p>
+<p>---------------------------------------------------------<br/>
+			IN THE MAY ISSUE OF SMART ACCESS...<br/>
+			---------------------------------------------------------<br/>
+			Have you tried our monthly print newsletter, SMART ACCESS? Here's just one of 
+			the articles you'll find in
+			<br/>
+			the current issue. You can check it out (and learn more about SMART ACCESS) at
+			<br/>
+			http://www.smartaccessnewsletter.com.</p>
+<p>You'll find a variety of articles from the print newsletter on the Web site. 
+			Right now, for example, you
+			<br/>
+			can read Danny Lessandrini's "Create XML Web Reports from Access 
+			2002," showing how you can use new methods in
+			<br/>
+			Access 2002 together with the power of XSL to publish data to the Web.</p>
+<p>(If you're not yet a subscriber to SMART ACCESS, see the bottom of this 
+			eNewsletter for information on how you can
+			<br/>
+			get a FREE three-issue trial!)</p>
+<table bgcolor="#CCCCCC" border="0" width="80%">
+<tr>
+<td height="344">
+<p>---------------------------------------------------------<br/>
+<a name="SSWAccessReporter"></a><b>5) LEVERAGE ACCESS REPORTS INTO IIS</b><br/>
+						---------------------------------------------------------<br/>
+						SSW Access Reporter offers a new way to re-use Access reports on the Web 
+						without a lot of recoding, and with decent speed. Newly-rewritten in .NET, this 
+						utility supplies a report server and some objects that you can call from 
+						ASP.NET Web pages. The Web pages talk to the Report Client, which uses .NET 
+						remoting to talk to the Report Server, which might be running on another 
+						computer on your local network.</p>
+<p>The utility supports a variety of formats, including HTML, Access Snapshot, and 
+						(if you have the appropriate bits from Adobe) PDF. You can use any Access 
+						database or project, and you don't have to modify the database; you just tell 
+						the Reporter utility which databases it's allowed to use for reporting.</p>
+<p>
+					If this sounds useful to you, you can get more details from SSW's Web site at 
+					/ssw/AccessReporter/. The site includes an online demo, so you can get an idea 
+					of the output that it'll produce. List price is $199. That's low enough that 
+					this one should easily pay for itself if you're moving a bunch of reports to 
+					the Web.
+				</p></td>
+</tr>
+</table>
+<p>---------------------------------------------------------<br/>
+			6) ON THE WEB<br/>
+			---------------------------------------------------------<br/>
+			Some more miscellaneous finds from my prowling around the Internet. Space 
+			precludes my listing everything that I
+			<br/>
+			find here; if you're interested, I post more frequent notes and pointers over 
+			at http://www.larkware.com/ .</p>
+<p>TightVNC (http://www.tightvnc.com/) supplies a faster than usual client for the 
+			popular VNC remote-control
+			<br/>
+			package, by compressing parts of the desktop. Lossy compression is available if 
+			speed is more important for
+			<br/>
+			your application than fidelity.</p>
+<p>The WMI Extensions for Visual Studio .NET
+			<br/>
+			(http://msdn.microsoft.com/downloads/default.asp?URL=/downloads/sample.asp?url=/MSDN-FILES/027/001/675/msdncompositedoc.xml)</p>
+<p>give you an easy way to integrate your .NET projects with WMI, including a 
+			real-time interactive browser and easy
+			<br/>
+			class generation.</p>
+<p>Ghost-It (http://home.rochester.rr.com/artcfox/GhostIt/) lets you turn windows 
+			transparent under Win2K/XP. Useful
+			<br/>
+			when you want to keep an eye on something without having it take up its own 
+			screen real estate.</p>
+<p>Glint (http://scitechconcept.com/glint.html) is a freeware system activity 
+			monitor that presents lots of blinkenlights.</p>
+<p>Anakrino (http://www.saurik.com/net/exemplar/) will disassemble .NET MSIL to C# 
+			code.</p>
+<p>Developers may find the page of random quotes at 
+			http://www.habets.pp.se/quotes/english.html rather amusing.</p>
+<p>And, finally, when you're ready to get out of the house for a while, check out 
+			PowerSkip (http://www.powerskip.de/mainpage.html).</p>
+<p>---------------------------------------------------------<br/>
+			7) LITESPEED BACKUPS FOR SQL SERVER<br/>
+			---------------------------------------------------------<br/>
+			SQL LiteSpeed is a new software package designed with one thing in mind: fast 
+			backups to disk of SQL Server 7.0 or
+			<br/>
+			2000 databases. Implemented as a set of extended stored procedures with a 
+			syntax very similar to existing SQL
+			<br/>
+			Server back-up commands, SQL LiteSpeed compacts data as it's being backed up. 
+			This means that backups take up
+			<br/>
+			less disk space, but, more importantly in many cases, it means that they can be 
+			completed sooner. If you're
+			<br/>
+			dealing with large, active databases, that can be a significant benefit.</p>
+<p>There are other great features here as well: cluster support, instance support, 
+			actual 128-bit encryption for
+			<br/>
+			back-up files (native backups contain all of your data in clear text), and less 
+			blocking of database operations
+			<br/>
+			that are going on at the same time as the backup. I could've really used this 
+			one when I was working with the
+			<br/>
+			giant online database last year, where we did backups in the middle of the 
+			night and just prayed that not too many
+			<br/>
+			users would be affected. Data compression (on the order of eight to one or 
+			better, depending on the data) is a
+			<br/>
+			nice bonus here as well.</p>
+<p>You'll find the SQL LiteSpeed Web site at 
+			http://www.sqllitespeed.com/slsdefault.asp, where you
+			<br/>
+			can download a 15-day trial version. Pricing starts at $495 for a version that 
+			supports databases up to 5GB.</p>
+<p>---------------------------------------------------------<br/>
+			8) KB ARTICLE: BIND DAPs TO XML<br/>
+			---------------------------------------------------------<br/>
+			The full title of MSKB article Q281863 is "HOW TO: Bind a Data Access 2002 
+			Page to XML." Given the increasing
+			<br/>
+			ubiquity of XML in our lives, that seems like a pretty good thing to get a 
+			handle on. The article shows you two
+			<br/>
+			different techniques. One binds the DAP to embedded XML (also called an XML 
+			Data Island). The other binds the
+			<br/>
+			page to an external XML file. If you're using XML at all, you can probably 
+			think of reasons why you need to know
+			<br/>
+			this. If not, you might want to play with the techniques here and see whether 
+			they spark any interest. You can
+			<br/>
+			only hide from XML for so long...</p>
+<p>(You can read this article online at 
+			http://support.microsoft.com/Default.aspx?scid=kb;EN-US;q281863.)</p>
+<p>If you're using Internet Explorer 5.0 or above, and you're in the USA or Canada, 
+			just type "MSKB 281863" into
+			<br/>
+			the address bar and hit Enter. After a bit of churning around, the browser 
+			should be showing you the Knowledge
+			<br/>
+			Base article.</p>
+<p>---------------------------------------------------------<br/>
+			9) TIP: WHEN IS A CHANGE NOT A CHANGE?
+			<br/>
+			---------------------------------------------------------<br/>
+			If you open a database created by one version of Access in another version 
+			(say, opening an Access 97 database in
+			<br/>
+			Access 2002), you'll be warned that you can't change any objects in the 
+			database unless you convert the database
+			<br/>
+			to the new format. It turns out that that's only part of the story. If all you 
+			want to do is see the results of an
+			<br/>
+			ad-hoc query, go ahead and open the database without converting it. Then open 
+			any existing query in design
+			<br/>
+			view. You can make any changes you like to this query, including removing or 
+			adding tables, and run it to see
+			<br/>
+			the data. You just can't save the changes. But, if you're just hunting for 
+			data, this is a lot faster than
+			<br/>
+			converting the database first.</p>
+<p>---------------------------------------------------------<br/>
+			10) READER MAIL<br/>
+			---------------------------------------------------------<br/>
+			Ken Pearce wrote to follow up on his question from last time:</p>
+<p>
+			I was able to resolve the Link and Import issues by following the guidance from 
+			Knowledge Base article
+			<br/>
+			Q242218: "Nothing happens when you try to start a Microsoft Access 
+			Wizard."</p>
+<p>
+			By carefully uninstalling and reinstalling both versions (several times) on 
+			both computers, I was
+			<br/>
+			finally able to resolve the issue by "stumbling" across the Windows 
+			Installer Shortcut option
+			<br/>
+			suggested in the KB article. (When I first read that option, I thought they 
+			must be joking!) Apparently,
+			<br/>
+			once both versions were installed with the "proper" shortcuts from 
+			their respective program groups (as
+			<br/>
+			per the article), all features worked fine. It's not like I had a choice of how 
+			to create the shortcut in
+			<br/>
+			the program group during the installation. Or did I? Go figure?!?</p>
+<p>Julie Seiger writes with a warning of a serious bug that has bitten people from 
+			time to time:</p>
+<p>
+			Here's a good Microsoft article for you to check out -- Q304548! I recently had 
+			Visio 2002 loaded on my
+			<br/>
+			PC. The rest of my Office products are 2000. I was copying and pasting object 
+			in Access 2000 and then
+			<br/>
+			closed the database. The next day, I opened it and got the following message 
+			when I tried to get to the
+			<br/>
+			code window: "Error accessing file. Network connection may have been 
+			lost." After researching the
+			<br/>
+			problem at the Microsoft Web site, I found that Visio 2002, and other members 
+			of the Office XP family,
+			<br/>
+			update the Vbe6.dll to version 6.3.91.8. If this version of the .dll exists on 
+			your machine and you
+			<br/>
+			copy objects in Access and close the database before you compile, your database 
+			will be ruined. According
+			<br/>
+			to the article, "At this point, you have to revert to a known good back-up 
+			copy of the database." Not a
+			<br/>
+			very pretty bug!</p>
+<p>Isaac Mosseri writes with a problem to which I don't have the answer. Any ideas?</p>
+<p>
+			I have tried to print a report containing both text tables and pictures on a 
+			Xerox 750 and Canon 6100 jet
+			<br/>
+			color printers, and, in both of them, I don't receive the printed material in 
+			the same colors as I see in
+			<br/>
+			the preview screen. Most of them were black or sometimes red mixed with black 
+			monocolor.</p>
+<p>
+			I tried in same places with the same printer drivers to print the printer test 
+			page or a Word document and receive the right colors.</p>
+<p>
+			Is there a way to print in color from Access??</p>
+<p>Gustav Brock passes on some experiments with the Nz() function:</p>
+<p>
+			Did you know that -- when used to return an expression in a query -- Nz() 
+			always returns a string
+			<br/>
+			even if it's supposed to not do so?</p>
+<p>
+			Like this:</p>
+<p>
+			Expr1: Nz([fldNumeric])</p>
+<p>
+			or:</p>
+<p>
+			Expr1: Nz([fldNumeric], 0)</p>
+<p>
+			If you need a numeric value, you'll have to wrap it
+			<br/>
+			in Int():</p>
+<p>
+			NumExpr1: Int(Nz([fldNumeric]))</p>
+<p>
+			Even if fldNumeric is a long, this will return a long when fldNumeric is not 
+			Null but an integer for Null.
+			<br/>
+			If you wish a long in any case, the zero for Null values for some reason must 
+			be present:</p>
+<p>
+			NumExpr1: Int(Nz([fldNumeric], 0))</p>
+<p>
+			Alternatively, Nz() can be replaced with the good old
+			<br/>
+			IIf() construction:</p>
+<p>
+			NumExpr1: IIf(IsNull([fldNumeric]), 0,[fldNumeric])</p>
+<p>
+			This is tested for Access 95, 97 and 2000. Don't know about 2002.</p>
+<p>---------------------------------------------------------<br/>
+			UNTIL NEXT ISSUE<br/>
+			---------------------------------------------------------<br/>
+			I welcome your input, tips, suggestions, Web sites, and other Access news. If 
+			you send me something, please let
+			<br/>
+			me know whether I can use your name with your comments. I can't offer personal 
+			replies to all questions, due to the
+			<br/>
+			volume of your mail, but I'll get to as many as I can in the eNewsletter.</p>
+<p>Mike Gunderloy, Editor<br/>
+			SMART ACCESS eXTRA<br/>
+</p>
+<p>Feel free to forward this eNewsletter to your colleagues,
+			<br/>
+			and tell them they can sign up for it at
+			<br/>
+			http://www.FREEeNewsletters.com.</p>
+<p>---------------------------------------------------------<br/>
+			TRY US FREE!</p>
+<p>If you like this eNewsletter, you'll love SMART ACCESS
+			<br/>
+			monthly newsletter!</p>
+<p>For a FREE trial subscription to SMART ACCESS, visit 
+			http://www.pinnaclepublishing.com/SubscribeSA.</p>
+<p>Smart Access is a monthly 24-page newsletter for developers who use Microsoft 
+			Access. Each issue offers
+			<br/>
+			insightful articles, undocumented techniques, and links to additional useful 
+			content. This is a highly technical
+			<br/>
+			newsletter, the kind most subscribers want to keep. Now in its seventh year, 
+			the newsletter's writing style makes
+			<br/>
+			technical information accessible to the typical Access developer. Smart Access 
+			is a "must-read" for anyone who's
+			<br/>
+			serious about developing with Microsoft Access, with articles by the industry's 
+			experts. Smart Access articles
+			<br/>
+			are frequently quoted, recommended, and referred to by participants in the 
+			Access user groups. Essential reading
+			<br/>
+			for anyone who wants to get the most out of Microsoft Access.</p>
+<p>GET A FREE TRIAL SUBSCRIPTION NOW! http://www.pinnaclepublishing.com/SubscribeSA</p>
+<p>---------------------------------------------------------<br/>
+			OTHER NEWSLETTERS BY PINNACLE PUBLISHING</p>
+<p>View our entire list of high-quality developer newsletters, published monthly by 
+			Pinnacle Publishing.
+			<br/>
+			http://www.pinnaclepublishing.com</p>
+<p>---------------------------------------------------------<br/>
+			INTERESTED IN BEING A SPONSOR?
+		</p>
+<p>Email Howard Flint: mailto:hflint@pinpub.com</p>
+<p>---------------------------------------------------------<br/>
+			PINNACLE EMAIL SUBSCRIPTION SERVICES</p>
+<p>SMART ACCESS eXTRA<br/>
+			To unsubscribe, send an email to: unsubscribe-6050@uptilt.com</p>
+<p>This eNewsletter is brought to you compliments of Pinnacle Publishing, Inc. 
+			Copyright(c) 2002 http://www.pinnaclepublishing.com All rights reserved.<br/>
+</p>
+</p></body>
+</html>
