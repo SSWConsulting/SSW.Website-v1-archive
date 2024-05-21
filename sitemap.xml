@@ -3691,25 +3691,7 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-comm-and-lines.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-crm3-to-4-migration.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-dot-net-nuke.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-exchange-server.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -3794,12 +3776,6 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-windows-8-deployment.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-windows-forms-click-once.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -4111,6 +4087,144 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/computer-setup/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/computer-setup/setting-up-vpn.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/computer-setup/ssw-crminstruction.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/computer-setup/ssw-crmup-and-running-crm2011.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/computer-setup/ssw-crmup-and-running-crm4.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/computer-setup/windows-7-deployment-change-log.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/cleaning-your-mailbox.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/how-to-check-link-auditor-reports.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/how-to-clean-error-logs.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/how-to-conduct-training.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/how-to-conduct-uts-training.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/how-unrecognized-versions-work.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/https-guide.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/product-managers.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/upgrade-to-vs2005-and-tfs.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/using-ftpsync.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-general/web-master-how-to-clean-and-resolve-error-logs.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-network-phone/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-network-phone/phone-system-setup.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-network-phone/phone-system-usage.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-products-hosting/images/default.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-products-hosting/images/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/standards-internal/developer-products-hosting/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -4136,6 +4250,84 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-sql-server/howtochange-ssw-data-2000.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-sql-server/howtosetup-concurrency-for-the-web-site.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/developer-sql-server/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/employment/accountsassessment.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/employment/employmenttest.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/employment/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/employment/sharepoint-expert-questions.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/employment/work-experience-screening-standard.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/general-administration/alarm-system.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/general-administration/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/images/icon-experience-collection/default.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/images/icon-experience-collection/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards-internal/images/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
