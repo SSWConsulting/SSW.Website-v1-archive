@@ -1,1304 +1,1304 @@
 [
   {
-    "name": "ArchivedCodeauditorDefault",
+    "name": "ArchiveCodeauditorDefault",
     "requestPaths": [
       "/ssw/CodeAuditor/Default.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/default.html"
+    "redirectPath": "/archive/code-auditor/default.html"
   },
   {
-    "name": "ArchivedCodeauditor2407developercentralextra",
+    "name": "ArchiveCodeauditor2407developercentralextra",
     "requestPaths": [
       "/ssw/CodeAuditor/2407DeveloperCentralExtra.htm"
     ],
-    "redirectPath": "/archived/code-auditor/2407-developer-central-extra.htm"
+    "redirectPath": "/archive/code-auditor/2407-developer-central-extra.htm"
   },
   {
-    "name": "ArchivedCodeauditorHowtobegoodcodeauditordailybuildmaster",
+    "name": "ArchiveCodeauditorHowtobegoodcodeauditordailybuildmaster",
     "requestPaths": [
       "/ssw/CodeAuditor/HowtobeGoodCodeAuditorDailyBuildMaster.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/howtobe-good-code-auditor-daily-build-master.html"
+    "redirectPath": "/archive/code-auditor/howtobe-good-code-auditor-daily-build-master.html"
   },
   {
-    "name": "ArchivedCodeauditorResources",
+    "name": "ArchiveCodeauditorResources",
     "requestPaths": [
       "/ssw/CodeAuditor/resources.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/resources.html"
+    "redirectPath": "/archive/code-auditor/resources.html"
   },
   {
-    "name": "ArchivedCodeauditorRsuserguide",
+    "name": "ArchiveCodeauditorRsuserguide",
     "requestPaths": [
       "/ssw/CodeAuditor/rsuserguide.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/rsuserguide.html"
+    "redirectPath": "/archive/code-auditor/rsuserguide.html"
   },
   {
-    "name": "ArchivedCodeauditorRules",
+    "name": "ArchiveCodeauditorRules",
     "requestPaths": [
       "/ssw/CodeAuditor/Rules.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/rules.html"
+    "redirectPath": "/archive/code-auditor/rules.html"
   },
   {
-    "name": "ArchivedCodeauditorSimplewebpages",
+    "name": "ArchiveCodeauditorSimplewebpages",
     "requestPaths": [
       "/ssw/CodeAuditor/simplewebpages.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/simplewebpages.html"
+    "redirectPath": "/archive/code-auditor/simplewebpages.html"
   },
   {
-    "name": "ArchivedCodeauditorTutorial",
+    "name": "ArchiveCodeauditorTutorial",
     "requestPaths": [
       "/ssw/CodeAuditor/Tutorial.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/tutorial.html"
+    "redirectPath": "/archive/code-auditor/tutorial.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguide",
+    "name": "ArchiveCodeauditorUserguide",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuide.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide.html"
+    "redirectPath": "/archive/code-auditor/user-guide.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguideaspmigration",
+    "name": "ArchiveCodeauditorUserguideaspmigration",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuideASPMigration.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-aspmigration.html"
+    "redirectPath": "/archive/code-auditor/user-guide-aspmigration.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguideaspmigrationscreenshot",
+    "name": "ArchiveCodeauditorUserguideaspmigrationscreenshot",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuideASPMigrationScreenshot.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-aspmigration-screenshot.html"
+    "redirectPath": "/archive/code-auditor/user-guide-aspmigration-screenshot.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguidecheckinpolicy",
+    "name": "ArchiveCodeauditorUserguidecheckinpolicy",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuideCheckInPolicy.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-check-in-policy.html"
+    "redirectPath": "/archive/code-auditor/user-guide-check-in-policy.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguidecustomruleforsql",
+    "name": "ArchiveCodeauditorUserguidecustomruleforsql",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuideCustomRuleforSQL.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-custom-rulefor-sql.html"
+    "redirectPath": "/archive/code-auditor/user-guide-custom-rulefor-sql.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguidevs",
+    "name": "ArchiveCodeauditorUserguidevs",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuideVS.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-vs.html"
+    "redirectPath": "/archive/code-auditor/user-guide-vs.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguidewizard",
+    "name": "ArchiveCodeauditorUserguidewizard",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuideWizard.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-wizard.html"
+    "redirectPath": "/archive/code-auditor/user-guide-wizard.html"
   },
   {
-    "name": "ArchivedCodeauditorUserguideold",
+    "name": "ArchiveCodeauditorUserguideold",
     "requestPaths": [
       "/ssw/CodeAuditor/UserGuide_Old.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/user-guide-old.html"
+    "redirectPath": "/archive/code-auditor/user-guide-old.html"
   },
   {
-    "name": "ArchivedCodeauditorWebmag",
+    "name": "ArchiveCodeauditorWebmag",
     "requestPaths": [
       "/ssw/CodeAuditor/webmag.aspx"
     ],
-    "redirectPath": "/archived/code-auditor/webmag.html"
+    "redirectPath": "/archive/code-auditor/webmag.html"
   },
   {
-    "name": "ArchivedExtremeemailsExcelproductlistDefault",
+    "name": "ArchiveExtremeemailsExcelproductlistDefault",
     "requestPaths": [
       "/ssw/eXtremeEmails/ExcelProductList/Default.aspx"
     ],
-    "redirectPath": "/archived/extreme-emails/excel-product-list/default.html"
+    "redirectPath": "/archive/extreme-emails/excel-product-list/default.html"
   },
   {
-    "name": "ArchivedExtremeemailsReportsDefault",
+    "name": "ArchiveExtremeemailsReportsDefault",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/Default.aspx"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/default.html"
+    "redirectPath": "/archive/extreme-emails/reports/default.html"
   },
   {
-    "name": "ArchivedExtremeemailsReportsNewversionreleasedreportfilesHeader",
+    "name": "ArchiveExtremeemailsReportsNewversionreleasedreportfilesHeader",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport_files/header.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/new-version-released-report-files/header.htm"
+    "redirectPath": "/archive/extreme-emails/reports/new-version-released-report-files/header.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsReleasedebriefreportfilesHeader",
+    "name": "ArchiveExtremeemailsReportsReleasedebriefreportfilesHeader",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport_files/header.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/release-debrief-report-files/header.htm"
+    "redirectPath": "/archive/extreme-emails/reports/release-debrief-report-files/header.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsReleaseplanreportfilesHeader",
+    "name": "ArchiveExtremeemailsReportsReleaseplanreportfilesHeader",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/ReleasePlanReport_files/header.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/release-plan-report-files/header.htm"
+    "redirectPath": "/archive/extreme-emails/reports/release-plan-report-files/header.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsRevisedestimatefilesHeader",
+    "name": "ArchiveExtremeemailsReportsRevisedestimatefilesHeader",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/RevisedEstimate_files/header.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/revised-estimate-files/header.htm"
+    "redirectPath": "/archive/extreme-emails/reports/revised-estimate-files/header.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsTestpleasereportfilesHeader",
+    "name": "ArchiveExtremeemailsReportsTestpleasereportfilesHeader",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/TestPleaseReport_files/header.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/test-please-report-files/header.htm"
+    "redirectPath": "/archive/extreme-emails/reports/test-please-report-files/header.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsUpdatereportfilesHeader",
+    "name": "ArchiveExtremeemailsReportsUpdatereportfilesHeader",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/UpdateReport_files/header.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/update-report-files/header.htm"
+    "redirectPath": "/archive/extreme-emails/reports/update-report-files/header.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsNewversionreleasedreport",
+    "name": "ArchiveExtremeemailsReportsNewversionreleasedreport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/new-version-released-report.htm"
+    "redirectPath": "/archive/extreme-emails/reports/new-version-released-report.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsPrereleasesummaryreport",
+    "name": "ArchiveExtremeemailsReportsPrereleasesummaryreport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/Pre-ReleaseSummaryReport.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/pre-release-summary-report.htm"
+    "redirectPath": "/archive/extreme-emails/reports/pre-release-summary-report.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsReleasedebriefreport",
+    "name": "ArchiveExtremeemailsReportsReleasedebriefreport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/release-debrief-report.htm"
+    "redirectPath": "/archive/extreme-emails/reports/release-debrief-report.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsReleaseplanreport",
+    "name": "ArchiveExtremeemailsReportsReleaseplanreport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/ReleasePlanReport.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/release-plan-report.htm"
+    "redirectPath": "/archive/extreme-emails/reports/release-plan-report.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsRevisedestimate",
+    "name": "ArchiveExtremeemailsReportsRevisedestimate",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/RevisedEstimate.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/revised-estimate.htm"
+    "redirectPath": "/archive/extreme-emails/reports/revised-estimate.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsTestpleasereport",
+    "name": "ArchiveExtremeemailsReportsTestpleasereport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/TestPleaseReport.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/test-please-report.htm"
+    "redirectPath": "/archive/extreme-emails/reports/test-please-report.htm"
   },
   {
-    "name": "ArchivedExtremeemailsReportsUpdatereport",
+    "name": "ArchiveExtremeemailsReportsUpdatereport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/UpdateReport.htm"
     ],
-    "redirectPath": "/archived/extreme-emails/reports/update-report.htm"
+    "redirectPath": "/archive/extreme-emails/reports/update-report.htm"
   },
   {
-    "name": "ArchivedExtremeemailsDefault",
+    "name": "ArchiveExtremeemailsDefault",
     "requestPaths": [
       "/ssw/eXtremeEmails/Default.aspx"
     ],
-    "redirectPath": "/archived/extreme-emails/default.html"
+    "redirectPath": "/archive/extreme-emails/default.html"
   },
   {
-    "name": "ArchivedExtremeemailsSilverlight",
+    "name": "ArchiveExtremeemailsSilverlight",
     "requestPaths": [
       "/ssw/eXtremeEmails/silverlight.html"
     ],
-    "redirectPath": "/archived/extreme-emails/silverlight.html"
+    "redirectPath": "/archive/extreme-emails/silverlight.html"
   },
   {
-    "name": "ArchivedExtremeemailsUntitled1",
+    "name": "ArchiveExtremeemailsUntitled1",
     "requestPaths": [
       "/ssw/eXtremeEmails/Untitled-1.html"
     ],
-    "redirectPath": "/archived/extreme-emails/untitled-1.html"
+    "redirectPath": "/archive/extreme-emails/untitled-1.html"
   },
   {
-    "name": "ArchivedExtremeemailsUserguide",
+    "name": "ArchiveExtremeemailsUserguide",
     "requestPaths": [
       "/ssw/eXtremeEmails/userguide.aspx"
     ],
-    "redirectPath": "/archived/extreme-emails/userguide.html"
+    "redirectPath": "/archive/extreme-emails/userguide.html"
   },
   {
-    "name": "ArchivedStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
+    "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
     "requestPaths": [
       "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/AccessDeniedWhenLogon.html"
     ],
-    "redirectPath": "/archived/standards-internal/developer-products-hosting/plesk kbs/access-denied-when-logon.html"
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/plesk kbs/access-denied-when-logon.html"
   },
   {
-    "name": "ArchivedStandardsinternalDeveloperproductshostingPlesk kbsIis web directorys missing2",
+    "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsIis web directorys missing2",
     "requestPaths": [
       "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/IIS Web Directorys Missing2.htm"
     ],
-    "redirectPath": "/archived/standards-internal/developer-products-hosting/plesk kbs/iis web directorys missing-2.htm"
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/plesk kbs/iis web directorys missing-2.htm"
   },
   {
-    "name": "ArchivedStandardsinternalDeveloperproductshostingSettingupauseronseal",
+    "name": "ArchiveStandardsinternalDeveloperproductshostingSettingupauseronseal",
     "requestPaths": [
       "/ssw/StandardsInternal/DeveloperProductsHosting/SettingUpAUserOnSeal.htm"
     ],
-    "redirectPath": "/archived/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaCamerontownshendAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaCamerontownshendAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaDanielrussellAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaJaywangAbout me",
+    "name": "ArchiveStandardsinternalemployeetestareaJaywangAbout me",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/jay-wang/about me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jay-wang/about me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaJonnytreesAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaJonnytreesAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/jonny-trees/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jonny-trees/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaJosephropertiAbout me",
+    "name": "ArchiveStandardsinternalemployeetestareaJosephropertiAbout me",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaMashagildinaAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaMichellehuntAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaMichellehuntAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaOlivianganAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaOlivianganAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/olivia-ngan/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/olivia-ngan/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaPaulstovellAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaPaulstovellAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaPhilipolsenAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaPhilipolsenAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaSamakulaAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaSamakulaAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/sam-akula/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sam-akula/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaTiagoaraujoAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaTiagoaraujoAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/tiago-araujo/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tiago-araujo/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaTimkremerAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaTimkremerAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaTristankurniawanAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaTristankurniawanAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/ulysses-maclaren/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ulysses-maclaren/about-me.htm"
   },
   {
-    "name": "ArchivedStandardsinternalemployeetestareaVarunbalakrishnaAboutme",
+    "name": "ArchiveStandardsinternalemployeetestareaVarunbalakrishnaAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/VarunBalakrishna/AboutMe.htm"
     ],
-    "redirectPath": "/archived/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
+    "redirectPath": "/archive/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
   },
   {
-    "name": "ArchivedDataproAccess01introduction",
+    "name": "ArchiveDataproAccess01introduction",
     "requestPaths": [
       "/ssw/DataPRO/Access/01Introduction.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/01-introduction.htm"
+    "redirectPath": "/archive/data-pro/access/01-introduction.htm"
   },
   {
-    "name": "ArchivedDataproAccess02howitworks",
+    "name": "ArchiveDataproAccess02howitworks",
     "requestPaths": [
       "/ssw/DataPRO/Access/02HowItWorks.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/02-how-it-works.htm"
+    "redirectPath": "/archive/data-pro/access/02-how-it-works.htm"
   },
   {
-    "name": "ArchivedDataproAccess03assumptions",
+    "name": "ArchiveDataproAccess03assumptions",
     "requestPaths": [
       "/ssw/DataPRO/Access/03Assumptions.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/03-assumptions.htm"
+    "redirectPath": "/archive/data-pro/access/03-assumptions.htm"
   },
   {
-    "name": "ArchivedDataproAccess04gettingstarted",
+    "name": "ArchiveDataproAccess04gettingstarted",
     "requestPaths": [
       "/ssw/DataPRO/Access/04GettingStarted.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/04-getting-started.htm"
+    "redirectPath": "/archive/data-pro/access/04-getting-started.htm"
   },
   {
-    "name": "ArchivedDataproAccess05firsttimeuse",
+    "name": "ArchiveDataproAccess05firsttimeuse",
     "requestPaths": [
       "/ssw/DataPRO/Access/05FirstTimeUse.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/05-first-time-use.htm"
+    "redirectPath": "/archive/data-pro/access/05-first-time-use.htm"
   },
   {
-    "name": "ArchivedDataproAccess06setup",
+    "name": "ArchiveDataproAccess06setup",
     "requestPaths": [
       "/ssw/DataPRO/Access/06Setup.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/06-setup.htm"
+    "redirectPath": "/archive/data-pro/access/06-setup.htm"
   },
   {
-    "name": "ArchivedDataproAccess07tutorial",
+    "name": "ArchiveDataproAccess07tutorial",
     "requestPaths": [
       "/ssw/DataPRO/Access/07Tutorial.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/07-tutorial.htm"
+    "redirectPath": "/archive/data-pro/access/07-tutorial.htm"
   },
   {
-    "name": "ArchivedDataproAccess08changingdata",
+    "name": "ArchiveDataproAccess08changingdata",
     "requestPaths": [
       "/ssw/DataPRO/Access/08ChangingData.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/08-changing-data.htm"
+    "redirectPath": "/archive/data-pro/access/08-changing-data.htm"
   },
   {
-    "name": "ArchivedDataproAccess09datastructure",
+    "name": "ArchiveDataproAccess09datastructure",
     "requestPaths": [
       "/ssw/DataPRO/Access/09DataStructure.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/09-data-structure.htm"
+    "redirectPath": "/archive/data-pro/access/09-data-structure.htm"
   },
   {
-    "name": "ArchivedDataproAccess10data",
+    "name": "ArchiveDataproAccess10data",
     "requestPaths": [
       "/ssw/DataPRO/Access/10Data.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/10-data.htm"
+    "redirectPath": "/archive/data-pro/access/10-data.htm"
   },
   {
-    "name": "ArchivedDataproAccess11relationship",
+    "name": "ArchiveDataproAccess11relationship",
     "requestPaths": [
       "/ssw/DataPRO/Access/11Relationship.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/11-relationship.htm"
+    "redirectPath": "/archive/data-pro/access/11-relationship.htm"
   },
   {
-    "name": "ArchivedDataproAccess12dataindex",
+    "name": "ArchiveDataproAccess12dataindex",
     "requestPaths": [
       "/ssw/DataPRO/Access/12Dataindex.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/12-dataindex.htm"
+    "redirectPath": "/archive/data-pro/access/12-dataindex.htm"
   },
   {
-    "name": "ArchivedDataproAccess13comments",
+    "name": "ArchiveDataproAccess13comments",
     "requestPaths": [
       "/ssw/DataPRO/Access/13comments.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/13comments.htm"
+    "redirectPath": "/archive/data-pro/access/13comments.htm"
   },
   {
-    "name": "ArchivedDataproAccess14distributefrontend",
+    "name": "ArchiveDataproAccess14distributefrontend",
     "requestPaths": [
       "/ssw/DataPRO/Access/14DistributeFrontEnd.htm"
     ],
-    "redirectPath": "/archived/data-pro/access/14-distribute-front-end.htm"
+    "redirectPath": "/archive/data-pro/access/14-distribute-front-end.htm"
   },
   {
-    "name": "ArchivedDataproSql01introductionsql",
+    "name": "ArchiveDataproSql01introductionsql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/01IntroductionSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/01-introduction-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/01-introduction-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql02howitworkssql",
+    "name": "ArchiveDataproSql02howitworkssql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/02HowItWorksSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/02-how-it-works-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/02-how-it-works-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql03assumptionssql",
+    "name": "ArchiveDataproSql03assumptionssql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/03AssumptionsSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/03-assumptions-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/03-assumptions-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql04gettingstartedsql",
+    "name": "ArchiveDataproSql04gettingstartedsql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/04GettingStartedSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/04-getting-started-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/04-getting-started-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql05firsttimeusesql",
+    "name": "ArchiveDataproSql05firsttimeusesql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/05FirstTimeUseSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/05-first-time-use-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/05-first-time-use-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql06setupsql",
+    "name": "ArchiveDataproSql06setupsql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/06SetupSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/06-setup-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/06-setup-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql07tutorialsql",
+    "name": "ArchiveDataproSql07tutorialsql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/07TutorialSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/07-tutorial-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/07-tutorial-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql08changingdatasql",
+    "name": "ArchiveDataproSql08changingdatasql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/08ChangingDataSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/08-changing-data-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/08-changing-data-sql.htm"
   },
   {
-    "name": "ArchivedDataproSql09distributefrontendsql",
+    "name": "ArchiveDataproSql09distributefrontendsql",
     "requestPaths": [
       "/ssw/DataPRO/SQL/09DistributeFrontEndSQL.htm"
     ],
-    "redirectPath": "/archived/data-pro/sql/09-distribute-front-end-sql.htm"
+    "redirectPath": "/archive/data-pro/sql/09-distribute-front-end-sql.htm"
   },
   {
-    "name": "ArchivedDataproDefault",
+    "name": "ArchiveDataproDefault",
     "requestPaths": [
       "/ssw/DataPRO/Default.aspx"
     ],
-    "redirectPath": "/archived/data-pro/default.html"
+    "redirectPath": "/archive/data-pro/default.html"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadssw",
+    "name": "ArchiveDownloadPadfilesPadssw",
     "requestPaths": [
       "/ssw/Download/PADFiles/PAD_SSW.NETToolkit.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw.net-toolkit.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw.net-toolkit.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswaccessreporter",
+    "name": "ArchiveDownloadPadfilesPadsswaccessreporter",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWAccessReporter.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-access-reporter.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-access-reporter.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswcodeauditor",
+    "name": "ArchiveDownloadPadfilesPadsswcodeauditor",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWCodeAuditor.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-code-auditor.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-code-auditor.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswdatapro2000",
+    "name": "ArchiveDownloadPadfilesPadsswdatapro2000",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWDataPRO2000.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-data-pro2000.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-data-pro2000.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswdatapro97",
+    "name": "ArchiveDownloadPadfilesPadsswdatapro97",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWDataPRO97.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-data-pro97.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-data-pro97.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswdatarenovator2000",
+    "name": "ArchiveDownloadPadfilesPadsswdatarenovator2000",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWDataRenovator2000.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-data-renovator-2000.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-data-renovator-2000.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswdatarenovator97",
+    "name": "ArchiveDownloadPadfilesPadsswdatarenovator97",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWDataRenovator97.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-data-renovator-97.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-data-renovator-97.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswemailmergepro",
+    "name": "ArchiveDownloadPadfilesPadsswemailmergepro",
     "requestPaths": [
       "/ssw/Download/PADFiles/PAD_SSWEmailMergePRO.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-email-merge-pro.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-email-merge-pro.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswexchangereporter",
+    "name": "ArchiveDownloadPadfilesPadsswexchangereporter",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWExchangeReporter.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-exchange-reporter.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-exchange-reporter.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswextremeemails",
+    "name": "ArchiveDownloadPadfilesPadsswextremeemails",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWeXtremeEmails.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-sswextreme-emails.htm"
+    "redirectPath": "/archive/download/padfiles/pad-sswextreme-emails.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswlinkauditor",
+    "name": "ArchiveDownloadPadfilesPadsswlinkauditor",
     "requestPaths": [
       "/ssw/Download/PADFiles/PAD_SSWLinkAuditor.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-link-auditor.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-link-auditor.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswlookout",
+    "name": "ArchiveDownloadPadfilesPadsswlookout",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWLookout.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-lookout.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-lookout.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswnettoolkit",
+    "name": "ArchiveDownloadPadfilesPadsswnettoolkit",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWNETToolkit.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-net-toolkit.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-net-toolkit.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswperformancepro2000",
+    "name": "ArchiveDownloadPadfilesPadsswperformancepro2000",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWPerformancePRO2000.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-performance-pro2000.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-performance-pro2000.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswperformancepro97",
+    "name": "ArchiveDownloadPadfilesPadsswperformancepro97",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWPerformancePRO97.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-performance-pro97.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-performance-pro97.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswpropertyandeventpro2000",
+    "name": "ArchiveDownloadPadfilesPadsswpropertyandeventpro2000",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWPropertyAndEventPRO2000.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-property-and-event-pro2000.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-property-and-event-pro2000.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswpropertyandeventpro97",
+    "name": "ArchiveDownloadPadfilesPadsswpropertyandeventpro97",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWPropertyAndEventPRO97.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-property-and-event-pro97.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-property-and-event-pro97.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswsqlauditor",
+    "name": "ArchiveDownloadPadfilesPadsswsqlauditor",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWSQLAuditor.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-auditor.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-sql-auditor.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswsqldeploy",
+    "name": "ArchiveDownloadPadfilesPadsswsqldeploy",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWSQLDeploy.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-deploy.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-sql-deploy.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswsqltotalcompare",
+    "name": "ArchiveDownloadPadfilesPadsswsqltotalcompare",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWSQLTotalCompare.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-total-compare.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-sql-total-compare.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswteamcalendar",
+    "name": "ArchiveDownloadPadfilesPadsswteamcalendar",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWTeamCalendar.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-team-calendar.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-team-calendar.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesPadsswupsizingpro",
+    "name": "ArchiveDownloadPadfilesPadsswupsizingpro",
     "requestPaths": [
       "/ssw/Download/PADFiles/pad_SSWUpsizingPRO.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/pad-ssw-upsizing-pro.htm"
+    "redirectPath": "/archive/download/padfiles/pad-ssw-upsizing-pro.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesSswca",
+    "name": "ArchiveDownloadPadfilesSswca",
     "requestPaths": [
       "/ssw/Download/PADFiles/SSWCA.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/ssw-ca.htm"
+    "redirectPath": "/archive/download/padfiles/ssw-ca.htm"
   },
   {
-    "name": "ArchivedDownloadPadfilesSswup",
+    "name": "ArchiveDownloadPadfilesSswup",
     "requestPaths": [
       "/ssw/Download/PADFiles/SSWUP.htm"
     ],
-    "redirectPath": "/archived/download/padfiles/ssw-up.htm"
+    "redirectPath": "/archive/download/padfiles/ssw-up.htm"
   },
   {
-    "name": "ArchivedDownloadSswdiagnostics",
+    "name": "ArchiveDownloadSswdiagnostics",
     "requestPaths": [
       "/ssw/Download/SSWDiagnostics.htm"
     ],
-    "redirectPath": "/archived/download/ssw-diagnostics.htm"
+    "redirectPath": "/archive/download/ssw-diagnostics.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsCurrentallmailboxesfolder",
+    "name": "ArchiveExchangereporterReportsCurrentallmailboxesfolder",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Current_All_Mailboxes_Folder.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/current-all-mailboxes-folder.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/current-all-mailboxes-folder.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsCurrentallmailboxesfolderl",
+    "name": "ArchiveExchangereporterReportsCurrentallmailboxesfolderl",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Current_All_Mailboxes_Folder_L.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/current-all-mailboxes-folder-l.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/current-all-mailboxes-folder-l.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsCurrentfoldertreesizesall",
+    "name": "ArchiveExchangereporterReportsCurrentfoldertreesizesall",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Current_Folder_Tree_Sizes_All.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/current-folder-tree-sizes-all.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/current-folder-tree-sizes-all.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsCurrentfoldertreesizesowner",
+    "name": "ArchiveExchangereporterReportsCurrentfoldertreesizesowner",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Current_Folder_Tree_Sizes_Owner.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/current-folder-tree-sizes-owner.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/current-folder-tree-sizes-owner.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsDefault",
+    "name": "ArchiveExchangereporterReportsDefault",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Default.aspx"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/default.html"
+    "redirectPath": "/archive/exchange-reporter/reports/default.html"
   },
   {
-    "name": "ArchivedExchangereporterReportsExtractionlogallrecords",
+    "name": "ArchiveExchangereporterReportsExtractionlogallrecords",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Extraction_Log_All_Records.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/extraction-log-all-records.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/extraction-log-all-records.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsExtractionloglastextraction",
+    "name": "ArchiveExchangereporterReportsExtractionloglastextraction",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Extraction_Log_Last_Extraction.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/extraction-log-last-extraction.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/extraction-log-last-extraction.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsGrowthallmailboxes",
+    "name": "ArchiveExchangereporterReportsGrowthallmailboxes",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Growth_All_Mailboxes.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/growth-all-mailboxes.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/growth-all-mailboxes.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsGrowthallmailboxesmonth",
+    "name": "ArchiveExchangereporterReportsGrowthallmailboxesmonth",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Growth_All_mailboxes_Month.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/growth-all-mailboxes-month.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/growth-all-mailboxes-month.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsGrowthindividualmailbox",
+    "name": "ArchiveExchangereporterReportsGrowthindividualmailbox",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Growth_Individual_Mailbox.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/growth-individual-mailbox.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/growth-individual-mailbox.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsIncomingbusyreceiversofincomingemail",
+    "name": "ArchiveExchangereporterReportsIncomingbusyreceiversofincomingemail",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Incoming_Busy_Receivers_of_Incoming_Email.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/incoming-busy-receivers-of-incoming-email.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/incoming-busy-receivers-of-incoming-email.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsIncomingreceivedemailsforuser",
+    "name": "ArchiveExchangereporterReportsIncomingreceivedemailsforuser",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Incoming_Received_Emails_For_User.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/incoming-received-emails-for-user.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/incoming-received-emails-for-user.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsMailboxessummary",
+    "name": "ArchiveExchangereporterReportsMailboxessummary",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Mailboxes_Summary.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/mailboxes-summary.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/mailboxes-summary.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsOutgoingsentemailsforuserchart",
+    "name": "ArchiveExchangereporterReportsOutgoingsentemailsforuserchart",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Outgoing_Sent_Emails_For_User_Chart.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/outgoing-sent-emails-for-user-chart.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/outgoing-sent-emails-for-user-chart.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsOutgoingsentemailsforuserl",
+    "name": "ArchiveExchangereporterReportsOutgoingsentemailsforuserl",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Outgoing_Sent_Emails_For_User_L.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/outgoing-sent-emails-for-user-l.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/outgoing-sent-emails-for-user-l.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsOutgoingtop50busy",
+    "name": "ArchiveExchangereporterReportsOutgoingtop50busy",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Outgoing_Top_50_Busy.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/outgoing-top-50-busy.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/outgoing-top-50-busy.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsOutingtop50largeemail",
+    "name": "ArchiveExchangereporterReportsOutingtop50largeemail",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Outing_Top_50_Large_Email.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/outing-top-50-large-email.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/outing-top-50-large-email.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsSearchmessagesbyemailaddress",
+    "name": "ArchiveExchangereporterReportsSearchmessagesbyemailaddress",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Search_Messages_by_Email_Address.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-email-address.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/search-messages-by-email-address.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsadvanced",
+    "name": "ArchiveExchangereporterReportsSearchmessagesbykeywordsadvanced",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Search_Messages_by_keywords_Advanced.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-advanced.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/search-messages-by-keywords-advanced.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsdetail",
+    "name": "ArchiveExchangereporterReportsSearchmessagesbykeywordsdetail",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Search_Messages_by_Keywords_Detail.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-detail.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/search-messages-by-keywords-detail.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsmatrix",
+    "name": "ArchiveExchangereporterReportsSearchmessagesbykeywordsmatrix",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Search_Messages_by_Keywords_Matrix.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-matrix.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/search-messages-by-keywords-matrix.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsSearchmessagesbykeyphrase",
+    "name": "ArchiveExchangereporterReportsSearchmessagesbykeyphrase",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Search_Messages_by_Key_Phrase.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-key-phrase.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/search-messages-by-key-phrase.htm"
   },
   {
-    "name": "ArchivedExchangereporterReportsTrendindividualmailbox",
+    "name": "ArchiveExchangereporterReportsTrendindividualmailbox",
     "requestPaths": [
       "/ssw/ExchangeReporter/Reports/Trend_Individual_Mailbox.htm"
     ],
-    "redirectPath": "/archived/exchange-reporter/reports/trend-individual-mailbox.htm"
+    "redirectPath": "/archive/exchange-reporter/reports/trend-individual-mailbox.htm"
   },
   {
-    "name": "ArchivedExchangereporterDefault",
+    "name": "ArchiveExchangereporterDefault",
     "requestPaths": [
       "/ssw/ExchangeReporter/Default.aspx"
     ],
-    "redirectPath": "/archived/exchange-reporter/default.html"
+    "redirectPath": "/archive/exchange-reporter/default.html"
   },
   {
-    "name": "ArchivedExchangereporterReportsamples",
+    "name": "ArchiveExchangereporterReportsamples",
     "requestPaths": [
       "/ssw/ExchangeReporter/ReportSamples.aspx"
     ],
-    "redirectPath": "/archived/exchange-reporter/report-samples.html"
+    "redirectPath": "/archive/exchange-reporter/report-samples.html"
   },
   {
-    "name": "ArchivedExchangereporterUserguide",
+    "name": "ArchiveExchangereporterUserguide",
     "requestPaths": [
       "/ssw/ExchangeReporter/UserGuide.aspx"
     ],
-    "redirectPath": "/archived/exchange-reporter/user-guide.html"
+    "redirectPath": "/archive/exchange-reporter/user-guide.html"
   },
   {
-    "name": "ArchivedNetugCanberraug200803",
+    "name": "ArchiveNetugCanberraug200803",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_03.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-03.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-03.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200804",
+    "name": "ArchiveNetugCanberraug200804",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_04.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-04.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-04.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200805",
+    "name": "ArchiveNetugCanberraug200805",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_05.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-05.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-05.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200806",
+    "name": "ArchiveNetugCanberraug200806",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_06.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-06.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-06.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200807",
+    "name": "ArchiveNetugCanberraug200807",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_07.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-07.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-07.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200808",
+    "name": "ArchiveNetugCanberraug200808",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_08.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-08.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-08.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200809",
+    "name": "ArchiveNetugCanberraug200809",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_09.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-09.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-09.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200810",
+    "name": "ArchiveNetugCanberraug200810",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_10.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-10.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-10.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200811",
+    "name": "ArchiveNetugCanberraug200811",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_11.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-11.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-11.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200812",
+    "name": "ArchiveNetugCanberraug200812",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_12.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-12.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-12.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug2008daychange",
+    "name": "ArchiveNetugCanberraug2008daychange",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2008_DayChange.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2008-day-change.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2008-day-change.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200901",
+    "name": "ArchiveNetugCanberraug200901",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_01.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-01.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-01.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200902",
+    "name": "ArchiveNetugCanberraug200902",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_02.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-02.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-02.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200903",
+    "name": "ArchiveNetugCanberraug200903",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_03.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-03.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-03.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200904",
+    "name": "ArchiveNetugCanberraug200904",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_04.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-04.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-04.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200905",
+    "name": "ArchiveNetugCanberraug200905",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_05.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-05.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-05.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200906",
+    "name": "ArchiveNetugCanberraug200906",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_06.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-06.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-06.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200907",
+    "name": "ArchiveNetugCanberraug200907",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_07.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-07.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-07.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200908",
+    "name": "ArchiveNetugCanberraug200908",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_08.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-08.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-08.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200909",
+    "name": "ArchiveNetugCanberraug200909",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_09.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-09.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-09.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200910",
+    "name": "ArchiveNetugCanberraug200910",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_10.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-10.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-10.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200911",
+    "name": "ArchiveNetugCanberraug200911",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_11.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-11.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-11.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug200912",
+    "name": "ArchiveNetugCanberraug200912",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2009_12.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2009-12.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2009-12.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201001",
+    "name": "ArchiveNetugCanberraug201001",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_01.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-01.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-01.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201002",
+    "name": "ArchiveNetugCanberraug201002",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_02.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-02.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-02.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201003",
+    "name": "ArchiveNetugCanberraug201003",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_03.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-03.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-03.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201007",
+    "name": "ArchiveNetugCanberraug201007",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_07.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-07.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-07.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201008",
+    "name": "ArchiveNetugCanberraug201008",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_08.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-08.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-08.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201009",
+    "name": "ArchiveNetugCanberraug201009",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_09.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-09.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-09.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201010",
+    "name": "ArchiveNetugCanberraug201010",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_10.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-10.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-10.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201011",
+    "name": "ArchiveNetugCanberraug201011",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_11.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-11.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-11.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201012",
+    "name": "ArchiveNetugCanberraug201012",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2010_12.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2010-12.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2010-12.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201102",
+    "name": "ArchiveNetugCanberraug201102",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2011_02.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2011-02.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2011-02.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201104",
+    "name": "ArchiveNetugCanberraug201104",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2011_04.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2011-04.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2011-04.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201105",
+    "name": "ArchiveNetugCanberraug201105",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2011_05.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2011-05.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2011-05.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201106",
+    "name": "ArchiveNetugCanberraug201106",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2011_06.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2011-06.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2011-06.htm"
   },
   {
-    "name": "ArchivedNetugCanberraug201111",
+    "name": "ArchiveNetugCanberraug201111",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/2011_11.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/2011-11.htm"
+    "redirectPath": "/archive/netug/canberra-ug/2011-11.htm"
   },
   {
-    "name": "ArchivedNetugCanberraugDefault",
+    "name": "ArchiveNetugCanberraugDefault",
     "requestPaths": [
       "/ssw/NETUG/CanberraUG/default.htm"
     ],
-    "redirectPath": "/archived/netug/canberra-ug/default.htm"
+    "redirectPath": "/archive/netug/canberra-ug/default.htm"
   },
   {
-    "name": "ArchivedNetugEvaluationsurveyDefault",
+    "name": "ArchiveNetugEvaluationsurveyDefault",
     "requestPaths": [
       "/ssw/NETUG/Evaluation-Survey/Default.aspx"
     ],
-    "redirectPath": "/archived/netug/evaluation-survey/default.html"
+    "redirectPath": "/archive/netug/evaluation-survey/default.html"
   },
   {
-    "name": "ArchivedNetugFirebootcampMarch2014",
+    "name": "ArchiveNetugFirebootcampMarch2014",
     "requestPaths": [
       "/ssw/NETUG/FireBootCamp/March2014.html"
     ],
-    "redirectPath": "/archived/netug/fire-boot-camp/march-2014.html"
+    "redirectPath": "/archive/netug/fire-boot-camp/march-2014.html"
   },
   {
-    "name": "ArchivedNetugFirebootcampNovember2013",
+    "name": "ArchiveNetugFirebootcampNovember2013",
     "requestPaths": [
       "/ssw/NETUG/FireBootCamp/November2013.html"
     ],
-    "redirectPath": "/archived/netug/fire-boot-camp/november-2013.html"
+    "redirectPath": "/archive/netug/fire-boot-camp/november-2013.html"
   },
   {
-    "name": "ArchivedNetugSourcesEvaluationform",
+    "name": "ArchiveNetugSourcesEvaluationform",
     "requestPaths": [
       "/ssw/NETUG/sources/evaluationform.html"
     ],
-    "redirectPath": "/archived/netug/sources/evaluationform.html"
+    "redirectPath": "/archive/netug/sources/evaluationform.html"
   },
   {
-    "name": "ArchivedNetugSswupdateSelectclientMicrosoftaccesstosqlserver",
+    "name": "ArchiveNetugSswupdateSelectclientMicrosoftaccesstosqlserver",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/SelectClient/MicrosoftAccessToSQLServer.htm"
     ],
-    "redirectPath": "/archived/netug/ssw-update/select-client/microsoft-access-to-sql-server.htm"
+    "redirectPath": "/archive/netug/ssw-update/select-client/microsoft-access-to-sql-server.htm"
   },
   {
-    "name": "ArchivedNetugSswupdate2005nov",
+    "name": "ArchiveNetugSswupdate2005nov",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/2005Nov.htm"
     ],
-    "redirectPath": "/archived/netug/ssw-update/2005-nov.htm"
+    "redirectPath": "/archive/netug/ssw-update/2005-nov.htm"
   },
   {
-    "name": "ArchivedNetugSswupdateAanewtemplate201802",
+    "name": "ArchiveNetugSswupdateAanewtemplate201802",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/aaNewTemplate_2018_02____.html"
     ],
-    "redirectPath": "/archived/netug/ssw-update/aa-new-template-2018-02----.html"
+    "redirectPath": "/archive/netug/ssw-update/aa-new-template-2018-02----.html"
   },
   {
-    "name": "ArchivedNetugSswupdateQldmsdnreminder",
+    "name": "ArchiveNetugSswupdateQldmsdnreminder",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/QLDMSDNReminder.htm"
     ],
-    "redirectPath": "/archived/netug/ssw-update/qldmsdnreminder.htm"
+    "redirectPath": "/archive/netug/ssw-update/qldmsdnreminder.htm"
   },
   {
-    "name": "ArchivedNetugSswupdateSswnewslettertemplate",
+    "name": "ArchiveNetugSswupdateSswnewslettertemplate",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/SSW-newsletter-template.html"
     ],
-    "redirectPath": "/archived/netug/ssw-update/ssw-newsletter-template.html"
+    "redirectPath": "/archive/netug/ssw-update/ssw-newsletter-template.html"
   },
   {
-    "name": "ArchivedNetugSswupdateSsw201805basedtemplatewithfeaturedproductsection",
+    "name": "ArchiveNetugSswupdateSsw201805basedtemplatewithfeaturedproductsection",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/SSW_2018_05-based__Template-with-featured-product-section.html"
     ],
-    "redirectPath": "/archived/netug/ssw-update/ssw-2018-05-based--template-with-featured-product-section.html"
+    "redirectPath": "/archive/netug/ssw-update/ssw-2018-05-based--template-with-featured-product-section.html"
   },
   {
-    "name": "ArchivedNetugSswupdateZzsswnewslettertemplate",
+    "name": "ArchiveNetugSswupdateZzsswnewslettertemplate",
     "requestPaths": [
       "/ssw/NETUG/SSWUpdate/zzSSWnewsletterTemplate.html"
     ],
-    "redirectPath": "/archived/netug/ssw-update/zz-sswnewsletter-template.html"
+    "redirectPath": "/archive/netug/ssw-update/zz-sswnewsletter-template.html"
   },
   {
-    "name": "ArchivedNetugHanselmanusergrouplive",
+    "name": "ArchiveNetugHanselmanusergrouplive",
     "requestPaths": [
       "/ssw/NETUG/Hanselman-User-Group-Live.aspx"
     ],
-    "redirectPath": "/archived/netug/hanselman-user-group-live.html"
+    "redirectPath": "/archive/netug/hanselman-user-group-live.html"
   },
   {
-    "name": "ArchivedNetugHanselmanusergroupspecial",
+    "name": "ArchiveNetugHanselmanusergroupspecial",
     "requestPaths": [
       "/ssw/NETUG/Hanselman-User-Group-Special.aspx"
     ],
-    "redirectPath": "/archived/netug/hanselman-user-group-special.html"
+    "redirectPath": "/archive/netug/hanselman-user-group-special.html"
   },
   {
-    "name": "ArchivedNetugHistory",
+    "name": "ArchiveNetugHistory",
     "requestPaths": [
       "/ssw/NETUG/History.aspx"
     ],
-    "redirectPath": "/archived/netug/history.html"
+    "redirectPath": "/archive/netug/history.html"
   },
   {
-    "name": "ArchivedNetugTheagileolympicswithjessehouwing",
+    "name": "ArchiveNetugTheagileolympicswithjessehouwing",
     "requestPaths": [
       "/ssw/NETUG/The-Agile-Olympics-with-Jesse-Houwing.aspx"
     ],
-    "redirectPath": "/archived/netug/the-agile-olympics-with-jesse-houwing.html"
+    "redirectPath": "/archive/netug/the-agile-olympics-with-jesse-houwing.html"
   },
   {
-    "name": "ArchivedNetugTopsessions",
+    "name": "ArchiveNetugTopsessions",
     "requestPaths": [
       "/ssw/NETUG/Top-Sessions.aspx"
     ],
-    "redirectPath": "/archived/netug/top-sessions.html"
+    "redirectPath": "/archive/netug/top-sessions.html"
   },
   {
-    "name": "ArchivedNetugUsergroupmapdirectionscanberra",
+    "name": "ArchiveNetugUsergroupmapdirectionscanberra",
     "requestPaths": [
       "/ssw/NETUG/UserGroupMapDirectionsCanberra.aspx"
     ],
-    "redirectPath": "/archived/netug/user-group-map-directions-canberra.html"
+    "redirectPath": "/archive/netug/user-group-map-directions-canberra.html"
   },
   {
-    "name": "ArchivedNetugUsergroupmapdirectionssydney",
+    "name": "ArchiveNetugUsergroupmapdirectionssydney",
     "requestPaths": [
       "/ssw/NETUG/UserGroupMapDirectionsSydney.aspx"
     ],
-    "redirectPath": "/archived/netug/user-group-map-directions-sydney.html"
+    "redirectPath": "/archive/netug/user-group-map-directions-sydney.html"
   }
 ]

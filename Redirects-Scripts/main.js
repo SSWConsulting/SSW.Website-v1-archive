@@ -167,7 +167,7 @@ async function main(folderPath) {
   //await extractURLStatus(folderPath);
 
   getRedirectMapping();
-  //await createHTMLFileForRedirects(redirectMap);
+  await createHTMLFileForRedirects(redirectMap);
 }
 
 main(folderPath);
