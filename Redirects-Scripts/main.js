@@ -2,11 +2,12 @@ const fs = require("fs");
 const path = require("path");
 const cheerio = require("cheerio");
 const createHTMLFileForStatus = require("./generate-url-status-html");
+const createHTMLFileForRedirects = require("./generate-redirect-report");
 
 let urls = [];
 let oldURLs = [];
 let redirectMap = [];
-const archivedPath = "archived";
+const archivedPath = "archive";
 const folderPath = `../${archivedPath}`;
 const mainIndexPagePath = `../${archivedPath}/index.html`;
 const groupedUrls = {};
@@ -46,7 +47,7 @@ function extractTDsFromFile(filePath) {
           oldURLs.push(href);
         }
       } else {
-        if (href && href.includes("/archived/")) {
+        if (href && href.includes("/archive/")) {
           if (urls.indexOf(href) === -1) {
             urls.push(href);
           }
@@ -115,23 +116,41 @@ function groupByPath() {
   });
 }
 
-function displayGroupBy() {
+function displayGroupBy(numberOfPaths) {
   let count = 0;
-  Object.keys(groupedUrls).forEach((path, index) => {
+  let indexx = 1;
+  let filteredRedirects = [];
+
+  const groupEnteries = Object.entries(groupedUrls);
+  groupEnteries.sort((a, b) => a[1].count - b[1].count);
+  const sortedGroupedUrls = Object.fromEntries(groupEnteries);
+
+  Object.keys(sortedGroupedUrls).forEach((path, index) => {
     const pathInfo = groupedUrls[path];
     const emoji = ConflictingPathIcons[path] ?? "✅";
-    console.log(`${index + 1} - ${emoji} ${path}, Count: ${pathInfo.count}`);
 
-    //console.log("URLs:", pathInfo.urls);
-    count += pathInfo.count;
+    if (pathInfo.count > 16 && pathInfo.count < 114) {
+      //>= 17)
+      console.log(`${indexx} - ${emoji} ${path}, Count: ${pathInfo.count}`);
+      count += pathInfo.count;
+      indexx++;
+      //console.log("URLs:", pathInfo.urls);
+      filteredRedirects = [...filteredRedirects, ...pathInfo.urls];
+    }
   });
   console.log("\n\n 🚀~ Total count:", count);
+  //console.log("🚀 ~ displayGroupBy ~ filteredRedirects:", filteredRedirects);
+  const frontDoorRedirects = JSON.stringify(filteredRedirects, null, 2);
+  fs.writeFileSync("filtered-redirects.json", frontDoorRedirects);
+  console.log(
+    "\n\n📝 - JSON Redirects has been written to filtered-redirects.json\n\n"
+  );
 }
 
 function getRedirectMapping() {
   mapRedirects();
   groupByPath();
-  displayGroupBy();
+  displayGroupBy(400);
   return redirectMap;
 }
 
@@ -139,13 +158,16 @@ async function extractURLStatus(folderPath) {
   traverseDirectory(folderPath, extractTDsFromFile);
   console.log("Extracted unique URLs: ", urls.length);
   await createHTMLFileForStatus(urls);
+  //await createHTMLFileForRedirects(urls);
 }
 
 // Main function to run the script
 async function main(folderPath) {
   // Uncomment this line to generate page for all archived URL status
-  // await extractURLStatus(folderPath);
+  //await extractURLStatus(folderPath);
+
   getRedirectMapping();
+  //await createHTMLFileForRedirects(redirectMap);
 }
 
 main(folderPath);

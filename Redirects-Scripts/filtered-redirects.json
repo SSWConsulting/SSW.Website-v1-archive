@@ -1,0 +1,1304 @@
+[
+  {
+    "name": "ArchivedCodeauditorDefault",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/default.html"
+  },
+  {
+    "name": "ArchivedCodeauditor2407developercentralextra",
+    "requestPaths": [
+      "/ssw/CodeAuditor/2407DeveloperCentralExtra.htm"
+    ],
+    "redirectPath": "/archived/code-auditor/2407-developer-central-extra.htm"
+  },
+  {
+    "name": "ArchivedCodeauditorHowtobegoodcodeauditordailybuildmaster",
+    "requestPaths": [
+      "/ssw/CodeAuditor/HowtobeGoodCodeAuditorDailyBuildMaster.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/howtobe-good-code-auditor-daily-build-master.html"
+  },
+  {
+    "name": "ArchivedCodeauditorResources",
+    "requestPaths": [
+      "/ssw/CodeAuditor/resources.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/resources.html"
+  },
+  {
+    "name": "ArchivedCodeauditorRsuserguide",
+    "requestPaths": [
+      "/ssw/CodeAuditor/rsuserguide.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/rsuserguide.html"
+  },
+  {
+    "name": "ArchivedCodeauditorRules",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Rules.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/rules.html"
+  },
+  {
+    "name": "ArchivedCodeauditorSimplewebpages",
+    "requestPaths": [
+      "/ssw/CodeAuditor/simplewebpages.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/simplewebpages.html"
+  },
+  {
+    "name": "ArchivedCodeauditorTutorial",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Tutorial.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/tutorial.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguide",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguideaspmigration",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideASPMigration.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-aspmigration.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguideaspmigrationscreenshot",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideASPMigrationScreenshot.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-aspmigration-screenshot.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidecheckinpolicy",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideCheckInPolicy.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-check-in-policy.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidecustomruleforsql",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideCustomRuleforSQL.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-custom-rulefor-sql.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidevs",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideVS.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-vs.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguidewizard",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuideWizard.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-wizard.html"
+  },
+  {
+    "name": "ArchivedCodeauditorUserguideold",
+    "requestPaths": [
+      "/ssw/CodeAuditor/UserGuide_Old.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/user-guide-old.html"
+  },
+  {
+    "name": "ArchivedCodeauditorWebmag",
+    "requestPaths": [
+      "/ssw/CodeAuditor/webmag.aspx"
+    ],
+    "redirectPath": "/archived/code-auditor/webmag.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsExcelproductlistDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/ExcelProductList/Default.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/excel-product-list/default.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/default.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsNewversionreleasedreportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/new-version-released-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleasedebriefreportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-debrief-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleaseplanreportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleasePlanReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-plan-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsRevisedestimatefilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/RevisedEstimate_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/revised-estimate-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsTestpleasereportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/TestPleaseReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/test-please-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsUpdatereportfilesHeader",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/UpdateReport_files/header.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/update-report-files/header.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsNewversionreleasedreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/new-version-released-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsPrereleasesummaryreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/Pre-ReleaseSummaryReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/pre-release-summary-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleasedebriefreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-debrief-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsReleaseplanreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleasePlanReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/release-plan-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsRevisedestimate",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/RevisedEstimate.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/revised-estimate.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsTestpleasereport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/TestPleaseReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/test-please-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsReportsUpdatereport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/UpdateReport.htm"
+    ],
+    "redirectPath": "/archived/extreme-emails/reports/update-report.htm"
+  },
+  {
+    "name": "ArchivedExtremeemailsDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Default.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/default.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsSilverlight",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/silverlight.html"
+    ],
+    "redirectPath": "/archived/extreme-emails/silverlight.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsUntitled1",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Untitled-1.html"
+    ],
+    "redirectPath": "/archived/extreme-emails/untitled-1.html"
+  },
+  {
+    "name": "ArchivedExtremeemailsUserguide",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/userguide.aspx"
+    ],
+    "redirectPath": "/archived/extreme-emails/userguide.html"
+  },
+  {
+    "name": "ArchivedStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/AccessDeniedWhenLogon.html"
+    ],
+    "redirectPath": "/archived/standards-internal/developer-products-hosting/plesk kbs/access-denied-when-logon.html"
+  },
+  {
+    "name": "ArchivedStandardsinternalDeveloperproductshostingPlesk kbsIis web directorys missing2",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/IIS Web Directorys Missing2.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/developer-products-hosting/plesk kbs/iis web directorys missing-2.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalDeveloperproductshostingSettingupauseronseal",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/SettingUpAUserOnSeal.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaCamerontownshendAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaDanielrussellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaJaywangAbout me",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/jay-wang/about me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaJonnytreesAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/jonny-trees/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaJosephropertiAbout me",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaMashagildinaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaMichellehuntAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaOlivianganAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/olivia-ngan/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaPaulstovellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaPhilipolsenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaSamakulaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/sam-akula/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaTiagoaraujoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/tiago-araujo/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaTimkremerAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaTristankurniawanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/ulysses-maclaren/about-me.htm"
+  },
+  {
+    "name": "ArchivedStandardsinternalemployeetestareaVarunbalakrishnaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/VarunBalakrishna/AboutMe.htm"
+    ],
+    "redirectPath": "/archived/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess01introduction",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/01Introduction.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/01-introduction.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess02howitworks",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/02HowItWorks.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/02-how-it-works.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess03assumptions",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/03Assumptions.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/03-assumptions.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess04gettingstarted",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/04GettingStarted.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/04-getting-started.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess05firsttimeuse",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/05FirstTimeUse.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/05-first-time-use.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess06setup",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/06Setup.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/06-setup.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess07tutorial",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/07Tutorial.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/07-tutorial.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess08changingdata",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/08ChangingData.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/08-changing-data.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess09datastructure",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/09DataStructure.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/09-data-structure.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess10data",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/10Data.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/10-data.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess11relationship",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/11Relationship.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/11-relationship.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess12dataindex",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/12Dataindex.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/12-dataindex.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess13comments",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/13comments.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/13comments.htm"
+  },
+  {
+    "name": "ArchivedDataproAccess14distributefrontend",
+    "requestPaths": [
+      "/ssw/DataPRO/Access/14DistributeFrontEnd.htm"
+    ],
+    "redirectPath": "/archived/data-pro/access/14-distribute-front-end.htm"
+  },
+  {
+    "name": "ArchivedDataproSql01introductionsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/01IntroductionSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/01-introduction-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql02howitworkssql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/02HowItWorksSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/02-how-it-works-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql03assumptionssql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/03AssumptionsSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/03-assumptions-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql04gettingstartedsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/04GettingStartedSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/04-getting-started-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql05firsttimeusesql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/05FirstTimeUseSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/05-first-time-use-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql06setupsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/06SetupSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/06-setup-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql07tutorialsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/07TutorialSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/07-tutorial-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql08changingdatasql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/08ChangingDataSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/08-changing-data-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproSql09distributefrontendsql",
+    "requestPaths": [
+      "/ssw/DataPRO/SQL/09DistributeFrontEndSQL.htm"
+    ],
+    "redirectPath": "/archived/data-pro/sql/09-distribute-front-end-sql.htm"
+  },
+  {
+    "name": "ArchivedDataproDefault",
+    "requestPaths": [
+      "/ssw/DataPRO/Default.aspx"
+    ],
+    "redirectPath": "/archived/data-pro/default.html"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadssw",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/PAD_SSW.NETToolkit.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw.net-toolkit.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswaccessreporter",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWAccessReporter.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-access-reporter.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswcodeauditor",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWCodeAuditor.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-code-auditor.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatapro2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataPRO2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-pro2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatapro97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataPRO97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-pro97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatarenovator2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataRenovator2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-renovator-2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswdatarenovator97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWDataRenovator97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-data-renovator-97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswemailmergepro",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/PAD_SSWEmailMergePRO.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-email-merge-pro.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswexchangereporter",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWExchangeReporter.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-exchange-reporter.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswextremeemails",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWeXtremeEmails.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-sswextreme-emails.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswlinkauditor",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/PAD_SSWLinkAuditor.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-link-auditor.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswlookout",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWLookout.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-lookout.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswnettoolkit",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWNETToolkit.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-net-toolkit.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswperformancepro2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPerformancePRO2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-performance-pro2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswperformancepro97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPerformancePRO97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-performance-pro97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswpropertyandeventpro2000",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPropertyAndEventPRO2000.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-property-and-event-pro2000.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswpropertyandeventpro97",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWPropertyAndEventPRO97.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-property-and-event-pro97.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswsqlauditor",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWSQLAuditor.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-auditor.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswsqldeploy",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWSQLDeploy.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-deploy.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswsqltotalcompare",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWSQLTotalCompare.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-sql-total-compare.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswteamcalendar",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWTeamCalendar.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-team-calendar.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesPadsswupsizingpro",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/pad_SSWUpsizingPRO.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/pad-ssw-upsizing-pro.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesSswca",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/SSWCA.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/ssw-ca.htm"
+  },
+  {
+    "name": "ArchivedDownloadPadfilesSswup",
+    "requestPaths": [
+      "/ssw/Download/PADFiles/SSWUP.htm"
+    ],
+    "redirectPath": "/archived/download/padfiles/ssw-up.htm"
+  },
+  {
+    "name": "ArchivedDownloadSswdiagnostics",
+    "requestPaths": [
+      "/ssw/Download/SSWDiagnostics.htm"
+    ],
+    "redirectPath": "/archived/download/ssw-diagnostics.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentallmailboxesfolder",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_All_Mailboxes_Folder.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-all-mailboxes-folder.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentallmailboxesfolderl",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_All_Mailboxes_Folder_L.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-all-mailboxes-folder-l.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentfoldertreesizesall",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_Folder_Tree_Sizes_All.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-folder-tree-sizes-all.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsCurrentfoldertreesizesowner",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Current_Folder_Tree_Sizes_Owner.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/current-folder-tree-sizes-owner.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsDefault",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/default.html"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsExtractionlogallrecords",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Extraction_Log_All_Records.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/extraction-log-all-records.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsExtractionloglastextraction",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Extraction_Log_Last_Extraction.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/extraction-log-last-extraction.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsGrowthallmailboxes",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Growth_All_Mailboxes.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/growth-all-mailboxes.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsGrowthallmailboxesmonth",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Growth_All_mailboxes_Month.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/growth-all-mailboxes-month.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsGrowthindividualmailbox",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Growth_Individual_Mailbox.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/growth-individual-mailbox.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsIncomingbusyreceiversofincomingemail",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Incoming_Busy_Receivers_of_Incoming_Email.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/incoming-busy-receivers-of-incoming-email.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsIncomingreceivedemailsforuser",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Incoming_Received_Emails_For_User.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/incoming-received-emails-for-user.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsMailboxessummary",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Mailboxes_Summary.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/mailboxes-summary.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutgoingsentemailsforuserchart",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outgoing_Sent_Emails_For_User_Chart.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outgoing-sent-emails-for-user-chart.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutgoingsentemailsforuserl",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outgoing_Sent_Emails_For_User_L.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outgoing-sent-emails-for-user-l.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutgoingtop50busy",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outgoing_Top_50_Busy.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outgoing-top-50-busy.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsOutingtop50largeemail",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Outing_Top_50_Large_Email.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/outing-top-50-large-email.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbyemailaddress",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Email_Address.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-email-address.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsadvanced",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_keywords_Advanced.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-advanced.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsdetail",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Keywords_Detail.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-detail.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeywordsmatrix",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Keywords_Matrix.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-keywords-matrix.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsSearchmessagesbykeyphrase",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Search_Messages_by_Key_Phrase.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/search-messages-by-key-phrase.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsTrendindividualmailbox",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Reports/Trend_Individual_Mailbox.htm"
+    ],
+    "redirectPath": "/archived/exchange-reporter/reports/trend-individual-mailbox.htm"
+  },
+  {
+    "name": "ArchivedExchangereporterDefault",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/Default.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/default.html"
+  },
+  {
+    "name": "ArchivedExchangereporterReportsamples",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/ReportSamples.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/report-samples.html"
+  },
+  {
+    "name": "ArchivedExchangereporterUserguide",
+    "requestPaths": [
+      "/ssw/ExchangeReporter/UserGuide.aspx"
+    ],
+    "redirectPath": "/archived/exchange-reporter/user-guide.html"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200803",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_03.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-03.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200804",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_04.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-04.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200805",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_05.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-05.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200806",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_06.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-06.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200807",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_07.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-07.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200808",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_08.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-08.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200809",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_09.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-09.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200810",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_10.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-10.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200811",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200812",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_12.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-12.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug2008daychange",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2008_DayChange.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2008-day-change.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200901",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_01.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-01.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200902",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_02.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-02.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200903",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_03.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-03.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200904",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_04.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-04.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200905",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_05.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-05.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200906",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_06.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-06.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200907",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_07.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-07.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200908",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_08.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-08.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200909",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_09.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-09.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200910",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_10.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-10.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200911",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug200912",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2009_12.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2009-12.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201001",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_01.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-01.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201002",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_02.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-02.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201003",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_03.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-03.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201007",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_07.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-07.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201008",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_08.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-08.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201009",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_09.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-09.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201010",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_10.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-10.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201011",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201012",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2010_12.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2010-12.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201102",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_02.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-02.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201104",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_04.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-04.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201105",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_05.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-05.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201106",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_06.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-06.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraug201111",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/2011_11.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/2011-11.htm"
+  },
+  {
+    "name": "ArchivedNetugCanberraugDefault",
+    "requestPaths": [
+      "/ssw/NETUG/CanberraUG/default.htm"
+    ],
+    "redirectPath": "/archived/netug/canberra-ug/default.htm"
+  },
+  {
+    "name": "ArchivedNetugEvaluationsurveyDefault",
+    "requestPaths": [
+      "/ssw/NETUG/Evaluation-Survey/Default.aspx"
+    ],
+    "redirectPath": "/archived/netug/evaluation-survey/default.html"
+  },
+  {
+    "name": "ArchivedNetugFirebootcampMarch2014",
+    "requestPaths": [
+      "/ssw/NETUG/FireBootCamp/March2014.html"
+    ],
+    "redirectPath": "/archived/netug/fire-boot-camp/march-2014.html"
+  },
+  {
+    "name": "ArchivedNetugFirebootcampNovember2013",
+    "requestPaths": [
+      "/ssw/NETUG/FireBootCamp/November2013.html"
+    ],
+    "redirectPath": "/archived/netug/fire-boot-camp/november-2013.html"
+  },
+  {
+    "name": "ArchivedNetugSourcesEvaluationform",
+    "requestPaths": [
+      "/ssw/NETUG/sources/evaluationform.html"
+    ],
+    "redirectPath": "/archived/netug/sources/evaluationform.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateSelectclientMicrosoftaccesstosqlserver",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/SelectClient/MicrosoftAccessToSQLServer.htm"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/select-client/microsoft-access-to-sql-server.htm"
+  },
+  {
+    "name": "ArchivedNetugSswupdate2005nov",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/2005Nov.htm"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/2005-nov.htm"
+  },
+  {
+    "name": "ArchivedNetugSswupdateAanewtemplate201802",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/aaNewTemplate_2018_02____.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/aa-new-template-2018-02----.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateQldmsdnreminder",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/QLDMSDNReminder.htm"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/qldmsdnreminder.htm"
+  },
+  {
+    "name": "ArchivedNetugSswupdateSswnewslettertemplate",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/SSW-newsletter-template.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/ssw-newsletter-template.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateSsw201805basedtemplatewithfeaturedproductsection",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/SSW_2018_05-based__Template-with-featured-product-section.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/ssw-2018-05-based--template-with-featured-product-section.html"
+  },
+  {
+    "name": "ArchivedNetugSswupdateZzsswnewslettertemplate",
+    "requestPaths": [
+      "/ssw/NETUG/SSWUpdate/zzSSWnewsletterTemplate.html"
+    ],
+    "redirectPath": "/archived/netug/ssw-update/zz-sswnewsletter-template.html"
+  },
+  {
+    "name": "ArchivedNetugHanselmanusergrouplive",
+    "requestPaths": [
+      "/ssw/NETUG/Hanselman-User-Group-Live.aspx"
+    ],
+    "redirectPath": "/archived/netug/hanselman-user-group-live.html"
+  },
+  {
+    "name": "ArchivedNetugHanselmanusergroupspecial",
+    "requestPaths": [
+      "/ssw/NETUG/Hanselman-User-Group-Special.aspx"
+    ],
+    "redirectPath": "/archived/netug/hanselman-user-group-special.html"
+  },
+  {
+    "name": "ArchivedNetugHistory",
+    "requestPaths": [
+      "/ssw/NETUG/History.aspx"
+    ],
+    "redirectPath": "/archived/netug/history.html"
+  },
+  {
+    "name": "ArchivedNetugTheagileolympicswithjessehouwing",
+    "requestPaths": [
+      "/ssw/NETUG/The-Agile-Olympics-with-Jesse-Houwing.aspx"
+    ],
+    "redirectPath": "/archived/netug/the-agile-olympics-with-jesse-houwing.html"
+  },
+  {
+    "name": "ArchivedNetugTopsessions",
+    "requestPaths": [
+      "/ssw/NETUG/Top-Sessions.aspx"
+    ],
+    "redirectPath": "/archived/netug/top-sessions.html"
+  },
+  {
+    "name": "ArchivedNetugUsergroupmapdirectionscanberra",
+    "requestPaths": [
+      "/ssw/NETUG/UserGroupMapDirectionsCanberra.aspx"
+    ],
+    "redirectPath": "/archived/netug/user-group-map-directions-canberra.html"
+  },
+  {
+    "name": "ArchivedNetugUsergroupmapdirectionssydney",
+    "requestPaths": [
+      "/ssw/NETUG/UserGroupMapDirectionsSydney.aspx"
+    ],
+    "redirectPath": "/archived/netug/user-group-map-directions-sydney.html"
+  }
+]

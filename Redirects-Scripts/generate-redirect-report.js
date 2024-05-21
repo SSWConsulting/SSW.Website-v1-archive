@@ -1,16 +1,16 @@
 const fs = require("fs");
 const axios = require("axios");
-const ProductionURL = "https://www.ssw.com.au";
+const ProductionURL = "https://www.tfs365.com"; //https://www.ssw.com.au";
 
 // Function to generate HTML for the table
-async function generateHTMLTable(urls) {
+async function generateHTMLTable(obj) {
   let html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archival URL Status Report</title>
+    <title>Redirects URL Status Report</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -36,47 +36,62 @@ async function generateHTMLTable(urls) {
 </head>
 <body>
 
-<h2 class="mb-5 mt-5">Archival URL Status Report</h2>
+<h2 class="mb-5 mt-5">Redirects URL Status Report</h2>
 
 <table>
     <thead>
         <tr>
             <th>SR#</th>
             <th>URL</th>
+            <th>Redirect URL</th>
             <th>Status</th>
         </tr>
     </thead>
     <tbody>
 `;
 
-  for (const url of urls) {
+  let index = 1;
+  for (const redirect of obj) {
     try {
-      const appendedURL = ProductionURL + url.replace("/archive", "/history"); // remove replace once history is migrated
-      const response = await axios.head(appendedURL); // Use axios to send HEAD request
-      const status = response.status;
+      const finalURL =
+        ProductionURL +
+        redirect.requestPaths[0].replace("/archive", "/history"); // remove replace once history is migrated
+      console.log("🚀 " + index + ") pinging :", finalURL);
+      const response = await axios.head(finalURL); // Use axios to send HEAD request
+      const redirectedURL = response.request.res.responseUrl;
+      const finalRedirectPath = ProductionURL + redirect.redirectPath;
+
+      const status = redirectedURL == finalRedirectPath ? "pass" : "fail";
       html += `
         <tr>
-            <td>${urls.indexOf(url) + 1}</td>
-            <td><a href=${appendedURL} target="_blank">${appendedURL}</a></td>
+            <td>${index}</td>
+            <td><a href=${finalURL} target="_blank">${finalURL}</a></td>
+            <td><a href=${finalRedirectPath} target="_blank">${finalRedirectPath}</a></td>
             <td><i title=${status} class="fa fa-circle ${
-        status == 200 ? "text-success" : "text-danger"
+        status == "pass" ? "text-success" : "text-danger"
       }
              " aria-hidden="true"></i>
             </td>
         </tr>
     `;
     } catch (error) {
-      const appendedURL = ProductionURL + url.replace("/archive", "/history");
-      console.error(`Error fetching URL ${appendedURL}:`, error);
+      const finalURL =
+        ProductionURL +
+        redirect.requestPaths[0].replace("/archive", "/history");
+      const finalRedirectPath = ProductionURL + redirect.redirectPath;
+
+      console.error(`Error fetching URL ${finalURL}:`, error);
       html += `
         <tr class="bg-danger text-white">
-            <td>${urls.indexOf(url) + 1}</td>
-            <td><a class="text-white" href=${appendedURL} target="_blank">${appendedURL}</a></td>
-            <td class="text-white">${error.response.status}</td>
+            <td>${index}</td>
+            <td><a class="text-white" href=${finalURL} target="_blank">${finalURL}</a></td>
+            <td><a class="text-white" href=${finalRedirectPath} target="_blank">${finalRedirectPath}</a></td>
+            <td class="text-white">${error.response?.status ?? "Error"}</td>
 
         </tr>
     `;
     }
+    index++;
   }
 
   html += `
@@ -90,10 +105,16 @@ async function generateHTMLTable(urls) {
   return html;
 }
 
-async function createHTMLFileForStatus(urls) {
-  const html = await generateHTMLTable(urls);
-  fs.writeFileSync("url_status_report.html", html);
+async function createHTMLFileForRedirects(obj) {
+  //   const obj2 = [
+  //     {
+  //       requestPaths: ["/ssw/Standards/Rules/Training.aspx"],
+  //       redirectPath: "/events",
+  //     },
+  //   ];
+  const html = await generateHTMLTable(obj);
+  fs.writeFileSync("url_redirect_report.html", html);
   console.log("📝 - HTML file has been created successfully.");
 }
 
-module.exports = createHTMLFileForStatus;
+module.exports = createHTMLFileForRedirects;
