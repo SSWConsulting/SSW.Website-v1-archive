@@ -1,324 +1,362 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1">
-<script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXDBVV');
+  <head id="Head1">
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
     </script>
-<title>
-        Upgrade to VS 2005 and TFS
-    </title>
-<meta content="en-au" http-equiv="Content-Language"/>
-<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="keywords" name="keywords"/>
-<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
-<meta content="SSW" name="author"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="/archive/css/Content.css" id="Link1" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Screen.css" id="screenCSS" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon"/>
-<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Print.css" id="printCSS" media="print" rel="stylesheet" type="text/css"/>
-<!-- Start of pdi-ssw Zendesk Widget script -->
-<!-- End of pdi-ssw Zendesk Widget script -->
-<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
-</head>
-<body id="MasterBody" style="opacity: 1 !important;">
-<div style="
+    <title>Upgrade to VS 2005 and TFS</title>
+    <meta content="en-au" http-equiv="Content-Language" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"
+      id="keywords"
+      name="keywords"
+    />
+    <meta
+      content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China."
+      name="description"
+    />
+    <meta content="SSW" name="author" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="/archive/css/Content.css"
+      id="Link1"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Screen.css"
+      id="screenCSS"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link
+      href="/archive/include/googleSyntax/shCore.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/include/googleSyntax/shThemeDefault.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Print.css"
+      id="printCSS"
+      media="print"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <link
+      href="https://a.omappapi.com/app/js/api.min.css"
+      id="omapi-css"
+      media="all"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="MasterBody" style="opacity: 1 !important">
+    <div
+      style="
         line-height: 1.5;
-        text-align: center; 
-        font-size: 1.125rem; 
+        text-align: center;
+        font-size: 1.125rem;
         color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
-    ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-            ⚠️ This page has been archived
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p style="color: white">
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au" style="color: white"> ssw.com.au </a>
+        </p>
+      </div>
+    </div>
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+    <form action="./UpgradeToVS2005AndTFS.aspx" id="form" method="post">
+      <div class="aspNetHidden">
+        <input
+          id="__VIEWSTATE"
+          name="__VIEWSTATE"
+          type="hidden"
+          value="/wEPDwUJMzQxNTYyNDQyD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGQigkM9GhZ2T5O5C4iD8Gcfqm+evWNKU+OewYf3KJehWg=="
+        />
+      </div>
+      <div class="aspNetHidden">
+        <input
+          id="__VIEWSTATEGENERATOR"
+          name="__VIEWSTATEGENERATOR"
+          type="hidden"
+          value="FC4411B8"
+        />
+      </div>
+      <div id="mainContainer">
+        <div></div>
+        <p>
+          <span id="mainContentPlaceHolder_SiteMapPath1">
+            <a href="#mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+            <span>
+              <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards-internal" title="StandardsInternal">
+                StandardsInternal
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a
+                href="/archive/standards-internal/developer-general"
+                title="DeveloperGeneral"
+              >
+                DeveloperGeneral
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span> Upgrade to VS 2005 and TFS </span>
+            <a id="mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+          </span>
+        </p>
+        <br />
+        <div class="TableOfContents">
+          <ol>
+            <li>
+              Upgrade from VS 2003 to VS 2005:
+              <ul type="disc">
+                <li>
+                  <a href="#PreUpgrade"> Pre-upgrade </a>
+                </li>
+                <li>
+                  <a href="#Upgrade"> Upgrade </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              For projects that have been upgraded to .NET 2.0 and currently in
+              SourceSafe:
+              <br />
+              <ul type="disc">
+                <li>
+                  <a href="#UnbindVSS">
+                    Unbind the SourceSafe association bindings
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Team Foundation Server:
+              <ul type="disc">
+                <li>
+                  <a href="#SetupTFS"> Setup TFS and connect to TFS </a>
+                </li>
+                <li>
+                  <a href="#NewTeamProject">
+                    Create new Team Project and check-in the source code
+                  </a>
+                </li>
+                <li>
+                  <a href="#UsingTFS">
+                    Things you should know when using TFS
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#Installer">
+                Update Wise Installer and Visual Build Script
+              </a>
+            </li>
+          </ol>
         </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p style="color:white;">
-                ✅ New page with updated info:
-                <a href="https://www.ssw.com.au" style="color: white">
-                    ssw.com.au
-                </a>
-</p>
-</div>
-</div>
-<noscript>
-<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
-</iframe>
-</noscript>
-<form action="./UpgradeToVS2005AndTFS.aspx" id="form" method="post">
-<div class="aspNetHidden">
-<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJMzQxNTYyNDQyD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGQigkM9GhZ2T5O5C4iD8Gcfqm+evWNKU+OewYf3KJehWg=="/>
-</div>
-<div class="aspNetHidden">
-<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="FC4411B8"/>
-</div>
-<div id="mainContainer">
-<div>
-</div>
-<p>
-<span id="mainContentPlaceHolder_SiteMapPath1">
-<a href="#mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-<span>
-<a href="/archive" title="Home">
-                            Home
-                        </a>
-</span>
-<span>
-                        &gt;
-                    </span>
-<span>
-<a href="/archive/standards-internal" title="StandardsInternal">
-                            StandardsInternal
-                        </a>
-</span>
-<span>
-                        &gt;
-                    </span>
-<span>
-<a href="/archive/standards-internal/developer-general" title="DeveloperGeneral">
-                            DeveloperGeneral
-                        </a>
-</span>
-<span>
-                        &gt;
-                    </span>
-<span>
-                        Upgrade to VS 2005 and TFS
-                    </span>
-<a id="mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-</span>
-</p>
-<br/>
-<div class="TableOfContents">
-<ol>
-<li>
-                        Upgrade from VS 2003 to VS 2005:
-                        <ul type="disc">
-<li>
-<a href="#PreUpgrade">
-                                    Pre-upgrade
-                                </a>
-</li>
-<li>
-<a href="#Upgrade">
-                                    Upgrade
-                                </a>
-</li>
-</ul>
-</li>
-<li>
-                        For projects that have been upgraded to .NET 2.0 and currently in SourceSafe:
-                        <br/>
-<ul type="disc">
-<li>
-<a href="#UnbindVSS">
-                                    Unbind the SourceSafe association bindings
-                                </a>
-</li>
-</ul>
-</li>
-<li>
-                        Team Foundation Server:
-                        <ul type="disc">
-<li>
-<a href="#SetupTFS">
-                                    Setup TFS and connect to TFS
-                                </a>
-</li>
-<li>
-<a href="#NewTeamProject">
-                                    Create new Team Project and check-in the source code
-                                </a>
-</li>
-<li>
-<a href="#UsingTFS">
-                                    Things you should know when using TFS
-                                </a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#Installer">
-                            Update Wise Installer and Visual Build Script
-                        </a>
-</li>
-</ol>
-</div>
-<p>
-<br/>
-<b>
-                    NOTE
-                </b>
-                : There is a conversion utility and walkthrough for Visual SourceSafe to Team Foundation conversion
-                available at
-                <a href="http://msdn2.microsoft.com/en-us/library/ms181247.aspx">
-                    http://msdn2.microsoft.com/en-us/library/ms181247.aspx
-                </a>
-                . However, we have chosen to archive all the VSS history so that TFS is not cluttered with version
-                updates that don't relate to the current state of our products.
-                <br/>
-<br/>
-</p>
-<h3>
-                Upgrade from VS 2003 to VS 2005:
-            </h3>
-<h2>
-<a name="PreUpgrade">
-</a>
-                Pre-upgrade
-            </h2>
-<p>
-</p>
-<ol>
-<li>
-                    Compile all projects in Release mode.
-                </li>
-<li>
-                    Create a folder named "References" in the solution folder, copy all the references dll files (eg:
-                    SSW.Framework.WindowsUI.dll, SSW.Registration.dll, etc...) to this folder.
-                </li>
-<li>
-                    Add all the references dll files to solution as "Solution Items", so they get saved to TFS source
-                    control system later.
-                </li>
-<li>
-                    Remove those Framework projects from the solution.
-                    <br/>
-<dl class="image">
-<dt>
-<img alt="Before" src="/archive/images/ReferencesBefore.gif"/>
-</dt>
-<dd>
-                            Figure: Before
-                        </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="After" src="/archive/images/ReferencesAfter.gif"/>
-</dt>
-<dd>
-                            Figure: Before
-                        </dd>
-</dl>
-<br/>
-</li>
-<li>
-                    Update all projects references to the dlls.
-                </li>
-<li>
-                    Make sure all projects still can compile and run correctly.
-                </li>
-<li>
-                    Check-in everything to SourceSafe, make sure no files are checked-out.
-                </li>
-</ol>
-<br/>
-            We are doing this because those framework projects are shared and being used by all SSW products, if they
-            get upgraded now, all other SSW products that are still in .NET 1.1 wouldn't be able to use the Framework,
-            thus the SSW Framework and some other components should be the last ones to get upgraded.
+        <p>
+          <br />
+          <b> NOTE </b>
+          : There is a conversion utility and walkthrough for Visual SourceSafe
+          to Team Foundation conversion available at
+          <a href="http://msdn2.microsoft.com/en-us/library/ms181247.aspx">
+            http://msdn2.microsoft.com/en-us/library/ms181247.aspx
+          </a>
+          . However, we have chosen to archive all the VSS history so that TFS
+          is not cluttered with version updates that don't relate to the current
+          state of our products.
+          <br />
+          <br />
+        </p>
+        <h3>Upgrade from VS 2003 to VS 2005:</h3>
+        <h2>
+          <a name="PreUpgrade"> </a>
+          Pre-upgrade
+        </h2>
+        <p></p>
+        <ol>
+          <li>Compile all projects in Release mode.</li>
+          <li>
+            Create a folder named "References" in the solution folder, copy all
+            the references dll files (eg: SSW.Framework.WindowsUI.dll,
+            SSW.Registration.dll, etc...) to this folder.
+          </li>
+          <li>
+            Add all the references dll files to solution as "Solution Items", so
+            they get saved to TFS source control system later.
+          </li>
+          <li>
+            Remove those Framework projects from the solution.
+            <br />
+            <dl class="image">
+              <dt>
+                <img alt="Before" src="/archive/images/ReferencesBefore.gif" />
+              </dt>
+              <dd>Figure: Before</dd>
+            </dl>
+            <dl class="image">
+              <dt>
+                <img alt="After" src="/archive/images/ReferencesAfter.gif" />
+              </dt>
+              <dd>Figure: Before</dd>
+            </dl>
+            <br />
+          </li>
+          <li>Update all projects references to the dlls.</li>
+          <li>Make sure all projects still can compile and run correctly.</li>
+          <li>
+            Check-in everything to SourceSafe, make sure no files are
+            checked-out.
+          </li>
+        </ol>
+        <br />
+        We are doing this because those framework projects are shared and being
+        used by all SSW products, if they get upgraded now, all other SSW
+        products that are still in .NET 1.1 wouldn't be able to use the
+        Framework, thus the SSW Framework and some other components should be
+        the last ones to get upgraded.
+        <p></p>
+        <h2>
+          <a name="Upgrade"> </a>
+          Upgrade
+        </h2>
+        <p></p>
+        <ol>
+          <li>Open the .sln in VS 2005.</li>
+          <li>
             <p>
-</p>
-<h2>
-<a name="Upgrade">
-</a>
-                Upgrade
-            </h2>
-<p>
-</p>
-<ol>
-<li>
-                    Open the .sln in VS 2005.
-                </li>
-<li>
-<p>
-                        Upgrade the projects using the Visual Studio Conversion Wizard.
-                        <br/>
-</p>
-<dl class="image">
-<dt>
-<img alt="Visual Studio Conversion Wizard" src="/archive/images/UpgradeWizard1.gif"/>
-</dt>
-<dd>
-                            Figure: Visual Studio Conversion Wizard
-                        </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Conversion Summary" src="/archive/images/UpgradeWizard2.gif"/>
-</dt>
-<dd>
-                            Figure: Converion Summary
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-                    When you get prompted with the Source Control dialog, select "Permanently remove source control
-                    binding associate bindings" and click OK.
-                    <dl class="image">
-<dt>
-<img alt="Remove the source control association bindings" src="/archive/images/RemoveSourceControlBindings.gif"/>
-</dt>
-<dd>
-                            Figure: Remove the source control association bindings
-                        </dd>
-</dl>
-<p>
-                        Note: Now this solution isn't under source control anymore, we will add this solution to TFS
-                        later.
-                    </p>
-</li>
-<li>
-                    Fix all the errors and upgrade issues.
-                    <br/>
-                    The common one is the InvalidOperationException due to illegal cross-thread calling.
-                    <dl class="image">
-<dt>
-<img alt="InvalidOperationException" src="/archive/images/InvalidOperationException.gif"/>
-</dt>
-<dd>
-                            Figure: InvalidOperationException
-                        </dd>
-</dl>
-<p>
-                        For additional information, please refer to MSDN article
-                        <a href="/ssw/Redirect/Microsoft/MSDN2ThreadSafe.htm">
-                            How to: Make Thread-Safe Calls to Windows Forms Controls
-                        </a>
-<img alt="You are going to a site outside of SSW" height="11" src="/archive//ssw/Images/LeaveSite.gif" width="17"/>
-                        .
-                    </p>
-</li>
-<li>
-                    The solution or the startup project probably has a .exe.manifest, this file was used in .NET 1.1 to
-                    get the visual style as Application.EnableVisualStyles() in .NET 1.1 was buggy. For a .NET 2.0
-                    Windows application, please delete the .exe.manifest and use Application.EnableVisualStyles() to get
-                    the visual style.
-                    <p>
-                        Find the application entry point and add the highlighted code:
-                    </p>
-<table class="clsSSWTableCode" width="90%">
-<tbody>
-<tr>
-<td>
-<pre><code><b>VB:</b>
+              Upgrade the projects using the Visual Studio Conversion Wizard.
+              <br />
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Visual Studio Conversion Wizard"
+                  src="/archive/images/UpgradeWizard1.gif"
+                />
+              </dt>
+              <dd>Figure: Visual Studio Conversion Wizard</dd>
+            </dl>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Conversion Summary"
+                  src="/archive/images/UpgradeWizard2.gif"
+                />
+              </dt>
+              <dd>Figure: Converion Summary</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            When you get prompted with the Source Control dialog, select
+            "Permanently remove source control binding associate bindings" and
+            click OK.
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Remove the source control association bindings"
+                  src="/archive/images/RemoveSourceControlBindings.gif"
+                />
+              </dt>
+              <dd>Figure: Remove the source control association bindings</dd>
+            </dl>
+            <p>
+              Note: Now this solution isn't under source control anymore, we
+              will add this solution to TFS later.
+            </p>
+          </li>
+          <li>
+            Fix all the errors and upgrade issues.
+            <br />
+            The common one is the InvalidOperationException due to illegal
+            cross-thread calling.
+            <dl class="image">
+              <dt>
+                <img
+                  alt="InvalidOperationException"
+                  src="/archive/images/InvalidOperationException.gif"
+                />
+              </dt>
+              <dd>Figure: InvalidOperationException</dd>
+            </dl>
+            <p>
+              For additional information, please refer to MSDN article
+              <a href="/ssw/Redirect/Microsoft/MSDN2ThreadSafe.htm">
+                How to: Make Thread-Safe Calls to Windows Forms Controls
+              </a>
+              <img
+                alt="You are going to a site outside of SSW"
+                height="11"
+                src="/archive//ssw/Images/LeaveSite.gif"
+                width="17"
+              />
+              .
+            </p>
+          </li>
+          <li>
+            The solution or the startup project probably has a .exe.manifest,
+            this file was used in .NET 1.1 to get the visual style as
+            Application.EnableVisualStyles() in .NET 1.1 was buggy. For a .NET
+            2.0 Windows application, please delete the .exe.manifest and use
+            Application.EnableVisualStyles() to get the visual style.
+            <p>
+              Find the application entry point and add the highlighted code:
+            </p>
+            <table class="clsSSWTableCode" width="90%">
+              <tbody>
+                <tr>
+                  <td>
+                    <pre><code><b>VB:</b>
 Module Startup
     Public Sub Main()
         <span style="background-color: #00FF00">Application.EnableVisualStyles()</span>
@@ -337,745 +375,709 @@ static void Main()
 ...
     Application.Run(new StartupForm);
 }</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-                    The EnableVisualStyles and SetCompatibleTextRenderingDefault should be added to the top, typically
-                    before the Application.Run.
-                    <p>
-</p>
-<p>
-                        SetCompatibleTextRendering determines whether the controls should use GDI+ or GDI for text
-                        drawing.
-                    </p>
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td width="80">
-<b>
-                                        True
-                                    </b>
-</td>
-<td width="280">
-                                    Uses GDI+/Graphics.DrawString
-                                </td>
-<td>
-                                    Behaves same as .NET 1.1.
-                                </td>
-</tr>
-<tr>
-<td>
-<b>
-                                        False
-                                    </b>
-</td>
-<td>
-                                    Uses GDI/TextRenderer
-                                </td>
-<td>
-                                    Behaves similar to .NET 1.1, looks nicer, localizes better.
-                                </td>
-</tr>
-</tbody>
-</table>
-<p>
-</p>
-<p>
-                        Notice the difference (The obvious difference is the "VB .NET" on the third line of the
-                        description):
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Without Application.SetCompatibleTextRenderingDefault(False)" src="/archive/images/CompatibleTextRenderingTrue.gif"/>
-</dt>
-<dd>
-                            Figure: Without Application.SetCompatibleTextRenderingDefault(False)
-                        </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="With Application.SetCompatibleTextRenderingDefault(False)" height="515" src="/archive/images/CompatibleTextRenderingFalse.gif" width="648"/>
-</dt>
-<dd>
-                            Figure: With Application.SetCompatibleTextRenderingDefault(False)
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        VS 2005 solution allows you to add solution folder, this is new in VS 2005.
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Add a new solution folder" height="446" src="/archive/images/AddSolutionFolder.gif" width="273"/>
-</dt>
-<dd>
-                            Figure: Add a new solution folder
-                        </dd>
-</dl>
-<p>
-</p>
-<p>
-                        Now add 2 new solution folders, named References and Setup.
-                        <br/>
-                        * Cut all the references .dll files and paste them to the References" solution folder.
-                        <br/>
-                        * Move all the files that related to Setup (.wsi, .bld, etc...) to the "Setup" solution folder.
-                        <br/>
-</p>
-<dl class="image">
-<dt>
-<img alt="The folder structure of Solution Items" src="/archive/images/SetupFolder.gif"/>
-</dt>
-<dd>
-                            Figure: The folder structure of Solution Items
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-                    Most of the SSW products have unit-testing using NUnit, and the nunit-gui.exe is included as part of
-                    the project for end users to run the unit tests.
-                    <p>
-                        If your existing NUnit are built using .NET 1.1, it won't work with .NET 2.0 projects due to no
-                        forward compatibility in .NET 1.1.
-                        <br/>
-                        Please download the latest NUnit package that is built using .NET 2.0 from
-                        <a href="/ssw/redirect/NUnitDownload.htm">
-                            NUnit download page
-                        </a>
-                        .
-                    </p>
-<p>
-                        Basically you only need nunit-gui-runner.dll, nunit-gui.exe, nunit.core.dll,
-                        nunit.framework.dll, nunit.uikit.dll, and nunit.util.dll.
-                        <br/>
-                        Please include these NUnit files to your solution or update the existing NUnit files.
-                    </p>
-<p>
-                        You should put all the NUnit files under the "References" folder.
-                        <br/>
-</p>
-<dl class="image">
-<dt>
-<img alt="All the NUnit files in the " bin="" folder.="" src="/archive/images/NUnitReferencesBad.gif"/>
-</dt>
-<dd>
-                            Figure: All the NUnit files are in the "bin" folder. (Bad)
-                        </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="All the NUnit files are in the " items="" solution="" src="/archive/images/NUnitReferencesGood.gif"/>
-</dt>
-<dd>
-                            Figure: All the NUnit files are in the "Solution Items\References\NUnit". (Good)
-                        </dd>
-</dl>
-<p>
-</p>
-<p>
-                        Add the commands below to your startup project's post-build event.
-                    </p>
-<table class="clsSSWTableCode" width="90%">
-<tbody>
-<tr>
-<td>
-<pre><code>if exist "$(TargetDir)NUnit" rd /s /q "$(TargetDir)NUnit"
-xcopy "$(SolutionDir)References\NUnit" "$(TargetDir)NUnit" /s /i /y /r /q</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-<p>
-</p>
-<p>
-                        Skip the next section "Unbind the SourceSafe association bindings" and continue to
-                        <a href="#TFS">
-                            Team Foundation Server
-                        </a>
-                        .
-                    </p>
-</li>
-</ol>
-<p>
-</p>
-<br/>
-<br/>
-<h3>
-                For projects that have been upgraded to .NET 2.0 and currently in SourceSafe:
-            </h3>
-<h2>
-<a name="UnbindVSS">
-</a>
-                Unbind the SourceSafe association bindings
-            </h2>
-<p>
-</p>
-<ol>
-<li>
-                    Open the .sln
-                </li>
-<li>
-                    Menu: File --&gt; Source Control --&gt; Change Source Control...
-                    <dl class="image">
-<dt>
-<img alt='Click "Change Source Control..."' src="/archive/images/ChangeSourceControl.gif"/>
-</dt>
-<dd>
-                            Figure: Click "Change Source Control..."
-                        </dd>
-</dl>
-</li>
-<li>
-                    Unbind the solution and all projects
-                    <dl class="image">
-<dt>
-<img alt='Click "Unbind"' src="/archive/images/UnbindVSS1.gif"/>
-</dt>
-<dd>
-                            Figure: Click "Unbind"
-                        </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Make sure everything has been unbound" src="/archive/images/UnbindVSS2.gif"/>
-</dt>
-<dd>
-                            Figure: Make sure everything has been unbound
-                        </dd>
-</dl>
-</li>
-</ol>
-<p>
-</p>
-<br/>
-<br/>
-<a name="TFS">
-</a>
-<h3>
-                Team Foundation Server:
-            </h3>
-<h2>
-<a name="SetupTFS">
-</a>
-                Setup TFS and connect to TFS
-            </h2>
-<p>
-</p>
-<ol>
-<li>
-<p>
-                        Install
-                        <b>
-                            Team Explorer
-                        </b>
-                        , the ISO image is located at
-                        <b>
-                            \\bee\SetupFiles\SetupMS_DotNet\MS Visual Studio 2005 TFS\en_vs_2005_tfs_trial.iso
-                        </b>
-                        .
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Install Team Explorer (third menu item)" src="/archive/images/TFSSetup.gif"/>
-</dt>
-<dd>
-                            Figure: Install Team Explorer (third menu item)
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Go to VS 2005's Options, change the source control to TFS.
-                        <br/>
-</p>
-<dl class="image">
-<dt>
-<img alt="Source Control settings" src="/archive/images/OptionsSourceControl.gif"/>
-</dt>
-<dd>
-                            Figure: Source Control settings
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Connect to TFS.
-                        <br/>
-</p>
-<dl class="image">
-<dt>
-<img alt='Click "Connect to Team Foundation Server..."' src="/archive/images/ConnectTFSMenu.gif"/>
-</dt>
-<dd>
-                            Figure: Click "Connect to Team Foundation Server..."
-                        </dd>
-</dl>
-<p>
-</p>
-<p>
-                        The server name is "tfs.northwind.com". So add "tfs.northwind.com" to the Team Foundation Server
-                        list.
-                        <br/>
-</p>
-<dl class="image">
-<dt>
-<img alt='Add "tfs.northwind.com" to the Team Foundation Server list' src="/archive/images/AddTFS.gif"/>
-</dt>
-<dd>
-                            Figure: Add "tfs.northwind.com" to the Team Foundation Server list
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-</ol>
-<br/>
-            Note: TFS doesn't have a standalone program like SourceSafe, everything is to be done using Team Explorer.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            The EnableVisualStyles and SetCompatibleTextRenderingDefault should
+            be added to the top, typically before the Application.Run.
+            <p></p>
             <p>
-</p>
-<br/>
-<br/>
-<h2>
-<a name="NewTeamProject">
-</a>
-                Create new Team Project and check-in the source code
-            </h2>
-<p>
-</p>
-<div class="greyBox">
-<!--SSW Code Auditor - Ignore next line(HTML)-->
-<p>
-                    Creating TFS project over VPN could take long time, it will save you a lot of time if you can log on
-                    to a machine in the same LAN to do this step.
-                </p>
-</div>
-<ol>
-<li>
-<p>
-                        Open the Team Explorer.
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Click "Team Explorer"' src="/archive/images/ViewTeamExplorer.gif"/>
-</dt>
-<dd>
-                            Figure: Click "Team Explorer"
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        To create a new Team Project.
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Click "New Team Project..."' src="/archive/images/NewTeamProject.gif"/>
-</dt>
-<dd>
-                            Figure: Click "New Team Project..."
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Enter the team project name.
-                        <br/>
-<br/>
-<b>
-                            Note
-                        </b>
-                        : The team project name is the project's namespace. (Eg: SSW.SQLAuditor)
-                        <br/>
-                        There is no way to rename a TFS project after it's created, so be cautious and make sure you
-                        enter it correctly.
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Enter the Team Project name" src="/archive/images/NewTeamProjectWizard1.gif"/>
-</dt>
-<dd>
-                            Figure: Enter the Team Project name
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Select "MSF for Agile Software Developer – v.40".
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Select "MSF for Agile Software Developer – v.40"' src="/archive/images/NewTeamProjectWizard2.gif"/>
-</dt>
-<dd>
-                            Figure: Select "MSF for Agile Software Developer – v.40"
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Leave the title of team project portal the same as project name.
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Leave the title of team project portal the same as project name." src="/archive/images/NewTeamProjectWizard3.gif"/>
-</dt>
-<dd>
-                            Figure: Leave the title of team project portal the same as project name
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Create an empty source control folder.
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Select "Create an empty source control folder"' height="487" src="/archive/images/NewTeamProjectWizard4.gif" width="546"/>
-</dt>
-<dd>
-                            Figure: Select "Create an empty source control folder"
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        From the step shown on screenshot above, click "Next &gt;" to see the summary or you can just
-                        click "Finish".
-                        <br/>
-                        The Team Project creation process may take a while...
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Creating new Team Project..." src="/archive/images/CreatingTeamProject.gif"/>
-</dt>
-<dd>
-                            Figure: Creating new Team Project...
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Before you add the solution to TFS source control, please move your solution folder to C:\Data
-                        <i>
-                            YourName
-                        </i>
-                        \ProjectsTFS\
-                        <i>
-                            CompanyName.ProjectName
-                        </i>
-                        \trunk.
-                        <br/>
-                        Eg: C:\DataRyanTee\ProjectsTFS\SSW.SQLAuditor\trunk.
-                    </p>
-<p>
-                        Our TFS should have the source folder structure as below:
-                    </p>
-<ul>
-<li>
-                            $/CompanyName.ProjectName/trunk – this will be our main development
-                        </li>
-<li>
-                            $/CompanyName.ProjectName/branches – this will contain our side branches after each
-                            major release (I.e. R10, R11, etc).
-                        </li>
-</ul>
-<p>
-</p>
-<p>
-<b>
-                            Example:
-                        </b>
-<br/>
-                        Current development
-                    </p>
-<ul>
-<li>
-                            $/SSW.CodeAuditor/trunk/SSW.CodeAuditor.sln
-                        </li>
-<li>
-                            $/SSW.CodeAuditor/trunk/Business/SSW.CodeAuditor.Business.csproj
-                        </li>
-</ul>
-                    Branch for Release 10
-                    <ul>
-<li>
-                            $/SSW.CodeAuditor/branches/R10/SSW.CodeAuditor.sln
-                        </li>
-<li>
-                            $/SSW.CodeAuditor/branches/R10/Business/SSW.CodeAuditor.Business.csproj
-                        </li>
-</ul>
-<p>
-</p>
-<p>
-                        Dev folder structure should match the TFS source folder structure:
-                        <br/>
-</p>
-<ul>
-<li>
-                            C:\DataYourName\ProjectsTFS\CompanyName.ProjectName\trunk
-                        </li>
-<li>
-                            C:\DataYourName\ProjectsTFS\CompanyName.ProjectName\branches
-                        </li>
-</ul>
-<p>
-</p>
-<p>
-                        Note: We use the word "trunk" and "branches" because they're the standard people use in
-                        Subversion and other source control systems (it's derived from source control 'tree').
-                    </p>
-</li>
-<li>
-<p>
-                        Add Solution to Source Control...
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Click "Add Solution to Source Control..."' src="/archive/images/AddSolutionToSourceControl.gif"/>
-</dt>
-<dd>
-                            Figure: Click "Add Solution to Source Control..."
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Select the team project you just created and enter "trunk" as the name for the solution folder.
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Select the team project you just created and enter "trunk" as the name for the solution folder' src="/archive/images/AddSolutionToTFS.gif"/>
-</dt>
-<dd>
-                            Figure: Select the team project you just created and enter "trunk" as the name for the
-                            solution folder
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        After you added the solution to source control, the solution and all projects will have a little
-                        yellow plus sign.
-                    </p>
-<dl class="image">
-<dt>
-<img alt="Files that newly added to TFS will have a little yellow plus sign" src="/archive/images/AddedSolutionToTFS.gif"/>
-</dt>
-<dd>
-                            Figure: Files that newly added to TFS will have a little yellow plus sign
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Check in everything.
-                    </p>
-<dl class="image">
-<dt>
-<img alt='Click "Check In..."' src="/archive/images/CheckInSolution.gif"/>
-</dt>
-<dd>
-                            Figure: Click "Check In..."
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<p>
-                        Finally, zz the source control folder in SourceSafe.
-                    </p>
-<dl class="image">
-<dt>
-<img alt="zz the folder in VSS" src="/archive/images/RenameVSS.gif"/>
-</dt>
-<dd>
-                            Figure: zz the folder in VSS
-                        </dd>
-</dl>
-<p>
-</p>
-</li>
-</ol>
-<p>
-</p>
-<br/>
-<br/>
-<h2>
-<a name="UsingTFS">
-</a>
-                Things you should know when using TFS
-            </h2>
-<p>
-</p>
-<ol>
-<li>
-<p>
-                        When you check out any files from SourceSafe, SourceSafe automatically do a "Get Latest" before
-                        checking out the files.
-                        <br/>
-                        When you check out any files from TFS, the check out process will
-                        <b>
-                            not
-                        </b>
-                        do a "Get Latest" for you, if you have an older version of the files, you need to merge your
-                        changes when check in the files to prevent replacing changes made by other developers.
-                        <br/>
-                        For more information about this new behavior, read
-                        <a href="/ssw/Redirect/woodwardweb.htm">
-                            http://www.woodwardweb.com/vsts/000179.html
-                        </a>
-                        .
-                    </p>
-</li>
-<li>
-                    Regarding the process of development, we do not branch at end of each release. Instead we branch
-                    when there are bugs in previous release that have to be fixed before the next release. This is to
-                    minimize branching, since merging between branches is painful.
-                    <br/>
-<br/>
-                    Process at end of a release (should be integrated with build script!):
-                    <ol>
-<li>
-                            Make a build
-                        </li>
-<li>
-                            Label the trunk source tree with the version number
-                        </li>
-</ol>
-<br/>
-                    Process when critial bugs occur in previous release:
-                    <ol>
-<li>
-                            Get the source by label
-                        </li>
-<li>
-                            Branch it into $/Company.Project/branches/vMajor.Minor/
-                        </li>
-<li>
-                            Make your changes in that branch
-                        </li>
-</ol>
-</li>
-<li>
-                    To see the differences between Team Foundation and Visual SourceSafe, please read
-                    <a href="http://msdn2.microsoft.com/en-us/library/ms181369.aspx">
-                        MSDN: Introduction to Team Foundation for Visual SourceSafe Users
-                    </a>
-                    .
-                </li>
-</ol>
-<p>
-</p>
-<br/>
-<br/>
-<h2>
-<a name="Installer">
-</a>
-                Update Wise Installer and Visual Build Script
-            </h2>
-<p>
-                Coming soon...
+              SetCompatibleTextRendering determines whether the controls should
+              use GDI+ or GDI for text drawing.
             </p>
-<br/>
-<p>
-</p>
-<p>
-                 
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td width="80">
+                    <b> True </b>
+                  </td>
+                  <td width="280">Uses GDI+/Graphics.DrawString</td>
+                  <td>Behaves same as .NET 1.1.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <b> False </b>
+                  </td>
+                  <td>Uses GDI/TextRenderer</td>
+                  <td>
+                    Behaves similar to .NET 1.1, looks nicer, localizes better.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <p>
+              Notice the difference (The obvious difference is the "VB .NET" on
+              the third line of the description):
             </p>
-<h2>
-                Acknowledgements
-            </h2>
-<p>
-<a href="/SSW/Employees/employeesprofile.aspx?EmpID=RT">
-                    Ryan Tee
-                </a>
-</p>
-<br/>
-</div>
-<div id="footer">
-<p class="callnow">
-                Call Now
-                <a href="tel:+61299533000">
-                    +61 2 9953 3000
-                </a>
-</p>
-<span class="copyright">
-                © Copyright SSW 1990-2024. All Rights Reserved.
-            </span>
-<ul>
-<li class="first">
-<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F73746167696E672E7373772E636F6D2E61752F7373772F5374616E6461726473496E7465726E616C2F446576656C6F70657247656E6572616C2F55706772616465546F565332303035416E645446532E61737078')" id="fC_feedbackHyperLink" tabindex="100">
-                        Feedback to SSW
-                    </a>
-</li>
-<li>
-<a href="/ssw/Company/AboutUs.aspx">
-                        About SSW
-                    </a>
-</li>
-<li>
-<a href="/ssw/Advertising/Default.aspx">
-                        Advertising
-                    </a>
-</li>
-<li class="last">
-<a href="/ssw/MenuMap.aspx">
-                        Sitemap
-                    </a>
-</li>
-</ul>
-<span class="proudly">
-<a href="http://www.ssw.com.au">
-                    Proudly developed by SSW Sydney Web Design
-                </a>
-</span>
-<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
-<p class="serverName">
-                Our website is under constant continuous deployment. Last deployment to AZIIS2022Q01. Unable to retrieve
-                changeset details.
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Without Application.SetCompatibleTextRenderingDefault(False)"
+                  src="/archive/images/CompatibleTextRenderingTrue.gif"
+                />
+              </dt>
+              <dd>
+                Figure: Without
+                Application.SetCompatibleTextRenderingDefault(False)
+              </dd>
+            </dl>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="With Application.SetCompatibleTextRenderingDefault(False)"
+                  height="515"
+                  src="/archive/images/CompatibleTextRenderingFalse.gif"
+                  width="648"
+                />
+              </dt>
+              <dd>
+                Figure: With
+                Application.SetCompatibleTextRenderingDefault(False)
+              </dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              VS 2005 solution allows you to add solution folder, this is new in
+              VS 2005.
             </p>
-</div>
-</form>
-<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
-<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
-<!-- / OptinMonster -->
-<div style="visibility: visible;">
-<div>
-</div>
-<div>
-</div>
-</div>
-</body>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Add a new solution folder"
+                  height="446"
+                  src="/archive/images/AddSolutionFolder.gif"
+                  width="273"
+                />
+              </dt>
+              <dd>Figure: Add a new solution folder</dd>
+            </dl>
+            <p></p>
+            <p>
+              Now add 2 new solution folders, named References and Setup.
+              <br />
+              * Cut all the references .dll files and paste them to the
+              References" solution folder.
+              <br />
+              * Move all the files that related to Setup (.wsi, .bld, etc...) to
+              the "Setup" solution folder.
+              <br />
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="The folder structure of Solution Items"
+                  src="/archive/images/SetupFolder.gif"
+                />
+              </dt>
+              <dd>Figure: The folder structure of Solution Items</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            Most of the SSW products have unit-testing using NUnit, and the
+            nunit-gui.exe is included as part of the project for end users to
+            run the unit tests.
+            <p>
+              If your existing NUnit are built using .NET 1.1, it won't work
+              with .NET 2.0 projects due to no forward compatibility in .NET
+              1.1.
+              <br />
+              Please download the latest NUnit package that is built using .NET
+              2.0 from
+              <a href="/ssw/redirect/NUnitDownload.htm">
+                NUnit download page
+              </a>
+              .
+            </p>
+            <p>
+              Basically you only need nunit-gui-runner.dll, nunit-gui.exe,
+              nunit.core.dll, nunit.framework.dll, nunit.uikit.dll, and
+              nunit.util.dll.
+              <br />
+              Please include these NUnit files to your solution or update the
+              existing NUnit files.
+            </p>
+            <p>
+              You should put all the NUnit files under the "References" folder.
+              <br />
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="All the NUnit files in the "
+                  bin=""
+                  folder.=""
+                  src="/archive/images/NUnitReferencesBad.gif"
+                />
+              </dt>
+              <dd>
+                Figure: All the NUnit files are in the "bin" folder. (Bad)
+              </dd>
+            </dl>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="All the NUnit files are in the "
+                  items=""
+                  solution=""
+                  src="/archive/images/NUnitReferencesGood.gif"
+                />
+              </dt>
+              <dd>
+                Figure: All the NUnit files are in the "Solution
+                Items\References\NUnit". (Good)
+              </dd>
+            </dl>
+            <p></p>
+            <p>
+              Add the commands below to your startup project's post-build event.
+            </p>
+            <table class="clsSSWTableCode" width="90%">
+              <tbody>
+                <tr>
+                  <td>
+                    <pre><code>if exist "$(TargetDir)NUnit" rd /s /q "$(TargetDir)NUnit"
+xcopy "$(SolutionDir)References\NUnit" "$(TargetDir)NUnit" /s /i /y /r /q</code></pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <p>
+              Skip the next section "Unbind the SourceSafe association bindings"
+              and continue to
+              <a href="#TFS"> Team Foundation Server </a>
+              .
+            </p>
+          </li>
+        </ol>
+        <p></p>
+        <br />
+        <br />
+        <h3>
+          For projects that have been upgraded to .NET 2.0 and currently in
+          SourceSafe:
+        </h3>
+        <h2>
+          <a name="UnbindVSS"> </a>
+          Unbind the SourceSafe association bindings
+        </h2>
+        <p></p>
+        <ol>
+          <li>Open the .sln</li>
+          <li>
+            Menu: File --&gt; Source Control --&gt; Change Source Control...
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "Change Source Control..."'
+                  src="/archive/images/ChangeSourceControl.gif"
+                />
+              </dt>
+              <dd>Figure: Click "Change Source Control..."</dd>
+            </dl>
+          </li>
+          <li>
+            Unbind the solution and all projects
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "Unbind"'
+                  src="/archive/images/UnbindVSS1.gif"
+                />
+              </dt>
+              <dd>Figure: Click "Unbind"</dd>
+            </dl>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Make sure everything has been unbound"
+                  src="/archive/images/UnbindVSS2.gif"
+                />
+              </dt>
+              <dd>Figure: Make sure everything has been unbound</dd>
+            </dl>
+          </li>
+        </ol>
+        <p></p>
+        <br />
+        <br />
+        <a name="TFS"> </a>
+        <h3>Team Foundation Server:</h3>
+        <h2>
+          <a name="SetupTFS"> </a>
+          Setup TFS and connect to TFS
+        </h2>
+        <p></p>
+        <ol>
+          <li>
+            <p>
+              Install
+              <b> Team Explorer </b>
+              , the ISO image is located at
+              <b>
+                \\bee\SetupFiles\SetupMS_DotNet\MS Visual Studio 2005
+                TFS\en_vs_2005_tfs_trial.iso
+              </b>
+              .
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Install Team Explorer (third menu item)"
+                  src="/archive/images/TFSSetup.gif"
+                />
+              </dt>
+              <dd>Figure: Install Team Explorer (third menu item)</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              Go to VS 2005's Options, change the source control to TFS.
+              <br />
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Source Control settings"
+                  src="/archive/images/OptionsSourceControl.gif"
+                />
+              </dt>
+              <dd>Figure: Source Control settings</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              Connect to TFS.
+              <br />
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "Connect to Team Foundation Server..."'
+                  src="/archive/images/ConnectTFSMenu.gif"
+                />
+              </dt>
+              <dd>Figure: Click "Connect to Team Foundation Server..."</dd>
+            </dl>
+            <p></p>
+            <p>
+              The server name is "tfs.northwind.com". So add "tfs.northwind.com"
+              to the Team Foundation Server list.
+              <br />
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Add "tfs.northwind.com" to the Team Foundation Server list'
+                  src="/archive/images/AddTFS.gif"
+                />
+              </dt>
+              <dd>
+                Figure: Add "tfs.northwind.com" to the Team Foundation Server
+                list
+              </dd>
+            </dl>
+            <p></p>
+          </li>
+        </ol>
+        <br />
+        Note: TFS doesn't have a standalone program like SourceSafe, everything
+        is to be done using Team Explorer.
+        <p></p>
+        <br />
+        <br />
+        <h2>
+          <a name="NewTeamProject"> </a>
+          Create new Team Project and check-in the source code
+        </h2>
+        <p></p>
+        <div class="greyBox">
+          <!--SSW Code Auditor - Ignore next line(HTML)-->
+          <p>
+            Creating TFS project over VPN could take long time, it will save you
+            a lot of time if you can log on to a machine in the same LAN to do
+            this step.
+          </p>
+        </div>
+        <ol>
+          <li>
+            <p>Open the Team Explorer.</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "Team Explorer"'
+                  src="/archive/images/ViewTeamExplorer.gif"
+                />
+              </dt>
+              <dd>Figure: Click "Team Explorer"</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>To create a new Team Project.</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "New Team Project..."'
+                  src="/archive/images/NewTeamProject.gif"
+                />
+              </dt>
+              <dd>Figure: Click "New Team Project..."</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              Enter the team project name.
+              <br />
+              <br />
+              <b> Note </b>
+              : The team project name is the project's namespace. (Eg:
+              SSW.SQLAuditor)
+              <br />
+              There is no way to rename a TFS project after it's created, so be
+              cautious and make sure you enter it correctly.
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Enter the Team Project name"
+                  src="/archive/images/NewTeamProjectWizard1.gif"
+                />
+              </dt>
+              <dd>Figure: Enter the Team Project name</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>Select "MSF for Agile Software Developer – v.40".</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Select "MSF for Agile Software Developer – v.40"'
+                  src="/archive/images/NewTeamProjectWizard2.gif"
+                />
+              </dt>
+              <dd>Figure: Select "MSF for Agile Software Developer – v.40"</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              Leave the title of team project portal the same as project name.
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Leave the title of team project portal the same as project name."
+                  src="/archive/images/NewTeamProjectWizard3.gif"
+                />
+              </dt>
+              <dd>
+                Figure: Leave the title of team project portal the same as
+                project name
+              </dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>Create an empty source control folder.</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Select "Create an empty source control folder"'
+                  height="487"
+                  src="/archive/images/NewTeamProjectWizard4.gif"
+                  width="546"
+                />
+              </dt>
+              <dd>Figure: Select "Create an empty source control folder"</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              From the step shown on screenshot above, click "Next &gt;" to see
+              the summary or you can just click "Finish".
+              <br />
+              The Team Project creation process may take a while...
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Creating new Team Project..."
+                  src="/archive/images/CreatingTeamProject.gif"
+                />
+              </dt>
+              <dd>Figure: Creating new Team Project...</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              Before you add the solution to TFS source control, please move
+              your solution folder to C:\Data
+              <i> YourName </i>
+              \ProjectsTFS\
+              <i> CompanyName.ProjectName </i>
+              \trunk.
+              <br />
+              Eg: C:\DataRyanTee\ProjectsTFS\SSW.SQLAuditor\trunk.
+            </p>
+            <p>Our TFS should have the source folder structure as below:</p>
+            <ul>
+              <li>
+                $/CompanyName.ProjectName/trunk – this will be our main
+                development
+              </li>
+              <li>
+                $/CompanyName.ProjectName/branches – this will contain our side
+                branches after each major release (I.e. R10, R11, etc).
+              </li>
+            </ul>
+            <p></p>
+            <p>
+              <b> Example: </b>
+              <br />
+              Current development
+            </p>
+            <ul>
+              <li>$/SSW.CodeAuditor/trunk/SSW.CodeAuditor.sln</li>
+              <li>
+                $/SSW.CodeAuditor/trunk/Business/SSW.CodeAuditor.Business.csproj
+              </li>
+            </ul>
+            Branch for Release 10
+            <ul>
+              <li>$/SSW.CodeAuditor/branches/R10/SSW.CodeAuditor.sln</li>
+              <li>
+                $/SSW.CodeAuditor/branches/R10/Business/SSW.CodeAuditor.Business.csproj
+              </li>
+            </ul>
+            <p></p>
+            <p>
+              Dev folder structure should match the TFS source folder structure:
+              <br />
+            </p>
+            <ul>
+              <li>C:\DataYourName\ProjectsTFS\CompanyName.ProjectName\trunk</li>
+              <li>
+                C:\DataYourName\ProjectsTFS\CompanyName.ProjectName\branches
+              </li>
+            </ul>
+            <p></p>
+            <p>
+              Note: We use the word "trunk" and "branches" because they're the
+              standard people use in Subversion and other source control systems
+              (it's derived from source control 'tree').
+            </p>
+          </li>
+          <li>
+            <p>Add Solution to Source Control...</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "Add Solution to Source Control..."'
+                  src="/archive/images/AddSolutionToSourceControl.gif"
+                />
+              </dt>
+              <dd>Figure: Click "Add Solution to Source Control..."</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              Select the team project you just created and enter "trunk" as the
+              name for the solution folder.
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Select the team project you just created and enter "trunk" as the name for the solution folder'
+                  src="/archive/images/AddSolutionToTFS.gif"
+                />
+              </dt>
+              <dd>
+                Figure: Select the team project you just created and enter
+                "trunk" as the name for the solution folder
+              </dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>
+              After you added the solution to source control, the solution and
+              all projects will have a little yellow plus sign.
+            </p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="Files that newly added to TFS will have a little yellow plus sign"
+                  src="/archive/images/AddedSolutionToTFS.gif"
+                />
+              </dt>
+              <dd>
+                Figure: Files that newly added to TFS will have a little yellow
+                plus sign
+              </dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>Check in everything.</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt='Click "Check In..."'
+                  src="/archive/images/CheckInSolution.gif"
+                />
+              </dt>
+              <dd>Figure: Click "Check In..."</dd>
+            </dl>
+            <p></p>
+          </li>
+          <li>
+            <p>Finally, zz the source control folder in SourceSafe.</p>
+            <dl class="image">
+              <dt>
+                <img
+                  alt="zz the folder in VSS"
+                  src="/archive/images/RenameVSS.gif"
+                />
+              </dt>
+              <dd>Figure: zz the folder in VSS</dd>
+            </dl>
+            <p></p>
+          </li>
+        </ol>
+        <p></p>
+        <br />
+        <br />
+        <h2>
+          <a name="UsingTFS"> </a>
+          Things you should know when using TFS
+        </h2>
+        <p></p>
+        <ol>
+          <li>
+            <p>
+              When you check out any files from SourceSafe, SourceSafe
+              automatically do a "Get Latest" before checking out the files.
+              <br />
+              When you check out any files from TFS, the check out process will
+              <b> not </b>
+              do a "Get Latest" for you, if you have an older version of the
+              files, you need to merge your changes when check in the files to
+              prevent replacing changes made by other developers.
+              <br />
+              For more information about this new behavior, read
+              <a href="/ssw/Redirect/woodwardweb.htm">
+                http://www.woodwardweb.com/vsts/000179.html
+              </a>
+              .
+            </p>
+          </li>
+          <li>
+            Regarding the process of development, we do not branch at end of
+            each release. Instead we branch when there are bugs in previous
+            release that have to be fixed before the next release. This is to
+            minimize branching, since merging between branches is painful.
+            <br />
+            <br />
+            Process at end of a release (should be integrated with build
+            script!):
+            <ol>
+              <li>Make a build</li>
+              <li>Label the trunk source tree with the version number</li>
+            </ol>
+            <br />
+            Process when critial bugs occur in previous release:
+            <ol>
+              <li>Get the source by label</li>
+              <li>Branch it into $/Company.Project/branches/vMajor.Minor/</li>
+              <li>Make your changes in that branch</li>
+            </ol>
+          </li>
+          <li>
+            To see the differences between Team Foundation and Visual
+            SourceSafe, please read
+            <a href="http://msdn2.microsoft.com/en-us/library/ms181369.aspx">
+              MSDN: Introduction to Team Foundation for Visual SourceSafe Users
+            </a>
+            .
+          </li>
+        </ol>
+        <p></p>
+        <br />
+        <br />
+        <h2>
+          <a name="Installer"> </a>
+          Update Wise Installer and Visual Build Script
+        </h2>
+        <p>Coming soon...</p>
+        <br />
+        <p></p>
+        <p> </p>
+        <h2>Acknowledgements</h2>
+        <p>
+          <a href="/SSW/Employees/employeesprofile.aspx?EmpID=RT"> Ryan Tee </a>
+        </p>
+        <br />
+      </div>
+      <div id="footer">
+        <p class="callnow">
+          Call Now
+          <a href="tel:+61299533000"> +61 2 9953 3000 </a>
+        </p>
+        <span class="copyright">
+          © Copyright SSW 1990-2024. All Rights Reserved.
+        </span>
+        <ul>
+          <li class="first">
+            <a
+              class="email"
+              href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F73746167696E672E7373772E636F6D2E61752F7373772F5374616E6461726473496E7465726E616C2F446576656C6F70657247656E6572616C2F55706772616465546F565332303035416E645446532E61737078')"
+              id="fC_feedbackHyperLink"
+              tabindex="100"
+            >
+              Feedback to SSW
+            </a>
+          </li>
+          <li>
+            <a href="/ssw/Company/AboutUs.aspx"> About SSW </a>
+          </li>
+          <li>
+            <a href="/ssw/Advertising/Default.aspx"> Advertising </a>
+          </li>
+          <li class="last">
+            <a href="/ssw/MenuMap.aspx"> Sitemap </a>
+          </li>
+        </ul>
+        <span class="proudly">
+          <a href="http://www.ssw.com.au">
+            Proudly developed by SSW Sydney Web Design
+          </a>
+        </span>
+        <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+        <p class="serverName">
+          Our website is under constant continuous deployment. Last deployment
+          to AZIIS2022Q01. Unable to retrieve changeset details.
+        </p>
+      </div>
+    </form>
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+    <!-- / OptinMonster -->
+    <div style="visibility: visible">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>

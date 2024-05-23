@@ -1,386 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1">
-<script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NXDBVV');
-  </script>
-<title>
-    Using FTPSync
-  </title>
-<meta content="en-au" http-equiv="Content-Language"/>
-<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="keywords" name="keywords"/>
-<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
-<meta content="SSW" name="author"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="/archive/css/Content.css" id="Link1" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Screen.css" id="screenCSS" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon"/>
-<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Print.css" id="printCSS" media="print" rel="stylesheet" type="text/css"/>
-<!-- Start of pdi-ssw Zendesk Widget script -->
-<!-- End of pdi-ssw Zendesk Widget script -->
-<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
-</head>
-<body id="MasterBody" style="opacity: 1 !important;">
-<div style="
+  <head id="Head1">
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
+    </script>
+    <title>Using FTPSync</title>
+    <meta content="en-au" http-equiv="Content-Language" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"
+      id="keywords"
+      name="keywords"
+    />
+    <meta
+      content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China."
+      name="description"
+    />
+    <meta content="SSW" name="author" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="/archive/css/Content.css"
+      id="Link1"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Screen.css"
+      id="screenCSS"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link
+      href="/archive/include/googleSyntax/shCore.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/include/googleSyntax/shThemeDefault.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Print.css"
+      id="printCSS"
+      media="print"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <link
+      href="https://a.omappapi.com/app/js/api.min.css"
+      id="omapi-css"
+      media="all"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="MasterBody" style="opacity: 1 !important">
+    <div
+      style="
         line-height: 1.5;
-        text-align: center; 
-        font-size: 1.125rem; 
+        text-align: center;
+        font-size: 1.125rem;
         color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
-    ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-      ⚠️ This page has been archived
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p style="color: white">
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au" style="color: white"> ssw.com.au </a>
+        </p>
+      </div>
     </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p style="color:white;">
-        ✅ New page with updated info:
-        <a href="https://www.ssw.com.au" style="color: white">
-          ssw.com.au
-        </a>
-</p>
-</div>
-</div>
-<noscript>
-<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
-</iframe>
-</noscript>
-<form action="./UsingFTPSync.aspx" id="form" method="post">
-<div class="aspNetHidden">
-<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJNjUxODEzNDExD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGS4p2s6FTHexDznuc97qttZpZTa5Wx5G5ED17DzLvJe/Q=="/>
-</div>
-<div class="aspNetHidden">
-<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="6DF423C9"/>
-</div>
-<div id="mainContainer">
-<div>
-</div>
-<p>
-<span id="mainContentPlaceHolder_SiteMapPath1">
-<a href="#mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-<span>
-<a href="/archive" title="Home">
-              Home
-            </a>
-</span>
-<span>
-            &gt;
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+    <form action="./UsingFTPSync.aspx" id="form" method="post">
+      <div class="aspNetHidden">
+        <input
+          id="__VIEWSTATE"
+          name="__VIEWSTATE"
+          type="hidden"
+          value="/wEPDwUJNjUxODEzNDExD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGS4p2s6FTHexDznuc97qttZpZTa5Wx5G5ED17DzLvJe/Q=="
+        />
+      </div>
+      <div class="aspNetHidden">
+        <input
+          id="__VIEWSTATEGENERATOR"
+          name="__VIEWSTATEGENERATOR"
+          type="hidden"
+          value="6DF423C9"
+        />
+      </div>
+      <div id="mainContainer">
+        <div></div>
+        <p>
+          <span id="mainContentPlaceHolder_SiteMapPath1">
+            <a href="#mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+            <span>
+              <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards-internal" title="StandardsInternal">
+                StandardsInternal
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a
+                href="/archive/standards-internal/developer-general"
+                title="DeveloperGeneral"
+              >
+                DeveloperGeneral
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span> Using FTPSync </span>
+            <a id="mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
           </span>
-<span>
-<a href="/archive/standards-internal" title="StandardsInternal">
-              StandardsInternal
-            </a>
-</span>
-<span>
-            &gt;
-          </span>
-<span>
-<a href="/archive/standards-internal/developer-general" title="DeveloperGeneral">
-              DeveloperGeneral
-            </a>
-</span>
-<span>
-            &gt;
-          </span>
-<span>
-            Using FTPSync
-          </span>
-<a id="mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-</span>
-</p>
-<p>
-        FTPSync is the software we use to upload the changes we make on the local web server,
-        Ant, to Seal, our external web server. FTPSync is a powerful tool, which can simplify the synchronising of your
-        work and the external web server, but if not used properly FTPSync can cause problems severe enough to stop SSWs
-        web site working at all!
-      </p>
-<p>
-        The most important thing to remember above all else when using FTPSync is:
-      </p>
-<p>
-<b>
-          No matter what it suggests,
-          <span style="color:#FF0000">
-            NEVER
-          </span>
-          synchronise
-          from Seal to Ant.
-        </b>
-</p>
-<p>
-        By default FTPSync will synchronise completely so that both web
-        sites are identical, this is not what we want; as it would wipe any
-        work-in-progress on Ant. Well see that there are some settings to be aware
-        of to stop FTPSync doing its default behaviour.
-      </p>
-<ol>
-<li>
-          To begin using FTPSync you will need to make a connection to the
-          Seal server.
-        </li>
-</ol>
-       
-      <img align="middle" alt="" height="328" src="/archive/Images/image002.jpg" width="424"/>
-<p>
-        If no SSW connection exists on the start up window, click the Edit
-        button and enter the details shown below:
-      </p>
-<p>
-        You will need to obtain the password from the SSW entry in Time
-        PRO!
-      </p>
-<p>
-<img border="0" height="360" src="/archive/./Images/passmode.gif" width="412"/>
-</p>
-<p>
+        </p>
+        <p>
+          FTPSync is the software we use to upload the changes we make on the
+          local web server, Ant, to Seal, our external web server. FTPSync is a
+          powerful tool, which can simplify the synchronising of your work and
+          the external web server, but if not used properly FTPSync can cause
+          problems severe enough to stop SSWs web site working at all!
+        </p>
+        <p>
+          The most important thing to remember above all else when using FTPSync
+          is:
+        </p>
+        <p>
+          <b>
+            No matter what it suggests,
+            <span style="color: #ff0000"> NEVER </span>
+            synchronise from Seal to Ant.
+          </b>
+        </p>
+        <p>
+          By default FTPSync will synchronise completely so that both web sites
+          are identical, this is not what we want; as it would wipe any
+          work-in-progress on Ant. Well see that there are some settings to be
+          aware of to stop FTPSync doing its default behaviour.
+        </p>
+        <ol>
+          <li>
+            To begin using FTPSync you will need to make a connection to the
+            Seal server.
+          </li>
+        </ol>
          
-      </p>
-<p>
-<b>
-          Note
-        </b>
-        : Make sure "Passive Mode" is on as some servers and firewalls require it and it will still work with those that
-        don't require it.
-      </p>
-<p style="line-height: 25px">
-        Passive mode is required by some
-        firewalls/proxy servers and is when the remote server waits (passively)
-        for a data connection from the client, FTPSync, rather than actively making a connection to the client. If
-        you're unsure whether you require passive mode, then set it on.
-      </p>
-<p>
-<img height="362" src="/ssw/StandardsInternal/DeveloperGeneral/images/passmode.gif" width="419"/>
-</p>
-<p>
-         
-      </p>
-<ol start="2">
-<li>
-<p style="line-height: 25px">
-            Once the SSW connection is configured,
-            select the compare checkbox
-            <img border="0" height="26" src="/archive/Images/UsingF2.gif" width="128"/>
-            to
-            compare things like date updated and file size and report which file
-            is newer and what files will be overridden by uploading or
-            downloading.
-          </p>
-</li>
-<li>
-<p style="line-height: 25px">
-            Click on the connect button to establish a connection.
-          </p>
-</li>
-</ol>
-<ol start="4">
-<li>
-<p style="line-height: 25px">
-            Begin by browsing to the folder on Ant that you wish to synchronise. Tip: If you
-            have multiple folders, do them one folder at a time it saves making
-            errors.
-          </p>
-</li>
-</ol>
-<p style="line-height: 25px">
-<img alt="" height="467" src="/archive/images/image006.jpg" width="643"/>
-</p>
-<p style="line-height: 25px">
-        Before going any further, select the Options page
-        from the Tools menu and select the Folder Exclusions tab. Then add
-        <b>
-          _vti_cnf
-        </b>
-        and
-        <b>
-          zz
-        </b>
-        to the exclusions list and check "Activate
-        exclusions". This is a FrontPage folder and is not needed for synchronisation,
-        so excluding it makes comparisons faster.
-      </p>
-<p style="line-height: 25px">
-                        
-        <img border="0" height="381" src="/archive/Images/UsingF1.gif" width="419"/>
-</p>
-<ol start="5">
-<li>
-<p style="line-height: 25px">
-            Browse to the matching location on Seal. Make sure that the path name begins /Inetpub, not /D:/Inetpub
-            <img border="0" height="59" src="/archive/Images/UsingF3.gif" width="354"/>
-</p>
-</li>
-</ol>
-<ol start="6">
-<li>
-<p style="line-height: 25px">
-            If
-            synchronising involves the creation of new folders on Seal then browse to
-            the folder level above the new folders and make sure you have the Include
-            sub-folders check box checked.
-          </p>
-</li>
-<li>
-<p style="line-height: 25px">
-            Click on
-            the top item in the left hand pane and the file list will appear.
-            <img border="0" height="64" src="/archive/Images/UsingF4.gif" width="560"/>
-</p>
-</li>
-<li>
-<p style="line-height: 25px">
-            The files
-            that FTPSync thinks it should synchronise are colour coded. The blue ones
-            are newer on Ant and should go to Seal, the red ones are newer on Seal
-            but remember the rule above you wont sync those red coloured files.
-            Files in black are already in sync.
-          </p>
-</li>
-</ol>
-<p style="line-height: 25px">
-                           
-        <img border="0" height="161" src="/archive/Images/UsingF6.gif" width="238"/>
-</p>
-<p style="line-height: 25px">
-        Note: If
-        everything is blue (or red) and you are not creating an entirely new
-        section of the web site then check that the locations at the top of the
-        right and left panes correspond they probably dont!
-      </p>
-<ol start="9">
-<li>
-<p style="line-height: 25px">
-            The boxes
-            next to the files will be checked, if you want to be extra cautious you
-            should uncheck the ones next to any red files.
-          </p>
-</li>
-<li>
-<p style="line-height: 25px">
-            Click on
-            the green Synchronise button.
-            <img alt="" height="35" src="/archive/images/image008.jpg" width="154"/>
-</p>
-</li>
-<li>
-<p style="line-height: 25px">
-            When the
-            next screen appears, take care:
-          </p>
-</li>
-</ol>
-<p style="line-height: 25px">
-<img alt="" height="238" src="/archive/images/setTimestamps.GIF" width="315"/>
-</p>
-<p style="line-height: 25px">
-        Make sure that the Transfer 0 files from
-        Remote to Local check box is unchecked. Then click the OK button. The
-        transfer will proceed and the window advising of the progress will appear
-        at the start and disappear when finished.
-        <o:p>
-</o:p>
-</p>
-<ol start="12">
-<li>
-<p style="line-height: 25px">
-            Check that
-            the transfer was successful and that you didnt get any errors.
-          </p>
-</li>
-</ol>
-<p>
-         
-      </p>
-<p>
-         Copyright 1998, 1999 - FileWare Limited
-      </p>
-<a name="AcknowledgementsLikeThis">
-</a>
-<h2>
-        Acknowledgements
-      </h2>
-<p>
-<a href="/SSW/Employees/employeesprofile.aspx?EmpID=DR">
-          David Reidy
-        </a>
-<br/>
-<a href="/SSW/Employees/employeesprofile.aspx?EmpID=PA">
-          Peter Ahn
-        </a>
-<br/>
-<a href="/SSW/Employees/employeesprofile.aspx?EmpID=JV">
-          Jatin Valabjee
-        </a>
-</p>
-<br/>
-</div>
-<div id="footer">
-<p class="callnow">
-        Call Now
-        <a href="tel:+61299533000">
-          +61 2 9953 3000
-        </a>
-</p>
-<span class="copyright">
-        © Copyright SSW 1990-2024. All Rights Reserved.
-      </span>
-<ul>
-<li class="first">
-<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F73746167696E672E7373772E636F6D2E61752F7373772F5374616E6461726473496E7465726E616C2F446576656C6F70657247656E6572616C2F5573696E6746545053796E632E61737078')" id="fC_feedbackHyperLink" tabindex="100">
-            Feedback to SSW
+        <img
+          align="middle"
+          alt=""
+          height="328"
+          src="/archive/Images/image002.jpg"
+          width="424"
+        />
+        <p>
+          If no SSW connection exists on the start up window, click the Edit
+          button and enter the details shown below:
+        </p>
+        <p>
+          You will need to obtain the password from the SSW entry in Time PRO!
+        </p>
+        <p>
+          <img
+            border="0"
+            height="360"
+            src="/archive/./Images/passmode.gif"
+            width="412"
+          />
+        </p>
+        <p> </p>
+        <p>
+          <b> Note </b>
+          : Make sure "Passive Mode" is on as some servers and firewalls require
+          it and it will still work with those that don't require it.
+        </p>
+        <p style="line-height: 25px">
+          Passive mode is required by some firewalls/proxy servers and is when
+          the remote server waits (passively) for a data connection from the
+          client, FTPSync, rather than actively making a connection to the
+          client. If you're unsure whether you require passive mode, then set it
+          on.
+        </p>
+        <p>
+          <img
+            height="362"
+            src="/ssw/StandardsInternal/DeveloperGeneral/images/passmode.gif"
+            width="419"
+          />
+        </p>
+        <p> </p>
+        <ol start="2">
+          <li>
+            <p style="line-height: 25px">
+              Once the SSW connection is configured, select the compare checkbox
+              <img
+                border="0"
+                height="26"
+                src="/archive/Images/UsingF2.gif"
+                width="128"
+              />
+              to compare things like date updated and file size and report which
+              file is newer and what files will be overridden by uploading or
+              downloading.
+            </p>
+          </li>
+          <li>
+            <p style="line-height: 25px">
+              Click on the connect button to establish a connection.
+            </p>
+          </li>
+        </ol>
+        <ol start="4">
+          <li>
+            <p style="line-height: 25px">
+              Begin by browsing to the folder on Ant that you wish to
+              synchronise. Tip: If you have multiple folders, do them one folder
+              at a time it saves making errors.
+            </p>
+          </li>
+        </ol>
+        <p style="line-height: 25px">
+          <img
+            alt=""
+            height="467"
+            src="/archive/images/image006.jpg"
+            width="643"
+          />
+        </p>
+        <p style="line-height: 25px">
+          Before going any further, select the Options page from the Tools menu
+          and select the Folder Exclusions tab. Then add
+          <b> _vti_cnf </b>
+          and
+          <b> zz </b>
+          to the exclusions list and check "Activate exclusions". This is a
+          FrontPage folder and is not needed for synchronisation, so excluding
+          it makes comparisons faster.
+        </p>
+        <p style="line-height: 25px">
+                          
+          <img
+            border="0"
+            height="381"
+            src="/archive/Images/UsingF1.gif"
+            width="419"
+          />
+        </p>
+        <ol start="5">
+          <li>
+            <p style="line-height: 25px">
+              Browse to the matching location on Seal. Make sure that the path
+              name begins /Inetpub, not /D:/Inetpub
+              <img
+                border="0"
+                height="59"
+                src="/archive/Images/UsingF3.gif"
+                width="354"
+              />
+            </p>
+          </li>
+        </ol>
+        <ol start="6">
+          <li>
+            <p style="line-height: 25px">
+              If synchronising involves the creation of new folders on Seal then
+              browse to the folder level above the new folders and make sure you
+              have the Include sub-folders check box checked.
+            </p>
+          </li>
+          <li>
+            <p style="line-height: 25px">
+              Click on the top item in the left hand pane and the file list will
+              appear.
+              <img
+                border="0"
+                height="64"
+                src="/archive/Images/UsingF4.gif"
+                width="560"
+              />
+            </p>
+          </li>
+          <li>
+            <p style="line-height: 25px">
+              The files that FTPSync thinks it should synchronise are colour
+              coded. The blue ones are newer on Ant and should go to Seal, the
+              red ones are newer on Seal but remember the rule above you wont
+              sync those red coloured files. Files in black are already in sync.
+            </p>
+          </li>
+        </ol>
+        <p style="line-height: 25px">
+                             
+          <img
+            border="0"
+            height="161"
+            src="/archive/Images/UsingF6.gif"
+            width="238"
+          />
+        </p>
+        <p style="line-height: 25px">
+          Note: If everything is blue (or red) and you are not creating an
+          entirely new section of the web site then check that the locations at
+          the top of the right and left panes correspond they probably dont!
+        </p>
+        <ol start="9">
+          <li>
+            <p style="line-height: 25px">
+              The boxes next to the files will be checked, if you want to be
+              extra cautious you should uncheck the ones next to any red files.
+            </p>
+          </li>
+          <li>
+            <p style="line-height: 25px">
+              Click on the green Synchronise button.
+              <img
+                alt=""
+                height="35"
+                src="/archive/images/image008.jpg"
+                width="154"
+              />
+            </p>
+          </li>
+          <li>
+            <p style="line-height: 25px">
+              When the next screen appears, take care:
+            </p>
+          </li>
+        </ol>
+        <p style="line-height: 25px">
+          <img
+            alt=""
+            height="238"
+            src="/archive/images/setTimestamps.GIF"
+            width="315"
+          />
+        </p>
+        <p style="line-height: 25px">
+          Make sure that the Transfer 0 files from Remote to Local check box is
+          unchecked. Then click the OK button. The transfer will proceed and the
+          window advising of the progress will appear at the start and disappear
+          when finished.
+          <o:p> </o:p>
+        </p>
+        <ol start="12">
+          <li>
+            <p style="line-height: 25px">
+              Check that the transfer was successful and that you didnt get any
+              errors.
+            </p>
+          </li>
+        </ol>
+        <p> </p>
+        <p> Copyright 1998, 1999 - FileWare Limited</p>
+        <a name="AcknowledgementsLikeThis"> </a>
+        <h2>Acknowledgements</h2>
+        <p>
+          <a href="/SSW/Employees/employeesprofile.aspx?EmpID=DR">
+            David Reidy
           </a>
-</li>
-<li>
-<a href="/ssw/Company/AboutUs.aspx">
-            About SSW
+          <br />
+          <a href="/SSW/Employees/employeesprofile.aspx?EmpID=PA">
+            Peter Ahn
           </a>
-</li>
-<li>
-<a href="/ssw/Advertising/Default.aspx">
-            Advertising
+          <br />
+          <a href="/SSW/Employees/employeesprofile.aspx?EmpID=JV">
+            Jatin Valabjee
           </a>
-</li>
-<li class="last">
-<a href="/ssw/MenuMap.aspx">
-            Sitemap
+        </p>
+        <br />
+      </div>
+      <div id="footer">
+        <p class="callnow">
+          Call Now
+          <a href="tel:+61299533000"> +61 2 9953 3000 </a>
+        </p>
+        <span class="copyright">
+          © Copyright SSW 1990-2024. All Rights Reserved.
+        </span>
+        <ul>
+          <li class="first">
+            <a
+              class="email"
+              href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F73746167696E672E7373772E636F6D2E61752F7373772F5374616E6461726473496E7465726E616C2F446576656C6F70657247656E6572616C2F5573696E6746545053796E632E61737078')"
+              id="fC_feedbackHyperLink"
+              tabindex="100"
+            >
+              Feedback to SSW
+            </a>
+          </li>
+          <li>
+            <a href="/ssw/Company/AboutUs.aspx"> About SSW </a>
+          </li>
+          <li>
+            <a href="/ssw/Advertising/Default.aspx"> Advertising </a>
+          </li>
+          <li class="last">
+            <a href="/ssw/MenuMap.aspx"> Sitemap </a>
+          </li>
+        </ul>
+        <span class="proudly">
+          <a href="http://www.ssw.com.au">
+            Proudly developed by SSW Sydney Web Design
           </a>
-</li>
-</ul>
-<span class="proudly">
-<a href="http://www.ssw.com.au">
-          Proudly developed by SSW Sydney Web Design
-        </a>
-</span>
-<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
-<p class="serverName">
-        Our website is under constant continuous deployment. Last deployment to AZIIS2022Q01. Unable to retrieve
-        changeset details.
-      </p>
-</div>
-</form>
-<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
-<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
-<!-- / OptinMonster -->
-<div style="visibility: visible;">
-<div>
-</div>
-<div>
-</div>
-</div>
-</body>
+        </span>
+        <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+        <p class="serverName">
+          Our website is under constant continuous deployment. Last deployment
+          to AZIIS2022Q01. Unable to retrieve changeset details.
+        </p>
+      </div>
+    </form>
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+    <!-- / OptinMonster -->
+    <div style="visibility: visible">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>

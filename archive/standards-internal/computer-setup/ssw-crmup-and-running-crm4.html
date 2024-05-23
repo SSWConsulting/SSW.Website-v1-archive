@@ -1,433 +1,583 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1">
-<script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NXDBVV');
-  </script>
-<title>
-    SSW CRM 4 Up and Running
-  </title>
-<meta content="en-au" http-equiv="Content-Language"/>
-<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="keywords" name="keywords"/>
-<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
-<meta content="SSW" name="author"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="/archive/css/Content.css" id="Link1" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Screen.css" id="screenCSS" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon"/>
-<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Print.css" id="printCSS" media="print" rel="stylesheet" type="text/css"/>
-<!-- Start of pdi-ssw Zendesk Widget script -->
-<!-- End of pdi-ssw Zendesk Widget script -->
-<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
-</head>
-<body id="MasterBody" style="opacity: 1 !important;">
-<div style="
+  <head id="Head1">
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
+    </script>
+    <title>SSW CRM 4 Up and Running</title>
+    <meta content="en-au" http-equiv="Content-Language" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"
+      id="keywords"
+      name="keywords"
+    />
+    <meta
+      content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China."
+      name="description"
+    />
+    <meta content="SSW" name="author" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="/archive/css/Content.css"
+      id="Link1"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Screen.css"
+      id="screenCSS"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link
+      href="/archive/include/googleSyntax/shCore.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/include/googleSyntax/shThemeDefault.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Print.css"
+      id="printCSS"
+      media="print"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <link
+      href="https://a.omappapi.com/app/js/api.min.css"
+      id="omapi-css"
+      media="all"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="MasterBody" style="opacity: 1 !important">
+    <div
+      style="
         line-height: 1.5;
-        text-align: center; 
-        font-size: 1.125rem; 
+        text-align: center;
+        font-size: 1.125rem;
         color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
-    ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-      ⚠️ This page has been archived
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p style="color: white">
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au" style="color: white"> ssw.com.au </a>
+        </p>
+      </div>
     </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p style="color:white;">
-        ✅ New page with updated info:
-        <a href="https://www.ssw.com.au" style="color: white">
-          ssw.com.au
-        </a>
-</p>
-</div>
-</div>
-<noscript>
-<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
-</iframe>
-</noscript>
-<form action="./SSWCRMUpAndRunning_CRM4.aspx" id="form" method="post">
-<div class="aspNetHidden">
-<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTIzNTc4MzQxMQ9kFgJmD2QWAgIDD2QWAgIBD2QWBgIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGRkw7P8NfgIolQx5GjJvHiGWlwCv3sxszV0ubTxrljGmhY="/>
-</div>
-<div class="aspNetHidden">
-<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="40EC760B"/>
-</div>
-<div id="mainContainer">
-<div>
-</div>
-<p>
-<span id="mainContentPlaceHolder_SiteMapPath1">
-<a href="#mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-<span>
-<a href="/archive" title="Home">
-              Home
-            </a>
-</span>
-<span>
-            &gt;
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+    <form action="./SSWCRMUpAndRunning_CRM4.aspx" id="form" method="post">
+      <div class="aspNetHidden">
+        <input
+          id="__VIEWSTATE"
+          name="__VIEWSTATE"
+          type="hidden"
+          value="/wEPDwUKMTIzNTc4MzQxMQ9kFgJmD2QWAgIDD2QWAgIBD2QWBgIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGRkw7P8NfgIolQx5GjJvHiGWlwCv3sxszV0ubTxrljGmhY="
+        />
+      </div>
+      <div class="aspNetHidden">
+        <input
+          id="__VIEWSTATEGENERATOR"
+          name="__VIEWSTATEGENERATOR"
+          type="hidden"
+          value="40EC760B"
+        />
+      </div>
+      <div id="mainContainer">
+        <div></div>
+        <p>
+          <span id="mainContentPlaceHolder_SiteMapPath1">
+            <a href="#mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+            <span>
+              <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a
+                href="/archive/standards-internal/"
+                title="SSW Standards Internal"
+              >
+                SSW Standards Internal
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a
+                href="/archive/standards-internal/computer-setup"
+                title="Computer Setup"
+              >
+                Computer Setup
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span> SSW CRM 4 Up and Running </span>
+            <a id="mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
           </span>
-<span>
-<a href="/archive/standards-internal/" title="SSW Standards Internal">
-              SSW Standards Internal
-            </a>
-</span>
-<span>
-            &gt;
-          </span>
-<span>
-<a href="/archive/standards-internal/computer-setup" title="Computer Setup">
-              Computer Setup
-            </a>
-</span>
-<span>
-            &gt;
-          </span>
-<span>
-            SSW CRM 4 Up and Running
-          </span>
-<a id="mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-</span>
-</p>
-<h1>
-<s>
-          SSW CRM 4 Up and Running
-        </s>
-</h1>
-<!-- 10 <br/> is deleted-->
-<div>
-<div class="floatRight" style="display:inline; float:right;">
-<div class="greyBox">
-<img alt="Alternative link" height="50" src="/archive/Images/reciprocal_link.jpg" style="display: inline; vertical-align: top;" width="50"/>
-<div style="display: inline; vertical-align: top;">
-<span style="text-align: left; display: inline-block; vertical-align: middle; width: 300px;">
-                CRM 4 is old! Update to CRM 2011.
-                <br/>
-                Please see
-                <a href="/ssw/StandardsInternal/ComputerSetup/SSWCRMUpAndRunning_CRM2011.aspx">
-                  SSW CRM 2011 up and running
-                </a>
-</span>
-</div>
-</div>
-</div>
-<div style="display: inline; float: left;">
-<p style="display: block;">
-            This standard is provided to give you information related to your CRM account and
-            settings.
-          </p>
-<div class="TableOfContents">
-<h3>
-              SSW CRM Setup And Information
-            </h3>
-<ol>
-<li>
-<a href="#OutlookCRM">
-                  How to Install Outlook CRM Add-in
-                </a>
-</li>
-<li>
-<a href="#PersonalSettingsOutlookCRM">
-                  How to configure your Outlook CRM personal
-                  options
-                </a>
-</li>
-<li>
-<a href="#RecordSalesOpportunity">
-                  How to record a sales opportunity
-                </a>
-</li>
-<!--  commented out - Approved by Uly & Marlon <li><a href="#RecordProjectedIncome">How to record monthly projected income</a></li> -->
-<li>
-<a href="#TrackInCRM">
-                  How to Track Contact, Email, Task, etc.. from Outlook in CRM
-                </a>
-</li>
-<li>
-<a href="#SendingOutstandingInvoiceReminder">
-                  How to send outstanding invoice reminder
-                </a>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="mainContent">
-<ol>
-<li>
-<h2>
-<a name="OutlookCRM">
-</a>
-              How to Install Outlook CRM 4 Add-in
-            </h2>
-<p>
-              Below is an instruction on how to to install Outlook CRM Add-in:
+        </p>
+        <h1>
+          <s> SSW CRM 4 Up and Running </s>
+        </h1>
+        <!-- 10 <br/> is deleted-->
+        <div>
+          <div class="floatRight" style="display: inline; float: right">
+            <div class="greyBox">
+              <img
+                alt="Alternative link"
+                height="50"
+                src="/archive/Images/reciprocal_link.jpg"
+                style="display: inline; vertical-align: top"
+                width="50"
+              />
+              <div style="display: inline; vertical-align: top">
+                <span
+                  style="
+                    text-align: left;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 300px;
+                  "
+                >
+                  CRM 4 is old! Update to CRM 2011.
+                  <br />
+                  Please see
+                  <a
+                    href="/ssw/StandardsInternal/ComputerSetup/SSWCRMUpAndRunning_CRM2011.aspx"
+                  >
+                    SSW CRM 2011 up and running
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div style="display: inline; float: left">
+            <p style="display: block">
+              This standard is provided to give you information related to your
+              CRM account and settings.
             </p>
-<ol>
-<li>
-                Copy Outlook CRM setup files from folder \\fileserver\setupfiles\SetupMS\SetupProgram\MSCRM4\Outlook
-                Client to your local machine
-              </li>
-<li>
-                Run setupclient.exe from this folder to install CRM for Outlook add-on
-              </li>
-<dl class="image">
-<dt>
-<img alt="Outlook CRM Component" border="0" height="452" src="/archive/Images/OutlookCRMComponent.gif" width="604"/>
-</dt>
-<dd>
-                  Figure: At "Select Components to Install" screen, select the recommended option
+            <div class="TableOfContents">
+              <h3>SSW CRM Setup And Information</h3>
+              <ol>
+                <li>
+                  <a href="#OutlookCRM"> How to Install Outlook CRM Add-in </a>
+                </li>
+                <li>
+                  <a href="#PersonalSettingsOutlookCRM">
+                    How to configure your Outlook CRM personal options
+                  </a>
+                </li>
+                <li>
+                  <a href="#RecordSalesOpportunity">
+                    How to record a sales opportunity
+                  </a>
+                </li>
+                <!--  commented out - Approved by Uly & Marlon <li><a href="#RecordProjectedIncome">How to record monthly projected income</a></li> -->
+                <li>
+                  <a href="#TrackInCRM">
+                    How to Track Contact, Email, Task, etc.. from Outlook in CRM
+                  </a>
+                </li>
+                <li>
+                  <a href="#SendingOutstandingInvoiceReminder">
+                    How to send outstanding invoice reminder
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div id="mainContent">
+          <ol>
+            <li>
+              <h2>
+                <a name="OutlookCRM"> </a>
+                How to Install Outlook CRM 4 Add-in
+              </h2>
+              <p>
+                Below is an instruction on how to to install Outlook CRM Add-in:
+              </p>
+              <ol>
+                <li>
+                  Copy Outlook CRM setup files from folder
+                  \\fileserver\setupfiles\SetupMS\SetupProgram\MSCRM4\Outlook
+                  Client to your local machine
+                </li>
+                <li>
+                  Run setupclient.exe from this folder to install CRM for
+                  Outlook add-on
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Outlook CRM Component"
+                      border="0"
+                      height="452"
+                      src="/archive/Images/OutlookCRMComponent.gif"
+                      width="604"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: At "Select Components to Install" screen, select the
+                    recommended option
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Outlook CRM System Requirements"
+                      border="0"
+                      height="451"
+                      src="/archive/Images/OutlookCRMSystemRequirements.gif"
+                      width="595"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: sure you get all green ticks. Follow the on-screen
+                    instruction to finish your installation.
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Outlook CRM Path"
+                      border="0"
+                      height="333"
+                      src="/archive/Images/OutlookCRMPath.gif"
+                      width="262"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: After the installation is completed successfully,
+                    click on Start | All Programs | Microsoft Dynamics CRM 4.0 |
+                    Configuration Wizard.
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Connect to CRM"
+                      border="0"
+                      height="446"
+                      src="/archive/Images/OutlookCRMConnect.gif"
+                      width="592"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: Select "My company" at the "Connect to Microsoft
+                    Dynamics CRM" screen.
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Connect to CRM"
+                      border="0"
+                      height="446"
+                      src="/archive/Images/OutlookCRMServer.png"
+                      width="592"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: Configure CRM Server address. Finish the rest of
+                    configuration.
+                  </dd>
+                </dl>
+                <li>
+                  After finish installation and configuration you will need to
+                  enable “Auto Update? So that Every time you open your outlook,
+                  there will be a popup if there is a new update available.
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Run RegEdit"
+                      border="0"
+                      src="/archive/Images/RunRegedit.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Run regedit from your “Start?menu</dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="CRM Registry"
+                      border="0"
+                      src="/archive/Images/CRMRegistry.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: On 32bit machine - Browse to registry key
+                    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSCRMClient
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="X64 - CRM Registry"
+                      border="0"
+                      src="/archive/Images/X64-CRM-regedit.jpg"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: On 64bit machine - Browse to registry key
+                    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSCRMClient
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Add new CRM string Value"
+                      border="0"
+                      src="/archive/Images/AddNewCRMStringValue.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Add a new string value to this key</dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Specify name of string value"
+                      border="0"
+                      src="/archive/Images/SpecifyNameofStringValue.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: Enter the name of new string value as
+                    “AutoUpdateDownloadUrl?/dd&gt;
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Specify value of string value"
+                      border="0"
+                      src="/archive/Images/SpecifyValueofStringValue.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: Right click to Modify the string value
+                    “http://aphrodite/crmoutlookpatches/?/dd&gt;
+                  </dd>
+                </dl>
+                <li>Restart your outlook if you are having it running.</li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Update popup"
+                      border="0"
+                      src="/archive/Images/OutlookCRMUpdatePopup.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: you start up your outlook, you can see popup tell
+                    you if there is an available update.
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Files in use while updating"
+                      border="0"
+                      src="/archive/Images/OutlookCRMFilesInUse.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: While running update installation, you may get a
+                    popup saying “Files are in use? please click “Ignore?to
+                    proceed with the installation.
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Files in use while updating"
+                      border="0"
+                      src="Images/OutlookCRMRebootAfterUpdate.gif	"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: After finishing updating, Outlook CRM updater may
+                    ask you to reboot your machine. This is because it needs to
+                    update the files which were in use during the installation.
+                  </dd>
+                </dl>
+              </ol>
+              <p></p>
+              <p>
+                Note: For CRM Developer and System Administrator, CRM
+                Customization is not available if you have your Outlook CRM
+                running.
+              </p>
+            </li>
+            <li>
+              <h2>
+                <a name="PersonalSettingsOutlookCRM"> </a>
+                How to configure your Outlook CRM personal options
+              </h2>
+              <p></p>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Outlook CRM Options"
+                    border="0"
+                    src="/archive/Images/OutlookCRMOptions.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: From Outlook Home Tab, go to CRM | More | Options.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Outlook CRM System Requirements" border="0" height="451" src="/archive/Images/OutlookCRMSystemRequirements.gif" width="595"/>
-</dt>
-<dd>
-                  Figure: sure you get all green ticks. Follow the on-screen instruction to finish
-                  your installation.
+              </dl>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="CRM Synchronization Options"
+                    border="0"
+                    src="/archive/Images/CRMSynchronizationOptions.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: On “Synchronization?tab, ensure you have the above
+                  checkboxes checked.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Outlook CRM Path" border="0" height="333" src="/archive/Images/OutlookCRMPath.gif" width="262"/>
-</dt>
-<dd>
-                  Figure: After the installation is completed successfully, click on Start | All Programs
-                  | Microsoft Dynamics CRM 4.0 | Configuration Wizard.
+              </dl>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="CRM Email Options"
+                    border="0"
+                    src="/archive/Images/CRMEmailOptions.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: On “Email?tab, ensure you have the above options.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Connect to CRM" border="0" height="446" src="/archive/Images/OutlookCRMConnect.gif" width="592"/>
-</dt>
-<dd>
-                  Figure: Select "My company" at the "Connect to Microsoft Dynamics CRM" screen.
+              </dl>
+              <p></p>
+            </li>
+            <li>
+              <a name="RecordSalesOpportunity"> </a>
+              <h2>How to record a sales opportunity</h2>
+              <p></p>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Create New Opportunity"
+                    border="0"
+                    src="/archive/Images/CRMNewOpportunity.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: Go to Microsoft Dynamics CRM | Sales | Opportunities |
+                  New.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Connect to CRM" border="0" height="446" src="/archive/Images/OutlookCRMServer.png" width="592"/>
-</dt>
-<dd>
-                  Figure: Configure CRM Server address. Finish the rest of configuration.
+              </dl>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Naming Opportunity"
+                    border="0"
+                    src="/archive/Images/CRMOpportunityNaming.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: This allows better understanding of opprotunity when
+                  look at opportunity list.
                 </dd>
-</dl>
-<li>
-                After finish installation and configuration you will need to enable “Auto
-                Update? So that Every time you open your outlook, there will be a popup if there
-                is a new update available.
-              </li>
-<dl class="image">
-<dt>
-<img alt="Run RegEdit" border="0" src="/archive/Images/RunRegedit.gif"/>
-</dt>
-<dd>
-                  Figure: Run regedit from your “Start?menu
+              </dl>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Set Potental Customer for Opportunity"
+                    border="0"
+                    src="/archive/Images/CRMOpportunityCustomer.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: Setting potential customer of an opportunity to a
+                  company instead of contact will avoid problem when the contact
+                  moves to another company.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="CRM Registry" border="0" src="/archive/Images/CRMRegistry.gif"/>
-</dt>
-<dd>
-                  Figure: On 32bit machine - Browse to registry key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSCRMClient
+              </dl>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Set Revenue for Opportunity"
+                    border="0"
+                    src="/archive/Images/CRMOpportunityRevenue.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: Recording revenue in the right field allows us to give
+                  a better report on our sales pipeline.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="X64 - CRM Registry" border="0" src="/archive/Images/X64-CRM-regedit.jpg"/>
-</dt>
-<dd>
-                  Figure: On 64bit machine - Browse to registry key
-                  HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSCRMClient
+              </dl>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Set Sales Stage for Opportunity"
+                    border="0"
+                    src="/archive/Images/CRMOpportunitySalesStage.gif"
+                  />
+                </dt>
+                <dd>
+                  Figure: This allows us reporting on our oppotunities base on
+                  sales stage and work out what to do next.
                 </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Add new CRM string Value" border="0" src="/archive/Images/AddNewCRMStringValue.gif"/>
-</dt>
-<dd>
-                  Figure: Add a new string value to this key
-                </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Specify name of string value" border="0" src="/archive/Images/SpecifyNameofStringValue.gif"/>
-</dt>
-<dd>
-                  Figure: Enter the name of new string value as “AutoUpdateDownloadUrl?/dd&gt;
-                </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Specify value of string value" border="0" src="/archive/Images/SpecifyValueofStringValue.gif"/>
-</dt>
-<dd>
-                  Figure: Right click to Modify the string value “http://aphrodite/crmoutlookpatches/?/dd&gt;
-                </dd>
-</dl>
-<li>
-                Restart your outlook if you are having it running.
-              </li>
-<dl class="image">
-<dt>
-<img alt="Update popup" border="0" src="/archive/Images/OutlookCRMUpdatePopup.gif"/>
-</dt>
-<dd>
-                  Figure: you start up your outlook, you can see popup tell you if there is an available
-                  update.
-                </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Files in use while updating" border="0" src="/archive/Images/OutlookCRMFilesInUse.gif"/>
-</dt>
-<dd>
-                  Figure: While running update installation, you may get a popup saying “Files
-                  are in use? please click “Ignore?to proceed with the installation.
-                </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Files in use while updating" border="0" src="Images/OutlookCRMRebootAfterUpdate.gif	"/>
-</dt>
-<dd>
-                  Figure: After finishing updating, Outlook CRM updater may ask you to reboot your
-                  machine. This is because it needs to update the files which were in use during the
-                  installation.
-                </dd>
-</dl>
-</ol>
-<p>
-</p>
-<p>
-              Note: For CRM Developer and System Administrator, CRM Customization is not available
-              if you have your Outlook CRM running.
-            </p>
-</li>
-<li>
-<h2>
-<a name="PersonalSettingsOutlookCRM">
-</a>
-              How to configure your Outlook CRM personal
-              options
-            </h2>
-<p>
-</p>
-<dl class="image">
-<dt>
-<img alt="Outlook CRM Options" border="0" src="/archive/Images/OutlookCRMOptions.gif"/>
-</dt>
-<dd>
-                Figure: From Outlook Home Tab, go to CRM | More | Options.
-              </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="CRM Synchronization Options" border="0" src="/archive/Images/CRMSynchronizationOptions.gif"/>
-</dt>
-<dd>
-                Figure: On “Synchronization?tab, ensure you have the above checkboxes checked.
-              </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="CRM Email Options" border="0" src="/archive/Images/CRMEmailOptions.gif"/>
-</dt>
-<dd>
-                Figure: On “Email?tab, ensure you have the above options.
-              </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<a name="RecordSalesOpportunity">
-</a>
-<h2>
-              How to record a sales opportunity
-            </h2>
-<p>
-</p>
-<dl class="image">
-<dt>
-<img alt="Create New Opportunity" border="0" src="/archive/Images/CRMNewOpportunity.gif"/>
-</dt>
-<dd>
-                Figure: Go to Microsoft Dynamics CRM | Sales | Opportunities | New.
-              </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Naming Opportunity" border="0" src="/archive/Images/CRMOpportunityNaming.gif"/>
-</dt>
-<dd>
-                Figure: This allows better understanding of opprotunity when look at opportunity
-                list.
-              </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Set Potental Customer for Opportunity" border="0" src="/archive/Images/CRMOpportunityCustomer.gif"/>
-</dt>
-<dd>
-                Figure: Setting potential customer of an opportunity to a company instead of contact
-                will avoid problem when the contact moves to another company.
-              </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Set Revenue for Opportunity" border="0" src="/archive/Images/CRMOpportunityRevenue.gif"/>
-</dt>
-<dd>
-                Figure: Recording revenue in the right field allows us to give a better report on
-                our sales pipeline.
-              </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Set Sales Stage for Opportunity" border="0" src="/archive/Images/CRMOpportunitySalesStage.gif"/>
-</dt>
-<dd>
-                Figure: This allows us reporting on our oppotunities base on sales stage and work
-                out what to do next.
-              </dd>
-</dl>
-<p>
-</p>
-<p>
-              After creating opportunities you will need:
-            </p>
-<ul>
-<li>
-                Keep Sales Stage up to date.
-              </li>
-<li>
-                Close Opportunity whenever we win or lose the opportunity. Closing opportunity is
-                important because if the opportunity is won, it will create a Project record in
-                CRM. This allows Project Manager to record montly projected income.
-              </li>
-</ul>
-<p>
-</p>
-</li>
-<!--  commented out - Approved by Uly & Marlon 
+              </dl>
+              <p></p>
+              <p>After creating opportunities you will need:</p>
+              <ul>
+                <li>Keep Sales Stage up to date.</li>
+                <li>
+                  Close Opportunity whenever we win or lose the opportunity.
+                  Closing opportunity is important because if the opportunity is
+                  won, it will create a Project record in CRM. This allows
+                  Project Manager to record montly projected income.
+                </li>
+              </ul>
+              <p></p>
+            </li>
+            <!--  commented out - Approved by Uly & Marlon 
       <li><a name="RecordProjectedIncome"></a>
         <h2>
           How to record monthly projected income</h2>
@@ -476,272 +626,283 @@
         </p>
       </li>
       -->
-<li>
-<a name="TrackInCRM">
-</a>
-<h2>
-              How to Track Contact, Email, Task, etc.. from Outlook in CRM
-            </h2>
-<p>
-              To track a contact, email, task, etc.. from Outlook in CRM, you need to:
-            </p>
-<ol>
-<li>
-                Open the record in outlook
-              </li>
-<li>
-                Hit "Track In CRM" button in Outlook toolbar
-                <dl class="image">
-<dt>
-<img alt="Track In CRM" border="0" height="623" src="/archive/Images/TrackInCRM.gif" width="743"/>
-</dt>
-<dd>
-                    Figure: Tracking an outlook contact in CRM
-                  </dd>
-</dl>
-</li>
-</ol>
-<p>
-</p>
-<p>
-              Only track activities as per rule
-              <a href="/SSW/Standards/Rules/Rulestobettermicrosoftcrm.aspx#WhenToTrackActivity">
-                Sales - Do you know when to track activities in CRM?
-              </a>
-              to avoid CRM becoming
-              a spam place of all activities.
-            </p>
-<p>
-              When tracking a contact in CRM, company field in outlook does not sync with CRM.
-              You need to click on "Set Parent" and choose approritate company in CRM:
-            </p>
-<dl class="image">
-<dt>
-<img alt="Set Parent Company" border="0" height="623" src="/archive/Images/OutlookCRMSetParentCompany.gif" width="743"/>
-</dt>
-<dd>
-                Figure: Set Parent Company for Outlook Contact
-              </dd>
-</dl>
-<p>
-</p>
-<p>
-              Any contact without a company/account will automatacally go to account name "Outlook
-              contacts - Please set parent company" in CRM.
-            </p>
-<dl class="image">
-<dt>
-<img alt="Outlook Contact without Parent Company" border="0" height="365" src="/archive/Images/OutlookCRMContactWithoutCompany.gif" width="805"/>
-</dt>
-<dd>
-                Figure: Outlook Contact without Parent Company
-              </dd>
-</dl>
-<p>
-</p>
-</li>
-<li>
-<a name="SendingOutstandingInvoiceReminder">
-</a>
-<h2>
-              How to send outstanding invoice reminder
-            </h2>
-<ol>
-<li>
-                Create a new email, fill in necessary fields and save it as a draft email. You will
-                use this email as your template.
-              </li>
-<li>
-                CRM uses your subject line to save the record in correct category in TimePRO. It's
-                important that your subject must start with one of the following:
-                <ul>
-<li>
-                    Outstanding Account with SSW - First Reminder
-                  </li>
-<li>
-                    Outstanding Account with SSW - Second Reminder
-                  </li>
-<li>
-                    Outstanding Account with SSW - Third Reminder
-                  </li>
-<li>
-                    Outstanding Account with SSW - Fourth Reminder
-                  </li>
-<li>
-                    Outstanding Account with SSW - Legal
-                  </li>
-</ul>
-</li>
-<dl class="image">
-<dt>
-<img alt="Email template for first outstanding invoice reminder" border="0" src="/archive/Images/OutstantindInvoiceEmailTemplate.gif"/>
-</dt>
-<dd>
-                  Figure: Example of outstanding invoice first reminder
-                </dd>
-</dl>
-<li>
-                Go to draft folder in your outlook and make a copy of the email you just created.
-                Each time you want to send an email, you will need to make a copy so that you don't
-                loose the template.
-                <dl class="image">
-<dt>
-<img alt="Copy of email template in draft folder" border="0" src="/archive/Images/CopyOfDraftEmail.gif"/>
-</dt>
-<dd>
-                    Figure: Highlight the email you want to copy, hit CTRL + C then CTRL + V
-                  </dd>
-</dl>
-</li>
-<li>
-                Go to
-                <a href="/timePROOnline/invoice/invoiceOutstanding.aspx">
-                  TimePRO Online Oustanding
-                  Invoice
+            <li>
+              <a name="TrackInCRM"> </a>
+              <h2>
+                How to Track Contact, Email, Task, etc.. from Outlook in CRM
+              </h2>
+              <p>
+                To track a contact, email, task, etc.. from Outlook in CRM, you
+                need to:
+              </p>
+              <ol>
+                <li>Open the record in outlook</li>
+                <li>
+                  Hit "Track In CRM" button in Outlook toolbar
+                  <dl class="image">
+                    <dt>
+                      <img
+                        alt="Track In CRM"
+                        border="0"
+                        height="623"
+                        src="/archive/Images/TrackInCRM.gif"
+                        width="743"
+                      />
+                    </dt>
+                    <dd>Figure: Tracking an outlook contact in CRM</dd>
+                  </dl>
+                </li>
+              </ol>
+              <p></p>
+              <p>
+                Only track activities as per rule
+                <a
+                  href="/SSW/Standards/Rules/Rulestobettermicrosoftcrm.aspx#WhenToTrackActivity"
+                >
+                  Sales - Do you know when to track activities in CRM?
                 </a>
-                page
-              </li>
-<li>
-                Click "Preview" button on the row of the client that you want to send the email
-                to. This will open up the oustanding invoice details.
-              </li>
-<dl class="image">
-<dt>
-<img alt="Client outstanding invoice list" border="0" src="/archive/Images/ClientOutstandingInvoiceList.gif"/>
-</dt>
-<dd>
-                  Figure: Click on preview button to open up the details
-                </dd>
-</dl>
-<dl class="image">
-<dt>
-<img alt="Client outstanding invoice details" border="0" src="/archive/Images/ClientOutstandingInvoiceDetails.gif"/>
-</dt>
-<dd>
-                  Figure: Client oustanding invoice details
-                </dd>
-</dl>
-<li>
-                Open up your copy of draft email in your outlook.
-              </li>
-<li>
-                Copy the details such as the contact's email address, invoice details, etc. from
-                TimePRO online to your outlook draft email.
-              </li>
-<dl class="image">
-<dt>
-<img alt="Sample outstanding invoice email with TimePRO details" border="0" src="/archive/Images/SamepleOustandingInvoiceEmail.gif"/>
-</dt>
-<dd>
-                  Figure: Sample outstanding invoice email with TimePRO details
-                </dd>
-</dl>
-<li>
-                From Outlook email, hit "Track In CRM" button.
-              </li>
-<dl class="image">
-<dt>
-<img alt="Track Outstanding Invoice email in CRM" border="0" src="/archive/Images/TrackOutstandingInvoiceInCRM.gif"/>
-</dt>
-<dd>
-                  Figure: Track Outstanding Invoice email in CRM
-                </dd>
-</dl>
-<li>
-                From Outlook email, hit "Set Regarding" button and select "More".
-              </li>
-<dl class="image">
-<dt>
-<img alt="Set regarding for outstanding invoice email" border="0" src="/archive/Images/SetRegardingOutstandingInvoiceEmail.gif"/>
-</dt>
-<dd>
-                  Figure: Set regarding for outstanding invoice email
-                </dd>
-</dl>
-<li>
-                Search for the client account that you want to send invoice email to, then click
-                "Ok".
-              </li>
-<dl class="image">
-<dt>
-<img alt="Select the client to set regarding" border="0" src="/archive/Images/ClientWithOutstandingInvoice.gif"/>
-</dt>
-<dd>
-                  Figure: Select the client to set regarding
-                </dd>
-</dl>
-<li>
-                Send your outstanding invoice email from outlook.
-              </li>
-</ol>
-</li>
-</ol>
-</div>
-<div>
-<h2>
-          Acknowledgements
-        </h2>
-<p>
-<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=ZV">
-            Zune Vien
+                to avoid CRM becoming a spam place of all activities.
+              </p>
+              <p>
+                When tracking a contact in CRM, company field in outlook does
+                not sync with CRM. You need to click on "Set Parent" and choose
+                approritate company in CRM:
+              </p>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Set Parent Company"
+                    border="0"
+                    height="623"
+                    src="/archive/Images/OutlookCRMSetParentCompany.gif"
+                    width="743"
+                  />
+                </dt>
+                <dd>Figure: Set Parent Company for Outlook Contact</dd>
+              </dl>
+              <p></p>
+              <p>
+                Any contact without a company/account will automatacally go to
+                account name "Outlook contacts - Please set parent company" in
+                CRM.
+              </p>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="Outlook Contact without Parent Company"
+                    border="0"
+                    height="365"
+                    src="/archive/Images/OutlookCRMContactWithoutCompany.gif"
+                    width="805"
+                  />
+                </dt>
+                <dd>Figure: Outlook Contact without Parent Company</dd>
+              </dl>
+              <p></p>
+            </li>
+            <li>
+              <a name="SendingOutstandingInvoiceReminder"> </a>
+              <h2>How to send outstanding invoice reminder</h2>
+              <ol>
+                <li>
+                  Create a new email, fill in necessary fields and save it as a
+                  draft email. You will use this email as your template.
+                </li>
+                <li>
+                  CRM uses your subject line to save the record in correct
+                  category in TimePRO. It's important that your subject must
+                  start with one of the following:
+                  <ul>
+                    <li>Outstanding Account with SSW - First Reminder</li>
+                    <li>Outstanding Account with SSW - Second Reminder</li>
+                    <li>Outstanding Account with SSW - Third Reminder</li>
+                    <li>Outstanding Account with SSW - Fourth Reminder</li>
+                    <li>Outstanding Account with SSW - Legal</li>
+                  </ul>
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Email template for first outstanding invoice reminder"
+                      border="0"
+                      src="/archive/Images/OutstantindInvoiceEmailTemplate.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Example of outstanding invoice first reminder</dd>
+                </dl>
+                <li>
+                  Go to draft folder in your outlook and make a copy of the
+                  email you just created. Each time you want to send an email,
+                  you will need to make a copy so that you don't loose the
+                  template.
+                  <dl class="image">
+                    <dt>
+                      <img
+                        alt="Copy of email template in draft folder"
+                        border="0"
+                        src="/archive/Images/CopyOfDraftEmail.gif"
+                      />
+                    </dt>
+                    <dd>
+                      Figure: Highlight the email you want to copy, hit CTRL + C
+                      then CTRL + V
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  Go to
+                  <a href="/timePROOnline/invoice/invoiceOutstanding.aspx">
+                    TimePRO Online Oustanding Invoice
+                  </a>
+                  page
+                </li>
+                <li>
+                  Click "Preview" button on the row of the client that you want
+                  to send the email to. This will open up the oustanding invoice
+                  details.
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Client outstanding invoice list"
+                      border="0"
+                      src="/archive/Images/ClientOutstandingInvoiceList.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: Click on preview button to open up the details
+                  </dd>
+                </dl>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Client outstanding invoice details"
+                      border="0"
+                      src="/archive/Images/ClientOutstandingInvoiceDetails.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Client oustanding invoice details</dd>
+                </dl>
+                <li>Open up your copy of draft email in your outlook.</li>
+                <li>
+                  Copy the details such as the contact's email address, invoice
+                  details, etc. from TimePRO online to your outlook draft email.
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Sample outstanding invoice email with TimePRO details"
+                      border="0"
+                      src="/archive/Images/SamepleOustandingInvoiceEmail.gif"
+                    />
+                  </dt>
+                  <dd>
+                    Figure: Sample outstanding invoice email with TimePRO
+                    details
+                  </dd>
+                </dl>
+                <li>From Outlook email, hit "Track In CRM" button.</li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Track Outstanding Invoice email in CRM"
+                      border="0"
+                      src="/archive/Images/TrackOutstandingInvoiceInCRM.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Track Outstanding Invoice email in CRM</dd>
+                </dl>
+                <li>
+                  From Outlook email, hit "Set Regarding" button and select
+                  "More".
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Set regarding for outstanding invoice email"
+                      border="0"
+                      src="/archive/Images/SetRegardingOutstandingInvoiceEmail.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Set regarding for outstanding invoice email</dd>
+                </dl>
+                <li>
+                  Search for the client account that you want to send invoice
+                  email to, then click "Ok".
+                </li>
+                <dl class="image">
+                  <dt>
+                    <img
+                      alt="Select the client to set regarding"
+                      border="0"
+                      src="/archive/Images/ClientWithOutstandingInvoice.gif"
+                    />
+                  </dt>
+                  <dd>Figure: Select the client to set regarding</dd>
+                </dl>
+                <li>Send your outstanding invoice email from outlook.</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h2>Acknowledgements</h2>
+          <p>
+            <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=ZV">
+              Zune Vien
+            </a>
+            <br />
+          </p>
+        </div>
+        <br />
+      </div>
+      <div id="footer">
+        <p class="callnow">
+          Call Now
+          <a href="tel:+61299533000"> +61 2 9953 3000 </a>
+        </p>
+        <span class="copyright">
+          © Copyright SSW 1990-2024. All Rights Reserved.
+        </span>
+        <ul>
+          <li class="first">
+            <a
+              class="email"
+              href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F73746167696E672E7373772E636F6D2E61752F7373772F5374616E6461726473496E7465726E616C2F436F6D707574657253657475702F53535743524D5570416E6452756E6E696E675F43524D342E61737078')"
+              id="fC_feedbackHyperLink"
+              tabindex="100"
+            >
+              Feedback to SSW
+            </a>
+          </li>
+          <li>
+            <a href="/ssw/Company/AboutUs.aspx"> About SSW </a>
+          </li>
+          <li>
+            <a href="/ssw/Advertising/Default.aspx"> Advertising </a>
+          </li>
+          <li class="last">
+            <a href="/ssw/MenuMap.aspx"> Sitemap </a>
+          </li>
+        </ul>
+        <span class="proudly">
+          <a href="http://www.ssw.com.au">
+            Proudly developed by SSW Sydney Web Design
           </a>
-<br/>
-</p>
-</div>
-<br/>
-</div>
-<div id="footer">
-<p class="callnow">
-        Call Now
-        <a href="tel:+61299533000">
-          +61 2 9953 3000
-        </a>
-</p>
-<span class="copyright">
-        © Copyright SSW 1990-2024. All Rights Reserved.
-      </span>
-<ul>
-<li class="first">
-<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F73746167696E672E7373772E636F6D2E61752F7373772F5374616E6461726473496E7465726E616C2F436F6D707574657253657475702F53535743524D5570416E6452756E6E696E675F43524D342E61737078')" id="fC_feedbackHyperLink" tabindex="100">
-            Feedback to SSW
-          </a>
-</li>
-<li>
-<a href="/ssw/Company/AboutUs.aspx">
-            About SSW
-          </a>
-</li>
-<li>
-<a href="/ssw/Advertising/Default.aspx">
-            Advertising
-          </a>
-</li>
-<li class="last">
-<a href="/ssw/MenuMap.aspx">
-            Sitemap
-          </a>
-</li>
-</ul>
-<span class="proudly">
-<a href="http://www.ssw.com.au">
-          Proudly developed by SSW Sydney Web Design
-        </a>
-</span>
-<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
-<p class="serverName">
-        Our website is under constant continuous deployment. Last deployment to AZIIS2022Q01. Unable to retrieve
-        changeset details.
-      </p>
-</div>
-</form>
-<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
-<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
-<!-- / OptinMonster -->
-<div style="visibility: visible;">
-<div>
-</div>
-<div>
-</div>
-</div>
-</body>
+        </span>
+        <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+        <p class="serverName">
+          Our website is under constant continuous deployment. Last deployment
+          to AZIIS2022Q01. Unable to retrieve changeset details.
+        </p>
+      </div>
+    </form>
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+    <!-- / OptinMonster -->
+    <div style="visibility: visible">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>
