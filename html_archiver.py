@@ -66,9 +66,9 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     #"https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
-PARENT_DIR = "archived/"
+PARENT_DIR = "archive/"
 FONTS_DIR = PARENT_DIR + "fonts/"
-SSW_URL = "https://staging.ssw.com.au"
+SSW_URL = "https://www.ssw.com.au"
 SSW_V1_URL = SSW_URL + "/ssw"
 SSW_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au\/?)?(?:\/ssw)?)"
 SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
@@ -254,20 +254,20 @@ def fix_scripts(soup: BeautifulSoup, path: str) -> BeautifulSoup:
         if element.get("src") is not None:
             # If the script is a common script, replace it with the local version
             if "javascript_bundles/ssw_pigeon" in element["src"]:
-                element["src"] = "/archived/ssw_pigeon.js"
+                element["src"] = "/archive/ssw_pigeon.js"
                 continue
             elif "javascript_bundles/jquery" in element["src"]:
-                element["src"] = "/archived/jquery.js"
+                element["src"] = "/archive/jquery.js"
                 continue
             elif "javascript_bundles/moment" in element["src"]:
-                element["src"] = "/archived/moment.js"
+                element["src"] = "/archive/moment.js"
                 continue
             elif "javascript_bundles/ssw_consulting" in element["src"]:
-                element["src"] = "/archived/ssw_consulting.js"
+                element["src"] = "/archive/ssw_consulting.js"
                 continue
             # TODO: Fix as was removed as was causing errors with images, will not be responsive
             # elif "dist/menu.js" in element["src"]:
-            #     element["src"] = "/archived/menu.js"
+            #     element["src"] = "/history/menu.js"
             #     continue
         # Removes the script tag
         element.extract()
@@ -338,10 +338,7 @@ def fix_images(soup: BeautifulSoup, path: str) -> BeautifulSoup:
             continue
 
         # Set the image src to the downloaded image's path
-        try:
-            image["src"] = download_file(src, path)
-        except Exception as e:
-            print("An error occurred:", e)
+        image["src"] = download_file(src, path)
 
     return soup
 
@@ -384,17 +381,14 @@ def download_file(src: str, path: str) -> str:
         r"/+",
         "/",
         image_path,
-    )    
+    )
 
-    if re.match(r"\/?archived\/\w+", image_path) is None:
+    if re.match(r"\/?archive\/\w+", image_path) is None:
         if image_path.startswith("/"):
             image_path = image_path[1:]
-        image_path = ("archived/" + image_path).replace("//", "/")
+        image_path = ("archive/" + image_path).replace("//", "/")
 
     image_path = pascal_to_kebab(image_path)
-
-    if (image_path.startswith(PARENT_DIR)):
-        image_path = path + "/" + src
 
     store_path = urllib.parse.unquote(
         pascal_to_kebab(image_path + "/" + image_name).replace(" ", "")
@@ -404,17 +398,10 @@ def download_file(src: str, path: str) -> str:
 
     folder_path = "/".join(store_path.split("/")[:-1])
 
-    if folder_path.startswith("http"):
-        folder_path = PARENT_DIR + "images"
-
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
     request_path = re.sub(RELATIVE_REGEX, "", (base_url + src).strip())
-        
-    if (request_path.startswith(PARENT_DIR)):
-        request_path = path + "/" + src
-
     img_res = requests.get(request_path)
     img_data = img_res.content
 
@@ -425,9 +412,6 @@ def download_file(src: str, path: str) -> str:
         print("Failed: " + request_path)
         return ""
 
-    if (store_path.startswith("http") or store_path.startswith("/ssw")):
-        store_path = PARENT_DIR + src
-    
     with open(store_path, "wb") as f:
         f.write(img_data)
 
@@ -440,7 +424,7 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
     soup("body")[0]["style"] = "opacity: 1 !important;"
 
     links = soup.find_all("link")
-    css_files = os.listdir("./archived/css")
+    css_files = os.listdir("./archive/css")
 
     for link in links:
         if link["rel"] == ["stylesheet"]:
@@ -453,18 +437,18 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
                 continue
 
             if "ssw_raven_print" in href:
-                link["href"] = "/archived/ssw_raven_print.css"
+                link["href"] = "/archive/ssw_raven_print.css"
             elif "ssw_raven" in href:
-                link["href"] = "/archived/ssw_raven.css"
+                link["href"] = "/archive/ssw_raven.css"
             # TODO: Fix up the references to /ssw images in these CSS files
             elif "ssw_consulting_slim" in href:
-                link["href"] = "/archived/css/ssw_consulting_slim.css"
+                link["href"] = "/archive/css/ssw_consulting_slim.css"
             elif "ssw_consulting_defer" in href:
-                link["href"] = "/archived/css/ssw_consulting_defer.css"
+                link["href"] = "/archive/css/ssw_consulting_defer.css"
 
             for css_file in css_files:
                 if css_file.lower() in href.lower():
-                    link["href"] = "/archived/css/" + css_file
+                    link["href"] = "/archive/css/" + css_file
 
         elif link["href"].endswith(".png") or link["href"].endswith(".jpg"):
             href = link["href"]
@@ -502,7 +486,7 @@ def fix_css(soup: BeautifulSoup, path: str) -> BeautifulSoup:
 
             with open(font_path, "wb") as f:
                 f.write(font_buf.content)
-            style.string = style.string.replace(match[0], f"/archived/fonts/{match[1]}")
+            style.string = style.string.replace(match[0], f"/archive/fonts/{match[1]}")
 
     return soup
 
@@ -542,9 +526,9 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         # because of the redirect cache, but it's not necessary because we can use Front Door.
 
         # What this does is that instead of just running the below for loop to fix links that already
-        # exist in archived, has additional testing to check if there's a redirect, as if there's a redirect
-        # then it knows that the page hasn't been saved. e.g. /archived/events/2007-uts-net/default.html is
-        # not a real archived page, because https://www.ssw.com.au/ssw/Events/2007UTSNET/default.aspx redirects
+        # exist in history, has additional testing to check if there's a redirect, as if there's a redirect
+        # then it knows that the page hasn't been saved. e.g. /history/events/2007-uts-net/default.html is
+        # not a real history page, because https://www.ssw.com.au/ssw/Events/2007UTSNET/default.aspx redirects
         # to an error page.
 
         # This will also fix the above todo relating to links to employee profile - as it will redirect to /people.
@@ -576,7 +560,7 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
         #         redirect_map[req_url] = ""
         #         continue
         #     # if the page has been redirected, change the link to the new page
-        #     elif test_res.archived or "Redirect" in match.group(1):
+        #     elif test_res.history or "Redirect" in match.group(1):
         #         # if the link redirected to is on the v3 site, change the link to the new page
         #         if re.search(SECOND_FOLDER_REGEX, test_res.url) == None:
         #             print("v3 redirect: " + req_url + " -> " + test_res.url)
@@ -600,14 +584,14 @@ def fix_links(soup: BeautifulSoup) -> BeautifulSoup:
 
         #             redirect_map[req_url] = link["href"]
 
-        #     # If page has been migrated, change the link to the archived page
+        #     # If page has been migrated, change the link to the history page
         #     for folder in WHITELIST:
         #         # Examples matched from regex: /ssw/Events/Training/Default.aspx, http://ssw.com.au/ssw/Events/Training/Default.aspx
         #         if folder.lower() == match.group(1).lower():
         #             # If the link has zz or zr at the start know it hasn't been archived
         #             link["href"] = transform_path(link["href"])
 
-        # TODO: Add replacing of links to /archived when pages have been moved to /archived
+        # TODO: Add replacing of links to /history when pages have been moved to /history
     return soup
 
 def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup:
@@ -620,13 +604,13 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
     breadcrumbs[0]["href"] = "/"
     breadcrumbs[0].string = "Home"
 
-    # Replace second crumb with archived
-    breadcrumbs[1]["href"] = "/archived"
-    breadcrumbs[1].string = "archived"
+    # Replace second crumb with history
+    breadcrumbs[1]["href"] = "/archive"
+    breadcrumbs[1].string = "Archive"
 
     if len(breadcrumbs) > 2:
         # Remove the third crumb
-        breadcrumbs[2]["href"] = "/archived/" + whitelist_folder.lower()
+        breadcrumbs[2]["href"] = "/archive/" + whitelist_folder.lower()
 
     return soup
 
@@ -640,7 +624,7 @@ def fix_breadcrumbs_new(soup: BeautifulSoup):
             continue
         href = a_tag['href']
         if href.startswith("/ssw"):
-            href = href.replace("/ssw", "/archived", 1)
+            href = href.replace("/ssw", "/archive", 1)
             if href.endswith("Default.aspx"):
                 href = href.replace("/Default.aspx", "")
             if href.endswith("Browse.aspx"):
@@ -811,7 +795,7 @@ def output_index_page(file_list: dict[str, str], path: str):
 
 def transform_path(input_url: str) -> str:
     return pascal_to_kebab(
-        input_url.replace("/ssw/", "/archived/").replace(".aspx", ".html")
+        input_url.replace("/ssw/", "/archive/").replace(".aspx", ".html")
     )
 
 
