@@ -1,1027 +1,844 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="ctl00_Head1">
-<script>
-   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NXDBVV');
-  </script>
-<title>
-   SSW Rules to Websites - Online Transactions
-  </title>
-<meta content="en-au" http-equiv="Content-Language"/>
-<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
-<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
-<meta content="SSW" name="author"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon"/>
-<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
-<!-- Start of pdi-ssw Zendesk Widget script -->
-<!-- End of pdi-ssw Zendesk Widget script -->
-<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
-</head>
-<body id="ctl00_MasterBody" style="opacity: 1 !important;">
-<div style="
+  <head id="ctl00_Head1">
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
+    </script>
+    <title>SSW Rules to Websites - Online Transactions</title>
+    <meta content="en-au" http-equiv="Content-Language" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"
+      id="ctl00_keywords"
+      name="keywords"
+    />
+    <meta
+      content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China."
+      name="description"
+    />
+    <meta content="SSW" name="author" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="/archive/css/Content.css"
+      id="ctl00_Link1"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Screen.css"
+      id="ctl00_screenCSS"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link
+      href="/archive/include/googleSyntax/shCore.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/include/googleSyntax/shThemeDefault.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Print.css"
+      id="ctl00_printCSS"
+      media="print"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <link
+      href="https://a.omappapi.com/app/js/api.min.css"
+      id="omapi-css"
+      media="all"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="ctl00_MasterBody" style="opacity: 1 !important">
+    <div
+      style="
         line-height: 1.5;
-        text-align: center; 
-        font-size: 1.125rem; 
+        text-align: center;
+        font-size: 1.125rem;
         color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
-    ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-    ⚠️ This page has been archived
-   </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p style="color:white;">
-     ✅ New page with updated info:
-     <a href="https://www.ssw.com.au" style="color: white">
-      ssw.com.au
-     </a>
-</p>
-</div>
-</div>
-<noscript>
-<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
-</iframe>
-</noscript>
-<form action="./RulesToBetterWebsitesOnlineTransactions.aspx" id="aspnetForm" method="post" name="aspnetForm">
-<div>
-<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTIzNTc4MzQxMQ9kFgJmD2QWAgIDD2QWAgIBD2QWBgIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGRkGc2d9C5zxAKYU94dfso/rIlA14Xr3XsSvZB5XX7Um2Y="/>
-</div>
-<div>
-<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="AA02265A"/>
-</div>
-<div id="mainContainer">
-<div>
-</div>
-<p>
-<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
-<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-<span>
-<a href="/archive" title="Home">
-        Home
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-<a href="/archive/standards" title="SSW Standards">
-        SSW Standards
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-<a href="/archive/standards/rules" title="Rules">
-        Rules
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-       SSW Rules to Websites - Online Transactions
-      </span>
-<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-</span>
-</p>
-<div class="Tab0eOfContents">
-<h3>
-      Rules to Websites - Online Transactions
-     </h3>
-<p>
-      Do you agree with them all? Are we missing some?
-      <a href="javascript:sendEmail('6D61696C746F3A496E666F407373772E636F6D2E61753F5375626A6563743D52756C6573253230746F25323057656273697465732532302D2532304F6E6C696E652532305472616E73616374696F6E73')">
-       Let us know
-      </a>
-      what you think.
-     </p>
-<ol>
-<li>
-<a href="#OnlineCreditCard">
-        Do you implement online credit card processing (Partly Australian Specific)?
-       </a>
-</li>
-</ol>
-</div>
-<ol>
-<li>
-<a name="OnlineCreditCard">
-</a>
-<h2>
-       Do you implement online credit card processing (Partly Australian Specific)?
-      </h2>
-<p>
-       When the customer clicks "Purchase", what happens under the covers? Does it:
-      </p>
-<ul>
-<li>
-        Send an email with the credit card details for manual processing a day later (aka cowboy method), or
-       </li>
-<li>
-        Call a banks web service and put the money into you account within 30 seconds (recommended) (aka professional method)
-       </li>
-</ul>
-<p>
-       Implementing  the online credit card processing into your website requires a lot of  investigation was is very time consuming (you will find yourself taking  copious notes while on the phone to many different providers).
-      </p>
-<div class="stepbystep">
-<div class="step">
-<h3>
-         Step 1
-        </h3>
-<p>
-         is to decide on the shopping cart:
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p style="color: white">
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au" style="color: white"> ssw.com.au </a>
         </p>
-<ol type="a">
-<li>
-          Custom shopping cart built into your site (recommended)
-         </li>
-<ul>
-<li>
-           A lot of work – but can be modified as your business processes evolve
-          </li>
-<li>
-           e.g.
-           <a href="/SSW/Redirect/SSW/SSW.htm">
-            www.ssw.com.au
-           </a>
-</li>
-</ul>
-<li>
-          Off the shelf shopping cart
-         </li>
-<ul>
-<li>
-           Nice – but difficult to modify. However predefined themes that might suit you could be available.
-          </li>
-<li>
-           e.g.
-           <a href="/SSW/Redirect/BvSoftware.htm">
-            www.bvsoftware.com
-           </a>
-           (support for 20 gateways like
-           <a href="/SSW/Redirect/Worldpay.htm">
-            http://www.worldpay.com/au/
-           </a>
-           and
-           <a href="/SSW/Redirect/Paymentexpress.htm">
-            http://www.paymentexpress.com.au/
-           </a>
-           but unfortunately not
-           <a href="/SSW/Redirect/Camtech.htm">
-            www.camtech.com.au
-           </a>
-           or
-           <a href="/SSW/Redirect/Eway.htm">
-            www.eway.com.au
-           </a>
-           )
-          </li>
-</ul>
-<li>
-          A hosted shopping cart (where you upload your products)
-         </li>
-<ul>
-<li>
-           Your site integrates with a 3rd party shopping cart to process the credit card payment
-          </li>
-<li>
-           e.g.
-           <a href="/SSW/Redirect/Camtech.htm">
-            www.camtech.com.au
-           </a>
-           and
-           <a href="/SSW/Redirect/Eway.htm">
-            www.eway.com.au
-           </a>
-</li>
-<li>
-           Generally lots of predefined themes but if you want a custom one you have to pay for a custom design.
-          </li>
-<li>
-           You have less control over the site
-          </li>
-</ul>
-</ol>
-</div>
-<div class="step">
-<h3>
-         Step 2
-        </h3>
-<p>
-         if you choose a) or b) you need to apply for an Online Credit Card Merchant Facility with an Australian Bank.
+      </div>
+    </div>
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+    <form
+      action="./RulesToBetterWebsitesOnlineTransactions.aspx"
+      id="aspnetForm"
+      method="post"
+      name="aspnetForm"
+    >
+      <div>
+        <input
+          id="__VIEWSTATE"
+          name="__VIEWSTATE"
+          type="hidden"
+          value="/wEPDwUKMTIzNTc4MzQxMQ9kFgJmD2QWAgIDD2QWAgIBD2QWBgIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGRkGc2d9C5zxAKYU94dfso/rIlA14Xr3XsSvZB5XX7Um2Y="
+        />
+      </div>
+      <div>
+        <input
+          id="__VIEWSTATEGENERATOR"
+          name="__VIEWSTATEGENERATOR"
+          type="hidden"
+          value="AA02265A"
+        />
+      </div>
+      <div id="mainContainer">
+        <div></div>
+        <p>
+          <span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+            <a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+            <span>
+              <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards" title="SSW Standards">
+                SSW Standards
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards/rules" title="Rules"> Rules </a>
+            </span>
+            <span> &gt; </span>
+            <span> SSW Rules to Websites - Online Transactions </span>
+            <a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+          </span>
         </p>
-<ul>
-<li>
-          This costs about $400 AUD
-         </li>
-<li>
-          Be aware generally you want to process the cards in $AU as it is cheaper and a lot less complicated
-         </li>
-<li>
-          With  all banks you can process credit cards from other countries. But if you  want to process a credit card at say the current $US currency rate and  in $US then only NAB has that facility. This can be very expensive.
-         </li>
-</ul>
-<p>
-         The cost to setup a merchant account with a bank is approximately:
-        </p>
-<blockquote>
-<table>
-<tbody>
-<tr>
-<td>
-             Establishment Fee
-            </td>
-<td>
-             $250
-            </td>
-</tr>
-<tr>
-<td>
-             Monthly Fee
-            </td>
-<td>
-             $20 - $60
-            </td>
-</tr>
-<tr>
-<td>
-             Merchant Service Fee
-            </td>
-<td>
-             Between 1.00% - 3.00% (per transaction)
-            </td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-</div>
-<div class="step">
-<h3>
-         Step 3
-        </h3>
-<p>
-         is you need to create an account with a Internet Payment Gateway.
-        </p>
-<ul>
-<li>
-          An  Internet Payment Gateway is a company that accepts the credit card  information from your website and processes the credit card
-         </li>
-<li>
-          You will need to secure the website with SSL certificates
-         </li>
-<li>
-          You  will need to comply with their standards which included having a refund  policy, displaying all prices in $AU even if you are advertising to  overseas customers.
-         </li>
-<li>
-          Look for one that supports web services
-         </li>
-<li>
-          e.g.
-          <a href="/SSW/Redirect/Camtech.htm">
-           www.camtech.com.au
+        <div class="Tab0eOfContents">
+          <h3>Rules to Websites - Online Transactions</h3>
+          <p>
+            Do you agree with them all? Are we missing some?
+            <a
+              href="javascript:sendEmail('6D61696C746F3A496E666F407373772E636F6D2E61753F5375626A6563743D52756C6573253230746F25323057656273697465732532302D2532304F6E6C696E652532305472616E73616374696F6E73')"
+            >
+              Let us know
+            </a>
+            what you think.
+          </p>
+          <ol>
+            <li>
+              <a href="#OnlineCreditCard">
+                Do you implement online credit card processing (Partly
+                Australian Specific)?
+              </a>
+            </li>
+          </ol>
+        </div>
+        <ol>
+          <li>
+            <a name="OnlineCreditCard"> </a>
+            <h2>
+              Do you implement online credit card processing (Partly Australian
+              Specific)?
+            </h2>
+            <p>
+              When the customer clicks "Purchase", what happens under the
+              covers? Does it:
+            </p>
+            <ul>
+              <li>
+                Send an email with the credit card details for manual processing
+                a day later (aka cowboy method), or
+              </li>
+              <li>
+                Call a banks web service and put the money into you account
+                within 30 seconds (recommended) (aka professional method)
+              </li>
+            </ul>
+            <p>
+              Implementing the online credit card processing into your website
+              requires a lot of investigation was is very time consuming (you
+              will find yourself taking copious notes while on the phone to many
+              different providers).
+            </p>
+            <div class="stepbystep">
+              <div class="step">
+                <h3>Step 1</h3>
+                <p>is to decide on the shopping cart:</p>
+                <ol type="a">
+                  <li>
+                    Custom shopping cart built into your site (recommended)
+                  </li>
+                  <ul>
+                    <li>
+                      A lot of work – but can be modified as your business
+                      processes evolve
+                    </li>
+                    <li>
+                      e.g.
+                      <a href="/SSW/Redirect/SSW/SSW.htm"> www.ssw.com.au </a>
+                    </li>
+                  </ul>
+                  <li>Off the shelf shopping cart</li>
+                  <ul>
+                    <li>
+                      Nice – but difficult to modify. However predefined themes
+                      that might suit you could be available.
+                    </li>
+                    <li>
+                      e.g.
+                      <a href="/SSW/Redirect/BvSoftware.htm">
+                        www.bvsoftware.com
+                      </a>
+                      (support for 20 gateways like
+                      <a href="/SSW/Redirect/Worldpay.htm">
+                        http://www.worldpay.com/au/
+                      </a>
+                      and
+                      <a href="/SSW/Redirect/Paymentexpress.htm">
+                        http://www.paymentexpress.com.au/
+                      </a>
+                      but unfortunately not
+                      <a href="/SSW/Redirect/Camtech.htm">
+                        www.camtech.com.au
+                      </a>
+                      or
+                      <a href="/SSW/Redirect/Eway.htm"> www.eway.com.au </a>
+                      )
+                    </li>
+                  </ul>
+                  <li>
+                    A hosted shopping cart (where you upload your products)
+                  </li>
+                  <ul>
+                    <li>
+                      Your site integrates with a 3rd party shopping cart to
+                      process the credit card payment
+                    </li>
+                    <li>
+                      e.g.
+                      <a href="/SSW/Redirect/Camtech.htm">
+                        www.camtech.com.au
+                      </a>
+                      and
+                      <a href="/SSW/Redirect/Eway.htm"> www.eway.com.au </a>
+                    </li>
+                    <li>
+                      Generally lots of predefined themes but if you want a
+                      custom one you have to pay for a custom design.
+                    </li>
+                    <li>You have less control over the site</li>
+                  </ul>
+                </ol>
+              </div>
+              <div class="step">
+                <h3>Step 2</h3>
+                <p>
+                  if you choose a) or b) you need to apply for an Online Credit
+                  Card Merchant Facility with an Australian Bank.
+                </p>
+                <ul>
+                  <li>This costs about $400 AUD</li>
+                  <li>
+                    Be aware generally you want to process the cards in $AU as
+                    it is cheaper and a lot less complicated
+                  </li>
+                  <li>
+                    With all banks you can process credit cards from other
+                    countries. But if you want to process a credit card at say
+                    the current $US currency rate and in $US then only NAB has
+                    that facility. This can be very expensive.
+                  </li>
+                </ul>
+                <p>
+                  The cost to setup a merchant account with a bank is
+                  approximately:
+                </p>
+                <blockquote>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>Establishment Fee</td>
+                        <td>$250</td>
+                      </tr>
+                      <tr>
+                        <td>Monthly Fee</td>
+                        <td>$20 - $60</td>
+                      </tr>
+                      <tr>
+                        <td>Merchant Service Fee</td>
+                        <td>Between 1.00% - 3.00% (per transaction)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </blockquote>
+              </div>
+              <div class="step">
+                <h3>Step 3</h3>
+                <p>
+                  is you need to create an account with a Internet Payment
+                  Gateway.
+                </p>
+                <ul>
+                  <li>
+                    An Internet Payment Gateway is a company that accepts the
+                    credit card information from your website and processes the
+                    credit card
+                  </li>
+                  <li>
+                    You will need to secure the website with SSL certificates
+                  </li>
+                  <li>
+                    You will need to comply with their standards which included
+                    having a refund policy, displaying all prices in $AU even if
+                    you are advertising to overseas customers.
+                  </li>
+                  <li>Look for one that supports web services</li>
+                  <li>
+                    e.g.
+                    <a href="/SSW/Redirect/Camtech.htm"> www.camtech.com.au </a>
+                    and
+                    <a href="/SSW/Redirect/Eway.htm"> www.eway.com.au </a>
+                  </li>
+                </ul>
+                <p> </p>
+                <table
+                  border="0"
+                  cellpadding="2"
+                  cellspacing="2"
+                  class="clsSSWTable"
+                  style="font-size: 0.9em"
+                  width="100%"
+                >
+                  <tbody>
+                    <tr valign="bottom">
+                      <th>
+                        <div align="left">Internet Payment Gateway</div>
+                      </th>
+                      <th>
+                        <div align="left">Plan Name</div>
+                      </th>
+                      <th>
+                        <div align="right">Activation</div>
+                      </th>
+                      <th>
+                        <div align="right">Monthly</div>
+                      </th>
+                      <th>
+                        <div align="right">Free T/M</div>
+                      </th>
+                      <th>
+                        <div align="right">CPT</div>
+                      </th>
+                      <th>
+                        <div align="right">Cost/year</div>
+                      </th>
+                      <th>
+                        <div align="right">TPY</div>
+                      </th>
+                      <th nowrap="nowrap">
+                        <div align="right">(CPT x TPY)</div>
+                      </th>
+                      <th>
+                        <div align="right">1st Year Cost</div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="external" href="/SSW/Redirect/Camtech.htm">
+                          www.camtech.com.au
+                        </a>
+                           
+                        <img
+                          alt="(Our Pick)"
+                          height="16"
+                          src="/archive/standards/rules/images/good.gif"
+                          title="Our Pick"
+                          width="16"
+                        />
+                      </td>
+                      <td> </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$23.75</div>
+                      </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.40</div>
+                      </td>
+                      <td>
+                        <div align="right">$285.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$200.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$485.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="external" href="/SSW/Redirect/Directone.htm">
+                          www.directone.com.au
+                        </a>
+                      </td>
+                      <td>Basic</td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$32.92</div>
+                      </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.45</div>
+                      </td>
+                      <td>
+                        <div align="right">$395.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$225.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$620.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> </td>
+                      <td>2000</td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$49.58</div>
+                      </td>
+                      <td>
+                        <div align="right">167</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.45</div>
+                      </td>
+                      <td>
+                        <div align="right">$595.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$150.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$745.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="external" href="/SSW/Redirect/Eway.htm">
+                          www.eway.com.au
+                        </a>
+                      </td>
+                      <td>Std</td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$29.17</div>
+                      </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.50</div>
+                      </td>
+                      <td>
+                        <div align="right">$350.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$250.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$600.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="external" href="/SSW/Redirect/Eway1.htm">
+                          www.eway.com.au/Pricing
+                        </a>
+                      </td>
+                      <td>Discount (+500TPM)</td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$29.17</div>
+                      </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.25</div>
+                      </td>
+                      <td>
+                        <div align="right">$350.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$125.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$475.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          class="external"
+                          href="/SSW/Redirect/Netregistry.htm"
+                        >
+                          www.netregistry.com.au
+                        </a>
+                      </td>
+                      <td> </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$55.00</div>
+                      </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$660.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$660.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="external" href="/SSW/Redirect/Mbase.htm">
+                          www.mbase.com.au
+                        </a>
+                      </td>
+                      <td> </td>
+                      <td>
+                        <div align="right">$127</div>
+                      </td>
+                      <td>
+                        <div align="right">$32.75</div>
+                      </td>
+                      <td>
+                        <div align="right">-</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.35</div>
+                      </td>
+                      <td>
+                        <div align="right">$393</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$175</div>
+                      </td>
+                      <td>
+                        <div align="right">$695</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          class="external"
+                          href="/SSW/Redirect/Paymentexpress.htm"
+                        >
+                          www.paymentexpress.com.au
+                        </a>
+                      </td>
+                      <td>Starter</td>
+                      <td>
+                        <div align="right">$150.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$50.00</div>
+                      </td>
+                      <td>
+                        <div align="right">100</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.50</div>
+                      </td>
+                      <td>
+                        <div align="right">$750.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$200.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$950.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> </td>
+                      <td>Business</td>
+                      <td>
+                        <div align="right">$150.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$150.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.45</div>
+                      </td>
+                      <td>
+                        <div align="right">$1,950.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$1,950.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> </td>
+                      <td>Business A</td>
+                      <td>
+                        <div align="right">$200.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$250.00</div>
+                      </td>
+                      <td>
+                        <div align="right">1,000</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.42</div>
+                      </td>
+                      <td>
+                        <div align="right">$3,200.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$3,200.00</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a class="external" href="/SSW/Redirect/Anchor.htm">
+                          www.anchor.net.au
+                        </a>
+                      </td>
+                      <td> </td>
+                      <td>
+                        <div align="right">$295.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$50.00</div>
+                      </td>
+                      <td>
+                        <div align="right">1,000</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$895.00</div>
+                      </td>
+                      <td>
+                        <div align="right">500</div>
+                      </td>
+                      <td>
+                        <div align="right">$0.00</div>
+                      </td>
+                      <td>
+                        <div align="right">$895.00</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  style="font-size: 0.8em; color: #333333; line-height: normal"
+                >
+                  Free T/M = No of free transactions per month offered
+                  <br />
+                  CPT = Cost per Transaction
+                  <br />
+                  TPY = Transactions per Year (case study)
+                  <br />
+                </p>
+                <p> </p>
+                <p>
+                  <strong>
+                    We use Camtech as our Internet Payment Gateway because:
+                  </strong>
+                </p>
+                <ul>
+                  <li>
+                    They provided good documentation to call their web services.
+                    (It was so easy a work experience employee completed this
+                    task!)
+                  </li>
+                  <li>There was no software required on our server</li>
+                  <li>
+                    They are a supplier to many other Internet Payment Gateways
+                  </li>
+                  <li>
+                    Market share - ANZ have told us that Camtech was one of
+                    their largest suppliers
+                  </li>
+                  <li>
+                    Camtech allows developers to partner with them to receive a
+                    percentage of all revenue generated by the merchant.
+                  </li>
+                  <li>
+                    They are
+                    <a href="/SSW/Redirect/Camtech.htm">
+                      developer orientated
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <h2>Acknowledgements</h2>
+        <p>
+          <a href="https://ssw.com.au/people/adam-cogan/"> Adam Cogan </a>
+          <br />
+          <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=MSM">
+            Marlon Marescia
           </a>
-          and
-          <a href="/SSW/Redirect/Eway.htm">
-           www.eway.com.au
-          </a>
-</li>
-</ul>
-<p>
-          
+          <br />
+          <a href="/SSW/Redirect/Acorns.htm"> Corneliu I. Tusnea </a>
         </p>
-<table border="0" cellpadding="2" cellspacing="2" class="clsSSWTable" style="font-size:0.9em;" width="100%">
-<tbody>
-<tr valign="bottom">
-<th>
-<div align="left">
-             Internet Payment Gateway
-            </div>
-</th>
-<th>
-<div align="left">
-             Plan Name
-            </div>
-</th>
-<th>
-<div align="right">
-             Activation
-            </div>
-</th>
-<th>
-<div align="right">
-             Monthly
-            </div>
-</th>
-<th>
-<div align="right">
-             Free T/M
-            </div>
-</th>
-<th>
-<div align="right">
-             CPT
-            </div>
-</th>
-<th>
-<div align="right">
-             Cost/year
-            </div>
-</th>
-<th>
-<div align="right">
-             TPY
-            </div>
-</th>
-<th nowrap="nowrap">
-<div align="right">
-             (CPT x TPY)
-            </div>
-</th>
-<th>
-<div align="right">
-             1st Year Cost
-            </div>
-</th>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Camtech.htm">
-             www.camtech.com.au
-            </a>
-               
-            <img alt="(Our Pick)" height="16" src="/archive/standards/rules/images/good.gif" title="Our Pick" width="16"/>
-</td>
-<td>
-             
-           </td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $23.75
-            </div>
-</td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.40
-            </div>
-</td>
-<td>
-<div align="right">
-             $285.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $200.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $485.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Directone.htm">
-             www.directone.com.au
-            </a>
-</td>
-<td>
-            Basic
-           </td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $32.92
-            </div>
-</td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.45
-            </div>
-</td>
-<td>
-<div align="right">
-             $395.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $225.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $620.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-             
-           </td>
-<td>
-            2000
-           </td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $49.58
-            </div>
-</td>
-<td>
-<div align="right">
-             167
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.45
-            </div>
-</td>
-<td>
-<div align="right">
-             $595.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $150.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $745.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Eway.htm">
-             www.eway.com.au
-            </a>
-</td>
-<td>
-            Std
-           </td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $29.17
-            </div>
-</td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.50
-            </div>
-</td>
-<td>
-<div align="right">
-             $350.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $250.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $600.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Eway1.htm">
-             www.eway.com.au/Pricing
-            </a>
-</td>
-<td>
-            Discount (+500TPM)
-           </td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $29.17
-            </div>
-</td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.25
-            </div>
-</td>
-<td>
-<div align="right">
-             $350.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $125.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $475.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Netregistry.htm">
-             www.netregistry.com.au
-            </a>
-</td>
-<td>
-             
-           </td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $55.00
-            </div>
-</td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $660.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $660.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Mbase.htm">
-             www.mbase.com.au
-            </a>
-</td>
-<td>
-             
-           </td>
-<td>
-<div align="right">
-             $127
-            </div>
-</td>
-<td>
-<div align="right">
-             $32.75
-            </div>
-</td>
-<td>
-<div align="right">
-             -
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.35
-            </div>
-</td>
-<td>
-<div align="right">
-             $393
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $175
-            </div>
-</td>
-<td>
-<div align="right">
-             $695
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Paymentexpress.htm">
-             www.paymentexpress.com.au
-            </a>
-</td>
-<td>
-            Starter
-           </td>
-<td>
-<div align="right">
-             $150.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $50.00
-            </div>
-</td>
-<td>
-<div align="right">
-             100
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.50
-            </div>
-</td>
-<td>
-<div align="right">
-             $750.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $200.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $950.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-             
-           </td>
-<td>
-            Business
-           </td>
-<td>
-<div align="right">
-             $150.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $150.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.45
-            </div>
-</td>
-<td>
-<div align="right">
-             $1,950.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $1,950.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-             
-           </td>
-<td>
-            Business A
-           </td>
-<td>
-<div align="right">
-             $200.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $250.00
-            </div>
-</td>
-<td>
-<div align="right">
-             1,000
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.42
-            </div>
-</td>
-<td>
-<div align="right">
-             $3,200.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $3,200.00
-            </div>
-</td>
-</tr>
-<tr>
-<td>
-<a class="external" href="/SSW/Redirect/Anchor.htm">
-             www.anchor.net.au
-            </a>
-</td>
-<td>
-             
-           </td>
-<td>
-<div align="right">
-             $295.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $50.00
-            </div>
-</td>
-<td>
-<div align="right">
-             1,000
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $895.00
-            </div>
-</td>
-<td>
-<div align="right">
-             500
-            </div>
-</td>
-<td>
-<div align="right">
-             $0.00
-            </div>
-</td>
-<td>
-<div align="right">
-             $895.00
-            </div>
-</td>
-</tr>
-</tbody>
-</table>
-<p style="font-size: 0.8em;color: #333333; line-height:normal;">
-         Free T/M = No of free transactions per month offered
-         <br/>
-         CPT = Cost per Transaction
-         <br/>
-         TPY = Transactions per Year (case study)
-         <br/>
-</p>
-<p>
-          
+        <br />
+      </div>
+      <div id="footer">
+        <p class="callnow">
+          Call Now
+          <a href="tel:+61299533000"> +61 2 9953 3000 </a>
         </p>
-<p>
-<strong>
-          We use Camtech as our Internet Payment Gateway because:
-         </strong>
-</p>
-<ul>
-<li>
-          They provided good documentation to call their web services. (It was so easy a work experience employee completed this task!)
-         </li>
-<li>
-          There was no software required on our server
-         </li>
-<li>
-          They are a supplier to many other Internet Payment Gateways
-         </li>
-<li>
-          Market share - ANZ have told us that Camtech was one of their largest suppliers
-         </li>
-<li>
-          Camtech allows developers to partner with them to receive a percentage of all revenue generated by the merchant.
-         </li>
-<li>
-          They are
-          <a href="/SSW/Redirect/Camtech.htm">
-           developer orientated
+        <span class="copyright">
+          © Copyright SSW 1990-2024. All Rights Reserved.
+        </span>
+        <ul>
+          <li class="first">
+            <a
+              class="email"
+              href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F52756C6573546F42657474657257656273697465734F6E6C696E655472616E73616374696F6E732E61737078')"
+              id="ctl00_fC_feedbackHyperLink"
+              tabindex="100"
+            >
+              Feedback to SSW
+            </a>
+          </li>
+          <li>
+            <a href="/ssw/Company/AboutUs.aspx"> About SSW </a>
+          </li>
+          <li>
+            <a href="/ssw/Advertising/Default.aspx"> Advertising </a>
+          </li>
+          <li class="last">
+            <a href="/ssw/MenuMap.aspx"> Sitemap </a>
+          </li>
+        </ul>
+        <span class="proudly">
+          <a href="http://www.ssw.com.au">
+            Proudly developed by SSW Sydney Web Design
           </a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ol>
-<h2>
-     Acknowledgements
-    </h2>
-<p>
-<a href="https://ssw.com.au/people/adam-cogan/">
-      Adam Cogan
-     </a>
-<br/>
-<a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=MSM">
-      Marlon Marescia
-     </a>
-<br/>
-<a href="/SSW/Redirect/Acorns.htm">
-      Corneliu I. Tusnea
-     </a>
-</p>
-<br/>
-</div>
-<div id="footer">
-<p class="callnow">
-     Call Now
-     <a href="tel:+61299533000">
-      +61 2 9953 3000
-     </a>
-</p>
-<span class="copyright">
-     © Copyright SSW 1990-2024. All Rights Reserved.
-    </span>
-<ul>
-<li class="first">
-<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F52756C6573546F42657474657257656273697465734F6E6C696E655472616E73616374696F6E732E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
-       Feedback to SSW
-      </a>
-</li>
-<li>
-<a href="/ssw/Company/AboutUs.aspx">
-       About SSW
-      </a>
-</li>
-<li>
-<a href="/ssw/Advertising/Default.aspx">
-       Advertising
-      </a>
-</li>
-<li class="last">
-<a href="/ssw/MenuMap.aspx">
-       Sitemap
-      </a>
-</li>
-</ul>
-<span class="proudly">
-<a href="http://www.ssw.com.au">
-      Proudly developed by SSW Sydney Web Design
-     </a>
-</span>
-<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
-<p class="serverName">
-     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
-    </p>
-</div>
-</form>
-<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
-<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
-<!-- / OptinMonster -->
-<div style="visibility: visible;">
-<div>
-</div>
-<div>
-</div>
-</div>
-</body>
+        </span>
+        <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+        <p class="serverName">
+          Our website is under constant continuous deployment. Last deployment
+          to AZIIS2022P03. Unable to retrieve changeset details.
+        </p>
+      </div>
+    </form>
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+    <!-- / OptinMonster -->
+    <div style="visibility: visible">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>

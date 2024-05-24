@@ -1,92 +1,189 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NXDBVV');
+  <head>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
     </script>
-<title>SWsoft Knowledgebase</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="server automation, VPS, virtualization, virtual machines, resource management, control panel, Windows control panel, Linux control panel, hosting software, server consolidation, server migration, Web servers, hosting service providers, HSP, hosting plan, datacenter, enterprise, Virtuozzo, Plesk, Plesk Expand, PEM, HSPcomplete, Confix, Web hosting, Windows hosting, Linux hosting, shared hosting, dedicated hosting, hosting automation, application services, ASP, managed hosting, os virtualization, reseller billing, , business life-cycle hosting automation solution, account provisioning, hosting billing system, hosting management solution" name="Keywords"/>
-<meta content="SWsoft is an advanced server technology company focused on the development of a complete line of control panels, Virtual Private Server and hosting automation software including its patent-pending Virtuozzo technology. The company combines the solid performing Plesk and Confixx Professional control panels software with the HSPcomplete and Plesk Enterprise Manager (PEM) end-to-end solutions and services for hosting service providers such as internet data centers, application service providers, managed hosting providers and web hosters." name="Description"/>
-<meta content="document" name="resource-type"/>
-<meta content="3 Days" name="revisit-after"/>
-<meta content="Provider Software" name="classificaton"/>
-<meta content="INDEX, FOLLOW" name="robots"/>
-<meta content="Global" name="distribution"/>
-<meta content="Safe For Kids" name="rating"/>
-<meta content="SWsoft Inc" name="author"/>
-<meta content="web@swsoft.com" http-equiv="reply-to"/>
-</head>
-<body><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript><div style="
-            line-height: 1.5;
-            text-align: center; 
-            font-size: 1.125rem; 
-            color: #999;
-            background-color: #333333;
-            padding-top: 1.25rem;
-            padding-bottom: 1.25rem;
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
-            ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-                ⚠️ This page has been archived
-            </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p>
-                    ✅ New page with updated info:
-                    <a href="https://www.ssw.com.au" style="color: white">
-                        ssw.com.au
-                    </a>
-</p>
-</div>
-</div>
-<!--<div style="display:none;"><script language="javascript" type="text/javascript" src="/r/js/s_code.js"></script></div>-->
-<div id="screenLayout">
-<!--topLayout-->
-<div id="middleLayout">
-<table border="0" cellpadding="0" cellspacing="0" class="mainContainer" width="100%">
-<tr valign="top">
-<td id="leftLayout">
-         </td>
-<td class="pageContainer">
-<!--============SEARCHBOX==============-->
-<!--============//SEARCHBOX=============-->
-<div class="sectionHeading">Plesk <b>/</b> Plesk Windows <b>/</b> Plesk Control Panel<br/>
-</div>
-<div class="articleQuestion"><font face="tahoma" size="2" style="font-weight: normal">
-When I try to log into Plesk Control Panel I get this error:<br/>
-DefPackageMng() constructor failed: defpackagemng failed: Access is denied.(Error code 5) at CreateProcess 'C:\WINDOWS\system32\cmd.exe /c ""C:\Plesk\admin\bin\defpackagemng.exe" --get"'
-at execUtil C:\Plesk\admin\bin\defpackagemng.exe --get on C:\Plesk\admin(PleskSrvClient::execUtil line 420)at execute console command --get(vconsoleapp::start line 128) at execute C:\Plesk\/admin/bin/defpackagemng --get(vconsoleapp::run line 138)
-<br/>
-How can I fix it?</font></div>
-<div class="articleApplies">Product versions this article applies to:
-<ul><li>Plesk 7.5 for Windows</li>
-</ul>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tr>
-<td style="color: #666666; border:1px solid #e0ece6;padding:5px 5px 5px 5px;">
-<span class="lastUpdated">
-The latest update: May,26 2006<br/>Access: public</span>
-</td>
-<td width="50">
- 
-</td>
-<td align="center" style="color: #666666; border:1px solid #e0ece6;padding:5px 5px 5px 5px;font-size:10px;" valign="center" width="100">
-Article ID #1160<div></div>
-</td>
-</tr>
-</table>
-</div>
-<div class="articleAnswer"><p align="justify"><font face="tahoma,arial,helvetica,sans-serif" size="2">Such error occurs when Plesk Control Panel service <strong>Apache</strong> can't access to <strong>C:\Windows\System32\cmd.exe</strong>. This may happen when administrator manually changes permissions on file system. User <strong>SERVICE</strong> should have <strong>Read+Execute; Read</strong> on the file.</font></p><p align="justify"><font face="tahoma,arial,helvetica,sans-serif" size="2">The following permissions should be set on <strong>cmd.exe</strong> to make server work properly:</font></p><ul><li><font face="tahoma,arial,helvetica,sans-serif" size="2">Administrators - Full Control</font></li><li><font face="tahoma,arial,helvetica,sans-serif" size="2">System - Full Control</font></li><li><font face="tahoma,arial,helvetica,sans-serif" size="2">Service - Read+Execute; Read</font></li><li><font face="tahoma,arial,helvetica,sans-serif" size="2">Interactive - Read+Execute; Read</font></li></ul></div>
-</td>
-</tr>
-</table>
-</div><!-- middleLayout -->
-</div>
-</body>
+    <title>SWsoft Knowledgebase</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="server automation, VPS, virtualization, virtual machines, resource management, control panel, Windows control panel, Linux control panel, hosting software, server consolidation, server migration, Web servers, hosting service providers, HSP, hosting plan, datacenter, enterprise, Virtuozzo, Plesk, Plesk Expand, PEM, HSPcomplete, Confix, Web hosting, Windows hosting, Linux hosting, shared hosting, dedicated hosting, hosting automation, application services, ASP, managed hosting, os virtualization, reseller billing, , business life-cycle hosting automation solution, account provisioning, hosting billing system, hosting management solution"
+      name="Keywords"
+    />
+    <meta
+      content="SWsoft is an advanced server technology company focused on the development of a complete line of control panels, Virtual Private Server and hosting automation software including its patent-pending Virtuozzo technology. The company combines the solid performing Plesk and Confixx Professional control panels software with the HSPcomplete and Plesk Enterprise Manager (PEM) end-to-end solutions and services for hosting service providers such as internet data centers, application service providers, managed hosting providers and web hosters."
+      name="Description"
+    />
+    <meta content="document" name="resource-type" />
+    <meta content="3 Days" name="revisit-after" />
+    <meta content="Provider Software" name="classificaton" />
+    <meta content="INDEX, FOLLOW" name="robots" />
+    <meta content="Global" name="distribution" />
+    <meta content="Safe For Kids" name="rating" />
+    <meta content="SWsoft Inc" name="author" />
+    <meta content="web@swsoft.com" http-equiv="reply-to" />
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      ></iframe
+    ></noscript>
+    <div
+      style="
+        line-height: 1.5;
+        text-align: center;
+        font-size: 1.125rem;
+        color: #999;
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p>
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au" style="color: white"> ssw.com.au </a>
+        </p>
+      </div>
+    </div>
+    <!--<div style="display:none;"><script language="javascript" type="text/javascript" src="/r/js/s_code.js"></script></div>-->
+    <div id="screenLayout">
+      <!--topLayout-->
+      <div id="middleLayout">
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          class="mainContainer"
+          width="100%"
+        >
+          <tr valign="top">
+            <td id="leftLayout"> </td>
+            <td class="pageContainer">
+              <!--============SEARCHBOX==============-->
+              <!--============//SEARCHBOX=============-->
+              <div class="sectionHeading">
+                Plesk <b>/</b> Plesk Windows <b>/</b> Plesk Control Panel<br />
+              </div>
+              <div class="articleQuestion">
+                <font face="tahoma" size="2" style="font-weight: normal">
+                  When I try to log into Plesk Control Panel I get this
+                  error:<br />
+                  DefPackageMng() constructor failed: defpackagemng failed:
+                  Access is denied.(Error code 5) at CreateProcess
+                  'C:\WINDOWS\system32\cmd.exe /c
+                  ""C:\Plesk\admin\bin\defpackagemng.exe" --get"' at execUtil
+                  C:\Plesk\admin\bin\defpackagemng.exe --get on
+                  C:\Plesk\admin(PleskSrvClient::execUtil line 420)at execute
+                  console command --get(vconsoleapp::start line 128) at execute
+                  C:\Plesk\/admin/bin/defpackagemng --get(vconsoleapp::run line
+                  138)
+                  <br />
+                  How can I fix it?</font
+                >
+              </div>
+              <div class="articleApplies">
+                Product versions this article applies to:
+                <ul>
+                  <li>Plesk 7.5 for Windows</li>
+                </ul>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td
+                      style="
+                        color: #666666;
+                        border: 1px solid #e0ece6;
+                        padding: 5px 5px 5px 5px;
+                      "
+                    >
+                      <span class="lastUpdated">
+                        The latest update: May,26 2006<br />Access: public</span
+                      >
+                    </td>
+                    <td width="50"> </td>
+                    <td
+                      align="center"
+                      style="
+                        color: #666666;
+                        border: 1px solid #e0ece6;
+                        padding: 5px 5px 5px 5px;
+                        font-size: 10px;
+                      "
+                      valign="center"
+                      width="100"
+                    >
+                      Article ID #1160
+                      <div></div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="articleAnswer">
+                <p align="justify">
+                  <font face="tahoma,arial,helvetica,sans-serif" size="2"
+                    >Such error occurs when Plesk Control Panel service
+                    <strong>Apache</strong> can't access to
+                    <strong>C:\Windows\System32\cmd.exe</strong>. This may
+                    happen when administrator manually changes permissions on
+                    file system. User <strong>SERVICE</strong> should have
+                    <strong>Read+Execute; Read</strong> on the file.</font
+                  >
+                </p>
+                <p align="justify">
+                  <font face="tahoma,arial,helvetica,sans-serif" size="2"
+                    >The following permissions should be set on
+                    <strong>cmd.exe</strong> to make server work properly:</font
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <font face="tahoma,arial,helvetica,sans-serif" size="2"
+                      >Administrators - Full Control</font
+                    >
+                  </li>
+                  <li>
+                    <font face="tahoma,arial,helvetica,sans-serif" size="2"
+                      >System - Full Control</font
+                    >
+                  </li>
+                  <li>
+                    <font face="tahoma,arial,helvetica,sans-serif" size="2"
+                      >Service - Read+Execute; Read</font
+                    >
+                  </li>
+                  <li>
+                    <font face="tahoma,arial,helvetica,sans-serif" size="2"
+                      >Interactive - Read+Execute; Read</font
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- middleLayout -->
+    </div>
+  </body>
 </html>
