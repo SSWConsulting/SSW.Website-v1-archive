@@ -1,356 +1,401 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="ctl00_Head1">
-<script>
-   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NXDBVV');
-  </script>
-<title>
-   SSW Suggestions for TFS Debugger Canvas
-  </title>
-<meta content="en-au" http-equiv="Content-Language"/>
-<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
-<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
-<meta content="SSW" name="author"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon"/>
-<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
-<!-- Start of pdi-ssw Zendesk Widget script -->
-<!-- End of pdi-ssw Zendesk Widget script -->
-<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
-</head>
-<body id="ctl00_MasterBody" style="opacity: 1 !important;">
-<div style="
+  <head id="ctl00_Head1">
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
+    </script>
+    <title>SSW Suggestions for TFS Debugger Canvas</title>
+    <meta content="en-au" http-equiv="Content-Language" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"
+      id="ctl00_keywords"
+      name="keywords"
+    />
+    <meta
+      content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China."
+      name="description"
+    />
+    <meta content="SSW" name="author" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="/archive/css/Content.css"
+      id="ctl00_Link1"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Screen.css"
+      id="ctl00_screenCSS"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link
+      href="/archive/include/googleSyntax/shCore.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/include/googleSyntax/shThemeDefault.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Print.css"
+      id="ctl00_printCSS"
+      media="print"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <link
+      href="https://a.omappapi.com/app/js/api.min.css"
+      id="omapi-css"
+      media="all"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="ctl00_MasterBody" style="opacity: 1 !important">
+    <div
+      style="
         line-height: 1.5;
-        text-align: center; 
-        font-size: 1.125rem; 
+        text-align: center;
+        font-size: 1.125rem;
         color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
-    ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-    ⚠️ This page has been archived
-   </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p style="color:white;">
-     ✅ New page with updated info:
-     <a href="https://www.ssw.com.au/products" style="color: white">ssw.com.au/products</a>
-</p>
-</div>
-</div>
-<noscript>
-<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
-</iframe>
-</noscript>
-<form action="./TFSDebuggerCanvas.aspx" id="aspnetForm" method="post" name="aspnetForm">
-<div>
-<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwULLTIwNzIxNzM0MTMPZBYCZg9kFgICAw9kFgICAQ9kFggCAw88KwAFAQAPFgIeB1Zpc2libGVoZGQCBQ88KwAFAQAPFgIfAGhkZAIHDzwrAAUBAA8WAh8AaGRkAgkPZBYCAgMPZBYCAgYPDxYEHgRUZXh0BYMIPHAgc3R5bGU9ImZvbnQtc2l6ZSA6IDExcHg7IGNvbG9yIDogI2FhYSI+VGhlcmUgd2FzIGFuIGVycm9yIGRpc3BsYXlpbmcgdGhlIHRlc3RpbW9uaWFscy4gUGxlYXNlIDxBIEhSRUY9Im1haWx0bzppbmZvQHMqdy5jb20uYXU/U3ViamVjdD1FcnJvciBkaXNwbGF5aW5nIFRlc3RpbW9uaWFscyZib2R5PSBVUkw6IGh0dHBzOi8vc3N3LmNvbS5hdS9zc3cvU3RhbmRhcmRzL0JldHRlclNvZnR3YXJlU3VnZ2VzdGlvbnMvVEZTRGVidWdnZXJDYW52YXMuYXNweA0KDQolMEQgRXJyb3I6IEEgbmV0d29yay1yZWxhdGVkIG9yIGluc3RhbmNlLXNwZWNpZmljIGVycm9yIG9jY3VycmVkIHdoaWxlIGVzdGFibGlzaGluZyBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlci4gVGhlIHNlcnZlciB3YXMgbm90IGZvdW5kIG9yIHdhcyBub3QgYWNjZXNzaWJsZS4gVmVyaWZ5IHRoYXQgdGhlIGluc3RhbmNlIG5hbWUgaXMgY29ycmVjdCBhbmQgdGhhdCBTUUwgU2VydmVyIGlzIGNvbmZpZ3VyZWQgdG8gYWxsb3cgcmVtb3RlIGNvbm5lY3Rpb25zLiAocHJvdmlkZXI6IE5hbWVkIFBpcGVzIFByb3ZpZGVyLCBlcnJvcjogNDAgLSBDb3VsZCBub3Qgb3BlbiBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlcikiPnJlcG9ydCB0aGlzIGVycm9yPC9hPiB0byBTU1cgYW5kIGluY2x1ZGUgdGhlIGZvbGxvd2luZyB0ZXh0Ojxicj4gLSBBIG5ldHdvcmstcmVsYXRlZCBvciBpbnN0YW5jZS1zcGVjaWZpYyBlcnJvciBvY2N1cnJlZCB3aGlsZSBlc3RhYmxpc2hpbmcgYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIuIFRoZSBzZXJ2ZXIgd2FzIG5vdCBmb3VuZCBvciB3YXMgbm90IGFjY2Vzc2libGUuIFZlcmlmeSB0aGF0IHRoZSBpbnN0YW5jZSBuYW1lIGlzIGNvcnJlY3QgYW5kIHRoYXQgU1FMIFNlcnZlciBpcyBjb25maWd1cmVkIHRvIGFsbG93IHJlbW90ZSBjb25uZWN0aW9ucy4gKHByb3ZpZGVyOiBOYW1lZCBQaXBlcyBQcm92aWRlciwgZXJyb3I6IDQwIC0gQ291bGQgbm90IG9wZW4gYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIpPC9wPh8AZ2RkZHsAcUW8FnzpD1VQg/3oe9KW+dB+2yjOL/5roxGg2TlA"/>
-</div>
-<div>
-<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="68D90B02"/>
-</div>
-<div id="mainContainer">
-<div>
-</div>
-<p>
-<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
-<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-<span>
-<a href="/archive" title="Home">
-        Home
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-<a href="/archive/standards" title="SSW Standards">
-        SSW Standards
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-<a href="/archive/standards/better-software-suggestions" title="Better Software Suggestions">
-        Better Software Suggestions
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-       SSW Suggestions for TFS Debugger Canvas
-      </span>
-<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-</span>
-</p>
-<span id="ctl00_mainContentPlaceHolder_testimonial_lblError">
-<p style="font-size : 11px; color : #aaa">
-      There was an error displaying the testimonials. Please
-      <a href="mailto:info@s*w.com.au?Subject=Error displaying Testimonials&amp;body= URL: https://ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/TFSDebuggerCanvas.aspx
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p style="color: white">
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au/products" style="color: white"
+            >ssw.com.au/products</a
+          >
+        </p>
+      </div>
+    </div>
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+    <form
+      action="./TFSDebuggerCanvas.aspx"
+      id="aspnetForm"
+      method="post"
+      name="aspnetForm"
+    >
+      <div>
+        <input
+          id="__VIEWSTATE"
+          name="__VIEWSTATE"
+          type="hidden"
+          value="/wEPDwULLTIwNzIxNzM0MTMPZBYCZg9kFgICAw9kFgICAQ9kFggCAw88KwAFAQAPFgIeB1Zpc2libGVoZGQCBQ88KwAFAQAPFgIfAGhkZAIHDzwrAAUBAA8WAh8AaGRkAgkPZBYCAgMPZBYCAgYPDxYEHgRUZXh0BYMIPHAgc3R5bGU9ImZvbnQtc2l6ZSA6IDExcHg7IGNvbG9yIDogI2FhYSI+VGhlcmUgd2FzIGFuIGVycm9yIGRpc3BsYXlpbmcgdGhlIHRlc3RpbW9uaWFscy4gUGxlYXNlIDxBIEhSRUY9Im1haWx0bzppbmZvQHMqdy5jb20uYXU/U3ViamVjdD1FcnJvciBkaXNwbGF5aW5nIFRlc3RpbW9uaWFscyZib2R5PSBVUkw6IGh0dHBzOi8vc3N3LmNvbS5hdS9zc3cvU3RhbmRhcmRzL0JldHRlclNvZnR3YXJlU3VnZ2VzdGlvbnMvVEZTRGVidWdnZXJDYW52YXMuYXNweA0KDQolMEQgRXJyb3I6IEEgbmV0d29yay1yZWxhdGVkIG9yIGluc3RhbmNlLXNwZWNpZmljIGVycm9yIG9jY3VycmVkIHdoaWxlIGVzdGFibGlzaGluZyBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlci4gVGhlIHNlcnZlciB3YXMgbm90IGZvdW5kIG9yIHdhcyBub3QgYWNjZXNzaWJsZS4gVmVyaWZ5IHRoYXQgdGhlIGluc3RhbmNlIG5hbWUgaXMgY29ycmVjdCBhbmQgdGhhdCBTUUwgU2VydmVyIGlzIGNvbmZpZ3VyZWQgdG8gYWxsb3cgcmVtb3RlIGNvbm5lY3Rpb25zLiAocHJvdmlkZXI6IE5hbWVkIFBpcGVzIFByb3ZpZGVyLCBlcnJvcjogNDAgLSBDb3VsZCBub3Qgb3BlbiBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlcikiPnJlcG9ydCB0aGlzIGVycm9yPC9hPiB0byBTU1cgYW5kIGluY2x1ZGUgdGhlIGZvbGxvd2luZyB0ZXh0Ojxicj4gLSBBIG5ldHdvcmstcmVsYXRlZCBvciBpbnN0YW5jZS1zcGVjaWZpYyBlcnJvciBvY2N1cnJlZCB3aGlsZSBlc3RhYmxpc2hpbmcgYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIuIFRoZSBzZXJ2ZXIgd2FzIG5vdCBmb3VuZCBvciB3YXMgbm90IGFjY2Vzc2libGUuIFZlcmlmeSB0aGF0IHRoZSBpbnN0YW5jZSBuYW1lIGlzIGNvcnJlY3QgYW5kIHRoYXQgU1FMIFNlcnZlciBpcyBjb25maWd1cmVkIHRvIGFsbG93IHJlbW90ZSBjb25uZWN0aW9ucy4gKHByb3ZpZGVyOiBOYW1lZCBQaXBlcyBQcm92aWRlciwgZXJyb3I6IDQwIC0gQ291bGQgbm90IG9wZW4gYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIpPC9wPh8AZ2RkZHsAcUW8FnzpD1VQg/3oe9KW+dB+2yjOL/5roxGg2TlA"
+        />
+      </div>
+      <div>
+        <input
+          id="__VIEWSTATEGENERATOR"
+          name="__VIEWSTATEGENERATOR"
+          type="hidden"
+          value="68D90B02"
+        />
+      </div>
+      <div id="mainContainer">
+        <div></div>
+        <p>
+          <span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+            <a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+            <span>
+              <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards" title="SSW Standards">
+                SSW Standards
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a
+                href="/archive/standards/better-software-suggestions"
+                title="Better Software Suggestions"
+              >
+                Better Software Suggestions
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span> SSW Suggestions for TFS Debugger Canvas </span>
+            <a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+          </span>
+        </p>
+        <span id="ctl00_mainContentPlaceHolder_testimonial_lblError">
+          <p style="font-size: 11px; color: #aaa">
+            There was an error displaying the testimonials. Please
+            <a
+              href="mailto:info@s*w.com.au?Subject=Error displaying Testimonials&amp;body= URL: https://ssw.com.au/ssw/Standards/BetterSoftwareSuggestions/TFSDebuggerCanvas.aspx
 
-%0D Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)">
-       report this error
-      </a>
-      to SSW and include the following text:
-      <br/>
-      - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
-     </p>
-</span>
-     
-    <br/>
-<p>
-     Do you agree with them all? Are we missing some?
-     <a href="javascript:sendEmail('6D61696C746F3A696E666F407373772E636F6D2E61753F5375626A6563743D52756C6573253230746F253230426574746572253230536574757073')">
-      Let us know
-     </a>
-     what you think.
-    </p>
-<h3>
-     Cameron Skinner and Kael Rowan on the MSR (Microsoft Research) team have built this cool tool:
-     <a href="http://blogs.msdn.com/b/kaelr/archive/2011/05/21/introducing-debugger-canvas.aspx" target="_blank">
-      Debugger Canvas
-     </a>
-</h3>
-<div class="TableOfContents">
-<ol>
-<li>
-<a href="#better-name">
-        Give it a better name
-       </a>
-</li>
-<li>
-<a href="#add-icons">
-        Help me know which methods/properties/fields are used
-       </a>
-</li>
-<li>
-<a href="#click-title">
-        Help me know I can click in the title bar
-       </a>
-</li>
-<li>
-<a href="#ColorCode">
-        Allow me to color code each project
-       </a>
-</li>
-</ol>
-</div>
-<div id="mainContent">
-<ol>
-<li>
-<h2>
-<a name="better-name">
-</a>
-        Give it a better name
-       </h2>
-<p>
-        I think "Debugging Helicopter" might be a better name as it indicates that you are higher up... hovering above the code
-       </p>
-<p>
-        If not "Code Bubbles" would be better, but "Canvas" sounds for designers...
-       </p>
-<dl class="image">
-<dt>
-<img alt="debugging helicopter" src="/archive/standards/better-software-suggestions/images/debugging-helicopter.jpg"/>
-</dt>
-<dd>
-         Figure: This tool kind of is like hovering over the code
-        </dd>
-</dl>
-</li>
-<li>
-<h2>
-<a name="add-icons">
-</a>
-        Help me know which methods/properties/fields are used
-       </h2>
-<dl class="image">
-<dt>
-<img alt="debugging helicopter" src="/archive/standards/better-software-suggestions/images/debugger-add-icons.jpg"/>
-</dt>
-<dd>
-         Figure: Add icons
-        </dd>
-</dl>
-<p>
-        Seeing all the other methods/properties of a class when debugging is not super useful.
-       </p>
-<p>
-        Despite that, you may as well improve it by:
-       </p>
-<ul>
-<li>
-         Using the standard method/property /field icon
-        </li>
-<li>
-         Using some extra icon + bold if that method/property is used in the code bubble you are looking at
-        </li>
-</ul>
-</li>
-<li>
-<h2>
-<a name="click-title">
-</a>
-        Help me know I can click in the title bar
-       </h2>
-<dl class="goodImage">
-<dt>
-<img alt="debugging helicopter" src="/archive/standards/better-software-suggestions/images/good-click-title.jpg"/>
-</dt>
-<dd>
-         Figure: Good example - I know I can click in here because it is white
-        </dd>
-</dl>
-<dl class="badImage">
-<dt>
-<img alt="debugging helicopter" src="/archive/standards/better-software-suggestions/images/bad-click-title.jpg"/>
-</dt>
-<dd>
-         Figure: Bad Example - Missing a visual indication that you can even click in the title bar
-        </dd>
-</dl>
-</li>
-<li>
-<a name="ColorCode">
-</a>
-<h2>
-        Allow me to color code each project
-       </h2>
-<div class="greyBox">
-<p>
-         E.g.
+%0D Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)"
+            >
+              report this error
+            </a>
+            to SSW and include the following text:
+            <br />
+            - A network-related or instance-specific error occurred while
+            establishing a connection to SQL Server. The server was not found or
+            was not accessible. Verify that the instance name is correct and
+            that SQL Server is configured to allow remote connections.
+            (provider: Named Pipes Provider, error: 40 - Could not open a
+            connection to SQL Server)
+          </p>
+        </span>
+         
+        <br />
+        <p>
+          Do you agree with them all? Are we missing some?
+          <a
+            href="javascript:sendEmail('6D61696C746F3A696E666F407373772E636F6D2E61753F5375626A6563743D52756C6573253230746F253230426574746572253230536574757073')"
+          >
+            Let us know
+          </a>
+          what you think.
         </p>
-<ul>
-<li>
-          UI – red
-         </li>
-<li>
-          Business – orange
-         </li>
-<li>
-          DataAccess – Green
-         </li>
-</ul>
-</div>
-<p>
-        Then when we are dropping into each new bubble, we know what layer we are in.
-       </p>
-<p>
-        Even better automatically align them:
-       </p>
-<div class="greyBox">
-<p>
-         E.g.
+        <h3>
+          Cameron Skinner and Kael Rowan on the MSR (Microsoft Research) team
+          have built this cool tool:
+          <a
+            href="http://blogs.msdn.com/b/kaelr/archive/2011/05/21/introducing-debugger-canvas.aspx"
+            target="_blank"
+          >
+            Debugger Canvas
+          </a>
+        </h3>
+        <div class="TableOfContents">
+          <ol>
+            <li>
+              <a href="#better-name"> Give it a better name </a>
+            </li>
+            <li>
+              <a href="#add-icons">
+                Help me know which methods/properties/fields are used
+              </a>
+            </li>
+            <li>
+              <a href="#click-title">
+                Help me know I can click in the title bar
+              </a>
+            </li>
+            <li>
+              <a href="#ColorCode"> Allow me to color code each project </a>
+            </li>
+          </ol>
+        </div>
+        <div id="mainContent">
+          <ol>
+            <li>
+              <h2>
+                <a name="better-name"> </a>
+                Give it a better name
+              </h2>
+              <p>
+                I think "Debugging Helicopter" might be a better name as it
+                indicates that you are higher up... hovering above the code
+              </p>
+              <p>
+                If not "Code Bubbles" would be better, but "Canvas" sounds for
+                designers...
+              </p>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="debugging helicopter"
+                    src="/archive/standards/better-software-suggestions/images/debugging-helicopter.jpg"
+                  />
+                </dt>
+                <dd>
+                  Figure: This tool kind of is like hovering over the code
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h2>
+                <a name="add-icons"> </a>
+                Help me know which methods/properties/fields are used
+              </h2>
+              <dl class="image">
+                <dt>
+                  <img
+                    alt="debugging helicopter"
+                    src="/archive/standards/better-software-suggestions/images/debugger-add-icons.jpg"
+                  />
+                </dt>
+                <dd>Figure: Add icons</dd>
+              </dl>
+              <p>
+                Seeing all the other methods/properties of a class when
+                debugging is not super useful.
+              </p>
+              <p>Despite that, you may as well improve it by:</p>
+              <ul>
+                <li>Using the standard method/property /field icon</li>
+                <li>
+                  Using some extra icon + bold if that method/property is used
+                  in the code bubble you are looking at
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2>
+                <a name="click-title"> </a>
+                Help me know I can click in the title bar
+              </h2>
+              <dl class="goodImage">
+                <dt>
+                  <img
+                    alt="debugging helicopter"
+                    src="/archive/standards/better-software-suggestions/images/good-click-title.jpg"
+                  />
+                </dt>
+                <dd>
+                  Figure: Good example - I know I can click in here because it
+                  is white
+                </dd>
+              </dl>
+              <dl class="badImage">
+                <dt>
+                  <img
+                    alt="debugging helicopter"
+                    src="/archive/standards/better-software-suggestions/images/bad-click-title.jpg"
+                  />
+                </dt>
+                <dd>
+                  Figure: Bad Example - Missing a visual indication that you can
+                  even click in the title bar
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <a name="ColorCode"> </a>
+              <h2>Allow me to color code each project</h2>
+              <div class="greyBox">
+                <p>E.g.</p>
+                <ul>
+                  <li>UI – red</li>
+                  <li>Business – orange</li>
+                  <li>DataAccess – Green</li>
+                </ul>
+              </div>
+              <p>
+                Then when we are dropping into each new bubble, we know what
+                layer we are in.
+              </p>
+              <p>Even better automatically align them:</p>
+              <div class="greyBox">
+                <p>E.g.</p>
+                <ul>
+                  <li>UI – top</li>
+                  <li>Business – middle</li>
+                  <li>DataAccess – bottom</li>
+                </ul>
+              </div>
+              <p>This would be in the style of the architecture tools.</p>
+              <dl class="Image">
+                <dt>
+                  <img
+                    src="/archive/standards/better-software-suggestions/images/color-code-layers.jpg"
+                  />
+                </dt>
+                <dd>
+                  Figure: I would
+                  <strong> *love* </strong>
+                  to be able to color code the layers
+                </dd>
+              </dl>
+            </li>
+          </ol>
+        </div>
+        <h2>Acknowledgments</h2>
+        <p>
+          <a href="https://ssw.com.au/people/adam-cogan/"> Adam Cogan </a>
+          <br />
         </p>
-<ul>
-<li>
-          UI – top
-         </li>
-<li>
-          Business – middle
-         </li>
-<li>
-          DataAccess – bottom
-         </li>
-</ul>
-</div>
-<p>
-        This would be in the style of the architecture tools.
-       </p>
-<dl class="Image">
-<dt>
-<img src="/archive/standards/better-software-suggestions/images/color-code-layers.jpg"/>
-</dt>
-<dd>
-         Figure: I would
-         <strong>
-          *love*
-         </strong>
-         to be able to color code the layers
-        </dd>
-</dl>
-</li>
-</ol>
-</div>
-<h2>
-     Acknowledgments
-    </h2>
-<p>
-<a href="https://ssw.com.au/people/adam-cogan/">
-      Adam Cogan
-     </a>
-<br/>
-</p>
-<br/>
-</div>
-<div id="footer">
-<p class="callnow">
-     Call Now
-     <a href="tel:+61299533000">
-      +61 2 9953 3000
-     </a>
-</p>
-<span class="copyright">
-     © Copyright SSW 1990-2024. All Rights Reserved.
-    </span>
-<ul>
-<li class="first">
-<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F426574746572536F66747761726553756767657374696F6E732F544653446562756767657243616E7661732E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
-       Feedback to SSW
-      </a>
-</li>
-<li>
-<a href="/ssw/Company/AboutUs.aspx">
-       About SSW
-      </a>
-</li>
-<li>
-<a href="/ssw/Advertising/Default.aspx">
-       Advertising
-      </a>
-</li>
-<li class="last">
-<a href="/ssw/MenuMap.aspx">
-       Sitemap
-      </a>
-</li>
-</ul>
-<span class="proudly">
-<a href="http://www.ssw.com.au">
-      Proudly developed by SSW Sydney Web Design
-     </a>
-</span>
-<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
-<p class="serverName">
-     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
-    </p>
-</div>
-</form>
-<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
-<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
-<!-- / OptinMonster -->
-<div style="visibility: visible;">
-<div>
-</div>
-<div>
-</div>
-</div>
-</body>
+        <br />
+      </div>
+      <div id="footer">
+        <p class="callnow">
+          Call Now
+          <a href="tel:+61299533000"> +61 2 9953 3000 </a>
+        </p>
+        <span class="copyright">
+          © Copyright SSW 1990-2024. All Rights Reserved.
+        </span>
+        <ul>
+          <li class="first">
+            <a
+              class="email"
+              href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F426574746572536F66747761726553756767657374696F6E732F544653446562756767657243616E7661732E61737078')"
+              id="ctl00_fC_feedbackHyperLink"
+              tabindex="100"
+            >
+              Feedback to SSW
+            </a>
+          </li>
+          <li>
+            <a href="/ssw/Company/AboutUs.aspx"> About SSW </a>
+          </li>
+          <li>
+            <a href="/ssw/Advertising/Default.aspx"> Advertising </a>
+          </li>
+          <li class="last">
+            <a href="/ssw/MenuMap.aspx"> Sitemap </a>
+          </li>
+        </ul>
+        <span class="proudly">
+          <a href="http://www.ssw.com.au">
+            Proudly developed by SSW Sydney Web Design
+          </a>
+        </span>
+        <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+        <p class="serverName">
+          Our website is under constant continuous deployment. Last deployment
+          to AZIIS2022P03. Unable to retrieve changeset details.
+        </p>
+      </div>
+    </form>
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+    <!-- / OptinMonster -->
+    <div style="visibility: visible">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>
