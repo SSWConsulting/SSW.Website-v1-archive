@@ -41,16 +41,16 @@ def fix_breadrumbs():
             if file.endswith(".htm") or file.endswith(".html"):
                 with open(path, "r+", encoding='utf-8') as f:
                     soup = BeautifulSoup(f.read())
-                    if soup.find("span",id="ctl00_mainContentPlaceHolder_SiteMapPath1") is None:
+                    if soup.find("span",id="ctl00_ctl00_Content_SiteMapPath1") is None:
                         continue
-                    tag = soup.find("span",{'id': "ctl00_mainContentPlaceHolder_SiteMapPath1"})
+                    tag = soup.find("span",{'id': "ctl00_ctl00_Content_SiteMapPath1"})
                     for child in tag.findChildren("span", recursive=False):
                         a_tag = child.find("a")
                         if a_tag is None:
                             continue
                         href = a_tag['href']
                         if href.startswith("/ssw"):
-                            href = href.replace("/ssw", "/history", 1)
+                            href = href.replace("/ssw", "/archive", 1)
                             if href.endswith("Default.aspx"):
                                 href = href.replace("/Default.aspx", "")
                             if href.endswith("Browse.aspx"):
