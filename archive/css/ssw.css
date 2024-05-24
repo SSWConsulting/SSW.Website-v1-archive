@@ -3,7 +3,7 @@ img {
 }
 
 body {
-  background-image: url(/archived/images/background_dna.gif);
+  background-image: url(/archive/images/background_dna.gif);
   background-repeat: repeat-x;
   background-position: top;
   background-color: #555;
@@ -28,7 +28,7 @@ body {
 #subpage a:visited
 
 /* SEE: http://www.ssw.com.au/ssw/Standards/Rules/RulesToBetterWebsitesNavigation.aspx#visitedlink */
-  {
+{
   color: #2c4fa2;
   border-bottom: 1px dotted #2c4fa2;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .clearfix:after {
-  content: '.';
+  content: ".";
   display: block;
   height: 0;
   clear: both;
@@ -147,14 +147,14 @@ div.section {
 }
 
 #wrapper {
-  background-image: url(/archived/images/background.png);
+  background-image: url(/archive/images/background.png);
   background-repeat: repeat-y;
   background-position: top center;
   min-width: 800px;
 }
 
 * html div#wrapper {
-  background-image: url(/archived/images/backgroundIE6.gif);
+  background-image: url(/archive/images/backgroundIE6.gif);
   padding-left: 1px;
 }
 
@@ -171,7 +171,7 @@ div.section {
 }
 
 #subPane .section h1 {
-  background-image: url(/archived/images/box_header.gif);
+  background-image: url(/archive/images/box_header.gif);
   background-repeat: no-repeat;
   display: block;
   padding: 0 0 0 20px;
@@ -201,7 +201,7 @@ div.section {
   margin: 0;
   padding: 0 0 0 10px;
   font-size: 0.85em;
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   color: #333;
@@ -222,7 +222,7 @@ div.section {
 }
 
 .section .content {
-  background: url(/archived/images/bg_section.gif);
+  background: url(/archive/images/bg_section.gif);
   background-repeat: repeat-x;
   background-color: #fff;
   background-position: 0 -1px;
@@ -257,7 +257,12 @@ div.section {
 #mainPane .section h1,
 #mainPane .section h1 a:link,
 #mainPane .section h1 a:visited {
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   color: #fd1912;
   font-size: 22px;
   font-weight: normal;
@@ -335,10 +340,10 @@ input.q {
 
 */
 #subPane .testimonial blockquote p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 1.2em;
-  background-image: url(/archived/images/quote_open_home.gif);
+  background-image: url(/archive/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
@@ -366,11 +371,11 @@ Removed this as it was causing linebreak issues
 }
 
 #subPane .testimonial blockquote p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 1.2em;
-  background-image: url(/archived/images/quote_open_home.gif);
+  background-image: url(/archive/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
@@ -381,7 +386,7 @@ Removed this as it was causing linebreak issues
 }
 
 .popular li {
-  background: url(/archived/images/bullet_square.gif);
+  background: url(/archive/images/bullet_square.gif);
   background-repeat: no-repeat;
   padding-left: 15px;
   background-position: 0 9px;
@@ -393,19 +398,19 @@ Removed this as it was causing linebreak issues
 }
 
 .rbtop div {
-  background: url(/archived/images/tl.gif) no-repeat top left;
+  background: url(/archive/images/tl.gif) no-repeat top left;
 }
 
 .rbtop {
-  background: url(/archived/images/tr.gif) no-repeat top right;
+  background: url(/archive/images/tr.gif) no-repeat top right;
 }
 
 .rbbot div {
-  background: url(/archived/images/bl.gif) no-repeat bottom left;
+  background: url(/archive/images/bl.gif) no-repeat bottom left;
 }
 
 .rbbot {
-  background: url(/archived/images/br.gif) no-repeat bottom right;
+  background: url(/archive/images/br.gif) no-repeat bottom right;
 }
 
 .rbtop div,
@@ -438,7 +443,12 @@ p.daystogo {
 
 p.daystogo span {
   font-size: 1.4em;
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   color: #fd1912;
 }
 
@@ -488,7 +498,12 @@ p.presenter {
 
 #nav h1 {
   font-size: 20px;
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   font-weight: normal;
   color: #444;
   position: absolute;
@@ -513,7 +528,7 @@ div#headerMenu {
 }
 
 .dayleft {
-  font-family: 'trebuchet ms', arial, tahoma, verdana, sans-serif;
+  font-family: "trebuchet ms", arial, tahoma, verdana, sans-serif;
   font-size: 1.8em;
   color: #ea8d1e;
 }
@@ -542,7 +557,7 @@ div#headerMenu {
 #titleCase h1,
 #subpage #titleUX h1,
 #titleUX h3 {
-  font-family: 'trebuchet ms', tahoma, arial, verdana, sans-serif;
+  font-family: "trebuchet ms", tahoma, arial, verdana, sans-serif;
   font-size: 1.9em;
   font-weight: normal;
   color: #fff;
@@ -584,11 +599,11 @@ div#headerMenu {
 }
 
 #subpage .WebsiteDesign {
-  background: url(/archived/company/images/header_ux.jpg) no-repeat;
+  background: url(/archive/company/images/header_ux.jpg) no-repeat;
 }
 
 #subpage .ConsultingOptions {
-  background: url(/archived/images/header_scrum_temp.png) no-repeat;
+  background: url(/archive/images/header_scrum_temp.png) no-repeat;
   height: 208px;
   padding: 35px 20px 40px 475px;
   margin: 0;
@@ -620,7 +635,7 @@ div#headerMenu {
 }
 
 #subpage #titleUX ul li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -651,7 +666,7 @@ div#headerMenu {
 }
 
 #showcase ul.tech li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   margin-left: 1.5em;
@@ -659,7 +674,7 @@ div#headerMenu {
 }
 
 #showcase span.more {
-  background: url(/archived/Images/icon_link.gif) no-repeat 100% 80%;
+  background: url(/archive/Images/icon_link.gif) no-repeat 100% 80%;
   padding-right: 15px;
 }
 
@@ -670,7 +685,7 @@ div#headerMenu {
 /*jQuery light box*/
 #showcase .popeye {
   float: right;
-  background: url(/archived/company/Images/showcases/thum_template.jpg) no-repeat;
+  background: url(/archive/company/Images/showcases/thum_template.jpg) no-repeat;
   /*overflow:auto;    fallback popeye is scrolling! */
   height: 235px;
   /* set to max height of fallback popeye */
@@ -740,19 +755,19 @@ div#headerMenu {
 }
 
 #subpage #index li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 15px;
 }
 
-#maincontent p+ul li,
-#maincontentFull p+ul li,
-#maincontentCase p+ul li,
+#maincontent p + ul li,
+#maincontentFull p + ul li,
+#maincontentCase p + ul li,
 #maincontent ul li,
 #maincontentFull ul li,
 #maincontent ul li ul li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -768,7 +783,7 @@ div#headerMenu {
   padding-bottom: 0;
 }
 
-p+ul {
+p + ul {
   padding: 0 0 1em 0;
 }
 
@@ -777,7 +792,7 @@ p+ul {
 }
 
 #subpage #index li:hover {
-  background-image: url(/archived/images/arrow_tiny.gif);
+  background-image: url(/archive/images/arrow_tiny.gif);
 }
 
 #maincontentCase {
@@ -788,7 +803,7 @@ p+ul {
 }
 
 #maincontent ul li ul li {
-  background-image: url(/archived/images/bullet_square_grey.gif);
+  background-image: url(/archive/images/bullet_square_grey.gif);
 }
 
 #subpage #maincontent {
@@ -808,8 +823,7 @@ p+ul {
 
 #subpage #maincontent #maincontentFull
 
-/*Remove margin in case the full content is placed under #maincontent*/
-  {
+/*Remove margin in case the full content is placed under #maincontent*/ {
   padding: 0;
   float: none;
   width: 750px;
@@ -866,7 +880,7 @@ table.outline th {
   text-align: left;
 }
 
-table.outline th[scope='row'] {
+table.outline th[scope="row"] {
   background-color: #f0f0f0;
   color: #575757;
   width: 33%;
@@ -912,7 +926,7 @@ span.small {
 #maincontentCase h1,
 #maincontentFull h1,
 #showcase h1 {
-  font-family: 'trebuchet ms', tahoma, arial, verdana, sans-serif;
+  font-family: "trebuchet ms", tahoma, arial, verdana, sans-serif;
   font-size: 1.4em;
   line-height: 1.3em;
   font-weight: normal;
@@ -936,7 +950,7 @@ span.small {
 #subpage #maincontent ul.benefits li,
 #maincontentFull ul.benefits li,
 #subpage #titleUX ul.benefits li {
-  background-image: url(/archived/images/bullet_check.gif);
+  background-image: url(/archive/images/bullet_check.gif);
   background-repeat: no-repeat;
   background-position: 8px 9px;
   padding: 6px 0 0 30px;
@@ -994,7 +1008,7 @@ span.small {
 }
 
 #sidebar .rounded {
-  background-image: url(/archived/images/bg_rounded.gif);
+  background-image: url(/archive/images/bg_rounded.gif);
   background-repeat: no-repeat;
   background-position: left top;
   height: 27px;
@@ -1014,7 +1028,7 @@ div#sidebar .first {
   border: none;
 }
 
-#sidebar div.offer>div {
+#sidebar div.offer > div {
   padding: 0 0 0 42px;
   background-position: 0 5px;
   background-repeat: no-repeat;
@@ -1024,27 +1038,27 @@ div#sidebar .first {
 }
 
 #sidebar div.offer .onsite {
-  background-image: url(/archived/images/offer_onsite.png);
+  background-image: url(/archive/images/offer_onsite.png);
 }
 
 #sidebar div.offer .customworkshop {
-  background-image: url(/archived/images/offer_custom.png);
+  background-image: url(/archive/images/offer_custom.png);
 }
 
 #sidebar div.offer .trainday {
-  background-image: url(/archived/images/training_sun.png);
+  background-image: url(/archive/images/training_sun.png);
 }
 
 #sidebar div.offer .trainnight {
-  background-image: url(/archived/images/training_moon.png);
+  background-image: url(/archive/images/training_moon.png);
 }
 
 #sidebar div.offer .selfpaced {
-  background-image: url(/archived/images/offer_selfpaced.png);
+  background-image: url(/archive/images/offer_selfpaced.png);
 }
 
 #sidebar .offer h4 {
-  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-Serif;
   font-size: 15px;
   line-height: 18px;
   margin-bottom: 1px;
@@ -1075,10 +1089,10 @@ div#sidebar .first {
 }
 
 #sidebar .testimonial blockquote p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 1.2em;
-  background-image: url(/archived/images/quote_open_home.gif);
+  background-image: url(/archive/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
@@ -1091,50 +1105,50 @@ div#sidebar .first {
 }
 
 #sidebar .testimonial blockquote p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 1em;
-  background-image: url(/archived/images/quote_open_home.gif);
+  background-image: url(/archive/images/quote_open_home.gif);
   background-repeat: no-repeat;
   padding-top: 10px;
 }
 
 #sidebar .rbtop div {
-  background: url(/archived/images/tlw.gif) no-repeat top left;
+  background: url(/archive/images/tlw.gif) no-repeat top left;
 }
 
 #sidebar .rbtop {
-  background: url(/archived/images/trw.gif) no-repeat top right;
+  background: url(/archive/images/trw.gif) no-repeat top right;
 }
 
 #sidebar .rbbot div {
-  background: url(/archived/images/blw.gif) no-repeat bottom left;
+  background: url(/archive/images/blw.gif) no-repeat bottom left;
 }
 
 #sidebar .rbbot {
-  background: url(/archived/images/brw.gif) no-repeat bottom right;
+  background: url(/archive/images/brw.gif) no-repeat bottom right;
 }
 
 /*end sidebar testimonial*/
 #maincontent .accordionHeader {
   padding: 5px 5px 7px 30px;
   margin: 5px 0;
-  background-image: url(/archived/company/images/accordion_headers.gif);
+  background-image: url(/archive/company/images/accordion_headers.gif);
   background-repeat: no-repeat;
 }
 
 #maincontent .accordionHeaderSelected {
   padding: 5px 5px 7px 30px;
   margin-top: 5px;
-  background-image: url(/archived/company/images/accordion_headers_selected.gif);
+  background-image: url(/archive/company/images/accordion_headers_selected.gif);
   background-repeat: no-repeat;
 }
 
 #maincontentCase .accordionHeader {
   padding: 5px 5px 7px 30px;
   margin-top: 5px;
-  background-image: url(/archived/company/images/accordion_headers350.gif);
+  background-image: url(/archive/company/images/accordion_headers350.gif);
   background-repeat: no-repeat;
 }
 
@@ -1163,7 +1177,7 @@ div#sidebar .first {
 #maincontentFull .accordionHeader {
   padding: 5px 5px 7px 30px;
   margin-top: 15px;
-  background-image: url(/archived/company/images/accordion_headers_full.gif);
+  background-image: url(/archive/company/images/accordion_headers_full.gif);
   background-repeat: no-repeat;
 }
 
@@ -1182,11 +1196,11 @@ div#sidebar .first {
 }
 
 #sidebar .servicesTestimonial blockquote p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: normal;
   font-size: 1.2em;
-  background: url(/archived/images/quote_open_services.png) no-repeat;
+  background: url(/archive/images/quote_open_services.png) no-repeat;
   padding-top: 5px;
 }
 
@@ -1218,15 +1232,15 @@ a[target^="_blank"]:after
 
 */
 /* Cheat way to remove inline images */
-img[src$='LeaveSite.gif'],
-img[src$='leavesite.gif'],
-img[src$='NewWindow.gif'],
-img[src$='IconPdf.gif'],
-img[src$='NewWindow.gif'],
-img[src$='IconDoc.gif'],
-img[src$='iconwmv.gif'],
-img[src$='iconAudio.gif'],
-img[src$='IconPPT.gif'] {
+img[src$="LeaveSite.gif"],
+img[src$="leavesite.gif"],
+img[src$="NewWindow.gif"],
+img[src$="IconPdf.gif"],
+img[src$="NewWindow.gif"],
+img[src$="IconDoc.gif"],
+img[src$="iconwmv.gif"],
+img[src$="iconAudio.gif"],
+img[src$="IconPPT.gif"] {
   display: none;
 }
 
@@ -1298,7 +1312,7 @@ dl.imgRight dd {
 /* *  CustomError 404 * */
 /* ******************** */
 #frmSearch {
-  background-image: url(/archived/Images/404page.jpg);
+  background-image: url(/archive/Images/404page.jpg);
   display: block;
   background-repeat: no-repeat;
   height: 400px;
@@ -1351,7 +1365,7 @@ Div.quote {
   background: #eee;
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-  background-image: url(/archived/images/quote_open.gif);
+  background-image: url(/archive/images/quote_open.gif);
   background-repeat: no-repeat;
   background-position: 10px 5px;
   padding: 10px 10px 0;
@@ -1361,7 +1375,7 @@ Div.quote {
 Div.quoteRightWrap blockquote,
 Div.quote blockquote {
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 120%;
   margin: 0 0 0 15px;
   font-style: italic;
@@ -1369,7 +1383,7 @@ Div.quote blockquote {
 
 Div.quoteRightWrap blockquote p {
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 120%;
   margin: 0 0 0 15px;
   font-style: italic;
@@ -1560,7 +1574,7 @@ dl.badImage dd {
 }
 
 dl.goodImage dd {
-  background-image: url(/archived/Standards/Rules/images/Good.gif);
+  background-image: url(/archive/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
@@ -1574,7 +1588,7 @@ dl.goodImage dd {
 
 }*/
 dl.badImage dd {
-  background-image: url(/archived/Standards/Rules/images/Bad.gif);
+  background-image: url(/archive/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
@@ -1611,7 +1625,7 @@ dl.badImage dd {
 }
 
 .loginProgressHeader {
-  background: url(/archived/images/sprite.png) repeat-x 0 0;
+  background: url(/archive/images/sprite.png) repeat-x 0 0;
   border-color: #808080 #808080 #ccc;
   border-style: solid;
   border-width: 0 1px 1px;
@@ -1776,13 +1790,13 @@ dl.badCode dt {
 
 #maincontentFull dl.goodCode dd {
   background-color: transparent;
-  background-image: url(/archived/Standards/Rules/images/Good.gif);
+  background-image: url(/archive/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
 }
 
 #maincontentFull dl.badCode dd {
   background-color: transparent;
-  background-image: url(/archived/Standards/Rules/images/Bad.gif);
+  background-image: url(/archive/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
 }
 
@@ -1820,7 +1834,8 @@ a.strike {
 }
 
 #maincontentFull .multimediaBox {
-  background: #ffc url(/ssw/Standards/Rules/Images/icon-multimedia.jpg) no-repeat scroll 5px 5px;
+  background: #ffc url(/ssw/Standards/Rules/Images/icon-multimedia.jpg)
+    no-repeat scroll 5px 5px;
   border: 1px dashed #999;
   margin: 5px 10px;
   padding: 10px 5px 15px 100px;
@@ -1828,7 +1843,7 @@ a.strike {
 
 #maincontentFull .infoBox {
   background-color: #eee;
-  background-image: url(/archived/Images/icon_info.gif);
+  background-image: url(/archive/Images/icon_info.gif);
   background-repeat: no-repeat;
   background-position: 5px 5px;
   border: 1px dashed #999;
@@ -1855,7 +1870,7 @@ a.strike {
 
 .interInfoBoxSide {
   background-color: #eee;
-  background-image: url(/archived/Images/Icon_attention.png);
+  background-image: url(/archive/Images/Icon_attention.png);
   background-repeat: no-repeat;
   background-position: 10px 10px;
   border: 1px dashed #999;
@@ -1875,7 +1890,7 @@ a.strike {
   padding-left: 0;
   padding-top: 5px;
   color: #fd1912;
-  font-family: 'trebuchet ms', tahoma, arial, verdana, sans-serif;
+  font-family: "trebuchet ms", tahoma, arial, verdana, sans-serif;
 }
 
 #maincontentFull div.quoteRightWrap,
@@ -1906,7 +1921,7 @@ div.quoteRightWrapImg {
   color: #555;
 }
 
-.NETUGdownload input[type='text'] {
+.NETUGdownload input[type="text"] {
   width: 200px;
   padding: 5px;
 }
@@ -1920,7 +1935,8 @@ div.quoteRightWrapImg {
 
 .NETUGdownload a#newsletterSignUpButton {
   display: inline-block;
-  background: transparent url(/ssw/NETUG/Images/NEWbutton.jpg) no-repeat top left;
+  background: transparent url(/ssw/NETUG/Images/NEWbutton.jpg) no-repeat top
+    left;
   width: 140px;
   height: 50px;
   border-bottom: 0;
@@ -1949,7 +1965,7 @@ div.quoteRightWrapImg {
   background: #eee;
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-  background-image: url(/archived/images/quote_open.gif);
+  background-image: url(/archive/images/quote_open.gif);
   background-repeat: no-repeat;
   background-position: 10px 5px;
   padding: 10px;
@@ -1958,7 +1974,7 @@ div.quoteRightWrapImg {
 
 #maincontentFull .testimonialsOurClients blockquote {
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 120%;
   font-style: italic;
 }
@@ -2141,7 +2157,7 @@ img.regist_grey {
   margin-bottom: 20px;
 }
 
-#eventsummary ul.schedule>li {
+#eventsummary ul.schedule > li {
   height: 40px;
   border-top: 1px solid #ccc;
   padding: 1px 0;
@@ -2237,7 +2253,7 @@ span.bookNow {
   border: none;
 }
 
-#eventsummary ul.schedule>li strong {
+#eventsummary ul.schedule > li strong {
   background: #e5e5e5 url(/ssw/images/schedulebg.png) no-repeat right center;
   display: block;
   float: left;
@@ -2249,18 +2265,18 @@ span.bookNow {
   padding: 0 0 0 12px;
 }
 
-#eventsummary ul.conference>li strong {
+#eventsummary ul.conference > li strong {
   line-height: normal;
   height: auto;
   padding: 5px 0 8px 12px;
 }
 
-#eventsummary ul.conference>li.flag {
+#eventsummary ul.conference > li.flag {
   height: 50px;
   line-height: 50px;
 }
 
-#eventsummary ul.conference>li.flag strong {
+#eventsummary ul.conference > li.flag strong {
   padding: 10px 0 8px 12px;
   width: 150px;
 }
@@ -2287,11 +2303,11 @@ span.bookNow {
   color: Red;
 }
 
-#eventsummary ul.conference>li {
+#eventsummary ul.conference > li {
   height: 40px;
 }
 
-#eventsummary ul.conference>li strong span {
+#eventsummary ul.conference > li strong span {
   text-transform: uppercase;
   color: #888;
   font-size: 9px;
@@ -2427,7 +2443,7 @@ span.bookNow {
 #maincontent ul.events a.title {
   font-size: 15px;
   font-weight: bold;
-  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-Serif;
   color: #333;
   line-height: 20px;
   border: none;
@@ -2888,7 +2904,7 @@ a.lightbox-hover {
   padding: 5px 0;
 }
 
-.tooltip>.hover {
+.tooltip > .hover {
   display: none;
   width: 370px;
   position: absolute;
@@ -2897,12 +2913,12 @@ a.lightbox-hover {
 }
 
 .hovergroup {
-  background: url(/archived/images/tooltipbg.png) no-repeat top left transparent;
+  background: url(/archive/images/tooltipbg.png) no-repeat top left transparent;
   padding: 0 30px 25px 15px;
 }
 
 .hoverend {
-  background: url(/archived/images/tooltipend.png) no-repeat top left transparent;
+  background: url(/archive/images/tooltipend.png) no-repeat top left transparent;
   height: 15px;
   width: 100%;
 }
@@ -2947,7 +2963,7 @@ a.lightbox-hover {
 }
 
 /* Temp Video Indexing */
-tr.parent+tr.child {
+tr.parent + tr.child {
   display: none;
   background-color: #f6f6f6;
 }
@@ -2987,7 +3003,8 @@ ul.homepage-special-list li:hover {
 }
 
 ul.homepage-special-list li h3 {
-  background: url(/archived/consulting/images/homepage_services.jpg) repeat scroll 0 0 transparent;
+  background: url(/archive/consulting/images/homepage_services.jpg) repeat
+    scroll 0 0 transparent;
   border-color: #aaa #fff #fff #aaa;
   border-style: solid;
   border-width: 1px;
@@ -3087,7 +3104,8 @@ ul.services-rollover li:hover {
 }
 
 .homepage-buttons a {
-  background: transparent url(/ssw/images/homepage_buttons3.jpg) no-repeat bottom;
+  background: transparent url(/ssw/images/homepage_buttons3.jpg) no-repeat
+    bottom;
   width: 158px;
   height: 158px;
   display: inline-block;
@@ -3137,16 +3155,18 @@ a#homepage-products {
 }
 
 .ConsultingOptionsButtons {
-  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg) repeat-x top left;
+  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
+    repeat-x top left;
   padding-top: 16px;
   padding-left: 20px;
 }
 
 .ConsultingOptions-Text {
-  background: transparent url(/ssw/consulting/images/consulting-optionsTextBG.jpg) repeat-x top left;
+  background: transparent
+    url(/ssw/consulting/images/consulting-optionsTextBG.jpg) repeat-x top left;
 }
 
-.ConsultingOptions-Text>div {
+.ConsultingOptions-Text > div {
   padding: 10px 45px;
   min-height: 350px;
 }
@@ -3157,7 +3177,7 @@ a#homepage-products {
   margin-left: 15px;
 }
 
-.ConsultingOptions-Text>div>div {
+.ConsultingOptions-Text > div > div {
   padding-top: 15px;
   border-top: dashed 1px #ddd;
 }
@@ -3210,7 +3230,9 @@ a#homepage-products {
 .ConsultingOptions-Text table.burndown h4 {
   font-size: 18px;
   color: #eee;
-  font-family: Trebuchet MS, Arial;
+  font-family:
+    Trebuchet MS,
+    Arial;
   padding-top: 20px;
   margin-bottom: 15px;
   border-color: #eee;
@@ -3226,7 +3248,8 @@ a#homepage-products {
 }
 
 #subpage .ConsultingOptionsButtons a.expert {
-  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg) no-repeat -16px -294px;
+  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
+    no-repeat -16px -294px;
   height: 139px;
   width: 378px;
   display: inline-block;
@@ -3235,7 +3258,8 @@ a#homepage-products {
 }
 
 #subpage .ConsultingOptionsButtons a.team {
-  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg) no-repeat -401px -294px;
+  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
+    no-repeat -401px -294px;
   height: 139px;
   width: 378px;
   display: inline-block;
@@ -3244,22 +3268,25 @@ a#homepage-products {
 }
 
 #subpage .ConsultingOptionsButtons a.expert:hover {
-  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg) no-repeat -16px -155px;
+  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
+    no-repeat -16px -155px;
 }
 
 #subpage .ConsultingOptionsButtons a.team:hover {
-  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg) no-repeat -401px -155px;
+  background: transparent url(/ssw/consulting/images/consulting-optionsBG.jpg)
+    no-repeat -401px -155px;
 }
 
 .consulting-image {
-  background: transparent url(/ssw/company/Images/showcases/thum_template.jpg) no-repeat;
+  background: transparent url(/ssw/company/Images/showcases/thum_template.jpg)
+    no-repeat;
   padding: 5px 10px 20px 5px;
   float: right;
   width: auto;
 }
 
 #subpage #titleUX ul.arrow li {
-  background-image: url(/archived/images/arrow_tiny.gif);
+  background-image: url(/archive/images/arrow_tiny.gif);
 }
 
 .image-caption {
@@ -3278,13 +3305,14 @@ a#homepage-products {
   padding: 1px 0 1px 0;
 }
 
-#maincontent .eventpast>ul {
+#maincontent .eventpast > ul {
   border-top: solid 1px #ccc;
 }
 
-#maincontent .eventpast ul>li strong {
+#maincontent .eventpast ul > li strong {
   float: left;
-  background: url(/archived/images/schedulebg.png) no-repeat scroll right center #e5e5e5;
+  background: url(/archive/images/schedulebg.png) no-repeat scroll right center
+    #e5e5e5;
   padding: 5px 15px;
   width: 120px;
   font-size: 12px;
@@ -3306,7 +3334,7 @@ a#homepage-products {
   line-height: 50px;
 }
 
-#maincontent .eventpast ul>li strong span {
+#maincontent .eventpast ul > li strong span {
   color: #777;
   font-size: 9px;
   padding: 0;
@@ -3325,7 +3353,7 @@ p.contactActionPhone {
   font-size: 18px;
   float: left;
   padding: 5px 0 0 44px;
-  background: url(/archived/company/Images/contactIcons.png) no-repeat 0 0;
+  background: url(/archive/company/Images/contactIcons.png) no-repeat 0 0;
   height: 26px;
   color: #575757;
   margin-top: 10px;
@@ -3342,7 +3370,7 @@ p.contactActionPhone {
 
 h2.offices,
 h3.offices {
-  background: url(/archived/company/Images/officesHeading_bg.png) repeat-x 0 0;
+  background: url(/archive/company/Images/officesHeading_bg.png) repeat-x 0 0;
   height: 20px;
   width: 100%;
   font-weight: bold;
@@ -3367,7 +3395,7 @@ h2.offices div.chi,
 h2.offices div.uk,
 h2.offices div.mal,
 h2.offices div.bra {
-  background: url(/archived/company/Images/flags.png) no-repeat 0 0;
+  background: url(/archive/company/Images/flags.png) no-repeat 0 0;
   width: 32px;
   height: 24px;
   display: block;
@@ -3396,7 +3424,7 @@ h2.offices div.aus {
 }
 
 a.directions {
-  background: url(/archived/company/Images/earth_view.png) no-repeat 0 0;
+  background: url(/archive/company/Images/earth_view.png) no-repeat 0 0;
   padding-left: 20px;
 }
 
@@ -3408,7 +3436,8 @@ a.directions {
 }
 
 .contactForm a.button {
-  background: url(/archived/shop/images/button.png) no-repeat scroll right top transparent;
+  background: url(/archive/shop/images/button.png) no-repeat scroll right top
+    transparent;
   border: 0 none !important;
   color: white;
   cursor: pointer;
@@ -3424,7 +3453,8 @@ a.directions {
 }
 
 .contactForm a.button span {
-  background: url(/archived/shop/images/button.png) no-repeat scroll left top transparent;
+  background: url(/archive/shop/images/button.png) no-repeat scroll left top
+    transparent;
   display: inline-block;
   height: 30px;
   line-height: 29px;
@@ -3448,8 +3478,8 @@ a.directions {
   font-size: 14px;
 }
 
-.contactForm input[type='text'],
-input[type='password'] {
+.contactForm input[type="text"],
+input[type="password"] {
   font-size: 14px;
   margin: 0 0 10px;
   padding: 3px;
@@ -3464,12 +3494,14 @@ input[type='password'] {
 }
 
 .creditcard {
-  background: url(/archived/company/Images/creditcards.png) no-repeat scroll left center transparent;
+  background: url(/archive/company/Images/creditcards.png) no-repeat scroll left
+    center transparent;
   line-height: 24px;
 }
 
 #maincontent ul.greenTicks li {
-  background: url(/archived/images/tick_small.png) no-repeat scroll left center transparent;
+  background: url(/archive/images/tick_small.png) no-repeat scroll left center
+    transparent;
   padding: 3px 5px 3px 30px;
 }
 
@@ -3583,7 +3615,8 @@ th span.auServer {
 }
 
 .mainTestimonial {
-  background: url(images/mainTestimonial_bg.png) no-repeat scroll 5px 20px #f8f8f8;
+  background: url(images/mainTestimonial_bg.png) no-repeat scroll 5px 20px
+    #f8f8f8;
   font-size: 14px;
   line-height: 20px;
   margin-top: -15px;
@@ -3695,23 +3728,27 @@ th span.auServer {
   margin: 20px auto;
   padding: 10px 0;
   clear: both;
-  background: transparent url(/ssw/Testimonials/images/testimonial_top.png) no-repeat top left;
+  background: transparent url(/ssw/Testimonials/images/testimonial_top.png)
+    no-repeat top left;
 }
 
 .testimonials-bg {
-  background: transparent url(/ssw/Testimonials/images/testimonial_repeat.png) repeat-y top left;
+  background: transparent url(/ssw/Testimonials/images/testimonial_repeat.png)
+    repeat-y top left;
   font-size: 12px;
   font-style: italic;
   padding-left: 10px;
 }
 
 .testimonials-content {
-  background: transparent url(/ssw/Testimonials/images/testimonial_quote.png) no-repeat top left;
+  background: transparent url(/ssw/Testimonials/images/testimonial_quote.png)
+    no-repeat top left;
   padding: 10px 20px 0 50px;
 }
 
 .testimonials-content-bottom {
-  background: transparent url(/ssw/Testimonials/images/testimonial_bottom.png) no-repeat top left;
+  background: transparent url(/ssw/Testimonials/images/testimonial_bottom.png)
+    no-repeat top left;
   height: 25px;
 }
 
@@ -3725,7 +3762,10 @@ th span.auServer {
 .testimonials-source-name {
   display: block;
   font-size: 14px;
-  font-family: Trebuchet MS, Arial, Sans-Serif;
+  font-family:
+    Trebuchet MS,
+    Arial,
+    Sans-Serif;
   color: #ea8d1e;
 }
 
@@ -3752,7 +3792,8 @@ th span.auServer {
 }
 
 .testimonials-logo {
-  background: url(/archived/Testimonials/images/testimonial_logo.png) no-repeat right top;
+  background: url(/archive/Testimonials/images/testimonial_logo.png) no-repeat
+    right top;
   width: 67px;
   height: 57px;
   float: right;
@@ -3763,7 +3804,7 @@ th span.auServer {
 }
 
 #subpage div.CMS-buttons a {
-  background-image: url(/archived/consulting/images/CMS-buttons.jpg);
+  background-image: url(/archive/consulting/images/CMS-buttons.jpg);
   width: 205px;
   height: 94px;
   display: block;
@@ -3852,7 +3893,7 @@ div.CMS-buttons a.CMS-DNN:focus {
   color: #fff;
 }
 
-#headerMenu li.hide>a.rsmLink {
+#headerMenu li.hide > a.rsmLink {
   display: none;
 }
 
@@ -3931,7 +3972,7 @@ div.CMS-buttons a.CMS-DNN:focus {
 }
 
 #headerMenu li.Popular {
-  background: url(/archived/images/popular.png) no-repeat 120px;
+  background: url(/archive/images/popular.png) no-repeat 120px;
 }
 
 #headerMenu .NoChild .rsmLink:hover {
@@ -4000,7 +4041,7 @@ div.scrum-flow {
 }
 
 div.scrum-flow-one {
-  background: url(/archived/consulting/images/ScrumFlow-1.png) top left;
+  background: url(/archive/consulting/images/ScrumFlow-1.png) top left;
   width: 171px;
   height: 108px;
   display: inline-block;
@@ -4009,11 +4050,11 @@ div.scrum-flow-one {
 }
 
 div.scrum-flow div.scrum-flow-one:hover {
-  background: url(/archived/consulting/images/ScrumFlow-1.png) bottom left;
+  background: url(/archive/consulting/images/ScrumFlow-1.png) bottom left;
 }
 
 div.scrum-flow-two {
-  background: url(/archived/consulting/images/ScrumFlow-2.png) top left;
+  background: url(/archive/consulting/images/ScrumFlow-2.png) top left;
   width: 172px;
   height: 108px;
   position: relative;
@@ -4023,11 +4064,11 @@ div.scrum-flow-two {
 }
 
 div.scrum-flow div.scrum-flow-two:hover {
-  background: url(/archived/consulting/images/ScrumFlow-2.png) bottom left;
+  background: url(/archive/consulting/images/ScrumFlow-2.png) bottom left;
 }
 
 div.scrum-flow-three {
-  background: url(/archived/consulting/images/ScrumFlow-3.png) top left;
+  background: url(/archive/consulting/images/ScrumFlow-3.png) top left;
   width: 173px;
   height: 108px;
   position: relative;
@@ -4037,11 +4078,11 @@ div.scrum-flow-three {
 }
 
 div.scrum-flow div.scrum-flow-three:hover {
-  background: url(/archived/consulting/images/ScrumFlow-3.png) bottom left;
+  background: url(/archive/consulting/images/ScrumFlow-3.png) bottom left;
 }
 
 div.scrum-flow-four {
-  background: url(/archived/consulting/images/ScrumFlow-4.png) top left;
+  background: url(/archive/consulting/images/ScrumFlow-4.png) top left;
   width: 173px;
   height: 108px;
   position: relative;
@@ -4051,11 +4092,11 @@ div.scrum-flow-four {
 }
 
 div.scrum-flow div.scrum-flow-four:hover {
-  background: url(/archived/consulting/images/ScrumFlow-4.png) bottom left;
+  background: url(/archive/consulting/images/ScrumFlow-4.png) bottom left;
 }
 
 div.scrum-flow-five {
-  background: url(/archived/consulting/images/ScrumFlow-5.png) top left;
+  background: url(/archive/consulting/images/ScrumFlow-5.png) top left;
   width: 153px;
   height: 108px;
   position: absolute;
@@ -4066,12 +4107,13 @@ div.scrum-flow-five {
 }
 
 div.scrum-flow div.scrum-flow-five:hover {
-  background: url(/archived/consulting/images/ScrumFlow-5.png) bottom left;
+  background: url(/archive/consulting/images/ScrumFlow-5.png) bottom left;
 }
 
 #maincontentFull .scrum #tabs ul.ui-tabs-nav {
   border: none;
-  background: url(/archived/consulting/images/ScrumFlow_TabBG.png) transparent no-repeat 0 -2px;
+  background: url(/archive/consulting/images/ScrumFlow_TabBG.png) transparent
+    no-repeat 0 -2px;
   width: 204px;
   height: 100%;
 }
@@ -4083,7 +4125,8 @@ div.scrum-flow div.scrum-flow-five:hover {
 }
 
 #maincontentFull .scrum #tabs ul.ui-tabs-nav li.ui-state-active a {
-  background: url(/archived/consulting/images/ScrumFlow_TabSelect.png) transparent no-repeat top center;
+  background: url(/archive/consulting/images/ScrumFlow_TabSelect.png)
+    transparent no-repeat top center;
   border-top: none;
   width: 100%;
 }
@@ -4129,7 +4172,9 @@ div.scrum-flow div.scrum-flow-five:hover {
 #maincontentFull .scrum .ui-tabs .ui-tabs-panel h2 {
   color: red;
   font-size: 18px;
-  font-family: trebuchet ms, arial;
+  font-family:
+    trebuchet ms,
+    arial;
   display: block;
   border-bottom: 1px dashed #ccc;
   font-weight: normal;
@@ -4149,7 +4194,7 @@ div.scrum-flow div.scrum-flow-five:hover {
 }
 
 div.ScrumHeader {
-  background: url(/archived/consulting/images/ScrumFlowheader.png);
+  background: url(/archive/consulting/images/ScrumFlowheader.png);
   height: 325;
   width: 799;
 }
@@ -4196,7 +4241,8 @@ div.ScrumHeader ul {
 
 .definition-table {
   width: 593px;
-  background: url(/archived/consulting/images/ScrumFlow-DropBG.png) transparent no-repeat bottom left;
+  background: url(/archive/consulting/images/ScrumFlow-DropBG.png) transparent
+    no-repeat bottom left;
   padding: 1px 20px 20px 20px;
 }
 
@@ -4285,7 +4331,7 @@ div.ScrumHeader ul {
 /* End of Facebook control */
 h2.calloutUG {
   font-size: 12px;
-  background: url(/archived/images/calendar-ug.png) #f0f0f0 no-repeat 10px center;
+  background: url(/archive/images/calendar-ug.png) #f0f0f0 no-repeat 10px center;
   padding: 10px 10px 10px 60px;
   color: #333;
   margin-bottom: 20px;
@@ -4393,7 +4439,7 @@ p#IAmAfter {
 /*- -*/
 blockquote.quote p {
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 0 0 15px;
   font-style: italic;
 }

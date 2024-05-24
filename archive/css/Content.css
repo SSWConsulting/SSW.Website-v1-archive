@@ -41,7 +41,7 @@ div#content ul {
 }
 
 .clearfix:after {
-  content: '.';
+  content: ".";
   display: block;
   height: 0;
   clear: both;
@@ -65,7 +65,7 @@ h2,
     	padding: 3px;
 
     	margin: 20px 0 10px 0;*/
-  background: url(/archived/images/h2.gif) #f0f0f0;
+  background: url(/archive/images/h2.gif) #f0f0f0;
   background-repeat: no-repeat;
   margin: 10px 0;
   padding: 8px 30px;
@@ -190,7 +190,7 @@ table.clsSSWTableForDiagnostics {
 }
 
 .clsSSWTableForDiagnosticsHeader {
-  font-family: 'Tahoma';
+  font-family: "Tahoma";
   font-size: 9pt;
   color: #039;
   border: 1px #039 solid;
@@ -540,7 +540,7 @@ TABLE.tblScreenshots {
 
 TABLE.tblScreenshots TR TD {
   background: #f5f5f5;
-  background-image: url(/archived/CodeAuditor/images/ScreenPartialBg.gif);
+  background-image: url(/archive/CodeAuditor/images/ScreenPartialBg.gif);
   background-repeat: repeat-x;
   background-position: bottom left;
 }
@@ -579,7 +579,7 @@ Div.quoteRightWrapImg {
   background: #eee;
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
-  background-image: url(/archived/images/quote_open.gif);
+  background-image: url(/archive/images/quote_open.gif);
   background-repeat: no-repeat;
   background-position: 10px 5px;
   padding: 10px;
@@ -590,7 +590,7 @@ Div.quoteRightWrap blockquote,
 Div.quote blockquote,
 Div.quoteRightWrapImg blockquote {
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 120%;
   margin: 0 0 0 15px;
   font-style: italic;
@@ -600,7 +600,7 @@ Div.quoteRightWrap blockquote p,
 Div.quoteRightWrapImg blockquote p,
 Div.quote blockquote p {
   text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 120%;
   margin: 0 0 0 15px;
   font-style: italic;
@@ -672,7 +672,7 @@ div#mainContent ol li h2 {
 }
 
 #mainContainer ul li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 8px;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -686,11 +686,11 @@ div#mainContent ol li h2 {
 }
 
 #mainContainer ul li ul li {
-  background-image: url(/archived/images/bullet_square_grey.gif);
+  background-image: url(/archive/images/bullet_square_grey.gif);
 }
 
 #mainContainer ol li ul ul li {
-  background-image: url(/archived/images/bullet_square_grey.gif);
+  background-image: url(/archive/images/bullet_square_grey.gif);
 }
 
 #mainContainer ul li ol li {
@@ -698,10 +698,10 @@ div#mainContent ol li h2 {
   padding-left: 0;
 }
 
-#maincontent p+ul li,
-#maincontentFull p+ul li,
-#maincontentCase p+ul li {
-  background-image: url(/archived/images/bullet_square.gif);
+#maincontent p + ul li,
+#maincontentFull p + ul li,
+#maincontentCase p + ul li {
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   margin-left: 1.5em;
@@ -719,7 +719,7 @@ div#mainContent ol li h2 {
 }
 
 .main-left ul li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   margin-left: 10px;
@@ -788,7 +788,7 @@ TABLE.floatRight {
   border: 1px dashed #999;
   background: #ffc;
   margin: 5px 10px;
-  background-image: url(/archived/Standards/Rules/Images/icon-multimedia.jpg);
+  background-image: url(/archive/Standards/Rules/Images/icon-multimedia.jpg);
   padding: 10px 5px 15px 100px;
   background-repeat: no-repeat;
   background-position: 5px 5px;
@@ -807,7 +807,7 @@ TABLE.floatRight {
   width: 500px;
   background-color: #eee;
   padding: 10px;
-  background-image: url(/archived/Images/icon_info.gif);
+  background-image: url(/archive/Images/icon_info.gif);
   background-repeat: no-repeat;
   background-position: 5px 5px;
   border: 1px dashed #999;
@@ -839,7 +839,7 @@ TABLE.floatRight {
   width: 500px;
   background-color: #eee;
   padding: 10px;
-  background-image: url(/archived/company/Images/Flags/China.jpg);
+  background-image: url(/archive/company/Images/Flags/China.jpg);
   background-repeat: no-repeat;
   background-position: 10px 10px;
   border: 1px dashed #999;
@@ -863,7 +863,7 @@ TABLE.floatRight {
 .interInfoBox {
   width: 550px;
   background-color: #eee;
-  background-image: url(/archived/Images/Icon_attention.png);
+  background-image: url(/archive/Images/Icon_attention.png);
   background-repeat: no-repeat;
   background-position: 10px 10px;
   border: 1px dashed #999;
@@ -894,7 +894,7 @@ TABLE.floatRight {
 .interInfoBoxSide {
   width: auto;
   background-color: #eee;
-  background-image: url(/archived/Images/Icon_attention.png);
+  background-image: url(/archive/Images/Icon_attention.png);
   background-repeat: no-repeat;
   background-position: 10px 10px;
   border: 1px dashed #999;
@@ -921,7 +921,7 @@ TABLE.floatRight {
   width: 200px;
   background-color: #eee;
   padding: 10px;
-  background-image: url(/archived/Images/icon_lightbulb.png);
+  background-image: url(/archive/Images/icon_lightbulb.png);
   background-repeat: no-repeat;
   background-position: 5px 5px;
   border: 1px dashed #999;
@@ -1032,15 +1032,15 @@ dd {
 /* ******************* */
 /* *   Link Styles   * */
 /* ******************* */
-img[src$='LeaveSite.gif'],
-img[src$='leavesite.gif'],
-img[src$='NewWindow.gif'],
-img[src$='IconPdf.gif'],
-img[src$='NewWindow.gif'],
-img[src$='IconDoc.gif'],
-img[src$='iconwmv.gif'],
-img[src$='iconAudio.gif'],
-img[src$='IconPPT.gif'] {
+img[src$="LeaveSite.gif"],
+img[src$="leavesite.gif"],
+img[src$="NewWindow.gif"],
+img[src$="IconPdf.gif"],
+img[src$="NewWindow.gif"],
+img[src$="IconDoc.gif"],
+img[src$="iconwmv.gif"],
+img[src$="iconAudio.gif"],
+img[src$="IconPPT.gif"] {
   display: none;
 }
 
@@ -1054,7 +1054,7 @@ pre {
   padding: 10px;
   margin: 5px 15px 5px 15px;
   background-color: #e7e6f4;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: block;
   font-size: 90%;
   width: 85%;
@@ -1066,7 +1066,7 @@ code {
   padding: 10px;
   margin: 5px 15px 5px 15px;
   background-color: #e7e6f4;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: block;
   font-size: 90%;
 }
@@ -1124,7 +1124,7 @@ dl.image dd {
 }
 
 dl.goodImage dd {
-  background-image: url(/archived/Standards/Rules/images/Good.gif);
+  background-image: url(/archive/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
@@ -1138,7 +1138,7 @@ dl.goodImage dd {
 
 }*/
 dl.badImage dd {
-  background-image: url(/archived/Standards/Rules/images/Bad.gif);
+  background-image: url(/archive/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
@@ -1182,7 +1182,7 @@ dl.code pre,
 dl.goodCode pre,
 dl.badCode pre {
   padding: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: table;
   border: none;
   /*background-color: #E7E6F4;*/
@@ -1192,7 +1192,7 @@ dl.code code,
 dl.goodCode code,
 dl.badCode code {
   padding: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: table;
   border: none;
   background-color: #e7e6f4;
@@ -1217,7 +1217,7 @@ dl.badCode dd {
 }
 
 dl.goodCode dd {
-  background-image: url(/archived/Standards/Rules/images/Good.gif);
+  background-image: url(/archive/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -1230,7 +1230,7 @@ dl.goodCode dd {
 
 }*/
 dl.badCode dd {
-  background-image: url(/archived/Standards/Rules/images/Bad.gif);
+  background-image: url(/archive/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -1251,11 +1251,11 @@ dl.badCode dd {
 }
 
 #mainContainer p.badCode {
-  background: url(/archived/Standards/Rules/images/Bad.gif) no-repeat;
+  background: url(/archive/Standards/Rules/images/Bad.gif) no-repeat;
 }
 
 #mainContainer p.goodCode {
-  background: url(/archived/Standards/Rules/images/Good.gif) no-repeat;
+  background: url(/archive/Standards/Rules/images/Good.gif) no-repeat;
 }
 
 /* *********************** */
@@ -1271,7 +1271,7 @@ dl.bad dt {
 }
 
 dl.good dd {
-  background-image: url(/archived/Standards/Rules/images/Good.gif);
+  background-image: url(/archive/Standards/Rules/images/Good.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
@@ -1285,7 +1285,7 @@ dl.good dd {
 
 }*/
 dl.bad dd {
-  background-image: url(/archived/Standards/Rules/images/Bad.gif);
+  background-image: url(/archive/Standards/Rules/images/Bad.gif);
   background-repeat: no-repeat;
   background-color: transparent;
   padding: 0 0 0 20px;
@@ -1383,7 +1383,7 @@ a.strike {
   min-width: 200px;
   border: 1px dashed #999;
   display: block;
-  background: url(/archived/images/icon_online_tutorials.gif);
+  background: url(/archive/images/icon_online_tutorials.gif);
   background-color: #eee;
   background-position: top left;
   background-repeat: no-repeat;
@@ -1409,15 +1409,15 @@ a.strike {
 }
 
 #mainContainer ul.productLinks li.downloadLink {
-  background-image: url(/archived/images/icon_freedownload.gif);
+  background-image: url(/archive/images/icon_freedownload.gif);
 }
 
 #mainContainer ul.productLinks li.purchaseLink {
-  background-image: url(/archived/images/buyNow.gif);
+  background-image: url(/archive/images/buyNow.gif);
 }
 
 #mainContainer ul.productLinks li.tourLink {
-  background-image: url(/archived/images/quickTour.gif);
+  background-image: url(/archive/images/quickTour.gif);
 }
 
 #mainContainer ul.productLinks li {
@@ -1448,7 +1448,7 @@ a.strike {
 
 }*/
 #productSidebar .downloadTrial a:link {
-  background-image: url(/archived/images/icon_download.gif);
+  background-image: url(/archive/images/icon_download.gif);
   display: block;
   text-decoration: none;
 }
@@ -1465,7 +1465,7 @@ a.strike {
 }
 
 #additionalInfo li {
-  background-image: url(/archived/images/arrow_Dotted.gif);
+  background-image: url(/archive/images/arrow_Dotted.gif);
   background-position: left center;
   background-repeat: no-repeat;
   padding-left: 20px;
@@ -1509,12 +1509,12 @@ a.strike {
 }
 
 #productSidebar #productBanana .downloadLink {
-  background-image: url(/archived/images/icon_download.gif);
+  background-image: url(/archive/images/icon_download.gif);
   background-repeat: no-repeat;
 }
 
 #productSidebar #productBanana .purchaseLink {
-  background-image: url(/archived/images/icon_purchase.gif);
+  background-image: url(/archive/images/icon_purchase.gif);
   background-repeat: no-repeat;
 }
 
@@ -1533,7 +1533,7 @@ a.strike {
 }
 
 #productDescription ul li {
-  background-image: url(/archived/images/bullet_square.gif);
+  background-image: url(/archive/images/bullet_square.gif);
   background-position: 0 9px;
   background-repeat: no-repeat;
   list-style-image: none;
@@ -1581,7 +1581,7 @@ a.strike {
   margin-left: 18px;
 }
 
-html>body #productHighlights ul {
+html > body #productHighlights ul {
   padding-left: 15px;
 }
 
@@ -1599,12 +1599,16 @@ html>body #productHighlights ul {
 }
 
 #productHighlights h1.tag {
-  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-family:
+    Helvetica,
+    Helvetica Neue,
+    Arial,
+    sans-serif;
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-#productHighlights>img {
+#productHighlights > img {
   float: left;
   display: block;
 }
@@ -1655,8 +1659,8 @@ html>body #productHighlights ul {
   background-image: none;
 }
 
-div.region>h4,
-div.region>p {
+div.region > h4,
+div.region > p {
   display: block;
   margin: 10px 0;
 }
@@ -1679,7 +1683,7 @@ div.region>p {
 }
 
 .rounded {
-  background-image: url(/archived/images/bg_rounded.gif);
+  background-image: url(/archive/images/bg_rounded.gif);
   background-repeat: no-repeat;
   background-position: top left;
   height: 23px;
@@ -1728,7 +1732,12 @@ td.diag table {
 
 /***** Step By Step Section*****/
 .stepbystep h3 {
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   color: #cc4141;
   font-size: 1.7em;
   font-weight: normal;
@@ -1736,7 +1745,7 @@ td.diag table {
 }
 
 .stepbystep .step {
-  background-image: url(/archived/Images/left-top-corner-box.jpg);
+  background-image: url(/archive/Images/left-top-corner-box.jpg);
   background-repeat: no-repeat;
   padding: 20px 25px;
 }
@@ -1744,7 +1753,12 @@ td.diag table {
 #mainPane .section h1,
 #mainPane .section h1 a:link,
 #mainPane .section h1 a:visited {
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   color: #cc4141;
   font-size: 22px;
   font-weight: normal;
@@ -1773,14 +1787,14 @@ td.diag table {
 }
 
 #design {
-  background-image: url(/archived/company/images/designtop_01.jpg);
+  background-image: url(/archive/company/images/designtop_01.jpg);
   background-repeat: no-repeat;
   padding-top: 310px;
   display: block;
 }
 
 #casestudy {
-  background-image: url(/archived/company/images/bgGray.jpg);
+  background-image: url(/archive/company/images/bgGray.jpg);
   background-repeat: repeat-x;
   padding-top: 0;
   display: block;
@@ -1795,7 +1809,7 @@ td.diag table {
 }
 
 #casestudy #content {
-  background-image: url(/archived/company/images/caseStudyImg.jpg);
+  background-image: url(/archive/company/images/caseStudyImg.jpg);
   background-repeat: no-repeat;
   padding: 377px 200px 0 50px;
   width: 90%;
@@ -1809,7 +1823,12 @@ td.diag table {
 #design #content h1,
 #design #sidebar h1,
 #casestudy #content h1 {
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   color: #cc4141;
   font-size: 22px;
   font-weight: normal;
@@ -1937,7 +1956,12 @@ p.rightAligned {
 
 /******h3 for events page******/
 h3 {
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   color: #cc4141;
   font-size: 1.7em;
   font-weight: normal;
@@ -2058,7 +2082,8 @@ ol.alphaList li {
 }
 
 .productquote {
-  background: url(/archived/Testimonials/images/testimonial_quote.png) no-repeat scroll 10px center #f5f5f5;
+  background: url(/archive/Testimonials/images/testimonial_quote.png) no-repeat
+    scroll 10px center #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 8px 8px 8px 8px;
   font-size: 12px;
