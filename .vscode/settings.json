@@ -4,7 +4,7 @@
   "livePreview.portNumber": 4000,
   "editor.tabSize": 4,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.singleQuote": true,
-  "prettier.bracketSameLine": true,
+  "prettier.singleQuote": false,
+  "prettier.bracketSameLine": false,
   "editor.formatOnSave": true
 }
