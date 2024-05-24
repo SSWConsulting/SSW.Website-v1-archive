@@ -1,398 +1,493 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="ctl00_Head1">
-<script>
-   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NXDBVV');
-  </script>
-<title>
-   Using Google Calendar to Manage Recurring Tasks
-  </title>
-<meta content="en-au" http-equiv="Content-Language"/>
-<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords"/>
-<meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description"/>
-<meta content="SSW" name="author"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css"/>
-<link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon"/>
-<link href="/archive/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css"/>
-<link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css"/>
-<!-- Start of pdi-ssw Zendesk Widget script -->
-<!-- End of pdi-ssw Zendesk Widget script -->
-<link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet"/>
-</head>
-<body id="ctl00_MasterBody" style="opacity: 1 !important;">
-<div style="
+  <head id="ctl00_Head1">
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NXDBVV");
+    </script>
+    <title>Using Google Calendar to Manage Recurring Tasks</title>
+    <meta content="en-au" http-equiv="Content-Language" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil"
+      id="ctl00_keywords"
+      name="keywords"
+    />
+    <meta
+      content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China."
+      name="description"
+    />
+    <meta content="SSW" name="author" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="/archive/css/Content.css"
+      id="ctl00_Link1"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Screen.css"
+      id="ctl00_screenCSS"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/archive/Images/icoSSW_2014.ico" rel="shortcut icon" />
+    <link
+      href="/archive/include/googleSyntax/shCore.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/include/googleSyntax/shThemeDefault.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/archive/css/Print.css"
+      id="ctl00_printCSS"
+      media="print"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Start of pdi-ssw Zendesk Widget script -->
+    <!-- End of pdi-ssw Zendesk Widget script -->
+    <link
+      href="https://a.omappapi.com/app/js/api.min.css"
+      id="omapi-css"
+      media="all"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="ctl00_MasterBody" style="opacity: 1 !important">
+    <div
+      style="
         line-height: 1.5;
-        text-align: center; 
-        font-size: 1.125rem; 
+        text-align: center;
+        font-size: 1.125rem;
         color: #999;
         background-color: #333333;
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         padding-right: 0.75rem;
         padding-left: 0.75rem;
-    ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-    ⚠️ This page has been archived
-   </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p style="color:white;">
-     ✅ New page with updated info:
-     <a href="https://www.ssw.com.au" style="color: white">
-      ssw.com.au
-     </a>
-</p>
-</div>
-</div>
-<noscript>
-<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
-</iframe>
-</noscript>
-<form action="./UsingGoogleCalendar.aspx" id="aspnetForm" method="post" name="aspnetForm">
-<div>
-<input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJNjUxODEzNDExD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGTuAXxqtLYvaBVvvn2Nql2Eft5NADQf9xT0Mag6/wwIlw=="/>
-</div>
-<div>
-<input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="E1B9B2DD"/>
-</div>
-<div id="mainContainer">
-<div>
-</div>
-<p>
-<span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
-<a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-<span>
-<a href="/archive" title="Home">
-        Home
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-<a href="/archive/standards" title="SSW Standards">
-        SSW Standards
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-<a href="/archive/standards/rules" title="Rules">
-        Rules
-       </a>
-</span>
-<span>
-       &gt;
-      </span>
-<span>
-       Using Google Calendar to Manage Recurring Tasks
-      </span>
-<a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
-</a>
-</span>
-</p>
-<div id="mainContent">
-<table align="right" border="0" width="10%">
-<tbody>
-<tr>
-<td>
-<img border="1" src="/archive/standards/rules/images/google-calendar-post-it-note.jpg"/>
-</td>
-</tr>
-<tr>
-<td>
-<b>
-          Figure: Ever tried to run a SQL query against a post-it note? With Google you can query the XML of a calendar.
-         </b>
-</td>
-</tr>
-</tbody>
-</table>
-<p>
-      Recurring tasks are tasks that happen on a regular basis, but not necessarily every day (and therefore 
-potentially easy to forget!) They might be personal tasks, such as changing the oil in your prized Datsun 
-120Y every six months, or booking a holiday for you and your partner a month before your anniversary. They 
-could be work related tasks, such as updating your profile on the Microsoft Gold Partner website (every three 
-months), running financial reports on a monthly basis, or even watering the office plants every week.
-     </p>
-<p>
-      Now managing those tasks can be difficult. "Just stick an appointment in Outlook" - yes I've heard and tried 
-that method. Outlook is perfect when you are the one performing the task. But it's nowhere near perfect if you're 
-managing people who are allocated to perform the task. In fact it's a disaster, because when that person leaves, 
-(or just changes job role) that scheduled task/reminder disappears with them.
-     </p>
-<p>
-      The other problem with Outlook is if you are an organization that relies upon using your email inbox as a to-do/task list, Outlook 
-doesn't send an automated email.
-     </p>
-<p>
-      After reviewing a few different options (namely yahoo.com/calendar, hotmail.com and BackPackIT.com), we decided using Google Calendar to manage recurring tasks was the best option.
-     </p>
-<p>
-      By using Google Calendar you can:
-     </p>
-<ol>
-<li>
-       Create a Scheduled Task
-      </li>
-<li>
-       Add or delete people as required
-      </li>
-<li>
-       Access over the web (no install/deployment issues)
-      </li>
-<li>
-       Send an automated email
-      </li>
-<li>
-       Store and query the data
-      </li>
-</ol>
-<p>
-</p>
-<h2>
-      Setting up Google Calendar
-     </h2>
-<ol>
-<!--Using Javascript to encrypted our email addresses-->
-<li>
-       Create an account. If you are going to use this calendar to manage an organization or department, use
-a generic email address, e.g.
-       info@ssw.com.au or sales@ssw.com.au. Note: Of Google, Yahoo and Live! only Google allows 
-you to sign in with an email address that isn't @yahoo, @gmail or @hotmail.
-      </li>
-<p>
-<img border="1" height="322" src="/archive/standards/rules/images/google-calendar-sign-in.jpg" width="648"/>
-<br/>
-<b>
-        Figure: Sign in to Google Calendar with any email address.
-       </b>
-</p>
-<li>
-       Create your first task. Google's functionality for recurrance mirrors that of Outlook quite closely.
-      </li>
-<p>
-<img border="1" height="425" src="/archive/standards/rules/images/google-calendar-create-task-recurrance.jpg" width="444"/>
-<br/>
-<b>
-        Figure: Create the task and add how often and when it recurs.
-       </b>
-</p>
-<li>
-       Set who is to receive the task.
-      </li>
-<p>
-<img border="1" height="318" src="/archive/standards/rules/images/google-calendar-invite-relevant-person.jpg" width="304"/>
-<br/>
-<b>
-        Figure: Select only the person who is to complete the task.
-       </b>
-</p>
-<li>
-       The recipient will receive an email/appointment. (The email comes with an .ics file attached.) NOTE: users should 
-click BOTH the link in the email as a means of accepting/rejecting/maybe-ing (that's the only way the Google Server will
-know what your response is) and the "Accept/Reject/Tentative" buttons in the Outlook Reminder.
-      </li>
-<p>
-<img border="1" height="415" src="/archive/standards/rules/images/google-calendar-invitation.jpg" width="352"/>
-<br/>
-<b>
-        Figure: The user can Accept/Reject/Maybe and the appointment goes into their calendar. Remember to accept/reject
-using the link in the email and the Outlook buttons... The formatting of the email isn't that great (why is the font so large??)
-       </b>
-</p>
-</ol>
-<p>
-      That's it. Pretty simple.
-     </p>
-<h2>
-      Managing the Reminder Email
-     </h2>
-<p>
-      Unfortunately the Google functionality isn't as good as it could be in this area.
-     </p>
-<p>
-      The Event Organizer can specify exactly when, and how many, reminder emails (or SMS's) are to be sent to themselves. 
-Sadly, those receiving the invitation will only receive a reminder email
-      <i>
-       if
-      </i>
-      they have a Google account
-      <i>
-       and
-      </i>
-      they have agreed to receive Reminder Emails
-      <i>
-       and only when
-      </i>
-      they have determined to receive them.
-     </p>
-<p>
-      When a new user sign's up the default Reminder is a "Pop Up" 10 minutes before the event. You should change this to an email
-say 15 mins before the event. If you need a lot of reminding you can add further email reminders to be sent.
-     </p>
-<p>
-<img border="1" height="157" src="/archive/standards/rules/images/google-calendar-set-up-personal-notifications.jpg" width="542"/>
-<br/>
-<b>
-       Figure: Change your default Reminder to "Email", and add as many Reminders as you think you need.
-      </b>
-</p>
-<p>
-      Therefore every user to whom you are going to be sending tasks needs to create their own Google account.
-     </p>
-<h2>
-      Administrating the Tasks
-     </h2>
-<p>
-      Let's say you have a task dedicated to the Junior Network Admin, George W, which is "fix broken links" on a website.
-Let's say George W is promoted to Senior Network Admin and wants to pass on all his tasks to the new Junior, 
-John H. With Google Calendar it's really simple.
-     </p>
-<p>
-</p>
-<ol>
-<li>
-       Open the calendar, type the name or email address of the relevant person in the Search box, and click "Search My Calendars".
-      </li>
-<p>
-<img border="1" height="170" src="/archive/standards/rules/images/google-calendar-search.jpg" width="658"/>
-<br/>
-<b>
-        Figure: Enter the full email address of the person.
-       </b>
-</p>
-<li>
-       Click the Activity link which exposes the link to "Edit event details".
-      </li>
-<p>
-<img border="1" height="169" src="/archive/standards/rules/images/google-calendar-search-edit.jpg" width="654"/>
-<br/>
-<b>
-        Figure: Click "Edit Event Details"
-       </b>
-</p>
-<li>
-       Google Calendar now allows you to add or remove guests to this activity.
-      </li>
-<p>
-<img border="1" height="76" src="/archive/standards/rules/images/google-calendar-add-remove-guests.jpg" width="298"/>
-<br/>
-<b>
-        Figure: Easily add or remove guests from the recurring task.
-       </b>
-</p>
-<li>
-       Remove the person you wish to remove and add the new person.
-      </li>
-<p>
-<img border="1" height="187" src="/archive/standards/rules/images/google-calendar-add-guests.jpg" width="278"/>
-<br/>
-<b>
-        Figure: Add the name of the person who is taking over the recurring task.
-       </b>
-</p>
-<li>
-       Click save, and then click "All following".
-      </li>
-<p>
-<img border="1" height="100" src="/archive/standards/rules/images/google-calendar-edit-recurring-event.jpg" width="636"/>
-<br/>
-<b>
-        Figure: Click "All Following". In this case it will show that George W. did the task until one date, 
-and then John H took over from there on.
-       </b>
-</p>
-<li>
-       Don't forget to send the update which will remove the event from George W's calendar and add it to John H's 
-calendar.
-      </li>
-<p>
-<img border="1" height="104" src="/archive/standards/rules/images/google-calendar-send-update.jpg" width="524"/>
-<br/>
-<b>
-        Figure: Send the update to all the parties associated with the updated recurring task.
-       </b>
-</p>
-<li>
-       John H will now get the reminder emails and do the specified recurring task as requested. Easy.
-      </li>
-</ol>
-<p>
-</p>
-<h2>
-      Acknowledgements
-     </h2>
-<p>
-      Adam Cogan
-      <br/>
-      Cameron Shaw
-     </p>
-</div>
-<br/>
-</div>
-<div id="footer">
-<p class="callnow">
-     Call Now
-     <a href="tel:+61299533000">
-      +61 2 9953 3000
-     </a>
-</p>
-<span class="copyright">
-     © Copyright SSW 1990-2024. All Rights Reserved.
-    </span>
-<ul>
-<li class="first">
-<a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F5573696E67476F6F676C6543616C656E6461722E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
-       Feedback to SSW
-      </a>
-</li>
-<li>
-<a href="/ssw/Company/AboutUs.aspx">
-       About SSW
-      </a>
-</li>
-<li>
-<a href="/ssw/Advertising/Default.aspx">
-       Advertising
-      </a>
-</li>
-<li class="last">
-<a href="/ssw/MenuMap.aspx">
-       Sitemap
-      </a>
-</li>
-</ul>
-<span class="proudly">
-<a href="http://www.ssw.com.au">
-      Proudly developed by SSW Sydney Web Design
-     </a>
-</span>
-<!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
-<p class="serverName">
-     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
-    </p>
-</div>
-</form>
-<!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
-<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
-<!-- / OptinMonster -->
-<div style="visibility: visible;">
-<div>
-</div>
-<div>
-</div>
-</div>
-</body>
+      "
+    >
+      <div style="color: white; font-size: 2rem !important; font-weight: 600">
+        ⚠️ This page has been archived
+      </div>
+      <div
+        style="color: white; font-size: 1.125rem !important; font-weight: 600"
+      >
+        <p style="color: white">
+          ✅ New page with updated info:
+          <a href="https://www.ssw.com.au" style="color: white"> ssw.com.au </a>
+        </p>
+      </div>
+    </div>
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV"
+        style="display: none; visibility: hidden"
+        width="0"
+      >
+      </iframe>
+    </noscript>
+    <form
+      action="./UsingGoogleCalendar.aspx"
+      id="aspnetForm"
+      method="post"
+      name="aspnetForm"
+    >
+      <div>
+        <input
+          id="__VIEWSTATE"
+          name="__VIEWSTATE"
+          type="hidden"
+          value="/wEPDwUJNjUxODEzNDExD2QWAmYPZBYCAgMPZBYCAgEPZBYGAgMPPCsABQEADxYCHgdWaXNpYmxlaGRkAgUPPCsABQEADxYCHwBoZGQCBw88KwAFAQAPFgIfAGhkZGTuAXxqtLYvaBVvvn2Nql2Eft5NADQf9xT0Mag6/wwIlw=="
+        />
+      </div>
+      <div>
+        <input
+          id="__VIEWSTATEGENERATOR"
+          name="__VIEWSTATEGENERATOR"
+          type="hidden"
+          value="E1B9B2DD"
+        />
+      </div>
+      <div id="mainContainer">
+        <div></div>
+        <p>
+          <span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+            <a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+            <span>
+              <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards" title="SSW Standards">
+                SSW Standards
+              </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive/standards/rules" title="Rules"> Rules </a>
+            </span>
+            <span> &gt; </span>
+            <span> Using Google Calendar to Manage Recurring Tasks </span>
+            <a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
+          </span>
+        </p>
+        <div id="mainContent">
+          <table align="right" border="0" width="10%">
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    border="1"
+                    src="/archive/standards/rules/images/google-calendar-post-it-note.jpg"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>
+                    Figure: Ever tried to run a SQL query against a post-it
+                    note? With Google you can query the XML of a calendar.
+                  </b>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Recurring tasks are tasks that happen on a regular basis, but not
+            necessarily every day (and therefore potentially easy to forget!)
+            They might be personal tasks, such as changing the oil in your
+            prized Datsun 120Y every six months, or booking a holiday for you
+            and your partner a month before your anniversary. They could be work
+            related tasks, such as updating your profile on the Microsoft Gold
+            Partner website (every three months), running financial reports on a
+            monthly basis, or even watering the office plants every week.
+          </p>
+          <p>
+            Now managing those tasks can be difficult. "Just stick an
+            appointment in Outlook" - yes I've heard and tried that method.
+            Outlook is perfect when you are the one performing the task. But
+            it's nowhere near perfect if you're managing people who are
+            allocated to perform the task. In fact it's a disaster, because when
+            that person leaves, (or just changes job role) that scheduled
+            task/reminder disappears with them.
+          </p>
+          <p>
+            The other problem with Outlook is if you are an organization that
+            relies upon using your email inbox as a to-do/task list, Outlook
+            doesn't send an automated email.
+          </p>
+          <p>
+            After reviewing a few different options (namely yahoo.com/calendar,
+            hotmail.com and BackPackIT.com), we decided using Google Calendar to
+            manage recurring tasks was the best option.
+          </p>
+          <p>By using Google Calendar you can:</p>
+          <ol>
+            <li>Create a Scheduled Task</li>
+            <li>Add or delete people as required</li>
+            <li>Access over the web (no install/deployment issues)</li>
+            <li>Send an automated email</li>
+            <li>Store and query the data</li>
+          </ol>
+          <p></p>
+          <h2>Setting up Google Calendar</h2>
+          <ol>
+            <!--Using Javascript to encrypted our email addresses-->
+            <li>
+              Create an account. If you are going to use this calendar to manage
+              an organization or department, use a generic email address, e.g.
+              info@ssw.com.au or sales@ssw.com.au. Note: Of Google, Yahoo and
+              Live! only Google allows you to sign in with an email address that
+              isn't @yahoo, @gmail or @hotmail.
+            </li>
+            <p>
+              <img
+                border="1"
+                height="322"
+                src="/archive/standards/rules/images/google-calendar-sign-in.jpg"
+                width="648"
+              />
+              <br />
+              <b>
+                Figure: Sign in to Google Calendar with any email address.
+              </b>
+            </p>
+            <li>
+              Create your first task. Google's functionality for recurrance
+              mirrors that of Outlook quite closely.
+            </li>
+            <p>
+              <img
+                border="1"
+                height="425"
+                src="/archive/standards/rules/images/google-calendar-create-task-recurrance.jpg"
+                width="444"
+              />
+              <br />
+              <b>
+                Figure: Create the task and add how often and when it recurs.
+              </b>
+            </p>
+            <li>Set who is to receive the task.</li>
+            <p>
+              <img
+                border="1"
+                height="318"
+                src="/archive/standards/rules/images/google-calendar-invite-relevant-person.jpg"
+                width="304"
+              />
+              <br />
+              <b>
+                Figure: Select only the person who is to complete the task.
+              </b>
+            </p>
+            <li>
+              The recipient will receive an email/appointment. (The email comes
+              with an .ics file attached.) NOTE: users should click BOTH the
+              link in the email as a means of accepting/rejecting/maybe-ing
+              (that's the only way the Google Server will know what your
+              response is) and the "Accept/Reject/Tentative" buttons in the
+              Outlook Reminder.
+            </li>
+            <p>
+              <img
+                border="1"
+                height="415"
+                src="/archive/standards/rules/images/google-calendar-invitation.jpg"
+                width="352"
+              />
+              <br />
+              <b>
+                Figure: The user can Accept/Reject/Maybe and the appointment
+                goes into their calendar. Remember to accept/reject using the
+                link in the email and the Outlook buttons... The formatting of
+                the email isn't that great (why is the font so large??)
+              </b>
+            </p>
+          </ol>
+          <p>That's it. Pretty simple.</p>
+          <h2>Managing the Reminder Email</h2>
+          <p>
+            Unfortunately the Google functionality isn't as good as it could be
+            in this area.
+          </p>
+          <p>
+            The Event Organizer can specify exactly when, and how many, reminder
+            emails (or SMS's) are to be sent to themselves. Sadly, those
+            receiving the invitation will only receive a reminder email
+            <i> if </i>
+            they have a Google account
+            <i> and </i>
+            they have agreed to receive Reminder Emails
+            <i> and only when </i>
+            they have determined to receive them.
+          </p>
+          <p>
+            When a new user sign's up the default Reminder is a "Pop Up" 10
+            minutes before the event. You should change this to an email say 15
+            mins before the event. If you need a lot of reminding you can add
+            further email reminders to be sent.
+          </p>
+          <p>
+            <img
+              border="1"
+              height="157"
+              src="/archive/standards/rules/images/google-calendar-set-up-personal-notifications.jpg"
+              width="542"
+            />
+            <br />
+            <b>
+              Figure: Change your default Reminder to "Email", and add as many
+              Reminders as you think you need.
+            </b>
+          </p>
+          <p>
+            Therefore every user to whom you are going to be sending tasks needs
+            to create their own Google account.
+          </p>
+          <h2>Administrating the Tasks</h2>
+          <p>
+            Let's say you have a task dedicated to the Junior Network Admin,
+            George W, which is "fix broken links" on a website. Let's say George
+            W is promoted to Senior Network Admin and wants to pass on all his
+            tasks to the new Junior, John H. With Google Calendar it's really
+            simple.
+          </p>
+          <p></p>
+          <ol>
+            <li>
+              Open the calendar, type the name or email address of the relevant
+              person in the Search box, and click "Search My Calendars".
+            </li>
+            <p>
+              <img
+                border="1"
+                height="170"
+                src="/archive/standards/rules/images/google-calendar-search.jpg"
+                width="658"
+              />
+              <br />
+              <b> Figure: Enter the full email address of the person. </b>
+            </p>
+            <li>
+              Click the Activity link which exposes the link to "Edit event
+              details".
+            </li>
+            <p>
+              <img
+                border="1"
+                height="169"
+                src="/archive/standards/rules/images/google-calendar-search-edit.jpg"
+                width="654"
+              />
+              <br />
+              <b> Figure: Click "Edit Event Details" </b>
+            </p>
+            <li>
+              Google Calendar now allows you to add or remove guests to this
+              activity.
+            </li>
+            <p>
+              <img
+                border="1"
+                height="76"
+                src="/archive/standards/rules/images/google-calendar-add-remove-guests.jpg"
+                width="298"
+              />
+              <br />
+              <b>
+                Figure: Easily add or remove guests from the recurring task.
+              </b>
+            </p>
+            <li>
+              Remove the person you wish to remove and add the new person.
+            </li>
+            <p>
+              <img
+                border="1"
+                height="187"
+                src="/archive/standards/rules/images/google-calendar-add-guests.jpg"
+                width="278"
+              />
+              <br />
+              <b>
+                Figure: Add the name of the person who is taking over the
+                recurring task.
+              </b>
+            </p>
+            <li>Click save, and then click "All following".</li>
+            <p>
+              <img
+                border="1"
+                height="100"
+                src="/archive/standards/rules/images/google-calendar-edit-recurring-event.jpg"
+                width="636"
+              />
+              <br />
+              <b>
+                Figure: Click "All Following". In this case it will show that
+                George W. did the task until one date, and then John H took over
+                from there on.
+              </b>
+            </p>
+            <li>
+              Don't forget to send the update which will remove the event from
+              George W's calendar and add it to John H's calendar.
+            </li>
+            <p>
+              <img
+                border="1"
+                height="104"
+                src="/archive/standards/rules/images/google-calendar-send-update.jpg"
+                width="524"
+              />
+              <br />
+              <b>
+                Figure: Send the update to all the parties associated with the
+                updated recurring task.
+              </b>
+            </p>
+            <li>
+              John H will now get the reminder emails and do the specified
+              recurring task as requested. Easy.
+            </li>
+          </ol>
+          <p></p>
+          <h2>Acknowledgements</h2>
+          <p>
+            Adam Cogan
+            <br />
+            Cameron Shaw
+          </p>
+        </div>
+        <br />
+      </div>
+      <div id="footer">
+        <p class="callnow">
+          Call Now
+          <a href="tel:+61299533000"> +61 2 9953 3000 </a>
+        </p>
+        <span class="copyright">
+          © Copyright SSW 1990-2024. All Rights Reserved.
+        </span>
+        <ul>
+          <li class="first">
+            <a
+              class="email"
+              href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C65732F5573696E67476F6F676C6543616C656E6461722E61737078')"
+              id="ctl00_fC_feedbackHyperLink"
+              tabindex="100"
+            >
+              Feedback to SSW
+            </a>
+          </li>
+          <li>
+            <a href="/ssw/Company/AboutUs.aspx"> About SSW </a>
+          </li>
+          <li>
+            <a href="/ssw/Advertising/Default.aspx"> Advertising </a>
+          </li>
+          <li class="last">
+            <a href="/ssw/MenuMap.aspx"> Sitemap </a>
+          </li>
+        </ul>
+        <span class="proudly">
+          <a href="http://www.ssw.com.au">
+            Proudly developed by SSW Sydney Web Design
+          </a>
+        </span>
+        <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+        <p class="serverName">
+          Our website is under constant continuous deployment. Last deployment
+          to AZIIS2022P03. Unable to retrieve changeset details.
+        </p>
+      </div>
+    </form>
+    <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+    <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+    <!-- / OptinMonster -->
+    <div style="visibility: visible">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>
