@@ -1,6 +1,6 @@
 /* Header and Title properties */
 #header {
-  background-image: url(/archived/images/bg_nav.gif);
+  background-image: url(/archive/images/bg_nav.gif);
   background-repeat: repeat-x;
   width: auto;
 }
@@ -8,7 +8,12 @@
 /*** Styles for the main title page ***/
 #header h1 {
   font-size: 20px;
-  font-family: trebuchet ms, arial, tahoma, verdana, sans-serif;
+  font-family:
+    trebuchet ms,
+    arial,
+    tahoma,
+    verdana,
+    sans-serif;
   font-weight: normal;
   color: #444;
   overflow: hidden;
@@ -91,7 +96,7 @@
   color: #fff;
 }
 
-#headerMenu li.hide>a.rsmLink {
+#headerMenu li.hide > a.rsmLink {
   display: none;
 }
 
@@ -170,7 +175,7 @@
 }
 
 #headerMenu li.Popular {
-  background: url(/archived/images/popular.png) no-repeat 120px;
+  background: url(/archive/images/popular.png) no-repeat 120px;
 }
 
 #headerMenu .NoChild .rsmLink:hover {
