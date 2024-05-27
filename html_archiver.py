@@ -110,11 +110,9 @@ def archive_pages(path: str) -> dict[str, str]:
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
         split_path = item_path.split("\\")
-
         # Recursively call archive_pages on subdirectories
         if os.path.isdir(item_path) and split_path[1] in WHITELIST:
             items_written.update(archive_pages(item_path))
-
         # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
         elif (
             os.path.isfile(item_path)
@@ -171,6 +169,8 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_head(soup)
             soup = delete_existing_header(soup)
             soup = add_archive_header(soup, url)
+            soup = fix_breadcrumbs_v3(soup)
+
 
             page_source = soup.prettify(formatter="html5")
 
@@ -200,6 +200,61 @@ def archive_pages(path: str) -> dict[str, str]:
 
     output_index_page(items_written, output_path)
     return items_written
+
+
+archive_url = "archive"
+
+def add_history_link_to_navbar(soup: BeautifulSoup) -> BeautifulSoup:
+    breadcrumb_tag = "ctl00_ctl00_Content_SiteMapPath1"
+    breadcrumbs = soup.find("span", {"id": breadcrumb_tag})
+    archive_breadcrumb = soup.new_tag("span")
+    archive_link = soup.new_tag("a")
+    archive_link.string  = archive_url.capitalize()
+    archive_link['href'] = f"/{archive_url}"
+    archive_breadcrumb.append(archive_link)
+    if breadcrumbs is None:
+        raise Exception("No breadcrumb element was found in the html provided")
+    breadcrumbs.findAll("span")[1].insert_after(archive_breadcrumb)
+    arrow = soup.new_tag("span")
+    arrow.string = ">"
+    archive_breadcrumb.insert_after(arrow)
+    # breadcrumbs.insert(7, archive_breadcrumb)
+    return soup
+
+
+def fix_breadcrumbs_v3(soup : BeautifulSoup) -> BeautifulSoup:
+    if soup.find("span",id="ctl00_ctl00_Content_SiteMapPath1") is None:
+        return soup
+    tag = soup.find("span",{'id': "ctl00_ctl00_Content_SiteMapPath1"})
+    # Create a new breadcrumb to append as the immediate successor of Home
+    # Append the breadcrumb just after home
+    if  not (tag.findAll("span")[0].find("a").has_attr('href') and "Default.aspx" in tag.findAll("span")[0].find("a")['href']):
+        return soup    
+    for i, child in enumerate(tag.findChildren("span", recursive=False)):                            
+        a_tag = child.find("a")
+        if a_tag is None:
+            continue
+        href = a_tag['href']
+        if i == 0:
+            a_tag['href'] = "/"
+            continue
+        if href.startswith("/ssw"):
+            href = href.replace("/ssw", "/archive", 1)
+        if href.endswith("Default.aspx"):
+            href = href.replace("/Default.aspx", "")
+        if href.endswith("Browse.aspx"):
+            href = href.replace("Browse.aspx", "")
+        elif href.endswith(".aspx"):
+            href = href.replace(".aspx", ".html")
+        href = pascal_to_kebab(href)
+        if not a_tag.has_attr('href'):
+            continue
+        a_tag['href'] = pascal_to_kebab(href)
+    span = tag.findAll("span")[2]
+    archive_link = span.find('a')
+    if archive_link is None or archive_url.capitalize() not in archive_link.string:
+        soup = add_history_link_to_navbar(soup)
+    return soup
 
 def delete_existing_header (soup: BeautifulSoup) -> BeautifulSoup:
     head = soup.find("div", id="header")
