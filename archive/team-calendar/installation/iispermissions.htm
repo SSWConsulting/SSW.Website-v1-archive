@@ -1,19 +1,27 @@
-<!DOCTYPE html public "-//w3c//dtd html 4.0 transitional//en">
-
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
 <html>
-<head><script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+ <head>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NXDBVV');
-    </script>
-<title>SSW Team Calendar - User Guide</title>
-<meta content="John Elliot - Database Developer - Superior Software for Windows" name="author"/>
-<link href="/ssw/Include/sswmenu.css" rel="stylesheet" type="text/css"/>
-<link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/></head>
-<body alink="#003399" leftmargin="0" link="#003399" marginheight="0" marginwidth="0" text="#000000" topmargin="0" vlink="#003399"><noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0"></iframe></noscript><div style="
+  </script>
+  <title>
+   SSW Team Calendar - User Guide
+  </title>
+  <meta content="John Elliot - Database Developer - Superior Software for Windows" name="author">
+  <link href="/ssw/Include/sswmenu.css" rel="stylesheet" type="text/css">
+  <link href="/ssw/Images/IcoSSW_v2.ico" rel="shortcut icon">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+ </head>
+ <body alink="#003399" leftmargin="0" link="#003399" marginheight="0" marginwidth="0" text="#000000" topmargin="0" vlink="#003399">
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <div style="
             line-height: 1.5;
             text-align: center; 
             font-size: 1.125rem; 
@@ -24,167 +32,238 @@
             padding-right: 0.75rem;
             padding-left: 0.75rem;
             ">
-<div style="color: white; font-size: 2rem !important; font-weight: 600;">
-                ⚠️ This page has been archived
-            </div>
-<div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
-<p>
-                    ✅ New page with updated info:
-                    <a href="https://www.ssw.com.au/products" style="color: white">ssw.com.au/products</a>
-</p>
-</div>
-</div>
-<table bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="100%">
-<tr>
-<td align="left">
-<img alt="SSW" height="45" name="Image1" src="/archive/team-calendar/installation/images/img-ssw-small.gif" width="58"/><img alt="SSWTeam Calender" height="45" src="/archive/team-calendar/installation/images/hd-ssw-team-calendar.gif" width="450"/><img alt="SSW" height="45" src="/archive/team-calendar/installation/images/hd-2.gif" width="200"/>
-</td>
-</tr>
-</table>
-<table bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="101%">
-<tr>
-<!-- spacer row - specify all others with colspan or rowspan-->
-<!--1-->
-<td width="11">
-</td>
-<!--2-->
-<td width="213">
-</td>
-<!--3-->
-<td width="1">
-</td>
-<!--4-->
-<td width="24">
-</td>
-<!--5-->
-<td width="362">
-</td>
-<!--6-->
-<td width="32">
-</td>
-<!--7-->
-<td width="97">
-</td>
-<!--8-->
-<td width="32">
-</td>
-<!--9-->
-<td width="208">
-</td>
-<!--10-->
-<td width="30">
-</td>
-</tr>
-<tr>
-<!-- spacer column -->
-<td colspan="2" rowspan="2" valign="top">
-</td>
-<!-- spacer column -->
-<td bgcolor="#7d7d7d" rowspan="2" width="1">
-</td>
-<!-- spacer column -->
-<td rowspan="2" width="24">
-</td>
-<!--main content cell-->
-<td colspan="5" valign="top">
-<p>
-<span class="updatetext">
-<img alt="SSW Team Calender" height="82" src="/archive/team-calendar/installation/images/team-calendar-logo.gif" width="482"/><span class="updatetext"><span class="updatetext"><br/>
-</span></span></span></p>
-<span class="updatetext">
-<table cellpadding="0" id="Table1" width="100%">
-<tr bgcolor="#ff0033">
-<td align="right">
-</td>
-</tr>
-</table>
-<table cellpadding="0" id="Table2" width="100%">
-<tr bgcolor="#cccccc">
-<td>
-<span class="updatetext"><b><span style="color: #000000">Changing IIS permissions for
-                                    TeamCalendar</span></b></span></td>
-</tr>
-</table>
-<p>
-                    Open up IIS by going Start -&gt; Programs -&gt; Administrative Tools -&gt; Internet
-                    Services Manager</p>
-<p>
-<img alt="" height="363" src="/archive/team-calendar/installation/images/img-iispermissions-iis.gif" width="194"/></p>
-<p>
-<span class="updatetext">Right click on the TeamCalendar Virtual Web and go to properties.<br/>
-                        Click on the "Directory Security" Tab and click on the "Edit" button under the "Anonymous
-                        access and authentication control" group.<br/>Make sure Integrated Windows Authentication
-                    is unchecked.</span></p>
-<p>
-                    The next step in Windows XP:</p>
-<p>
-                    Now enter in the account details of the account you have previously created.
-                </p>
-<p>
-<img alt="" height="432" src="/archive/team-calendar/installation/images/change-user.gif" width="371"/></p>
-<p>
-                    The next step in Windows 2000:</p>
-<p>
-                    Click on the "Edit" button under the "Anonymous access" group.</p>
-<p>
-<img alt="" height="334" src="/archive/team-calendar/installation/images/img-iispermissions-anonymous-user.gif" width="512"/></p>
-<p>
-<br/>
-                    Now enter in the account details of the account you have previously created.
-                </p>
-<p>
-<img alt="" height="127" src="/archive/team-calendar/installation/images/img-iispermissions-confirm-password.gif" width="321"/>
-</p>
-<p>
-<span class="updatetext">What you have done is make any web pages under that virtual
-                    directory run under the 'SSWTeamCalendar' user rather than the IUSR_Annon user.</span></p>
-<span class="updatetext">
-<table cellpadding="0" id="Table3" width="100%">
-<tr bgcolor="#ff0033">
-<td align="right">
-</td>
-</tr>
-</table>
-<table cellpadding="0" id="Table4" width="100%">
-<tr bgcolor="#cccccc">
-<td>
-<span class="updatetext"><b><span style="color: #000000">Changing IIS permissions for
-                                    TeamCalendar</span></b></span></td>
-</tr>
-</table>
-<p>
-                    If you are to run Teamcalendar on the domain controller (exchange is usually on
+   <div style="color: white; font-size: 2rem !important; font-weight: 600;">
+    ⚠️ This page has been archived
+   </div>
+   <div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+    <p>
+     ✅ New page with updated info:
+     <a href="https://www.ssw.com.au/products" style="color: white">
+      ssw.com.au/products
+     </a>
+    </p>
+   </div>
+  </div>
+  <table bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tbody>
+    <tr>
+     <td align="left">
+      <img alt="SSW" height="45" name="Image1" src="/archive/team-calendar/installation/images/img-ssw-small.gif" width="58">
+      <img alt="SSWTeam Calender" height="45" src="/archive/team-calendar/installation/images/hd-ssw-team-calendar.gif" width="450">
+      <img alt="SSW" height="45" src="/archive/team-calendar/installation/images/hd-2.gif" width="200">
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="101%">
+   <tbody>
+    <tr>
+     <!-- spacer row - specify all others with colspan or rowspan-->
+     <!--1-->
+     <td width="11">
+     </td>
+     <!--2-->
+     <td width="213">
+     </td>
+     <!--3-->
+     <td width="1">
+     </td>
+     <!--4-->
+     <td width="24">
+     </td>
+     <!--5-->
+     <td width="362">
+     </td>
+     <!--6-->
+     <td width="32">
+     </td>
+     <!--7-->
+     <td width="97">
+     </td>
+     <!--8-->
+     <td width="32">
+     </td>
+     <!--9-->
+     <td width="208">
+     </td>
+     <!--10-->
+     <td width="30">
+     </td>
+    </tr>
+    <tr>
+     <!-- spacer column -->
+     <td colspan="2" rowspan="2" valign="top">
+     </td>
+     <!-- spacer column -->
+     <td bgcolor="#7d7d7d" rowspan="2" width="1">
+     </td>
+     <!-- spacer column -->
+     <td rowspan="2" width="24">
+     </td>
+     <!--main content cell-->
+     <td colspan="5" valign="top">
+      <p>
+       <span class="updatetext">
+        <img alt="SSW Team Calender" height="82" src="/archive/team-calendar/installation/images/team-calendar-logo.gif" width="482">
+        <span class="updatetext">
+         <span class="updatetext">
+          <br>
+         </span>
+        </span>
+       </span>
+      </p>
+      <span class="updatetext">
+       <table cellpadding="0" id="Table1" width="100%">
+        <tbody>
+         <tr bgcolor="#ff0033">
+          <td align="right">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <table cellpadding="0" id="Table2" width="100%">
+        <tbody>
+         <tr bgcolor="#cccccc">
+          <td>
+           <span class="updatetext">
+            <b>
+             <span style="color: #000000">
+              Changing IIS permissions for
+                                    TeamCalendar
+             </span>
+            </b>
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p>
+        Open up IIS by going Start -&gt; Programs -&gt; Administrative Tools -&gt; Internet
+                    Services Manager
+       </p>
+       <p>
+        <img alt height="363" src="/archive/team-calendar/installation/images/img-iispermissions-iis.gif" width="194">
+       </p>
+       <p>
+        <span class="updatetext">
+         Right click on the TeamCalendar Virtual Web and go to properties.
+         <br>
+         Click on the "Directory Security" Tab and click on the "Edit" button under the "Anonymous
+                        access and authentication control" group.
+         <br>
+         Make sure Integrated Windows Authentication
+                    is unchecked.
+        </span>
+       </p>
+       <p>
+        The next step in Windows XP:
+       </p>
+       <p>
+        Now enter in the account details of the account you have previously created.
+       </p>
+       <p>
+        <img alt height="432" src="/archive/team-calendar/installation/images/change-user.gif" width="371">
+       </p>
+       <p>
+        The next step in Windows 2000:
+       </p>
+       <p>
+        Click on the "Edit" button under the "Anonymous access" group.
+       </p>
+       <p>
+        <img alt height="334" src="/archive/team-calendar/installation/images/img-iispermissions-anonymous-user.gif" width="512">
+       </p>
+       <p>
+        <br>
+        Now enter in the account details of the account you have previously created.
+       </p>
+       <p>
+        <img alt height="127" src="/archive/team-calendar/installation/images/img-iispermissions-confirm-password.gif" width="321">
+       </p>
+       <p>
+        <span class="updatetext">
+         What you have done is make any web pages under that virtual
+                    directory run under the 'SSWTeamCalendar' user rather than the IUSR_Annon user.
+        </span>
+       </p>
+       <span class="updatetext">
+        <table cellpadding="0" id="Table3" width="100%">
+         <tbody>
+          <tr bgcolor="#ff0033">
+           <td align="right">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table cellpadding="0" id="Table4" width="100%">
+         <tbody>
+          <tr bgcolor="#cccccc">
+           <td>
+            <span class="updatetext">
+             <b>
+              <span style="color: #000000">
+               Changing IIS permissions for
+                                    TeamCalendar
+              </span>
+             </b>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p>
+         If you are to run Teamcalendar on the domain controller (exchange is usually on
                     the domain controller) then you must give the Teamcalendar user permissions to log
                     onto the server. To do this you need to:
-                </p>
-<ol>
-<li>Open Group Policy by: Start -&gt; Administrative Tools -&gt; Domain Controller Security Policy</li>
-<li>Open the tree: Security Settings -&gt; Local Policies -&gt; User Rights Assignment</li>
-<p>
-<img alt="" height="257" src="/archive/team-calendar/installation/images/log-on-locally.gif" width="324"/></p>
-<li>On the right hand side list box, open the item Log on locally, and add TeamCalendar
-                        user </li>
-</ol>
-<p>
-<img alt="" height="383" src="/archive/team-calendar/installation/images/security-policy-setting.gif" width="383"/></p>
-<p>
-<span class="updatetext">This step is now complete. Click 'Back' and select 'Step 4'.
-<span class="updatetext"></span></span></p>
-<span class="updatetext"><span class="updatetext">
-<hr style="left: 0px; top: 637px"/>
-<center>
-<span class="updatetext">
-<img alt="SSW" border="0" height="45" src="/archive/team-calendar/installation/images/ft-ssw.gif" usemap="#MapMap" width="300"/>
-<map name="MapMap">
-<area coords="206,16,296,29" href="javascript:var e1='s%73%77.%63%6f%6d%2e%61%75',e2='mailto:%20', e3='info, e4='?Subject=Employment';var e0=e2+e3+'@'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" shape="RECT" title="info@ssw.com.au"/>
-<area coords="60,17,151,28" href="http://www.ssw.com.au" shape="RECT"/>
-</map>
-</span></center>
-<td rowspan="2" width="30">
-</td>
-</span></span></span></span></td></tr>
-<tr>
-</tr>
-</table>
-</body>
+        </p>
+        <ol>
+         <li>
+          Open Group Policy by: Start -&gt; Administrative Tools -&gt; Domain Controller Security&nbsp;Policy
+         </li>
+         <li>
+          Open the tree: Security Settings -&gt; Local Policies -&gt; User Rights Assignment
+         </li>
+         <p>
+          <img alt height="257" src="/archive/team-calendar/installation/images/log-on-locally.gif" width="324">
+         </p>
+         <li>
+          On the right hand side list box, open the item Log on locally, and add TeamCalendar
+                        user
+         </li>
+        </ol>
+        <p>
+         <img alt height="383" src="/archive/team-calendar/installation/images/security-policy-setting.gif" width="383">
+        </p>
+        <p>
+         <span class="updatetext">
+          This step is now complete. Click 'Back' and select 'Step 4'.
+          <span class="updatetext">
+          </span>
+         </span>
+        </p>
+        <span class="updatetext">
+         <span class="updatetext">
+          <hr style="left: 0px; top: 637px">
+          <center>
+           <span class="updatetext">
+            <img alt="SSW" border="0" height="45" src="/archive/team-calendar/installation/images/ft-ssw.gif" usemap="#MapMap" width="300">
+            <map name="MapMap">
+             <area coords="206,16,296,29" href="javascript:var e1='s%73%77.%63%6f%6d%2e%61%75',e2='mailto:%20', e3='info, e4='?Subject=Employment';var e0=e2+e3+'@'+e1+e4;(window.location?window.location.replace(e0):document.write(e0));" shape="RECT" title="info@ssw.com.au">
+             <area coords="60,17,151,28" href="http://www.ssw.com.au" shape="RECT">
+            </map>
+           </span>
+          </center>
+         </span>
+        </span>
+       </span>
+      </span>
+     </td>
+     <td rowspan="2" width="30">
+     </td>
+    </tr>
+    <tr>
+    </tr>
+   </tbody>
+  </table>
+ </body>
 </html>
