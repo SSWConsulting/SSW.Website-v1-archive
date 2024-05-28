@@ -5,7 +5,7 @@
 }
 
 #footer {
-  background-image: url(/archived/images/bg_footer.gif);
+  background-image: url(/archive/images/bg_footer.gif);
   background-repeat: repeat-x;
   background-position: 50% top;
   background-color: #eee;
@@ -82,7 +82,7 @@ p.serverName {
 }
 
 #footer a.email {
-  background-image: url(/archived/images/icon_email.gif);
+  background-image: url(/archive/images/icon_email.gif);
   background-repeat: no-repeat;
   background-position: 0 3px;
   padding-left: 13px;
