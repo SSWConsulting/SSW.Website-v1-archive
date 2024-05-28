@@ -72,7 +72,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body id="ctl00_MasterBody" style="opacity: 1 !important">
     <div
       style="
@@ -137,6 +136,10 @@
             <a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink"> </a>
             <span>
               <a href="/archive" title="Home"> Home </a>
+            </span>
+            <span> &gt; </span>
+            <span>
+              <a href="/archive"> Archive </a>
             </span>
             <span> &gt; </span>
             <span>
@@ -232,7 +235,6 @@
                 src="/archive/standards-internal/developer-sql-server/images/publication-properties.gif"
                 width="521"
               />
-               
             </li>
             <li>
               Specify the field name as 'Concurrency'. You will need to set a
@@ -272,33 +274,33 @@
               <br />
               SELECT
               <br />
-                      ClientContact.FirstName,
+              ClientContact.FirstName,
               <br />
-                      ClientContact.Surname
+              ClientContact.Surname
               <b> , </b>
             </i>
             <b>
               <i>
                 <br />
-                          ClientContact.Concurrency
+                ClientContact.Concurrency
               </i>
             </b>
             <i>
               <br />
               FROM
               <br />
-                      ClientContact
+              ClientContact
               <br />
               WHERE
               <br />
-                      ClientContact.ContactID = @ContactID
+              ClientContact.ContactID = @ContactID
             </i>
           </p>
         </ol>
         <p>
-          <i>            GO </i>
+          <i> GO </i>
         </p>
-        <p> </p>
+        <p></p>
         <br />
       </div>
       <div id="footer">
