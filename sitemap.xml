@@ -487,6 +487,48 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/admin/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/admin/zs-instructions.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/how-unrecognized-versions-work.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/product-details.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/unrecognized.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/diagnostics/user-guide.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/download/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
