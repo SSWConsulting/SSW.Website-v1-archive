@@ -1171,18 +1171,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.ssw.com.au/archive/events/ebooks/angularjs-5-lessons-thankyou.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/archive/events/ebooks/index.html</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://www.ssw.com.au/archive/events/hololens-experience.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -1856,18 +1844,6 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/extreme-emails/reports/test-please-report.htm</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/archive/extreme-emails/reports/update-report-files/header.htm</loc>
-    <lastmod>2023-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.ssw.com.au/archive/extreme-emails/reports/update-report-files/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
