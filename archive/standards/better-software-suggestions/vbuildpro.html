@@ -91,8 +91,11 @@
       >
         <p style="color: white">
           ✅ New page with updated info:
-          <a href="https://www.ssw.com.au/products" style="color: white">
-            ssw.com.au/products
+          <a
+            href="https://www.bettersoftwaresuggestions.com"
+            style="color: white"
+          >
+            bettersoftwaresuggestions.com
           </a>
         </p>
       </div>
@@ -325,13 +328,13 @@
               With the script created to provide a "clean up" of your files, the
               following code snippet found in Figure 2 proved to be useful.
             </p>
-            <pre><br/>Set FileManagment = CreateObject ("Scripting.FileSystemObject")<br/>Set TheFolder = FileManagment.GetFolder("%BeeFolder%")
-<br/>Set FileList = TheFolder.Files
-<br/><br/>For Each File in FileList 
-<br/><br/>          fileStart = instr(ThisFile, ".msi") - 1
-<br/>     fileNoExt = mid(ThisFile, 1, fileStart)
-<br/>     File.Name = Replace( File.Name, fileNoExt , "zz"&amp;File.Name&amp;"(zzed_by_VBP).msi")
-<br/><br/>Next</pre>
+            <pre><br>Set FileManagment = CreateObject ("Scripting.FileSystemObject")<br>Set TheFolder = FileManagment.GetFolder("%BeeFolder%")
+<br>Set FileList = TheFolder.Files
+<br><br>For Each File in FileList 
+<br><br>          fileStart = instr(ThisFile, ".msi") - 1
+<br>     fileNoExt = mid(ThisFile, 1, fileStart)
+<br>     File.Name = Replace( File.Name, fileNoExt , "zz"&amp;File.Name&amp;"(zzed_by_VBP).msi")
+<br><br>Next</pre>
             <p>
               <b>
                 Figure 2: Rename all the files appending zz at the front, and
@@ -383,33 +386,33 @@
             out, 1 for a file that is checked out by a user, and 2 for a file
             that is checked out by the current user.
           </p>
-          <pre><br/>const isFolder = 0
-<br/>const isFile = 1
+          <pre><br>const isFolder = 0
+<br>const isFile = 1
 
-<br/>dim VSS_FolderName
-<br/>VSS_FolderName = "$/%VSSPath%/"
+<br>dim VSS_FolderName
+<br>VSS_FolderName = "$/%VSSPath%/"
 
-<br/>Set VSS = CreateObject("SourceSafe")
-<br/>VSS.open "%VSS%"
+<br>Set VSS = CreateObject("SourceSafe")
+<br>VSS.open "%VSS%"
 
-<br/>CheckTheFolder VSS.VSSItem (VSS_FolderName)
+<br>CheckTheFolder VSS.VSSItem (VSS_FolderName)
 
-<br/>Sub CheckTheFolder(objVSSFolder)
+<br>Sub CheckTheFolder(objVSSFolder)
 
-<br/>For Each VSSObj In objVSSFolder.Items(False)
-<br/><br/>        If ype = isFile Then				
+<br>For Each VSSObj In objVSSFolder.Items(False)
+<br><br>        If ype = isFile Then				
               If VSSObj.IsCheckedOut = 2 Then
-<br/>                   Project.Stop	
-<br/>              End if
-<br/><br/>        Else
-<br/>              VSS_FolderName = VSS_FolderName &amp; VSSObj.Name &amp; "/"
-<br/>              set objVSS_SubFolder = VSS.VSSItem (VSS_FolderName)
-<br/><br/>              CheckTheFolder(objVSS_SubFolder)
-<br/><br/>              VSS_FolderName = Replace(VSS_FolderName, VSSObj.Name&amp;"/" ,"")			
-<br/>        End if
-<br/><br/>Next
+<br>                   Project.Stop	
+<br>              End if
+<br><br>        Else
+<br>              VSS_FolderName = VSS_FolderName &amp; VSSObj.Name &amp; "/"
+<br>              set objVSS_SubFolder = VSS.VSSItem (VSS_FolderName)
+<br><br>              CheckTheFolder(objVSS_SubFolder)
+<br><br>              VSS_FolderName = Replace(VSS_FolderName, VSSObj.Name&amp;"/" ,"")			
+<br>        End if
+<br><br>Next
 
-<br/>End Sub</pre>
+<br>End Sub</pre>
           <p>
             <b>
               Figure 1: Check recursively for files that have been
@@ -501,7 +504,7 @@
           <a href="tel:+61299533000"> +61 2 9953 3000 </a>
         </p>
         <span class="copyright">
-          © Copyright SSW 1990-2024. All Rights Reserved.
+          &copy; Copyright SSW 1990-2024. All Rights Reserved.
         </span>
         <ul>
           <li class="first">

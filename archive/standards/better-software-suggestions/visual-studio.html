@@ -91,8 +91,11 @@
       >
         <p style="color: white">
           ✅ New page with updated info:
-          <a href="https://www.ssw.com.au/products" style="color: white">
-            ssw.com.au/products
+          <a
+            href="https://www.bettersoftwaresuggestions.com"
+            style="color: white"
+          >
+            bettersoftwaresuggestions.com
           </a>
         </p>
       </div>
@@ -1416,10 +1419,10 @@
                 This is a known issue about Tab control designer. When you load
                 a tab control which contains too many tabs, the designer will
                 move the tabs around sometimes, not following the initial
-                order.  A work around about this is to place some code in your
-                form constructor, right after InitializeComponent(), to clear
-                all the tab pages from your tab control and add them again in
-                the order you want. See problem,
+                order.&nbsp; A work around about this is to place some code in
+                your form constructor, right after InitializeComponent(), to
+                clear all the tab pages from your tab control and add them again
+                in the order you want. See problem,
                 <a href="/ssw/Redirect/Syncfusion.htm" target="_blank">
                   http://www.syncfusion.com/FAQ/WinForms/FAQ_c93c.asp#q959
                 </a>
@@ -1505,25 +1508,25 @@
                 there is no logic in the accessors:
               </p>
               <pre>public int Count
-<br/>
+<br>
 {
-<br/>
-   get
-<br/>
-   {
-<br/>
-      return _count;
-<br/>
-   }
-<br/>
-   set
-<br/>
-   {
-<br/>
-      _count = value;
-<br/>
-   }
-<br/>
+<br>
+&nbsp;&nbsp; get
+<br>
+&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return _count;
+<br>
+&nbsp;&nbsp; }
+<br>
+&nbsp;&nbsp; set
+<br>
+&nbsp;&nbsp; {
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _count = value;
+<br>
+&nbsp;&nbsp; }
+<br>
 }</pre>
               <p>Instead we will be able to write:</p>
               <pre>                            public int Count : _count;</pre>
@@ -1762,7 +1765,7 @@
               <dl class="goodImage">
                 <dt>
                   <img
-                    alt=""
+                    alt
                     height="390"
                     src="/archive/standards/better-software-suggestions/images/vsdrag-drop-xsd.gif"
                     width="234"
@@ -2071,40 +2074,40 @@ Try   '' sample code Catch   '' sample code End try &lt;/pre&gt;</pre
                 Please add in the comments it creates at the top the reason for
                 this - it seems unnecessary and melodramatic!
               </p>
-              <pre>                               <span style="color: green">/*<br/>
-                                   This script was created by Visual Studio on 31/10/2006 at 5:02 PM.<br/>
-                                   Run this script on schnauzer.AdventureWorks_v1.dbo to make it the same as schnauzer.AdventureWorks_v2.dbo.<br/>
-                                   This script performs its actions in the following order:<br/>
-                                   1. Disable foreign-key constraints.<br/>
+              <pre>                               <span style="color: green">/*<br>
+                                   This script was created by Visual Studio on 31/10/2006 at 5:02 PM.<br>
+                                   Run this script on schnauzer.AdventureWorks_v1.dbo to make it the same as schnauzer.AdventureWorks_v2.dbo.<br>
+                                   This script performs its actions in the following order:<br>
+                                   1. Disable foreign-key constraints.<br>
                                    2. Perform DELETE commands.
-                                   <br/>
-                                   3. Perform UPDATE commands.<br/>
-                                   4. Perform INSERT commands.<br/>
-                                   5. Re-enable foreign-key constraints.<br/>
-                                   Please back up your target database before running this script.<br/>
-                                   */<br/>
+                                   <br>
+                                   3. Perform UPDATE commands.<br>
+                                   4. Perform INSERT commands.<br>
+                                   5. Re-enable foreign-key constraints.<br>
+                                   Please back up your target database before running this script.<br>
+                                   */<br>
                                </span>    
-                            <span style="color: blue">SET </span>NUMERIC_ROUNDABORT <span style="color: blue">OFF</span><br/>    
+                            <span style="color: blue">SET </span>NUMERIC_ROUNDABORT <span style="color: blue">OFF</span><br>    
                             GO
-<br/>    
+<br>    
                             <span style="color: blue">SET </span>XACT_ABORT, ANSI_PADDING, ANSI_WARNINGS, CONCAT_NULL_YIELDS_NULL,
 <span style="color: blue">ARITHABORT</span><b>, </b>
                             <span style="color: blue">QUOTED_IDENTIFIER</span><b>, ANSI_NULLS </b><span style="color: blue">
-                                ON</span><br/>    
+                                ON</span><br>    
                             GO
-<br/>
+<br>
                             <span style="color: green">-- Pointer used for text / image updates. This might not
-                                be needed, but is declared here just in case<br/>
+                                be needed, but is declared here just in case<br>
                             </span>
-                            <span style="color: blue">DECLARE </span>@pv <span style="color: blue">binary</span><b>(16)</b><br/>    
-                            <span style="color: blue">BEGIN TRANSACTION<br/>
+                            <span style="color: blue">DECLARE </span>@pv <span style="color: blue">binary</span><b>(16)</b><br>    
+                            <span style="color: blue">BEGIN TRANSACTION<br>
                             </span>
                             <span style="color: blue">ALTER TABLE </span>[Sales].[Customer] <span style="color: blue">
                                 DROP CONSTRAINT </span>[FK_Customer_SalesTerritory_TerritoryID]
-<br/>    
+<br>    
                             <span style="color: blue">ALTER TABLE </span>[Sales].[SalesPersonQuotaHistory]
 <span style="color: blue">DROP CONSTRAINT </span>[FK_SalesPersonQuotaHistory_SalesPerson_SalesPersonID]
-<br/>
+<br>
                             </pre>
               <b> Figure: The update script generated by Data Dude </b>
             </li>
@@ -2201,8 +2204,9 @@ Try   '' sample code Catch   '' sample code End try &lt;/pre&gt;</pre
               <p>
                 Note: There is a work around. If you need Edit and Continue in
                 Visual Studio on a 64 bit PC, you can temporarily run the
-                debugging process with the “x86” option, and then switch back to
-                “Any CPU” when you terminate with debugging.
+                debugging process with the &ldquo;x86&rdquo; option, and then
+                switch back to &ldquo;Any CPU&rdquo; when you terminate with
+                debugging.
               </p>
               <p>It work perfectly.</p>
               <dl class="image">
@@ -2403,13 +2407,13 @@ Try   '' sample code Catch   '' sample code End try &lt;/pre&gt;</pre
               <p>
                 So instead of 600+ errors that says something to the effect of:
               </p>
-              <pre>			  The type or namespace name 'Linq' does not exist in the namespace 'Microsoft.SharePoint' (are you missing an assembly<br/>
+              <pre>			  The type or namespace name 'Linq' does not exist in the namespace 'Microsoft.SharePoint' (are you missing an assembly<br>
 			   reference?) C:\Temp\AdamCogan01\VisualWebPartProject1\VisualWebPartProject1\TeamSite.cs 997 25 VisualWebPartProject1
 			  </pre>
               <p></p>
               <p>Analyze the code and find the yellow</p>
-              <pre>			namespace VisualWebPartProject1 {<br/>
-			using System;<br/>
+              <pre>			namespace VisualWebPartProject1 {<br>
+			using System;<br>
 			public partial class TeamSiteDataContext : <span style="background-color: #FFFF00">Microsoft.SharePoint.Linq</span>.DataContext {
 			</pre>
               <p></p>
@@ -2779,10 +2783,10 @@ Try   '' sample code Catch   '' sample code End try &lt;/pre&gt;</pre
                   />
                 </dt>
                 <dd>
-                  Figure: Give me something to read while waiting… While looking
-                  at this screen I would like to see the list (in descending
-                  order) of the last things installed (from Extensions to
-                  Service Packs)
+                  Figure: Give me something to read while waiting&hellip; While
+                  looking at this screen I would like to see the list (in
+                  descending order) of the last things installed (from
+                  Extensions to Service Packs)
                 </dd>
               </dl>
             </li>
@@ -3000,29 +3004,29 @@ Try   '' sample code Catch   '' sample code End try &lt;/pre&gt;</pre
               </p>
               <p></p>
               <pre>try
-<br/>
+<br>
 {
-<br/>
-  // ** EnvDTE's starting index is 1, it is not Zero-Based
-<br/>
-  for (int i = 1; i &lt;= applicationObject.Solution.Projects.Count; i++)
-<br/>
-  {
-<br/>
-    MessageBox.Show(applicationObject.Solution.Projects.Item(i).FileName);
-<br/>
-  }
-<br/>
+<br>
+&nbsp;&nbsp;// ** EnvDTE's starting index is 1, it is not Zero-Based
+<br>
+&nbsp;&nbsp;for (int i = 1; i &lt;= applicationObject.Solution.Projects.Count; i++)
+<br>
+&nbsp;&nbsp;{
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MessageBox.Show(applicationObject.Solution.Projects.Item(i).FileName);
+<br>
+&nbsp;&nbsp;}
+<br>
 }
-<br/>
+<br>
 catch(Exception ex)
-<br/>
+<br>
 {
-<br/>
-  MessageBox.Show(<span style="background-color: #FFFF00">"Exception Message:
-    " + ex.Message</span>);<br/>
+<br>
+&nbsp;&nbsp;MessageBox.Show(<span style="background-color: #FFFF00">"Exception Message:
+    " + ex.Message</span>);<br>
 }
-<br/></pre>
+<br></pre>
               <b> Figure: The code to reproduce this message box. </b>
               <p></p>
               <p>
@@ -3140,7 +3144,7 @@ catch(Exception ex)
                 How we overcome this:
               </p>
               <pre>CommandBarComboBox dummyComboBox = (CommandBarComboBox)AddinCommandBar.Controls.Add(MsoControlType.msoControlComboBox, missing, missing, missing, missing);
-<br/>
+<br>
 dummyComboBox.Visible = false;</pre>
               <br />
               Using code above, add a dummy CommandBarComboBox first, set the
@@ -3155,7 +3159,7 @@ dummyComboBox.Visible = false;</pre>
               </p>
               <p></p>
               <pre>CommandBarButton.FaceId = 620;
-<br/>
+<br>
 CommandBarButton.Style = MsoButtonStyle.msoButtonIconAndCaption;</pre>
               <br />
               Sometimes the code above throw AccessViolationException, sometimes
@@ -3247,7 +3251,7 @@ EnvDTE80.DTE2.Commands.AddCommandBar("My command bar", EnvDTE.vsCommandBarType.v
           <a href="tel:+61299533000"> +61 2 9953 3000 </a>
         </p>
         <span class="copyright">
-          © Copyright SSW 1990-2024. All Rights Reserved.
+          &copy; Copyright SSW 1990-2024. All Rights Reserved.
         </span>
         <ul>
           <li class="first">

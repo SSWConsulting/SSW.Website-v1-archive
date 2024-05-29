@@ -91,8 +91,11 @@
       >
         <p style="color: white">
           ✅ New page with updated info:
-          <a href="https://www.ssw.com.au/products" style="color: white">
-            ssw.com.au/products
+          <a
+            href="https://www.bettersoftwaresuggestions.com"
+            style="color: white"
+          >
+            bettersoftwaresuggestions.com
           </a>
         </p>
       </div>
@@ -442,27 +445,27 @@
               </p>
               <pre>Private Sub MenuItem6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     Handles MenuItem6.Click
-<br/>
-        ClientNew()
-<br/>
+<br>
+    &nbsp;&nbsp;&nbsp; ClientNew()
+<br>
     End Sub
-<br/>
-    <br/>
+<br>
+    <br>
     Private Sub MenuItem7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     Handles MenuItem7.Click
-<br/>
-        ApplyFilter()
-<br/>
+<br>
+    &nbsp;&nbsp;&nbsp; ApplyFilter()
+<br>
     End Sub
-<br/>
-    <br/>
+<br>
+    <br>
     Private Sub MenuItem9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
     Handles MenuItem9.Click
-<br/>
-        RemoveFilter()
-<br/>
+<br>
+    &nbsp;&nbsp;&nbsp; RemoveFilter()
+<br>
     End Sub
-<br/>
+<br>
 </pre>
               <b> Figure: VB .NET menu example </b>
               <p>
@@ -477,27 +480,27 @@
               </p>
               <pre>Private Sub ToolBar1_ButtonClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolBarButtonClickEventArgs)
     Handles ToolBar1.ButtonClick
-<br/>
-        If e.Button Is btnNewClient Then
-<br/>
-            ClientNew()
-<br/>
-        ElseIf e.Button Is btnApplyFilter Then
-<br/>
-            ApplyFilter()
-<br/>
-        ElseIf e.Button Is btnRemoveFilter Then
-<br/>
-            RemoveFilter()
-<br/>
-        Else
-<br/>
-            MsgBox("Logic Error")
-<br/>
-        End If
-<br/>
+<br>
+    &nbsp;&nbsp;&nbsp; If e.Button Is btnNewClient Then
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ClientNew()
+<br>
+    &nbsp;&nbsp;&nbsp; ElseIf e.Button Is btnApplyFilter Then
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ApplyFilter()
+<br>
+    &nbsp;&nbsp;&nbsp; ElseIf e.Button Is btnRemoveFilter Then
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RemoveFilter()
+<br>
+    &nbsp;&nbsp;&nbsp; Else
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox("Logic Error")
+<br>
+    &nbsp;&nbsp;&nbsp; End If
+<br>
     End Sub
-<br/>
+<br>
 </pre>
               <b> Figure: Toolbar ButtonClick event </b>
               <p>
@@ -522,38 +525,38 @@
               </p>
               <p>The code below demonstrates the use of an IsDirty property.</p>
               <pre>If DirtyProvider1.GetIsDirty(Me) = True Then
-<br/>
-       
-<br/>
-       Dim result As MsgBoxResult = MsgBox("Do you want to save changes?",
+<br>
+    &nbsp;&nbsp;&nbsp;
+<br>
+    &nbsp;&nbsp;&nbsp;Dim result As MsgBoxResult = MsgBox("Do you want to save changes?",
     MsgBoxStyle.YesNoCancel, "Save")
-<br/>
-       
-<br/>
-       Select Case result
-<br/>
-          Case MsgBoxResult.Yes
-<br/>
-             Save()
-<br/>
-          Case MsgBoxResult.Cancel
-<br/>
-             e.Cancel = True
-<br/>
-          Case MsgBoxResult.No
-<br/>
-             ' Do nothing - the form will
+<br>
+    &nbsp;&nbsp;&nbsp;
+<br>
+    &nbsp;&nbsp;&nbsp;Select Case result
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Case MsgBoxResult.Yes
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save()
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Case MsgBoxResult.Cancel
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.Cancel = True
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Case MsgBoxResult.No
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' Do nothing - the form will
     close
-<br/>
-          Case Else
-<br/>
-             MsgBox("Logic Error")
-<br/>
-       End Select
-<br/>
-    <br/>
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Case Else
+<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MsgBox("Logic Error")
+<br>
+    &nbsp;&nbsp;&nbsp;End Select
+<br>
+    <br>
     End If
-<br/>
+<br>
                                                                             </pre>
               <b> Figure: Example IsDirty code </b>
             </li>
@@ -982,7 +985,7 @@ End Sub </pre
           <a href="tel:+61299533000"> +61 2 9953 3000 </a>
         </p>
         <span class="copyright">
-          © Copyright SSW 1990-2024. All Rights Reserved.
+          &copy; Copyright SSW 1990-2024. All Rights Reserved.
         </span>
         <ul>
           <li class="first">
