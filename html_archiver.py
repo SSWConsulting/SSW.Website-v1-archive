@@ -1,9 +1,11 @@
 import os
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 import re
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
 from selenium.webdriver.common.by import By
 import urllib.parse
 import re
@@ -49,6 +51,9 @@ IMAGE_REPLACEMENTS: dict[str, str] = {
     "eric_thumb.jpg": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/eric_phan.jpg",
     "SSWLogo-xmas.svg": "https://www.ssw.com.au/SSW/images/Raven/SSWLogo.svg",
     "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
+    "Images/OutlookCRMRebootAfterUpdate.gif	" : "Images/OutlookCRMRebootAfterUpdate.gif"
+
+
 }
 
 PAGE_REPLACEMENTS: dict[str, str] = {
@@ -153,9 +158,7 @@ def archive_pages(path: str) -> dict[str, str]:
             # Parse HTML content
             page_content = "<!DOCTYPE html>\n" + driver.page_source
             soup = BeautifulSoup(page_content, "html5lib")
-
             base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
-
             soup = fix_wayback_machine(soup)
             soup = remove_header_and_menu(soup)
             soup = fix_scripts(soup, base_path)
@@ -164,12 +167,14 @@ def archive_pages(path: str) -> dict[str, str]:
             soup = fix_links(soup)
             soup = get_pdfs(soup, base_path)
             soup = fix_breadcrumbs(soup, split_path[1])
-            soup = fix_breadcrumbs_new(soup)
             soup = fix_menu(soup)
             soup = fix_head(soup)
             soup = delete_existing_header(soup)
             soup = add_archive_header(soup, url)
-            soup = fix_breadcrumbs_v3(soup)
+
+            # It's important that this method is called here because it will interfere with changes in the
+            # previous fix breadcrum methods
+            # soup = fix_breadcrumbs_v4(soup)
 
 
             page_source = soup.prettify(formatter="html5")
@@ -202,11 +207,10 @@ def archive_pages(path: str) -> dict[str, str]:
     return items_written
 
 
-archive_url = "archive"
 
-def add_history_link_to_navbar(soup: BeautifulSoup) -> BeautifulSoup:
-    breadcrumb_tag = "ctl00_ctl00_Content_SiteMapPath1"
-    breadcrumbs = soup.find("span", {"id": breadcrumb_tag})
+def add_history_link_to_navbar(soup: BeautifulSoup, bread_crumb_id: str) -> BeautifulSoup:
+    archive_url = "archive"
+    breadcrumbs = soup.find("span", {"id": bread_crumb_id})
     archive_breadcrumb = soup.new_tag("span")
     archive_link = soup.new_tag("a")
     archive_link.string  = archive_url.capitalize()
@@ -219,41 +223,6 @@ def add_history_link_to_navbar(soup: BeautifulSoup) -> BeautifulSoup:
     arrow.string = ">"
     archive_breadcrumb.insert_after(arrow)
     # breadcrumbs.insert(7, archive_breadcrumb)
-    return soup
-
-
-def fix_breadcrumbs_v3(soup : BeautifulSoup) -> BeautifulSoup:
-    if soup.find("span",id="ctl00_ctl00_Content_SiteMapPath1") is None:
-        return soup
-    tag = soup.find("span",{'id': "ctl00_ctl00_Content_SiteMapPath1"})
-    # Create a new breadcrumb to append as the immediate successor of Home
-    # Append the breadcrumb just after home
-    if  not (tag.findAll("span")[0].find("a").has_attr('href') and "Default.aspx" in tag.findAll("span")[0].find("a")['href']):
-        return soup    
-    for i, child in enumerate(tag.findChildren("span", recursive=False)):                            
-        a_tag = child.find("a")
-        if a_tag is None:
-            continue
-        href = a_tag['href']
-        if i == 0:
-            a_tag['href'] = "/"
-            continue
-        if href.startswith("/ssw"):
-            href = href.replace("/ssw", "/archive", 1)
-        if href.endswith("Default.aspx"):
-            href = href.replace("/Default.aspx", "")
-        if href.endswith("Browse.aspx"):
-            href = href.replace("Browse.aspx", "")
-        elif href.endswith(".aspx"):
-            href = href.replace(".aspx", ".html")
-        href = pascal_to_kebab(href)
-        if not a_tag.has_attr('href'):
-            continue
-        a_tag['href'] = pascal_to_kebab(href)
-    span = tag.findAll("span")[2]
-    archive_link = span.find('a')
-    if archive_link is None or archive_url.capitalize() not in archive_link.string:
-        soup = add_history_link_to_navbar(soup)
     return soup
 
 def delete_existing_header (soup: BeautifulSoup) -> BeautifulSoup:
@@ -653,7 +622,7 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
     breadcrumbs = soup.select("div[class='breadcrumb'] > span > span > a")
 
     if len(breadcrumbs) < 2:
-        return soup
+        return fix_breadcrumbs_v2(soup)
 
     # Reset to non-aspx root (i.e. ssw.com.au/)
     breadcrumbs[0]["href"] = "/"
@@ -669,25 +638,54 @@ def fix_breadcrumbs(soup: BeautifulSoup, whitelist_folder: str) -> BeautifulSoup
 
     return soup
 
-def fix_breadcrumbs_new(soup: BeautifulSoup):
-    if soup.find("span",id="ctl00_mainContentPlaceHolder_SiteMapPath1") is None:
-        return soup
-    tag = soup.find("span",{'id': "ctl00_mainContentPlaceHolder_SiteMapPath1"})
-    for child in tag.findChildren("span", recursive=False):
+
+def fix_breadcrumbs_generic(BreadCrumbs: Tag):
+    for i, child in enumerate(BreadCrumbs.findChildren("span", recursive=False)):
         a_tag = child.find("a")
         if a_tag is None:
             continue
+        if i == 0:
+            a_tag['href'] = "/"
+            continue
         href = a_tag['href']
-        if href.startswith("/ssw"):
-            href = href.replace("/ssw", "/archive", 1)
-            if href.endswith("Default.aspx"):
-                href = href.replace("/Default.aspx", "")
-            if href.endswith("Browse.aspx"):
-                href = href.replace("Browse.aspx", "")
-            elif href.endswith(".aspx"):
-                href = href.replace(".aspx", ".html")
-            href = pascal_to_kebab(href)
-            a_tag['href'] = pascal_to_kebab(href)
+        if href is None:
+            continue
+        href = href.replace("/ssw", "/archive", 1)
+        href = href.replace("/SSW", "/archive")
+        href = href.replace("/Default.aspx", "")
+        href = href.replace("/default.aspx", "")
+        href = href.replace("/browse.aspx", "")
+        href = href.replace("/Browse.aspx", "")
+        href = href.replace(".aspx", ".html")
+
+        a_tag['href'] = pascal_to_kebab(href)
+
+
+
+def determine_breadcrumb_id(soup: BeautifulSoup) -> str | None:
+    internal_id = "ctl00_SiteMapPathStandardsInternal"
+    regular_id = "ctl00_mainContentPlaceHolder_SiteMapPath1"
+    # Some of the newer pages use this breadcrumb ID
+    v2_regular_id = "ctl00_ctl00_Content_SiteMapPath1"
+    if soup.find("span",id=regular_id) is not None:
+        return regular_id
+    if soup.find("span",id=internal_id) is not None:
+        return internal_id
+    if soup.find("span",id=v2_regular_id) is not None:  
+        return v2_regular_id
+    return None
+
+def fix_breadcrumbs_v2(soup: BeautifulSoup) -> BeautifulSoup:
+    # Some of the newer pages use this breadcrumb ID
+
+
+    # 
+    assosciated_id = determine_breadcrumb_id(soup)
+    if assosciated_id is None:
+        return soup
+    tag = soup.find("span",{'id': assosciated_id})
+    fix_breadcrumbs_generic(tag)
+    add_history_link_to_navbar(soup, assosciated_id)
     return soup
 
 def remove_header_and_menu(soup: BeautifulSoup) -> BeautifulSoup:
