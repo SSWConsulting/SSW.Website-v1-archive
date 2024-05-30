@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
   <head id="ctl00_ctl00_MasterHeader">
     <script>
@@ -7132,9 +7131,9 @@
       >
         <p>
           ✅ New page with updated info:
-          <a href="https://www.ssw.com.au/products" style="color: white"
-            >ssw.com.au/products</a
-          >
+          <a href="https://www.ssw.com.au/products" style="color: white">
+            ssw.com.au/products
+          </a>
         </p>
       </div>
     </div>
@@ -7750,12 +7749,12 @@
       onsubmit="javascript:return WebForm_OnSubmit();"
     >
       <div>
-        <input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value="" />
+        <input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value />
         <input
           id="__EVENTARGUMENT"
           name="__EVENTARGUMENT"
           type="hidden"
-          value=""
+          value
         />
         <input
           id="__VIEWSTATE"
@@ -7809,9 +7808,10 @@
                       <span>
                         <a
                           href="/archive"
-                          title="SSW’s products. Great tools to help you code better."
-                          >Archive</a
+                          title="SSW&rsquo;s products. Great tools to help you code better."
                         >
+                          Archive
+                        </a>
                       </span>
                       <span> &gt; </span>
                       <span>
@@ -7852,7 +7852,7 @@
                           <span>
                             <a
                               href="/ssw/Products/ProdSummaryList.aspx?"
-                              title="SSW’s products. Great tools to help you code better."
+                              title="SSW&rsquo;s products. Great tools to help you code better."
                             >
                               Products
                             </a>
@@ -7987,21 +7987,21 @@ SECONDARY: database updates | application deployment software | software deploym
                           <br />
                           An example command line to use is:
                           <br />
-                          SCPTXFR.exe /s &lt;ServerName&gt;  /d
+                          SCPTXFR.exe /s &lt;ServerName&gt;&nbsp; /d
                           &lt;DatabaseName&gt; /P &lt;SA_Password&gt; /f
                           ver0001.sql /H /A
                           <br />
                           Eg., "SCPTXFR.exe" /s (local) /d Northwind /f
                           ver0001.sql /P mypassword /H /A
                           <br />
-                           
+                          &nbsp;
                         </li>
                         <li>
                           If you have sample data, create another script
                           directory also under your application folder. Place
                           all your insert scripts in there.
                           <br />
-                           
+                          &nbsp;
                         </li>
                         <li>
                           Once all your files are in this directory make sure
@@ -8130,17 +8130,17 @@ SECONDARY: database updates | application deployment software | software deploym
                         <tbody>
                           <tr>
                             <td>
-                              <pre>Using SSW.SQLDeploy.Check;<br/>
-                        ...<br/>
-                        ...<br/>
-                        string strConnection = "Data Source=(local);Initial Catalog=Northwind;";<br/>
-                        string strSQLDatabaseScripts = "c:\temp\Scripts"<br/>
-                        ClientUtil cu = new ClientUtil();<br/>
-                        if(cu.IsNewVersion(strConnection,steSQLDatabaseScripts)){<br/>
-                             MessageBox.Show("Please upgrade your database to "+
-                        cu.NewDatabaseVersion +", it is currently "+cu.CurrentDatabaseVersion);<br/>
-                        <br/>
-                        }<br/>
+                              <pre>Using SSW.SQLDeploy.Check;<br>
+                        ...<br>
+                        ...<br>
+                        string strConnection = "Data Source=(local);Initial Catalog=Northwind;";<br>
+                        string strSQLDatabaseScripts = "c:\temp\Scripts"<br>
+                        ClientUtil cu = new ClientUtil();<br>
+                        if(cu.IsNewVersion(strConnection,steSQLDatabaseScripts)){<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; MessageBox.Show("Please upgrade your database to "+
+                        cu.NewDatabaseVersion +", it is currently "+cu.CurrentDatabaseVersion);<br>
+                        <br>
+                        }<br>
                         ...</pre>
                             </td>
                           </tr>
@@ -8196,7 +8196,7 @@ SECONDARY: database updates | application deployment software | software deploym
                             <td width="185">
                               <span style="font-size: 10pt">
                                 <img
-                                  alt=""
+                                  alt
                                   height="16"
                                   src="/archive/sql-deploy/images/pubproperty.gif"
                                   width="16"
@@ -8217,7 +8217,7 @@ SECONDARY: database updates | application deployment software | software deploym
                           <tr>
                             <td>
                               <img
-                                alt=""
+                                alt
                                 height="1"
                                 src="/archive/sql-deploy/images/ms-spacer.gif"
                                 width="187"
@@ -8237,45 +8237,45 @@ SECONDARY: database updates | application deployment software | software deploym
                         <tbody>
                           <tr>
                             <td>
-                              <pre>		using SSW.Framework.Data;<br/>
-		using SSW.Framework.Data.SqlServer;<br/>
-		...<br/>
-		...<br/>
-		string strDatabaseName = "SQLDeploySampleDatabase"; <br/>
-		string TempDatabaseName = strDatabaseName + "_TEMP";<br/>
-string strDatabaseScriptPath = "../DatabaseSQLScripts/";<br/>
-<br/>
-Settings settings = new Settings();<br/>
-settings.FolderPath = Server.MapPath(strDatabaseScriptPath);<br/>
-<br/>
-SQLFileFinder finder = new SQLFileFinder();<br/>
-finder.FillAdvanced(settings);<br/>
-finder.SetEnabledOnAllFiles(true);<br/>
-SQLFileCollection files = finder.EnabledFiles();<br/>
-<br/>
-settings.Connection = "Server=localhost;Database=SQLDeploySampleDatabase;";<br/>
-<br/>
-if (DBUtils.DoesDatabaseExist(TempDatabaseName, settings.Connection))<br/>
-{<br/>
-	    DropDatabase(TempDatabaseName, false);<br/>
-}<br/>
-<br/>
-settings.ConnectionString.InitialCatalog = TempDatabaseName;<br/>
-settings.IsNewDatabase = !DBUtils.DoesDatabaseExist(strDatabaseName, settings.Connection);<br/>
-settings.NewDatabaseName = TempDatabaseName;<br/>
-settings.PlaceHolder = "[DatabaseNamePlaceHolder]";<br/>
-<br/>
-foreach(SQLFile file in files)<br/>
-{<br/>
-	    file.SQLFileStepsReplace("'"+databaseName+"'","'"+TempDatabaseName+"'");<br/>
-	    file.SQLFileStepsReplace("'"+databaseName+".","'"+TempDatabaseName+".");<br/>
-	    file.SQLFileStepsReplace(" "+databaseName+" " ," "+TempDatabaseName+" ");<br/>
-	    file.SQLFileStepsReplace("USE "+databaseName+"" ,"USE "+TempDatabaseName+"");<br/>
-	    file.SQLFileStepsReplace("DATABASE "+databaseName+"" ,"DATABASE "+TempDatabaseName+"");<br/>
-}	<br/>
-<br/>
-settings.ConnectionString.InitialCatalog = "";<br/>
-du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
+                              <pre>		using SSW.Framework.Data;<br>
+		using SSW.Framework.Data.SqlServer;<br>
+		...<br>
+		...<br>
+		string strDatabaseName = "SQLDeploySampleDatabase"; <br>
+		string TempDatabaseName = strDatabaseName + "_TEMP";<br>
+string strDatabaseScriptPath = "../DatabaseSQLScripts/";<br>
+<br>
+Settings settings = new Settings();<br>
+settings.FolderPath = Server.MapPath(strDatabaseScriptPath);<br>
+<br>
+SQLFileFinder finder = new SQLFileFinder();<br>
+finder.FillAdvanced(settings);<br>
+finder.SetEnabledOnAllFiles(true);<br>
+SQLFileCollection files = finder.EnabledFiles();<br>
+<br>
+settings.Connection = "Server=localhost;Database=SQLDeploySampleDatabase;";<br>
+<br>
+if (DBUtils.DoesDatabaseExist(TempDatabaseName, settings.Connection))<br>
+{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;DropDatabase(TempDatabaseName, false);<br>
+}<br>
+<br>
+settings.ConnectionString.InitialCatalog = TempDatabaseName;<br>
+settings.IsNewDatabase = !DBUtils.DoesDatabaseExist(strDatabaseName, settings.Connection);<br>
+settings.NewDatabaseName = TempDatabaseName;<br>
+settings.PlaceHolder = "[DatabaseNamePlaceHolder]";<br>
+<br>
+foreach(SQLFile file in files)<br>
+{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;file.SQLFileStepsReplace("'"+databaseName+"'","'"+TempDatabaseName+"'");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;file.SQLFileStepsReplace("'"+databaseName+".","'"+TempDatabaseName+".");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;file.SQLFileStepsReplace(" "+databaseName+" " ," "+TempDatabaseName+" ");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;file.SQLFileStepsReplace("USE "+databaseName+"" ,"USE "+TempDatabaseName+"");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;file.SQLFileStepsReplace("DATABASE "+databaseName+"" ,"DATABASE "+TempDatabaseName+"");<br>
+}	<br>
+<br>
+settings.ConnectionString.InitialCatalog = "";<br>
+du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br>
 		</pre>
                             </td>
                           </tr>
@@ -8376,7 +8376,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                           Configuration property in your load event handler (or
                           constructor).
                           <br />
-                           
+                          &nbsp;
                           <table
                             cellpadding="2"
                             cellspacing="2"
@@ -8432,7 +8432,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8440,7 +8440,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" width="219">
+                                <td nowrap width="219">
                                   DatabaseNamePlaceholder
                                 </td>
                                 <td>
@@ -8450,7 +8450,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr>
-                                <td nowrap="" valign="top" width="16">
+                                <td nowrap valign="top" width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8458,7 +8458,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   IsSampleDatabaseNameEnforced
                                 </td>
                                 <td>
@@ -8469,7 +8469,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8477,7 +8477,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" width="219">
+                                <td nowrap width="219">
                                   IsDatabaseNameEnforced
                                 </td>
                                 <td>
@@ -8488,7 +8488,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8496,7 +8496,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   PostCreateScriptsPath
                                 </td>
                                 <td>
@@ -8505,7 +8505,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8513,7 +8513,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   PostUpgradeScriptsPath
                                 </td>
                                 <td>
@@ -8522,7 +8522,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8530,7 +8530,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   PreUpgradeScriptsPath
                                 </td>
                                 <td>
@@ -8539,7 +8539,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8547,7 +8547,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   ProductName
                                 </td>
                                 <td>
@@ -8556,7 +8556,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr>
-                                <td nowrap="" valign="top" width="16">
+                                <td nowrap valign="top" width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8564,7 +8564,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   SampleDatabaseName
                                 </td>
                                 <td>
@@ -8574,7 +8574,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8582,7 +8582,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" valign="top" width="219">
+                                <td nowrap valign="top" width="219">
                                   SampleScriptsPath
                                 </td>
                                 <td>
@@ -8591,7 +8591,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                 </td>
                               </tr>
                               <tr valign="top">
-                                <td nowrap="" width="16">
+                                <td nowrap width="16">
                                   <img
                                     alt="Get latest script"
                                     height="16"
@@ -8599,9 +8599,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                                     width="16"
                                   />
                                 </td>
-                                <td nowrap="" width="219">
-                                  UpgradeScriptsPath
-                                </td>
+                                <td nowrap width="219">UpgradeScriptsPath</td>
                                 <td>
                                   Gets or sets the path to the upgrade scripts
                                   folder.
@@ -8634,31 +8632,31 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                             <tbody>
                               <tr>
                                 <td>
-                                  <pre>private void Form1_Load(object sender, System.EventArgs e)<br/>
-                                        {<br/>
-                                              databaseSetupControl1.Configuration.ConnectionBuilder.ConnectionString
-                                        = MyConfiguration.ConnectionString;<br/>
-                                              databaseSetupControl1.Configuration.CreateScriptsPath
-                                        = MyConfiguration.CreateScriptsPath;<br/>
-                                              databaseSetupControl1.Configuration.UpgradeScriptsPath
-                                        = MyConfiguration.UpgradeScriptsPath;<br/>
-                                              databaseSetupControl1.Configuration.ProductName =
-                                        Application.ProductName;<br/>
-                                              databaseSetupControl1.Configuration.SampleScriptsPath=
-                                        MyConfiguration.SampleScriptsPath;<br/>
-                                              databaseSetupControl1.Configuration.NewDatabaseName
-                                        = "SSWSQLDeployNorthwindSample";<br/>
-                                              databaseSetupControl1.Configuration.IsDatabaseNameEnforced
-                                        = true;<br/>
-                                              databaseSetupControl1.Configuration.ConnectionBuilder.ConnectionStringChanged+=
-                                        new EventHandler(Configuration_ConnectionStringChanged);<br/>
-                                        <br/>
-                                        }<br/>
-                                        <br/>
-                                        private void Configuration_ConnectionStringChanged(object sender, EventArgs e)<br/>
-                                        {<br/>
-                                           // MessageBox.Show("The connection string has changed, please
-                                        handle here.",Application.ProductName);<br/>
+                                  <pre>private void Form1_Load(object sender, System.EventArgs e)<br>
+                                        {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.ConnectionBuilder.ConnectionString
+                                        = MyConfiguration.ConnectionString;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.CreateScriptsPath
+                                        = MyConfiguration.CreateScriptsPath;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.UpgradeScriptsPath
+                                        = MyConfiguration.UpgradeScriptsPath;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.ProductName =
+                                        Application.ProductName;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.SampleScriptsPath=
+                                        MyConfiguration.SampleScriptsPath;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.NewDatabaseName
+                                        = "SSWSQLDeployNorthwindSample";<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.IsDatabaseNameEnforced
+                                        = true;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; databaseSetupControl1.Configuration.ConnectionBuilder.ConnectionStringChanged+=
+                                        new EventHandler(Configuration_ConnectionStringChanged);<br>
+                                        <br>
+                                        }<br>
+                                        <br>
+                                        private void Configuration_ConnectionStringChanged(object sender, EventArgs e)<br>
+                                        {<br>
+                                        &nbsp;&nbsp;&nbsp;// MessageBox.Show("The connection string has changed, please
+                                        handle here.",Application.ProductName);<br>
                                         } </pre>
                                 </td>
                               </tr>
@@ -8668,7 +8666,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                             Figure: Code listing sample of how to set the
                             configuration of the control
                           </b>
-                          <p> </p>
+                          <p>&nbsp;</p>
                         </li>
                         <li>
                           Handle the ConnectionStringChangedevent. In the event
@@ -8707,32 +8705,32 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                             <tbody>
                               <tr>
                                 <td>
-                                  <pre>public class MyConfiguration<br/>
-                                        {<br/>
-                                          public MyConfiguration() {}<br/>
-                                        <br/>
-                                          public static string ConnectionString<br/>
-                                          {<br/>
-                                               get { return ""; }<br/>
-                                          }<br/>
-                                        <br/>
-                                          public static string CreateScriptsPath<br/>
-                                          {<br/>
-                                             get { return @"c:\Program Files\SSW SQL Deploy\Samples\WebForm\DatabaseSQLScripts\Create";
-                                        }<br/>
-                                          }<br/>
-                                        <br/>
-                                         public static string UpgradeScriptsPath<br/>
-                                          {<br/>
-                                             get { return @"c:\Program Files\SSW SQL Deploy\Samples\WebForm\DatabaseSQLScripts\Upgrade";
-                                        }<br/>
-                                         }<br/>
-                                        <br/>
-                                          public static string SampleScriptsPath<br/>
-                                          {<br/>
-                                             get { return @"c:\Program Files\SSW SQL Deploy\Samples\WebForm\DatabaseSQLScripts\Sample";
-                                        }<br/>
-                                          }<br/>
+                                  <pre>public class MyConfiguration<br>
+                                        {<br>
+                                        &nbsp; public MyConfiguration() {}<br>
+                                        <br>
+                                        &nbsp; public static string ConnectionString<br>
+                                        &nbsp; {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get { return ""; }<br>
+                                        &nbsp; }<br>
+                                        <br>
+                                        &nbsp; public static string CreateScriptsPath<br>
+                                        &nbsp; {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; get { return @"c:\Program Files\SSW SQL Deploy\Samples\WebForm\DatabaseSQLScripts\Create";
+                                        }<br>
+                                        &nbsp; }<br>
+                                        <br>
+                                        &nbsp;public static string UpgradeScriptsPath<br>
+                                        &nbsp; {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; get { return @"c:\Program Files\SSW SQL Deploy\Samples\WebForm\DatabaseSQLScripts\Upgrade";
+                                        }<br>
+                                        &nbsp;}<br>
+                                        <br>
+                                        &nbsp; public static string SampleScriptsPath<br>
+                                        &nbsp; {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; get { return @"c:\Program Files\SSW SQL Deploy\Samples\WebForm\DatabaseSQLScripts\Sample";
+                                        }<br>
+                                        &nbsp; }<br>
                                         } </pre>
                                 </td>
                               </tr>
@@ -8975,7 +8973,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
           <div class="container">
             <div class="footer-text row">
               <div class="col-xs-12 col-sm-4 copyright">
-                <p>© Copyright SSW 1990-2024. All Rights Reserved.</p>
+                <p>&copy; Copyright SSW 1990-2024. All Rights Reserved.</p>
               </div>
               <div class="col-xs-12 col-sm-8 footer-links">
                 <p>
@@ -9056,7 +9054,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                     data-prefix="fas"
                     focusable="false"
                     role="img"
-                    viewbox="0 0 320 512"
+                    viewBox="0 0 320 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -9134,7 +9132,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                     data-prefix="fas"
                     focusable="false"
                     role="img"
-                    viewbox="0 0 320 512"
+                    viewBox="0 0 320 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -9196,7 +9194,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                     data-prefix="fas"
                     focusable="false"
                     role="img"
-                    viewbox="0 0 320 512"
+                    viewBox="0 0 320 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -9266,7 +9264,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                     data-prefix="fas"
                     focusable="false"
                     role="img"
-                    viewbox="0 0 320 512"
+                    viewBox="0 0 320 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -9320,7 +9318,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                     data-prefix="fas"
                     focusable="false"
                     role="img"
-                    viewbox="0 0 320 512"
+                    viewBox="0 0 320 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -9366,7 +9364,7 @@ du.UpgradeDatabase(files, settings, settings.NewDatabaseName, true);<br/>
                     data-prefix="fas"
                     focusable="false"
                     role="img"
-                    viewbox="0 0 320 512"
+                    viewBox="0 0 320 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path

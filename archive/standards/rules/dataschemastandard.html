@@ -169,11 +169,11 @@
                 <h2>Data Schema - How Changes are to be Implemented</h2>
                 <p>
                   One of the biggest deployment hassles is with the backend
-                  database. When you deploy the frontend from
-                  Development to Test to Production, it is usually a simple
-                  process of deleting the old files and replacing with a copy.
-                  The backend - particularly when it has data - is a different
-                  beast.
+                  database. When you deploy the frontend&nbsp;from
+                  Development&nbsp;to&nbsp;Test to Production, it is usually a
+                  simple process of&nbsp;deleting the old files and
+                  replacing&nbsp;with a copy. The backend&nbsp;- particularly
+                  when it has data - is a different beast.
                 </p>
                 <p>
                   Following this standard will mean you only need to run the
@@ -181,9 +181,10 @@
                   couple of SQL files. The basic run is
                   <strong>
                     "Every change to a deployed Database Schema (tables, views,
-                    stored procedures, user functions and jobs) must be saved as
-                    a .sql script file and then run from Visual a Studio
-                    Database Project (where available) or Query Analyzer."
+                    stored procedures, user functions and jobs) must
+                    be&nbsp;saved as a .sql script file and then run from Visual
+                    a Studio Database Project (where available) or Query
+                    Analyzer."
                   </strong>
                 </p>
                 <table bgcolor="#cccccc" border="0" width="100%">
@@ -219,9 +220,10 @@
                 <p>
                   You talk to a client and create a schema (whatever way you
                   want - we usually use Visual Studio.NET Database Project, SQL
-                  Server Enterprise Manager or Access 2002 ADPs). It is highly
-                  recommended that you use a Visual Studio.NET&lt; Project, and
-                  add it to Visual SourceSafe database. This will allow you to:
+                  Server Enterprise&nbsp;Manager or Access 2002 ADPs). It is
+                  highly recommended that you use a Visual Studio.NET&lt;
+                  Project, and add it to Visual SourceSafe database. This will
+                  allow you to:
                 </p>
                 <ul>
                   <li>
@@ -239,7 +241,7 @@
                 </ul>
                 <p>
                   <img
-                    alt=""
+                    alt
                     height="361"
                     src="/archive/standards/rules/images/data-schema-standard-add-solution-to-source-control.gif"
                     width="216"
@@ -272,7 +274,8 @@
                   <br />
                   A) If you have a replicated database in SQL Server 7 and you
                   want to change table structure, then - before creating
-                  scripts, and after creating scripts - you will need to:
+                  scripts, and after&nbsp;creating scripts&nbsp;- you will need
+                  to:
                   <br />
                   <br />
                   1. In Enterprise manager, manually remove subscriptions to the
@@ -297,9 +300,9 @@
                   Enterprise Manager. Changes will be propagated automatically
                   to other replicas in the database.
                   <br />
-                  However, If you for example, you want to change the data type
-                  of a column in a table, you will need to follow steps 1 to 5
-                  as per the SQL Server 7.0 procedure.
+                  However,&nbsp;If&nbsp;you for example, you want to change the
+                  data type of a column in a table, you will need to follow
+                  steps 1 to 5 as per the SQL Server 7.0 procedure.
                 </p>
                 <p>
                   <strong>
@@ -311,21 +314,21 @@
                   Visual Studio Database Project (where available), and Right
                   Click the database in the Server Explorer window. If Visual
                   Studio.NET is not available, Open Enterprise Manager and Right
-                  Click the database, All Tasks, and Generate SQL Script.
+                  Click the database,&nbsp;All Tasks, and Generate SQL Script.
                 </p>
                 <p>
                   <img
-                    alt=""
+                    alt
                     height="290"
                     src="/archive/standards/rules/images/generate-script.gif"
                     width="395"
                   />
-                  <img alt="" src="" />
+                  <img alt src />
                 </p>
                 <p>
                   <strong> Figure 2: </strong>
-                  Generate the Initial Script  e.g. ver001.sql - In Enterprise
-                  Manager (left), and Visual Studio.NET (right)
+                  Generate the Initial&nbsp;Script&nbsp; e.g. ver001.sql - In
+                  Enterprise Manager (left), and Visual Studio.NET (right)
                 </p>
                 <p>
                   <strong>
@@ -368,9 +371,9 @@
                 </p>
                 <p>
                   Open the initial script within Visual Studio.NET editor (where
-                  available) or your text editor and add an INSERT statement at
-                  the bottom to add a record to _zsDataVersion (sample script
-                  for this table as below)
+                  available) or your&nbsp;text editor and add&nbsp;an INSERT
+                  statement&nbsp;at the bottom to add a record to _zsDataVersion
+                  (sample script for this table as below)
                 </p>
                 <p></p>
                 <table
@@ -392,7 +395,7 @@
                         <pre>
 CREATE TABLE _zsDataVersionsql
 ( 
-	ChangeID int NOT NULL,
+	ChangeID int&nbsp;NOT NULL,
 	DateCreated datetime NULL ,
 	BackEndPath nvarchar(255) NULL,
 	EmpUpdated nvarchar(150) NULL,
@@ -422,7 +425,7 @@ GO</pre
                 <p></p>
                 <p></p>
                 <p>
-                  If you require any sample data, make another SQL file,
+                  If you&nbsp;require any sample data, make another SQL file,
                   normally as SampleData.sql.
                 </p>
                 <p>
@@ -434,7 +437,7 @@ GO</pre
                 <p>
                   <b> 2) </b>
                   Changes after the initial full script (version 1 or
-                  ver001.sql) must be saved into the same directory. eg.
+                  ver001.sql) must be&nbsp;saved into the same directory. eg.
                 </p>
                 <pre>D:\DataSQLScripts</pre>
                 <p></p>
@@ -457,8 +460,8 @@ GO</pre
                   </strong>
                 </p>
                 <p>
-                  Make changes in the normal way - via SQL Server Enterprise
-                  Manager (as per
+                  Make changes in the normal way&nbsp;- via SQL Server
+                  Enterprise Manager (as per
                   <strong> Figure 1 </strong>
                   )
                 </p>
@@ -479,7 +482,7 @@ GO</pre
                   <strong> NOT </strong>
                   save changes
                   <img
-                    alt=""
+                    alt
                     height="21"
                     src="/archive/standards/rules/images/img-save-icon.gif"
                     width="22"
@@ -489,7 +492,7 @@ GO</pre
                 <li>
                   Instead save it as a script file (.sql)
                   <img
-                    alt=""
+                    alt
                     height="25"
                     src="/archive/standards/rules/images/data-schema-standard-save-script-icon.gif"
                     width="42"
@@ -570,7 +573,7 @@ GO</pre
                 <p></p>
                 <p></p>
                 <p>
-                  <strong> Figure 7: </strong>
+                  <strong> Figure&nbsp;7: </strong>
                   Open the script file and add the INSERT STATEMENT (Text in red
                   colour)
                   <br />
@@ -582,22 +585,23 @@ GO</pre
                     You now have a directory with all changes (see
                     <strong> Figure 8 </strong>
                     ) The idea is you run all the above scripts and you get
-                    up-to-date.  The _zsVersion table is a record of what state
-                    the database is at.
+                    up-to-date.&nbsp; The _zsVersion table is a record of what
+                    state the database is at.
                   </p>
                   <p>
                     <img
-                      alt=""
+                      alt
                       height="325"
                       src="/archive/standards/rules/images/directory-structure.gif"
                       width="531"
                     />
-                    <img alt="" src="" />
+                    <img alt src />
                   </p>
                   <p>
                     <strong>
-                      Figure 8 (Above) - An example changes directory (left),
-                      the VS.NET changes directory (right)
+                      Figure&nbsp;8 (Above) - An example changes
+                      directory&nbsp;(left), the VS.NET changes directory
+                      (right)
                     </strong>
                     <br />
                   </p>
@@ -618,13 +622,14 @@ GO</pre
                     and run the script which contains the next record for
                     _zsDataVersion.
                     <strong>
-                      In VS.NET (where available),  right click on the script
-                      you want to run, and click Run or Run on to execute it.
+                      In VS.NET (where available), &nbsp;right click on the
+                      script you want to run, and click Run or Run on to execute
+                      it.
                     </strong>
                   </p>
                   <p>
-                    <img alt="" src="" />
-                    <img alt="" height="296" src="" width="238" />
+                    <img alt src />
+                    <img alt height="296" src width="238" />
                   </p>
                   <p>
                     Figure: Running the scripts on the destination servers in
@@ -649,17 +654,17 @@ GO</pre
                     Backup database before making changes/running scripts. If
                     there are major changes (esp large tables with many
                     relationships), restore this backup to another SQL
-                    Server database (e.g.
+                    Server&nbsp;database (e.g.
                     <strong> NorthwindScriptTest23112001 </strong>
                     when major changes are about to be made. Run the scripts on
                     this test database before running it on the database proper.
-                    Fix any data-related problems and generate associated
+                    Fix any data-related problems and generate&nbsp;associated
                     scripts to make the updates.
                   </p>
                   <ul>
                     <li>
-                      Run each version script in Query Analyzer, first on
-                      the test database, then on the primary database.
+                      Run&nbsp;each version script in Query Analyzer, first on
+                      the&nbsp;test database, then on the primary database.
                     </li>
                   </ul>
                   <p>
@@ -694,7 +699,7 @@ GO</pre
                                   <p>
                                     <br />
                                     <img
-                                      alt=""
+                                      alt
                                       height="205"
                                       src="/archive/standards/rules/images/design-view-access.gif"
                                       width="497"
@@ -772,7 +777,7 @@ GO</pre
                                     .
                                     <br />
                                     <img
-                                      alt=""
+                                      alt
                                       height="464"
                                       src="/archive/standards/rules/images/auto-insert-results.gif"
                                       width="557"
@@ -791,7 +796,7 @@ GO</pre
                           <p></p>
                           <p>
                             <img
-                              alt=""
+                              alt
                               height="10"
                               src="/archive/standards/rules/images/small-red-ball.gif"
                               width="10"
@@ -802,8 +807,8 @@ GO</pre
                             <br />
                             We do not use SQL Compare on its own, as it does not
                             record version numbers. e.g. There is no simple way
-                            of making sure what version I have  by looking at
-                            the two databases separately.
+                            of making sure&nbsp;what version I have &nbsp;by
+                            looking at the two databases separately.
                           </p>
                           <p>
                             The developer should be responsible for breaking the
@@ -838,7 +843,8 @@ GO</pre
                               <a href="tel:+61299533000"> +61 2 9953 3000 </a>
                             </p>
                             <span class="copyright">
-                              © Copyright SSW 1990-2024. All Rights Reserved.
+                              &copy; Copyright SSW 1990-2024. All Rights
+                              Reserved.
                             </span>
                             <ul>
                               <li class="first">
