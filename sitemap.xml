@@ -3709,7 +3709,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-command-lines.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-crm3-to-4-migration.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-exchange-server.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -3794,6 +3806,12 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-windows-8-deployment.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-windows-forms-click-once.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
