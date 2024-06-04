@@ -235,8 +235,8 @@ def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
     regex = r"([a-z])([A-Z0-9])"
     replacements = {
-        # This method is not idempotent, so has issues converting this string
-        "demo-fms200203" : "demo-fms200203", 
+        "ThankyouShare": "thank-you-share",
+        "demo-fms200203" : "demo-fms200203",
         "RulestoBetterCommandLines": "rules-to-better-command-lines",
         "eXtremeEmails": "extreme-emails",        
         "NET": "Net",
