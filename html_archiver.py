@@ -667,16 +667,10 @@ def fix_breadcrumbs_generic(BreadCrumbs: Tag):
 
 
 def determine_breadcrumb_id(soup: BeautifulSoup) -> str | None:
-    internal_id = "ctl00_SiteMapPathStandardsInternal"
-    regular_id = "ctl00_mainContentPlaceHolder_SiteMapPath1"
-    # Some of the newer pages use this breadcrumb ID
-    v2_regular_id = "ctl00_ctl00_Content_SiteMapPath1"
-    if soup.find("span",id=regular_id) is not None:
-        return regular_id
-    if soup.find("span",id=internal_id) is not None:
-        return internal_id
-    if soup.find("span",id=v2_regular_id) is not None:  
-        return v2_regular_id
+    known_ids = ["ctl00_SiteMapPathStandardsInternal", "ctl00_mainContentPlaceHolder_SiteMapPath1", "ctl00_SiteMapPathMaster", "ctl00_ctl00_Content_SiteMapPath1"]
+    for id in known_ids:
+        if soup.find("span", id=id) is not None:
+            return id
     return None
 
 def fix_breadcrumbs_v2(soup: BeautifulSoup) -> BeautifulSoup:
