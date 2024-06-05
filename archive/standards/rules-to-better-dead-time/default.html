@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head id="ctl00_Head1">
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXDBVV');
+  </script>
+  <title>
+   SSW Rules to Better Dead Time in the Car
+  </title>
+  <meta content="en-au" http-equiv="Content-Language">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="SSW, Consultants for software, database and website development, Software development, website development, web development, development, Access, SQL Server, ASP, .net, DotNet, Dot net, ASP.NET, VB.NET, C#, visual basic, database, website, web site, consultants, application, shopping cart, Internet, web, exchange server, sharepoint portal server, sharepoint team services,Database Design Australia, .Net development, sydney Australia, Web Design Australia, website design, web design, IT Services Australia, developers, Database Architect, Software architect, Software solution, Custom database solutions,Custom software solutions, downloads, Website design Australia, Online Database Australia, e-business, web development sydney, website development sydney, CRM, CRM Solution, SharePoint solution, MOSS solution, ebusiness, Sydney, Australia, Sydney Australia, Beijing China, Penang Malaysia, Sao Paulo Brazil" id="ctl00_keywords" name="keywords">
+  <meta content="Angular, React, Vue, Azure, Azure DevOps (was TFS), SharePoint, Office 365, Blazor, .NET, WebAPI, Dynamics 365, and SQL Server. We have software consultants located in Sydney, Brisbane, Melbourne, Newcastle, and China." name="description">
+  <meta content="SSW" name="author">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="/archive/css/Content.css" id="ctl00_Link1" media="screen" rel="stylesheet" type="text/css">
+  <link href="/archive/css/Screen.css" id="ctl00_screenCSS" media="screen" rel="stylesheet" type="text/css">
+  <link href="/ssw/Images/icoSSW_2014.ico" rel="shortcut icon">
+  <link href="/ssw/include/googleSyntax/shCore.css" rel="stylesheet" type="text/css">
+  <link href="/ssw/include/googleSyntax/shThemeDefault.css" rel="stylesheet" type="text/css">
+  <link href="/archive/css/Print.css" id="ctl00_printCSS" media="print" rel="stylesheet" type="text/css">
+  <!-- Start of pdi-ssw Zendesk Widget script -->
+  <!-- End of pdi-ssw Zendesk Widget script -->
+  <link href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all" rel="stylesheet">
+ </head>
+ <body id="ctl00_MasterBody" style="opacity: 1 !important;">
+  <div style="
+        line-height: 1.5;
+        text-align: center; 
+        font-size: 1.125rem; 
+        color: #999;
+        background-color: #333333;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    ">
+   <div style="color: white; font-size: 2rem !important; font-weight: 600;">
+    ⚠️ This page has been archived
+   </div>
+   <div style="color: white; font-size: 1.125rem !important; font-weight: 600;">
+    <p style="color:white;">
+     ✅ New page with updated info:
+     <a href="https://www.ssw.com.au" style="color: white">
+      ssw.com.au
+     </a>
+    </p>
+   </div>
+  </div>
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NXDBVV" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <form action="./Default.aspx" id="aspnetForm" method="post" name="aspnetForm">
+   <div>
+    <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUKMTM2MDA3ODg2OQ9kFgJmD2QWAgIDD2QWAgIBD2QWCAIDDzwrAAUBAA8WAh4HVmlzaWJsZWhkZAIFDzwrAAUBAA8WAh8AaGRkAgcPPCsABQEADxYCHwBoZGQCCQ9kFgICAw9kFgICBg8PFgQeBFRleHQF9Qc8cCBzdHlsZT0iZm9udC1zaXplIDogMTFweDsgY29sb3IgOiAjYWFhIj5UaGVyZSB3YXMgYW4gZXJyb3IgZGlzcGxheWluZyB0aGUgdGVzdGltb25pYWxzLiBQbGVhc2UgPEEgSFJFRj0ibWFpbHRvOmluZm9Acyp3LmNvbS5hdT9TdWJqZWN0PUVycm9yIGRpc3BsYXlpbmcgVGVzdGltb25pYWxzJmJvZHk9IFVSTDogaHR0cHM6Ly9zc3cuY29tLmF1L3Nzdy9TdGFuZGFyZHMvUnVsZXNUb0JldHRlckRlYWRUaW1lL0RlZmF1bHQuYXNweA0KDQolMEQgRXJyb3I6IEEgbmV0d29yay1yZWxhdGVkIG9yIGluc3RhbmNlLXNwZWNpZmljIGVycm9yIG9jY3VycmVkIHdoaWxlIGVzdGFibGlzaGluZyBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlci4gVGhlIHNlcnZlciB3YXMgbm90IGZvdW5kIG9yIHdhcyBub3QgYWNjZXNzaWJsZS4gVmVyaWZ5IHRoYXQgdGhlIGluc3RhbmNlIG5hbWUgaXMgY29ycmVjdCBhbmQgdGhhdCBTUUwgU2VydmVyIGlzIGNvbmZpZ3VyZWQgdG8gYWxsb3cgcmVtb3RlIGNvbm5lY3Rpb25zLiAocHJvdmlkZXI6IE5hbWVkIFBpcGVzIFByb3ZpZGVyLCBlcnJvcjogNDAgLSBDb3VsZCBub3Qgb3BlbiBhIGNvbm5lY3Rpb24gdG8gU1FMIFNlcnZlcikiPnJlcG9ydCB0aGlzIGVycm9yPC9hPiB0byBTU1cgYW5kIGluY2x1ZGUgdGhlIGZvbGxvd2luZyB0ZXh0Ojxicj4gLSBBIG5ldHdvcmstcmVsYXRlZCBvciBpbnN0YW5jZS1zcGVjaWZpYyBlcnJvciBvY2N1cnJlZCB3aGlsZSBlc3RhYmxpc2hpbmcgYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIuIFRoZSBzZXJ2ZXIgd2FzIG5vdCBmb3VuZCBvciB3YXMgbm90IGFjY2Vzc2libGUuIFZlcmlmeSB0aGF0IHRoZSBpbnN0YW5jZSBuYW1lIGlzIGNvcnJlY3QgYW5kIHRoYXQgU1FMIFNlcnZlciBpcyBjb25maWd1cmVkIHRvIGFsbG93IHJlbW90ZSBjb25uZWN0aW9ucy4gKHByb3ZpZGVyOiBOYW1lZCBQaXBlcyBQcm92aWRlciwgZXJyb3I6IDQwIC0gQ291bGQgbm90IG9wZW4gYSBjb25uZWN0aW9uIHRvIFNRTCBTZXJ2ZXIpPC9wPh8AZ2RkZAugyVIg2YcuSB/zhkigILFlCalXu2lrdGWtukzx+G2L">
+   </div>
+   <div>
+    <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="386EFBB2">
+   </div>
+   <div id="mainContainer">
+    <div>
+    </div>
+    <p>
+     <span id="ctl00_mainContentPlaceHolder_SiteMapPath1">
+      <a href="#ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+      </a>
+      <span>
+       <a href="/" title="Home">
+        Home
+       </a>
+      </span>
+      <span>
+       &gt;
+      </span>
+      <span>
+       <a href="/archive">
+        Archive
+       </a>
+      </span>
+      <span>
+       &gt;
+      </span>
+      <span>
+       <a href="/archive/standards" title="SSW Standards">
+        SSW Standards
+       </a>
+      </span>
+      <span>
+       &gt;
+      </span>
+      <span>
+       SSW Rules to Better Dead Time in the Car
+      </span>
+      <a id="ctl00_mainContentPlaceHolder_SiteMapPath1_SkipLink">
+      </a>
+     </span>
+    </p>
+    <span id="ctl00_mainContentPlaceHolder_testimonial_lblError">
+     <p style="font-size : 11px; color : #aaa">
+      There was an error displaying the testimonials. Please
+      <a href="mailto:info@s*w.com.au?Subject=Error displaying Testimonials&amp;body= URL: https://ssw.com.au/ssw/Standards/RulesToBetterDeadTime/Default.aspx
+
+%0D Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)">
+       report this error
+      </a>
+      to SSW and include the following text:
+      <br>
+      - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+     </p>
+    </span>
+    &nbsp;
+    <p>
+     These rules are aimed to show you how to make the most of your time in the car by using all the latest gizmo's 
+			and to hopefully give you a bit of practical lifestyle advice as well.
+    </p>
+    <table align="right" cellpadding="2" cellspacing="0" class="clsSSWTableOfContents" style="{width:100%;}" summary="Index">
+     <tbody>
+      <tr>
+       <td bordercolor="#E0E0E0" width="50%">
+        <ol>
+         <b>
+          Vehicular Management
+         </b>
+         <br>
+         <li>
+          <a href="#LaptopStand">
+           Can you drive with an MSDN video running?
+          </a>
+         </li>
+         <li>
+          <a href="#BeastCar">
+           Can your car fit more people when needed?
+          </a>
+         </li>
+         <li>
+          <a href="#GarbageBag">
+           Do you have a garbage bin?
+          </a>
+         </li>
+         <li>
+          <a href="#BoxesInBoot">
+           Do you have organize your boot?
+          </a>
+         </li>
+         <li>
+          <a href="#GPSRoadMap">
+           Do you have GPS?
+          </a>
+         </li>
+         <li>
+          <a href="#JerryCan">
+           Do you keep a Jerry Can full of fuel?
+          </a>
+         </li>
+         <li>
+          <a href="#BlueTooth">
+           Do you use a Bluetooth headset?
+          </a>
+         </li>
+         <li>
+          <a href="#ParkingSensors">
+           Did you bother learning to reverse properly?
+          </a>
+         </li>
+        </ol>
+        <ol>
+         <b>
+          Personal
+         </b>
+         <br>
+         <li>
+          <a href="#DrinkWater">
+           Do you drink water instead of Coke?
+          </a>
+         </li>
+         <li>
+          <a href="#PhoneCalls">
+           Do you have a list of phone calls to make?
+          </a>
+         </li>
+         <li>
+          <a href="#EatFruit">
+           Do you eat enough fruit?
+          </a>
+         </li>
+        </ol>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <h2>
+     Vehicular Management
+    </h2>
+    <ol>
+     <li>
+      <h2>
+       <a name="LaptopStand">
+       </a>
+       Can you drive with an MSDN video running?
+      </h2>
+      <p>
+       While your driving along, 
+					wouldn't it be fantastic if you could listen to all the 
+					latest information about Microsoft's latest and greatest 
+					products (that in my honest opinion are always perfect from 
+					the very first moment you start using them...)?
+      </p>
+      <p>
+       Well the answer is "yes it is fantastic!"
+      </p>
+      <p>
+       I've found installed a laptop mount into the passenger side 
+					of my middle console that will secure my laptop in place 
+					while I'm busy driving. The system was relatively simplistic 
+					to install (6 self-tapping screws into the carpet and base 
+					of the passenger side floor) and its convenient to use 
+					because of its full swivel capabilities. It can also be 
+					easily removed when a passenger wants to get their seat 
+					back.
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt="Laptop stand" height="326" id="imgLaptopStand" src="/archive/standards/rules-to-better-dead-time/images/laptop-stand.gif" width="400">
+      </div>
+      <label for="imgLaptopStand">
+       With a laptop stand mounted near the center console you can always keep up to date.
+      </label>
+      <p>
+      </p>
+      <p>
+       The one I use is from
+       <a href="/ssw/Redirect/JottoDesk.htm">
+        Jotto Desk
+       </a>
+       - the universal mount units fit most cars, 
+					though if you're nervous check with them first. They work 
+					out to be about US$250. Beware - we could only take delivery 
+					to a U.S. address.
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="BeastCar">
+       </a>
+       Can your car fit more people when needed?
+      </h2>
+      <p>
+       Forget about all the practicalities of a small car, sure they're easier to park, safer to 
+					manoeuvre,
+					and extremely good looking on the road (particularly a certain '87 Red Nissan Pulsar hatch) but my
+					advice is go for the Big Mama of a car. They are far better when it comes to moving people and they
+					can fit much more advertising down the side of them.
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="GarbageBag">
+       </a>
+       Do you have a garbage bin?
+      </h2>
+      <p>
+       If your one of those people who simply can't resist making a mess of their own property,
+					then stop! If I don't have a proper place to throw my 
+					rubbish then its straight to the passenger seat floor (at least I'm not sitting in it!) to deal with later. 
+					But it's not appealing to anyone who else who has to sit in the mess, and its
+					useless when it comes to picking up the ladies.
+      </p>
+      <p>
+       My suggestion is to pick up a handy car garbage bag. They velcro round the head rest of the car seat
+					and will help you make that very untidy, cluttered mess into the perfect, structured mess that we all
+					strive towards.
+      </p>
+      <p>
+       You can get one of these cheap car garbage bags for about $10 at your local K-Mart in the auto section.
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="390" id="imgGarbageBin" src="/archive/standards/rules-to-better-dead-time/images/garbage-bag.gif" width="350">
+      </div>
+      <label for="imgGarbageBin">
+       Good - Structure your mess with car style garbage bin.
+      </label>
+      <p>
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="BoxesInBoot">
+       </a>
+       Do you have organize your boot?
+      </h2>
+      <p>
+       The boot (or trunk for our American friends) is another one of those places that quickly turns to chaos without
+					a proper management system.
+      </p>
+      <p>
+       My suggestion is to quickly measure up your boot and then go to your 
+					local K-Mart (or Wal-Mart for our American 
+					friends) and get some plastic boxes or trays (as long as 
+					they are open ended or clear) and stack them into your boot. You can then use these 
+					to structure your mess much better...
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="300" id="imgBoxesInBoot" src="/archive/standards/rules-to-better-dead-time/images/boxes-in-boot.gif" width="400">
+      </div>
+      <label for="imgBoxesInBoot">
+       Good - Structure your mess with convenient stacking trays.
+      </label>
+      <p>
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="GPSRoadMap">
+       </a>
+       Do you have GPS?
+      </h2>
+      <p>
+       I love a gizmo... And I hate doing something slowly when I 
+					know that it can be completed more quickly. Reading street 
+					maps and potentially getting lost is one such example. We 
+					recommend that you purchase a removable GPS unit, and use it 
+					conjunction with your PDA or new
+       <a href="/ssw/Redirect/XDAPhone.htm">
+        XDA II SmartPhone
+       </a>
+       with some 
+					mapping software.
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="345" id="imgGPSMapping" src="/archive/standards/rules-to-better-dead-time/images/gps-mapping.gif" width="400">
+      </div>
+      <label for="imgGPSMapping">
+       Get a mobile GPS unit (on the right) and an XDA with mapping software installed.
+      </label>
+      <p>
+       The GPS and mapping software that I use were supplied by
+       <a href="/ssw/Redirect/Navman.htm">
+        NavMan
+       </a>
+       . The GPS unit works with 
+			the XDA over Bluetooth so that your system works when you jump in 
+			the car without having to play with cables. The package worked out 
+			at about AU$900.
+      </p>
+      <p>
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="JerryCan">
+       </a>
+       Do you keep a Jerry Can full of fuel?
+      </h2>
+      <p>
+       There have been countless times where I've tried
+					to push the limit of my fuel tank just that bit too far. 
+					Here is some very practical advice learnt from numerous 
+					mistakes - keep a jerry can full of petrol in the back of 
+					the car so that when disaster strikes you won't be walking 
+					for half an hour to the petrol station. Or worse yet, making 
+					an embarrassing call to roadside assistance and having to 
+					fess up to your womanly ways... Also if you happen to see a 
+			stranded person on the side of the highway you can always earn some 
+			Karma back by helping out the poor soul.
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="229" id="imgJerryCan" src="/archive/standards/rules-to-better-dead-time/images/jerry-can.gif" width="400">
+      </div>
+      <label for="imgJerryCan">
+       Keep a jerry can in the boot.
+      </label>
+      <p>
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="BlueTooth">
+       </a>
+       Do you use a Bluetooth headset?
+      </h2>
+      <p>
+       A hands-free device of some kind for your phone is not only legally necessary but very handy. 
+					I love it when you walk down the street and can creep people 
+					out as you seemingly talk to yourself in an obnoxiously loud 
+					voice into a discretely positioned mobile phone headset. 
+					There's nothing more rewarding then knowing that someone 
+					dislikes you already without even getting to know you yet.
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="460" id="imgHeadSet" src="/archive/standards/rules-to-better-dead-time/images/mobile-headset.gif" width="398">
+      </div>
+      <label for="imgHeadSet">
+       Spook people out with a Bluetooth (cordless) hands-free
+      </label>
+      <p>
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="ParkingSensors">
+       </a>
+       Did you bother learning to reverse properly?
+      </h2>
+      <p>
+       In this day and age there's no point learning how to judge distance while reversing... Thanks to the 
+					many uncoordinated female and elderly drivers, there is now 
+					accurate, easy to install parking sensors that can be 
+					installed into almost any car. It's lovely, gone are the 
+					days of nudge parking! Now I get two beeps when I get close, 
+					and a continuous irritating beep get really close... too 
+					easy!
+      </p>
+      <p>
+       The
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="330" id="imgSensors" src="/archive/standards/rules-to-better-dead-time/images/sensors.gif" width="400">
+      </div>
+      <label for="imgSensors">
+       Forget about those driving skills - trust technology
+      </label>
+      <p>
+       The sensors and installation from
+       <a href="/ssw/Redirect/SmartPark.htm">
+        SmarkPark
+       </a>
+       cost around AU$500 
+			for the equipment and installation. This is VERY cheap compared with 
+			the packages that the manufacturers are selling as a standard add-on 
+			with most new cars.
+      </p>
+      <p>
+      </p>
+     </li>
+    </ol>
+    <h2>
+     Personal
+    </h2>
+    <ol>
+     <li>
+      <h2>
+       <a name="DrinkWater">
+       </a>
+       Do you drink water instead of Coke?
+      </h2>
+      <p>
+       This ones kind of obvious, but it really is a good idea ok! I recommend that you keep a bottle of water 
+					at all times so that hopefully in the long term you'll save 
+					a bit of money on those dental bills...
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="316" id="imgWater" src="/archive/standards/rules-to-better-dead-time/images/water-not-coke.gif" width="222">
+      </div>
+      <label for="imgWater">
+       Drink water - Wooh! Yeah!
+      </label>
+      <p>
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="PhoneCalls">
+       </a>
+       Do You Have a List of Phone Calls to Make?
+      </h2>
+      <p>
+       While your in the car you have the perfect opportunity to catch up on all your phone calls. 
+					I like to have my personal assistants (my life is a bit of a 
+					shambles but I'm happy) write up a list of all the phone 
+					calls that need to be made. This list automatically gets 
+					synchronised out of my Tasks from Outlook onto my XDA. When 
+					I'm ready I go through my list and catch up on all the 
+					critical calls.
+      </p>
+     </li>
+     <li>
+      <h2>
+       <a name="EatFruit">
+       </a>
+       Do you eat enough fruit?
+      </h2>
+      <p>
+       Whenever I used to stop at the petrol station, I'd walk in 
+				the door and struggle to walk past that massive totem pole like 
+				structure that they pack with chocolate right next to the 
+				cashier. It'd take every ounce of restraint to not try the new 
+				Cadbury chocolate bar... But now a simple solution - I always 
+				fill up on fruit instead. It's much healthier, contains the 
+				sugar hit so dearly needed, and its a lot cheaper.
+      </p>
+      <p>
+       To stow the fruit I installed the newly developed SSW Fruit 
+				Keeper &copy;. It basically consists of rows of thick plastic 
+				strips being stuck down to the dash to limit the movement of the 
+				fruit as you go round corners, etc.
+      </p>
+      <p>
+      </p>
+      <div>
+       <img alt height="258" id="imgFruitKeeper" src="/archive/standards/rules-to-better-dead-time/images/fruit-keeper.gif" width="400">
+      </div>
+      <label for="imgFruitKeeper">
+       The SSW Fruit Keeper &copy; in action.
+      </label>
+      <p>
+      </p>
+      <p>
+       The plastic material is available from any good hardware shop 
+				in roles from 1m long for about AU$10.
+      </p>
+     </li>
+    </ol>
+    <h2>
+     Acknowledgements
+    </h2>
+    <p>
+     <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">
+      Adam Cogan
+     </a>
+    </p>
+    <br>
+   </div>
+   <div id="footer">
+    <p class="callnow">
+     Call Now
+     <a href="tel:+61299533000">
+      +61 2 9953 3000
+     </a>
+    </p>
+    <span class="copyright">
+     &copy; Copyright SSW 1990-2024. All Rights Reserved.
+    </span>
+    <ul>
+     <li class="first">
+      <a class="email" href="javascript:sendEmail('696E666F407373772E636F6D2E61753F7375626A6563743D466565646261636B20746F2053535726626F64793D687474703A2F2F7373772E636F6D2E61752F7373772F5374616E64617264732F52756C6573546F4265747465724465616454696D652F44656661756C742E61737078')" id="ctl00_fC_feedbackHyperLink" tabindex="100">
+       Feedback to SSW
+      </a>
+     </li>
+     <li>
+      <a href="/ssw/Company/AboutUs.aspx">
+       About SSW
+      </a>
+     </li>
+     <li>
+      <a href="/ssw/Advertising/Default.aspx">
+       Advertising
+      </a>
+     </li>
+     <li class="last">
+      <a href="/ssw/MenuMap.aspx">
+       Sitemap
+      </a>
+     </li>
+    </ul>
+    <span class="proudly">
+     <a href="http://www.ssw.com.au">
+      Proudly developed by SSW Sydney Web Design
+     </a>
+    </span>
+    <!-- span class="proudlyAjax"><a href="/ssw/Standards/Rules/RulesToBetterWebsitesAdministration.aspx#AJAX">Powered by MS AJAX</a></span -->
+    <p class="serverName">
+     Our website is under constant continuous deployment. Last deployment to AZIIS2022P03. Unable to retrieve changeset details.
+    </p>
+   </div>
+  </form>
+  <!--Here's the Google Tracking Code, only available on external servers because we only need to track for external.-->
+  <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
+  <!-- / OptinMonster -->
+  <div style="visibility: visible;">
+   <div>
+   </div>
+   <div>
+   </div>
+  </div>
+ </body>
+</html>
