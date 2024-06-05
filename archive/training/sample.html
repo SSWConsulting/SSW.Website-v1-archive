@@ -16,10 +16,36 @@
   <meta content="GNU Terry Pratchett" http-equiv="X-Clacks-Overhead">
   <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy">
   <style type="text/css">
+
+
+
+
+
+
    svg:not(:root).svg-inline--fa {
   overflow: visible;
 }
 
+ul.event-list {
+    width: 100%;
+    display: flex;
+}
+@media only screen and (max-width: 850px)
+{
+  .city-blurb{  
+    flex-direction: column;
+  }
+}
+
+
+ul.event-list > li {
+  width:10%;
+  /* flex: 1 1 auto; */
+  justify-content: center;
+  align-items: center;
+  min-height:3.3rem;
+
+}
 .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
@@ -1227,23 +1253,25 @@
             </ul>
             <ul class="schedule">
              <li>
-              <strong>
-               Sydney
-              </strong>
-              <ul>
-               <li>
+              
+              <ul class="event-list" style="align-items: stretch">
+               <li class="city-blurb" style="width: 35%; height:auto; margin: 0px; padding: 0;display:flex; align-self: start;">
+                <strong style="width: 100%;align-self: start;min-width: 0px;">
+                  Sydney
+                </strong>
+                <span style="border-left: 0">
                 27 Feb 08
-                <span>
                  completed
                 </span>
                </li>
-               <li>
+               <li style=" padding: 0;height:auto; width:15%; display:flex;align-self: flex-start;">
+                <span>
                 26 Oct 08
-                <span>
+                
                  completed
                 </span>
                </li>
-               <li>
+               <li style="padding: 0; width: 25%;height:auto;display:flex;align-self: flex-start; ">
                 <a href="mailto:info@ssw.com.au?Subject=Booking 5 Dec - SQL Server 2005 Reporting Services">
                  31 Aug 09
                  <span>
@@ -1251,7 +1279,7 @@
                  </span>
                 </a>
                </li>
-               <li>
+               <li style="padding:0;width: 25%;display:flex; height:auto;align-self: flex-start;">
                 <a href="mailto:info@ssw.com.au?Subject=Booking 13 Jan - SQL Server 2005 Reporting Services">
                  17 Sep 09
                  <span>
@@ -1433,6 +1461,7 @@
      </div>
     </footer>
    </div>
+   
    <div id="mobilemegamenu">
     <div class="_3TzJdl9erxbA-6KUWDl8z5 _1Np4v3y-FzXCyPxf4pf8Sc" style="width: 0px;">
      <div class="Fx0KRPzAGa-AwzvVlO517 _6Ew-Wgb-mROz6nhe3Jw1k">
