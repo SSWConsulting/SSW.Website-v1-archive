@@ -1,7 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 
-const ProductionURL = "https://tfs365.com"; // https://www.ssw.com.au
+const hostURL = "https://tfs365.com"; // https://www.ssw.com.au
 
 // Function to generate HTML for the table
 async function generateHTMLTable(obj) {
@@ -49,11 +49,11 @@ async function generateHTMLTable(obj) {
 
   for (const redirect of obj) {
     try {
-      const finalURL = `${ProductionURL}${redirect.requestPaths[0].replace("/archive", "/history")}`;
+      const finalURL = `${hostURL}${redirect.requestPaths[0].replace("/archive", "/history")}`;
       console.log(`🚀 ${index}) pinging: ${finalURL}`);
       const response = await axios.head(finalURL);
       const redirectedURL = response.request.res.responseUrl;
-      const finalRedirectPath = `${ProductionURL}${redirect.redirectPath}`;
+      const finalRedirectPath = `${hostURL}${redirect.redirectPath}`;
       const status = redirectedURL === finalRedirectPath ? "pass" : "fail";
       successCount += status === "pass" ? 1 : 0;
 
@@ -66,8 +66,8 @@ async function generateHTMLTable(obj) {
         </tr>
       `;
     } catch (error) {
-      const finalURL = `${ProductionURL}${redirect.requestPaths[0].replace("/archive", "/history")}`;
-      const finalRedirectPath = `${ProductionURL}${redirect.redirectPath}`;
+      const finalURL = `${hostURL}${redirect.requestPaths[0].replace("/archive", "/history")}`;
+      const finalRedirectPath = `${hostURL}${redirect.redirectPath}`;
       console.error(`Error fetching URL ${finalURL}:`, error);
 
       bodyHTML += `
