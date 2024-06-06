@@ -21,13 +21,6 @@
     "redirectPath": "/archive/wise-pro/default.html"
   },
   {
-    "name": "ArchiveProcessimprovementforsoftwareteams",
-    "requestPaths": [
-      "/ssw/ProcessImprovementForSoftwareTeams.aspx"
-    ],
-    "redirectPath": "/archive/process-improvement-for-software-teams.html"
-  },
-  {
     "name": "ArchiveDatarenovatorDefault",
     "requestPaths": [
       "/ssw/DataRenovator/Default.aspx"
@@ -54,6 +47,20 @@
       "/ssw/EmailMergePRO/userguide.aspx"
     ],
     "redirectPath": "/archive/email-merge-pro/userguide.html"
+  },
+  {
+    "name": "ArchiveEmailtemplateDefault",
+    "requestPaths": [
+      "/ssw/EmailTemplate/default.html"
+    ],
+    "redirectPath": "/archive/email-template/default.html"
+  },
+  {
+    "name": "ArchiveEmailtemplateEmail",
+    "requestPaths": [
+      "/ssw/EmailTemplate/email.html"
+    ],
+    "redirectPath": "/archive/email-template/email.html"
   },
   {
     "name": "ArchivePerformanceproDefault",
@@ -210,11 +217,25 @@
     "redirectPath": "/archive/sql-reporting-services-auditor/user-guide.html"
   },
   {
-    "name": "ArchiveAccessreporterDefault",
+    "name": "ArchiveProcessimprovementforsoftwareteams",
     "requestPaths": [
-      "/ssw/AccessReporter/Default.aspx"
+      "/ssw/ProcessImprovementForSoftwareTeams.aspx"
     ],
-    "redirectPath": "/archive/access-reporter/default.html"
+    "redirectPath": "/archive/process-improvement-for-software-teams.html"
+  },
+  {
+    "name": "ArchiveThankyoushare",
+    "requestPaths": [
+      "/ssw/ThankyouShare.aspx"
+    ],
+    "redirectPath": "/archive/thank-you-share.html"
+  },
+  {
+    "name": "ArchiveVersion",
+    "requestPaths": [
+      "/ssw/Version.aspx"
+    ],
+    "redirectPath": "/archive/version.html"
   },
   {
     "name": "ArchiveAccessreporter0205smartaccessextra",
@@ -229,6 +250,13 @@
       "/ssw/AccessReporter/AccessReporterDemo.aspx"
     ],
     "redirectPath": "/archive/access-reporter/access-reporter-demo.html"
+  },
+  {
+    "name": "ArchiveAccessreporterDefault",
+    "requestPaths": [
+      "/ssw/AccessReporter/Default.aspx"
+    ],
+    "redirectPath": "/archive/access-reporter/default.html"
   },
   {
     "name": "ArchiveAccessreporterPdfsetup",
@@ -945,6 +973,13 @@
     "redirectPath": "/archive/training/reporting-services.html"
   },
   {
+    "name": "ArchiveTrainingSample",
+    "requestPaths": [
+      "/ssw/Training/sample.aspx"
+    ],
+    "redirectPath": "/archive/training/sample.html"
+  },
+  {
     "name": "ArchiveTrainingSessionspast",
     "requestPaths": [
       "/ssw/Training/Sessions-Past.aspx"
@@ -994,6 +1029,13 @@
     "redirectPath": "/archive/training/visual-studio.html"
   },
   {
+    "name": "ArchiveCodeauditorContactDefault",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Contact/Default.aspx"
+    ],
+    "redirectPath": "/archive/code-auditor/contact/default.html"
+  },
+  {
     "name": "ArchiveCodeauditorDefault",
     "requestPaths": [
       "/ssw/CodeAuditor/Default.aspx"
@@ -1006,6 +1048,13 @@
       "/ssw/CodeAuditor/2407DeveloperCentralExtra.htm"
     ],
     "redirectPath": "/archive/code-auditor/2407-developer-central-extra.htm"
+  },
+  {
+    "name": "ArchiveCodeauditorDefaultmockup",
+    "requestPaths": [
+      "/ssw/CodeAuditor/defaultmockup.aspx"
+    ],
+    "redirectPath": "/archive/code-auditor/defaultmockup.html"
   },
   {
     "name": "ArchiveCodeauditorHowtobegoodcodeauditordailybuildmaster",
@@ -1986,6 +2035,13 @@
       "/ssw/NETUG/History.aspx"
     ],
     "redirectPath": "/archive/netug/history.html"
+  },
+  {
+    "name": "ArchiveNetugNewrecentsessions",
+    "requestPaths": [
+      "/ssw/NETUG/NewRecentSessions.aspx"
+    ],
+    "redirectPath": "/archive/netug/new-recent-sessions.html"
   },
   {
     "name": "ArchiveNetugTheagileolympicswithjessehouwing",
@@ -3913,6 +3969,13 @@
     "redirectPath": "/archive/standards-internal/-employee-test-area/zune-vien/about-me.html"
   },
   {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWaitingforsugggestionstomovetosharepointVsgallery",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WaitingForSugggestionsToMoveToSharePoint/VSGallery.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/waiting-for-sugggestions-to-move-to-sharepoint/vsgallery.html"
+  },
+  {
     "name": "ArchiveStandardsBettersoftwaresuggestionsActivesync",
     "requestPaths": [
       "/ssw/Standards/BetterSoftwareSuggestions/activesync.aspx"
@@ -4998,11 +5061,25 @@
     "redirectPath": "/archive/standards/rules/rules-to-better-business-intelligence-resource-setup.html"
   },
   {
+    "name": "ArchiveStandardsRulesRulestobettercommandlines",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulestoBetterCommandLines.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-command-lines.html"
+  },
+  {
     "name": "ArchiveStandardsRulesRulestobettercrm3to4migration",
     "requestPaths": [
       "/ssw/Standards/Rules/RulesToBetterCRM3To4Migration.aspx"
     ],
     "redirectPath": "/archive/standards/rules/rules-to-better-crm3-to-4-migration.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterexchangeserver",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterExchangeServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-exchange-server.html"
   },
   {
     "name": "ArchiveStandardsRulesRulestobetterisaserver",
@@ -5103,6 +5180,13 @@
     "redirectPath": "/archive/standards/rules/rules-to-better-windows-8-deployment.html"
   },
   {
+    "name": "ArchiveStandardsRulesRulestobetterwindowsformsclickonce",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindowsFormsClickOnce.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-windows-forms-click-once.html"
+  },
+  {
     "name": "ArchiveStandardsRulesRulestobetterwindowsvistadeployment",
     "requestPaths": [
       "/ssw/Standards/Rules/RulestoBetterWindowsVistaDeployment.aspx"
@@ -5122,6 +5206,13 @@
       "/ssw/Standards/Rules/UsingGoogleCalendar.aspx"
     ],
     "redirectPath": "/archive/standards/rules/using-google-calendar.html"
+  },
+  {
+    "name": "ArchiveStandardsRulestobetterdeadtimeDefault",
+    "requestPaths": [
+      "/ssw/Standards/RulesToBetterDeadTime/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules-to-better-dead-time/default.html"
   },
   {
     "name": "ArchiveStandardsSswlogoDefault",
