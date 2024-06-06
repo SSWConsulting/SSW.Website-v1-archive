@@ -1,6 +1,6 @@
 const fs = require("fs");
 const axios = require("axios");
-const ProductionURL = "https://www.tfs365.com"; //https://www.ssw.com.au";
+const ProductionURL = "https://tfs365.com"; //https://www.ssw.com.au";
 
 // Function to generate HTML for the table
 async function generateHTMLTable(obj) {
@@ -51,6 +51,7 @@ async function generateHTMLTable(obj) {
 `;
 
   let index = 1;
+  let successCount = 0;
   for (const redirect of obj) {
     try {
       const finalURL =
@@ -59,9 +60,10 @@ async function generateHTMLTable(obj) {
       console.log("🚀 " + index + ") pinging :", finalURL);
       const response = await axios.head(finalURL); // Use axios to send HEAD request
       const redirectedURL = response.request.res.responseUrl;
-      const finalRedirectPath = ProductionURL + redirect.redirectPath;
+      const finalRedirectPath = "https://tfs365.com" + redirect.redirectPath;
 
       const status = redirectedURL == finalRedirectPath ? "pass" : "fail";
+      successCount += status == "pass" ? 1 : 0;
       html += `
         <tr>
             <td>${index}</td>
@@ -97,7 +99,10 @@ async function generateHTMLTable(obj) {
   html += `
     </tbody>
 </table>
-
+<hr>
+<b>Total Success Rate</b>: ${successCount}/${obj.length}
+<hr>
+<b>Errors to fix</b>: ${obj.length - successCount}
 </body>
 </html>
 `;

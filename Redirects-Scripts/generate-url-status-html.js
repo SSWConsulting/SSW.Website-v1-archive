@@ -1,6 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 const ProductionURL = "https://www.ssw.com.au";
+const stagingURL = "https://tfs365.com";
 
 // Function to generate HTML for the table
 async function generateHTMLTable(urls) {

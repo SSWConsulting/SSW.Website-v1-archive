@@ -7,6 +7,7 @@ const createHTMLFileForRedirects = require("./generate-redirect-report");
 let urls = [];
 let oldURLs = [];
 let redirectMap = [];
+let cloudFlareMapper= {};
 const archivedPath = "archive";
 const folderPath = `../${archivedPath}`;
 const mainIndexPagePath = `../${archivedPath}/index.html`;
@@ -89,15 +90,20 @@ function mapRedirects() {
 
     if (redirectFrom === "" || redirectTo === "") return;
     redirectMap.push({
-      name: transformString(redirectTo),
+     name: transformString(redirectTo),
       requestPaths: [redirectFrom],
       redirectPath: redirectTo,
     });
+
+    cloudFlareMapper[redirectFrom.toLowerCase()] = redirectTo;
   });
 
   const frontDoorRedirects = JSON.stringify(redirectMap, null, 2);
+  const cloudFlarRedirects = JSON.stringify(cloudFlareMapper);
+//  console.log("🚀 ~ mapRedirects ~ cloudFlarRedirects:", frontDoorRedirects)
   fs.writeFileSync("redirects.json", frontDoorRedirects);
-  console.log("\n\n📝 - JSON Redirects has been written to redirects.json\n\n");
+  fs.writeFileSync("cloudFlarRedirects.json", cloudFlarRedirects);
+  console.log("\n\n📝 - JSON Redirects CloudFlareWorker has been written to redirects.json and CloudFlareWorker.js\n\n");
 }
 
 function groupByPath() {
@@ -129,7 +135,8 @@ function displayGroupBy(numberOfPaths) {
     const pathInfo = groupedUrls[path];
     const emoji = ConflictingPathIcons[path] ?? "✅";
 
-    if (pathInfo.count > 16 && pathInfo.count < 114) {
+    //if (pathInfo.count > 16 && pathInfo.count < 114) 
+      {
       //>= 17)
       console.log(`${indexx} - ${emoji} ${path}, Count: ${pathInfo.count}`);
       count += pathInfo.count;
@@ -140,6 +147,7 @@ function displayGroupBy(numberOfPaths) {
   });
   console.log("\n\n 🚀~ Total count:", count);
   //console.log("🚀 ~ displayGroupBy ~ filteredRedirects:", filteredRedirects);
+  //console.log("🚀 ~ displayGroupBy ~ filteredRedirects:", filteredRedirects)
   const frontDoorRedirects = JSON.stringify(filteredRedirects, null, 2);
   fs.writeFileSync("filtered-redirects.json", frontDoorRedirects);
   console.log(
