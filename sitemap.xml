@@ -97,6 +97,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/code-auditor/defaultmockup.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/code-auditor/howtobe-good-code-auditor-daily-build-master.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -698,6 +704,24 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/email-merge-pro/userguide.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/email-template/default.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/email-template/email.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/email-template/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -2395,6 +2419,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/netug/new-recent-sessions.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/netug/sources/evaluationform.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -3223,6 +3253,18 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/standards/better-software-suggestions/waiting-for-sugggestions-to-move-to-sharepoint/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards/better-software-suggestions/waiting-for-sugggestions-to-move-to-sharepoint/vsgallery.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/standards/better-software-suggestions/whats-app.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -3709,7 +3751,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-command-lines.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-crm3-to-4-migration.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-exchange-server.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -3799,6 +3853,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-windows-forms-click-once.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/rules-to-better-windows-vista-deployment.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -3812,6 +3872,18 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/standards/rules/using-google-calendar.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules-to-better-dead-time/default.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/standards/rules-to-better-dead-time/index.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -5665,6 +5737,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/thank-you-share.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/time-prosmart-tags/default.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -5744,6 +5822,12 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/training/reporting-services.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/training/sample.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
@@ -5852,6 +5936,12 @@
   </url>
   <url>
     <loc>https://www.ssw.com.au/archive/upsizing-pro/workbefore.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/version.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>

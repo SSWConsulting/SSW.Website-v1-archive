@@ -116,7 +116,10 @@ def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
     regex = r"([a-z])([A-Z0-9])"
     replacements = {
+        "ThankyouShare": "thank-you-share",
         "demo-fms200203" : "demo-fms200203",
+        "RulestoBetterCommandLines": "rules-to-better-command-lines",
+        "eXtremeEmails": "extreme-emails",        
         "NET": "Net",
         "NetUG": "Netug",
         "SQL": "Sql",
@@ -127,7 +130,6 @@ def pascal_to_kebab(s: str) -> str:
         "SignalR": "Signalr",
         "AngularJS": "Angularjs",
         "HoloLens": "Hololens",
-        "eXtremeEmails": "extreme-emails",
         "UTS": "Uts",
         "DevOps": "Devops",
         "SharePoint": "Sharepoint",

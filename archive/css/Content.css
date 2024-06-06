@@ -66,10 +66,11 @@ h2,
 
     	margin: 20px 0 10px 0;*/
   background: url(/archive/images/h2.gif) #f0f0f0;
+  border-radius: 3px 0px 0px 3px;
   background-repeat: no-repeat;
   margin: 10px 0;
   padding: 8px 30px;
-  max-height: 15px;
+  min-height: 15px;
 }
 
 h2.thinner {
