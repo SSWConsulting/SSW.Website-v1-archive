@@ -14,6 +14,13 @@
     "redirectPath": "/archive/registration/userguide.html"
   },
   {
+    "name": "ArchiveSupportPcanywhere",
+    "requestPaths": [
+      "/ssw/support/pcanywhere.aspx"
+    ],
+    "redirectPath": "/archive/support/pc-anywhere.html"
+  },
+  {
     "name": "ArchiveWiseproDefault",
     "requestPaths": [
       "/ssw/wisepro/default.aspx"

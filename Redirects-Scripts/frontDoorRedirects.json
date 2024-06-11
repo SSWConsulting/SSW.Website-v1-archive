@@ -5005,6 +5005,13 @@
     "redirectPath": "/archive/standards-internal/-employee-test-area/zune-vien/about-me.html"
   },
   {
+    "name": "ArchiveSupportPcanywhere",
+    "requestPaths": [
+      "/ssw/support/pcanywhere.aspx"
+    ],
+    "redirectPath": "/archive/support/pc-anywhere.html"
+  },
+  {
     "name": "ArchiveTeamcalendarInstallationCreateuser",
     "requestPaths": [
       "/ssw/teamcalendar/installation/createuser.htm"
