@@ -5731,6 +5731,18 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.ssw.com.au/archive/support/index.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.ssw.com.au/archive/support/pc-anywhere.html</loc>
+    <lastmod>2023-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://www.ssw.com.au/archive/team-calendar/default.html</loc>
     <lastmod>2023-12-12</lastmod>
     <changefreq>monthly</changefreq>

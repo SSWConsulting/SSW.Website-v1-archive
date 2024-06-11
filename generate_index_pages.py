@@ -120,6 +120,7 @@ def pascal_to_kebab(s: str) -> str:
         "Chirag Modi": "chirag-modi",
         "Frand Jajo": "frand-jajo",
         "Jack Lin": "jack-lin",
+        "PCAnywhere" : "pc-anywhere",
         "ThankyouShare": "thank-you-share",
         "demo-fms200203" : "demo-fms200203",
         "RulestoBetterCommandLines": "rules-to-better-command-lines",
