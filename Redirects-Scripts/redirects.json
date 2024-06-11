@@ -1,12 +1,5 @@
 [
   {
-    "name": "ArchiveAccessreporterDefault",
-    "requestPaths": [
-      "/ssw/AccessReporter/Default.aspx"
-    ],
-    "redirectPath": "/archive/access-reporter/default.html"
-  },
-  {
     "name": "ArchiveAccessreporter0205smartaccessextra",
     "requestPaths": [
       "/ssw/AccessReporter/0205SmartAccessExtra.htm"
@@ -19,6 +12,13 @@
       "/ssw/AccessReporter/AccessReporterDemo.aspx"
     ],
     "redirectPath": "/archive/access-reporter/access-reporter-demo.html"
+  },
+  {
+    "name": "ArchiveAccessreporterDefault",
+    "requestPaths": [
+      "/ssw/AccessReporter/Default.aspx"
+    ],
+    "redirectPath": "/archive/access-reporter/default.html"
   },
   {
     "name": "ArchiveAccessreporterPdfsetup",
@@ -56,6 +56,13 @@
     "redirectPath": "/archive/agile-template/user-guide.html"
   },
   {
+    "name": "ArchiveCodeauditorContactDefault",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Contact/Default.aspx"
+    ],
+    "redirectPath": "/archive/code-auditor/contact/default.html"
+  },
+  {
     "name": "ArchiveCodeauditorDefault",
     "requestPaths": [
       "/ssw/CodeAuditor/Default.aspx"
@@ -68,6 +75,13 @@
       "/ssw/CodeAuditor/2407DeveloperCentralExtra.htm"
     ],
     "redirectPath": "/archive/code-auditor/2407-developer-central-extra.htm"
+  },
+  {
+    "name": "ArchiveCodeauditorDefaultmockup",
+    "requestPaths": [
+      "/ssw/CodeAuditor/defaultmockup.aspx"
+    ],
+    "redirectPath": "/archive/code-auditor/defaultmockup.html"
   },
   {
     "name": "ArchiveCodeauditorHowtobegoodcodeauditordailybuildmaster",
@@ -462,6 +476,41 @@
     "redirectPath": "/archive/decommissioned/why-we-exist.html"
   },
   {
+    "name": "ArchiveDiagnosticsAdminZsinstructions",
+    "requestPaths": [
+      "/ssw/Diagnostics/Admin/zsInstructions.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/admin/zs-instructions.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsDefault",
+    "requestPaths": [
+      "/ssw/Diagnostics/Default.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/default.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsHowunrecognizedversionswork",
+    "requestPaths": [
+      "/ssw/Diagnostics/HowUnrecognizedVersionsWork.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/how-unrecognized-versions-work.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsUnrecognized",
+    "requestPaths": [
+      "/ssw/Diagnostics/Unrecognized.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/unrecognized.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsUserguide",
+    "requestPaths": [
+      "/ssw/Diagnostics/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/user-guide.html"
+  },
+  {
     "name": "ArchiveDownloadPadfilesPadssw",
     "requestPaths": [
       "/ssw/Download/PADFiles/PAD_SSW.NETToolkit.htm"
@@ -630,25 +679,11 @@
     "redirectPath": "/archive/download/padfiles/ssw-up.htm"
   },
   {
-    "name": "ArchiveDownloadSswdiagnostics",
-    "requestPaths": [
-      "/ssw/Download/SSWDiagnostics.htm"
-    ],
-    "redirectPath": "/archive/download/ssw-diagnostics.htm"
-  },
-  {
     "name": "ArchiveEmailmergeproDefault",
     "requestPaths": [
       "/ssw/EmailMergePRO/Default.aspx"
     ],
     "redirectPath": "/archive/email-merge-pro/default.html"
-  },
-  {
-    "name": "ArchiveEmailmergeproDefault",
-    "requestPaths": [
-      "/ssw/EmailMergePRO/default.htm"
-    ],
-    "redirectPath": "/archive/email-merge-pro/default.htm"
   },
   {
     "name": "ArchiveEmailmergeproUserguide",
@@ -658,18 +693,18 @@
     "redirectPath": "/archive/email-merge-pro/userguide.html"
   },
   {
-    "name": "ArchiveEmployeesDefault",
+    "name": "ArchiveEmailtemplateDefault",
     "requestPaths": [
-      "/ssw/Employees/default.htm"
+      "/ssw/EmailTemplate/default.html"
     ],
-    "redirectPath": "/archive/employees/default.htm"
+    "redirectPath": "/archive/email-template/default.html"
   },
   {
-    "name": "ArchiveEvents1999msroadshowDefault",
+    "name": "ArchiveEmailtemplateEmail",
     "requestPaths": [
-      "/ssw/Events/1999MSRoadShow/Default.htm"
+      "/ssw/EmailTemplate/email.html"
     ],
-    "redirectPath": "/archive/events/1999-msroad-show/default.htm"
+    "redirectPath": "/archive/email-template/email.html"
   },
   {
     "name": "ArchiveEvents1999msroadshowMsbrief",
@@ -964,13 +999,6 @@
       "/ssw/Events/2011UTSSQL/Default.aspx"
     ],
     "redirectPath": "/archive/events/2011-uts-sql/default.html"
-  },
-  {
-    "name": "ArchiveEventsEbooksAngularjs5lessonsthankyou",
-    "requestPaths": [
-      "/ssw/Events/ebooks/angularjs-5-lessons-thankyou.html"
-    ],
-    "redirectPath": "/archive/events/ebooks/angularjs-5-lessons-thankyou.html"
   },
   {
     "name": "ArchiveEventsTechbreakfastHowtobecomeadeveloperin2015",
@@ -1407,13 +1435,6 @@
     "redirectPath": "/archive/events/conference-past.html"
   },
   {
-    "name": "ArchiveEventsEvent",
-    "requestPaths": [
-      "/ssw/Events/Event.aspx"
-    ],
-    "redirectPath": "/archive/events/event.html"
-  },
-  {
     "name": "ArchiveEventsHololensexperience",
     "requestPaths": [
       "/ssw/Events/HoloLens-experience.aspx"
@@ -1659,48 +1680,6 @@
     "redirectPath": "/archive/extreme-emails/reports/default.html"
   },
   {
-    "name": "ArchiveExtremeemailsReportsNewversionreleasedreportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/new-version-released-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsReleasedebriefreportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/release-debrief-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsReleaseplanreportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/ReleasePlanReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/release-plan-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsRevisedestimatefilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/RevisedEstimate_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/revised-estimate-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsTestpleasereportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/TestPleaseReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/test-please-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsUpdatereportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/UpdateReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/update-report-files/header.htm"
-  },
-  {
     "name": "ArchiveExtremeemailsReportsNewversionreleasedreport",
     "requestPaths": [
       "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport.htm"
@@ -1757,20 +1736,6 @@
     "redirectPath": "/archive/extreme-emails/default.html"
   },
   {
-    "name": "ArchiveExtremeemailsSilverlight",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/silverlight.html"
-    ],
-    "redirectPath": "/archive/extreme-emails/silverlight.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsUntitled1",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Untitled-1.html"
-    ],
-    "redirectPath": "/archive/extreme-emails/untitled-1.html"
-  },
-  {
     "name": "ArchiveExtremeemailsUserguide",
     "requestPaths": [
       "/ssw/eXtremeEmails/userguide.aspx"
@@ -1804,13 +1769,6 @@
       "/ssw/HealthAuditor/userguide.aspx"
     ],
     "redirectPath": "/archive/health-auditor/userguide.html"
-  },
-  {
-    "name": "ArchiveIncludeFooterssw",
-    "requestPaths": [
-      "/ssw/include/FooterSSW.htm"
-    ],
-    "redirectPath": "/archive/include/footer-ssw.htm"
   },
   {
     "name": "ArchiveLinkauditorDesktopUserguide",
@@ -1862,18 +1820,81 @@
     "redirectPath": "/archive/look-out/sample/default.htm"
   },
   {
-    "name": "ArchiveLookoutDefault",
-    "requestPaths": [
-      "/ssw/LookOut/Default.aspx"
-    ],
-    "redirectPath": "/archive/look-out/default.html"
-  },
-  {
     "name": "ArchiveLookoutUserguide",
     "requestPaths": [
       "/ssw/LookOut/UserGuide.aspx"
     ],
     "redirectPath": "/archive/look-out/user-guide.html"
+  },
+  {
+    "name": "ArchiveMarketingImagesMarketingimages",
+    "requestPaths": [
+      "/ssw/Marketing/Images/MarketingImages.aspx"
+    ],
+    "redirectPath": "/archive/marketing/images/marketing-images.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2000febregionaldirector",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2000febregionaldirector.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2000febregionaldirector.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2000maylaunchxp",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2000maylaunchxp.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2000maylaunchxp.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002maraccessreporter",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002maraccessreporter.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002maraccessreporter.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002marsqlauditor",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002marsqlauditor.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002marsqlauditor.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002martechbreakfasts",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002martechbreakfasts.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002martechbreakfasts.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002maynetaway2002",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002maynetaway2002.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002maynetaway-2002.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2007commbank",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2007CommBank.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2007-comm-bank.html"
+  },
+  {
+    "name": "ArchiveMarketingPr200aprssw product review",
+    "requestPaths": [
+      "/ssw/Marketing/PR/200AprSSW Product Review.htm"
+    ],
+    "redirectPath": "/archive/marketing/pr/200-apr-ssw product review.htm"
+  },
+  {
+    "name": "ArchiveMarketingPr200febinvestment",
+    "requestPaths": [
+      "/ssw/Marketing/PR/200febinvestment.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/200febinvestment.html"
   },
   {
     "name": "ArchiveNettoolkit01winvalidator",
@@ -2205,13 +2226,6 @@
     "redirectPath": "/archive/netug/canberra-ug/2011-11.htm"
   },
   {
-    "name": "ArchiveNetugCanberraugDefault",
-    "requestPaths": [
-      "/ssw/NETUG/CanberraUG/default.htm"
-    ],
-    "redirectPath": "/archive/netug/canberra-ug/default.htm"
-  },
-  {
     "name": "ArchiveNetugEvaluationsurveyDefault",
     "requestPaths": [
       "/ssw/NETUG/Evaluation-Survey/Default.aspx"
@@ -2310,6 +2324,13 @@
     "redirectPath": "/archive/netug/history.html"
   },
   {
+    "name": "ArchiveNetugNewrecentsessions",
+    "requestPaths": [
+      "/ssw/NETUG/NewRecentSessions.aspx"
+    ],
+    "redirectPath": "/archive/netug/new-recent-sessions.html"
+  },
+  {
     "name": "ArchiveNetugTheagileolympicswithjessehouwing",
     "requestPaths": [
       "/ssw/NETUG/The-Agile-Olympics-with-Jesse-Houwing.aspx"
@@ -2345,13 +2366,6 @@
     "redirectPath": "/archive/performance-pro/default.html"
   },
   {
-    "name": "ArchivePerformanceproDefault",
-    "requestPaths": [
-      "/ssw/PerformancePRO/default.htm"
-    ],
-    "redirectPath": "/archive/performance-pro/default.htm"
-  },
-  {
     "name": "ArchivePerformanceproUserguide",
     "requestPaths": [
       "/ssw/PerformancePRO/UserGuide.aspx"
@@ -2359,11 +2373,60 @@
     "redirectPath": "/archive/performance-pro/user-guide.html"
   },
   {
-    "name": "ArchiveProjectsDefault",
+    "name": "ArchiveProductsSourcecodelicenseagreementDefault",
     "requestPaths": [
-      "/ssw/Projects/default.htm"
+      "/ssw/Products/Source-Code-License-Agreement/Default.aspx"
     ],
-    "redirectPath": "/archive/projects/default.htm"
+    "redirectPath": "/archive/products/source-code-license-agreement/default.html"
+  },
+  {
+    "name": "ArchiveProducts3rdpartysoftware",
+    "requestPaths": [
+      "/ssw/Products/3rdPartySoftware.aspx"
+    ],
+    "redirectPath": "/archive/products/3rd-party-software.html"
+  },
+  {
+    "name": "ArchiveProducts3rdpartysoftwarepriceindicator",
+    "requestPaths": [
+      "/ssw/Products/3rdPartySoftwarePriceIndicator.aspx"
+    ],
+    "redirectPath": "/archive/products/3rd-party-software-price-indicator.html"
+  },
+  {
+    "name": "ArchiveProductsAwards",
+    "requestPaths": [
+      "/ssw/Products/Awards.aspx"
+    ],
+    "redirectPath": "/archive/products/awards.html"
+  },
+  {
+    "name": "ArchiveProductsDefaultbkp",
+    "requestPaths": [
+      "/ssw/Products/Default_bkp.aspx"
+    ],
+    "redirectPath": "/archive/products/default-bkp.html"
+  },
+  {
+    "name": "ArchiveProductsIneta",
+    "requestPaths": [
+      "/ssw/Products/Ineta.aspx"
+    ],
+    "redirectPath": "/archive/products/ineta.html"
+  },
+  {
+    "name": "ArchiveProductsLivedemonstration",
+    "requestPaths": [
+      "/ssw/Products/livedemonstration.aspx"
+    ],
+    "redirectPath": "/archive/products/livedemonstration.html"
+  },
+  {
+    "name": "ArchiveProductsPwpmag",
+    "requestPaths": [
+      "/ssw/Products/pwpmag.aspx"
+    ],
+    "redirectPath": "/archive/products/pwpmag.html"
   },
   {
     "name": "ArchivePropertyandeventproDefault",
@@ -2483,6 +2546,13 @@
       "/ssw/SQLTotalCompare/userguide.aspx"
     ],
     "redirectPath": "/archive/sql-total-compare/userguide.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWaitingforsugggestionstomovetosharepointVsgallery",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WaitingForSugggestionsToMoveToSharePoint/VSGallery.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/waiting-for-sugggestions-to-move-to-sharepoint/vsgallery.html"
   },
   {
     "name": "ArchiveStandardsBettersoftwaresuggestionsActivesync",
@@ -3574,7 +3644,7 @@
     "requestPaths": [
       "/ssw/Standards/Rules/RulestoBetterCommandLines.aspx"
     ],
-    "redirectPath": "/archive/standards/rules/rules-to-better-comm-and-lines.html"
+    "redirectPath": "/archive/standards/rules/rules-to-better-command-lines.html"
   },
   {
     "name": "ArchiveStandardsRulesRulestobettercrm3to4migration",
@@ -3582,13 +3652,6 @@
       "/ssw/Standards/Rules/RulesToBetterCRM3To4Migration.aspx"
     ],
     "redirectPath": "/archive/standards/rules/rules-to-better-crm3-to-4-migration.html"
-  },
-  {
-    "name": "ArchiveStandardsRulesRulestobetterdotnetnuke",
-    "requestPaths": [
-      "/ssw/Standards/Rules/RulestoBetterDotNetNuke.aspx"
-    ],
-    "redirectPath": "/archive/standards/rules/rules-to-better-dot-net-nuke.html"
   },
   {
     "name": "ArchiveStandardsRulesRulestobetterexchangeserver",
@@ -3724,6 +3787,13 @@
     "redirectPath": "/archive/standards/rules/using-google-calendar.html"
   },
   {
+    "name": "ArchiveStandardsRulestobetterdeadtimeDefault",
+    "requestPaths": [
+      "/ssw/Standards/RulesToBetterDeadTime/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules-to-better-dead-time/default.html"
+  },
+  {
     "name": "ArchiveStandardsSswlogoDefault",
     "requestPaths": [
       "/ssw/Standards/SSWLogo/Default.aspx"
@@ -3815,6 +3885,139 @@
     "redirectPath": "/archive/standards/default.html"
   },
   {
+    "name": "ArchiveStandardsinternalComputersetupSettingupvpn",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SettingUpVPN.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/setting-up-vpn.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSswcrminstruction",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SSWCRMInstruction.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/ssw-crminstruction.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSswcrmupandrunningcrm2011",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SSWCRMUpAndRunning_CRM2011.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/ssw-crmup-and-running-crm2011.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSswcrmupandrunningcrm4",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SSWCRMUpAndRunning_CRM4.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/ssw-crmup-and-running-crm4.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupWindows7deploymentchangelog",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/Windows7DeploymentChangeLog.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/windows-7-deployment-change-log.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralCleaningyourmailbox",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/CleaningYourMailbox.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/cleaning-your-mailbox.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtochecklinkauditorreports",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToCheckLinkAuditorReports.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-check-link-auditor-reports.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtocleanerrorlogs",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToCleanErrorLogs.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-clean-error-logs.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtoconducttraining",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToConductTraining.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-conduct-training.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtoconductutstraining",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToConductUTSTraining.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-conduct-uts-training.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowunrecognizedversionswork",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowUnrecognizedVersionsWork.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-unrecognized-versions-work.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHttpsguide",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HTTPS-guide.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/https-guide.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralProductmanagers",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/ProductManagers.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/product-managers.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralUpgradetovs2005andtfs",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/UpgradeToVS2005AndTFS.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/upgrade-to-vs2005-and-tfs.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralUsingftpsync",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/UsingFTPSync.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/using-ftpsync.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralWebmasterhowtocleanandresolveerrorlogs",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/WebMaster_HowToCleanAndResolveErrorLogs.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/web-master-how-to-clean-and-resolve-error-logs.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopernetworkphonePhonesystemsetup",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperNetworkPhone/PhoneSystemSetup.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-network-phone/phone-system-setup.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopernetworkphonePhonesystemusage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperNetworkPhone/PhoneSystemUsage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-network-phone/phone-system-usage.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDeveloperproductshostingImagesDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Images/default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/images/default.html"
+  },
+  {
     "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
     "requestPaths": [
       "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/AccessDeniedWhenLogon.html"
@@ -3836,11 +4039,277 @@
     "redirectPath": "/archive/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
   },
   {
+    "name": "ArchiveStandardsinternalDevelopersqlserverHowtochangesswdata2000",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperSQLServer/HOWTOChangeSSWData2000.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-sql-server/howtochange-ssw-data-2000.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopersqlserverHowtosetupconcurrencyforthewebsite",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperSQLServer/HOWTOSetupConcurrencyForTheWebSite.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-sql-server/howtosetup-concurrency-for-the-web-site.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentAccountsassessment",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/accountsassessment.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/accountsassessment.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentEmploymenttest",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/employmenttest.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/employmenttest.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentSharepointexpertquestions",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/SharepointExpertQuestions.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/sharepoint-expert-questions.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentWorkexperiencescreeningstandard",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/Work_experience_screening_standard.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/work-experience-screening-standard.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalGeneraladministrationAlarmsystem",
+    "requestPaths": [
+      "/ssw/StandardsInternal/GeneralAdministration/AlarmSystem.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/general-administration/alarm-system.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalImagesIconexperiencecollectionDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Images/IconExperienceCollection/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/images/icon-experience-collection/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalInductiontrainingDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/InductionTraining/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/induction-training/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalMeetingsMeetingsscheduleagendas",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Meetings/MeetingsScheduleAgendas.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/meetings/meetings-schedule-agendas.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewldownloadproductbeforepurchasepage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewlDownloadProductBeforePurchasePage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/newl-download-product-before-purchase-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewlproductdownloadpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewlProductDownloadPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/newl-product-download-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewpromotionalproductdownloadpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewPromotionalProductDownloadPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/new-promotional-product-download-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewtrialproductdownloadpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewTrialProductDownloadPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/new-trial-product-download-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewwebregistrationpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewWebRegistrationPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/new-web-registration-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationProjectplan",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/ProjectPlan.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/project-plan.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAdamcoganSswweb",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AdamCogan/SSWWeb.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/adam-cogan/ssw-web.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAdelhelalFilename",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AdelHelal/filename.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/adel-helal/filename.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAllanzhouAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AllanZhou/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/allan-zhou/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAlvinshenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AlvinShen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/alvin-shen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAndrewweaver2Aboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AndrewWeaver2/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/andrew-weaver-2/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAndytaslimAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AndyTaslim/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/andy-taslim/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAnnerongAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AnneRong/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/anne-rong/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAshrafmoollanAbout",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AshrafMoollan/about.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ashraf-moollan/about.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBaonguyenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BaoNguyen/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bao-nguyen/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBhanujitpaulAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BhanujitPaul/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bhanujit-paul/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBillchenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BillChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bill-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBrettandersonAboutbrett",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/brettanderson/aboutbrett.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/brettanderson/aboutbrett.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBritechengAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BriteCheng/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/brite-cheng/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBryanchelliahAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BryanChelliah/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bryan-chelliah/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCamerontownshendAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/cameron-townshend/about-me.html"
+  },
+  {
     "name": "ArchiveStandardsinternalemployeetestareaCamerontownshendAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCamilozuluagaAboutmecz",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CamiloZuluaga/AboutMeCZ.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/camilo-zuluaga/about-me-cz.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaChennekezhangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ChennekeZhang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/chenneke-zhang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaChristopherclarkeAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ChristopherClarke/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/christopher-clarke/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCindywangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CindyWang/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/cindy-wang/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaClarencedangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ClarenceDang/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/clarence-dang/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme",
@@ -3850,11 +4319,235 @@
     "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
   },
   {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme2",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/aboutme2.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/aboutme-2.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme3",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe3.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me-3.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDavidwattsAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DavidWatts/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/david-watts/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDipansahaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DipanSaha/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/dipan-saha/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDonidoniAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DoniDoni/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/doni-doni/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDrewrobsonAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DrewRobson/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/drew-robson/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDrewwalkerFilename",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DrewWalker/filename.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/drew-walker/filename.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEdbrownAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EdBrown/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ed-brown/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEdisonchenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EdisonChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/edison-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEricfangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EricFang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/eric-fang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEricphanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EricPhan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/eric-phan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEvanlinAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EvanLin/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/evan-lin/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaFelixzhangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/FelixZhang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/felix-zhang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaFrancisjijoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/FrancisJijo/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/francis-jijo/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGarylamAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GaryLam/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gary-lam/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGaryliuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GaryLiu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gary-liu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGayathrijayaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GayathriJaya/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gayathri-jaya/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGeofforrAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GeoffOrr/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/geoff-orr/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGerardbeckerlegAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GerardBeckerleg/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gerard-beckerleg/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGlennosullivanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GlennOsullivan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/glenn-osullivan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGordonhartleyAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GordonHartley/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gordon-hartley/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGraciadanielAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GraciaDaniel/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gracia-daniel/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGregmccarthyAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GregMcCarthy/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/greg-mc-carthy/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaHelenmooreAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/HelenMoore/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/helen-moore/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaIanbennettAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/IanBennett/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ian-bennett/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJameszhangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JamesZhang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/james-zhang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJatinvalabjeeProfile",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JatinValabjee/profile.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jatin-valabjee/profile.html"
+  },
+  {
     "name": "ArchiveStandardsinternalemployeetestareaJaywangAbout me",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/jay-wang/about me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJeffliAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JeffLI/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jeff-li/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJoeboedijonoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JoeBoedijono/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/joe-boedijono/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJoetangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JoeTang/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/joe-tang/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJohnliuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JohnLiu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/john-liu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJonnytreesAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jonny-trees/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaJonnytreesAboutme",
@@ -3871,6 +4564,90 @@
     "redirectPath": "/archive/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
   },
   {
+    "name": "ArchiveStandardsinternalemployeetestareaJudahcaplanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JudahCaplan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/judah-caplan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJulianbuenoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JulianBueno/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/julian-bueno/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaLeixu2Aboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/LeiXu2/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/lei-xu-2/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaLeixu2Leixuinductionwebstandardstest",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/LeiXu2/LeiXuInductionWebStandardsTest.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/lei-xu-2/lei-xu-induction-web-standards-test.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaLukechouAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/LukeChou/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/luke-chou/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaManishapatelAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ManishaPatel/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/manisha-patel/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMarkchenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MarkChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/mark-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMarlonmaresciaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MarlonMarescia/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/marlon-marescia/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMartenataallaMartenataalla",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MartenAtaalla/MartenAtaalla.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/marten-ataalla/marten-ataalla.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMartinchafei2Aboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MartinChafei2/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/martin-chafei-2/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMarwanchamasAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MarwanChamas/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/marwan-chamas/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/about-me.html"
+  },
+  {
     "name": "ArchiveStandardsinternalemployeetestareaMashagildinaAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.htm"
@@ -3878,11 +4655,74 @@
     "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
   },
   {
+    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaMashagildinaaboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/MashaGildina-AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/masha-gildina-about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMaxyaoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MaxYao/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/max-yao/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichaelmileosAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichaelMileos/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michael-mileos/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichaelsalamehAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichaelSalameh/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michael-salameh/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichellehuntAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michelle-hunt/about-me.html"
+  },
+  {
     "name": "ArchiveStandardsinternalemployeetestareaMichellehuntAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMohsinaliAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MohsinAli/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/mohsin-ali/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMustafaghulamAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MustafaGhulam/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/mustafa-ghulam/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaNasiraliAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/NasirAli/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/nasir-ali/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaOlivianganAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/olivia-ngan/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaOlivianganAboutme",
@@ -3894,9 +4734,30 @@
   {
     "name": "ArchiveStandardsinternalemployeetestareaPaulstovellAboutme",
     "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/paul-stovell/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPaulstovellAboutme",
+    "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPetergfaderAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PeterGfader/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/peter-gfader/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPhilipolsenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/philip-olsen/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaPhilipolsenAboutme",
@@ -3906,11 +4767,130 @@
     "redirectPath": "/archive/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
   },
   {
+    "name": "ArchiveStandardsinternalemployeetestareaRebeccaliuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RebeccaLiu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/rebecca-liu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRonmamanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RonMaman/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ron-maman/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRonniehaqueAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RonnieHaque/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ronnie-haque/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRyanteeAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RyanTee/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ryan-tee/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSamakulaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sam-akula/about-me.html"
+  },
+  {
     "name": "ArchiveStandardsinternalemployeetestareaSamakulaAboutme",
     "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/sam-akula/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaScottfletcherAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ScottFletcher/Aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/scott-fletcher/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaScottmcphillipsAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ScottMcPhillips/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/scott-mc-phillips/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSerenachenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SerenaChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/serena-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSergeyishutinAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SergeyIshutin/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sergey-ishutin/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSrigangichettuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SriGangichettu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sri-gangichettu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaStephenbennettStephen",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/StephenBennett/Stephen.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/stephen-bennett/stephen.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSumeshghimireAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SumeshGhimire/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sumesh-ghimire/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSunithadesarajuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SunithaDesaraju/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sunitha-desaraju/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSusanheinsAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SusanHeins/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/susan-heins/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSyedmehdiAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SyedMehdi/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/syed-mehdi/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTerrysuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TerrySu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/terry-su/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTiagoaraujoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tiago-araujo/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaTiagoaraujoAboutme",
@@ -3922,9 +4902,37 @@
   {
     "name": "ArchiveStandardsinternalemployeetestareaTimkremerAboutme",
     "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tim-kremer/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTimkremerAboutme",
+    "requestPaths": [
       "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTimothywaltersAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimothyWalters/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/timothy-walters/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaToktamsepehriAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ToktamSepehri/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/toktam-sepehri/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTristankurniawanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tristan-kurniawan/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaTristankurniawanAboutme",
@@ -3932,6 +4940,13 @@
       "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ulysses-maclaren/about-me.html"
   },
   {
     "name": "ArchiveStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
@@ -3946,6 +4961,48 @@
       "/ssw/StandardsInternal/_EmployeeTestArea/VarunBalakrishna/AboutMe.htm"
     ],
     "redirectPath": "/archive/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaVuhungAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/VuHung/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/vu-hung/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWebsiteautobuildtestAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WebsiteAutoBuildTest/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/website-au-to-build-test/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWilliamyinAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WilliamYin/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/william-yin/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWillyekasalimAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WillyEkasalim/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/willy-ekasalim/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWilsonwuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WilsonWu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/wilson-wu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaZunevienAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ZuneVien/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/zune-vien/about-me.html"
   },
   {
     "name": "ArchiveTeamcalendarInstallationCreateuser",
@@ -4002,13 +5059,6 @@
       "/ssw/TeamCalendar/userguide.aspx"
     ],
     "redirectPath": "/archive/team-calendar/userguide.html"
-  },
-  {
-    "name": "ArchiveTestmockupMockup",
-    "requestPaths": [
-      "/ssw/Testmockup/mockup.htm"
-    ],
-    "redirectPath": "/archive/testmockup/mockup.htm"
   },
   {
     "name": "ArchiveTimeprosmarttagsDefault",
@@ -4088,6 +5138,13 @@
     "redirectPath": "/archive/training/reporting-services.html"
   },
   {
+    "name": "ArchiveTrainingSample",
+    "requestPaths": [
+      "/ssw/Training/sample.aspx"
+    ],
+    "redirectPath": "/archive/training/sample.html"
+  },
+  {
     "name": "ArchiveTrainingSessionspast",
     "requestPaths": [
       "/ssw/Training/Sessions-Past.aspx"
@@ -4137,11 +5194,95 @@
     "redirectPath": "/archive/training/visual-studio.html"
   },
   {
-    "name": "ArchiveNotfound",
+    "name": "ArchiveUpsizingproDefault",
     "requestPaths": [
-      "/ssw/not_found.html"
+      "/ssw/UpsizingPRO/Default.aspx"
     ],
-    "redirectPath": "/archive/not-found.html"
+    "redirectPath": "/archive/upsizing-pro/default.html"
+  },
+  {
+    "name": "ArchiveUpsizingproDtsproblem",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/dtsproblem.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/dtsproblem.html"
+  },
+  {
+    "name": "ArchiveUpsizingproJan02sqlserverprofessional",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/jan02sqlserverprofessional.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/jan-02sqlserverprofessional.html"
+  },
+  {
+    "name": "ArchiveUpsizingproResources",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/Resources.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/resources.html"
+  },
+  {
+    "name": "ArchiveUpsizingproSqlservermigrationassistantwizardforaccess",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/SQL_Server_Migration_Assistant_Wizard_for_Access.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/sql-server-migration-assistant-wizard-for-access.html"
+  },
+  {
+    "name": "ArchiveUpsizingproTalesfromthebattlefield",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/talesfromthebattlefield.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/talesfromthebattlefield.html"
+  },
+  {
+    "name": "ArchiveUpsizingproUpsizingdatatypemapping",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/upsizingdatatypemapping.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/upsizingdatatypemapping.html"
+  },
+  {
+    "name": "ArchiveUpsizingproUserguide",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/user-guide.html"
+  },
+  {
+    "name": "ArchiveUpsizingproWorkafter",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/workafter.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/workafter.html"
+  },
+  {
+    "name": "ArchiveUpsizingproWorkbefore",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/workbefore.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/workbefore.html"
+  },
+  {
+    "name": "ArchiveWebpagerDefault",
+    "requestPaths": [
+      "/ssw/WebPager/Default.aspx"
+    ],
+    "redirectPath": "/archive/web-pager/default.html"
+  },
+  {
+    "name": "ArchiveWebpagerUserguide",
+    "requestPaths": [
+      "/ssw/WebPager/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/web-pager/user-guide.html"
+  },
+  {
+    "name": "ArchiveWiseproDefault",
+    "requestPaths": [
+      "/ssw/WisePRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/wise-pro/default.html"
   },
   {
     "name": "ArchiveProcessimprovementforsoftwareteams",
@@ -4151,17 +5292,17 @@
     "redirectPath": "/archive/process-improvement-for-software-teams.html"
   },
   {
-    "name": "ArchiveSswcustomerror404",
+    "name": "ArchiveThankyoushare",
     "requestPaths": [
-      "/ssw/SSWCustomError404.html"
+      "/ssw/ThankyouShare.aspx"
     ],
-    "redirectPath": "/archive/ssw-custom-error-404.html"
+    "redirectPath": "/archive/thank-you-share.html"
   },
   {
-    "name": "ArchiveSswcustommaintenance",
+    "name": "ArchiveVersion",
     "requestPaths": [
-      "/ssw/SSWCustomMaintenance.htm"
+      "/ssw/Version.aspx"
     ],
-    "redirectPath": "/archive/ssw-custom-maintenance.htm"
+    "redirectPath": "/archive/version.html"
   }
 ]

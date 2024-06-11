@@ -1,5 +1,1041 @@
 [
   {
+    "name": "ArchiveConsultingNewsharepointbenefits",
+    "requestPaths": [
+      "/ssw/Consulting/NewSharePointBenefits.aspx"
+    ],
+    "redirectPath": "/archive/consulting/new-sharepoint-benefits.html"
+  },
+  {
+    "name": "ArchiveRegistrationUserguide",
+    "requestPaths": [
+      "/ssw/Registration/userguide.aspx"
+    ],
+    "redirectPath": "/archive/registration/userguide.html"
+  },
+  {
+    "name": "ArchiveWiseproDefault",
+    "requestPaths": [
+      "/ssw/WisePRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/wise-pro/default.html"
+  },
+  {
+    "name": "ArchiveDatarenovatorDefault",
+    "requestPaths": [
+      "/ssw/DataRenovator/Default.aspx"
+    ],
+    "redirectPath": "/archive/data-renovator/default.html"
+  },
+  {
+    "name": "ArchiveDatarenovatorUserguide",
+    "requestPaths": [
+      "/ssw/DataRenovator/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/data-renovator/user-guide.html"
+  },
+  {
+    "name": "ArchiveEmailmergeproDefault",
+    "requestPaths": [
+      "/ssw/EmailMergePRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/email-merge-pro/default.html"
+  },
+  {
+    "name": "ArchiveEmailmergeproUserguide",
+    "requestPaths": [
+      "/ssw/EmailMergePRO/userguide.aspx"
+    ],
+    "redirectPath": "/archive/email-merge-pro/userguide.html"
+  },
+  {
+    "name": "ArchiveEmailtemplateDefault",
+    "requestPaths": [
+      "/ssw/EmailTemplate/default.html"
+    ],
+    "redirectPath": "/archive/email-template/default.html"
+  },
+  {
+    "name": "ArchiveEmailtemplateEmail",
+    "requestPaths": [
+      "/ssw/EmailTemplate/email.html"
+    ],
+    "redirectPath": "/archive/email-template/email.html"
+  },
+  {
+    "name": "ArchivePerformanceproDefault",
+    "requestPaths": [
+      "/ssw/PerformancePRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/performance-pro/default.html"
+  },
+  {
+    "name": "ArchivePerformanceproUserguide",
+    "requestPaths": [
+      "/ssw/PerformancePRO/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/performance-pro/user-guide.html"
+  },
+  {
+    "name": "ArchivePropertyandeventproDefault",
+    "requestPaths": [
+      "/ssw/PropertyAndEventPRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/property-and-event-pro/default.html"
+  },
+  {
+    "name": "ArchivePropertyandeventproUserguide",
+    "requestPaths": [
+      "/ssw/PropertyAndEventPRO/userguide.aspx"
+    ],
+    "redirectPath": "/archive/property-and-event-pro/userguide.html"
+  },
+  {
+    "name": "ArchiveSqltotalcompareDefault",
+    "requestPaths": [
+      "/ssw/SQLTotalCompare/Default.aspx"
+    ],
+    "redirectPath": "/archive/sql-total-compare/default.html"
+  },
+  {
+    "name": "ArchiveSqltotalcompareUserguide",
+    "requestPaths": [
+      "/ssw/SQLTotalCompare/userguide.aspx"
+    ],
+    "redirectPath": "/archive/sql-total-compare/userguide.html"
+  },
+  {
+    "name": "ArchiveTimeprosmarttagsDefault",
+    "requestPaths": [
+      "/ssw/TimePROSmartTags/Default.aspx"
+    ],
+    "redirectPath": "/archive/time-prosmart-tags/default.html"
+  },
+  {
+    "name": "ArchiveTimeprosmarttagsUserguide",
+    "requestPaths": [
+      "/ssw/TimePROSmartTags/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/time-prosmart-tags/user-guide.html"
+  },
+  {
+    "name": "ArchiveWebpagerDefault",
+    "requestPaths": [
+      "/ssw/WebPager/Default.aspx"
+    ],
+    "redirectPath": "/archive/web-pager/default.html"
+  },
+  {
+    "name": "ArchiveWebpagerUserguide",
+    "requestPaths": [
+      "/ssw/WebPager/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/web-pager/user-guide.html"
+  },
+  {
+    "name": "ArchiveDatamergeproDefault",
+    "requestPaths": [
+      "/ssw/DataMergePRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/data-merge-pro/default.html"
+  },
+  {
+    "name": "ArchiveDatamergeproTutorial",
+    "requestPaths": [
+      "/ssw/DataMergePRO/Tutorial.aspx"
+    ],
+    "redirectPath": "/archive/data-merge-pro/tutorial.html"
+  },
+  {
+    "name": "ArchiveDatamergeproTutorial",
+    "requestPaths": [
+      "/ssw/DataMergePRO/Tutorial.htm"
+    ],
+    "redirectPath": "/archive/data-merge-pro/tutorial.htm"
+  },
+  {
+    "name": "ArchiveDecommissionedGooglekeywords",
+    "requestPaths": [
+      "/ssw/decommissioned/googlekeywords.aspx"
+    ],
+    "redirectPath": "/archive/decommissioned/googlekeywords.html"
+  },
+  {
+    "name": "ArchiveDecommissionedTestimonialsacademytiles",
+    "requestPaths": [
+      "/ssw/decommissioned/testimonialsacademytiles.aspx"
+    ],
+    "redirectPath": "/archive/decommissioned/testimonialsacademytiles.html"
+  },
+  {
+    "name": "ArchiveDecommissionedWhyweexist",
+    "requestPaths": [
+      "/ssw/decommissioned/WhyWeExist.aspx"
+    ],
+    "redirectPath": "/archive/decommissioned/why-we-exist.html"
+  },
+  {
+    "name": "ArchiveLookoutSampleCustomer",
+    "requestPaths": [
+      "/ssw/LookOut/Sample/Customer.aspx"
+    ],
+    "redirectPath": "/archive/look-out/sample/customer.html"
+  },
+  {
+    "name": "ArchiveLookoutSampleDefault",
+    "requestPaths": [
+      "/ssw/LookOut/Sample/default.htm"
+    ],
+    "redirectPath": "/archive/look-out/sample/default.htm"
+  },
+  {
+    "name": "ArchiveLookoutUserguide",
+    "requestPaths": [
+      "/ssw/LookOut/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/look-out/user-guide.html"
+  },
+  {
+    "name": "ArchiveSqlreportingservicesauditorDefault",
+    "requestPaths": [
+      "/ssw/SQLReportingServicesAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archive/sql-reporting-services-auditor/default.html"
+  },
+  {
+    "name": "ArchiveSqlreportingservicesauditorPostinstallation",
+    "requestPaths": [
+      "/ssw/SQLReportingServicesAuditor/PostInstallation.aspx"
+    ],
+    "redirectPath": "/archive/sql-reporting-services-auditor/post-installation.html"
+  },
+  {
+    "name": "ArchiveSqlreportingservicesauditorUserguide",
+    "requestPaths": [
+      "/ssw/SQLReportingServicesAuditor/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/sql-reporting-services-auditor/user-guide.html"
+  },
+  {
+    "name": "ArchiveProcessimprovementforsoftwareteams",
+    "requestPaths": [
+      "/ssw/ProcessImprovementForSoftwareTeams.aspx"
+    ],
+    "redirectPath": "/archive/process-improvement-for-software-teams.html"
+  },
+  {
+    "name": "ArchiveThankyoushare",
+    "requestPaths": [
+      "/ssw/ThankyouShare.aspx"
+    ],
+    "redirectPath": "/archive/thank-you-share.html"
+  },
+  {
+    "name": "ArchiveVersion",
+    "requestPaths": [
+      "/ssw/Version.aspx"
+    ],
+    "redirectPath": "/archive/version.html"
+  },
+  {
+    "name": "ArchiveAccessreporter0205smartaccessextra",
+    "requestPaths": [
+      "/ssw/AccessReporter/0205SmartAccessExtra.htm"
+    ],
+    "redirectPath": "/archive/access-reporter/0205-smart-access-extra.htm"
+  },
+  {
+    "name": "ArchiveAccessreporterAccessreporterdemo",
+    "requestPaths": [
+      "/ssw/AccessReporter/AccessReporterDemo.aspx"
+    ],
+    "redirectPath": "/archive/access-reporter/access-reporter-demo.html"
+  },
+  {
+    "name": "ArchiveAccessreporterDefault",
+    "requestPaths": [
+      "/ssw/AccessReporter/Default.aspx"
+    ],
+    "redirectPath": "/archive/access-reporter/default.html"
+  },
+  {
+    "name": "ArchiveAccessreporterPdfsetup",
+    "requestPaths": [
+      "/ssw/AccessReporter/PdfSetup.htm"
+    ],
+    "redirectPath": "/archive/access-reporter/pdf-setup.htm"
+  },
+  {
+    "name": "ArchiveAgiletemplateReportsDefault",
+    "requestPaths": [
+      "/ssw/AgileTemplate/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archive/agile-template/reports/default.html"
+  },
+  {
+    "name": "ArchiveAgiletemplateDefault",
+    "requestPaths": [
+      "/ssw/AgileTemplate/Default.aspx"
+    ],
+    "redirectPath": "/archive/agile-template/default.html"
+  },
+  {
+    "name": "ArchiveAgiletemplateManageprojects",
+    "requestPaths": [
+      "/ssw/AgileTemplate/ManageProjects.aspx"
+    ],
+    "redirectPath": "/archive/agile-template/manage-projects.html"
+  },
+  {
+    "name": "ArchiveAgiletemplateUserguide",
+    "requestPaths": [
+      "/ssw/AgileTemplate/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/agile-template/user-guide.html"
+  },
+  {
+    "name": "ArchiveHealthauditorDefault",
+    "requestPaths": [
+      "/ssw/HealthAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archive/health-auditor/default.html"
+  },
+  {
+    "name": "ArchiveHealthauditorFxcoptutorial",
+    "requestPaths": [
+      "/ssw/HealthAuditor/FxCopTutorial.aspx"
+    ],
+    "redirectPath": "/archive/health-auditor/fx-cop-tutorial.html"
+  },
+  {
+    "name": "ArchiveHealthauditorNunittutorial",
+    "requestPaths": [
+      "/ssw/HealthAuditor/NUnitTutorial.aspx"
+    ],
+    "redirectPath": "/archive/health-auditor/nunit-tutorial.html"
+  },
+  {
+    "name": "ArchiveHealthauditorUserguide",
+    "requestPaths": [
+      "/ssw/HealthAuditor/userguide.aspx"
+    ],
+    "redirectPath": "/archive/health-auditor/userguide.html"
+  },
+  {
+    "name": "ArchiveSqlauditorDefault",
+    "requestPaths": [
+      "/ssw/SQLAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archive/sql-auditor/default.html"
+  },
+  {
+    "name": "ArchiveSqlauditorSamplereport",
+    "requestPaths": [
+      "/ssw/SQLAuditor/SampleReport.aspx"
+    ],
+    "redirectPath": "/archive/sql-auditor/sample-report.html"
+  },
+  {
+    "name": "ArchiveSqlauditorUserguide",
+    "requestPaths": [
+      "/ssw/SQLAuditor/userguide.aspx"
+    ],
+    "redirectPath": "/archive/sql-auditor/userguide.html"
+  },
+  {
+    "name": "ArchiveSqlauditorUserguidewizards",
+    "requestPaths": [
+      "/ssw/SQLAuditor/UserguideWizards.aspx"
+    ],
+    "redirectPath": "/archive/sql-auditor/userguide-wizards.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsAdminZsinstructions",
+    "requestPaths": [
+      "/ssw/Diagnostics/Admin/zsInstructions.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/admin/zs-instructions.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsDefault",
+    "requestPaths": [
+      "/ssw/Diagnostics/Default.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/default.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsHowunrecognizedversionswork",
+    "requestPaths": [
+      "/ssw/Diagnostics/HowUnrecognizedVersionsWork.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/how-unrecognized-versions-work.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsUnrecognized",
+    "requestPaths": [
+      "/ssw/Diagnostics/Unrecognized.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/unrecognized.html"
+  },
+  {
+    "name": "ArchiveDiagnosticsUserguide",
+    "requestPaths": [
+      "/ssw/Diagnostics/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/diagnostics/user-guide.html"
+  },
+  {
+    "name": "ArchiveLinkauditorDesktopUserguide",
+    "requestPaths": [
+      "/ssw/LinkAuditor/Desktop/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/link-auditor/desktop/user-guide.html"
+  },
+  {
+    "name": "ArchiveLinkauditorDefault",
+    "requestPaths": [
+      "/ssw/LinkAuditor/Default.aspx"
+    ],
+    "redirectPath": "/archive/link-auditor/default.html"
+  },
+  {
+    "name": "ArchiveLinkauditorHowtobegoodlinkauditordailybuildmaster",
+    "requestPaths": [
+      "/ssw/LinkAuditor/HowtobeGoodLinkAuditorDailyBuildMaster.aspx"
+    ],
+    "redirectPath": "/archive/link-auditor/howtobe-good-link-auditor-daily-build-master.html"
+  },
+  {
+    "name": "ArchiveLinkauditorLastreport",
+    "requestPaths": [
+      "/ssw/LinkAuditor/LastReport.htm"
+    ],
+    "redirectPath": "/archive/link-auditor/last-report.htm"
+  },
+  {
+    "name": "ArchiveLinkauditorUserguide",
+    "requestPaths": [
+      "/ssw/LinkAuditor/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/link-auditor/user-guide.html"
+  },
+  {
+    "name": "ArchiveSqldeployDeveloperguide",
+    "requestPaths": [
+      "/ssw/SQLDeploy/developerguide.aspx"
+    ],
+    "redirectPath": "/archive/sql-deploy/developerguide.html"
+  },
+  {
+    "name": "ArchiveSqldeployExemode",
+    "requestPaths": [
+      "/ssw/SQLDeploy/ExeMode.aspx"
+    ],
+    "redirectPath": "/archive/sql-deploy/exe-mode.html"
+  },
+  {
+    "name": "ArchiveSqldeployExistingdatabase",
+    "requestPaths": [
+      "/ssw/SQLDeploy/ExistingDataBase.aspx"
+    ],
+    "redirectPath": "/archive/sql-deploy/existing-data-base.html"
+  },
+  {
+    "name": "ArchiveSqldeployIntegrationmode",
+    "requestPaths": [
+      "/ssw/SQLDeploy/IntegrationMode.aspx"
+    ],
+    "redirectPath": "/archive/sql-deploy/integration-mode.html"
+  },
+  {
+    "name": "ArchiveSqldeployUserguide",
+    "requestPaths": [
+      "/ssw/SQLDeploy/userguide.aspx"
+    ],
+    "redirectPath": "/archive/sql-deploy/userguide.html"
+  },
+  {
+    "name": "ArchiveDatabaseDatabaseconnection",
+    "requestPaths": [
+      "/ssw/Database/databaseconnection.aspx"
+    ],
+    "redirectPath": "/archive/database/databaseconnection.html"
+  },
+  {
+    "name": "ArchiveDatabaseDatabasedocslinks",
+    "requestPaths": [
+      "/ssw/Database/databasedocslinks.aspx"
+    ],
+    "redirectPath": "/archive/database/databasedocslinks.html"
+  },
+  {
+    "name": "ArchiveDatabaseDllhell",
+    "requestPaths": [
+      "/ssw/Database/DLLHell.aspx"
+    ],
+    "redirectPath": "/archive/database/dllhell.html"
+  },
+  {
+    "name": "ArchiveDatabaseExchange",
+    "requestPaths": [
+      "/ssw/Database/Exchange.aspx"
+    ],
+    "redirectPath": "/archive/database/exchange.html"
+  },
+  {
+    "name": "ArchiveDatabaseLinkssoftwareupdates",
+    "requestPaths": [
+      "/ssw/Database/LinksSoftwareUpdates.aspx"
+    ],
+    "redirectPath": "/archive/database/links-software-updates.html"
+  },
+  {
+    "name": "ArchiveDatabaseMobileapplicationdevelopment",
+    "requestPaths": [
+      "/ssw/Database/MobileApplicationDevelopment.aspx"
+    ],
+    "redirectPath": "/archive/database/mobile-application-development.html"
+  },
+  {
+    "name": "ArchiveDatabaseNet",
+    "requestPaths": [
+      "/ssw/Database/NET.aspx"
+    ],
+    "redirectPath": "/archive/database/net.html"
+  },
+  {
+    "name": "ArchiveDatabaseSswdatarenovatorinfo",
+    "requestPaths": [
+      "/ssw/Database/sswdatarenovatorinfo.aspx"
+    ],
+    "redirectPath": "/archive/database/sswdatarenovatorinfo.html"
+  },
+  {
+    "name": "ArchiveProductsSourcecodelicenseagreementDefault",
+    "requestPaths": [
+      "/ssw/Products/Source-Code-License-Agreement/Default.aspx"
+    ],
+    "redirectPath": "/archive/products/source-code-license-agreement/default.html"
+  },
+  {
+    "name": "ArchiveProducts3rdpartysoftware",
+    "requestPaths": [
+      "/ssw/Products/3rdPartySoftware.aspx"
+    ],
+    "redirectPath": "/archive/products/3rd-party-software.html"
+  },
+  {
+    "name": "ArchiveProducts3rdpartysoftwarepriceindicator",
+    "requestPaths": [
+      "/ssw/Products/3rdPartySoftwarePriceIndicator.aspx"
+    ],
+    "redirectPath": "/archive/products/3rd-party-software-price-indicator.html"
+  },
+  {
+    "name": "ArchiveProductsAwards",
+    "requestPaths": [
+      "/ssw/Products/Awards.aspx"
+    ],
+    "redirectPath": "/archive/products/awards.html"
+  },
+  {
+    "name": "ArchiveProductsDefaultbkp",
+    "requestPaths": [
+      "/ssw/Products/Default_bkp.aspx"
+    ],
+    "redirectPath": "/archive/products/default-bkp.html"
+  },
+  {
+    "name": "ArchiveProductsIneta",
+    "requestPaths": [
+      "/ssw/Products/Ineta.aspx"
+    ],
+    "redirectPath": "/archive/products/ineta.html"
+  },
+  {
+    "name": "ArchiveProductsLivedemonstration",
+    "requestPaths": [
+      "/ssw/Products/livedemonstration.aspx"
+    ],
+    "redirectPath": "/archive/products/livedemonstration.html"
+  },
+  {
+    "name": "ArchiveProductsPwpmag",
+    "requestPaths": [
+      "/ssw/Products/pwpmag.aspx"
+    ],
+    "redirectPath": "/archive/products/pwpmag.html"
+  },
+  {
+    "name": "ArchiveTeamcalendarInstallationCreateuser",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/CreateUser.htm"
+    ],
+    "redirectPath": "/archive/team-calendar/installation/create-user.htm"
+  },
+  {
+    "name": "ArchiveTeamcalendarInstallationDefault",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/Default.htm"
+    ],
+    "redirectPath": "/archive/team-calendar/installation/default.htm"
+  },
+  {
+    "name": "ArchiveTeamcalendarInstallationExchangepermissions",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/ExchangePermissions.htm"
+    ],
+    "redirectPath": "/archive/team-calendar/installation/exchange-permissions.htm"
+  },
+  {
+    "name": "ArchiveTeamcalendarInstallationIispermissions",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/IISPermissions.htm"
+    ],
+    "redirectPath": "/archive/team-calendar/installation/iispermissions.htm"
+  },
+  {
+    "name": "ArchiveTeamcalendarInstallationReadme",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Installation/ReadMe.htm"
+    ],
+    "redirectPath": "/archive/team-calendar/installation/read-me.htm"
+  },
+  {
+    "name": "ArchiveTeamcalendarDefault",
+    "requestPaths": [
+      "/ssw/TeamCalendar/Default.aspx"
+    ],
+    "redirectPath": "/archive/team-calendar/default.html"
+  },
+  {
+    "name": "ArchiveTeamcalendarHowtobooksomeoneformeeting",
+    "requestPaths": [
+      "/ssw/TeamCalendar/howtobooksomeoneformeeting.aspx"
+    ],
+    "redirectPath": "/archive/team-calendar/howtobooksomeoneformeeting.html"
+  },
+  {
+    "name": "ArchiveTeamcalendarUserguide",
+    "requestPaths": [
+      "/ssw/TeamCalendar/userguide.aspx"
+    ],
+    "redirectPath": "/archive/team-calendar/userguide.html"
+  },
+  {
+    "name": "ArchiveMarketingImagesMarketingimages",
+    "requestPaths": [
+      "/ssw/Marketing/Images/MarketingImages.aspx"
+    ],
+    "redirectPath": "/archive/marketing/images/marketing-images.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2000febregionaldirector",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2000febregionaldirector.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2000febregionaldirector.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2000maylaunchxp",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2000maylaunchxp.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2000maylaunchxp.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002maraccessreporter",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002maraccessreporter.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002maraccessreporter.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002marsqlauditor",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002marsqlauditor.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002marsqlauditor.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002martechbreakfasts",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002martechbreakfasts.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002martechbreakfasts.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2002maynetaway2002",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2002maynetaway2002.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2002maynetaway-2002.html"
+  },
+  {
+    "name": "ArchiveMarketingPr2007commbank",
+    "requestPaths": [
+      "/ssw/Marketing/PR/2007CommBank.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/2007-comm-bank.html"
+  },
+  {
+    "name": "ArchiveMarketingPr200aprssw product review",
+    "requestPaths": [
+      "/ssw/Marketing/PR/200AprSSW Product Review.htm"
+    ],
+    "redirectPath": "/archive/marketing/pr/200-apr-ssw product review.htm"
+  },
+  {
+    "name": "ArchiveMarketingPr200febinvestment",
+    "requestPaths": [
+      "/ssw/Marketing/PR/200febinvestment.aspx"
+    ],
+    "redirectPath": "/archive/marketing/pr/200febinvestment.html"
+  },
+  {
+    "name": "ArchiveNettoolkit01winvalidator",
+    "requestPaths": [
+      "/ssw/NETToolkit/01WinValidator.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/01-win-validator.html"
+  },
+  {
+    "name": "ArchiveNettoolkit02winsearch",
+    "requestPaths": [
+      "/ssw/NETToolkit/02WinSearch.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/02-win-search.html"
+  },
+  {
+    "name": "ArchiveNettoolkit03dataentry",
+    "requestPaths": [
+      "/ssw/NETToolkit/03DataEntry.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/03-data-entry.html"
+  },
+  {
+    "name": "ArchiveNettoolkit04exceptionreporter",
+    "requestPaths": [
+      "/ssw/NETToolkit/04ExceptionReporter.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/04-exception-reporter.html"
+  },
+  {
+    "name": "ArchiveNettoolkit05wizardforms",
+    "requestPaths": [
+      "/ssw/NETToolkit/05WizardForms.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/05-wizard-forms.html"
+  },
+  {
+    "name": "ArchiveNettoolkit06configurationblock",
+    "requestPaths": [
+      "/ssw/NETToolkit/06ConfigurationBlock.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/06-configuration-block.html"
+  },
+  {
+    "name": "ArchiveNettoolkit07versionchecker",
+    "requestPaths": [
+      "/ssw/NETToolkit/07VersionChecker.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/07-version-checker.html"
+  },
+  {
+    "name": "ArchiveNettoolkit08progressbarsstatusforms",
+    "requestPaths": [
+      "/ssw/NETToolkit/08ProgressbarsStatusforms.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/08-progressbars-statusforms.html"
+  },
+  {
+    "name": "ArchiveNettoolkitDefault",
+    "requestPaths": [
+      "/ssw/NETToolkit/Default.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/default.html"
+  },
+  {
+    "name": "ArchiveNettoolkitUserguide",
+    "requestPaths": [
+      "/ssw/NETToolkit/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/net-toolkit/user-guide.html"
+  },
+  {
+    "name": "ArchiveUpsizingproDefault",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/Default.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/default.html"
+  },
+  {
+    "name": "ArchiveUpsizingproDtsproblem",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/dtsproblem.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/dtsproblem.html"
+  },
+  {
+    "name": "ArchiveUpsizingproJan02sqlserverprofessional",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/jan02sqlserverprofessional.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/jan-02sqlserverprofessional.html"
+  },
+  {
+    "name": "ArchiveUpsizingproResources",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/Resources.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/resources.html"
+  },
+  {
+    "name": "ArchiveUpsizingproSqlservermigrationassistantwizardforaccess",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/SQL_Server_Migration_Assistant_Wizard_for_Access.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/sql-server-migration-assistant-wizard-for-access.html"
+  },
+  {
+    "name": "ArchiveUpsizingproTalesfromthebattlefield",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/talesfromthebattlefield.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/talesfromthebattlefield.html"
+  },
+  {
+    "name": "ArchiveUpsizingproUpsizingdatatypemapping",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/upsizingdatatypemapping.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/upsizingdatatypemapping.html"
+  },
+  {
+    "name": "ArchiveUpsizingproUserguide",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/user-guide.html"
+  },
+  {
+    "name": "ArchiveUpsizingproWorkafter",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/workafter.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/workafter.html"
+  },
+  {
+    "name": "ArchiveUpsizingproWorkbefore",
+    "requestPaths": [
+      "/ssw/UpsizingPRO/workbefore.aspx"
+    ],
+    "redirectPath": "/archive/upsizing-pro/workbefore.html"
+  },
+  {
+    "name": "ArchiveExtremeemailsExcelproductlistDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/ExcelProductList/Default.aspx"
+    ],
+    "redirectPath": "/archive/extreme-emails/excel-product-list/default.html"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/Default.aspx"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/default.html"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsNewversionreleasedreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/new-version-released-report.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsPrereleasesummaryreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/Pre-ReleaseSummaryReport.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/pre-release-summary-report.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsReleasedebriefreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/release-debrief-report.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsReleaseplanreport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/ReleasePlanReport.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/release-plan-report.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsRevisedestimate",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/RevisedEstimate.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/revised-estimate.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsTestpleasereport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/TestPleaseReport.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/test-please-report.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsReportsUpdatereport",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Reports/UpdateReport.htm"
+    ],
+    "redirectPath": "/archive/extreme-emails/reports/update-report.htm"
+  },
+  {
+    "name": "ArchiveExtremeemailsDefault",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/Default.aspx"
+    ],
+    "redirectPath": "/archive/extreme-emails/default.html"
+  },
+  {
+    "name": "ArchiveExtremeemailsUserguide",
+    "requestPaths": [
+      "/ssw/eXtremeEmails/userguide.aspx"
+    ],
+    "redirectPath": "/archive/extreme-emails/userguide.html"
+  },
+  {
+    "name": "ArchiveTrainingAccesstosqlserverandnet",
+    "requestPaths": [
+      "/ssw/Training/AccesstoSQLServerandNET.aspx"
+    ],
+    "redirectPath": "/archive/training/access-to-sql-server-and-net.html"
+  },
+  {
+    "name": "ArchiveTrainingAlm",
+    "requestPaths": [
+      "/ssw/Training/ALM.aspx"
+    ],
+    "redirectPath": "/archive/training/alm.html"
+  },
+  {
+    "name": "ArchiveTrainingAlmcustomization",
+    "requestPaths": [
+      "/ssw/Training/ALMCustomization.aspx"
+    ],
+    "redirectPath": "/archive/training/alm-customization.html"
+  },
+  {
+    "name": "ArchiveTrainingBitheglory",
+    "requestPaths": [
+      "/ssw/Training/BI-TheGlory.aspx"
+    ],
+    "redirectPath": "/archive/training/bi-the-glory.html"
+  },
+  {
+    "name": "ArchiveTrainingBitheguts",
+    "requestPaths": [
+      "/ssw/Training/BI-TheGuts.aspx"
+    ],
+    "redirectPath": "/archive/training/bi-the-guts.html"
+  },
+  {
+    "name": "ArchiveTrainingBusinessintelligenceforbusiness",
+    "requestPaths": [
+      "/ssw/Training/BusinessIntelligenceForBusiness.aspx"
+    ],
+    "redirectPath": "/archive/training/business-intelligence-for-business.html"
+  },
+  {
+    "name": "ArchiveTrainingExpression",
+    "requestPaths": [
+      "/ssw/Training/Expression.aspx"
+    ],
+    "redirectPath": "/archive/training/expression.html"
+  },
+  {
+    "name": "ArchiveTrainingProcessimprovementforsoftwareteams",
+    "requestPaths": [
+      "/ssw/Training/ProcessImprovementForSoftwareTeams.aspx"
+    ],
+    "redirectPath": "/archive/training/process-improvement-for-software-teams.html"
+  },
+  {
+    "name": "ArchiveTrainingReportingservices",
+    "requestPaths": [
+      "/ssw/Training/ReportingServices.aspx"
+    ],
+    "redirectPath": "/archive/training/reporting-services.html"
+  },
+  {
+    "name": "ArchiveTrainingSample",
+    "requestPaths": [
+      "/ssw/Training/sample.aspx"
+    ],
+    "redirectPath": "/archive/training/sample.html"
+  },
+  {
+    "name": "ArchiveTrainingSessionspast",
+    "requestPaths": [
+      "/ssw/Training/Sessions-Past.aspx"
+    ],
+    "redirectPath": "/archive/training/sessions-past.html"
+  },
+  {
+    "name": "ArchiveTrainingSharepoint",
+    "requestPaths": [
+      "/ssw/Training/SharePoint.aspx"
+    ],
+    "redirectPath": "/archive/training/sharepoint.html"
+  },
+  {
+    "name": "ArchiveTrainingSharepointuts",
+    "requestPaths": [
+      "/ssw/Training/SharePointUTS.aspx"
+    ],
+    "redirectPath": "/archive/training/sharepoint-uts.html"
+  },
+  {
+    "name": "ArchiveTrainingSqlbi",
+    "requestPaths": [
+      "/ssw/Training/SQLBI.aspx"
+    ],
+    "redirectPath": "/archive/training/sql-bi.html"
+  },
+  {
+    "name": "ArchiveTrainingSqlserver",
+    "requestPaths": [
+      "/ssw/Training/SQLServer.aspx"
+    ],
+    "redirectPath": "/archive/training/sql-server.html"
+  },
+  {
+    "name": "ArchiveTrainingSqlserverbi",
+    "requestPaths": [
+      "/ssw/Training/SQLServerBI.aspx"
+    ],
+    "redirectPath": "/archive/training/sql-server-bi.html"
+  },
+  {
+    "name": "ArchiveTrainingVisualstudio",
+    "requestPaths": [
+      "/ssw/Training/VisualStudio.aspx"
+    ],
+    "redirectPath": "/archive/training/visual-studio.html"
+  },
+  {
+    "name": "ArchiveCodeauditorContactDefault",
+    "requestPaths": [
+      "/ssw/CodeAuditor/Contact/Default.aspx"
+    ],
+    "redirectPath": "/archive/code-auditor/contact/default.html"
+  },
+  {
     "name": "ArchiveCodeauditorDefault",
     "requestPaths": [
       "/ssw/CodeAuditor/Default.aspx"
@@ -12,6 +1048,13 @@
       "/ssw/CodeAuditor/2407DeveloperCentralExtra.htm"
     ],
     "redirectPath": "/archive/code-auditor/2407-developer-central-extra.htm"
+  },
+  {
+    "name": "ArchiveCodeauditorDefaultmockup",
+    "requestPaths": [
+      "/ssw/CodeAuditor/defaultmockup.aspx"
+    ],
+    "redirectPath": "/archive/code-auditor/defaultmockup.html"
   },
   {
     "name": "ArchiveCodeauditorHowtobegoodcodeauditordailybuildmaster",
@@ -117,272 +1160,6 @@
       "/ssw/CodeAuditor/webmag.aspx"
     ],
     "redirectPath": "/archive/code-auditor/webmag.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsExcelproductlistDefault",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/ExcelProductList/Default.aspx"
-    ],
-    "redirectPath": "/archive/extreme-emails/excel-product-list/default.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsDefault",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/Default.aspx"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/default.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsNewversionreleasedreportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/new-version-released-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsReleasedebriefreportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/release-debrief-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsReleaseplanreportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/ReleasePlanReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/release-plan-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsRevisedestimatefilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/RevisedEstimate_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/revised-estimate-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsTestpleasereportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/TestPleaseReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/test-please-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsUpdatereportfilesHeader",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/UpdateReport_files/header.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/update-report-files/header.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsNewversionreleasedreport",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/NewVersionReleasedReport.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/new-version-released-report.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsPrereleasesummaryreport",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/Pre-ReleaseSummaryReport.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/pre-release-summary-report.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsReleasedebriefreport",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/ReleaseDebriefReport.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/release-debrief-report.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsReleaseplanreport",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/ReleasePlanReport.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/release-plan-report.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsRevisedestimate",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/RevisedEstimate.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/revised-estimate.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsTestpleasereport",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/TestPleaseReport.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/test-please-report.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsReportsUpdatereport",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Reports/UpdateReport.htm"
-    ],
-    "redirectPath": "/archive/extreme-emails/reports/update-report.htm"
-  },
-  {
-    "name": "ArchiveExtremeemailsDefault",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Default.aspx"
-    ],
-    "redirectPath": "/archive/extreme-emails/default.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsSilverlight",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/silverlight.html"
-    ],
-    "redirectPath": "/archive/extreme-emails/silverlight.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsUntitled1",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/Untitled-1.html"
-    ],
-    "redirectPath": "/archive/extreme-emails/untitled-1.html"
-  },
-  {
-    "name": "ArchiveExtremeemailsUserguide",
-    "requestPaths": [
-      "/ssw/eXtremeEmails/userguide.aspx"
-    ],
-    "redirectPath": "/archive/extreme-emails/userguide.html"
-  },
-  {
-    "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
-    "requestPaths": [
-      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/AccessDeniedWhenLogon.html"
-    ],
-    "redirectPath": "/archive/standards-internal/developer-products-hosting/plesk kbs/access-denied-when-logon.html"
-  },
-  {
-    "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsIis web directorys missing2",
-    "requestPaths": [
-      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/IIS Web Directorys Missing2.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/developer-products-hosting/plesk kbs/iis web directorys missing-2.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalDeveloperproductshostingSettingupauseronseal",
-    "requestPaths": [
-      "/ssw/StandardsInternal/DeveloperProductsHosting/SettingUpAUserOnSeal.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaCamerontownshendAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaJaywangAbout me",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/jay-wang/about me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaJonnytreesAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/jonny-trees/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaJosephropertiAbout me",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaMichellehuntAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaOlivianganAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/olivia-ngan/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaPaulstovellAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaPhilipolsenAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaSamakulaAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/sam-akula/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaTiagoaraujoAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/tiago-araujo/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaTimkremerAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaTristankurniawanAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/ulysses-maclaren/about-me.htm"
-  },
-  {
-    "name": "ArchiveStandardsinternalemployeetestareaVarunbalakrishnaAboutme",
-    "requestPaths": [
-      "/ssw/StandardsInternal/_EmployeeTestArea/VarunBalakrishna/AboutMe.htm"
-    ],
-    "redirectPath": "/archive/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
   },
   {
     "name": "ArchiveDataproAccess01introduction",
@@ -719,13 +1496,6 @@
       "/ssw/Download/PADFiles/SSWUP.htm"
     ],
     "redirectPath": "/archive/download/padfiles/ssw-up.htm"
-  },
-  {
-    "name": "ArchiveDownloadSswdiagnostics",
-    "requestPaths": [
-      "/ssw/Download/SSWDiagnostics.htm"
-    ],
-    "redirectPath": "/archive/download/ssw-diagnostics.htm"
   },
   {
     "name": "ArchiveExchangereporterReportsCurrentallmailboxesfolder",
@@ -1169,13 +1939,6 @@
     "redirectPath": "/archive/netug/canberra-ug/2011-11.htm"
   },
   {
-    "name": "ArchiveNetugCanberraugDefault",
-    "requestPaths": [
-      "/ssw/NETUG/CanberraUG/default.htm"
-    ],
-    "redirectPath": "/archive/netug/canberra-ug/default.htm"
-  },
-  {
     "name": "ArchiveNetugEvaluationsurveyDefault",
     "requestPaths": [
       "/ssw/NETUG/Evaluation-Survey/Default.aspx"
@@ -1274,6 +2037,13 @@
     "redirectPath": "/archive/netug/history.html"
   },
   {
+    "name": "ArchiveNetugNewrecentsessions",
+    "requestPaths": [
+      "/ssw/NETUG/NewRecentSessions.aspx"
+    ],
+    "redirectPath": "/archive/netug/new-recent-sessions.html"
+  },
+  {
     "name": "ArchiveNetugTheagileolympicswithjessehouwing",
     "requestPaths": [
       "/ssw/NETUG/The-Agile-Olympics-with-Jesse-Houwing.aspx"
@@ -1300,5 +2070,3239 @@
       "/ssw/NETUG/UserGroupMapDirectionsSydney.aspx"
     ],
     "redirectPath": "/archive/netug/user-group-map-directions-sydney.html"
+  },
+  {
+    "name": "ArchiveEvents1999msroadshowMsbrief",
+    "requestPaths": [
+      "/ssw/Events/1999MSRoadShow/msbrief.htm"
+    ],
+    "redirectPath": "/archive/events/1999-msroad-show/msbrief.htm"
+  },
+  {
+    "name": "ArchiveEvents2001msdevdaysDefault",
+    "requestPaths": [
+      "/ssw/Events/2001MSDevDays/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2001-msdev-days/default.html"
+  },
+  {
+    "name": "ArchiveEvents2002vsliveDefault",
+    "requestPaths": [
+      "/ssw/Events/2002VSLive/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2002-vslive/default.html"
+  },
+  {
+    "name": "ArchiveEvents2004accesstosqlserverandnetDefault",
+    "requestPaths": [
+      "/ssw/Events/2004AccessToSQLServerAndNET/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2004-access-to-sql-server-and-net/default.html"
+  },
+  {
+    "name": "ArchiveEvents2004accesstosqlserverandnetResources",
+    "requestPaths": [
+      "/ssw/Events/2004AccessToSQLServerAndNET/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2004-access-to-sql-server-and-net/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2004ascendDefault",
+    "requestPaths": [
+      "/ssw/Events/2004Ascend/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2004-ascend/default.html"
+  },
+  {
+    "name": "ArchiveEvents2004kenyaAgenda",
+    "requestPaths": [
+      "/ssw/Events/2004Kenya/Agenda.aspx"
+    ],
+    "redirectPath": "/archive/events/2004-kenya/agenda.html"
+  },
+  {
+    "name": "ArchiveEvents2004kenyaDefault",
+    "requestPaths": [
+      "/ssw/Events/2004Kenya/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2004-kenya/default.html"
+  },
+  {
+    "name": "ArchiveEvents2004kenyaE",
+    "requestPaths": [
+      "/ssw/Events/2004Kenya/e.htm"
+    ],
+    "redirectPath": "/archive/events/2004-kenya/e.htm"
+  },
+  {
+    "name": "ArchiveEvents2004malaysiaconferenceDefault",
+    "requestPaths": [
+      "/ssw/Events/2004MalaysiaConference/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2004-malaysia-conference/default.html"
+  },
+  {
+    "name": "ArchiveEvents200511ugConference",
+    "requestPaths": [
+      "/ssw/Events/2005-11UG/Conference.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-11-ug/conference.html"
+  },
+  {
+    "name": "ArchiveEvents2005accesstosqlserverandnetDefault",
+    "requestPaths": [
+      "/ssw/Events/2005AccessToSQLServerAndNET/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-access-to-sql-server-and-net/default.html"
+  },
+  {
+    "name": "ArchiveEvents2005accesstosqlserverandnetResources",
+    "requestPaths": [
+      "/ssw/Events/2005AccessToSQLServerAndNET/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-access-to-sql-server-and-net/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2005reportingservicesDefault",
+    "requestPaths": [
+      "/ssw/Events/2005ReportingServices/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-reporting-services/default.html"
+  },
+  {
+    "name": "ArchiveEvents2005southamericajanuaryDefault",
+    "requestPaths": [
+      "/ssw/Events/2005SouthAmericaJanuary/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-south-america-january/default.html"
+  },
+  {
+    "name": "ArchiveEvents2005southamericaoctoberDefault",
+    "requestPaths": [
+      "/ssw/Events/2005SouthAmericaOctober/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-south-america-october/default.html"
+  },
+  {
+    "name": "ArchiveEvents2005utsnetResources",
+    "requestPaths": [
+      "/ssw/Events/2005UTSNET/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2005-uts-net/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2006earnmoreperhourDefault",
+    "requestPaths": [
+      "/ssw/Events/2006EarnMorePerHour/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-earn-more-per-hour/default.html"
+  },
+  {
+    "name": "ArchiveEvents2006earnmoreperhourworkshopDefault",
+    "requestPaths": [
+      "/ssw/Events/2006EarnMorePerHourWorkshop/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-earn-more-per-hour-workshop/default.html"
+  },
+  {
+    "name": "ArchiveEvents2006expressionDefault",
+    "requestPaths": [
+      "/ssw/Events/2006Expression/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-expression/default.html"
+  },
+  {
+    "name": "ArchiveEvents2006sqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2006SQL/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-sql/default.html"
+  },
+  {
+    "name": "ArchiveEvents2006sqlResources",
+    "requestPaths": [
+      "/ssw/Events/2006SQL/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-sql/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2006teamsystemDefault",
+    "requestPaths": [
+      "/ssw/Events/2006TeamSystem/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-team-system/default.html"
+  },
+  {
+    "name": "ArchiveEvents2006utsbiResources",
+    "requestPaths": [
+      "/ssw/Events/2006UTS_BI/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2006-uts-bi/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2007aprilcanberranetugDefault",
+    "requestPaths": [
+      "/ssw/Events/2007AprilCanberraNETUG/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2007-april-canberra-netug/default.html"
+  },
+  {
+    "name": "ArchiveEvents2007netDefault",
+    "requestPaths": [
+      "/ssw/Events/2007NET/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2007-net/default.html"
+  },
+  {
+    "name": "ArchiveEvents2007netResources",
+    "requestPaths": [
+      "/ssw/Events/2007NET/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2007-net/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2007sqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2007SQL/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2007-sql/default.html"
+  },
+  {
+    "name": "ArchiveEvents2007sqlResources",
+    "requestPaths": [
+      "/ssw/Events/2007SQL/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2007-sql/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2007utsbiResources",
+    "requestPaths": [
+      "/ssw/Events/2007UTS_BI/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2007-uts-bi/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2008utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2008UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2008-uts-sql/default.html"
+  },
+  {
+    "name": "ArchiveEvents2008utssqlResources",
+    "requestPaths": [
+      "/ssw/Events/2008UTSSQL/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2008-uts-sql/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2009tourdewaggaDailybreakdown",
+    "requestPaths": [
+      "/ssw/Events/2009TourDeWagga/DailyBreakdown.aspx"
+    ],
+    "redirectPath": "/archive/events/2009-tour-de-wagga/daily-breakdown.html"
+  },
+  {
+    "name": "ArchiveEvents2009tourdewaggaDefault",
+    "requestPaths": [
+      "/ssw/Events/2009TourDeWagga/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2009-tour-de-wagga/default.html"
+  },
+  {
+    "name": "ArchiveEvents2009utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2009UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2009-uts-sql/default.html"
+  },
+  {
+    "name": "ArchiveEvents2009utssqlResources",
+    "requestPaths": [
+      "/ssw/Events/2009UTSSQL/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2009-uts-sql/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2010utsbiDefault",
+    "requestPaths": [
+      "/ssw/Events/2010UTSBI/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2010-uts-bi/default.html"
+  },
+  {
+    "name": "ArchiveEvents2010utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2010UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2010-uts-sql/default.html"
+  },
+  {
+    "name": "ArchiveEvents2010utssqlResources",
+    "requestPaths": [
+      "/ssw/Events/2010UTSSQL/resources.aspx"
+    ],
+    "redirectPath": "/archive/events/2010-uts-sql/resources.html"
+  },
+  {
+    "name": "ArchiveEvents2011utsnetDefault",
+    "requestPaths": [
+      "/ssw/Events/2011UTSNET/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2011-uts-net/default.html"
+  },
+  {
+    "name": "ArchiveEvents2011utssharepointDefault",
+    "requestPaths": [
+      "/ssw/Events/2011UTSSharePoint/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2011-uts-sharepoint/default.html"
+  },
+  {
+    "name": "ArchiveEvents2011utssqlDefault",
+    "requestPaths": [
+      "/ssw/Events/2011UTSSQL/Default.aspx"
+    ],
+    "redirectPath": "/archive/events/2011-uts-sql/default.html"
+  },
+  {
+    "name": "ArchiveEventsTechbreakfastHowtobecomeadeveloperin2015",
+    "requestPaths": [
+      "/ssw/Events/TechBreakfast/How-to-become-a-developer-in-2015.aspx"
+    ],
+    "redirectPath": "/archive/events/tech-breakfast/how-to-become-a-developer-in-2015.html"
+  },
+  {
+    "name": "ArchiveEventsTechbreakfastHowtochangeyourcareerandbecomeadeveloperin2015",
+    "requestPaths": [
+      "/ssw/Events/TechBreakfast/How-to-change-your-career-and-become-a-developer-in-2015.aspx"
+    ],
+    "redirectPath": "/archive/events/tech-breakfast/how-to-change-your-career-and-become-a-developer-in-2015.html"
+  },
+  {
+    "name": "ArchiveEventsTechbreakfastHowtoupgradeyourskillstodeveloperin2015",
+    "requestPaths": [
+      "/ssw/Events/TechBreakfast/How-to-upgrade-your-skills-to-developer-in-2015.aspx"
+    ],
+    "redirectPath": "/archive/events/tech-breakfast/how-to-upgrade-your-skills-to-developer-in-2015.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingAdvancedtsql",
+    "requestPaths": [
+      "/ssw/Events/Training/Advanced-TSQL.aspx"
+    ],
+    "redirectPath": "/archive/events/training/advanced-tsql.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingAspnetmvcangularjstechedsecret",
+    "requestPaths": [
+      "/ssw/Events/Training/ASP-NET-MVC-AngularJS-TechEd-Secret.aspx"
+    ],
+    "redirectPath": "/archive/events/training/asp-net-mvc-angularjs-tech-ed-secret.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingAspnetmvcangularjsteched",
+    "requestPaths": [
+      "/ssw/Events/Training/ASP-NET-MVC-AngularJS-TechEd.aspx"
+    ],
+    "redirectPath": "/archive/events/training/asp-net-mvc-angularjs-tech-ed.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingBibootcamp",
+    "requestPaths": [
+      "/ssw/Events/Training/BI-Bootcamp.aspx"
+    ],
+    "redirectPath": "/archive/events/training/bi-bootcamp.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingBiimmersion",
+    "requestPaths": [
+      "/ssw/Events/Training/BI-Immersion.aspx"
+    ],
+    "redirectPath": "/archive/events/training/bi-immersion.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingBrainquestalminaday",
+    "requestPaths": [
+      "/ssw/Events/Training/Brain-Quest-ALM-in-a-Day.aspx"
+    ],
+    "redirectPath": "/archive/events/training/brain-quest-alm-in-a-day.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingBrainquestvstfssharepoint",
+    "requestPaths": [
+      "/ssw/Events/Training/Brain-Quest-VS-TFS-Sharepoint.aspx"
+    ],
+    "redirectPath": "/archive/events/training/brain-quest-vs-tfs-sharepoint.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingDataminingseminar",
+    "requestPaths": [
+      "/ssw/Events/Training/Data-Mining-Seminar.aspx"
+    ],
+    "redirectPath": "/archive/events/training/data-mining-seminar.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingDevopssuperpowersvisualstudio",
+    "requestPaths": [
+      "/ssw/Events/Training/DevOps-SuperPowers-VisualStudio.aspx"
+    ],
+    "redirectPath": "/archive/events/training/devops-super-powers-visual-studio.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingEnterprisemvcday1",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-1.aspx"
+    ],
+    "redirectPath": "/archive/events/training/enterprise-mvc-day-1.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingEnterprisemvcday2",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-2.aspx"
+    ],
+    "redirectPath": "/archive/events/training/enterprise-mvc-day-2.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingEnterprisemvcday3",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-3.aspx"
+    ],
+    "redirectPath": "/archive/events/training/enterprise-mvc-day-3.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingEnterprisemvcday4",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-MVC-Day-4.aspx"
+    ],
+    "redirectPath": "/archive/events/training/enterprise-mvc-day-4.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingEnterprisexamarin2dayessentials",
+    "requestPaths": [
+      "/ssw/Events/Training/Enterprise-Xamarin-2-Day-Essentials.aspx"
+    ],
+    "redirectPath": "/archive/events/training/enterprise-xamarin-2-day-essentials.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingIonicsuperpowerstour",
+    "requestPaths": [
+      "/ssw/Events/Training/Ionic-Superpowers-Tour.aspx"
+    ],
+    "redirectPath": "/archive/events/training/ionic-superpowers-tour.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingJuvallowyarchitectsclinic",
+    "requestPaths": [
+      "/ssw/Events/Training/Juval-Lowy-Architects-Clinic.aspx"
+    ],
+    "redirectPath": "/archive/events/training/juval-lowy-architects-clinic.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingOptimizationperformance",
+    "requestPaths": [
+      "/ssw/Events/Training/Optimization-Performance.aspx"
+    ],
+    "redirectPath": "/archive/events/training/optimization-performance.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingPowersessions",
+    "requestPaths": [
+      "/ssw/Events/Training/Power-Sessions.aspx"
+    ],
+    "redirectPath": "/archive/events/training/power-sessions.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingQutangular2",
+    "requestPaths": [
+      "/ssw/Events/Training/QUT-Angular2.aspx"
+    ],
+    "redirectPath": "/archive/events/training/qut-angular-2.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingScrummastertrainingcourse",
+    "requestPaths": [
+      "/ssw/Events/Training/Scrum-Master-Training-Course.aspx"
+    ],
+    "redirectPath": "/archive/events/training/scrum-master-training-course.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingScrumtrainingcourse3days",
+    "requestPaths": [
+      "/ssw/Events/Training/Scrum-Training-Course-3-days.aspx"
+    ],
+    "redirectPath": "/archive/events/training/scrum-training-course-3-days.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingScrumtrainingcourse",
+    "requestPaths": [
+      "/ssw/Events/Training/Scrum-Training-Course.aspx"
+    ],
+    "redirectPath": "/archive/events/training/scrum-training-course.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingSolidqcourses",
+    "requestPaths": [
+      "/ssw/Events/Training/SolidQ-Courses.aspx"
+    ],
+    "redirectPath": "/archive/events/training/solid-q-courses.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingSqlserver2012integrationservices",
+    "requestPaths": [
+      "/ssw/Events/Training/SQL-Server-2012-Integration-Services.aspx"
+    ],
+    "redirectPath": "/archive/events/training/sql-server-2012-integration-services.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingSsisseminar",
+    "requestPaths": [
+      "/ssw/Events/Training/SSIS-Seminar.aspx"
+    ],
+    "redirectPath": "/archive/events/training/ssis-seminar.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingTechbreakfastvs2012",
+    "requestPaths": [
+      "/ssw/Events/Training/TechBreakfast-VS-2012.aspx"
+    ],
+    "redirectPath": "/archive/events/training/tech-breakfast-vs-2012.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingTsqlfundamentals",
+    "requestPaths": [
+      "/ssw/Events/Training/TSQL-Fundamentals.aspx"
+    ],
+    "redirectPath": "/archive/events/training/tsql-fundamentals.html"
+  },
+  {
+    "name": "ArchiveEventsTrainingVs2012",
+    "requestPaths": [
+      "/ssw/Events/Training/VS-2012.aspx"
+    ],
+    "redirectPath": "/archive/events/training/vs-2012.html"
+  },
+  {
+    "name": "ArchiveEventsWebinars8monthsoftwaredevelopmentretrospective",
+    "requestPaths": [
+      "/ssw/Events/Webinars/8-Month-Software-Development-Retrospective.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/8-month-software-development-retrospective.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsBuildingspawithmvc4",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Building-SPA-with-MVC4.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/building-spa-with-mvc4.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersangularjswithtypescript",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-AngularJS-with-TypeScript.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-angularjs-with-type-script.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersangularjs",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-AngularJS.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-angularjs.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersaspnetmvc",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-ASP-NET-MVC.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-asp-net-mvc.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersaspnetvnext",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-ASP-NET-vNext.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-asp-net-v-next.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersazure",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-Azure.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-azure.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersbootstrap",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-Bootstrap.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-bootstrap.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersiosandandroid",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-iOS-and-Android.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-ios-and-android.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersprojectmanagementwithvisualstudioonline",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-Project-Management-with-Visual-Studio-Online.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-project-management-with-visual-studio-online.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowerssignalr",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-SignalR.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-signalr.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowerswebapi",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-web-API.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-web-api.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsDevsuperpowersxamarinformsmvvm",
+    "requestPaths": [
+      "/ssw/Events/Webinars/DevSuperpowers-XamarinForms-MVVM.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/dev-superpowers-xamarin-forms-mvvm.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsGreatintranetsjamesrobertson",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Great-Intranets-James-Robertson.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/great-intranets-james-robertson.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsHiringsoftwarecompanies",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Hiring-Software-Companies.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/hiring-software-companies.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsLessonslearnedwritingmobilesites",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Lessons-Learned-Writing-Mobile-Sites.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/lessons-learned-writing-mobile-sites.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsLightswitch",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Lightswitch.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/lightswitch.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsMasterscrum",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Master-Scrum.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/master-scrum.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsMvcapps",
+    "requestPaths": [
+      "/ssw/Events/Webinars/MVC-Apps.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/mvc-apps.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsMvcdontusewebformsagain",
+    "requestPaths": [
+      "/ssw/Events/Webinars/MVC-Dont_use_Web_Forms_again.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/mvc-dont-use-web-forms-again.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsMvcmigratingfromwebforms",
+    "requestPaths": [
+      "/ssw/Events/Webinars/MVC-Migrating-from-Web-Forms.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/mvc-migrating-from-web-forms.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsPhonegapformobiledevelopers",
+    "requestPaths": [
+      "/ssw/Events/Webinars/PhoneGap-for-Mobile-Developers.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/phone-gap-for-mobile-developers.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsPromotionalvideoshowto",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Promotional-Videos-How-To.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/promotional-videos-how-to.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsSharepointclientsiderendering",
+    "requestPaths": [
+      "/ssw/Events/Webinars/SharePoint-Client-Side-Rendering.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/sharepoint-client-side-rendering.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsSharepointforbusiness",
+    "requestPaths": [
+      "/ssw/Events/Webinars/SharePoint-for-Business.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/sharepoint-for-business.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsSolidq",
+    "requestPaths": [
+      "/ssw/Events/Webinars/SolidQ.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/solid-q.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsSpeedupsqlserver",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Speed-Up-SQL-Server.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/speed-up-sql-server.html"
+  },
+  {
+    "name": "ArchiveEventsWebinarsWindowsazure",
+    "requestPaths": [
+      "/ssw/Events/Webinars/Windows-Azure.aspx"
+    ],
+    "redirectPath": "/archive/events/webinars/windows-azure.html"
+  },
+  {
+    "name": "ArchiveEventsWorkshopsTechbreakfast",
+    "requestPaths": [
+      "/ssw/Events/Workshops/Tech-Breakfast.aspx"
+    ],
+    "redirectPath": "/archive/events/workshops/tech-breakfast.html"
+  },
+  {
+    "name": "ArchiveEventsBrianrandellvirtualizationfordevelopers",
+    "requestPaths": [
+      "/ssw/Events/Brian-Randell-Virtualization-for-Developers.aspx"
+    ],
+    "redirectPath": "/archive/events/brian-randell-virtualization-for-developers.html"
+  },
+  {
+    "name": "ArchiveEventsConferencepast",
+    "requestPaths": [
+      "/ssw/Events/ConferencePast.aspx"
+    ],
+    "redirectPath": "/archive/events/conference-past.html"
+  },
+  {
+    "name": "ArchiveEventsHololensexperience",
+    "requestPaths": [
+      "/ssw/Events/HoloLens-experience.aspx"
+    ],
+    "redirectPath": "/archive/events/hololens-experience.html"
+  },
+  {
+    "name": "ArchiveEventsJuvallowyarchitectmasterclass",
+    "requestPaths": [
+      "/ssw/Events/Juval-Lowy-Architect-Master-Class.aspx"
+    ],
+    "redirectPath": "/archive/events/juval-lowy-architect-master-class.html"
+  },
+  {
+    "name": "ArchiveEventsSampletrainingday",
+    "requestPaths": [
+      "/ssw/Events/SampleTrainingDay.aspx"
+    ],
+    "redirectPath": "/archive/events/sample-training-day.html"
+  },
+  {
+    "name": "ArchiveEventsSswtechbreakfastpast",
+    "requestPaths": [
+      "/ssw/Events/SSWTechBreakfastPast.aspx"
+    ],
+    "redirectPath": "/archive/events/ssw-tech-breakfast-past.html"
+  },
+  {
+    "name": "ArchiveEventsSteveforteagileseminar",
+    "requestPaths": [
+      "/ssw/Events/Steve-Forte-Agile-Seminar.aspx"
+    ],
+    "redirectPath": "/archive/events/steve-forte-agile-seminar.html"
+  },
+  {
+    "name": "ArchiveEventsVisualstudio2010rapidsharepointdevelopment",
+    "requestPaths": [
+      "/ssw/Events/Visual-Studio-2010-Rapid-SharePoint-Development.htm"
+    ],
+    "redirectPath": "/archive/events/visual-studio-2010-rapid-sharepoint-development.htm"
+  },
+  {
+    "name": "ArchiveEventsVisualstudio2013rapidsharepointdevelopment",
+    "requestPaths": [
+      "/ssw/Events/Visual-Studio-2013-Rapid-SharePoint-Development.aspx"
+    ],
+    "redirectPath": "/archive/events/visual-studio-2013-rapid-sharepoint-development.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSettingupvpn",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SettingUpVPN.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/setting-up-vpn.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSswcrminstruction",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SSWCRMInstruction.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/ssw-crminstruction.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSswcrmupandrunningcrm2011",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SSWCRMUpAndRunning_CRM2011.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/ssw-crmup-and-running-crm2011.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupSswcrmupandrunningcrm4",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/SSWCRMUpAndRunning_CRM4.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/ssw-crmup-and-running-crm4.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalComputersetupWindows7deploymentchangelog",
+    "requestPaths": [
+      "/ssw/StandardsInternal/ComputerSetup/Windows7DeploymentChangeLog.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/computer-setup/windows-7-deployment-change-log.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralCleaningyourmailbox",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/CleaningYourMailbox.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/cleaning-your-mailbox.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtochecklinkauditorreports",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToCheckLinkAuditorReports.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-check-link-auditor-reports.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtocleanerrorlogs",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToCleanErrorLogs.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-clean-error-logs.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtoconducttraining",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToConductTraining.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-conduct-training.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowtoconductutstraining",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowToConductUTSTraining.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-to-conduct-uts-training.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHowunrecognizedversionswork",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HowUnrecognizedVersionsWork.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/how-unrecognized-versions-work.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralHttpsguide",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/HTTPS-guide.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/https-guide.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralProductmanagers",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/ProductManagers.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/product-managers.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralUpgradetovs2005andtfs",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/UpgradeToVS2005AndTFS.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/upgrade-to-vs2005-and-tfs.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralUsingftpsync",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/UsingFTPSync.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/using-ftpsync.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopergeneralWebmasterhowtocleanandresolveerrorlogs",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperGeneral/WebMaster_HowToCleanAndResolveErrorLogs.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-general/web-master-how-to-clean-and-resolve-error-logs.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopernetworkphonePhonesystemsetup",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperNetworkPhone/PhoneSystemSetup.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-network-phone/phone-system-setup.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopernetworkphonePhonesystemusage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperNetworkPhone/PhoneSystemUsage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-network-phone/phone-system-usage.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDeveloperproductshostingImagesDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Images/default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/images/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsAccessdeniedwhenlogon",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/AccessDeniedWhenLogon.html"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/plesk kbs/access-denied-when-logon.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDeveloperproductshostingPlesk kbsIis web directorys missing2",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/Plesk KBs/IIS Web Directorys Missing2.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/plesk kbs/iis web directorys missing-2.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalDeveloperproductshostingSettingupauseronseal",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperProductsHosting/SettingUpAUserOnSeal.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-products-hosting/setting-up-auser-on-seal.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopersqlserverHowtochangesswdata2000",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperSQLServer/HOWTOChangeSSWData2000.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-sql-server/howtochange-ssw-data-2000.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalDevelopersqlserverHowtosetupconcurrencyforthewebsite",
+    "requestPaths": [
+      "/ssw/StandardsInternal/DeveloperSQLServer/HOWTOSetupConcurrencyForTheWebSite.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/developer-sql-server/howtosetup-concurrency-for-the-web-site.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentAccountsassessment",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/accountsassessment.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/accountsassessment.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentEmploymenttest",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/employmenttest.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/employmenttest.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentSharepointexpertquestions",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/SharepointExpertQuestions.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/sharepoint-expert-questions.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalEmploymentWorkexperiencescreeningstandard",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Employment/Work_experience_screening_standard.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/employment/work-experience-screening-standard.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalGeneraladministrationAlarmsystem",
+    "requestPaths": [
+      "/ssw/StandardsInternal/GeneralAdministration/AlarmSystem.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/general-administration/alarm-system.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalImagesIconexperiencecollectionDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Images/IconExperienceCollection/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/images/icon-experience-collection/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalInductiontrainingDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/InductionTraining/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/induction-training/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalMeetingsMeetingsscheduleagendas",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Meetings/MeetingsScheduleAgendas.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/meetings/meetings-schedule-agendas.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewldownloadproductbeforepurchasepage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewlDownloadProductBeforePurchasePage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/newl-download-product-before-purchase-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewlproductdownloadpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewlProductDownloadPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/newl-product-download-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewpromotionalproductdownloadpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewPromotionalProductDownloadPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/new-promotional-product-download-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewtrialproductdownloadpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewTrialProductDownloadPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/new-trial-product-download-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationNewregistrationcreditcardNewwebregistrationpage",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/NewRegistrationCreditCard/NewWebRegistrationPage.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/new-registration-credit-card/new-web-registration-page.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationDefault",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/default.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalRegistrationProjectplan",
+    "requestPaths": [
+      "/ssw/StandardsInternal/Registration/ProjectPlan.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/registration/project-plan.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAdamcoganSswweb",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AdamCogan/SSWWeb.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/adam-cogan/ssw-web.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAdelhelalFilename",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AdelHelal/filename.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/adel-helal/filename.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAllanzhouAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AllanZhou/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/allan-zhou/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAlvinshenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AlvinShen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/alvin-shen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAndrewweaver2Aboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AndrewWeaver2/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/andrew-weaver-2/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAndytaslimAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AndyTaslim/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/andy-taslim/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAnnerongAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AnneRong/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/anne-rong/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaAshrafmoollanAbout",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/AshrafMoollan/about.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ashraf-moollan/about.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBaonguyenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BaoNguyen/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bao-nguyen/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBhanujitpaulAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BhanujitPaul/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bhanujit-paul/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBillchenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BillChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bill-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBrettandersonAboutbrett",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/brettanderson/aboutbrett.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/brettanderson/aboutbrett.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBritechengAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BriteCheng/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/brite-cheng/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaBryanchelliahAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/BryanChelliah/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/bryan-chelliah/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCamerontownshendAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/cameron-townshend/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCamerontownshendAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CameronTownshend/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/cameron-townshend/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCamilozuluagaAboutmecz",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CamiloZuluaga/AboutMeCZ.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/camilo-zuluaga/about-me-cz.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaChennekezhangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ChennekeZhang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/chenneke-zhang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaChristopherclarkeAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ChristopherClarke/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/christopher-clarke/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaCindywangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/CindyWang/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/cindy-wang/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaClarencedangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ClarenceDang/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/clarence-dang/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme2",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/aboutme2.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/aboutme-2.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDanielrussellAboutme3",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DanielRussell/AboutMe3.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/daniel-russell/about-me-3.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDavidwattsAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DavidWatts/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/david-watts/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDipansahaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DipanSaha/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/dipan-saha/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDonidoniAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DoniDoni/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/doni-doni/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDrewrobsonAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DrewRobson/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/drew-robson/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaDrewwalkerFilename",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/DrewWalker/filename.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/drew-walker/filename.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEdbrownAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EdBrown/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ed-brown/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEdisonchenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EdisonChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/edison-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEricfangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EricFang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/eric-fang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEricphanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EricPhan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/eric-phan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaEvanlinAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/EvanLin/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/evan-lin/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaFelixzhangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/FelixZhang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/felix-zhang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaFrancisjijoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/FrancisJijo/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/francis-jijo/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGarylamAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GaryLam/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gary-lam/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGaryliuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GaryLiu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gary-liu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGayathrijayaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GayathriJaya/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gayathri-jaya/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGeofforrAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GeoffOrr/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/geoff-orr/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGerardbeckerlegAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GerardBeckerleg/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gerard-beckerleg/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGlennosullivanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GlennOsullivan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/glenn-osullivan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGordonhartleyAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GordonHartley/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gordon-hartley/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGraciadanielAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GraciaDaniel/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/gracia-daniel/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaGregmccarthyAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/GregMcCarthy/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/greg-mc-carthy/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaHelenmooreAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/HelenMoore/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/helen-moore/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaIanbennettAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/IanBennett/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ian-bennett/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJameszhangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JamesZhang/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/james-zhang/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJatinvalabjeeProfile",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JatinValabjee/profile.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jatin-valabjee/profile.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJaywangAbout me",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jay-wang/about me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJeffliAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JeffLI/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jeff-li/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJoeboedijonoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JoeBoedijono/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/joe-boedijono/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJoetangAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JoeTang/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/joe-tang/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJohnliuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JohnLiu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/john-liu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJonnytreesAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jonny-trees/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJonnytreesAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JonnyTrees/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/jonny-trees/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJosephropertiAbout me",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/joseph-roperti/about me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJudahcaplanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JudahCaplan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/judah-caplan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaJulianbuenoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/JulianBueno/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/julian-bueno/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaLeixu2Aboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/LeiXu2/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/lei-xu-2/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaLeixu2Leixuinductionwebstandardstest",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/LeiXu2/LeiXuInductionWebStandardsTest.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/lei-xu-2/lei-xu-induction-web-standards-test.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaLukechouAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/LukeChou/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/luke-chou/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaManishapatelAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ManishaPatel/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/manisha-patel/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMarkchenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MarkChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/mark-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMarlonmaresciaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MarlonMarescia/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/marlon-marescia/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMartenataallaMartenataalla",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MartenAtaalla/MartenAtaalla.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/marten-ataalla/marten-ataalla.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMartinchafei2Aboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MartinChafei2/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/martin-chafei-2/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMarwanchamasAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MarwanChamas/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/marwan-chamas/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMashagildinaMashagildinaaboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MashaGildina/MashaGildina-AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/masha-gildina/masha-gildina-about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMaxyaoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MaxYao/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/max-yao/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichaelmileosAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichaelMileos/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michael-mileos/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichaelsalamehAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichaelSalameh/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michael-salameh/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichellehuntAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michelle-hunt/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMichellehuntAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MichelleHunt/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/michelle-hunt/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMohsinaliAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MohsinAli/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/mohsin-ali/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaMustafaghulamAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/MustafaGhulam/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/mustafa-ghulam/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaNasiraliAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/NasirAli/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/nasir-ali/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaOlivianganAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/olivia-ngan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaOlivianganAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/OliviaNgan/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/olivia-ngan/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPaulstovellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/paul-stovell/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPaulstovellAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PaulStovell/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/paul-stovell/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPetergfaderAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PeterGfader/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/peter-gfader/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPhilipolsenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/philip-olsen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaPhilipolsenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/PhilipOlsen/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/philip-olsen/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRebeccaliuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RebeccaLiu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/rebecca-liu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRonmamanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RonMaman/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ron-maman/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRonniehaqueAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RonnieHaque/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ronnie-haque/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaRyanteeAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/RyanTee/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ryan-tee/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSamakulaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sam-akula/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSamakulaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SamAkula/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sam-akula/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaScottfletcherAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ScottFletcher/Aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/scott-fletcher/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaScottmcphillipsAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ScottMcPhillips/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/scott-mc-phillips/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSerenachenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SerenaChen/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/serena-chen/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSergeyishutinAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SergeyIshutin/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sergey-ishutin/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSrigangichettuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SriGangichettu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sri-gangichettu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaStephenbennettStephen",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/StephenBennett/Stephen.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/stephen-bennett/stephen.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSumeshghimireAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SumeshGhimire/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sumesh-ghimire/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSunithadesarajuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SunithaDesaraju/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/sunitha-desaraju/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSusanheinsAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SusanHeins/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/susan-heins/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaSyedmehdiAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/SyedMehdi/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/syed-mehdi/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTerrysuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TerrySu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/terry-su/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTiagoaraujoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tiago-araujo/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTiagoaraujoAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TiagoAraujo/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tiago-araujo/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTimkremerAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tim-kremer/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTimkremerAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimKremer/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tim-kremer/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTimothywaltersAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TimothyWalters/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/timothy-walters/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaToktamsepehriAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ToktamSepehri/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/toktam-sepehri/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTristankurniawanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tristan-kurniawan/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaTristankurniawanAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/TristanKurniawan/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/tristan-kurniawan/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ulysses-maclaren/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaUlyssesmaclarenAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/UlyssesMaclaren/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/ulysses-maclaren/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaVarunbalakrishnaAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/VarunBalakrishna/AboutMe.htm"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/varun-balakrishna/about-me.htm"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaVuhungAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/VuHung/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/vu-hung/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWebsiteautobuildtestAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WebsiteAutoBuildTest/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/website-au-to-build-test/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWilliamyinAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WilliamYin/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/william-yin/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWillyekasalimAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WillyEkasalim/aboutme.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/willy-ekasalim/aboutme.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaWilsonwuAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/WilsonWu/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/wilson-wu/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsinternalemployeetestareaZunevienAboutme",
+    "requestPaths": [
+      "/ssw/StandardsInternal/_EmployeeTestArea/ZuneVien/AboutMe.aspx"
+    ],
+    "redirectPath": "/archive/standards-internal/-employee-test-area/zune-vien/about-me.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWaitingforsugggestionstomovetosharepointVsgallery",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WaitingForSugggestionsToMoveToSharePoint/VSGallery.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/waiting-for-sugggestions-to-move-to-sharepoint/vsgallery.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsActivesync",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/activesync.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/activesync.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsAntispyware",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/antispyware.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/antispyware.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsAspnet",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ASPNET.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/aspnet.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsAsterix",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Asterix.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/asterix.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsBing",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Bing.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/bing.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsBlinq",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/blinq.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/blinq.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsCamtasia",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Camtasia.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/camtasia.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsCrm",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/CRM.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/crm.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsDataanalyzer",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/dataanalyzer.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/dataanalyzer.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsDefault",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/default.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsDnn",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/dnn.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/dnn.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsDotnet",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/DOTNET.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/dotnet.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsDotnetnuke",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/DotNetNuke.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/dot-net-nuke.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsDynamicdata",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/DynamicData.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/dynamic-data.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsExchange",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/exchange.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/exchange.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsExpression",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Expression.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/expression.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsExpressionblend",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ExpressionBlend.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/expression-blend.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsExpressionsuite",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ExpressionSuite.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/expression-suite.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsFacebook",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Facebook.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/facebook.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsFoursquare",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Foursquare.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/foursquare.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsGoogle",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/google.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/google.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsGoogleanalytics",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/GoogleAnalytics.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/google-analytics.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsHohm",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Hohm.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/hohm.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsHyperv",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/HyperV.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/hyper-v.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsIis",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/iis.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/iis.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsInstyler",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Instyler.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/instyler.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsIsaserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/isaserver.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/isaserver.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsLinq",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/LINQ.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/linq.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsLivemeeting",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/LiveMeeting.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/live-meeting.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsLivewriter",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/LiveWriter.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/live-writer.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMediacenter",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/mediacenter.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/mediacenter.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMediaplayer",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MediaPlayer.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/media-player.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMicrosoftproject",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Microsoft_Project.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/microsoft-project.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMsajax",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSAjax.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/msajax.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMsdn",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSDN.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/msdn.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMsform",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSForm.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/msform.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMsnmessenger",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSNMessenger.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/msnmessenger.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMswebsite",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MSWebsite.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/mswebsite.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsMyob",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/MYOB.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/myob.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsNettiers",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/NetTiers.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/net-tiers.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsPerformancepoint",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/PerformancePoint.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/performance-point.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsPlaxo",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Plaxo.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/plaxo.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsPluralsight",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Pluralsight.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/pluralsight.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsProject",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/project.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsProjectserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ProjectServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/project-server.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsProjectserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project_Server.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/project-server.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsProjectserverintegration",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project_Server_Integration.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/project-server-integration.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsProjecttfs",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Project_TFS.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/project-tfs.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsQuerydesigner",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/QueryDesigner.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/query-designer.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsReportingservicereportbuilder",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ReportingServiceReportBuilder.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/reporting-service-report-builder.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsReportingservices",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/ReportingServices.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/reporting-services.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsRescuetime",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/RescueTime.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/rescue-time.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsRulestobetterxda",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/RulesToBetterXDA.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/rules-to-better-xda.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSharepoint",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/sharepoint.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/sharepoint.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSilverlight",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Silverlight.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/silverlight.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSkype",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Skype.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/skype.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSmh",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SMH.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/smh.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSnagit",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Snagit.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/snagit.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSourcesafe",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SourceSafe.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/source-safe.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSqlserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/sqlserver.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/sqlserver.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSqlserverolap",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SQLserverOLAP.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/sqlserver-olap.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsSugarsync",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/SugarSync.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/sugar-sync.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTeamcompanion",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TeamCompanion.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/team-companion.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTeamfoundationserver",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TeamFoundationServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/team-foundation-server.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTeamfoundationserver2010",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TeamFoundationServer2010.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/team-foundation-server-2010.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTelerik",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Telerik.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/telerik.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTelerikaspweb",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikASPWeb.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/telerik-aspweb.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTeleriksharepointaccelerationkit",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikSharePointAccelerationKit.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/telerik-sharepoint-acceleration-kit.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTeleriktests",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikTests.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/telerik-tests.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTelerikteststudio",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikTestStudio.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/telerik-test-studio.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTelerikwindowsforms",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TelerikWindowsForms.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/telerik-windows-forms.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTerminalservices",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/terminalservices.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/terminalservices.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTfsazure",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFS-Azure.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/tfs-azure.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTfsdebuggercanvas",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFSDebuggerCanvas.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/tfsdebugger-canvas.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTfssidekicks",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFSSidekicks.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/tfssidekicks.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTfstwaportal",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFS_TWA-Portal.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/tfs-twa-portal.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTfsvsscrumprocess",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/TFS_VSScrumProcess.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/tfs-vsscrum-process.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsTweetdeck",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Tweetdeck.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/tweetdeck.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVbuildpro",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/vbuildpro.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/vbuildpro.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVirtualearth",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VirtualEarth.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/virtual-earth.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVirtualpc",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VirtualPC.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/virtual-pc.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVista",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Vista.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/vista.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVisualstudio",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VisualStudio.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/visual-studio.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVsbuildanddeploy",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VSBuildandDeploy.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/vsbuild-and-deploy.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsVstt",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/VSTT.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/vstt.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWhatsapp",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WhatsApp.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/whats-app.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWindows",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/windows.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/windows.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWindows2008r2",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/windows2008r2.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/windows-2008r-2.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWindows7",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/windows7.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/windows-7.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWindowsdesktopsearch",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WindowsDesktopSearch.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/windows-desktop-search.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWindowsmobile",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WindowsMobile.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/windows-mobile.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWindowsphotoviewer",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WindowsPhotoViewer.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/windows-pho-to-viewer.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWise",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/Wise.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/wise.html"
+  },
+  {
+    "name": "ArchiveStandardsBettersoftwaresuggestionsWpf",
+    "requestPaths": [
+      "/ssw/Standards/BetterSoftwareSuggestions/WPF.aspx"
+    ],
+    "redirectPath": "/archive/standards/better-software-suggestions/wpf.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperaccessAccessshortcutkeys",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/AccessShortcutKeys.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-access/access-shortcut-keys.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperaccessAttachmentmanageroverview",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/attachmentmanageroverview.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-access/attachmentmanageroverview.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperaccessHowtodomailmergeinwordusingaccessdata",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/howtodomailmergeinwordusingaccessdata.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-access/howtodomailmergeinwordusingaccessdata.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperaccessHowtoimproveaccessperformance",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/howtoimproveaccessperformance.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-access/howtoimproveaccessperformance.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperaccessWhattodoaftercrash",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/WhatToDoAfterCrash.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-access/what-to-do-after-crash.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperaccessWhydatarenovator",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperAccess/whydatarenovator.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-access/whydatarenovator.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetDotnetstandardobjectnaming",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/DotNetStandard_ObjectNaming.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/dot-net-standard-object-naming.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetDotnetstandardprojectnaming",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/DotNetStandard_ProjectNaming.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/dot-net-standard-project-naming.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetEditxmlpage",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/EditXMLPage.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/edit-xmlpage.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetGuidelinesforreporting",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/GuidelinesForReporting.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/guidelines-for-reporting.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetGuidelinesforreportingrichclient",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/GuidelinesForReportingRichClient.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/guidelines-for-reporting-rich-client.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetGuidelinesforreportingwebclient",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/GuidelinesForReportingWebClient.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/guidelines-for-reporting-web-client.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetInteropindotnetandhowtoavoiddllhell",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/InteropInDotNetAndHowToAvoidDLLHell.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/interop-in-dot-net-and-how-to-avoid-dllhell.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetSswnorthwindarchitecturesupportingwebservices",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/SSWNorthwindArchitectureSupportingWebServices.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/ssw-northwind-architecture-supporting-web-services.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperdotnetUsingtfstoeditwebsite",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperDotNet/UsingTFSToEditWebsite.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-dot-net/using-tfsto-edit-website.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralAccesstools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/AccessTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/access-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralCreatingscheduledjobsonaserver",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/CreatingScheduledJobsOnAServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/creating-scheduled-jobs-on-aserver.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralExchangeserver",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/ExchangeServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/exchange-server.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralInternetexplorertools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/internetexplorertools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/internetexplorertools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralLaptoptools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/LaptopTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/laptop-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralNettools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/netTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/net-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralNetworktools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/networktools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/networktools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralOutlooktools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/outlooktools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/outlooktools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralPocketpctools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/pocketpctools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/pocketpctools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralSilverlighttools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/SilverlightTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/silverlight-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralSqlservertools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/SQLservertools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/sqlservertools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralTeamfoundationserverpowertools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TeamFoundationServerPowerTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/team-foundation-server-power-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralTfs",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TFS.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/tfs.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralTfstools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TFSTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/tfstools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralThebest3rdpartytools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TheBest3rdPartyTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/the-best-3rd-party-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralThebestwebsites",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/TheBestWebsites.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/the-best-websites.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralVisualstudiotools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/VisualStudioTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/visual-studio-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWebdevelopmenttools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/webdevelopmenttools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/webdevelopmenttools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWebdevelopmenttoolsaspnet",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WebdevelopmentToolsASPNET.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/webdevelopment-tools-aspnet.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWebsites",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/Websites.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/websites.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWindowsdevelopmenttools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/windowsdevelopmenttools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/windowsdevelopmenttools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWindowsmobile",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WindowsMobile.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/windows-mobile.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWindowstools",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WindowsTools.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/windows-tools.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopergeneralWinformcontrols",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperGeneral/WinformControls.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-general/winform-controls.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperinternet216color",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/216color.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-internet/216color.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperinternetHowtofixbrokenlinks",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/howtofixbrokenlinks.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-internet/howtofixbrokenlinks.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperinternetHowtoftpwithiexplorer",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/HowToFTPWithIExplorer.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-internet/how-to-ftpwith-iexplorer.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperinternetHowtoftpwithiexplorerpassword",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/HowToFTPWithIExplorerpassword.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-internet/how-to-ftpwith-iexplorerpassword.html"
+  },
+  {
+    "name": "ArchiveStandardsDeveloperinternetStandardwebcolours",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperInternet/StandardWebColours.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-internet/standard-web-colours.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersharepointVmdevelopment",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSharePoint/VMDevelopment.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sharepoint/vmdevelopment.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlreportingservicesSqlserverreportingservice1reportsnaming",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLReportingServices/SQLServerReportingService_1_ReportsNaming.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-reporting-services/sql-server-reporting-service-1-reports-naming.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlserverCreatingasqlserverprofilertrace",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/creatingasqlserverprofilertrace.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-server/creatingasqlserverprofilertrace.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlserverDataschemastandard",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/dataschemastandard.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-server/dataschemastandard.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlserverSetupsqlserverserviceforreplication",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/setupsqlserverserviceforreplication.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-server/setupsqlserverserviceforreplication.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlserverSqlserverstandard3storedprocedureformatting",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/SQLServerStandard_3_StoredProcedureFormatting.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-server/sql-server-standard-3-stored-procedure-formatting.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlserverSqlserverstandard6databasedesignstandards",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/SQLServerStandard_6_DatabaseDesignStandards.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-server/sql-server-standard-6-database-design-standards.html"
+  },
+  {
+    "name": "ArchiveStandardsDevelopersqlserverSswstandardforupsizing",
+    "requestPaths": [
+      "/ssw/Standards/DeveloperSQLServer/SSWStandardForUpsizing.aspx"
+    ],
+    "redirectPath": "/archive/standards/developer-sql-server/ssw-standard-for-upsizing.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesDevelopersqlreportingservicesSqlserverreportingservice1reportsnaming",
+    "requestPaths": [
+      "/ssw/Standards/Rules/DeveloperSQLReportingServices/SQLServerReportingService_1_ReportsNaming.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/developer-sql-reporting-services/sql-server-reporting-service-1-reports-naming.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesCreatingatimedimensionin10easysteps",
+    "requestPaths": [
+      "/ssw/Standards/Rules/CreatingATimeDimensionIn10EasySteps.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/creating-atime-dimension-in-10-easy-steps.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesDataschemastandard",
+    "requestPaths": [
+      "/ssw/Standards/Rules/dataschemastandard.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/dataschemastandard.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesGoodthingsbadthings",
+    "requestPaths": [
+      "/ssw/Standards/Rules/GoodThingsBadThings.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/good-things-bad-things.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesMakingolapreports",
+    "requestPaths": [
+      "/ssw/Standards/Rules/MakingOLAPReports.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/making-olapreports.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetteraccessapplications",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterAccessApplications.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-access-applications.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetteraspdotnet",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterASPDotNet.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-aspdot-net.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterbusinessintelligence",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterBusinessIntelligence.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-business-intelligence.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterbusinessintelligenceresourcesetup",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterBusinessIntelligenceResourceSetup.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-business-intelligence-resource-setup.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettercommandlines",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulestoBetterCommandLines.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-command-lines.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettercrm3to4migration",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterCRM3To4Migration.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-crm3-to-4-migration.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterexchangeserver",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterExchangeServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-exchange-server.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterisaserver",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterISAServer.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-isaserver.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettermicrosoftcrmdatasynchronization",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterMicrosoftCRMDataSynchronization.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-microsoft-crmdata-synchronization.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterolapclients",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterOLAPClients.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-olapclients.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterprojectmanagermethodology",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterProjectManagerMethodology.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-project-manager-methodology.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterreportingsolutions",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterReportingSolutions.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-reporting-solutions.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettersetups",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterSetups.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-setups.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettersqlreportingservices",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterSQLReportingServices.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-sql-reporting-services.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettersswproducts",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterSSWProducts.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-ssw-products.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettervirtualpcs",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterVirtualPCs.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-virtual-pcs.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobettervistacompatibilities",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterVistaCompatibilities.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-vista-compatibilities.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterwebsitesonlinetransactions",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWebsitesOnlineTransactions.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-websites-online-transactions.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterwindows2003",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindows2003.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-windows-2003.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterwindows7deployment",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindows7Deployment.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-windows-7-deployment.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterwindows8deployment",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindows8Deployment.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-windows-8-deployment.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterwindowsformsclickonce",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToBetterWindowsFormsClickOnce.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-windows-forms-click-once.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestobetterwindowsvistadeployment",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulestoBetterWindowsVistaDeployment.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-better-windows-vista-deployment.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesRulestoupsizingaccess",
+    "requestPaths": [
+      "/ssw/Standards/Rules/RulesToUpsizingAccess.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/rules-to-upsizing-access.html"
+  },
+  {
+    "name": "ArchiveStandardsRulesUsinggooglecalendar",
+    "requestPaths": [
+      "/ssw/Standards/Rules/UsingGoogleCalendar.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules/using-google-calendar.html"
+  },
+  {
+    "name": "ArchiveStandardsRulestobetterdeadtimeDefault",
+    "requestPaths": [
+      "/ssw/Standards/RulesToBetterDeadTime/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards/rules-to-better-dead-time/default.html"
+  },
+  {
+    "name": "ArchiveStandardsSswlogoDefault",
+    "requestPaths": [
+      "/ssw/Standards/SSWLogo/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards/ssw-logo/default.html"
+  },
+  {
+    "name": "ArchiveStandardsSupportBugreportorenhancement",
+    "requestPaths": [
+      "/ssw/Standards/Support/BugReportOrEnhancement.aspx"
+    ],
+    "redirectPath": "/archive/standards/support/bug-report-or-enhancement.html"
+  },
+  {
+    "name": "ArchiveStandardsSupportRemotesupportsamplescript",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportSampleScript.aspx"
+    ],
+    "redirectPath": "/archive/standards/support/remote-support-sample-script.html"
+  },
+  {
+    "name": "ArchiveStandardsSupportRemotesupportviacopilot",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaCopilot.aspx"
+    ],
+    "redirectPath": "/archive/standards/support/remote-support-via-copilot.html"
+  },
+  {
+    "name": "ArchiveStandardsSupportRemotesupportvianetmeeting",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaNetMeeting.aspx"
+    ],
+    "redirectPath": "/archive/standards/support/remote-support-via-net-meeting.html"
+  },
+  {
+    "name": "ArchiveStandardsSupportRemotesupportviateamviewer",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaTeamViewer.aspx"
+    ],
+    "redirectPath": "/archive/standards/support/remote-support-via-team-viewer.html"
+  },
+  {
+    "name": "ArchiveStandardsSupportRemotesupportviaultravnc",
+    "requestPaths": [
+      "/ssw/Standards/Support/RemoteSupportViaUltraVNC.aspx"
+    ],
+    "redirectPath": "/archive/standards/support/remote-support-via-ultra-vnc.html"
+  },
+  {
+    "name": "ArchiveStandardsTemplatesSswgooglereporttemplate",
+    "requestPaths": [
+      "/ssw/Standards/Templates/SSWGoogleReportTemplate.aspx"
+    ],
+    "redirectPath": "/archive/standards/templates/ssw-google-report-template.html"
+  },
+  {
+    "name": "ArchiveStandardsWisesetupReleasingaversion",
+    "requestPaths": [
+      "/ssw/Standards/WiseSetup/ReleasingAVersion.aspx"
+    ],
+    "redirectPath": "/archive/standards/wise-setup/releasing-aversion.html"
+  },
+  {
+    "name": "ArchiveStandardsWisesetupUserguide",
+    "requestPaths": [
+      "/ssw/Standards/WiseSetup/UserGuide.aspx"
+    ],
+    "redirectPath": "/archive/standards/wise-setup/user-guide.html"
+  },
+  {
+    "name": "ArchiveStandardsWisesetupWisestandards",
+    "requestPaths": [
+      "/ssw/Standards/WiseSetup/WiseStandards.aspx"
+    ],
+    "redirectPath": "/archive/standards/wise-setup/wise-standards.html"
+  },
+  {
+    "name": "ArchiveStandardsAdventureworkssamples",
+    "requestPaths": [
+      "/ssw/Standards/AdventureWorksSamples.aspx"
+    ],
+    "redirectPath": "/archive/standards/adventure-works-samples.html"
+  },
+  {
+    "name": "ArchiveStandardsDefault",
+    "requestPaths": [
+      "/ssw/Standards/Default.aspx"
+    ],
+    "redirectPath": "/archive/standards/default.html"
   }
 ]
