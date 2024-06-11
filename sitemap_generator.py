@@ -42,7 +42,7 @@ def output_sitemap(path: str):
         namespaces={"": "http://www.sitemaps.org/schemas/sitemap/0.9"},
     )
 
-    with open("sitemap.xml", "w") as f:
+    with open("archive/sitemap-index.xml", "w") as f:
         f.write(xml_data)
 
 
