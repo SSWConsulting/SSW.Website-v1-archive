@@ -116,6 +116,10 @@ def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
     regex = r"([a-z])([A-Z0-9])"
     replacements = {
+        "About Me" : "about-me",
+        "Chirag Modi": "chirag-modi",
+        "Frand Jajo": "frand-jajo",
+        "Jack Lin": "jack-lin",
         "ThankyouShare": "thank-you-share",
         "demo-fms200203" : "demo-fms200203",
         "RulestoBetterCommandLines": "rules-to-better-command-lines",

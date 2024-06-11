@@ -1,4 +1,5 @@
 import os
+from typing import List
 import requests
 from bs4 import BeautifulSoup, Tag
 import re
@@ -11,14 +12,48 @@ import urllib.parse
 import re
 import json
 
+
 # TODO: eXtremeEmails
-WHITELIST = [
-    # "AccessReporter",
+
+
+
+
+ROUTES_TO_DOWNLOAD = [
+    # "https://www.ssw.com.au/ssw/Events/SSWTechBreakfastPrevious.aspx",
+    # "https://www.ssw.com.au/ssw/Standards/Courseware/AccessToNETRoadshow2004/Session_2_-_AccessToSQL_(Upsizing)/Default.aspx",
+    # "https://www.ssw.com.au/ssw/Standards/Forms/SSWEvaluationSurvey.aspx",
+    # "https://www.ssw.com.au/ssw/Standards/ImageLibrary/Default.aspx",
+    # "https://www.ssw.com.au/ssw/Standards/RulesToBetterDeadTime/Default.aspx",
+    # "https://www.ssw.com.au/ssw/NETUG/NewRecentSessions.aspx",
+    # "https://www.ssw.com.au/ssw/Training/sample.aspx",
+
+
+    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Chirag Modi/AboutMe.aspx",
+    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Frand Jajo/AboutMe.aspx",
+    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.aspx",
+    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.aspx",
+    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Jack Lin/AboutMe.aspx",
+    "https://www.ssw.com.au/ssw/Diagnostics/Admin/Default.aspx",
+    "https://www.ssw.com.au/ssw/Download/PADFiles/Default.aspx",
+    "https://www.ssw.com.au/ssw/StandardsInternal/Employment/accountsassessment.aspx",
+    "https://www.ssw.com.au/ssw/StandardsInternal/DeveloperGeneral/CleaningYourMailbox.aspx",
+    
+]
+
+WHITELIST =   [  # "AccessReporter",
+    # "eXtremeEmails",
+    # "Standards",
+    "StandardsInternal",
+    "Diagnostics",
+    "Download",
+
+    # "EmailTemplate",
     # "AgileTemplate",
     # "DataMergePRO",
     # "DataPRO",
     # "DataRenovator",
     # "EmailMergePRO",
+    # "CodeAuditor",
     # Same as for products below, for the hololens page to be generated correctly, you need to be on a VPN or external network
     # "Events",
     # "ExchangeReporter",
@@ -30,10 +65,17 @@ WHITELIST = [
     # "PropertyAndEventPRO",
     # # "SQLAuditor",
     # "SQLDeploy",
+
+
+
     # "SQLReportingServicesAuditor",
+    # "NewZealand",
+
+
+
     # "SQLTotalCompare",
     # "Standards",
-    "StandardsInternal"
+    # "StandardsInternal"
     # "Training",
     # "TeamCalendar",
     # "UpsizingPRO",
@@ -68,6 +110,9 @@ PAGE_REPLACEMENTS: dict[str, str] = {
     "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
     "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
     "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
+
+    "https://ssw.com.au/ssw/EXtremeEmails/ManageProjects.aspx": "https://web.archive.org/web/20200803212125/https://ssw.com.au/ssw/EXtremeEmails/ManageProjects.aspx"
+    ""
     #"https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
@@ -80,6 +125,9 @@ SSW_V1_REGEX = r"((http(?:s?):\/\/(?:www.)?ssw.com.au?)?(?:\/ssw\/+))"
 SSW_V1_REGEX_SUB = r"(https?:\/\/www\.ssw\.com\.au\/ssw)"
 
 SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
+
+def fix_spaces(string :str)->str:
+    return string.replace(" ", "%20")
 
 service = Service("C:\\selenium\\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
@@ -111,6 +159,8 @@ def main():
 
 
 def archive_pages(path: str) -> dict[str, str]:
+    for i in range(len(ROUTES_TO_DOWNLOAD)):
+        ROUTES_TO_DOWNLOAD[i] = fix_spaces(ROUTES_TO_DOWNLOAD[i])
     items_written: dict[str, str] = {}
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
@@ -121,9 +171,9 @@ def archive_pages(path: str) -> dict[str, str]:
         # If its an aspx file, and does not have zz at the start (redirect or migrated page), archive it
         elif (
             os.path.isfile(item_path)
-            and item_path.endswith(".aspx")
+            and (item_path.endswith(".aspx") or item_path.endswith(".htm") or item_path.endswith(".html"))
             and not split_path[-1].startswith("zz")
-            and split_path[1] in WHITELIST
+            # and split_path[1] in WHITELIST
         ):
             # If it starts with za (means it has been archived before), remove the za
             if split_path[-1].startswith("za") or split_path[-1].startswith("zr"):
@@ -137,73 +187,81 @@ def archive_pages(path: str) -> dict[str, str]:
             is_replaced = url in PAGE_REPLACEMENTS
             if is_replaced:
                 url = PAGE_REPLACEMENTS[url]
+            url = fix_spaces(url)
+            if url in ROUTES_TO_DOWNLOAD:
+                print(f"downloading {url}")
+                try:
+                    print("driver be doing it's thang")
+                    driver.get(url)
+                except Exception as e:
+                    print(f"Failed to get {url}: {e}")
+                    continue
 
-            try:
-                driver.get(url)
-            except Exception as e:
-                print(f"Failed to get {url}: {e}")
-                continue
+                # If the page has been redirected, rename the file to start with zr
+                if driver.current_url != url and not is_replaced:
+                    print("Redirect: " + url + " -> " + driver.current_url)
+                    new_path_split = item_path.split("\\")
+                    if not new_path_split[-1].startswith("za") and not new_path_split[
+                        -1
+                    ].startswith("zr"):
+                        new_path_split[-1] = "zr" + new_path_split[-1]
+                        os.rename(item_path, "/".join(new_path_split))
+                    continue
 
-            # If the page has been redirected, rename the file to start with zr
-            if driver.current_url != url and not is_replaced:
-                print("Redirect: " + url + " -> " + driver.current_url)
+                # Parse HTML content
+                
+
+
+                page_content = "<!DOCTYPE html>\n" + driver.page_source
+                soup = BeautifulSoup(page_content, "html5lib")
+                base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
+                soup = fix_wayback_machine(soup)
+                soup = remove_header_and_menu(soup)
+                soup = fix_scripts(soup, base_path)
+                soup = fix_images(soup, base_path)
+                soup = fix_css(soup, base_path)
+                soup = fix_links(soup)
+                soup = get_pdfs(soup, base_path)
+                soup = fix_breadcrumbs(soup, split_path[1])
+                soup = fix_menu(soup)
+                soup = fix_head(soup)
+                soup = delete_existing_header(soup)
+                soup = add_archive_header(soup, url)
+
+                # It's important that this method is called here because it will interfere with changes in the
+                # previous fix breadcrum methods
+                # soup = fix_breadcrumbs_v4(soup)
+
+
+                page_source = soup.prettify(formatter="html5")
+
+                dir = "/".join(split_path[1:-1])
+                output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
+                if not os.path.exists(output_dir):
+                    os.makedirs(output_dir)
+                
+                # Filename with .aspx removed and kebab-case
+                # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
+                filename = uri.replace(".aspx", "") + ".html"
+                output_filename = PARENT_DIR + pascal_to_kebab(filename)
+                with open(output_filename, "w+", encoding="utf-8") as f:
+                    f.write(page_source)
+                    items_written[url] = output_filename
+
                 new_path_split = item_path.split("\\")
-                if not new_path_split[-1].startswith("za") and not new_path_split[
-                    -1
-                ].startswith("zr"):
-                    new_path_split[-1] = "zr" + new_path_split[-1]
+
+                # If the file has not been archived before, add za to the start of the filename
+                if not new_path_split[-1].startswith("za"):
+                    new_path_split[-1] = "za" + new_path_split[-1]
                     os.rename(item_path, "/".join(new_path_split))
-                continue
-
-            # Parse HTML content
-            page_content = "<!DOCTYPE html>\n" + driver.page_source
-            soup = BeautifulSoup(page_content, "html5lib")
-            base_path = SSW_V1_URL + "/" + "/".join(split_path[1:-1])
-            soup = fix_wayback_machine(soup)
-            soup = remove_header_and_menu(soup)
-            soup = fix_scripts(soup, base_path)
-            soup = fix_images(soup, base_path)
-            soup = fix_css(soup, base_path)
-            soup = fix_links(soup)
-            soup = get_pdfs(soup, base_path)
-            soup = fix_breadcrumbs(soup, split_path[1])
-            soup = fix_menu(soup)
-            soup = fix_head(soup)
-            soup = delete_existing_header(soup)
-            soup = add_archive_header(soup, url)
-
-            # It's important that this method is called here because it will interfere with changes in the
-            # previous fix breadcrum methods
-            # soup = fix_breadcrumbs_v4(soup)
-
-
-            page_source = soup.prettify(formatter="html5")
-
-            dir = "/".join(split_path[1:-1])
-            output_dir = (PARENT_DIR + pascal_to_kebab(dir)).lower()
-            if not os.path.exists(output_dir):
-                os.makedirs(output_dir)
-
-            # Filename with .aspx removed and kebab-case
-            # TODO: Change default to index.html, .replace("Default.aspx", "index") didn't work because it got overwritten by output_index_page
-            filename = uri.replace(".aspx", "") + ".html"
-            output_filename = PARENT_DIR + pascal_to_kebab(filename)
-            with open(output_filename, "w+", encoding="utf-8") as f:
-                f.write(page_source)
-                items_written[url] = output_filename
-
-            new_path_split = item_path.split("\\")
-
-            # If the file has not been archived before, add za to the start of the filename
-            if not new_path_split[-1].startswith("za"):
-                new_path_split[-1] = "za" + new_path_split[-1]
-                os.rename(item_path, "/".join(new_path_split))
+            else:
+                print(f"Skipping {url}")
 
     output_path = os.path.join(
         PARENT_DIR, pascal_to_kebab("/".join(path.split("\\")[1:]))
     )
 
-    output_index_page(items_written, output_path)
+    # output_index_page(items_written, output_path)
     return items_written
 
 
@@ -235,6 +293,12 @@ def pascal_to_kebab(s: str) -> str:
     # Convert PascalCase to kebab-case
     regex = r"([a-z])([A-Z0-9])"
     replacements = {
+
+        # ...ew
+        "About Me" : "about-me",
+        "Chirag Modi": "chirag-modi",
+        "Frand Jajo": "frand-jajo",
+        "Jack Lin": "jack-lin",
         "ThankyouShare": "thank-you-share",
         "demo-fms200203" : "demo-fms200203",
         "RulestoBetterCommandLines": "rules-to-better-command-lines",
@@ -681,7 +745,6 @@ def determine_breadcrumb_id(soup: BeautifulSoup) -> str | None:
 
 def fix_breadcrumbs_v2(soup: BeautifulSoup) -> BeautifulSoup:
     # Some of the newer pages use this breadcrumb ID
-
 
     # 
     assosciated_id = determine_breadcrumb_id(soup)
