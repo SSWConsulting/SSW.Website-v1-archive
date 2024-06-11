@@ -86,7 +86,7 @@ async function generateHTMLTable(obj) {
         </tbody>
     </table>
     <hr>
-    <b>Total Success Rate</b>: ${successCount}/${obj.length}
+    <b>Total Successful Redirects</b>: ${successCount}/${obj.length}
     <hr>
     <b>Errors to fix</b>: ${obj.length - successCount}
 </body>
