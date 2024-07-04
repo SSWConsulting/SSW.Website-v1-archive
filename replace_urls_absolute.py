@@ -24,7 +24,7 @@ def main():
             path = path_to_html_equivalent(f"{root}\\{file}")
             path_exists = os.path.exists(path)
             if not os.path.exists(path):
-                print(f"WARNING: no archived file found at {path}")
+                # print(f"WARNING: no archived file found at {path}")
                 continue
             with open(path, "r+", encoding="utf-8") as f:
                 soup = BeautifulSoup(f, "html5lib")
@@ -34,6 +34,8 @@ def main():
                     continue
                 for href in hrefs:
                     link = href['href']
+                    if link == "":
+                        continue 
                     elipses = re.findall(r"(?:\.\./)+",link)
                     url_points_upwards = len(elipses) > 0
 
@@ -65,19 +67,18 @@ def folder_of_upward_traversal(path: str, current_directory: str):
     path_to_physical_folder = os.path.join(current_directory, elipses[0])
     print("path to physical folder")
     print(path_to_physical_folder)
-    abs_path = os.path.abspath(path_to_physical_folder)
-    print("abs_path")
-    print(abs_path)
-    dir_name = os.path.dirname(abs_path)
-    print("dir_name")
-    dir_name = dir_name.replace("C:\\SSW Products\\SSW Website V1\\SSW.Website-v1-Progress\\SSW.Website.WebUI", "")
-    dir_name = dir_name.replace("C:\\SSW Products\\SSW Website V1\\SSW.Website-v1-Progress", "")
+    path_to_file = os.path.relpath(path_to_physical_folder)
+    print("path_to_file")
+    print(path_to_file)
 
-    if(not dir_name.endswith("\\")):
-        dir_name += "\\"
-    if(dir_name.startswith("\\")):
-        dir_name = dir_name[1:]
-    return dir_name.replace("\\", "/")
+
+    path_to_file = path_to_file.replace("SSW.Website.WebUI", "")
+
+    if(not path_to_file.endswith("\\")):
+        path_to_file += "\\"
+    if(path_to_file.startswith("\\")):
+        path_to_file = path_to_file[1:]
+    return path_to_file.replace("\\", "/")
     
 
 
