@@ -9,6 +9,13 @@ We are not zzing pages on the original repo because we want those pages to stay 
 v1 site - https://dev.azure.com/ssw2/ssw.website  
 bypass frontdoor (to see old pages) - https://prod.ssw.com.au/
 
+## Updating the migrated pages
+
+Effectively this you can update `/archive` like a project with an automated deployment for pipeline. There's a GitHub action that automatically syncs the contents of `/archive` to blob storage. This means all you need to do to update one of the migrated pages is get your PR merged. After your PR is merged with into main you will be able to view your the-updates on the website under `ssw.com.au/archive`. These changes are synced, meaning that if a file is deleted from the repo it will also be deleted from blob storage.
+
+**Important note** If you add or delete one of the pages in the repo make sure you will need to update the sitemap. You can do this by running sitemap_generator.py at the base of the repo (SSW.Website-v1-Progress).
+
+
 ## Scripts
 
 ### Prerequisites
