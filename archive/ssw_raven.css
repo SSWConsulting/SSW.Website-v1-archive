@@ -15622,7 +15622,7 @@ a:link:not(.btn):hover {
 
 a[href*="//"]:not([href*="ssw.com"]):after
 {
-  content: url(https://www.ssw.com.au/ssw/images/external.gif);
+  content: url(/archive/images/external.gif);
   padding-left: 4px;
 }
 
