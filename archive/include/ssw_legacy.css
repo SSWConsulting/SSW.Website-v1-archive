@@ -1,0 +1,1126 @@
+/*
+'---------------------------------------------- 
+' Copyright 2002 Superior Software for Windows 
+' www.ssw.com.au All Rights Reserved.
+ 
+' VERSION AUTHOR  DATE COMMENT  
+' 1.0 JE/AC 24/12/01 
+' 1.1 JE/AC 27/12/01 ' Update Code Comments 
+' 1.2 DDK 	30/09/02 ' Added clsReadOnly
+' 1.3 CS	3/01/2003  Fiddling with Font sizes
+' 1.4 CS	7/01/2003  Change to clsTitleTop and related colours - no bottom margin & thinner
+' 1.5 PA	15/01/2003 Change to clsInput for Search button on left nav
+' 1.6 JDT 	24/02/2004 Added red class for red text
+' 1.7 JV	18/03/2004 Added bold red class to show the current page on the left navigation
+' 1.8 JH	18/03/2004 added HangingBox class
+' 1.85 JH	19/03/2004 modified margin-left of BLOCKQUOTE
+            NOTE TO ALL DEVELOPERS: DO NOT USE UL IN PLACE OF BLOCKQUOTE!!
+' 1.9 JH	30/03/2004 Added a.Maintenance class. Use this for all links that point to a page that modifies site data
+' 2.0 PK 30/03/2004 Added .totalFiles & .checkboxColumn for total files count in javascript
+' 2.1 MM 21/04/2005 Added Class for Dropdown Boxes and Grouping Headings
+' 2.2 IA 14/11/2005 Added class for strikethrough
+'---------------------------------------------- 
+*/
+
+A:link {
+  color: blue;
+}
+A:visited,
+A:active {
+  color: purple;
+}
+A:hover {
+  color: red;
+}
+BODY {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  padding-top: 0px;
+  font-family: Verdana, sans-serif;
+}
+BODY {
+  font-size: 12px;
+}
+
+P,
+UL,
+OL,
+OL LI,
+UL LI,
+DL DT,
+DL DD {
+  line-height: 17px;
+  font-size: 12px;
+}
+
+/*
+	Font is in here as Tables don't inherit from Body 
+	Our whole site is within a table.
+*/
+
+TABLE {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  padding-top: 0px;
+  font-family: Verdana, sans-serif;
+}
+
+SMALL {
+  font-size: 8pt;
+  font-family: Verdana, sans-serif;
+}
+
+A IMG {
+  border: none;
+}
+
+/*
+	This is for our pretty tables (grey boxes with red border)
+	Because we are using tables for placement (instead of divs 
+	and spans).
+	border-right: red 2px solid;
+	border-top: red 2px solid;
+	font-size: x-small;
+	float: none;
+	margin-bottom: 5px;
+	border-left: red 2px solid;
+	border-bottom: red 2px solid;
+	background-color: white;
+
+ 	cellspacing="0" cellpadding="3" rules="cols" border="1"
+ 
+	AC - I don't think css can control the cellspacing at all
+
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #FFFFFF
+	BACKGROUND-COLOR: #efebde;
+	BACKGROUND-COLOR: whitesmoke;
+*/
+
+TABLE.clsSSWTable {
+  border: 2px solid #999999;
+  padding: 0px;
+  cellspacing: 0px;
+  float: none;
+  margin: 4px;
+  background-color: #f5f5f5;
+}
+
+TABLE.clsSSWProductTable {
+  /*border-right: #ffcc00 2px solid;
+	border-top: #ffcc00 2px solid;
+	border-left: #ffcc00 2px solid;
+	border-bottom: #ffcc00 2px solid;
+	*/
+  border: 2px solid #ffcc00;
+  padding: 1px 1px 1px 1px;
+  background-color: #f5f5f5;
+  float: none;
+  margin: 4px;
+}
+
+TABLE.clsSSWTableCode {
+  border: solid 1px black;
+  padding: 0px;
+  margin: 0px;
+  background-color: #e7e6f4;
+}
+
+TABLE.clsSSWTableCode {
+  font-family: "Courier New";
+  font-size: 9pt;
+}
+
+/*
+	This is our dark red table header (first row)
+*/
+
+TABLE.clsSSWTable th {
+  font-weight: bold;
+  /*border-bottom: #ef0000;
+	/*color: white;*/
+  background-color: #dddddd;
+  border-bottom: 1px solid #fd1912;
+  text-align: left;
+}
+
+/*
+	This is our light grey inside the tables
+	#cccccc - dark grey
+	#efebde - light grey
+	whitesmoke
+*/
+
+TABLE.clsSSWTable tr {
+  background-color: #f5f5f5;
+}
+
+TABLE.clsSSWProductTable tr {
+  background-color: #ffff99;
+}
+
+TABLE.clsSSWTableOfContents {
+  border: #999999 1px solid;
+  float: none;
+  margin: 4px;
+}
+
+TABLE.clsSSWTableOfContents tr td {
+  background-color: #efefef;
+}
+
+TABLE.clsSSWTableOfContents a {
+  margin-left: 10px;
+}
+
+/*
+	ASPX.DataGrid - Main table
+*/
+TABLE.clsDataTableRed {
+  border-right: gray 1px solid;
+  border-top: gray 1px solid;
+  font-size: xx-small;
+  border-left: gray 1px solid;
+  border-bottom: gray 1px solid;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+TABLE.clsTblSmallText tr td {
+  font-size: 8pt;
+}
+/*
+	Change colour of Cells for Good vs Bad
+*/
+TD.clsOtherStyle {
+  background-color: #cc0000;
+  color: White;
+}
+TD.clsRecommendedStyle {
+  background-color: #008000;
+  color: White;
+}
+
+/*
+	ASPX.DataGrid - Links within the DataTableRed to be white
+*/
+A:link.clsDataTableRed,
+A:visited.clsDataTableRed,
+A:hover.clsDataTableRed {
+  color: White;
+}
+
+/*
+	ASPX.DataGrid - Header Style
+*/
+TD.clsDataTableRedHeader,
+TD.clsDataTableRedFooter,
+TR.clsDataTableRedHeader,
+TR.clsDataTableRedFooter {
+  font-weight: bold;
+  color: white;
+  background-color: #ef0000;
+}
+
+/*
+	ASPX.DataGrid - Normal Item Style
+*/
+TD.clsDataTableRed,
+TR.clsDataTableRed {
+  background-color: White;
+}
+
+/*
+	ASPX.DataGrid - Alternate-item Style
+*/
+TD.clsDataTableRedAltItem,
+TR.clsDataTableRedAltItem {
+  background-color: #efebde;
+}
+
+TD.clsGroupHeading {
+  font-weight: bold;
+}
+
+TD.clsFormLabel {
+  width: 70px;
+  text-align: right;
+}
+
+SPAN.TakeNote {
+  background-color: #ffff00;
+}
+
+SPAN.TakeGNote {
+  background-color: #ff0000;
+}
+
+SPAN.ToDo {
+  background-color: #ff0000;
+}
+
+CODE {
+  font-size: 8pt;
+  font-family:
+    Courier New,
+    Courier,
+    monospace;
+}
+.clsLeftNavBar {
+  font-size: 8pt;
+  font-weight: bold;
+  /*border : solid 0px #aaaaaa;*/
+  border-bottom: solid 1px;
+  border-right: solid 1px;
+
+  border-left: 0px;
+  border-top: 0px;
+  padding: 2px;
+  width: 100%;
+  margin-right: 5px;
+  color: maroon;
+  background-color: #efefef;
+}
+
+.normalfont {
+  font-size: small;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.topcommonTestimonialBox,
+.topcommonTestimonialBox td {
+  font-size: 11px;
+  color: #555;
+  line-height: 17px;
+}
+/*
+This headings with Red and Grey lines
+*/
+.red {
+  color: #ff0000;
+}
+
+.boldred {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.clsTitle {
+  width: 100%;
+}
+.clsTitleTop {
+  width: 100%;
+  height: 2px;
+  font-size: 0pt;
+  background-color: red;
+  margin-bottom: 0px;
+}
+h1 {
+  font: Courier New;
+  font-size: small;
+  color: Black;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: small;
+  color: Black;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font: Verdana;
+  font-weight: bold;
+  font-size: small;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font: Verdana;
+  font-weight: bold;
+  font-size: x-small;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  font-weight: normal;
+  font-size: small;
+  color: Black;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid red;
+
+  background-color: #eeeeee;
+
+  font-size: 12px;
+
+  padding: 3px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+dl {
+  margin-bottom: 2em;
+}
+
+.clsTitleTopPurpleBg {
+  width: 100%;
+  height: 2px;
+  font-size: 0pt;
+  background-color: #991284;
+  margin-bottom: 0px;
+}
+.clsTitleTopOrangeBg {
+  width: 100%;
+  height: 2px;
+  font-size: 0pt;
+  background-color: #f79833;
+  margin-bottom: 0px;
+}
+.clsTitleTopGreenBg {
+  width: 100%;
+  height: 2px;
+  font-size: 0pt;
+  background-color: #64b832;
+  margin-bottom: 0px;
+}
+.clsTitleTopBlueBg {
+  width: 100%;
+  height: 2px;
+  font-size: 0pt;
+  background-color: #9bcae1;
+  margin-bottom: 0px;
+}
+.clsTitleTopYellowBg {
+  width: 100%;
+  height: 2px;
+  font-size: 0pt;
+  background-color: #fdcc12;
+  margin-bottom: 0px;
+}
+
+.clsTitleBottom {
+  width: 100%;
+  height: 10px;
+  font-weight: bold;
+  padding-left: 10px;
+  background-color: #cccccc;
+}
+.clsTitleBottomRedBgWhiteFont {
+  width: 100%;
+  height: 10px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: white;
+  background-color: red;
+}
+.TextBoxWidth {
+  width: 500px;
+}
+
+INPUT {
+  font-size: 8pt;
+  font-family: Tahoma, sans-serif;
+}
+
+INPUT.clsButton {
+  width: 75px;
+}
+
+SELECT {
+  font-size: 8pt;
+  font-family: Tahoma, sans-serif;
+}
+
+.clsInput {
+  font-size: 10pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+.clsInputButton
+{
+	font-size: 7pt;
+	font-weight: bold; 
+	color: #ffffff; 
+	background-color: #7d7d7d
+}
+*/
+/*.clsInput
+{
+	font-size: 9pt;
+}
+*/
+.clsAsteriskMarker {
+  font-weight: bold;
+  color: red;
+}
+
+/*
+For ClientDiary.aspx - DDK 30/09/2002
+*/
+
+.clsReadOnly {
+  background-color: #ebe9ed;
+}
+
+DIV.SideBoxBlue {
+  float: right;
+  width: 500px;
+  border: 2px dotted #336699;
+  padding: 15px;
+  background-color: #d9d9ff;
+  position: relative;
+  margin: 5px;
+}
+
+DIV.HangingBox {
+  float: right;
+  border: #aaa solid 2px;
+  margin-top: 20px;
+  width: 190px;
+  padding: 3px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+DIV.HangingBox P {
+  font-size: 8pt;
+  font-family: Verdana, sans-serif;
+  line-height: 11pt;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+blockquote {
+  margin-left: 15px;
+}
+
+a.Maintenance {
+  border: #aaa dotted 1px;
+  background: #e5e5e5;
+  padding: 3px;
+  height: 22px;
+  font-size: 11px;
+  color: #600;
+}
+
+.checkboxColumn {
+  text-align: center;
+}
+
+.totalFiles {
+  background-color: Navy;
+  color: White;
+}
+
+TABLE.clsTableLeftBar td input {
+  font-size: 8pt;
+  font-family: Tahoma, sans-serif;
+}
+
+TABLE.mainEvents TR.rowHeader TD {
+  background-color: #efefef;
+  color: #333;
+  font-weight: bold;
+}
+
+TABLE.mainEvents TR TD {
+  color: #333;
+  font-family: Verdana, sans-serif;
+  font-size: 8pt;
+  line-height: 14px;
+  border-bottom: #aaa solid 1px;
+}
+
+TABLE.tblScreenshots {
+  background: #eaeaea;
+  width: 65%;
+  border: #ddd solid 1px;
+}
+
+TABLE.tblScreenshots TR TD {
+  background: #f5f5f5;
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/CodeAuditor/images/ScreenPartialBg.gif);
+  background-repeat: repeat-x;
+  background-position: bottom left;
+}
+
+TABLE.tblScreenshots TD {
+  padding: 6px;
+  font-size: 8pt;
+  line-height: 16px;
+}
+
+TABLE.tblScreenshots TD B {
+  font-size: 13px;
+  margin-top: 4px;
+  padding-bottom: 6px;
+  display: block;
+  color: #444;
+}
+
+TABLE.tblScreenshots TD IMG {
+  border: #555 solid 1px;
+}
+
+/* Left Navigator */
+
+DIV#hideLeftNav {
+  width: 100%;
+
+  text-align: right;
+
+  padding: 0px;
+  margin: 0px;
+
+  font-size: xx-small;
+}
+
+DIV#hideLeftNav A IMG {
+  border: none;
+  padding-left: 5px;
+}
+
+DIV#showLeftNav {
+  height: 30px;
+  width: 100%;
+
+  top: 106px;
+
+  padding: 5px 5px 5px 10px;
+  font-size: 80%;
+
+  vertical-align: middle;
+
+  /*
+	background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderMenuBarBackFaded.gif);
+	background-repeat: repeat-x;
+	*/
+}
+
+DIV#showLeftNav A,
+DIV#hideLeftNav A {
+  font-family: Verdana, sans-serif;
+  font-size: xx-small;
+  font-weight: bold;
+  color: Black;
+
+  text-decoration: none;
+}
+
+DIV#showLeftNav A:hover {
+  color: Red;
+}
+
+TD#leftNav {
+  width: 200px;
+  padding: 5px;
+  background-color: #fafafa;
+  border-right: solid 1px #dddddd;
+}
+
+TD#leftNav TD {
+  padding-left: 5px;
+}
+
+TD#leftNav H2 {
+  font-size: 8pt;
+  font-weight: bold;
+
+  border-bottom: solid 1px #cc0000;
+  border-left: 0px;
+  border-top: 0px;
+
+  padding: 5px;
+  padding-left: 0;
+  margin-left: -5px;
+  margin-bottom: 10px;
+  width: 100%;
+
+  vertical-align: bottom;
+
+  color: #cc0000;
+  background-color: #fafafa;
+}
+
+/* Header Bar */
+
+BODY {
+  margin: 0px;
+  padding: 0px;
+}
+
+DIV#header,
+DIV#headerTPO {
+  height: 106px;
+  width: 100%;
+}
+
+DIV#headerTitle,
+DIV#headerTitleTPO {
+  height: 76px;
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 0px;
+  margin: 0px;
+
+  background-repeat: no-repeat;
+}
+DIV#headerTitle {
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderLogo.jpg);
+}
+DIV#headerTitleTPO {
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderLogoTPO.jpg);
+}
+
+DIV#headerTitle H1,
+DIV#headerTitleTPO H1 {
+  position: relative;
+  left: 155px;
+  top: 26px;
+
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+
+  padding-right: 10px;
+}
+
+DIV#headerMenu,
+DIV#headerMenuTPO {
+  height: 23px;
+  width: auto;
+  top: 76px;
+
+  padding-left: 160px;
+  padding-top: 8px;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-size: 80%;
+
+  background-repeat: repeat-x;
+}
+
+DIV#headerMenu {
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderMenuBarBack.gif);
+}
+DIV#headerMenuTPO {
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderMenuBarBackTPO.jpg);
+}
+
+DIV#headerMenuLeft,
+DIV#headerMenuLeftTPO {
+  position: absolute;
+  left: 0px;
+  top: 76px;
+
+  height: 30px;
+  width: 155px;
+
+  background-repeat: no-repeat;
+}
+DIV#headerMenuLeft {
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderMenuBarBackLogo.jpg);
+}
+DIV#headerMenuLeftTPO {
+  background-image: url(//web/20060212012305im_/http://www.ssw.com.au/ssw/images/HeaderMenuBarBackLogoTPO.jpg);
+}
+
+DIV#headerMenu DIV.headerMenuItem,
+DIV#headerMenuTPO DIV.headerMenuItem {
+  position: relative;
+  display: inline;
+
+  padding-right: 20px;
+}
+
+DIV#headerMenu DIV.headerMenuItem A,
+DIV#headerMenuTPO DIV.headerMenuItem A {
+  font-family: Verdana, sans-serif;
+  font-size: xx-small;
+  font-weight: bold;
+  color: Black;
+
+  text-decoration: none;
+}
+
+DIV#headerMenu DIV.headerMenuItem A:hover,
+DIV#headerMenuTPO DIV.headerMenuItem A:hover {
+  color: Red;
+}
+
+DIV#headerMenu DIV.headerSubmenu,
+DIV#headerMenuTPO DIV.headerSubmenu {
+  position: absolute;
+  top: 106px;
+
+  visibility: hidden;
+  padding: 0px 6px;
+
+  border-top: none;
+}
+DIV#headerMenu DIV.headerSubmenu {
+  border: solid 1px #cccccc;
+  background-color: #f0f0f0;
+}
+DIV#headerMenuTPO DIV.headerSubmenu {
+  border: solid 1px #ef7a75;
+  background-color: #fce2e1;
+}
+
+DIV#headerMenu DIV.headerSubmenu A.headerSubmenuItem,
+DIV#headerMenuTPO DIV.headerSubmenu A.headerSubmenuItem {
+  display: block;
+
+  font-family: Verdana, sans-serif;
+  font-size: xx-small;
+  font-weight: bold;
+  color: Black;
+
+  text-decoration: none;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+DIV#headerMenu DIV.headerSubmenu A.headerSubmenuItem {
+  border-top: solid 1px #cccccc;
+}
+DIV#headerMenuTPO DIV.headerSubmenu A.headerSubmenuItem {
+  border-top: solid 1px #ef7a75;
+}
+
+DIV#headerMenu DIV.headerSubmenu A.headerSubmenuItem:hover,
+DIV#headerMenuTPO DIV.headerSubmenu A.headerSubmenuItem:hover {
+  color: Red;
+}
+
+/* PA - This is for TimePROOnline menu */
+DIV#headerMenu DIV.TOLNheaderSubmenu {
+  position: absolute;
+  top: 200px;
+
+  visibility: hidden;
+  padding: 0px 6px;
+
+  border: solid 1px #cccccc;
+  border-top: none;
+
+  background-color: #afeeee;
+}
+
+/* Content Table */
+
+DIV.TableOfContents,
+DIV.Quote {
+  border: #999 1px solid;
+  background-color: #eee;
+  padding: 10px 10px 10px 10px;
+}
+DIV.QuoteRight {
+  border: #999 1px solid;
+  background-color: #eee;
+  padding: 10px 10px 10px 10px;
+  align: Right;
+  width: 40%;
+}
+
+/* use for one line */
+SPAN.Quote {
+  border: #999 1px solid;
+  background-color: #eee;
+  padding: 10px;
+}
+
+/* yellow box for advertising products on standards pages */
+DIV.QuoteAdvertising {
+  border: #ffcc00 2px solid;
+  padding: 10px;
+  background-color: #e7e6f4;
+}
+
+/* small white table inside the table of contents */
+DIV.TableOfContents DIV.Quote {
+  background-color: #fff;
+  padding: 10px;
+  float: right;
+  width: 90%;
+}
+
+/* use this for figure:*/
+SPAN.Caption {
+  font-weight: bold;
+}
+
+/* Content Table heading*/
+div.TableOfContents h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 110%;
+}
+
+/* ? */
+div#content {
+  margin-right: 40px;
+}
+
+div#contentContainer {
+  width: 100%;
+  margin: 10px;
+}
+
+div#content H2 {
+  border-bottom: 2px solid red;
+
+  background-color: #eeeeee;
+
+  font-size: 12px;
+
+  padding: 3px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+DIV#content LI > H2 {
+  margin-top: 10px;
+}
+
+DL DT,
+DL DD {
+  padding-bottom: 5px;
+}
+
+FIELDSET {
+  margin: 0 10px 40px 10px;
+  padding: 0px 20px 10px 20px;
+  border: solid 1px #aaa;
+}
+
+FIELDSET LEGEND {
+  padding: 0px 5px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+FIELDSET TD {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+FIELDSET LABEL {
+  padding-right: 15px;
+}
+
+FIELDSET TD INPUT,
+FIELDSET TD TEXTAREA {
+  width: 95%;
+}
+
+FIELDSET TD.fieldName {
+  width: 100px;
+}
+
+/* ? */
+DIV.softRegion {
+  width: 165px;
+  float: right;
+  clear: both;
+  padding: 8px;
+  margin: 15px 0px 15px 15px;
+  border-left: solid 5px #ccc;
+  border-bottom: solid 1px #ccc;
+  background: white;
+}
+
+/* */
+DIV.softRegion H1 {
+  margin: 0px;
+  margin-bottom: 6px;
+  margin-top: -8px;
+  font-size: 14px;
+  color: #555;
+}
+
+DIV.softRegion UL {
+  padding-left: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+DIV.softRegion DIV.sponsorBox {
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Content Table */
+DIV.softRegion DIV.sponsorBox + DIV.sponsorBox {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: #999 solid 1px;
+}
+
+DIV.softRegion DIV.sponsorBox IMG {
+  padding: 3px;
+}
+
+DIV.softRegion DIV.sponsorBox + H2 {
+  width: 80%;
+}
+
+H2.thinner {
+  width: 65%;
+}
+
+DIV.imageHolder P {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* Proximety of first item in list from heading */
+DIV.topoflist {
+  margin-top: 10;
+  margin-bottom: 25px;
+}
+
+/* part of same above formats the ul - gives a bigger gap at the end of the list and the next paragraph */
+DIV.topoflist ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* format <p> tag inside topoflist */
+DIV.topoflist p {
+  margin-top: 10;
+  margin-bottom: 10px;
+}
+/*Important text*/
+SPAN.importanttext {
+  color: #008000;
+}
+/*Emphasis Text*/
+.emphasistext {
+  font-weight: bold;
+  font-size: 10pt;
+  color: #ef0000;
+  font-family: Verdana;
+}
+/*update footer*/
+SPAN.updatefooter {
+  font-weight: bold;
+  font-size: 7pt;
+  color: #ff0000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/*update text*/
+SPAN.updatetext {
+  font-size: 10pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/*update text small*/
+SPAN.updatetextsmall {
+  font-size: 7pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/*whiteheading*/
+SPAN.whiteheading {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 10pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+SPAN.whiteheadingnew {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 10pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*whiteheadingInvoice*/
+SPAN.whiteheadingInvoice {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 9pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+SPAN.verysmalltext {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 8pt;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+SPAN.blueboldtext {
+  font-weight: bold;
+  font-size: small;
+  color: Blue;
+}
+span.smallgreenfont {
+  color: Green;
+  font-size: x-small;
+}
+span.smallredfont {
+  color: red;
+  font-size: x-small;
+}
+span.SmallSize {
+  font-size: 2pt;
+}
+
+/*For download banana*/
+.download {
+  width: 250px;
+  margin: 0 0 0 5px;
+  padding: 8px 0;
+  text-align: center;
+
+  border: 1px solid #ffc68f;
+  background: #f4f3d5;
+}
+
+.expiredinfo {
+  text-decoration: line-through;
+}
+/*
+     FILE ARCHIVED ON 01:23:05 Feb 12, 2006 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:55:05 Aug 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.811
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.028
+  esindex: 0.019
+  cdx.remote: 32.946
+  LoadShardBlock: 324.712 (3)
+  PetaboxLoader3.datanode: 1435.581 (4)
+  load_resource: 1925.273
+  PetaboxLoader3.resolve: 580.831
+*/
