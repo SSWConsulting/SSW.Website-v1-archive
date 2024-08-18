@@ -3,10 +3,12 @@ from typing import List
 import requests
 from bs4 import BeautifulSoup, Tag
 import re
+
+
+import chromedriver_binary
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-
 from selenium.webdriver.common.by import By
 import urllib.parse
 import re
@@ -15,10 +17,11 @@ import json
 
 # TODO: eXtremeEmails
 
-
-
-
 ROUTES_TO_DOWNLOAD = [
+    "https://www.ssw.com.au/ssw/methodology/XPDM.aspx",
+    "https://www.ssw.com.au/ssw/NETUG/Developerlinks.aspx",
+    "https://web.archive.org/web/20240518011638/https://www.ssw.com.au/ssw/NETUG/Developerlinks.aspx",
+    "https://web.archive.org/web/20060303220010/http://www.ssw.com.au/ssw/methodology/XPDM.aspx"
     # "https://www.ssw.com.au/ssw/Events/SSWTechBreakfastPrevious.aspx",
     # "https://www.ssw.com.au/ssw/Standards/Courseware/AccessToNETRoadshow2004/Session_2_-_AccessToSQL_(Upsizing)/Default.aspx",
     # "https://www.ssw.com.au/ssw/Standards/Forms/SSWEvaluationSurvey.aspx",
@@ -26,27 +29,24 @@ ROUTES_TO_DOWNLOAD = [
     # "https://www.ssw.com.au/ssw/Standards/RulesToBetterDeadTime/Default.aspx",
     # "https://www.ssw.com.au/ssw/NETUG/NewRecentSessions.aspx",
     # "https://www.ssw.com.au/ssw/Training/sample.aspx",
-
-
-    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Chirag Modi/AboutMe.aspx",
-    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Frand Jajo/AboutMe.aspx",
-    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.aspx",
-    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.aspx",
-    "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Jack Lin/AboutMe.aspx",
-    "https://www.ssw.com.au/ssw/Diagnostics/Admin/Default.aspx",
-    "https://www.ssw.com.au/ssw/Download/PADFiles/Default.aspx",
-    "https://www.ssw.com.au/ssw/StandardsInternal/Employment/accountsassessment.aspx",
-    "https://www.ssw.com.au/ssw/StandardsInternal/DeveloperGeneral/CleaningYourMailbox.aspx",
-    
+    # "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Chirag Modi/AboutMe.aspx",
+    # "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Frand Jajo/AboutMe.aspx",
+    # "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/JayWang/About Me.aspx",
+    # "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/JosephRoperti/About Me.aspx",
+    # "https://www.ssw.com.au/ssw/StandardsInternal/_EmployeeTestArea/Jack Lin/AboutMe.aspx",
+    # "https://www.ssw.com.au/ssw/Diagnostics/Admin/Default.aspx",
+    # "https://www.ssw.com.au/ssw/Download/PADFiles/Default.aspx",
+    # "https://www.ssw.com.au/ssw/StandardsInternal/Employment/accountsassessment.aspx",
+    # "https://www.ssw.com.au/ssw/StandardsInternal/DeveloperGeneral/CleaningYourMailbox.aspx",    
 ]
 
-WHITELIST =   [  # "AccessReporter",
+WHITELIST =   [
+    # "AccessReporter",
     # "eXtremeEmails",
-    # "Standards",
-    "StandardsInternal",
-    "Diagnostics",
-    "Download",
-
+    # # "Standards",
+    # "StandardsInternal",
+    # "Diagnostics",
+    # "Download",
     # "EmailTemplate",
     # "AgileTemplate",
     # "DataMergePRO",
@@ -65,20 +65,15 @@ WHITELIST =   [  # "AccessReporter",
     # "PropertyAndEventPRO",
     # # "SQLAuditor",
     # "SQLDeploy",
-
-
-
     # "SQLReportingServicesAuditor",
     # "NewZealand",
-
-
-
     # "SQLTotalCompare",
     # "Standards",
     # "StandardsInternal"
     # "Training",
     # "TeamCalendar",
     # "UpsizingPRO",
+    "methodology",
     # "NETUG",
     # "WebPager",
     # "WisePRO",
@@ -94,25 +89,25 @@ IMAGE_REPLACEMENTS: dict[str, str] = {
     "SSWLogo-xmas.svg": "https://www.ssw.com.au/SSW/images/Raven/SSWLogo.svg",
     "Damian_profile_thumb.JPG": "https://www.ssw.com.au/ssw/NETUG/SSWUpdate/Images/Damianphoto.JPG",
     "Images/OutlookCRMRebootAfterUpdate.gif	" : "Images/OutlookCRMRebootAfterUpdate.gif"
-
-
 }
 
 PAGE_REPLACEMENTS: dict[str, str] = {
-    "https://www.ssw.com.au/ssw/DataPRO/Default.aspx": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
-    "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
-    "https://www.ssw.com.au/ssw/Products/3rdPartySoftware.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftware.aspx",
-    "https://www.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx",
-    "https://www.ssw.com.au/ssw/Products/Awards.aspx": "https://prod.ssw.com.au/ssw/Products/Awards.aspx",
-    "https://www.ssw.com.au/ssw/Products/Default_bkp.aspx": "https://prod.ssw.com.au/ssw/Products/Default_bkp.aspx",
-    "https://www.ssw.com.au/ssw/Products/Ineta.aspx": "https://prod.ssw.com.au/ssw/Products/Ineta.aspx",
-    "https://www.ssw.com.au/ssw/Products/livedemonstration.aspx": "https://prod.ssw.com.au/ssw/Products/livedemonstration.aspx",
-    "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
-    "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
-    "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
+    "https://www.ssw.com.au/ssw/methodology/XPDM.aspx" : "https://web.archive.org/web/20060303220010/http://www.ssw.com.au/ssw/methodology/XPDM.aspx",
+    "https://www.ssw.com.au/ssw/NETUG/Developerlinks.aspx" : "https://web.archive.org/web/20240518011638/https://www.ssw.com.au/ssw/NETUG/Developerlinks.aspx",
+    # "https://www.ssw.com.au/ssw/DataPRO/Default.aspx": "https://web.archive.org/web/20190322231649/https://www.ssw.com.au/ssw/DataPro/",
+    # "https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx": "https://web.archive.org/web/20190404105934/https://www.ssw.com.au/ssw/ExchangeReporter/Default.aspx",
+    # "https://www.ssw.com.au/ssw/Products/3rdPartySoftware.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftware.aspx",
+    # "https://www.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx": "https://prod.ssw.com.au/ssw/Products/3rdPartySoftwarePriceIndicator.aspx",
+    # "https://www.ssw.com.au/ssw/Products/Awards.aspx": "https://prod.ssw.com.au/ssw/Products/Awards.aspx",
+    # "https://www.ssw.com.au/ssw/Products/Default_bkp.aspx": "https://prod.ssw.com.au/ssw/Products/Default_bkp.aspx",
+    # "https://www.ssw.com.au/ssw/Products/Ineta.aspx": "https://prod.ssw.com.au/ssw/Products/Ineta.aspx",
+    # "https://www.ssw.com.au/ssw/Products/livedemonstration.aspx": "https://prod.ssw.com.au/ssw/Products/livedemonstration.aspx",
+    # "https://www.ssw.com.au/ssw/Products/pwpmag.aspx": "https://prod.ssw.com.au/ssw/Products/pwpmag.aspx",
+    # "https://www.ssw.com.au/ssw/Products/Source-Code-License-Agreement/Default.aspx": "https://prod.ssw.com.au/ssw/Products/Source-Code-License-Agreement/",
+    # "https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx": "https://web.archive.org/web/20190411004326/https://www.ssw.com.au/ssw/EmailMergePRO/Default.aspx",
 
-    "https://ssw.com.au/ssw/EXtremeEmails/ManageProjects.aspx": "https://web.archive.org/web/20200803212125/https://ssw.com.au/ssw/EXtremeEmails/ManageProjects.aspx"
-    ""
+    # "https://ssw.com.au/ssw/EXtremeEmails/ManageProjects.aspx": "https://web.archive.org/web/20200803212125/https://ssw.com.au/ssw/EXtremeEmails/ManageProjects.aspx"
+    # ""
     #"https://www.ssw.com.au/ssw/Events/HoloLens-experience.aspx": "https://prod.ssw.com.au/ssw/Events/Hololens-Experience.aspx",
 }
 
@@ -129,7 +124,7 @@ SECOND_FOLDER_REGEX = r"(?:\/ssw\/)([a-zA-Z0-9\.]+)(?:\/\w*)"
 def fix_spaces(string :str)->str:
     return string.replace(" ", "%20")
 
-service = Service("C:\\selenium\\chromedriver.exe")
+service = Service(chromedriver_binary.chromedriver_filename)
 driver = webdriver.Chrome(service=service)
 
 # To block Google Tag Manager from inserting stuff
