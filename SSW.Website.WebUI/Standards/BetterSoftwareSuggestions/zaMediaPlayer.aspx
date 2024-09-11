@@ -49,7 +49,7 @@
             Acknowledgements</h2>            
     </div>    
     <p>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan </a>
+        <a href="/people/adam-cogan">Adam Cogan </a>
        
     </p>
 </asp:Content>

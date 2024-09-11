@@ -33,7 +33,7 @@
             <p>We choose to implement Microsoft's new Business Desktop Deployment (BDD) solution and boy it deploys Windows 8 images quickly. The images include not just the OS, but all our standard applications. </p>
             <p>As a result, unattended deployment time takes on average 45 mins. This includes the format! We were impressed and this <strong>one feature</strong> has saved us significant time and money. <br />
             We've learnt a lot in the process, and I&#8217;m sure you&#8217;ll find the new Rules to Better Windows 8 Deployment valuable. These rules aim to help you prepare your deployment of Microsoft Windows 8 across your small to medium sized organization. <br />
-            Do you agree with them all? Are we missing some? Email me your tips, thoughts or arguments.  <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx" target="_blank">Let me know</a> what you think.</p>
+            Do you agree with them all? Are we missing some? Email me your tips, thoughts or arguments.  <a href="/people/adam-cogan" target="_blank">Let me know</a> what you think.</p>
     </div>
 
     <div class="TableOfContents">

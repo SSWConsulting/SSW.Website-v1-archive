@@ -2612,6 +2612,6 @@ In short, these new features will save you time, and help you write cleaner, mor
     </ol>
     <h2>
         Acknowledgements</h2>
-    <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br />
+    <a href="/people/adam-cogan">Adam Cogan</a><br />
     <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx">Peter Gfader</a> 
 </asp:Content>

@@ -60,7 +60,7 @@ onmouseout="javascript:clearStatus(); return true;" > Let us know </a> what you 
     </div>
 
     <h2>Acknowledgments</h2>
-    <p><a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br />
+    <p><a href="/people/adam-cogan">Adam Cogan</a><br />
         <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Uly.aspx">Ulysses Maclaren</a></p>
 
 </asp:Content>

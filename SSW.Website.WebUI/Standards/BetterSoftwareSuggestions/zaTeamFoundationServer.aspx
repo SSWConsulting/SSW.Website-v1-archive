@@ -4080,7 +4080,7 @@ FYI, installed both VS+TFS 2010 RTM on Win7 x64. Fired up VS and caught this err
                     <ol>
                         <li>The developer clicks Check In</li>
                         <li>Changes are not checked in, but are shelved and a build is queued</li>
-                        <li>The developer is notified when a build succeeds and prompted to “reconcile” their workspace</li>
+                        <li>The developer is notified when a build succeeds and prompted to ï¿½reconcileï¿½ their workspace</li>
                     </ol>  
                     <p><strong>Note:</strong> This relies on the Build Notifications tool running, which may not be the case. If it's not running, the developer has to manually reconcile their workspace before they can effectively continue working.</p>
                     <dl class="image">
@@ -4089,13 +4089,13 @@ FYI, installed both VS+TFS 2010 RTM on Win7 x64. Fired up VS and caught this err
                     </dl>    
                     <h3>Recommendations</h3>
                     <ol>
-                        <li>The Build Notifications tool should not be a requirement – Visual Studio should handle this notification itself</li>
+                        <li>The Build Notifications tool should not be a requirement ï¿½ Visual Studio should handle this notification itself</li>
                         <li>The text in the notification dialog should be changed from:<br />
                         If you did not undo your local pending changes when you submitted your check-in, you may need to reconcile your workspace with the repository.<br />
                         To:<br />
                         Your Gated Check-in has succeeded and the server has now checked in your changes.<br />
                         Click Reconcile to make sure your local workspace is up to date with the server.</li>
-                        <li>By default, reconciliation shouldn’t be required. If the file hasn’t changed since your checkin, it should be automatically reconciled</li>
+                        <li>By default, reconciliation shouldnï¿½t be required. If the file hasnï¿½t changed since your checkin, it should be automatically reconciled</li>
                         <li>If manual reconciliation is required, there should be a more obvious option in Team Explorer:
                             <dl class="image">
                                 <dt><img src="Images/improve-checkin-2.jpg" /></dt>
@@ -4108,7 +4108,7 @@ FYI, installed both VS+TFS 2010 RTM on Win7 x64. Fired up VS and caught this err
         </ol>
         <h2>Acknowledgements</h2>
         <p>
-            <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br />
+            <a href="/people/adam-cogan">Adam Cogan</a><br />
             <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx">Peter Gfader</a>
         </p>
 </asp:Content>

@@ -24,7 +24,7 @@
                         <img src="images/InvalidUI.JPG" alt="Invalid UI " />
                      </dt>
                       <dd>
-                        Figure: I want to give you more feedback – but I can't get past <a href="http://www.microsoft-hohm.com">http://www.microsoft-hohm.com</a> 
+                        Figure: I want to give you more feedback ï¿½ but I can't get past <a href="http://www.microsoft-hohm.com">http://www.microsoft-hohm.com</a> 
                       </dd>
                 </dl>               
             </li>
@@ -35,7 +35,7 @@
             Acknowledgements</h2>            
     </div>    
     <p>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan </a>
+        <a href="/people/adam-cogan">Adam Cogan </a>
        
     </p>
 </asp:Content>

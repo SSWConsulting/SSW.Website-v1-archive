@@ -90,7 +90,7 @@
     <h2>
         <a name="Acknowledgements"></a>Acknowledgements</h2>
     <p>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br />
+        <a href="/people/adam-cogan">Adam Cogan</a><br />
         <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DanielH.aspx">Daniel Hyles</a>
     </p>
 </asp:Content>

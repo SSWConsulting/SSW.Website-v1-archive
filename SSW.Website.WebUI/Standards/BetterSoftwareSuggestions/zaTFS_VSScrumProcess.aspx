@@ -47,6 +47,6 @@
         </ol>
 
         <h2>Acknowledgements</h2>
-        <p><a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br>
+        <p><a href="/people/adam-cogan">Adam Cogan</a><br>
            </p>
 </asp:Content>

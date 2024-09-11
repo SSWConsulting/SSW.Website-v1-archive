@@ -17,7 +17,7 @@
 	        <p>The SSW Product range is focused on assisting Microsoft developers to increase the functionality of their existing investment in Microsoft products in a business environment."</p>
 	        <div class="mainTestimonialAuthor">
 	            <img src="/ssw/Products/Images/Adam_Cogan.jpg" alt="Adam Cogan" />
-	            <p><a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br /><span>SSW Chief Architect and Microsoft Regional Director, Australia</span></p>
+	            <p><a href="/people/adam-cogan">Adam Cogan</a><br /><span>SSW Chief Architect and Microsoft Regional Director, Australia</span></p>
 	        </div>
 	    </div>
 	    
@@ -130,7 +130,7 @@
                 
                 <div class="productSummaryEntry">
                 	<h3><a href="/ssw/SQLAuditor/">SQL Auditor</a><span class="emphasistext">*popular*</span></h3>
-                    <p>This is ‘FxCop’ for your SQL database - Keep your SQL Server database free from design flaws with SSW SQL Auditor</p>
+                    <p>This is ï¿½FxCopï¿½ for your SQL database - Keep your SQL Server database free from design flaws with SSW SQL Auditor</p>
                 </div>
                 <div class="productSummaryEntry">
                 	<h3><a href="/ssw/UpsizingPro/">Upsizing PRO!</a><span class="emphasistext">*popular*</span></h3>

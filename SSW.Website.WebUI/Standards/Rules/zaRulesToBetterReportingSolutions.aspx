@@ -672,7 +672,7 @@
             </ol>
 
         	<h2><a name="AcknowledgementsLikeThis"></a>Acknowledgements</h2>
-			<p><a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br />
+			<p><a href="/people/adam-cogan">Adam Cogan</a><br />
                 <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=DDK">David Klein</a></p>
 
 </asp:content>

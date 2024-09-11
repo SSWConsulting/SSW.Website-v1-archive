@@ -592,7 +592,7 @@ and allows you to backup your data with your normal SQL Server backups.</p>
 
 			<h2><a name="AcknowledgementsLikeThis"></a>Acknowledgements</h2>
 			<p>
-            <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a><br />
+            <a href="/people/adam-cogan">Adam Cogan</a><br />
             <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Eric.aspx">Eric Phan</a>
             </p>
 </asp:content>

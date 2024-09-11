@@ -813,7 +813,7 @@
                 <p> "Well they say that you can never over dress :-)<br />
                     &nbsp;We want you to feel comfortable, so we don't wear suits... <br />
                     &nbsp;but on the other hand we don't wear jeans...nice shirts make the man..."<br />
-                    - <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Adam.aspx">Adam Cogan</a> - SSW Chief Architect, Microsoft Regional Director and Visual Studio ALM MVP
+                    - <a href="/people/adam-cogan">Adam Cogan</a> - SSW Chief Architect, Microsoft Regional Director and Visual Studio ALM MVP
                  </p>
                 <table border="0" id="table1">
                     <tbody>
