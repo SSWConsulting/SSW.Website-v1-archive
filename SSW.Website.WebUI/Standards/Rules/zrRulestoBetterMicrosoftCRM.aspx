@@ -769,7 +769,7 @@
       <br />
       <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan</a>
       <br />
-      <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx">Peter Gfader</a>
+      <a href="/people/alumni/peter-gfader">Peter Gfader</a>
     </p>
   </div>
 </asp:Content>

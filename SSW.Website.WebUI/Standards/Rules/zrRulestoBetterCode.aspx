@@ -2613,5 +2613,5 @@ In short, these new features will save you time, and help you write cleaner, mor
     <h2>
         Acknowledgements</h2>
     <a href="/people/adam-cogan">Adam Cogan</a><br />
-    <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx">Peter Gfader</a> 
+    <a href="/people/alumni/peter-gfader">Peter Gfader</a> 
 </asp:Content>

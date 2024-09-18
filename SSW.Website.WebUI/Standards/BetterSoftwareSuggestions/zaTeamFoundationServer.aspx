@@ -4109,6 +4109,6 @@ FYI, installed both VS+TFS 2010 RTM on Win7 x64. Fired up VS and caught this err
         <h2>Acknowledgements</h2>
         <p>
             <a href="/people/adam-cogan">Adam Cogan</a><br />
-            <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx">Peter Gfader</a>
+            <a href="/people/alumni/peter-gfader">Peter Gfader</a>
         </p>
 </asp:Content>

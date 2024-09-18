@@ -37,7 +37,7 @@
              <ol>
               <li>Include a Cancel button so I can cancel my post (I had to cancel by killing the application in Task Manager)</li>
               <li>Add some indicator text that counts down the time remaining<br />
-                  e.g. "Unable to connect – 15 seconds"... then show "14 seconds", then "13 seconds" etc. <br />
+                  e.g. "Unable to connect ï¿½ 15 seconds"... then show "14 seconds", then "13 seconds" etc. <br />
                     This way I will know how long to wait (this dialog didn't go away until I killed the app)
               </li>              
              </ol>
@@ -56,7 +56,7 @@
             Acknowledgements</h2>            
     </div>    
     <p>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Martin.aspx">Martin Hinshelwood</a>
+        <a href="/people/alumni/martin-hinshelwood">Martin Hinshelwood</a>
        
     </p>
 </asp:Content>

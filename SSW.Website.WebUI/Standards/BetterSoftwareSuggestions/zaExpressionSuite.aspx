@@ -66,6 +66,6 @@
     </div>    
     <p>
         <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan </a><br/>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Joe.aspx">Joe Hardy</a>
+        <a href="/people/alumni/joe-hardy">Joe Hardy</a>
     </p>
 </asp:Content>

@@ -128,7 +128,7 @@
         Acknowledgements</h2>
     <p>
         <a href="/people/adam-cogan">Adam Cogan</a><br>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Matthew.aspx">Matt Hodgkins</a><br />
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DanielH.aspx">Daniel Hyles</a><br />
+        <a href="/people/alumni/matthew-hodgkins">Matt Hodgkins</a><br />
+        <a href="/people/alumni/daniel-hyles">Daniel Hyles</a><br />
     </p>
 </asp:Content>

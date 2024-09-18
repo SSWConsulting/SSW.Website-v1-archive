@@ -48,7 +48,7 @@
     <h2>
         Acknowledgments</h2>
     <p>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Eric.aspx">Eric Phan</a><br />
+        <a href="/people/alumni/eric-phan">Eric Phan</a><br />
         
     </p>
 </asp:Content>

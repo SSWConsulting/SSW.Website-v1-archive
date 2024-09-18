@@ -69,20 +69,20 @@
                 BindData(!this.IsPostBack); 
             } 
           </pre><br />
-          <b>Figure: Bad example – this code will still fire on a Async call</b>
+          <b>Figure: Bad example ï¿½ this code will still fire on a Async call</b>
           <pre class="code">
            protected void Page_PreRender(object sender, EventArgs e) 
             { 
                 BindData(!this.IsPostBack || !this.IsCallback); 
             } 
           </pre><br />
-           <b>Figure: Good example – this code will now not fire on Aync calls</b>
+           <b>Figure: Good example ï¿½ this code will now not fire on Aync calls</b>
          </li> 
                
     </ol>
     <h2>
         Acknowledgments</h2>
     <p>
-        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Martin.aspx">Martin Hinshelwood</a><br />      
+        <a href="/people/alumni/martin-hinshelwood">Martin Hinshelwood</a><br />      
     </p>
 </asp:Content>
