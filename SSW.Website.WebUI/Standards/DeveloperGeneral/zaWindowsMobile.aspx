@@ -60,7 +60,7 @@
 		<h2>Acknowledgements</h2>	
 			
 			<p>
-				<a href="/people/alumni/martin-hinshelwood">Martin Hinshelwood</a><br/>
+				<a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Martin.aspx">Martin Hinshelwood</a><br/>
 			</p>
 
 

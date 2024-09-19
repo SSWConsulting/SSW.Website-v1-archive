@@ -91,6 +91,6 @@
         <a name="Acknowledgements"></a>Acknowledgements</h2>
     <p>
         <a href="/people/adam-cogan">Adam Cogan</a><br />
-        <a href="/people/alumni/daniel-hyles">Daniel Hyles</a>
+        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DanielH.aspx">Daniel Hyles</a>
     </p>
 </asp:Content>

@@ -663,7 +663,7 @@
             <h2>
                 Up and Running with Expression Web Designer</h2>
             <p>
-                <a target="_blank" href="/people/alumni/tristan-kurniawan">
+                <a target="_blank" href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Tristan.aspx">
                     Tristan Kurniawan</a> is SSW Graphic Designer and the person responsible for
                 the Web 2.0 look on SSW and other sites. He will begin by explaining how Microsoft&#8217;s
                 latest offering can integrate Web design and development teams. Then Tristan will
@@ -696,7 +696,7 @@
             <h2>
                 10 CSS Best Practices</h2>
             <p>
-                Sick of style saturation? <a target="_blank" href="/people/alumni/tristan-kurniawan">
+                Sick of style saturation? <a target="_blank" href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Tristan.aspx">
                     Tristan Kurniawan</a>, SSW Graphic Designer, will show you how to apply these
                 CSS best practices to regain creative control over the layout and design whilst
                 streamlining the process of creating and maintaining your website.</p>

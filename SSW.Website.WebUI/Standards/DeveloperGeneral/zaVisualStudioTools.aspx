@@ -60,6 +60,6 @@
 		<h2>Acknowledgements</h2>	
 			
 		<p><a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan</a><br />
-   		<a href="/people/alumni/martin-hinshelwood">Martin Hinshelwood</a></p>
+   		<a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Martin.aspx">Martin Hinshelwood</a></p>
 
 </asp:content>

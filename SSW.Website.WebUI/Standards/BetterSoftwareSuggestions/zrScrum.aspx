@@ -61,6 +61,6 @@ onmouseout="javascript:clearStatus(); return true;" > Let us know </a> what you 
 
     <h2>Acknowledgments</h2>
     <p><a href="/people/adam-cogan">Adam Cogan</a><br />
-        <a href="/people/ulysses-maclaren">Ulysses Maclaren</a></p>
+        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Uly.aspx">Ulysses Maclaren</a></p>
 
 </asp:Content>

@@ -215,5 +215,5 @@
         </tr>
     </table>
     <br>
-    <a href="/people/alumni/david-klein">David Klein</a></span></p>
+    <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/DavidK.aspx">David Klein</a></span></p>
 </asp:Content>

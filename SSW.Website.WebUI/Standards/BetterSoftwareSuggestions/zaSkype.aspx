@@ -179,6 +179,6 @@
     <p>
         <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=AC">Adam Cogan</a><br />
         <a href="/ssw/Employees/EmployeesProfile.aspx?EmpID=LX">Lei Xu</a><br />
-        <a href="/people/alumni/peter-gfader">Peter Gfader</a>
+        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Peter.aspx">Peter Gfader</a>
     </p>
 </asp:Content>

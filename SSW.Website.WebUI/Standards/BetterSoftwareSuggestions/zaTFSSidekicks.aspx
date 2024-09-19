@@ -38,7 +38,7 @@
     <h2>
         Acknowledgments</h2>
     <p>
-        <a href="/people/alumni/damian-brady">Damian Brady</a><br />
+        <a href="http://sharepoint.ssw.com.au/AboutUs/Employees/Pages/Damian.aspx">Damian Brady</a><br />
         
     </p>
 </asp:Content>
