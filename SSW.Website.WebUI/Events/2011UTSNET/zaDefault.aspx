@@ -317,11 +317,6 @@
                     <li><a href="http://www.amazon.com/gp/product/0596510373?ie=UTF8&tag=cinanu-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0596510373">Programming WPF</a></li>
                 </ul>
 
-            <h2 class="accordionHeader">Course Resources</h2>
-                <ul>
-                    <li><a href="https://sharepoint.ssw.com.au/Training/UTSNET/Pages/default.aspx">Lecture Notes</a></li>
-                </ul>
-
             <h2 class="accordionHeader">Books</h2>
                 <ol>
                     <li><a href="http://www.amazon.com/C-4-0-Nutshell-Definitive-Reference/dp/0596800959" >C#&nbsp;4</a>
@@ -335,8 +330,6 @@
             <h2 class="accordionHeader">Videos and Webcasts</h2>
                 <ul>
                     <li><a href="http://www.dimecasts.net/">http://www.dimecasts.net/</a></li>
-                    <li><a href="http://www.microsoftpdc.com/">http://www.microsoftpdc.com/</a></li>
-                    <li><a href="http://live.visitmix.com/">http://live.visitmix.com/</a></li>
                     <li><a href="http://www.asp.net/get-started/">http://www.asp.net/get-started/</a></li>
                 </ul>
 
