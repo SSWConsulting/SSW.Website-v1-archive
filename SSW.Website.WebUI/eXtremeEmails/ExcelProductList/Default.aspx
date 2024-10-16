@@ -23,8 +23,7 @@
 </table>
   </p>
   		<img border="0" src="./Images/ExPriceList_1-2.jpg" width="799" height="391"> <br>
-		<a href="http://www.ssw.com.au/Projects/AC-OfficeXPWebServices/SSWProductsWithCurrency-WebService_Ver1-3.xlsm">Download a copy of our Excel product and price list</a> 	
-<img src="/ssw/Images/Download.gif" alt="Downlaod our product and price list" width="35" height="27">
+		
 <p>
 	The SSW Product and Price List web service is available at 
 	<a href="/ssw/Redirect/ssw/Webservice.htm" target=_blank>
