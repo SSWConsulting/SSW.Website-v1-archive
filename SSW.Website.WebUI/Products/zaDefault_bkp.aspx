@@ -78,7 +78,7 @@
                     <p>Send your newsletter to thousands of subscribers with Email Merge PRO!</p>
                 </div>
                 <div class="productSummaryEntry">
-                	<h3><a href="/ssw/TimePRONET/">Time PRO .NET</a></h3>
+                	<h3><a href="https://sswtimepro.com/">Time PRO .NET</a></h3>
                     <p>Welcome to Time PRO .NET. This is a totally integrated database application designed for corporations who bill on a time or product basis.</p>
                 </div>
                 <div class="productSummaryEntry">
