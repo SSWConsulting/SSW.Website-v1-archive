@@ -18,7 +18,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="index" runat="server">
     <h2>AngularJS and ASP.NET MVC:</h2>
     <ul>
-        <li><a href="http://tv.ssw.com/devsuperpowers">Dev Superpowers</a></li>
+        <li><a href="https://tv.ssw.com/tag/dev-superpowers/">Dev Superpowers</a></li>
         <li><a href="#Details">Webinar Details</a></li>
         <li><a href="#Register">Register</a></li>
     </ul>
