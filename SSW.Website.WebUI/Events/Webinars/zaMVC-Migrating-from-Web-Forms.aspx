@@ -24,10 +24,10 @@
 
 	<div class="section"> 
         <p>MVC is a giant leap forward for ASP.NET developers and represents the best way to build new web applications.  Unfortunately, not every project is a green fields project, and most organisations have at least a few applications running on Web Forms that need to be maintained.</p>
-        <p>Starting a brand new project in MVC is easy, but moving to MVC from an existing Web Forms application isnít a trivial decision.  It would be madness to ignore the years of investment youíve already made in your Web Forms application.  Even if youíre happy to throw all that old code away and start anew, is your manager similarly enthusiastic?</p>
-        <p>Nobody wants to be stuck on old technology, but you also donít want to feel like youíve wasted the last few years!</p>
+        <p>Starting a brand new project in MVC is easy, but moving to MVC from an existing Web Forms application isn‚Äôt a trivial decision.  It would be madness to ignore the years of investment you‚Äôve already made in your Web Forms application.  Even if you‚Äôre happy to throw all that old code away and start anew, is your manager similarly enthusiastic?</p>
+        <p>Nobody wants to be stuck on old technology, but you also don‚Äôt want to feel like you‚Äôve wasted the last few years!</p>
         <p>Are you looking to build websites that can run on desktop and mobile devices with little extra effort?</p>
-        <p>In this webinar, Iíll show you how you can move forward with ASP.NET MVC without losing the investment youíve already made with Web Forms.  Youíll be able to start working with the ìnew shinyî without incurring the wrath of your users and managers by rebuilding everything from scratch.</p>
+        <p>In this webinar, I‚Äôll show you how you can move forward with ASP.NET MVC without losing the investment you‚Äôve already made with Web Forms.  You‚Äôll be able to start working with the ‚Äúnew shiny‚Äù without incurring the wrath of your users and managers by rebuilding everything from scratch.</p>
 	</div>
 	<div class="scrum-greybox">
         <p>Want a serious all day course instead?<br />
@@ -43,14 +43,14 @@
 		<ul class="benefits">
 			<li>Why you should move to MVC and how to sell it to your manager</li>
 			<li>Options for moving from Web Forms to MVC</li>
-			<li>A migration strategy thatíll make everyone happy</li>
+			<li>A migration strategy that‚Äôll make everyone happy</li>
 			<li>Ample time for Q&A</li>
 		</ul>
 	</div>
 
 	<div class="section">
 		<h2><a name="attend"></a>Who should attend?</h2>
-		<p>Developers and team leaders who are keen to move to ASP.NET MVC but canít get organisational buy-in.</p>
+		<p>Developers and team leaders who are keen to move to ASP.NET MVC but can‚Äôt get organisational buy-in.</p>
 	</div>
 
 	<div class="section">
@@ -77,8 +77,7 @@
         		
     <a name="Register"></a>
     <div class="download">
-        <a class="green next" href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check">Register</a><br />
-        <p>or call Marlon on <strong>+61 2 9953 3000</strong>.</p>
+        <p>Call <strong>+61 2 9953 3000</strong>.</p>
     </div>
 
 </div>               	
