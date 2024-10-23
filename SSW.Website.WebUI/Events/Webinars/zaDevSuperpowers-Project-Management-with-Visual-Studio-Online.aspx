@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="false" CodeBehind="ContentManagement.aspx.cs" MasterPageFile="~/Masters/RavenSubPage.master" Title="Dev Superpowers – Project Management with Visual Studio Online" %>
+<%@ Page Language="C#" AutoEventWireup="false" CodeBehind="ContentManagement.aspx.cs" MasterPageFile="~/Masters/RavenSubPage.master" Title="Dev Superpowers â€“ Project Management with Visual Studio Online" %>
 
 <%@ Register TagPrefix="SSW" TagName="InfoBox" Src="~/Components/InfoBoxLink.ascx" %>
 <%@ Register TagPrefix="SSW" TagName="incDemonstration" Src="~/Components/incDemonstration.ascx" %>
@@ -10,7 +10,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
     <img class="icon" src="/ssw/NETUG/SSWUpdate/Images/DevSuperpowers-Thumb.png" alt="Dev Superpowers - ASP .NET MVC with David Burela" />
-    <h1 style="font-size: 34px;">Dev Superpowers – Project Management with Visual Studio Online with Damian Brady</h1>
+    <h1 style="font-size: 34px;">Dev Superpowers â€“ Project Management with Visual Studio Online with Damian Brady</h1>
     <h2>Getting started with Microsoft ASP.NET MVC5</h2>
 </asp:Content>
 
@@ -26,7 +26,7 @@
     <div id="oversizeMaincontent">
 
         <div class="section">
-            <p>In this session, we’ll look at how to use Visual Studio Online to manage all aspects of your development project. Topics we’ll cover include:</p>
+            <p>In this session, weâ€™ll look at how to use Visual Studio Online to manage all aspects of your development project. Topics weâ€™ll cover include:</p>
 
             <ul>
                 <li>Getting started with visualstudio.com</li>
@@ -81,7 +81,7 @@
         <p>
             <img src="https://sharepoint.ssw.com.au/AboutUs/Employees/PublishingImages/Damian_profile_thumb.JPG" width="75" class="thumbnail" />
             <strong>Damian Brady</strong><br />
-            Damian Brady is a Microsoft MVP in Application Lifecycle Management and a co-author of the <a href="http://brdy.in/ProTFS2013">"Professional Team Foundation Server 2013"</a>book from Wiley. He's a Solution Architect and State Manager for SSW Brisbane, and also runs the Brisbane .Net User Group and the annual DDD Brisbane conference. Damian specializes in Team Foundation Server and ASP.NET development and he's a regular speaker at User Groups and conferences in Australia and overseas.
+            Damian Brady is a Microsoft MVP in Application Lifecycle Management and a co-author of the "Professional Team Foundation Server 2013" book from Wiley. He's a Solution Architect and State Manager for SSW Brisbane, and also runs the Brisbane .Net User Group and the annual DDD Brisbane conference. Damian specializes in Team Foundation Server and ASP.NET development and he's a regular speaker at User Groups and conferences in Australia and overseas.
         </p>
         <p>His Twitter handle is <a href="https://twitter.com/damovisa">@damovisa</a> and you can read his blog at <a href="http://www.damianbrady.com.au">http://www.damianbrady.com.au</a></p>
     </div>
