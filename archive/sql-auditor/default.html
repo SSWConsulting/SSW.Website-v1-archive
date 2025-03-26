@@ -7946,20 +7946,14 @@
                                     healthy
                                   </b>
                                   <a
-                                    href="/ssw/Standards/Rules/RulestoBetterSQLServerdatabases.aspx"
+                                    href="/rules/rules-to-better-sql-databases-developers/"
                                   >
                                     Learn from the many SQL Rules.
                                   </a>
                                   <br />
                                   Enable or disable the rules, and learn from
                                   the community of SQL developers which rules
-                                  are popular and which convention is popular -
-                                  see
-                                  <a
-                                    href="http://reports.internal.ssw.com.au/Reports/Pages/Report.aspx?ItemPath=%2fSSW+SQL+Auditor+Reports%2f02+-+Rule+Agreement+Report"
-                                  >
-                                    Rule Agreement Report
-                                  </a>
+                                  are popular and which convention is popular.
                                 </td>
                               </tr>
                               <tr>
@@ -8114,7 +8108,7 @@
                             <li>
                               Object names should not contain spaces. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#NamingConventions"
+                                href="/rules/naming-convention-for-use-on-database-server-test-and-production/"
                               >
                                 Object name should follow your company Naming
                                 Conventions.
@@ -8124,7 +8118,7 @@
                               Database collation differs from SQL Server
                               collation (server-wide check). See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#Collation"
+                                href="/rules/make-sure-you-use-a-consistent-collation-server-wide/"
                               >
                                 Do you make sure you use a consistent Collation
                                 server-wide?
@@ -8133,7 +8127,7 @@
                             <li>
                               Usage of SQL Server reserved words. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#NamingConventions"
+                                href="/rules/naming-convention-for-use-on-database-server-test-and-production/"
                               >
                                 Object name should follow your company Naming
                                 Conventions.
@@ -8148,7 +8142,7 @@
                               Columns using the Unicode data type of nchar,
                               nvarchar or ntext. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#UnicodeDatatype"
+                                href="/rules/only-use-unicode-datatypes-in-special-circumstances/"
                               >
                                 Only use Unicode datatypes (nchar, nvarchar and
                                 ntext) in special circumstances.
@@ -8158,7 +8152,7 @@
                               Columns using datetime datatype when data could be
                               stored in a smalldatetime column. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#DateTime"
+                                href="/rules/datetime-fields-must-be-converted-to-universal-time/"
                               >
                                 Use smalldatetime datatype, where possible,
                                 instead of datetime datatype.
@@ -8168,7 +8162,7 @@
                               Columns using bit datatype and allowing NULL
                               values. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#BitFields"
+                                href="/rules/use-bit-numeric-data-type-correctly/"
                               >
                                 Do you use Bit/Numeric data type correctly?
                               </a>
@@ -8176,15 +8170,15 @@
                             <li>
                               Columns with RowGuid datatype and an Index. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#RowGuid"
+                                href="/rules/avoid-using-indexes-on-rowguid-column/"
                               >
-                                Do not use indexes on RowGuid column.
+                                Do not avoid using indexes on RowGuid column.
                               </a>
                             </li>
                             <li>
                               Tables missing Clustered Index. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#Clustered"
+                                href="/rules/create-clustered-index-on-your-tables/"
                               >
                                 Do you create clustered index on your tables?
                               </a>
@@ -8192,7 +8186,7 @@
                             <li>
                               Every table should have Primary Key. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#PrimaryKey"
+                                href="/rules/create-primary-key-on-your-tables/"
                               >
                                 Do you create primary key on your tables?
                               </a>
@@ -8224,7 +8218,7 @@
                             <li>
                               Table names longer than 24 characters. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#NamingConventions"
+                                href="/rules/object-name-should-follow-your-company-naming-conventions/"
                               >
                                 Object name should follow your company Naming
                                 Conventions.
@@ -8234,7 +8228,7 @@
                               Columns using bit datatype. Recommended to use
                               smallint instead. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#BitFields"
+                                href="/rules/use-bit-numeric-data-type-correctly/"
                               >
                                 Do you use Bit/Numeric data type correctly?
                               </a>
@@ -8243,7 +8237,7 @@
                               Indexes and constraints without a fill factor of
                               90%. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#Fillfactor"
+                                href="/rules/use-fillfactor-of-90-percent-for-indexes-and-constraints/"
                               >
                                 Use FillFactor of 90% for indexes and
                                 constraints.
@@ -8257,7 +8251,7 @@
                             <li>
                               Relationships not using ON UPDATE CASCADE. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#IncludeONUPDATECASCADE"
+                                href="/rules/use-update-cascade-when-creating-a-relationship/"
                               >
                                 Use ON UPDATE CASCADE clause when creating
                                 relationship.
@@ -8266,7 +8260,7 @@
                             <li>
                               Relationships using ON DELETE CASCADE. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#DontIncludeONDELETECASCADE"
+                                href="/rules/avoid-using-cascade-delete/"
                               >
                                 Do not use ON DELETE CASCADE clause when
                                 creating relationship.
@@ -8275,7 +8269,7 @@
                             <li>
                               Relationships not using NOT FOR REPLICATION. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#RelationshipsReplication"
+                                href="/rules/set-not-for-replication-when-creating-a-relationship/"
                               >
                                 Use NOT FOR REPLICATION clause when creating
                                 relationship.
@@ -8295,7 +8289,7 @@
                               Data in character columns having empty string
                               instead of NULL. See
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx#AvoidNullsTextFields"
+                                href="/rules/do-not-allow-nulls-in-text-fields/"
                               >
                                 Don't allow Nulls in text fields.
                               </a>
@@ -8526,14 +8520,14 @@
                           <ul>
                             <li>
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterSQLServerDatabases.aspx"
+                                href="/rules/rules-to-better-sql-databases-developers/"
                               >
                                 Rules to better SQL Server databases
                               </a>
                             </li>
                             <li>
                               <a
-                                href="/ssw/Standards/Rules/RulesToBetterCode.aspx#NamingConventions"
+                                href="/rules/object-name-should-follow-your-company-naming-conventions/"
                               >
                                 SQL Naming Conventions
                               </a>
