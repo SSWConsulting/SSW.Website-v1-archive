@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'archive/**'
-      - upload-blob.sh
+      - upload-blob.cmd
   workflow_dispatch:
 
 jobs:
