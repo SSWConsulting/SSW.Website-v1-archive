@@ -1,7 +1,7 @@
 name: push-to-blob-on-push
 
 on:
-  push:
+  pull_request:
     branches:
       - upload-to-blob
     paths:
