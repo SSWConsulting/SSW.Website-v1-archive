@@ -3,7 +3,7 @@ name: push-to-blob-on-push
 on:
   pull_request:
     branches:
-      - upload-to-blob
+      - main
     paths:
       - 'archive/**'
   workflow_dispatch:
