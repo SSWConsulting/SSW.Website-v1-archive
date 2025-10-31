@@ -1,0 +1,93 @@
+
+    '==============================================================================
+    ' Constants
+    '==============================================================================
+    ' Location of reports created by the client
+    Private Const sswReportOutputURL = "http://localhost/SSWAccessReporter/Reports/"
+
+    ' IP or Computer name of the computer that is running SSW Access Report Server.
+    Private Const sswDestinationComputer As String = "127.0.0.1"
+
+    ' These constants are used in place of the format type enum 
+    ' (Note: You should include these in all ASP's that use the report client)
+    Public Const sswFormatHTML = 0
+    Public Const sswFormatPDF = 1
+    Public Const sswFormatRTF = 2
+    Public Const sswFormatSNP = 3
+    Public Const sswFormatTXT = 4
+    Public Const sswFormatXLS = 5
+    
+    '==============================================================================
+    ' Page Calls
+    '==============================================================================
+    Private Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If Page.IsPostBack Then
+            lblMessage.Text = ""
+        End If
+    End Sub
+    Private Sub ReportName_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ReportName.SelectedIndexChanged
+        ReportFilter.Visible = False
+        ReportFilter2.Visible = False
+
+        If ReportName.SelectedItem.Value = "Invoice" Then
+            ReportFilter.Visible = True
+        ElseIf ReportName.SelectedItem.Value = "Sales By Category" Then
+            ReportFilter2.Visible = True
+        End If
+    End Sub
+    Private Sub btnSubmit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
+
+        '==============================================================================
+        ' Generates the report and redirects the user to the report. If there was an 
+        '   error while generating, the error message will be displayed on the page.
+        '==============================================================================
+        Dim strReportFilter As String = ""
+        ' Report filter is only used for the Invoice report in this sample (set blank if other report)
+        If ReportFilter.Visible Then
+            strReportFilter = ReportFilter.SelectedItem.Value.ToString()
+        ElseIf ReportFilter2.Visible Then
+            strReportFilter = ReportFilter2.SelectedItem.Value.ToString()
+        End If
+
+        Try
+            ' Generate report and get the path of the file
+            Dim strFileName As String = GetReport(DatabseName.SelectedItem.Value.ToString, ReportName.SelectedItem.Value.ToString, ReportFormat.SelectedItem.Value.ToString, strReportFilter)
+
+            ' Get the file name of the file
+            strFileName = GetFileName(strFileName)
+
+            ' Redirect to the report (Note: This requires the output URL)
+            Call Response.Redirect(sswReportOutputURL & strFileName)
+
+        Catch exp As Exception
+            lblMessage.Text = "Report creation Failed: " & exp.Message
+        End Try
+
+    End Sub
+
+    '==============================================================================
+    ' Private Routines
+    '==============================================================================
+    Private Function GetReport(ByVal strDatabaseName As String, ByVal strReportName As String, ByVal enmReportFormat As ReportClient.ReportClient.EnumReportFormat, ByVal strReportFilter As String)
+        '==============================================================================
+        ' Generates a report, and returns the File Name. The file will be placed in the
+        ' reports directory as specified in the server options.
+        '==============================================================================
+
+        Dim strReturn As String = ""
+        Dim objReportClient As New ReportClient.ReportClient(sswDestinationComputer)
+        Try
+            strReturn = objReportClient.GetReport(strDatabaseName, strReportName, strReportFilter, "", enmReportFormat)
+        Catch exp As Exception
+            Throw New Exception(exp.Message, exp)
+        End Try
+
+        Return strReturn
+    End Function
+    Private Function GetFileName(ByVal strPath As String) As String
+        '==============================================================================
+        ' Gets the name of a file when handed a fully qualified path. eg:
+        ' c:\inetpub\wwwroot\reports\Report1.snp => Report1.snp
+        '==============================================================================
+        Return Mid(strPath, InStrRev(strPath, "\") + 1, Len(strPath) - InStr(strPath, "\"))
+    End Function
